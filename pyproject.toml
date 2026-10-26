@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "political-ads"
+version = "0.1.0"
+description = "Source-linked comparisons of the language of political advertising"
+requires-python = ">=3.10"
+dependencies = ["beautifulsoup4>=4.12,<5", "duckdb>=1.1,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "ruff>=0.11,<1"]
+media = ["faster-whisper>=1.1,<2", "yt-dlp>=2026.10.14", "rapidocr-onnxruntime>=1.4,<2"]
+
+[project.scripts]
+political-ads = "political_ads.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["political_ads*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
