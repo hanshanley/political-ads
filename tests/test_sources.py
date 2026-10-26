@@ -99,6 +99,65 @@ def test_multiple_creatives_are_kept_separate():
     assert "second" not in blocks[0]
 
 
+def test_duration_headings_watch_links_and_candidate_biography_are_not_copy():
+    first = (
+        "These are the actual words of the first advertisement about lowering health costs "
+        "and protecting local families."
+    )
+    second = (
+        "These are the actual words of the second advertisement about fighting for our families "
+        "and lowering their costs."
+    )
+    assert transcript_blocks(
+        f"<p>AD TRANSCRIPT (15s):</p><p>{first}</p>"
+        "<p>WATCH ‘SECOND’</p>"
+        f"<p>Transcript (30):</p><p>{second}</p>"
+        "<p>Nancy Lacore served our nation for 35 years in the Navy.</p>"
+    ) == [first, second]
+    assert transcript_blocks(
+        f"<p>Ad transcript:</p><p>{first}</p>"
+        "<p>You can watch the new Spanish language TX-15 ad here.</p>"
+        f"<p>Spanish ad transcript:</p><p>{second}</p>"
+        "<p>To learn more about the campaign, visit our website.</p>"
+    ) == [first, second]
+
+
+def test_phone_tree_transcript_is_not_the_ad_promoting_the_phone_number():
+    assert (
+        transcript_blocks(
+            "<p>Phone Tree Transcript:</p><p>" + "Press one for voting information. " * 10 + "</p>"
+        )
+        == []
+    )
+
+
+def test_multi_district_release_does_not_assign_every_script_the_first_race():
+    result = parse_post(
+        post("New Ads in OH-09 and OH-10", "<p>Transcript:</p><p>" + "actual ad text " * 10),
+        SOURCES[1],
+        "2026-10-26",
+    )
+    assert result[0]["race"] == "Unresolved"
+
+
+def test_new_ad_after_debate_can_include_clearly_separated_publisher_copy():
+    text = (
+        "Abdul El-Sayed: We need to work together to lower costs for families across Michigan "
+        "and improve health care."
+    )
+    source = next(s for s in SOURCES if s.id == "el-sayed")
+    ads = parse_post(
+        post(
+            "NEW AD: Campaign Releases Ad Following Debate",
+            f"<p>WATCH ‘COSTS’ HERE</p><p>{text}</p><p>###</p>",
+        ),
+        source,
+        "2026-10-26",
+    )
+    assert ads[0]["text"] == text
+    assert "publisher_ad_copy_completeness_unverified" in ads[0]["quality_flags"]
+
+
 def test_next_video_title_and_spokesperson_are_not_ad_text():
     blocks = transcript_blocks(
         "<p>Transcript:</p><p>" + "first campaign message " * 10 + "</p>"

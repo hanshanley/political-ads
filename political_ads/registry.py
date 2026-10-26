@@ -90,8 +90,11 @@ def enrich(ad: dict, candidates: list[dict]) -> dict:
     mentions = candidate_mentions(ad["text"] + "\n" + ad["title"], candidates)
     result["candidate_mentions"] = mentions
     if result["race"] == "Unresolved":
+        race_mentions = candidate_mentions(ad["text"], candidates) or mentions
         races = {
-            (m["state"], m["office"], m["district"]) for m in mentions if m["office"] in {"H", "S"}
+            (m["state"], m["office"], m["district"])
+            for m in race_mentions
+            if m["office"] in {"H", "S"}
         }
         if len(races) == 1:
             state, office, district = races.pop()

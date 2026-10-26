@@ -29,3 +29,13 @@ def test_conflicting_races_are_not_guessed():
 def test_unique_full_name_can_resolve_race():
     ad = {"text": "Jane Smith is wrong.", "title": "", "race": "Unresolved"}
     assert enrich(ad, [candidate()])["race"] == "PA-01"
+
+
+def test_multi_ad_release_title_does_not_override_creative_specific_race():
+    other = candidate("JONES, JAMES") | {"state": "OH"}
+    ad = {
+        "text": "James Jones is wrong.",
+        "title": "New ads calling out Jane Smith and James Jones",
+        "race": "Unresolved",
+    }
+    assert enrich(ad, [candidate(), other])["race"] == "OH-01"

@@ -3,7 +3,13 @@ from urllib.error import HTTPError
 
 import pytest
 
-from political_ads.discovery import archive_posts, news_index_posts, rss_posts, squarespace_posts
+from political_ads.discovery import (
+    archive_posts,
+    dated_news_posts,
+    news_index_posts,
+    rss_posts,
+    squarespace_posts,
+)
 from political_ads.sources import SOURCES
 
 
@@ -144,6 +150,59 @@ def test_public_squarespace_repeated_ids_do_not_claim_complete():
 
     with pytest.raises(ValueError, match="repeated IDs"):
         squarespace_posts(Repeated(), source("rogers"), "2026-10-26")
+
+
+def test_squarespace_media_collection_accepts_explicit_previous_page_only_at_end():
+    class Media:
+        def json(self, url, **kwargs):
+            assert url == source("lacore").url + "/media?format=json"
+            return {
+                "items": [],
+                "pagination": {"prevPage": True, "pageSize": 20},
+            }, {}
+
+    assert squarespace_posts(Media(), source("lacore"), "2026-10-26") == ([], True)
+
+
+def test_dated_news_cards_follow_pagination_and_ignore_embedded_external_links():
+    class News:
+        def get(self, url, **kwargs):
+            if url.endswith("/news/ad"):
+                return b"<main><h1>New ad</h1><p>Exact publisher script.</p></main>", {}
+            if url.endswith("/news/page/2/"):
+                return (
+                    b'<a href="/news/old"><h2>Old ad</h2>'
+                    b'<time datetime="2025-12-01">December 1, 2025</time></a>',
+                    {},
+                )
+            return (
+                b'<div><h4>New ad</h4><a href="https://outside.org">Quoted coverage</a>'
+                b'<a class="read-more" href="/news/ad">Read more</a>'
+                b'<time datetime="2026-10-02">October 2, 2026</time></div>'
+                b'<a class="next" href="/news/page/2/">Next</a>',
+                {},
+            )
+
+    posts, complete = dated_news_posts(News(), source("jackson"), "2026-10-26")
+    assert complete and len(posts) == 1
+    assert posts[0]["link"] == source("jackson").url + "/news/ad"
+    assert posts[0]["date"] == "2026-10-02"
+    assert dated_news_posts(News(), source("jackson"), "2026-10-26", max_pages=1)[1] is False
+
+
+def test_dated_news_rejects_homepage_fallback_instead_of_manufacturing_ad_text():
+    class Fallback:
+        def get(self, url, **kwargs):
+            if url.endswith("/news/ad"):
+                return b"<main><h1>Welcome to the campaign</h1></main>", {}
+            return (
+                b'<a href="/news/ad"><h2>New ad</h2>'
+                b'<time datetime="2026-10-02">October 2, 2026</time></a>',
+                {},
+            )
+
+    with pytest.raises(ValueError, match="fallback"):
+        dated_news_posts(Fallback(), source("el-sayed"), "2026-10-26")
 
 
 def test_rendered_campaign_index_keeps_only_in_scope_first_party_releases():

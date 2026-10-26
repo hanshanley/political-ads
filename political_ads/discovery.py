@@ -68,7 +68,7 @@ def archive_posts(
 ) -> tuple[list[dict], bool]:
     posts = []
     seen = set()
-    hmp = source.id == "hmp"
+    hmp = source.id in {"hmp", "hmf"}
     for page in range(1, max_pages + 1):
         path = f"/news?pg={page}" if hmp else ("/press/" if page == 1 else f"/press/page/{page}/")
         body, _ = client.get(source.url + path, refresh=True)
@@ -136,6 +136,8 @@ def public_posts(client: Client, source: Source, until: str) -> tuple[list[dict]
         return squarespace_posts(client, source, until)
     if source.discovery == "news_index":
         return news_index_posts(client, source, until)
+    if source.discovery == "dated_news":
+        return dated_news_posts(client, source, until)
     raise ValueError(f"Unknown public discovery strategy: {source.discovery}")
 
 
@@ -144,11 +146,12 @@ def squarespace_posts(
 ) -> tuple[list[dict], bool]:
     posts = []
     seen = set()
-    url = source.url + "/news?format=json"
+    url = source.url + source.index_path + "?format=json"
     for _ in range(max_pages):
         payload, _ = client.json(url, refresh=True)
-        if not isinstance(payload.get("items"), list) or "nextPage" not in payload.get(
-            "pagination", {}
+        pagination = payload.get("pagination", {})
+        if not isinstance(payload.get("items"), list) or not (
+            "nextPage" in pagination or pagination.get("prevPage")
         ):
             raise ValueError("Public news JSON did not expose items and pagination")
         zone = ZoneInfo(payload.get("website", {}).get("timeZone", "UTC"))
@@ -178,8 +181,7 @@ def squarespace_posts(
                     "content": {"rendered": item["body"]},
                 }
             )
-        pagination = payload["pagination"]
-        if older or not pagination["nextPage"]:
+        if older or not pagination.get("nextPage", False):
             return posts, True
         next_url = urljoin(source.url, pagination["nextPageUrl"])
         if urlparse(next_url).hostname != urlparse(source.url).hostname:
@@ -236,3 +238,73 @@ def news_index_posts(client: Client, source: Source, until: str) -> tuple[list[d
         )
     # This rendered index includes prior-year releases; no API page-size assumption.
     return posts, older
+
+
+def dated_news_posts(
+    client: Client, source: Source, until: str, max_pages: int = 100
+) -> tuple[list[dict], bool]:
+    posts = []
+    seen = set()
+    url = source.url + source.index_path + "/"
+    for _ in range(max_pages):
+        body, _ = client.get(url, refresh=True)
+        soup = BeautifulSoup(body, "html.parser")
+        dates = soup.select("time[datetime]")
+        if not dates:
+            raise ValueError("Public news archive did not expose dated release cards")
+        older = False
+        for time in dates:
+            published = time["datetime"][:10]
+            datetime.strptime(published, "%Y-%m-%d")
+            older |= published < START
+            card = time.parent
+            while card and not card.find(["h2", "h3", "h4"]):
+                card = card.parent
+            if card is None or len(card.find_all(["h2", "h3", "h4"])) != 1:
+                raise ValueError("Public news archive has no unambiguous release card")
+            heading = card.find(["h2", "h3", "h4"])
+            anchor = (
+                card
+                if card.name == "a"
+                else card.select_one("a.read-more") or heading.find("a", href=True)
+            )
+            if anchor is None:
+                anchor = card.find("a", href=True)
+            if anchor is None:
+                raise ValueError("Public news archive release has no link")
+            link = urljoin(source.url, anchor["href"])
+            if urlparse(link).hostname != urlparse(source.url).hostname:
+                raise ValueError("Public news archive linked to a different publisher")
+            if link in seen:
+                raise ValueError("Public news archive repeated release URLs across pages")
+            seen.add(link)
+            title = plain_title(heading)
+            if not START <= published <= until or not is_ad_release(title):
+                continue
+            release, _ = client.get(link, refresh=True)
+            article = BeautifulSoup(release, "html.parser")
+            if article.find("h1") is None or plain_title(article.find("h1")) != title:
+                raise ValueError(f"Public release returned a different article or fallback: {link}")
+            content = article.find("main")
+            if content is None:
+                raise ValueError("Public news release has no main article")
+            posts.append(
+                {
+                    "id": digest(link)[:16],
+                    "link": link,
+                    "date": published,
+                    "title": {"rendered": title},
+                    "content": {"rendered": str(content)},
+                }
+            )
+        next_page = soup.select_one("a.next, a[rel=next]")
+        if older or next_page is None:
+            return posts, older
+        url = urljoin(source.url, next_page["href"])
+        if urlparse(url).hostname != urlparse(source.url).hostname:
+            raise ValueError("Public news archive linked to a different pagination host")
+    return posts, False
+
+
+def plain_title(node) -> str:
+    return re.sub(r"\s+", " ", node.get_text(" ", strip=True)).strip()

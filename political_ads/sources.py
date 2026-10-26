@@ -57,6 +57,7 @@ class Source:
     search: str = "transcript"
     fixed_race: str = ""
     discovery: str = "wordpress"
+    index_path: str = "/news"
 
 
 SOURCES = [
@@ -197,6 +198,86 @@ SOURCES = [
         fixed_race="IA-Senate",
         discovery="news_index",
     ),
+    Source(
+        "hmf",
+        "https://www.housemajorityforward.org",
+        "House Majority Forward",
+        "D",
+        "outside_group",
+        "House",
+        discovery="archive",
+    ),
+    Source(
+        "unrig",
+        "https://unrigoureconomy.com",
+        "Unrig Our Economy",
+        "D",
+        "outside_group",
+        "House",
+        rest_base="news",
+    ),
+    Source(
+        "dembo",
+        "https://zachdembo.com",
+        "Zach Dembo for Congress",
+        "D",
+        "candidate",
+        "House",
+        search="ad",
+        fixed_race="KY-06",
+    ),
+    Source(
+        "collins",
+        "https://mikecollinsga.com",
+        "Mike Collins for Senate",
+        "R",
+        "candidate",
+        "Senate",
+        rest_base="press_release",
+        search="ad",
+        fixed_race="GA-Senate",
+    ),
+    Source(
+        "fletcher",
+        "https://www.lizziefletcher.com",
+        "Lizzie Fletcher for Congress",
+        "D",
+        "candidate",
+        "House",
+        search="ad",
+        fixed_race="TX-07",
+    ),
+    Source(
+        "lacore",
+        "https://www.nancylacore.com",
+        "Nancy Lacore for Congress",
+        "D",
+        "candidate",
+        "House",
+        fixed_race="SC-01",
+        discovery="squarespace",
+        index_path="/media",
+    ),
+    Source(
+        "jackson",
+        "https://www.jacksonformaine.com",
+        "Troy Jackson for Maine",
+        "D",
+        "candidate",
+        "Senate",
+        fixed_race="ME-Senate",
+        discovery="dated_news",
+    ),
+    Source(
+        "el-sayed",
+        "https://abdulforsenate.com",
+        "Abdul for U.S. Senate",
+        "D",
+        "candidate",
+        "Senate",
+        fixed_race="MI-Senate",
+        discovery="dated_news",
+    ),
 ]
 
 
@@ -228,22 +309,29 @@ def transcript_blocks(content: str) -> list[str]:
     markers = list(
         re.finditer(
             r"(?im)^([^\n]{0,50}\b)?(?:transcript|(?:radio|tv|ad) script)"
+            r"(?:\s*\(\s*:?\d{1,3}(?:\s*(?:seconds?|secs?|s))?\s*\))?"
             r"(?:\s+(?:of|for)\s+[^\n:]{0,120}|\s+below\.?)?\s*(?::|\n|$)",
             text,
         )
     )
     blocks = []
     for i, marker in enumerate(markers):
+        if re.search(r"\b(?:phone tree|hotline|interview|debate)\s+transcript\b", marker[0], re.I):
+            continue
         end = markers[i + 1].start() if i + 1 < len(markers) else len(text)
         chunk = text[marker.end() : end]
         chunk = re.split(r"(?m)^\s*(?:###|Paid for by the .* Committee\.?$)", chunk)[0]
         chunk = re.split(
             r"(?im)^\s*(?:Read (?:more|the)|Watch (?:the|this)|Share (?:this|on)|"
+            r"Watch\s+[‘“\"']|"
+            r"You can watch\b|"
             r"(?:On )?Background:|See also:|About the |About [^\n:]{1,80}:|"
             r"The post .+ appeared first on |Roy Cooper has launched |"
             r"Learn more about Mike Rogers and his plans? to |"
             r"DCCC (?:National |Spokesperson|Chair|Senior )|"
-            r"For (?:more information|Immediate Release))",
+            r"For (?:more information|Immediate Release)|"
+            r"To learn more about the campaign, |"
+            r"Nancy Lacore served our nation for 35 years)",
             chunk,
         )[0]
         lines = [line.strip() for line in chunk.splitlines() if line.strip()]
@@ -293,6 +381,13 @@ def candidate_ad_copy(content: str, source_id: str) -> list[str]:
         match = re.search(r"(?im)^WATCH THE AD HERE\s*$", text)
         if match and re.search(r"(?m)^###\s*$", text[match.end() :]):
             return [re.split(r"(?m)^###\s*$", text[match.end() :])[0].strip()]
+    if source_id == "el-sayed":
+        text = plain_html(content)
+        watch = re.search(r"(?im)^WATCH [^\n]{0,120}\bHERE[.!]?\s*$", text)
+        if watch and re.search(r"(?m)^###\s*$", text[watch.end() :]):
+            block = re.split(r"(?m)^###\s*$", text[watch.end() :])[0].strip()
+            if re.match(r"(?i)^(?:Radio|Narrator|VO|Abdul(?: El[- ]Sayed)?)\s*:", block):
+                return [block] if len(block.split()) >= 15 else []
     return []
 
 
@@ -310,6 +405,8 @@ def media_links(content: str) -> list[str]:
 
 
 def is_ad_release(title: str) -> bool:
+    if re.match(r"new(?: (?:tv|digital|radio))? ads?:", title, re.I):
+        title = re.sub(r"\bdebates?\b", "", title, flags=re.I)
     return bool(re.search(r"\b(?:ads?|advertising|spots?)\b", title, re.I)) and not bool(
         re.search(
             r"\b(?:debate|interview|fact.check|ICYMI|takeaways|roundup|anniversary|"
@@ -334,7 +431,8 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
     if not blocks:
         blocks = candidate_ad_copy(content, source.id)
         quoted_copy = bool(blocks)
-    race_match = re.search(r"\b([A-Z]{2})[-–](\d{1,2})\b", title)
+    title_races = set(re.findall(r"\b([A-Z]{2})[-–](\d{1,2})\b", title))
+    race_match = next(iter(title_races)) if len(title_races) == 1 else None
     phase = "primary" if re.search(r"\bprimary\b", title, re.I) else "unknown"
     full_text = plain_html(content)
     if phase == "unknown" and re.search(r"\bgeneral election\b", full_text, re.I):
@@ -366,11 +464,11 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
             phase=phase,
             chamber=source.chamber,
             race=(
-                f"{race_match[1]}-{int(race_match[2]):02}"
+                f"{race_match[0]}-{int(race_match[1]):02}"
                 if race_match
                 else source.fixed_race or "Unresolved"
             ),
-            state=race_match[1] if race_match else source.fixed_race[:2],
+            state=race_match[0] if race_match else source.fixed_race[:2],
             media_urls=media_links(content),
             language=language_of(text),
             language_basis="langdetect seeded model; >=0.90 probability, otherwise unknown",
