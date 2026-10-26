@@ -10,6 +10,8 @@ without independent in-window delivery evidence are excluded.
 
 Analysis includes English text with seeded language-detection probability of at least 0.90.
 Non-English and uncertain text remains in collection inputs but not comparative totals.
+This is dominant-language detection, not certification that every word is English: bilingual
+passages remain untranslated when a record passes the English threshold.
 Source status counts precede this exclusion. Empty results and inaccessible sources differ;
 neither establishes that an advertiser ran no ads.
 
@@ -21,9 +23,11 @@ releases need separate payer review before spend attribution. Outside groups rec
 alignment, not fabricated formal party registrations.
 
 The FEC candidate master includes primary candidates and federal race metadata. Full first/last
-names are conservative matching leads; a surname alone is insufficient. A race is inferred only
-when every matched candidate maps to that race; otherwise it stays unresolved. Explicit House
-district markers and source-specific race assignments are retained. The public roster omits
+names are conservative matching leads; a surname alone is insufficient. Race inference prioritizes
+names in the individual creative, using the release title only if the script has no full-name match.
+All names used for inference must map to one race; otherwise it stays unresolved. A title naming
+multiple House districts does not assign the first district to every creative. Unambiguous explicit
+House district markers and source-specific race assignments are retained. The public roster omits
 mailing addresses.
 
 Primary/general phase requires explicit release evidence, not a calendar-date assumption.
@@ -32,7 +36,8 @@ Primary/general phase requires explicit release evidence, not a calendar-date as
 
 Written transcripts begin at explicit markers in identifiable ad releases. Source-specific
 boundaries remove press reaction, background, and next-creative titles. Speeches, interview
-highlights, and surrounding commentary are not counted as ad copy.
+highlights, phone-menu transcripts, and surrounding commentary are not counted as ad copy.
+Duration headings such as `Transcript (30)` and `AD TRANSCRIPT (15s)` delimit separate versions.
 
 Candidate-specific adapters also recover explicitly separated ad scripts and publisher-quoted
 ad copy. These records use `publisher_ad_copy` segments and
@@ -46,7 +51,10 @@ preserved rather than quietly repaired. A duration/end-coverage check rejects ob
 tracks but does not certify accuracy. Caption-only records do not yet include on-screen-only
 claims; quality flags disclose this without broken-media placeholders.
 
-Public HTML archives backfill HMP releases beyond the recent-post API. NRCC written transcripts
+Public HTML archives backfill HMP and House Majority Forward releases beyond recent-post APIs.
+Dated campaign news cards support public HTML acquisition without requiring authenticated APIs;
+article titles are checked to reject homepage fallbacks. Squarespace news/media collections follow
+explicit pagination offsets and use publisher timezones. NRCC written transcripts
 come from its public full-text RSS, not its unauthorized REST endpoint. Partial discovery merges
 new evidence without deleting older records. Saved captions retain their original evidence hashes
 when rediscovered in an archive; acquisition processes requested sources in priority order and

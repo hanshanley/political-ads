@@ -386,7 +386,7 @@ def candidate_ad_copy(content: str, source_id: str) -> list[str]:
         watch = re.search(r"(?im)^WATCH [^\n]{0,120}\bHERE[.!]?\s*$", text)
         if watch and re.search(r"(?m)^###\s*$", text[watch.end() :]):
             block = re.split(r"(?m)^###\s*$", text[watch.end() :])[0].strip()
-            if re.match(r"(?i)^(?:Radio|Narrator|VO|Abdul(?: El[- ]Sayed)?)\s*:", block):
+            if re.match(r"^[A-Z][^:\n]{0,100}\s*:", block):
                 return [block] if len(block.split()) >= 15 else []
     return []
 

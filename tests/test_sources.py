@@ -140,9 +140,10 @@ def test_multi_district_release_does_not_assign_every_script_the_first_race():
     assert result[0]["race"] == "Unresolved"
 
 
-def test_new_ad_after_debate_can_include_clearly_separated_publisher_copy():
+@pytest.mark.parametrize("speaker", ["Abdul El-Sayed", "Voiceover", "Josh, a UAW autoworker"])
+def test_new_ad_after_debate_can_include_clearly_separated_publisher_copy(speaker):
     text = (
-        "Abdul El-Sayed: We need to work together to lower costs for families across Michigan "
+        f"{speaker}: We need to work together to lower costs for families across Michigan "
         "and improve health care."
     )
     source = next(s for s in SOURCES if s.id == "el-sayed")
@@ -156,6 +157,22 @@ def test_new_ad_after_debate_can_include_clearly_separated_publisher_copy():
     )
     assert ads[0]["text"] == text
     assert "publisher_ad_copy_completeness_unverified" in ads[0]["quality_flags"]
+
+
+def test_watch_link_followed_by_press_commentary_is_not_ad_copy():
+    source = next(s for s in SOURCES if s.id == "el-sayed")
+    assert (
+        parse_post(
+            post(
+                "NEW AD: Costs",
+                "<p>WATCH HERE</p><p>Our spokesperson says this is an important campaign "
+                "announcement about the cost of living for families in Michigan.</p><p>###</p>",
+            ),
+            source,
+            "2026-10-26",
+        )
+        == []
+    )
 
 
 def test_next_video_title_and_spokesperson_are_not_ad_text():
