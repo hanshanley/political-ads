@@ -1,0 +1,38 @@
+name: Validate evidence and dashboard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -e '.[dev]'
+      - run: |
+          ruff check political_ads tests
+          ruff format --check political_ads tests
+          pytest -q
+          political-ads build
+          political-ads validate
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+        working-directory: web
+      - run: npm run lint && npm test && npm run build
+        working-directory: web
+      - run: npx playwright install --with-deps chromium && npm run test:e2e
+        working-directory: web

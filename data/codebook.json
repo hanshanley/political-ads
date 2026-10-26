@@ -1,0 +1,24 @@
+{
+  "version": "lexical-1",
+  "description": "Exact phrase families, not semantic topic, sentiment, truth, or intent classifications. A match can be quoted, denied, or used in self-promotion.",
+  "issues": {
+    "Cost of living": ["cost", "costs", "prices", "afford", "affordable", "affordability", "inflation", "groceries", "grocery", "electric bills", "gas prices", "utility", "utilities"],
+    "Taxes & spending": ["tax", "taxes", "taxpayer", "taxpayers", "tax cuts", "tax breaks", "spending", "budget", "budgets", "deficit", "debt", "tariffs"],
+    "Healthcare": ["health care", "healthcare", "medicaid", "medicare", "insurance", "insulin", "hospitals", "prescription"],
+    "Immigration": ["immigration", "immigrants", "border", "borders", "deport", "deportation", "asylum"],
+    "Crime & policing": ["crime", "criminals", "police", "law enforcement", "fentanyl", "drug dealers", "traffickers", "bail", "murderers"],
+    "Abortion & reproductive rights": ["abortion", "reproductive", "pro-choice", "pro-life", "planned parenthood", "ivf"],
+    "Democracy & accountability": ["democracy", "corruption", "corrupt", "voting rights", "election denier", "stock trading", "watchdogs", "constitution"],
+    "Energy & environment": ["energy", "oil", "gas", "climate", "pollution", "drilling", "data centers", "data center", "fossil fuels"],
+    "Jobs & the economy": ["jobs", "economy", "economic", "workers", "wages", "manufacturing", "small business", "retire", "retirement"],
+    "War & foreign policy": ["iran", "war", "israel", "ukraine", "china", "military", "veterans", "foreign"]
+  },
+  "portrayal_language": {
+    "Extreme / radical": ["radical", "radicalization", "extreme", "extremist", "far-left", "far left", "far-right", "far right"],
+    "Trust & integrity": ["corrupt", "corruption", "lies", "lied", "lying", "sold out", "sold us out", "cash in", "cashing in", "slush fund", "spineless"],
+    "Out of touch": ["out of touch", "out-of-touch", "dc insiders", "d.c. insiders", "washington insiders"],
+    "Competence & record": ["failed", "failure", "ineffective", "incompetent", "chaos", "reckless", "broken"],
+    "Special interests": ["billionaire", "billionaires", "lobbyist", "lobbyists", "big corporations", "big oil", "greedy"],
+    "Safety & threat": ["dangerous", "pro-crime", "anti-police", "soft-on-crime", "crime wave", "threat", "threats"]
+  }
+}

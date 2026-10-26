@@ -7,9 +7,42 @@ from datetime import date
 from urllib.parse import urlencode
 
 from bs4 import BeautifulSoup
+from langdetect import DetectorFactory, LangDetectException
+from langdetect.detector_factory import PROFILES_DIRECTORY
 
 from political_ads.http import Client
 from political_ads.schema import Ad, Segment, digest
+
+LANGUAGE_FACTORY = DetectorFactory()
+LANGUAGE_FACTORY.load_profile(PROFILES_DIRECTORY)
+LANGUAGE_FACTORY.seed = 0
+
+
+def language_of(text: str) -> str:
+    try:
+        detector = LANGUAGE_FACTORY.create()
+        detector.append(text)
+        prediction = detector.get_probabilities()[0]
+        return prediction.lang if prediction.prob >= 0.90 else "unknown"
+    except LangDetectException:
+        return "unknown"
+
+
+def cooper_transcripts(content: str) -> list[str]:
+    soup = BeautifulSoup(content, "html.parser")
+    lines = []
+    started = False
+    for paragraph in soup.find_all("p"):
+        text = paragraph.get_text(" ", strip=True)
+        if re.search(r"read a transcript", text, re.I):
+            started = True
+            continue
+        if not started or not text:
+            continue
+        if not paragraph.find("em") or text == "###":
+            break
+        lines.append(plain_html(str(paragraph)))
+    return ["\n".join(lines)] if lines else []
 
 
 @dataclass(frozen=True)
@@ -20,12 +53,15 @@ class Source:
     alignment: str
     sponsor_type: str
     chamber: str
+    rest_base: str = "posts"
+    search: str = "transcript"
+    fixed_race: str = ""
 
 
 SOURCES = [
     Source("nrsc", "https://www.nrsc.org", "NRSC", "R", "party", "Senate"),
     Source("dccc", "https://dccc.org", "DCCC", "D", "party", "House"),
-    Source("dscc", "https://www.dscc.org", "DSCC", "D", "party", "Senate"),
+    Source("dscc", "https://www.dscc.org", "DSCC", "D", "party", "Senate", "article", "ad"),
     Source("nrcc", "https://www.nrcc.org", "NRCC", "R", "party", "House"),
     Source(
         "slf",
@@ -59,6 +95,15 @@ SOURCES = [
         "outside_group",
         "Senate",
     ),
+    Source(
+        "cooper",
+        "https://roycooper.com",
+        "Cooper for North Carolina",
+        "D",
+        "candidate",
+        "Senate",
+        fixed_race="NC-Senate",
+    ),
 ]
 
 
@@ -76,8 +121,24 @@ def plain_html(value: str) -> str:
 
 
 def transcript_blocks(content: str) -> list[str]:
+    soup = BeautifulSoup(content, "html.parser")
+    # Linked, standalone video titles belong to the next creative, not the transcript.
+    for node in soup.find_all(["p", "div"]):
+        anchor = node.find("a")
+        if anchor and not node.find(["p", "div"]):
+            title = re.sub(r'[\s"“”]+', "", node.get_text())
+            linked = re.sub(r'[\s"“”]+', "", anchor.get_text())
+            if title and title == linked and media_links(str(node)):
+                node.decompose()
+    content = str(soup)
     text = plain_html(content)
-    markers = list(re.finditer(r"(?im)(?:^|[^\w])transcript\s*(?::|\n|$)", text))
+    markers = list(
+        re.finditer(
+            r"(?im)^([^\n]{0,50}\b)?transcript"
+            r"(?:\s+of\s+[^\n:]{0,120}|\s+below\.?)?\s*(?::|\n|$)",
+            text,
+        )
+    )
     blocks = []
     for i, marker in enumerate(markers):
         end = markers[i + 1].start() if i + 1 < len(markers) else len(text)
@@ -85,7 +146,9 @@ def transcript_blocks(content: str) -> list[str]:
         chunk = re.split(r"(?m)^\s*(?:###|Paid for by the .* Committee\.?$)", chunk)[0]
         chunk = re.split(
             r"(?im)^\s*(?:Read (?:more|the)|Watch (?:the|this)|Share (?:this|on)|"
-            r"Background:|About the |For (?:more information|Immediate Release))",
+            r"Background:|See also:|About the |Roy Cooper has launched |"
+            r"DCCC (?:National |Spokesperson|Chair|Senior )|"
+            r"For (?:more information|Immediate Release))",
             chunk,
         )[0]
         lines = [line.strip() for line in chunk.splitlines() if line.strip()]
@@ -122,7 +185,7 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
     if not is_ad_release(title):
         return []
     content = post["content"]["rendered"]
-    blocks = transcript_blocks(content)
+    blocks = cooper_transcripts(content) if source.id == "cooper" else transcript_blocks(content)
     race_match = re.search(r"\b([A-Z]{2})[-–](\d{1,2})\b", title)
     phase = "primary" if re.search(r"\bprimary\b", title, re.I) else "unknown"
     full_text = plain_html(content)
@@ -146,9 +209,15 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
             source_hash=digest(content),
             phase=phase,
             chamber=source.chamber,
-            race=f"{race_match[1]}-{int(race_match[2]):02}" if race_match else "Unresolved",
-            state=race_match[1] if race_match else "",
+            race=(
+                f"{race_match[1]}-{int(race_match[2]):02}"
+                if race_match
+                else source.fixed_race or "Unresolved"
+            ),
+            state=race_match[1] if race_match else source.fixed_race[:2],
             media_urls=media_links(content),
+            language=language_of(text),
+            language_basis="langdetect seeded model; >=0.90 probability, otherwise unknown",
             attribution_basis=(
                 f"Official {source.sponsor} release at {post['link']}; alignment is the "
                 "publisher's electoral alignment, not inferred from hostile vocabulary. "
@@ -183,7 +252,7 @@ def collect_wordpress(
         while True:
             query = urlencode(
                 {
-                    "search": "transcript",
+                    "search": source.search,
                     "after": "2025-12-31T23:59:59",
                     "before": f"{until}T23:59:59",
                     "per_page": 100,
@@ -193,7 +262,7 @@ def collect_wordpress(
                 }
             )
             posts, headers = client.json(
-                f"{source.url}/wp-json/wp/v2/posts?{query}",
+                f"{source.url}/wp-json/wp/v2/{source.rest_base}?{query}",
                 refresh=True,
             )
             if not isinstance(posts, list):
@@ -201,6 +270,12 @@ def collect_wordpress(
             if any(p.get("id") in seen for p in posts):
                 raise ValueError("Endpoint repeated IDs across pages; pagination is not supported")
             for post in posts:
+                if source.rest_base == "article" and "content" not in post:
+                    layouts = post.get("acf", {}).get("page_layout", [])
+                    content = "\n".join(
+                        layout.get("component_wysiwyg", {}).get("content", "") for layout in layouts
+                    )
+                    post["content"] = {"rendered": content}
                 if not all(field in post for field in ("id", "date", "content", "title", "link")):
                     raise ValueError("Endpoint does not expose the expected WordPress schema")
                 if not "2026-01-01" <= post["date"][:10] <= until:

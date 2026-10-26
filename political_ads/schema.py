@@ -63,6 +63,8 @@ class Ad:
     language_basis: str = "source_english"
     media_urls: list[str] = field(default_factory=list)
     attribution_basis: str = ""
+    quality_flags: list[str] = field(default_factory=list)
+    release_title: str = ""
     message_id: str = ""
     schema_version: str = VERSION
 

@@ -1,0 +1,72 @@
+{
+  "version": "context-1",
+  "review_type": "Editorial seed examples checked against complete publisher transcripts; not independent human gold or a representative accuracy evaluation.",
+  "examples": [
+    {
+      "ad_id": "dscc-12657-0",
+      "source_hash": "4c7c95765bbcabc4c5474a127688d01fd5e7f9d145f5c4bec53e7a843779a2bc",
+      "target": "Mike Rogers",
+      "target_party": "R",
+      "frame": "Out of touch",
+      "quote": "[NARRATOR] Price Hike Mike is out of touch.",
+      "voice": "advertiser narration",
+      "purpose": "attack",
+      "context": "The ad alternates news clips, a Rogers quotation, and advertiser narration. This excerpt is the narrator's conclusion, not Rogers's own description."
+    },
+    {
+      "ad_id": "dccc-668458-0",
+      "source_hash": "515a2279df295f4ca2740d07d958daf7cea3853d18e72b4101b37408274d8717",
+      "target": "Scott Perry",
+      "target_party": "R",
+      "frame": "Trust & integrity",
+      "quote": "And Perry approved firing the watchdogs whose job it is to report waste because they might expose corruption.",
+      "voice": "candidate narration",
+      "purpose": "attack",
+      "context": "Janelle Stelson connects spending and the dismissal of watchdogs to corruption; this records the ad's allegation, not a finding that it is true."
+    },
+    {
+      "ad_id": "dccc-667931-0",
+      "source_hash": "9bad0deaaedbb6e3916e8541c7ae07d8cf38d3882fafa16f6963fd4a16ff2ac5",
+      "target": "Juan Ciscomani",
+      "target_party": "R",
+      "frame": "Trust & integrity",
+      "quote": "More lies from spineless Juan Ciscomani.",
+      "voice": "advertiser narration",
+      "purpose": "contrast",
+      "context": "The opening attacks Ciscomani; the rest promotes JoAnna Mendoza's biography and healthcare position."
+    },
+    {
+      "ad_id": "nrsc-14743-0",
+      "source_hash": "56bec2246002461532fb915aff954a1190362c4467010e79fda109ee02e02b65",
+      "target": "Mary Peltola",
+      "target_party": "D",
+      "frame": "Extreme / radical",
+      "quote": "“Mary Peltola.\n“Still radical.\n“Still ineffective.\n“Still Alaska Last.”",
+      "voice": "advertiser narration",
+      "purpose": "attack",
+      "context": "These are the voice-over's closing labels. Earlier the ad includes a quotation attributed to Peltola, kept separately in the complete transcript."
+    },
+    {
+      "ad_id": "nrsc-15623-0",
+      "source_hash": "f8985a9df26c67049380200c7257a4d9579a8eac45cf57d3d4165eac4ee39d90",
+      "target": "Jon Ossoff",
+      "target_party": "D",
+      "frame": "Extreme / radical",
+      "quote": "“Georgia can’t afford Jon Ossoff’s radical policies.”",
+      "voice": "advertiser narration",
+      "purpose": "contrast",
+      "context": "The ad contrasts claimed Republican tax savings with an attack on Ossoff's opposition; no truth determination is made."
+    },
+    {
+      "ad_id": "nrsc-15995-0",
+      "source_hash": "b42523a3c03fec90bd4cb3bcf59f166ab4dfa7aacd1c257645dc2874b2235f1d",
+      "target": "Roy Cooper",
+      "target_party": "D",
+      "frame": "Safety & threat",
+      "quote": "“America can’t afford another Democrat crime wave. Reject Roy Cooper, and stop the anti-police agenda.”",
+      "voice": "advertiser narration",
+      "purpose": "contrast",
+      "context": "A pro-Republican opening is followed by allegations about Cooper and Democrats. This example is one state variant of a repeated message template."
+    }
+  ]
+}

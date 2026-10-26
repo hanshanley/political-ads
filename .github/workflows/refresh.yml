@@ -1,0 +1,74 @@
+name: Refresh 2026 ad evidence
+
+on:
+  schedule:
+    - cron: "13 8 * * *"
+  workflow_dispatch:
+    inputs:
+      until:
+        description: "Release-date cutoff; use 2026-11-03 for final reconciliation"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-main
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Stop routine collection after Election Day
+        id: scope
+        env:
+          REQUESTED_UNTIL: ${{ inputs.until }}
+        run: |
+          today=$(date -u +%F)
+          if [[ "$GITHUB_EVENT_NAME" == "schedule" && "$today" > "2026-11-03" ]]; then
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+            echo "until=${REQUESTED_UNTIL:-$(printf '%s\n' "$today" "2026-11-03" | sort | head -1)}" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v7
+        if: steps.scope.outputs.enabled == 'true'
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        if: steps.scope.outputs.enabled == 'true'
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v6
+        if: steps.scope.outputs.enabled == 'true'
+        with:
+          node-version: "22"
+      - name: Collect free source text, retaining last-good partitions
+        if: steps.scope.outputs.enabled == 'true'
+        env:
+          UNTIL: ${{ steps.scope.outputs.until }}
+        run: |
+          python -m pip install -e '.[dev,captions]'
+          political-ads collect --until "$UNTIL"
+          political-ads registry
+          political-ads media-collect --source slf --source hmp --source nrcc --source clf --limit 12 --until "$UNTIL"
+          political-ads parquet
+          political-ads build
+          political-ads validate
+          pytest -q
+      - name: Check dashboard against the new snapshot
+        if: steps.scope.outputs.enabled == 'true'
+        run: npm ci --prefix web && npm run test --prefix web && npm run build --prefix web
+      - name: Persist validated publication inputs on main
+        if: steps.scope.outputs.enabled == 'true'
+        run: |
+          git config user.name "Hans Hanley"
+          git config user.email "$(git log -1 --format=%ae)"
+          git add data/site outputs/validation.json
+          if git diff --cached --quiet; then exit 0; fi
+          git diff --cached --check
+          git commit -m "Refresh 2026 ad-language evidence"
+          git push origin HEAD:main

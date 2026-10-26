@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 import sys
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date
 from pathlib import Path
@@ -12,7 +13,7 @@ import duckdb
 
 from political_ads.http import Client
 from political_ads.registry import enrich, fec_table
-from political_ads.schema import END, START, Ad, eligible
+from political_ads.schema import END, START, Ad, in_window
 from political_ads.sources import SOURCES, collect_wordpress
 
 
@@ -25,6 +26,22 @@ def write_json(path: Path, value) -> None:
     temporary = path.with_suffix(path.suffix + ".tmp")
     temporary.write_text(json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2) + "\n")
     os.replace(temporary, path)
+
+
+def load_corpus(root: Path) -> dict:
+    corpus = read_json(root / "data/site/corpus.json", None)
+    if corpus is None:
+        raise ValueError("Collect ad text first")
+    media = read_json(root / "data/site/media.json", {"ads": [], "sources": []})
+    return corpus | {
+        "ads": corpus["ads"]
+        + [
+            ad
+            for ad in media["ads"]
+            if in_window(ad["published"], ad["published"], corpus["until"])
+        ],
+        "sources": corpus["sources"] + media["sources"],
+    }
 
 
 def collect(root: Path, until: str, source_ids: list[str], offline: bool = False) -> dict:
@@ -50,6 +67,7 @@ def collect(root: Path, until: str, source_ids: list[str], offline: bool = False
                     if prior and prior["source_hash"] == ad["source_hash"]:
                         ad["observed"] = prior["observed"]
                 old_ads[source.id] = ads
+                status["languages"] = dict(Counter(ad["language"] for ad in ads))
                 status["last_success"] = until
             else:
                 status["retained_ads"] = len(old_ads[source.id])
@@ -57,7 +75,12 @@ def collect(root: Path, until: str, source_ids: list[str], offline: bool = False
             statuses[source.id] = status
             print(json.dumps(status), flush=True)
     ads = sorted(
-        (a for partition in old_ads.values() for a in partition if eligible(a, until)),
+        (
+            a
+            for partition in old_ads.values()
+            for a in partition
+            if in_window(a["published"], a["published"], until)
+        ),
         key=lambda a: (a["published"], a["id"]),
     )
     for ad in ads:
@@ -84,15 +107,36 @@ def registry(root: Path, offline: bool = False) -> dict:
     committees = fec_table(client, "cm")
     result = {"candidates": candidates, "committees": committees}
     write_json(root / "data/processed/registry.json", result)
+    write_json(
+        root / "data/site/candidates.json",
+        {
+            "source": "FEC 2026 candidate master",
+            "url": "https://www.fec.gov/data/browse-data/",
+            "candidates": [
+                {
+                    key: row[key]
+                    for key in (
+                        "candidate_id",
+                        "name",
+                        "party",
+                        "election_year",
+                        "state",
+                        "office",
+                        "district",
+                        "principal_committee",
+                    )
+                }
+                for row in candidates
+            ],
+        },
+    )
     print(f"Registry: {len(candidates)} federal candidates, {len(committees)} committees")
     return result
 
 
 def parquet(root: Path) -> None:
-    corpus = read_json(root / "data/site/corpus.json", None)
-    if not corpus:
-        raise ValueError("Collect ad text first")
-    registry_data = read_json(root / "data/processed/registry.json", {"candidates": []})
+    corpus = load_corpus(root)
+    registry_data = read_json(root / "data/site/candidates.json", {"candidates": []})
     records = [enrich(ad, registry_data["candidates"]) for ad in corpus["ads"]]
     output = root / "data/processed"
     output.mkdir(parents=True, exist_ok=True)
@@ -107,19 +151,36 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Reproducible political-ad evidence pipeline")
     parser.add_argument("--root", type=Path, default=Path.cwd())
     subcommands = parser.add_subparsers(dest="command", required=True)
-    for command in ("collect", "registry", "parquet", "build", "validate", "update"):
+    for command in (
+        "collect",
+        "registry",
+        "parquet",
+        "build",
+        "validate",
+        "update",
+        "media-collect",
+    ):
         command_parser = subcommands.add_parser(command)
         command_parser.add_argument("--offline", action="store_true")
-        if command in {"collect", "update"}:
+        if command in {"collect", "update", "media-collect"}:
             command_parser.add_argument("--until", default=min(date.today().isoformat(), END))
             command_parser.add_argument(
                 "--source", action="append", choices=[s.id for s in SOURCES]
             )
+        if command == "media-collect":
+            command_parser.add_argument("--limit", type=int, default=24)
+            command_parser.add_argument("--retry-failed", action="store_true")
     args = parser.parse_args()
     root = args.root.resolve()
     try:
         if args.command in {"collect", "update"}:
             collect(root, args.until, args.source or [], args.offline)
+        if args.command == "media-collect":
+            from political_ads.media import collect_media
+
+            collect_media(
+                root, args.until, args.source or ["hmp", "slf"], args.limit, args.retry_failed
+            )
         if args.command in {"registry", "update"}:
             registry(root, args.offline)
         if args.command in {"parquet", "update"}:
