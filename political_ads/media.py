@@ -228,6 +228,11 @@ def collect_media(
                         continue
                     identity = f"{source_id}-{post['id']}-{video_id}"
                     existing = ads.get(identity)
+                    if (
+                        existing
+                        and not (root / "data/media" / video_id / "video.info.json").exists()
+                    ):
+                        continue
                     failed = attempts.get(identity, {})
                     retryable = "429" in failed.get("error", "")
                     if not existing and failed and not retry_failed and not retryable:
