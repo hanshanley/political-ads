@@ -9047,6 +9047,26 @@
       "state": "error",
       "video": "https://www.youtube.com/embed/YRtxcITeSJs?feature=oembed"
     },
+    "nrcc-media-8927d9218b194554-1CrQhm8TPkg": {
+      "reason": "Opponent speech clip in an ad-rebuttal post, not a publisher ad release",
+      "state": "excluded",
+      "video": "https://youtu.be/1CrQhm8TPkg"
+    },
+    "nrcc-media-8927d9218b194554-dxrQRFvI3pQ": {
+      "reason": "Opponent speech clip in an ad-rebuttal post, not a publisher ad release",
+      "state": "excluded",
+      "video": "https://youtu.be/dxrQRFvI3pQ"
+    },
+    "nrcc-media-8927d9218b194554-kB0x3KyVVuI": {
+      "reason": "Opponent speech clip in an ad-rebuttal post, not a publisher ad release",
+      "state": "excluded",
+      "video": "https://youtu.be/kB0x3KyVVuI"
+    },
+    "nrcc-media-a3308137bc712b3c-eSh7tqA_OIg": {
+      "error": "ValueError: WARNING: The extractor specified to use impersonation for this download, but no impersonate target is available. If you encounter errors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the required dependencies\nERROR: Unable to download video subtitles for 'en': HTTP Error 429: Too Many Requests\n",
+      "state": "error",
+      "video": "https://www.youtube.com/embed/eSh7tqA_OIg?feature=oembed"
+    },
     "slf-media-1075-YqqEGXJpREY": {
       "error": "ValueError: ] YqqEGXJpREY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
       "state": "error",
@@ -9279,14 +9299,15 @@
     },
     {
       "ads_with_text": 0,
-      "attempted_this_run": 3,
+      "attempted_this_run": 4,
       "checked": "2026-10-26",
       "discovery_complete": false,
+      "error": "ValueError: Caption service rate-limited (429); retaining prior text",
       "last_success": "2026-10-26",
-      "posts_scanned": 100,
+      "posts_scanned": 1000,
       "scope": "Public English captions linked in official ad releases; bounded discovery",
       "source": "nrcc-media",
-      "state": "partial",
+      "state": "error",
       "url": "https://www.nrcc.org"
     },
     {

@@ -59,13 +59,17 @@ def collect(root: Path, until: str, source_ids: list[str], offline: bool = False
             selected,
         )
         for source, ads, status in results:
-            if status["state"] == "ok":
+            if status["state"] in {"ok", "partial"}:
                 # Keep first observation stable when source contents have not changed.
                 previous = {a["id"]: a for a in old_ads[source.id]}
                 for ad in ads:
                     prior = previous.get(ad["id"])
                     if prior and prior["source_hash"] == ad["source_hash"]:
                         ad["observed"] = prior["observed"]
+                if status["state"] == "partial":
+                    previous.update({ad["id"]: ad for ad in ads})
+                    ads = list(previous.values())
+                    status["retained_ads"] = len(ads)
                 old_ads[source.id] = ads
                 status["languages"] = dict(Counter(ad["language"] for ad in ads))
                 status["last_success"] = until

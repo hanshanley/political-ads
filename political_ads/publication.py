@@ -21,7 +21,7 @@ from political_ads.registry import enrich
 from political_ads.schema import Ad, digest, eligible
 
 METHODOLOGY = [
-    "This is an observed corpus of official ad-release transcripts, not a census of all ads aired.",
+    "This is an observed corpus of official ad-release text, not a census of all ads aired.",
     "Dates refer to publisher release dates unless a record explicitly provides delivery dates.",
     "Party alignment describes the source publisher; "
     "joint creative payers require separate review.",
@@ -38,6 +38,8 @@ METHODOLOGY = [
     "Ads make claims. This project does not establish their truth or measure persuasion.",
     "Automatic video captions may misrecognize words or names. "
     "On-screen-only claims are not yet included in caption-only records.",
+    "Publisher-quoted ad copy is separately flagged: it may omit parts of the creative. "
+    "Press commentary and biographies are excluded.",
 ]
 
 
@@ -199,7 +201,8 @@ def prepare(root: Path) -> dict:
         "validation": {
             "reviewed_examples": len(examples),
             "semantic_classifier": "not published; no representative held-out evaluation",
-            "extraction": "publisher transcripts and public English captions; "
+            "extraction": "publisher transcripts, flagged publisher-quoted ad copy, "
+            "and public English captions; "
             "language detector excludes non-English/uncertain",
             "independent_human_gold": False,
         },

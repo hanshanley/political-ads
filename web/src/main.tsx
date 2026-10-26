@@ -102,14 +102,16 @@ function AdCard({ ad, selected, examples }: {
     <p className="publisher">{ad.sponsor} · {ad.sponsor_type.replace("_", " ")} publisher</p>
     <div className={`transcript ${open ? "open" : ""}`}>{ad.text}</div>
     <button className="text-button" aria-expanded={open} onClick={() => setExpanded(!open)}>
-      {open ? "Show less" : "Read full transcript"}</button>
+      {open ? "Show less" : "Read all available text"}</button>
     {annotations.map(example => <aside className="context-note" key={example.quote}>
       <strong>{example.frame} · {example.target}</strong><p>{example.context}</p>
     </aside>)}
     {open && <div className="provenance">
       <p><strong>Attribution:</strong> {ad.attribution_basis}</p>
       <p><strong>Text:</strong> {ad.segments[0]?.kind === "publisher_transcript" ?
-        "Publisher transcript." : "Public video captions, with cue timestamps in the download."}
+        "Publisher transcript." : ad.segments[0]?.kind === "publisher_ad_copy" ?
+          "Publisher-quoted ad copy; completeness is unverified." :
+          "Public video captions, with cue timestamps in the download."}
         {" "}Quotations and speaker labels are retained;
         this is not independent verification of what a quoted person actually said.</p>
       {ad.quality_flags?.length > 0 && <p><strong>Extraction notes:</strong> {

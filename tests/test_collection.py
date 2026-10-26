@@ -115,3 +115,17 @@ def test_first_observation_survives_unchanged_refresh(tmp_path, monkeypatch):
     cli.collect(tmp_path, "2026-10-26", ["dccc"])
     stored = json.loads((tmp_path / "data/site/corpus.json").read_text())
     assert stored["ads"][0]["observed"] == "2026-10-01"
+
+
+def test_partial_discovery_merges_new_text_without_erasing_saved_ads(tmp_path, monkeypatch):
+    old = fixture_ad()
+    new = old | {"id": "dccc-new"}
+    cli.write_json(tmp_path / "data/site/corpus.json", {"ads": [old], "sources": []})
+    monkeypatch.setattr(
+        cli,
+        "collect_wordpress",
+        lambda *args: ([new], {"source": "dccc", "state": "partial"}),
+    )
+    result = cli.collect(tmp_path, "2026-10-26", ["dccc"])
+    assert {ad["id"] for ad in result["ads"]} == {old["id"], new["id"]}
+    assert result["sources"][0]["state"] == "partial"

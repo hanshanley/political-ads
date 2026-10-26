@@ -5,14 +5,13 @@ import re
 import subprocess
 import sys
 import time
-import xml.etree.ElementTree as ET
 from dataclasses import asdict
 from datetime import date
-from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import urlencode
 
 from political_ads.cli import read_json, write_json
+from political_ads.discovery import public_posts, rss_posts
 from political_ads.http import Client
 from political_ads.schema import END, START, Ad, Segment, digest
 from political_ads.sources import SOURCES, is_ad_release, language_of, media_links, plain_html
@@ -40,43 +39,15 @@ def caption_segments(payload: dict, kind: str) -> list[dict]:
 
 
 def discover_rss(client: Client, source, until: str) -> tuple[list[dict], bool]:
-    posts = []
-    seen = set()
-    for page in range(1, 11):
-        query = urlencode({"s": "ad", "feed": "rss2", "year": "2026", "paged": page})
-        body, _ = client.get(source.url + "/?" + query, refresh=True)
-        try:
-            items = ET.fromstring(body).findall("./channel/item")
-        except ET.ParseError as error:
-            raise ValueError("The public feed did not return valid RSS") from error
-        if not items:
-            break
-        for item in items:
-            link = item.findtext("link")
-            if not link or link in seen:
-                return posts, False
-            seen.add(link)
-            published = parsedate_to_datetime(item.findtext("pubDate")).date().isoformat()
-            if START <= published <= until:
-                posts.append(
-                    {
-                        "id": digest(link)[:16],
-                        "link": link,
-                        "date": published,
-                        "title": {"rendered": item.findtext("title", "")},
-                        "content": {
-                            "rendered": item.findtext(
-                                "{http://purl.org/rss/1.0/modules/content/}encoded",
-                                item.findtext("description", ""),
-                            )
-                        },
-                    }
-                )
-    return sorted(posts, key=lambda post: post["date"], reverse=True), False
+    posts, complete = rss_posts(client, source, until, "ad")
+    return sorted(posts, key=lambda post: post["date"], reverse=True), complete
 
 
 def discover(client: Client, source, until: str) -> tuple[list[dict], bool]:
-    if source.id in {"nrcc", "clf"}:
+    if source.discovery not in {"wordpress", "rss"}:
+        posts, complete = public_posts(client, source, until)
+        return sorted(posts, key=lambda post: post["date"], reverse=True), complete
+    if source.discovery == "rss":
         return discover_rss(client, source, until)
     posts = []
     ids = set()
@@ -201,7 +172,8 @@ def collect_media(
     statuses = {row["source"]: row for row in previous["sources"]}
     attempts = previous.get("attempts", {})
     client = Client(root / "data/raw/http")
-    for source in [source for source in SOURCES if source.id in source_ids]:
+    by_id = {source.id: source for source in SOURCES}
+    for source in [by_id[key] for key in dict.fromkeys(source_ids) if key in by_id]:
         source_id = source.id + "-media"
         status = {
             "source": source_id,
@@ -228,10 +200,7 @@ def collect_media(
                         continue
                     identity = f"{source_id}-{post['id']}-{video_id}"
                     existing = ads.get(identity)
-                    if (
-                        existing
-                        and not (root / "data/media" / video_id / "video.info.json").exists()
-                    ):
+                    if existing:
                         continue
                     failed = attempts.get(identity, {})
                     retryable = "429" in failed.get("error", "")
@@ -268,8 +237,8 @@ def collect_media(
                             chamber=source.chamber,
                             race=f"{race_match[1]}-{int(race_match[2]):02}"
                             if race_match
-                            else "Unresolved",
-                            state=race_match[1] if race_match else "",
+                            else source.fixed_race or "Unresolved",
+                            state=race_match[1] if race_match else source.fixed_race[:2],
                             media_urls=[url],
                             language=language_of(text),
                             language_basis="English caption track plus seeded language detection",

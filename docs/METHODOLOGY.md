@@ -34,12 +34,23 @@ Written transcripts begin at explicit markers in identifiable ad releases. Sourc
 boundaries remove press reaction, background, and next-creative titles. Speeches, interview
 highlights, and surrounding commentary are not counted as ad copy.
 
+Candidate-specific adapters also recover explicitly separated ad scripts and publisher-quoted
+ad copy. These records use `publisher_ad_copy` segments and
+`publisher_ad_copy_completeness_unverified` flags rather than claiming a complete transcript.
+Quoted-copy boundaries exclude spokesperson reactions, biography sections, and background.
+
 Public uploader captions are preferred to automatic captions. Each cue retains start/end times
 and extraction method. Automatic captions are **not independently corrected**: misspelled names,
 missing words, music markers, and ambiguous speakers may remain. Original downloaded text is
 preserved rather than quietly repaired. A duration/end-coverage check rejects obviously incomplete
 tracks but does not certify accuracy. Caption-only records do not yet include on-screen-only
 claims; quality flags disclose this without broken-media placeholders.
+
+Public HTML archives backfill HMP releases beyond the recent-post API. NRCC written transcripts
+come from its public full-text RSS, not its unauthorized REST endpoint. Partial discovery merges
+new evidence without deleting older records. Saved captions retain their original evidence hashes
+when rediscovered in an archive; acquisition processes requested sources in priority order and
+stops across sources on a caption-service rate limit.
 
 The publication does not claim completed local ASR/OCR coverage. No paid recognition or hosted
 classifier is used. Raw media, caches, and optional model files remain local-only.

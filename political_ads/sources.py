@@ -56,13 +56,14 @@ class Source:
     rest_base: str = "posts"
     search: str = "transcript"
     fixed_race: str = ""
+    discovery: str = "wordpress"
 
 
 SOURCES = [
     Source("nrsc", "https://www.nrsc.org", "NRSC", "R", "party", "Senate"),
     Source("dccc", "https://dccc.org", "DCCC", "D", "party", "House"),
     Source("dscc", "https://www.dscc.org", "DSCC", "D", "party", "Senate", "article", "ad"),
-    Source("nrcc", "https://www.nrcc.org", "NRCC", "R", "party", "House"),
+    Source("nrcc", "https://www.nrcc.org", "NRCC", "R", "party", "House", discovery="rss"),
     Source(
         "slf",
         "https://senateleadershipfund.org",
@@ -78,6 +79,7 @@ SOURCES = [
         "R",
         "outside_group",
         "House",
+        discovery="archive",
     ),
     Source(
         "hmp",
@@ -86,6 +88,7 @@ SOURCES = [
         "D",
         "outside_group",
         "House",
+        discovery="archive",
     ),
     Source(
         "smp",
@@ -103,6 +106,96 @@ SOURCES = [
         "candidate",
         "Senate",
         fixed_race="NC-Senate",
+    ),
+    Source(
+        "hinson",
+        "https://ashleyhinson.com",
+        "Ashley Hinson for Senate",
+        "R",
+        "candidate",
+        "Senate",
+        search="ad",
+        fixed_race="IA-Senate",
+    ),
+    Source(
+        "sullivan",
+        "https://dansullivanforalaska.com",
+        "Dan Sullivan for Alaska",
+        "R",
+        "candidate",
+        "Senate",
+        search="ad",
+        fixed_race="AK-Senate",
+    ),
+    Source(
+        "hickenlooper",
+        "https://hickenlooper.com",
+        "Hickenlooper for Colorado",
+        "D",
+        "candidate",
+        "Senate",
+        search="ad",
+        fixed_race="CO-Senate",
+    ),
+    Source(
+        "ossoff",
+        "https://electjon.com",
+        "Jon Ossoff for Senate",
+        "D",
+        "candidate",
+        "Senate",
+        search="ad",
+        fixed_race="GA-Senate",
+    ),
+    Source(
+        "trone-garriott",
+        "https://sarahforiowa.com",
+        "Sarah Trone Garriott for Congress",
+        "D",
+        "candidate",
+        "House",
+        search="ad",
+        fixed_race="IA-03",
+    ),
+    Source(
+        "mccann",
+        "https://seanmccannforcongress.com",
+        "Sean McCann for Congress",
+        "D",
+        "candidate",
+        "House",
+        search="ad",
+        fixed_race="MI-04",
+    ),
+    Source(
+        "nunn",
+        "https://zachnunn.com",
+        "Zach Nunn for Congress",
+        "R",
+        "candidate",
+        "House",
+        search="ad",
+        fixed_race="IA-03",
+    ),
+    Source(
+        "rogers",
+        "https://rogersforsenate.com",
+        "Rogers for Senate",
+        "R",
+        "candidate",
+        "Senate",
+        fixed_race="MI-Senate",
+        discovery="squarespace",
+    ),
+    Source(
+        "turek",
+        "https://turek4iowa.com",
+        "Josh Turek for Iowa",
+        "D",
+        "candidate",
+        "Senate",
+        fixed_race="IA-Senate",
+        discovery="news_index",
     ),
 ]
 
@@ -134,8 +227,8 @@ def transcript_blocks(content: str) -> list[str]:
     text = plain_html(content)
     markers = list(
         re.finditer(
-            r"(?im)^([^\n]{0,50}\b)?transcript"
-            r"(?:\s+of\s+[^\n:]{0,120}|\s+below\.?)?\s*(?::|\n|$)",
+            r"(?im)^([^\n]{0,50}\b)?(?:transcript|(?:radio|tv|ad) script)"
+            r"(?:\s+(?:of|for)\s+[^\n:]{0,120}|\s+below\.?)?\s*(?::|\n|$)",
             text,
         )
     )
@@ -146,7 +239,9 @@ def transcript_blocks(content: str) -> list[str]:
         chunk = re.split(r"(?m)^\s*(?:###|Paid for by the .* Committee\.?$)", chunk)[0]
         chunk = re.split(
             r"(?im)^\s*(?:Read (?:more|the)|Watch (?:the|this)|Share (?:this|on)|"
-            r"Background:|See also:|About the |Roy Cooper has launched |"
+            r"(?:On )?Background:|See also:|About the |About [^\n:]{1,80}:|"
+            r"The post .+ appeared first on |Roy Cooper has launched |"
+            r"Learn more about Mike Rogers and his plans? to |"
             r"DCCC (?:National |Spokesperson|Chair|Senior )|"
             r"For (?:more information|Immediate Release))",
             chunk,
@@ -155,6 +250,50 @@ def transcript_blocks(content: str) -> list[str]:
         if lines and len(" ".join(lines).split()) >= 15:
             blocks.append("\n".join(lines))
     return blocks
+
+
+def candidate_ad_copy(content: str, source_id: str) -> list[str]:
+    soup = BeautifulSoup(content, "html.parser")
+    if source_id == "hinson":
+        # The campaign separates quoted ad copy from its unitalicized background.
+        watch = next(
+            (
+                p
+                for p in soup.find_all("p")
+                if re.fullmatch(r"\[\s*Watch Here\s*\]", p.get_text(" ", strip=True), re.I)
+            ),
+            None,
+        )
+        paragraph = watch.find_next_sibling("p") if watch else None
+        if paragraph is None:
+            introduction = soup.find("p")
+            image = soup.find("figure")
+            if (
+                introduction
+                and re.search(r"\blaunched the first ad\b", introduction.get_text(), re.I)
+                and image
+            ):
+                paragraph = image.find_next_sibling("p")
+        if paragraph is None:
+            return []
+        quoted = paragraph.find("em") or paragraph
+        match = re.match(r"^(“[^”]+”)", quoted.get_text(" ", strip=True))
+        return [match[1]] if match and len(match[1].split()) >= 15 else []
+    if source_id == "ossoff":
+        text = plain_html(content)
+        match = re.search(r"(?m)^\[[^\]\n]{1,60}\]\s", text)
+        if match and re.search(r"(?m)^###\s*$", text[match.start() :]):
+            block = re.split(r"(?m)^###\s*$", text[match.start() :])[0].strip()
+            if len(block.split()) >= 15 and all(
+                re.match(r"^\[[^\]]{1,60}\]\s", line) for line in block.splitlines()
+            ):
+                return [block]
+    if source_id == "mccann":
+        text = plain_html(content)
+        match = re.search(r"(?im)^WATCH THE AD HERE\s*$", text)
+        if match and re.search(r"(?m)^###\s*$", text[match.end() :]):
+            return [re.split(r"(?m)^###\s*$", text[match.end() :])[0].strip()]
+    return []
 
 
 def media_links(content: str) -> list[str]:
@@ -173,7 +312,8 @@ def media_links(content: str) -> list[str]:
 def is_ad_release(title: str) -> bool:
     return bool(re.search(r"\b(?:ads?|advertising|spots?)\b", title, re.I)) and not bool(
         re.search(
-            r"\b(?:debate|interview|fact.check|ICYMI|takeaways|roundup|anniversary)\b",
+            r"\b(?:debate|interview|fact.check|ICYMI|takeaways|roundup|anniversary|"
+            r"ads?\s+(?:called|debunked))\b",
             title,
             re.I,
         )
@@ -185,7 +325,15 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
     if not is_ad_release(title):
         return []
     content = post["content"]["rendered"]
-    blocks = cooper_transcripts(content) if source.id == "cooper" else transcript_blocks(content)
+    # Rogers's release has a stray letter inside its heading, not the spoken script.
+    body = (
+        re.sub(r"(transcript below:)r(?=</)", r"\1", content) if source.id == "rogers" else content
+    )
+    blocks = cooper_transcripts(body) if source.id == "cooper" else transcript_blocks(body)
+    quoted_copy = False
+    if not blocks:
+        blocks = candidate_ad_copy(content, source.id)
+        quoted_copy = bool(blocks)
     race_match = re.search(r"\b([A-Z]{2})[-–](\d{1,2})\b", title)
     phase = "primary" if re.search(r"\bprimary\b", title, re.I) else "unknown"
     full_text = plain_html(content)
@@ -205,7 +353,15 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
             published=post["date"][:10],
             observed=observed,
             text=text,
-            segments=[asdict(Segment(text=line)) for line in text.splitlines()],
+            segments=[
+                asdict(
+                    Segment(
+                        text=line,
+                        kind="publisher_ad_copy" if quoted_copy else "publisher_transcript",
+                    )
+                )
+                for line in text.splitlines()
+            ],
             source_hash=digest(content),
             phase=phase,
             chamber=source.chamber,
@@ -218,6 +374,7 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
             media_urls=media_links(content),
             language=language_of(text),
             language_basis="langdetect seeded model; >=0.90 probability, otherwise unknown",
+            quality_flags=["publisher_ad_copy_completeness_unverified"] if quoted_copy else [],
             attribution_basis=(
                 f"Official {source.sponsor} release at {post['link']}; alignment is the "
                 "publisher's electoral alignment, not inferred from hostile vocabulary. "
@@ -245,9 +402,24 @@ def collect_wordpress(
         "posts_scanned": 0,
         "ads_with_text": 0,
         "excluded_posts": 0,
-        "scope": "Official ad-release transcripts; not all paid placements",
+        "scope": "Official ad-release text; not all paid placements",
     }
     try:
+        if source.discovery != "wordpress":
+            from political_ads.discovery import public_posts
+
+            posts, complete = public_posts(client, source, until)
+            for post in posts:
+                status["posts_scanned"] += 1
+                parsed = parse_post(post, source, observed)
+                ads.extend(parsed)
+                status["excluded_posts"] += not bool(parsed)
+            status.update(
+                state="ok" if complete else "partial",
+                discovery_complete=complete,
+                ads_with_text=len(ads),
+            )
+            return ads, status
         page = 1
         while True:
             query = urlencode(

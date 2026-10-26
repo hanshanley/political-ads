@@ -60,3 +60,50 @@ def test_caption_rate_limit_checkpoints_then_stops_all_sources(tmp_path, monkeyp
     assert state["sources"][0]["last_success"] is None
     assert state["sources"][0]["state"] == "error"
     assert "429" in next(iter(state["attempts"].values()))["error"]
+
+
+def test_saved_caption_is_not_reacquired_when_backfilling_archives(tmp_path, monkeypatch):
+    from political_ads.cli import write_json
+
+    ad = {
+        "id": "slf-media-1-5NTptJ2PpMw",
+        "source": "slf-media",
+        "published": "2026-10-01",
+        "media_urls": ["https://youtu.be/5NTptJ2PpMw"],
+        "text": "Saved exact text",
+    }
+    write_json(tmp_path / "data/site/media.json", {"ads": [ad], "sources": []})
+    monkeypatch.setattr(
+        "political_ads.media.discover",
+        lambda *args: (
+            [
+                {
+                    "id": 1,
+                    "date": "2026-10-01",
+                    "link": "https://example.org/ad",
+                    "title": {"rendered": "New Ad Launch"},
+                    "content": {"rendered": '<a href="https://youtu.be/5NTptJ2PpMw">Watch</a>'},
+                }
+            ],
+            True,
+        ),
+    )
+
+    def fail(*args):
+        raise AssertionError("Saved caption text must not be downloaded again")
+
+    monkeypatch.setattr("political_ads.media.fetch_captions", fail)
+    collect_media(tmp_path, "2026-10-26", ["slf"], 1)
+    assert read_json(tmp_path / "data/site/media.json", {})["ads"] == [ad]
+
+
+def test_media_sources_follow_requested_priority(tmp_path, monkeypatch):
+    visited = []
+
+    def empty(client, source, until):
+        visited.append(source.id)
+        return [], True
+
+    monkeypatch.setattr("political_ads.media.discover", empty)
+    collect_media(tmp_path, "2026-10-26", ["nunn", "hmp", "slf", "nunn"], 1)
+    assert visited == ["nunn", "hmp", "slf"]

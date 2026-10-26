@@ -1,0 +1,238 @@
+from __future__ import annotations
+
+import re
+import xml.etree.ElementTree as ET
+from datetime import UTC, datetime
+from email.utils import parsedate_to_datetime
+from urllib.error import HTTPError
+from urllib.parse import urlencode, urljoin, urlparse
+from zoneinfo import ZoneInfo
+
+from bs4 import BeautifulSoup
+
+from political_ads.http import Client
+from political_ads.schema import START, digest
+from political_ads.sources import Source, is_ad_release
+
+
+def rss_posts(
+    client: Client, source: Source, until: str, search: str, max_pages: int = 100
+) -> tuple[list[dict], bool]:
+    posts = []
+    seen = set()
+    for page in range(1, max_pages + 1):
+        query = urlencode({"s": search, "feed": "rss2", "year": "2026", "paged": page})
+        try:
+            body, _ = client.get(source.url + "/?" + query, refresh=True)
+        except HTTPError as error:
+            if error.code == 404 and page > 1:
+                return posts, True
+            raise
+        try:
+            root = ET.fromstring(body)
+        except ET.ParseError as error:
+            raise ValueError("The public feed did not return valid RSS") from error
+        if root.tag != "rss" or root.find("channel") is None:
+            raise ValueError("The public feed did not return an RSS channel")
+        items = root.findall("./channel/item")
+        if not items:
+            return posts, True
+        for item in items:
+            link = item.findtext("link")
+            if not link or link in seen:
+                raise ValueError("Public feed repeated or omitted a release URL")
+            if urlparse(link).hostname != urlparse(source.url).hostname:
+                raise ValueError("Public feed linked to a different publisher")
+            seen.add(link)
+            published = parsedate_to_datetime(item.findtext("pubDate", "")).date().isoformat()
+            if START <= published <= until:
+                posts.append(
+                    {
+                        "id": digest(link)[:16],
+                        "link": link,
+                        "date": published,
+                        "title": {"rendered": item.findtext("title", "")},
+                        "content": {
+                            "rendered": item.findtext(
+                                "{http://purl.org/rss/1.0/modules/content/}encoded",
+                                item.findtext("description", ""),
+                            )
+                        },
+                    }
+                )
+    return posts, False
+
+
+def archive_posts(
+    client: Client, source: Source, until: str, max_pages: int = 100
+) -> tuple[list[dict], bool]:
+    posts = []
+    seen = set()
+    hmp = source.id == "hmp"
+    for page in range(1, max_pages + 1):
+        path = f"/news?pg={page}" if hmp else ("/press/" if page == 1 else f"/press/page/{page}/")
+        body, _ = client.get(source.url + path, refresh=True)
+        soup = BeautifulSoup(body, "html.parser")
+        cards = soup.select("h2.heading") if hmp else soup.select("article.feed-card")
+        if not cards:
+            raise ValueError("Public archive did not expose the expected release cards")
+        older = False
+        for card in cards:
+            container = card.parent if hmp else card
+            anchor = card.find("a") if hmp else card.select_one("a.post-link")
+            time = container.find("time")
+            if not anchor or not time:
+                raise ValueError("Public archive release has no link or date")
+            published = datetime.strptime(time.get_text(strip=True), "%B %d, %Y").date().isoformat()
+            older |= published < START
+            link = urljoin(source.url, anchor["href"])
+            if urlparse(link).hostname != urlparse(source.url).hostname:
+                raise ValueError("Public archive linked to a different publisher")
+            if link in seen:
+                raise ValueError("Public archive repeated release URLs across pages")
+            seen.add(link)
+            heading = card if hmp else card.select_one(".entry-title")
+            if heading is None:
+                raise ValueError("Public archive release has no title")
+            title = heading.get_text(" ", strip=True)
+            if not START <= published <= until or not is_ad_release(title):
+                continue
+            release, _ = client.get(link, refresh=True)
+            article = BeautifulSoup(release, "html.parser")
+            content = article.select_one("#gutenberg" if hmp else ".entry-content")
+            if content is None:
+                raise ValueError("Public ad release has no expected article body")
+            raw_id = anchor.get("aria-describedby", "") if hmp else card.get("id", "")
+            identity = re.search(r"(?:readmore|post)-(\d+)$", raw_id)
+            if not identity:
+                raise ValueError("Public archive has no stable publisher record ID")
+            posts.append(
+                {
+                    "id": int(identity[1]),
+                    "link": link,
+                    "date": published,
+                    "title": {"rendered": title},
+                    "content": {"rendered": str(content)},
+                }
+            )
+        if older:
+            return posts, True
+        next_page = (
+            any(f"pg={page + 1}" in a.get("href", "") for a in soup.find_all("a"))
+            if hmp
+            else bool(soup.select_one("a.next"))
+        )
+        if not next_page:
+            return posts, True
+    return posts, False
+
+
+def public_posts(client: Client, source: Source, until: str) -> tuple[list[dict], bool]:
+    if source.discovery == "rss":
+        return rss_posts(client, source, until, source.search)
+    if source.discovery == "archive":
+        return archive_posts(client, source, until)
+    if source.discovery == "squarespace":
+        return squarespace_posts(client, source, until)
+    if source.discovery == "news_index":
+        return news_index_posts(client, source, until)
+    raise ValueError(f"Unknown public discovery strategy: {source.discovery}")
+
+
+def squarespace_posts(
+    client: Client, source: Source, until: str, max_pages: int = 100
+) -> tuple[list[dict], bool]:
+    posts = []
+    seen = set()
+    url = source.url + "/news?format=json"
+    for _ in range(max_pages):
+        payload, _ = client.json(url, refresh=True)
+        if not isinstance(payload.get("items"), list) or "nextPage" not in payload.get(
+            "pagination", {}
+        ):
+            raise ValueError("Public news JSON did not expose items and pagination")
+        zone = ZoneInfo(payload.get("website", {}).get("timeZone", "UTC"))
+        older = False
+        for item in payload["items"]:
+            if item["id"] in seen:
+                raise ValueError("Public news JSON repeated IDs across pages")
+            seen.add(item["id"])
+            published = (
+                datetime.fromtimestamp(item["publishOn"] / 1000, UTC)
+                .astimezone(zone)
+                .date()
+                .isoformat()
+            )
+            older |= published < START
+            if not START <= published <= until:
+                continue
+            link = urljoin(source.url, item["fullUrl"])
+            if urlparse(link).hostname != urlparse(source.url).hostname:
+                raise ValueError("Public news JSON linked to a different publisher")
+            posts.append(
+                {
+                    "id": item["id"],
+                    "link": link,
+                    "date": published,
+                    "title": {"rendered": item["title"]},
+                    "content": {"rendered": item["body"]},
+                }
+            )
+        pagination = payload["pagination"]
+        if older or not pagination["nextPage"]:
+            return posts, True
+        next_url = urljoin(source.url, pagination["nextPageUrl"])
+        if urlparse(next_url).hostname != urlparse(source.url).hostname:
+            raise ValueError("Public news JSON linked to a different pagination host")
+        url = next_url + ("&" if "?" in next_url else "?") + "format=json"
+    return posts, False
+
+
+def news_index_posts(client: Client, source: Source, until: str) -> tuple[list[dict], bool]:
+    body, _ = client.get(source.url + "/news/", refresh=True)
+    soup = BeautifulSoup(body, "html.parser")
+    posts = []
+    seen = set()
+    older = False
+    cards = [a for a in soup.find_all("a", href=True) if a.find("h1")]
+    if not cards:
+        raise ValueError("Public news index did not expose dated release cards")
+    for card in cards:
+        link = urljoin(source.url, card["href"])
+        if urlparse(link).hostname != urlparse(source.url).hostname:
+            continue  # The index also links to third-party coverage, not campaign releases.
+        if link in seen:
+            continue  # Featured releases also appear in the same page's chronological list.
+        seen.add(link)
+        date_label = next(
+            (
+                p
+                for p in card.find_all("p")
+                if re.fullmatch(r"[A-Z][a-z]{2} \d{1,2}, \d{4}", p.get_text(" ", strip=True))
+            ),
+            None,
+        )
+        if date_label is None:
+            raise ValueError("Public news index release has no date")
+        published = (
+            datetime.strptime(date_label.get_text(" ", strip=True), "%b %d, %Y").date().isoformat()
+        )
+        older |= published < START
+        title = card.find("h1").get_text(" ", strip=True)
+        if not START <= published <= until or not is_ad_release(title):
+            continue
+        release, _ = client.get(link, refresh=True)
+        content = BeautifulSoup(release, "html.parser").find("main")
+        if content is None:
+            raise ValueError("Public news release has no main article")
+        posts.append(
+            {
+                "id": digest(link)[:16],
+                "link": link,
+                "date": published,
+                "title": {"rendered": title},
+                "content": {"rendered": str(content)},
+            }
+        )
+    # This rendered index includes prior-year releases; no API page-size assumption.
+    return posts, older

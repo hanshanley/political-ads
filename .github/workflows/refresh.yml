@@ -54,7 +54,7 @@ jobs:
           python -m pip install -e '.[dev,captions]'
           political-ads collect --until "$UNTIL"
           political-ads registry
-          political-ads media-collect --source slf --source hmp --source nrcc --source clf --limit 12 --until "$UNTIL"
+          political-ads media-collect --source nunn --source slf --source hmp --source nrcc --source clf --limit 12 --until "$UNTIL"
           political-ads parquet
           political-ads build
           political-ads validate

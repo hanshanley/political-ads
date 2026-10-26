@@ -68,9 +68,14 @@ def candidate_alias(candidate: dict) -> str:
 
 def candidate_mentions(text: str, candidates: list[dict]) -> list[dict]:
     mentions = []
+    folded = text.casefold()
     for candidate in candidates:
         alias = candidate_alias(candidate)
-        if alias and re.search(r"(?<!\w)" + re.escape(alias) + r"(?!\w)", text.casefold()):
+        if (
+            alias
+            and alias in folded
+            and re.search(r"(?<!\w)" + re.escape(alias) + r"(?!\w)", folded)
+        ):
             mentions.append(
                 {
                     key: candidate[key]
