@@ -38,6 +38,14 @@ Written transcripts begin at explicit markers in identifiable ad releases. Sourc
 boundaries remove press reaction, background, and next-creative titles. Speeches, interview
 highlights, phone-menu transcripts, and surrounding commentary are not counted as ad copy.
 Duration headings such as `Transcript (30)` and `AD TRANSCRIPT (15s)` delimit separate versions.
+Standalone `SCRIPT` headings and explicit "The full text of the ad is below" introductions also
+identify publisher scripts. Barr's labeled-speaker paragraphs stop before unlabeled release
+background; NRCC targeting lists following scripts are not spoken ad text. Interview/debate
+scripts remain excluded.
+Horizontal rules terminate scripts before next-ad commentary. Marshall's explicitly marked
+transcript paragraphs exclude subsequent release attacks, even when the latter sound like
+ad language. Young Kim's April release explicitly describes a primary ad buy; those records
+are marked primary rather than used as evidence of cross-party attacks.
 
 Candidate-specific adapters also recover explicitly separated ad scripts and publisher-quoted
 ad copy. These records use `publisher_ad_copy` segments and
@@ -79,6 +87,21 @@ missing comparison evidence, not a zero-percent rate.
 Time charts count first release of each message **within the filtered corpus**, not airings or
 ad duration. Normalized distinctive bigrams/trigrams in JSON require support in three messages.
 Smoothed log-odds reflect corpus wording and composition, not causal party preferences.
+The dated source-coverage table in `SOURCES.md` distinguishes monthly unique messages from
+the number of publishers represented. Repeated identical scripts across district releases count
+once; templates changing a candidate name remain distinct. A burst from one committee is not
+independent evidence from many campaigns, and sparse early months cannot support national trends.
+
+`python -m political_ads.cli analyze` generates a **local-only** research report in
+`outputs/analysis.html`, complete evidence/text in `outputs/analysis.json`, and all analyzed
+records in `outputs/analysis-ads.csv`. It does not build, publish, or deploy the website.
+Comparisons cover month, chamber, sponsor type, publisher, race, and election phase. Monthly
+lexical denominators use first-released exact messages across the saved corpus; non-temporal
+strata deduplicate after filtering. Coverage distinguishes all release records, first messages,
+and publishers. Included record/message IDs make each numerator and denominator inspectable.
+A sensitivity table removes each alignment's largest publisher by record count and recomputes
+message denominators. This is a composition diagnostic, not reweighting or a representative
+party comparison. Full text, original evidence, and extraction flags remain in the JSON/CSV.
 
 Opponent passages are individually read editorial examples bound to source hashes and exact
 quotations. They illustrate framing, not random sampling, independent human gold, or national

@@ -149,3 +149,53 @@ def timeline(ads: list[dict]) -> list[dict]:
         if ad["alignment"] in {"D", "R"}:
             weeks[week][ad["alignment"]] += 1
     return [{"week": week, **counts} for week, counts in sorted(weeks.items())]
+
+
+def stratified_comparisons(ads: list[dict], codebook: dict) -> dict:
+    def summarize(records, messages=None):
+        messages = unique_messages(records) if messages is None else messages
+        coverage = {}
+        for party in ("D", "R"):
+            party_records = [ad for ad in records if ad["alignment"] == party]
+            party_messages = [ad for ad in messages if ad["alignment"] == party]
+            coverage[party] = {
+                "records": len(party_records),
+                "messages": len(party_messages),
+                "publishers": sorted({ad["source"] for ad in party_records}),
+                "record_ad_ids": [ad["id"] for ad in party_records],
+                "message_ad_ids": [ad["id"] for ad in party_messages],
+            }
+        return {
+            "coverage": coverage,
+            "issues": comparison(messages, list(codebook["issues"])),
+            "portrayals": comparison(
+                messages, list(codebook["portrayal_language"]), "portrayal_markers"
+            ),
+        }
+
+    first_messages = unique_messages(ads)
+    result = {"overall": summarize(ads)}
+    result["month"] = {
+        month: summarize(
+            [ad for ad in ads if ad["published"][:7] == month],
+            [ad for ad in first_messages if ad["published"][:7] == month],
+        )
+        for month in sorted({ad["published"][:7] for ad in ads})
+    }
+    for field in ("chamber", "sponsor_type", "source", "race", "phase"):
+        result[field] = {
+            value: summarize([ad for ad in ads if ad[field] == value])
+            for value in sorted({ad[field] for ad in ads})
+        }
+    excluded = {}
+    for party in ("D", "R"):
+        publishers = Counter(ad["source"] for ad in ads if ad["alignment"] == party)
+        if publishers:
+            excluded[party] = min(publishers, key=lambda source: (-publishers[source], source))
+    result["sensitivity"] = {
+        "excluded_publishers": excluded,
+        "without_largest_publisher_per_party": summarize(
+            [ad for ad in ads if ad["source"] != excluded.get(ad["alignment"])]
+        ),
+    }
+    return result

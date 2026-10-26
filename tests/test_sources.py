@@ -87,6 +87,63 @@ def test_transcript_highlights_and_metadata_are_not_full_ad_text():
     assert transcript_blocks("<p>Watch the ad here.</p>") == []
 
 
+@pytest.mark.parametrize(
+    "heading", ["SCRIPT:", "Script:", "AD SCRIPT (30):", "The full text of the ad is below:"]
+)
+def test_explicit_script_headings_are_not_missed(heading):
+    text = (
+        "Narrator: Working families deserve lower costs and better health care, "
+        "not more broken promises from Washington."
+    )
+    assert transcript_blocks(f"<p>{heading}</p><p>{text}</p><p>###</p>") == [text]
+
+
+def test_barr_full_text_after_introduction_excludes_unlabeled_release_background():
+    source = next(s for s in SOURCES if s.id == "barr")
+    text = (
+        "Riley Gaines: These are the actual words spoken in the advertisement "
+        "supporting Andy Barr in Kentucky."
+    )
+    approval = "Barr: I'm Andy Barr and I approve this message."
+    result = parse_post(
+        post(
+            "New Barr Ad: Kentucky",
+            "<p>The campaign is airing this ad across Kentucky. "
+            f"The full text of the ad is below:</p><p>{text}</p><p>{approval}</p>"
+            "<p>Andy Barr is championing legislation in Congress.</p>"
+            "<p>New polling from a university shows a lead.</p><p>###</p>",
+        ),
+        source,
+        "2026-10-26",
+    )
+    assert result[0]["text"] == f"{text}\n{approval}"
+    assert result[0]["segments"][0]["kind"] == "publisher_transcript"
+    assert result[0]["race"] == "KY-Senate"
+
+
+def test_interview_script_remains_excluded_and_ends_the_previous_ad():
+    text = (
+        "These are the actual words of a campaign advertisement about lower health care costs "
+        "for working families."
+    )
+    assert transcript_blocks(
+        f"<p>Script:</p><p>{text}</p><p>Interview script:</p>"
+        "<p>Interviewer: This interview is not an advertisement.</p>"
+    ) == [text]
+
+
+def test_targeting_list_after_nrcc_script_is_not_spoken_ad_copy():
+    text = (
+        "Democrats had a chance to stand up for Americans, but they stayed seated. "
+        "They are completely out of touch."
+    )
+    assert transcript_blocks(
+        f"<p>SCRIPT:</p><p>{text}</p>"
+        "<p>Below is a list of vulnerable Democrats who will be targeted with the ad campaign:</p>"
+        "<p>CA-13: Adam Gray</p><p>CA-45: Derek Tran</p>"
+    ) == [text]
+
+
 def test_multiple_creatives_are_kept_separate():
     blocks = transcript_blocks(
         "<p>Transcript:</p><p>"
@@ -97,6 +154,51 @@ def test_multiple_creatives_are_kept_separate():
     )
     assert len(blocks) == 2
     assert "second" not in blocks[0]
+
+
+def test_horizontal_rule_ends_script_before_next_ad_description():
+    first = (
+        "Narrator: These are the actual words of the first ad "
+        "supporting our candidate for Congress."
+    )
+    second = (
+        "Narrator: These are the actual words of the second ad about our candidate's "
+        "opponent in the primary."
+    )
+    source = next(s for s in SOURCES if s.id == "young-kim")
+    ads = parse_post(
+        post(
+            "Campaign Launches New Ads",
+            "<p>The ad buy that runs through the June 2nd primary.</p>"
+            f"<p>First transcript:</p><p>{first}</p><hr>"
+            "<p>The second ad titled Truth contrasts the candidates. This is press commentary.</p>"
+            f"<p>Second transcript:</p><p>{second}</p><p>###</p>",
+        ),
+        source,
+        "2026-10-26",
+    )
+    assert [ad["text"] for ad in ads] == [first, second]
+    assert all(ad["phase"] == "primary" and ad["race"] == "CA-40" for ad in ads)
+
+
+def test_marshall_transcript_container_excludes_unmarked_release_attack():
+    text = (
+        "A patient: Our senator helped my family when the insurance company "
+        "would not cover the care we needed."
+    )
+    ads = parse_post(
+        post(
+            "Campaign Releases New Ad",
+            f'<h2 class="release__heading">Transcript:</h2>'
+            f'<p class="release__lines">{text}</p>'
+            "<p>Our opponent is the most extreme candidate this state has ever seen.</p>",
+        ),
+        next(s for s in SOURCES if s.id == "marshall"),
+        "2026-10-26",
+    )
+    assert ads[0]["text"] == text
+    assert ads[0]["race"] == "KS-Senate"
+    assert not ads[0]["quality_flags"]
 
 
 def test_duration_headings_watch_links_and_candidate_biography_are_not_copy():

@@ -249,12 +249,16 @@ def dated_news_posts(
     for _ in range(max_pages):
         body, _ = client.get(url, refresh=True)
         soup = BeautifulSoup(body, "html.parser")
-        dates = soup.select("time[datetime]")
+        dates = soup.select("time[datetime], .press__date")
         if not dates:
             raise ValueError("Public news archive did not expose dated release cards")
         older = False
         for time in dates:
-            published = time["datetime"][:10]
+            published = (
+                time["datetime"][:10]
+                if time.has_attr("datetime")
+                else datetime.strptime(time.get_text(strip=True), "%B %d, %Y").date().isoformat()
+            )
             datetime.strptime(published, "%Y-%m-%d")
             older |= published < START
             card = time.parent

@@ -61,10 +61,19 @@ class Source:
 
 
 SOURCES = [
-    Source("nrsc", "https://www.nrsc.org", "NRSC", "R", "party", "Senate"),
+    Source("nrsc", "https://www.nrsc.org", "NRSC", "R", "party", "Senate", search="ad"),
     Source("dccc", "https://dccc.org", "DCCC", "D", "party", "House"),
     Source("dscc", "https://www.dscc.org", "DSCC", "D", "party", "Senate", "article", "ad"),
-    Source("nrcc", "https://www.nrcc.org", "NRCC", "R", "party", "House", discovery="rss"),
+    Source(
+        "nrcc",
+        "https://www.nrcc.org",
+        "NRCC",
+        "R",
+        "party",
+        "House",
+        search="script",
+        discovery="rss",
+    ),
     Source(
         "slf",
         "https://senateleadershipfund.org",
@@ -278,6 +287,76 @@ SOURCES = [
         fixed_race="MI-Senate",
         discovery="dated_news",
     ),
+    Source(
+        "susan-collins",
+        "https://susancollins.com",
+        "Susan Collins for Senator",
+        "R",
+        "candidate",
+        "Senate",
+        search="ad",
+        fixed_race="ME-Senate",
+    ),
+    Source(
+        "barr",
+        "https://barrforsenate.com",
+        "Andy Barr for Senate",
+        "R",
+        "candidate",
+        "Senate",
+        search="ad",
+        fixed_race="KY-Senate",
+    ),
+    Source(
+        "whatley",
+        "https://michaelwhatley.com",
+        "Michael Whatley for Senate",
+        "R",
+        "candidate",
+        "Senate",
+        search="ad",
+        fixed_race="NC-Senate",
+    ),
+    Source(
+        "ricketts",
+        "https://www.petericketts.com",
+        "Pete Ricketts for Senate",
+        "R",
+        "candidate",
+        "Senate",
+        search="ad",
+        fixed_race="NE-Senate",
+    ),
+    Source(
+        "young-kim",
+        "https://youngkimforcongress.com",
+        "Young Kim for Congress",
+        "R",
+        "candidate",
+        "House",
+        search="ad",
+        fixed_race="CA-40",
+    ),
+    Source(
+        "ciscomani",
+        "https://juanciscomani.com",
+        "Ciscomani for Congress",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="AZ-06",
+        discovery="squarespace",
+    ),
+    Source(
+        "marshall",
+        "https://www.kansansformarshall.com",
+        "Kansans for Marshall",
+        "R",
+        "candidate",
+        "Senate",
+        fixed_race="KS-Senate",
+        discovery="dated_news",
+    ),
 ]
 
 
@@ -296,6 +375,8 @@ def plain_html(value: str) -> str:
 
 def transcript_blocks(content: str) -> list[str]:
     soup = BeautifulSoup(content, "html.parser")
+    for separator in soup.find_all("hr"):
+        separator.replace_with("\n###\n")
     # Linked, standalone video titles belong to the next creative, not the transcript.
     for node in soup.find_all(["p", "div"]):
         anchor = node.find("a")
@@ -308,15 +389,20 @@ def transcript_blocks(content: str) -> list[str]:
     text = plain_html(content)
     markers = list(
         re.finditer(
-            r"(?im)^([^\n]{0,50}\b)?(?:transcript|(?:radio|tv|ad) script)"
+            r"(?im)(?:\bThe full text of the ad is below:\s*|"
+            r"^([^\n]{0,50}\b)?(?:transcript|(?:(?:radio|tv|ad) )?script)"
             r"(?:\s*\(\s*:?\d{1,3}(?:\s*(?:seconds?|secs?|s))?\s*\))?"
-            r"(?:\s+(?:of|for)\s+[^\n:]{0,120}|\s+below\.?)?\s*(?::|\n|$)",
+            r"(?:\s+(?:of|for)\s+[^\n:]{0,120}|\s+below\.?)?\s*(?::|\n|$))",
             text,
         )
     )
     blocks = []
     for i, marker in enumerate(markers):
-        if re.search(r"\b(?:phone tree|hotline|interview|debate)\s+transcript\b", marker[0], re.I):
+        if re.search(
+            r"\b(?:phone tree|hotline|interview|debate)\s+(?:transcript|script)\b",
+            marker[0],
+            re.I,
+        ):
             continue
         end = markers[i + 1].start() if i + 1 < len(markers) else len(text)
         chunk = text[marker.end() : end]
@@ -325,6 +411,7 @@ def transcript_blocks(content: str) -> list[str]:
             r"(?im)^\s*(?:Read (?:more|the)|Watch (?:the|this)|Share (?:this|on)|"
             r"Watch\s+[‘“\"']|"
             r"You can watch\b|"
+            r"Below is a list of [^\n]{0,120}\bad campaign:|"
             r"(?:On )?Background:|See also:|About the |About [^\n:]{1,80}:|"
             r"The post .+ appeared first on |Roy Cooper has launched |"
             r"Learn more about Mike Rogers and his plans? to |"
@@ -427,6 +514,29 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
         re.sub(r"(transcript below:)r(?=</)", r"\1", content) if source.id == "rogers" else content
     )
     blocks = cooper_transcripts(body) if source.id == "cooper" else transcript_blocks(body)
+    if source.id == "marshall":
+        soup = BeautifulSoup(body, "html.parser")
+        blocks = []
+        for heading in soup.select("h2.release__heading"):
+            paragraph = heading.find_next_sibling()
+            if (
+                re.fullmatch(r"Transcript:", heading.get_text(strip=True), re.I)
+                and paragraph
+                and "release__lines" in paragraph.get("class", [])
+            ):
+                blocks.extend(transcript_blocks(str(heading) + str(paragraph)))
+    if source.id == "barr":
+        # Barr's scripts label every speaker; unlabeled paragraphs resume the release.
+        speaker_blocks = []
+        for block in blocks:
+            lines = []
+            for line in block.splitlines():
+                if not re.match(r"^[A-Z][^:\n]{0,100}\s*:", line):
+                    break
+                lines.append(line)
+            if len(" ".join(lines).split()) >= 15:
+                speaker_blocks.append("\n".join(lines))
+        blocks = speaker_blocks
     quoted_copy = False
     if not blocks:
         blocks = candidate_ad_copy(content, source.id)
@@ -437,6 +547,10 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
     full_text = plain_html(content)
     if phase == "unknown" and re.search(r"\bgeneral election\b", full_text, re.I):
         phase = "general"
+    if source.id == "young-kim" and re.search(
+        r"\bad buy that runs through the [^.\n]{0,60}\bprimary\b", full_text, re.I
+    ):
+        phase = "primary"
     ads = []
     for index, text in enumerate(blocks):
         ad = Ad(

@@ -1,6 +1,12 @@
 import pytest
 
-from political_ads.analysis import annotate, apply_reviews, comparison, matches
+from political_ads.analysis import (
+    annotate,
+    apply_reviews,
+    comparison,
+    matches,
+    stratified_comparisons,
+)
 
 
 def test_phrase_boundaries_offsets_and_caption_line_breaks():
@@ -52,3 +58,42 @@ def test_stale_editorial_quote_or_source_must_fail_publication():
     for changed in ({"source_hash": "changed"}, {"quote": "invented quote"}):
         with pytest.raises(ValueError, match="re-review"):
             apply_reviews([ad], {"examples": [review | changed]})
+
+
+def test_strata_distinguish_first_release_month_from_source_repeats_and_missing_parties():
+    codebook = {"issues": {"tax": ["tax"]}, "portrayal_language": {"trust": ["lies"]}}
+    ads = annotate(
+        [
+            {
+                "id": identity,
+                "text": text,
+                "alignment": party,
+                "published": published,
+                "source": source,
+                "chamber": "House",
+                "sponsor_type": "party",
+                "phase": "unknown",
+                "race": "PA-10",
+            }
+            for identity, text, party, published, source in [
+                ("a", "Tax relief", "R", "2026-01-01", "committee"),
+                ("b", "Tax relief", "R", "2026-02-01", "campaign"),
+                ("c", "Health care", "R", "2026-02-02", "campaign"),
+                ("d", "No more lies", "D", "2026-02-03", "other"),
+            ]
+        ],
+        codebook,
+    )
+    result = stratified_comparisons(ads, codebook)
+    february = result["month"]["2026-02"]
+    assert february["coverage"]["R"]["records"] == 2
+    assert february["coverage"]["R"]["message_ad_ids"] == ["c"]
+    assert february["issues"][0]["R"] == {"count": 0, "total": 1, "share": 0.0, "ad_ids": []}
+    assert result["source"]["campaign"]["issues"][0]["R"]["ad_ids"] == ["b"]
+    assert result["month"]["2026-01"]["issues"][0]["D"]["share"] is None
+    assert result["overall"]["portrayals"][0]["D"]["ad_ids"] == ["d"]
+    assert result["sensitivity"]["excluded_publishers"] == {"D": "other", "R": "campaign"}
+    reduced = result["sensitivity"]["without_largest_publisher_per_party"]
+    assert reduced["coverage"]["R"]["message_ad_ids"] == ["a"]
+    assert reduced["coverage"]["D"]["records"] == 0
+    assert reduced["issues"][0]["D"]["share"] is None

@@ -205,6 +205,24 @@ def test_dated_news_rejects_homepage_fallback_instead_of_manufacturing_ad_text()
         dated_news_posts(Fallback(), source("el-sayed"), "2026-10-26")
 
 
+def test_rendered_press_dates_are_read_without_claiming_full_historical_coverage():
+    class Press:
+        def get(self, url, **kwargs):
+            if url.endswith("/news/ad"):
+                return b"<main><h1>New ad</h1><p>Transcript:</p></main>", {}
+            return (
+                b'<a class="press__row" href="/news/ad">'
+                b'<div class="press__date">October 21, 2026</div>'
+                b"<h2>New ad</h2></a>",
+                {},
+            )
+
+    posts, complete = dated_news_posts(Press(), source("marshall"), "2026-10-26")
+    assert not complete
+    assert len(posts) == 1 and posts[0]["date"] == "2026-10-21"
+    assert dated_news_posts(Press(), source("marshall"), "2026-10-20") == ([], False)
+
+
 def test_rendered_campaign_index_keeps_only_in_scope_first_party_releases():
     class Index:
         def get(self, url, **kwargs):

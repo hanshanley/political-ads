@@ -163,6 +163,7 @@ def main() -> None:
         "validate",
         "update",
         "media-collect",
+        "analyze",
     ):
         command_parser = subcommands.add_parser(command)
         command_parser.add_argument("--offline", action="store_true")
@@ -197,6 +198,11 @@ def main() -> None:
             from political_ads.publication import validate
 
             validate(root)
+        if args.command == "analyze":
+            from political_ads.research import research
+
+            research(root)
+            print("Local analysis saved to outputs/analysis.html and complete JSON/CSV")
     except (OSError, ValueError, KeyError, duckdb.Error) as error:
         print(f"{type(error).__name__}: {error}", file=sys.stderr)
         sys.exit(1)

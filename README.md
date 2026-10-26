@@ -6,6 +6,9 @@ contextual opponent portrayals, and complete source transcripts behind the compa
 
 **Publication:** https://www.themarginoferror.com/political-ads/
 
+**Publication hold:** expanded collection and analysis are local only. The website still has
+the prior snapshot; do not push or deploy pending changes without authorization.
+
 This is an evolving collection of official ad releases, **not a census of paid placements**.
 It includes publisher transcripts and public English video captions. Candidate, party, and
 outside-group publishers remain separately filterable. Dates are release dates unless documented
@@ -57,6 +60,17 @@ silently becomes zero advertising.
 `data/processed/`, and model files are local-only. `parquet` creates a DuckDB-readable table.
 Complete CSV/JSON exports retain transcripts, segments, evidence offsets, hashes, publisher
 provenance, and extraction quality notes.
+
+Analyze the saved corpus without building or publishing the website:
+
+```bash
+.venv/bin/python -m political_ads.cli analyze
+# Open outputs/analysis.html; complete evidence/text: outputs/analysis.json and analysis-ads.csv
+```
+
+The local report compares wording over release months and by source, chamber, race, sponsor
+type, and election phase. A largest-publisher exclusion check exposes source-composition
+sensitivity; lexical matches are not semantic attack rates or national prevalence estimates.
 
 ## Checks
 
