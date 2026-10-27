@@ -33264,7 +33264,7 @@
         }
       ],
       "source": "marshall",
-      "source_hash": "d6d0f20981af3554d0b89af699caa7f326b9e4ea5ad76ae43e5d612d696c02cc",
+      "source_hash": "c90486d5645d611b9dbfc4bcd41d9889f395fca0925456c3741ee4bd0d556328",
       "source_record_id": "bc3cf14f23902638",
       "source_url": "https://www.kansansformarshall.com/news/deb-ad-release",
       "sponsor": "Kansans for Marshall",
@@ -36832,7 +36832,7 @@
         }
       ],
       "source": "marshall",
-      "source_hash": "e7902f66661b6b2e12e8708b44426fea03a3fc6bd389dc1ae1c9a49007b15915",
+      "source_hash": "53f162a75c183179c42758ecc96adbd0f13e7a6a8694779ed1608b9cb5fd4494",
       "source_record_id": "f57ec8d2874d6b9c",
       "source_url": "https://www.kansansformarshall.com/news/hamilton-in-his-own-words-ad",
       "sponsor": "Kansans for Marshall",
@@ -40518,18 +40518,16 @@
       "url": "https://www.lcvvictoryfund.org"
     },
     {
-      "ads_with_text": 1,
+      "ads_with_text": 0,
       "checked": "2026-10-27",
-      "discovery_complete": true,
+      "error": "ValueError: Public blog release lacks matching publication metadata",
       "excluded_posts": 0,
-      "languages": {
-        "en": 1
-      },
       "last_success": "2026-10-27",
-      "posts_scanned": 1,
+      "posts_scanned": 0,
+      "retained_ads": 1,
       "scope": "Official ad-release text; not all paid placements",
       "source": "letlow",
-      "state": "ok",
+      "state": "error",
       "url": "https://www.julialetlow.com"
     },
     {
@@ -40644,14 +40642,14 @@
     {
       "ads_with_text": 0,
       "checked": "2026-10-27",
-      "discovery_complete": true,
-      "excluded_posts": 2,
-      "languages": {},
+      "error": "HTTPError: HTTP Error 403: Forbidden",
+      "excluded_posts": 0,
       "last_success": "2026-10-27",
-      "posts_scanned": 2,
+      "posts_scanned": 0,
+      "retained_ads": 0,
       "scope": "Official ad-release text; not all paid placements",
       "source": "rjc-vf",
-      "state": "ok",
+      "state": "error",
       "url": "https://www.rjchq.org"
     },
     {
