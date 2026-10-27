@@ -19,7 +19,10 @@ runners. No Actions artifacts or paid APIs are introduced. Official billing docu
 https://docs.github.com/en/billing/concepts/product-billing/github-actions
 
 `.github/workflows/refresh.yml` refreshes registered public ad-release archives daily at
-08:13 UTC through November 4, 2026, inclusive. It updates FEC identities before collecting
+12:13 UTC through November 4, 2026, inclusive, with a final November 5 reconciliation still
+capped at November 4. This covers releases indexed after the final day's morning run
+without extending the eligible ad window; the final run follows November 4's close across
+U.S. time zones. It updates FEC identities before collecting
 scripts; if FEC retrieval fails, it retains the committed candidate registry rather than
 discarding identity-gated scripts on a clean runner. It regenerates complete analysis JSON,
 CSV and HTML, rebuilds and validates the saved evidence, then commits research inputs and
@@ -38,7 +41,7 @@ Google and Snap extraction partitions are preserved, not re-extracted by this Li
 the native OCR pipeline currently requires local macOS Vision. Newly discovered metadata
 is not counted as recovered ad text.
 
-After the November 4 cutoff routine collection is skipped. Explicit late-index reconciliation:
+After the November 5 final reconciliation routine collection is skipped. Explicit late-index reconciliation:
 
 ```bash
 gh workflow run refresh.yml --ref main -f until=2026-11-04

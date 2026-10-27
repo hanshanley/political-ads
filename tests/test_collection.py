@@ -1,5 +1,8 @@
 import json
+import subprocess
+import textwrap
 from datetime import date
+from pathlib import Path
 from urllib.error import HTTPError
 
 import pytest
@@ -53,6 +56,34 @@ def test_final_cutoff_never_advances_collection_into_the_future(
     else:
         with pytest.raises(ValueError, match="final collection cutoff"):
             cli.collect(tmp_path, until, ["dccc"])
+
+
+@pytest.mark.parametrize(
+    ("today", "expected"),
+    [
+        ("2026-10-27", {"enabled": "true", "until": "2026-10-27"}),
+        ("2026-11-04", {"enabled": "true", "until": "2026-11-04"}),
+        ("2026-11-05", {"enabled": "true", "until": "2026-11-04"}),
+        ("2026-11-06", {"enabled": "false"}),
+    ],
+)
+def test_scheduled_refresh_reconciles_the_complete_final_day(
+    tmp_path, monkeypatch, today, expected
+):
+    workflow = (Path(__file__).parents[1] / ".github/workflows/refresh.yml").read_text()
+    scope = textwrap.dedent(workflow.split("        run: |\n", 1)[1].split("      - uses:", 1)[0])
+    output = tmp_path / "github-output"
+    monkeypatch.setenv("GITHUB_EVENT_NAME", "schedule")
+    monkeypatch.setenv("GITHUB_OUTPUT", str(output))
+    monkeypatch.setenv("REQUESTED_UNTIL", "")
+    subprocess.run(
+        ["bash", "--noprofile", "--norc", "-e", "-o", "pipefail"],
+        input=f'date() {{ printf "%s\\n" "{today}"; }}\n{scope}',
+        text=True,
+        capture_output=True,
+        check=True,
+    )
+    assert dict(line.split("=", 1) for line in output.read_text().splitlines()) == expected
 
 
 def test_failed_source_keeps_last_good_partition_and_freshness(tmp_path, monkeypatch):

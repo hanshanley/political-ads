@@ -2,7 +2,7 @@ name: Refresh 2026 ad evidence
 
 on:
   schedule:
-    - cron: "13 8 * * *"
+    - cron: "13 12 * * *"
   workflow_dispatch:
     inputs:
       until:
@@ -22,13 +22,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
-      - name: Stop routine collection after the final cutoff
+      - name: Stop routine collection after final reconciliation
         id: scope
         env:
           REQUESTED_UNTIL: ${{ inputs.until }}
         run: |
           today=$(date -u +%F)
-          if [[ "$GITHUB_EVENT_NAME" == "schedule" && "$today" > "2026-11-04" ]]; then
+          # Reconcile the full final day without admitting November 5 releases.
+          if [[ "$GITHUB_EVENT_NAME" == "schedule" && "$today" > "2026-11-05" ]]; then
             echo "enabled=false" >> "$GITHUB_OUTPUT"
           else
             echo "enabled=true" >> "$GITHUB_OUTPUT"

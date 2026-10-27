@@ -117,11 +117,12 @@ filters, keyboard access, mobile overflow, and non-root asset paths.
 ## Publication and updates
 
 All work stays on **main**, authored as Hans Hanley. Daily automatic evidence refresh updates
-research evidence and complete analysis on GitHub only, at 08:13 UTC.
+research evidence and complete analysis on GitHub only, at 12:13 UTC.
 The host integration, page, interactive-analysis card and sitemap entry have been removed.
 Research commits may be pushed without updating the website; do not restore host integration
 or deploy without explicit authorization.
-Collection is bounded to **November 4, 2026, inclusive**; manual reconciliation remains available.
+Collection is bounded to **November 4, 2026, inclusive**. A final scheduled reconciliation
+runs November 5 with that same cutoff; manual late-index reconciliation remains available.
 The cutoff is a final scope limit, not a claim that future dates have already been collected.
 No paid provider or runtime hosted model is used.
 See [deployment](docs/DEPLOYMENT.md) and [source capabilities](docs/SOURCES.md).
