@@ -6,7 +6,7 @@ import json
 import re
 from datetime import date, datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlencode, urlparse
 
 from bs4 import BeautifulSoup
 
@@ -64,6 +64,45 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                 raise ValueError("Review requires an exact 2026 federal candidate identity")
             body, _ = client.get(review["publisher_url"], retry=False)
             soup = BeautifulSoup(body, "html.parser")
+            publisher_hash = hashlib.sha256(body).hexdigest()
+            if request := review.get("publisher_request"):
+                ajax_url = (
+                    urlparse(review["publisher_url"])
+                    ._replace(path="/wp-admin/admin-ajax.php", params="", query="", fragment="")
+                    .geturl()
+                )
+                feed = soup.select_one("#cff")
+                markup = html.unescape(body.decode("utf-8")).replace("\\/", "/")
+                if (
+                    not review.get("post_id")
+                    or feed is None
+                    or feed.select_one(".cff-load-more") is None
+                    or ajax_url not in markup
+                    or request.get("action") != "cff_get_new_posts"
+                    or request.get("location") != "content"
+                    or request.get("shortcode_data") != feed.get("data-cff-shortcode")
+                    or str(request.get("post_id")) != feed.get("data-postid")
+                    or request.get("locator_nonce") != feed.get("data-locatornonce")
+                    or int(request.get("page", 0)) < 2
+                ):
+                    raise ValueError("Reviewed request must match the publisher's public feed")
+                data = urlencode(
+                    [
+                        (key, request[key])
+                        for key in (
+                            "action",
+                            "shortcode_data",
+                            "pag_url",
+                            "feed_id",
+                            "post_id",
+                            "location",
+                            "page",
+                            "locator_nonce",
+                        )
+                    ]
+                ).encode()
+                body, _ = client.get(ajax_url, retry=False, data=data)
+                soup = BeautifulSoup(body, "html.parser")
             if review.get("post_id"):
                 card = soup.find(id="cff_" + review["post_id"])
                 if card is None or card.get("data-cff-timestamp") != str(review["post_timestamp"]):
@@ -92,6 +131,8 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                 "publisher_html_sha256": hashlib.sha256(body).hexdigest(),
                 "speech_engine": {key: value for key, value in speech.items() if key != "segments"},
             }
+            if review.get("publisher_request"):
+                evidence["publisher_homepage_sha256"] = publisher_hash
             quality = [
                 "local_speech_and_frame_ocr_not_manually_verified",
                 "automatic_speech_may_misrecognize_names_or_negation",
@@ -129,7 +170,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     source_record_id=review["post_id"],
                     title=review["title"],
                     sponsor=review["sponsor"],
-                    sponsor_type="candidate",
+                    sponsor_type=review.get("sponsor_type", "candidate"),
                     alignment={"DEM": "D", "REP": "R"}.get(candidate["party"], "other"),
                     published=published,
                     observed=date.today().isoformat(),

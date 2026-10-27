@@ -155,10 +155,10 @@ generated together in `outputs/analysis.json` and `outputs/analysis.html`; the m
 `outputs/analysis-ads.csv` includes complete text and evidence. These files, not an earlier
 379-record checkpoint, define the current reconciled local snapshot.
 
-The reconciled October 27 cutoff contains 1,781 acquired text records: 468 written records,
-65 captions, two reviewed campaign-original videos, 16 static graphics, 76 Google previews
-and 1,154 Snap creatives. The English explorer contains 1,743 records:
-**1,216 Democratic-aligned, 488 Republican-aligned,
+The reconciled October 27 cutoff contains 1,789 acquired text records: 468 written records,
+65 captions, ten reviewed campaign-original videos, 16 static graphics, 76 Google previews
+and 1,154 Snap creatives. The English explorer contains 1,751 records:
+**1,216 Democratic-aligned, 496 Republican-aligned,
 31 reviewed bipartisan and eight unresolved**. Only D/R enter party comparisons.
 The October 27 publisher-alignment audit corrected the earlier
 758 D / 440 R / 478 unresolved classification to **1,194 Democratic-aligned, 443 Republican-aligned,
@@ -185,7 +185,7 @@ rule to `nrsc-15447-0`, removing release commentary after its marked script with
 spoken text. One refreshed NRCC release has a new raw-body hash but unchanged recovered text.
 Native extraction bytes, alignment-review bindings, candidate reviews and language reviews
 remain unchanged. Complete local and built JSON/gzip/CSV exports reconcile field by field;
-all 1,781 Parquet rows match the loaded corpus.
+all 1,789 Parquet rows match the loaded corpus.
 
 The House-focused follow-up adds **seven Republican English script records**, raising
 Republican English House coverage from 129 to **136**. Winning For Women supplies one
@@ -238,6 +238,30 @@ homepage dates do not verify its release, so it remains outside dated counts and
 The replayable `campaign-native` collector requires the individually reviewed publisher
 link/post timestamp, original media hash, actual candidate and recovered quotations.
 It preserves prior acquisitions, keeps undated text separate and persists access-denial pauses.
+
+Following the campaign homepage's actual public **Load more** control recovered eight more
+reviewed Bresnahan PA-08 ad originals. Forty ordinary public-feed pages expose 239 posts,
+reaching December 1, 2025. Of 47 video-marked 2026 posts, 46 expose original links: two
+were already acquired, and 44 additional originals were recovered for review. The remaining
+January 16 card has an empty original-video field, no video/source/iframe tag and a public
+player fallback to Facebook; its caption and thumbnail are not substituted for ad text.
+The eight accepted 30-second ads have publisher-post dates August 5, August 10, September 9,
+September 18, September 28, October 1, October 5 and October 13. Each recovered script was
+read in full and its actual closing payer card inspected. The August 5 execution is paid
+for by **NRCC**, authorized by Rob for PA; it is not candidate-paid. The other seven
+identify Rob for PA as payer. These additions raise Republican English House coverage
+from 138 to **146**, but add no new candidate or district.
+
+The other 36 newly recovered originals remain outside the analyzed ad count: ordinary
+remarks, interviews, news/opponent excerpts and event footage are not automatically ads,
+and several social montages lack sufficient execution/payer evidence. Exact media hashes,
+post IDs/timestamps and recovered-quote gates bind the eight accepted reviews. Replaying a
+paginated record requires the homepage's exposed same-origin read-only public feed form;
+both the homepage and actual paginated-body hashes are retained. The embedded Graph URL
+contains only the plugin's public placeholder, not an API credential, and is sent only to
+the campaign's own public handler, never directly to Graph. No denied provider was retried
+or bypassed. All 1,781 prior ad objects remain field-for-field unchanged. These are bounded
+publisher-specific results, not national exhaustion or 44 newly verified ads.
 
 The fresh official Snap ZIP has SHA-256
 `5b2d96aca5794a5755157c5f162836a934de5cc4d067b970877c5e21684e1121`,

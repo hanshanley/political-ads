@@ -1,6 +1,7 @@
 import hashlib
 from datetime import datetime, timezone
 from urllib.error import HTTPError
+from urllib.parse import urlencode
 
 import pytest
 
@@ -99,6 +100,14 @@ def test_native_review_rejects_changed_or_unbound_evidence(tmp_path, native_revi
     assert result["attempts"][native_review["id"]]["state"] == "error"
 
 
+def test_native_party_payer_is_not_replaced_by_authorized_candidate(tmp_path, native_review):
+    native_review.update(sponsor="NRCC", sponsor_type="party")
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [native_review]})
+    ad = collect_campaign_native(tmp_path, "2026-10-27")["ads"][0]
+    assert ad["sponsor"] == "NRCC" and ad["sponsor_type"] == "party"
+    assert ad["alignment"] == "R" and "H6ZZ01001" in ad["attribution_basis"]
+
+
 def test_undated_original_is_preserved_in_backlog_not_dated_corpus(
     tmp_path, native_review, monkeypatch
 ):
@@ -153,3 +162,99 @@ def test_native_post_outside_collection_window_is_skipped_before_request(
 
     monkeypatch.setattr("political_ads.campaign_native.Client.get", no_request)
     assert collect_campaign_native(tmp_path, "2026-10-27")["ads"] == []
+
+
+@pytest.fixture
+def paginated_review(tmp_path, native_review, monkeypatch):
+    native_review["publisher_request"] = {
+        "action": "cff_get_new_posts",
+        "shortcode_data": '{"feed":"1"}',
+        "pag_url": '{"123":"public-pagination-placeholder"}',
+        "feed_id": "public-feed",
+        "post_id": "2",
+        "location": "content",
+        "page": 7,
+        "locator_nonce": "public-nonce",
+    }
+    payloads = {
+        native_review["publisher_url"]: (
+            b'<div id="cff" data-cff-shortcode=\'{"feed":"1"}\' '
+            b'data-postid="2" data-locatornonce="public-nonce">'
+            b'<button class="cff-load-more">Load more</button></div>'
+            b'<script>var cffajaxurl="https://campaign.example/wp-admin/admin-ajax.php";</script>'
+        ),
+        "https://campaign.example/wp-admin/admin-ajax.php": (
+            b'<div id="cff_123" data-cff-timestamp="1792787350">'
+            b'<img data-cff-video="https://video.example.fbcdn.net/original.mp4"></div>'
+        ),
+        "https://video.example.fbcdn.net/original.mp4": b"original",
+    }
+    calls = []
+
+    def get(self, url, **kwargs):
+        calls.append((url, kwargs.get("data")))
+        body = payloads[url]
+        if isinstance(body, Exception):
+            raise body
+        return body, {}
+
+    monkeypatch.setattr("political_ads.campaign_native.Client.get", get)
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [native_review]})
+    return native_review, payloads, calls
+
+
+def test_native_public_pagination_replays_exact_post_and_retains_both_sources(
+    tmp_path, paginated_review
+):
+    review, payloads, calls = paginated_review
+    result = collect_campaign_native(tmp_path, "2026-10-27", offline=True)
+    ad = result["ads"][0]
+    evidence = ad["segments"][0]["native_campaign_evidence"]
+    assert calls == [
+        (review["publisher_url"], None),
+        (
+            "https://campaign.example/wp-admin/admin-ajax.php",
+            urlencode(review["publisher_request"]).encode(),
+        ),
+        ("https://video.example.fbcdn.net/original.mp4", None),
+    ]
+    assert evidence["publisher_request"] == review["publisher_request"]
+    assert (
+        evidence["publisher_homepage_sha256"]
+        == hashlib.sha256(payloads[review["publisher_url"]]).hexdigest()
+    )
+    assert (
+        evidence["publisher_html_sha256"]
+        == hashlib.sha256(payloads["https://campaign.example/wp-admin/admin-ajax.php"]).hexdigest()
+    )
+    assert ad["published"] == "2026-10-23"
+    assert collect_campaign_native(tmp_path, "2026-10-27", offline=True) == result
+    assert len(calls) == 3
+
+
+@pytest.mark.parametrize("change", ["action", "nonce", "public_button", "post_timestamp"])
+def test_native_pagination_rejects_unbound_requests_or_posts(tmp_path, paginated_review, change):
+    review, payloads, calls = paginated_review
+    if change == "action":
+        review["publisher_request"]["action"] = "unreviewed_handler"
+    elif change == "nonce":
+        review["publisher_request"]["locator_nonce"] = "changed"
+    elif change == "public_button":
+        payloads[review["publisher_url"]] = b"<div>No exposed public feed</div>"
+    else:
+        review["post_timestamp"] += 1
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    result = collect_campaign_native(tmp_path, "2026-10-27")
+    assert result["ads"] == []
+    assert len(calls) == (2 if change == "post_timestamp" else 1)
+
+
+def test_native_public_pagination_denial_pauses_future_requests(tmp_path, paginated_review):
+    review, payloads, calls = paginated_review
+    url = "https://campaign.example/wp-admin/admin-ajax.php"
+    payloads[url] = HTTPError(url, 403, "Forbidden", {}, None)
+    first = collect_campaign_native(tmp_path, "2026-10-27")
+    second = collect_campaign_native(tmp_path, "2026-10-27")
+    assert first["ads"] == second["ads"] == []
+    assert len(calls) == 2
+    assert "403" in second["sources"][0]["error"]

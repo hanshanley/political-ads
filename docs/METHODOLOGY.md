@@ -116,6 +116,12 @@ claims; quality flags disclose this without broken-media placeholders.
 Individually reviewed campaign originals require a direct link from the campaign's public
 page, exact original-byte SHA-256, actual 2026 federal-candidate identity and retained approval/
 payer evidence. Feed originals also require the exact reviewed post ID and Unix timestamp.
+Paginated originals replay only the campaign homepage's exposed same-origin public feed
+form, with its exact reviewed fields and public button/feed binding. Evidence retains
+both the homepage and actual paginated-response hashes; original links must still match
+the reviewed post, media hash and recovered quotations. A video's legal payer remains
+separate from its authorized candidate: an NRCC-paid, candidate-authorized execution is
+classified as party-sponsored, not candidate-paid.
 Local speech and frame OCR remain unchanged, including possible name or negation errors.
 These records use `publisher_post_date`, not an asserted first release or paid-delivery date.
 Recovered originals without a verified date remain text-complete in the media backlog and
