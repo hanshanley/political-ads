@@ -11,6 +11,7 @@ from pathlib import Path
 
 import duckdb
 
+from political_ads.alignments import apply_alignment_reviews
 from political_ads.http import Client
 from political_ads.registry import enrich, fec_table
 from political_ads.schema import END, START, Ad, in_window
@@ -36,7 +37,7 @@ def load_corpus(root: Path) -> dict:
     images = read_json(root / "data/site/images.json", {"ads": [], "sources": []})
     google = read_json(root / "data/site/google.json", {"ads": [], "sources": []})
     snap = read_json(root / "data/site/snap.json", {"ads": [], "sources": []})
-    return corpus | {
+    result = corpus | {
         "ads": corpus["ads"]
         + [
             ad
@@ -53,6 +54,10 @@ def load_corpus(root: Path) -> dict:
         + google["sources"]
         + snap["sources"],
     }
+    result["ads"] = apply_alignment_reviews(
+        result["ads"], read_json(root / "data/publisher-alignments.json", {"reviews": []})
+    )
+    return result
 
 
 def collect(root: Path, until: str, source_ids: list[str], offline: bool = False) -> dict:

@@ -142,10 +142,14 @@ generated together in `outputs/analysis.json` and `outputs/analysis.html`; the m
 
 The reconciled October 26 cutoff contains 1,714 acquired text records: 413 written records,
 65 captions, 16 static graphics, 76 Google previews and 1,144 Snap creatives. The English
-explorer contains 1,676 records: 758 Democratic-aligned, 440 Republican-aligned and 478 with
-unresolved alignment. Only the first two groups enter party comparisons. Relative to the
-949-record committed checkpoint, Republican coverage gains 17 written records, not additional
-Republican-aligned Snap creatives. Record counts are not counts of distinct creative executions.
+explorer contains 1,676 records. The October 27 publisher-alignment audit corrects the former
+758 D / 440 R / 478 unresolved classification to **1,194 Democratic-aligned, 443 Republican-aligned,
+31 reviewed bipartisan and eight unresolved**. Only D/R enter party comparisons.
+The audit adds no ads or text: of the former 478 unresolved records, 436 are now D-aligned,
+three R-aligned, 31 bipartisan and eight still unresolved. The separate acquisition expansion
+from the 949-record checkpoint added 17 Republican written records. Three previously unassigned
+Cornhusker Majority Snap records are now R-aligned; that is reclassification, not new acquisition.
+Record counts are not counts of distinct creative executions.
 All 1,595 matched native leads were attempted; 361 still lack sufficient federal identity and
 90 have no substantive recovered text. These exclusions are not analyzed ads.
 
@@ -166,14 +170,42 @@ committee constraints remains visibly unresolved rather than silently merged.
 Reviewed mappings distinguish parent unions from their political funds, registered PACs from
 noncommittee disclosure filers, and similarly named organizations. United Association's own
 description is explicitly bipartisan; labor affiliation is not a blanket Democratic label.
+`data/publisher-alignments.json` retains all 23 sponsor/source reviews, primary evidence,
+qualitative 2026 FEC filing observations and exact acquisition hashes for 496 records, of which
+478 are English-eligible. These derived reviews do not change the acquisition partitions,
+candidate/language review hashes, payer IDs or recognized text.
+
+The AFL-CIO grouping is Democratic-leaning, not exclusively Democratic: its own linked 2026
+endorsement table has 322 distinct federal name/state/office entries. Of 257 exact FEC joins,
+244 are DEM, five DFL, four REP and four IND; 65 names remain unjoined rather than guessed.
+Current national electoral-program evidence supports the grouping, while Republican and
+independent endorsements remain explicit exceptions. AFSCME's own identification of PEOPLE
+as its political program and that exact fund's current federal filings support both AFSCME
+publisher groupings without transferring the fund's ID to the parent payer.
+
+Current FEC general-election support/oppose disclosures independently substantiate the other
+reviewed PAC groupings. The LCV and CFFE/Opportunity Action Fund parent-program relationships
+are documented by their own websites; program IDs are evidence references, not substituted
+creative-payer identities. Lower Costs Now and CFFE also support independents; CFFE's
+Democratic-opposition exception is retained. The filings are not summed as spending, counted
+as ads, or joined one-to-one to creatives. Late reports for earlier elections are excluded.
+
+The eight unresolved English records are four from Midnight Sun Independence Fund, two from
+DemsVote and two from Fair Deal Alaska. The first lacks a verified organizational program
+identity; the second lacks substantiating current-cycle evidence beyond its payer/committee name;
+the third's available primary interventions do not establish party alignment. Empty FEC queries
+do not establish absence of activity or funding. These are reviewed uncertainties, not missing
+transcripts. UA's 31 cross-party program records are separately filterable as other, not unknown.
 
 The 2026 Texas Forever committee (C00962308) is not an older similarly named committee.
 For Michigan Action Fund (C00886093) remains separate from the For Michigan parent organization,
 whose mapping additionally requires the exact `4mich.org` landing host. Fair Deal Alaska
-(C00957555) is separately identified. These four payer mappings retain unknown alignment;
-committee identity, landing-page attacks or support for an individual candidate do not establish
-organizational party alignment. Each native creative still requires recovered federal-candidate
-evidence before entering the text corpus.
+(C00957555) is separately identified. Raw identity mappings retain their original labels;
+the independent alignment review assigns Texas Forever and For Michigan Action Fund to D
+from their own current general-election filings. Fair Deal Alaska remains unresolved.
+Committee identity, landing-page attacks or support for an individual primary candidate do not
+by themselves establish organizational party alignment. Each native creative still requires
+recovered federal-candidate evidence before entering the text corpus.
 
 SAM Project Action Fund's exact archive payer name is corroborated by the visually reviewed
 `SAM-PROJECT.ORG` disclaimer in its public native creative and the public SAM Project website.

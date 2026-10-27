@@ -30,6 +30,30 @@ either Democratic- or Republican-aligned comparison denominator. Parent unions, 
 funds and similarly named advocacy organizations are not interchangeable. Optional exact
 landing-host constraints reject missing, unrelated and suffix-lookalike hosts.
 
+Publisher electoral-program reviews are separate from raw identity mappings.
+`data/publisher-alignments.json` binds each applied decision to a specific acquired ID,
+source, sponsor, original classification and source hash. The derived corpus preserves
+`original_alignment` and complete `alignment_review` evidence in JSON/CSV. Changed hashes,
+identities or original labels cannot inherit a review: they keep their acquisition alignment
+and receive a stale-review quality flag. New records do not inherit decisions automatically.
+OCR, speech, candidate-scope and language reviews are not recomputed or rebound for this layer.
+
+Missing FEC party registration is not equivalent to unknown electoral alignment. Editorial
+D/R groupings use documented current federal electoral programs: an explicit organizational
+program/endorsement record, or the exact filer's reported general-election support/oppose
+directions. Primary-only spending cannot by itself establish alignment. Documented parent/program
+relationships may substantiate organizational alignment without transferring committee IDs,
+merging legal payers or asserting sole creative funding. FEC evidence is qualitative, not a
+sum of amended transactions or an expenditure-to-creative attribution.
+
+Democratic-leaning is not synonymous with exclusively Democratic: AFL-CIO's current
+endorsement evidence includes Republican and independent candidates, and Lower Costs Now
+and CFFE support independents. These exceptions are explicit in the reviews. UA's own current
+program and releases establish bipartisan support, retained as other rather than unknown.
+Remaining unknowns carry reviewed reasons. Neither labor affiliation, policy positions,
+hostile wording nor a suggestive payer name alone establishes alignment. Publisher groupings
+do not determine whether an individual ad supports or attacks a particular party.
+
 The FEC candidate master includes primary candidates and federal race metadata. Full first/last
 names are conservative matching leads; a surname alone is insufficient. Race inference prioritizes
 names in the individual creative, using the release title only if the script has no full-name match.

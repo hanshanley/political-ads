@@ -67,3 +67,26 @@ test("unresolved alignment remains independently filterable with complete eviden
   await page.getByRole("button", { name: "Reset filters" }).click();
   await expect(page.getByRole("status")).toContainText(`${dataset.ads.length} records`);
 });
+
+test("reviewed bipartisan records display their basis and export unchanged evidence", async ({ page }) => {
+  await page.goto("./");
+  const response = await page.request.get("./data/dataset.json");
+  const dataset = await response.json();
+  const included = dataset.ads.filter((ad: { alignment: string }) => ad.alignment === "other");
+  expect(included.length).toBeGreaterThan(0);
+  expect(included.every((ad: { original_alignment: string; alignment_review: { status: string } }) =>
+    ad.original_alignment === "unknown" && ad.alignment_review.status === "bipartisan")).toBe(true);
+  await page.getByLabel("Parties", { exact: true }).selectOption("other");
+  await expect(page.getByRole("status")).toContainText(`${included.length} records`);
+  const card = page.locator(".ad-card").first();
+  await card.getByRole("button", { name: "Read all available text" }).click();
+  await expect(card.getByText("Reviewed publisher alignment", { exact: false })).toBeVisible();
+  await expect(card.getByText("This supersedes the original alignment only.", { exact: false })).toBeVisible();
+  await expect(card.getByRole("link", { name: "Alignment source 1", exact: true })).toBeVisible();
+  const pendingDownload = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Download JSON" }).click();
+  const stream = await (await pendingDownload).createReadStream();
+  const chunks: Buffer[] = [];
+  for await (const chunk of stream) chunks.push(chunk);
+  expect(JSON.parse(Buffer.concat(chunks).toString()).ads).toEqual(included);
+});

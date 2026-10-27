@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections import Counter
 from html import escape
 from pathlib import Path
 
@@ -99,12 +100,36 @@ def research_report(dataset: dict, strata: dict) -> str:
         if race != "Unresolved"
         and all(group["coverage"][party]["messages"] for party in ("D", "R"))
     ]
+    reviewed = [ad for ad in dataset["ads"] if ad.get("alignment_review")]
+    alignment_counts = Counter(
+        (ad["alignment_review"]["id"], ad["source"], ad["sponsor"], ad["alignment"])
+        for ad in reviewed
+    )
+    reviews = {ad["alignment_review"]["id"]: ad["alignment_review"] for ad in reviewed}
+    alignment_rows = [
+        (sponsor, source, party, count, reviews[review_id]["rationale"])
+        for (review_id, source, sponsor, party), count in sorted(
+            alignment_counts.items(), key=lambda item: (-item[1], item[0])
+        )
+    ]
     sections = (
         "<h2>Local research snapshot - not published</h2>"
         "<p>All tables describe the saved collection, not national advertising volume. "
         "The complete JSON contains text, exact match offsets, source hashes, and included ad IDs "
         "for every comparison, including month, chamber, sponsor type, publisher, race, and phase."
-        "</p><h2>How the observed language differs</h2>"
+        "</p><h2>Publisher alignment audit</h2>"
+        "<p>The table accounts for reviewed records previously left outside D/R comparisons. "
+        "Missing formal FEC party registration does not make electoral alignment unknowable. "
+        "D/R describe documented publisher electoral programs, not exclusive endorsements "
+        "or formal party membership. Other includes reviewed bipartisan programs; unknown "
+        "means the available evidence still does not establish a D/R grouping. All contain "
+        "actual ad text. Reviews are bound to each original acquisition hash, and complete "
+        "source URLs, filing observations and original classifications are in the downloads. "
+        "No text was added by this classification correction.</p>"
+        + table(
+            ("Sponsor", "Source", "Alignment", "English records", "Review basis"), alignment_rows
+        )
+        + "<h2>How the observed language differs</h2>"
         "<p>The tables separate issue wording from opponent portrayals. Read the contextual "
         "examples below to determine who is speaking and who is being described. "
         "Primary attacks on same-party candidates and positive self-descriptions are not "

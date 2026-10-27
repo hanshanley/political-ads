@@ -10,6 +10,11 @@ export interface Ad {
   segments: { text: string; kind: string; voice: string; start_seconds: number | null }[];
   media_urls: string[];
   quality_flags: string[];
+  original_alignment?: Party;
+  alignment_review?: {
+    id: string; alignment: Party; status: string; rationale: string; reviewed_on: string;
+    reviewed_source_hash: string; evidence: { url: string }[];
+  };
 }
 export interface Example {
   ad_id: string; party: Party; target: string; target_party: Party; frame: string;

@@ -108,7 +108,14 @@ function AdCard({ ad, selected, examples }: {
       <strong>{example.frame} · {example.target}</strong><p>{example.context}</p>
     </aside>)}
     {open && <div className="provenance">
-      <p><strong>Attribution:</strong> {ad.attribution_basis}</p>
+      <p><strong>{ad.alignment_review ? "Original acquisition attribution:" : "Attribution:"}</strong> {ad.attribution_basis}</p>
+      {ad.alignment_review && <div>
+        <p><strong>Reviewed publisher alignment ({ad.alignment_review.reviewed_on}):</strong>{" "}
+          {ad.alignment_review.rationale} This supersedes the original alignment only.</p>
+        <p>{ad.alignment_review.evidence.map((item, index) =>
+          <span key={index}>{index > 0 && " · "}<a href={item.url} target="_blank" rel="noreferrer">
+            Alignment source {index + 1}</a></span>)}</p>
+      </div>}
       <p><strong>Text:</strong> {ad.segments[0]?.kind === "publisher_transcript" ?
         "Publisher transcript." : ad.segments[0]?.kind === "publisher_ad_copy" ?
           "Publisher-quoted ad copy; completeness is unverified." :

@@ -60,6 +60,9 @@ silently becomes zero advertising.
 `data/processed/`, and model files are local-only. `parquet` creates a DuckDB-readable table.
 Complete CSV/JSON exports retain transcripts, segments, evidence offsets, hashes, publisher
 provenance, and extraction quality notes.
+Hash-bound publisher reviews in `data/publisher-alignments.json` distinguish electoral
+alignment from formal party registration. Exports retain original labels and review evidence;
+reviewed bipartisan programs remain separate from genuinely unresolved affiliations.
 
 Analyze the saved corpus without building or publishing the website:
 

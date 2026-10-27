@@ -27,6 +27,10 @@ METHODOLOGY = [
     "Snap's positive impressions do not independently locate delivery within its scheduled dates.",
     "Party alignment describes the source publisher; "
     "joint creative payers require separate review.",
+    "Reviewed publisher alignment uses documented electoral programs and FEC support/oppose "
+    "filings, not a blank formal party field. Democratic-leaning can include cross-party "
+    "endorsements; documented bipartisan programs stay separate. Per-record hash-bound "
+    "reviews retain original classifications and do not rewrite text or extraction evidence.",
     "Unresolved and other publisher alignments remain in the evidence explorer and downloads "
     "but do not enter Democratic/Republican comparison denominators.",
     "Charts count unique exact messages per party after filters, "
@@ -252,6 +256,15 @@ def validate_dataset(dataset: dict) -> None:
             raise ValueError(f"Duplicate source identity: {ad['id']}")
         seen.add(ad["id"])
         Ad(**{key: value for key, value in ad.items() if key in Ad.__dataclass_fields__}).validate()
+        if review := ad.get("alignment_review"):
+            if (
+                review["alignment"] != ad["alignment"]
+                or review["reviewed_source_hash"] != ad["source_hash"]
+                or review["source"] != ad["source"]
+                or review["sponsor"] != ad["sponsor"]
+                or review["expected_alignment"] != ad["original_alignment"]
+            ):
+                raise ValueError(f"Publisher alignment review mismatch: {ad['id']}")
         if not eligible(ad, dataset["until"]):
             raise ValueError(f"Out-of-scope ad: {ad['id']}")
         if ad["text_hash"] != digest(ad["text"]):

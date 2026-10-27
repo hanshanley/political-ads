@@ -79,6 +79,11 @@ def test_real_metrics_or_evidence_tampering_fails():
     dataset["methodology"].append("Changed publication context")
     with pytest.raises(ValueError, match="snapshot"):
         validate_dataset(dataset)
+    dataset = prepare(ROOT)
+    ad = next(ad for ad in dataset["ads"] if ad.get("alignment_review"))
+    ad["alignment_review"]["reviewed_source_hash"] = "changed"
+    with pytest.raises(ValueError, match="Publisher alignment review mismatch"):
+        validate_dataset(dataset)
 
 
 def test_local_analysis_keeps_full_text_and_evidence_without_building_website(tmp_path):
@@ -88,7 +93,7 @@ def test_local_analysis_keeps_full_text_and_evidence_without_building_website(tm
     from political_ads.research import research
 
     shutil.copytree(ROOT / "data/site", tmp_path / "data/site")
-    for name in ("codebook.json", "reviews.json"):
+    for name in ("codebook.json", "reviews.json", "publisher-alignments.json"):
         shutil.copy(ROOT / "data" / name, tmp_path / "data" / name)
     result = research(tmp_path)
     output = tmp_path / "outputs"

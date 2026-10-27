@@ -47,12 +47,21 @@ describe("synchronized evidence", () => {
     expect(text).toContain('"three"');
     expect(csv([{ ...ads[0], text: " \t=SUM(1,1)" }])).toContain("' \t=SUM(1,1)");
   });
-  it("retains unresolved publishers without adding them to either party's denominator", () => {
+  it("keeps unresolved and bipartisan publishers separate and outside party denominators", () => {
     const unresolved: Ad = { ...ads[0], id: "unresolved", alignment: "unknown", message_id: "u" };
-    const corpus = [...ads, unresolved];
+    const bipartisan: Ad = { ...ads[0], id: "bipartisan", alignment: "other", message_id: "b",
+      original_alignment: "unknown", alignment_review: {
+        id: "program-2026", alignment: "other", status: "bipartisan", reviewed_on: "2026-10-27",
+        rationale: "Documented cross-party program.", reviewed_source_hash: "",
+        evidence: [{ url: "https://example.org/program" }],
+      } };
+    const corpus = [...ads, unresolved, bipartisan];
     expect(filterAds(corpus, { ...EMPTY_FILTERS, party: "unknown" })).toEqual([unresolved]);
+    expect(filterAds(corpus, { ...EMPTY_FILTERS, party: "other" })).toEqual([bipartisan]);
     expect(shares(corpus, ["Healthcare"], "issues")).toEqual(shares(ads, ["Healthcare"], "issues"));
     expect(csv([unresolved])).toContain('"Full health care\nmessage."');
+    expect(csv([bipartisan])).toContain('""status"":""bipartisan""');
+    expect(csv([bipartisan])).toContain('"original_alignment"');
   });
   it("uses reported delivery overlap, including carryovers, without assuming launch dates", () => {
     const carryover: Ad = { ...ads[0], published: "2025-11-01", date_basis: "delivery",
