@@ -62,11 +62,21 @@ def collect(root: Path, until: str, source_ids: list[str], offline: bool = False
     public = root / "data/site"
     old = read_json(public / "corpus.json", {"ads": [], "sources": []})
     selected = [s for s in SOURCES if not source_ids or s.id in source_ids]
+    candidates = read_json(root / "data/processed/registry.json", {}).get("candidates", [])
+    by_id = {candidate["candidate_id"]: candidate for candidate in candidates}
+    for alias in read_json(root / "data/snap-candidate-aliases.json", []):
+        if alias["candidate_id"] in by_id:
+            candidates.append(
+                by_id[alias["candidate_id"]] | {"name": alias["name"], "reviewed_alias": alias}
+            )
     old_ads = {s.id: [a for a in old["ads"] if a["source"] == s.id] for s in SOURCES}
     statuses = {s["source"]: s for s in old["sources"]}
     with ThreadPoolExecutor(max_workers=3) as executor:
         results = executor.map(
-            lambda source: (source, *collect_wordpress(client, source, until)),
+            lambda source: (
+                source,
+                *collect_wordpress(client, source, until, None, candidates),
+            ),
             selected,
         )
         for source, ads, status in results:

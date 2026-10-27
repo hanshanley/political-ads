@@ -22,6 +22,76 @@ def test_public_media_links_normalize_video_hosts_and_include_gallery_popup_urls
     ]
 
 
+def test_union_scripts_require_federal_candidate_evidence_in_the_actual_ad():
+    source = next(s for s in SOURCES if s.id == "ua-vote-pac")
+    candidates = [
+        {
+            "candidate_id": "H6PA08277",
+            "name": "FITZPATRICK, BRIAN",
+            "party": "REP",
+            "state": "PA",
+            "office": "H",
+            "district": "01",
+        }
+    ]
+    release = post(
+        "UA Launches Independent Expenditure in PA-1",
+        "<p>A separate press statement about Brian Fitzpatrick.</p>"
+        "<p>TRANSCRIPT:</p><p>Brian Fitzpatrick will work across party lines to "
+        "lower costs for working families and protect Pennsylvania jobs.</p>",
+    )
+    ads = parse_post(release, source, "2026-10-26", candidates)
+    assert len(ads) == 1
+    assert ads[0]["alignment"] == "unknown"
+    assert ads[0]["race"] == "PA-01"
+    assert ads[0]["segments"][0]["federal_scope_candidate_ids"] == ["H6PA08277"]
+    release["content"]["rendered"] = (
+        "<p>Our group also supports Brian Fitzpatrick in Congress.</p>"
+        "<p>TRANSCRIPT:</p><p>Our candidate for governor will work across party lines "
+        "to lower costs for working families and protect local jobs.</p>"
+    )
+    assert not parse_post(release, source, "2026-10-26", candidates)
+    with pytest.raises(ValueError, match="actual federal candidate registry"):
+        parse_post(release, source, "2026-10-26")
+
+
+def test_script_background_heading_allows_spacing_before_the_colon():
+    script = (
+        "A Navy veteran will fight corruption in Washington and bring down costs "
+        "for working families across central Connecticut."
+    )
+    blocks = transcript_blocks(
+        f"<p>AD TRANSCRIPT:</p><p>{script}</p><p>Background :</p>"
+        "<p>The organization's previous election spending is not part of this script.</p>"
+    )
+    assert blocks == [script]
+
+
+@pytest.mark.parametrize(
+    "background",
+    [
+        "Stover is committed to representing his district. This is release background.",
+        "To learn more about Stover's campaign, visit the website.",
+    ],
+)
+def test_stover_script_excludes_post_script_campaign_boilerplate(background):
+    source = next(s for s in SOURCES if s.id == "stover")
+    script = (
+        "I am running for Congress to lower costs for families and protect our communities.\n"
+        "I am Brian Stover, and I approve this message."
+    )
+    release = post(
+        "Brian Stover Releases New Television Ad",
+        "<h2>FULL TRANSCRIPT OF “Take Out the Trash”</h2>"
+        + "".join(f"<p>{line}</p>" for line in script.splitlines())
+        + f"<p>{background}</p><p>The ad will air during a football game.</p>",
+    )
+    ads = parse_post(release, source, "2026-10-26")
+    assert len(ads) == 1
+    assert ads[0]["text"] == script
+    assert ads[0]["race"] == "GA-14"
+
+
 def test_smp_ad_quotes_exclude_spokesperson_commentary_and_keep_one_creative():
     source = next(s for s in SOURCES if s.id == "smp")
     release = post(
@@ -36,6 +106,86 @@ def test_smp_ad_quotes_exclude_spokesperson_commentary_and_keep_one_creative():
     assert ads[0]["text"].endswith("That is why this election matters to all of us.")
     assert ads[0]["segments"][0]["kind"] == "publisher_ad_copy"
     assert "publisher_ad_copy_completeness_unverified" in ads[0]["quality_flags"]
+
+
+def test_lawler_body_identified_ad_quotes_survive_headline_gate_without_press_commentary():
+    source = next(s for s in SOURCES if s.id == "lawler")
+    spoken = (
+        "Our communities deserve leaders who will lower costs and protect families "
+        "instead of looking out for powerful special interests."
+    )
+    release = post(
+        "A candidate has hundreds of thousands of reasons",
+        f"<p>The ad opens with Conley’s own words: “{spoken}”</p>"
+        "<p>“A campaign manager offers a separate press statement that is not "
+        "spoken in this advertisement,” said the campaign manager.</p>",
+    )
+    result = parse_post(release, source, "2026-10-26")
+    assert len(result) == 1
+    assert result[0]["text"] == spoken
+    assert result[0]["race"] == "NY-17"
+    assert result[0]["segments"][0]["kind"] == "publisher_ad_copy"
+    assert result[0]["quality_flags"] == ["publisher_ad_copy_completeness_unverified"]
+    release["content"]["rendered"] = "<p>“Not an ad transcript,” the spokesperson said.</p>"
+    assert not parse_post(release, source, "2026-10-26")
+
+
+def test_salazar_explicit_ad_speech_excludes_separate_candidate_statement():
+    source = next(s for s in SOURCES if s.id == "salazar")
+    spoken = (
+        "The safety of our children matters more than anything and I will keep fighting "
+        "to protect families from new threats."
+    )
+    release = post(
+        "Salazar launches second ad",
+        f"<p>“{spoken}” Salazar says in the new ad.</p>"
+        "<p>“This is a longer separate statement for the press and not dialogue "
+        "from the advertisement,” Salazar said.</p>",
+    )
+    result = parse_post(release, source, "2026-10-26")
+    assert len(result) == 1
+    assert result[0]["text"] == spoken
+    assert result[0]["race"] == "FL-27"
+    assert result[0]["quality_flags"] == ["publisher_ad_copy_completeness_unverified"]
+
+
+def test_salazar_flattened_release_excludes_press_quotes_and_preserves_conflicting_dates():
+    source = next(s for s in SOURCES if s.id == "salazar")
+    first = "One of my proudest moments was passing this law to protect children and families."
+    continuation = "It gives parents the tools to protect their children."
+    release = post(
+        "Salazar launches second ad",
+        "<p>FOR IMMEDIATE RELEASE September 23th, 2026</p>"
+        f"<p>Introductory background. “{first}” Salazar says in the new ad.\ufeff "
+        f"“{continuation}”\ufeff Some intervening release background. "
+        "“A separate statement for reporters,” Salazar said. "
+        "“This additional press statement is not part of the ad.”</p>",
+    )
+    release["date"] = "2026-09-26T16:42:17"
+    result = parse_post(release, source, "2026-10-26")
+    assert result[0]["text"] == first + "\n" + continuation
+    assert result[0]["published"] == "2026-09-26"
+    assert result[0]["segments"][0]["publisher_visible_release_date"] == "2026-09-23"
+    assert "publisher_visible_release_date_differs_from_cms" in result[0]["quality_flags"]
+
+
+def test_lawler_multiple_ad_descriptions_do_not_include_titles_or_join_creatives():
+    source = next(s for s in SOURCES if s.id == "lawler")
+    spoken = (
+        "These are the spoken words of an advertisement that should be kept separate "
+        "from another creative released on the same day."
+    )
+    release = post(
+        "Two new ads",
+        f"<p>In “First,” the family tells its story. “{spoken}”</p>"
+        f"<p>“Second” opens with the candidate. “{spoken} We can do better.”</p>"
+        "<p>“This is the separate reaction from the campaign spokesperson and must "
+        "not be counted as ad text,” the spokesperson said.</p>",
+    )
+    result = parse_post(release, source, "2026-10-26")
+    assert len(result) == 2
+    assert result[0]["text"] == spoken
+    assert result[1]["text"] == spoken + " We can do better."
 
 
 def test_lcv_actual_scripts_not_teasers_commentary_or_all_release_video_links():

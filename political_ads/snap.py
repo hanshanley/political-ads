@@ -33,22 +33,46 @@ def federal_payer(row: dict, candidates: list[dict], names: dict, aliases: dict)
     declared = set(re.findall(r"\bC\d{8}\b", row["CommitteeIdentificationNumber"]))
     named = names.get(key, set())
     reviewed = aliases.get(key)
-    if reviewed and "publisher" in reviewed:
-        disclosure_id = reviewed.get("noncommittee_disclosure_id", "")
-        if (declared | named) - ({disclosure_id} if disclosure_id else set()):
+    if reviewed and reviewed.get("landing_hosts"):
+        landing = re.search(r"https?://[^\s,;]+", row.get("CreativeProperties", ""))
+        host = urlsplit(landing[0]).hostname if landing else ""
+        if not host or host.removeprefix("www.") not in reviewed["landing_hosts"]:
             return None
-        return reviewed["publisher"] | {
-            "committee_id": "",
-            "noncommittee_disclosure_id": disclosure_id,
-            "payer": payer,
-            "identity_basis": reviewed["evidence"],
-            "identity_url": reviewed["evidence_url"],
-            "requires_federal_mention": True,
+    if reviewed and "publisher" in reviewed:
+        committee_id = reviewed.get("committee_id", "")
+        disclosure_id = reviewed.get("noncommittee_disclosure_id", "")
+        disclosure_ids = reviewed.get("noncommittee_disclosure_ids", [])
+        allowed = {
+            identity for identity in [committee_id, disclosure_id, *disclosure_ids] if identity
         }
+        if (declared | named) - allowed:
+            return None
+        return (
+            reviewed["publisher"]
+            | {
+                "committee_id": committee_id,
+                "noncommittee_disclosure_id": disclosure_id,
+                "payer": payer,
+                "identity_basis": reviewed["evidence"],
+                "identity_url": reviewed["evidence_url"],
+                "requires_federal_mention": True,
+            }
+            | ({"noncommittee_disclosure_ids": disclosure_ids} if disclosure_ids else {})
+        )
     identities = declared | named | ({reviewed["committee_id"]} if reviewed else set())
     if len(identities) != 1:
         return None
     committee = next(iter(identities))
+    reviewed_candidate = reviewed.get("candidate_id") if reviewed else None
+    if reviewed_candidate:
+        candidates = [
+            candidate
+            for candidate in candidates
+            if candidate["candidate_id"] == reviewed_candidate
+            and candidate["principal_committee"] == committee
+        ]
+        if len(candidates) != 1:
+            return None
     matched = federal_advertisers(
         [dict(Advertiser_ID=payer, Advertiser_Name=payer, Public_IDs_List=committee)], candidates
     ).get(payer)
@@ -63,6 +87,8 @@ def federal_payer(row: dict, candidates: list[dict], names: dict, aliases: dict)
     else:
         basis = reviewed["evidence"]
         evidence_url = reviewed["evidence_url"]
+    if reviewed_candidate:
+        basis += " " + reviewed["evidence"] + " " + reviewed["evidence_url"]
     return matched | {"payer": payer, "identity_basis": basis, "identity_url": evidence_url}
 
 
@@ -100,12 +126,14 @@ def snap_leads(
     aliases: dict,
     until: str,
     rejected: list[dict] | None = None,
+    unmatched: list[dict] | None = None,
 ) -> list[dict]:
     names = defaultdict(set)
     for committee in committees:
         names[committee["name"].strip().casefold()].add(committee["committee_id"])
     aliases = {key.strip().casefold(): value for key, value in aliases.items()}
     groups = {}
+    unmatched_groups = {}
     for row in rows:
         if row["CountryCode"].strip().casefold() != "united states":
             continue
@@ -113,6 +141,41 @@ def snap_leads(
             continue
         publisher = federal_payer(row, candidates, names, aliases)
         if publisher is None:
+            if unmatched is not None:
+                start = row["StartDate"][:10].replace("/", "-")
+                end = row["EndDate"][:10].replace("/", "-") or None
+                try:
+                    eligible = in_window(start, end, until)
+                except ValueError:
+                    eligible = False
+                if eligible:
+                    payer = row["PayingAdvertiserName"]
+                    group = unmatched_groups.setdefault(
+                        payer,
+                        dict(
+                            payer=payer,
+                            review_state=(
+                                "reviewed_alias_constraints_not_met"
+                                if payer.strip().casefold() in aliases
+                                else "unreviewed_identity_and_scope"
+                            ),
+                            platform_ad_ids=set(),
+                            creative_urls=set(),
+                            reported_fec_ids=set(),
+                            landing_hosts=set(),
+                            candidate_ballot_information=set(),
+                        ),
+                    )
+                    group["platform_ad_ids"].add(row["ADID"])
+                    group["creative_urls"].add(row["CreativeUrl"])
+                    group["reported_fec_ids"].update(
+                        re.findall(r"\bC\d{8}\b", row["CommitteeIdentificationNumber"])
+                    )
+                    landing = re.search(r"https?://[^\s,;]+", row.get("CreativeProperties", ""))
+                    if landing and (host := urlsplit(landing[0]).hostname):
+                        group["landing_hosts"].add(host)
+                    if information := row.get("CandidateBallotInformation", "").strip():
+                        group["candidate_ballot_information"].add(information)
             continue
         start = row["StartDate"][:10].replace("/", "-")
         end = row["EndDate"][:10].replace("/", "-") or None
@@ -156,6 +219,14 @@ def snap_leads(
                 positive_impressions=True,
             )
         )
+    if unmatched is not None:
+        unmatched.extend(
+            {
+                key: sorted(value) if isinstance(value, set) else value
+                for key, value in group.items()
+            }
+            for _, group in sorted(unmatched_groups.items())
+        )
     return sorted(groups.values(), key=lambda lead: (lead["publisher"]["source"], lead["id"]))
 
 
@@ -166,6 +237,7 @@ def discover_snap(root: Path, until: str) -> dict:
         with archive.open("PoliticalAds.csv") as handle:
             rows = list(csv.DictReader(io.TextIOWrapper(handle, encoding="utf-8-sig")))
     rejected = []
+    unmatched = []
     leads = snap_leads(
         rows,
         registry["candidates"],
@@ -173,19 +245,27 @@ def discover_snap(root: Path, until: str) -> dict:
         read_json(root / "data/snap-payers.json", {}),
         until,
         rejected,
+        unmatched,
     )
     result = dict(
         until=until,
         archive_sha256=hashlib.sha256(archive_path.read_bytes()).hexdigest(),
         rows_scanned=len(rows),
         rejected_federal_records=rejected,
+        unmatched_payers=unmatched,
         leads=leads,
     )
     write_json(root / "outputs/snap-discovery.json", result)
     print(
         json.dumps(
-            {key: value for key, value in result.items() if key != "leads"}
+            {
+                key: value
+                for key, value in result.items()
+                if key not in {"leads", "unmatched_payers"}
+            }
             | dict(
+                unmatched_payer_count=len(unmatched),
+                unmatched_payer_creatives=sum(len(payer["creative_urls"]) for payer in unmatched),
                 candidate_creatives=len(leads),
                 federal_scope_pending=sum(
                     bool(lead["publisher"].get("requires_federal_mention")) for lead in leads
@@ -331,11 +411,13 @@ def snap_ad(
         reported_platform="snap",
         reported_ad_type="video" if speech is not None else "image",
     )
+    if publisher.get("noncommittee_disclosure_ids"):
+        segments[0]["fec_noncommittee_disclosure_ids"] = publisher["noncommittee_disclosure_ids"]
     start = min(p["scheduled_start"] for p in lead["placements"])
     ends = [p["scheduled_end"] for p in lead["placements"]]
     end = max(ends) if all(ends) else None
     language = language_of(text)
-    if speech and speech["segments"]:
+    if speech and any(segment["kind"] == "local_asr" for segment in segments):
         language = speech["language"] if speech["language_probability"] >= 0.9 else "unknown"
     return Ad(
         id=lead["id"],
@@ -371,6 +453,11 @@ def snap_ad(
             "creative_placement_intervals_not_continuous_delivery",
         ]
         + (
+            ["implausible_asr_timing_excluded_retained_for_review"]
+            if segments[0].get("excluded_implausible_asr_segments")
+            else []
+        )
+        + (
             [
                 "local_asr_may_misrecognize_words",
                 "video_frame_sampling_may_miss_short_overlays",
@@ -385,8 +472,19 @@ def snap_ad(
             + publisher["identity_url"]
             + ". "
             + (
-                "Reviewed advocacy payer without an assigned FEC committee ID; an evidenced "
-                "noncommittee disclosure ID is retained separately. Recovered text must "
+                (
+                    "Reviewed advocacy payer with an evidenced FEC committee ID. "
+                    if publisher["committee_id"]
+                    else "Reviewed advocacy payer without an assigned FEC committee ID; "
+                    "evidenced noncommittee disclosure IDs are retained separately. "
+                    if publisher.get("noncommittee_disclosure_ids")
+                    else "Reviewed advocacy payer without an assigned FEC committee ID; "
+                    "an evidenced noncommittee disclosure ID is retained separately. "
+                    if publisher.get("noncommittee_disclosure_id")
+                    else "Reviewed advocacy payer without an assigned FEC committee ID; "
+                    "no noncommittee disclosure ID is assigned in this crosswalk. "
+                )
+                + "Recovered text must "
                 "contain a full 2026 House/Senate candidate name or an exact-source-hash-bound "
                 "federal-identity review with quoted evidence. Alignment is organizational, "
                 "not inferred from hostile wording. A single mentioned race is context, "
@@ -508,12 +606,14 @@ def collect_snap(
         if limit and count >= limit:
             break
         count += 1
+        extraction_ready = False
         try:
             html, _ = client.get(lead["source_url"], retry=False)
             url = native_asset(html, lead["source_url"])
             body, _ = client.get(url, retry=False)
             if lead["media_type"] == "mp4":
                 media_hash, ocr, speech = recognize_video(root, body, offline)
+                extraction_ready = True
                 ad = snap_ad(
                     lead,
                     media_hash,
@@ -524,6 +624,7 @@ def collect_snap(
                 )
             else:
                 media_hash, ocr = recognize_image(root / "data/media/snap-images", body)
+                extraction_ready = True
                 ad = snap_ad(
                     lead,
                     media_hash,
@@ -543,6 +644,8 @@ def collect_snap(
                 progress["blocked"] = f"HTTP {error.code}; no retries or alternate access methods"
                 break
         except (OSError, ValueError, KeyError) as error:
+            if extraction_ready and isinstance(error, ValueError):
+                ads.pop(lead["id"], None)
             progress["records"][lead["id"]] = {"state": "unprocessed", "detail": str(error)}
         if count % 5 == 0:
             persist()

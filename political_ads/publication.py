@@ -27,6 +27,8 @@ METHODOLOGY = [
     "Snap's positive impressions do not independently locate delivery within its scheduled dates.",
     "Party alignment describes the source publisher; "
     "joint creative payers require separate review.",
+    "Unresolved and other publisher alignments remain in the evidence explorer and downloads "
+    "but do not enter Democratic/Republican comparison denominators.",
     "Charts count unique exact messages per party after filters, "
     "not placements, spending or reach.",
     "Issue charts show exact phrase-family matches, not validated semantic topic classifications.",

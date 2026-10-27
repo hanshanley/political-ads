@@ -204,6 +204,17 @@ def normalized_words(text: str) -> str:
 
 
 def video_segments(ocr: dict, speech: dict, media_hash: str) -> list[dict]:
+    excluded_speech = []
+    accepted_speech = []
+    for segment in speech["segments"]:
+        words = len(re.findall(r"\w+", segment["text"]))
+        duration = segment["end_seconds"] - segment["start_seconds"]
+        if words >= 20 and words > 20 * max(duration, 0):
+            excluded_speech.append(
+                segment | {"exclusion_reason": "over_20_words_per_second_with_at_least_20_words"}
+            )
+        else:
+            accepted_speech.append(segment)
     segments = [
         s
         | dict(
@@ -214,7 +225,7 @@ def video_segments(ocr: dict, speech: dict, media_hash: str) -> list[dict]:
             model=speech["model"],
             model_revision=speech["model_revision"],
         )
-        for s in speech["segments"]
+        for s in accepted_speech
     ]
     spoken = " " + normalized_words(" ".join(s["text"] for s in segments)) + " "
     lines = {}
@@ -251,6 +262,8 @@ def video_segments(ocr: dict, speech: dict, media_hash: str) -> list[dict]:
             )
         )
     if segments:
+        if excluded_speech:
+            segments[0]["excluded_implausible_asr_segments"] = excluded_speech
         segments[0]["speech_detection"] = {
             key: speech.get(key)
             for key in (

@@ -47,6 +47,13 @@ describe("synchronized evidence", () => {
     expect(text).toContain('"three"');
     expect(csv([{ ...ads[0], text: " \t=SUM(1,1)" }])).toContain("' \t=SUM(1,1)");
   });
+  it("retains unresolved publishers without adding them to either party's denominator", () => {
+    const unresolved: Ad = { ...ads[0], id: "unresolved", alignment: "unknown", message_id: "u" };
+    const corpus = [...ads, unresolved];
+    expect(filterAds(corpus, { ...EMPTY_FILTERS, party: "unknown" })).toEqual([unresolved]);
+    expect(shares(corpus, ["Healthcare"], "issues")).toEqual(shares(ads, ["Healthcare"], "issues"));
+    expect(csv([unresolved])).toContain('"Full health care\nmessage."');
+  });
   it("uses reported delivery overlap, including carryovers, without assuming launch dates", () => {
     const carryover: Ad = { ...ads[0], published: "2025-11-01", date_basis: "delivery",
       delivery_start: "2025-11-01", delivery_end: "2026-03-01" };

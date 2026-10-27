@@ -25,6 +25,10 @@ Publisher alignment comes from official identity, not ad vocabulary. Publisher, 
 payer, and formal party registration are not interchangeable. Coordinated candidate/party
 releases need separate payer review before spend attribution. Outside groups receive electoral
 alignment, not fabricated formal party registrations.
+Unknown and other alignments remain in the explorer and complete exports but do not enter
+either Democratic- or Republican-aligned comparison denominator. Parent unions, political
+funds and similarly named advocacy organizations are not interchangeable. Optional exact
+landing-host constraints reject missing, unrelated and suffix-lookalike hosts.
 
 The FEC candidate master includes primary candidates and federal race metadata. Full first/last
 names are conservative matching leads; a surname alone is insufficient. Race inference prioritizes
@@ -55,6 +59,25 @@ Candidate-specific adapters also recover explicitly separated ad scripts and pub
 ad copy. These records use `publisher_ad_copy` segments and
 `publisher_ad_copy_completeness_unverified` flags rather than claiming a complete transcript.
 Quoted-copy boundaries exclude spokesperson reactions, biography sections, and background.
+Lawler's publisher-quoted dialogue requires explicit ad-specific attribution. Salazar's
+quoted-copy boundaries stay within paragraphs and exclude ordinary press-statement attribution.
+When a visible Salazar release date disagrees with its CMS date, the CMS date remains the
+publication field and both dates plus a discrepancy flag remain in the evidence.
+
+UA Vote! PAC's custom `news` API exposes scripts in its public ACF body rather than a standard
+content field. VoteVets's post API exposes no body; its public release's exact article-body
+container supplies the script instead. Both sources require an actual 2026 federal candidate
+in the script or release heading; unrelated press commentary cannot establish scope.
+State-only scripts and video-only pages without written ad text remain excluded. Bipartisan
+UA Vote! PAC scripts retain unknown publisher alignment, including support for a Republican.
+VoteVets's documented Democratic organizational alignment is not a sole-payer claim for either
+its PAC or Action Fund.
+
+Letlow's public blog uses its original `BlogPosting` publication metadata, not sitemap or
+modification timestamps, and an exact article-body selector that excludes recent-post cards.
+Grothman's campaign-issued release is explicitly identified as reproduced by WisPolitics;
+Republican alignment describes the campaign, not the hosting publication. This reviewed
+single-release source is marked partial rather than implying exhaustive mirror coverage.
 
 Public uploader captions are preferred to automatic captions. Each cue retains start/end times
 and extraction method. Automatic captions are **not independently corrected**: misspelled names,
@@ -88,20 +111,25 @@ a full name from the 2026 House/Senate candidate roster or receive an explicit f
 review bound to its exact extraction hash. Evidenced FEC noncommittee disclosure IDs
 are retained separately, not called principal-committee IDs. No FEC ID is invented. Inventory leads
 awaiting that content check are not yet federal-scope text records.
-Three explicitly reviewed campaign/ballot-name aliases are bound to actual FEC candidate IDs
+Twenty-eight explicitly reviewed campaign/ballot-name aliases are bound to actual FEC candidate IDs
 in `data/snap-candidate-aliases.json`; they do not overwrite the FEC roster or recognized text.
+The same reviewed aliases support federal identity checks for the two new written archives.
 For scope qualification only, name matching may span adjacent OCR lines within one frame or
 continuous speech cues, never different frames or speech/overlay lanes. The matched context,
 frame time, candidate IDs and any reviewed alias evidence are exported. A sole mentioned race
 is retained as context, not a validated target assignment. Lexical analysis keeps its stricter
 independent-overlay boundaries.
-Thirteen abbreviated-name creatives have individual reviews in `data/snap-scope-reviews.json`,
+Twenty-seven identity-sensitive creatives have individual reviews in `data/snap-scope-reviews.json`,
 with exact recovered quotations, actual FEC candidate IDs, an official evidence URL and rationale.
 Examples combine a senator's title with the correct federal office number or explicit federal
-policy context. This is not a generic surname rule, independent extraction certification or
+policy context. One original video's opening frame explicitly names Ken Paxton where ASR
+recognized Paxson; its exact-creative review preserves the recognized text unchanged.
+This is not a generic surname or fuzzy-name rule, independent extraction certification or
 verification of political claims. Changed inputs, absent quotations and unknown candidate IDs
 invalidate a review. Pappas's House/Senate identity ambiguity does not force a single race.
 Generic mobilization creatives without federal-candidate evidence remain excluded.
+The discovery output retains unmatched public payer/asset identities for further review;
+unreviewed or constraint-failing payers are not declared exhausted or automatically federal.
 The candidate roster must identify one 2026 federal principal committee. Party/outside-group
 identities use a reviewed registry, not political words in the creative. Native images/videos are
 accepted only from the actual asset element in Snap's viewer, not site decorations or thumbnails.
@@ -121,6 +149,15 @@ word alignment fails, the local recognizer retries without word timestamps and r
 failure; word probabilities are available only when alignment succeeds. Native frame-decoding
 failures may use a local H.264 conversion of the same original, preserving presentation cadence;
 both original/derived hashes and the conversion method are retained.
+A conservative timing safeguard excludes ASR segments containing at least 20 word tokens at
+more than 20 words per reported second. This caught implausible repeated speech, not a
+calibrated general ASR-error detector. Rejected speech remains verbatim in exported review
+evidence but cannot establish federal scope, suppress genuine OCR as speech duplicates, or
+determine an OCR-only record's language. Raw speech caches and evidence source hashes remain
+unchanged.
+Replaying successfully recovered evidence that now fails scope or review validation withdraws
+its stale analyzed record. A network or extraction failure instead preserves prior good text;
+raw evidence remains cached in either case.
 Frame observations retain actual timestamps, bounds and confidence; an OCR line is an observed
 instant, not a verified duration. Original machine text is not quietly corrected. Repeated
 on-screen text is counted once; text already present in speech is retained as corroborating

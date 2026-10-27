@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import re
 import xml.etree.ElementTree as ET
 from datetime import UTC, datetime
@@ -145,7 +146,95 @@ def public_posts(client: Client, source: Source, until: str) -> tuple[list[dict]
         return news_index_posts(client, source, until)
     if source.discovery == "dated_news":
         return dated_news_posts(client, source, until)
+    if source.discovery == "wix_blog":
+        return wix_blog_posts(client, source, until)
+    if source.discovery == "grothman_release":
+        return grothman_release(client, source, until)
     raise ValueError(f"Unknown public discovery strategy: {source.discovery}")
+
+
+def wix_blog_posts(client: Client, source: Source, until: str) -> tuple[list[dict], bool]:
+    body, _ = client.get(source.url + "/blog-posts-sitemap.xml", refresh=True, retry=False)
+    try:
+        root = ET.fromstring(body)
+    except ET.ParseError as error:
+        raise ValueError("Public blog sitemap did not return valid XML") from error
+    if root.tag.rsplit("}", 1)[-1] != "urlset":
+        raise ValueError("Public blog sitemap did not return a URL set")
+    posts = []
+    seen = set()
+    for location in root.findall("./{*}url/{*}loc"):
+        link = location.text or ""
+        if urlparse(link).hostname != urlparse(source.url).hostname or link in seen:
+            raise ValueError("Public blog sitemap repeated a URL or changed publisher")
+        seen.add(link)
+        release, _ = client.get(link, refresh=True, retry=False)
+        soup = BeautifulSoup(release, "html.parser")
+        metadata = [
+            item
+            for node in soup.select('script[type="application/ld+json"]')
+            if isinstance(item := json.loads(node.get_text()), dict)
+            and item.get("@type") == "BlogPosting"
+            and item.get("url") == link
+        ]
+        if len(metadata) != 1:
+            raise ValueError("Public blog release lacks matching publication metadata")
+        published = datetime.fromisoformat(metadata[0]["datePublished"]).date().isoformat()
+        title = metadata[0]["headline"]
+        if not START <= published <= until or not is_ad_release(title):
+            continue
+        content = soup.select_one('article[data-hook="post"] [data-hook="post-description"]')
+        heading = soup.select_one('article[data-hook="post"] h1[data-hook="post-title"]')
+        if content is None or heading is None or plain_title(heading) != title:
+            raise ValueError("Public blog release lacks its exact title or article body")
+        posts.append(
+            {
+                "id": digest(link)[:16],
+                "link": link,
+                "date": published,
+                "title": {"rendered": title},
+                "content": {"rendered": str(content)},
+            }
+        )
+    return posts, True
+
+
+def grothman_release(client: Client, source: Source, until: str) -> tuple[list[dict], bool]:
+    link = source.url + source.index_path
+    body, _ = client.get(link, refresh=True, retry=False)
+    soup = BeautifulSoup(body, "html.parser")
+    canonical = soup.select_one('meta[property="og:url"]')
+    published = soup.select_one('meta[property="article:published_time"]')
+    heading = soup.select_one(".elementor-widget-theme-post-title h1")
+    content = soup.select_one(".elementor-widget-theme-post-content .post-content")
+    if (
+        canonical is None
+        or canonical.get("content") != link
+        or published is None
+        or heading is None
+        or content is None
+        or not plain_title(heading).startswith("U.S. Rep. Grothman:")
+    ):
+        raise ValueError("Reviewed campaign-release mirror lacks its original article metadata")
+    day = (
+        datetime.fromisoformat(published["content"])
+        .astimezone(ZoneInfo("America/Chicago"))
+        .date()
+        .isoformat()
+    )
+    posts = []
+    if START <= day <= until and is_ad_release(plain_title(heading)):
+        posts.append(
+            {
+                "id": digest(link)[:16],
+                "link": link,
+                "date": day,
+                "title": {"rendered": plain_title(heading)},
+                "content": {"rendered": str(content)},
+            }
+        )
+    # This reviewed public original is not an exhaustive search of the mirror.
+    return posts, False
 
 
 def smp_news_posts(

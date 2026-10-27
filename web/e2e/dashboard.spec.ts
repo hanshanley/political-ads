@@ -48,3 +48,22 @@ test("mobile layout, keyboard access, static report and base-path assets", async
   expect(await csv.text()).toContain("publisher_transcript");
   await page.screenshot({ path: testInfo.outputPath("mobile.png"), fullPage: true });
 });
+
+test("unresolved alignment remains independently filterable with complete evidence", async ({ page }) => {
+  await page.goto("./");
+  const response = await page.request.get("./data/dataset.json");
+  const dataset = await response.json();
+  const included = dataset.ads.filter((ad: { alignment: string }) => ad.alignment === "unknown");
+  expect(included.length).toBeGreaterThan(0);
+  await page.getByLabel("Parties", { exact: true }).selectOption("unknown");
+  await expect(page.getByRole("status")).toContainText(`${included.length} records`);
+  const pendingDownload = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Download JSON" }).click();
+  const stream = await (await pendingDownload).createReadStream();
+  const chunks: Buffer[] = [];
+  for await (const chunk of stream) chunks.push(chunk);
+  const exported = JSON.parse(Buffer.concat(chunks).toString());
+  expect(exported.ads).toEqual(included);
+  await page.getByRole("button", { name: "Reset filters" }).click();
+  await expect(page.getByRole("status")).toContainText(`${dataset.ads.length} records`);
+});

@@ -3,7 +3,7 @@ from __future__ import annotations
 import html
 import re
 from dataclasses import asdict, dataclass
-from datetime import date
+from datetime import date, datetime
 from urllib.parse import parse_qs, urlencode, urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup
@@ -11,6 +11,7 @@ from langdetect import DetectorFactory, LangDetectException
 from langdetect.detector_factory import PROFILES_DIRECTORY
 
 from political_ads.http import Client
+from political_ads.registry import candidate_mentions, enrich
 from political_ads.schema import Ad, Segment, digest
 
 LANGUAGE_FACTORY = DetectorFactory()
@@ -58,6 +59,7 @@ class Source:
     fixed_race: str = ""
     discovery: str = "wordpress"
     index_path: str = "/news"
+    requires_federal_candidate: bool = False
 
 
 SOURCES = [
@@ -197,6 +199,26 @@ SOURCES = [
         "House",
         search="ad",
         fixed_race="IA-03",
+    ),
+    Source(
+        "lawler",
+        "https://www.lawlerforcongress.com",
+        "Lawler for Congress",
+        "R",
+        "candidate",
+        "House",
+        search="ad",
+        fixed_race="NY-17",
+    ),
+    Source(
+        "salazar",
+        "https://mariaelvirasalazar.com",
+        "Salazar for Congress",
+        "R",
+        "candidate",
+        "House",
+        search="ad",
+        fixed_race="FL-27",
     ),
     Source(
         "rogers",
@@ -386,6 +408,69 @@ SOURCES = [
         "",
         discovery="nationbuilder",
     ),
+    Source(
+        "ua-vote-pac",
+        "https://www.uagetinvolved.org",
+        "UA Vote! PAC",
+        "unknown",
+        "outside_group",
+        "",
+        rest_base="news",
+        search="independent expenditure",
+        requires_federal_candidate=True,
+    ),
+    Source(
+        "votevets",
+        "https://votevets.org",
+        "VoteVets",
+        "D",
+        "outside_group",
+        "",
+        search="ad",
+        requires_federal_candidate=True,
+    ),
+    Source(
+        "letlow",
+        "https://www.julialetlow.com",
+        "Julia Letlow for Louisiana",
+        "R",
+        "candidate",
+        "Senate",
+        fixed_race="LA-Senate",
+        discovery="wix_blog",
+    ),
+    Source(
+        "grothman",
+        "https://www.wispolitics.com",
+        "Glenn Grothman campaign",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="WI-06",
+        discovery="grothman_release",
+        index_path="/2026/u-s-rep-grothman-releases-first-campaign-ad-of-2026-cycle/",
+        requires_federal_candidate=True,
+    ),
+    Source(
+        "flint",
+        "https://flintformontana.com",
+        "Aaron Flint for Montana",
+        "R",
+        "candidate",
+        "House",
+        search="ad",
+        fixed_race="MT-01",
+    ),
+    Source(
+        "stover",
+        "https://www.brianstoverforcongress.com",
+        "Brian Stover for Congress",
+        "R",
+        "candidate",
+        "House",
+        search="ad",
+        fixed_race="GA-14",
+    ),
 ]
 
 
@@ -441,7 +526,7 @@ def transcript_blocks(content: str) -> list[str]:
             r"Watch\s+[‘“\"']|"
             r"You can watch\b|"
             r"Below is a list of [^\n]{0,120}\bad campaign:|"
-            r"(?:On )?Background:|See also:|About the |About [^\n:]{1,80}:|"
+            r"(?:On )?Background\s*:|See also:|About the |About [^\n:]{1,80}:|"
             r"The post .+ appeared first on |Roy Cooper has launched |"
             r"Learn more about Mike Rogers and his plans? to |"
             r"DCCC (?:National |Spokesperson|Chair|Senior )|"
@@ -458,11 +543,41 @@ def transcript_blocks(content: str) -> list[str]:
 
 def candidate_ad_copy(content: str, source_id: str) -> list[str]:
     soup = BeautifulSoup(content, "html.parser")
+    if source_id == "lawler":
+        blocks = []
+        for paragraph in soup.find_all("p"):
+            text = paragraph.get_text(" ", strip=True)
+            titled = re.match(
+                r"^(?:In “[^”]+,”|“[^”]+” opens|"
+                r"The first ad of the campaign is a 30-second spot)",
+                text,
+            )
+            if not titled and not text.startswith(
+                ("Lawler opens with images", "The ad opens with Conley’s own words:")
+            ):
+                continue
+            quotes = re.findall(r"“([^”]+)”", text)[1 if titled else 0 :]
+            if len(" ".join(quotes).split()) >= 15:
+                blocks.append("\n".join(quotes))
+        return blocks
+    if source_id == "salazar":
+        blocks = []
+        for paragraph in soup.find_all("p"):
+            for match in re.finditer(
+                r"“([^”]+)”\s+Salazar\s+says\s+in\s+the\s+(?:new\s+)?ad\b\.?"
+                r"(?:[\s\ufeff]*“([^”]+)”(?!\s+Salazar\s+(?:says?|said)\b))?",
+                paragraph.get_text(" ", strip=True),
+                re.I,
+            ):
+                quotes = [quote for quote in match.groups() if quote]
+                if len(" ".join(quotes).split()) >= 15:
+                    blocks.append("\n".join(quotes))
+        return blocks
     if source_id in {"smp", "one-nation"}:
         blocks = []
         for paragraph in soup.find_all("p"):
             text = paragraph.get_text(" ", strip=True)
-            if re.search(r"\b(?:says?|said)\s+in\s+(?:the|an)\s+ad\b", text, re.I):
+            if re.search(r"\b(?:says?|said)\s+in\s+(?:the|an)\s+(?:new\s+)?ad\b", text, re.I):
                 quotes = re.findall(r"“([^”]+)”", text)
                 if len(" ".join(quotes).split()) >= 15:
                     blocks.append("\n".join(quotes))
@@ -669,16 +784,35 @@ def is_ad_release(title: str) -> bool:
     )
 
 
-def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
+def parse_post(
+    post: dict, source: Source, observed: str, candidates: list[dict] | None = None
+) -> list[dict]:
     title = html.unescape(BeautifulSoup(post["title"]["rendered"], "html.parser").get_text())
-    if not is_ad_release(title) and source.id != "lcv-vf":
-        return []
     content = post["content"]["rendered"]
+    reviewed_copy = candidate_ad_copy(content, source.id) if source.id == "lawler" else []
+    reviewed_expenditure = source.id == "ua-vote-pac" and re.match(
+        r"^UA Launches Independent Expenditure\b", title
+    )
+    if (
+        not is_ad_release(title)
+        and source.id != "lcv-vf"
+        and not reviewed_copy
+        and not reviewed_expenditure
+    ):
+        return []
     # Rogers's release has a stray letter inside its heading, not the spoken script.
     body = (
         re.sub(r"(transcript below:)r(?=</)", r"\1", content) if source.id == "rogers" else content
     )
     blocks = cooper_transcripts(body) if source.id == "cooper" else transcript_blocks(body)
+    if source.id == "stover":
+        blocks = [
+            re.split(
+                r"(?m)^(?:Stover is committed to representing|To learn more about Stover)",
+                block,
+            )[0].strip()
+            for block in blocks
+        ]
     if source.id == "marshall":
         soup = BeautifulSoup(body, "html.parser")
         blocks = []
@@ -704,12 +838,27 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
         blocks = speaker_blocks
     quoted_copy = False
     if not blocks:
-        blocks = candidate_ad_copy(content, source.id)
+        blocks = reviewed_copy or candidate_ad_copy(content, source.id)
         quoted_copy = bool(blocks)
     title_races = set(re.findall(r"\b([A-Z]{2})[-–](\d{1,2})\b", title))
     race_match = next(iter(title_races)) if len(title_races) == 1 else None
     phase = "primary" if re.search(r"\bprimary\b", title, re.I) else "unknown"
     full_text = plain_html(content)
+    visible_release_date = None
+    if source.id == "salazar" and (
+        release_date := re.search(
+            r"FOR IMMEDIATE RELEASE\s+([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?,\s+(2026)\b",
+            full_text,
+            re.I,
+        )
+    ):
+        visible_release_date = (
+            datetime.strptime(
+                f"{release_date[1]} {release_date[2]}, {release_date[3]}", "%B %d, %Y"
+            )
+            .date()
+            .isoformat()
+        )
     if phase == "unknown" and re.search(r"\bgeneral election\b", full_text, re.I):
         phase = "general"
     if source.id == "young-kim" and re.search(
@@ -722,6 +871,13 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
     ads = []
     for index, creative in enumerate(creatives):
         text = creative["text"]
+        federal_mentions = []
+        if source.requires_federal_candidate:
+            if not candidates:
+                raise ValueError("This source requires the actual federal candidate registry")
+            federal_mentions = candidate_mentions(title + "\n" + text, candidates)
+            if not federal_mentions:
+                continue
         copy = creative.get("quoted_copy", quoted_copy)
         ad = Ad(
             id=f"{source.id}-{post['id']}-{index}",
@@ -770,7 +926,25 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
                 "Joint or candidate-paid creative requires separate payer review."
             ),
         )
-        ads.append(ad.to_dict())
+        if visible_release_date and visible_release_date != ad.published:
+            ad.quality_flags.append("publisher_visible_release_date_differs_from_cms")
+            ad.segments[0].update(
+                publisher_visible_release_date=visible_release_date,
+                cms_publication_date=ad.published,
+            )
+        if federal_mentions:
+            ad.segments[0]["federal_scope_candidate_ids"] = sorted(
+                {candidate["candidate_id"] for candidate in federal_mentions}
+            )
+        if source.id == "grothman":
+            ad.attribution_basis = (
+                f"Campaign-issued release reproduced by WisPolitics at {post['link']}; "
+                "Republican alignment describes the Grothman campaign, not the mirror's "
+                "editorial alignment. Creative payer not independently verified."
+            )
+            ad.quality_flags.append("campaign_release_reproduced_by_wispolitics")
+        record = ad.to_dict()
+        ads.append(enrich(record, candidates) if source.requires_federal_candidate else record)
     return ads
 
 
@@ -779,6 +953,7 @@ def collect_wordpress(
     source: Source,
     until: str,
     observed: str | None = None,
+    candidates: list[dict] | None = None,
 ) -> tuple[list[dict], dict]:
     observed = observed or date.today().isoformat()
     ads = []
@@ -800,7 +975,7 @@ def collect_wordpress(
             posts, complete = public_posts(client, source, until)
             for post in posts:
                 status["posts_scanned"] += 1
-                parsed = parse_post(post, source, observed)
+                parsed = parse_post(post, source, observed, candidates)
                 ads.extend(parsed)
                 status["excluded_posts"] += not bool(parsed)
             status.update(
@@ -831,7 +1006,9 @@ def collect_wordpress(
             if any(p.get("id") in seen for p in posts):
                 raise ValueError("Endpoint repeated IDs across pages; pagination is not supported")
             for post in posts:
-                if source.rest_base == "article" and "content" not in post:
+                if (
+                    source.rest_base == "article" or source.id == "ua-vote-pac"
+                ) and "content" not in post:
                     layouts = post.get("acf", {}).get("page_layout", [])
                     content = "\n".join(
                         layout.get("component_wysiwyg", {}).get("content", "") for layout in layouts
@@ -841,9 +1018,28 @@ def collect_wordpress(
                     raise ValueError("Endpoint does not expose the expected WordPress schema")
                 if not "2026-01-01" <= post["date"][:10] <= until:
                     raise ValueError("Endpoint ignored delivery/release date filters")
+                if (
+                    source.id == "votevets"
+                    and not post["content"]["rendered"].strip()
+                    and is_ad_release(plain_html(post["title"]["rendered"]))
+                ):
+                    if urlsplit(post["link"]).hostname != urlsplit(source.url).hostname:
+                        raise ValueError("Public release linked to a different publisher")
+                    release, _ = client.get(post["link"], refresh=True, retry=False)
+                    article = BeautifulSoup(release, "html.parser")
+                    content = article.select_one(".body-content .wysiwyg-text")
+                    if content is not None:
+                        post["content"] = {"rendered": str(content)}
+                        status["public_html_bodies_recovered"] = (
+                            status.get("public_html_bodies_recovered", 0) + 1
+                        )
+                    else:
+                        status["public_html_without_script_container"] = (
+                            status.get("public_html_without_script_container", 0) + 1
+                        )
                 seen.add(post["id"])
                 status["posts_scanned"] += 1
-                parsed = parse_post(post, source, observed)
+                parsed = parse_post(post, source, observed, candidates)
                 ads.extend(parsed)
                 status["excluded_posts"] += not bool(parsed)
             total_pages = int(

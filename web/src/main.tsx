@@ -180,7 +180,8 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
         <div className="section-top"><h2 id="filter-heading">Choose your comparison</h2>
           <button className="text-button" onClick={() => { setFilters(EMPTY_FILTERS); setLimit(12); setSelected(""); }}>Reset filters</button></div>
         <div className="filter-grid">
-          <Select label="Parties" value={filters.party} options={[["D", "Democratic"], ["R", "Republican"]]} onChange={value => change("party", value)} />
+          <Select label="Parties" value={filters.party} options={[["D", "Democratic"], ["R", "Republican"],
+            ["other", "Other alignment"], ["unknown", "Unresolved alignment"]]} onChange={value => change("party", value)} />
           <Select label="Chambers" value={filters.chamber} options={[["House", "House"], ["Senate", "Senate"]]} onChange={value => change("chamber", value)} />
           <Select label="States" value={filters.state} options={
             [...new Set(dataset.ads.map(ad => ad.state).filter(Boolean))].sort().map(state => [state, state])

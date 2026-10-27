@@ -1,3 +1,4 @@
+import json
 from datetime import UTC, datetime
 from urllib.error import HTTPError
 
@@ -6,18 +7,88 @@ import pytest
 from political_ads.discovery import (
     archive_posts,
     dated_news_posts,
+    grothman_release,
     lcv_sitemap_posts,
     nationbuilder_posts,
     news_index_posts,
     rss_posts,
     smp_news_posts,
     squarespace_posts,
+    wix_blog_posts,
 )
 from political_ads.sources import SOURCES
 
 
 def source(identity):
     return next(s for s in SOURCES if s.id == identity)
+
+
+@pytest.mark.parametrize("mismatched", [False, True])
+def test_reviewed_release_mirror_excludes_calendar_and_uses_publisher_timezone(mismatched):
+    class News:
+        def get(self, url, **kwargs):
+            return (
+                f'<meta property="og:url" content="{url if not mismatched else "other"}">'
+                '<meta property="article:published_time" content="2026-10-16T00:09:14+00:00">'
+                '<div class="elementor-widget-theme-post-title">'
+                "<h1>U.S. Rep. Grothman: Releases first campaign ad of 2026 cycle</h1></div>"
+                '<div class="elementor-widget-theme-post-content"><div class="post-content">'
+                "<p>TRANSCRIPT:</p><p>Only the actual campaign ad script.</p></div></div>"
+                '<aside><time datetime="2026-11-03">Next event</time>'
+                "Calendar and navigation are not part of this script.</aside>"
+            ).encode(), {}
+
+    if mismatched:
+        with pytest.raises(ValueError, match="original article metadata"):
+            grothman_release(News(), source("grothman"), "2026-10-26")
+    else:
+        posts, complete = grothman_release(News(), source("grothman"), "2026-10-26")
+        assert not complete and len(posts) == 1
+        assert posts[0]["date"] == "2026-10-15"
+        assert "Calendar" not in posts[0]["content"]["rendered"]
+
+
+@pytest.mark.parametrize("invalid", [None, "title", "identity", "body"])
+def test_wix_blog_uses_original_publication_and_exact_article_body(invalid):
+    class News:
+        def get(self, url, **kwargs):
+            if url.endswith(".xml"):
+                return (
+                    b'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                    b"<url><loc>https://www.julialetlow.com/post/current</loc>"
+                    b"<lastmod>2026-10-26</lastmod>"
+                    b'<image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'
+                    b"<image:loc>https://images.example.test/photo.png</image:loc></image:image>"
+                    b"</url><url><loc>https://www.julialetlow.com/post/old</loc></url></urlset>"
+                ), {}
+            metadata = {
+                "@type": "BlogPosting",
+                "url": url if invalid != "identity" else "https://other.example.test/",
+                "headline": "New Ad: Test",
+                "datePublished": "2025-12-01T05:00:00Z"
+                if url.endswith("/old")
+                else "2026-06-09T05:00:00Z",
+                "dateModified": "2026-10-26T05:00:00Z",
+            }
+            heading = "Wrong article" if invalid == "title" else metadata["headline"]
+            return (
+                f'<script type="application/ld+json">{json.dumps(metadata)}</script>'
+                '<article data-hook="post">'
+                f'<h1 data-hook="post-title">{heading}</h1>'
+                f'<section data-hook="{"other" if invalid == "body" else "post-description"}">'
+                "<p>TRANSCRIPT:</p><p>Only actual ad text belongs here.</p></section></article>"
+                "<aside>Recent posts and navigation must not become ad text.</aside>"
+            ).encode(), {}
+
+    if invalid:
+        with pytest.raises(ValueError, match="matching publication metadata|exact title"):
+            wix_blog_posts(News(), source("letlow"), "2026-10-26")
+    else:
+        posts, complete = wix_blog_posts(News(), source("letlow"), "2026-10-26")
+        assert complete and len(posts) == 1
+        assert posts[0]["date"] == "2026-06-09"
+        assert "Only actual ad text" in posts[0]["content"]["rendered"]
+        assert "navigation" not in posts[0]["content"]["rendered"]
 
 
 def test_smp_news_uses_published_form_pagination_and_stops_at_prior_year():

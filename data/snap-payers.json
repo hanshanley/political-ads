@@ -1,4 +1,334 @@
 {
+  "SAM Project Action Fund": {
+    "publisher": {
+      "source": "sam-project-action-fund", "sponsor": "SAM Project Action Fund", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact Snap archive payer SAM Project Action Fund. The original creative 0b97c65fd14986a80ffb4837425e5ad96f5203a83deba16d7a27063dc41a73c2 has a visually reviewed final-frame disclaimer PAID FOR BY SAM-PROJECT.ORG, corroborating the public SAM Project website. The archive's fund name is retained; no legal-entity equivalence, PAC committee ID or Democratic party alignment is inferred from the project's progressive mission. Generic presidential criticism and turnout material remain excluded unless actual recovered text independently identifies a 2026 House or Senate candidate.",
+    "evidence_url": "https://www.snap.com/political-ads/asset/0b97c65fd14986a80ffb4837425e5ad96f5203a83deba16d7a27063dc41a73c2?mediaType=mp4"
+  },
+  "Texas Forever": {
+    "committee_id": "C00962308",
+    "publisher": {
+      "source": "texas-forever", "sponsor": "Texas Forever", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact 2026 FEC legal-name identity TEXAS FOREVER, C00962308, registered September 24, 2026. The advertised texas4ever.org site explicitly says Paid for by Texas Forever. This is not the terminated 2018 organization or Texas Forever Forward; no historical alignment or committee ID is transferred. Party alignment remains unresolved. Each creative independently needs recovered 2026 federal-candidate text evidence.",
+    "evidence_url": "https://www.texas4ever.org/"
+  },
+  "For Michigan Action Fund": {
+    "committee_id": "C00886093",
+    "publisher": {
+      "source": "for-michigan-action-fund", "sponsor": "For Michigan Action Fund", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact 2026 FEC legal-name identity FOR MICHIGAN ACTION FUND, C00886093, a super PAC with registered connected organization FOR MICHIGAN. The PAC is kept separate from that parent 501(c)(4) and is not assigned the parent's payer identity. FEC party OTH is not treated as Democratic registration or alignment. Each creative independently needs recovered 2026 federal-candidate text evidence.",
+    "evidence_url": "https://www.fec.gov/data/committee/C00886093/"
+  },
+  "For Michigan": {
+    "landing_hosts": ["4mich.org"],
+    "publisher": {
+      "source": "for-michigan", "sponsor": "For Michigan", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "The advertised 4mich.org website explicitly says Paid for by For Michigan, 501(c)4, and is the registered connected organization of the separate For Michigan Action Fund PAC. Only this exact reviewed landing host is admitted. No PAC committee ID is assigned to the parent organization and party alignment remains unresolved. Generic turnout ads remain excluded unless actual recovered text independently identifies a 2026 federal candidate.",
+    "evidence_url": "https://4mich.org/"
+  },
+  "Fair Deal Alaska": {
+    "committee_id": "C00957555",
+    "publisher": {
+      "source": "fair-deal-alaska", "sponsor": "Fair Deal Alaska", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact 2026 FEC legal-name identity FAIR DEAL ALASKA, C00957555, a super PAC registered July 28, 2026. No formal party is recorded. Do not infer organizational party alignment from candidate support or opposition, or from theories about primary strategy. Each creative independently needs recovered 2026 federal-candidate text evidence.",
+    "evidence_url": "https://www.fec.gov/data/committee/C00957555/"
+  },
+  "ALLIANCE FOR YOUTH POWER": {
+    "committee_id": "C00916577",
+    "publisher": {
+      "source": "alliance-for-youth-power", "sponsor": "Alliance for Youth Power", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC 2026 legal-name identity C00916577. The official allianceforyouthpower.org site discloses Paid for by Alliance for Youth Power PAC and distinguishes the PAC's electoral programs. Party alignment remains unresolved rather than inferred from its policy positions. Each creative independently needs recovered 2026 federal-candidate text evidence.",
+    "evidence_url": "https://allianceforyouthpower.org/"
+  },
+  "NRDC Action Votes": {
+    "committee_id": "C00740225",
+    "publisher": {
+      "source": "nrdc-action-votes", "sponsor": "NRDC Action Votes", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC 2026 legal-name identity NRDC ACTION VOTES, C00740225. This committee is not merged with NRDC Action Fund or transferred the parent organization's identity. Party alignment remains unresolved. Each creative independently needs recovered 2026 federal-candidate text evidence.",
+    "evidence_url": "https://www.fec.gov/data/committee/C00740225/"
+  },
+  "Lower Costs Now": {
+    "committee_id": "C00961276",
+    "publisher": {
+      "source": "lower-costs-now", "sponsor": "Lower Costs Now", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC 2026 legal-name identity C00961276. The advertised lowercostsnow.org site explicitly says Paid for by Lower Costs Now. It is not merged with Ohioans for Lower Costs, and party alignment remains unresolved. Each creative independently needs recovered 2026 federal-candidate text evidence.",
+    "evidence_url": "https://www.lowercostsnow.org/"
+  },
+  "GoodPower": {
+    "noncommittee_disclosure_ids": ["C90022542"],
+    "publisher": {
+      "source": "goodpower", "sponsor": "GoodPower", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC legal-name identity C90022542 is an independent-expenditure filer, not a campaign committee. GoodPower's official website describes cross-ideological research, communications and campaigning. Its noncommittee disclosure ID is kept separate, and party alignment remains unresolved. Each creative independently needs recovered 2026 federal-candidate text evidence.",
+    "evidence_url": "https://goodpower.org/"
+  },
+  "DREAM NYC": {
+    "committee_id": "C00928069",
+    "publisher": {
+      "source": "dream-nyc", "sponsor": "Dream NYC", "alignment": "D",
+      "sponsor_type": "outside_group", "chamber": "House", "race": "Unresolved", "state": "NY"
+    },
+    "evidence": "Exact FEC 2026 legal-name identity C00928069. The official DreamNYCPAC.com website's disclaimer says Paid for by Dream NYC, and its sole stated mission is electing actual Democratic House candidate Alex Bores to Congress in NY-12. This is organizational electoral alignment, not an inference from individual ad wording or a transfer of Bores's committee ID. Each creative independently needs recovered 2026 federal-candidate text evidence.",
+    "evidence_url": "https://www.dreamnycpac.com/"
+  },
+  "DemsVote": {
+    "committee_id": "C00667055",
+    "publisher": {
+      "source": "demsvote", "sponsor": "DemsVote", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact case-insensitive FEC 2026 legal-name identity DEMSVOTE, C00667055. The registry does not establish a formal party; organizational alignment remains unresolved rather than inferred from the payer's name. Generic registration and state-only creatives remain excluded unless actual recovered text independently identifies a 2026 federal candidate.",
+    "evidence_url": "https://www.fec.gov/data/committee/C00667055/"
+  },
+  "Maremoto Action": {
+    "noncommittee_disclosure_ids": ["C90023458"],
+    "publisher": {
+      "source": "maremoto-action", "sponsor": "Maremoto Action", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC 2026 legal-name identity MAREMOTO ACTION, C90023458, an independent-expenditure filer rather than a campaign committee. The disclosure ID is retained separately and does not become Randy Villegas's principal-committee ID. Party alignment remains unresolved. Each creative independently needs recovered 2026 federal-candidate text evidence.",
+    "evidence_url": "https://www.fec.gov/data/committee/C90023458/"
+  },
+  "CFFE": {
+    "landing_hosts": ["familyfriendlyeconomy.org", "www.familyfriendlyeconomy.org"],
+    "publisher": {
+      "source": "cffe", "sponsor": "CFFE", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "The advertised familyfriendlyeconomy.org website distinguishes CFFE PAC and CFFE, a project of Opportunity Action Fund, in its joint disclaimer. Only the exact reviewed landing hosts are admitted. No PAC ID or sole-payer assertion is transferred between the named organizations; party alignment remains unresolved. Each creative independently needs recovered 2026 federal-candidate text evidence.",
+    "evidence_url": "https://familyfriendlyeconomy.org/"
+  },
+  "Opportunity Action Fund": {
+    "landing_hosts": ["www.themainereport.com", "themainereport.com"],
+    "publisher": {
+      "source": "opportunity-action-fund", "sponsor": "Opportunity Action Fund", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "The advertised Maine Report website's footer explicitly says Paid for by Opportunity Action Fund. Only that reviewed landing host is admitted. No CFFE PAC committee ID is transferred to this separate advocacy entity and party alignment remains unresolved. Each creative independently needs recovered 2026 federal-candidate text evidence.",
+    "evidence_url": "https://www.themainereport.com/"
+  },
+  "League of Conservation Voters": {
+    "noncommittee_disclosure_ids": ["C70004262", "C90005786"],
+    "publisher": {
+      "source": "league-of-conservation-voters", "sponsor": "League of Conservation Voters", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "The official LCV website identifies the League of Conservation Voters. Exact FEC legal-name records identify two noncommittee disclosure IDs for League of Conservation Voters Inc, kept separate from Action Fund and Victory Fund committee identities. Party alignment remains unresolved for this parent organization. Each creative independently needs recovered 2026 federal-candidate text evidence.",
+    "evidence_url": "https://www.lcv.org/"
+  },
+  "Turning Point USA": {
+    "publisher": {
+      "source": "turning-point-usa", "sponsor": "Turning Point USA", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "The advertised tpusa.com website identifies Turning Point USA as a 501(c)(3) organization. This is not Turning Point Action and receives no related PAC's committee ID. No party alignment is inferred merely from ideological language. Generic registration is excluded unless actual recovered text independently identifies a 2026 federal candidate.",
+    "evidence_url": "https://tpusa.com/"
+  },
+  "United Association": {
+    "committee_id": "C00012476",
+    "publisher": {
+      "source": "united-association", "sponsor": "United Association", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Snap explicitly reports actual FEC committee C00012476, the UA Union Plumbers & Pipefitters Vote! PAC. The organization's own legislative page explicitly states Democrat or Republican does not matter and describes record-based endorsements. No blanket D/R alignment is assigned to this bipartisan publisher. Individual creatives still require recovered 2026 federal-candidate evidence.",
+    "evidence_url": "https://www.uagetinvolved.org/about-us/"
+  },
+  "AFL-CIO": {
+    "noncommittee_disclosure_ids": ["C70000112"],
+    "publisher": {
+      "source": "afl-cio", "sponsor": "AFL-CIO", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "The public archive payer and official organizational website identify the AFL-CIO. Exact FEC legal-name record C70000112 is its communication-cost disclosure filer, not a PAC committee ID; it is retained separately. No PAC ID is transferred to the parent federation and no party alignment is inferred from labor affiliation or individual ad rhetoric. Unknown alignment remains outside D/R comparisons. Individual creatives require recovered 2026 House/Senate candidate evidence; generic union, presidential and state-election messages do not qualify.",
+    "evidence_url": "https://aflcio.org/"
+  },
+  "AFSCME": {
+    "publisher": {
+      "source": "afscme", "sponsor": "AFSCME", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "The exact public payer and official organization identify AFSCME. Its website distinguishes the union from its AFSCME PEOPLE political fund; the fund's committee ID is not transferred here. No blanket party alignment is assigned. Each creative independently needs recovered 2026 federal-candidate evidence.",
+    "evidence_url": "https://afscme.org/"
+  },
+  "AFSCME PEOPLE": {
+    "committee_id": "C00011114",
+    "publisher": {
+      "source": "afscme-people", "sponsor": "AFSCME PEOPLE", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "The official AFSCME website identifies AFSCME PEOPLE as its political action fund. FEC 2026 committee C00011114 has the legal name American Federation of State County & Municipal Employees P E O P L E and party UNK. No blanket D/R alignment is assigned. Wisconsin state-only ads remain excluded unless actual recovered text independently identifies a 2026 federal candidate.",
+    "evidence_url": "https://afscme.org/"
+  },
+  "COMMON GROUND COALITION PAC": {
+    "committee_id": "C00961854",
+    "publisher": {
+      "source": "common-ground-coalition-pac", "sponsor": "Common Ground Coalition PAC", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC 2026 legal-name match to C00961854, not the differently named Common Ground Coalition C00941294. The registry does not establish a party affiliation, so alignment remains unknown rather than being inferred from which candidate an ad criticizes. Each creative independently needs recovered 2026 federal-candidate evidence.",
+    "evidence_url": "https://www.fec.gov/data/committee/C00961854/"
+  },
+  "Cornhusker Majority": {
+    "committee_id": "C00961227",
+    "publisher": {
+      "source": "cornhusker-majority", "sponsor": "Cornhusker Majority", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC 2026 legal-name match to C00961227. The committee registry does not establish party affiliation; alignment remains unknown pending independent organizational review, not inferred from hostile ad language or a campaign-style landing domain. Each creative independently needs recovered 2026 federal-candidate evidence.",
+    "evidence_url": "https://www.fec.gov/data/committee/C00961227/"
+  },
+  "Midnight Sun PAC": {
+    "committee_id": "C00956284",
+    "publisher": {
+      "source": "midnight-sun-pac", "sponsor": "Midnight Sun PAC", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC 2026 legal-name match to C00956284. This PAC is not merged with Midnight Sun Independence Fund or Majority Forward. Party alignment remains unknown, and each creative independently needs recovered 2026 federal-candidate evidence.",
+    "evidence_url": "https://www.fec.gov/data/committee/C00956284/"
+  },
+  "AB PAC": {
+    "committee_id": "C00492140",
+    "publisher": {
+      "source": "ab-pac", "sponsor": "AB PAC", "alignment": "D",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC legal-name identity C00492140. American Bridge 21st Century's official homepage carries Paid for by AB PAC and explicitly describes its Democratic and progressive electoral work. Alignment is organizational, not inferred from individual ads. Each creative independently needs recovered 2026 federal-candidate evidence.",
+    "evidence_url": "https://www.americanbridgepac.org/"
+  },
+  "Ohio Democratic Party": {
+    "committee_id": "C00016899",
+    "publisher": {
+      "source": "ohio-democratic-party", "sponsor": "Ohio Democratic Party", "alignment": "D",
+      "sponsor_type": "party", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Official Ohio Democratic Party identity and actual FEC state-party federal committee C00016899, type Y and party DEM. Federal-candidate text is required per creative; the party's state and gubernatorial advertising is not automatically included.",
+    "evidence_url": "https://ohiodems.org/"
+  },
+  "Forward Blue": {
+    "committee_id": "C00835041",
+    "publisher": {
+      "source": "forward-blue", "sponsor": "Forward Blue", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC 2026 committee legal-name identity C00835041 and the official site's Paid for by Forward Blue disclaimer. The registry leaves party blank; alignment remains unresolved rather than inferred from the group's name or hostile wording. Each creative independently needs recovered 2026 federal-candidate evidence.",
+    "evidence_url": "https://forwardblue.co/"
+  },
+  "Voters of Tomorrow PAC": {
+    "committee_id": "C00833103",
+    "publisher": {
+      "source": "voters-of-tomorrow-pac", "sponsor": "Voters of Tomorrow PAC", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC legal-name identity C00833103. The official site distinguishes Voters of Tomorrow PAC from Voters of Tomorrow Action; their identities and committee IDs are not merged. Party alignment is unresolved. Each creative independently needs recovered 2026 federal-candidate evidence.",
+    "evidence_url": "https://votersoftomorrow.org/"
+  },
+  "DUTY AND COUNTRY": {
+    "committee_id": "C00666388",
+    "publisher": {
+      "source": "duty-and-country", "sponsor": "Duty and Country", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact case-insensitive FEC committee legal-name identity C00666388 and the official Duty and Country disclaimer. Alaska North Star's landing page separately names both Duty and Country and North Star; this committee is not assumed to be North Star's committee. Party alignment is unresolved. Each creative independently needs recovered 2026 federal-candidate evidence.",
+    "evidence_url": "https://dutyandcountry.com/"
+  },
+  "North Star": {
+    "committee_id": "C00957522",
+    "landing_hosts": ["alaskanorthstar.com"],
+    "publisher": {
+      "source": "north-star", "sponsor": "North Star", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "The advertised alaskanorthstar.com page explicitly discloses Paid for by Duty and Country and North Star. The exact unique 2026 FEC legal-name record NORTH STAR is C00957522, distinct from Duty and Country C00666388. The joint-payer disclosure does not transfer Duty and Country's FEC ID or establish a sole creative payer. Only this reviewed landing host is admitted; party alignment remains unresolved. Each creative independently needs recovered 2026 federal-candidate evidence.",
+    "evidence_url": "https://www.alaskanorthstar.com/"
+  },
+  "MIDNIGHT SUN INDEPENDENCE FUND": {
+    "landing_hosts": ["thealaskareport.com"],
+    "publisher": {
+      "source": "midnight-sun-independence-fund", "sponsor": "Midnight Sun Independence Fund", "alignment": "unknown",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "The advertised thealaskareport.com footer identifies Midnight Sun Independence Fund, matching this public payer name. It is not merged with Majority Forward or Midnight Sun PAC and receives neither entity's FEC ID. Party alignment remains unresolved. Each creative independently needs recovered 2026 federal-candidate evidence.",
+    "evidence_url": "https://www.thealaskareport.com/"
+  },
+  "Majority Forward": {
+    "noncommittee_disclosure_ids": ["C30002802", "C90016098"],
+    "landing_hosts": ["nhtomorrow.org", "alaska-forward.com"],
+    "publisher": {
+      "source": "majority-forward", "sponsor": "Majority Forward", "alignment": "D",
+      "sponsor_type": "outside_group", "chamber": "Senate", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC legal-name records identify two noncommittee disclosure IDs for Majority Forward (types E and I), not two campaign committees. Its official website identifies its affiliated Senate Majority PAC and joint electoral work. Ad landing hosts are additionally restricted to reviewed pages whose disclaimers identify Majority Forward. D-alignment is organizational, not formal party registration. Each creative independently needs federal-candidate text evidence.",
+    "evidence_url": "https://majorityforward.com/"
+  },
+  "Majority Forward Fund": {
+    "noncommittee_disclosure_ids": ["C30002802", "C90016098"],
+    "landing_hosts": ["northcarolinaforward.com", "ohiodailyrecord.org"],
+    "publisher": {
+      "source": "majority-forward", "sponsor": "Majority Forward", "alignment": "D",
+      "sponsor_type": "outside_group", "chamber": "Senate", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Reviewed Snap payer variant only for northcarolinaforward.com and ohiodailyrecord.org, whose disclaimers identify Majority Forward. Creatives linking thealaskareport.com are not admitted by this alias because that landing page identifies Midnight Sun Independence Fund instead. Its official website identifies affiliated Senate Majority PAC. Two actual FEC noncommittee disclosure IDs are retained without assigning a campaign committee. Each creative independently needs federal-candidate text evidence.",
+    "evidence_url": "https://majorityforward.com/"
+  },
+  "Defend the Vote": {
+    "committee_id": "C00764233",
+    "publisher": {
+      "source": "defend-the-vote", "sponsor": "Defend the Vote", "alignment": "D",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC committee legal name C00764233. The organization's January 2026 cycle report explicitly describes its work toward a Democratic congressional majority. Each creative independently needs federal-candidate text evidence; generic voting reminders do not qualify.",
+    "evidence_url": "https://wedefendthevote.org/wp-content/uploads/2026/01/DTV-2025-Report.pdf"
+  },
+  "Defend the Vote Action Fund": {
+    "publisher": {
+      "source": "defend-the-vote-action-fund", "sponsor": "Defend the Vote Action Fund", "alignment": "D",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "The organization's official January 2026 report distinguishes DTV Action Fund from the Defend the Vote PAC and documents their aligned congressional work. No PAC committee ID is transferred to this separate advocacy entity. D-alignment is organizational, not inferred from hostile ad wording. Each creative independently needs federal-candidate text evidence.",
+    "evidence_url": "https://wedefendthevote.org/wp-content/uploads/2026/01/DTV-2025-Report.pdf"
+  },
+  "Roy Cooper for North Carolina": {
+    "committee_id": "C00913566",
+    "evidence": "Official Roy Cooper Senate campaign footer identifies Cooper for North Carolina; the 2026 FEC roster binds that principal committee to S6NC00407. The extra Roy in Snap's payer label does not create a separate committee.",
+    "evidence_url": "https://roycooper.com/"
+  },
+  "Troy Jackson for Senate": {
+    "committee_id": "C00955609",
+    "evidence": "Official Troy Jackson U.S. Senate campaign identifies Troy Jackson for Maine in its disclaimer; the FEC 2026 roster binds this principal committee to S6ME00464.",
+    "evidence_url": "https://www.jacksonformaine.com/"
+  },
+  "Chris Pappas for Senate": {
+    "committee_id": "C00660464",
+    "candidate_id": "S6NH00141",
+    "evidence": "Exact FEC committee-name identity plus the official 2026 Senate campaign and disclaimer identify Chris Pappas for Senate. The reviewed Senate candidate ID resolves a reused principal committee also present on Pappas's House roster row; no generic choice between House and Senate is inferred.",
+    "evidence_url": "https://www.chrispappas.org/"
+  },
+  "Working America": {
+    "noncommittee_disclosure_id": "C90011156",
+    "publisher": {
+      "source": "working-america", "sponsor": "Working America", "alignment": "D",
+      "sponsor_type": "outside_group", "chamber": "", "race": "Unresolved", "state": ""
+    },
+    "evidence": "Exact FEC noncommittee disclosure identity and official Working America publisher. D-aligned is an editorial organizational grouping based on its own published strategy for adding Democratic voters, not formal Democratic Party registration or a classification inferred from any individual ad. Its 2026 Front Porch Focus Group report separately identifies congressional Republican battlegrounds as organizing targets. Individual creatives still need full 2026 House/Senate candidate-name evidence; state-only, generic GOTV and President-only material do not qualify.",
+    "evidence_url": "https://workingamerica.org/news/post/we-added-407014-voters-for-democrats-in-2023-how-many-can-we-add-in-2024/"
+  },
   "House Majority Forward": {
     "noncommittee_disclosure_id": "C90018763",
     "publisher": {

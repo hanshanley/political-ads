@@ -28,11 +28,17 @@ pushed or published without explicit authorization.
 | Michael Whatley | Public WordPress ad releases | NC Senate; 48 matching posts checked; video/description leads, no usable written scripts |
 | Pete Ricketts | Public WordPress ad releases | NE Senate; one matching ordinary post checked; no usable written script, not proof of no ads |
 | Young Kim | Public WordPress ad releases | Two April primary scripts; CA-40 verified against release and FEC roster; horizontal divider excludes next-ad commentary |
+| Mike Lawler | Official public WordPress releases | Five publisher-quoted ad-copy records from four releases; NY-17; partial passages, not certified complete scripts |
+| Maria Elvira Salazar | Official public WordPress releases | Two publisher-quoted ad-copy records; FL-27; ordinary press statements excluded and CMS/visible-release date disagreement retained |
 | Juan Ciscomani | Paginated public Squarespace news JSON | One June script; AZ-06 |
 | Roger Marshall | Dated public HTML press cards and release pages | Two October scripts; KS Senate; marked transcript paragraphs exclude surrounding attacks; visible archive is partial |
 | Lizzie Fletcher | Official public WordPress ad releases | Four scripts, including separately marked 15/30-second versions; TX-07 |
 | Zach Dembo | Official public WordPress ad releases | One written script; KY-06 |
 | Nancy Lacore | Paginated public Squarespace `/media` JSON | Three scripts; SC-01; campaign biography excluded |
+| Julia Letlow | Public blog sitemap, publication metadata and exact article body | One June Senate script; sitemap modification dates and recent-post navigation are not ad evidence |
+| Glenn Grothman campaign | Reviewed public campaign release reproduced by WisPolitics | One October WI-06 script; campaign alignment is not the mirror's editorial alignment; private API/feed access not used; mirror coverage is explicitly partial |
+| Aaron Flint | Official public WordPress ad releases | Six August–October MT-01 scripts; original speaker labels and publisher errors retained |
+| Brian Stover | Official public WordPress ad releases | Two January GA-14 releases reproduce an ad script; post-script biography and placement commentary excluded; releases are not evidence of two distinct creatives |
 | Sarah Trone Garriott | Official public WordPress ad releases | Explicit transcripts; IA-03 |
 | Sean McCann | Official public WordPress ad releases | Explicit transcripts and separated ad copy; MI-04 |
 | Zach Nunn | Official public WordPress ad releases | IA-03 video leads; releases without transcripts are not counted as text |
@@ -44,6 +50,10 @@ pushed or published without explicit authorization.
 | CLF | Paginated public HTML press archive | REST returns 401; public press archive checked; no usable 2026 scripts found there |
 | SMP / WinSenate | Public news cards and their shipped load-more form; native Snap assets | 37 in-scope ad releases checked; 10 explicitly quoted speech records, not full certified scripts; ordinary posts endpoint misses this archive; WinSenate is FEC C00865444 |
 | One Nation | Official public advocacy identity and native Snap assets | Conservative-aligned issue advocacy, not a party committee; FEC noncommittee disclosure ID retained separately; federal-candidate names or individually reviewed, hash-bound federal-identity evidence required |
+| Working America | Reviewed official advocacy identity and native Snap assets | Organizational identity and alignment reviewed separately; each creative needs recovered 2026 federal-candidate evidence; generic and state-only material excluded |
+| UA Vote! PAC | Public `news` REST type and ACF release bodies | Four explicitly marked federal scripts; Iowa governor script excluded; bipartisan publisher remains unknown alignment, including its pro-Republican Fitzpatrick ad |
+| VoteVets | Public post metadata plus exact release-body HTML | Thirteen federal scripts recovered despite empty API bodies; state races and video-only pages excluded; Democratic organizational alignment does not identify a sole PAC/fund payer |
+| Other reviewed native payers | Official organizations, exact FEC identities and reviewed landing-page disclosures | Campaigns, PACs, unions and advocacy entities remain distinct; unresolved alignments stay in the corpus but not D/R denominators; metadata-only leads are not analyzed ads |
 | FEC | Official 2026 candidate/committee bulk ZIPs | Identity/discovery metadata, not transcripts or one-to-one creative links |
 | LCV Victory Fund | Public sitemap and rendered archive/release HTML | Explicit publisher scripts recovered; inaccessible REST does not imply the separate public HTML is unavailable |
 | RJC Victory Fund | Public WordPress releases | Three identifiable video leads; metadata is not text |
@@ -54,7 +64,7 @@ pushed or published without explicit authorization.
 | Meta | Ad Library API | Free identity/developer authorization required; not configured, no acquired-text claim |
 | X | Official disclosure documentation/archive links checked | Linked ZIP returns 404; another official host returns 403; CDN response is HTML, not a ZIP; no text acquired |
 
-Official entry points:
+Official entry points and explicitly identified release mirror:
 
 - https://www.nrsc.org/
 - https://dccc.org/
@@ -74,11 +84,17 @@ Official entry points:
 - https://michaelwhatley.com/
 - https://www.petericketts.com/
 - https://youngkimforcongress.com/
+- https://www.lawlerforcongress.com/
+- https://mariaelvirasalazar.com/
 - https://juanciscomani.com/
 - https://www.kansansformarshall.com/news
 - https://www.lizziefletcher.com/
 - https://zachdembo.com/
 - https://www.nancylacore.com/media
+- https://www.julialetlow.com/press-statements
+- https://www.wispolitics.com/2026/u-s-rep-grothman-releases-first-campaign-ad-of-2026-cycle/
+- https://flintformontana.com/
+- https://www.brianstoverforcongress.com/
 - https://sarahforiowa.com/
 - https://seanmccannforcongress.com/
 - https://zachnunn.com/
@@ -91,6 +107,9 @@ Official entry points:
 - https://www.senatemajority.com/
 - https://www.fec.gov/data/committee/C00865444/
 - https://www.onenationamerica.org/
+- https://workingamerica.org/
+- https://www.uagetinvolved.org/
+- https://votevets.org/
 - https://www.lcvvictoryfund.org/
 - https://www.rjchq.org/
 - https://www.protectfreedompac.com/
@@ -121,11 +140,63 @@ generated together in `outputs/analysis.json` and `outputs/analysis.html`; the m
 `outputs/analysis-ads.csv` includes complete text and evidence. These files, not an earlier
 379-record checkpoint, define the current reconciled local snapshot.
 
+The reconciled October 26 cutoff contains 1,714 acquired text records: 413 written records,
+65 captions, 16 static graphics, 76 Google previews and 1,144 Snap creatives. The English
+explorer contains 1,676 records: 758 Democratic-aligned, 440 Republican-aligned and 478 with
+unresolved alignment. Only the first two groups enter party comparisons. Relative to the
+949-record committed checkpoint, Republican coverage gains 17 written records, not additional
+Republican-aligned Snap creatives. Record counts are not counts of distinct creative executions.
+All 1,595 matched native leads were attempted; 361 still lack sufficient federal identity and
+90 have no substantive recovered text. These exclusions are not analyzed ads.
+
 Non-English and uncertain-language records remain in acquisition partitions outside the English
-comparison. Twenty-six clear English recovered texts received
+comparison. Forty-six clear English recovered texts received
 contextual language adjudication, bound to exact source hashes in `data/snap-language-reviews.json`.
 Original automatic labels remain in segment evidence. This review does not certify OCR accuracy
 or the political claims. Other uncertain records are not automatically relabeled English.
+Four Alliance for Youth Power videos with doubtful or repetitive recognized speech remain
+outside the English analysis rather than receiving language overrides on their readable overlays.
+
+The native discovery output also retains a safe unmatched-payer review inventory with public
+payer names, asset links, platform IDs, reported FEC IDs, landing hostnames and candidate-ballot
+descriptions. It omits billing addresses, targeting data and tracking query strings. Unmatched
+does not mean out of scope or exhausted. A reviewed identity that fails its landing-host or
+committee constraints remains visibly unresolved rather than silently merged.
+
+Reviewed mappings distinguish parent unions from their political funds, registered PACs from
+noncommittee disclosure filers, and similarly named organizations. United Association's own
+description is explicitly bipartisan; labor affiliation is not a blanket Democratic label.
+
+The 2026 Texas Forever committee (C00962308) is not an older similarly named committee.
+For Michigan Action Fund (C00886093) remains separate from the For Michigan parent organization,
+whose mapping additionally requires the exact `4mich.org` landing host. Fair Deal Alaska
+(C00957555) is separately identified. These four payer mappings retain unknown alignment;
+committee identity, landing-page attacks or support for an individual candidate do not establish
+organizational party alignment. Each native creative still requires recovered federal-candidate
+evidence before entering the text corpus.
+
+SAM Project Action Fund's exact archive payer name is corroborated by the visually reviewed
+`SAM-PROJECT.ORG` disclaimer in its public native creative and the public SAM Project website.
+The fund name is retained without asserting legal equivalence to the website's organization,
+assigning a PAC ID or inferring party alignment from a progressive mission. Presidential
+criticism or generic November turnout alone does not meet the House/Senate scope gate.
+All 59 initially rejected creatives from the five newest payer mappings were read in full.
+Exact public-name aliases for Ken Paxton, Will Lawrence and Tom Barrett recover formal-name
+misses without changing the FEC roster or recognized text. State-only, generic turnout and
+insufficient-identity material remain excluded; payer identity alone does not establish scope.
+An additional Paxton creative received a hash-bound identity review after direct inspection of
+its original opening frame, which explicitly names KEN PAXTON. Its recognized spelling Paxson
+is retained unchanged; this does not authorize approximate matching in other creatives.
+
+The two new written archives require actual 2026 federal-candidate identity evidence in the
+ad or its release heading, not a candidate mentioned only in surrounding press commentary.
+VoteVets's empty API bodies are not empty public releases: extraction uses only the precise
+public article-body container, never next-post navigation. Explicit background headings
+terminate scripts even when a space precedes the colon. The original publisher's spelling
+and transcription errors remain unchanged.
+Unknown-alignment records remain available in the explorer and complete downloads. The
+Majority Forward and Midnight Sun landing-page disclosure conflict is not resolved by assigning
+one organization's identity or committee IDs to another.
 
 ### Locally reviewed temporal coverage
 
@@ -145,6 +216,11 @@ Further public probes checked Kean, Mackenzie, Bresnahan, Kiggans, Lawler, Gabe 
 Husted, Moody, and additional outside-group routes. Husted's public `press-releases` type exposed
 20 matching releases but no explicit usable scripts; ordinary posts alone had missed this archive.
 Unsupported page formats, missing routes, and access denials are not empty-advertising findings.
+Hunt for Senate's public archive supplied 19 matching 2026 releases but no explicitly usable
+written script. Letlow's full public blog sitemap supplied one script; its older dynamic-release
+sitemap contained a non-ad announcement. Grothman's public mirrored release supplied an explicit
+script despite unavailable API/feed routes. The mirror's UTC timestamp is converted to its
+Central time zone, matching the visible October 15 release date; upcoming-event dates are ignored.
 LCV Victory Fund's REST endpoint returned 401 and was not bypassed; separate public HTML supplied
 explicit scripts. Blocked YouTube captions and Google creative requests are not retried.
 Snap's independently available original videos are processed locally with multilingual Whisper

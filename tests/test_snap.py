@@ -104,6 +104,46 @@ def test_reviewed_alias_and_declared_id_paths_remain_distinct_from_platform_repo
     assert direct[0]["publisher"]["identity_basis"].startswith("Snap reports FEC")
 
 
+def test_unmatched_payer_audit_preserves_safe_in_scope_inventory_not_billing_or_targeting():
+    unmatched = []
+    records = [
+        row(
+            ADID="unmatched",
+            PayingAdvertiserName="Unreviewed payer",
+            CommitteeIdentificationNumber="C12345678",
+            CreativeProperties="Landing Page URL: https://campaign.example/ad?tracking=value",
+            CandidateBallotInformation="Candidate for Congress",
+            BillingAddress="Excluded billing field",
+            TargetingLocation="Excluded targeting field",
+        ),
+        row(ADID="duplicate-creative", PayingAdvertiserName="Unreviewed payer"),
+        row(ADID="future", PayingAdvertiserName="Future payer", StartDate="2026/11/01"),
+        row(ADID="zero", PayingAdvertiserName="Zero payer", Impressions="0"),
+        row(ADID="foreign", PayingAdvertiserName="Foreign payer", CountryCode="CANADA"),
+    ]
+    assert not snap_leads(records, [], [], {}, "2026-10-26", unmatched=unmatched)
+    assert len(unmatched) == 1
+    payer = unmatched[0]
+    assert payer["review_state"] == "unreviewed_identity_and_scope"
+    assert payer["platform_ad_ids"] == ["duplicate-creative", "unmatched"]
+    assert payer["creative_urls"] == [VIEWER]
+    assert payer["reported_fec_ids"] == ["C12345678"]
+    assert payer["landing_hosts"] == ["campaign.example"]
+    assert payer["candidate_ballot_information"] == ["Candidate for Congress"]
+    assert "Excluded" not in json.dumps(unmatched)
+    assert "tracking" not in json.dumps(unmatched)
+    rejected_alias = []
+    snap_leads(
+        [row(PayingAdvertiserName="Reviewed payer", CommitteeIdentificationNumber="C00000935")],
+        [],
+        [],
+        {"Reviewed payer": {"committee_id": "C00027466"}},
+        "2026-10-26",
+        unmatched=rejected_alias,
+    )
+    assert rejected_alias[0]["review_state"] == "reviewed_alias_constraints_not_met"
+
+
 def test_native_asset_excludes_footer_images_posters_and_unrelated_urls():
     assert (
         native_asset(f'<img src="https://other.example/x"><img src="{NATIVE}">'.encode(), VIEWER)
@@ -118,6 +158,42 @@ def test_native_asset_excludes_footer_images_posters_and_unrelated_urls():
     with pytest.raises(ValueError):
         native_asset(
             f'<img src="{NATIVE}">'.encode(), VIEWER.replace("www.snap.com", "bad.example")
+        )
+
+
+def test_reviewed_candidacy_resolves_reused_committee_without_guessing_a_race():
+    candidates = [
+        dict(
+            candidate_id=identity,
+            name="SMITH, JANE",
+            election_year="2026",
+            office=office,
+            state="OH",
+            district="01" if office == "H" else "00",
+            party="DEM",
+            principal_committee="C12345678",
+        )
+        for identity, office in (("H-test", "H"), ("S-test", "S"))
+    ]
+    records = [row(PayingAdvertiserName="Jane for Senate")]
+    committees = [dict(name="Jane for Senate", committee_id="C12345678")]
+    assert not snap_leads(records, candidates, committees, {}, "2026-10-26")
+    review = dict(
+        committee_id="C12345678",
+        candidate_id="S-test",
+        evidence="Official current Senate campaign and FEC principal committee",
+        evidence_url="https://evidence.example/senate",
+    )
+    result = snap_leads(records, candidates, committees, {"Jane for Senate": review}, "2026-10-26")
+    assert result[0]["publisher"]["race"] == "OH-Senate"
+    assert result[0]["publisher"]["candidate_id"] == "S-test"
+    assert review["evidence"] in result[0]["publisher"]["identity_basis"]
+    for changed in (
+        {"candidate_id": "unknown"},
+        {"committee_id": "C87654321"},
+    ):
+        assert not snap_leads(
+            records, candidates, committees, {"Jane for Senate": review | changed}, "2026-10-26"
         )
 
 
@@ -154,6 +230,7 @@ def test_reviewed_advocacy_payers_need_federal_content_and_never_receive_invente
     ad = snap_ad(lead, "hash", named_ocr, candidates=[candidate])
     assert ad["segments"][0]["fec_committee_id"] is None
     assert "without an assigned FEC committee ID" in ad["attribution_basis"]
+    assert "no noncommittee disclosure ID is assigned" in ad["attribution_basis"]
     with pytest.raises(ValueError, match="no full 2026 federal"):
         snap_ad(lead, "hash", named_ocr, candidates=[candidate | {"election_year": "2024"}])
     assert not snap_leads(
@@ -193,6 +270,66 @@ def test_reviewed_advocacy_payers_need_federal_content_and_never_receive_invente
     speech["segments"][0]["text"] = "Tell Jane"
     with pytest.raises(ValueError, match="no full 2026 federal"):
         snap_ad(lead, "hash", frames, speech, candidates=[candidate])
+
+
+def test_reviewed_advocacy_ids_and_owned_landing_hosts_do_not_merge_conflicting_payers():
+    publisher = dict(
+        source="reviewed",
+        sponsor="Reviewed group",
+        alignment="D",
+        sponsor_type="outside_group",
+        chamber="",
+        race="Unresolved",
+        state="",
+    )
+    review = dict(
+        publisher=publisher,
+        noncommittee_disclosure_ids=["C30000001", "C90000001"],
+        landing_hosts=["reviewed.example"],
+        evidence="Reviewed legal disclosures and first-party landing-page disclaimer",
+        evidence_url="https://reviewed.example",
+    )
+    aliases = {"Reviewed group": review}
+    committees = [
+        dict(name="Reviewed group", committee_id=identity)
+        for identity in review["noncommittee_disclosure_ids"]
+    ]
+    record = row(
+        PayingAdvertiserName="Reviewed group",
+        CreativeProperties="web_view_url:https://www.reviewed.example/ad",
+    )
+    lead = snap_leads([record], [], committees, aliases, "2026-10-26")[0]
+    assert lead["publisher"]["committee_id"] == ""
+    candidate = dict(
+        candidate_id="S-test",
+        name="SMITH, JANE",
+        election_year="2026",
+        office="S",
+        state="OH",
+        district="00",
+        party="REP",
+    )
+    named_ocr = ocr()
+    named_ocr["lines"][0]["text"] = "Tell Jane Smith to protect Social Security."
+    ad = snap_ad(lead, "hash", named_ocr, candidates=[candidate])
+    assert ad["segments"][0]["fec_committee_id"] is None
+    assert ad["segments"][0]["fec_noncommittee_disclosure_ids"] == [
+        "C30000001",
+        "C90000001",
+    ]
+    for changed in (
+        {"CreativeProperties": ""},
+        {"CreativeProperties": "web_view_url:https://reviewed.example.evil/ad"},
+        {"CreativeProperties": "web_view_url:https://different-payer.example/ad"},
+        {"CommitteeIdentificationNumber": "C99999999"},
+    ):
+        assert not snap_leads([record | changed], [], committees, aliases, "2026-10-26")
+    pac_review = {k: v for k, v in review.items() if k != "noncommittee_disclosure_ids"}
+    pac_review["committee_id"] = "C12345678"
+    pac_lead = snap_leads([record], [], [], {"Reviewed group": pac_review}, "2026-10-26")[0]
+    ad = snap_ad(pac_lead, "hash", named_ocr, candidates=[candidate])
+    assert ad["segments"][0]["fec_committee_id"] == "C12345678"
+    assert "with an evidenced FEC committee ID" in ad["attribution_basis"]
 
 
 def test_repeated_placements_are_one_creative_with_explicit_scheduled_dates_and_full_provenance():
@@ -268,6 +405,48 @@ def test_video_keeps_speech_and_novel_overlays_once_with_timed_duplicate_and_rej
     assert segments[1]["start_seconds"] == segments[1]["end_seconds"] == 0
 
 
+def test_implausible_speech_timing_stays_in_review_evidence_not_text_or_scope_matches():
+    line = dict(text="Protect health care for working families.", confidence=1, bounds=[0, 0, 1, 1])
+    frames = dict(
+        duration_seconds=15,
+        sample_interval_seconds=1,
+        engine="Local OCR",
+        coordinate_system="normalized bottom-left",
+        frames=[dict(seconds=0, lines=[line])],
+    )
+    invalid = dict(text="Jane Smith " * 40, start_seconds=0.1, end_seconds=0.11)
+    speech = dict(
+        engine="Local ASR",
+        model="base",
+        model_revision="revision",
+        language="en",
+        language_probability=0.5,
+        segments=[invalid],
+    )
+    segments = video_segments(frames, speech, "hash")
+    assert [s["text"] for s in segments] == [line["text"]]
+    assert segments[0]["excluded_implausible_asr_segments"][0]["text"] == invalid["text"]
+    lead = leads([row()])[0]
+    ad = snap_ad(lead, "hash", frames, speech)
+    assert ad["text"] == line["text"]
+    assert ad["language"] == "en"
+    assert "implausible_asr_timing_excluded_retained_for_review" in ad["quality_flags"]
+    lead["publisher"]["requires_federal_mention"] = True
+    candidate = dict(
+        candidate_id="S-test",
+        name="SMITH, JANE",
+        election_year="2026",
+        office="S",
+        state="OH",
+        district="00",
+        party="REP",
+    )
+    with pytest.raises(ValueError, match="no full 2026 federal"):
+        snap_ad(lead, "hash", frames, speech, candidates=[candidate])
+    normal = speech | {"segments": [invalid | {"end_seconds": 30}]}
+    assert video_segments(frames, normal, "hash")[0]["kind"] == "local_asr"
+
+
 def test_rate_limit_retains_existing_text_and_persistently_stops_requests(tmp_path, monkeypatch):
     lead = leads([row()])[0]
     ad = snap_ad(lead, "hash", ocr())
@@ -306,6 +485,42 @@ def test_contextual_language_review_is_hash_bound_and_preserves_automatic_label(
     with pytest.raises(ValueError, match="source hash"):
         apply_language_review(ad | {"source_hash": "changed"}, ledger)
     assert apply_language_review(ad, {}) == ad
+
+
+@pytest.mark.parametrize("extraction_fails", [False, True])
+def test_replay_withdraws_invalid_scope_but_preserves_prior_text_on_extraction_failure(
+    tmp_path, monkeypatch, extraction_fails
+):
+    lead = leads([row()])[0]
+    prior = snap_ad(lead, "hash", ocr())
+    lead["publisher"]["requires_federal_mention"] = True
+    write_json(tmp_path / "data/site/snap.json", {"ads": [prior], "sources": []})
+    write_json(
+        tmp_path / "outputs/snap-discovery.json",
+        {"until": "2026-10-26", "leads": [lead], "archive_sha256": "hash"},
+    )
+    write_json(
+        tmp_path / "data/raw/snap-progress.json",
+        {"records": {lead["id"]: {"state": "text"}}, "blocked": ""},
+    )
+    monkeypatch.setattr(
+        "political_ads.snap.Client.get",
+        lambda self, url, **kwargs: (
+            f'<img src="{NATIVE}">'.encode() if url == VIEWER else b"image",
+            {},
+        ),
+    )
+
+    def recognize(*args):
+        if extraction_fails:
+            raise ValueError("Invalid cached extraction")
+        return "hash", ocr()
+
+    monkeypatch.setattr("political_ads.snap.recognize_image", recognize)
+    result = collect_snap(tmp_path, "2026-10-26", offline=True)
+    assert result["ads"] == ([prior] if extraction_fails else [])
+    progress = json.loads((tmp_path / "data/raw/snap-progress.json").read_text())
+    assert progress["records"][lead["id"]]["state"] == "unprocessed"
 
 
 def test_local_word_alignment_failure_falls_back_to_real_segment_timestamps():

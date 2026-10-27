@@ -71,6 +71,90 @@ def test_repeated_page_is_failure_not_complete_or_empty():
     assert "repeated" in status["error"]
 
 
+def test_union_custom_news_body_is_recovered_from_public_acf():
+    source = next(s for s in SOURCES if s.id == "ua-vote-pac")
+
+    class UnionArchive:
+        def json(self, *args, **kwargs):
+            return [
+                {
+                    "id": 3853,
+                    "date": "2026-10-07T08:00:00",
+                    "title": {"rendered": "UA Launches Independent Expenditure in PA-1"},
+                    "link": source.url + "/news/pa-1/",
+                    "acf": {
+                        "page_layout": [
+                            {
+                                "component_wysiwyg": {
+                                    "content": "<p>TRANSCRIPT:</p><p>Brian Fitzpatrick "
+                                    "will work across party lines to lower costs for "
+                                    "working families and protect Pennsylvania jobs.</p>"
+                                }
+                            }
+                        ]
+                    },
+                }
+            ], {}
+
+    candidates = [
+        dict(
+            candidate_id="H6PA08277",
+            name="FITZPATRICK, BRIAN",
+            party="REP",
+            state="PA",
+            office="H",
+            district="01",
+        )
+    ]
+    ads, status = collect_wordpress(UnionArchive(), source, "2026-10-26", candidates=candidates)
+    assert status["state"] == "ok" and len(ads) == 1
+    assert ads[0]["text"].startswith("Brian Fitzpatrick")
+
+
+def test_empty_veterans_api_body_uses_the_separate_public_script_container():
+    source = next(s for s in SOURCES if s.id == "votevets")
+    link = source.url + "/press-releases/new-ad/"
+
+    class VeteransArchive:
+        def json(self, *args, **kwargs):
+            return [
+                {
+                    "id": 5569,
+                    "date": "2026-07-14T08:00:00",
+                    "title": {"rendered": "New Ad Holding Ashley Hinson Accountable"},
+                    "content": {"rendered": ""},
+                    "link": link,
+                }
+            ], {}
+
+        def get(self, url, **kwargs):
+            assert url == link and kwargs["retry"] is False
+            return (
+                b'<div class="body-content"><div class="wysiwyg-text">'
+                b"<p>A separate press statement.</p><p>AD TRANSCRIPT:</p>"
+                b"<p>Ashley Hinson should work for Iowa farmers instead of voting "
+                b"for higher costs and expensive foreign wars.</p></div></div>"
+                b"<nav>Next Post: another campaign's message.</nav>",
+                {},
+            )
+
+    candidates = [
+        dict(
+            candidate_id="S6IA00314",
+            name="HINSON, ASHLEY",
+            party="REP",
+            state="IA",
+            office="S",
+            district="00",
+        )
+    ]
+    ads, status = collect_wordpress(VeteransArchive(), source, "2026-10-26", candidates=candidates)
+    assert status["public_html_bodies_recovered"] == 1 and len(ads) == 1
+    assert "Next Post" not in ads[0]["text"]
+    assert "press statement" not in ads[0]["text"]
+    assert ads[0]["segments"][0]["federal_scope_candidate_ids"] == ["S6IA00314"]
+
+
 def test_client_retries_rate_limit_but_not_unauthorized(tmp_path, monkeypatch):
     sleeps = []
     calls = []
