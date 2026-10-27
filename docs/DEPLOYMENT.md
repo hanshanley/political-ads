@@ -25,6 +25,8 @@ discarding identity-gated scripts on a clean runner. It regenerates complete ana
 CSV and HTML, rebuilds and validates the saved evidence, then commits research inputs and
 analysis to main as Hans Hanley. It has no deployment step or host-dispatch credential.
 Failed sources retain their last-good partitions and source-specific freshness.
+Saved HTTP 401/403/429 denials pause that source on subsequent refreshes without new requests;
+successful sources continue updating. A paused source requires access review before resuming.
 A successful acquisition is not complete advertising coverage.
 
 Blocked YouTube captions and Google creatives are not retried. Existing caption, image,

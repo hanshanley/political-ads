@@ -1951,7 +1951,8 @@
         "https://www.youtube.com/watch?v=WRg8z5ujRmg",
         "https://www.youtube.com/watch?v=sxBIlfHbW48",
         "https://youtu.be/CrgGfDFAdv4",
-        "https://youtu.be/b3u3EWOfApI"
+        "https://youtu.be/b3u3EWOfApI",
+        "https://youtube.com/watch?v=WRg8z5ujRmg&feature=youtu.be"
       ],
       "message_id": "92f6e0699f6c4738d022e79783f93363a109f6a12de2bc6dc1621ce2ff2aefc7",
       "observed": "2026-10-26",
@@ -10149,6 +10150,103 @@
       "title": "Hinson Releases First Ad of Senate Campaign: “Believe” "
     },
     {
+      "alignment": "D",
+      "attribution_basis": "Official Nancy Lacore for Congress release at https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "House",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "lacore-6a0361048e32cb4ef8e5d34f-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://youtu.be/jxGZ7U9l64M"
+      ],
+      "message_id": "61d7684dbcf7ab2edc544407034557e9db87fdbf40b0c3b609018e4b43a835ba",
+      "observed": "2026-10-27",
+      "phase": "primary",
+      "placement": "campaign_release",
+      "published": "2026-05-12",
+      "quality_flags": [],
+      "race": "SC-01",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m Nancy Lacore.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I was never political.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I was a three-star Navy Admiral.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Mission focused.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Then the Trump administration removed Military officials in command positions without cause…",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Because of politics.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Politics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I served this country for 35 years and that won't stop just because I hung up the uniform.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m Nancy Lacore and I approve this message, because I’m not done yet.",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "lacore",
+      "source_hash": "659749e779c8cd34008b3fc65366ae7d5eaa249ce1676ff15a759c972897d4bd",
+      "source_record_id": "6a0361048e32cb4ef8e5d34f",
+      "source_url": "https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary",
+      "sponsor": "Nancy Lacore for Congress",
+      "sponsor_type": "candidate",
+      "state": "SC",
+      "text": "I’m Nancy Lacore.\nI was never political.\nI was a three-star Navy Admiral.\nMission focused.\nThen the Trump administration removed Military officials in command positions without cause…\nBecause of politics.\nPolitics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.\nI served this country for 35 years and that won't stop just because I hung up the uniform.\nI’m Nancy Lacore and I approve this message, because I’m not done yet.",
+      "title": "Admiral Nancy Lacore Releases First Television Ad of SC-01 Democratic Primary"
+    },
+    {
       "alignment": "R",
       "attribution_basis": "Official Rogers for Senate release at https://rogersforsenate.com/news/team-rogers-announces-new-ad-on-investing-in-skilled-trades; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
@@ -10160,7 +10258,7 @@
       "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
       "media_urls": [],
       "message_id": "b0ac0ef3e16798ddbd4836786d484e942d2dad9042ff71f382e49a45c1090dc5",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-05-12",
@@ -10213,7 +10311,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "66000b14090764f26ad8902f5648560a3d7635a87b1b227bcf074f33b490cd93",
+      "source_hash": "2a0f48f2bcdd30cfc4558d6624b111cd1711d692900fc9179ff3dec2a4869dea",
       "source_record_id": "6a0347fcecb386341bf60f75",
       "source_url": "https://rogersforsenate.com/news/team-rogers-announces-new-ad-on-investing-in-skilled-trades",
       "sponsor": "Rogers for Senate",
@@ -11057,6 +11155,89 @@
     },
     {
       "alignment": "D",
+      "attribution_basis": "Official Nancy Lacore for Congress release at https://www.nancylacore.com/media//admiral-nancy-lacore-lowcountry-tv-ad; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "House",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "lacore-6a1842f46d96d833b54c0fd9-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://youtu.be/fzf1jSOIQCE"
+      ],
+      "message_id": "d6adbca807b5fa34153e61c85fb037ccdb35a99689d3e2a27584298c36b3b529",
+      "observed": "2026-10-27",
+      "phase": "primary",
+      "placement": "campaign_release",
+      "published": "2026-05-27",
+      "quality_flags": [],
+      "race": "SC-01",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "There’s no place like the Lowcountry. Reminds me a lot of the military.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Hard-working people who love their country and put service first.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m Democrat Nancy Lacore.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I served in the U.S. Navy for 35 years and led 60,000 sailors through times of crisis.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "The crisis today is people work hard and can’t get ahead, veterans can’t get healthcare, and politicians are loyal to a broken system.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m running for Congress to put service first – like the Lowcountry does.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m Nancy Lacore and I approve this message",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "lacore",
+      "source_hash": "b206c1cd9ac7d949cd7c29ac180f37967c795592423c0601afd2e70dad93ff12",
+      "source_record_id": "6a1842f46d96d833b54c0fd9",
+      "source_url": "https://www.nancylacore.com/media//admiral-nancy-lacore-lowcountry-tv-ad",
+      "sponsor": "Nancy Lacore for Congress",
+      "sponsor_type": "candidate",
+      "state": "SC",
+      "text": "There’s no place like the Lowcountry. Reminds me a lot of the military.\nHard-working people who love their country and put service first.\nI’m Democrat Nancy Lacore.\nI served in the U.S. Navy for 35 years and led 60,000 sailors through times of crisis.\nThe crisis today is people work hard and can’t get ahead, veterans can’t get healthcare, and politicians are loyal to a broken system.\nI’m running for Congress to put service first – like the Lowcountry does.\nI’m Nancy Lacore and I approve this message",
+      "title": "Admiral Nancy Lacore Releases “The Lowcountry,” Second Television Ad of SC-01 Democratic Primary"
+    },
+    {
+      "alignment": "D",
       "attribution_basis": "Official VoteVets release at https://votevets.org/press-releases/votevets-launches-one-million-dollar-ad-buy-for-cait-conley-in-ny-17-releases-poll-showing-her-with-growing-lead; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "candidate_mentions": [
         {
@@ -11635,7 +11816,7 @@
         "https://www.youtube.com/watch?v=YtZUwDJ8A_s"
       ],
       "message_id": "9dddefffb2c0ce06a5512ad46f570e52165fcbf590d51d8eddf38fb3b27bab41",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-06-09",
@@ -11681,7 +11862,7 @@
         }
       ],
       "source": "letlow",
-      "source_hash": "142b1fd49a1dc4b0e7f6f27b6ac363532e7903d083ae2c379d14c9a9e4b28c09",
+      "source_hash": "8b7e43e8b4ee2061dd20b3198422351c374eeef6f6d395c817326712c208d703",
       "source_record_id": "61f6df1b225024c8",
       "source_url": "https://www.julialetlow.com/post/new-ad-letlow-takes-on-radical-left-indoctrination-and-boys-in-girls-sports",
       "sponsor": "Julia Letlow for Louisiana",
@@ -12360,7 +12541,7 @@
       "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
       "media_urls": [],
       "message_id": "022db9f362101cdb1a8c86eec8453ebc974e35d52b33da6c6b906b0a6c56c04f",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-06-25",
@@ -12420,7 +12601,7 @@
         }
       ],
       "source": "ciscomani",
-      "source_hash": "766382ca57fc98aa7d6f301708b6d3e91f1918c68b18b835c8f357b3eb291e14",
+      "source_hash": "468de9e2e72893efda49d28175421e31f3df6e12c4811ba258bdbb4427c573b6",
       "source_record_id": "6a3d5cd6e2b9ea5d4b3ef581",
       "source_url": "https://juanciscomani.com/news/74h3c38hwem76j2si8b0xorkjy89ga",
       "sponsor": "Ciscomani for Congress",
@@ -12872,7 +13053,8 @@
       "language": "en",
       "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
       "media_urls": [
-        "https://www.youtube.com/watch?v=wrn-I2U0Kb4"
+        "https://www.youtube.com/watch?v=wrn-I2U0Kb4",
+        "https://youtube.com/watch?v=wrn-I2U0Kb4"
       ],
       "message_id": "d33584f4e0289996a873205996a24c37c96a0c093bc23cc4407f6b5cd3aca604",
       "observed": "2026-10-26",
@@ -14247,7 +14429,9 @@
       "id": "cooper-551-0",
       "language": "en",
       "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
-      "media_urls": [],
+      "media_urls": [
+        "https://youtube.com/watch?v=b3WgK0NjLks&feature=youtu.be"
+      ],
       "message_id": "24fb3406c7cef2ada18cc5cba32469075614b52d993f438f1489e272d6940224",
       "observed": "2026-10-26",
       "phase": "unknown",
@@ -15459,7 +15643,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "a595da92ebe204b818ab7246812d327a29c1289ecd141c1b5f81c6b6e389ce93",
+      "source_hash": "47b34f8027e7e15fe45a59aca935630559de2591cf6b8bbc8a880a9ead554399",
       "source_record_id": "6a6a2d498faab207bc50772b",
       "source_url": "https://rogersforsenate.com/news/rogers-runs-six-figure-buy-on-lowering-prescription-drug-prices",
       "sponsor": "Rogers for Senate",
@@ -18004,7 +18188,8 @@
         "https://www.youtube.com/watch?v=UZsMBUIhw2I",
         "https://www.youtube.com/watch?v=UZsMBUIhw2I&feature=youtu.be",
         "https://www.youtube.com/watch?v=sV2UZ9SPf4k&feature=youtu.be",
-        "https://www.youtube.com/watch?v=zS-V13i_U9E&feature=youtu.be"
+        "https://www.youtube.com/watch?v=zS-V13i_U9E&feature=youtu.be",
+        "https://youtube.com/watch?v=ePQa2LiXN7Y&feature=youtu.be"
       ],
       "message_id": "7849a4e15745ffbf7d7b2ea540380480f995ffff01fa6f0a2906f00a57584b76",
       "observed": "2026-10-26",
@@ -18076,7 +18261,8 @@
         "https://www.youtube.com/watch?v=UZsMBUIhw2I",
         "https://www.youtube.com/watch?v=UZsMBUIhw2I&feature=youtu.be",
         "https://www.youtube.com/watch?v=sV2UZ9SPf4k&feature=youtu.be",
-        "https://www.youtube.com/watch?v=zS-V13i_U9E&feature=youtu.be"
+        "https://www.youtube.com/watch?v=zS-V13i_U9E&feature=youtu.be",
+        "https://youtube.com/watch?v=ePQa2LiXN7Y&feature=youtu.be"
       ],
       "message_id": "878cc991e1c130c574c83e73cc9a1f1f1e8f7659822d6c9a05a0a500064048cb",
       "observed": "2026-10-26",
@@ -18141,7 +18327,8 @@
         "https://www.youtube.com/watch?v=UZsMBUIhw2I",
         "https://www.youtube.com/watch?v=UZsMBUIhw2I&feature=youtu.be",
         "https://www.youtube.com/watch?v=sV2UZ9SPf4k&feature=youtu.be",
-        "https://www.youtube.com/watch?v=zS-V13i_U9E&feature=youtu.be"
+        "https://www.youtube.com/watch?v=zS-V13i_U9E&feature=youtu.be",
+        "https://youtube.com/watch?v=ePQa2LiXN7Y&feature=youtu.be"
       ],
       "message_id": "ff76f1953e5bc101d1d6d7689e8831e406c6f234ca59cc2d673d20c808a60a6f",
       "observed": "2026-10-26",
@@ -18227,7 +18414,8 @@
         "https://www.youtube.com/watch?v=UZsMBUIhw2I",
         "https://www.youtube.com/watch?v=UZsMBUIhw2I&feature=youtu.be",
         "https://www.youtube.com/watch?v=sV2UZ9SPf4k&feature=youtu.be",
-        "https://www.youtube.com/watch?v=zS-V13i_U9E&feature=youtu.be"
+        "https://www.youtube.com/watch?v=zS-V13i_U9E&feature=youtu.be",
+        "https://youtube.com/watch?v=ePQa2LiXN7Y&feature=youtu.be"
       ],
       "message_id": "e4591da7b652835cfaa8d8eb0481d34672da46e96f99ddeb586c242c171389a7",
       "observed": "2026-10-26",
@@ -18435,7 +18623,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "5ac0471c8d48f386e37dadba34bee8056f05f50ae012d442f07fcf77511cf907",
+      "source_hash": "f13d51baf6763230d7263b143cd7cd0505df1ab9dd7987afdc2c7b256d4005e2",
       "source_record_id": "6a7c930be0c5f918a57abd62",
       "source_url": "https://rogersforsenate.com/news/rogers-launches-builders-outlines-plan-to-build-more-homes-and-lower-housing-costs",
       "sponsor": "Rogers for Senate",
@@ -19262,7 +19450,7 @@
         "https://www.youtube.com/watch?v=AdJj5AC3WT8"
       ],
       "message_id": "35025a73e58a9a7d073acfb488575d1e36523a9b9f67bc72d024a9d1577f8e14",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-08-18",
@@ -19315,7 +19503,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "9d2dad1c5aed81c456f1146a0379355a6b3747d4bcf18c8e63b765fba0a77809",
+      "source_hash": "008a13dcadb5ea9d67ed72a4bb4522d7a58221abc47a16cff5b9899686b6f1a2",
       "source_record_id": "6a8472e00b520608053f9ee3",
       "source_url": "https://rogersforsenate.com/news/ad-rogers-protects-michigan-manufacturing-puts-main-street-over-wall-street",
       "sponsor": "Rogers for Senate",
@@ -19456,7 +19644,9 @@
       "id": "turek-a852d0a2313742c0-0",
       "language": "en",
       "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
-      "media_urls": [],
+      "media_urls": [
+        "https://youtube.com/watch?reload=9&v=Z5jX30NUj3A"
+      ],
       "message_id": "fd1b35bde876eb8416531fa9fc9124f43775e7270a4d98523e6acf0bdaa1997e",
       "observed": "2026-10-26",
       "phase": "general",
@@ -20197,7 +20387,7 @@
         "https://www.youtube.com/watch?v=xw2dvAf1jUY"
       ],
       "message_id": "3db492b6d7eeb8b23a1a24d2a72847e710e562fa6aae6930668f834bcdce4779",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-08-28",
@@ -20271,7 +20461,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "bdad308c108b34116cae6b1ea8765e46ae4c240f97f46dd28ede334914ce47c9",
+      "source_hash": "ed257230cdd77ab6d04b0cb767609ae8a1c580edc2dc60f8bc24373fb54c2b07",
       "source_record_id": "6a91f64e9131bf6f6647e8a6",
       "source_url": "https://rogersforsenate.com/news/ad-abdul-thinks-football-is-bad-but-men-in-womens-sports-is-good",
       "sponsor": "Rogers for Senate",
@@ -20360,7 +20550,9 @@
       "language": "en",
       "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
       "media_urls": [
-        "https://www.youtube.com/watch?v=dGzAS4ULzpY"
+        "https://www.youtube.com/watch?v=dGzAS4ULzpY",
+        "https://youtube.com/watch?reload=9&v=Z5jX30NUj3A",
+        "https://youtube.com/watch?v=l_oCOWjyOFg&feature=youtu.be"
       ],
       "message_id": "a43172f798080c6e1169529781e95fb216ea13f759ece851dec263ff6d2d8c55",
       "observed": "2026-10-26",
@@ -20610,6 +20802,110 @@
       "state": "NC",
       "text": "Roy Cooper: I’m going to show you something. No AI, no special effects. Just Michael Whatley in his own words.\nMichael Whatley: Grocery prices are down. Gasoline prices are down. Housing prices are down. Inflation is down.\nRoy Cooper: Unbelievable. And so is this.\nMichael Whatley: There is no inflation.\nRoy Cooper: Seriously? I’m Roy Cooper, and I approve this message because I know costs are way up, and it’s the senator’s job to do something about it.\nThat’s why I have a plan to make stuff cost less, and you can read about it right here.",
       "title": "NEW TV AD: Michael Whatley in His Own Words: “Grocery Prices Are Down”"
+    },
+    {
+      "alignment": "D",
+      "attribution_basis": "Official Sean McCann for Congress release at https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "House",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "mccann-16602-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://youtu.be/G1IHkUKi804"
+      ],
+      "message_id": "75d57648b57b9359b5a2567abf165cfb2e1cca54ffea9b7f28460565d742efab",
+      "observed": "2026-10-27",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-09-01",
+      "quality_flags": [],
+      "race": "MI-04",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“I’ve spent my career standing up to powerful people.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Greedy landlords here.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Corporate polluters here.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "And now I’m running for Congress to fix what’s broken here.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m Sean McCann.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Too many families are doing everything right and still can’t get ahead.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "We need to end the tariffs that are driving prices up.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Ban Congress from trading stocks.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "And cap the cost of prescription drugs.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I approve this message because we won’t bring costs down until we change who’s in charge.”",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "mccann",
+      "source_hash": "8392f198f348ddef3a1b4110f5c26cf45d56fb6580f1c4eec84c00942280e97c",
+      "source_record_id": "16602",
+      "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/",
+      "sponsor": "Sean McCann for Congress",
+      "sponsor_type": "candidate",
+      "state": "MI",
+      "text": "“I’ve spent my career standing up to powerful people.\nGreedy landlords here.\nCorporate polluters here.\nAnd now I’m running for Congress to fix what’s broken here.\nI’m Sean McCann.\nToo many families are doing everything right and still can’t get ahead.\nWe need to end the tariffs that are driving prices up.\nBan Congress from trading stocks.\nAnd cap the cost of prescription drugs.\nI approve this message because we won’t bring costs down until we change who’s in charge.”",
+      "title": "SEAN McCANN RELEASES FIRST TV AD HIGHLIGHTING HOW HE STANDS UP TO POWERFUL PEOPLE ON BEHALF OF MICHIGAN FAMILIES"
     },
     {
       "alignment": "R",
@@ -20965,7 +21261,7 @@
         "https://youtu.be/Q1F5m5AOEFc"
       ],
       "message_id": "9324b6fcacacdbeb4951b9d681361b449886f6c9ddd2b0e38cd22f5e633c8b38",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-09-08",
@@ -21032,7 +21328,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "2e2b8f389a136550d450f9c034a21b21a9449346f2e16a784e34e0c082a41597",
+      "source_hash": "0e14bdaf8da16d60c17b94be99974ca5a01267662a7d41f5eab3eabe0370c8b3",
       "source_record_id": "6aa0250bf684390971db992a",
       "source_url": "https://rogersforsenate.com/news/ad-rogers-hunted-terrorists-abduls-running-mate-sympathizes-with-them",
       "sponsor": "Rogers for Senate",
@@ -21150,7 +21446,9 @@
       "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
       "media_urls": [
         "https://www.youtube.com/watch?v=b1v4oKLfHDo",
-        "https://www.youtube.com/watch?v=dGzAS4ULzpY"
+        "https://www.youtube.com/watch?v=dGzAS4ULzpY",
+        "https://youtube.com/watch?reload=9&v=Z5jX30NUj3A",
+        "https://youtube.com/watch?v=l_oCOWjyOFg&feature=youtu.be"
       ],
       "message_id": "3df32ede606070f662b69f394016af70209233c90302af27c92d924a6a5f9819",
       "observed": "2026-10-26",
@@ -21375,7 +21673,7 @@
         "https://www.youtube.com/watch?v=Qkd60ZE9Ibk"
       ],
       "message_id": "203cb417a2c71b83a4c9cf363655beb053b05db8db029313b6e317fb4f2292e9",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "general",
       "placement": "campaign_release",
       "published": "2026-09-09",
@@ -21414,7 +21712,7 @@
         }
       ],
       "source": "lacore",
-      "source_hash": "92137f2a9ab85152faf188f6544d9471d22e5a1dd1d08412fa7f7c403a7f066a",
+      "source_hash": "a1c9183e2ac35ba8c196f406131e05693f36d5ebce766fe8319a61549623b803",
       "source_record_id": "6aa1c0731d98c26fe17488c8",
       "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
       "sponsor": "Nancy Lacore for Congress",
@@ -21438,7 +21736,7 @@
         "https://www.youtube.com/watch?v=Qkd60ZE9Ibk"
       ],
       "message_id": "cd883157e0f22af853a46f4d752430cfbc26b2ba0fbd1fc0437e118463ec0bb7",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "general",
       "placement": "campaign_release",
       "published": "2026-09-09",
@@ -21491,7 +21789,7 @@
         }
       ],
       "source": "lacore",
-      "source_hash": "92137f2a9ab85152faf188f6544d9471d22e5a1dd1d08412fa7f7c403a7f066a",
+      "source_hash": "a1c9183e2ac35ba8c196f406131e05693f36d5ebce766fe8319a61549623b803",
       "source_record_id": "6aa1c0731d98c26fe17488c8",
       "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
       "sponsor": "Nancy Lacore for Congress",
@@ -21946,7 +22244,7 @@
         "https://www.youtube.com/watch?v=KAd2m3LM27o"
       ],
       "message_id": "89eff0a771a331ae63adeac61406c7da6e10227fef844042c104a152e7204263",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-09-14",
@@ -22027,7 +22325,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "df2663a38d673aa73cb29bc6acb54d0e67e06bd4c8da51d1ecb48df76da0eeb0",
+      "source_hash": "755bd3f5a4891cba0dc6812a177f76ec3ffbe7f245551578b25b7fde6d61fb3e",
       "source_record_id": "6aa7f33fea4d3119417eb632",
       "source_url": "https://rogersforsenate.com/news/ad-mike-rogers-will-take-on-big-pharma-make-healthcare-more-affordable",
       "sponsor": "Rogers for Senate",
@@ -22483,6 +22781,89 @@
     },
     {
       "alignment": "D",
+      "attribution_basis": "Official Sean McCann for Congress release at https://seanmccannforcongress.com/sean-mccann-releases-tv-ad-highlighting-how-bill-huizenga-got-five-times-richer-in-congress-while-raising-costs/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "House",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "mccann-16592-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/watch?v=8AVGZzIHmE8"
+      ],
+      "message_id": "5e3e12714d805ba94d3fde32b4af5de6fcdf97b35c262f1eea5a2ade53038135",
+      "observed": "2026-10-27",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-09-15",
+      "quality_flags": [],
+      "race": "MI-04",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“To me, it’s pretty simple: No politician should get richer while your life gets harder.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "But since he got to Congress, Bill Huizenga’s gotten five times richer.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m Sean McCann and here’s three things I’ll do about it:",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "First, fight to ban Congress from trading stocks and enriching themselves.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Second, end massive tax breaks for billionaires.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "And third, stop the flood of corporate money that’s flat-out corrupting Congress.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I approve this message because we won’t change Washington until we change who works there.”",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "mccann",
+      "source_hash": "c46f1a00879062ba260ef37e202d09385592420a301bb80a70630eb75d57c16f",
+      "source_record_id": "16592",
+      "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-tv-ad-highlighting-how-bill-huizenga-got-five-times-richer-in-congress-while-raising-costs/",
+      "sponsor": "Sean McCann for Congress",
+      "sponsor_type": "candidate",
+      "state": "MI",
+      "text": "“To me, it’s pretty simple: No politician should get richer while your life gets harder.\nBut since he got to Congress, Bill Huizenga’s gotten five times richer.\nI’m Sean McCann and here’s three things I’ll do about it:\nFirst, fight to ban Congress from trading stocks and enriching themselves.\nSecond, end massive tax breaks for billionaires.\nAnd third, stop the flood of corporate money that’s flat-out corrupting Congress.\nI approve this message because we won’t change Washington until we change who works there.”",
+      "title": "SEAN McCANN RELEASES TV AD HIGHLIGHTING HOW BILL HUIZENGA GOT FIVE TIMES RICHER IN CONGRESS WHILE RAISING COSTS"
+    },
+    {
+      "alignment": "D",
       "attribution_basis": "Official DCCC release at https://dccc.org/dccc-releases-first-tv-ads-in-az-06-the-truth-and-town-hall/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
       "date_basis": "release_date",
@@ -22814,7 +23195,9 @@
       "media_urls": [
         "https://www.youtube.com/watch?v=b1v4oKLfHDo",
         "https://www.youtube.com/watch?v=dGzAS4ULzpY",
-        "https://youtu.be/xmG52PI-fTo"
+        "https://youtu.be/xmG52PI-fTo",
+        "https://youtube.com/watch?reload=9&v=Z5jX30NUj3A",
+        "https://youtube.com/watch?v=l_oCOWjyOFg&feature=youtu.be"
       ],
       "message_id": "1eee24121db869f317b7cbb51d2c24d8d3f212515097639c0350f7c1d2ef914c",
       "observed": "2026-10-26",
@@ -23107,7 +23490,7 @@
         "https://www.youtube.com/watch?v=_zw1WbLBPss&themeRefresh=1"
       ],
       "message_id": "9f3f98fdcfc7c442dffa299b5be0f78d4876034e57caad0fa5131ebfb3e556e1",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-09-18",
@@ -23167,7 +23550,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "7faa23c35db3bde2cb17a58e2d04bc2ff3dae6295506dd169bed3a338e6bea80",
+      "source_hash": "e02f7e46152c0ac3887072ba174ee5caa45816cb5a736df50b62519049e125f2",
       "source_record_id": "6aad61ca534c9b0dd9de31e6",
       "source_url": "https://rogersforsenate.com/news/rogers-launches-new-ad-blasting-doctor-abdul-for-calling-to-defund-breast-cancer-research",
       "sponsor": "Rogers for Senate",
@@ -23780,7 +24163,7 @@
         "https://youtu.be/U-tl2AhRFIQ"
       ],
       "message_id": "412380439cba45a9c72e2ab537fce5050c0f2024cfdff51e033561c1f491a0e8",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "general",
       "placement": "campaign_release",
       "published": "2026-09-22",
@@ -23833,7 +24216,7 @@
         }
       ],
       "source": "lacore",
-      "source_hash": "64a373c2e1bab047fc2ff3bba5b81e4f151a857b69a076f5ca2d5f2e2880cd20",
+      "source_hash": "ee1bed2dc1a88911391d2e9fd6ec52b7d8f349cce4f7ce1f78da5bbd08b44620",
       "source_record_id": "6ab41ce155b3f9087901e43e",
       "source_url": "https://www.nancylacore.com/media/nancy-lacore-fighting-for-healthcare-ad-release",
       "sponsor": "Nancy Lacore for Congress",
@@ -24411,7 +24794,7 @@
         "https://www.youtube.com/watch?v=sW4LVC_p2zg"
       ],
       "message_id": "d6b8913f0fad456d1de8110af3262d2874691c50a069548d0a2a13e25d3c5314",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-09-24",
@@ -24471,7 +24854,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "a61055606b3b398bef4122572512e2a87fb61ff7a22e8fdf303e9d85fc074da4",
+      "source_hash": "7bf795a82b27204ab0407711c46b1985f15a9aca78071fb0fb2015794a202ba5",
       "source_record_id": "6ab5a2e26b9d084c4a3e3e23",
       "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
       "sponsor": "Rogers for Senate",
@@ -24495,7 +24878,7 @@
         "https://www.youtube.com/watch?v=sW4LVC_p2zg"
       ],
       "message_id": "f7e09152afedc40d337dd5022861b98a0f7f5ce489fc2601823e1df2fc387f66",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-09-24",
@@ -24534,7 +24917,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "a61055606b3b398bef4122572512e2a87fb61ff7a22e8fdf303e9d85fc074da4",
+      "source_hash": "7bf795a82b27204ab0407711c46b1985f15a9aca78071fb0fb2015794a202ba5",
       "source_record_id": "6ab5a2e26b9d084c4a3e3e23",
       "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
       "sponsor": "Rogers for Senate",
@@ -24863,7 +25246,9 @@
       "id": "dccc-668416-0",
       "language": "en",
       "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
-      "media_urls": [],
+      "media_urls": [
+        "https://youtube.com/watch?v=f1B1Drfye3A&feature=youtu.be"
+      ],
       "message_id": "abf69eae6510733402318fba4167af9add3adee74963dbcaf2fe6c93fe12b27f",
       "observed": "2026-10-26",
       "phase": "unknown",
@@ -25776,7 +26161,9 @@
         "https://www.youtube.com/watch?v=paE6bU7f52M",
         "https://youtu.be/Bmqwf1DHCpM?si=_-FD-ZhXN_kMPkmH",
         "https://youtu.be/HZoXLidoe60",
-        "https://youtu.be/xmG52PI-fTo"
+        "https://youtu.be/xmG52PI-fTo",
+        "https://youtube.com/watch?reload=9&v=Z5jX30NUj3A",
+        "https://youtube.com/watch?v=l_oCOWjyOFg&feature=youtu.be"
       ],
       "message_id": "cab8bf42c9724a93e2c1e2060b592476faf9673408048cf7444d935156e32f74",
       "observed": "2026-10-26",
@@ -26592,7 +26979,9 @@
         "https://www.youtube.com/watch?v=pv9fH8agY4w",
         "https://youtu.be/HZoXLidoe60",
         "https://youtu.be/qmQN6PIcecI",
-        "https://youtu.be/xmG52PI-fTo"
+        "https://youtu.be/xmG52PI-fTo",
+        "https://youtube.com/watch?reload=9&v=Z5jX30NUj3A",
+        "https://youtube.com/watch?v=l_oCOWjyOFg&feature=youtu.be"
       ],
       "message_id": "ab5e4528fc92cc25a736ebc580bdc435618abd7ac329e030cb0cc977fca7dc20",
       "observed": "2026-10-26",
@@ -26878,7 +27267,7 @@
         "https://www.youtube.com/watch?v=w1GVZCM-VM8"
       ],
       "message_id": "01d170bb223a1dab76cff0dee57889d68db413bb795dc1bb9050adbc52fcb689",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-10-02",
@@ -26931,7 +27320,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "565e21bf717ac22ad8f7753cc37c8177bc50e37fd544cdb480b09a0945dcd630",
+      "source_hash": "df25a1f90f11bdd2c310189464ff434c90221f5071e27ef48b39c3fcace63a91",
       "source_record_id": "6abfceafba230905e3202068",
       "source_url": "https://rogersforsenate.com/news/ad-abdul-threatens-our-nations-values-and-security",
       "sponsor": "Rogers for Senate",
@@ -27426,7 +27815,9 @@
         "https://www.youtube.com/watch?v=pv9fH8agY4w",
         "https://youtu.be/HZoXLidoe60",
         "https://youtu.be/qmQN6PIcecI",
-        "https://youtu.be/xmG52PI-fTo"
+        "https://youtu.be/xmG52PI-fTo",
+        "https://youtube.com/watch?reload=9&v=Z5jX30NUj3A",
+        "https://youtube.com/watch?v=l_oCOWjyOFg&feature=youtu.be"
       ],
       "message_id": "9e299a4977edfd3560b9c29de1f765d1d4097a2bb63e50fb8d9c7110fa0b97cd",
       "observed": "2026-10-26",
@@ -29925,7 +30316,7 @@
         "https://youtu.be/klJOCnlziU4"
       ],
       "message_id": "f192623b037ce61ad2fbf88ab563d365d44fced022e3994fd7dd2823114af880",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-10-07",
@@ -29978,7 +30369,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "ca266b0665686e8273106be7583b3467bc91b9161a491a1ab8ca1fc5655f4b69",
+      "source_hash": "23d06e49161be4a38b3fc3dc32e033200c325ae00b509286ed2fffe00d7a1d17",
       "source_record_id": "6ac5cc545b585529942467da",
       "source_url": "https://rogersforsenate.com/news/ad-we-need-to-end-the-tariff-war-now",
       "sponsor": "Rogers for Senate",
@@ -31498,7 +31889,7 @@
       "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
       "media_urls": [],
       "message_id": "3114b8f8de8288dd807ec3639b2c6377c0da999d237d56dfde6621e3e4e17c48",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-10-12",
@@ -31572,7 +31963,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "aa553f7c9edce1784e00100904e12fcb33efaa1ba7b0a03cd2fcba4487c5193c",
+      "source_hash": "f582824299e1dcbb8ca82f5c5cd2eb27f1416c21e9571b6ac8cace988c048d19",
       "source_record_id": "6acd08220f7cad7d1a84f0a5",
       "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
       "sponsor": "Rogers for Senate",
@@ -31592,7 +31983,8 @@
       "language": "en",
       "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
       "media_urls": [
-        "https://www.youtube.com/watch?v=tVBnOHwEPiA"
+        "https://www.youtube.com/watch?v=tVBnOHwEPiA",
+        "https://youtube.com/watch?v=b3WgK0NjLks&feature=youtu.be"
       ],
       "message_id": "89f4316de1a805ff6a1fbe9ab99fc3af3dcd25bef77724af01673f17b4e9a279",
       "observed": "2026-10-26",
@@ -32777,7 +33169,7 @@
         "https://www.youtube.com/watch?v=eXnGm2KKr20"
       ],
       "message_id": "e92299c39ef7c6301ecdef833e6411f0d8ef6823eddc7aaba8424c6788d5773b",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-10-14",
@@ -32872,7 +33264,7 @@
         }
       ],
       "source": "marshall",
-      "source_hash": "29393b095fff66c18feb8f3953124c6f9ff8fb88da82240bb7c7bf6c43576ed8",
+      "source_hash": "d6d0f20981af3554d0b89af699caa7f326b9e4ea5ad76ae43e5d612d696c02cc",
       "source_record_id": "bc3cf14f23902638",
       "source_url": "https://www.kansansformarshall.com/news/deb-ad-release",
       "sponsor": "Kansans for Marshall",
@@ -33082,7 +33474,7 @@
         "https://www.youtube.com/watch?v=_M-9RHaqqYs"
       ],
       "message_id": "ee0a3f7d2f4b86de692052a02cdde8b4bacfb284e8f8aaadbee285ef8961858e",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-10-15",
@@ -33156,7 +33548,7 @@
         }
       ],
       "source": "rogers",
-      "source_hash": "585837aafec43d35794568de2b832709702c132538383b171db81f40da241492",
+      "source_hash": "82bac0ae2930515dd9e8393486168b09df2e02c7de661863e953ead59cb27ea2",
       "source_record_id": "6ad0d44baeb7e64efe955e17",
       "source_url": "https://rogersforsenate.com/news/ad-michigan-cant-afford-abdul-el-sayed",
       "sponsor": "Rogers for Senate",
@@ -33280,7 +33672,9 @@
         "https://youtu.be/4t0867zGt6A?si=gCAb7XyYKPiIP_kk",
         "https://youtu.be/HZoXLidoe60",
         "https://youtu.be/Tuk3BFcP7sM",
-        "https://youtu.be/xmG52PI-fTo"
+        "https://youtu.be/xmG52PI-fTo",
+        "https://youtube.com/watch?reload=9&v=Z5jX30NUj3A",
+        "https://youtube.com/watch?v=l_oCOWjyOFg&feature=youtu.be"
       ],
       "message_id": "37bffbc046037bbddcb060ae81e9e8027b6edd6ce2e4bac596db1f6785e272fa",
       "observed": "2026-10-26",
@@ -33886,7 +34280,7 @@
         "https://www.youtube.com/watch?v=uuXODfTN8Og"
       ],
       "message_id": "f541607131215ec4ec08e7db373d0d48a5559170f38ff081114dc0350845cffb",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-10-19",
@@ -33969,7 +34363,7 @@
         }
       ],
       "source": "el-sayed",
-      "source_hash": "74603de4be038a49e7c082dfd14d35bd4e5bd272388fd0c74783b90d8dd6156f",
+      "source_hash": "d98f13f6455c6a3fa5ba37fb37b55f5b0ad7cf8920def990c640b177496eb231",
       "source_record_id": "eaf17cc2a021f80f",
       "source_url": "https://abdulforsenate.com/2026/10/new-ad-dr-abdul-el-sayed-vows-to-protect-reproductive-freedoms-mike-rogers-has-spent-a-career-trying-to-strip-away/",
       "sponsor": "Abdul for U.S. Senate",
@@ -34564,6 +34958,82 @@
       "state": "AL",
       "text": "Congressman Figures: It’s not easy following in big footsteps.\nPublic service defines my mother’s life.\nMy dad, a civil rights lawyer.\nThey taught me about sacrifice and service.\nTo believe in and fight for the people of Alabama.\nIn Congress, I’ve fought to lower prices, restore funding to Medicaid, save our rural hospitals, and protect Social Security.\nI’m Shomari Figures and I approve this message.\nBecause you deserve a good job, higher wages, and low costs.\nThat’s what I’ll always fight for.",
       "title": "DCCC Releases New TV Ad in AL-02: “Footsteps”"
+    },
+    {
+      "alignment": "D",
+      "attribution_basis": "Official Nancy Lacore for Congress release at https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "House",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "lacore-6ad7dba8b25fce01a35e5a0c-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://youtu.be/EWG3x56xP3E"
+      ],
+      "message_id": "0acdb81282d591befdffcd47214b9fac62d7d25651b6ecda671443bce715ba95",
+      "observed": "2026-10-27",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-10-20",
+      "quality_flags": [],
+      "race": "SC-01",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Will Haynie: “I’m Mayor Will Haynie. I'm a lifelong Republican supporting a Democrat for Congress.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“Partisan politics won’t solve our problems. We need leaders who put service first.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“That’s Nancy Lacore. Nancy will represent us.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“She’ll be a watchdog for our tax dollars and stand up to both parties to lower costs, secure our border and protect girls’ sports.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“Nancy knows what makes the Lowcountry special.”",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Nancy Lacore: “I'm Nancy Lacore. I'm proud to have Mayor Haynie’s support, and I approve this message.”",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "lacore",
+      "source_hash": "0e139ddd31d56c59d1d45d1ee2c5023af16ceb8f5fd61d9ca0846145a185719f",
+      "source_record_id": "6ad7dba8b25fce01a35e5a0c",
+      "source_url": "https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie",
+      "sponsor": "Nancy Lacore for Congress",
+      "sponsor_type": "candidate",
+      "state": "SC",
+      "text": "Will Haynie: “I’m Mayor Will Haynie. I'm a lifelong Republican supporting a Democrat for Congress.\n“Partisan politics won’t solve our problems. We need leaders who put service first.\n“That’s Nancy Lacore. Nancy will represent us.\n“She’ll be a watchdog for our tax dollars and stand up to both parties to lower costs, secure our border and protect girls’ sports.\n“Nancy knows what makes the Lowcountry special.”\nNancy Lacore: “I'm Nancy Lacore. I'm proud to have Mayor Haynie’s support, and I approve this message.”",
+      "title": "RELEASE: Republican Mayor Will Haynie Backs Rear Admiral Nancy Lacore in Closing General Election Ad"
     },
     {
       "alignment": "D",
@@ -36225,7 +36695,7 @@
         "https://www.youtube.com/watch?v=DvgroS4sDRM"
       ],
       "message_id": "adcb8e8ec453b761a9008917c7014c45359ad4d0aace697816ffa7dc58d5d788",
-      "observed": "2026-10-26",
+      "observed": "2026-10-27",
       "phase": "unknown",
       "placement": "campaign_release",
       "published": "2026-10-21",
@@ -36362,7 +36832,7 @@
         }
       ],
       "source": "marshall",
-      "source_hash": "2f9f4a562b43e01f870687dfd64b6aa18c0ef7e6b7b9469b388f93474ef82e40",
+      "source_hash": "e7902f66661b6b2e12e8708b44426fea03a3fc6bd389dc1ae1c9a49007b15915",
       "source_record_id": "f57ec8d2874d6b9c",
       "source_url": "https://www.kansansformarshall.com/news/hamilton-in-his-own-words-ad",
       "sponsor": "Kansans for Marshall",
@@ -37246,7 +37716,9 @@
       "id": "cooper-997-0",
       "language": "en",
       "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
-      "media_urls": [],
+      "media_urls": [
+        "https://youtube.com/watch?v=b3WgK0NjLks&feature=youtu.be"
+      ],
       "message_id": "a6204885b61df93491669ff7e0d9c5835e1df6bd63a3f22d7c279c6c123452fe",
       "observed": "2026-10-26",
       "phase": "unknown",
@@ -38053,7 +38525,10 @@
         "https://youtu.be/4t0867zGt6A?si=gCAb7XyYKPiIP_kk",
         "https://youtu.be/HZoXLidoe60",
         "https://youtu.be/Tuk3BFcP7sM",
-        "https://youtu.be/xmG52PI-fTo"
+        "https://youtu.be/xmG52PI-fTo",
+        "https://youtube.com/watch?reload=9&v=Z5jX30NUj3A",
+        "https://youtube.com/watch?v=Y8hg4iUO4v4&feature=youtu.be",
+        "https://youtube.com/watch?v=l_oCOWjyOFg&feature=youtu.be"
       ],
       "message_id": "0e7708a85d613ecca99901862323cb0042935a1cf21d208dcaaca2494a5ad5d6",
       "observed": "2026-10-26",
@@ -38658,19 +39133,1098 @@
       "state": "TN",
       "text": "Tennessean: Chaz Molder always shows up for us.\nTennessean: Whether it’s passing eight balanced budgets without raising taxes.\nTennessean: Or fighting against a broken Washington.\nTennessean: We know we can count on Chaz.\nTennessean: But when we needed funding for our schools?\nTennessean: Or when farmers needed help!\nTennessean: Charlie Hatcher was nowhere to be found.\nTennessean: So I’m voting for the guy that always has our back.\nTennesseans (all together): Chaz Molder for Congress.\nChaz Molder: I’m Chaz Molder, and I approve this message. Because I’ll always show up for you.",
       "title": "DCCC Releases New Coordinated TV Ad in TN-05: “Shows Up”"
+    },
+    {
+      "alignment": "D",
+      "attribution_basis": "Official DCCC release at https://dccc.org/dccc-releases-new-tv-ad-in-oh-09-differences/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "House",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "dccc-669570-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://youtu.be/C1j9xPnf_oA"
+      ],
+      "message_id": "490a187876f741843ded3c591d651a0c81ff0a3df5d2e8ece8fc20a8fb0373e8",
+      "observed": "2026-10-27",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-26",
+      "quality_flags": [],
+      "race": "OH-09",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“Elections are about differences, and the differences in this race could not be more clear.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "My opponent supports tax breaks for data centers. I want to cut your taxes.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "He gave FirstEnergy a billion dollar bailout. My legislation would lower your electric bill.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "And he backs this unnecessary war that’s raised prices on everything. I want to end these forever wars.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Which gets to the real difference: he works for them, but I work for you.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m Marcy Kaptur, and I approve this message.”",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "dccc",
+      "source_hash": "b04308d9aab93bb43320338dfa569fc68cc87115a9d0cbbd10e65a689c2d12d3",
+      "source_record_id": "669570",
+      "source_url": "https://dccc.org/dccc-releases-new-tv-ad-in-oh-09-differences/",
+      "sponsor": "DCCC",
+      "sponsor_type": "party",
+      "state": "OH",
+      "text": "“Elections are about differences, and the differences in this race could not be more clear.\nMy opponent supports tax breaks for data centers. I want to cut your taxes.\nHe gave FirstEnergy a billion dollar bailout. My legislation would lower your electric bill.\nAnd he backs this unnecessary war that’s raised prices on everything. I want to end these forever wars.\nWhich gets to the real difference: he works for them, but I work for you.\nI’m Marcy Kaptur, and I approve this message.”",
+      "title": "DCCC Releases New TV Ad in OH-09: “Differences”"
+    },
+    {
+      "alignment": "D",
+      "attribution_basis": "Official DCCC release at https://dccc.org/dccc-releases-new-tv-ad-in-ny-17-stand/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "House",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "dccc-669581-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/watch?v=uE7XE_JPGPg"
+      ],
+      "message_id": "9ead188638f144d0b7c84378f543a8213b9d490b1a48b803f8007bac85cbb748",
+      "observed": "2026-10-27",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-27",
+      "quality_flags": [],
+      "race": "NY-17",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“As a 16-year Army combat veteran, I took an oath to serve this country — not any political party.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "And unlike Lawler, I’ll stand up to anyone to do it.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "The first thing we’re gonna do is ban congressional stock trading.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "So politicians can’t get rich when corporations jack up our prices.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Next, I’m gonna stop drug and utility monopolies from passing their lobbying budgets onto us.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "We’re not gonna pay for corporations to put money in Mike Lawler’s pocket anymore.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m Cait Conley, and I approve this message — because the corruption that costs us, ends now.”",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "dccc",
+      "source_hash": "8ed506acb4f503240735c154c16e37329d41d0f1b44ae244cd8446c758fb290d",
+      "source_record_id": "669581",
+      "source_url": "https://dccc.org/dccc-releases-new-tv-ad-in-ny-17-stand/",
+      "sponsor": "DCCC",
+      "sponsor_type": "party",
+      "state": "NY",
+      "text": "“As a 16-year Army combat veteran, I took an oath to serve this country — not any political party.\nAnd unlike Lawler, I’ll stand up to anyone to do it.\nThe first thing we’re gonna do is ban congressional stock trading.\nSo politicians can’t get rich when corporations jack up our prices.\nNext, I’m gonna stop drug and utility monopolies from passing their lobbying budgets onto us.\nWe’re not gonna pay for corporations to put money in Mike Lawler’s pocket anymore.\nI’m Cait Conley, and I approve this message — because the corruption that costs us, ends now.”",
+      "title": "DCCC Releases New TV Ad in NY-17: “Stand”"
+    },
+    {
+      "alignment": "D",
+      "attribution_basis": "Official DCCC release at https://dccc.org/dccc-releases-new-coordinated-tv-ad-in-ky-06-what-ill-do/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "House",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "dccc-669585-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/watch?v=hGD3ZU160D0",
+        "https://youtu.be/hGD3ZU160D0"
+      ],
+      "message_id": "2132f951d0c701bd83bbb614c4167fcde6ce1a31b47fd964fa509e09c93fd3f4",
+      "observed": "2026-10-27",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-27",
+      "quality_flags": [],
+      "race": "KY-06",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Zach Dembo: I’m Zach Dembo, and I know you’re angry.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I am too.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "At the politicians that don’t listen.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "And the system that screws us all while we pay more.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "So, here’s what I’ll do.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Restore the Medicaid cuts so working families have health care and our rural hospitals stay open.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "End this insane war that’s making our gas and diesel prices skyrocket.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "And get rid of the tariffs crushing our farmers and raising our grocery prices.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I approve this message, because we can’t afford to wait.",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "dccc",
+      "source_hash": "d3253baa07fdce534f0f63bb31d1cf3c698797b640bbf10cb6393efeec0c933f",
+      "source_record_id": "669585",
+      "source_url": "https://dccc.org/dccc-releases-new-coordinated-tv-ad-in-ky-06-what-ill-do/",
+      "sponsor": "DCCC",
+      "sponsor_type": "party",
+      "state": "KY",
+      "text": "Zach Dembo: I’m Zach Dembo, and I know you’re angry.\nI am too.\nAt the politicians that don’t listen.\nAnd the system that screws us all while we pay more.\nSo, here’s what I’ll do.\nRestore the Medicaid cuts so working families have health care and our rural hospitals stay open.\nEnd this insane war that’s making our gas and diesel prices skyrocket.\nAnd get rid of the tariffs crushing our farmers and raising our grocery prices.\nI approve this message, because we can’t afford to wait.",
+      "title": "DCCC Releases New Coordinated TV Ad in KY-06: “What I’ll Do”"
+    },
+    {
+      "alignment": "D",
+      "attribution_basis": "Official DCCC release at https://dccc.org/dccc-releases-new-coordinated-tv-ad-in-nj-07-good-to-be-here/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "House",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "dccc-669587-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/watch?v=wy_znwF1re4"
+      ],
+      "message_id": "54cc0ddc7da03b70dcca93eee85b6fda39a01b3b3cdbd6a20112e587d01ac929",
+      "observed": "2026-10-27",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-27",
+      "quality_flags": [],
+      "race": "NJ-07",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "VO: Washington’s good for Tom Kean.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "After millions in trades, he’s wealthier than ever.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "But it’s not just great stock tips",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Kean votes to protect his profits.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Voted for billions in data center tax breaks while trading data center stocks.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Voted for reckless wars, sending gas, groceries, and his defense stocks sky high.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "And when our premiums spiked, so did his insurance stocks.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Congress is great for Tom Kean.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "But Kean in Congress?",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Not great for us.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Rebecca Bennett: I’m Rebecca Bennett, I approve this message.",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "dccc",
+      "source_hash": "e92e5dd22bef6d9642fa5a54d5cd886a10d5680f5c037d7ec9fb12ed512af2fe",
+      "source_record_id": "669587",
+      "source_url": "https://dccc.org/dccc-releases-new-coordinated-tv-ad-in-nj-07-good-to-be-here/",
+      "sponsor": "DCCC",
+      "sponsor_type": "party",
+      "state": "NJ",
+      "text": "VO: Washington’s good for Tom Kean.\nAfter millions in trades, he’s wealthier than ever.\nBut it’s not just great stock tips\nKean votes to protect his profits.\nVoted for billions in data center tax breaks while trading data center stocks.\nVoted for reckless wars, sending gas, groceries, and his defense stocks sky high.\nAnd when our premiums spiked, so did his insurance stocks.\nCongress is great for Tom Kean.\nBut Kean in Congress?\nNot great for us.\nRebecca Bennett: I’m Rebecca Bennett, I approve this message.",
+      "title": "DCCC Releases New Coordinated TV Ad in NJ-07: “Good to Be Here”"
+    },
+    {
+      "alignment": "D",
+      "attribution_basis": "Official DCCC release at https://dccc.org/villegas-campaign-and-dccc-release-closing-tv-ad-in-ca-22-valley-with-me/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "House",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "dccc-669589-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://youtu.be/GBxfmoRGRd4"
+      ],
+      "message_id": "3325a6b002e52e55648e86c2ef3049cd7e04bf09d58818bb63aa51a6a8b54fd7",
+      "observed": "2026-10-27",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-27",
+      "quality_flags": [],
+      "race": "CA-22",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“RANDY VILLEGAS: People like us aren’t supposed to run for office.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "We’re not supposed to ask for what we deserve.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Our farmers feed the world, but can’t feed their families.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Our oil and gas workers, our truck drivers fuel the country but can’t fill up their own tanks.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "David Valadao has taken millions of dollars from the same corporations that are ripping us off.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "We deserve a Congressman who works for us, and works as hard as we do.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "When we win this election, I’m not going to Congress alone.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m taking the Valley with me.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m Randy Villegas, and I approve this message.”",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "dccc",
+      "source_hash": "bc967455e06fad30c56872a81d005ac2910680c2995340b4416ebb329ac963cb",
+      "source_record_id": "669589",
+      "source_url": "https://dccc.org/villegas-campaign-and-dccc-release-closing-tv-ad-in-ca-22-valley-with-me/",
+      "sponsor": "DCCC",
+      "sponsor_type": "party",
+      "state": "CA",
+      "text": "“RANDY VILLEGAS: People like us aren’t supposed to run for office.\nWe’re not supposed to ask for what we deserve.\nOur farmers feed the world, but can’t feed their families.\nOur oil and gas workers, our truck drivers fuel the country but can’t fill up their own tanks.\nDavid Valadao has taken millions of dollars from the same corporations that are ripping us off.\nWe deserve a Congressman who works for us, and works as hard as we do.\nWhen we win this election, I’m not going to Congress alone.\nI’m taking the Valley with me.\nI’m Randy Villegas, and I approve this message.”",
+      "title": "Villegas Campaign and DCCC Release Closing TV Ad in CA-22: “Valley with Me”"
+    },
+    {
+      "alignment": "D",
+      "attribution_basis": "Official DCCC release at https://dccc.org/dccc-releases-two-new-coordinated-tv-ads-in-pa-08-seal-and-gears/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "House",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "dccc-669591-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/watch?v=Wn1pVCefOqY",
+        "https://youtu.be/Ql2AmL9TvuY"
+      ],
+      "message_id": "ca5149db7a6dbbab4df405376858c5565c351f5233dbee99ca118c8004416e0c",
+      "observed": "2026-10-27",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-27",
+      "quality_flags": [],
+      "race": "PA-08",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Paige Cognetti: Hey, it’s Paige Cognetti – just a few more days of these ads.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m tired of them too.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Here is what this campaign is about.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Ending the corruption that hurts our families.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Together, we stood up to the Machine in Scranton and together we will take on a corrupt Washington.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "We need to make sure government works as hard as we do.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "End the war.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Take on AI.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Create jobs.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "And lower costs.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Rob trades stocks on his power. Focuses on himself.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I will focus on you.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "My family and yours have too much at stake.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I approve this message and I humbly ask for your support.",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "dccc",
+      "source_hash": "6f7dc09c7c9f9ba6b6d5f08d7d3372d33f6ad7682e87b00848b81b2f9311ab6b",
+      "source_record_id": "669591",
+      "source_url": "https://dccc.org/dccc-releases-two-new-coordinated-tv-ads-in-pa-08-seal-and-gears/",
+      "sponsor": "DCCC",
+      "sponsor_type": "party",
+      "state": "PA",
+      "text": "Paige Cognetti: Hey, it’s Paige Cognetti – just a few more days of these ads.\nI’m tired of them too.\nHere is what this campaign is about.\nEnding the corruption that hurts our families.\nTogether, we stood up to the Machine in Scranton and together we will take on a corrupt Washington.\nWe need to make sure government works as hard as we do.\nEnd the war.\nTake on AI.\nCreate jobs.\nAnd lower costs.\nRob trades stocks on his power. Focuses on himself.\nI will focus on you.\nMy family and yours have too much at stake.\nI approve this message and I humbly ask for your support.",
+      "title": "DCCC Releases Two New Coordinated TV Ads in PA-08: “Seal” and “Gears” / transcript 1"
+    },
+    {
+      "alignment": "D",
+      "attribution_basis": "Official DCCC release at https://dccc.org/dccc-releases-two-new-coordinated-tv-ads-in-pa-08-seal-and-gears/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "House",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "dccc-669591-1",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/watch?v=Wn1pVCefOqY",
+        "https://youtu.be/Ql2AmL9TvuY"
+      ],
+      "message_id": "0c4b5be64245dcd663a5a069623d3ba6a104f6d06e7a886f23afaa832f18dca8",
+      "observed": "2026-10-27",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-27",
+      "quality_flags": [],
+      "race": "PA-08",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "NEPA Resident: NEPA – it’s time to pick.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Paige Cognetti – she’s the best of us.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "A mom who took on the machine.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Her own party. And the big corporations.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "She took ‘em all on.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Rob Bresnahan, he’s everything you hate about politics.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Stock trading. Healthcare-taking. Liar.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "He lied about his trades. His votes.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Now, all those lying ads about Paige Cognetti.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "So yeah – I’m voting for Paige Against the Machine and you should too. It’s a no brainer, NEPA.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m Paige Cognetti and I approve this message – it’s just common sense.",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "dccc",
+      "source_hash": "6f7dc09c7c9f9ba6b6d5f08d7d3372d33f6ad7682e87b00848b81b2f9311ab6b",
+      "source_record_id": "669591",
+      "source_url": "https://dccc.org/dccc-releases-two-new-coordinated-tv-ads-in-pa-08-seal-and-gears/",
+      "sponsor": "DCCC",
+      "sponsor_type": "party",
+      "state": "PA",
+      "text": "NEPA Resident: NEPA – it’s time to pick.\nPaige Cognetti – she’s the best of us.\nA mom who took on the machine.\nHer own party. And the big corporations.\nShe took ‘em all on.\nRob Bresnahan, he’s everything you hate about politics.\nStock trading. Healthcare-taking. Liar.\nHe lied about his trades. His votes.\nNow, all those lying ads about Paige Cognetti.\nSo yeah – I’m voting for Paige Against the Machine and you should too. It’s a no brainer, NEPA.\nI’m Paige Cognetti and I approve this message – it’s just common sense.",
+      "title": "DCCC Releases Two New Coordinated TV Ads in PA-08: “Seal” and “Gears” / transcript 2"
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "Official NRSC release at https://www.nrsc.org/press-releases/new-nrsc-ad-troy-jackson-took-it-2026-10-27/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "Senate",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "nrsc-17816-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "034ed92a5ad7f3c519c1c705915cc2b5c7b8509f537d30028546e753742ba011",
+      "observed": "2026-10-27",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-27",
+      "quality_flags": [],
+      "race": "Unresolved",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "AI Boy Band: “Troy Jackson said no billionaire money, then he took it.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“28 of them and he took it.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“Said no corporate PAC money then he took it… then he took it.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“PAC money flowing, big tobacco, pharma, and the slots.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“‘I can’t help it,’ Troy Jackson said on the spot.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“Leaves are falling, the filings don’t lie.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“Troy Jackson — not ready for the big time.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“Troy Jackson said no billionaire money, then he took it.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“28 of them and he took it.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“Said no corporate PAC money, then he took it.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "“Then he took it.”",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "nrsc",
+      "source_hash": "9bfbe5bc14a934d6b9ea03111481a57973737f1308afad137479b89d1b631173",
+      "source_record_id": "17816",
+      "source_url": "https://www.nrsc.org/press-releases/new-nrsc-ad-troy-jackson-took-it-2026-10-27/",
+      "sponsor": "NRSC",
+      "sponsor_type": "party",
+      "state": "",
+      "text": "AI Boy Band: “Troy Jackson said no billionaire money, then he took it.\n“28 of them and he took it.\n“Said no corporate PAC money then he took it… then he took it.\n“PAC money flowing, big tobacco, pharma, and the slots.\n“‘I can’t help it,’ Troy Jackson said on the spot.\n“Leaves are falling, the filings don’t lie.\n“Troy Jackson — not ready for the big time.\n“Troy Jackson said no billionaire money, then he took it.\n“28 of them and he took it.\n“Said no corporate PAC money, then he took it.\n“Then he took it.”",
+      "title": "New NRSC Ad: Troy Jackson Took It"
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "Official Rogers for Senate release at https://rogersforsenate.com/news/ad-abduls-green-new-deal-would-take-money-out-of-your-pocket; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "Senate",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "rogers-6ae0ac2f4af67c5c39abe46b-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "800e0d34f0dd9e98b5db7e6528910da6170e84921a6e48bf9b45e9b0ff72a693",
+      "observed": "2026-10-27",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-27",
+      "quality_flags": [],
+      "race": "MI-Senate",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "MIKE ROGERS: Michigan families pay the highest utility bills in the Midwest.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Why? It's because of the Green New Deal supported by Abdul El-Sayed.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Now Abdul wants a new national energy tax that would increase your utility bills by $2,000 a year — and raise your gas prices by 20 cents a gallon.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Abdul would take money out of your pocket. That's a fact.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "As Michigan’s Senator, I'll lower your costs.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I'm Mike Rogers, and I approve this message.",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "rogers",
+      "source_hash": "42bf8d16fdbb2bce55fb0a2ff06acf8ed994d585aec518a66d8195b7571d6cbc",
+      "source_record_id": "6ae0ac2f4af67c5c39abe46b",
+      "source_url": "https://rogersforsenate.com/news/ad-abduls-green-new-deal-would-take-money-out-of-your-pocket",
+      "sponsor": "Rogers for Senate",
+      "sponsor_type": "candidate",
+      "state": "MI",
+      "text": "MIKE ROGERS: Michigan families pay the highest utility bills in the Midwest.\nWhy? It's because of the Green New Deal supported by Abdul El-Sayed.\nNow Abdul wants a new national energy tax that would increase your utility bills by $2,000 a year — and raise your gas prices by 20 cents a gallon.\nAbdul would take money out of your pocket. That's a fact.\nAs Michigan’s Senator, I'll lower your costs.\nI'm Mike Rogers, and I approve this message.",
+      "title": "AD: ABDUL’S GREEN NEW DEAL WOULD TAKE MONEY OUT OF YOUR POCKET"
+    },
+    {
+      "alignment": "D",
+      "attribution_basis": "Official Josh Turek for Iowa release at https://turek4iowa.com/news/new-josh-turek-for-iowa-releases-closing-ads-of-the-senate-race-in-iowa; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "Senate",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "turek-15ed80e30bd35d40-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/watch?v=9_oAXmw1h9E",
+        "https://www.youtube.com/watch?v=G0xxIlKVfRA",
+        "https://www.youtube.com/watch?v=b1v4oKLfHDo",
+        "https://www.youtube.com/watch?v=dGzAS4ULzpY",
+        "https://www.youtube.com/watch?v=pv9fH8agY4w",
+        "https://youtu.be/4t0867zGt6A?si=gCAb7XyYKPiIP_kk",
+        "https://youtu.be/HZoXLidoe60",
+        "https://youtu.be/Tuk3BFcP7sM",
+        "https://youtu.be/xmG52PI-fTo",
+        "https://youtube.com/watch?reload=9&v=Z5jX30NUj3A",
+        "https://youtube.com/watch?v=Y8hg4iUO4v4&feature=youtu.be"
+      ],
+      "message_id": "f9e534d89b89e4c95ab023b15dbc6a4e9b27df6b2a4386358234abbf38dabfaf",
+      "observed": "2026-10-27",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-10-27",
+      "quality_flags": [],
+      "race": "IA-Senate",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "[JOSH]: This is my sister, Ulette.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "Like too many Iowans, she’s fighting cancer.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "She’s also fighting her insurance company after they denied a scan to see if the cancer had spread.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "If you wonder how broken the healthcare system is, she is living proof.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m Josh Turek. I approve this message.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "In the Senate, I’ll fight to ensure that doctors decide care – not insurance companies.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "And I’ll take on corrupt politicians that get in the way. For me, it’s personal.",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "turek",
+      "source_hash": "e89a856336a8add6dc1409f392f4d9e5992d48513d27e734984bffbb0fd00f86",
+      "source_record_id": "15ed80e30bd35d40",
+      "source_url": "https://turek4iowa.com/news/new-josh-turek-for-iowa-releases-closing-ads-of-the-senate-race-in-iowa",
+      "sponsor": "Josh Turek for Iowa",
+      "sponsor_type": "candidate",
+      "state": "IA",
+      "text": "[JOSH]: This is my sister, Ulette.\nLike too many Iowans, she’s fighting cancer.\nShe’s also fighting her insurance company after they denied a scan to see if the cancer had spread.\nIf you wonder how broken the healthcare system is, she is living proof.\nI’m Josh Turek. I approve this message.\nIn the Senate, I’ll fight to ensure that doctors decide care – not insurance companies.\nAnd I’ll take on corrupt politicians that get in the way. For me, it’s personal.",
+      "title": "NEW: Josh Turek for Iowa Releases Closing Ads of the Senate Race in Iowa / transcript 1"
+    },
+    {
+      "alignment": "D",
+      "attribution_basis": "Official Josh Turek for Iowa release at https://turek4iowa.com/news/new-josh-turek-for-iowa-releases-closing-ads-of-the-senate-race-in-iowa; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "Senate",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "turek-15ed80e30bd35d40-1",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/watch?v=9_oAXmw1h9E",
+        "https://www.youtube.com/watch?v=G0xxIlKVfRA",
+        "https://www.youtube.com/watch?v=b1v4oKLfHDo",
+        "https://www.youtube.com/watch?v=dGzAS4ULzpY",
+        "https://www.youtube.com/watch?v=pv9fH8agY4w",
+        "https://youtu.be/4t0867zGt6A?si=gCAb7XyYKPiIP_kk",
+        "https://youtu.be/HZoXLidoe60",
+        "https://youtu.be/Tuk3BFcP7sM",
+        "https://youtu.be/xmG52PI-fTo",
+        "https://youtube.com/watch?reload=9&v=Z5jX30NUj3A",
+        "https://youtube.com/watch?v=Y8hg4iUO4v4&feature=youtu.be"
+      ],
+      "message_id": "cec63460118753bbe5d1d243628ae48dc8f69977c5f7bfeafae4837fa9b5f49d",
+      "observed": "2026-10-27",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-10-27",
+      "quality_flags": [],
+      "race": "IA-Senate",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "[JOSH]: Gas and diesel prices have gone up more in Iowa than almost any other place in the country.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "That’s It. That’s all you need to know.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’m Josh Turek.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "We’re paying almost double what we did just a few months ago.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "And diesel is at an all-time high, hitting our farmers at the worst possible time. Ashley Hinson has voted over and over for policies that have jacked up prices, while she gets richer and richer.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I approve this message because unlike Ashley, I’m not a millionaire.",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_transcript",
+          "start_seconds": null,
+          "text": "I’ll work to lower prices because it matters to me too.",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "turek",
+      "source_hash": "e89a856336a8add6dc1409f392f4d9e5992d48513d27e734984bffbb0fd00f86",
+      "source_record_id": "15ed80e30bd35d40",
+      "source_url": "https://turek4iowa.com/news/new-josh-turek-for-iowa-releases-closing-ads-of-the-senate-race-in-iowa",
+      "sponsor": "Josh Turek for Iowa",
+      "sponsor_type": "candidate",
+      "state": "IA",
+      "text": "[JOSH]: Gas and diesel prices have gone up more in Iowa than almost any other place in the country.\nThat’s It. That’s all you need to know.\nI’m Josh Turek.\nWe’re paying almost double what we did just a few months ago.\nAnd diesel is at an all-time high, hitting our farmers at the worst possible time. Ashley Hinson has voted over and over for policies that have jacked up prices, while she gets richer and richer.\nI approve this message because unlike Ashley, I’m not a millionaire.\nI’ll work to lower prices because it matters to me too.",
+      "title": "NEW: Josh Turek for Iowa Releases Closing Ads of the Senate Race in Iowa / transcript 2"
     }
   ],
   "schema_version": "1",
   "sources": [
     {
       "ads_with_text": 8,
-      "checked": "2026-10-26",
-      "excluded_posts": 87,
+      "checked": "2026-10-27",
+      "excluded_posts": 88,
       "languages": {
         "en": 8
       },
-      "last_success": "2026-10-26",
-      "posts_scanned": 95,
+      "last_success": "2026-10-27",
+      "posts_scanned": 96,
       "scope": "Official ad-release text; not all paid placements",
       "source": "barr",
       "state": "ok",
@@ -38678,13 +40232,13 @@
     },
     {
       "ads_with_text": 1,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "discovery_complete": true,
       "excluded_posts": 28,
       "languages": {
         "en": 1
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 29,
       "scope": "Official ad-release text; not all paid placements",
       "source": "ciscomani",
@@ -38697,7 +40251,7 @@
       "discovery_complete": true,
       "excluded_posts": 2,
       "languages": {},
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 2,
       "scope": "Official ad-release text; not all paid placements",
       "source": "clf",
@@ -38706,12 +40260,12 @@
     },
     {
       "ads_with_text": 2,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 14,
       "languages": {
         "en": 2
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 16,
       "scope": "Official ad-release text; not all paid placements",
       "source": "collins",
@@ -38725,7 +40279,7 @@
       "languages": {
         "en": 2
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 20,
       "scope": "Official ad-release text; not all paid placements",
       "source": "conroy",
@@ -38734,12 +40288,12 @@
     },
     {
       "ads_with_text": 11,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 1,
       "languages": {
         "en": 11
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 12,
       "scope": "Official ad-release text; not all paid placements",
       "source": "cooper",
@@ -38747,15 +40301,15 @@
       "url": "https://roycooper.com"
     },
     {
-      "ads_with_text": 54,
-      "checked": "2026-10-26",
+      "ads_with_text": 61,
+      "checked": "2026-10-27",
       "excluded_posts": 27,
       "languages": {
-        "en": 53,
+        "en": 60,
         "es": 1
       },
-      "last_success": "2026-10-26",
-      "posts_scanned": 77,
+      "last_success": "2026-10-27",
+      "posts_scanned": 83,
       "scope": "Official ad-release text; not all paid placements",
       "source": "dccc",
       "state": "ok",
@@ -38763,12 +40317,12 @@
     },
     {
       "ads_with_text": 1,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 54,
       "languages": {
         "en": 1
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 55,
       "scope": "Official ad-release text; not all paid placements",
       "source": "dembo",
@@ -38777,12 +40331,12 @@
     },
     {
       "ads_with_text": 5,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 48,
       "languages": {
         "en": 5
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 53,
       "scope": "Official ad-release text; not all paid placements",
       "source": "dscc",
@@ -38791,13 +40345,13 @@
     },
     {
       "ads_with_text": 24,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "discovery_complete": true,
       "excluded_posts": 8,
       "languages": {
         "en": 24
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 32,
       "scope": "Official ad-release text; not all paid placements",
       "source": "el-sayed",
@@ -38806,12 +40360,12 @@
     },
     {
       "ads_with_text": 4,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 2,
       "languages": {
         "en": 4
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 4,
       "scope": "Official ad-release text; not all paid placements",
       "source": "fletcher",
@@ -38825,7 +40379,7 @@
       "languages": {
         "en": 7
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 23,
       "scope": "Official ad-release text; not all paid placements",
       "source": "flint",
@@ -38833,29 +40387,27 @@
       "url": "https://flintformontana.com"
     },
     {
-      "ads_with_text": 1,
-      "checked": "2026-10-26",
-      "discovery_complete": false,
+      "ads_with_text": 0,
+      "checked": "2026-10-27",
+      "error": "HTTPError: HTTP Error 403: Forbidden",
       "excluded_posts": 0,
-      "languages": {
-        "en": 1
-      },
       "last_success": "2026-10-26",
-      "posts_scanned": 1,
+      "posts_scanned": 0,
       "retained_ads": 1,
       "scope": "Official ad-release text; not all paid placements",
+      "skipped": "Prior access denial; no new request",
       "source": "grothman",
-      "state": "partial",
+      "state": "blocked",
       "url": "https://www.wispolitics.com"
     },
     {
       "ads_with_text": 4,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 26,
       "languages": {
         "en": 4
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 30,
       "scope": "Official ad-release text; not all paid placements",
       "source": "hickenlooper",
@@ -38864,12 +40416,12 @@
     },
     {
       "ads_with_text": 10,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 61,
       "languages": {
         "en": 10
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 71,
       "scope": "Official ad-release text; not all paid placements",
       "source": "hinson",
@@ -38878,14 +40430,14 @@
     },
     {
       "ads_with_text": 15,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "discovery_complete": true,
       "excluded_posts": 5,
       "languages": {
         "en": 13,
         "es": 2
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 14,
       "scope": "Official ad-release text; not all paid placements",
       "source": "hmf",
@@ -38894,12 +40446,12 @@
     },
     {
       "ads_with_text": 0,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "discovery_complete": true,
-      "excluded_posts": 11,
+      "excluded_posts": 12,
       "languages": {},
-      "last_success": "2026-10-26",
-      "posts_scanned": 11,
+      "last_success": "2026-10-27",
+      "posts_scanned": 12,
       "scope": "Official ad-release text; not all paid placements",
       "source": "hmp",
       "state": "ok",
@@ -38907,13 +40459,13 @@
     },
     {
       "ads_with_text": 11,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "discovery_complete": false,
       "excluded_posts": 2,
       "languages": {
         "en": 11
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 13,
       "retained_ads": 11,
       "scope": "Official ad-release text; not all paid placements",
@@ -38922,14 +40474,14 @@
       "url": "https://www.jacksonformaine.com"
     },
     {
-      "ads_with_text": 3,
-      "checked": "2026-10-26",
+      "ads_with_text": 6,
+      "checked": "2026-10-27",
       "discovery_complete": true,
-      "excluded_posts": 27,
+      "excluded_posts": 24,
       "languages": {
-        "en": 3
+        "en": 6
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 29,
       "scope": "Official ad-release text; not all paid placements",
       "source": "lacore",
@@ -38938,13 +40490,13 @@
     },
     {
       "ads_with_text": 5,
-      "checked": "2026-10-26",
-      "excluded_posts": 51,
+      "checked": "2026-10-27",
+      "excluded_posts": 52,
       "languages": {
         "en": 5
       },
-      "last_success": "2026-10-26",
-      "posts_scanned": 55,
+      "last_success": "2026-10-27",
+      "posts_scanned": 56,
       "scope": "Official ad-release text; not all paid placements",
       "source": "lawler",
       "state": "ok",
@@ -38952,13 +40504,13 @@
     },
     {
       "ads_with_text": 45,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "discovery_complete": true,
       "excluded_posts": 24,
       "languages": {
         "en": 45
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 44,
       "scope": "Official ad-release text; not all paid placements",
       "source": "lcv-vf",
@@ -38967,13 +40519,13 @@
     },
     {
       "ads_with_text": 1,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "discovery_complete": true,
       "excluded_posts": 0,
       "languages": {
         "en": 1
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 1,
       "scope": "Official ad-release text; not all paid placements",
       "source": "letlow",
@@ -38982,13 +40534,13 @@
     },
     {
       "ads_with_text": 2,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "discovery_complete": false,
       "excluded_posts": 1,
       "languages": {
         "en": 2
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 3,
       "retained_ads": 2,
       "scope": "Official ad-release text; not all paid placements",
@@ -38997,14 +40549,14 @@
       "url": "https://www.kansansformarshall.com"
     },
     {
-      "ads_with_text": 2,
-      "checked": "2026-10-26",
-      "excluded_posts": 56,
+      "ads_with_text": 4,
+      "checked": "2026-10-27",
+      "excluded_posts": 58,
       "languages": {
-        "en": 2
+        "en": 4
       },
-      "last_success": "2026-10-26",
-      "posts_scanned": 58,
+      "last_success": "2026-10-27",
+      "posts_scanned": 62,
       "scope": "Official ad-release text; not all paid placements",
       "source": "mccann",
       "state": "ok",
@@ -39018,7 +40570,7 @@
       "languages": {
         "en": 69
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 97,
       "scope": "Official ad-release text; not all paid placements",
       "source": "nrcc",
@@ -39026,14 +40578,14 @@
       "url": "https://www.nrcc.org"
     },
     {
-      "ads_with_text": 57,
+      "ads_with_text": 58,
       "checked": "2026-10-27",
-      "excluded_posts": 1185,
+      "excluded_posts": 1190,
       "languages": {
-        "en": 57
+        "en": 58
       },
-      "last_success": "2026-10-26",
-      "posts_scanned": 1242,
+      "last_success": "2026-10-27",
+      "posts_scanned": 1248,
       "scope": "Official ad-release text; not all paid placements",
       "source": "nrsc",
       "state": "ok",
@@ -39041,10 +40593,10 @@
     },
     {
       "ads_with_text": 0,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 16,
       "languages": {},
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 16,
       "scope": "Official ad-release text; not all paid placements",
       "source": "nunn",
@@ -39053,10 +40605,10 @@
     },
     {
       "ads_with_text": 0,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 31,
       "languages": {},
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 31,
       "scope": "Official ad-release text; not all paid placements",
       "source": "one-nation",
@@ -39065,13 +40617,13 @@
     },
     {
       "ads_with_text": 5,
-      "checked": "2026-10-26",
-      "excluded_posts": 162,
+      "checked": "2026-10-27",
+      "excluded_posts": 164,
       "languages": {
         "en": 5
       },
-      "last_success": "2026-10-26",
-      "posts_scanned": 167,
+      "last_success": "2026-10-27",
+      "posts_scanned": 169,
       "scope": "Official ad-release text; not all paid placements",
       "source": "ossoff",
       "state": "ok",
@@ -39079,10 +40631,10 @@
     },
     {
       "ads_with_text": 0,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 1,
       "languages": {},
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 1,
       "scope": "Official ad-release text; not all paid placements",
       "source": "ricketts",
@@ -39090,15 +40642,28 @@
       "url": "https://www.petericketts.com"
     },
     {
-      "ads_with_text": 14,
+      "ads_with_text": 0,
       "checked": "2026-10-27",
       "discovery_complete": true,
-      "excluded_posts": 145,
+      "excluded_posts": 2,
+      "languages": {},
+      "last_success": "2026-10-27",
+      "posts_scanned": 2,
+      "scope": "Official ad-release text; not all paid placements",
+      "source": "rjc-vf",
+      "state": "ok",
+      "url": "https://www.rjchq.org"
+    },
+    {
+      "ads_with_text": 15,
+      "checked": "2026-10-27",
+      "discovery_complete": true,
+      "excluded_posts": 146,
       "languages": {
-        "en": 14
+        "en": 15
       },
-      "last_success": "2026-10-26",
-      "posts_scanned": 158,
+      "last_success": "2026-10-27",
+      "posts_scanned": 160,
       "scope": "Official ad-release text; not all paid placements",
       "source": "rogers",
       "state": "ok",
@@ -39106,12 +40671,12 @@
     },
     {
       "ads_with_text": 2,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 5,
       "languages": {
         "en": 2
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 7,
       "scope": "Official ad-release text; not all paid placements",
       "source": "salazar",
@@ -39120,10 +40685,10 @@
     },
     {
       "ads_with_text": 0,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 1,
       "languages": {},
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 1,
       "scope": "Official ad-release text; not all paid placements",
       "source": "slf",
@@ -39132,13 +40697,13 @@
     },
     {
       "ads_with_text": 10,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "discovery_complete": true,
       "excluded_posts": 27,
       "languages": {
         "en": 10
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 37,
       "scope": "Official ad-release text; not all paid placements",
       "source": "smp",
@@ -39147,12 +40712,12 @@
     },
     {
       "ads_with_text": 2,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 11,
       "languages": {
         "en": 2
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 13,
       "scope": "Official ad-release text; not all paid placements",
       "source": "stover",
@@ -39166,7 +40731,7 @@
       "languages": {
         "en": 6
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 33,
       "scope": "Official ad-release text; not all paid placements",
       "source": "sullivan",
@@ -39175,12 +40740,12 @@
     },
     {
       "ads_with_text": 1,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 151,
       "languages": {
         "en": 1
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 152,
       "scope": "Official ad-release text; not all paid placements",
       "source": "susan-collins",
@@ -39189,12 +40754,12 @@
     },
     {
       "ads_with_text": 6,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 26,
       "languages": {
         "en": 6
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 32,
       "scope": "Official ad-release text; not all paid placements",
       "source": "trone-garriott",
@@ -39202,15 +40767,15 @@
       "url": "https://sarahforiowa.com"
     },
     {
-      "ads_with_text": 11,
-      "checked": "2026-10-26",
+      "ads_with_text": 13,
+      "checked": "2026-10-27",
       "discovery_complete": true,
       "excluded_posts": 0,
       "languages": {
-        "en": 11
+        "en": 13
       },
-      "last_success": "2026-10-26",
-      "posts_scanned": 11,
+      "last_success": "2026-10-27",
+      "posts_scanned": 12,
       "scope": "Official ad-release text; not all paid placements",
       "source": "turek",
       "state": "ok",
@@ -39218,12 +40783,12 @@
     },
     {
       "ads_with_text": 4,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 1,
       "languages": {
         "en": 4
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 5,
       "scope": "Official ad-release text; not all paid placements",
       "source": "ua-vote-pac",
@@ -39232,13 +40797,13 @@
     },
     {
       "ads_with_text": 25,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 1,
       "languages": {
         "en": 20,
         "es": 5
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 17,
       "scope": "Official ad-release text; not all paid placements",
       "source": "unrig",
@@ -39247,13 +40812,13 @@
     },
     {
       "ads_with_text": 13,
-      "checked": "2026-10-26",
-      "excluded_posts": 47,
+      "checked": "2026-10-27",
+      "excluded_posts": 48,
       "languages": {
         "en": 13
       },
-      "last_success": "2026-10-26",
-      "posts_scanned": 60,
+      "last_success": "2026-10-27",
+      "posts_scanned": 61,
       "public_html_bodies_recovered": 13,
       "public_html_without_script_container": 40,
       "scope": "Official ad-release text; not all paid placements",
@@ -39268,7 +40833,7 @@
       "languages": {
         "en": 1
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 3,
       "scope": "Official ad-release text; not all paid placements",
       "source": "wfw",
@@ -39282,7 +40847,7 @@
       "languages": {
         "en": 6
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 32,
       "scope": "Official ad-release text; not all paid placements",
       "source": "wfw-af",
@@ -39291,11 +40856,11 @@
     },
     {
       "ads_with_text": 0,
-      "checked": "2026-10-26",
-      "excluded_posts": 48,
+      "checked": "2026-10-27",
+      "excluded_posts": 49,
       "languages": {},
-      "last_success": "2026-10-26",
-      "posts_scanned": 48,
+      "last_success": "2026-10-27",
+      "posts_scanned": 49,
       "scope": "Official ad-release text; not all paid placements",
       "source": "whatley",
       "state": "ok",
@@ -39303,12 +40868,12 @@
     },
     {
       "ads_with_text": 2,
-      "checked": "2026-10-26",
+      "checked": "2026-10-27",
       "excluded_posts": 14,
       "languages": {
         "en": 2
       },
-      "last_success": "2026-10-26",
+      "last_success": "2026-10-27",
       "posts_scanned": 15,
       "scope": "Official ad-release text; not all paid placements",
       "source": "young-kim",
@@ -39316,5 +40881,5 @@
       "url": "https://youngkimforcongress.com"
     }
   ],
-  "until": "2026-10-26"
+  "until": "2026-10-27"
 }

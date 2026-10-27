@@ -1,6 +1,6 @@
 # Free-source capabilities
 
-Verified October 27, 2026; collection cutoff October 26. Live acquisition status accompanies each snapshot.
+Verified October 27, 2026; collection cutoff October 27. Live acquisition status accompanies each snapshot.
 This is a source-limited collection of releases and native platform creatives, not a census.
 
 **Publication withdrawn:** the page, report, data downloads, preview, interactive-analysis card
@@ -8,7 +8,7 @@ and sitemap entry were removed and verified live. The host integration was remov
 daily automatic evidence refresh updates this research repository only. Research evidence
 may be pushed without updating the website; publication and host restoration still require
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
-snapshot's actual October 26 cutoff is unchanged.
+snapshot's actual October 27 cutoff is distinct from that final scope limit.
 
 | Source | Working path | Text / limits |
 |---|---|---|
@@ -152,9 +152,9 @@ generated together in `outputs/analysis.json` and `outputs/analysis.html`; the m
 `outputs/analysis-ads.csv` includes complete text and evidence. These files, not an earlier
 379-record checkpoint, define the current reconciled local snapshot.
 
-The reconciled October 26 cutoff contains 1,753 acquired text records: 452 written records,
+The reconciled October 27 cutoff contains 1,769 acquired text records: 468 written records,
 65 captions, 16 static graphics, 76 Google previews and 1,144 Snap creatives. The English
-explorer contains 1,715 records: **1,194 Democratic-aligned, 482 Republican-aligned,
+explorer contains 1,731 records: **1,208 Democratic-aligned, 484 Republican-aligned,
 31 reviewed bipartisan and eight unresolved**. Only D/R enter party comparisons.
 The October 27 publisher-alignment audit corrected the earlier
 758 D / 440 R / 478 unresolved classification to **1,194 Democratic-aligned, 443 Republican-aligned,
@@ -181,7 +181,7 @@ rule to `nrsc-15447-0`, removing release commentary after its marked script with
 spoken text. One refreshed NRCC release has a new raw-body hash but unchanged recovered text.
 Native extraction bytes, alignment-review bindings, candidate reviews and language reviews
 remain unchanged. Complete local and built JSON/gzip/CSV exports reconcile field by field;
-all 1,753 Parquet rows match the loaded corpus.
+all 1,769 Parquet rows match the loaded corpus.
 
 The House-focused follow-up adds **seven Republican English script records**, raising
 Republican English House coverage from 129 to **136**. Winning For Women supplies one
@@ -194,7 +194,19 @@ fundraising boilerplate and next-creative headings excluded. The seven-district 
 announcement contains one sample, not seven independently recovered variants.
 Exact campaign/FEC evidence supports two additional name aliases, Alex Mealer and the
 full Jenny Costa Honeycutt name; there are now 30 reviewed aliases, not fuzzy matches.
-All 1,746 prior acquired records remain field-for-field unchanged.
+At that House-recovery checkpoint, all 1,746 prior acquired records remained field-for-field unchanged.
+
+The October 27 research refresh adds **16 script records: 14 D-aligned
+and two R-aligned**. These comprise seven DCCC scripts, three Nancy Lacore scripts, two
+Sean McCann scripts, two Josh Turek scripts, one NRSC script and one Mike Rogers script.
+All were read in full. Some are newly indexed earlier releases, not October 27 ad debuts.
+All 1,753 prior records remain with unchanged text and segments; refreshed body hashes,
+observation dates and public media links account for prior-record metadata changes.
+Native extraction bytes and bound reviews remain unchanged. Grothman's mirror returned 403;
+its saved script and October 26 last-success date are preserved, and later automated runs
+pause that source without new requests. Republican English House coverage remains 136.
+The daily workflow collects public release text, rebuilds complete analysis/downloads and
+pushes only to this research repository. The website integration remains removed.
 
 The same investigation corrected CLF pagination: its next link uses `page-link`, not `next`.
 Following the actual same-publisher next URL reaches the 2025 boundary, but recovers only

@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
@@ -78,13 +79,26 @@ def collect(root: Path, until: str, source_ids: list[str], offline: bool = False
             )
     old_ads = {s.id: [a for a in old["ads"] if a["source"] == s.id] for s in SOURCES}
     statuses = {s["source"]: s for s in old["sources"]}
+    active = []
+    for source in selected:
+        previous = statuses.get(source.id, {})
+        if re.match(r"^HTTPError: HTTP Error (401|403|429)\b", previous.get("error", "")):
+            statuses[source.id] = previous | {
+                "state": "blocked",
+                "checked": date.today().isoformat(),
+                "retained_ads": len(old_ads[source.id]),
+                "skipped": "Prior access denial; no new request",
+            }
+            print(json.dumps(statuses[source.id]), flush=True)
+        else:
+            active.append(source)
     with ThreadPoolExecutor(max_workers=3) as executor:
         results = executor.map(
             lambda source: (
                 source,
                 *collect_wordpress(client, source, until, None, candidates),
             ),
-            selected,
+            active,
         )
         for source, ads, status in results:
             if status["state"] in {"ok", "partial"}:

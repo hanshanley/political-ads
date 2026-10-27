@@ -82,6 +82,32 @@ def test_failed_source_keeps_last_good_partition_and_freshness(tmp_path, monkeyp
     assert snapshot["sources"][0]["retained_ads"] == 1
 
 
+@pytest.mark.parametrize("status", [401, 403, 429])
+def test_refresh_does_not_retry_saved_access_denials(tmp_path, monkeypatch, status):
+    ad = fixture_ad()
+    cli.write_json(
+        tmp_path / "data/site/corpus.json",
+        {
+            "ads": [ad],
+            "sources": [
+                {
+                    "source": "dccc",
+                    "state": "error",
+                    "error": f"HTTPError: HTTP Error {status}: access denied",
+                    "last_success": "2026-10-01",
+                }
+            ],
+        },
+    )
+    monkeypatch.setattr(cli, "collect_wordpress", lambda *args: pytest.fail("Denied retry"))
+    for _ in range(2):
+        snapshot = cli.collect(tmp_path, "2026-10-26", ["dccc"])
+        assert snapshot["ads"] == [ad]
+        assert snapshot["sources"][0]["state"] == "blocked"
+        assert snapshot["sources"][0]["last_success"] == "2026-10-01"
+        assert snapshot["sources"][0]["retained_ads"] == 1
+
+
 @pytest.mark.parametrize("fresh_registry", [False, True])
 def test_federal_script_collection_uses_saved_registry_on_a_clean_runner(
     tmp_path, monkeypatch, fresh_registry
