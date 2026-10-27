@@ -6,7 +6,7 @@ contextual opponent portrayals, and complete source transcripts behind the compa
 
 **Website publication withdrawn:** research code, evidence and analysis may be pushed to
 this repository. Do not deploy the website or restore its host integration without explicit
-user authorization. Automatic evidence refresh remains disabled.
+user authorization. Daily automatic evidence refresh updates this repository only.
 
 This is an evolving collection of official ad releases, **not a census of paid placements**.
 It includes publisher transcripts, public captions, local image OCR, native Google previews,
@@ -116,7 +116,8 @@ filters, keyboard access, mobile overflow, and non-root asset paths.
 
 ## Publication and updates
 
-All work stays on **main**, authored as Hans Hanley. Automatic evidence refresh is disabled.
+All work stays on **main**, authored as Hans Hanley. Daily automatic evidence refresh updates
+research evidence and complete analysis on GitHub only, at 08:13 UTC.
 The host integration, page, interactive-analysis card and sitemap entry have been removed.
 Research commits may be pushed without updating the website; do not restore host integration
 or deploy without explicit authorization.

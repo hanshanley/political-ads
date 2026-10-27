@@ -82,6 +82,45 @@ def test_failed_source_keeps_last_good_partition_and_freshness(tmp_path, monkeyp
     assert snapshot["sources"][0]["retained_ads"] == 1
 
 
+@pytest.mark.parametrize("fresh_registry", [False, True])
+def test_federal_script_collection_uses_saved_registry_on_a_clean_runner(
+    tmp_path, monkeypatch, fresh_registry
+):
+    candidate = dict(
+        candidate_id="S6IA00314",
+        name="HINSON, ASHLEY",
+        party="REP",
+        state="IA",
+        office="S",
+        district="00",
+    )
+    saved = candidate if not fresh_registry else candidate | {"name": "OTHER, PERSON"}
+    cli.write_json(tmp_path / "data/site/candidates.json", {"candidates": [saved]})
+    if fresh_registry:
+        cli.write_json(tmp_path / "data/processed/registry.json", {"candidates": [candidate]})
+
+    class Archive:
+        def json(self, *args, **kwargs):
+            return [
+                {
+                    "id": 5569,
+                    "date": "2026-07-14T08:00:00",
+                    "title": {"rendered": "New Ad Holding Ashley Hinson Accountable"},
+                    "content": {
+                        "rendered": "<p>AD TRANSCRIPT:</p><p>Ashley Hinson should work for "
+                        "Iowa farmers instead of voting for higher costs and expensive "
+                        "foreign wars.</p>"
+                    },
+                    "link": "https://votevets.org/press-releases/new-ad/",
+                }
+            ], {}
+
+    monkeypatch.setattr(cli, "Client", lambda *args: Archive())
+    snapshot = cli.collect(tmp_path, "2026-10-26", ["votevets"])
+    assert len(snapshot["ads"]) == 1
+    assert snapshot["ads"][0]["segments"][0]["federal_scope_candidate_ids"] == ["S6IA00314"]
+
+
 def test_repeated_page_is_failure_not_complete_or_empty():
     class RepeatedPages:
         def json(self, *args, **kwargs):

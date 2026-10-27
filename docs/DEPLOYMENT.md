@@ -9,7 +9,8 @@ directory, not only its index. No server, database, or secret is shipped to the 
 its interactive-analysis directory no longer links to it. Do not restore that integration
 or publish local builds without explicit authorization. Research commits may be pushed to
 `hanshanley/political-ads` without updating the website; its push-triggered CI only validates.
-The repository's automatic evidence-refresh workflow is disabled during this hold.
+Automatic evidence refresh is authorized independently of website publication. It updates
+this research repository only; neither workflow dispatches or publishes to the website host.
 
 ## No-new-cost updates
 
@@ -17,11 +18,19 @@ The refresh uses standard `ubuntu-latest` runners in this public repository, not
 runners. No Actions artifacts or paid APIs are introduced. Official billing documentation:
 https://docs.github.com/en/billing/concepts/product-billing/github-actions
 
-When explicitly reauthorized and enabled, `.github/workflows/refresh.yml` refreshes sources
-daily at 08:13 UTC through November 4, 2026, inclusive.
-It checks known releases, FEC identities, and bounded caption leads, then validates/tests before
-committing publication inputs to main. Failed sources retain their last-good partitions and
-source-specific freshness. A successful acquisition is not complete advertising coverage.
+`.github/workflows/refresh.yml` refreshes registered public ad-release archives daily at
+08:13 UTC through November 4, 2026, inclusive. It updates FEC identities before collecting
+scripts; if FEC retrieval fails, it retains the committed candidate registry rather than
+discarding identity-gated scripts on a clean runner. It regenerates complete analysis JSON,
+CSV and HTML, rebuilds and validates the saved evidence, then commits research inputs and
+analysis to main as Hans Hanley. It has no deployment step or host-dispatch credential.
+Failed sources retain their last-good partitions and source-specific freshness.
+A successful acquisition is not complete advertising coverage.
+
+Blocked YouTube captions and Google creatives are not retried. Existing caption, image,
+Google and Snap extraction partitions are preserved, not re-extracted by this Linux job;
+the native OCR pipeline currently requires local macOS Vision. Newly discovered metadata
+is not counted as recovered ad text.
 
 After the November 4 cutoff routine collection is skipped. Explicit late-index reconciliation:
 
@@ -47,6 +56,7 @@ Verify `/political-ads/`, `report.html`, `data/dataset.json`, `data/ads.csv`, an
 Compare live/local snapshot IDs. Deployment files are ignored; `data/site/`, codebook, review
 ledger, and validation report are versioned so publication states are rebuildable.
 
-Restore only relevant inputs from a known-good revision into a new main-branch commit, validate,
-and let the host rebuild. Never force-push, introduce another branch, overwrite unrelated work,
+Restore only relevant inputs from a known-good revision into a new main-branch commit and
+validate. Do not trigger a host rebuild while website publication is on hold.
+Never force-push, introduce another branch, overwrite unrelated work,
 or replace failed source partitions with empty lists.

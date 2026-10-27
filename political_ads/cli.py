@@ -67,7 +67,9 @@ def collect(root: Path, until: str, source_ids: list[str], offline: bool = False
     public = root / "data/site"
     old = read_json(public / "corpus.json", {"ads": [], "sources": []})
     selected = [s for s in SOURCES if not source_ids or s.id in source_ids]
-    candidates = read_json(root / "data/processed/registry.json", {}).get("candidates", [])
+    candidates = read_json(root / "data/processed/registry.json", {}).get(
+        "candidates"
+    ) or read_json(public / "candidates.json", {}).get("candidates", [])
     by_id = {candidate["candidate_id"]: candidate for candidate in candidates}
     for alias in read_json(root / "data/snap-candidate-aliases.json", []):
         if alias["candidate_id"] in by_id:

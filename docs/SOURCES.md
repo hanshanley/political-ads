@@ -5,8 +5,8 @@ This is a source-limited collection of releases and native platform creatives, n
 
 **Publication withdrawn:** the page, report, data downloads, preview, interactive-analysis card
 and sitemap entry were removed and verified live. The host integration was removed, and the
-automatic evidence-refresh workflow disabled. Research evidence may be pushed to this
-repository without updating the website; publication and host restoration still require
+daily automatic evidence refresh updates this research repository only. Research evidence
+may be pushed without updating the website; publication and host restoration still require
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 26 cutoff is unchanged.
 

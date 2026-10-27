@@ -51,24 +51,35 @@ jobs:
         env:
           UNTIL: ${{ steps.scope.outputs.until }}
         run: |
-          python -m pip install -e '.[dev,captions]'
+          python -m pip install -e '.[dev]'
+          ruff check political_ads tests
+          ruff format --check political_ads tests
+          if ! political-ads registry; then
+            echo "::warning::FEC refresh failed; retaining committed candidate identities"
+          fi
           political-ads collect --until "$UNTIL"
-          political-ads registry
-          political-ads media-collect --source nunn --source slf --source hmp --source nrcc --source clf --limit 12 --until "$UNTIL"
           political-ads parquet
+          political-ads analyze
           political-ads build
           political-ads validate
           pytest -q
       - name: Check dashboard against the new snapshot
         if: steps.scope.outputs.enabled == 'true'
-        run: npm ci --prefix web && npm run test --prefix web && npm run build --prefix web
-      - name: Persist validated publication inputs on main
+        run: |
+          npm ci --prefix web
+          npm run lint --prefix web
+          npm run test --prefix web
+          npm run build --prefix web
+          cd web
+          npx playwright install --with-deps chromium
+          npm run test:e2e
+      - name: Persist validated research evidence and complete analysis on main
         if: steps.scope.outputs.enabled == 'true'
         run: |
           git config user.name "Hans Hanley"
           git config user.email "$(git log -1 --format=%ae)"
-          git add data/site outputs/validation.json
+          git add data/site outputs/validation.json outputs/analysis.json outputs/analysis.html outputs/analysis-ads.csv
           if git diff --cached --quiet; then exit 0; fi
-          git diff --cached --check
+          git diff --cached --check -- data/site outputs/validation.json
           git commit -m "Refresh 2026 ad-language evidence"
           git push origin HEAD:main
