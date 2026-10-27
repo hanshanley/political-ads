@@ -12,7 +12,7 @@ snapshot's actual October 27 cutoff is distinct from that final scope limit.
 
 | Source | Working path | Text / limits |
 |---|---|---|
-| NRSC | Public WordPress posts, broader ad search | 57 written Republican Senate records; 1,242 matching releases checked; explicit body-announced ads need not say ad in the headline |
+| NRSC | Public WordPress posts, broader ad search | 58 written Republican Senate records; explicit body-announced ads need not say ad in the headline |
 | DCCC | Public WordPress posts, transcript search | Democratic House transcripts; creatives separated; Spanish text excluded from analysis |
 | DSCC | Public `article` REST type, ACF body, ad search | Five explicit scripts; four recovered by expanded heading recognition |
 | Roy Cooper | Official public WordPress posts | Italic transcript paragraphs; NC Senate candidate |
@@ -20,8 +20,8 @@ snapshot's actual October 27 cutoff is distinct from that final scope limit.
 | Dan Sullivan | Official public WordPress ad releases | Six explicit transcripts; AK Senate; own-ad ICYMI release retained separately from ordinary news |
 | John Hickenlooper | Official public WordPress ad releases | Explicit transcripts; CO Senate |
 | Jon Ossoff | Official public WordPress ad releases | Radio scripts and bracketed-speaker ad copy; GA Senate |
-| Mike Rogers | Paginated public Squarespace news JSON | Fourteen written scripts; MI Senate |
-| Josh Turek | Rendered first-party news index and release pages | Eleven written scripts; IA Senate |
+| Mike Rogers | Paginated public Squarespace news JSON | Fifteen written scripts; MI Senate |
+| Josh Turek | Rendered first-party news index and release pages | Thirteen written scripts; IA Senate |
 | Troy Jackson | Dated public news cards and official release pages | Eleven written scripts; ME Senate; visible archive is partial |
 | Abdul El-Sayed | Paginated dated public news cards and official releases | Twenty-four scripts/copy records; MI Senate; API authorization is not bypassed |
 | Mike Collins | Public `press_release` WordPress type | Two written scripts; GA Senate; ordinary posts endpoint is empty |
@@ -36,7 +36,7 @@ snapshot's actual October 27 cutoff is distinct from that final scope limit.
 | Roger Marshall | Dated public HTML press cards and release pages | Two October scripts; KS Senate; marked transcript paragraphs exclude surrounding attacks; visible archive is partial |
 | Lizzie Fletcher | Official public WordPress ad releases | Four scripts, including separately marked 15/30-second versions; TX-07 |
 | Zach Dembo | Official public WordPress ad releases | One written script; KY-06 |
-| Nancy Lacore | Paginated public Squarespace `/media` JSON | Three scripts; SC-01; campaign biography excluded |
+| Nancy Lacore | Paginated public Squarespace `/media` JSON | Six scripts; SC-01; campaign biography excluded |
 | Julia Letlow | Public blog sitemap, publication metadata and exact article body | One June Senate script; sitemap modification dates and recent-post navigation are not ad evidence |
 | Glenn Grothman campaign | Reviewed public campaign release reproduced by WisPolitics | One October WI-06 script; campaign alignment is not the mirror's editorial alignment; private API/feed access not used; mirror coverage is explicitly partial |
 | Aaron Flint | Official public WordPress ad releases | Seven August–October MT-01 scripts; original speaker labels and publisher errors retained |
@@ -207,6 +207,13 @@ its saved script and October 26 last-success date are preserved, and later autom
 pause that source without new requests. Republican English House coverage remains 136.
 The daily workflow collects public release text, rebuilds complete analysis/downloads and
 pushes only to this research repository. The website integration remains removed.
+
+The first hosted refresh, run `40568363571`, passed all 156 Python, five frontend and four
+browser tests and committed the validated evidence as Hans Hanley. It added no records
+beyond the 16-script local refresh; all 1,769 records retained their text and segments.
+Two Marshall release-body hashes changed without changing recovered text. RJC's public
+archive returned 403 and is paused for subsequent runs; Letlow's publication-metadata
+check failed, so its existing script was retained rather than replaced or dropped.
 
 The same investigation corrected CLF pagination: its next link uses `page-link`, not `next`.
 Following the actual same-publisher next URL reaches the 2025 boundary, but recovers only

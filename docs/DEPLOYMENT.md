@@ -29,6 +29,10 @@ Saved HTTP 401/403/429 denials pause that source on subsequent refreshes without
 successful sources continue updating. A paused source requires access review before resuming.
 A successful acquisition is not complete advertising coverage.
 
+Validation allows 25 minutes, and collection plus validation allows 35 minutes, to leave
+room for cold-runner Chromium system-package installation. Both jobs remain time-bounded;
+no tests or publisher crawl delays are skipped to fit the budget.
+
 Blocked YouTube captions and Google creatives are not retried. Existing caption, image,
 Google and Snap extraction partitions are preserved, not re-extracted by this Linux job;
 the native OCR pipeline currently requires local macOS Vision. Newly discovered metadata
