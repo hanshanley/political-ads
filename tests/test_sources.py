@@ -67,6 +67,100 @@ def test_script_background_heading_allows_spacing_before_the_colon():
     assert blocks == [script]
 
 
+def test_wfw_sample_script_is_one_creative_not_all_announced_districts():
+    source = next(s for s in SOURCES if s.id == "wfw")
+    candidates = [
+        {
+            "candidate_id": "H0TX15124",
+            "name": "DE LA CRUZ, MONICA",
+            "party": "REP",
+            "state": "TX",
+            "office": "H",
+            "district": "15",
+        },
+        {
+            "candidate_id": "H8FL27076",
+            "name": "SALAZAR, MARIA ELVIRA",
+            "party": "REP",
+            "state": "FL",
+            "office": "H",
+            "district": "27",
+        },
+    ]
+    script = (
+        "Congresswoman Monica De La Cruz is working to make housing affordable for "
+        "families. Tell her to keep fighting for lower costs."
+    )
+    release = post(
+        "Winning For Women Launches $500K Advocacy Campaign in 7 House Districts",
+        "<p>The ads will run in seven House districts, including those represented by "
+        "Maria Elvira Salazar and Monica De La Cruz.</p>"
+        f"<p><strong>Sample Ad Transcript:</strong><br><br>{script}</p>"
+        "<p><strong>Background</strong></p><p>Our group has raised millions of dollars.</p>",
+    )
+    ads = parse_post(release, source, "2026-10-27", candidates)
+    assert len(ads) == 1
+    assert ads[0]["text"] == script
+    assert ads[0]["race"] == "TX-15"
+    assert ads[0]["segments"][0]["federal_scope_candidate_ids"] == ["H0TX15124"]
+    release["content"]["rendered"] = release["content"]["rendered"].replace(
+        "The ads will run in seven House districts", "Our leaders represent seven House districts"
+    )
+    assert not parse_post(release, source, "2026-10-27", candidates)
+
+
+def test_background_checks_in_script_are_not_a_background_heading():
+    script = (
+        "Background checks protect our communities and keep families safe. "
+        "We need leaders who will work across party lines to get results."
+    )
+    assert transcript_blocks(f"<p>Ad Transcript:</p><p>{script}</p>") == [script]
+
+
+def test_wfw_action_fund_separates_district_headings_from_two_primary_scripts():
+    source = next(s for s in SOURCES if s.id == "wfw-af")
+    candidates = [
+        {
+            "candidate_id": "H6TX08209",
+            "name": "STEINMANN, JESSICA HART",
+            "party": "REP",
+            "state": "TX",
+            "office": "H",
+            "district": "08",
+        },
+        {
+            "candidate_id": "H6TX09140",
+            "name": "MEALER, ALEX",
+            "party": "REP",
+            "state": "TX",
+            "office": "H",
+            "district": "09",
+        },
+    ]
+    first = (
+        "Jessica Steinmann will stand up for Texas families and fight to lower costs. "
+        "Send Jessica Steinmann to Congress."
+    )
+    second = (
+        "Alex Mealer will fight for secure borders and protect American jobs. "
+        "Send Alex Mealer to Congress to deliver results."
+    )
+    release = post(
+        "WFW AF Launches Two Six-Figure Ad Campaigns",
+        "<p>The ads run ahead of the Texas Republican primary.</p>"
+        f"<p>Ad Transcript:</p><p>{first}</p>"
+        "<p><strong>Alex Mealer — “Hard Line” — TX-09</strong></p><p>Watch Here</p>"
+        f"<p>Ad Transcript:</p><p>{second}</p><p>Background</p>"
+        "<p>This organization has raised millions of dollars.</p>",
+    )
+    ads = parse_post(release, source, "2026-10-27", candidates)
+    assert [ad["text"] for ad in ads] == [first, second]
+    assert [ad["race"] for ad in ads] == ["TX-08", "TX-09"]
+    assert all(ad["phase"] == "primary" for ad in ads)
+    assert ads[0]["segments"][0]["federal_scope_candidate_ids"] == ["H6TX08209"]
+    assert ads[1]["segments"][0]["federal_scope_candidate_ids"] == ["H6TX09140"]
+
+
 @pytest.mark.parametrize("delimiter", ["-", "–", "—"])
 def test_standalone_transcript_dash_heading(delimiter):
     script = (

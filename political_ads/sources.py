@@ -481,6 +481,26 @@ SOURCES = [
         search="ad",
         fixed_race="OH-01",
     ),
+    Source(
+        "wfw",
+        "https://winningforwomen.com",
+        "Winning For Women",
+        "R",
+        "outside_group",
+        "House",
+        search="ad",
+        requires_federal_candidate=True,
+    ),
+    Source(
+        "wfw-af",
+        "https://www.wfwactionfund.com",
+        "WFW Action Fund",
+        "R",
+        "outside_group",
+        "House",
+        search="ad",
+        requires_federal_candidate=True,
+    ),
 ]
 
 
@@ -537,7 +557,7 @@ def transcript_blocks(content: str) -> list[str]:
             r"Watch\s+[‘“\"']|"
             r"You can watch\b|"
             r"Below is a list of [^\n]{0,120}\bad campaign:|"
-            r"(?:On )?Background\s*:|See also:|About the |About [^\n:]{1,80}:|"
+            r"(?:On )?Background[ \t]*(?::|$)|See also:|About the |About [^\n:]{1,80}:|"
             r"The post .+ appeared first on |Roy Cooper has launched |"
             r"Learn more about Mike Rogers and his plans? to |"
             r"DCCC (?:National |Spokesperson|Chair|Senior )|"
@@ -828,6 +848,10 @@ def parse_post(
             introduction,
             re.I,
         )
+    if source.id == "wfw":
+        reviewed_announcement = re.match(
+            r"^Winning For Women Launches\b.*\bAdvocacy Campaign\b", title, re.I
+        ) and re.search(r"\bThe ads will run in\b", introduction, re.I)
     if (
         not is_ad_release(title)
         and source.id != "lcv-vf"
@@ -841,6 +865,14 @@ def parse_post(
         re.sub(r"(transcript below:)r(?=</)", r"\1", content) if source.id == "rogers" else content
     )
     blocks = cooper_transcripts(body) if source.id == "cooper" else transcript_blocks(body)
+    if source.id == "wfw-af":
+        blocks = [
+            re.split(
+                r"(?m)^[^\n]{1,160}[ \t][–—-][ \t][A-Z]{2}-\d{2}\nWatch Here(?:\n|$)",
+                block,
+            )[0].strip()
+            for block in blocks
+        ]
     if source.id == "stover":
         blocks = [
             re.split(
@@ -899,6 +931,10 @@ def parse_post(
         phase = "general"
     if source.id == "young-kim" and re.search(
         r"\bad buy that runs through the [^.\n]{0,60}\bprimary\b", full_text, re.I
+    ):
+        phase = "primary"
+    if source.id == "wfw-af" and re.search(
+        r"\bahead of [^.\n]{0,80}\bprimary\b", introduction, re.I
     ):
         phase = "primary"
     creatives = (

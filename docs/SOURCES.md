@@ -40,6 +40,8 @@ pushed or published without explicit authorization.
 | Aaron Flint | Official public WordPress ad releases | Seven August–October MT-01 scripts; original speaker labels and publisher errors retained |
 | Brian Stover | Official public WordPress ad releases | Two January GA-14 releases reproduce an ad script; post-script biography and placement commentary excluded; releases are not evidence of two distinct creatives |
 | Eric Conroy | Official public WordPress ad releases | Two September OH-01 scripts; candidate identity verified against FEC H6OH01138; release descriptions excluded |
+| Winning For Women | Official public WordPress advocacy release | One July TX-15 sample script supporting Monica De La Cruz; seven announced districts do not imply seven recovered scripts |
+| WFW Action Fund | Official public WordPress ad releases | Six February-July House primary scripts: Steinmann, Mealer (two), Honeycutt, Pridemore and McKinney; separate PAC identity from Winning For Women |
 | Sarah Trone Garriott | Official public WordPress ad releases | Explicit transcripts; IA-03 |
 | Sean McCann | Official public WordPress ad releases | Explicit transcripts and separated ad copy; MI-04 |
 | Zach Nunn | Official public WordPress ad releases | IA-03 video leads; releases without transcripts are not counted as text |
@@ -48,7 +50,7 @@ pushed or published without explicit authorization.
 | House Majority Forward | Paginated public HTML news archive | Thirteen English scripts; two Spanish scripts retained outside analysis; policy advocacy, not verified delivery |
 | Unrig Our Economy | Public `news` WordPress type | Twenty English-classified scripts; five Spanish scripts retained outside analysis; issue advocacy |
 | NRCC | Public full-text RSS plus reviewed native graphics | Complete accessible script-search feed checked: 97 releases, 69 written records; 16 reviewed standalone static ads; video thumbnails excluded; REST access is not bypassed |
-| CLF | Paginated public HTML press archive | REST returns 401; public press archive checked; no usable 2026 scripts found there |
+| CLF | Paginated public HTML press archive | Actual next-page URLs followed through the 2025 boundary; two matching 2026 releases are spending reservations, not scripts; REST authorization is not bypassed |
 | SMP / WinSenate | Public news cards and their shipped load-more form; native Snap assets | 37 in-scope ad releases checked; 10 explicitly quoted speech records, not full certified scripts; ordinary posts endpoint misses this archive; WinSenate is FEC C00865444 |
 | One Nation | Official public advocacy identity and native Snap assets | Conservative-aligned issue advocacy, not a party committee; FEC noncommittee disclosure ID retained separately; federal-candidate names or individually reviewed, hash-bound federal-identity evidence required |
 | Working America | Reviewed official advocacy identity and native Snap assets | Organizational identity and alignment reviewed separately; each creative needs recovered 2026 federal-candidate evidence; generic and state-only material excluded |
@@ -98,6 +100,8 @@ Official entry points and explicitly identified release mirror:
 - https://www.wispolitics.com/2026/u-s-rep-grothman-releases-first-campaign-ad-of-2026-cycle/
 - https://flintformontana.com/
 - https://www.brianstoverforcongress.com/
+- https://winningforwomen.com/
+- https://www.wfwactionfund.com/
 - https://ericconroy.com/
 - https://sarahforiowa.com/
 - https://seanmccannforcongress.com/
@@ -146,9 +150,9 @@ generated together in `outputs/analysis.json` and `outputs/analysis.html`; the m
 `outputs/analysis-ads.csv` includes complete text and evidence. These files, not an earlier
 379-record checkpoint, define the current reconciled local snapshot.
 
-The reconciled October 26 cutoff contains 1,746 acquired text records: 445 written records,
+The reconciled October 26 cutoff contains 1,753 acquired text records: 452 written records,
 65 captions, 16 static graphics, 76 Google previews and 1,144 Snap creatives. The English
-explorer contains 1,708 records: **1,194 Democratic-aligned, 475 Republican-aligned,
+explorer contains 1,715 records: **1,194 Democratic-aligned, 482 Republican-aligned,
 31 reviewed bipartisan and eight unresolved**. Only D/R enter party comparisons.
 The October 27 publisher-alignment audit corrected the earlier
 758 D / 440 R / 478 unresolved classification to **1,194 Democratic-aligned, 443 Republican-aligned,
@@ -175,7 +179,33 @@ rule to `nrsc-15447-0`, removing release commentary after its marked script with
 spoken text. One refreshed NRCC release has a new raw-body hash but unchanged recovered text.
 Native extraction bytes, alignment-review bindings, candidate reviews and language reviews
 remain unchanged. Complete local and built JSON/gzip/CSV exports reconcile field by field;
-all 1,746 Parquet rows match the loaded corpus.
+all 1,753 Parquet rows match the loaded corpus.
+
+The House-focused follow-up adds **seven Republican English script records**, raising
+Republican English House coverage from 129 to **136**. Winning For Women supplies one
+July housing-advocacy sample supporting Monica De La Cruz (TX-15). Its separately identified
+WFW Action Fund supplies six primary scripts: Jessica Steinmann (TX-08), two Alex Mealer
+ads (TX-09), Jenny Costa Honeycutt (SC-01), Tricia Pridemore (GA-11), and Amanda McKinney
+(WA-04). Scripts span February-July. The two organizations' three and 32 matching releases
+were checked, respectively. All seven scripts were read in full, with ordinary statements,
+fundraising boilerplate and next-creative headings excluded. The seven-district advocacy
+announcement contains one sample, not seven independently recovered variants.
+Exact campaign/FEC evidence supports two additional name aliases, Alex Mealer and the
+full Jenny Costa Honeycutt name; there are now 30 reviewed aliases, not fuzzy matches.
+All 1,746 prior acquired records remain field-for-field unchanged.
+
+The same investigation corrected CLF pagination: its next link uses `page-link`, not `next`.
+Following the actual same-publisher next URL reaches the 2025 boundary, but recovers only
+two 2026 spending-reservation releases, neither counted as ad text. A wider NRCC RSS union
+contains 129 releases; all 17 distinct images among 30 additional image-record leads were
+visually inspected and rejected as video thumbnails. Nunn's 16 matching posts, Noveletsky's
+11, Beltran's seven (including four actual ad pages), nine current AAN ad releases and
+AFP Action's 141 matching posts yielded no additional written scripts. Harding's accessible
+news JSON and original news lead were checked; raw advertising B-roll is not an ad.
+Other PAC galleries, campaign pages and unmatched native payer identities were also checked.
+These are source-specific outcomes, not an exhaustion claim or proof that no ads exist.
+No blocked caption/creative endpoint was retried, no access control bypassed, and no new
+native extraction or published website update is claimed.
 
 Additional public probes checked Wesley Hunt (19 matching posts), Ashley Moody (30),
 Cindy Hyde-Smith (zero ordinary matching posts), Brian Fitzpatrick (six) and SLF's broader

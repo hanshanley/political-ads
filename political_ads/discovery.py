@@ -122,7 +122,11 @@ def archive_posts(
         next_page = (
             any(f"pg={page + 1}" in a.get("href", "") for a in soup.find_all("a"))
             if hmp
-            else bool(soup.select_one("a.next"))
+            else any(
+                urljoin(source.url, a.get("href", "")).rstrip("/")
+                == f"{source.url.rstrip('/')}/press/page/{page + 1}"
+                for a in soup.find_all("a", href=True)
+            )
         )
         if not next_page:
             return posts, True

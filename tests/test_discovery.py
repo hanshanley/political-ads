@@ -311,6 +311,30 @@ def test_archive_schema_failure_does_not_silently_claim_completion():
         archive_posts(Empty(), source("hmp"), "2026-10-26")
 
 
+def test_clf_archive_follows_actual_next_url_without_next_css_class():
+    class Archive:
+        def get(self, url, **kwargs):
+            if url.endswith("/new-ad/"):
+                return b'<div class="entry-content"><p>Transcript: Actual ad copy.</p></div>', {}
+            second = "/page/2/" in url
+            third = "/page/3/" in url
+            title = "New ad" if second else "Primary results"
+            day = "December 20, 2025" if third else "October 20, 2026"
+            identity = 3 if third else 2 if second else 1
+            return (
+                f'<article class="feed-card" id="post-{identity}">'
+                f'<a class="post-link" href="/{"new-ad" if second else f"results-{identity}"}/">'
+                f'<h2 class="entry-title">{title}</h2></a><time>{day}</time></article>'
+                f'<a class="page-link" href="/press/page/{identity + 1}/">next</a>'
+                '<a class="page-link" href="https://other.example/press/page/2/">Other</a>'
+            ).encode(), {}
+
+    posts, complete = archive_posts(Archive(), source("clf"), "2026-10-26")
+    assert complete and [post["id"] for post in posts] == [2]
+    assert "Actual ad copy" in posts[0]["content"]["rendered"]
+    assert archive_posts(Archive(), source("clf"), "2026-10-26", max_pages=1) == ([], False)
+
+
 def test_public_squarespace_json_follows_offset_and_publisher_timezone():
     class News:
         def json(self, url, **kwargs):
