@@ -1,6 +1,6 @@
 # Free-source capabilities
 
-Verified October 26, 2026. Live acquisition status accompanies each snapshot.
+Verified October 27, 2026; collection cutoff October 26. Live acquisition status accompanies each snapshot.
 This is a source-limited collection of releases and native platform creatives, not a census.
 
 **Publication withdrawn:** the page, report, data downloads, preview, interactive-analysis card
@@ -10,15 +10,15 @@ pushed or published without explicit authorization.
 
 | Source | Working path | Text / limits |
 |---|---|---|
-| NRSC | Public WordPress posts, broader ad search | Written Republican Senate ad transcripts; 1,242 matching releases checked |
+| NRSC | Public WordPress posts, broader ad search | 57 written Republican Senate records; 1,242 matching releases checked; explicit body-announced ads need not say ad in the headline |
 | DCCC | Public WordPress posts, transcript search | Democratic House transcripts; creatives separated; Spanish text excluded from analysis |
 | DSCC | Public `article` REST type, ACF body, ad search | Five explicit scripts; four recovered by expanded heading recognition |
 | Roy Cooper | Official public WordPress posts | Italic transcript paragraphs; NC Senate candidate |
 | Ashley Hinson | Official public WordPress ad releases | Separately quoted ad copy; IA Senate; completeness flagged |
-| Dan Sullivan | Official public WordPress ad releases | Explicit transcripts; AK Senate |
+| Dan Sullivan | Official public WordPress ad releases | Six explicit transcripts; AK Senate; own-ad ICYMI release retained separately from ordinary news |
 | John Hickenlooper | Official public WordPress ad releases | Explicit transcripts; CO Senate |
 | Jon Ossoff | Official public WordPress ad releases | Radio scripts and bracketed-speaker ad copy; GA Senate |
-| Mike Rogers | Paginated public Squarespace news JSON | Twelve written scripts; MI Senate |
+| Mike Rogers | Paginated public Squarespace news JSON | Fourteen written scripts; MI Senate |
 | Josh Turek | Rendered first-party news index and release pages | Eleven written scripts; IA Senate |
 | Troy Jackson | Dated public news cards and official release pages | Eleven written scripts; ME Senate; visible archive is partial |
 | Abdul El-Sayed | Paginated dated public news cards and official releases | Twenty-four scripts/copy records; MI Senate; API authorization is not bypassed |
@@ -37,21 +37,22 @@ pushed or published without explicit authorization.
 | Nancy Lacore | Paginated public Squarespace `/media` JSON | Three scripts; SC-01; campaign biography excluded |
 | Julia Letlow | Public blog sitemap, publication metadata and exact article body | One June Senate script; sitemap modification dates and recent-post navigation are not ad evidence |
 | Glenn Grothman campaign | Reviewed public campaign release reproduced by WisPolitics | One October WI-06 script; campaign alignment is not the mirror's editorial alignment; private API/feed access not used; mirror coverage is explicitly partial |
-| Aaron Flint | Official public WordPress ad releases | Six August–October MT-01 scripts; original speaker labels and publisher errors retained |
+| Aaron Flint | Official public WordPress ad releases | Seven August–October MT-01 scripts; original speaker labels and publisher errors retained |
 | Brian Stover | Official public WordPress ad releases | Two January GA-14 releases reproduce an ad script; post-script biography and placement commentary excluded; releases are not evidence of two distinct creatives |
+| Eric Conroy | Official public WordPress ad releases | Two September OH-01 scripts; candidate identity verified against FEC H6OH01138; release descriptions excluded |
 | Sarah Trone Garriott | Official public WordPress ad releases | Explicit transcripts; IA-03 |
 | Sean McCann | Official public WordPress ad releases | Explicit transcripts and separated ad copy; MI-04 |
 | Zach Nunn | Official public WordPress ad releases | IA-03 video leads; releases without transcripts are not counted as text |
-| SLF | Paginated public WordPress ad releases | Linked video captions acquired; bounded collection and caption quality flags |
+| SLF | Paginated public WordPress ad releases | Linked video captions acquired; bounded collection and caption quality flags; broader ad search checked 326 releases without recovering additional written scripts |
 | HMP | Paginated public HTML news archive | Backfills beyond the custom REST endpoint's ten recent posts; caption acquisition remains partial |
 | House Majority Forward | Paginated public HTML news archive | Thirteen English scripts; two Spanish scripts retained outside analysis; policy advocacy, not verified delivery |
 | Unrig Our Economy | Public `news` WordPress type | Twenty English-classified scripts; five Spanish scripts retained outside analysis; issue advocacy |
-| NRCC | Public full-text RSS plus reviewed native graphics | 69 written records; 16 reviewed standalone static ads; video thumbnails excluded; REST access is not bypassed |
+| NRCC | Public full-text RSS plus reviewed native graphics | Complete accessible script-search feed checked: 97 releases, 69 written records; 16 reviewed standalone static ads; video thumbnails excluded; REST access is not bypassed |
 | CLF | Paginated public HTML press archive | REST returns 401; public press archive checked; no usable 2026 scripts found there |
 | SMP / WinSenate | Public news cards and their shipped load-more form; native Snap assets | 37 in-scope ad releases checked; 10 explicitly quoted speech records, not full certified scripts; ordinary posts endpoint misses this archive; WinSenate is FEC C00865444 |
 | One Nation | Official public advocacy identity and native Snap assets | Conservative-aligned issue advocacy, not a party committee; FEC noncommittee disclosure ID retained separately; federal-candidate names or individually reviewed, hash-bound federal-identity evidence required |
 | Working America | Reviewed official advocacy identity and native Snap assets | Organizational identity and alignment reviewed separately; each creative needs recovered 2026 federal-candidate evidence; generic and state-only material excluded |
-| UA Vote! PAC | Public `news` REST type and ACF release bodies | Four explicitly marked federal scripts; Iowa governor script excluded; bipartisan publisher remains unknown alignment, including its pro-Republican Fitzpatrick ad |
+| UA Vote! PAC | Public `news` REST type and ACF release bodies | Four explicitly marked federal scripts; Iowa governor script excluded; reviewed bipartisan publisher is other, including its pro-Republican Fitzpatrick ad; original unknown acquisition labels remain in provenance |
 | VoteVets | Public post metadata plus exact release-body HTML | Thirteen federal scripts recovered despite empty API bodies; state races and video-only pages excluded; Democratic organizational alignment does not identify a sole PAC/fund payer |
 | Other reviewed native payers | Official organizations, exact FEC identities and reviewed landing-page disclosures | Campaigns, PACs, unions and advocacy entities remain distinct; unresolved alignments stay in the corpus but not D/R denominators; metadata-only leads are not analyzed ads |
 | FEC | Official 2026 candidate/committee bulk ZIPs | Identity/discovery metadata, not transcripts or one-to-one creative links |
@@ -63,6 +64,8 @@ pushed or published without explicit authorization.
 | Snap | Official 2026 archive and original image/video assets | Exact federal identity joins plus reviewed advocacy payers; the latter require federal-candidate evidence in recovered text; local OCR/ASR; inventory candidates are not all analyzed ads; scheduled dates are not verified daily delivery |
 | Meta | Ad Library API | Free identity/developer authorization required; not configured, no acquired-text claim |
 | X | Official disclosure documentation/archive links checked | Linked ZIP returns 404; another official host returns 403; CDN response is HTML, not a ZIP; no text acquired |
+| Roku | Official political-ad-archive page and its linked public SharePoint folder | Folder returned 403; no text acquired and no access-control workaround attempted |
+| Reddit | Official 2026 election-policy announcement, linked advertising policy and public political-ad community | Linked policy returned 404; community page did not expose usable ad text; no acquisition claim |
 
 Official entry points and explicitly identified release mirror:
 
@@ -95,6 +98,7 @@ Official entry points and explicitly identified release mirror:
 - https://www.wispolitics.com/2026/u-s-rep-grothman-releases-first-campaign-ad-of-2026-cycle/
 - https://flintformontana.com/
 - https://www.brianstoverforcongress.com/
+- https://ericconroy.com/
 - https://sarahforiowa.com/
 - https://seanmccannforcongress.com/
 - https://zachnunn.com/
@@ -119,6 +123,8 @@ Official entry points and explicitly identified release mirror:
 - https://www.facebook.com/ads/library/api/
 - https://www.snap.com/political-ads/
 - https://help.x.com/en/business-and-advertising/political-ads-disclosure
+- https://advertising.roku.com/roku-s-political-ad-archive
+- https://redditinc.com/news/supporting-civic-knowledge-and-participation-for-the-2026-us-elections
 
 Retrieval declares a research user agent and uses public endpoints. Unauthorized responses
 are not bypassed or retried as transient failures. Network/rate errors have bounded retries.
@@ -140,18 +146,47 @@ generated together in `outputs/analysis.json` and `outputs/analysis.html`; the m
 `outputs/analysis-ads.csv` includes complete text and evidence. These files, not an earlier
 379-record checkpoint, define the current reconciled local snapshot.
 
-The reconciled October 26 cutoff contains 1,714 acquired text records: 413 written records,
+The reconciled October 26 cutoff contains 1,746 acquired text records: 445 written records,
 65 captions, 16 static graphics, 76 Google previews and 1,144 Snap creatives. The English
-explorer contains 1,676 records. The October 27 publisher-alignment audit corrects the former
-758 D / 440 R / 478 unresolved classification to **1,194 Democratic-aligned, 443 Republican-aligned,
+explorer contains 1,708 records: **1,194 Democratic-aligned, 475 Republican-aligned,
 31 reviewed bipartisan and eight unresolved**. Only D/R enter party comparisons.
-The audit adds no ads or text: of the former 478 unresolved records, 436 are now D-aligned,
+The October 27 publisher-alignment audit corrected the earlier
+758 D / 440 R / 478 unresolved classification to **1,194 Democratic-aligned, 443 Republican-aligned,
+31 reviewed bipartisan and eight unresolved**, before this new acquisition.
+That audit added no ads or text: of the former 478 unresolved records, 436 are now D-aligned,
 three R-aligned, 31 bipartisan and eight still unresolved. The separate acquisition expansion
 from the 949-record checkpoint added 17 Republican written records. Three previously unassigned
 Cornhusker Majority Snap records are now R-aligned; that is reclassification, not new acquisition.
 Record counts are not counts of distinct creative executions.
 All 1,595 matched native leads were attempted; 361 still lack sufficient federal identity and
 90 have no substantive recovered text. These exclusions are not analyzed ads.
+
+The subsequent October 27 acquisition recovers **32 additional Republican English records**:
+25 NRSC, two Mike Rogers, two Dan Sullivan, one Aaron Flint and two Eric Conroy.
+A headline-only gate had rejected explicitly announced ads with marked scripts; reviewed
+named-producer body announcements now admit those releases, and standalone transcript-dash
+headings are recognized. Legislative/news transcripts, interviews, speeches and ordinary
+campaign videos remain excluded. Each new recovered script was read in full.
+Multi-ad announcements can reproduce individually released scripts; neither new release records
+nor exact normalized text identities certify distinct creative executions or paid delivery.
+
+All 1,714 prior record IDs remain. Recollection also applies the existing background-boundary
+rule to `nrsc-15447-0`, removing release commentary after its marked script without rewriting
+spoken text. One refreshed NRCC release has a new raw-body hash but unchanged recovered text.
+Native extraction bytes, alignment-review bindings, candidate reviews and language reviews
+remain unchanged. Complete local and built JSON/gzip/CSV exports reconcile field by field;
+all 1,746 Parquet rows match the loaded corpus.
+
+Additional public probes checked Wesley Hunt (19 matching posts), Ashley Moody (30),
+Cindy Hyde-Smith (zero ordinary matching posts), Brian Fitzpatrick (six) and SLF's broader
+326-release search without recovering written scripts. These are query-specific findings,
+not evidence that the candidates did not advertise. Eight registered Republican archives and
+the broader SLF results exposed no independent usable audio/video/caption mirror in the
+reviewed release bodies; linked legislative/background PDFs are not scripts. Two SLF releases
+link the same Dropbox clip as evidence for an opponent's remarks, not as the advertised creative.
+RNC's own public ad-transcript search returned no results. These discovery attempts and
+metadata-only leads are not added to analyzed-ad totals. Republican House and early-cycle
+coverage remain incomplete; this checkpoint is not a claim of exhaustive collection.
 
 Non-English and uncertain-language records remain in acquisition partitions outside the English
 comparison. Forty-six clear English recovered texts received

@@ -471,6 +471,16 @@ SOURCES = [
         search="ad",
         fixed_race="GA-14",
     ),
+    Source(
+        "conroy",
+        "https://ericconroy.com",
+        "Conroy for Congress",
+        "R",
+        "candidate",
+        "House",
+        search="ad",
+        fixed_race="OH-01",
+    ),
 ]
 
 
@@ -506,7 +516,8 @@ def transcript_blocks(content: str) -> list[str]:
             r"(?im)(?:\bThe full text of the ad is below:\s*|"
             r"^([^\n]{0,50}\b)?(?:transcript|(?:(?:radio|tv|ad) )?script)"
             r"(?:\s*\(\s*:?\d{1,3}(?:\s*(?:seconds?|secs?|s))?\s*\))?"
-            r"(?:\s+(?:of|for)\s+[^\n:]{0,120}|\s+below\.?)?\s*(?::|\n|$))",
+            r"(?:\s+(?:of|for)\s+[^\n:]{0,120}|\s+below\.?)?\s*"
+            r"(?::|[-–—][ \t]*(?=\n|$)|\n|$))",
             text,
         )
     )
@@ -793,11 +804,36 @@ def parse_post(
     reviewed_expenditure = source.id == "ua-vote-pac" and re.match(
         r"^UA Launches Independent Expenditure\b", title
     )
+    announcement_names = {
+        "nrsc": r"(?:National Republican Senatorial Committee(?:\s*\(NRSC\))?|NRSC)",
+        "rogers": r"Mike Rogers",
+        "sullivan": r"Dan Sullivan",
+        "flint": r"Aaron Flint",
+    }
+    announcement_name = announcement_names.get(source.id)
+    introduction = plain_html(content)[:1500]
+    reviewed_announcement = announcement_name and re.search(
+        rf"\b{announcement_name}[^.\n]{{0,50}}"
+        r"\b(?:released|launched|unveiled|is releasing|is out with|"
+        r"announced the launch of)\s+(?:a|an|his|its)"
+        r"(?:\s+(?:new|newest|digital|television|TV|radio|six-figure|seven-figure))*"
+        r"\s+ad\b",
+        introduction,
+        re.I,
+    )
+    if source.id == "nrsc" and not reviewed_announcement:
+        reviewed_announcement = re.search(
+            r"\bNRSC\) is celebrating [^.\n]{0,220}"
+            r"\bwith a new voter outreach effort highlighting a digital ad\b",
+            introduction,
+            re.I,
+        )
     if (
         not is_ad_release(title)
         and source.id != "lcv-vf"
         and not reviewed_copy
         and not reviewed_expenditure
+        and not reviewed_announcement
     ):
         return []
     # Rogers's release has a stray letter inside its heading, not the spoken script.

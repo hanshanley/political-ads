@@ -67,6 +67,72 @@ def test_script_background_heading_allows_spacing_before_the_colon():
     assert blocks == [script]
 
 
+@pytest.mark.parametrize("delimiter", ["-", "–", "—"])
+def test_standalone_transcript_dash_heading(delimiter):
+    script = (
+        "Working families deserve lower costs and leaders who will put their communities "
+        "ahead of special interests in Washington."
+    )
+    assert transcript_blocks(f"<p>Transcript {delimiter}</p><p>{script}</p>") == [script]
+
+
+@pytest.mark.parametrize(
+    ("source_id", "title", "announcement"),
+    [
+        (
+            "nrsc",
+            "A candidate puts special interests first",
+            "The National Republican Senatorial Committee (NRSC) today launched a new digital ad.",
+        ),
+        (
+            "nrsc",
+            "One year of a legislative achievement",
+            "The National Republican Senatorial Committee (NRSC) is celebrating one year "
+            "since a law was signed with a new voter outreach effort highlighting a digital ad.",
+        ),
+        (
+            "rogers",
+            "Rogers runs a six-figure buy",
+            "Mike Rogers today launched a six-figure ad buy across streaming platforms.",
+        ),
+        (
+            "sullivan",
+            "ICYMI: Watch Dan Sullivan's new ad",
+            "Senator Dan Sullivan (R-Alaska) released a new ad.",
+        ),
+        (
+            "flint",
+            "Send this lobbyist home",
+            "Aaron Flint launched a new ad highlighting his opponent's record.",
+        ),
+    ],
+)
+def test_reviewed_publishers_own_ad_announcements_do_not_require_ad_in_headline(
+    source_id, title, announcement
+):
+    source = next(s for s in SOURCES if s.id == source_id)
+    script = (
+        "Working families deserve lower costs and leaders who will put their communities "
+        "ahead of special interests in Washington."
+    )
+    release = post(title, f"<p>{announcement}</p><p>TRANSCRIPT:</p><p>{script}</p><p>###</p>")
+    ads = parse_post(release, source, "2026-10-27")
+    assert len(ads) == 1
+    assert ads[0]["text"] == script
+    producer = {
+        "nrsc": "NRSC",
+        "rogers": "Mike Rogers",
+        "sullivan": "Dan Sullivan",
+        "flint": "Aaron Flint",
+    }[source_id]
+    for non_ad in (
+        f"{producer} released a statement criticizing its opponent's new ad.",
+        f"{producer} released a new video about the campaign.",
+    ):
+        release["content"]["rendered"] = f"<p>{non_ad}</p><p>TRANSCRIPT:</p><p>{script}</p>"
+        assert not parse_post(release, source, "2026-10-27")
+
+
 @pytest.mark.parametrize(
     "background",
     [
