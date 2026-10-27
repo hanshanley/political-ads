@@ -6,8 +6,9 @@ directory, not only its index. No server, database, or secret is shipped to the 
 
 **Publication is withdrawn until explicit user authorization.** The
 `hanshanley/margin_of_error` host no longer checks out, builds, or stages this project, and
-its interactive-analysis directory no longer links to it. Do not restore that integration,
-publish local builds, or push pending expansion data without explicit authorization.
+its interactive-analysis directory no longer links to it. Do not restore that integration
+or publish local builds without explicit authorization. Research commits may be pushed to
+`hanshanley/political-ads` without updating the website; its push-triggered CI only validates.
 The repository's automatic evidence-refresh workflow is disabled during this hold.
 
 ## No-new-cost updates
@@ -17,19 +18,22 @@ runners. No Actions artifacts or paid APIs are introduced. Official billing docu
 https://docs.github.com/en/billing/concepts/product-billing/github-actions
 
 When explicitly reauthorized and enabled, `.github/workflows/refresh.yml` refreshes sources
-daily at 08:13 UTC through November 3, 2026.
+daily at 08:13 UTC through November 4, 2026, inclusive.
 It checks known releases, FEC identities, and bounded caption leads, then validates/tests before
 committing publication inputs to main. Failed sources retain their last-good partitions and
 source-specific freshness. A successful acquisition is not complete advertising coverage.
 
-After Election Day routine collection is skipped. Explicit late-index reconciliation:
+After the November 4 cutoff routine collection is skipped. Explicit late-index reconciliation:
 
 ```bash
-gh workflow run refresh.yml --ref main -f until=2026-11-03
+gh workflow run refresh.yml --ref main -f until=2026-11-04
 ```
 
 This recovers late-indexed releases with in-window release dates, not invented delivery evidence
-for after-election releases. Do not retry or clear persistent caption/creative access blocks.
+for releases after the cutoff. November 4 releases retain their actual post-election dates;
+they are not relabeled as pre-election delivery. A cutoff cannot be later than the current
+date, so November 4 is not claimed as observed while it is still in the future.
+Do not retry or clear persistent caption/creative access blocks.
 Local recognition and analysis may be replayed from successful cached inputs without new
 provider requests.
 

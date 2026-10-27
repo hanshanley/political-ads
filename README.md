@@ -4,8 +4,9 @@ An evidence-linked report and static dashboard comparing Democratic- and Republi
 advertising language in the **2026 U.S. House and Senate cycle**. Read issue-language patterns,
 contextual opponent portrayals, and complete source transcripts behind the comparisons.
 
-**Publication withdrawn:** collection and analysis are local only. Do not publish, push
-pending expansion data, or restore website integration without explicit user authorization.
+**Website publication withdrawn:** research code, evidence and analysis may be pushed to
+this repository. Do not deploy the website or restore its host integration without explicit
+user authorization. Automatic evidence refresh remains disabled.
 
 This is an evolving collection of official ad releases, **not a census of paid placements**.
 It includes publisher transcripts, public captions, local image OCR, native Google previews,
@@ -46,7 +47,7 @@ The static `report.html` works without JavaScript.
 .venv/bin/python -m political_ads.cli build
 .venv/bin/python -m political_ads.cli validate
 # Reconcile late-indexed releases within the election window:
-.venv/bin/python -m political_ads.cli update --until 2026-11-03
+.venv/bin/python -m political_ads.cli update --until 2026-11-04
 ```
 
 `collect --source dccc` selects one source. `--offline` on the transcript collector and registry
@@ -117,8 +118,10 @@ filters, keyboard access, mobile overflow, and non-root asset paths.
 
 All work stays on **main**, authored as Hans Hanley. Automatic evidence refresh is disabled.
 The host integration, page, interactive-analysis card and sitemap entry have been removed.
-Do not restore them or push pending data without explicit authorization.
-Local collection is bounded to **November 3, 2026**; manual reconciliation remains available.
+Research commits may be pushed without updating the website; do not restore host integration
+or deploy without explicit authorization.
+Collection is bounded to **November 4, 2026, inclusive**; manual reconciliation remains available.
+The cutoff is a final scope limit, not a claim that future dates have already been collected.
 No paid provider or runtime hosted model is used.
 See [deployment](docs/DEPLOYMENT.md) and [source capabilities](docs/SOURCES.md).
 

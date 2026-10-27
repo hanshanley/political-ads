@@ -62,7 +62,7 @@ def load_corpus(root: Path) -> dict:
 
 def collect(root: Path, until: str, source_ids: list[str], offline: bool = False) -> dict:
     if not START <= until <= min(date.today().isoformat(), END):
-        raise ValueError("Cutoff must be between 2026-01-01 and today/Election Day")
+        raise ValueError("Cutoff must be between 2026-01-01 and today/the final collection cutoff")
     client = Client(root / "data/raw/http", offline)
     public = root / "data/site"
     old = read_json(public / "corpus.json", {"ads": [], "sources": []})

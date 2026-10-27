@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       until:
-        description: "Release-date cutoff; use 2026-11-03 for final reconciliation"
+        description: "Release-date cutoff; use 2026-11-04 for final reconciliation"
         required: false
         type: string
 
@@ -22,17 +22,17 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
-      - name: Stop routine collection after Election Day
+      - name: Stop routine collection after the final cutoff
         id: scope
         env:
           REQUESTED_UNTIL: ${{ inputs.until }}
         run: |
           today=$(date -u +%F)
-          if [[ "$GITHUB_EVENT_NAME" == "schedule" && "$today" > "2026-11-03" ]]; then
+          if [[ "$GITHUB_EVENT_NAME" == "schedule" && "$today" > "2026-11-04" ]]; then
             echo "enabled=false" >> "$GITHUB_OUTPUT"
           else
             echo "enabled=true" >> "$GITHUB_OUTPUT"
-            echo "until=${REQUESTED_UNTIL:-$(printf '%s\n' "$today" "2026-11-03" | sort | head -1)}" >> "$GITHUB_OUTPUT"
+            echo "until=${REQUESTED_UNTIL:-$(printf '%s\n' "$today" "2026-11-04" | sort | head -1)}" >> "$GITHUB_OUTPUT"
           fi
       - uses: actions/checkout@v7
         if: steps.scope.outputs.enabled == 'true'

@@ -2,11 +2,14 @@
 
 ## What is counted
 
-The target is nationwide federal House/Senate advertising during 2026 through November 3.
+The target is nationwide federal House/Senate advertising during 2026 through November 4,
+inclusive. November 4 is the final scope limit, not the current snapshot's observation date;
+future dates are never represented as collected. Post-election releases retain their dates
+and are not described as pre-election delivery.
 The acquisition frame combines official campaign/party/outside-group **ad releases**, native
 Google previews and original Snap creatives, not a delivery census. Release, observation,
 reported delivery and scheduled-delivery dates are different fields.
-A release or YouTube upload does not prove that a creative aired. After-election releases
+A release or YouTube upload does not prove that a creative aired. Releases after November 4
 without independent in-window delivery evidence are excluded.
 
 Analysis includes English text with seeded language-detection probability of at least 0.90,

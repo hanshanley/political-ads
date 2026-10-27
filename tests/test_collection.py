@@ -1,4 +1,5 @@
 import json
+from datetime import date
 from urllib.error import HTTPError
 
 import pytest
@@ -23,6 +24,35 @@ def fixture_ad():
         SOURCES[1],
         "2026-10-01",
     )[0]
+
+
+@pytest.mark.parametrize(
+    ("as_of", "until", "accepted"),
+    [
+        ("2026-10-27", "2026-11-04", False),
+        ("2026-11-05", "2026-11-04", True),
+        ("2026-11-05", "2026-11-05", False),
+    ],
+)
+def test_final_cutoff_never_advances_collection_into_the_future(
+    tmp_path, monkeypatch, as_of, until, accepted
+):
+    class Today(date):
+        @classmethod
+        def today(cls):
+            return date.fromisoformat(as_of)
+
+    monkeypatch.setattr(cli, "date", Today)
+    monkeypatch.setattr(
+        cli,
+        "collect_wordpress",
+        lambda *args: ([fixture_ad()], {"source": "dccc", "state": "ok"}),
+    )
+    if accepted:
+        assert cli.collect(tmp_path, until, ["dccc"])["until"] == until
+    else:
+        with pytest.raises(ValueError, match="final collection cutoff"):
+            cli.collect(tmp_path, until, ["dccc"])
 
 
 def test_failed_source_keeps_last_good_partition_and_freshness(tmp_path, monkeypatch):

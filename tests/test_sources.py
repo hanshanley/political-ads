@@ -729,7 +729,9 @@ def test_next_video_title_and_spokesperson_are_not_ad_text():
 def test_delivery_overlap_and_invalid_dates():
     assert in_window("2025-12-28", "2026-01-03", "2026-10-26")
     assert not in_window("2025-12-01", "2025-12-31", "2026-10-26")
-    assert not in_window("2026-11-04", None, "2026-12-01")
+    assert in_window("2026-11-04", None, "2026-11-04")
+    assert not in_window("2026-11-04", None, "2026-10-27")
+    assert not in_window("2026-11-05", None, "2026-12-01")
     with pytest.raises(ValueError):
         in_window("2026-10-02", "2026-09-30", "2026-10-26")
 

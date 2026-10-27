@@ -6,7 +6,7 @@ from dataclasses import asdict, dataclass, field
 from datetime import date
 
 START = "2026-01-01"
-END = "2026-11-03"
+END = "2026-11-04"
 VERSION = "1"
 
 
