@@ -16,8 +16,9 @@ def research(root: Path) -> dict:
     result = {
         "analysis_version": "stratified-1",
         "publication_status": "local_only",
-        "monthly_basis": "First release, in-scope Google delivery or Snap scheduled start "
-        "of each exact party/message; pre-2026 carryovers anchored to January, not new launches",
+        "monthly_basis": "Earliest publisher release/post, in-scope Google delivery or "
+        "Snap scheduled start of each exact party/message; pre-2026 carryovers anchored "
+        "to January, not new launches",
         "stratum_basis": "Exact party/messages deduplicated after each non-temporal filter",
         "dataset": dataset,
         "comparisons": strata,

@@ -544,6 +544,40 @@ def test_local_word_alignment_failure_falls_back_to_real_segment_timestamps():
     assert settings == {"word_timestamps": False} and error == "empty word alignment"
 
 
+def test_selected_offline_replay_never_rewrites_or_requests_unselected_ads(tmp_path, monkeypatch):
+    selected, untouched = leads(
+        [row(), row(ADID="two", CreativeUrl=VIEWER.replace("a" * 64, "b" * 64))]
+    )
+    prior = snap_ad(untouched, "prior-hash", ocr())
+    write_json(tmp_path / "data/site/snap.json", {"ads": [prior], "sources": []})
+    write_json(
+        tmp_path / "outputs/snap-discovery.json",
+        {"until": "2026-10-26", "leads": [selected, untouched], "archive_sha256": "hash"},
+    )
+    write_json(
+        tmp_path / "data/raw/snap-progress.json",
+        {
+            "records": {
+                selected["id"]: {"state": "unprocessed"},
+                untouched["id"]: {"state": "text"},
+            },
+            "blocked": "",
+        },
+    )
+
+    def cached(self, url, **kwargs):
+        assert url in {VIEWER, NATIVE}, "Unselected original must never be requested"
+        return (f'<img src="{NATIVE}">'.encode() if url == VIEWER else b"image"), {}
+
+    monkeypatch.setattr("political_ads.snap.Client.get", cached)
+    monkeypatch.setattr("political_ads.snap.recognize_image", lambda *args: ("hash", ocr()))
+    result = collect_snap(tmp_path, "2026-10-26", offline=True, ad_ids=[selected["id"]])
+    assert next(ad for ad in result["ads"] if ad["id"] == prior["id"]) == prior
+    assert {ad["id"] for ad in result["ads"]} == {selected["id"], untouched["id"]}
+    with pytest.raises(ValueError, match="discovery inventory"):
+        collect_snap(tmp_path, "2026-10-26", offline=True, ad_ids=["not-in-inventory"])
+
+
 @pytest.mark.parametrize("saved_state", ["text", "unprocessed"])
 def test_offline_cli_replays_cached_text_even_when_online_collection_is_blocked(
     tmp_path, monkeypatch, saved_state

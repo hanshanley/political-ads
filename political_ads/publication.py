@@ -21,9 +21,10 @@ from political_ads.registry import enrich
 from political_ads.schema import Ad, digest, eligible
 
 METHODOLOGY = [
-    "This is an observed corpus of official ad releases, Google previews and native "
-    "Snap creatives, not a census of all ads aired.",
-    "Dates distinguish publisher releases, Google-reported delivery and Snap scheduled intervals. "
+    "This is an observed corpus of official ad releases, reviewed campaign originals, "
+    "Google previews and native Snap creatives, not a census of all ads aired.",
+    "Dates distinguish publisher releases/posts, Google-reported delivery and "
+    "Snap scheduled intervals. "
     "Snap's positive impressions do not independently locate delivery within its scheduled dates.",
     "Party alignment describes the source publisher; "
     "joint creative payers require separate review.",
@@ -46,6 +47,9 @@ METHODOLOGY = [
     "Ads make claims. This project does not establish their truth or measure persuasion.",
     "Automatic video captions may misrecognize words or names. "
     "On-screen-only claims are not yet included in caption-only records.",
+    "Reviewed campaign originals retain exact publisher post timestamps and media hashes. "
+    "A post date is not verified first release or paid delivery; undated recovered originals "
+    "stay outside dated comparisons. Local speech recognition may misrecognize names or negation.",
     "Publisher-quoted ad copy is separately flagged: it may omit parts of the creative. "
     "Press commentary and biographies are excluded.",
     "Reviewed standalone image ads use local OCR with image hashes, line coordinates, "
@@ -235,7 +239,7 @@ def prepare(root: Path) -> dict:
             "semantic_classifier": "not published; no representative held-out evaluation",
             "extraction": "publisher transcripts, flagged publisher-quoted ad copy, "
             "public English captions, reviewed image ads, Google preview OCR and native "
-            "Snap speech/frame extraction; "
+            "Snap and reviewed campaign-original speech/frame extraction; "
             "language detector excludes non-English/uncertain",
             "independent_human_gold": False,
         },

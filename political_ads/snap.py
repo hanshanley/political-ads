@@ -523,12 +523,16 @@ def collect_snap(
     until: str,
     limit: int = 0,
     offline: bool = False,
+    ad_ids: list[str] | None = None,
 ) -> dict:
     if not START <= until <= min(date.today().isoformat(), END) or limit < 0:
         raise ValueError("Snap collection requires an in-scope cutoff and nonnegative limit")
     discovery = read_json(root / "outputs/snap-discovery.json", None)
     if discovery is None or discovery["until"] != until:
         discovery = discover_snap(root, until)
+    selected = set(ad_ids or [])
+    if selected - {lead["id"] for lead in discovery["leads"]}:
+        raise ValueError("Selected Snap ad IDs must exist in the discovery inventory")
     path = root / "data/site/snap.json"
     snapshot = read_json(path, {"ads": [], "sources": []})
     ads = {ad["id"]: ad for ad in snapshot["ads"]}
@@ -589,6 +593,8 @@ def collect_snap(
     for video in (False, True):
         groups = defaultdict(list)
         for lead in discovery["leads"]:
+            if selected and lead["id"] not in selected:
+                continue
             if (lead["media_type"] == "mp4") == video:
                 groups[lead["publisher"]["source"]].append(lead)
         while groups:

@@ -1,0 +1,52 @@
+{
+  "reviews": [
+    {
+      "id": "bresnahan-native-122245820438111841",
+      "source": "bresnahan-native",
+      "publisher_url": "https://robforpa.com/",
+      "post_url": "https://www.facebook.com/122245820438111841",
+      "post_id": "122245820438111841",
+      "post_timestamp": 1792967575,
+      "title": "NEPA is home",
+      "title_basis": "Opening words of the publisher's post caption, not a verified creative title",
+      "sponsor": "Rob for PA",
+      "candidate_id": "H4PA08124",
+      "media_sha256": "53615176c8c5b9160cedfe8df00cdbc5dbaf79d367d91f96c7185451cf3f9858",
+      "required_quotes": ["I'm Rob Bresnahan and I approve this message."],
+      "reviewed": "2026-10-27",
+      "ad_evidence": "30-second campaign original with candidate approval and Rob for PA payer disclaimer; campaign's own feed supplies an exact post timestamp. This is not a paid-delivery record."
+    },
+    {
+      "id": "bresnahan-native-122245613072111841",
+      "source": "bresnahan-native",
+      "publisher_url": "https://robforpa.com/",
+      "post_url": "https://www.facebook.com/122245613072111841",
+      "post_id": "122245613072111841",
+      "post_timestamp": 1792787350,
+      "title": "I went to Washington to get things done for NEPA",
+      "title_basis": "Opening sentence of the publisher's post caption, not a verified creative title",
+      "sponsor": "Rob for PA",
+      "candidate_id": "H4PA08124",
+      "media_sha256": "884e418a2e0d6b111b2ffbc7d033f5f3c2cd1ca8aa49680ad54c5cac1d61650d",
+      "required_quotes": ["ROB BRESNAHAN", "VOTE NOV. 3RD"],
+      "reviewed": "2026-10-27",
+      "ad_evidence": "30-second campaign original with candidate approval and Rob for PA payer disclaimer. Campaign feed provides an exact timestamp. Similarity to the separately announced Baloney ad does not verify identical executions or an earlier release date.",
+      "extraction_caveat": "Base-model ASR is noisy, including the candidate's name and the opening taxes-on-tips/overtime passage. Preserve the machine output without silently repairing names or negation."
+    },
+    {
+      "id": "herrera-native-9bd70329b03ece7b",
+      "source": "herrera-native",
+      "publisher_url": "https://brandonherreraforcongress.com/",
+      "media_url": "https://brandonherreraforcongress.nyc3.cdn.digitaloceanspaces.com/website/ads/Herrera_Ad26_March%201.mp4",
+      "title": "Brandon Herrera campaign-linked 30-second ad",
+      "sponsor": "Brandon Herrera for Congress",
+      "candidate_id": "H4TX23120",
+      "media_sha256": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+      "required_quotes": ["PAID FOR BY BRANDON HERRERA FOR CONGRESS. APPROVED BY BRANDON HERRERA."],
+      "reviewed": "2026-10-27",
+      "ad_evidence": "Actual original is a 30-second candidate ad with approval and payer disclaimer, despite a misleading homepage modal label describing a rally speech.",
+      "date_uncertainty": "The filename suggests March 1, 2026 but is not a verified release date. Storage Last-Modified is October 12, 2026. Homepage datePublished is November 12, 2025 and dateModified is June 10, 2026; neither dates this creative. Excluded from the dated corpus until release or in-window delivery is verified.",
+      "extraction_caveat": "ASR says Braden Herrera. Preserve that machine error, the original OCR and the verified FEC identity separately."
+    }
+  ]
+}

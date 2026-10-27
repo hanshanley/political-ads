@@ -205,6 +205,7 @@ def main() -> None:
         "validate",
         "update",
         "media-collect",
+        "campaign-native",
         "media-discover",
         "image-collect",
         "google-discover",
@@ -219,6 +220,7 @@ def main() -> None:
             "collect",
             "update",
             "media-collect",
+            "campaign-native",
             "media-discover",
             "image-collect",
             "google-discover",
@@ -239,9 +241,15 @@ def main() -> None:
             command_parser.add_argument("--retry-failed", action="store_true")
         if command in {"google-collect", "snap-collect"}:
             command_parser.add_argument("--limit", type=int, default=0)
+        if command == "snap-collect":
+            command_parser.add_argument("--ad-id", action="append")
     args = parser.parse_args()
     root = args.root.resolve()
     try:
+        if args.command == "campaign-native":
+            from political_ads.campaign_native import collect_campaign_native
+
+            collect_campaign_native(root, args.until, args.offline)
         if args.command == "snap-discover":
             from political_ads.snap import discover_snap
 
@@ -249,7 +257,9 @@ def main() -> None:
         if args.command == "snap-collect":
             from political_ads.snap import collect_snap
 
-            collect_snap(root, args.until, limit=args.limit, offline=args.offline)
+            collect_snap(
+                root, args.until, limit=args.limit, offline=args.offline, ad_ids=args.ad_id
+            )
         if args.command == "google-discover":
             from political_ads.google import discover_google
 

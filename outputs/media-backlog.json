@@ -7963,6 +7963,2997 @@
       "video_id": "zSti8jssJT4",
       "video_url": "https://www.youtube.com/watch?v=zSti8jssJT4",
       "written_ad_ids": []
+    },
+    {
+      "alignment": "R",
+      "date_basis": "release_and_delivery_dates_unverified",
+      "date_uncertainty": "The filename suggests March 1, 2026 but is not a verified release date. Storage Last-Modified is October 12, 2026. Homepage datePublished is November 12, 2025 and dateModified is June 10, 2026; neither dates this creative. Excluded from the dated corpus until release or in-window delivery is verified.",
+      "id": "herrera-native-9bd70329b03ece7b",
+      "native_evidence": {
+        "ad_evidence": "Actual original is a 30-second candidate ad with approval and payer disclaimer, despite a misleading homepage modal label describing a rally speech.",
+        "candidate_id": "H4TX23120",
+        "date_uncertainty": "The filename suggests March 1, 2026 but is not a verified release date. Storage Last-Modified is October 12, 2026. Homepage datePublished is November 12, 2025 and dateModified is June 10, 2026; neither dates this creative. Excluded from the dated corpus until release or in-window delivery is verified.",
+        "extraction_caveat": "ASR says Braden Herrera. Preserve that machine error, the original OCR and the verified FEC identity separately.",
+        "id": "herrera-native-9bd70329b03ece7b",
+        "media_sha256": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+        "media_url": "https://brandonherreraforcongress.nyc3.cdn.digitaloceanspaces.com/website/ads/Herrera_Ad26_March%201.mp4",
+        "publisher_html_sha256": "04d908ae9d6b401a9a878481bdcbc430bdab4e82306b3257c460a1ac95642b91",
+        "publisher_url": "https://brandonherreraforcongress.com/",
+        "required_quotes": [
+          "PAID FOR BY BRANDON HERRERA FOR CONGRESS. APPROVED BY BRANDON HERRERA."
+        ],
+        "reviewed": "2026-10-27",
+        "source": "herrera-native",
+        "speech_engine": {
+          "engine": "faster-whisper 1.2.1",
+          "has_audio": true,
+          "language": "en",
+          "language_probability": 0.9931064248085022,
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "settings": {
+            "beam_size": 5,
+            "condition_on_previous_text": false,
+            "temperature": 0,
+            "vad_filter": true,
+            "word_timestamps": true
+          },
+          "word_alignment_error": null
+        },
+        "sponsor": "Brandon Herrera for Congress",
+        "title": "Brandon Herrera campaign-linked 30-second ad"
+      },
+      "quality_flags": [
+        "local_speech_and_frame_ocr_not_manually_verified",
+        "automatic_speech_may_misrecognize_names_or_negation",
+        "release_and_delivery_dates_unverified"
+      ],
+      "recovered_segments": [
+        {
+          "avg_logprob": -0.1195927374646999,
+          "end_seconds": 4.76,
+          "excluded_low_confidence_ocr_observations": [
+            {
+              "bounds": [
+                0.7170869593317084,
+                0.6244825836923091,
+                0.10801358222961421,
+                0.06770149866739916
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 4.971633333333333,
+              "text": "-riH"
+            },
+            {
+              "bounds": [
+                0.190624999453125,
+                0.622222222037037,
+                0.09843750000000001,
+                0.061111111111111116
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 12.979633333333334,
+              "text": "LNF"
+            },
+            {
+              "bounds": [
+                0.5890624999218751,
+                0.5638888886805555,
+                0.018750000000000044,
+                0.016666666666666607
+              ],
+              "confidence": 0.5,
+              "seconds": 19.986633333333334,
+              "text": "PEMSE"
+            },
+            {
+              "bounds": [
+                0.065625000453125,
+                0.5972222224166667,
+                0.045312500000000006,
+                0.025000000000000022
+              ],
+              "confidence": 0.5,
+              "seconds": 21.988633333333333,
+              "text": "SHERSSA"
+            },
+            {
+              "bounds": [
+                0.05933021583643825,
+                0.5941794140288452,
+                0.05165206789970398,
+                0.02830783791012237
+              ],
+              "confidence": 0.5,
+              "seconds": 22.989633333333334,
+              "text": "MMERASA"
+            },
+            {
+              "bounds": [
+                0.012500000453124993,
+                0.5972222223888889,
+                0.0453125,
+                0.022222222222222254
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 24.991633333333333,
+              "text": "CHERSRA"
+            },
+            {
+              "bounds": [
+                0.0015625018286577752,
+                0.6194444454770887,
+                0.04843749701976776,
+                0.02222222089767456
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 26.99363333333333,
+              "text": "ДнЕрЬвА"
+            },
+            {
+              "bounds": [
+                0.30000000036458335,
+                0.6416666667592592,
+                0.021874999999999978,
+                0.016666666666666607
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 27.994633333333333,
+              "text": "ET5oL"
+            },
+            {
+              "bounds": [
+                0.5625614078486838,
+                0.6313925278483485,
+                0.04278111457824707,
+                0.03426734606424975
+              ],
+              "confidence": 0.5,
+              "seconds": 27.994633333333333,
+              "text": "BMERRERA"
+            },
+            {
+              "bounds": [
+                0.07343750065104164,
+                0.6333333335185185,
+                0.0390625,
+                0.01666666666666672
+              ],
+              "confidence": 0.5,
+              "seconds": 28.995633333333334,
+              "text": "MERREAS"
+            },
+            {
+              "bounds": [
+                0.3453125000937499,
+                0.6277777773611111,
+                0.03750000000000003,
+                0.04166666666666674
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 29.963266666666666,
+              "text": "MHERÍ"
+            }
+          ],
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.13047243654727936,
+          "speech_detection": {
+            "has_audio": true,
+            "language": "en",
+            "language_probability": 0.9931064248085022,
+            "settings": {
+              "beam_size": 5,
+              "condition_on_previous_text": false,
+              "temperature": 0,
+              "vad_filter": true,
+              "word_timestamps": true
+            },
+            "word_alignment_error": null
+          },
+          "speech_duplicate_ocr_observations": [
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.1791666791972859,
+                    0.10370370407407403,
+                    0.6416666507720946,
+                    0.11157407230801053
+                  ],
+                  "confidence": 1,
+                  "seconds": 16.983633333333334,
+                  "text": "SECURITY AND OPPORTUNITY"
+                },
+                {
+                  "bounds": [
+                    0.17916667862436916,
+                    0.10370370412037022,
+                    0.6416666507720947,
+                    0.11157407230801053
+                  ],
+                  "confidence": 1,
+                  "seconds": 17.984633333333335,
+                  "text": "SECURITY AND OPPORTUNITY"
+                },
+                {
+                  "bounds": [
+                    0.17916667862436916,
+                    0.10370370412037022,
+                    0.6416666507720947,
+                    0.11157407230801053
+                  ],
+                  "confidence": 1,
+                  "seconds": 18.985633333333332,
+                  "text": "SECURITY AND OPPORTUNITY"
+                },
+                {
+                  "bounds": [
+                    0.18281249658854168,
+                    0.11111111166666665,
+                    0.6328125,
+                    0.09999999999999998
+                  ],
+                  "confidence": 1,
+                  "seconds": 19.986633333333334,
+                  "text": "SECURITY AND OPPORTUNITY"
+                }
+              ],
+              "text": "SECURITY AND OPPORTUNITY"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.162500000875,
+                    0.6444444446111111,
+                    0.08749999999999997,
+                    0.0277777777777779
+                  ],
+                  "confidence": 1,
+                  "seconds": 19.986633333333334,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.23271514968036255,
+                    0.6573847291533159,
+                    0.08300719857215882,
+                    0.029674985673692533
+                  ],
+                  "confidence": 1,
+                  "seconds": 20.987633333333335,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.24103483514427365,
+                    0.6788251362456278,
+                    0.07562756538391113,
+                    0.039048271709018256
+                  ],
+                  "confidence": 1,
+                  "seconds": 21.988633333333333,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.8839646051264932,
+                    0.5934987840691315,
+                    0.05409648418426516,
+                    0.025086474418640092
+                  ],
+                  "confidence": 1,
+                  "seconds": 21.988633333333333,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.2687055790341543,
+                    0.6412475039678863,
+                    0.07352634072303771,
+                    0.025838324758741593
+                  ],
+                  "confidence": 1,
+                  "seconds": 22.989633333333334,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.8062139307025138,
+                    0.6025430361938411,
+                    0.04538463950157168,
+                    0.022691705491807657
+                  ],
+                  "confidence": 1,
+                  "seconds": 22.989633333333334,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.26250000085937497,
+                    0.6305555557777778,
+                    0.0859375,
+                    0.033333333333333215
+                  ],
+                  "confidence": 1,
+                  "seconds": 23.990633333333335,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.7765625007349077,
+                    0.6083333331944445,
+                    0.045312497019767806,
+                    0.019444444444444375
+                  ],
+                  "confidence": 1,
+                  "seconds": 23.990633333333335,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.27289365240162533,
+                    0.6435850217165093,
+                    0.07150810956954956,
+                    0.031407303280300614
+                  ],
+                  "confidence": 1,
+                  "seconds": 24.991633333333333,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.774999999546875,
+                    0.6083333331666667,
+                    0.04531249999999998,
+                    0.022222222222222143
+                  ],
+                  "confidence": 1,
+                  "seconds": 24.991633333333333,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.2602876123555902,
+                    0.6370698124658198,
+                    0.07652792930603025,
+                    0.033665193451775544
+                  ],
+                  "confidence": 1,
+                  "seconds": 25.992633333333334,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.893750000625,
+                    0.6305555556944444,
+                    0.03749999999999998,
+                    0.01388888888888884
+                  ],
+                  "confidence": 1,
+                  "seconds": 25.992633333333334,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.7671453738711705,
+                    0.6024209723054114,
+                    0.04383425116538997,
+                    0.017380277315775516
+                  ],
+                  "confidence": 1,
+                  "seconds": 25.992633333333334,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.26245064065874646,
+                    0.6384222559163251,
+                    0.073536217212677,
+                    0.025933265686035156
+                  ],
+                  "confidence": 1,
+                  "seconds": 26.99363333333333,
+                  "text": "HERRERA"
+                },
+                {
+                  "bounds": [
+                    0.7577943911655196,
+                    0.597070651657436,
+                    0.043786218762397855,
+                    0.016969807942708415
+                  ],
+                  "confidence": 1,
+                  "seconds": 26.99363333333333,
+                  "text": "HERRERA"
+                }
+              ],
+              "text": "HERRERA"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.09687499632102278,
+                    0.23611111125000006,
+                    0.8093750000000001,
+                    0.13611111111111107
+                  ],
+                  "confidence": 1,
+                  "seconds": 22.989633333333334,
+                  "text": "KEEP TEXAS A GREAT PLACE TO LIVE,"
+                },
+                {
+                  "bounds": [
+                    0.09843750305889412,
+                    0.23611111058760692,
+                    0.8078125,
+                    0.13611111111111107
+                  ],
+                  "confidence": 1,
+                  "seconds": 23.990633333333335,
+                  "text": "KEEP TEXAS A GREAT PLACE TO LIVE,"
+                },
+                {
+                  "bounds": [
+                    0.09687500285714279,
+                    0.23611111062500012,
+                    0.809375,
+                    0.13611111111111096
+                  ],
+                  "confidence": 1,
+                  "seconds": 24.991633333333333,
+                  "text": "KEEP TEXAS A GREAT PLACE TO LIVE,"
+                },
+                {
+                  "bounds": [
+                    0.09687499632102278,
+                    0.23611111107323224,
+                    0.8093750000000001,
+                    0.13611111111111118
+                  ],
+                  "confidence": 1,
+                  "seconds": 25.992633333333334,
+                  "text": "KEEP TEXAS A GREAT PLACE TO LIVE,"
+                },
+                {
+                  "bounds": [
+                    0.09687499662760421,
+                    0.23611111107638894,
+                    0.8093750000000001,
+                    0.13611111111111107
+                  ],
+                  "confidence": 1,
+                  "seconds": 26.99363333333333,
+                  "text": "KEEP TEXAS A GREAT PLACE TO LIVE,"
+                }
+              ],
+              "text": "KEEP TEXAS A GREAT PLACE TO LIVE,"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.06249999931818184,
+                    0.10833333380050503,
+                    0.871875,
+                    0.10277777777777786
+                  ],
+                  "confidence": 1,
+                  "seconds": 22.989633333333334,
+                  "text": "START A BUSINESS AND RAISE A FAMILY"
+                },
+                {
+                  "bounds": [
+                    0.06249999658854168,
+                    0.10833333291666669,
+                    0.8718750000000001,
+                    0.09999999999999998
+                  ],
+                  "confidence": 1,
+                  "seconds": 23.990633333333335,
+                  "text": "START A BUSINESS AND RAISE A FAMILY"
+                },
+                {
+                  "bounds": [
+                    0.06249999658854168,
+                    0.10833333291666669,
+                    0.8718750000000001,
+                    0.09999999999999998
+                  ],
+                  "confidence": 1,
+                  "seconds": 24.991633333333333,
+                  "text": "START A BUSINESS AND RAISE A FAMILY"
+                },
+                {
+                  "bounds": [
+                    0.06249999931818184,
+                    0.10833333380050503,
+                    0.871875,
+                    0.10277777777777786
+                  ],
+                  "confidence": 1,
+                  "seconds": 25.992633333333334,
+                  "text": "START A BUSINESS AND RAISE A FAMILY"
+                },
+                {
+                  "bounds": [
+                    0.062499999311079524,
+                    0.10833333380050503,
+                    0.8734374999999999,
+                    0.10277777777777786
+                  ],
+                  "confidence": 1,
+                  "seconds": 26.99363333333333,
+                  "text": "START A BUSINESS AND RAISE A FAMILY"
+                }
+              ],
+              "text": "START A BUSINESS AND RAISE A FAMILY"
+            }
+          ],
+          "start_seconds": 0.0,
+          "text": "I'm Braden Herrera, and I approve this message because I'm proud of my family's deep roots in Southwest Texas",
+          "video_sampling": {
+            "duration_seconds": 30.03,
+            "sample_interval_seconds": 1
+          },
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 0.24,
+              "probability": 0.7974162697792053,
+              "start_seconds": 0.0,
+              "text": " I'm"
+            },
+            {
+              "end_seconds": 0.48,
+              "probability": 0.6814793199300766,
+              "start_seconds": 0.24,
+              "text": " Braden"
+            },
+            {
+              "end_seconds": 0.8,
+              "probability": 0.9574661552906036,
+              "start_seconds": 0.48,
+              "text": " Herrera,"
+            },
+            {
+              "end_seconds": 1.14,
+              "probability": 0.9642358422279358,
+              "start_seconds": 1.14,
+              "text": " and"
+            },
+            {
+              "end_seconds": 1.24,
+              "probability": 0.9950131773948669,
+              "start_seconds": 1.14,
+              "text": " I"
+            },
+            {
+              "end_seconds": 1.48,
+              "probability": 0.9400914311408997,
+              "start_seconds": 1.24,
+              "text": " approve"
+            },
+            {
+              "end_seconds": 1.68,
+              "probability": 0.9950329065322876,
+              "start_seconds": 1.48,
+              "text": " this"
+            },
+            {
+              "end_seconds": 2.0,
+              "probability": 0.9958374500274658,
+              "start_seconds": 1.68,
+              "text": " message"
+            },
+            {
+              "end_seconds": 2.28,
+              "probability": 0.8485967516899109,
+              "start_seconds": 2.0,
+              "text": " because"
+            },
+            {
+              "end_seconds": 2.5,
+              "probability": 0.9833859503269196,
+              "start_seconds": 2.28,
+              "text": " I'm"
+            },
+            {
+              "end_seconds": 2.8,
+              "probability": 0.9986086487770081,
+              "start_seconds": 2.5,
+              "text": " proud"
+            },
+            {
+              "end_seconds": 2.92,
+              "probability": 0.979880154132843,
+              "start_seconds": 2.8,
+              "text": " of"
+            },
+            {
+              "end_seconds": 3.04,
+              "probability": 0.9876032471656799,
+              "start_seconds": 2.92,
+              "text": " my"
+            },
+            {
+              "end_seconds": 3.48,
+              "probability": 0.9573774337768555,
+              "start_seconds": 3.04,
+              "text": " family's"
+            },
+            {
+              "end_seconds": 3.64,
+              "probability": 0.9114781022071838,
+              "start_seconds": 3.48,
+              "text": " deep"
+            },
+            {
+              "end_seconds": 3.84,
+              "probability": 0.9927869439125061,
+              "start_seconds": 3.64,
+              "text": " roots"
+            },
+            {
+              "end_seconds": 3.98,
+              "probability": 0.9776517748832703,
+              "start_seconds": 3.84,
+              "text": " in"
+            },
+            {
+              "end_seconds": 4.3,
+              "probability": 0.7163749933242798,
+              "start_seconds": 3.98,
+              "text": " Southwest"
+            },
+            {
+              "end_seconds": 4.76,
+              "probability": 0.9945671558380127,
+              "start_seconds": 4.3,
+              "text": " Texas"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.1195927374646999,
+          "end_seconds": 8.38,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.13047243654727936,
+          "start_seconds": 4.76,
+          "text": "going back to five generations and all of the opportunities it's given us.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 5.3,
+              "probability": 0.19419141113758087,
+              "start_seconds": 4.76,
+              "text": " going"
+            },
+            {
+              "end_seconds": 5.46,
+              "probability": 0.9958167672157288,
+              "start_seconds": 5.3,
+              "text": " back"
+            },
+            {
+              "end_seconds": 5.66,
+              "probability": 0.7679229974746704,
+              "start_seconds": 5.46,
+              "text": " to"
+            },
+            {
+              "end_seconds": 5.8,
+              "probability": 0.8385854363441467,
+              "start_seconds": 5.66,
+              "text": " five"
+            },
+            {
+              "end_seconds": 6.36,
+              "probability": 0.9974028468132019,
+              "start_seconds": 5.8,
+              "text": " generations"
+            },
+            {
+              "end_seconds": 6.94,
+              "probability": 0.7116792798042297,
+              "start_seconds": 6.36,
+              "text": " and"
+            },
+            {
+              "end_seconds": 7.06,
+              "probability": 0.9949605464935303,
+              "start_seconds": 6.94,
+              "text": " all"
+            },
+            {
+              "end_seconds": 7.18,
+              "probability": 0.8946181535720825,
+              "start_seconds": 7.06,
+              "text": " of"
+            },
+            {
+              "end_seconds": 7.26,
+              "probability": 0.9985476136207581,
+              "start_seconds": 7.18,
+              "text": " the"
+            },
+            {
+              "end_seconds": 7.72,
+              "probability": 0.9941599369049072,
+              "start_seconds": 7.26,
+              "text": " opportunities"
+            },
+            {
+              "end_seconds": 7.96,
+              "probability": 0.8483487963676453,
+              "start_seconds": 7.72,
+              "text": " it's"
+            },
+            {
+              "end_seconds": 8.14,
+              "probability": 0.9139403700828552,
+              "start_seconds": 7.96,
+              "text": " given"
+            },
+            {
+              "end_seconds": 8.38,
+              "probability": 0.9914770722389221,
+              "start_seconds": 8.14,
+              "text": " us."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.1195927374646999,
+          "end_seconds": 13.56,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.13047243654727936,
+          "start_seconds": 8.58,
+          "text": "It's where I grew my firearm manufacturing business, creating good, high-paying jobs for my fellow Texans.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 8.7,
+              "probability": 0.9403431415557861,
+              "start_seconds": 8.58,
+              "text": " It's"
+            },
+            {
+              "end_seconds": 8.8,
+              "probability": 0.9929023385047913,
+              "start_seconds": 8.7,
+              "text": " where"
+            },
+            {
+              "end_seconds": 8.9,
+              "probability": 0.9955961108207703,
+              "start_seconds": 8.8,
+              "text": " I"
+            },
+            {
+              "end_seconds": 9.02,
+              "probability": 0.9893373250961304,
+              "start_seconds": 8.9,
+              "text": " grew"
+            },
+            {
+              "end_seconds": 9.2,
+              "probability": 0.9872499108314514,
+              "start_seconds": 9.02,
+              "text": " my"
+            },
+            {
+              "end_seconds": 9.56,
+              "probability": 0.8988234996795654,
+              "start_seconds": 9.2,
+              "text": " firearm"
+            },
+            {
+              "end_seconds": 10.18,
+              "probability": 0.9924066662788391,
+              "start_seconds": 9.56,
+              "text": " manufacturing"
+            },
+            {
+              "end_seconds": 10.72,
+              "probability": 0.990400493144989,
+              "start_seconds": 10.18,
+              "text": " business,"
+            },
+            {
+              "end_seconds": 11.1,
+              "probability": 0.9938575625419617,
+              "start_seconds": 10.98,
+              "text": " creating"
+            },
+            {
+              "end_seconds": 11.48,
+              "probability": 0.9974538683891296,
+              "start_seconds": 11.1,
+              "text": " good,"
+            },
+            {
+              "end_seconds": 11.9,
+              "probability": 0.9757221341133118,
+              "start_seconds": 11.74,
+              "text": " high"
+            },
+            {
+              "end_seconds": 12.24,
+              "probability": 0.8213495413462321,
+              "start_seconds": 11.9,
+              "text": "-paying"
+            },
+            {
+              "end_seconds": 12.54,
+              "probability": 0.999289870262146,
+              "start_seconds": 12.24,
+              "text": " jobs"
+            },
+            {
+              "end_seconds": 12.8,
+              "probability": 0.8028612732887268,
+              "start_seconds": 12.54,
+              "text": " for"
+            },
+            {
+              "end_seconds": 12.92,
+              "probability": 0.9968788623809814,
+              "start_seconds": 12.8,
+              "text": " my"
+            },
+            {
+              "end_seconds": 13.14,
+              "probability": 0.9918619394302368,
+              "start_seconds": 12.92,
+              "text": " fellow"
+            },
+            {
+              "end_seconds": 13.56,
+              "probability": 0.9888162314891815,
+              "start_seconds": 13.14,
+              "text": " Texans."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.1195927374646999,
+          "end_seconds": 19.36,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.13047243654727936,
+          "start_seconds": 13.92,
+          "text": "My campaign for Congress is about fighting for greater affordability, security, and opportunity for all of us.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 14.0,
+              "probability": 0.9902042150497437,
+              "start_seconds": 13.92,
+              "text": " My"
+            },
+            {
+              "end_seconds": 14.34,
+              "probability": 0.9814974069595337,
+              "start_seconds": 14.0,
+              "text": " campaign"
+            },
+            {
+              "end_seconds": 14.54,
+              "probability": 0.9968646168708801,
+              "start_seconds": 14.34,
+              "text": " for"
+            },
+            {
+              "end_seconds": 14.86,
+              "probability": 0.9611631631851196,
+              "start_seconds": 14.54,
+              "text": " Congress"
+            },
+            {
+              "end_seconds": 15.06,
+              "probability": 0.9914007782936096,
+              "start_seconds": 14.86,
+              "text": " is"
+            },
+            {
+              "end_seconds": 15.28,
+              "probability": 0.9988848567008972,
+              "start_seconds": 15.06,
+              "text": " about"
+            },
+            {
+              "end_seconds": 15.62,
+              "probability": 0.9946921467781067,
+              "start_seconds": 15.28,
+              "text": " fighting"
+            },
+            {
+              "end_seconds": 15.8,
+              "probability": 0.9989271759986877,
+              "start_seconds": 15.62,
+              "text": " for"
+            },
+            {
+              "end_seconds": 16.12,
+              "probability": 0.9941787719726562,
+              "start_seconds": 15.8,
+              "text": " greater"
+            },
+            {
+              "end_seconds": 16.86,
+              "probability": 0.9897810220718384,
+              "start_seconds": 16.12,
+              "text": " affordability,"
+            },
+            {
+              "end_seconds": 17.54,
+              "probability": 0.9840977787971497,
+              "start_seconds": 17.24,
+              "text": " security,"
+            },
+            {
+              "end_seconds": 18.06,
+              "probability": 0.9750301837921143,
+              "start_seconds": 17.78,
+              "text": " and"
+            },
+            {
+              "end_seconds": 18.54,
+              "probability": 0.9892918467521667,
+              "start_seconds": 18.06,
+              "text": " opportunity"
+            },
+            {
+              "end_seconds": 18.84,
+              "probability": 0.9966247081756592,
+              "start_seconds": 18.54,
+              "text": " for"
+            },
+            {
+              "end_seconds": 19.02,
+              "probability": 0.9990296363830566,
+              "start_seconds": 18.84,
+              "text": " all"
+            },
+            {
+              "end_seconds": 19.14,
+              "probability": 0.9982520937919617,
+              "start_seconds": 19.02,
+              "text": " of"
+            },
+            {
+              "end_seconds": 19.36,
+              "probability": 0.9993683695793152,
+              "start_seconds": 19.14,
+              "text": " us."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.1195927374646999,
+          "end_seconds": 26.86,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.13047243654727936,
+          "start_seconds": 19.82,
+          "text": "And I'm asking you to join our movement to keep Texas a great place to live, start a business, and raise a family for the next five generations.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 19.9,
+              "probability": 0.9436596632003784,
+              "start_seconds": 19.82,
+              "text": " And"
+            },
+            {
+              "end_seconds": 20.1,
+              "probability": 0.9833498597145081,
+              "start_seconds": 19.9,
+              "text": " I'm"
+            },
+            {
+              "end_seconds": 20.34,
+              "probability": 0.9976372718811035,
+              "start_seconds": 20.1,
+              "text": " asking"
+            },
+            {
+              "end_seconds": 20.52,
+              "probability": 0.9965433478355408,
+              "start_seconds": 20.34,
+              "text": " you"
+            },
+            {
+              "end_seconds": 20.62,
+              "probability": 0.9929048418998718,
+              "start_seconds": 20.52,
+              "text": " to"
+            },
+            {
+              "end_seconds": 20.86,
+              "probability": 0.9957404136657715,
+              "start_seconds": 20.62,
+              "text": " join"
+            },
+            {
+              "end_seconds": 21.0,
+              "probability": 0.9959303736686707,
+              "start_seconds": 20.86,
+              "text": " our"
+            },
+            {
+              "end_seconds": 21.26,
+              "probability": 0.9729406833648682,
+              "start_seconds": 21.0,
+              "text": " movement"
+            },
+            {
+              "end_seconds": 21.44,
+              "probability": 0.9690477252006531,
+              "start_seconds": 21.26,
+              "text": " to"
+            },
+            {
+              "end_seconds": 21.6,
+              "probability": 0.9987264275550842,
+              "start_seconds": 21.44,
+              "text": " keep"
+            },
+            {
+              "end_seconds": 21.92,
+              "probability": 0.9930468201637268,
+              "start_seconds": 21.6,
+              "text": " Texas"
+            },
+            {
+              "end_seconds": 22.08,
+              "probability": 0.9944341778755188,
+              "start_seconds": 21.92,
+              "text": " a"
+            },
+            {
+              "end_seconds": 22.28,
+              "probability": 0.9984581470489502,
+              "start_seconds": 22.08,
+              "text": " great"
+            },
+            {
+              "end_seconds": 22.56,
+              "probability": 0.9982374906539917,
+              "start_seconds": 22.28,
+              "text": " place"
+            },
+            {
+              "end_seconds": 22.74,
+              "probability": 0.9983415603637695,
+              "start_seconds": 22.56,
+              "text": " to"
+            },
+            {
+              "end_seconds": 22.94,
+              "probability": 0.9982538819313049,
+              "start_seconds": 22.74,
+              "text": " live,"
+            },
+            {
+              "end_seconds": 23.52,
+              "probability": 0.9917499423027039,
+              "start_seconds": 23.38,
+              "text": " start"
+            },
+            {
+              "end_seconds": 23.66,
+              "probability": 0.9514055252075195,
+              "start_seconds": 23.52,
+              "text": " a"
+            },
+            {
+              "end_seconds": 23.94,
+              "probability": 0.999624490737915,
+              "start_seconds": 23.66,
+              "text": " business,"
+            },
+            {
+              "end_seconds": 24.46,
+              "probability": 0.9867635369300842,
+              "start_seconds": 24.28,
+              "text": " and"
+            },
+            {
+              "end_seconds": 24.6,
+              "probability": 0.9943965673446655,
+              "start_seconds": 24.46,
+              "text": " raise"
+            },
+            {
+              "end_seconds": 24.74,
+              "probability": 0.9887768626213074,
+              "start_seconds": 24.6,
+              "text": " a"
+            },
+            {
+              "end_seconds": 25.08,
+              "probability": 0.9982014894485474,
+              "start_seconds": 24.74,
+              "text": " family"
+            },
+            {
+              "end_seconds": 25.96,
+              "probability": 0.6938878893852234,
+              "start_seconds": 25.08,
+              "text": " for"
+            },
+            {
+              "end_seconds": 26.06,
+              "probability": 0.9990733861923218,
+              "start_seconds": 25.96,
+              "text": " the"
+            },
+            {
+              "end_seconds": 26.2,
+              "probability": 0.9968137145042419,
+              "start_seconds": 26.06,
+              "text": " next"
+            },
+            {
+              "end_seconds": 26.42,
+              "probability": 0.984408438205719,
+              "start_seconds": 26.2,
+              "text": " five"
+            },
+            {
+              "end_seconds": 26.86,
+              "probability": 0.9965882301330566,
+              "start_seconds": 26.42,
+              "text": " generations."
+            }
+          ]
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 0.9676333333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.22656249864211303,
+                0.1194444443187831,
+                0.5703125,
+                0.125
+              ],
+              "confidence": 1,
+              "seconds": 0.9676333333333333,
+              "text": "BRANDON HERRERA"
+            }
+          ],
+          "image_bounds": [
+            0.22656249864211303,
+            0.1194444443187831,
+            0.5703125,
+            0.125
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 0.9676333333333333,
+          "text": "BRANDON HERRERA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 1.9686333333333332,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.2265625013322369,
+                0.11944444458333325,
+                0.50625,
+                0.125
+              ],
+              "confidence": 1,
+              "seconds": 1.9686333333333332,
+              "text": "BRANDON HERRE"
+            }
+          ],
+          "image_bounds": [
+            0.2265625013322369,
+            0.11944444458333325,
+            0.50625,
+            0.125
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 1.9686333333333332,
+          "text": "BRANDON HERRE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 4.971633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.6339095837215163,
+                0.4678481209079932,
+                0.2774933338165284,
+                0.10597042507595478
+              ],
+              "confidence": 1,
+              "seconds": 4.971633333333333,
+              "text": "GENERATION"
+            },
+            {
+              "bounds": [
+                0.6338817721943348,
+                0.46757347859818454,
+                0.27754895687103276,
+                0.1065197096930609
+              ],
+              "confidence": 1,
+              "seconds": 5.9726333333333335,
+              "text": "GENERATION"
+            }
+          ],
+          "image_bounds": [
+            0.6339095837215163,
+            0.4678481209079932,
+            0.2774933338165284,
+            0.10597042507595478
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 4.971633333333333,
+          "text": "GENERATION",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 4.971633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.6948625740763796,
+                0.3173678712432656,
+                0.1524623513221739,
+                0.1097087012396919
+              ],
+              "confidence": 1,
+              "seconds": 4.971633333333333,
+              "text": "TEXAN"
+            },
+            {
+              "bounds": [
+                0.6950410303156451,
+                0.32094336042465854,
+                0.15210543870925897,
+                0.10533550050523544
+              ],
+              "confidence": 1,
+              "seconds": 5.9726333333333335,
+              "text": "TEXAN"
+            }
+          ],
+          "image_bounds": [
+            0.6948625740763796,
+            0.3173678712432656,
+            0.1524623513221739,
+            0.1097087012396919
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 4.971633333333333,
+          "text": "TEXAN",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 5.9726333333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.7015624994270834,
+                0.6166666672685185,
+                0.13437500000000002,
+                0.10833333333333328
+              ],
+              "confidence": 1,
+              "seconds": 5.9726333333333335,
+              "text": "FIFTH"
+            }
+          ],
+          "image_bounds": [
+            0.7015624994270834,
+            0.6166666672685185,
+            0.13437500000000002,
+            0.10833333333333328
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 5.9726333333333335,
+          "text": "FIFTH",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 9.976633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5828125009492188,
+                0.5777777779166666,
+                0.37968749999999984,
+                0.09999999999999998
+              ],
+              "confidence": 1,
+              "seconds": 9.976633333333334,
+              "text": "SMALL BUSINESS"
+            },
+            {
+              "bounds": [
+                0.5828125009991776,
+                0.5777777779093567,
+                0.37968750000000007,
+                0.10000000000000009
+              ],
+              "confidence": 1,
+              "seconds": 10.977633333333333,
+              "text": "SMALL BUSINESS"
+            },
+            {
+              "bounds": [
+                0.5497915295655391,
+                0.5681303464898063,
+                0.44625029563903806,
+                0.1378133826785618
+              ],
+              "confidence": 1,
+              "seconds": 11.978633333333333,
+              "text": "\"SMALL BUSINESS"
+            }
+          ],
+          "image_bounds": [
+            0.5828125009492188,
+            0.5777777779166666,
+            0.37968749999999984,
+            0.09999999999999998
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 9.976633333333334,
+          "text": "SMALL BUSINESS",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 9.976633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.640410865301231,
+                0.4342270057830987,
+                0.2660532712936403,
+                0.10099043316311307
+              ],
+              "confidence": 1,
+              "seconds": 9.976633333333334,
+              "text": "OWNER AND"
+            },
+            {
+              "bounds": [
+                0.6405299537034802,
+                0.4352836771837896,
+                0.26581509113311763,
+                0.09887709087795682
+              ],
+              "confidence": 1,
+              "seconds": 10.977633333333333,
+              "text": "OWNER AND"
+            },
+            {
+              "bounds": [
+                0.6404124267767728,
+                0.4341837460497425,
+                0.26605014801025384,
+                0.09829917483859596
+              ],
+              "confidence": 1,
+              "seconds": 11.978633333333333,
+              "text": "OWNER AND"
+            }
+          ],
+          "image_bounds": [
+            0.640410865301231,
+            0.4342270057830987,
+            0.2660532712936403,
+            0.10099043316311307
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 9.976633333333334,
+          "text": "OWNER AND",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 9.976633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.6186030852146509,
+                0.2902470004612605,
+                0.3018563270568847,
+                0.10283932685852049
+              ],
+              "confidence": 1,
+              "seconds": 9.976633333333334,
+              "text": "JOB CREATOR"
+            },
+            {
+              "bounds": [
+                0.6201880202887666,
+                0.29043119205849255,
+                0.30181145668029785,
+                0.09969317118326826
+              ],
+              "confidence": 1,
+              "seconds": 10.977633333333333,
+              "text": "JOB CREATOR"
+            },
+            {
+              "bounds": [
+                0.6218749996527778,
+                0.28888888831790127,
+                0.30000000000000004,
+                0.10277777777777786
+              ],
+              "confidence": 1,
+              "seconds": 11.978633333333333,
+              "text": "JOB CREATOR"
+            }
+          ],
+          "image_bounds": [
+            0.6186030852146509,
+            0.2902470004612605,
+            0.3018563270568847,
+            0.10283932685852049
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 9.976633333333334,
+          "text": "JOB CREATOR",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 16.983633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.167187502530048,
+                0.23611111058760692,
+                0.6703125,
+                0.13611111111111107
+              ],
+              "confidence": 1,
+              "seconds": 16.983633333333334,
+              "text": "FIGHTING FOR AFFORDABILITY,"
+            },
+            {
+              "bounds": [
+                0.1671875027408854,
+                0.23611111054398148,
+                0.6703125000000001,
+                0.13611111111111107
+              ],
+              "confidence": 1,
+              "seconds": 17.984633333333335,
+              "text": "FIGHTING FOR AFFORDABILITY,"
+            },
+            {
+              "bounds": [
+                0.1687500025360576,
+                0.23611111058760692,
+                0.66875,
+                0.13611111111111107
+              ],
+              "confidence": 1,
+              "seconds": 18.985633333333332,
+              "text": "FIGHTING FOR AFFORDABILITY,"
+            },
+            {
+              "bounds": [
+                0.1687500025360576,
+                0.23611111058760692,
+                0.66875,
+                0.13611111111111107
+              ],
+              "confidence": 1,
+              "seconds": 19.986633333333334,
+              "text": "FIGHTING FOR AFFORDABILITY,"
+            }
+          ],
+          "image_bounds": [
+            0.167187502530048,
+            0.23611111058760692,
+            0.6703125,
+            0.13611111111111107
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 16.983633333333334,
+          "text": "FIGHTING FOR AFFORDABILITY,",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 18.985633333333332,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.3875000006770833,
+                0.6888888890277778,
+                0.04062499999999997,
+                0.01388888888888884
+              ],
+              "confidence": 1,
+              "seconds": 18.985633333333332,
+              "text": "REEDOM"
+            }
+          ],
+          "image_bounds": [
+            0.3875000006770833,
+            0.6888888890277778,
+            0.04062499999999997,
+            0.01388888888888884
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 18.985633333333332,
+          "text": "REEDOM",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 18.985633333333332,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5390625004492188,
+                0.6500000000694444,
+                0.03593750000000007,
+                0.01666666666666672
+              ],
+              "confidence": 1,
+              "seconds": 18.985633333333332,
+              "text": "AHERRERA"
+            },
+            {
+              "bounds": [
+                0.900000000484375,
+                0.6277777780277778,
+                0.04843750000000002,
+                0.030555555555555447
+              ],
+              "confidence": 1,
+              "seconds": 24.991633333333333,
+              "text": "AHERRERA"
+            }
+          ],
+          "image_bounds": [
+            0.5390625004492188,
+            0.6500000000694444,
+            0.03593750000000007,
+            0.01666666666666672
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 18.985633333333332,
+          "text": "AHERRERA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 18.985633333333332,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.06875000032812499,
+                0.6111111113888889,
+                0.0546875,
+                0.02777777777777779
+              ],
+              "confidence": 1,
+              "seconds": 18.985633333333332,
+              "text": "RERA"
+            },
+            {
+              "bounds": [
+                0.734375000234375,
+                0.630555555625,
+                0.018750000000000044,
+                0.016666666666666607
+              ],
+              "confidence": 1,
+              "seconds": 25.992633333333334,
+              "text": "RERA"
+            }
+          ],
+          "image_bounds": [
+            0.06875000032812499,
+            0.6111111113888889,
+            0.0546875,
+            0.02777777777777779
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 18.985633333333332,
+          "text": "RERA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 18.985633333333332,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.15625000021484375,
+                0.6166666670486112,
+                0.04218749999999999,
+                0.030555555555555447
+              ],
+              "confidence": 1,
+              "seconds": 18.985633333333332,
+              "text": "SHERRE"
+            }
+          ],
+          "image_bounds": [
+            0.15625000021484375,
+            0.6166666670486112,
+            0.04218749999999999,
+            0.030555555555555447
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 18.985633333333332,
+          "text": "SHERRE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 19.986633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.410937499375,
+                0.6777777776388889,
+                0.03750000000000003,
+                0.01388888888888884
+              ],
+              "confidence": 1,
+              "seconds": 19.986633333333334,
+              "text": "FREEDOr"
+            }
+          ],
+          "image_bounds": [
+            0.410937499375,
+            0.6777777776388889,
+            0.03750000000000003,
+            0.01388888888888884
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 19.986633333333334,
+          "text": "FREEDOr",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 19.986633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.18281250056640622,
+                0.6166666667708334,
+                0.045312500000000006,
+                0.01388888888888884
+              ],
+              "confidence": 1,
+              "seconds": 19.986633333333334,
+              "text": "LET'S GO BR"
+            }
+          ],
+          "image_bounds": [
+            0.18281250056640622,
+            0.6166666667708334,
+            0.045312500000000006,
+            0.01388888888888884
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 19.986633333333334,
+          "text": "LET'S GO BR",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 20.987633333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.03750000085937497,
+                0.605555555787037,
+                0.051562500000000004,
+                0.019444444444444486
+              ],
+              "confidence": 1,
+              "seconds": 20.987633333333335,
+              "text": "OHERSSA"
+            }
+          ],
+          "image_bounds": [
+            0.03750000085937497,
+            0.605555555787037,
+            0.051562500000000004,
+            0.019444444444444486
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 20.987633333333335,
+          "text": "OHERSSA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 20.987633333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.253124998984375,
+                0.6305555553703703,
+                0.06093750000000003,
+                0.016666666666666607
+              ],
+              "confidence": 1,
+              "seconds": 20.987633333333335,
+              "text": "LET'S GO BRANDO"
+            },
+            {
+              "bounds": [
+                0.28437499992187504,
+                0.6194444444603175,
+                0.0546875,
+                0.011111111111111072
+              ],
+              "confidence": 1,
+              "seconds": 22.989633333333334,
+              "text": "LET'S GO BRANDO"
+            }
+          ],
+          "image_bounds": [
+            0.253124998984375,
+            0.6305555553703703,
+            0.06093750000000003,
+            0.016666666666666607
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 20.987633333333335,
+          "text": "LET'S GO BRANDO",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 20.987633333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.432812499453125,
+                0.6805555558333334,
+                0.03593750000000001,
+                0.016666666666666607
+              ],
+              "confidence": 1,
+              "seconds": 20.987633333333335,
+              "text": "REEDON"
+            }
+          ],
+          "image_bounds": [
+            0.432812499453125,
+            0.6805555558333334,
+            0.03593750000000001,
+            0.016666666666666607
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 20.987633333333335,
+          "text": "REEDON",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 21.988633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.006250000624999979,
+                0.5916666666666667,
+                0.0375,
+                0.01666666666666672
+              ],
+              "confidence": 1,
+              "seconds": 21.988633333333333,
+              "text": "ERRERA"
+            },
+            {
+              "bounds": [
+                0.7531249995052084,
+                0.6166666665277778,
+                0.029687499999999978,
+                0.019444444444444486
+              ],
+              "confidence": 1,
+              "seconds": 27.994633333333333,
+              "text": "ERRERA"
+            }
+          ],
+          "image_bounds": [
+            0.006250000624999979,
+            0.5916666666666667,
+            0.0375,
+            0.01666666666666672
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 21.988633333333333,
+          "text": "ERRERA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 21.988633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.05781250044270832,
+                0.6611111112037038,
+                0.026562500000000003,
+                0.016666666666666607
+              ],
+              "confidence": 1,
+              "seconds": 21.988633333333333,
+              "text": "ETERAN"
+            }
+          ],
+          "image_bounds": [
+            0.05781250044270832,
+            0.6611111112037038,
+            0.026562500000000003,
+            0.016666666666666607
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 21.988633333333333,
+          "text": "ETERAN",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 21.988633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.060937500046875,
+                0.6472222223888888,
+                0.020312500000000004,
+                0.01666666666666672
+              ],
+              "confidence": 1,
+              "seconds": 21.988633333333333,
+              "text": "cpr"
+            }
+          ],
+          "image_bounds": [
+            0.060937500046875,
+            0.6472222223888888,
+            0.020312500000000004,
+            0.01666666666666672
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 21.988633333333333,
+          "text": "cpr",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 21.988633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.2587775730532809,
+                0.6542810445573124,
+                0.06206802129745481,
+                0.023480394151475625
+              ],
+              "confidence": 1,
+              "seconds": 21.988633333333333,
+              "text": "LET'S GO BRANDON"
+            }
+          ],
+          "image_bounds": [
+            0.2587775730532809,
+            0.6542810445573124,
+            0.06206802129745481,
+            0.023480394151475625
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 21.988633333333333,
+          "text": "LET'S GO BRANDON",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 21.988633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.324999999921875,
+                0.6361111111728395,
+                0.014062500000000033,
+                0.011111111111111072
+              ],
+              "confidence": 1,
+              "seconds": 21.988633333333333,
+              "text": "IRA"
+            }
+          ],
+          "image_bounds": [
+            0.324999999921875,
+            0.6361111111728395,
+            0.014062500000000033,
+            0.011111111111111072
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 21.988633333333333,
+          "text": "IRA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 21.988633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.45156250116172475,
+                0.6805555556944444,
+                0.02499999850988388,
+                0.01388888888888895
+              ],
+              "confidence": 1,
+              "seconds": 21.988633333333333,
+              "text": "REED"
+            }
+          ],
+          "image_bounds": [
+            0.45156250116172475,
+            0.6805555556944444,
+            0.02499999850988388,
+            0.01388888888888895
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 21.988633333333333,
+          "text": "REED",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 21.988633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.8839601756437485,
+                0.6101892834626365,
+                0.05568307638168335,
+                0.022935101721021867
+              ],
+              "confidence": 1,
+              "seconds": 21.988633333333333,
+              "text": "VETERANS FOR"
+            },
+            {
+              "bounds": [
+                0.8062500007349078,
+                0.6222222220833333,
+                0.045312497019767695,
+                0.01388888888888895
+              ],
+              "confidence": 1,
+              "seconds": 22.989633333333334,
+              "text": "VETERANS FOR"
+            },
+            {
+              "bounds": [
+                0.7750000022453245,
+                0.6250000000462963,
+                0.045312497019767695,
+                0.01388888888888884
+              ],
+              "confidence": 1,
+              "seconds": 23.990633333333335,
+              "text": "VETERANS FOR"
+            },
+            {
+              "bounds": [
+                0.756250000546875,
+                0.6111111111805556,
+                0.043749999999999956,
+                0.016666666666666607
+              ],
+              "confidence": 1,
+              "seconds": 26.99363333333333,
+              "text": "VETERANS FOR"
+            }
+          ],
+          "image_bounds": [
+            0.8839601756437485,
+            0.6101892834626365,
+            0.05568307638168335,
+            0.022935101721021867
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 21.988633333333333,
+          "text": "VETERANS FOR",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 22.989633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.12343750044270832,
+                0.6583333333796296,
+                0.02656249999999999,
+                0.01388888888888895
+              ],
+              "confidence": 1,
+              "seconds": 22.989633333333334,
+              "text": "MNS FOR"
+            }
+          ],
+          "image_bounds": [
+            0.12343750044270832,
+            0.6583333333796296,
+            0.02656249999999999,
+            0.01388888888888895
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 22.989633333333334,
+          "text": "MNS FOR",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 22.989633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.1237132356900065,
+                0.6390196077199748,
+                0.02474264651536942,
+                0.02431372536553278
+              ],
+              "confidence": 1,
+              "seconds": 22.989633333333334,
+              "text": "•FRA"
+            }
+          ],
+          "image_bounds": [
+            0.1237132356900065,
+            0.6390196077199748,
+            0.02474264651536942,
+            0.02431372536553278
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 22.989633333333334,
+          "text": "•FRA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 22.989633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                6.249999795482352e-10,
+                0.6027777777777779,
+                0.0375,
+                0.016666666666666607
+              ],
+              "confidence": 1,
+              "seconds": 22.989633333333334,
+              "text": "ERPERA"
+            }
+          ],
+          "image_bounds": [
+            6.249999795482352e-10,
+            0.6027777777777779,
+            0.0375,
+            0.016666666666666607
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 22.989633333333334,
+          "text": "ERPERA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 22.989633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.8522865873212316,
+                0.617344177358905,
+                0.04253048300743101,
+                0.030081295967101962
+              ],
+              "confidence": 1,
+              "seconds": 22.989633333333334,
+              "text": "KERRERA"
+            }
+          ],
+          "image_bounds": [
+            0.8522865873212316,
+            0.617344177358905,
+            0.04253048300743101,
+            0.030081295967101962
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 22.989633333333334,
+          "text": "KERRERA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 23.990633333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.12027019465922961,
+                0.6441214509977107,
+                0.03289711177349092,
+                0.014534876081678583
+              ],
+              "confidence": 1,
+              "seconds": 23.990633333333335,
+              "text": "HERRERI"
+            }
+          ],
+          "image_bounds": [
+            0.12027019465922961,
+            0.6441214509977107,
+            0.03289711177349092,
+            0.014534876081678583
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 23.990633333333335,
+          "text": "HERRERI",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 23.990633333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.2890625000859375,
+                0.6138888889583334,
+                0.04843750000000002,
+                0.01388888888888884
+              ],
+              "confidence": 1,
+              "seconds": 23.990633333333335,
+              "text": "LET'S GO BRAH"
+            }
+          ],
+          "image_bounds": [
+            0.2890625000859375,
+            0.6138888889583334,
+            0.04843750000000002,
+            0.01388888888888884
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 23.990633333333335,
+          "text": "LET'S GO BRAH",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 23.990633333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5531250000878906,
+                0.6472222223090278,
+                0.0390625,
+                0.01388888888888884
+              ],
+              "confidence": 1,
+              "seconds": 23.990633333333335,
+              "text": "RHERRERA"
+            }
+          ],
+          "image_bounds": [
+            0.5531250000878906,
+            0.6472222223090278,
+            0.0390625,
+            0.01388888888888884
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 23.990633333333335,
+          "text": "RHERRERA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 23.990633333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.9390624998828125,
+                0.6388888887847222,
+                0.043749999999999956,
+                0.01666666666666672
+              ],
+              "confidence": 1,
+              "seconds": 23.990633333333335,
+              "text": "PHERRERA"
+            }
+          ],
+          "image_bounds": [
+            0.9390624998828125,
+            0.6388888887847222,
+            0.043749999999999956,
+            0.01666666666666672
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 23.990633333333335,
+          "text": "PHERRERA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 23.990633333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.03430536936394746,
+                0.5940396364918294,
+                0.04545176029205322,
+                0.0258096165127224
+              ],
+              "confidence": 1,
+              "seconds": 23.990633333333335,
+              "text": "IMERSSA"
+            }
+          ],
+          "image_bounds": [
+            0.03430536936394746,
+            0.5940396364918294,
+            0.04545176029205322,
+            0.0258096165127224
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 23.990633333333335,
+          "text": "IMERSSA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 24.991633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.12343750033203124,
+                0.6527777779166666,
+                0.026562500000000017,
+                0.01666666666666672
+              ],
+              "confidence": 1,
+              "seconds": 24.991633333333333,
+              "text": "HERREF"
+            }
+          ],
+          "image_bounds": [
+            0.12343750033203124,
+            0.6527777779166666,
+            0.026562500000000017,
+            0.01666666666666672
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 24.991633333333333,
+          "text": "HERREF",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 24.991633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.28906249999218747,
+                0.6222222221527778,
+                0.03281250000000002,
+                0.01388888888888884
+              ],
+              "confidence": 1,
+              "seconds": 24.991633333333333,
+              "text": "LET'S GO BI"
+            }
+          ],
+          "image_bounds": [
+            0.28906249999218747,
+            0.6222222221527778,
+            0.03281250000000002,
+            0.01388888888888884
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 24.991633333333333,
+          "text": "LET'S GO BI",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 24.991633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5453125000976563,
+                0.6388888890104166,
+                0.04062500000000002,
+                0.019444444444444486
+              ],
+              "confidence": 1,
+              "seconds": 24.991633333333333,
+              "text": "BHERRERA"
+            }
+          ],
+          "image_bounds": [
+            0.5453125000976563,
+            0.6388888890104166,
+            0.04062500000000002,
+            0.019444444444444486
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 24.991633333333333,
+          "text": "BHERRERA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 24.991633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.7750000007291666,
+                0.6250000000925926,
+                0.043749999999999956,
+                0.016666666666666607
+              ],
+              "confidence": 1,
+              "seconds": 24.991633333333333,
+              "text": "VETERANS ГОЯ"
+            }
+          ],
+          "image_bounds": [
+            0.7750000007291666,
+            0.6250000000925926,
+            0.043749999999999956,
+            0.016666666666666607
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 24.991633333333333,
+          "text": "VETERANS ГОЯ",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 25.992633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.006225393373154453,
+                0.6081504891414093,
+                0.0453617125749588,
+                0.019810132185618112
+              ],
+              "confidence": 1,
+              "seconds": 25.992633333333334,
+              "text": "ДНЕРАКА"
+            }
+          ],
+          "image_bounds": [
+            0.006225393373154453,
+            0.6081504891414093,
+            0.0453617125749588,
+            0.019810132185618112
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 25.992633333333334,
+          "text": "ДНЕРАКА",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 25.992633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.11718750033854164,
+                0.647222222361111,
+                0.02031250000000001,
+                0.01388888888888895
+              ],
+              "confidence": 1,
+              "seconds": 25.992633333333334,
+              "text": "HERP."
+            }
+          ],
+          "image_bounds": [
+            0.11718750033854164,
+            0.647222222361111,
+            0.02031250000000001,
+            0.01388888888888895
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 25.992633333333334,
+          "text": "HERP.",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 25.992633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.2796874994335938,
+                0.6166666665277778,
+                0.04531250000000003,
+                0.01666666666666672
+              ],
+              "confidence": 1,
+              "seconds": 25.992633333333334,
+              "text": "LET'S GO BRAN"
+            },
+            {
+              "bounds": [
+                0.27968749992745534,
+                0.6166666666914682,
+                0.046875,
+                0.01388888888888895
+              ],
+              "confidence": 1,
+              "seconds": 26.99363333333333,
+              "text": "LET'S GO BRAN"
+            }
+          ],
+          "image_bounds": [
+            0.2796874994335938,
+            0.6166666665277778,
+            0.04531250000000003,
+            0.01666666666666672
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 25.992633333333334,
+          "text": "LET'S GO BRAN",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 25.992633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.534375000703125,
+                0.6305555564956071,
+                0.04218749999999993,
+                0.02222222089767456
+              ],
+              "confidence": 1,
+              "seconds": 25.992633333333334,
+              "text": "HHERDERA"
+            }
+          ],
+          "image_bounds": [
+            0.534375000703125,
+            0.6305555564956071,
+            0.04218749999999993,
+            0.02222222089767456
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 25.992633333333334,
+          "text": "HHERDERA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 25.992633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.765625005245857,
+                0.6194444445833334,
+                0.045312494039535633,
+                0.008333333333333304
+              ],
+              "confidence": 1,
+              "seconds": 25.992633333333334,
+              "text": "VETEKANS SOR"
+            }
+          ],
+          "image_bounds": [
+            0.765625005245857,
+            0.6194444445833334,
+            0.045312494039535633,
+            0.008333333333333304
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 25.992633333333334,
+          "text": "VETEKANS SOR",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 25.992633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.6078125003385416,
+                0.5416666668055555,
+                0.020312500000000067,
+                0.01388888888888884
+              ],
+              "confidence": 1,
+              "seconds": 25.992633333333334,
+              "text": "PEASE"
+            }
+          ],
+          "image_bounds": [
+            0.6078125003385416,
+            0.5416666668055555,
+            0.020312500000000067,
+            0.01388888888888884
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 25.992633333333334,
+          "text": "PEASE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 26.99363333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.10937499982421875,
+                0.6388888887499999,
+                0.014062499999999992,
+                0.01666666666666672
+              ],
+              "confidence": 1,
+              "seconds": 26.99363333333333,
+              "text": "KER"
+            }
+          ],
+          "image_bounds": [
+            0.10937499982421875,
+            0.6388888887499999,
+            0.014062499999999992,
+            0.01666666666666672
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 26.99363333333333,
+          "text": "KER",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 26.99363333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5421874995052084,
+                0.6388888886111111,
+                0.042187500000000044,
+                0.01666666666666672
+              ],
+              "confidence": 1,
+              "seconds": 26.99363333333333,
+              "text": "HHERRERA"
+            }
+          ],
+          "image_bounds": [
+            0.5421874995052084,
+            0.6388888886111111,
+            0.042187500000000044,
+            0.01666666666666672
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 26.99363333333333,
+          "text": "HHERRERA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 26.99363333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.8796875022453244,
+                0.6222222224074074,
+                0.045312497019767806,
+                0.016666666666666607
+              ],
+              "confidence": 1,
+              "seconds": 26.99363333333333,
+              "text": "SHERRERA"
+            }
+          ],
+          "image_bounds": [
+            0.8796875022453244,
+            0.6222222224074074,
+            0.045312497019767806,
+            0.016666666666666607
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 26.99363333333333,
+          "text": "SHERRERA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 26.99363333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.623437499765625,
+                0.5444444443055556,
+                0.018749999999999933,
+                0.016666666666666607
+              ],
+              "confidence": 1,
+              "seconds": 26.99363333333333,
+              "text": "PBAGE"
+            }
+          ],
+          "image_bounds": [
+            0.623437499765625,
+            0.5444444443055556,
+            0.018749999999999933,
+            0.016666666666666607
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 26.99363333333333,
+          "text": "PBAGE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 26.99363333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.12083334214457216,
+                0.014814815370370327,
+                0.7583333015441895,
+                0.04490740564134377
+              ],
+              "confidence": 1,
+              "seconds": 26.99363333333333,
+              "text": "PAID FOR BY BRANDON HERRERA FOR CONGRESS. APPROVED BY BRANDON HERRERA."
+            },
+            {
+              "bounds": [
+                0.12343750535714282,
+                0.019444444563491925,
+                0.75,
+                0.033333333333333326
+              ],
+              "confidence": 1,
+              "seconds": 27.994633333333333,
+              "text": "PAID FOR BY BRANDON HERRERA FOR CONGRESS. APPROVED BY BRANDON HERRERA."
+            },
+            {
+              "bounds": [
+                0.12343750415798604,
+                0.019444444567901287,
+                0.7484374999999999,
+                0.033333333333333326
+              ],
+              "confidence": 1,
+              "seconds": 28.995633333333334,
+              "text": "PAID FOR BY BRANDON HERRERA FOR CONGRESS. APPROVED BY BRANDON HERRERA"
+            },
+            {
+              "bounds": [
+                0.12343749532226571,
+                0.019444444305555586,
+                0.7484375000000001,
+                0.033333333333333326
+              ],
+              "confidence": 1,
+              "seconds": 29.963266666666666,
+              "text": "PAID FOR BY BRANDON HERRERA FOR CONGRESS. APPROVED BY BRANDON HERRERA"
+            },
+            {
+              "bounds": [
+                0.1234375074999999,
+                0.019444444555555607,
+                0.75,
+                0.033333333333333326
+              ],
+              "confidence": 1,
+              "seconds": 29.99663333333333,
+              "text": "PAID FOR BY BRANDON HERRERA FOR CONGRESS. APPROVED BY BRANDON HERRERA."
+            }
+          ],
+          "image_bounds": [
+            0.12083334214457216,
+            0.014814815370370327,
+            0.7583333015441895,
+            0.04490740564134377
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 26.99363333333333,
+          "text": "PAID FOR BY BRANDON HERRERA FOR CONGRESS. APPROVED BY BRANDON HERRERA.",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 27.994633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.1250000003645833,
+                0.6472222222222221,
+                0.021875000000000006,
+                0.01666666666666672
+              ],
+              "confidence": 1,
+              "seconds": 27.994633333333333,
+              "text": "TERRE"
+            }
+          ],
+          "image_bounds": [
+            0.1250000003645833,
+            0.6472222222222221,
+            0.021875000000000006,
+            0.01666666666666672
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 27.994633333333333,
+          "text": "TERRE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 27.994633333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.27812499949218755,
+                0.6638888887152778,
+                0.04062499999999997,
+                0.02499999999999991
+              ],
+              "confidence": 1,
+              "seconds": 27.994633333333333,
+              "text": "HER'"
+            }
+          ],
+          "image_bounds": [
+            0.27812499949218755,
+            0.6638888887152778,
+            0.04062499999999997,
+            0.02499999999999991
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 27.994633333333333,
+          "text": "HER'",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 28.995633333333334,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.31249999978125,
+                0.6416666664444444,
+                0.04375000000000001,
+                0.022222222222222254
+              ],
+              "confidence": 1,
+              "seconds": 28.995633333333334,
+              "text": "HERRE"
+            }
+          ],
+          "image_bounds": [
+            0.31249999978125,
+            0.6416666664444444,
+            0.04375000000000001,
+            0.022222222222222254
+          ],
+          "kind": "video_ocr",
+          "media_hash": "9bd70329b03ece7b6090cafe4f62a6053046e1ca73507e44a7c9a876f309d514",
+          "start_seconds": 28.995633333333334,
+          "text": "HERRE",
+          "voice": "unreviewed"
+        }
+      ],
+      "recovered_text": "I'm Braden Herrera, and I approve this message because I'm proud of my family's deep roots in Southwest Texas\ngoing back to five generations and all of the opportunities it's given us.\nIt's where I grew my firearm manufacturing business, creating good, high-paying jobs for my fellow Texans.\nMy campaign for Congress is about fighting for greater affordability, security, and opportunity for all of us.\nAnd I'm asking you to join our movement to keep Texas a great place to live, start a business, and raise a family for the next five generations.\nBRANDON HERRERA\nBRANDON HERRE\nGENERATION\nTEXAN\nFIFTH\nSMALL BUSINESS\nOWNER AND\nJOB CREATOR\nFIGHTING FOR AFFORDABILITY,\nREEDOM\nAHERRERA\nRERA\nSHERRE\nFREEDOr\nLET'S GO BR\nOHERSSA\nLET'S GO BRANDO\nREEDON\nERRERA\nETERAN\ncpr\nLET'S GO BRANDON\nIRA\nREED\nVETERANS FOR\nMNS FOR\n•FRA\nERPERA\nKERRERA\nHERRERI\nLET'S GO BRAH\nRHERRERA\nPHERRERA\nIMERSSA\nHERREF\nLET'S GO BI\nBHERRERA\nVETERANS ГОЯ\nДНЕРАКА\nHERP.\nLET'S GO BRAN\nHHERDERA\nVETEKANS SOR\nPEASE\nKER\nHHERRERA\nSHERRERA\nPBAGE\nPAID FOR BY BRANDON HERRERA FOR CONGRESS. APPROVED BY BRANDON HERRERA.\nTERRE\nHER'\nHERRE",
+      "releases": [
+        {
+          "published": null,
+          "title": "Brandon Herrera campaign-linked 30-second ad",
+          "url": "https://brandonherreraforcongress.com/"
+        }
+      ],
+      "source": "herrera-native",
+      "state": "needs_date",
+      "video_url": "https://brandonherreraforcongress.nyc3.cdn.digitaloceanspaces.com/website/ads/Herrera_Ad26_March%201.mp4"
     }
   ],
   "scope": "Discovery backlog, not analyzed ads or verified paid placements",

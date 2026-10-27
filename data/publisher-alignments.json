@@ -2,6 +2,45 @@
   "reviews": [
     {
       "alignment": "D",
+      "evidence": [
+        {
+          "source_hash": "d4607201fe2206278b6cf371b0143bc96b3f4db3d1c5444936b0b509e416d2c1",
+          "url": "https://www.affordablepennsylvania.org/"
+        },
+        {
+          "source_hash": "2fab777ec92c99430a1315738994a1528fa6cb8f8969dde22c5014f808b94378",
+          "url": "https://familyfriendlyeconomy.org/"
+        },
+        {
+          "program_disclosure_id": "C00744920",
+          "related_review_id": "opportunity-action-fund-2026",
+          "scope": "The same previously reviewed CFFE PAC 2026 federal electoral program, not Affordable Pennsylvania's legal payer identity or an ad-to-expenditure link. The related review retains individual general-election filing observations: broad Democratic support and Republican opposition, with independent support and a Democratic-opposition exception. No inference from criticism of Republican incumbents alone.",
+          "source_hash": "8b38c33deed30f9e8f98bbe1da908efda3794a140a3b5100ad05949db81920bf",
+          "url": "https://www.fec.gov/files/bulk-downloads/2026/independent_expenditure_2026.csv"
+        }
+      ],
+      "evidence_through": "2026-10-26",
+      "expected_alignment": "unknown",
+      "id": "affordable-pennsylvania-2026",
+      "program_disclosure_ids": ["C00744920"],
+      "rationale": "Democratic-leaning organizational electoral program, not formal party registration or exclusive Democratic support. Affordable Pennsylvania's own footer explicitly identifies it as a Campaign for a Family Friendly Economy project. CFFE's official site describes the related electoral program and common leadership while distinguishing CFFE, Opportunity Action Fund and CFFE PAC legal payers. The existing primary-source and 2026 FEC program audit supports this organizational alignment and retains independent-support and Democratic-opposition exceptions. The PAC's ID is not assigned to Affordable Pennsylvania, and these images are not joined to particular expenditures.",
+      "records": [
+        {
+          "id": "snap-2f3a8f64181ba574496577ca",
+          "source_hash": "ab8f31603527d8cc51fce33cd292dc2e524e6ac3a9e7308ffacb003f4cfe1cc2"
+        },
+        {
+          "id": "snap-dc3059c926b283efcf301a86",
+          "source_hash": "854e0a1662e762964b9338690654a9cc026afb13be6f37a2d091769dcdc11cd3"
+        }
+      ],
+      "reviewed_on": "2026-10-27",
+      "source": "affordable-pennsylvania-snap",
+      "sponsor": "Affordable Pennsylvania",
+      "status": "aligned_with_independent_support"
+    },
+    {
+      "alignment": "D",
       "endorsement_audit": {
         "candidate_registry_sha256": "298010c02e2e2d1a421a6c4425fbf5f269a65430b6e4172bc5e98614b6380f85",
         "cross_party_examples": [
@@ -3892,6 +3931,14 @@
         {
           "id": "snap-563503cff1d28e1eb1d0c974",
           "source_hash": "c816a19b402d89831b4f3ed70c297b77cb519e8ebca96c6f9a1e8bd1e4ebfef0"
+        },
+        {
+          "id": "snap-8731a00326d6abdc8024c02f",
+          "source_hash": "93bf56c97e6019b4badf70603a15ac633109808bda7539e86ba19e4c3fee3916"
+        },
+        {
+          "id": "snap-8b64715b3fcc4cec692ee0ea",
+          "source_hash": "481b93226d923063737a5e5e2e1d4015ac43ca1d05176b99e7a5efb1acccc841"
         },
         {
           "id": "snap-9fd3cad1dfc0e23d9162ab7e",

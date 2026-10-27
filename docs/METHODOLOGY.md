@@ -113,6 +113,14 @@ preserved rather than quietly repaired. A duration/end-coverage check rejects ob
 tracks but does not certify accuracy. Caption-only records do not yet include on-screen-only
 claims; quality flags disclose this without broken-media placeholders.
 
+Individually reviewed campaign originals require a direct link from the campaign's public
+page, exact original-byte SHA-256, actual 2026 federal-candidate identity and retained approval/
+payer evidence. Feed originals also require the exact reviewed post ID and Unix timestamp.
+Local speech and frame OCR remain unchanged, including possible name or negation errors.
+These records use `publisher_post_date`, not an asserted first release or paid-delivery date.
+Recovered originals without a verified date remain text-complete in the media backlog and
+outside dated comparison denominators. Existing acquisitions are preserved on replay.
+
 Public HTML archives backfill HMP and House Majority Forward releases beyond recent-post APIs.
 Dated campaign news cards support public HTML acquisition without requiring authenticated APIs;
 article titles are checked to reject homepage fallbacks. Squarespace news/media collections follow
@@ -210,7 +218,7 @@ positive self-description, or attack. It is **not a validated semantic label**.
 Counts/denominators remain visible; categories overlap. A party with no included messages has
 missing comparison evidence, not a zero-percent rate.
 
-Time charts use the first release, reported Google delivery or scheduled Snap start
+Time charts use the earliest publisher release/post, reported Google delivery or scheduled Snap start
 **within the filtered corpus**, not airings, verified launches or ad duration. Pre-2026
 carryovers anchor to January's first in-scope observation rather than a new launch.
 Normalized distinctive bigrams/trigrams in JSON require support in three messages.

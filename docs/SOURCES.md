@@ -42,6 +42,8 @@ snapshot's actual October 27 cutoff is distinct from that final scope limit.
 | Aaron Flint | Official public WordPress ad releases | Seven August–October MT-01 scripts; original speaker labels and publisher errors retained |
 | Brian Stover | Official public WordPress ad releases | Two January GA-14 releases reproduce an ad script; post-script biography and placement commentary excluded; releases are not evidence of two distinct creatives |
 | Eric Conroy | Official public WordPress ad releases | Two September OH-01 scripts; candidate identity verified against FEC H6OH01138; release descriptions excluded |
+| Rob Bresnahan | Individually reviewed original videos linked by the campaign's public Facebook-feed widget | Two PA-08 ads; exact publisher post timestamps, original-byte SHA-256, approval/payer evidence and actual FEC identity; local speech/frame OCR; dates are publisher posts, not verified first release or delivery |
+| Brandon Herrera | Individually reviewed original video linked by the official campaign homepage | Full local speech/frame OCR preserved in the media backlog; no verified release/delivery date, so excluded from the dated corpus; filename and storage timestamps are not release evidence |
 | Winning For Women | Official public WordPress advocacy release | One July TX-15 sample script supporting Monica De La Cruz; seven announced districts do not imply seven recovered scripts |
 | WFW Action Fund | Official public WordPress ad releases | Six February-July House primary scripts: Steinmann, Mealer (two), Honeycutt, Pridemore and McKinney; separate PAC identity from Winning For Women |
 | Sarah Trone Garriott | Official public WordPress ad releases | Explicit transcripts; IA-03 |
@@ -56,6 +58,7 @@ snapshot's actual October 27 cutoff is distinct from that final scope limit.
 | SMP / WinSenate | Public news cards and their shipped load-more form; native Snap assets | 37 in-scope ad releases checked; 10 explicitly quoted speech records, not full certified scripts; ordinary posts endpoint misses this archive; WinSenate is FEC C00865444 |
 | One Nation | Official public advocacy identity and native Snap assets | Conservative-aligned issue advocacy, not a party committee; FEC noncommittee disclosure ID retained separately; federal-candidate names or individually reviewed, hash-bound federal-identity evidence required |
 | Working America | Reviewed official advocacy identity and native Snap assets | Organizational identity and alignment reviewed separately; each creative needs recovered 2026 federal-candidate evidence; generic and state-only material excluded |
+| Affordable Pennsylvania | Original Snap images and primary organizational/House identity evidence | Two complete PA federal-advocacy graphics; exact image/source-hash-bound surname and Washington phone-number reviews; CFFE project alignment is distinct from legal payer identity |
 | UA Vote! PAC | Public `news` REST type and ACF release bodies | Four explicitly marked federal scripts; Iowa governor script excluded; reviewed bipartisan publisher is other, including its pro-Republican Fitzpatrick ad; original unknown acquisition labels remain in provenance |
 | VoteVets | Public post metadata plus exact release-body HTML | Thirteen federal scripts recovered despite empty API bodies; state races and video-only pages excluded; Democratic organizational alignment does not identify a sole PAC/fund payer |
 | Other reviewed native payers | Official organizations, exact FEC identities and reviewed landing-page disclosures | Campaigns, PACs, unions and advocacy entities remain distinct; unresolved alignments stay in the corpus but not D/R denominators; metadata-only leads are not analyzed ads |
@@ -152,9 +155,10 @@ generated together in `outputs/analysis.json` and `outputs/analysis.html`; the m
 `outputs/analysis-ads.csv` includes complete text and evidence. These files, not an earlier
 379-record checkpoint, define the current reconciled local snapshot.
 
-The reconciled October 27 cutoff contains 1,769 acquired text records: 468 written records,
-65 captions, 16 static graphics, 76 Google previews and 1,144 Snap creatives. The English
-explorer contains 1,731 records: **1,208 Democratic-aligned, 484 Republican-aligned,
+The reconciled October 27 cutoff contains 1,781 acquired text records: 468 written records,
+65 captions, two reviewed campaign-original videos, 16 static graphics, 76 Google previews
+and 1,154 Snap creatives. The English explorer contains 1,743 records:
+**1,216 Democratic-aligned, 488 Republican-aligned,
 31 reviewed bipartisan and eight unresolved**. Only D/R enter party comparisons.
 The October 27 publisher-alignment audit corrected the earlier
 758 D / 440 R / 478 unresolved classification to **1,194 Democratic-aligned, 443 Republican-aligned,
@@ -164,7 +168,7 @@ three R-aligned, 31 bipartisan and eight still unresolved. The separate acquisit
 from the 949-record checkpoint added 17 Republican written records. Three previously unassigned
 Cornhusker Majority Snap records are now R-aligned; that is reclassification, not new acquisition.
 Record counts are not counts of distinct creative executions.
-All 1,595 matched native leads were attempted; 361 still lack sufficient federal identity and
+All 1,606 matched Snap native leads were attempted; 362 still lack sufficient federal identity and
 90 have no substantive recovered text. These exclusions are not analyzed ads.
 
 The subsequent October 27 acquisition recovers **32 additional Republican English records**:
@@ -181,7 +185,7 @@ rule to `nrsc-15447-0`, removing release commentary after its marked script with
 spoken text. One refreshed NRCC release has a new raw-body hash but unchanged recovered text.
 Native extraction bytes, alignment-review bindings, candidate reviews and language reviews
 remain unchanged. Complete local and built JSON/gzip/CSV exports reconcile field by field;
-all 1,769 Parquet rows match the loaded corpus.
+all 1,781 Parquet rows match the loaded corpus.
 
 The House-focused follow-up adds **seven Republican English script records**, raising
 Republican English House coverage from 129 to **136**. Winning For Women supplies one
@@ -214,6 +218,52 @@ beyond the 16-script local refresh; all 1,769 records retained their text and se
 Two Marshall release-body hashes changed without changing recovered text. RJC's public
 archive returned 403 and is paused for subsequent runs; Letlow's publication-metadata
 check failed, so its existing script was retained rather than replaced or dropped.
+
+The next native acquisition adds **12 dated text records: four R-aligned and eight
+D-aligned**, with all 1,769 prior ad objects retained field-for-field unchanged.
+Republican English House coverage rises to **138**. The four Republican additions are
+two Senate creatives from SLF and One Nation and two original Bresnahan PA-08 videos.
+The campaign's own public homepage links the original video files and exact post IDs/times:
+October 23 and October 25. Approval/payer evidence and FEC H4PA08124 establish the ad and
+candidate identity. These are publisher-post dates, not certified initial air dates or paid
+delivery. Speech and frame OCR retain their original errors, including potentially significant
+name/negation errors in automatic transcription, with explicit quality flags.
+The five separately dated Bresnahan release pages expose video embeds but no usable scripts;
+their descriptions and spokesperson prose are not counted as recovered ad copy.
+
+An additional original Herrera TX-23 video, linked in the campaign's own homepage code,
+has 57 recovered text segments preserved in `outputs/media-backlog.json` with the exact
+original-byte hash and FEC H4TX23120 identity. Its filename, storage modification and
+homepage dates do not verify its release, so it remains outside dated counts and comparisons.
+The replayable `campaign-native` collector requires the individually reviewed publisher
+link/post timestamp, original media hash, actual candidate and recovered quotations.
+It preserves prior acquisitions, keeps undated text separate and persists access-denial pauses.
+
+The fresh official Snap ZIP has SHA-256
+`5b2d96aca5794a5755157c5f162836a934de5cc4d067b970877c5e21684e1121`,
+11,245 rows and an October 27 21:11:27 GMT modification time. Exact reviewed mappings
+yield 1,606 candidate creatives across 2,749 platform records; 1,154 have usable federal
+text and 452 remain excluded. All raw Republican-mapped leads have extracted text.
+The unmatched inventory still has 215 payers and 2,915 creatives; these are leads, not
+recovered ads. Five additional unmatched landing sites were investigated; governor/state
+legislature/charity material was not converted into federal ad text.
+
+Two newly recovered Affordable Pennsylvania images identify Representatives Mackenzie
+and Perry by surname, PA context and their exact Washington office numbers. Both complete
+original images were visually inspected; the official House directory independently confirms
+the numbers and identities. Two narrowly hash-bound reviews bring the federal-scope ledger
+to 29 entries without weakening full-name matching globally. OCR is unchanged, including
+the bullet in Perry's phone number. The publisher explicitly identifies itself as a CFFE
+project; a separate exact-record organizational-alignment review uses that primary relationship
+and the existing 2026 CFFE electoral-program/FEC audit, preserving independent-support
+exceptions and not assigning another entity's PAC ID as this project's legal payer.
+Selected offline replay is available with repeatable `snap-collect --ad-id` flags, so a new
+review need not replay or change previously acquired native records.
+
+The wider Republican House pass checked 15 cached campaign homepages from a 25-entry-point
+inventory and completed a separate twelve-campaign live probe. It did not find another
+usable direct original in those bounded checks. DNS failures, timeouts, missing cache entries
+and video-only embeds are not proof that those campaigns did not advertise.
 
 The same investigation corrected CLF pagination: its next link uses `page-link`, not `next`.
 Following the actual same-publisher next URL reaches the 2025 boundary, but recovers only

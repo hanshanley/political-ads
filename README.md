@@ -10,9 +10,10 @@ user authorization. Daily automatic evidence refresh updates this repository onl
 
 This is an evolving collection of official ad releases, **not a census of paid placements**.
 It includes publisher transcripts, public captions, local image OCR, native Google previews,
-and locally transcribed/OCR'd Snap creatives. Candidate, party, and
+and locally transcribed/OCR'd Snap creatives and reviewed campaign originals. Candidate, party, and
 outside-group publishers remain separately filterable. Dates are release dates unless documented
-otherwise. Google reports parent-creative delivery; Snap reports scheduled dates and positive
+otherwise; reviewed native campaign videos use publisher post dates, not verified first airing.
+Google reports parent-creative delivery; Snap reports scheduled dates and positive
 impressions, not independently verified delivery days. Spending, reach and persuasion are not inferred.
 Party differences are confounded by source and race coverage. See [methodology](docs/METHODOLOGY.md).
 
@@ -72,7 +73,7 @@ Analyze the saved corpus without building or publishing the website:
 # Open outputs/analysis.html; complete evidence/text: outputs/analysis.json and analysis-ads.csv
 ```
 
-The local report compares wording over release/reported-delivery/scheduled-start months and by
+The local report compares wording over release/post/reported-delivery/scheduled-start months and by
 source, chamber, race, sponsor type, placement, format and election phase.
 A largest-publisher exclusion check exposes source-composition
 sensitivity; lexical matches are not semantic attack rates or national prevalence estimates.
@@ -89,6 +90,8 @@ Native platform recovery is local and resumable:
 .venv/bin/python -m political_ads.cli snap-discover
 .venv/bin/python -m political_ads.cli snap-collect
 .venv/bin/python -m political_ads.cli snap-collect --offline
+# Individually reviewed original campaign videos, using the same local extraction tools:
+.venv/bin/python -m political_ads.cli campaign-native --offline
 ```
 
 `--limit 0` (the default) processes all eligible platform creatives. Snap stores every matched
@@ -97,6 +100,9 @@ analyzed text until the creative and any required federal-candidate evidence are
 Public model weights download once; audio/video never goes to a hosted
 recognition service. Offline replay uses cached payloads/extractions and does not retry blocked
 providers. The complete recovered text and evidence remain in local JSON/CSV exports.
+For a selected Snap review, use repeatable `snap-collect --offline --ad-id ID` flags.
+This leaves unselected records untouched; an unqualified offline replay instead recomputes
+all candidates and withdraws records that no longer pass exact scope/hash reviews.
 
 ## Checks
 
