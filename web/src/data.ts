@@ -5,6 +5,7 @@ export interface Ad {
   sponsor_type: string; alignment: Party; published: string; observed: string;
   text: string; message_id: string; source_hash: string; text_hash: string;
   race: string; state: string; chamber: string; phase: string; date_basis: string;
+  delivery_start?: string | null; delivery_end?: string | null;
   placement: string; attribution_basis: string; issues: Match[]; portrayal_markers: Match[];
   segments: { text: string; kind: string; voice: string; start_seconds: number | null }[];
   media_urls: string[];
@@ -48,14 +49,16 @@ export function filterAds(ads: Ad[], filters: Filters): Ad[] {
     (!filters.sponsorType || ad.sponsor_type === filters.sponsorType) &&
     (!filters.phase || ad.phase === filters.phase) &&
     (!filters.issue || ad.issues.some(match => match.label === filters.issue)) &&
-    (!filters.start || ad.published >= filters.start) &&
-    (!filters.end || ad.published <= filters.end),
+    (!filters.start || (ad.delivery_start ?
+      !ad.delivery_end || ad.delivery_end >= filters.start : ad.published >= filters.start)) &&
+    (!filters.end || (ad.delivery_start || ad.published) <= filters.end),
   );
 }
 
 export function uniqueMessages(ads: Ad[]): Ad[] {
   const seen = new Set<string>();
-  return [...ads].sort((a, b) => a.published.localeCompare(b.published) || a.id.localeCompare(b.id))
+  return [...ads].sort((a, b) => observationDate(a).localeCompare(observationDate(b)) ||
+    a.id.localeCompare(b.id))
     .filter(ad => {
       const key = `${ad.alignment}:${ad.message_id}`;
       if (seen.has(key)) return false;
@@ -100,5 +103,8 @@ export function saveFile(name: string, contents: string, type: string) {
 
 export const partyName = (party: string) => party === "D" ? "Democratic" :
   party === "R" ? "Republican" : party;
+export const observationDate = (ad: Ad) => ad.delivery_start ?
+  (ad.delivery_start < "2026-01-01" ? "2026-01-01" : ad.delivery_start) : ad.published;
+export const publisher = (ad: Ad) => ad.source.replace(/-(media|images|google|snap)$/, "");
 export const displayDate = (value: string) => new Date(value + "T12:00:00Z")
   .toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });

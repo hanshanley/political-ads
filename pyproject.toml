@@ -20,6 +20,9 @@ political-ads = "political_ads.cli:main"
 [tool.setuptools.packages.find]
 include = ["political_ads*"]
 
+[tool.setuptools.package-data]
+political_ads = ["*.swift"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 

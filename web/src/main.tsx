@@ -2,7 +2,7 @@ import { StrictMode, useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
   type Ad, type Dataset, type Filters, EMPTY_FILTERS, csv, displayDate, filterAds,
-  partyName, saveFile, shares, uniqueMessages,
+  observationDate, partyName, publisher, saveFile, shares, uniqueMessages,
 } from "./data";
 import "./style.css";
 
@@ -57,16 +57,17 @@ function Timeline({ ads }: { ads: Ad[] }) {
   }));
   for (const ad of uniqueMessages(ads)) {
     if (ad.alignment === "D" || ad.alignment === "R") {
-      counts[Number(ad.published.slice(5, 7)) - 1][ad.alignment]++;
+      counts[Number(observationDate(ad).slice(5, 7)) - 1][ad.alignment]++;
     }
   }
   const highest = Math.max(1, ...counts.flatMap(row => [row.D, row.R]));
   return <div className="timeline-wrap">
     <svg viewBox="0 0 650 180" className="timeline" role="img"
       aria-labelledby="timeline-title timeline-description">
-      <title id="timeline-title">Observed ad releases by month</title>
-      <desc id="timeline-description">Counts of unique messages first released in each month in
-        this filtered corpus. Exact counts are available in the table below. Not airing volumes.</desc>
+      <title id="timeline-title">Observed ad messages by month</title>
+      <desc id="timeline-description">First release, in-scope Google delivery or Snap scheduled-start month.
+        Pre-2026 carryovers are anchored to January, not new launches.
+        Exact counts are available below. Not airing volumes.</desc>
       {[0, 0.5, 1].map(tick => <g key={tick}>
         <line x1="25" x2="640" y1={145 - tick * 120} y2={145 - tick * 120} stroke="#e1e3df" />
         <text x="0" y={150 - tick * 120} className="axis">{Math.round(tick * highest)}</text>
@@ -80,8 +81,8 @@ function Timeline({ ads }: { ads: Ad[] }) {
         <text x={46 + index * 50} y="170" textAnchor="middle" className="axis">{row.month}</text>
       </g>)}
     </svg>
-    <details className="data-table"><summary>Monthly release counts</summary><table>
-      <caption>Observed unique messages by release month; not paid airing totals</caption>
+    <details className="data-table"><summary>Monthly observed-message counts</summary><table>
+      <caption>First release, reported delivery or scheduled start; not launches or airing totals</caption>
       <thead><tr><th>Month</th><th>Democratic</th><th>Republican</th></tr></thead>
       <tbody>{counts.map(row => <tr key={row.month}><th>{row.month}</th>
         <td>{row.D}</td><td>{row.R}</td></tr>)}</tbody>
@@ -111,17 +112,24 @@ function AdCard({ ad, selected, examples }: {
       <p><strong>Text:</strong> {ad.segments[0]?.kind === "publisher_transcript" ?
         "Publisher transcript." : ad.segments[0]?.kind === "publisher_ad_copy" ?
           "Publisher-quoted ad copy; completeness is unverified." :
+          ad.segments[0]?.kind === "image_ocr" ?
+          "Local image-ad OCR; words and reading order may be imperfect. Image hashes and text coordinates are in the download." :
+          ad.segments.some(segment => ["local_asr", "video_ocr"].includes(segment.kind)) ?
+          "Local machine speech recognition and sampled-frame OCR, not a certified transcript. Speech and novel overlays are separate evidence lanes; timings, quality notes and duplicate evidence are in the download." :
           "Public video captions, with cue timestamps in the download."}
         {" "}Quotations and speaker labels are retained;
         this is not independent verification of what a quoted person actually said.</p>
       {ad.quality_flags?.length > 0 && <p><strong>Extraction notes:</strong> {
         ad.quality_flags.map(flag => flag.replaceAll("_", " ")).join("; ")}.</p>}
       <p><strong>Date:</strong> {ad.date_basis === "release_date" ? "Official release" : ad.date_basis}.
+        {ad.delivery_start && <> {ad.date_basis === "scheduled_delivery" ?
+          "Scheduled interval (not verified delivery days)" : "Reported parent-creative interval"}: {
+          displayDate(ad.delivery_start)} – {ad.delivery_end ? displayDate(ad.delivery_end) : "unknown"}.</>}
         Election phase: {ad.phase}. <code>{ad.id}</code></p>
       <p><strong>Matching phrases:</strong> {[...new Set(ad.issues.map(match => match.text))].join(", ") || "None in codebook"}</p>
     </div>}
     <a className="source-link" href={ad.source_url} target="_blank" rel="noopener noreferrer">
-      Read original release <span aria-hidden="true">↗</span></a>
+      {ad.delivery_start ? "View original creative" : "Read original release"} <span aria-hidden="true">↗</span></a>
   </article>;
 }
 
@@ -164,7 +172,7 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
       <section className="scope-bar" aria-label="Corpus summary">
         <div><strong>{dataset.ads.length}</strong><span>ad transcripts</span></div>
         <div><strong>{uniqueMessages(dataset.ads).length}</strong><span>unique messages</span></div>
-        <div><strong>{new Set(dataset.ads.map(ad => ad.source)).size}</strong><span>source publishers</span></div>
+        <div><strong>{new Set(dataset.ads.map(publisher)).size}</strong><span>source publishers</span></div>
         <p>A growing collection of official ad releases, not every ad aired.
           Source and race coverage differ between parties. <a href="#methods">About this collection</a></p>
       </section>
@@ -263,8 +271,9 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
           {dataset.methodology.map((method, index) => <p key={method}><span className="method-number">{String(index + 1).padStart(2, "0")}</span>{method}</p>)}
         </div><div className="method-sidebar">
           <h3>Source coverage</h3>
-          <p>Text is collected from official publisher releases. Wider Meta, Google, candidate,
-            and outside-group coverage is a collection goal, not an accomplished census.</p>
+          <p>Text comes from official releases, public captions, image OCR, native Google previews
+            and Snap creatives. Wider Meta, candidate and outside-group coverage remains a goal,
+            not an accomplished census. Snap dates are scheduled, not verified daily delivery.</p>
           <table><caption>Current acquisition status</caption><thead><tr><th>Source</th><th>Text records</th><th>Checked</th></tr></thead>
             <tbody>{dataset.sources.map(source => <tr key={source.source}>
               <th><a href={source.url} target="_blank" rel="noopener noreferrer">{source.source.toUpperCase()}</a></th>

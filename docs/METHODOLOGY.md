@@ -3,12 +3,16 @@
 ## What is counted
 
 The target is nationwide federal House/Senate advertising during 2026 through November 3.
-The current acquisition frame is official campaign, party, and aligned outside-group **ad releases**,
-not a delivery census. Release, observation, and delivery dates are different fields.
+The acquisition frame combines official campaign/party/outside-group **ad releases**, native
+Google previews and original Snap creatives, not a delivery census. Release, observation,
+reported delivery and scheduled-delivery dates are different fields.
 A release or YouTube upload does not prove that a creative aired. After-election releases
 without independent in-window delivery evidence are excluded.
 
-Analysis includes English text with seeded language-detection probability of at least 0.90.
+Analysis includes English text with seeded language-detection probability of at least 0.90,
+or local multilingual Whisper English detection at the same threshold for speech-bearing Snap videos.
+Hash-bound contextual language adjudications may correct clear detector errors for recovered
+English text. They preserve the original automatic label and do not certify extraction accuracy.
 Non-English and uncertain text remains in collection inputs but not comparative totals.
 This is dominant-language detection, not certification that every word is English: bilingual
 passages remain untranslated when a record passes the English threshold.
@@ -68,8 +72,64 @@ new evidence without deleting older records. Saved captions retain their origina
 when rediscovered in an archive; acquisition processes requested sources in priority order and
 stops across sources on a caption-service rate limit.
 
-The publication does not claim completed local ASR/OCR coverage. No paid recognition or hosted
-classifier is used. Raw media, caches, and optional model files remain local-only.
+NRCC static graphics are included only after standalone-ad eligibility review, excluding video
+thumbnails. Local Apple Vision OCR retains image hashes, line bounds and recognition confidence;
+eligibility review does not certify every recognized word. Google native IMAGE/TEXT previews
+use the same OCR. Each alternative remains separate rather than inventing a dynamic combination.
+Preview-level delivery is not independently verified from Google's parent-creative interval.
+Animations and video posters are not silently treated as complete static ads.
+
+Snap's official yearly archive supplies payer names, creative-viewer links, positive impressions,
+and scheduled start/stop dates. Exact reported FEC IDs, exact FEC legal-name joins and explicitly
+reviewed payer aliases establish federal eligibility; ambiguous/conflicting identities are excluded.
+Reviewed advocacy organizations without a registered campaign committee are a separate route: exact payer identity
+and organizational alignment require public evidence. Each recovered creative must contain
+a full name from the 2026 House/Senate candidate roster or receive an explicit federal-identity
+review bound to its exact extraction hash. Evidenced FEC noncommittee disclosure IDs
+are retained separately, not called principal-committee IDs. No FEC ID is invented. Inventory leads
+awaiting that content check are not yet federal-scope text records.
+Three explicitly reviewed campaign/ballot-name aliases are bound to actual FEC candidate IDs
+in `data/snap-candidate-aliases.json`; they do not overwrite the FEC roster or recognized text.
+For scope qualification only, name matching may span adjacent OCR lines within one frame or
+continuous speech cues, never different frames or speech/overlay lanes. The matched context,
+frame time, candidate IDs and any reviewed alias evidence are exported. A sole mentioned race
+is retained as context, not a validated target assignment. Lexical analysis keeps its stricter
+independent-overlay boundaries.
+Thirteen abbreviated-name creatives have individual reviews in `data/snap-scope-reviews.json`,
+with exact recovered quotations, actual FEC candidate IDs, an official evidence URL and rationale.
+Examples combine a senator's title with the correct federal office number or explicit federal
+policy context. This is not a generic surname rule, independent extraction certification or
+verification of political claims. Changed inputs, absent quotations and unknown candidate IDs
+invalidate a review. Pappas's House/Senate identity ambiguity does not force a single race.
+Generic mobilization creatives without federal-candidate evidence remain excluded.
+The candidate roster must identify one 2026 federal principal committee. Party/outside-group
+identities use a reviewed registry, not political words in the creative. Native images/videos are
+accepted only from the actual asset element in Snap's viewer, not site decorations or thumbnails.
+Billing addresses and detailed targeting data are not included in the exported lead inventory.
+
+Repeated Snap ad IDs sharing a payer and asset form one creative record, with all eligible
+placement IDs and scheduled intervals retained. Positive impressions establish that the platform
+reports exposure, not its exact dates or the in-window fraction. Planned start/stop dates and
+the union of several placements do not prove continuous delivery, or verified delivery on every
+day selected by a date filter. Source/format comparisons separate this evidence from Google
+reported delivery and supplementary publisher releases.
+
+Native Snap videos use local multilingual `faster-whisper` base-model speech recognition,
+FFmpeg audio decoding, and Apple Vision frames sampled every second plus the end of the video.
+Speech cues retain segment timestamps, model revision and extraction diagnostics. If Whisper's
+word alignment fails, the local recognizer retries without word timestamps and records the
+failure; word probabilities are available only when alignment succeeds. Native frame-decoding
+failures may use a local H.264 conversion of the same original, preserving presentation cadence;
+both original/derived hashes and the conversion method are retained.
+Frame observations retain actual timestamps, bounds and confidence; an OCR line is an observed
+instant, not a verified duration. Original machine text is not quietly corrected. Repeated
+on-screen text is counted once; text already present in speech is retained as corroborating
+evidence rather than counted again. OCR below 0.80 recognition confidence remains in exported
+rejected-observation metadata but outside the analyzed text. That cutoff is not calibrated accuracy.
+Transitions, names, small text and short-lived overlays remain extraction risks. Speech and
+novel overlays are separate evidence lanes, not a certified sentence or a validated semantic label.
+This is partial method/source coverage, not comprehensive local ASR/OCR of every video lead.
+No paid recognition or hosted classifier is used. Raw media, caches and model weights remain local.
 
 ## Analysis
 
@@ -79,13 +139,17 @@ message** identities after filters. Changed-target templates are not collapsed; 
 still dominate a sample. Caption/transcript mirrors may also remain distinct across methods.
 
 Issue and vocabulary charts match a public, symmetric phrase codebook. Evidence has exact
-character offsets, including across caption line breaks. A match can be a quotation, rebuttal,
+character offsets, including across caption line breaks. Video speech cues can join in order,
+but phrases cannot cross from speech into an overlay or between independent overlay lines;
+distinctive n-grams use the same boundaries. A match can be a quotation, rebuttal,
 positive self-description, or attack. It is **not a validated semantic label**.
 Counts/denominators remain visible; categories overlap. A party with no included messages has
 missing comparison evidence, not a zero-percent rate.
 
-Time charts count first release of each message **within the filtered corpus**, not airings or
-ad duration. Normalized distinctive bigrams/trigrams in JSON require support in three messages.
+Time charts use the first release, reported Google delivery or scheduled Snap start
+**within the filtered corpus**, not airings, verified launches or ad duration. Pre-2026
+carryovers anchor to January's first in-scope observation rather than a new launch.
+Normalized distinctive bigrams/trigrams in JSON require support in three messages.
 Smoothed log-odds reflect corpus wording and composition, not causal party preferences.
 The dated source-coverage table in `SOURCES.md` distinguishes monthly unique messages from
 the number of publishers represented. Repeated identical scripts across district releases count
@@ -95,10 +159,12 @@ independent evidence from many campaigns, and sparse early months cannot support
 `python -m political_ads.cli analyze` generates a **local-only** research report in
 `outputs/analysis.html`, complete evidence/text in `outputs/analysis.json`, and all analyzed
 records in `outputs/analysis-ads.csv`. It does not build, publish, or deploy the website.
-Comparisons cover month, chamber, sponsor type, publisher, race, and election phase. Monthly
-lexical denominators use first-released exact messages across the saved corpus; non-temporal
-strata deduplicate after filtering. Coverage distinguishes all release records, first messages,
-and publishers. Included record/message IDs make each numerator and denominator inspectable.
+Comparisons cover month, chamber, sponsor type, publisher, race, election phase, placement and
+record format. Monthly lexical denominators use first-observed exact messages across the saved
+corpus; non-temporal strata deduplicate after filtering. Coverage distinguishes all records, first messages,
+and publishers. Publisher counts and sensitivity checks group matching sponsor names across
+source/platform IDs; they do not infer mergers between different sponsor names.
+Included record/message IDs make each numerator and denominator inspectable.
 A sensitivity table removes each alignment's largest publisher by record count and recomputes
 message denominators. This is a composition diagnostic, not reweighting or a representative
 party comparison. Full text, original evidence, and extraction flags remain in the JSON/CSV.

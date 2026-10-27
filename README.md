@@ -4,15 +4,15 @@ An evidence-linked report and static dashboard comparing Democratic- and Republi
 advertising language in the **2026 U.S. House and Senate cycle**. Read issue-language patterns,
 contextual opponent portrayals, and complete source transcripts behind the comparisons.
 
-**Publication:** https://www.themarginoferror.com/political-ads/
-
-**Publication hold:** expanded collection and analysis are local only. The website still has
-the prior snapshot; do not push or deploy pending changes without authorization.
+**Publication withdrawn:** collection and analysis are local only. Do not publish, push
+pending expansion data, or restore website integration without explicit user authorization.
 
 This is an evolving collection of official ad releases, **not a census of paid placements**.
-It includes publisher transcripts and public English video captions. Candidate, party, and
+It includes publisher transcripts, public captions, local image OCR, native Google previews,
+and locally transcribed/OCR'd Snap creatives. Candidate, party, and
 outside-group publishers remain separately filterable. Dates are release dates unless documented
-otherwise; verified delivery, spending, reach, and persuasion are not inferred.
+otherwise. Google reports parent-creative delivery; Snap reports scheduled dates and positive
+impressions, not independently verified delivery days. Spending, reach and persuasion are not inferred.
 Party differences are confounded by source and race coverage. See [methodology](docs/METHODOLOGY.md).
 
 ## Reproduce the saved publication
@@ -51,8 +51,8 @@ The static `report.html` works without JavaScript.
 
 `collect --source dccc` selects one source. `--offline` on the transcript collector and registry
 reuses saved HTTP responses. Caption collection checkpoints attempts, preserves prior text,
-and stops caption requests across all sources on rate limits. Transient 429 failures retry on a
-later run; `--retry-failed` explicitly retries other failures.
+and stops caption requests across all sources on rate limits. The current YouTube and Google
+HTTP 429 blocks must not be retried or bypassed with alternate methods.
 The per-source acquisition limit is not a coverage claim. Missing authorization or text never
 silently becomes zero advertising.
 
@@ -68,9 +68,31 @@ Analyze the saved corpus without building or publishing the website:
 # Open outputs/analysis.html; complete evidence/text: outputs/analysis.json and analysis-ads.csv
 ```
 
-The local report compares wording over release months and by source, chamber, race, sponsor
-type, and election phase. A largest-publisher exclusion check exposes source-composition
+The local report compares wording over release/reported-delivery/scheduled-start months and by
+source, chamber, race, sponsor type, placement, format and election phase.
+A largest-publisher exclusion check exposes source-composition
 sensitivity; lexical matches are not semantic attack rates or national prevalence estimates.
+
+Native platform recovery is local and resumable:
+
+```bash
+# Requires the official Google/Snap ZIPs in data/raw/ and a saved FEC registry.
+.venv/bin/python -m political_ads.cli google-discover
+# Current Google HTTP 429 stop is persistent: do not retry online collection.
+.venv/bin/python -m political_ads.cli google-collect --offline
+# Snap video recovery needs the existing media extra, macOS Vision/Swift and FFmpeg.
+.venv/bin/python -m pip install -e '.[media]'
+.venv/bin/python -m political_ads.cli snap-discover
+.venv/bin/python -m political_ads.cli snap-collect
+.venv/bin/python -m political_ads.cli snap-collect --offline
+```
+
+`--limit 0` (the default) processes all eligible platform creatives. Snap stores every matched
+federal or reviewed-advocacy lead separately in `outputs/snap-discovery.json`; these are not
+analyzed text until the creative and any required federal-candidate evidence are recovered.
+Public model weights download once; audio/video never goes to a hosted
+recognition service. Offline replay uses cached payloads/extractions and does not retry blocked
+providers. The complete recovered text and evidence remain in local JSON/CSV exports.
 
 ## Checks
 
@@ -90,10 +112,11 @@ filters, keyboard access, mobile overflow, and non-root asset paths.
 
 ## Publication and updates
 
-All work stays on **main**, authored as Hans Hanley. Daily refresh uses standard Linux runners
-in this public repository; routine collection stops after **November 3, 2026**.
-Manual reconciliation remains available. No paid provider or runtime hosted model is used.
-The existing Margin of Error host rebuilds saved evidence during its static deployment.
+All work stays on **main**, authored as Hans Hanley. Automatic evidence refresh is disabled.
+The host integration, page, interactive-analysis card and sitemap entry have been removed.
+Do not restore them or push pending data without explicit authorization.
+Local collection is bounded to **November 3, 2026**; manual reconciliation remains available.
+No paid provider or runtime hosted model is used.
 See [deployment](docs/DEPLOYMENT.md) and [source capabilities](docs/SOURCES.md).
 
 Source material remains attributable to its original publishers. No ownership of third-party

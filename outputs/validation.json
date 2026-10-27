@@ -8,10 +8,10 @@
     "metric reconciliation",
     "reviewed quote hashes"
   ],
-  "extraction": "publisher transcripts, flagged publisher-quoted ad copy, and public English captions; language detector excludes non-English/uncertain",
+  "extraction": "publisher transcripts, flagged publisher-quoted ad copy, public English captions, reviewed image ads, Google preview OCR and native Snap speech/frame extraction; language detector excludes non-English/uncertain",
   "independent_human_gold": false,
-  "records": 379,
+  "records": 929,
   "reviewed_examples": 8,
   "semantic_classifier": "not published; no representative held-out evaluation",
-  "snapshot_id": "03eed1512bb5f3d18dedb73a618ca8b380c2558dfcbec23d66c37c9fc7b0574a"
+  "snapshot_id": "e169762d1ac7c8522c1a26b48220a2c605ad1d71c1dcebbbcbe6618b374e8dd0"
 }

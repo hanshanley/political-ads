@@ -4,11 +4,11 @@
 and `preview.svg`. Vite builds `site/` using `/political-ads/` asset paths. Serve the entire
 directory, not only its index. No server, database, or secret is shipped to the browser.
 
-The existing `hanshanley/margin_of_error` host, main branch, stages external analyses in Astro's
-`public/`. Deployment checks out this repository's main, builds saved evidence using Python/Node,
-and copies `site/` to `public/political-ads/`. Its analysis directory links to the tool; this
-does not imply a new essay or personal-site article entry. Twice-daily host deployments pick up
-saved data after the daily refresh.
+**Publication is withdrawn until explicit user authorization.** The
+`hanshanley/margin_of_error` host no longer checks out, builds, or stages this project, and
+its interactive-analysis directory no longer links to it. Do not restore that integration,
+publish local builds, or push pending expansion data without explicit authorization.
+The repository's automatic evidence-refresh workflow is disabled during this hold.
 
 ## No-new-cost updates
 
@@ -16,7 +16,8 @@ The refresh uses standard `ubuntu-latest` runners in this public repository, not
 runners. No Actions artifacts or paid APIs are introduced. Official billing documentation:
 https://docs.github.com/en/billing/concepts/product-billing/github-actions
 
-`.github/workflows/refresh.yml` refreshes sources daily at 08:13 UTC through November 3, 2026.
+When explicitly reauthorized and enabled, `.github/workflows/refresh.yml` refreshes sources
+daily at 08:13 UTC through November 3, 2026.
 It checks known releases, FEC identities, and bounded caption leads, then validates/tests before
 committing publication inputs to main. Failed sources retain their last-good partitions and
 source-specific freshness. A successful acquisition is not complete advertising coverage.
@@ -28,8 +29,9 @@ gh workflow run refresh.yml --ref main -f until=2026-11-03
 ```
 
 This recovers late-indexed releases with in-window release dates, not invented delivery evidence
-for after-election releases. Retry caption failures locally with `media-collect --retry-failed`,
-respecting rate limits.
+for after-election releases. Do not retry or clear persistent caption/creative access blocks.
+Local recognition and analysis may be replayed from successful cached inputs without new
+provider requests.
 
 ## Verification and rollback
 

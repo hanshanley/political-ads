@@ -4,6 +4,7 @@ from political_ads.analysis import (
     annotate,
     apply_reviews,
     comparison,
+    distinctive_phrases,
     matches,
     stratified_comparisons,
 )
@@ -77,8 +78,8 @@ def test_strata_distinguish_first_release_month_from_source_repeats_and_missing_
             }
             for identity, text, party, published, source in [
                 ("a", "Tax relief", "R", "2026-01-01", "committee"),
-                ("b", "Tax relief", "R", "2026-02-01", "campaign"),
-                ("c", "Health care", "R", "2026-02-02", "campaign"),
+                ("b", "Tax relief", "R", "2026-02-01", "campaign-media"),
+                ("c", "Health care", "R", "2026-02-02", "campaign-images"),
                 ("d", "No more lies", "D", "2026-02-03", "other"),
             ]
         ],
@@ -97,3 +98,104 @@ def test_strata_distinguish_first_release_month_from_source_repeats_and_missing_
     assert reduced["coverage"]["R"]["message_ad_ids"] == ["a"]
     assert reduced["coverage"]["D"]["records"] == 0
     assert reduced["issues"][0]["D"]["share"] is None
+
+
+def test_publisher_counts_and_sensitivity_group_sponsors_across_source_ids():
+    codebook = {"issues": {"tax": ["tax"]}, "portrayal_language": {}}
+    ads = annotate(
+        [
+            {
+                "id": identity,
+                "text": text,
+                "alignment": "R",
+                "published": "2026-02-01",
+                "source": source,
+                "sponsor": sponsor,
+                "chamber": "Senate",
+                "sponsor_type": "candidate",
+                "phase": "unknown",
+                "race": "Unresolved",
+            }
+            for identity, text, source, sponsor in [
+                ("a", "Tax relief", "campaign-media", "Same committee"),
+                ("b", "Tax increase", "fec-C00000001-snap", "Same committee"),
+                ("c", "Health care", "other", "Other committee"),
+            ]
+        ],
+        codebook,
+    )
+    result = stratified_comparisons(ads, codebook)
+    assert result["overall"]["coverage"]["R"]["publishers"] == [
+        "Other committee",
+        "Same committee",
+    ]
+    assert result["source"]["Same committee"]["coverage"]["R"]["records"] == 2
+    assert result["sensitivity"]["excluded_publishers"] == {"R": "Same committee"}
+    reduced = result["sensitivity"]["without_largest_publisher_per_party"]
+    assert reduced["coverage"]["R"]["record_ad_ids"] == ["c"]
+
+
+def test_carried_delivery_is_anchored_in_scope_and_formats_remain_separate():
+    codebook = {"issues": {"tax": ["tax"]}, "portrayal_language": {}}
+    ads = annotate(
+        [
+            {
+                "id": "carryover",
+                "text": "Tax relief",
+                "alignment": "R",
+                "published": "2025-01-01",
+                "delivery_start": "2025-01-01",
+                "delivery_end": "2026-03-01",
+                "source": "nrsc-google",
+                "chamber": "Senate",
+                "sponsor_type": "party",
+                "phase": "unknown",
+                "race": "Unresolved",
+                "placement": "google_reported_delivery",
+                "segments": [{"kind": "image_ocr", "reported_ad_type": "TEXT"}],
+            }
+        ],
+        codebook,
+    )
+    result = stratified_comparisons(ads, codebook)
+    assert set(result["month"]) == {"2026-01"}
+    assert result["month"]["2026-01"]["coverage"]["R"]["messages"] == 1
+    assert result["source"]["nrsc"]["coverage"]["R"]["records"] == 1
+    assert result["record_format"]["google_text"]["coverage"]["R"]["records"] == 1
+    assert result["placement"]["google_reported_delivery"]["coverage"]["R"]["records"] == 1
+
+
+def test_video_speech_and_independent_overlays_cannot_invent_cross_lane_phrases():
+    segments = [
+        {"kind": "local_asr", "text": "Protect social"},
+        {"kind": "local_asr", "text": "security."},
+        {"kind": "video_ocr", "text": "National"},
+        {"kind": "video_ocr", "text": "security", "start_seconds": 4},
+    ]
+    segments[0].update(reported_platform="snap", reported_ad_type="video")
+    ad = dict(
+        id="video",
+        text="\n".join(s["text"] for s in segments),
+        segments=segments,
+        alignment="R",
+        published="2026-08-01",
+        source="nrsc-snap",
+        chamber="Senate",
+        sponsor_type="party",
+        phase="unknown",
+        race="Unresolved",
+        placement="snap_paid_ad_scheduled_dates",
+    )
+    codebook = {
+        "issues": {"retirement": ["social security"], "defense": ["national security"]},
+        "portrayal_language": {},
+    }
+    annotated = annotate([ad], codebook)[0]
+    assert [m["label"] for m in annotated["issues"]] == ["retirement"]
+    match = annotated["issues"][0]
+    assert ad["text"][match["start"] : match["end"]] == "social\nsecurity"
+    phrases = distinctive_phrases([annotated], minimum=1)
+    assert "national security" not in {p["phrase"] for p in phrases["R"]}
+    strata = stratified_comparisons([annotated], codebook)
+    assert strata["source"]["nrsc"]["coverage"]["R"]["records"] == 1
+    assert strata["record_format"]["snap_video"]["coverage"]["R"]["records"] == 1

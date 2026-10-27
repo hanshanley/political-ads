@@ -27,6 +27,10 @@ def in_window(start: str, end: str | None, until: str) -> bool:
     return start <= min(until, END) and (end is None or end >= START)
 
 
+def observation_date(ad: dict) -> str:
+    return max(START, ad["delivery_start"]) if ad.get("delivery_start") else ad["published"]
+
+
 @dataclass
 class Segment:
     text: str

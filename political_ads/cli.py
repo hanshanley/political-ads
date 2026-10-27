@@ -33,14 +33,25 @@ def load_corpus(root: Path) -> dict:
     if corpus is None:
         raise ValueError("Collect ad text first")
     media = read_json(root / "data/site/media.json", {"ads": [], "sources": []})
+    images = read_json(root / "data/site/images.json", {"ads": [], "sources": []})
+    google = read_json(root / "data/site/google.json", {"ads": [], "sources": []})
+    snap = read_json(root / "data/site/snap.json", {"ads": [], "sources": []})
     return corpus | {
         "ads": corpus["ads"]
         + [
             ad
-            for ad in media["ads"]
-            if in_window(ad["published"], ad["published"], corpus["until"])
+            for ad in media["ads"] + images["ads"] + google["ads"] + snap["ads"]
+            if in_window(
+                ad.get("delivery_start") or ad["published"],
+                ad.get("delivery_end") if ad.get("delivery_start") else ad["published"],
+                corpus["until"],
+            )
         ],
-        "sources": corpus["sources"] + media["sources"],
+        "sources": corpus["sources"]
+        + media["sources"]
+        + images["sources"]
+        + google["sources"]
+        + snap["sources"],
     }
 
 
@@ -163,21 +174,67 @@ def main() -> None:
         "validate",
         "update",
         "media-collect",
+        "media-discover",
+        "image-collect",
+        "google-discover",
+        "google-collect",
+        "snap-discover",
+        "snap-collect",
         "analyze",
     ):
         command_parser = subcommands.add_parser(command)
         command_parser.add_argument("--offline", action="store_true")
-        if command in {"collect", "update", "media-collect"}:
+        if command in {
+            "collect",
+            "update",
+            "media-collect",
+            "media-discover",
+            "image-collect",
+            "google-discover",
+            "google-collect",
+            "snap-discover",
+            "snap-collect",
+        }:
             command_parser.add_argument("--until", default=min(date.today().isoformat(), END))
+        if command in {"collect", "update", "media-collect", "media-discover"}:
             command_parser.add_argument(
-                "--source", action="append", choices=[s.id for s in SOURCES]
+                "--source",
+                action="append",
+                choices=[s.id for s in SOURCES]
+                + (["cfg-action", "protect-freedom"] if command == "media-discover" else []),
             )
         if command == "media-collect":
             command_parser.add_argument("--limit", type=int, default=24)
             command_parser.add_argument("--retry-failed", action="store_true")
+        if command in {"google-collect", "snap-collect"}:
+            command_parser.add_argument("--limit", type=int, default=0)
     args = parser.parse_args()
     root = args.root.resolve()
     try:
+        if args.command == "snap-discover":
+            from political_ads.snap import discover_snap
+
+            discover_snap(root, args.until)
+        if args.command == "snap-collect":
+            from political_ads.snap import collect_snap
+
+            collect_snap(root, args.until, limit=args.limit, offline=args.offline)
+        if args.command == "google-discover":
+            from political_ads.google import discover_google
+
+            discover_google(root, args.until)
+        if args.command == "google-collect":
+            from political_ads.google import collect_google
+
+            collect_google(root, args.until, args.limit, args.offline)
+        if args.command == "image-collect":
+            from political_ads.images import collect_images
+
+            collect_images(root, args.until, args.offline)
+        if args.command == "media-discover":
+            from political_ads.media import inventory_media
+
+            inventory_media(root, args.until, args.source or [], args.offline)
         if args.command in {"collect", "update"}:
             collect(root, args.until, args.source or [], args.offline)
         if args.command == "media-collect":

@@ -15,7 +15,8 @@ def research(root: Path) -> dict:
     result = {
         "analysis_version": "stratified-1",
         "publication_status": "local_only",
-        "monthly_basis": "First release of each exact party/message in this saved corpus",
+        "monthly_basis": "First release, in-scope Google delivery or Snap scheduled start "
+        "of each exact party/message; pre-2026 carryovers anchored to January, not new launches",
         "stratum_basis": "Exact party/messages deduplicated after each non-temporal filter",
         "dataset": dataset,
         "comparisons": strata,
@@ -82,7 +83,7 @@ def research_report(dataset: dict, strata: dict) -> str:
         for row in group["issues"]:
             monthly_issues.append((month, row["label"], ratio(row, "D"), ratio(row, "R")))
     subgroup_rows = []
-    for field in ("chamber", "sponsor_type", "phase"):
+    for field in ("chamber", "sponsor_type", "phase", "placement", "record_format"):
         for value, group in strata[field].items():
             subgroup_rows.append(
                 (
@@ -132,13 +133,17 @@ def research_report(dataset: dict, strata: dict) -> str:
             sensitivity_rows,
         )
         + "<h2>Historical coverage</h2>"
-        "<p>Messages are assigned to their earliest saved release month. Publishers count all "
+        "<p>Messages use their earliest saved release, in-scope Google delivery or Snap "
+        "scheduled-start month. Snap's dates are planned starts/stops, not verified delivery days. "
+        "Pre-2026 Google carryovers are anchored to January, not treated as new launches. "
+        "Reported first/last delivery does not prove continuous delivery between those dates. "
+        "Publishers count all "
         "records in that month, including repeated messages. Early months are sparse and the "
         "publisher mix changes. A monthly rise is not evidence of more airings or a national "
         "strategy change. Changed-target templates remain distinct.</p>"
         + table(("Month", "D messages", "R messages", "D publishers", "R publishers"), monthly)
         + "<h3>Monthly issue wording</h3>"
-        "<p>Each denominator is the party's first-released exact messages in that month, "
+        "<p>Each denominator is the party's first-observed exact messages in that month, "
         "not its full-cycle corpus. Multiple families can match the same message.</p>"
         + table(("Month", "Phrase family", "D messages", "R messages"), monthly_issues)
         + "<h2>Publisher composition</h2>"
@@ -148,7 +153,12 @@ def research_report(dataset: dict, strata: dict) -> str:
         + "<h2>Comparison boundaries</h2>"
         "<p>Stratum-specific exact messages are deduplicated after filtering. Unknown phases "
         "remain unknown. Primary and general-election records should not be treated as "
-        "interchangeable cross-party attacks.</p>"
+        "interchangeable cross-party attacks. Google search/display previews include fundraising "
+        "and platform/payer boilerplate: compare formats separately before interpreting "
+        "distinctive language as opponent framing. Preview alternatives are not independently "
+        "verified delivery records. Native Snap records add local ASR and frame OCR with "
+        "explicit machine-extraction uncertainty; speech and overlay lanes do not create "
+        "cross-boundary phrase matches.</p>"
         + table(("Dimension", "Stratum", "D messages", "R messages"), subgroup_rows)
         + "<h3>Within-race coverage</h3>"
         "<p>These resolved races contain messages from both alignments. They are not matched "

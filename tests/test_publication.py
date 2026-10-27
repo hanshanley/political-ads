@@ -5,7 +5,14 @@ from pathlib import Path
 
 import pytest
 
-from political_ads.publication import build, csv_export, prepare, validate, validate_dataset
+from political_ads.publication import (
+    build,
+    csv_export,
+    prepare,
+    spreadsheet_cell,
+    validate,
+    validate_dataset,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -86,9 +93,11 @@ def test_local_analysis_keeps_full_text_and_evidence_without_building_website(tm
     result = research(tmp_path)
     output = tmp_path / "outputs"
     assert json.loads((output / "analysis.json").read_text()) == result
-    records = list(csv.DictReader(io.StringIO((output / "analysis-ads.csv").read_text())))
+    csv_text = (output / "analysis-ads.csv").read_text()
+    csv.field_size_limit(max(csv.field_size_limit(), len(csv_text)))
+    records = list(csv.DictReader(io.StringIO(csv_text)))
     assert {row["id"]: row["text"] for row in records} == {
-        ad["id"]: ad["text"] for ad in result["dataset"]["ads"]
+        ad["id"]: spreadsheet_cell(ad["text"]) for ad in result["dataset"]["ads"]
     }
     content = (output / "analysis.html").read_text()
     assert "LOCAL ONLY" in content and "Historical coverage" in content

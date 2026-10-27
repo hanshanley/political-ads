@@ -58,6 +58,8 @@ def fec_table(client: Client, kind: str) -> list[dict]:
 
 def candidate_alias(candidate: dict) -> str:
     # Require a full first/last name; a surname alone cannot establish identity.
+    if full_name := candidate.get("reviewed_alias", {}).get("full_name"):
+        return full_name.casefold()
     parts = candidate["name"].split(",")
     if len(parts) < 2 or not parts[1].split():
         return ""

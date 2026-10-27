@@ -4,7 +4,7 @@ import html
 import re
 from dataclasses import asdict, dataclass
 from datetime import date
-from urllib.parse import urlencode
+from urllib.parse import parse_qs, urlencode, urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup
 from langdetect import DetectorFactory, LangDetectException
@@ -102,11 +102,13 @@ SOURCES = [
     ),
     Source(
         "smp",
-        "https://www.senatemajority.com",
+        "https://senatemajority.com",
         "Senate Majority PAC",
         "D",
         "outside_group",
         "Senate",
+        search="ad",
+        discovery="smp_news",
     ),
     Source(
         "cooper",
@@ -116,6 +118,15 @@ SOURCES = [
         "candidate",
         "Senate",
         fixed_race="NC-Senate",
+    ),
+    Source(
+        "one-nation",
+        "https://onenationamerica.org",
+        "One Nation",
+        "R",
+        "outside_group",
+        "",
+        search="ad",
     ),
     Source(
         "hinson",
@@ -357,6 +368,24 @@ SOURCES = [
         fixed_race="KS-Senate",
         discovery="dated_news",
     ),
+    Source(
+        "lcv-vf",
+        "https://www.lcvvictoryfund.org",
+        "LCV Victory Fund",
+        "D",
+        "outside_group",
+        "",
+        discovery="lcv_sitemap",
+    ),
+    Source(
+        "rjc-vf",
+        "https://www.rjchq.org",
+        "Republican Jewish Coalition Victory Fund",
+        "R",
+        "outside_group",
+        "",
+        discovery="nationbuilder",
+    ),
 ]
 
 
@@ -429,6 +458,15 @@ def transcript_blocks(content: str) -> list[str]:
 
 def candidate_ad_copy(content: str, source_id: str) -> list[str]:
     soup = BeautifulSoup(content, "html.parser")
+    if source_id in {"smp", "one-nation"}:
+        blocks = []
+        for paragraph in soup.find_all("p"):
+            text = paragraph.get_text(" ", strip=True)
+            if re.search(r"\b(?:says?|said)\s+in\s+(?:the|an)\s+ad\b", text, re.I):
+                quotes = re.findall(r"“([^”]+)”", text)
+                if len(" ".join(quotes).split()) >= 15:
+                    blocks.append("\n".join(quotes))
+        return blocks
     if source_id == "hinson":
         # The campaign separates quoted ad copy from its unitalicized background.
         watch = next(
@@ -481,14 +519,141 @@ def candidate_ad_copy(content: str, source_id: str) -> list[str]:
 def media_links(content: str) -> list[str]:
     soup = BeautifulSoup(content, "html.parser")
     urls = []
-    for tag in soup.find_all(["iframe", "a", "video", "source"]):
-        value = tag.get("src", tag.get("href", ""))
-        if value.startswith("https://") and (
-            any(host in value for host in ("youtube.com/", "youtu.be/", "vimeo.com/"))
-            or re.search(r"\.(?:mp4|webm|mp3|wav)(?:\?|$)", value)
-        ):
+    for tag in soup.find_all(["iframe", "a", "video", "source", "div"]):
+        value = tag.get("src") or tag.get("href") or tag.get("data-popup", "")
+        parsed = urlsplit(value)
+        video_host = parsed.hostname in {
+            "youtube.com",
+            "www.youtube.com",
+            "youtu.be",
+            "vimeo.com",
+            "www.vimeo.com",
+            "player.vimeo.com",
+            "www.youtube-nocookie.com",
+        }
+        if parsed.scheme in {"http", "https"} and video_host:
+            urls.append(urlunsplit(parsed._replace(scheme="https")))
+        elif parsed.scheme == "https" and re.search(r"\.(?:mp4|webm|mp3|wav)(?:\?|$)", value):
             urls.append(value)
     return sorted(set(urls))
+
+
+def youtube_id(url: str) -> str | None:
+    parsed = urlsplit(url)
+    if parsed.scheme != "https":
+        return None
+    if parsed.hostname == "youtu.be":
+        candidate = parsed.path.removeprefix("/")
+    elif parsed.hostname in {"youtube.com", "www.youtube.com", "www.youtube-nocookie.com"}:
+        if parsed.path == "/watch":
+            candidate = parse_qs(parsed.query).get("v", [""])[0]
+        elif parsed.path.startswith("/embed/"):
+            candidate = parsed.path.removeprefix("/embed/")
+        else:
+            return None
+    else:
+        return None
+    return candidate if re.fullmatch(r"[A-Za-z0-9_-]{11}", candidate) else None
+
+
+def lcv_creatives(post: dict) -> list[dict]:
+    soup = BeautifulSoup(post["content"]["rendered"], "html.parser")
+    classes = post.get("publisher_classes", [])
+    races = {
+        f"{match[1].upper()}-{int(match[2]):02}"
+        for label in classes
+        if (match := re.fullmatch(r"race-([a-z]{2})-(\d{2})", label))
+    }
+    races.update(
+        f"{match[0]}-{int(match[1]):02}"
+        for match in re.findall(
+            r"\b([A-Z]{2})[-–](\d{1,2})\b", plain_html(post["title"]["rendered"])
+        )
+    )
+    senate_states = {
+        "iowa": "IA",
+        "maine": "ME",
+        "michigan": "MI",
+        "new-hampshire": "NH",
+        "north-carolina": "NC",
+        "ohio": "OH",
+        "texas": "TX",
+    }
+    if "position-senate" in classes:
+        races.update(
+            state + "-Senate" for name, state in senate_states.items() if f"race-{name}" in classes
+        )
+    creatives = []
+    starts = set()
+    explicit = bool(re.search(r"\bscript\s+below\b", soup.get_text(" "), re.I))
+    for heading in soup.find_all(["p", "h2", "h3"]):
+        label = heading.get_text(" ", strip=True)
+        marker = bool(re.fullmatch(r"script\s+below", label, re.I))
+        heading_marker = bool(re.search(r"\bscript\s+below\b", label, re.I))
+        if not marker and not (
+            (heading_marker or any(youtube_id(url) for url in media_links(str(heading))))
+            and re.match(r"(?:WATCH\b|[A-Z]{2}(?:[-–]|\s+)(?:\d{1,2}|Sen(?:ate)?):)", label, re.I)
+        ):
+            continue
+        context = heading.find_previous_sibling() if marker else heading
+        if context is None:
+            continue
+        urls = [url for url in media_links(str(context)) if youtube_id(url)]
+        if not urls and not (marker or heading_marker):
+            continue
+        lines = []
+        start = None
+        for paragraph in heading.find_next_siblings():
+            text = paragraph.get_text(" ", strip=True)
+            if not text or re.fullmatch(r"script\s+below", text, re.I):
+                continue
+            if paragraph.name != "p" or any(
+                node.strip() and node.find_parent(["i", "em"]) is None
+                for node in paragraph.find_all(string=True)
+            ):
+                break
+            start = start or id(paragraph)
+            lines.append(plain_html(str(paragraph)))
+        text = "\n".join(lines)
+        if (
+            start is None
+            or start in starts
+            or len(text.split()) < 15
+            or re.match(r"paid for by\b", text, re.I)
+        ):
+            continue
+        starts.add(start)
+        label = re.sub(r"\s*script\s+below\s*$", "", context.get_text(" ", strip=True), flags=re.I)
+        match = re.search(r"\b([A-Z]{2})(?:[-–]|\s+)(\d{1,2}|Sen(?:ate)?)\b", label, re.I)
+        race = (
+            f"{match[1].upper()}-"
+            + ("Senate" if match[2].lower().startswith("sen") else f"{int(match[2]):02}")
+            if match
+            else next(iter(races))
+            if len(races) == 1
+            else "Unresolved"
+            if races
+            else None
+        )
+        if race is None:
+            continue  # Do not silently include state/local ads or guess a multi-race target.
+        creatives.append(
+            {
+                "text": text,
+                "title": label,
+                "race": race,
+                "chamber": (
+                    "Senate"
+                    if race.endswith("-Senate")
+                    else "House"
+                    if race != "Unresolved" or all(not hint.endswith("-Senate") for hint in races)
+                    else ""
+                ),
+                "media_urls": urls,
+                "quoted_copy": not explicit,
+            }
+        )
+    return creatives
 
 
 def is_ad_release(title: str) -> bool:
@@ -506,7 +671,7 @@ def is_ad_release(title: str) -> bool:
 
 def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
     title = html.unescape(BeautifulSoup(post["title"]["rendered"], "html.parser").get_text())
-    if not is_ad_release(title):
+    if not is_ad_release(title) and source.id != "lcv-vf":
         return []
     content = post["content"]["rendered"]
     # Rogers's release has a stray letter inside its heading, not the spoken script.
@@ -551,14 +716,21 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
         r"\bad buy that runs through the [^.\n]{0,60}\bprimary\b", full_text, re.I
     ):
         phase = "primary"
+    creatives = (
+        lcv_creatives(post) if source.id == "lcv-vf" else [{"text": text} for text in blocks]
+    )
     ads = []
-    for index, text in enumerate(blocks):
+    for index, creative in enumerate(creatives):
+        text = creative["text"]
+        copy = creative.get("quoted_copy", quoted_copy)
         ad = Ad(
             id=f"{source.id}-{post['id']}-{index}",
             source=source.id,
             source_url=post["link"],
             source_record_id=str(post["id"]),
-            title=title if len(blocks) == 1 else f"{title} / transcript {index + 1}",
+            title=creative.get("title")
+            or (title if len(blocks) == 1 else f"{title} / transcript {index + 1}"),
+            release_title=title if source.id == "lcv-vf" else "",
             sponsor=source.sponsor,
             sponsor_type=source.sponsor_type,
             alignment=source.alignment,
@@ -569,24 +741,29 @@ def parse_post(post: dict, source: Source, observed: str) -> list[dict]:
                 asdict(
                     Segment(
                         text=line,
-                        kind="publisher_ad_copy" if quoted_copy else "publisher_transcript",
+                        kind="publisher_ad_copy" if copy else "publisher_transcript",
                     )
                 )
                 for line in text.splitlines()
             ],
             source_hash=digest(content),
             phase=phase,
-            chamber=source.chamber,
-            race=(
+            chamber=creative.get("chamber", source.chamber),
+            race=creative.get("race")
+            or (
                 f"{race_match[0]}-{int(race_match[1]):02}"
                 if race_match
                 else source.fixed_race or "Unresolved"
             ),
-            state=race_match[0] if race_match else source.fixed_race[:2],
-            media_urls=media_links(content),
+            state=("" if creative["race"] == "Unresolved" else creative["race"][:2])
+            if "race" in creative
+            else race_match[0]
+            if race_match
+            else source.fixed_race[:2],
+            media_urls=creative.get("media_urls", media_links(content)),
             language=language_of(text),
             language_basis="langdetect seeded model; >=0.90 probability, otherwise unknown",
-            quality_flags=["publisher_ad_copy_completeness_unverified"] if quoted_copy else [],
+            quality_flags=["publisher_ad_copy_completeness_unverified"] if copy else [],
             attribution_basis=(
                 f"Official {source.sponsor} release at {post['link']}; alignment is the "
                 "publisher's electoral alignment, not inferred from hostile vocabulary. "

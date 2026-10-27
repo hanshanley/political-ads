@@ -21,8 +21,10 @@ from political_ads.registry import enrich
 from political_ads.schema import Ad, digest, eligible
 
 METHODOLOGY = [
-    "This is an observed corpus of official ad-release text, not a census of all ads aired.",
-    "Dates refer to publisher release dates unless a record explicitly provides delivery dates.",
+    "This is an observed corpus of official ad releases, Google previews and native "
+    "Snap creatives, not a census of all ads aired.",
+    "Dates distinguish publisher releases, Google-reported delivery and Snap scheduled intervals. "
+    "Snap's positive impressions do not independently locate delivery within its scheduled dates.",
     "Party alignment describes the source publisher; "
     "joint creative payers require separate review.",
     "Charts count unique exact messages per party after filters, "
@@ -40,6 +42,22 @@ METHODOLOGY = [
     "On-screen-only claims are not yet included in caption-only records.",
     "Publisher-quoted ad copy is separately flagged: it may omit parts of the creative. "
     "Press commentary and biographies are excluded.",
+    "Reviewed standalone image ads use local OCR with image hashes, line coordinates, "
+    "and explicit word/reading-order uncertainty; video thumbnails are excluded.",
+    "Google native image/search previews are joined by exact public FEC committee IDs. "
+    "Each preview stays separate; parent-creative delivery does not prove each variant served.",
+    "Google previews include fundraising and payer/platform boilerplate and may truncate text. "
+    "Compare formats separately; their prevalence is not a party-strategy finding.",
+    "Temporal charts anchor pre-2026 Google carryovers to January's first in-scope date, "
+    "not a new launch. First/last delivery intervals do not establish continuous delivery.",
+    "Snap payers use exact FEC IDs, exact FEC legal names or explicitly reviewed name crosswalks. "
+    "Repeated platform ad IDs sharing a payer and asset form one creative record.",
+    "Native Snap videos use local multilingual Whisper speech recognition and one-second "
+    "frame OCR. Words, names and short overlays may be missed or misrecognized; none is "
+    "a certified transcript.",
+    "Speech and novel on-screen lines are separate evidence lanes. Repeated speech/subtitles are "
+    "deduplicated, low-confidence OCR is retained outside analyzed text, and phrase matches "
+    "cannot cross from speech into an overlay or between independent overlay lines.",
 ]
 
 
@@ -93,6 +111,14 @@ def csv_export(ads: list[dict]) -> str:
 
 def report(dataset: dict) -> str:
     esc = html.escape
+    publishers = {
+        ad["source"]
+        .removesuffix("-media")
+        .removesuffix("-images")
+        .removesuffix("-google")
+        .removesuffix("-snap")
+        for ad in dataset["ads"]
+    }
     items = []
     for party, name in (("D", "Democratic"), ("R", "Republican")):
         scope = [ad for ad in dataset["ads"] if ad["alignment"] == party]
@@ -147,9 +173,9 @@ def report(dataset: dict) -> str:
         "@media print{body{margin:0;max-width:none}}</style>"
         "<a href='./'>The Margin of Error / Political ads</a>"
         "<h1>The language of political ads</h1>"
-        f"<p>2026 federal elections · release records through {esc(dataset['until'])}</p>"
-        f"<p>{len(dataset['ads'])} English ad transcripts from "
-        f"{len({ad['source'] for ad in dataset['ads']})} publishers.</p>"
+        f"<p>2026 federal elections · observed records through {esc(dataset['until'])}</p>"
+        f"<p>{len(dataset['ads'])} English ad-text records from "
+        f"{len(publishers)} publishers.</p>"
         "<p>This initial report describes language in an observed collection. Its strongest "
         "evidence is the ads themselves; the examples below are not national prevalence estimates."
         "</p><h2>A closer Senate comparison</h2>"
@@ -202,7 +228,8 @@ def prepare(root: Path) -> dict:
             "reviewed_examples": len(examples),
             "semantic_classifier": "not published; no representative held-out evaluation",
             "extraction": "publisher transcripts, flagged publisher-quoted ad copy, "
-            "and public English captions; "
+            "public English captions, reviewed image ads, Google preview OCR and native "
+            "Snap speech/frame extraction; "
             "language detector excludes non-English/uncertain",
             "independent_human_gold": False,
         },
@@ -324,13 +351,9 @@ def validate(root: Path) -> None:
     if dataset is None:
         raise ValueError("No built dataset; run build first")
     validate_dataset(dataset)
-    csv_data = list(
-        csv.DictReader(
-            io.StringIO(
-                (root / "web/public/data/ads.csv").read_text(),
-            )
-        )
-    )
+    csv_text = (root / "web/public/data/ads.csv").read_text()
+    csv.field_size_limit(max(csv.field_size_limit(), len(csv_text)))
+    csv_data = list(csv.DictReader(io.StringIO(csv_text)))
     if len(csv_data) != len(dataset["ads"]) or any(not row["text"] for row in csv_data):
         raise ValueError("Text downloads are incomplete")
     for record, ad in zip(csv_data, dataset["ads"], strict=True):

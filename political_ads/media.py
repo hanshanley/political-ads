@@ -6,15 +6,24 @@ import subprocess
 import sys
 import time
 from dataclasses import asdict
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import urlencode
+
+from bs4 import BeautifulSoup
 
 from political_ads.cli import read_json, write_json
 from political_ads.discovery import public_posts, rss_posts
 from political_ads.http import Client
 from political_ads.schema import END, START, Ad, Segment, digest
-from political_ads.sources import SOURCES, is_ad_release, language_of, media_links, plain_html
+from political_ads.sources import (
+    SOURCES,
+    is_ad_release,
+    language_of,
+    media_links,
+    plain_html,
+    youtube_id,
+)
 
 
 def caption_segments(payload: dict, kind: str) -> list[dict]:
@@ -64,13 +73,22 @@ def discover(client: Client, source, until: str) -> tuple[list[dict], bool]:
                 "order": "asc",
             }
         )
-        batch, headers = client.json(source.url + "/wp-json/wp/v2/posts?" + query, refresh=True)
+        batch, headers = client.json(
+            source.url + f"/wp-json/wp/v2/{source.rest_base}?" + query, refresh=True
+        )
         if not isinstance(batch, list):
             raise ValueError("Media discovery did not return posts")
         if any(post["id"] in ids for post in batch):
             complete = False
             break
         for post in batch:
+            if source.rest_base == "article" and "content" not in post:
+                layouts = post.get("acf", {}).get("page_layout", [])
+                post["content"] = {
+                    "rendered": "\n".join(
+                        layout.get("component_wysiwyg", {}).get("content", "") for layout in layouts
+                    )
+                }
             ids.add(post["id"])
             if START <= post["date"][:10] <= until:
                 posts.append(post)
@@ -88,12 +106,222 @@ def discover(client: Client, source, until: str) -> tuple[list[dict], bool]:
     return sorted(posts, key=lambda post: post["date"], reverse=True), complete
 
 
-def youtube_id(url: str) -> str | None:
-    match = re.match(
-        r"https://(?:www\.)?(?:youtube\.com/(?:watch\?v=|embed/)|youtu\.be/)([A-Za-z0-9_-]{11})",
-        url,
+def is_media_ad_release(title: str, source_id: str, content: str = "") -> bool:
+    return (
+        is_ad_release(title)
+        or (
+            source_id == "slf"
+            and bool(
+                re.match(r"^ICYMI:\s*(?:SLF|Senate Leadership Fund) Releases New Ads\b", title)
+            )
+        )
+        or (
+            source_id == "rjc-vf"
+            and bool(re.search(r"\bcampaign\b", title, re.I))
+            and bool(
+                re.search(
+                    r"\b(?:released|launched)\b[^.!?\n]{0,80}\b(?:ads?|advertising)\b",
+                    plain_html(content),
+                    re.I,
+                )
+            )
+        )
     )
-    return match[1] if match else None
+
+
+def inventory_media(root: Path, until: str, source_ids: list[str], offline: bool = False) -> dict:
+    if not START <= until <= min(date.today().isoformat(), END):
+        raise ValueError("Media inventory requires an in-scope cutoff")
+    destination = root / "outputs/media-backlog.json"
+    previous = read_json(destination, {"leads": [], "sources": []})
+    leads = {row["id"]: row for row in previous["leads"]}
+    statuses = {row["source"]: row for row in previous["sources"]}
+    media = read_json(root / "data/site/media.json", {"ads": [], "attempts": {}})
+    written = read_json(root / "data/site/corpus.json", {"ads": []})["ads"]
+    client = Client(root / "data/raw/http", offline)
+    by_id = {source.id: source for source in SOURCES}
+    for key in dict.fromkeys(source_ids or [*by_id, "cfg-action", "protect-freedom"]):
+        found = {}
+        status = {"source": key, "checked": date.today().isoformat(), "state": "error"}
+        try:
+            if key == "cfg-action":
+                url = "https://www.clubforgrowth.org/elections/watch/"
+                body, _ = client.get(url, refresh=True)
+                soup = BeautifulSoup(body, "html.parser")
+                galleries = [
+                    gallery
+                    for gallery in soup.select(".robo-gallery-wrap")
+                    if (
+                        heading := gallery.find_previous(
+                            string=re.compile(r"\b20\d{2}\s+General Election Ad Gallery\b")
+                        )
+                    )
+                    and re.search(r"\b2026\b", str(heading))
+                ]
+                if not galleries:
+                    raise ValueError("Public ad gallery omitted its 2026 heading")
+                for gallery in galleries:
+                    for node in gallery.select("[data-popup]"):
+                        video = youtube_id(node["data-popup"])
+                        title = node.get("title", "")
+                        if video is None or not re.search(
+                            r"\b[A-Z]{2}[-–](?:\d{1,2}|SEN|AL)\b", title, re.I
+                        ):
+                            continue
+                        identity = key + "-" + video
+                        found[identity] = {
+                            "id": identity,
+                            "source": key,
+                            "alignment": "R",
+                            "video_id": video,
+                            "video_url": node["data-popup"],
+                            "releases": [{"url": url, "title": title, "published": None}],
+                            "date_basis": "2026_gallery_label_only_not_verified_release_date",
+                            "state": "needs_date_and_text",
+                        }
+                complete = True
+            elif key == "protect-freedom":
+                url = "https://www.protectfreedompac.com/media"
+                body, _ = client.get(url, refresh=True)
+                soup = BeautifulSoup(body, "html.parser")
+                for frame in soup.select("iframe[src]"):
+                    card = frame.find_parent(class_="dmRespCol")
+                    video = youtube_id(frame["src"])
+                    if card is None or video is None:
+                        continue
+                    title = card.get_text(" ", strip=True).replace("\ufeff", "").strip()
+                    day = re.search(r"\b[A-Z][a-z]+ \d{1,2}, 20\d{2}\b", title)
+                    if (
+                        not day
+                        or not day[0].endswith("2026")
+                        or not re.search(r"\bfor\s+(?:U\.?S\.?\s+Senate|Congress)\b", title, re.I)
+                    ):
+                        continue
+                    published = datetime.strptime(day[0], "%B %d, %Y").date().isoformat()
+                    if not START <= published <= until:
+                        continue
+                    identity = key + "-" + video
+                    found[identity] = {
+                        "id": identity,
+                        "source": key,
+                        "alignment": "R",
+                        "video_id": video,
+                        "video_url": f"https://www.youtube.com/watch?v={video}",
+                        "releases": [
+                            {
+                                "url": url,
+                                "title": title,
+                                "published": published,
+                                "source_hash": digest(str(card)),
+                            }
+                        ],
+                        "date_basis": "publisher_dated_ad_gallery_not_delivery",
+                        "state": "pending",
+                    }
+                complete = True
+            else:
+                source = by_id[key]
+                posts, complete = discover(client, source, until)
+                status["posts_scanned"] = len(posts)
+                for post in posts:
+                    title = plain_html(post["title"]["rendered"])
+                    has_written = any(
+                        ad["source"] == key and ad["source_record_id"] == str(post["id"])
+                        for ad in written
+                    )
+                    if not has_written and not is_media_ad_release(
+                        title, source.id, post["content"]["rendered"]
+                    ):
+                        continue
+                    for url in media_links(post["content"]["rendered"]):
+                        video = youtube_id(url)
+                        if video is None:
+                            continue
+                        identity = key + "-" + video
+                        row = found.setdefault(
+                            identity,
+                            {
+                                "id": identity,
+                                "source": key,
+                                "alignment": source.alignment,
+                                "video_id": video,
+                                "video_url": f"https://www.youtube.com/watch?v={video}",
+                                "releases": [],
+                                "date_basis": "publisher_release_date",
+                                "state": "pending",
+                            },
+                        )
+                        release = {
+                            "url": post["link"],
+                            "title": title,
+                            "published": post["date"][:10],
+                            "source_record_id": str(post["id"]),
+                            "source_hash": digest(post["content"]["rendered"]),
+                        }
+                        if release not in row["releases"]:
+                            row["releases"].append(release)
+            for row in found.values():
+                video = row["video_id"]
+                caption_ids = [
+                    ad["id"]
+                    for ad in media["ads"]
+                    if ad["source"] == key + "-media"
+                    and any(youtube_id(url) == video for url in ad["media_urls"])
+                ]
+                written_ids = [
+                    ad["id"]
+                    for ad in written
+                    if ad["source"] == key
+                    and {youtube_id(url) for url in ad["media_urls"] if youtube_id(url)} == {video}
+                ]
+                attempts = [
+                    attempt
+                    for identity, attempt in media["attempts"].items()
+                    if identity.startswith(key + "-media-")
+                    and youtube_id(attempt.get("video", "")) == video
+                ]
+                row["caption_ad_ids"] = sorted(caption_ids)
+                row["written_ad_ids"] = sorted(written_ids)
+                row["attempt_errors"] = sorted(
+                    {attempt["error"] for attempt in attempts if attempt.get("error")}
+                )
+                if caption_ids:
+                    row["state"] = "caption_text_available"
+                elif written_ids:
+                    row["state"] = "written_text_available"
+                elif errors := "\n".join(row["attempt_errors"]):
+                    if "429" in errors:
+                        row["state"] = "rate_limited"
+                    elif re.search(r"sign.in|not a bot|login|private video", errors, re.I):
+                        row["state"] = "access_blocked"
+                    elif "No public English captions" in errors:
+                        row["state"] = "no_public_english_captions"
+                    elif "short-ad review boundary" in errors:
+                        row["state"] = "excluded_duration"
+                    else:
+                        row["state"] = "acquisition_error"
+            if complete:
+                leads = {identity: row for identity, row in leads.items() if row["source"] != key}
+            leads.update(found)
+            status.update(
+                state="ok" if complete else "partial",
+                discovery_complete=complete,
+                unique_video_leads=len(found),
+            )
+        except (OSError, ValueError, KeyError, TypeError) as error:
+            status["error"] = f"{type(error).__name__}: {error}"
+            status["retained_leads"] = sum(row["source"] == key for row in leads.values())
+        statuses[key] = status
+        result = {
+            "until": until,
+            "checked": date.today().isoformat(),
+            "scope": "Discovery backlog, not analyzed ads or verified paid placements",
+            "leads": sorted(leads.values(), key=lambda row: row["id"]),
+            "sources": sorted(statuses.values(), key=lambda row: row["source"]),
+        }
+        write_json(destination, result)
+        print(json.dumps(status), flush=True)
+    return result
 
 
 def fetch_captions(root: Path, video_id: str) -> tuple[list[dict], str, dict]:
@@ -192,7 +420,7 @@ def collect_media(
             status["discovery_complete"] = complete
             for post in posts:
                 title = plain_html(post["title"]["rendered"])
-                if not is_ad_release(title):
+                if not is_media_ad_release(title, source.id, post["content"]["rendered"]):
                     continue
                 for url in media_links(post["content"]["rendered"]):
                     video_id = youtube_id(url)
@@ -200,7 +428,11 @@ def collect_media(
                         continue
                     identity = f"{source_id}-{post['id']}-{video_id}"
                     existing = ads.get(identity)
-                    if existing:
+                    if existing or any(
+                        ad["source"] == source_id
+                        and any(youtube_id(media) == video_id for media in ad["media_urls"])
+                        for ad in ads.values()
+                    ):
                         continue
                     failed = attempts.get(identity, {})
                     retryable = "429" in failed.get("error", "")

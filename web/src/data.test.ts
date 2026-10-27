@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { csv, EMPTY_FILTERS, filterAds, shares, type Ad } from "./data";
+import { csv, EMPTY_FILTERS, filterAds, observationDate, shares, type Ad } from "./data";
 
 const base: Ad = {
   id: "", text: "", alignment: "D", message_id: "", published: "", chamber: "", race: "",
@@ -46,5 +46,13 @@ describe("synchronized evidence", () => {
     expect(text).toContain('""label"":""Healthcare""');
     expect(text).toContain('"three"');
     expect(csv([{ ...ads[0], text: " \t=SUM(1,1)" }])).toContain("' \t=SUM(1,1)");
+  });
+  it("uses reported delivery overlap, including carryovers, without assuming launch dates", () => {
+    const carryover: Ad = { ...ads[0], published: "2025-11-01", date_basis: "delivery",
+      delivery_start: "2025-11-01", delivery_end: "2026-03-01" };
+    expect(filterAds([carryover], EMPTY_FILTERS)).toEqual([carryover]);
+    expect(filterAds([carryover], { ...EMPTY_FILTERS, start: "2026-04-01" })).toEqual([]);
+    expect(observationDate(carryover)).toBe("2026-01-01");
+    expect(observationDate(ads[0])).toBe("2026-09-01");
   });
 });

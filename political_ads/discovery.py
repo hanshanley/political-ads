@@ -4,6 +4,7 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import UTC, datetime
 from email.utils import parsedate_to_datetime
+from time import sleep
 from urllib.error import HTTPError
 from urllib.parse import urlencode, urljoin, urlparse
 from zoneinfo import ZoneInfo
@@ -128,6 +129,12 @@ def archive_posts(
 
 
 def public_posts(client: Client, source: Source, until: str) -> tuple[list[dict], bool]:
+    if source.discovery == "smp_news":
+        return smp_news_posts(client, source, until)
+    if source.discovery == "lcv_sitemap":
+        return lcv_sitemap_posts(client, source, until)
+    if source.discovery == "nationbuilder":
+        return nationbuilder_posts(client, source, until)
     if source.discovery == "rss":
         return rss_posts(client, source, until, source.search)
     if source.discovery == "archive":
@@ -139,6 +146,180 @@ def public_posts(client: Client, source: Source, until: str) -> tuple[list[dict]
     if source.discovery == "dated_news":
         return dated_news_posts(client, source, until)
     raise ValueError(f"Unknown public discovery strategy: {source.discovery}")
+
+
+def smp_news_posts(
+    client: Client, source: Source, until: str, max_pages: int = 100
+) -> tuple[list[dict], bool]:
+    posts = []
+    seen = set()
+    for page in range(1, max_pages + 1):
+        if page == 1:
+            body, _ = client.get(source.url + "/news/", refresh=True, retry=False)
+        else:
+            body, _ = client.get(
+                source.url + "/wp-admin/admin-ajax.php",
+                refresh=True,
+                retry=False,
+                data=urlencode({"pageNumber": page, "ppp": 5, "action": "more_post_ajax"}).encode(),
+            )
+        soup = BeautifulSoup(body, "html.parser")
+        cards = soup.select("article.news_cards--element")
+        if not cards:
+            if page > 1 and not body.strip():
+                return posts, True
+            raise ValueError("SMP archive did not expose expected news cards")
+        older = False
+        for card in cards:
+            anchor = card.select_one("a.news_cards--title-wrapper")
+            label = card.select_one(".news_cards--metadata")
+            if (
+                label is None
+                and anchor is not None
+                and not is_ad_release(anchor.get_text(" ", strip=True))
+            ):
+                continue
+            if anchor is None or label is None or not anchor.get("id", "").isdigit():
+                raise ValueError("SMP card lacks a stable ID or date")
+            published = (
+                datetime.strptime(
+                    label.get_text(" ", strip=True).split("|", 1)[0].strip(), "%B %d, %Y"
+                )
+                .date()
+                .isoformat()
+            )
+            older |= published < START
+            link = urljoin(source.url, anchor["href"])
+            if urlparse(link).hostname != urlparse(source.url).hostname or link in seen:
+                raise ValueError("SMP archive repeated a URL or linked outside its publisher")
+            seen.add(link)
+            title = anchor.get_text(" ", strip=True)
+            if not START <= published <= until or not is_ad_release(title):
+                continue
+            release, _ = client.get(link, refresh=True, retry=False)
+            article = BeautifulSoup(release, "html.parser").find("article")
+            if article is None:
+                raise ValueError("SMP release has no article body")
+            posts.append(
+                {
+                    "id": int(anchor["id"]),
+                    "link": link,
+                    "date": published,
+                    "title": {"rendered": title},
+                    "content": {"rendered": str(article)},
+                }
+            )
+        if older:
+            return posts, True
+        if page == 1 and soup.select_one("#more_posts") is None:
+            return posts, True
+    return posts, False
+
+
+def lcv_sitemap_posts(client: Client, source: Source, until: str) -> tuple[list[dict], bool]:
+    body, _ = client.get(source.url + "/news-sitemap.xml", refresh=True)
+    root = ET.fromstring(body)
+    namespace = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    if root.tag != "{http://www.sitemaps.org/schemas/sitemap/0.9}urlset":
+        raise ValueError("Public news sitemap did not return a URL set")
+    posts = []
+    seen = set()
+    for entry in root.findall("s:url", namespace):
+        link = entry.findtext("s:loc", namespaces=namespace)
+        modified = entry.findtext("s:lastmod", namespaces=namespace)
+        if not link or link in seen:
+            raise ValueError("Public news sitemap repeated or omitted a URL")
+        seen.add(link)
+        if urlparse(link).hostname != urlparse(source.url).hostname:
+            raise ValueError("Public news sitemap linked to a different publisher")
+        if modified and modified[:10] < START:
+            continue
+        if urlparse(link).path.rstrip("/") == "/news":
+            continue
+        if not getattr(client, "offline", False):
+            sleep(10)  # Publisher's robots.txt requests a ten-second crawl delay.
+        release, _ = client.get(link, refresh=True)
+        soup = BeautifulSoup(release, "html.parser")
+        article = soup.select_one('article[id^="post-"]')
+        heading = soup.select_one("article .news-title")
+        label = soup.select_one(".news-title-date")
+        content = soup.select_one(".news-content")
+        published = (
+            re.search(r"\b[A-Z][a-z]+ \d{1,2}, \d{4}\b", label.get_text(" ", strip=True))
+            if label
+            else None
+        )
+        if article is None or heading is None or content is None or published is None:
+            raise ValueError(
+                f"Public news release omitted its article, title, date, or body: {link}"
+            )
+        published = datetime.strptime(published[0], "%B %d, %Y").date().isoformat()
+        identity = re.fullmatch(r"post-(\d+)", article["id"])
+        if identity is None:
+            raise ValueError("Public news release has no stable publisher record ID")
+        if START <= published <= until:
+            posts.append(
+                {
+                    "id": int(identity[1]),
+                    "link": link,
+                    "date": published,
+                    "title": {"rendered": heading.get_text(" ", strip=True)},
+                    "content": {"rendered": str(content)},
+                    "publisher_classes": article.get("class", []),
+                }
+            )
+    return posts, True
+
+
+def nationbuilder_posts(
+    client: Client, source: Source, until: str, max_pages: int = 100
+) -> tuple[list[dict], bool]:
+    posts = []
+    seen = set()
+    for page in range(1, max_pages + 1):
+        path = source.index_path + (f"?page={page}" if page > 1 else "")
+        body, _ = client.get(source.url + path, refresh=True)
+        soup = BeautifulSoup(body, "html.parser")
+        cards = soup.select('.page-excerpt[id^="blog-post-page-"]')
+        if not cards:
+            raise ValueError("Public news archive did not expose dated release cards")
+        older = False
+        for card in cards:
+            anchor = card.select_one("h3 a[href]")
+            label = card.select_one(".byline")
+            if anchor is None or label is None:
+                raise ValueError("Public news release omitted its title or date")
+            published = datetime.strptime(label.get_text(" ", strip=True), "%B %d, %Y")
+            published = published.date().isoformat()
+            older |= published < START
+            link = urljoin(source.url, anchor["href"])
+            if urlparse(link).hostname != urlparse(source.url).hostname:
+                raise ValueError("Public news archive linked to a different publisher")
+            if link in seen:
+                raise ValueError("Public news archive repeated a release URL")
+            seen.add(link)
+            title = anchor.get_text(" ", strip=True)
+            campaign = re.search(r"\bcampaign\b", title, re.I) and re.search(
+                r"\b(?:ads?|advertising)\b", card.get_text(" ", strip=True), re.I
+            )
+            if not START <= published <= until or not (is_ad_release(title) or campaign):
+                continue
+            release, _ = client.get(link, refresh=True)
+            content = BeautifulSoup(release, "html.parser").select_one("#intro .content")
+            if content is None:
+                raise ValueError("Public ad release omitted its expected article body")
+            posts.append(
+                {
+                    "id": card["id"].removeprefix("blog-post-page-"),
+                    "link": link,
+                    "date": published,
+                    "title": {"rendered": title},
+                    "content": {"rendered": str(content)},
+                }
+            )
+        if older or not any(f"?page={page + 1}" in a.get("href", "") for a in soup.find_all("a")):
+            return posts, True
+    return posts, False
 
 
 def squarespace_posts(

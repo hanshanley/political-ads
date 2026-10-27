@@ -1,5 +1,12 @@
 from political_ads.cli import read_json
-from political_ads.media import caption_segments, collect_media, discover, youtube_id
+from political_ads.media import (
+    caption_segments,
+    collect_media,
+    discover,
+    inventory_media,
+    is_media_ad_release,
+    youtube_id,
+)
 from political_ads.sources import SOURCES
 
 
@@ -32,6 +39,117 @@ def test_video_id_is_constrained_to_a_public_youtube_link():
     assert youtube_id("https://www.youtube.com/watch?v=5NTptJ2PpMw&feature=share") == "5NTptJ2PpMw"
     assert youtube_id("https://youtu.be/5NTptJ2PpMw") == "5NTptJ2PpMw"
     assert youtube_id("https://youtube.com.evil.example/watch?v=5NTptJ2PpMw") is None
+    assert youtube_id("https://youtube.com/watch?feature=share&v=5NTptJ2PpMw") == "5NTptJ2PpMw"
+    assert youtube_id("https://youtu.be/5NTptJ2PpMwEXTRA") is None
+
+
+def test_media_discovery_uses_custom_rest_type_and_acf_content():
+    class Posts:
+        def json(self, url, **kwargs):
+            assert "/wp-json/wp/v2/article?" in url
+            return [
+                {
+                    "id": 1,
+                    "date": "2026-10-01",
+                    "title": {"rendered": "New Ad"},
+                    "link": "https://www.dscc.org/ad/",
+                    "acf": {
+                        "page_layout": [
+                            {
+                                "component_wysiwyg": {
+                                    "content": '<a href="https://youtu.be/5NTptJ2PpMw">Ad</a>'
+                                }
+                            }
+                        ]
+                    },
+                }
+            ], {"X-WP-TotalPages": "1"}
+
+    posts, complete = discover(Posts(), next(s for s in SOURCES if s.id == "dscc"), "2026-10-26")
+    assert complete and "youtu.be" in posts[0]["content"]["rendered"]
+
+
+def test_only_explicit_slf_ad_release_roundups_bypass_icymi_guard():
+    assert is_media_ad_release("ICYMI: SLF Releases New Ads Across the Senate Map", "slf")
+    assert not is_media_ad_release("ICYMI: Opponent Discusses Ads in Interview", "slf")
+    assert not is_media_ad_release("ICYMI: SLF Releases New Ads Across the Senate Map", "hmp")
+
+
+def test_rjc_campaign_releases_need_actual_ad_launch_evidence():
+    title = "RJC VF Launches Campaign in Michigan Senate Race"
+    assert is_media_ad_release(title, "rjc-vf", "<p>Today we released two new ads.</p>")
+    assert not is_media_ad_release(title, "rjc-vf", "<p>Join our campaign fundraiser.</p>")
+    assert not is_media_ad_release(title, "hmp", "<p>Today we released two new ads.</p>")
+
+
+def test_cfg_gallery_year_is_not_a_verified_ad_date_or_permission_to_include_older_galleries(
+    tmp_path, monkeypatch
+):
+    markup = (
+        b"<p><strong>2026 General Election Ad Gallery</strong></p>"
+        b'<div class="robo-gallery-wrap"><div data-popup="https://youtu.be/5NTptJ2PpMw" '
+        b'title="Test (LA-06)"></div></div>'
+        b"<p><strong>2024 General Election Ad Gallery</strong></p>"
+        b'<div class="robo-gallery-wrap"><div data-popup="https://youtu.be/abcdefghijk" '
+        b'title="Old (LA-06)"></div></div>'
+    )
+    monkeypatch.setattr("political_ads.media.Client.get", lambda *a, **k: (markup, {}))
+    result = inventory_media(tmp_path, "2026-10-26", ["cfg-action"])
+    assert result["sources"][0]["state"] == "ok"
+    assert len(result["leads"]) == 1
+    lead = result["leads"][0]
+    assert lead["state"] == "needs_date_and_text"
+    assert lead["releases"][0]["published"] is None
+
+
+def test_dated_protect_freedom_gallery_excludes_state_and_old_cycle_ads(tmp_path, monkeypatch):
+    markup = (
+        b'<div class="dmRespCol">John Sununu for U.S. Senate "Liberty" October 8, 2026'
+        b'<iframe src="https://youtube.com/embed/5NTptJ2PpMw"></iframe></div>'
+        b'<div class="dmRespCol">Candidate for Governor October 8, 2026'
+        b'<iframe src="https://youtube.com/embed/abcdefghijk"></iframe></div>'
+        b'<div class="dmRespCol">Old Candidate for Congress October 8, 2024'
+        b'<iframe src="https://youtube.com/embed/12345678901"></iframe></div>'
+    )
+    monkeypatch.setattr("political_ads.media.Client.get", lambda *a, **k: (markup, {}))
+    result = inventory_media(tmp_path, "2026-10-26", ["protect-freedom"])
+    assert len(result["leads"]) == 1
+    lead = result["leads"][0]
+    assert lead["releases"][0]["published"] == "2026-10-08"
+    assert lead["state"] == "pending"
+
+
+def test_media_backlog_deduplicates_roundup_links_and_preserves_leads_on_failure(
+    tmp_path, monkeypatch
+):
+    def posts(*args):
+        return [
+            {
+                "id": identity,
+                "date": "2026-10-01",
+                "link": f"https://example.org/ad-{identity}",
+                "title": {"rendered": "ICYMI: SLF Releases New Ads Across the Senate Map"},
+                "content": {
+                    "rendered": '<a href="https://youtu.be/5NTptJ2PpMw">Ad</a>'
+                    '<iframe src="https://www.youtube.com/embed/5NTptJ2PpMw"></iframe>'
+                },
+            }
+            for identity in (1, 2)
+        ], True
+
+    monkeypatch.setattr("political_ads.media.discover", posts)
+    result = inventory_media(tmp_path, "2026-10-26", ["slf"])
+    assert len(result["leads"]) == 1
+    assert len(result["leads"][0]["releases"]) == 2
+    assert result["leads"][0]["state"] == "pending"
+
+    def failed(*args):
+        raise ValueError("Access denied")
+
+    monkeypatch.setattr("political_ads.media.discover", failed)
+    failed_result = inventory_media(tmp_path, "2026-10-26", ["slf"])
+    assert failed_result["leads"] == result["leads"]
+    assert failed_result["sources"][0]["state"] == "error"
 
 
 def test_caption_rate_limit_checkpoints_then_stops_all_sources(tmp_path, monkeypatch):

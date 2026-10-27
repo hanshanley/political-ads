@@ -5,9 +5,136 @@ from political_ads.sources import (
     SOURCES,
     cooper_transcripts,
     language_of,
+    media_links,
     parse_post,
     transcript_blocks,
 )
+
+
+def test_public_media_links_normalize_video_hosts_and_include_gallery_popup_urls():
+    assert media_links(
+        '<a href="http://youtube.com/watch?feature=share&amp;v=5NTptJ2PpMw">Ad</a>'
+        '<div data-popup="https://youtu.be/5NTptJ2PpMw"></div>'
+        '<a href="https://youtube.com.evil.example/watch?v=5NTptJ2PpMw">Not a host</a>'
+    ) == [
+        "https://youtu.be/5NTptJ2PpMw",
+        "https://youtube.com/watch?feature=share&v=5NTptJ2PpMw",
+    ]
+
+
+def test_smp_ad_quotes_exclude_spokesperson_commentary_and_keep_one_creative():
+    source = next(s for s in SOURCES if s.id == "smp")
+    release = post(
+        "New Ad: A test",
+        "<p>“A spokesperson attacks their opponent in this press statement,” our CEO said.</p>"
+        "<p>“We need leaders who will lower costs and protect families,” Sheryl says "
+        "in the ad. “That is why this election matters to all of us.”</p>",
+    )
+    ads = parse_post(release, source, "2026-10-26")
+    assert len(ads) == 1
+    assert "spokesperson" not in ads[0]["text"] and "Sheryl says" not in ads[0]["text"]
+    assert ads[0]["text"].endswith("That is why this election matters to all of us.")
+    assert ads[0]["segments"][0]["kind"] == "publisher_ad_copy"
+    assert "publisher_ad_copy_completeness_unverified" in ads[0]["quality_flags"]
+
+
+def test_lcv_actual_scripts_not_teasers_commentary_or_all_release_video_links():
+    source = next(s for s in SOURCES if s.id == "lcv-vf")
+    text = (
+        "These are the actual words of an advertisement about lower costs "
+        "for working families across America."
+    )
+    heading = (
+        '<p><b>IA-Sen: Test</b> <a href="http://youtube.com/watch?v=5NTptJ2PpMw">Watch</a>'
+        "<br><i>Script below</i></p>"
+    )
+    release = post(
+        "LCV Launches New Ads",
+        heading + "<p>In this ad a spokesperson describes the campaign, not its exact script.</p>"
+        '<p><a href="https://youtu.be/abcdefghijk">Another ad without a script</a></p>'
+        "<p>###</p>" + heading + f"<p><i>{text}</i></p>"
+        "<p>The campaign's press commentary resumes here.</p>",
+    )
+    release["publisher_classes"] = ["position-senate", "race-iowa"]
+    result = parse_post(release, source, "2026-10-26")
+    assert len(result) == 1
+    assert result[0]["text"] == text
+    assert result[0]["race"] == "IA-Senate"
+    assert result[0]["chamber"] == "Senate"
+    assert result[0]["media_urls"] == ["https://youtube.com/watch?v=5NTptJ2PpMw"]
+    assert result[0]["release_title"] == release["title"]["rendered"]
+
+
+def test_lcv_separate_script_marker_is_not_a_second_ad_and_ambiguous_race_stays_unknown():
+    source = next(s for s in SOURCES if s.id == "lcv-vf")
+    text = (
+        "These are the actual words of a federal advertisement about costs "
+        "for working families across America."
+    )
+    release = post(
+        "LCV Announces an Investment",
+        '<h3><a href="https://youtu.be/5NTptJ2PpMw">Watch: Test</a></h3>'
+        f"<p><em>Script below</em></p><p><em>{text}</em></p>",
+    )
+    release["publisher_classes"] = ["race-nc-11", "race-va-01"]
+    result = parse_post(release, source, "2026-10-26")
+    assert len(result) == 1 and result[0]["text"] == text
+    assert result[0]["race"] == "Unresolved" and result[0]["state"] == ""
+    assert result[0]["chamber"] == "House"
+    release["publisher_classes"] = ["race-governor"]
+    assert parse_post(release, source, "2026-10-26") == []
+
+
+def test_lcv_unmarked_italic_ad_copy_keeps_its_completeness_warning():
+    source = next(s for s in SOURCES if s.id == "lcv-vf")
+    result = parse_post(
+        post(
+            "LCV Launches New Ad in MI-04",
+            '<p><a href="https://youtu.be/5NTptJ2PpMw">Watch</a></p>'
+            "<p><i>These are the actual quoted words of the advertisement, not the "
+            "description of the advertisement in the press release.</i></p>",
+        ),
+        source,
+        "2026-10-26",
+    )
+    assert result[0]["race"] == "MI-04"
+    assert result[0]["segments"][0]["kind"] == "publisher_ad_copy"
+    assert result[0]["quality_flags"] == ["publisher_ad_copy_completeness_unverified"]
+
+
+def test_lcv_social_footer_and_disclaimer_are_not_an_ad():
+    source = next(s for s in SOURCES if s.id == "lcv-vf")
+    disclaimer = (
+        "Paid for by the organizations named in this release and not authorized "
+        "by any candidate or candidate committee."
+    )
+    for heading in (
+        "<p>Visit us for more information or follow us on "
+        '<a href="https://youtube.com/@ourchannel">YouTube</a>.</p>',
+        '<p><a href="https://youtu.be/5NTptJ2PpMw">Watch: Ad</a></p>',
+    ):
+        release = post("New ad in MI-04", heading + f"<p><i>{disclaimer}</i></p>")
+        assert parse_post(release, source, "2026-10-26") == []
+
+
+def test_lcv_explicit_unlinked_script_and_spaced_senate_heading_are_recovered():
+    source = next(s for s in SOURCES if s.id == "lcv-vf")
+    text = (
+        "These are the actual words of an advertisement about lower costs "
+        "for working families across America."
+    )
+    release = post(
+        "LCV Announces an Investment",
+        f"<p><b>WATCH: Making Money</b><i>Script below</i></p><p><i>{text}</i></p>",
+    )
+    release["publisher_classes"] = ["position-senate", "race-new-hampshire"]
+    result = parse_post(release, source, "2026-10-26")
+    assert len(result) == 1 and result[0]["text"] == text
+    assert result[0]["race"] == "NH-Senate"
+    release["content"]["rendered"] = (
+        f'<p><a href="https://youtu.be/5NTptJ2PpMw">IA Senate: Window</a></p><p><i>{text}</i></p>'
+    )
+    assert parse_post(release, source, "2026-10-26")[0]["race"] == "IA-Senate"
 
 
 def post(title, content):

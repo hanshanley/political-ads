@@ -1,11 +1,12 @@
 # Free-source capabilities
 
 Verified October 26, 2026. Live acquisition status accompanies each snapshot.
-This is a source-limited release collection, not a platform-wide census.
+This is a source-limited collection of releases and native platform creatives, not a census.
 
-**Publication hold:** the latest Republican backfill is saved and tested locally only.
-It has not been pushed or deployed to The Margin of Error. The previously published
-snapshot contains 293 English-classified records; local counts below describe the pending expansion.
+**Publication withdrawn:** the page, report, data downloads, preview, interactive-analysis card
+and sitemap entry were removed and verified live. The host integration was removed, and the
+automatic evidence-refresh workflow disabled. Expanded data remains local and must not be
+pushed or published without explicit authorization.
 
 | Source | Working path | Text / limits |
 |---|---|---|
@@ -39,13 +40,19 @@ snapshot contains 293 English-classified records; local counts below describe th
 | HMP | Paginated public HTML news archive | Backfills beyond the custom REST endpoint's ten recent posts; caption acquisition remains partial |
 | House Majority Forward | Paginated public HTML news archive | Thirteen English scripts; two Spanish scripts retained outside analysis; policy advocacy, not verified delivery |
 | Unrig Our Economy | Public `news` WordPress type | Twenty English-classified scripts; five Spanish scripts retained outside analysis; issue advocacy |
-| NRCC | Paginated public full-text RSS, `script` search | REST returns 401; 69 written records from 97 matching releases; standalone SCRIPT headings recovered; captions may rate-limit |
+| NRCC | Public full-text RSS plus reviewed native graphics | 69 written records; 16 reviewed standalone static ads; video thumbnails excluded; REST access is not bypassed |
 | CLF | Paginated public HTML press archive | REST returns 401; public press archive checked; no usable 2026 scripts found there |
-| SMP | Ordinary public posts endpoint | Empty response; no counted ad text, not evidence of no advertising |
+| SMP / WinSenate | Public news cards and their shipped load-more form; native Snap assets | 37 in-scope ad releases checked; 10 explicitly quoted speech records, not full certified scripts; ordinary posts endpoint misses this archive; WinSenate is FEC C00865444 |
+| One Nation | Official public advocacy identity and native Snap assets | Conservative-aligned issue advocacy, not a party committee; FEC noncommittee disclosure ID retained separately; federal-candidate names or individually reviewed, hash-bound federal-identity evidence required |
 | FEC | Official 2026 candidate/committee bulk ZIPs | Identity/discovery metadata, not transcripts or one-to-one creative links |
-| Google | Public transparency ZIP | Reachable, about 313 MB; metadata alone excluded from analyzed ads |
+| LCV Victory Fund | Public sitemap and rendered archive/release HTML | Explicit publisher scripts recovered; inaccessible REST does not imply the separate public HTML is unavailable |
+| RJC Victory Fund | Public WordPress releases | Three identifiable video leads; metadata is not text |
+| Protect Freedom PAC | Public dated federal-ad gallery | Fourteen federal video leads; state/out-of-window material excluded |
+| Club for Growth Action | Public ad gallery | Twenty-two video leads; dates unverified, not analyzed scripts |
+| Google | Official ZIP, public native creative viewer, local OCR | 19,682 federal leads by exact public FEC IDs; 76 native preview text records recovered before HTTP 429; VIDEO metadata is not a transcript |
+| Snap | Official 2026 archive and original image/video assets | Exact federal identity joins plus reviewed advocacy payers; the latter require federal-candidate evidence in recovered text; local OCR/ASR; inventory candidates are not all analyzed ads; scheduled dates are not verified daily delivery |
 | Meta | Ad Library API | Free identity/developer authorization required; not configured, no acquired-text claim |
-| X | Official disclosure documentation | Lead only, not implemented; no acquired-text claim |
+| X | Official disclosure documentation/archive links checked | Linked ZIP returns 404; another official host returns 403; CDN response is HTML, not a ZIP; no text acquired |
 
 Official entry points:
 
@@ -82,9 +89,16 @@ Official entry points:
 - https://www.nrcc.org/
 - https://congressionalleadershipfund.org/
 - https://www.senatemajority.com/
+- https://www.fec.gov/data/committee/C00865444/
+- https://www.onenationamerica.org/
+- https://www.lcvvictoryfund.org/
+- https://www.rjchq.org/
+- https://www.protectfreedompac.com/
+- https://www.clubforgrowthaction.com/
 - https://www.fec.gov/data/browse-data/
 - https://storage.googleapis.com/political-csv/google-political-ads-transparency-bundle.zip
 - https://www.facebook.com/ads/library/api/
+- https://www.snap.com/political-ads/
 - https://help.x.com/en/business-and-advertising/political-ads-disclosure
 
 Retrieval declares a research user agent and uses public endpoints. Unauthorized responses
@@ -100,37 +114,26 @@ stop the entire run, preserving recovered text for subsequent scheduled collecti
 Three short opponent-speech clips linked from an NRCC ad-rebuttal post were excluded after
 review: linking a clip while criticizing an opponent's ad does not make it the publisher's ad.
 
-The locally expanded saved snapshot contains 379 English-classified records (200 Democratic-aligned
-and 179 Republican-aligned), up from 293: 316 written records and 63 caption records. These represent
-353 distinct exact party/message identities (197 D / 156 R). Written records comprise 285 publisher
-transcripts and 31 explicitly flagged publisher-quoted copy records, not 316 independently certified
-complete transcripts.
-Eight Spanish records remain in saved acquisition inputs, outside English publication.
+The current local corpus combines written publisher scripts/quoted ad copy, saved public captions,
+reviewed native graphics, Google native previews and Snap native image/video text. Exact totals,
+party denominators, distinct exact-message counts, publisher composition and monthly tables are
+generated together in `outputs/analysis.json` and `outputs/analysis.html`; the matching
+`outputs/analysis-ads.csv` includes complete text and evidence. These files, not an earlier
+379-record checkpoint, define the current reconciled local snapshot.
 
-The 86 added records comprise 82 Republican-aligned records (68 additional NRCC records, eight Barr
-scripts, one Susan Collins script, two Young Kim scripts, one Ciscomani script, and two Marshall
-scripts) and four DSCC scripts. All 238 previously saved written records retain their original text,
-hashes, and metadata. Republican House coverage increases from one to 72 records across three
-publishers, but 69 still come from one party committee. This is not broad candidate-campaign coverage.
+Non-English and uncertain-language records remain in acquisition partitions outside the English
+comparison. Twenty-six clear English recovered texts received
+contextual language adjudication, bound to exact source hashes in `data/snap-language-reviews.json`.
+Original automatic labels remain in segment evidence. This review does not certify OCR accuracy
+or the political claims. Other uncertain records are not automatically relabeled English.
 
 ### Locally reviewed temporal coverage
 
-Counts below use the first observed release of each exact message within the saved English corpus,
-not delivery dates or airings. Publisher counts include all saved records in that month, including
-mirrors of previously observed messages.
-
-| Release month | D messages | R messages | D publishers | R publishers |
-|---|---:|---:|---:|---:|
-| 2026-01 | 1 | 6 | 1 | 2 |
-| 2026-02 | 2 | 4 | 1 | 2 |
-| 2026-03 | 3 | 7 | 2 | 3 |
-| 2026-04 | 2 | 40 | 2 | 4 |
-| 2026-05 | 6 | 15 | 4 | 4 |
-| 2026-06 | 11 | 7 | 5 | 4 |
-| 2026-07 | 10 | 7 | 4 | 4 |
-| 2026-08 | 26 | 6 | 9 | 4 |
-| 2026-09 | 42 | 14 | 9 | 6 |
-| 2026-10 | 94 | 50 | 12 | 8 |
+The generated monthly tables use the first observed release, Google-reported delivery start,
+or Snap scheduled start of each exact message. Those date bases are not interchangeable or
+verified daily airings. Publisher counts include saved records in the month, including mirrors
+of previously observed messages. Snap placement intervals and positive reported impressions
+do not establish the days on which exposure actually occurred.
 
 March's NRCC releases repeat the same script across 22 releases, counted as one exact message.
 April's larger count includes changed-target Tax Day templates, which remain separate messages.
@@ -142,8 +145,10 @@ Further public probes checked Kean, Mackenzie, Bresnahan, Kiggans, Lawler, Gabe 
 Husted, Moody, and additional outside-group routes. Husted's public `press-releases` type exposed
 20 matching releases but no explicit usable scripts; ordinary posts alone had missed this archive.
 Unsupported page formats, missing routes, and access denials are not empty-advertising findings.
-LCV Victory Fund returned 401 and was not bypassed. No new YouTube caption requests or local
-ASR claims were made in this round.
+LCV Victory Fund's REST endpoint returned 401 and was not bypassed; separate public HTML supplied
+explicit scripts. Blocked YouTube captions and Google creative requests are not retried.
+Snap's independently available original videos are processed locally with multilingual Whisper
+and timestamped Apple Vision frame OCR; media is not uploaded to hosted recognition services.
 
 House Majority Forward describes itself as progressive and is House Majority PAC's sister
 organization, not a formally registered Democratic Party committee. See its
@@ -157,8 +162,9 @@ Neither publisher identity establishes a creative's
 sole payer or verified delivery. Source/sponsor filters keep these groups separate from campaigns.
 
 Additional Republican-side probes checked One Nation's public ad releases and American Action
-Network's public press archive. These exposed video leads, but no usable written ad scripts in
-the checked material; they did not add counted text. An interactive phone-tree transcript linked
+Network's public press archive. Written-release probes exposed video leads rather than usable
+scripts; One Nation's separate native Snap route can supply actual recovered creative text.
+An interactive phone-tree transcript linked
 from an El-Sayed ad announcement was also excluded: it is not the 15-second ad's transcript.
 
 Verified delivery, complete candidate discovery, comprehensive on-screen text, and broad
