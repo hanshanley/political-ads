@@ -4,17 +4,17 @@ Issue language, opponent portrayals and the limits of an uneven collection.
 
 **DRAFT - NOT PUBLISHED.** Prepared for Substack; images are local PNG files. No upload, scheduling or publication has occurred.
 
-Data through 2026-10-27. Snapshot `a8118883350c2e466a5a2d5b64f10d643fbe0c4a12be9cf7541523b989da6145`.
+Data through 2026-10-28. Snapshot `d70c1582ad49a3bfbb70156a5c81648b200f55b83cf4f7a1cf1389b51f8ae083`.
 
 Political ads tell voters what a campaign wants them to notice: a price, a policy, an achievement, or something allegedly wrong with the other candidate. Comparing the words can reveal recurring themes. It is harder to distinguish a real party difference from the particular publishers, races and ad formats we happened to recover.
 
-This snapshot contains 1,751 English-language ad-text records through 2026-10-27: 1,216 Democratic-aligned, 496 Republican-aligned, 31 other and 8 unresolved. After exact-text deduplication within each party, the D/R comparisons use 1,194 and 459 messages. These are recovered releases, previews and original creatives, not a census of advertisements aired or a measure of exposure.
+This snapshot contains 1,757 English-language ad-text records through 2026-10-28: 1,222 Democratic-aligned, 496 Republican-aligned, 31 other and 8 unresolved. After exact-text deduplication within each party, the D/R comparisons use 1,200 and 459 messages. These are recovered releases, previews and original creatives, not a census of advertisements aired or a measure of exposure.
 
 Republican House coverage includes 146 English text records. It remains uneven: more records from a few campaigns do not establish coverage of every Republican House candidate. Missing ads are unknown, not evidence of silence.
 
 ## The issue-language differences in this collection
 
-The most frequent published issue family on the Democratic side is Cost of living: 458/1,194 exact messages (38.4%). A match means one of the codebook's phrases appears in the available text. It is not an independent judgment of the ad's main topic, accuracy or effectiveness.
+The most frequent published issue family on the Democratic side is Cost of living: 462/1,200 exact messages (38.5%). A match means one of the codebook's phrases appears in the available text. It is not an independent judgment of the ad's main topic, accuracy or effectiveness.
 
 The most frequent published issue family on the Republican side is Taxes & spending: 144/459 exact messages (31.4%). A match means one of the codebook's phrases appears in the available text. It is not an independent judgment of the ad's main topic, accuracy or effectiveness.
 
@@ -48,13 +48,13 @@ The next comparison follows the question in the Harris/Trump media-coverage anal
 
 A bundled general-English lexicon supplies words with adjective-polarity entries. We do not give advertisements sentiment scores or claim that each occurrence is grammatically an adjective. Words must be within 12 tokens of an explicit mention in the same sentence and evidence lane; mixed-party sentences are excluded. Each exact message counts once per word. The denominator includes eligible mention-context messages with no lexicon-word hit.
 
-For Democratic mentions, the eligible denominators are 583 D-aligned and 235 R-aligned messages. These are smaller and more selective than the issue-chart denominators.
+For Democratic mentions, the eligible denominators are 585 D-aligned and 235 R-aligned messages. These are smaller and more selective than the issue-chart denominators.
 
 ![Supported lexicon-word contrasts in unreviewed mention contexts.](figures/descriptors-D.png)
 
 *Supported lexicon-word contrasts in unreviewed mention contexts.* [Exact data](figures/descriptors-D.csv).
 
-For Republican mentions, the eligible denominators are 338 D-aligned and 153 R-aligned messages. These are smaller and more selective than the issue-chart denominators.
+For Republican mentions, the eligible denominators are 342 D-aligned and 153 R-aligned messages. These are smaller and more selective than the issue-chart denominators.
 
 ![Supported lexicon-word contrasts in unreviewed mention contexts.](figures/descriptors-R.png)
 
@@ -76,15 +76,15 @@ A word near a Republican name is not necessarily a word describing that person. 
 
 ## What changes in the last ninety days?
 
-The recent window is 2026-07-30 to 2026-10-27; the preceding window is 2026-05-01 to 2026-07-29. We compare first-observed exact messages in contexts mentioning the opposing party, not how long a creative kept airing. For early-cycle snapshots, windows are limited by the collection's January 1 start.
+The recent window is 2026-07-31 to 2026-10-28; the preceding window is 2026-05-02 to 2026-07-30. We compare first-observed exact messages in contexts mentioning the opposing party, not how long a creative kept airing. For early-cycle snapshots, windows are limited by the collection's January 1 start.
 
-For Democratic-aligned ads, the recent and preceding windows contain 300 and 32 eligible messages. Keeping only publishers present in both windows leaves 62 and 8. That subset does not meet the group-size threshold, so its word contrasts are not ranked.
+For Democratic-aligned ads, the recent and preceding windows contain 302 and 33 eligible messages. Keeping only publishers present in both windows leaves 61 and 9. That subset does not meet the group-size threshold, so its word contrasts are not ranked.
 
 ![Supported lexicon-word contrasts in unreviewed mention contexts.](figures/descriptor-change-D.png)
 
 *Supported lexicon-word contrasts in unreviewed mention contexts.* [Exact data](figures/descriptor-change-D.csv).
 
-For Republican-aligned ads, the recent and preceding windows contain 154 and 34 eligible messages. Keeping only publishers present in both windows leaves 18 and 34. That subset meets the group-size threshold, but it does not hold race, format, candidate or election phase constant.
+For Republican-aligned ads, the recent and preceding windows contain 150 and 37 eligible messages. Keeping only publishers present in both windows leaves 14 and 37. That subset meets the group-size threshold, but it does not hold race, format, candidate or election phase constant.
 
 ![Supported lexicon-word contrasts in unreviewed mention contexts.](figures/descriptor-change-R.png)
 
@@ -104,7 +104,7 @@ These plots are exploratory changes in the saved collection. A rise can reflect 
 
 We remove each party's largest publisher by source-record count and recalculate the exact-message shares. In this snapshot the exclusions are Democratic: AFL-CIO; Republican: Senate Leadership Fund. This is a stress test, not a balanced sample or an estimate corrected for all missing advertising.
 
-The largest absolute full-sample issue gap is Cost of living. D-aligned messages match it in 458/1,194 (38.4%); R-aligned messages in 94/459 (20.5%). After the exclusions those values are 382/913 (41.8%) and 88/309 (28.5%). The changed comparison shows why the original gap should not be read as a source-independent party effect.
+The largest absolute full-sample issue gap is Cost of living. D-aligned messages match it in 462/1,200 (38.5%); R-aligned messages in 94/459 (20.5%). After the exclusions those values are 386/919 (42.0%) and 88/309 (28.5%). The changed comparison shows why the original gap should not be read as a source-independent party effect.
 
 ![Largest five publishers per party and all remaining publishers.](figures/publisher-composition.png)
 
@@ -118,7 +118,7 @@ The largest absolute full-sample issue gap is Cost of living. D-aligned messages
 
 This collection supports a checkable description of the words recovered from these ads, along with a small number of context-reviewed opponent portrayals. It does not establish national advertising prevalence, factual truth, persuasion, audience reach or the parties' private intentions. Speaker quotation, extraction quality, primary attacks and positive self-description still require context.
 
-The final eligibility cutoff remains 2026-11-04, inclusive. The current snapshot stops at 2026-10-27; uncollected future dates are not zeros. Research refreshes may update the saved evidence, figures and both drafts, but website and Substack publication remain on hold.
+The final eligibility cutoff remains 2026-11-04, inclusive. The current snapshot stops at 2026-10-28; uncollected future dates are not zeros. Research refreshes may update the saved evidence, figures and both drafts, but website and Substack publication remain on hold.
 
 ## Evidence and methods
 

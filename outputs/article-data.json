@@ -6,7 +6,7 @@
     },
     {
       "kind": "paragraph",
-      "text": "This snapshot contains 1,751 English-language ad-text records through 2026-10-27: 1,216 Democratic-aligned, 496 Republican-aligned, 31 other and 8 unresolved. After exact-text deduplication within each party, the D/R comparisons use 1,194 and 459 messages. These are recovered releases, previews and original creatives, not a census of advertisements aired or a measure of exposure."
+      "text": "This snapshot contains 1,757 English-language ad-text records through 2026-10-28: 1,222 Democratic-aligned, 496 Republican-aligned, 31 other and 8 unresolved. After exact-text deduplication within each party, the D/R comparisons use 1,200 and 459 messages. These are recovered releases, previews and original creatives, not a census of advertisements aired or a measure of exposure."
     },
     {
       "kind": "paragraph",
@@ -18,7 +18,7 @@
     },
     {
       "kind": "paragraph",
-      "text": "The most frequent published issue family on the Democratic side is Cost of living: 458/1,194 exact messages (38.4%). A match means one of the codebook's phrases appears in the available text. It is not an independent judgment of the ad's main topic, accuracy or effectiveness."
+      "text": "The most frequent published issue family on the Democratic side is Cost of living: 462/1,200 exact messages (38.5%). A match means one of the codebook's phrases appears in the available text. It is not an independent judgment of the ad's main topic, accuracy or effectiveness."
     },
     {
       "kind": "paragraph",
@@ -35,8 +35,8 @@
       "kind": "figure",
       "png": "issue-language.png",
       "sha256": {
-        "csv": "5e2c1cba9762a58ad363d6eb7d0730803f9a698027669c6b679706274fef6c7f",
-        "png": "de96f98e1ac8e474c3c6e3e5524713ce60d8a6a535ee358818226596686b7001"
+        "csv": "ed4ba5f27c753515e897be2a3de9a89d9c9bf4b334e17b9809d79b0a44a30dbc",
+        "png": "aaab5d80919bf07b278c9f1ba72987d5830121b42a328ba242cfbe52f79606f9"
       },
       "title": "What issues appear in the wording?"
     },
@@ -71,8 +71,8 @@
       "kind": "figure",
       "png": "portrayal-language.png",
       "sha256": {
-        "csv": "25c7ea4114de44256eab254afcb4c7f1b9355772f9ab1107be8eb1d18a601fc9",
-        "png": "3606f0408642955f9b25214f82ea546a938fd8e8c1115ed42a6e67e29639f5d1"
+        "csv": "5e8d4cf1c1cd7a606ce0e6df68ffbe50147721b4b812dc0e9f1739a105dab0be",
+        "png": "48cba50d49764f12c63704b40a20987c9e2b21b3e61490ea5f6b942af6509bf0"
       },
       "title": "The vocabulary of contrast"
     },
@@ -90,7 +90,7 @@
     },
     {
       "kind": "paragraph",
-      "text": "For Democratic mentions, the eligible denominators are 583 D-aligned and 235 R-aligned messages. These are smaller and more selective than the issue-chart denominators."
+      "text": "For Democratic mentions, the eligible denominators are 585 D-aligned and 235 R-aligned messages. These are smaller and more selective than the issue-chart denominators."
     },
     {
       "csv": "descriptors-D.csv",
@@ -99,14 +99,14 @@
       "kind": "figure",
       "png": "descriptors-D.png",
       "sha256": {
-        "csv": "7b18d0b82d9c08967b77591e88f26c7ca13c995c85e36649366d2ee1d3eb88f8",
-        "png": "0af95c154a83d902bd91a33670ec13760365aaa89e1c8e0bc362fee8fb3701e7"
+        "csv": "c1d9fbfe1c5d3c6e22e7a843655bd992ab344da6ca96a3639fc141e12e328506",
+        "png": "9bf913e10c510b80782e75e28596b08a63e99fb0935cba11b5205abbd40ce988"
       },
       "title": "Words near Democratic mentions"
     },
     {
       "kind": "paragraph",
-      "text": "For Republican mentions, the eligible denominators are 338 D-aligned and 153 R-aligned messages. These are smaller and more selective than the issue-chart denominators."
+      "text": "For Republican mentions, the eligible denominators are 342 D-aligned and 153 R-aligned messages. These are smaller and more selective than the issue-chart denominators."
     },
     {
       "csv": "descriptors-R.csv",
@@ -115,8 +115,8 @@
       "kind": "figure",
       "png": "descriptors-R.png",
       "sha256": {
-        "csv": "42b70aad96380925e90151fee8bb56bb36b63275b55a389a3f18ccc107ea7cee",
-        "png": "45f479f7d630557c09e8144afee9ca3d9441e2a4c01bb79d4cbac3dcc21a6acb"
+        "csv": "c45a12bb7a042285e683bef7d41b22a0295882f639c32931543f3d4a89036ca7",
+        "png": "289053c90a39323de09a30bf198654875837e24391a039c9fc0a081e77ba8818"
       },
       "title": "Words near Republican mentions"
     },
@@ -150,11 +150,11 @@
     },
     {
       "kind": "paragraph",
-      "text": "The recent window is 2026-07-30 to 2026-10-27; the preceding window is 2026-05-01 to 2026-07-29. We compare first-observed exact messages in contexts mentioning the opposing party, not how long a creative kept airing. For early-cycle snapshots, windows are limited by the collection's January 1 start."
+      "text": "The recent window is 2026-07-31 to 2026-10-28; the preceding window is 2026-05-02 to 2026-07-30. We compare first-observed exact messages in contexts mentioning the opposing party, not how long a creative kept airing. For early-cycle snapshots, windows are limited by the collection's January 1 start."
     },
     {
       "kind": "paragraph",
-      "text": "For Democratic-aligned ads, the recent and preceding windows contain 300 and 32 eligible messages. Keeping only publishers present in both windows leaves 62 and 8. That subset does not meet the group-size threshold, so its word contrasts are not ranked."
+      "text": "For Democratic-aligned ads, the recent and preceding windows contain 302 and 33 eligible messages. Keeping only publishers present in both windows leaves 61 and 9. That subset does not meet the group-size threshold, so its word contrasts are not ranked."
     },
     {
       "csv": "descriptor-change-D.csv",
@@ -163,14 +163,14 @@
       "kind": "figure",
       "png": "descriptor-change-D.png",
       "sha256": {
-        "csv": "2b916269c480e60bd3284a410eb9111de199e8f360fd86155f100480373b165d",
-        "png": "e46de344d325bc9898d1718cb8f5abe8afb1f588a27ec3d74397618dfcb112d3"
+        "csv": "58a94c2bea23ba9619822aa17c803c5204b25a5ae9f8429f71f321149847a83a",
+        "png": "c5ed708d1cdfeebf4c8d5abc99bbfb10046a066026d3da6b3d7406816f16df0b"
       },
       "title": "Democratic wording near opposing-party mentions"
     },
     {
       "kind": "paragraph",
-      "text": "For Republican-aligned ads, the recent and preceding windows contain 154 and 34 eligible messages. Keeping only publishers present in both windows leaves 18 and 34. That subset meets the group-size threshold, but it does not hold race, format, candidate or election phase constant."
+      "text": "For Republican-aligned ads, the recent and preceding windows contain 150 and 37 eligible messages. Keeping only publishers present in both windows leaves 14 and 37. That subset meets the group-size threshold, but it does not hold race, format, candidate or election phase constant."
     },
     {
       "csv": "descriptor-change-R.csv",
@@ -179,8 +179,8 @@
       "kind": "figure",
       "png": "descriptor-change-R.png",
       "sha256": {
-        "csv": "48f0a0018833c331b91851ba210d20180e4e53fde6d5741e508c0a2b3dfb39b2",
-        "png": "cf65648200fc5bfed3beec2f3e7c12239df6ac6c9eae7e0aac8c832dfa03259c"
+        "csv": "19d76a4d29391dc24d8ba9d3cd3007c1b0f1fac4afbf15aa4e74888a3ee48aca",
+        "png": "126088681a1e130618fb4fa8979de074977487a8b17cdb6bc4746e8350f63ab3"
       },
       "title": "Republican wording near opposing-party mentions"
     },
@@ -195,8 +195,8 @@
       "kind": "figure",
       "png": "monthly-coverage.png",
       "sha256": {
-        "csv": "ddcebae330ff20a6bf8013173a52bfa0985731653f6aab4c759548953b53c970",
-        "png": "b22c8da1ffcbb51d98e21f6a895bf3e330e72b9cf7a08034f423b4866062cd9f"
+        "csv": "b5a4dc496e1c551aac99a561a7eae474235a7515411be548885fe951487736bc",
+        "png": "d78d42233dbba4faf9be9891284534ca6fdf164fac9a5bfd6f94bb2c573eccee"
       },
       "title": "Messages in the saved collection"
     },
@@ -207,8 +207,8 @@
       "kind": "figure",
       "png": "monthly-issues.png",
       "sha256": {
-        "csv": "eb951353a8721958ef4d74806fdaf56cdf43485573544eb2646ec6d070affef6",
-        "png": "f0aced8cc4c35ba2f2c2fc91668867d9319f9d39a93be8e87ac5241485ef3ac0"
+        "csv": "ee52c1e7d3b8509f924f94c9fc47e7277d9ebe33fa03982baff3046d96c36322",
+        "png": "3b0d30898ab6fecd43e1219545df417b73d34feefeb9d772fdbcfe0979cbca24"
       },
       "title": "Issue wording over the cycle"
     },
@@ -222,7 +222,7 @@
     },
     {
       "kind": "paragraph",
-      "text": "The largest absolute full-sample issue gap is Cost of living. D-aligned messages match it in 458/1,194 (38.4%); R-aligned messages in 94/459 (20.5%). After the exclusions those values are 382/913 (41.8%) and 88/309 (28.5%). The changed comparison shows why the original gap should not be read as a source-independent party effect."
+      "text": "The largest absolute full-sample issue gap is Cost of living. D-aligned messages match it in 462/1,200 (38.5%); R-aligned messages in 94/459 (20.5%). After the exclusions those values are 386/919 (42.0%) and 88/309 (28.5%). The changed comparison shows why the original gap should not be read as a source-independent party effect."
     },
     {
       "csv": "publisher-composition.csv",
@@ -231,8 +231,8 @@
       "kind": "figure",
       "png": "publisher-composition.png",
       "sha256": {
-        "csv": "6853194dc50b611d26ce274357a5bda91869ecfc4fee88b15cdc77be1262e237",
-        "png": "be7847fc35930676dedbdc3c8d90ba400bf30c7924661e4621c6ecb6d3a9c9b0"
+        "csv": "70476028a598906ddeee86077c5f4c3a8aeee9f9eff38656505cb1df667abc4a",
+        "png": "a122fdaf98384d426772123c7717515e93f1f6f0b507f84f0cc916b1d203f56f"
       },
       "title": "Who supplies the observed ads?"
     },
@@ -243,8 +243,8 @@
       "kind": "figure",
       "png": "source-sensitivity.png",
       "sha256": {
-        "csv": "64cbb70f15fa7fbcc3b91afaa45b83851059e8d8ea2f9974562794d5a50567bb",
-        "png": "f32870207da66bdebecbfa9cd8c489f5ae5913ba34b1928248dec778cc892905"
+        "csv": "4e443c95a03fb5dec08bc843616558cacce6a89694a2f838c3047235247c5566",
+        "png": "77ef6a5bfd0b02f9812b3df10750c8244743ce7192f50167ac31ccf7816b1954"
       },
       "title": "How dependent are the issue gaps on sources?"
     },
@@ -258,7 +258,7 @@
     },
     {
       "kind": "paragraph",
-      "text": "The final eligibility cutoff remains 2026-11-04, inclusive. The current snapshot stops at 2026-10-27; uncollected future dates are not zeros. Research refreshes may update the saved evidence, figures and both drafts, but website and Substack publication remain on hold."
+      "text": "The final eligibility cutoff remains 2026-11-04, inclusive. The current snapshot stops at 2026-10-28; uncollected future dates are not zeros. Research refreshes may update the saved evidence, figures and both drafts, but website and Substack publication remain on hold."
     }
   ],
   "context_illustrations": [
@@ -1476,13 +1476,19 @@
       "dccc-669589-0",
       "dccc-669591-0",
       "dccc-669591-1",
+      "dccc-669665-0",
       "snap-07a275f45f16736b32a800f3",
       "snap-54aafe9759014c955b82c042",
       "snap-8731a00326d6abdc8024c02f",
       "snap-8b64715b3fcc4cec692ee0ea",
       "snap-fb9348f55f112f20cc932fa6",
       "turek-15ed80e30bd35d40-0",
-      "turek-15ed80e30bd35d40-1"
+      "turek-15ed80e30bd35d40-1",
+      "dccc-669669-0",
+      "dccc-669673-0",
+      "el-sayed-17c2f002642e20d9-0",
+      "lcv-vf-3185-0",
+      "smp-3904-0"
     ],
     "R": [
       "google-CR02731653127865368577-92d4b54cb1de",
@@ -1984,15 +1990,15 @@
   ],
   "publication_status": "draft_not_published",
   "record_counts": {
-    "D": 1216,
+    "D": 1222,
     "R": 496,
     "other": 31,
     "unknown": 8
   },
-  "snapshot_id": "a8118883350c2e466a5a2d5b64f10d643fbe0c4a12be9cf7541523b989da6145",
+  "snapshot_id": "d70c1582ad49a3bfbb70156a5c81648b200f55b83cf4f7a1cf1389b51f8ae083",
   "subtitle": "Issue language, opponent portrayals and the limits of an uneven collection.",
   "title": "How Democrats and Republicans talk in their 2026 ads",
-  "total_unique_messages": 1692,
-  "until": "2026-10-27",
+  "total_unique_messages": 1698,
+  "until": "2026-10-28",
   "version": "article-1"
 }
