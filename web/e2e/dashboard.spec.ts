@@ -89,6 +89,17 @@ test("final-day defaults and single-message timeline have no future zeros or dup
   await expect(page.getByRole("status")).toContainText("1 records");
 });
 
+test("technical report keeps tables and expanded descriptor contexts inside mobile width", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("./report.html");
+  await expect(page.getByRole("heading", { name: "The language of political ads", exact: true })).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  const contexts = page.locator("details").filter({ hasText: "Read the extracted descriptor contexts" });
+  await contexts.locator("summary").click();
+  await expect(contexts).toHaveAttribute("open", "");
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
+
 test("unresolved alignment remains independently filterable with complete evidence", async ({ page }) => {
   await page.goto("./");
   const response = await page.request.get("./data/dataset.json");

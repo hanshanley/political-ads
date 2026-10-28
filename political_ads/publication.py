@@ -169,7 +169,7 @@ def report(dataset: dict) -> str:
                 "validated estimates of an ad's main subject.</p>"
             )
     return (
-        "<!doctype html><html lang='en'><meta charset='utf-8'>"
+        "<!doctype html><html lang='en'><head><meta charset='utf-8'>"
         "<meta name='viewport' content='width=device-width,initial-scale=1'>"
         "<title>The language of political ads — report</title>"
         "<meta name='description' content='Compare 2026 federal ad language, "
@@ -180,7 +180,7 @@ def report(dataset: dict) -> str:
         "blockquote{border-left:3px solid #a9b5ac;margin-left:0;padding-left:1.5rem}"
         "table{width:100%;border-collapse:collapse;font:15px/1.6 system-ui}"
         "th,td{text-align:left;border-bottom:1px solid #ddd;padding:.6rem}"
-        "@media print{body{margin:0;max-width:none}}</style>"
+        "@media print{body{margin:0;max-width:none}}</style></head><body>"
         "<a href='./'>The Margin of Error / Political ads</a>"
         "<h1>The language of political ads</h1>"
         f"<p>2026 federal elections · observed records through {esc(dataset['until'])}</p>"
@@ -199,7 +199,7 @@ def report(dataset: dict) -> str:
         + "".join(items)
         + f"<h2>How to read this report</h2><ul>{methods}</ul>"
         "<p><a href='data/ads.csv'>Download the complete text and evidence (CSV)</a> · "
-        "<a href='data/dataset.json'>Download JSON</a></p></html>"
+        "<a href='data/dataset.json'>Download JSON</a></p></body></html>"
     )
 
 
@@ -330,7 +330,7 @@ def preview(dataset: dict) -> str:
 
 def build(root: Path) -> None:
     from political_ads.editorial import margin_html
-    from political_ads.research import research, research_report
+    from political_ads.research import research, research_report, validate_research
 
     dataset = prepare(root)
     validate_dataset(dataset)
@@ -359,6 +359,7 @@ def build(root: Path) -> None:
         )
     )
     (root / "web/public/preview.svg").write_text(preview(dataset))
+    validate_research(root, dataset)
     write_json(
         root / "outputs/validation.json",
         {
@@ -372,6 +373,9 @@ def build(root: Path) -> None:
                 "evidence offsets",
                 "metric reconciliation",
                 "reviewed quote hashes",
+                "research metric reconciliation",
+                "figure and chart-data hashes",
+                "matching unpublished article editions",
             ],
             **dataset["validation"],
         },
@@ -402,4 +406,7 @@ def validate(root: Path) -> None:
     compressed = root / "web/public/data/dataset.json.gz"
     if json.loads(gzip.decompress(compressed.read_bytes())) != dataset:
         raise ValueError("Compressed evidence download does not match the corpus")
+    from political_ads.research import validate_research
+
+    validate_research(root, dataset)
     print(f"Verified {len(csv_data)} text-complete records and evidence-linked metrics")

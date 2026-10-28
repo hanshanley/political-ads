@@ -84,6 +84,9 @@ illustrations are in `outputs/article-data.json`. Both editions use the same sna
 ten original PNG figures under `outputs/figures/`; no new SVG charts are produced.
 Every figure has exact CSV data, with all chart data in `figures/chart-data.json` and
 mention-context evidence in `figures/descriptor-evidence.json`.
+`validate` also recomputes research metrics and descriptor evidence, checks PNG/CSV and
+chart-data hashes in both output locations, and verifies both article editions and reports
+against the shared findings. Missing or stale research artifacts fail validation.
 The website build also stages a local `article.html` preview; this does not deploy anything.
 Substack Markdown uses relative PNG/evidence links. Uploading images and replacing those
 links requires a separately authorized publication destination; nothing is uploaded automatically.

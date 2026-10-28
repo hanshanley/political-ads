@@ -101,6 +101,22 @@ def test_real_snapshot_rebuild_is_deterministic_and_downloads_are_complete(tmp_p
     assert first == {path.name: path.read_bytes() for path in output.iterdir()}
     assert first_figures == {path.name: path.read_bytes() for path in figures.iterdir()}
     assert gzip.decompress(first["dataset.json.gz"]) == first["dataset.json"]
+    for path, replacement, error in (
+        (
+            figures / "manifest.json",
+            first_figures["manifest.json"].replace(dataset["snapshot_id"].encode(), b"stale"),
+            "Figure manifest",
+        ),
+        (figures / manifest["charts"][0]["png"], b"truncated PNG", "Figure asset hash"),
+        (figures / manifest["charts"][0]["csv"], b"metadata only", "Figure asset hash"),
+        (figures / "chart-data.json", b"{}", "Chart data hash"),
+        (tmp_path / "outputs/substack.md", b"Stale article", "Research draft or report"),
+    ):
+        original = path.read_bytes()
+        path.write_bytes(replacement)
+        with pytest.raises(ValueError, match=error):
+            validate(tmp_path)
+        path.write_bytes(original)
     (output / "ads.csv").write_bytes(
         first["ads.csv"].replace(dataset["ads"][0]["source_hash"].encode(), b"tampered", 1)
     )

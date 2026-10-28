@@ -303,6 +303,11 @@ monthly plots stop at the actual saved cutoff rather than showing future months 
 Full-snapshot figures do not change with interactive dashboard filters. Sponsor/publisher
 grouping combines matching names across collection-source IDs, not inferred legal payers;
 the dashboard's collection-source filter still selects acquisition IDs.
+Percentage bars keep a zero baseline and use labeled, data-dependent upper bounds; both
+parties share the same scale within each comparison. Sensitivity panels share one scale.
+Each PNG and CSV has a SHA-256 in the figure manifest. Build/validation also verifies
+chart-data hashes, recomputes the research metrics and descriptor contexts from the corpus,
+and checks both article editions and technical reports against the shared findings.
 
 The shared narrative in `outputs/article-data.json` generates Substack Markdown
 (`outputs/substack.md`) and The Margin of Error HTML (`outputs/themarginoferror.html`).

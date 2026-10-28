@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from collections import Counter
+from hashlib import sha256
 from html import escape
 from pathlib import Path
 
@@ -12,22 +13,25 @@ from political_ads.figures import build_figures
 from political_ads.publication import csv_export, prepare, report, validate_dataset
 
 
-def research(root: Path, dataset: dict | None = None) -> dict:
-    dataset = prepare(root) if dataset is None else dataset
-    validate_dataset(dataset)
-    strata = stratified_comparisons(dataset["ads"], dataset["codebook"])
+def descriptor_aliases(root: Path) -> list[dict]:
     candidates = {
         candidate["candidate_id"]: candidate
         for candidate in read_json(root / "data/site/candidates.json", {"candidates": []})[
             "candidates"
         ]
     }
-    aliases = [
+    return [
         candidates[alias["candidate_id"]] | {"reviewed_alias": alias}
         for alias in read_json(root / "data/snap-candidate-aliases.json", [])
         if alias["candidate_id"] in candidates
     ]
-    descriptors = descriptive_language(dataset, aliases)
+
+
+def research(root: Path, dataset: dict | None = None) -> dict:
+    dataset = prepare(root) if dataset is None else dataset
+    validate_dataset(dataset)
+    strata = stratified_comparisons(dataset["ads"], dataset["codebook"])
+    descriptors = descriptive_language(dataset, descriptor_aliases(root))
     figures = build_figures(dataset, strata, descriptors, root / "outputs/figures")
     article = article_data(
         dataset,
@@ -47,6 +51,9 @@ def research(root: Path, dataset: dict | None = None) -> dict:
         "comparisons": strata,
         "descriptive_language": descriptors,
         "figures": figures,
+        "chart_data_hash": sha256(
+            (root / "outputs/figures/chart-data.json").read_bytes()
+        ).hexdigest(),
         "article": article,
     }
     output = root / "outputs"
@@ -57,6 +64,66 @@ def research(root: Path, dataset: dict | None = None) -> dict:
     (output / "substack.md").write_text(substack_markdown(article))
     (output / "themarginoferror.html").write_text(margin_html(article))
     return result
+
+
+def validate_research(root: Path, dataset: dict) -> None:
+    output = root / "outputs"
+    result = read_json(output / "analysis.json", {})
+    if result.get("dataset") != dataset:
+        raise ValueError("Research evidence does not match the built corpus")
+    strata = stratified_comparisons(dataset["ads"], dataset["codebook"])
+    if result["comparisons"] != strata:
+        raise ValueError("Research metrics do not reconcile to the corpus")
+    descriptors = descriptive_language(dataset, descriptor_aliases(root))
+    if result["descriptive_language"] != descriptors:
+        raise ValueError("Research descriptor evidence does not reconcile to the corpus")
+    manifest = result["figures"]
+    if (
+        manifest["snapshot_id"] != dataset["snapshot_id"]
+        or manifest["until"] != dataset["until"]
+        or manifest["publication_status"] != "local_only"
+    ):
+        raise ValueError("Figure snapshot does not match the corpus")
+    for folder in (output / "figures", root / "web/public/figures"):
+        if read_json(folder / "manifest.json", {}) != manifest:
+            raise ValueError(f"Figure manifest does not match research: {folder}")
+        data_file = folder / "chart-data.json"
+        if (
+            not data_file.exists()
+            or sha256(data_file.read_bytes()).hexdigest() != result["chart_data_hash"]
+        ):
+            raise ValueError(f"Chart data hash does not match research: {folder}")
+        if read_json(folder / "descriptor-evidence.json", {}) != descriptors:
+            raise ValueError(f"Figure descriptor evidence does not match research: {folder}")
+        for chart in manifest["charts"]:
+            for kind in ("png", "csv"):
+                asset = folder / chart[kind]
+                if (
+                    not asset.exists()
+                    or sha256(asset.read_bytes()).hexdigest() != chart["sha256"][kind]
+                ):
+                    raise ValueError(f"Figure asset hash does not match research: {asset}")
+    article = article_data(
+        dataset,
+        strata,
+        descriptors,
+        manifest,
+        read_json(root / "data/descriptor-context-reviews.json", {}),
+    )
+    if result["article"] != article or read_json(output / "article-data.json", {}) != article:
+        raise ValueError("Article findings do not reconcile to research")
+    for path, expected in (
+        (output / "substack.md", substack_markdown(article)),
+        (output / "themarginoferror.html", margin_html(article)),
+        (root / "web/public/article.html", margin_html(article, web=True)),
+        (output / "analysis.html", research_report(dataset, strata, descriptors, manifest)),
+        (
+            root / "web/public/report.html",
+            research_report(dataset, strata, descriptors, manifest, web=True),
+        ),
+    ):
+        if not path.exists() or path.read_text() != expected:
+            raise ValueError(f"Research draft or report does not match its evidence: {path}")
 
 
 def research_report(

@@ -6,6 +6,7 @@ import json
 import math
 import textwrap
 from collections import Counter
+from hashlib import sha256
 from pathlib import Path
 
 import matplotlib
@@ -115,6 +116,10 @@ def build_figures(dataset: dict, strata: dict, descriptors: dict, output: Path) 
                 "description": description,
                 "png": f"{identity}.png",
                 "csv": f"{identity}.csv",
+                "sha256": {
+                    kind: sha256((output / f"{identity}.{kind}").read_bytes()).hexdigest()
+                    for kind in ("png", "csv")
+                },
             }
         )
         all_data[identity] = {"description": description, "note": note, "rows": rows}
@@ -173,6 +178,7 @@ def build_figures(dataset: dict, strata: dict, descriptors: dict, output: Path) 
         ):
             rows = strata["overall"][key]
             fig, (ax,) = frame(title, "Phrase-family matches per exact unique message", height=6.7)
+            fig.subplots_adjust(right=0.78)
             legend(fig)
             export = []
             for index, row in enumerate(rows):
@@ -181,7 +187,7 @@ def build_figures(dataset: dict, strata: dict, descriptors: dict, output: Path) 
                     if value["share"] is not None:
                         ax.barh(index + shift, value["share"], height=0.28, color=COLORS[party])
                     ax.text(
-                        1.02,
+                        1.025,
                         index + shift,
                         f"{party} {value['count']}/{value['total']}"
                         if value["total"]
@@ -189,13 +195,15 @@ def build_figures(dataset: dict, strata: dict, descriptors: dict, output: Path) 
                         fontsize=8,
                         color=COLORS[party],
                         va="center",
+                        transform=ax.get_yaxis_transform(),
                     )
                     export.append({"label": row["label"], "party": party, **value})
             ax.set_yticks(range(len(rows)), [textwrap.fill(row["label"], 25) for row in rows])
             ax.invert_yaxis()
-            ax.set_xlim(0, 1.28)
-            ax.set_xticks([0, 0.25, 0.5, 0.75, 1])
-            ax.xaxis.set_major_formatter(PercentFormatter(1))
+            maximum = max((row[p]["share"] or 0 for row in rows for p in COLORS), default=0)
+            ax.set_xlim(0, max(0.1, math.ceil(maximum * 10) / 10))
+            ax.xaxis.set_major_locator(MaxNLocator(nbins=6, steps=[1, 2, 5, 10]))
+            ax.xaxis.set_major_formatter(PercentFormatter(1, decimals=0))
             ax.grid(axis="x")
             ax.set_axisbelow(True)
             save(
@@ -334,6 +342,11 @@ def build_figures(dataset: dict, strata: dict, descriptors: dict, output: Path) 
         )
         fig.subplots_adjust(left=0.28, right=0.95, wspace=0.25)
         reduced = strata["sensitivity"]["without_largest_publisher_per_party"]["issues"]
+        maximum = max(
+            (row[p]["share"] or 0 for row in strata["overall"]["issues"] + reduced for p in COLORS),
+            default=0,
+        )
+        upper = max(0.1, math.ceil(maximum * 10) / 10)
         export = []
         for ax, party in zip(axes, COLORS, strict=True):
             ax.set_title(NAMES[party], color=COLORS[party], loc="left", fontsize=11)
@@ -360,9 +373,9 @@ def build_figures(dataset: dict, strata: dict, descriptors: dict, output: Path) 
                 else [""] * len(reduced),
             )
             ax.invert_yaxis()
-            ax.set_xlim(-0.025, 1.025)
-            ax.set_xticks([0, 0.25, 0.5, 0.75, 1])
-            ax.xaxis.set_major_formatter(PercentFormatter(1))
+            ax.set_xlim(-upper * 0.025, upper * 1.025)
+            ax.xaxis.set_major_locator(MaxNLocator(nbins=6, steps=[1, 2, 5, 10]))
+            ax.xaxis.set_major_formatter(PercentFormatter(1, decimals=0))
             ax.grid(axis="x")
         exclusions = "; ".join(
             f"{p}: {name}" for p, name in strata["sensitivity"]["excluded_publishers"].items()
@@ -380,9 +393,10 @@ def build_figures(dataset: dict, strata: dict, descriptors: dict, output: Path) 
         def word_chart(identity, title, group, first, second, *, common=None, note=""):
             rows = choose_words(group)
             totals = group["coverage"]
+            names = {"D": "D advertisers", "R": "R advertisers"}
             subtitle = (
-                f"{first}: {totals[first]['total']} messages; "
-                f"{second}: {totals[second]['total']} messages"
+                f"{names.get(first, first)}: {totals[first]['total']} messages; "
+                f"{names.get(second, second)}: {totals[second]['total']} messages"
             )
             fig, (ax,) = frame(title, subtitle, height=6.2)
             fig.subplots_adjust(left=0.18, right=0.72)
@@ -435,7 +449,8 @@ def build_figures(dataset: dict, strata: dict, descriptors: dict, output: Path) 
             ax.set_xlim(-extent, extent)
             ax.xaxis.set_major_locator(MaxNLocator(nbins=5, integer=True))
             ax.set_xlabel(
-                f"More {second}  \u2190  log\u2082 message odds ratio  \u2192  More {first}",
+                f"More {names.get(second, second)}  \u2190  log\u2082 message odds ratio  "
+                f"\u2192  More {names.get(first, first)}",
                 fontsize=9,
             )
             ax.grid(axis="x")
@@ -506,7 +521,7 @@ def build_figures(dataset: dict, strata: dict, descriptors: dict, output: Path) 
             )
 
     manifest = {
-        "version": "figures-1",
+        "version": "figures-2",
         "snapshot_id": dataset["snapshot_id"],
         "until": dataset["until"],
         "publication_status": "local_only",
