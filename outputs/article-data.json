@@ -2,31 +2,263 @@
   "blocks": [
     {
       "kind": "paragraph",
-      "text": "Political ads tell voters what a campaign wants them to notice: a price, a policy, an achievement, or something allegedly wrong with the other candidate. Comparing the words can reveal recurring themes. It is harder to distinguish a real party difference from the particular publishers, races and ad formats we happened to recover."
+      "text": "The recovered ads differ in the reputations they build and attack. Among reviewed messages describing opposing-party people, Democratic ads put more emphasis on honesty, corruption and trustworthiness (150/521 (28.8%), compared with 55/275 (20.0%) on the other side); Republican ads put more emphasis on ideology and extremism (55/275 (20.0%), compared with 22/521 (4.2%) on the other side). These are the largest observed frame gaps in each direction, not national estimates or evidence of a pure party effect."
     },
     {
       "kind": "paragraph",
-      "text": "This snapshot contains 1,757 English-language ad-text records through 2026-10-28: 1,222 Democratic-aligned, 496 Republican-aligned, 31 other and 8 unresolved. After exact-text deduplication within each party, the D/R comparisons use 1,200 and 459 messages. These are recovered releases, previews and original creatives, not a census of advertisements aired or a measure of exposure."
+      "text": "This comparison asks who an ad describes, what it says about that person, and whether it attacks an opponent or praises its own candidate. It reads descriptions in context, rather than treating an angry word or a word near a name as a portrayal."
     },
     {
       "kind": "paragraph",
-      "text": "Republican House coverage includes 146 English text records. It remains uneven: more records from a few campaigns do not establish coverage of every Republican House candidate. Missing ads are unknown, not evidence of silence."
+      "text": "The saved collection through 2026-10-28 contains 1,757 English ad-text records: 1,222 Democratic-aligned, 496 Republican-aligned, 31 other and 8 unresolved. After exact-message deduplication, the D/R comparison contains 1,200 and 459 messages. These are recovered ad releases, previews and creatives, not all ads aired, and there is no exposure or spending weight."
     },
     {
       "kind": "heading",
-      "text": "The issue-language differences in this collection"
+      "text": "First, what has been reviewed?"
     },
     {
       "kind": "paragraph",
-      "text": "The most frequent published issue family on the Democratic side is Cost of living: 462/1,200 exact messages (38.5%). A match means one of the codebook's phrases appears in the available text. It is not an independent judgment of the ad's main topic, accuracy or effectiveness."
+      "text": "Democratic-aligned messages: 1,198/1,200 (99.8%) reviewed; 2 uncertain, 0 unreviewed and 0 stale. Only reviewed messages enter the description rates below. Missing evidence is not neutral language."
     },
     {
       "kind": "paragraph",
-      "text": "The most frequent published issue family on the Republican side is Taxes & spending: 144/459 exact messages (31.4%). A match means one of the codebook's phrases appears in the available text. It is not an independent judgment of the ad's main topic, accuracy or effectiveness."
+      "text": "Republican-aligned messages: 458/459 (99.8%) reviewed; 1 uncertain, 0 unreviewed and 0 stale. Only reviewed messages enter the description rates below. Missing evidence is not neutral language."
     },
     {
       "kind": "paragraph",
-      "text": "Each message contributes at most once to each family. Categories overlap. There is no spending, impression or airing weight, and an OCR preview is not equivalent to a complete broadcast transcript."
+      "text": "These are AI-assisted full-text contextual labels, not independently validated human judgments. Exact passages, target anchors and input hashes are retained. A reported allegation is a portrayal, not this project's finding that it is true."
+    },
+    {
+      "csv": "portrayal-coverage.csv",
+      "description": "Reviewed, uncertain, unreviewed and stale exact messages by advertiser alignment.",
+      "id": "portrayal-coverage",
+      "kind": "figure",
+      "png": "portrayal-coverage.png",
+      "sha256": {
+        "csv": "bc08eb892ce54707999e93f71ed3dfd852c280c3d490440cc9c3e45d889663aa",
+        "png": "0a81cfa74e52f7cae4d6ebf1ffbb002a5fa347cee99b5ca583d3b813e3fa693f"
+      },
+      "title": "What has actually been reviewed?"
+    },
+    {
+      "kind": "heading",
+      "text": "How they describe the other side"
+    },
+    {
+      "kind": "paragraph",
+      "text": "This comparison counts endorsed descriptions of named people. Opposing-party collectives and same-party primary rivals are reported separately in the technical report. Quoted opponents and allegations being rebutted do not become the advertiser's own views."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Democratic ads have an eligible description in 521/1,198 (43.5%) reviewed messages; 677 have no description in this scope. Among messages with a description, negative only: 509/521 (97.7%); positive only: 1/521 (0.2%); both positive and negative: 8/521 (1.5%); neutral only: 3/521 (0.6%)."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Including mixed messages, the share with any negative portrayal is 517/521 (99.2%); the share with any positive portrayal is 9/521 (1.7%). Those two percentages overlap; they are not competing pieces of one total."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Republican ads have an eligible description in 275/458 (60.0%) reviewed messages; 183 have no description in this scope. Among messages with a description, negative only: 274/275 (99.6%); positive only: 0/275 (0.0%); both positive and negative: 0/275 (0.0%); neutral only: 1/275 (0.4%)."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Including mixed messages, the share with any negative portrayal is 274/275 (99.6%); the share with any positive portrayal is 0/275 (0.0%). Those two percentages overlap; they are not competing pieces of one total."
+    },
+    {
+      "csv": "opponent-tone.csv",
+      "description": "Context-coded message shares among reviewed ads with an eligible person description.",
+      "id": "opponent-tone",
+      "kind": "figure",
+      "png": "opponent-tone.png",
+      "sha256": {
+        "csv": "95450eeb70b10c0d43961eef118e8da6d17877ef6714d54d47604331b41c184e",
+        "png": "9b2173f679474ae50fe551c8c497d94710a881590b05af6a57d268e6caf089db"
+      },
+      "title": "How they describe their opponents"
+    },
+    {
+      "kind": "paragraph",
+      "text": "The most common Democratic description frames in this scope are who they serve or put first (215/521 (41.3%)); record, actions and policy pledges (181/521 (34.7%)); honesty, corruption and trustworthiness (150/521 (28.8%)). A message can use several frames, so these percentages overlap."
+    },
+    {
+      "caption": "Democratic-aligned Common Ground Coalition PAC on Jay Feely: negative; who they serve or put first. Voice: advertiser. Ad snap-3a170b5b4f637d7a469a508b.",
+      "kind": "quote",
+      "source_url": "https://www.snap.com/political-ads/asset/897f15d7aa8c086055e061e7867d55984a08370d62fb658e72f6ef111a073396?mediaType=mp4",
+      "text": "Republicans like Jay Feeley talk about trans people a lot."
+    },
+    {
+      "caption": "Democratic-aligned AFSCME PEOPLE on David Valadao: negative; record, actions and policy pledges. Voice: adopted clip. Ad snap-33dd56d3aaeb6b72cddfd524.",
+      "kind": "quote",
+      "source_url": "https://www.snap.com/political-ads/asset/dfe24ff96675d65c68b9cc36b1dcfe11c10b9e3bcfaf3f326311e2fc1bf07229?mediaType=mp4",
+      "text": "David Valideo voted to cut Medicaid"
+    },
+    {
+      "caption": "Democratic-aligned WinSenate on Ashley Hinson: negative; honesty, corruption and trustworthiness. Voice: adopted clip. Ad snap-53f8cccf7f18deff3df68f84.",
+      "kind": "quote",
+      "source_url": "https://www.snap.com/political-ads/asset/4d610dcd3150994940b4d6296c2e06650f344ca420059f3303db9518355b7462?mediaType=mp4",
+      "text": "She sold us out."
+    },
+    {
+      "kind": "paragraph",
+      "text": "The most common Republican description frames in this scope are who they serve or put first (129/275 (46.9%)); record, actions and policy pledges (86/275 (31.3%)); ideology and extremism (55/275 (20.0%)). A message can use several frames, so these percentages overlap."
+    },
+    {
+      "caption": "Republican-aligned NRCC on Dave Min: negative; who they serve or put first. Voice: advertiser. Ad nrcc-22fd91ea37be2558-0.",
+      "kind": "quote",
+      "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-paid-ad-campaign-targeting-dave-min-for-raising-taxes-on-working-families/",
+      "text": "Dave Min voted for higher taxes… and voted to make your life harder."
+    },
+    {
+      "caption": "Republican-aligned Senate Leadership Fund on Josh Turek: negative; record, actions and policy pledges. Voice: advertiser. Ad snap-f1b953ca2205ef0ef6553f6d.",
+      "kind": "quote",
+      "source_url": "https://www.snap.com/political-ads/asset/8f1987dbc61218dc4671d290d92c5888da28e9f0211e8e6f251a415b0095995f?mediaType=mp4",
+      "text": "Liberal Josh Turing missed 58% of his votes."
+    },
+    {
+      "caption": "Republican-aligned NRSC on Josh Turek: negative; ideology and extremism. Voice: advertiser. Ad nrsc-17011-0.",
+      "kind": "quote",
+      "source_url": "https://www.nrsc.org/press-releases/josh-turek-wants-to-tax-seniors-social-security-2026-08-18/",
+      "text": "“Seniors can’t afford Josh Turek’s tax-and-spend agenda.”"
+    },
+    {
+      "csv": "opponent-frames.csv",
+      "description": "Context-coded message shares among reviewed ads with an eligible person description.",
+      "id": "opponent-frames",
+      "kind": "figure",
+      "png": "opponent-frames.png",
+      "sha256": {
+        "csv": "d7157c4ab342940af38c742c52f42f94ac3cba5d3500540dbd100527d357a0ee",
+        "png": "1b6289ec34ba30ce9faea65082cf736c2847dcc6f338fb3c9ab621b718fcca73"
+      },
+      "title": "What they say about their opponents"
+    },
+    {
+      "kind": "heading",
+      "text": "How they describe their own candidates"
+    },
+    {
+      "kind": "paragraph",
+      "text": "The same definitions apply to the advertiser's own or supported candidates. Supporting a candidate is not itself a positive personality description: the ad must actually attribute a quality, background, conduct or record. Policy pledges count as attributed commitments, not accomplished results."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Democratic ads have an eligible description in 612/1,198 (51.1%) reviewed messages; 586 have no description in this scope. Among messages with a description, negative only: 0/612 (0.0%); positive only: 605/612 (98.9%); both positive and negative: 2/612 (0.3%); neutral only: 5/612 (0.8%)."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Including mixed messages, the share with any negative portrayal is 2/612 (0.3%); the share with any positive portrayal is 607/612 (99.2%). Those two percentages overlap; they are not competing pieces of one total."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Republican ads have an eligible description in 174/458 (38.0%) reviewed messages; 284 have no description in this scope. Among messages with a description, negative only: 0/174 (0.0%); positive only: 169/174 (97.1%); both positive and negative: 0/174 (0.0%); neutral only: 5/174 (2.9%)."
+    },
+    {
+      "kind": "paragraph",
+      "text": "Including mixed messages, the share with any negative portrayal is 0/174 (0.0%); the share with any positive portrayal is 169/174 (97.1%). Those two percentages overlap; they are not competing pieces of one total."
+    },
+    {
+      "csv": "self-tone.csv",
+      "description": "Context-coded message shares among reviewed ads with an eligible person description.",
+      "id": "self-tone",
+      "kind": "figure",
+      "png": "self-tone.png",
+      "sha256": {
+        "csv": "367591844e3965635d24e7c0cc1f9cdb4cb0822b124c0b248ded3b124003c25b",
+        "png": "536688a887a453a7b1743801db7fd062514a0bcd99cd481a8a4ee9b87943229c"
+      },
+      "title": "How they describe their own candidates"
+    },
+    {
+      "kind": "paragraph",
+      "text": "The most common Democratic description frames in this scope are who they serve or put first (294/612 (48.0%)); record, actions and policy pledges (131/612 (21.4%)); strength, courage and leadership (112/612 (18.3%)). A message can use several frames, so these percentages overlap."
+    },
+    {
+      "caption": "Democratic-aligned AFL-CIO on Lindsay James: positive; who they serve or put first. Voice: advertiser. Ad snap-046abbf4ef94bcb1967b3e6e.",
+      "kind": "quote",
+      "source_url": "https://www.snap.com/political-ads/asset/2bd0439e27f51b1f5cffec28ce43be8e0c5ab844a1bb582af67f5539d4b84bc4?mediaType=png",
+      "text": "TO FIGHT BACK\nAGAINST BILLIONAIRES!"
+    },
+    {
+      "caption": "Democratic-aligned AFL-CIO on Bob Brooks: positive; record, actions and policy pledges. Voice: advertiser. Ad snap-66da9566fb8049ca282189a5.",
+      "kind": "quote",
+      "source_url": "https://www.snap.com/political-ads/asset/a90253a256a5ce82af52e028a7b6fb786888d7c2d883e04631a21d77de8e5e33?mediaType=mp4",
+      "text": "BOB BROOKS\nLOWER COSTS\nAND RAISE WAGES."
+    },
+    {
+      "caption": "Democratic-aligned AFL-CIO on Troy Jackson: positive; strength, courage and leadership. Voice: advertiser. Ad snap-83f43dbae523e61b278d0a2b.",
+      "kind": "quote",
+      "source_url": "https://www.snap.com/political-ads/asset/e8ef623502f784eae3623762fdcea9e728c45c67b8bd6a9cdc3b4f1d7410e367?mediaType=mp4",
+      "text": "VOTE FOR\nTO FIGHT BACK\nAGAINST BILLIONAIRES!"
+    },
+    {
+      "kind": "paragraph",
+      "text": "The most common Republican description frames in this scope are record, actions and policy pledges (99/174 (56.9%)); strength, courage and leadership (40/174 (23.0%)); independence or loyalty to a party/leader (25/174 (14.4%)). A message can use several frames, so these percentages overlap."
+    },
+    {
+      "caption": "Republican-aligned NRCC on Gabe Evans: positive; record, actions and policy pledges. Voice: advertiser. Ad nrcc-a37dc0e224f4f4a0-0.",
+      "kind": "quote",
+      "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-gabe-evans-tax-relief/",
+      "text": "Gabe Evans delivered help for working families."
+    },
+    {
+      "caption": "Republican-aligned Andy Barr for Senate on Andy Barr: positive; strength, courage and leadership. Voice: adopted clip. Ad barr-1560-0.",
+      "kind": "quote",
+      "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
+      "text": "He’s a good guy and a warrior."
+    },
+    {
+      "caption": "Republican-aligned Brian Stover for Congress on Brian Stover: positive; independence or loyalty to a party/leader. Voice: advertiser. Ad stover-43-0.",
+      "kind": "quote",
+      "source_url": "https://www.brianstoverforcongress.com/2026/01/01/brian-stover-releases-new-television-ad-take-out-the-trash/",
+      "text": "“I’m running for Congress to help President Trump."
+    },
+    {
+      "csv": "self-frames.csv",
+      "description": "Context-coded message shares among reviewed ads with an eligible person description.",
+      "id": "self-frames",
+      "kind": "figure",
+      "png": "self-frames.png",
+      "sha256": {
+        "csv": "ddc8cade415ff390e0a59d2ac1e2b51e91adf1450cb08768f736baf1cde0694c",
+        "png": "4b4ecac8fd35e619030efaa86ca716625c0bb80dd04d5d1367edb31c7d2c2ca5"
+      },
+      "title": "What they say about their own candidates"
+    },
+    {
+      "kind": "heading",
+      "text": "Are these party differences or differences in the sources?"
+    },
+    {
+      "kind": "paragraph",
+      "text": "A source-mix check removes each party's largest publisher by record count and deduplicates again: Democratic: AFL-CIO; Republican: Senate Leadership Fund. This cannot turn an opportunistic collection into a representative sample."
+    },
+    {
+      "kind": "paragraph",
+      "text": "For Democratic ads describing opposing-party people, any-negative portrayals change from 517/521 (99.2%) to 514/518 (99.2%) after that exclusion. Differences can still reflect races, phases, extraction formats and repeated changed-target templates, not a pure party effect."
+    },
+    {
+      "kind": "paragraph",
+      "text": "For Republican ads describing opposing-party people, any-negative portrayals change from 274/275 (99.6%) to 154/155 (99.4%) after that exclusion. Differences can still reflect races, phases, extraction formats and repeated changed-target templates, not a pure party effect."
+    },
+    {
+      "csv": "publisher-composition.csv",
+      "description": "Largest five publishers per party and all remaining publishers.",
+      "id": "publisher-composition",
+      "kind": "figure",
+      "png": "publisher-composition.png",
+      "sha256": {
+        "csv": "88e2e8b91d36f84e0524d8fb636a1bb6ebf9b01530fe856ea3a699f780108a04",
+        "png": "dc08fa341088efa2e1bc974b08f1c7dc8d7bea3a73175ce04d2823c81e2f127f"
+      },
+      "title": "Who supplies the observed ads?"
+    },
+    {
+      "kind": "heading",
+      "text": "The issues and collection history are supporting context"
+    },
+    {
+      "kind": "paragraph",
+      "text": "The following charts remain lexical and descriptive of collection coverage. An issue phrase in a quotation is still a match; these are not person-tone labels or measures of how much either party advertised."
     },
     {
       "csv": "issue-language.csv",
@@ -35,158 +267,22 @@
       "kind": "figure",
       "png": "issue-language.png",
       "sha256": {
-        "csv": "ed4ba5f27c753515e897be2a3de9a89d9c9bf4b334e17b9809d79b0a44a30dbc",
-        "png": "aaab5d80919bf07b278c9f1ba72987d5830121b42a328ba242cfbe52f79606f9"
+        "csv": "cf5a5819d63de16f234f45931cfc116b44d6e48eca3d05dd6bc70196b3f84a1c",
+        "png": "d773c3225686efc908bf73dc3e754acf8c4ebe7a3760b2ad68a0d929659e8437"
       },
       "title": "What issues appear in the wording?"
     },
     {
-      "kind": "heading",
-      "text": "What the ads actually say about opponents"
-    },
-    {
-      "kind": "paragraph",
-      "text": "A small set of source-checked passages makes the difference between wording and portrayal concrete. The examples below are illustrations, not representative estimates of how often either party attacks. The report retains the complete ad text and the review's speaker and target notes."
-    },
-    {
-      "caption": "Democratic-aligned advertiser on Mike Rogers. The ad alternates news clips, a Rogers quotation, and advertiser narration. This excerpt is the narrator's conclusion, not Rogers's own description.",
-      "kind": "quote",
-      "source_url": "https://www.dscc.org/article/new-ad-campaign-slams-price-hike-mike-rogers-for-dismissing-skyrocketing-michigan-gas-prices/",
-      "text": "[NARRATOR] Price Hike Mike is out of touch."
-    },
-    {
-      "caption": "Republican-aligned advertiser on Henry Cuellar. The full script links Cuellar to other Democrats and criticizes his votes and record. This is the advertiser's closing portrayal, not an endorsement by Cuellar or a finding about his ideology.",
-      "kind": "quote",
-      "source_url": "https://www.nrcc.org/2026/01/13/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-cuellar-for-failing-south-texas/",
-      "text": "Cuellar is with radical Democrats, not us"
-    },
-    {
-      "kind": "paragraph",
-      "text": "The broader phrase-family chart counts vocabulary such as extreme/radical, trust/integrity and special interests. It includes quoted and denied language and positive descriptions. Calling it an attack-rate chart would go beyond what has been measured."
-    },
-    {
-      "csv": "portrayal-language.csv",
-      "description": "Exact phrase-family presence; counts and denominators shown.",
-      "id": "portrayal-language",
+      "csv": "source-sensitivity.csv",
+      "description": "Issue shares before and after removing the largest record publisher.",
+      "id": "source-sensitivity",
       "kind": "figure",
-      "png": "portrayal-language.png",
+      "png": "source-sensitivity.png",
       "sha256": {
-        "csv": "5e8d4cf1c1cd7a606ce0e6df68ffbe50147721b4b812dc0e9f1739a105dab0be",
-        "png": "48cba50d49764f12c63704b40a20987c9e2b21b3e61490ea5f6b942af6509bf0"
+        "csv": "55d4dddaca5b0835f1f530145ee9a51ff91325ae5e8068e78dd78385796467b3",
+        "png": "b1135a5212e7f7b1fcfb2b05e7602dbacd3dfd0de79f36f82b3aa454b449e271"
       },
-      "title": "The vocabulary of contrast"
-    },
-    {
-      "kind": "heading",
-      "text": "A closer look at descriptive words"
-    },
-    {
-      "kind": "paragraph",
-      "text": "The next comparison follows the question in the Harris/Trump media-coverage analysis, but not its assumptions about a different corpus. Here we compare D- and R-aligned messages in contexts mentioning Democratic candidates or the party, then do the same for Republican mentions. Full candidate names and explicit party names are required. Surname-only references, some nicknames and misrecognized names can be missed."
-    },
-    {
-      "kind": "paragraph",
-      "text": "A bundled general-English lexicon supplies words with adjective-polarity entries. We do not give advertisements sentiment scores or claim that each occurrence is grammatically an adjective. Words must be within 12 tokens of an explicit mention in the same sentence and evidence lane; mixed-party sentences are excluded. Each exact message counts once per word. The denominator includes eligible mention-context messages with no lexicon-word hit."
-    },
-    {
-      "kind": "paragraph",
-      "text": "For Democratic mentions, the eligible denominators are 585 D-aligned and 235 R-aligned messages. These are smaller and more selective than the issue-chart denominators."
-    },
-    {
-      "csv": "descriptors-D.csv",
-      "description": "Supported lexicon-word contrasts in unreviewed mention contexts.",
-      "id": "descriptors-D",
-      "kind": "figure",
-      "png": "descriptors-D.png",
-      "sha256": {
-        "csv": "c1d9fbfe1c5d3c6e22e7a843655bd992ab344da6ca96a3639fc141e12e328506",
-        "png": "9bf913e10c510b80782e75e28596b08a63e99fb0935cba11b5205abbd40ce988"
-      },
-      "title": "Words near Democratic mentions"
-    },
-    {
-      "kind": "paragraph",
-      "text": "For Republican mentions, the eligible denominators are 342 D-aligned and 153 R-aligned messages. These are smaller and more selective than the issue-chart denominators."
-    },
-    {
-      "csv": "descriptors-R.csv",
-      "description": "Supported lexicon-word contrasts in unreviewed mention contexts.",
-      "id": "descriptors-R",
-      "kind": "figure",
-      "png": "descriptors-R.png",
-      "sha256": {
-        "csv": "c45a12bb7a042285e683bef7d41b22a0295882f639c32931543f3d4a89036ca7",
-        "png": "289053c90a39323de09a30bf198654875837e24391a039c9fc0a081e77ba8818"
-      },
-      "title": "Words near Republican mentions"
-    },
-    {
-      "kind": "paragraph",
-      "text": "The horizontal scale is a smoothed log2 message-presence odds ratio, not a sentiment score or a significance test. Only comparisons with at least ten messages per group and a word in at least three messages on one side are ranked. The charts show at most five supported contrasts in either direction; all supported words and their exact counts remain in the downloads."
-    },
-    {
-      "kind": "paragraph",
-      "text": "Reading the original contexts changes what a tempting headline would imply. These additional source-bound examples were checked specifically to illustrate the limitations of proximity, not to validate all extracted contexts."
-    },
-    {
-      "caption": "This is positive self-side promotion of the supported candidate, not a Democratic description of a Republican opponent. The recovered text includes machine-recognition uncertainty.",
-      "kind": "quote",
-      "source_url": "https://www.snap.com/political-ads/asset/57bb404c169afebbdb1fdc2822168457bbf19044605213d0795042c081e2351e?mediaType=mp4",
-      "text": "Christina Hines has a better idea."
-    },
-    {
-      "caption": "Violent modifies crime, not Republican candidates. The ad presents falling violent crime as a Republican achievement; this does not independently verify its crime claim.",
-      "kind": "quote",
-      "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-graham-platners-pro-crime-agenda-2026-05-13/",
-      "text": "Thanks to Republicans, violent crime is at all-time lows"
-    },
-    {
-      "kind": "paragraph",
-      "text": "A word near a Republican name is not necessarily a word describing that person. It can describe crime, prices, an opponent's quotation or the advertiser's own candidate. Negation is retained rather than flipped into a new sentiment label. Ideological wording missing from the general-English lexicon is addressed separately by the published phrase families."
-    },
-    {
-      "kind": "heading",
-      "text": "What changes in the last ninety days?"
-    },
-    {
-      "kind": "paragraph",
-      "text": "The recent window is 2026-07-31 to 2026-10-28; the preceding window is 2026-05-02 to 2026-07-30. We compare first-observed exact messages in contexts mentioning the opposing party, not how long a creative kept airing. For early-cycle snapshots, windows are limited by the collection's January 1 start."
-    },
-    {
-      "kind": "paragraph",
-      "text": "For Democratic-aligned ads, the recent and preceding windows contain 302 and 33 eligible messages. Keeping only publishers present in both windows leaves 61 and 9. That subset does not meet the group-size threshold, so its word contrasts are not ranked."
-    },
-    {
-      "csv": "descriptor-change-D.csv",
-      "description": "Supported lexicon-word contrasts in unreviewed mention contexts.",
-      "id": "descriptor-change-D",
-      "kind": "figure",
-      "png": "descriptor-change-D.png",
-      "sha256": {
-        "csv": "58a94c2bea23ba9619822aa17c803c5204b25a5ae9f8429f71f321149847a83a",
-        "png": "c5ed708d1cdfeebf4c8d5abc99bbfb10046a066026d3da6b3d7406816f16df0b"
-      },
-      "title": "Democratic wording near opposing-party mentions"
-    },
-    {
-      "kind": "paragraph",
-      "text": "For Republican-aligned ads, the recent and preceding windows contain 150 and 37 eligible messages. Keeping only publishers present in both windows leaves 14 and 37. That subset meets the group-size threshold, but it does not hold race, format, candidate or election phase constant."
-    },
-    {
-      "csv": "descriptor-change-R.csv",
-      "description": "Supported lexicon-word contrasts in unreviewed mention contexts.",
-      "id": "descriptor-change-R",
-      "kind": "figure",
-      "png": "descriptor-change-R.png",
-      "sha256": {
-        "csv": "19d76a4d29391dc24d8ba9d3cd3007c1b0f1fac4afbf15aa4e74888a3ee48aca",
-        "png": "126088681a1e130618fb4fa8979de074977487a8b17cdb6bc4746e8350f63ab3"
-      },
-      "title": "Republican wording near opposing-party mentions"
-    },
-    {
-      "kind": "paragraph",
-      "text": "These plots are exploratory changes in the saved collection. A rise can reflect newly recovered sources or changed-target templates, not a nationwide change in party strategy. The monthly figures make the uneven historical coverage visible."
+      "title": "How dependent are the issue gaps on sources?"
     },
     {
       "csv": "monthly-coverage.csv",
@@ -195,8 +291,8 @@
       "kind": "figure",
       "png": "monthly-coverage.png",
       "sha256": {
-        "csv": "b5a4dc496e1c551aac99a561a7eae474235a7515411be548885fe951487736bc",
-        "png": "d78d42233dbba4faf9be9891284534ca6fdf164fac9a5bfd6f94bb2c573eccee"
+        "csv": "e52a875e7fb6057d285724313b5af484cec2ece76885140ded8ac35324f5d56a",
+        "png": "82eef9409367fc0b513a7f028289905f6f4c6d2e90187002be6124d8db1bbd1d"
       },
       "title": "Messages in the saved collection"
     },
@@ -207,84 +303,26 @@
       "kind": "figure",
       "png": "monthly-issues.png",
       "sha256": {
-        "csv": "ee52c1e7d3b8509f924f94c9fc47e7277d9ebe33fa03982baff3046d96c36322",
-        "png": "3b0d30898ab6fecd43e1219545df417b73d34feefeb9d772fdbcfe0979cbca24"
+        "csv": "421250c7d00de5d24e9ca0e75759209d26b4958c1dc2ef096f219d0c17d720f5",
+        "png": "82649f378e8ac5c07573462402ceb10a7fcc12baae0a448c527a78409edc1fe3"
       },
       "title": "Issue wording over the cycle"
     },
     {
       "kind": "heading",
-      "text": "How much of the difference is the source mix?"
+      "text": "What the evidence can establish"
     },
     {
       "kind": "paragraph",
-      "text": "We remove each party's largest publisher by source-record count and recalculate the exact-message shares. In this snapshot the exclusions are Democratic: AFL-CIO; Republican: Senate Leadership Fund. This is a stress test, not a balanced sample or an estimate corrected for all missing advertising."
+      "text": "This identifies attributed descriptions in the recovered text. It cannot establish national prevalence, factual truth, persuasion or voter exposure. ASR/OCR can misrecognize names and negation. Sparse Republican House and early-cycle coverage remain limitations; missing ads are not evidence of silence."
     },
     {
       "kind": "paragraph",
-      "text": "The largest absolute full-sample issue gap is Cost of living. D-aligned messages match it in 462/1,200 (38.5%); R-aligned messages in 94/459 (20.5%). After the exclusions those values are 386/919 (42.0%) and 88/309 (28.5%). The changed comparison shows why the original gap should not be read as a source-independent party effect."
-    },
-    {
-      "csv": "publisher-composition.csv",
-      "description": "Largest five publishers per party and all remaining publishers.",
-      "id": "publisher-composition",
-      "kind": "figure",
-      "png": "publisher-composition.png",
-      "sha256": {
-        "csv": "70476028a598906ddeee86077c5f4c3a8aeee9f9eff38656505cb1df667abc4a",
-        "png": "a122fdaf98384d426772123c7717515e93f1f6f0b507f84f0cc916b1d203f56f"
-      },
-      "title": "Who supplies the observed ads?"
-    },
-    {
-      "csv": "source-sensitivity.csv",
-      "description": "Issue shares before and after removing the largest record publisher.",
-      "id": "source-sensitivity",
-      "kind": "figure",
-      "png": "source-sensitivity.png",
-      "sha256": {
-        "csv": "4e443c95a03fb5dec08bc843616558cacce6a89694a2f838c3047235247c5566",
-        "png": "77ef6a5bfd0b02f9812b3df10750c8244743ce7192f50167ac31ccf7816b1954"
-      },
-      "title": "How dependent are the issue gaps on sources?"
-    },
-    {
-      "kind": "heading",
-      "text": "What this does - and does not - establish"
+      "text": "Illustrations are selected from the three most frequent frames per party/scope, using the most repeated exact descriptor phrase and then the shortest supporting passage, with ad ID as a tie-breaker and no repeated message within a scope. They illustrate the coded frames, not a representative sample or an intensity ranking."
     },
     {
       "kind": "paragraph",
-      "text": "This collection supports a checkable description of the words recovered from these ads, along with a small number of context-reviewed opponent portrayals. It does not establish national advertising prevalence, factual truth, persuasion, audience reach or the parties' private intentions. Speaker quotation, extraction quality, primary attacks and positive self-description still require context."
-    },
-    {
-      "kind": "paragraph",
-      "text": "The final eligibility cutoff remains 2026-11-04, inclusive. The current snapshot stops at 2026-10-28; uncollected future dates are not zeros. Research refreshes may update the saved evidence, figures and both drafts, but website and Substack publication remain on hold."
-    }
-  ],
-  "context_illustrations": [
-    {
-      "ad_id": "snap-1709ac2ce9bdc2050386ded6",
-      "alignment": "D",
-      "end": 455,
-      "interpretation": "This is positive self-side promotion of the supported candidate, not a Democratic description of a Republican opponent. The recovered text includes machine-recognition uncertainty.",
-      "quote": "Christina Hines has a better idea.",
-      "reviewed_on": "2026-10-27",
-      "source_hash": "5c896702e85599e9a6d06c45f84d3417d105e2bc1ed926c68997bb81f7370a09",
-      "source_url": "https://www.snap.com/political-ads/asset/57bb404c169afebbdb1fdc2822168457bbf19044605213d0795042c081e2351e?mediaType=mp4",
-      "start": 421,
-      "word": "better"
-    },
-    {
-      "ad_id": "nrsc-15979-0",
-      "alignment": "R",
-      "end": 69,
-      "interpretation": "Violent modifies crime, not Republican candidates. The ad presents falling violent crime as a Republican achievement; this does not independently verify its crime claim.",
-      "quote": "Thanks to Republicans, violent crime is at all-time lows",
-      "reviewed_on": "2026-10-27",
-      "source_hash": "16d6fe1b8b3ce52653202a70921a85b2ebd5b55df27f645172061c82c3aa819f",
-      "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-graham-platners-pro-crime-agenda-2026-05-13/",
-      "start": 13,
-      "word": "violent"
+      "text": "The final eligibility cutoff remains 2026-11-04, inclusive. This snapshot stops at 2026-10-28. Automatic research refresh can add unreviewed evidence but does not silently classify it. Both editions remain unpublished; website and Substack publication and host integration remain on hold."
     }
   ],
   "message_ad_ids": {
@@ -1952,40 +1990,333 @@
       "rogers-6ae0ac2f4af67c5c39abe46b-0"
     ]
   },
-  "opponent_examples": [
+  "portrayal_examples": [
     {
-      "ad_id": "dscc-12657-0",
-      "context": "The ad alternates news clips, a Rogers quotation, and advertiser narration. This excerpt is the narrator's conclusion, not Rogers's own description.",
-      "end": 671,
-      "frame": "Out of touch",
+      "ad_id": "snap-3a170b5b4f637d7a469a508b",
+      "end": 58,
+      "frame": "interests",
       "party": "D",
-      "published": "2026-05-07",
-      "purpose": "attack",
-      "quote": "[NARRATOR] Price Hike Mike is out of touch.",
-      "race": "Unresolved",
-      "source_hash": "4c7c95765bbcabc4c5474a127688d01fd5e7f9d145f5c4bec53e7a843779a2bc",
-      "source_url": "https://www.dscc.org/article/new-ad-campaign-slams-price-hike-mike-rogers-for-dismissing-skyrocketing-michigan-gas-prices/",
-      "start": 628,
-      "target": "Mike Rogers",
+      "party_basis": "explicit_text",
+      "phrase": "talk about trans people a lot",
+      "quote": "Republicans like Jay Feeley talk about trans people a lot.",
+      "review_source_hash": "78af4232bba71f2a96ae6f88f772ce0eb213777f4f695e3c2c718f58d5ad63cf",
+      "review_status": "reviewed",
+      "scope": "opponents",
+      "source": "common-ground-coalition-pac-snap",
+      "source_hash": "78af4232bba71f2a96ae6f88f772ce0eb213777f4f695e3c2c718f58d5ad63cf",
+      "source_url": "https://www.snap.com/political-ads/asset/897f15d7aa8c086055e061e7867d55984a08370d62fb658e72f6ef111a073396?mediaType=mp4",
+      "sponsor": "Common Ground Coalition PAC",
+      "start": 0,
+      "target": "Jay Feely",
+      "target_end": 27,
+      "target_kind": "person",
       "target_party": "R",
-      "voice": "advertiser narration"
+      "target_quote": "Jay Feeley",
+      "target_role": "opponent",
+      "target_start": 17,
+      "text_hash": "33cf07b5e5dec4d9b7bca1550c01774929260c65314613412a3751b79c5c307d",
+      "tone": "negative",
+      "voice": "advertiser"
     },
     {
-      "ad_id": "nrcc-2b7c20e3d1fbeefb-0",
-      "context": "The full script links Cuellar to other Democrats and criticizes his votes and record. This is the advertiser's closing portrayal, not an endorsement by Cuellar or a finding about his ideology.",
-      "end": 376,
-      "frame": "Extreme / radical",
+      "ad_id": "snap-33dd56d3aaeb6b72cddfd524",
+      "end": 119,
+      "frame": "record",
+      "party": "D",
+      "party_basis": "candidate_metadata",
+      "phrase": "voted to cut Medicaid",
+      "quote": "David Valideo voted to cut Medicaid",
+      "review_source_hash": "394249b83bdd1fc414f1fba0b2c4ae7be3520864799ef7608b111f259341eb14",
+      "review_status": "reviewed",
+      "scope": "opponents",
+      "source": "afscme-people-snap",
+      "source_hash": "394249b83bdd1fc414f1fba0b2c4ae7be3520864799ef7608b111f259341eb14",
+      "source_url": "https://www.snap.com/political-ads/asset/dfe24ff96675d65c68b9cc36b1dcfe11c10b9e3bcfaf3f326311e2fc1bf07229?mediaType=mp4",
+      "sponsor": "AFSCME PEOPLE",
+      "start": 84,
+      "target": "David Valadao",
+      "target_end": 97,
+      "target_kind": "person",
+      "target_party": "R",
+      "target_quote": "David Valideo",
+      "target_role": "opponent",
+      "target_start": 84,
+      "text_hash": "78389d5ef40b3b4baa5cd33caf0e29b0acf9d2aa26cb3b1ca995d257f0ace5b9",
+      "tone": "negative",
+      "voice": "adopted_clip"
+    },
+    {
+      "ad_id": "snap-53f8cccf7f18deff3df68f84",
+      "end": 235,
+      "frame": "integrity",
+      "party": "D",
+      "party_basis": "candidate_metadata",
+      "phrase": "sold us out",
+      "quote": "She sold us out.",
+      "review_source_hash": "0c494c3889f42c582ddc8ec78bab70c6d1b15994e1144ceea4202800730f69fc",
+      "review_status": "reviewed",
+      "scope": "opponents",
+      "source": "winsenate-snap",
+      "source_hash": "0c494c3889f42c582ddc8ec78bab70c6d1b15994e1144ceea4202800730f69fc",
+      "source_url": "https://www.snap.com/political-ads/asset/4d610dcd3150994940b4d6296c2e06650f344ca420059f3303db9518355b7462?mediaType=mp4",
+      "sponsor": "WinSenate",
+      "start": 219,
+      "target": "Ashley Hinson",
+      "target_end": 273,
+      "target_kind": "person",
+      "target_party": "R",
+      "target_quote": "ASHLEY HINSON",
+      "target_role": "opponent",
+      "target_start": 260,
+      "text_hash": "bd46df43b552802e2762e457e36e477c75f435a5a90148e5bf5394f5feda6e97",
+      "tone": "negative",
+      "voice": "adopted_clip"
+    },
+    {
+      "ad_id": "nrcc-22fd91ea37be2558-0",
+      "end": 356,
+      "frame": "interests",
       "party": "R",
-      "published": "2026-01-13",
-      "purpose": "attack",
-      "quote": "Cuellar is with radical Democrats, not us",
-      "race": "Unresolved",
-      "source_hash": "6c1117c373c80879b85eb711c93b3a0d9e5c58ac3b792246fc14f235462523a3",
-      "source_url": "https://www.nrcc.org/2026/01/13/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-cuellar-for-failing-south-texas/",
-      "start": 335,
-      "target": "Henry Cuellar",
+      "party_basis": "candidate_metadata",
+      "phrase": "voted to make your life harder",
+      "quote": "Dave Min voted for higher taxes… and voted to make your life harder.",
+      "review_source_hash": "34965d6a9a83c4f2e991908b19628d10c2ca656884bd186d6e91a167eff31ef3",
+      "review_status": "reviewed",
+      "scope": "opponents",
+      "source": "nrcc",
+      "source_hash": "34965d6a9a83c4f2e991908b19628d10c2ca656884bd186d6e91a167eff31ef3",
+      "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-paid-ad-campaign-targeting-dave-min-for-raising-taxes-on-working-families/",
+      "sponsor": "NRCC",
+      "start": 288,
+      "target": "Dave Min",
+      "target_end": 108,
+      "target_kind": "person",
       "target_party": "D",
-      "voice": "advertiser copy; individual speaker not specified"
+      "target_quote": "Dave Min",
+      "target_role": "opponent",
+      "target_start": 100,
+      "text_hash": "965394d331aa3ba24a9a78f754a789f897371baa901b03102756b5196eb1cfa6",
+      "tone": "negative",
+      "voice": "advertiser"
+    },
+    {
+      "ad_id": "snap-f1b953ca2205ef0ef6553f6d",
+      "end": 44,
+      "frame": "record",
+      "party": "R",
+      "party_basis": "candidate_metadata",
+      "phrase": "missed 58% of his votes",
+      "quote": "Liberal Josh Turing missed 58% of his votes.",
+      "review_source_hash": "31a7d973417060fe3c3c5d87aadfaf994eee6d0ba91f3ddf4bd339792f228c38",
+      "review_status": "reviewed",
+      "scope": "opponents",
+      "source": "slf-snap",
+      "source_hash": "31a7d973417060fe3c3c5d87aadfaf994eee6d0ba91f3ddf4bd339792f228c38",
+      "source_url": "https://www.snap.com/political-ads/asset/8f1987dbc61218dc4671d290d92c5888da28e9f0211e8e6f251a415b0095995f?mediaType=mp4",
+      "sponsor": "Senate Leadership Fund",
+      "start": 0,
+      "target": "Josh Turek",
+      "target_end": 19,
+      "target_kind": "person",
+      "target_party": "D",
+      "target_quote": "Josh Turing",
+      "target_role": "opponent",
+      "target_start": 8,
+      "text_hash": "7fa86615d9c3d48098cb58c647285bc8b98ff4b84f6b52a93d0defc7cfe3dd4e",
+      "tone": "negative",
+      "voice": "advertiser"
+    },
+    {
+      "ad_id": "nrsc-17011-0",
+      "end": 416,
+      "frame": "ideology",
+      "party": "R",
+      "party_basis": "candidate_metadata",
+      "phrase": "tax-and-spend agenda",
+      "quote": "“Seniors can’t afford Josh Turek’s tax-and-spend agenda.”",
+      "review_source_hash": "2910138907b0a51c8ff64c618622b832afdd7c6ee9bdbb5cd086578e7fe9b383",
+      "review_status": "reviewed",
+      "scope": "opponents",
+      "source": "nrsc",
+      "source_hash": "2910138907b0a51c8ff64c618622b832afdd7c6ee9bdbb5cd086578e7fe9b383",
+      "source_url": "https://www.nrsc.org/press-releases/josh-turek-wants-to-tax-seniors-social-security-2026-08-18/",
+      "sponsor": "NRSC",
+      "start": 359,
+      "target": "Josh Turek",
+      "target_end": 56,
+      "target_kind": "person",
+      "target_party": "D",
+      "target_quote": "Josh Turek",
+      "target_role": "opponent",
+      "target_start": 46,
+      "text_hash": "985f9d2e7b02f78c66a7622b7ac9999b574f235f0beb284929565d68f2cae6e7",
+      "tone": "negative",
+      "voice": "advertiser"
+    },
+    {
+      "ad_id": "snap-046abbf4ef94bcb1967b3e6e",
+      "end": 111,
+      "frame": "interests",
+      "party": "D",
+      "party_basis": "candidate_metadata",
+      "phrase": "TO FIGHT BACK\nAGAINST BILLIONAIRES!",
+      "quote": "TO FIGHT BACK\nAGAINST BILLIONAIRES!",
+      "review_source_hash": "e0d684fcfa95b3988ac0d8531c80a545555169ad4ec28840f78f8dda313dd753",
+      "review_status": "reviewed",
+      "scope": "self",
+      "source": "afl-cio-snap",
+      "source_hash": "e0d684fcfa95b3988ac0d8531c80a545555169ad4ec28840f78f8dda313dd753",
+      "source_url": "https://www.snap.com/political-ads/asset/2bd0439e27f51b1f5cffec28ce43be8e0c5ab844a1bb582af67f5539d4b84bc4?mediaType=png",
+      "sponsor": "AFL-CIO",
+      "start": 76,
+      "target": "Lindsay James",
+      "target_end": 75,
+      "target_kind": "person",
+      "target_party": "D",
+      "target_quote": "LINDSAY JAMES",
+      "target_role": "self_or_supported",
+      "target_start": 62,
+      "text_hash": "be8044db4b5fc6eac429a52984e4c8c7eac217ab90c3a0c5e44667471203ae06",
+      "tone": "positive",
+      "voice": "advertiser"
+    },
+    {
+      "ad_id": "snap-66da9566fb8049ca282189a5",
+      "end": 873,
+      "frame": "record",
+      "party": "D",
+      "party_basis": "candidate_metadata",
+      "phrase": "LOWER COSTS\nAND RAISE WAGES",
+      "quote": "BOB BROOKS\nLOWER COSTS\nAND RAISE WAGES.",
+      "review_source_hash": "4e67a4273bef1c25bdbd3ff114dfeb58a03b5c7c8c229601b2ad149930a286aa",
+      "review_status": "reviewed",
+      "scope": "self",
+      "source": "afl-cio-snap",
+      "source_hash": "4e67a4273bef1c25bdbd3ff114dfeb58a03b5c7c8c229601b2ad149930a286aa",
+      "source_url": "https://www.snap.com/political-ads/asset/a90253a256a5ce82af52e028a7b6fb786888d7c2d883e04631a21d77de8e5e33?mediaType=mp4",
+      "sponsor": "AFL-CIO",
+      "start": 834,
+      "target": "Bob Brooks",
+      "target_end": 844,
+      "target_kind": "person",
+      "target_party": "D",
+      "target_quote": "BOB BROOKS",
+      "target_role": "self_or_supported",
+      "target_start": 834,
+      "text_hash": "3f485c5cfbde3aa70d3b088425895cafe1fa942c60434e39f3451aab74e818d7",
+      "tone": "positive",
+      "voice": "advertiser"
+    },
+    {
+      "ad_id": "snap-83f43dbae523e61b278d0a2b",
+      "end": 408,
+      "frame": "leadership",
+      "party": "D",
+      "party_basis": "candidate_metadata",
+      "phrase": "TO FIGHT BACK\nAGAINST BILLIONAIRES",
+      "quote": "VOTE FOR\nTO FIGHT BACK\nAGAINST BILLIONAIRES!",
+      "review_source_hash": "be039685bc686db738fddeb9805642a3f0702a373dca1bc6e2ea3fb7425d7087",
+      "review_status": "reviewed",
+      "scope": "self",
+      "source": "afl-cio-snap",
+      "source_hash": "be039685bc686db738fddeb9805642a3f0702a373dca1bc6e2ea3fb7425d7087",
+      "source_url": "https://www.snap.com/political-ads/asset/e8ef623502f784eae3623762fdcea9e728c45c67b8bd6a9cdc3b4f1d7410e367?mediaType=mp4",
+      "sponsor": "AFL-CIO",
+      "start": 364,
+      "target": "Troy Jackson",
+      "target_end": 127,
+      "target_kind": "person",
+      "target_party": "D",
+      "target_quote": "Troy Jackson",
+      "target_role": "self_or_supported",
+      "target_start": 115,
+      "text_hash": "1037ba876ef782a7c8c349de090917493ba1e4c2d1a60eb164f48ca3d932fb60",
+      "tone": "positive",
+      "voice": "advertiser"
+    },
+    {
+      "ad_id": "nrcc-a37dc0e224f4f4a0-0",
+      "end": 388,
+      "frame": "record",
+      "party": "R",
+      "party_basis": "candidate_metadata",
+      "phrase": "delivered help for working families",
+      "quote": "Gabe Evans delivered help for working families.",
+      "review_source_hash": "92901520a5407650b3db8ab609da024dc6c3e0ac5e9633a7733f067e86a47738",
+      "review_status": "reviewed",
+      "scope": "self",
+      "source": "nrcc",
+      "source_hash": "92901520a5407650b3db8ab609da024dc6c3e0ac5e9633a7733f067e86a47738",
+      "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-gabe-evans-tax-relief/",
+      "sponsor": "NRCC",
+      "start": 341,
+      "target": "Gabe Evans",
+      "target_end": 189,
+      "target_kind": "person",
+      "target_party": "R",
+      "target_quote": "Gabe Evans",
+      "target_role": "self_or_supported",
+      "target_start": 179,
+      "text_hash": "dc960ec97c01392708b6f7c3266688ea39f2f7fb9e0310d2c8c989dd57f517ad",
+      "tone": "positive",
+      "voice": "advertiser"
+    },
+    {
+      "ad_id": "barr-1560-0",
+      "end": 231,
+      "frame": "leadership",
+      "party": "R",
+      "party_basis": "explicit_text",
+      "phrase": "warrior",
+      "quote": "He’s a good guy and a warrior.",
+      "review_source_hash": "65bc1967ac5320e207a9582eab15f181fb12acf6295d4878f79cdfd601d91983",
+      "review_status": "reviewed",
+      "scope": "self",
+      "source": "barr",
+      "source_hash": "65bc1967ac5320e207a9582eab15f181fb12acf6295d4878f79cdfd601d91983",
+      "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
+      "sponsor": "Andy Barr for Senate",
+      "start": 201,
+      "target": "Andy Barr",
+      "target_end": 140,
+      "target_kind": "person",
+      "target_party": "R",
+      "target_quote": "Andy Barr",
+      "target_role": "self_or_supported",
+      "target_start": 131,
+      "text_hash": "4b158234d6711bc2162071c258985b2ee8e5ca80b6d663ec971828724b817b1a",
+      "tone": "positive",
+      "voice": "adopted_clip"
+    },
+    {
+      "ad_id": "stover-43-0",
+      "end": 174,
+      "frame": "independence",
+      "party": "R",
+      "party_basis": "candidate_metadata",
+      "phrase": "running for Congress to help President Trump",
+      "quote": "“I’m running for Congress to help President Trump.",
+      "review_source_hash": "a4fa94c6e48e1f6e217b0972b8660e8f83064f7963fc63d6efc2b2381958411d",
+      "review_status": "reviewed",
+      "scope": "self",
+      "source": "stover",
+      "source_hash": "a4fa94c6e48e1f6e217b0972b8660e8f83064f7963fc63d6efc2b2381958411d",
+      "source_url": "https://www.brianstoverforcongress.com/2026/01/01/brian-stover-releases-new-television-ad-take-out-the-trash/",
+      "sponsor": "Brian Stover for Congress",
+      "start": 124,
+      "target": "Brian Stover",
+      "target_candidate_ids": [
+        "H6GA14268"
+      ],
+      "target_end": 312,
+      "target_kind": "person",
+      "target_party": "R",
+      "target_quote": "Brian Stover",
+      "target_role": "self_or_supported",
+      "target_start": 300,
+      "text_hash": "f4e53cce8ee56311edd39edc557ef794a87e1d697cf1c2fe8f2faf4af3805a19",
+      "tone": "positive",
+      "voice": "advertiser"
     }
   ],
   "publication_status": "draft_not_published",
@@ -1995,10 +2326,10 @@
     "other": 31,
     "unknown": 8
   },
-  "snapshot_id": "d70c1582ad49a3bfbb70156a5c81648b200f55b83cf4f7a1cf1389b51f8ae083",
-  "subtitle": "Issue language, opponent portrayals and the limits of an uneven collection.",
-  "title": "How Democrats and Republicans talk in their 2026 ads",
+  "snapshot_id": "dfdf38b6b26fd7d36924d0fe6c6e653ac68d5d5cc5a0998d304568867d1e35b0",
+  "subtitle": "Opponents, their own candidates, and the balance of negative and positive portrayals.",
+  "title": "How Democrats and Republicans describe each other",
   "total_unique_messages": 1698,
   "until": "2026-10-28",
-  "version": "article-1"
+  "version": "article-2"
 }

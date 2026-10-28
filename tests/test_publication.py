@@ -89,13 +89,14 @@ def test_real_snapshot_rebuild_is_deterministic_and_downloads_are_complete(tmp_p
     assert (tmp_path / "web/public/article.html").exists()
     assert chart_data["snapshot_id"] == dataset["snapshot_id"]
     by_id = {ad["id"]: ad for ad in dataset["ads"]}
-    descriptors = json.loads(first_figures["descriptor-evidence.json"])
-    for hit in descriptors["evidence"]:
+    portrayals = json.loads(first_figures["portrayal-evidence.json"])
+    assert "descriptor-evidence.json" not in first_figures
+    for hit in portrayals["evidence"]:
         ad = by_id[hit["ad_id"]]
         assert hit["source_hash"] == ad["source_hash"]
-        assert ad["text"][hit["start"] : hit["end"]] == hit["text"]
-        assert ad["text"][hit["context_start"] : hit["context_end"]] == hit["context"]
-        assert all(ad["text"][m["start"] : m["end"]] == m["text"] for m in hit["mentions"])
+        assert ad["text"][hit["start"] : hit["end"]] == hit["quote"]
+        assert ad["text"][hit["target_start"] : hit["target_end"]] == hit["target_quote"]
+        assert hit["phrase"] in hit["quote"]
     build(tmp_path)
     assert editions == {name: (tmp_path / "outputs" / name).read_bytes() for name in editions}
     assert first == {path.name: path.read_bytes() for path in output.iterdir()}
@@ -156,9 +157,16 @@ def test_local_analysis_keeps_full_text_and_evidence_without_building_website(tm
     from political_ads.research import research
 
     shutil.copytree(ROOT / "data/site", tmp_path / "data/site")
-    for name in ("codebook.json", "reviews.json", "publisher-alignments.json"):
+    for name in (
+        "codebook.json",
+        "reviews.json",
+        "publisher-alignments.json",
+        "portrayal-codebook.json",
+        "portrayal-reviews.json",
+    ):
         shutil.copy(ROOT / "data" / name, tmp_path / "data" / name)
     result = research(tmp_path)
+    assert any(ad["portrayal_review"]["descriptions"] for ad in result["dataset"]["ads"])
     output = tmp_path / "outputs"
     assert json.loads((output / "analysis.json").read_text()) == result
     csv_text = (output / "analysis-ads.csv").read_text()

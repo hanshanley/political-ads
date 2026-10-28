@@ -73,29 +73,34 @@ Analyze the saved corpus without building or publishing the website:
 # Open outputs/analysis.html; complete evidence/text: outputs/analysis.json and analysis-ads.csv
 ```
 
-The local report compares wording over release/post/reported-delivery/scheduled-start months and by
-source, chamber, race, sponsor type, placement, format and election phase.
-A largest-publisher exclusion check exposes source-composition
-sensitivity; lexical matches are not semantic attack rates or national prevalence estimates.
+The local report leads with **how Democrats describe Republican people, how Republicans describe
+Democratic people, and how each side describes its own or supported candidates**. Saved AI-assisted
+full-text reviews retain targets, roles, frames, tone, voice and literal evidence. Exclusive tone
+categories are negative only, positive only, mixed and neutral only. Inclusive negative/positive
+percentages both include mixed messages. No description is not neutral; uncertain, unreviewed and
+stale texts are disclosed and excluded. Same-party rivals and collective-party references are separate.
+These exploratory codes are not independently validated human gold or national prevalence estimates.
+A largest-publisher exclusion check exposes source-composition sensitivity.
 
 The same command generates both **unpublished article editions**:
 `outputs/substack.md` and `outputs/themarginoferror.html`. Shared copy, counts and source-bound
 illustrations are in `outputs/article-data.json`. Both editions use the same snapshot and
 ten original PNG figures under `outputs/figures/`; no new SVG charts are produced.
 Every figure has exact CSV data, with all chart data in `figures/chart-data.json` and
-mention-context evidence in `figures/descriptor-evidence.json`.
-`validate` also recomputes research metrics and descriptor evidence, checks PNG/CSV and
+context-coded evidence in `figures/portrayal-evidence.json`.
+`validate` also recomputes research metrics and portrayal evidence, checks PNG/CSV and
 chart-data hashes in both output locations, and verifies both article editions and reports
 against the shared findings. Missing or stale research artifacts fail validation.
 The website build also stages a local `article.html` preview; this does not deploy anything.
 Substack Markdown uses relative PNG/evidence links. Uploading images and replacing those
 links requires a separately authorized publication destination; nothing is uploaded automatically.
 
-The descriptive-word comparisons use TextBlob's bundled adjective-polarity vocabulary,
-not hosted models or ad-level sentiment scores. They compare words near explicit party/full-name
-mentions and adjacent 90-day first-observed-message windows, with a common-publisher check.
-Proximity is **not target attribution**. The report and drafts explain quotations, negation,
-self-description, sparse samples and source-composition limits.
+The previous nearby-adjective plots have been retired: proximity is **not target attribution**.
+`data/portrayal-codebook.json` documents the symmetric frames and exclusions;
+`data/portrayal-reviews.json` contains the saved, exact-text-bound decisions. Builds and scheduled
+refreshes make no model calls. New or changed texts remain visibly unreviewed/stale until reviewed.
+Matching raw text may reuse a review only within the same sponsor and alignment. A publisher-page
+hash update with unchanged text preserves the original review hash and flags the difference.
 
 Native platform recovery is local and resumable:
 

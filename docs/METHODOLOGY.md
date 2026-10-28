@@ -253,48 +253,63 @@ quotations. They illustrate framing, not random sampling, independent human gold
 prevalence. Speaker identity remains uncertain unless established by the source. Changed evidence
 stops publication pending review.
 
-There is **no representative held-out semantic evaluation**. Semantic attack/support rates,
-semantic issue classifications, and model accuracy claims are therefore withheld.
+There is **no representative held-out human semantic evaluation**. Contextual portrayal counts
+below are exploratory AI-assisted annotations, not validated human prevalence estimates.
+Model-accuracy, semantic main-issue, national strategy and persuasion claims remain withheld.
 
-### Descriptive-word proximity comparisons
+### Context-coded descriptions of people
 
-The exploratory `mention-lexicon-1` method uses TextBlob 0.19's bundled English vocabulary:
-entries with an adjective sense and nonzero polarity. The exported lexicon size and SHA-256
-bind the vocabulary, but polarity is **not** used to score advertisements. This is a lexical
-screen, not contextual part-of-speech tagging: an occurrence such as early voting can qualify.
-Political terms absent from that general-English vocabulary remain outside this comparison;
-the separate phrase codebook measures additional ideological/framing language.
+The previous `mention-lexicon-1` nearby-adjective analysis is retired from the report,
+figures and article editions. A word about violent crime or a better policy is not
+automatically a description of a candidate mentioned nearby.
 
-Eligible contexts require an explicit party name or exact candidate full name, including
-reviewed aliases. Generic "democratic process" and surname-only guesses do not qualify.
-A vocabulary word must occur within 12 tokens of the mention in the same sentence/evidence
-lane. Continuous ASR cues may join; independent OCR overlays may not. Mixed-party sentences
-and words overlapping the matched entity name are excluded. Exported character offsets,
-contexts, source hashes and URLs retain the original spelling, quotation and negation.
-Every extracted hit is marked **unreviewed mention co-occurrence**, not an opponent judgment.
+`data/portrayal-codebook.json` defines symmetric frames for ability, integrity, interests,
+ideology, connection, leadership, independence, record, safety/rights, background and other
+personal description. AI-assisted reviewers read complete recovered messages, not
+keyword-selected snippets. Each saved decision states reviewed/uncertain and retains
+the actual target, party identity basis, person/collective distinction, supported/opponent
+role, tone, frame, voice, literal phrase, supporting passage and target anchor.
+No attributable descriptions is an explicit reviewed outcome, not a neutral portrayal.
+Attribution includes concrete conduct and records, but excludes an issue merely occurring
+near a person. Simple fundraising, approval, candidacy and endorsement without a stated
+quality are not personal descriptions. ASR/OCR wording is never silently repaired.
+The record frame includes attributed actions and policy pledges. A promised outcome
+is a commitment in the ad, not evidence that the candidate achieved it.
 
-Globally deduplicated party/messages count once per word. Denominators include all messages
-with eligible mention contexts, including those with no lexicon hits. D/R advertiser
-comparisons are separate for Democratic and Republican mentions. Ranked comparisons require
-at least ten eligible messages per group and support in three messages on at least one side.
-The statistic is log2 of the ratio of message-presence odds, with 0.5 added to each present/
-absent cell. It is not a significance test, uncertainty interval or causal party effect.
-Each word figure shows at most five supported contrasts in each direction; CSV/JSON retain
-all supported words and identify the plotted subset.
+The main comparison is D-aligned ads describing R people versus R-aligned ads describing
+D people. Self/supported candidates form a separate scope. Same-party primary opponents,
+collective-party references, unknown target parties and unclear roles cannot silently
+enter the cross-party-person comparison. Party identity comes from candidate metadata,
+explicit text or a reviewed national-figure crosswalk, never hostility. Endorsed narration
+and explicitly adopted clips count; quoted opponents, rebutted accusations and unclear
+voices remain downloadable but do not enter headline rates. An opponent can receive
+sincere praise: role and valence are independent.
 
-Temporal comparisons use the 90 calendar days ending at the saved cutoff and the preceding
-90 days. Only first-observed messages enter, so a repeated message does not appear again
-in the later window. Eligible data still start January 1; early snapshots can have shorter
-in-scope coverage and insufficient samples. The common-publisher check retains publishers
-with eligible messages in both windows and applies the same thresholds. Hollow chart markers
-are that sensitivity comparison, **not confidence intervals**. It does not control race,
-format, candidate, phase or template composition.
+Reviews in `data/portrayal-reviews.json` bind frozen input IDs, sponsor, alignment, original
+source hash and exact raw-text hash. Literal offsets are checked at application and validation.
+Identical raw text can inherit a review only with matching sponsor and alignment; normalized
+message identity alone is insufficient. A changed publisher-page hash with identical text
+preserves the original review hash and exposes `source_hash_changed`; changed text, sponsor
+or alignment withholds the old review as stale. New inputs remain unreviewed. Automatic
+refresh and reproducible builds do not call a model or automatically assign missing labels.
 
-`data/descriptor-context-reviews.json` contains individually read illustrations of these
-limitations. Their quotations, source hashes and alignment must still match before reuse;
-changed evidence stops generation for re-review. They are separate from the automated
-contexts and are not a representative semantic validation set.
+After filters and exact party/message deduplication, review coverage reports reviewed,
+uncertain, unreviewed and stale counts. Only reviewed messages with an endorsed description
+in the chosen scope form tone/frame denominators. The report separately shows the number
+with/without that description among reviewed messages. Negative only, positive only, mixed
+(at least one of each), and neutral only are exclusive. Neutral facts alongside a negative
+or positive description do not create mixed tone. Inclusive any-negative and any-positive
+rates both include mixed messages and overlap. Frames count a message at most once each
+and overlap. Every rate retains numerator IDs and denominator counts; zero denominator
+is missing evidence, not 0%. Rates describe target portrayals, not general emotional tone.
 
+Recovered partial reviews receive a separate repair pass for roles, literal evidence,
+party attribution, quotations and valence. This AI-assisted second pass is **not**
+independent human gold. Literal/hash validation establishes evidence integrity, not
+semantic accuracy. Illustrations are selected deterministically from the three most
+frequent frames per party/scope, preferring repeated exact descriptor phrases, then
+shorter passages and ad IDs; no message repeats within a scope. They are illustrations,
+not random samples or an intensity ranking.
 ### Figures and unpublished article editions
 
 `analyze` and `build` generate ten restrained, 200-DPI **PNG-only** research figures with
@@ -303,10 +318,11 @@ monthly plots stop at the actual saved cutoff rather than showing future months 
 Full-snapshot figures do not change with interactive dashboard filters. Sponsor/publisher
 grouping combines matching names across collection-source IDs, not inferred legal payers;
 the dashboard's collection-source filter still selects acquisition IDs.
-Percentage bars keep a zero baseline and use labeled, data-dependent upper bounds; both
-parties share the same scale within each comparison. Sensitivity panels share one scale.
+Person-portrayal percentage bars share a zero-to-100% scale across parties, with direct
+counts and denominators. Supporting lexical bars use labeled data-dependent bounds.
+Sensitivity panels share one scale.
 Each PNG and CSV has a SHA-256 in the figure manifest. Build/validation also verifies
-chart-data hashes, recomputes the research metrics and descriptor contexts from the corpus,
+chart-data hashes, recomputes the research metrics and context-coded portrayals from the corpus,
 and checks both article editions and technical reports against the shared findings.
 
 The shared narrative in `outputs/article-data.json` generates Substack Markdown

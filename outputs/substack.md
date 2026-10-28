@@ -1,96 +1,153 @@
-# How Democrats and Republicans talk in their 2026 ads
+# How Democrats and Republicans describe each other
 
-Issue language, opponent portrayals and the limits of an uneven collection.
+Opponents, their own candidates, and the balance of negative and positive portrayals.
 
 **DRAFT - NOT PUBLISHED.** Prepared for Substack; images are local PNG files. No upload, scheduling or publication has occurred.
 
-Data through 2026-10-28. Snapshot `d70c1582ad49a3bfbb70156a5c81648b200f55b83cf4f7a1cf1389b51f8ae083`.
+Data through 2026-10-28. Snapshot `dfdf38b6b26fd7d36924d0fe6c6e653ac68d5d5cc5a0998d304568867d1e35b0`.
 
-Political ads tell voters what a campaign wants them to notice: a price, a policy, an achievement, or something allegedly wrong with the other candidate. Comparing the words can reveal recurring themes. It is harder to distinguish a real party difference from the particular publishers, races and ad formats we happened to recover.
+The recovered ads differ in the reputations they build and attack. Among reviewed messages describing opposing-party people, Democratic ads put more emphasis on honesty, corruption and trustworthiness (150/521 (28.8%), compared with 55/275 (20.0%) on the other side); Republican ads put more emphasis on ideology and extremism (55/275 (20.0%), compared with 22/521 (4.2%) on the other side). These are the largest observed frame gaps in each direction, not national estimates or evidence of a pure party effect.
 
-This snapshot contains 1,757 English-language ad-text records through 2026-10-28: 1,222 Democratic-aligned, 496 Republican-aligned, 31 other and 8 unresolved. After exact-text deduplication within each party, the D/R comparisons use 1,200 and 459 messages. These are recovered releases, previews and original creatives, not a census of advertisements aired or a measure of exposure.
+This comparison asks who an ad describes, what it says about that person, and whether it attacks an opponent or praises its own candidate. It reads descriptions in context, rather than treating an angry word or a word near a name as a portrayal.
 
-Republican House coverage includes 146 English text records. It remains uneven: more records from a few campaigns do not establish coverage of every Republican House candidate. Missing ads are unknown, not evidence of silence.
+The saved collection through 2026-10-28 contains 1,757 English ad-text records: 1,222 Democratic-aligned, 496 Republican-aligned, 31 other and 8 unresolved. After exact-message deduplication, the D/R comparison contains 1,200 and 459 messages. These are recovered ad releases, previews and creatives, not all ads aired, and there is no exposure or spending weight.
 
-## The issue-language differences in this collection
+## First, what has been reviewed?
 
-The most frequent published issue family on the Democratic side is Cost of living: 462/1,200 exact messages (38.5%). A match means one of the codebook's phrases appears in the available text. It is not an independent judgment of the ad's main topic, accuracy or effectiveness.
+Democratic-aligned messages: 1,198/1,200 (99.8%) reviewed; 2 uncertain, 0 unreviewed and 0 stale. Only reviewed messages enter the description rates below. Missing evidence is not neutral language.
 
-The most frequent published issue family on the Republican side is Taxes & spending: 144/459 exact messages (31.4%). A match means one of the codebook's phrases appears in the available text. It is not an independent judgment of the ad's main topic, accuracy or effectiveness.
+Republican-aligned messages: 458/459 (99.8%) reviewed; 1 uncertain, 0 unreviewed and 0 stale. Only reviewed messages enter the description rates below. Missing evidence is not neutral language.
 
-Each message contributes at most once to each family. Categories overlap. There is no spending, impression or airing weight, and an OCR preview is not equivalent to a complete broadcast transcript.
+These are AI-assisted full-text contextual labels, not independently validated human judgments. Exact passages, target anchors and input hashes are retained. A reported allegation is a portrayal, not this project's finding that it is true.
+
+![Reviewed, uncertain, unreviewed and stale exact messages by advertiser alignment.](figures/portrayal-coverage.png)
+
+*Reviewed, uncertain, unreviewed and stale exact messages by advertiser alignment.* [Exact data](figures/portrayal-coverage.csv).
+
+## How they describe the other side
+
+This comparison counts endorsed descriptions of named people. Opposing-party collectives and same-party primary rivals are reported separately in the technical report. Quoted opponents and allegations being rebutted do not become the advertiser's own views.
+
+Democratic ads have an eligible description in 521/1,198 (43.5%) reviewed messages; 677 have no description in this scope. Among messages with a description, negative only: 509/521 (97.7%); positive only: 1/521 (0.2%); both positive and negative: 8/521 (1.5%); neutral only: 3/521 (0.6%).
+
+Including mixed messages, the share with any negative portrayal is 517/521 (99.2%); the share with any positive portrayal is 9/521 (1.7%). Those two percentages overlap; they are not competing pieces of one total.
+
+Republican ads have an eligible description in 275/458 (60.0%) reviewed messages; 183 have no description in this scope. Among messages with a description, negative only: 274/275 (99.6%); positive only: 0/275 (0.0%); both positive and negative: 0/275 (0.0%); neutral only: 1/275 (0.4%).
+
+Including mixed messages, the share with any negative portrayal is 274/275 (99.6%); the share with any positive portrayal is 0/275 (0.0%). Those two percentages overlap; they are not competing pieces of one total.
+
+![Context-coded message shares among reviewed ads with an eligible person description.](figures/opponent-tone.png)
+
+*Context-coded message shares among reviewed ads with an eligible person description.* [Exact data](figures/opponent-tone.csv).
+
+The most common Democratic description frames in this scope are who they serve or put first (215/521 (41.3%)); record, actions and policy pledges (181/521 (34.7%)); honesty, corruption and trustworthiness (150/521 (28.8%)). A message can use several frames, so these percentages overlap.
+
+> Republicans like Jay Feeley talk about trans people a lot.
+
+Democratic-aligned Common Ground Coalition PAC on Jay Feely: negative; who they serve or put first. Voice: advertiser. Ad snap-3a170b5b4f637d7a469a508b. [Original source](https://www.snap.com/political-ads/asset/897f15d7aa8c086055e061e7867d55984a08370d62fb658e72f6ef111a073396?mediaType=mp4).
+
+> David Valideo voted to cut Medicaid
+
+Democratic-aligned AFSCME PEOPLE on David Valadao: negative; record, actions and policy pledges. Voice: adopted clip. Ad snap-33dd56d3aaeb6b72cddfd524. [Original source](https://www.snap.com/political-ads/asset/dfe24ff96675d65c68b9cc36b1dcfe11c10b9e3bcfaf3f326311e2fc1bf07229?mediaType=mp4).
+
+> She sold us out.
+
+Democratic-aligned WinSenate on Ashley Hinson: negative; honesty, corruption and trustworthiness. Voice: adopted clip. Ad snap-53f8cccf7f18deff3df68f84. [Original source](https://www.snap.com/political-ads/asset/4d610dcd3150994940b4d6296c2e06650f344ca420059f3303db9518355b7462?mediaType=mp4).
+
+The most common Republican description frames in this scope are who they serve or put first (129/275 (46.9%)); record, actions and policy pledges (86/275 (31.3%)); ideology and extremism (55/275 (20.0%)). A message can use several frames, so these percentages overlap.
+
+> Dave Min voted for higher taxes… and voted to make your life harder.
+
+Republican-aligned NRCC on Dave Min: negative; who they serve or put first. Voice: advertiser. Ad nrcc-22fd91ea37be2558-0. [Original source](https://www.nrcc.org/2026/04/15/nrcc-launches-paid-ad-campaign-targeting-dave-min-for-raising-taxes-on-working-families/).
+
+> Liberal Josh Turing missed 58% of his votes.
+
+Republican-aligned Senate Leadership Fund on Josh Turek: negative; record, actions and policy pledges. Voice: advertiser. Ad snap-f1b953ca2205ef0ef6553f6d. [Original source](https://www.snap.com/political-ads/asset/8f1987dbc61218dc4671d290d92c5888da28e9f0211e8e6f251a415b0095995f?mediaType=mp4).
+
+> “Seniors can’t afford Josh Turek’s tax-and-spend agenda.”
+
+Republican-aligned NRSC on Josh Turek: negative; ideology and extremism. Voice: advertiser. Ad nrsc-17011-0. [Original source](https://www.nrsc.org/press-releases/josh-turek-wants-to-tax-seniors-social-security-2026-08-18/).
+
+![Context-coded message shares among reviewed ads with an eligible person description.](figures/opponent-frames.png)
+
+*Context-coded message shares among reviewed ads with an eligible person description.* [Exact data](figures/opponent-frames.csv).
+
+## How they describe their own candidates
+
+The same definitions apply to the advertiser's own or supported candidates. Supporting a candidate is not itself a positive personality description: the ad must actually attribute a quality, background, conduct or record. Policy pledges count as attributed commitments, not accomplished results.
+
+Democratic ads have an eligible description in 612/1,198 (51.1%) reviewed messages; 586 have no description in this scope. Among messages with a description, negative only: 0/612 (0.0%); positive only: 605/612 (98.9%); both positive and negative: 2/612 (0.3%); neutral only: 5/612 (0.8%).
+
+Including mixed messages, the share with any negative portrayal is 2/612 (0.3%); the share with any positive portrayal is 607/612 (99.2%). Those two percentages overlap; they are not competing pieces of one total.
+
+Republican ads have an eligible description in 174/458 (38.0%) reviewed messages; 284 have no description in this scope. Among messages with a description, negative only: 0/174 (0.0%); positive only: 169/174 (97.1%); both positive and negative: 0/174 (0.0%); neutral only: 5/174 (2.9%).
+
+Including mixed messages, the share with any negative portrayal is 0/174 (0.0%); the share with any positive portrayal is 169/174 (97.1%). Those two percentages overlap; they are not competing pieces of one total.
+
+![Context-coded message shares among reviewed ads with an eligible person description.](figures/self-tone.png)
+
+*Context-coded message shares among reviewed ads with an eligible person description.* [Exact data](figures/self-tone.csv).
+
+The most common Democratic description frames in this scope are who they serve or put first (294/612 (48.0%)); record, actions and policy pledges (131/612 (21.4%)); strength, courage and leadership (112/612 (18.3%)). A message can use several frames, so these percentages overlap.
+
+> TO FIGHT BACK
+> AGAINST BILLIONAIRES!
+
+Democratic-aligned AFL-CIO on Lindsay James: positive; who they serve or put first. Voice: advertiser. Ad snap-046abbf4ef94bcb1967b3e6e. [Original source](https://www.snap.com/political-ads/asset/2bd0439e27f51b1f5cffec28ce43be8e0c5ab844a1bb582af67f5539d4b84bc4?mediaType=png).
+
+> BOB BROOKS
+> LOWER COSTS
+> AND RAISE WAGES.
+
+Democratic-aligned AFL-CIO on Bob Brooks: positive; record, actions and policy pledges. Voice: advertiser. Ad snap-66da9566fb8049ca282189a5. [Original source](https://www.snap.com/political-ads/asset/a90253a256a5ce82af52e028a7b6fb786888d7c2d883e04631a21d77de8e5e33?mediaType=mp4).
+
+> VOTE FOR
+> TO FIGHT BACK
+> AGAINST BILLIONAIRES!
+
+Democratic-aligned AFL-CIO on Troy Jackson: positive; strength, courage and leadership. Voice: advertiser. Ad snap-83f43dbae523e61b278d0a2b. [Original source](https://www.snap.com/political-ads/asset/e8ef623502f784eae3623762fdcea9e728c45c67b8bd6a9cdc3b4f1d7410e367?mediaType=mp4).
+
+The most common Republican description frames in this scope are record, actions and policy pledges (99/174 (56.9%)); strength, courage and leadership (40/174 (23.0%)); independence or loyalty to a party/leader (25/174 (14.4%)). A message can use several frames, so these percentages overlap.
+
+> Gabe Evans delivered help for working families.
+
+Republican-aligned NRCC on Gabe Evans: positive; record, actions and policy pledges. Voice: advertiser. Ad nrcc-a37dc0e224f4f4a0-0. [Original source](https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-gabe-evans-tax-relief/).
+
+> He’s a good guy and a warrior.
+
+Republican-aligned Andy Barr for Senate on Andy Barr: positive; strength, courage and leadership. Voice: adopted clip. Ad barr-1560-0. [Original source](https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/).
+
+> “I’m running for Congress to help President Trump.
+
+Republican-aligned Brian Stover for Congress on Brian Stover: positive; independence or loyalty to a party/leader. Voice: advertiser. Ad stover-43-0. [Original source](https://www.brianstoverforcongress.com/2026/01/01/brian-stover-releases-new-television-ad-take-out-the-trash/).
+
+![Context-coded message shares among reviewed ads with an eligible person description.](figures/self-frames.png)
+
+*Context-coded message shares among reviewed ads with an eligible person description.* [Exact data](figures/self-frames.csv).
+
+## Are these party differences or differences in the sources?
+
+A source-mix check removes each party's largest publisher by record count and deduplicates again: Democratic: AFL-CIO; Republican: Senate Leadership Fund. This cannot turn an opportunistic collection into a representative sample.
+
+For Democratic ads describing opposing-party people, any-negative portrayals change from 517/521 (99.2%) to 514/518 (99.2%) after that exclusion. Differences can still reflect races, phases, extraction formats and repeated changed-target templates, not a pure party effect.
+
+For Republican ads describing opposing-party people, any-negative portrayals change from 274/275 (99.6%) to 154/155 (99.4%) after that exclusion. Differences can still reflect races, phases, extraction formats and repeated changed-target templates, not a pure party effect.
+
+![Largest five publishers per party and all remaining publishers.](figures/publisher-composition.png)
+
+*Largest five publishers per party and all remaining publishers.* [Exact data](figures/publisher-composition.csv).
+
+## The issues and collection history are supporting context
+
+The following charts remain lexical and descriptive of collection coverage. An issue phrase in a quotation is still a match; these are not person-tone labels or measures of how much either party advertised.
 
 ![Exact phrase-family presence; counts and denominators shown.](figures/issue-language.png)
 
 *Exact phrase-family presence; counts and denominators shown.* [Exact data](figures/issue-language.csv).
 
-## What the ads actually say about opponents
+![Issue shares before and after removing the largest record publisher.](figures/source-sensitivity.png)
 
-A small set of source-checked passages makes the difference between wording and portrayal concrete. The examples below are illustrations, not representative estimates of how often either party attacks. The report retains the complete ad text and the review's speaker and target notes.
-
-> [NARRATOR] Price Hike Mike is out of touch.
-
-Democratic-aligned advertiser on Mike Rogers. The ad alternates news clips, a Rogers quotation, and advertiser narration. This excerpt is the narrator's conclusion, not Rogers's own description. [Original source](https://www.dscc.org/article/new-ad-campaign-slams-price-hike-mike-rogers-for-dismissing-skyrocketing-michigan-gas-prices/).
-
-> Cuellar is with radical Democrats, not us
-
-Republican-aligned advertiser on Henry Cuellar. The full script links Cuellar to other Democrats and criticizes his votes and record. This is the advertiser's closing portrayal, not an endorsement by Cuellar or a finding about his ideology. [Original source](https://www.nrcc.org/2026/01/13/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-cuellar-for-failing-south-texas/).
-
-The broader phrase-family chart counts vocabulary such as extreme/radical, trust/integrity and special interests. It includes quoted and denied language and positive descriptions. Calling it an attack-rate chart would go beyond what has been measured.
-
-![Exact phrase-family presence; counts and denominators shown.](figures/portrayal-language.png)
-
-*Exact phrase-family presence; counts and denominators shown.* [Exact data](figures/portrayal-language.csv).
-
-## A closer look at descriptive words
-
-The next comparison follows the question in the Harris/Trump media-coverage analysis, but not its assumptions about a different corpus. Here we compare D- and R-aligned messages in contexts mentioning Democratic candidates or the party, then do the same for Republican mentions. Full candidate names and explicit party names are required. Surname-only references, some nicknames and misrecognized names can be missed.
-
-A bundled general-English lexicon supplies words with adjective-polarity entries. We do not give advertisements sentiment scores or claim that each occurrence is grammatically an adjective. Words must be within 12 tokens of an explicit mention in the same sentence and evidence lane; mixed-party sentences are excluded. Each exact message counts once per word. The denominator includes eligible mention-context messages with no lexicon-word hit.
-
-For Democratic mentions, the eligible denominators are 585 D-aligned and 235 R-aligned messages. These are smaller and more selective than the issue-chart denominators.
-
-![Supported lexicon-word contrasts in unreviewed mention contexts.](figures/descriptors-D.png)
-
-*Supported lexicon-word contrasts in unreviewed mention contexts.* [Exact data](figures/descriptors-D.csv).
-
-For Republican mentions, the eligible denominators are 342 D-aligned and 153 R-aligned messages. These are smaller and more selective than the issue-chart denominators.
-
-![Supported lexicon-word contrasts in unreviewed mention contexts.](figures/descriptors-R.png)
-
-*Supported lexicon-word contrasts in unreviewed mention contexts.* [Exact data](figures/descriptors-R.csv).
-
-The horizontal scale is a smoothed log2 message-presence odds ratio, not a sentiment score or a significance test. Only comparisons with at least ten messages per group and a word in at least three messages on one side are ranked. The charts show at most five supported contrasts in either direction; all supported words and their exact counts remain in the downloads.
-
-Reading the original contexts changes what a tempting headline would imply. These additional source-bound examples were checked specifically to illustrate the limitations of proximity, not to validate all extracted contexts.
-
-> Christina Hines has a better idea.
-
-This is positive self-side promotion of the supported candidate, not a Democratic description of a Republican opponent. The recovered text includes machine-recognition uncertainty. [Original source](https://www.snap.com/political-ads/asset/57bb404c169afebbdb1fdc2822168457bbf19044605213d0795042c081e2351e?mediaType=mp4).
-
-> Thanks to Republicans, violent crime is at all-time lows
-
-Violent modifies crime, not Republican candidates. The ad presents falling violent crime as a Republican achievement; this does not independently verify its crime claim. [Original source](https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-graham-platners-pro-crime-agenda-2026-05-13/).
-
-A word near a Republican name is not necessarily a word describing that person. It can describe crime, prices, an opponent's quotation or the advertiser's own candidate. Negation is retained rather than flipped into a new sentiment label. Ideological wording missing from the general-English lexicon is addressed separately by the published phrase families.
-
-## What changes in the last ninety days?
-
-The recent window is 2026-07-31 to 2026-10-28; the preceding window is 2026-05-02 to 2026-07-30. We compare first-observed exact messages in contexts mentioning the opposing party, not how long a creative kept airing. For early-cycle snapshots, windows are limited by the collection's January 1 start.
-
-For Democratic-aligned ads, the recent and preceding windows contain 302 and 33 eligible messages. Keeping only publishers present in both windows leaves 61 and 9. That subset does not meet the group-size threshold, so its word contrasts are not ranked.
-
-![Supported lexicon-word contrasts in unreviewed mention contexts.](figures/descriptor-change-D.png)
-
-*Supported lexicon-word contrasts in unreviewed mention contexts.* [Exact data](figures/descriptor-change-D.csv).
-
-For Republican-aligned ads, the recent and preceding windows contain 150 and 37 eligible messages. Keeping only publishers present in both windows leaves 14 and 37. That subset meets the group-size threshold, but it does not hold race, format, candidate or election phase constant.
-
-![Supported lexicon-word contrasts in unreviewed mention contexts.](figures/descriptor-change-R.png)
-
-*Supported lexicon-word contrasts in unreviewed mention contexts.* [Exact data](figures/descriptor-change-R.csv).
-
-These plots are exploratory changes in the saved collection. A rise can reflect newly recovered sources or changed-target templates, not a nationwide change in party strategy. The monthly figures make the uneven historical coverage visible.
+*Issue shares before and after removing the largest record publisher.* [Exact data](figures/source-sensitivity.csv).
 
 ![Monthly D/R first-observed exact-message counts.](figures/monthly-coverage.png)
 
@@ -100,28 +157,16 @@ These plots are exploratory changes in the saved collection. A rise can reflect 
 
 *All issue families by first-observed month; missing denominators break lines.* [Exact data](figures/monthly-issues.csv).
 
-## How much of the difference is the source mix?
+## What the evidence can establish
 
-We remove each party's largest publisher by source-record count and recalculate the exact-message shares. In this snapshot the exclusions are Democratic: AFL-CIO; Republican: Senate Leadership Fund. This is a stress test, not a balanced sample or an estimate corrected for all missing advertising.
+This identifies attributed descriptions in the recovered text. It cannot establish national prevalence, factual truth, persuasion or voter exposure. ASR/OCR can misrecognize names and negation. Sparse Republican House and early-cycle coverage remain limitations; missing ads are not evidence of silence.
 
-The largest absolute full-sample issue gap is Cost of living. D-aligned messages match it in 462/1,200 (38.5%); R-aligned messages in 94/459 (20.5%). After the exclusions those values are 386/919 (42.0%) and 88/309 (28.5%). The changed comparison shows why the original gap should not be read as a source-independent party effect.
+Illustrations are selected from the three most frequent frames per party/scope, using the most repeated exact descriptor phrase and then the shortest supporting passage, with ad ID as a tie-breaker and no repeated message within a scope. They illustrate the coded frames, not a representative sample or an intensity ranking.
 
-![Largest five publishers per party and all remaining publishers.](figures/publisher-composition.png)
-
-*Largest five publishers per party and all remaining publishers.* [Exact data](figures/publisher-composition.csv).
-
-![Issue shares before and after removing the largest record publisher.](figures/source-sensitivity.png)
-
-*Issue shares before and after removing the largest record publisher.* [Exact data](figures/source-sensitivity.csv).
-
-## What this does - and does not - establish
-
-This collection supports a checkable description of the words recovered from these ads, along with a small number of context-reviewed opponent portrayals. It does not establish national advertising prevalence, factual truth, persuasion, audience reach or the parties' private intentions. Speaker quotation, extraction quality, primary attacks and positive self-description still require context.
-
-The final eligibility cutoff remains 2026-11-04, inclusive. The current snapshot stops at 2026-10-28; uncollected future dates are not zeros. Research refreshes may update the saved evidence, figures and both drafts, but website and Substack publication remain on hold.
+The final eligibility cutoff remains 2026-11-04, inclusive. This snapshot stops at 2026-10-28. Automatic research refresh can add unreviewed evidence but does not silently classify it. Both editions remain unpublished; website and Substack publication and host integration remain on hold.
 
 ## Evidence and methods
 
-[Complete text and evidence (CSV)](analysis-ads.csv) | [Complete local analysis (JSON)](analysis.json) | [Technical report](analysis.html) | [All chart data](figures/chart-data.json) | [Descriptor contexts](figures/descriptor-evidence.json)
+[Complete text and evidence (CSV)](analysis-ads.csv) | [Complete local analysis (JSON)](analysis.json) | [Technical report](analysis.html) | [All chart data](figures/chart-data.json) | [Context-coded portrayals](figures/portrayal-evidence.json)
 
 For a future Substack edition, upload the PNGs and replace the local evidence links only after an authorized destination exists. These draft links do not claim that any public page or download is live.

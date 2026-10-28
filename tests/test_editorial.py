@@ -2,7 +2,27 @@ import copy
 
 import pytest
 
-from political_ads.editorial import context_illustrations, margin_html, substack_markdown
+from political_ads.editorial import (
+    context_illustrations,
+    margin_html,
+    portrayal_excerpt,
+    substack_markdown,
+)
+
+
+def test_article_excerpt_keeps_the_characterization_not_just_the_passage_opening():
+    quote = " ".join(["Context"] * 30) + " Alex sold out working families to donors."
+    excerpt = portrayal_excerpt({"quote": quote, "phrase": "sold out working families"})
+    assert "sold out working families" in excerpt
+    assert excerpt.startswith("... ")
+    assert len(excerpt.removeprefix("... ").removesuffix(" ...").split()) <= 22
+    assert portrayal_excerpt({"quote": "Alex is honest.", "phrase": "honest"}) == "Alex is honest."
+    phrase = (
+        "stands up for working families and fights to lower their costs while protecting "
+        "their healthcare, retirement benefits, wages, civil rights, safety and access to housing"
+    )
+    long_quote = "Candidate Alex " + phrase + ". More context."
+    assert phrase in portrayal_excerpt({"quote": long_quote, "phrase": phrase})
 
 
 def test_context_illustrations_bind_quote_alignment_and_source_hash():

@@ -4,6 +4,7 @@ import {
   type Ad, type Dataset, type Filters, EMPTY_FILTERS, csv, displayDate, filterAds,
   monthlyCounts, partyName, publisher, saveFile, shares, uniqueMessages,
 } from "./data";
+import { PortrayalAnalysis } from "./portrayal";
 import "./style.css";
 
 function Select({ label, value, options, onChange }: {
@@ -125,6 +126,9 @@ function AdCard({ ad, selected, examples }: {
         this is not independent verification of what a quoted person actually said.</p>
       {ad.quality_flags?.length > 0 && <p><strong>Extraction notes:</strong> {
         ad.quality_flags.map(flag => flag.replaceAll("_", " ")).join("; ")}.</p>}
+      <p><strong>Portrayal review:</strong> {ad.portrayal_review ?
+        `${ad.portrayal_review.status}${ad.portrayal_review.reason ? ` — ${ad.portrayal_review.reason}` : ""}` :
+        "unreviewed"}. Missing, uncertain and stale reviews do not enter the person-portrayal metrics.</p>
       <p><strong>Date:</strong> {ad.date_basis === "release_date" ? "Official release" : ad.date_basis}.
         {ad.delivery_start && <> {ad.date_basis === "scheduled_delivery" ?
           "Scheduled interval (not verified delivery days)" : "Reported parent-creative interval"}: {
@@ -209,40 +213,17 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
         <p className="result-summary" role="status">{ads.length} records · {unique.length} unique messages
           {filtered ? " in this selection" : " in the collection"}</p>
       </section>
-      <section className="section" id="analysis">
-        <div className="section-heading"><p className="eyebrow">01 / THE OTHER SIDE</p>
-          <h2>How they describe their opponents.</h2>
-          <p>Context-checked examples, not a ranking of how often either party attacks.
-            Each passage links to its complete ad.</p></div>
-        <div className="portrayal-columns">{(["D", "R"] as const).map(party =>
-          <div className={`portrayal-column ${party}`} key={party}>
-            <h3>{party === "D" ? "Democrats on Republicans" : "Republicans on Democrats"}</h3>
-            {examples.filter(example => example.party === party).length === 0 &&
-              <p className="empty-inline">No reviewed opponent examples in this selection.</p>}
-            {examples.filter(example => example.party === party).map(example =>
-              <article className="quote-card" key={example.ad_id + example.quote}>
-                <p className="quote-tag">{example.frame} <span>on {example.target}</span></p>
-                <blockquote>{example.quote.replace(/^\[NARRATOR\]\s*/, "")}</blockquote>
-                <p className="quote-context">{example.context}</p>
-                <button className="text-button" onClick={() => reveal(example.ad_id)}>Read the ad in context</button>
-              </article>)}
-          </div>)}</div>
-      </section>
+      <PortrayalAnalysis ads={ads} codebook={dataset.portrayal_codebook} reveal={reveal} />
       <section className="section" id="issues">
-        <div className="section-heading"><p className="eyebrow">02 / COMMON GROUND, DIFFERENT WORDS</p>
+        <div className="section-heading"><p className="eyebrow">02 / COLLECTION CONTEXT</p>
           <h2>What issues appear in the language?</h2>
-          <p>Exact matches to published phrase families. This measures wording—not the truth,
-            tone, or intent of an ad. Select an issue to explore its evidence.</p></div>
+          <p>A secondary lexical view of exact matches to published issue phrase families.
+            It measures wording—not the truth, tone, target or intent of an ad.</p></div>
         <BarComparison ads={ads} labels={Object.keys(dataset.codebook.issues)} field="issues"
           onSelect={label => change("issue", label)} />
       </section>
-      <section className="section two-panel">
-        <div><div className="section-heading"><p className="eyebrow">03 / THE RHETORICAL REGISTER</p>
-          <h2>The vocabulary of contrast.</h2><p>Language markers across complete transcripts.
-            Quoted or rebutted language is included; these are not confirmed attacks.</p></div>
-          <BarComparison ads={ads} labels={Object.keys(dataset.codebook.portrayal_language)}
-            field="portrayal_markers" /></div>
-        <div><div className="section-heading"><p className="eyebrow">04 / THE CAMPAIGN UNFOLDS</p>
+      <section className="section collection-context">
+        <div><div className="section-heading"><p className="eyebrow">03 / THE CAMPAIGN UNFOLDS</p>
           <h2>New messages over time.</h2><p>First observed release month for each exact unique
             message in the selection. Not spending, impressions, or airing volume.</p></div>
           <div className="legend"><span className="D">Democratic</span><span className="R">Republican</span></div>
@@ -255,21 +236,32 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
       </section>
       <section className="section" id="research-figures">
         <div className="section-heading"><p className="eyebrow">FULL-SNAPSHOT RESEARCH</p>
-          <h2>Descriptive language, change and source mix.</h2>
-          <p>The expanded local report compares lexicon words near candidate and party mentions,
-            adjacent 90-day windows, monthly issue wording and publisher sensitivity.
-            These whole-collection figures do not change with the filters above.</p>
+          <h2>Person-level portrayals, with evidence attached.</h2>
+          <p>The full-snapshot artifacts compare opponent and supported-candidate tone, semantic
+            frames and review coverage. Issue, time and source-mix figures remain secondary collection
+            context. These whole-collection figures do not change with the filters above.</p>
           <p><a href={`${import.meta.env.BASE_URL}report.html`}>Read the illustrated research report</a>
             {" · "}<a href={`${import.meta.env.BASE_URL}article.html`}>Read the unpublished article draft</a>
             {" · "}<a href={`${import.meta.env.BASE_URL}figures/chart-data.json`}>Exact chart data</a>
-            {" · "}<a href={`${import.meta.env.BASE_URL}figures/descriptor-evidence.json`}>Descriptor contexts</a></p>
-          <p>Nearby wording is not verified target attribution or an ad sentiment score.
-            All original text and reviewed opponent examples remain available separately.</p>
+            {" · "}<a href={`${import.meta.env.BASE_URL}figures/portrayal-evidence.json`}>Portrayal evidence</a></p>
+          <p className="figure-links">
+            {["opponent-tone", "self-tone", "opponent-frames", "self-frames", "portrayal-coverage"]
+              .map((figure, index) => <span key={figure}>{index > 0 && " · "}
+                <a href={`${import.meta.env.BASE_URL}figures/${figure}.png`}>
+                  {figure.replaceAll("-", " ")}</a></span>)}
+          </p>
+          <p>Collection context: <a href={`${import.meta.env.BASE_URL}figures/issue-language.png`}>
+            issue language</a>{" · "}<a href={`${import.meta.env.BASE_URL}figures/monthly-coverage.png`}>
+            messages over time</a>{" · "}<a href={`${import.meta.env.BASE_URL}figures/publisher-composition.png`}>
+            publisher mix</a>{" · "}<a href={`${import.meta.env.BASE_URL}figures/source-sensitivity.png`}>
+            source sensitivity</a>.</p>
+          <p>Quoted accusations, rebutted claims, unclear voices, collectives and unresolved target
+            identities do not silently enter people-level headline totals.</p>
         </div>
         <a href={`${import.meta.env.BASE_URL}report.html`}>
           <img loading="lazy" style={{ width: "100%", height: "auto" }}
-            src={`${import.meta.env.BASE_URL}figures/issue-language.png`}
-            alt="Full-collection issue-language shares; open the report for exact counts and downloadable figures." />
+            src={`${import.meta.env.BASE_URL}figures/opponent-tone.png`}
+            alt="Full-collection opponent-portrayal tone comparison; open the report for exact counts and evidence." />
         </a>
       </section>
       <section className="section" id="evidence">
@@ -280,7 +272,7 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
           <div><button onClick={() => saveFile("political-ads-selection.csv", csv(ads), "text/csv;charset=utf-8")}>Download CSV</button>
             <button onClick={() => saveFile("political-ads-selection.json", JSON.stringify({
               snapshot_id: dataset.snapshot_id, filters, ads, examples,
-              methodology: dataset.methodology,
+              methodology: dataset.methodology, portrayal_codebook: dataset.portrayal_codebook,
             }, null, 2), "application/json")}>Download JSON</button></div></div>
         {ads.length === 0 ? <p className="empty-state">No ads match these filters.
           Try a broader date range or reset the selection.</p> :
@@ -309,9 +301,12 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
           <p className="fine-print">Record counts before English-language exclusions.
             Failed sources are not counted as zero ad activity. Updates retain last-good text.</p>
           <h3>Review status</h3><p>{dataset.validation.reviewed_examples} source-checked editorial examples.
-            No independent human gold set or validated semantic attack classifier is claimed.
-            Issue and vocabulary counts are reproducible lexical measures.</p>
+            Person-level portrayal labels are AI-assisted, source-bound annotations—not an independent
+            human gold set or a validated sentiment classifier. Review coverage is reported above,
+            and unreviewed text is never treated as neutral.</p>
           <details><summary>Inspect the phrase codebook</summary><pre>{JSON.stringify(dataset.codebook, null, 2)}</pre></details>
+          {dataset.portrayal_codebook && <details><summary>Inspect the portrayal codebook</summary>
+            <pre>{JSON.stringify(dataset.portrayal_codebook, null, 2)}</pre></details>}
           <h3>Take the evidence with you</h3><p><a href={`${import.meta.env.BASE_URL}data/dataset.json.gz`}>Complete snapshot (compressed JSON)</a></p>
           <p><a href={`${import.meta.env.BASE_URL}data/ads.csv`}>All transcripts and evidence (CSV)</a></p>
           <p><a href="https://github.com/hanshanley/political-ads">Source code and collection methods</a></p>

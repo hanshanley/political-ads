@@ -23,14 +23,54 @@ test("real corpus, synchronized filters, complete downloads, and empty state", a
   expect(exported.ads).toHaveLength(included.length);
   expect(exported.ads[0].text).toBe(included[0].text);
   expect(exported.ads[0].segments.length).toBeGreaterThan(0);
+  expect(exported.portrayal_codebook).toEqual(dataset.portrayal_codebook);
+  expect(exported.ads).toEqual(included);
   await page.getByLabel("Search the ad text", { exact: true }).fill("not-a-real-message-xyz");
   await expect(page.getByRole("status")).toContainText("0 records");
   await expect(page.getByText("No ads match these filters.", { exact: false })).toBeVisible();
   await page.getByRole("button", { name: "Reset filters" }).click();
   await expect(page.getByRole("status")).toContainText(`${dataset.ads.length} records`);
-  await page.getByRole("button", { name: "Read the ad in context" }).first().click();
+  await page.getByRole("button", { name: "Read the full ad", exact: true }).first().click();
   await expect(page.locator(".ad-card.selected .transcript")).toHaveClass(/open/);
   expect(errors).toEqual([]);
+});
+
+test("person portrayal scopes reconcile with Python evidence and preserve literal context", async ({ page }) => {
+  await page.goto("./");
+  const evidence = await (await page.request.get("./figures/portrayal-evidence.json")).json();
+  const dataset = await (await page.request.get("./data/dataset.json")).json();
+  for (const [scope, button] of [["opponents", "Opponents"], ["self", "Their own candidates"]]) {
+    await page.getByRole("button", { name: button, exact: true }).click();
+    const columns = page.locator(".tone-column");
+    for (const [index, party] of ["D", "R"].entries()) {
+      const expected = evidence.scopes[scope][party];
+      await expect(columns.nth(index).locator("header strong")).toHaveText(
+        `${expected.described.count}/${expected.described.total} reviewed messages had an eligible person description`);
+      const rows = columns.nth(index).locator(".tone-breakdown > div");
+      for (const [row, key] of ["negative_only", "positive_only", "mixed", "neutral_only"].entries()) {
+        const metric = expected.tones[key];
+        await expect(rows.nth(row).locator("small")).toHaveText(`${metric.count}/${metric.total}`);
+        await expect(rows.nth(row).locator("b")).toHaveText(
+          metric.total ? `${(metric.share * 100).toFixed(1)}%` : "—");
+      }
+    }
+    for (const card of await page.locator(".quote-card").all()) {
+      await expect(card.locator("blockquote")).not.toBeVisible();
+      await card.locator("summary").click();
+      await expect(card.locator("blockquote")).toBeVisible();
+      const phrase = (await card.locator(".descriptor-phrase").textContent() ?? "").slice(1, -1);
+      const quote = await card.locator("blockquote").textContent() ?? "";
+      expect(phrase.length).toBeGreaterThan(0);
+      expect(quote.length).toBeGreaterThan(0);
+      expect(quote).toContain(phrase);
+      expect(dataset.ads.some((ad: { text: string }) => ad.text.includes(quote))).toBe(true);
+      await card.locator("summary").click();
+    }
+  }
+  await page.getByRole("button", { name: "Read the full ad", exact: true }).first().click();
+  await expect(page.locator(".ad-card.selected .transcript")).toHaveClass(/open/);
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
 test("mobile layout, keyboard access, static report and base-path assets", async ({ page }, testInfo) => {
@@ -89,12 +129,12 @@ test("final-day defaults and single-message timeline have no future zeros or dup
   await expect(page.getByRole("status")).toContainText("1 records");
 });
 
-test("technical report keeps tables and expanded descriptor contexts inside mobile width", async ({ page }) => {
+test("technical report keeps tables and expanded portrayal evidence inside mobile width", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("./report.html");
   await expect(page.getByRole("heading", { name: "The language of political ads", exact: true })).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-  const contexts = page.locator("details").filter({ hasText: "Read the extracted descriptor contexts" });
+  const contexts = page.locator("details").filter({ hasText: "Read the context-coded portrayal evidence" });
   await contexts.locator("summary").click();
   await expect(contexts).toHaveAttribute("open", "");
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);

@@ -1,5 +1,20 @@
 export type Party = "D" | "R" | "other" | "unknown";
+export type PortrayalTone = "negative" | "positive" | "neutral";
+export type PortrayalScope = "opponents" | "self";
 export interface Match { label: string; text: string; start: number; end: number }
+export interface Description {
+  target: string; target_party: Party; target_kind: "person" | "collective";
+  target_role: "self_or_supported" | "opponent" | "unclear"; frame: string;
+  tone: PortrayalTone;
+  voice: "advertiser" | "adopted_clip" | "quoted_opponent" | "rebutted_claim" | "unclear";
+  phrase: string; quote: string; target_quote: string;
+  start: number; end: number; target_start: number; target_end: number;
+}
+export interface PortrayalReview {
+  status: "reviewed" | "uncertain" | "unreviewed" | "stale";
+  ad_id?: string; source_hash?: string; text_hash: string; reason: string;
+  descriptions: Description[];
+}
 export interface Ad {
   id: string; source: string; source_url: string; title: string; sponsor: string;
   sponsor_type: string; alignment: Party; published: string; observed: string;
@@ -15,6 +30,7 @@ export interface Ad {
     id: string; alignment: Party; status: string; rationale: string; reviewed_on: string;
     reviewed_source_hash: string; evidence: { url: string }[];
   };
+  portrayal_review?: PortrayalReview;
 }
 export interface Example {
   ad_id: string; party: Party; target: string; target_party: Party; frame: string;
@@ -30,6 +46,9 @@ export interface Dataset {
   ads: Ad[]; examples: Example[]; sources: Source[]; methodology: string[];
   codebook: { version: string; description: string; issues: Record<string, string[]>;
     portrayal_language: Record<string, string[]> };
+  portrayal_codebook?: {
+    version: string; method: string; frames: Record<string, string>; [key: string]: unknown;
+  };
   validation: { reviewed_examples: number; semantic_classifier: string;
     independent_human_gold: boolean };
 }
@@ -70,6 +89,121 @@ export function uniqueMessages(ads: Ad[]): Ad[] {
       seen.add(key);
       return true;
     });
+}
+
+const eligibleVoices = new Set<Description["voice"]>(["advertiser", "adopted_clip"]);
+
+export function eligibleDescriptions(ad: Ad, scope: PortrayalScope): Description[] {
+  if (ad.portrayal_review?.status !== "reviewed") return [];
+  return ad.portrayal_review.descriptions.filter(description =>
+    description.target_kind === "person" &&
+    eligibleVoices.has(description.voice) &&
+    (scope === "self" ? description.target_role === "self_or_supported" :
+      description.target_role === "opponent" &&
+      (description.target_party === "D" || description.target_party === "R") &&
+      description.target_party !== ad.alignment),
+  );
+}
+
+export type ToneCategory = "negative-only" | "positive-only" | "mixed" | "neutral-only";
+export interface PortrayalPartySummary {
+  messages: number;
+  coverage: { reviewed: number; uncertain: number; unreviewed: number; stale: number };
+  eligible: number;
+  tones: Record<ToneCategory, number>;
+  negative: number;
+  positive: number;
+  frames: Record<string, number>;
+  evidence: PortrayalEvidence[];
+}
+export interface PortrayalEvidence { adId: string; description: Description }
+
+export function portrayalSummary(ads: Ad[], scope: PortrayalScope):
+Record<"D" | "R", PortrayalPartySummary> {
+  const messages = uniqueMessages(ads)
+    .filter((ad): ad is Ad & { alignment: "D" | "R" } =>
+      ad.alignment === "D" || ad.alignment === "R");
+  return Object.fromEntries((["D", "R"] as const).map(party => {
+    const partyAds = messages.filter(ad => ad.alignment === party);
+    const summary: PortrayalPartySummary = {
+      messages: partyAds.length,
+      coverage: { reviewed: 0, uncertain: 0, unreviewed: 0, stale: 0 },
+      eligible: 0,
+      tones: { "negative-only": 0, "positive-only": 0, mixed: 0, "neutral-only": 0 },
+      negative: 0,
+      positive: 0,
+      frames: {},
+      evidence: [],
+    };
+    for (const ad of partyAds) {
+      const status = ad.portrayal_review?.status ?? "unreviewed";
+      summary.coverage[status]++;
+      const descriptions = eligibleDescriptions(ad, scope);
+      if (!descriptions.length) continue;
+      summary.eligible++;
+      const tones = new Set(descriptions.map(description => description.tone));
+      const negative = tones.has("negative");
+      const positive = tones.has("positive");
+      const category: ToneCategory = negative && positive ? "mixed" : negative ?
+        "negative-only" : positive ? "positive-only" : "neutral-only";
+      summary.tones[category]++;
+      if (negative) summary.negative++;
+      if (positive) summary.positive++;
+      for (const frame of new Set(descriptions.map(description => description.frame))) {
+        summary.frames[frame] = (summary.frames[frame] ?? 0) + 1;
+      }
+      summary.evidence.push(...descriptions.map(description => ({ adId: ad.id, description })));
+    }
+    return [party, summary];
+  })) as Record<"D" | "R", PortrayalPartySummary>;
+}
+
+export function selectPortrayalEvidence(evidence: PortrayalEvidence[], limit = 6):
+PortrayalEvidence[] {
+  if (limit <= 0) return [];
+  const identity = (item: PortrayalEvidence) =>
+    `${item.adId}:${item.description.start}:${item.description.end}:${item.description.target}:` +
+    `${item.description.frame}:${item.description.tone}`;
+  const unique = [...new Map(evidence.map(item => [identity(item), item])).values()];
+  const frameFrequency = new Map<string, number>();
+  for (const frame of new Set(unique.map(item => item.description.frame))) {
+    frameFrequency.set(frame, new Set(unique.filter(item =>
+      item.description.frame === frame).map(item => item.adId)).size);
+  }
+  const frames = [...frameFrequency].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([frame]) => frame);
+  const selected: PortrayalEvidence[] = [];
+  const used = new Set<string>();
+  const usedAds = new Set<string>();
+  const usedTargets = new Set<string>();
+  const usedTones = new Set<PortrayalTone>();
+  const stable = (a: PortrayalEvidence, b: PortrayalEvidence) =>
+    a.adId.localeCompare(b.adId) ||
+    a.description.target.localeCompare(b.description.target) ||
+    a.description.start - b.description.start;
+  const choose = (candidates: PortrayalEvidence[], rewardNewFrame: boolean) =>
+    candidates.filter(item => !used.has(identity(item))).sort((a, b) => {
+      const score = (item: PortrayalEvidence) =>
+        (rewardNewFrame && !selected.some(chosen =>
+          chosen.description.frame === item.description.frame) ? 8 : 0) +
+        (!usedAds.has(item.adId) ? 4 : 0) +
+        (!usedTargets.has(item.description.target) ? 3 : 0) +
+        (!usedTones.has(item.description.tone) ? 1 : 0);
+      return score(b) - score(a) || stable(a, b);
+    })[0];
+  const add = (item?: PortrayalEvidence) => {
+    if (!item || selected.length >= limit) return;
+    selected.push(item);
+    used.add(identity(item));
+    usedAds.add(item.adId);
+    usedTargets.add(item.description.target);
+    usedTones.add(item.description.tone);
+  };
+  for (const frame of frames) {
+    add(choose(unique.filter(item => item.description.frame === frame), false));
+  }
+  while (selected.length < Math.min(limit, unique.length)) add(choose(unique, true));
+  return selected;
 }
 
 export function shares(ads: Ad[], labels: string[], field: "issues" | "portrayal_markers") {

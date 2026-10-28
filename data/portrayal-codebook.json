@@ -1,0 +1,50 @@
+{
+  "version": "person-portrayals-1",
+  "method": "AI-assisted full-text semantic review of each exact party/message, not keyword proximity or a sentiment lexicon. Descriptions must concern a person or political collective and retain an exact claim passage and target anchor. Labels describe the advertiser's portrayal, not whether its claim is true. These labels are not independently validated human gold.",
+  "frames": {
+    "competence": "Competence, judgment and effectiveness",
+    "integrity": "Honesty, corruption and trustworthiness",
+    "interests": "Who they serve or put first",
+    "ideology": "Ideology and extremism",
+    "connection": "Empathy and connection to ordinary people",
+    "leadership": "Strength, courage and leadership",
+    "independence": "Independence or loyalty to a party/leader",
+    "record": "Record, actions and policy pledges",
+    "safety": "Protectors or threats to people's safety/rights",
+    "background": "Personal background and identity",
+    "other": "Other attributable personal description"
+  },
+  "tones": ["negative", "positive", "neutral"],
+  "voices": ["advertiser", "adopted_clip", "quoted_opponent", "rebutted_claim", "unclear"],
+  "target_kinds": ["person", "collective"],
+  "target_roles": ["self_or_supported", "opponent", "unclear"],
+  "counted_voices": ["advertiser", "adopted_clip"],
+  "rules": [
+    "Read the entire recovered ad, including the surrounding claim, negation, quotation and any ASR/OCR uncertainty. Do not select ads with keyword heuristics.",
+    "Code how a person is characterized, including attributed conduct and policy choices. A topic or a description of a policy, price or crime is not itself a description of a person.",
+    "The record frame includes actions, votes, achievements, failures and concrete policy commitments attributed to a target. A pledge is not evidence that the promised result was achieved.",
+    "Record own-side praise, cross-party attacks, cross-party praise and same-party primary attacks separately by actual target identity and party. Do not assume every criticized person is of the opposite party.",
+    "Include a short verbatim phrase, a supporting verbatim passage, and a verbatim target anchor. Resolve pronouns only when the full ad makes their referent clear.",
+    "Quoted opponent language or a rebutted accusation is not automatically an advertiser-endorsed description. An explicitly adopted testimonial/news clip can count, but its voice must remain identified.",
+    "Negative, positive and neutral describe the portrayal of the target, not the general emotional tone of the ad. Never turn absence of a description into neutral sentiment.",
+    "Do not infer a target's party from the advertiser's hostility or friendliness. Use supplied candidate identities, explicit ad text or the reviewed national-figure crosswalk; otherwise retain unknown.",
+    "Keep machine-recognized wording unchanged. Abstain on ambiguous target, meaning or negation rather than repairing text or inventing a description.",
+    "Count each exact message once within a comparison category; multiple frames and positive/negative passages may coexist in one message. Mixed means positive and negative descriptions in the same scope, possibly about different people.",
+    "Same-party primary rivals remain opponents, not self/supported candidates. Role is distinct from tone; sincere praise of an opponent remains positive opponent portrayal.",
+    "A statement of candidacy, approval, fundraising request or endorsement alone is not a personal description. Concrete non-evaluative personal facts can be neutral; no attributable description is a separate outcome.",
+    "Reviews bind the advertiser alignment, sponsor and exact original text. Unchanged text can retain its review when a publisher-page hash changes, with original and current source hashes retained. New or changed texts remain visibly unreviewed or stale.",
+    "Review coverage is not independent accuracy validation. Do not present AI-assisted codes as human gold, representative population estimates or measured persuasion."
+  ],
+  "national_figures": {
+    "Donald Trump": "R",
+    "Joe Biden": "D",
+    "Kamala Harris": "D",
+    "Barack Obama": "D",
+    "Nancy Pelosi": "D",
+    "Chuck Schumer": "D",
+    "Hakeem Jeffries": "D",
+    "Mike Johnson": "R",
+    "Mitch McConnell": "R",
+    "Bernie Sanders": "other"
+  }
+}

@@ -14,6 +14,7 @@ import matplotlib
 matplotlib.use("Agg")
 
 import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
 from matplotlib.ticker import MaxNLocator, PercentFormatter
 
 from political_ads.analysis import publisher, unique_messages
@@ -50,22 +51,7 @@ def months_through(until: str) -> list[str]:
     return [f"2026-{month:02}" for month in range(1, int(until[5:7]) + 1)]
 
 
-def choose_words(group: dict) -> list[dict]:
-    if not group["rankable"]:
-        return []
-    rows = group["words"]
-    positive = sorted(
-        [row for row in rows if row["log2_odds"] > 0],
-        key=lambda row: (-row["log2_odds"], row["word"]),
-    )[:5]
-    negative = sorted(
-        [row for row in rows if row["log2_odds"] < 0],
-        key=lambda row: (row["log2_odds"], row["word"]),
-    )[:5]
-    return sorted(positive + negative, key=lambda row: (row["log2_odds"], row["word"]))
-
-
-def build_figures(dataset: dict, strata: dict, descriptors: dict, output: Path) -> dict:
+def build_figures(dataset: dict, strata: dict, portrayals: dict, output: Path) -> dict:
     output.mkdir(parents=True, exist_ok=True)
     charts = []
     all_data = {}
@@ -174,7 +160,6 @@ def build_figures(dataset: dict, strata: dict, descriptors: dict, output: Path) 
 
         for identity, key, title in (
             ("issue-language", "issues", "What issues appear in the wording?"),
-            ("portrayal-language", "portrayals", "The vocabulary of contrast"),
         ):
             rows = strata["overall"][key]
             fig, (ax,) = frame(title, "Phrase-family matches per exact unique message", height=6.7)
@@ -390,138 +375,216 @@ def build_figures(dataset: dict, strata: dict, descriptors: dict, output: Path) 
             "Neither sample is representative.",
         )
 
-        def word_chart(identity, title, group, first, second, *, common=None, note=""):
-            rows = choose_words(group)
-            totals = group["coverage"]
-            names = {"D": "D advertisers", "R": "R advertisers"}
-            subtitle = (
-                f"{names.get(first, first)}: {totals[first]['total']} messages; "
-                f"{names.get(second, second)}: {totals[second]['total']} messages"
-            )
-            fig, (ax,) = frame(title, subtitle, height=6.2)
-            fig.subplots_adjust(left=0.18, right=0.72)
-            common_by_word = (
-                {row["word"]: row for row in common["words"]}
-                if common and common["rankable"]
-                else {}
-            )
-            for index, row in enumerate(rows):
-                score = row["log2_odds"]
-                color = (
-                    COLORS.get(first, COLORS.get(identity[-1], COLORS["D"]))
-                    if score > 0
-                    else (COLORS.get(second, "#85817A"))
+        tone_names = {
+            "negative_only": "Negative only",
+            "positive_only": "Positive only",
+            "mixed": "Both positive and negative",
+            "neutral_only": "Neutral only",
+        }
+        short_frames = {
+            "competence": "Ability & judgment",
+            "integrity": "Integrity & honesty",
+            "interests": "Who they serve",
+            "ideology": "Ideology & extremism",
+            "connection": "Empathy & connection",
+            "leadership": "Strength & leadership",
+            "independence": "Independence & loyalty",
+            "record": "Actions & policy pledges",
+            "safety": "Safety & rights",
+            "background": "Background & identity",
+            "other": "Other descriptions",
+        }
+
+        def portrayal_panels(identity, title, scope, field, labels):
+            groups = portrayals["scopes"][scope]
+            keys = list(labels)
+            if field == "frames":
+                keys.sort(
+                    key=lambda key: (-max(groups[p][field][key]["share"] or 0 for p in COLORS), key)
                 )
-                ax.barh(index, score, height=0.5, color=color)
-                if other := common_by_word.get(row["word"]):
-                    ax.scatter(
-                        other["log2_odds"],
-                        index,
-                        facecolor="#F7F5F0",
-                        edgecolor="#333333",
-                        s=28,
-                        zorder=4,
-                    )
-                ax.text(
-                    1.025,
-                    index,
-                    f"{first} {row[first]['count']}/{row[first]['total']}  "
-                    f"{second} {row[second]['count']}/{row[second]['total']}",
-                    transform=ax.get_yaxis_transform(),
-                    va="center",
-                    fontsize=8,
-                )
-            ax.set_yticks(range(len(rows)), [row["word"] for row in rows])
-            ax.invert_yaxis()
-            ax.axvline(0, color="#888888", linewidth=0.8)
-            extent = (
-                max(
-                    [abs(row["log2_odds"]) for row in rows]
-                    + [
-                        abs(common_by_word[row["word"]]["log2_odds"])
-                        for row in rows
-                        if row["word"] in common_by_word
-                    ]
-                    + [1]
-                )
-                * 1.12
+            fig, axes = frame(
+                title,
+                "Endorsed descriptions of people; each exact message counts once per category",
+                height=5.5 if field == "tones" else 8.0,
+                columns=2,
             )
-            ax.set_xlim(-extent, extent)
-            ax.xaxis.set_major_locator(MaxNLocator(nbins=5, integer=True))
-            ax.set_xlabel(
-                f"More {names.get(second, second)}  \u2190  log\u2082 message odds ratio  "
-                f"\u2192  More {names.get(first, first)}",
-                fontsize=9,
-            )
-            ax.grid(axis="x")
-            ax.set_axisbelow(True)
-            if not rows:
-                ax.text(
-                    0.5,
-                    0.5,
-                    "No ranked contrast at the support thresholds\n"
-                    "(minimum 10 messages per group; 3 word matches)",
-                    transform=ax.transAxes,
-                    ha="center",
-                    va="center",
-                    color="#666666",
+            fig.subplots_adjust(left=0.26, right=0.96, top=0.76, bottom=0.23, wspace=0.22)
+            rows = []
+            for ax, party in zip(axes, COLORS, strict=True):
+                group = groups[party]
+                total = group["described"]["count"]
+                label = (
+                    ("Democrats on Republicans" if party == "D" else "Republicans on Democrats")
+                    if scope == "opponents"
+                    else f"{NAMES[party]} ads on their candidates"
+                )
+                ax.set_title(
+                    f"{label}\n{total:,} messages with a description",
+                    loc="left",
                     fontsize=10,
+                    color=COLORS[party],
+                    pad=17,
                 )
-            export = [
-                {
-                    "word": row["word"],
-                    "group": name,
-                    "cohort": cohort,
-                    "displayed": row["word"] in {item["word"] for item in rows}
-                    and row["log2_odds"] is not None,
-                    "log2_odds": row["log2_odds"],
-                    **row[name],
-                }
-                for cohort, comparison in (("all", group), ("common_publishers", common))
-                if comparison
-                for row in comparison["words"]
-                for name in (first, second)
-            ]
+                for index, key in enumerate(keys):
+                    value = group[field][key]
+                    rows.append(
+                        {"scope": scope, "label": labels[key], "key": key, "party": party, **value}
+                    )
+                    if value["share"] is not None:
+                        share = value["share"]
+                        ax.barh(index, share, height=0.5, color=COLORS[party], zorder=3)
+                        inside = share >= 0.54
+                        ax.text(
+                            share - 0.025 if inside else share + 0.025,
+                            index,
+                            f"{share:.1%}  ({value['count']:,}/{value['total']:,})",
+                            va="center",
+                            ha="right" if inside else "left",
+                            fontsize=8.5,
+                            color="white" if inside else COLORS[party],
+                            zorder=4,
+                        )
+                ax.set_yticks(
+                    range(len(keys)),
+                    [labels[key] for key in keys] if party == "D" else [""] * len(keys),
+                )
+                ax.invert_yaxis()
+                ax.set_ylim(len(keys) - 0.55, -0.55)
+                ax.set_xlim(0, 1.02)
+                ax.set_xticks(
+                    [0, 0.25, 0.5, 0.75, 1], ["0%", "25%", "50%", "75%", "100%"], fontsize=8
+                )
+                ax.grid(axis="x", zorder=0)
+                ax.set_axisbelow(True)
+                if not total:
+                    ax.text(
+                        0.5,
+                        0.5,
+                        "No reviewed descriptions",
+                        transform=ax.transAxes,
+                        ha="center",
+                        color="#777777",
+                    )
             save(
                 fig,
                 identity,
                 title,
-                "Supported lexicon-word contrasts in unreviewed mention contexts.",
-                export,
-                "At most five supported words per direction. "
-                "A nearby adjective is not a verified target description. " + note,
+                "Context-coded message shares among reviewed ads with "
+                "an eligible person description.",
+                rows,
+                (
+                    "Exclusive tone categories; no description is not neutral. "
+                    if field == "tones"
+                    else "Frames overlap; multiple claims count once per frame. "
+                )
+                + "Quoted opponents and rebutted claims excluded. AI-assisted, not human gold.",
             )
 
-        for target in COLORS:
-            word_chart(
-                f"descriptors-{target}",
-                f"Words near {NAMES[target]} mentions",
-                descriptors["targets"][target],
-                "D",
-                "R",
-                note="Negation, quotation, policy language and self-description are retained.",
+        for scope, prefix, name in (
+            ("opponents", "opponent", "their opponents"),
+            ("self", "self", "their own candidates"),
+        ):
+            portrayal_panels(
+                f"{prefix}-tone", f"How they describe {name}", scope, "tones", tone_names
             )
-        periods = descriptors["periods"]
-        for party in COLORS:
-            change = descriptors["changes"][party]
-            period_note = (
-                f"Recent {periods['recent']['start']} to {periods['recent']['end']}; "
-                f"previous {periods['previous']['start']} to {periods['previous']['end']}. "
-                "Hollow: publishers present in both periods, if supported. "
-                "Not significance intervals."
-            )
-            word_chart(
-                f"descriptor-change-{party}",
-                f"{NAMES[party]} wording near opposing-party mentions",
-                change["all_publishers"],
-                "recent",
-                "previous",
-                common=change["common_publishers"],
-                note=period_note,
+            portrayal_panels(
+                f"{prefix}-frames",
+                f"What they say about {name}",
+                scope,
+                "frames",
+                {
+                    key: short_frames.get(key, label)
+                    for key, label in dataset["portrayal_codebook"]["frames"].items()
+                },
             )
 
+        title = "What has actually been reviewed?"
+        fig, (ax,) = frame(
+            title, "Review status of the complete exact-message collection", height=5.2
+        )
+        fig.subplots_adjust(left=0.15, right=0.95, top=0.73, bottom=0.25)
+        status_colors = {
+            "reviewed": "#49685B",
+            "uncertain": "#B49A67",
+            "unreviewed": "#D6D3CC",
+            "stale": "#A97B68",
+        }
+        rows = []
+        for index, party in enumerate(COLORS):
+            left = 0
+            for status, color in status_colors.items():
+                value = portrayals["coverage"][party][status]
+                rows.append({"label": status, "party": party, **value})
+                share = value["share"] or 0
+                if share:
+                    ax.barh(index, share, left=left, color=color, height=0.42)
+                    if share >= 0.12:
+                        ax.text(
+                            left + share / 2,
+                            index,
+                            f"{value['count']:,}  ({share:.1%})",
+                            ha="center",
+                            va="center",
+                            color="white" if status == "reviewed" else "#333333",
+                            fontsize=10,
+                        )
+                left += share
+            ax.text(
+                1.02,
+                index,
+                f"{portrayals['coverage'][party]['reviewed']['total']:,} messages",
+                va="center",
+                fontsize=9,
+            )
+            ax.text(
+                0,
+                index + 0.32,
+                "; ".join(
+                    f"{status.capitalize()} {portrayals['coverage'][party][status]['count']:,}"
+                    for status in status_colors
+                ),
+                fontsize=8,
+                color="#555555",
+                va="center",
+            )
+        ax.set_yticks([0, 1], ["Democratic", "Republican"])
+        ax.invert_yaxis()
+        ax.set_ylim(1.5, -0.45)
+        ax.set_xlim(0, 1.2)
+        ax.set_xticks([0, 0.25, 0.5, 0.75, 1], ["0%", "25%", "50%", "75%", "100%"])
+        ax.grid(axis="x")
+        ax.set_axisbelow(True)
+        for i, (status, color) in enumerate(status_colors.items()):
+            x = 0.15 + i * 0.2
+            fig.add_artist(
+                Rectangle((x, 0.816), 0.012, 0.022, color=color, transform=fig.transFigure)
+            )
+            fig.text(x + 0.02, 0.82, status.capitalize(), color="#555555", fontsize=10)
+        save(
+            fig,
+            "portrayal-coverage",
+            title,
+            "Reviewed, uncertain, unreviewed and stale exact messages by advertiser alignment.",
+            rows,
+            "Coverage measures completion, not classification accuracy. "
+            "Missing reviews never become neutral labels.",
+        )
+
+    order = (
+        "opponent-tone",
+        "self-tone",
+        "opponent-frames",
+        "self-frames",
+        "portrayal-coverage",
+        "issue-language",
+        "source-sensitivity",
+        "publisher-composition",
+        "monthly-coverage",
+        "monthly-issues",
+    )
+    charts.sort(key=lambda chart: order.index(chart["id"]))
     manifest = {
-        "version": "figures-2",
+        "version": "figures-3",
         "snapshot_id": dataset["snapshot_id"],
         "until": dataset["until"],
         "publication_status": "local_only",
@@ -529,8 +592,23 @@ def build_figures(dataset: dict, strata: dict, descriptors: dict, output: Path) 
     }
     write_json(output / "manifest.json", manifest)
     write_json(output / "chart-data.json", manifest | {"data": all_data})
-    write_json(output / "descriptor-evidence.json", descriptors)
+    write_json(output / "portrayal-evidence.json", portrayals)
+    remove_retired_figures(output)
     return manifest
+
+
+def remove_retired_figures(output: Path) -> None:
+    retired = (
+        "portrayal-language",
+        "descriptors-D",
+        "descriptors-R",
+        "descriptor-change-D",
+        "descriptor-change-R",
+    )
+    for identity in retired:
+        for kind in ("png", "csv"):
+            (output / f"{identity}.{kind}").unlink(missing_ok=True)
+    (output / "descriptor-evidence.json").unlink(missing_ok=True)
 
 
 def month_name(month: str) -> str:

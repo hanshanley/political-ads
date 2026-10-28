@@ -19,6 +19,7 @@ from political_ads.analysis import (
     unique_messages,
 )
 from political_ads.cli import load_corpus, read_json, write_json
+from political_ads.portrayals import apply_portrayal_reviews, validate_portrayal_review
 from political_ads.registry import enrich
 from political_ads.schema import Ad, digest, eligible
 
@@ -70,11 +71,14 @@ METHODOLOGY = [
     "Speech and novel on-screen lines are separate evidence lanes. Repeated speech/subtitles are "
     "deduplicated, low-confidence OCR is retained outside analyzed text, and phrase matches "
     "cannot cross from speech into an overlay or between independent overlay lines.",
-    "Exploratory descriptor figures use TextBlob's bundled adjective-polarity vocabulary "
-    "near exact candidate/party mentions, not an ad sentiment classifier. Mixed-party "
-    "sentences are excluded; quotation, negation, self-description and policy language "
-    "remain possible. Rankings require support and denominator minimums. Complete "
-    "unreviewed contexts, offsets, hashes and source-composition checks are downloadable.",
+    "Person-portrayal analysis uses saved AI-assisted full-text contextual reviews, not "
+    "nearby adjectives or a sentiment lexicon. Targets, supported candidates, same-party "
+    "rivals, collectives, quoted opponents and rebutted claims remain distinct. Labels "
+    "describe attributed portrayals, not claim truth; they are not independent human gold.",
+    "Tone shares use reviewed exact messages with an endorsed description in the named "
+    "scope. Negative-only, positive-only, mixed and neutral-only are exclusive; no "
+    "description is not neutral. Frames overlap. Uncertain, stale and unreviewed "
+    "messages are disclosed and excluded rather than silently classified.",
 ]
 
 
@@ -214,6 +218,24 @@ def prepare(root: Path) -> dict:
         enrich(ad, registry["candidates"]) for ad in corpus["ads"] if eligible(ad, corpus["until"])
     ]
     ads = annotate(sorted(ads, key=lambda ad: (ad["published"], ad["id"])), codebook)
+    portrayal_codebook = read_json(
+        root / "data/portrayal-codebook.json",
+        {
+            "version": "person-portrayals-1",
+            "method": "No contextual reviews loaded",
+            "frames": {},
+            "voices": [
+                "advertiser",
+                "adopted_clip",
+                "quoted_opponent",
+                "rebutted_claim",
+                "unclear",
+            ],
+        },
+    )
+    ads = apply_portrayal_reviews(
+        ads, read_json(root / "data/portrayal-reviews.json", {}), portrayal_codebook
+    )
     examples = apply_reviews(ads, ledger)
     dataset = {
         "schema_version": "1",
@@ -234,9 +256,11 @@ def prepare(root: Path) -> dict:
         "timeline": timeline(ads),
         "methodology": METHODOLOGY,
         "codebook": codebook,
+        "portrayal_codebook": portrayal_codebook,
         "validation": {
             "reviewed_examples": len(examples),
-            "semantic_classifier": "not published; no representative held-out evaluation",
+            "semantic_classifier": "saved AI-assisted contextual reviews; coverage disclosed; "
+            "no independent held-out human accuracy evaluation",
             "extraction": "publisher transcripts, flagged publisher-quoted ad copy, "
             "public English captions, reviewed image ads, Google preview OCR and native "
             "Snap and reviewed campaign-original speech/frame extraction; "
@@ -273,6 +297,7 @@ def validate_dataset(dataset: dict) -> None:
             raise ValueError(f"Out-of-scope ad: {ad['id']}")
         if ad["text_hash"] != digest(ad["text"]):
             raise ValueError("Original text hash mismatch")
+        validate_portrayal_review(ad, dataset["portrayal_codebook"])
         for evidence in ad["issues"] + ad["portrayal_markers"]:
             if ad["text"][evidence["start"] : evidence["end"]] != evidence["text"]:
                 raise ValueError(f"Broken text evidence offsets: {ad['id']}")
@@ -330,6 +355,7 @@ def preview(dataset: dict) -> str:
 
 def build(root: Path) -> None:
     from political_ads.editorial import margin_html
+    from political_ads.figures import remove_retired_figures
     from political_ads.research import research, research_report, validate_research
 
     dataset = prepare(root)
@@ -348,12 +374,13 @@ def build(root: Path) -> None:
     staging.rmdir()
     analysis = research(root, dataset)
     shutil.copytree(root / "outputs/figures", root / "web/public/figures", dirs_exist_ok=True)
+    remove_retired_figures(root / "web/public/figures")
     (root / "web/public/article.html").write_text(margin_html(analysis["article"], web=True))
     (root / "web/public/report.html").write_text(
         research_report(
             dataset,
             analysis["comparisons"],
-            analysis["descriptive_language"],
+            analysis["person_portrayals"],
             analysis["figures"],
             web=True,
         )

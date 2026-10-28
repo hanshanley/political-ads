@@ -1,15 +1,59 @@
 {
   "charts": [
     {
-      "csv": "monthly-coverage.csv",
-      "description": "Monthly D/R first-observed exact-message counts.",
-      "id": "monthly-coverage",
-      "png": "monthly-coverage.png",
+      "csv": "opponent-tone.csv",
+      "description": "Context-coded message shares among reviewed ads with an eligible person description.",
+      "id": "opponent-tone",
+      "png": "opponent-tone.png",
       "sha256": {
-        "csv": "b5a4dc496e1c551aac99a561a7eae474235a7515411be548885fe951487736bc",
-        "png": "d78d42233dbba4faf9be9891284534ca6fdf164fac9a5bfd6f94bb2c573eccee"
+        "csv": "95450eeb70b10c0d43961eef118e8da6d17877ef6714d54d47604331b41c184e",
+        "png": "9b2173f679474ae50fe551c8c497d94710a881590b05af6a57d268e6caf089db"
       },
-      "title": "Messages in the saved collection"
+      "title": "How they describe their opponents"
+    },
+    {
+      "csv": "self-tone.csv",
+      "description": "Context-coded message shares among reviewed ads with an eligible person description.",
+      "id": "self-tone",
+      "png": "self-tone.png",
+      "sha256": {
+        "csv": "367591844e3965635d24e7c0cc1f9cdb4cb0822b124c0b248ded3b124003c25b",
+        "png": "536688a887a453a7b1743801db7fd062514a0bcd99cd481a8a4ee9b87943229c"
+      },
+      "title": "How they describe their own candidates"
+    },
+    {
+      "csv": "opponent-frames.csv",
+      "description": "Context-coded message shares among reviewed ads with an eligible person description.",
+      "id": "opponent-frames",
+      "png": "opponent-frames.png",
+      "sha256": {
+        "csv": "d7157c4ab342940af38c742c52f42f94ac3cba5d3500540dbd100527d357a0ee",
+        "png": "1b6289ec34ba30ce9faea65082cf736c2847dcc6f338fb3c9ab621b718fcca73"
+      },
+      "title": "What they say about their opponents"
+    },
+    {
+      "csv": "self-frames.csv",
+      "description": "Context-coded message shares among reviewed ads with an eligible person description.",
+      "id": "self-frames",
+      "png": "self-frames.png",
+      "sha256": {
+        "csv": "ddc8cade415ff390e0a59d2ac1e2b51e91adf1450cb08768f736baf1cde0694c",
+        "png": "4b4ecac8fd35e619030efaa86ca716625c0bb80dd04d5d1367edb31c7d2c2ca5"
+      },
+      "title": "What they say about their own candidates"
+    },
+    {
+      "csv": "portrayal-coverage.csv",
+      "description": "Reviewed, uncertain, unreviewed and stale exact messages by advertiser alignment.",
+      "id": "portrayal-coverage",
+      "png": "portrayal-coverage.png",
+      "sha256": {
+        "csv": "bc08eb892ce54707999e93f71ed3dfd852c280c3d490440cc9c3e45d889663aa",
+        "png": "0a81cfa74e52f7cae4d6ebf1ffbb002a5fa347cee99b5ca583d3b813e3fa693f"
+      },
+      "title": "What has actually been reviewed?"
     },
     {
       "csv": "issue-language.csv",
@@ -17,43 +61,10 @@
       "id": "issue-language",
       "png": "issue-language.png",
       "sha256": {
-        "csv": "ed4ba5f27c753515e897be2a3de9a89d9c9bf4b334e17b9809d79b0a44a30dbc",
-        "png": "aaab5d80919bf07b278c9f1ba72987d5830121b42a328ba242cfbe52f79606f9"
+        "csv": "cf5a5819d63de16f234f45931cfc116b44d6e48eca3d05dd6bc70196b3f84a1c",
+        "png": "d773c3225686efc908bf73dc3e754acf8c4ebe7a3760b2ad68a0d929659e8437"
       },
       "title": "What issues appear in the wording?"
-    },
-    {
-      "csv": "portrayal-language.csv",
-      "description": "Exact phrase-family presence; counts and denominators shown.",
-      "id": "portrayal-language",
-      "png": "portrayal-language.png",
-      "sha256": {
-        "csv": "5e8d4cf1c1cd7a606ce0e6df68ffbe50147721b4b812dc0e9f1739a105dab0be",
-        "png": "48cba50d49764f12c63704b40a20987c9e2b21b3e61490ea5f6b942af6509bf0"
-      },
-      "title": "The vocabulary of contrast"
-    },
-    {
-      "csv": "monthly-issues.csv",
-      "description": "All issue families by first-observed month; missing denominators break lines.",
-      "id": "monthly-issues",
-      "png": "monthly-issues.png",
-      "sha256": {
-        "csv": "ee52c1e7d3b8509f924f94c9fc47e7277d9ebe33fa03982baff3046d96c36322",
-        "png": "3b0d30898ab6fecd43e1219545df417b73d34feefeb9d772fdbcfe0979cbca24"
-      },
-      "title": "Issue wording over the cycle"
-    },
-    {
-      "csv": "publisher-composition.csv",
-      "description": "Largest five publishers per party and all remaining publishers.",
-      "id": "publisher-composition",
-      "png": "publisher-composition.png",
-      "sha256": {
-        "csv": "70476028a598906ddeee86077c5f4c3a8aeee9f9eff38656505cb1df667abc4a",
-        "png": "a122fdaf98384d426772123c7717515e93f1f6f0b507f84f0cc916b1d203f56f"
-      },
-      "title": "Who supplies the observed ads?"
     },
     {
       "csv": "source-sensitivity.csv",
@@ -61,58 +72,47 @@
       "id": "source-sensitivity",
       "png": "source-sensitivity.png",
       "sha256": {
-        "csv": "4e443c95a03fb5dec08bc843616558cacce6a89694a2f838c3047235247c5566",
-        "png": "77ef6a5bfd0b02f9812b3df10750c8244743ce7192f50167ac31ccf7816b1954"
+        "csv": "55d4dddaca5b0835f1f530145ee9a51ff91325ae5e8068e78dd78385796467b3",
+        "png": "b1135a5212e7f7b1fcfb2b05e7602dbacd3dfd0de79f36f82b3aa454b449e271"
       },
       "title": "How dependent are the issue gaps on sources?"
     },
     {
-      "csv": "descriptors-D.csv",
-      "description": "Supported lexicon-word contrasts in unreviewed mention contexts.",
-      "id": "descriptors-D",
-      "png": "descriptors-D.png",
+      "csv": "publisher-composition.csv",
+      "description": "Largest five publishers per party and all remaining publishers.",
+      "id": "publisher-composition",
+      "png": "publisher-composition.png",
       "sha256": {
-        "csv": "c1d9fbfe1c5d3c6e22e7a843655bd992ab344da6ca96a3639fc141e12e328506",
-        "png": "9bf913e10c510b80782e75e28596b08a63e99fb0935cba11b5205abbd40ce988"
+        "csv": "88e2e8b91d36f84e0524d8fb636a1bb6ebf9b01530fe856ea3a699f780108a04",
+        "png": "dc08fa341088efa2e1bc974b08f1c7dc8d7bea3a73175ce04d2823c81e2f127f"
       },
-      "title": "Words near Democratic mentions"
+      "title": "Who supplies the observed ads?"
     },
     {
-      "csv": "descriptors-R.csv",
-      "description": "Supported lexicon-word contrasts in unreviewed mention contexts.",
-      "id": "descriptors-R",
-      "png": "descriptors-R.png",
+      "csv": "monthly-coverage.csv",
+      "description": "Monthly D/R first-observed exact-message counts.",
+      "id": "monthly-coverage",
+      "png": "monthly-coverage.png",
       "sha256": {
-        "csv": "c45a12bb7a042285e683bef7d41b22a0295882f639c32931543f3d4a89036ca7",
-        "png": "289053c90a39323de09a30bf198654875837e24391a039c9fc0a081e77ba8818"
+        "csv": "e52a875e7fb6057d285724313b5af484cec2ece76885140ded8ac35324f5d56a",
+        "png": "82eef9409367fc0b513a7f028289905f6f4c6d2e90187002be6124d8db1bbd1d"
       },
-      "title": "Words near Republican mentions"
+      "title": "Messages in the saved collection"
     },
     {
-      "csv": "descriptor-change-D.csv",
-      "description": "Supported lexicon-word contrasts in unreviewed mention contexts.",
-      "id": "descriptor-change-D",
-      "png": "descriptor-change-D.png",
+      "csv": "monthly-issues.csv",
+      "description": "All issue families by first-observed month; missing denominators break lines.",
+      "id": "monthly-issues",
+      "png": "monthly-issues.png",
       "sha256": {
-        "csv": "58a94c2bea23ba9619822aa17c803c5204b25a5ae9f8429f71f321149847a83a",
-        "png": "c5ed708d1cdfeebf4c8d5abc99bbfb10046a066026d3da6b3d7406816f16df0b"
+        "csv": "421250c7d00de5d24e9ca0e75759209d26b4958c1dc2ef096f219d0c17d720f5",
+        "png": "82649f378e8ac5c07573462402ceb10a7fcc12baae0a448c527a78409edc1fe3"
       },
-      "title": "Democratic wording near opposing-party mentions"
-    },
-    {
-      "csv": "descriptor-change-R.csv",
-      "description": "Supported lexicon-word contrasts in unreviewed mention contexts.",
-      "id": "descriptor-change-R",
-      "png": "descriptor-change-R.png",
-      "sha256": {
-        "csv": "19d76a4d29391dc24d8ba9d3cd3007c1b0f1fac4afbf15aa4e74888a3ee48aca",
-        "png": "126088681a1e130618fb4fa8979de074977487a8b17cdb6bc4746e8350f63ab3"
-      },
-      "title": "Republican wording near opposing-party mentions"
+      "title": "Issue wording over the cycle"
     }
   ],
   "publication_status": "local_only",
-  "snapshot_id": "d70c1582ad49a3bfbb70156a5c81648b200f55b83cf4f7a1cf1389b51f8ae083",
+  "snapshot_id": "dfdf38b6b26fd7d36924d0fe6c6e653ac68d5d5cc5a0998d304568867d1e35b0",
   "until": "2026-10-28",
-  "version": "figures-2"
+  "version": "figures-3"
 }
