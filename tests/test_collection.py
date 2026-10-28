@@ -86,6 +86,54 @@ def test_scheduled_refresh_reconciles_the_complete_final_day(
     assert dict(line.split("=", 1) for line in output.read_text().splitlines()) == expected
 
 
+def test_refresh_persists_both_drafts_and_figures_without_unrelated_files(tmp_path):
+    workflow = (Path(__file__).parents[1] / ".github/workflows/refresh.yml").read_text()
+    persist = textwrap.dedent(workflow.rsplit("        run: |\n", 1)[1])
+
+    def git(*args):
+        return subprocess.run(
+            ["git", *args], cwd=tmp_path, check=True, text=True, capture_output=True
+        ).stdout
+
+    paths = [
+        "data/site/corpus.json",
+        "outputs/validation.json",
+        "outputs/analysis.json",
+        "outputs/analysis.html",
+        "outputs/analysis-ads.csv",
+        "outputs/figures/chart.png",
+        "outputs/figures/chart.csv",
+        "outputs/article-data.json",
+        "outputs/substack.md",
+        "outputs/themarginoferror.html",
+    ]
+    git("init", "-b", "main")
+    git("config", "user.name", "Fixture")
+    git("config", "user.email", "fixture@example.invalid")
+    for name in paths:
+        path = tmp_path / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("before\n")
+    git("add", ".")
+    git("commit", "-m", "Fixture")
+    for name in paths:
+        (tmp_path / name).write_text("after\n")
+    (tmp_path / "outputs/unrelated.tmp").write_text("not a research artifact")
+    (tmp_path / "data/cache").mkdir()
+    (tmp_path / "data/cache/private.tmp").write_text("not an acquisition input")
+    subprocess.run(
+        ["bash", "--noprofile", "--norc", "-e", "-o", "pipefail"],
+        input='git() { if [[ "$1" == push ]]; then return 0; fi; command git "$@"; }\n' + persist,
+        cwd=tmp_path,
+        text=True,
+        capture_output=True,
+        check=True,
+    )
+    assert set(git("show", "--format=", "--name-only", "HEAD").splitlines()) == set(paths)
+    assert "outputs/unrelated.tmp" in git("status", "--porcelain")
+    assert "data/cache/" in git("status", "--porcelain")
+
+
 def test_failed_source_keeps_last_good_partition_and_freshness(tmp_path, monkeypatch):
     ad = fixture_ad()
     cli.write_json(

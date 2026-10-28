@@ -1,7 +1,9 @@
 # Static publication
 
 `political-ads build` validates saved evidence and writes `web/public/data/`, `report.html`,
-and `preview.svg`. Vite builds `site/` using `/political-ads/` asset paths. Serve the entire
+the unpublished `article.html`, PNG `figures/`, and the existing social preview.
+It also regenerates the complete research analysis and both unpublished article editions.
+Vite builds `site/` using `/political-ads/` asset paths. Serve the entire
 directory, not only its index. No server, database, or secret is shipped to the browser.
 
 **Publication is withdrawn until explicit user authorization.** The
@@ -25,8 +27,10 @@ without extending the eligible ad window; the final run follows November 4's clo
 U.S. time zones. It updates FEC identities before collecting
 scripts; if FEC retrieval fails, it retains the committed candidate registry rather than
 discarding identity-gated scripts on a clean runner. It regenerates complete analysis JSON,
-CSV and HTML, rebuilds and validates the saved evidence, then commits research inputs and
-analysis to main as Hans Hanley. It has no deployment step or host-dispatch credential.
+CSV and HTML, PNG figures with exact chart data, Substack Markdown and The Margin of Error
+HTML drafts. It rebuilds and validates the saved evidence, then commits research inputs,
+analysis, figures and both drafts to main as Hans Hanley. It has no deployment step,
+Substack upload or host-dispatch credential.
 Failed sources retain their last-good partitions and source-specific freshness.
 Saved HTTP 401/403/429 denials pause that source on subsequent refreshes without new requests;
 successful sources continue updating. A paused source requires access review before resuming.

@@ -6,6 +6,7 @@ import html
 import io
 import json
 import re
+import shutil
 from pathlib import Path
 
 from political_ads.analysis import (
@@ -13,6 +14,7 @@ from political_ads.analysis import (
     apply_reviews,
     comparison,
     distinctive_phrases,
+    publisher,
     timeline,
     unique_messages,
 )
@@ -68,6 +70,11 @@ METHODOLOGY = [
     "Speech and novel on-screen lines are separate evidence lanes. Repeated speech/subtitles are "
     "deduplicated, low-confidence OCR is retained outside analyzed text, and phrase matches "
     "cannot cross from speech into an overlay or between independent overlay lines.",
+    "Exploratory descriptor figures use TextBlob's bundled adjective-polarity vocabulary "
+    "near exact candidate/party mentions, not an ad sentiment classifier. Mixed-party "
+    "sentences are excluded; quotation, negation, self-description and policy language "
+    "remain possible. Rankings require support and denominator minimums. Complete "
+    "unreviewed contexts, offsets, hashes and source-composition checks are downloadable.",
 ]
 
 
@@ -121,14 +128,7 @@ def csv_export(ads: list[dict]) -> str:
 
 def report(dataset: dict) -> str:
     esc = html.escape
-    publishers = {
-        ad["source"]
-        .removesuffix("-media")
-        .removesuffix("-images")
-        .removesuffix("-google")
-        .removesuffix("-snap")
-        for ad in dataset["ads"]
-    }
+    publishers = {publisher(ad) for ad in dataset["ads"]}
     items = []
     for party, name in (("D", "Democratic"), ("R", "Republican")):
         scope = [ad for ad in dataset["ads"] if ad["alignment"] == party]
@@ -329,6 +329,9 @@ def preview(dataset: dict) -> str:
 
 
 def build(root: Path) -> None:
+    from political_ads.editorial import margin_html
+    from political_ads.research import research, research_report
+
     dataset = prepare(root)
     validate_dataset(dataset)
     staging = root / "web/public/data.next"
@@ -343,7 +346,18 @@ def build(root: Path) -> None:
     for file in staging.iterdir():
         file.replace(target / file.name)
     staging.rmdir()
-    (root / "web/public/report.html").write_text(report(dataset))
+    analysis = research(root, dataset)
+    shutil.copytree(root / "outputs/figures", root / "web/public/figures", dirs_exist_ok=True)
+    (root / "web/public/article.html").write_text(margin_html(analysis["article"], web=True))
+    (root / "web/public/report.html").write_text(
+        research_report(
+            dataset,
+            analysis["comparisons"],
+            analysis["descriptive_language"],
+            analysis["figures"],
+            web=True,
+        )
+    )
     (root / "web/public/preview.svg").write_text(preview(dataset))
     write_json(
         root / "outputs/validation.json",
@@ -370,13 +384,22 @@ def validate(root: Path) -> None:
     if dataset is None:
         raise ValueError("No built dataset; run build first")
     validate_dataset(dataset)
-    csv_text = (root / "web/public/data/ads.csv").read_text()
+    with (root / "web/public/data/ads.csv").open(newline="") as stream:
+        csv_text = stream.read()
     csv.field_size_limit(max(csv.field_size_limit(), len(csv_text)))
     csv_data = list(csv.DictReader(io.StringIO(csv_text)))
     if len(csv_data) != len(dataset["ads"]) or any(not row["text"] for row in csv_data):
         raise ValueError("Text downloads are incomplete")
     for record, ad in zip(csv_data, dataset["ads"], strict=True):
-        expected_text = spreadsheet_cell(ad["text"])
-        if record["id"] != ad["id"] or record["text"] != expected_text:
-            raise ValueError("Text downloads do not match the corpus")
+        for key, value in ad.items():
+            if isinstance(value, (list, dict)):
+                matches = key in record and json.loads(record[key]) == value
+            else:
+                expected = spreadsheet_cell(value)
+                matches = record.get(key) == ("" if expected is None else str(expected))
+            if not matches:
+                raise ValueError(f"Evidence downloads do not match the corpus: {ad['id']} / {key}")
+    compressed = root / "web/public/data/dataset.json.gz"
+    if json.loads(gzip.decompress(compressed.read_bytes())) != dataset:
+        raise ValueError("Compressed evidence download does not match the corpus")
     print(f"Verified {len(csv_data)} text-complete records and evidence-linked metrics")

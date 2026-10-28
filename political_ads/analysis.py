@@ -111,6 +111,16 @@ def unique_messages(ads: list[dict]) -> list[dict]:
     return list(unique.values())
 
 
+def publisher(ad: dict) -> str:
+    return ad.get("sponsor") or (
+        ad["source"]
+        .removesuffix("-media")
+        .removesuffix("-images")
+        .removesuffix("-google")
+        .removesuffix("-snap")
+    )
+
+
 def comparison(ads: list[dict], labels: list[str], field: str = "issues") -> list[dict]:
     unique = unique_messages(ads)
     result = []
@@ -180,15 +190,6 @@ def timeline(ads: list[dict]) -> list[dict]:
 
 
 def stratified_comparisons(ads: list[dict], codebook: dict) -> dict:
-    def publisher(ad):
-        return ad.get("sponsor") or (
-            ad["source"]
-            .removesuffix("-media")
-            .removesuffix("-images")
-            .removesuffix("-google")
-            .removesuffix("-snap")
-        )
-
     def category(ad, field):
         if field == "placement":
             return ad.get("placement", "campaign_release")

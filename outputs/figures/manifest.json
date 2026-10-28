@@ -1,0 +1,78 @@
+{
+  "charts": [
+    {
+      "csv": "monthly-coverage.csv",
+      "description": "Monthly D/R first-observed exact-message counts.",
+      "id": "monthly-coverage",
+      "png": "monthly-coverage.png",
+      "title": "Messages in the saved collection"
+    },
+    {
+      "csv": "issue-language.csv",
+      "description": "Exact phrase-family presence; counts and denominators shown.",
+      "id": "issue-language",
+      "png": "issue-language.png",
+      "title": "What issues appear in the wording?"
+    },
+    {
+      "csv": "portrayal-language.csv",
+      "description": "Exact phrase-family presence; counts and denominators shown.",
+      "id": "portrayal-language",
+      "png": "portrayal-language.png",
+      "title": "The vocabulary of contrast"
+    },
+    {
+      "csv": "monthly-issues.csv",
+      "description": "All issue families by first-observed month; missing denominators break lines.",
+      "id": "monthly-issues",
+      "png": "monthly-issues.png",
+      "title": "Issue wording over the cycle"
+    },
+    {
+      "csv": "publisher-composition.csv",
+      "description": "Largest five publishers per party and all remaining publishers.",
+      "id": "publisher-composition",
+      "png": "publisher-composition.png",
+      "title": "Who supplies the observed ads?"
+    },
+    {
+      "csv": "source-sensitivity.csv",
+      "description": "Issue shares before and after removing the largest record publisher.",
+      "id": "source-sensitivity",
+      "png": "source-sensitivity.png",
+      "title": "How dependent are the issue gaps on sources?"
+    },
+    {
+      "csv": "descriptors-D.csv",
+      "description": "Supported lexicon-word contrasts in unreviewed mention contexts.",
+      "id": "descriptors-D",
+      "png": "descriptors-D.png",
+      "title": "Words near Democratic mentions"
+    },
+    {
+      "csv": "descriptors-R.csv",
+      "description": "Supported lexicon-word contrasts in unreviewed mention contexts.",
+      "id": "descriptors-R",
+      "png": "descriptors-R.png",
+      "title": "Words near Republican mentions"
+    },
+    {
+      "csv": "descriptor-change-D.csv",
+      "description": "Supported lexicon-word contrasts in unreviewed mention contexts.",
+      "id": "descriptor-change-D",
+      "png": "descriptor-change-D.png",
+      "title": "Democratic wording near opposing-party mentions"
+    },
+    {
+      "csv": "descriptor-change-R.csv",
+      "description": "Supported lexicon-word contrasts in unreviewed mention contexts.",
+      "id": "descriptor-change-R",
+      "png": "descriptor-change-R.png",
+      "title": "Republican wording near opposing-party mentions"
+    }
+  ],
+  "publication_status": "local_only",
+  "snapshot_id": "a8118883350c2e466a5a2d5b64f10d643fbe0c4a12be9cf7541523b989da6145",
+  "until": "2026-10-27",
+  "version": "figures-1"
+}

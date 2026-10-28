@@ -1,0 +1,24 @@
+{
+  "version": "editorial-contexts-1",
+  "description": "Source-hash-bound illustrations of proximity-analysis limitations, not a representative semantic validation set.",
+  "reviews": [
+    {
+      "ad_id": "snap-1709ac2ce9bdc2050386ded6",
+      "source_hash": "5c896702e85599e9a6d06c45f84d3417d105e2bc1ed926c68997bb81f7370a09",
+      "alignment": "D",
+      "word": "better",
+      "quote": "Christina Hines has a better idea.",
+      "interpretation": "This is positive self-side promotion of the supported candidate, not a Democratic description of a Republican opponent. The recovered text includes machine-recognition uncertainty.",
+      "reviewed_on": "2026-10-27"
+    },
+    {
+      "ad_id": "nrsc-15979-0",
+      "source_hash": "16d6fe1b8b3ce52653202a70921a85b2ebd5b55df27f645172061c82c3aa819f",
+      "alignment": "R",
+      "word": "violent",
+      "quote": "Thanks to Republicans, violent crime is at all-time lows",
+      "interpretation": "Violent modifies crime, not Republican candidates. The ad presents falling violent crime as a Republican achievement; this does not independently verify its crime claim.",
+      "reviewed_on": "2026-10-27"
+    }
+  ]
+}

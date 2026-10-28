@@ -17,7 +17,7 @@ Google reports parent-creative delivery; Snap reports scheduled dates and positi
 impressions, not independently verified delivery days. Spending, reach and persuasion are not inferred.
 Party differences are confounded by source and race coverage. See [methodology](docs/METHODOLOGY.md).
 
-## Reproduce the saved publication
+## Reproduce the saved research build
 
 Requires Python 3.10+ and Node 22.19+. No paid API, credentials, model calls, or live source
 requests are needed to build the committed snapshot.
@@ -77,6 +77,22 @@ The local report compares wording over release/post/reported-delivery/scheduled-
 source, chamber, race, sponsor type, placement, format and election phase.
 A largest-publisher exclusion check exposes source-composition
 sensitivity; lexical matches are not semantic attack rates or national prevalence estimates.
+
+The same command generates both **unpublished article editions**:
+`outputs/substack.md` and `outputs/themarginoferror.html`. Shared copy, counts and source-bound
+illustrations are in `outputs/article-data.json`. Both editions use the same snapshot and
+ten original PNG figures under `outputs/figures/`; no new SVG charts are produced.
+Every figure has exact CSV data, with all chart data in `figures/chart-data.json` and
+mention-context evidence in `figures/descriptor-evidence.json`.
+The website build also stages a local `article.html` preview; this does not deploy anything.
+Substack Markdown uses relative PNG/evidence links. Uploading images and replacing those
+links requires a separately authorized publication destination; nothing is uploaded automatically.
+
+The descriptive-word comparisons use TextBlob's bundled adjective-polarity vocabulary,
+not hosted models or ad-level sentiment scores. They compare words near explicit party/full-name
+mentions and adjacent 90-day first-observed-message windows, with a common-publisher check.
+Proximity is **not target attribution**. The report and drafts explain quotations, negation,
+self-description, sparse samples and source-composition limits.
 
 Native platform recovery is local and resumable:
 

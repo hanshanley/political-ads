@@ -95,8 +95,9 @@ UA Vote! PAC's custom `news` API exposes scripts in its public ACF body rather t
 content field. VoteVets's post API exposes no body; its public release's exact article-body
 container supplies the script instead. Both sources require an actual 2026 federal candidate
 in the script or release heading; unrelated press commentary cannot establish scope.
-State-only scripts and video-only pages without written ad text remain excluded. Bipartisan
-UA Vote! PAC scripts retain unknown publisher alignment, including support for a Republican.
+State-only scripts and video-only pages without written ad text remain excluded. UA Vote! PAC's
+raw acquisition alignment remains unknown; its hash-bound publisher-program review yields
+other/bipartisan in derived exports, including when a particular script supports a Republican.
 VoteVets's documented Democratic organizational alignment is not a sole-payer claim for either
 its PAC or Action Fund.
 
@@ -152,7 +153,7 @@ a full name from the 2026 House/Senate candidate roster or receive an explicit f
 review bound to its exact extraction hash. Evidenced FEC noncommittee disclosure IDs
 are retained separately, not called principal-committee IDs. No FEC ID is invented. Inventory leads
 awaiting that content check are not yet federal-scope text records.
-Twenty-eight explicitly reviewed campaign/ballot-name aliases are bound to actual FEC candidate IDs
+Explicitly reviewed campaign/ballot-name aliases are bound to actual FEC candidate IDs
 in `data/snap-candidate-aliases.json`; they do not overwrite the FEC roster or recognized text.
 The same reviewed aliases support federal identity checks for the two new written archives.
 For scope qualification only, name matching may span adjacent OCR lines within one frame or
@@ -160,7 +161,7 @@ continuous speech cues, never different frames or speech/overlay lanes. The matc
 frame time, candidate IDs and any reviewed alias evidence are exported. A sole mentioned race
 is retained as context, not a validated target assignment. Lexical analysis keeps its stricter
 independent-overlay boundaries.
-Twenty-seven identity-sensitive creatives have individual reviews in `data/snap-scope-reviews.json`,
+Identity-sensitive creatives have individual reviews in `data/snap-scope-reviews.json`,
 with exact recovered quotations, actual FEC candidate IDs, an official evidence URL and rationale.
 Examples combine a senator's title with the correct federal office number or explicit federal
 policy context. One original video's opening frame explicitly names Ken Paxton where ASR
@@ -254,6 +255,62 @@ stops publication pending review.
 
 There is **no representative held-out semantic evaluation**. Semantic attack/support rates,
 semantic issue classifications, and model accuracy claims are therefore withheld.
+
+### Descriptive-word proximity comparisons
+
+The exploratory `mention-lexicon-1` method uses TextBlob 0.19's bundled English vocabulary:
+entries with an adjective sense and nonzero polarity. The exported lexicon size and SHA-256
+bind the vocabulary, but polarity is **not** used to score advertisements. This is a lexical
+screen, not contextual part-of-speech tagging: an occurrence such as early voting can qualify.
+Political terms absent from that general-English vocabulary remain outside this comparison;
+the separate phrase codebook measures additional ideological/framing language.
+
+Eligible contexts require an explicit party name or exact candidate full name, including
+reviewed aliases. Generic "democratic process" and surname-only guesses do not qualify.
+A vocabulary word must occur within 12 tokens of the mention in the same sentence/evidence
+lane. Continuous ASR cues may join; independent OCR overlays may not. Mixed-party sentences
+and words overlapping the matched entity name are excluded. Exported character offsets,
+contexts, source hashes and URLs retain the original spelling, quotation and negation.
+Every extracted hit is marked **unreviewed mention co-occurrence**, not an opponent judgment.
+
+Globally deduplicated party/messages count once per word. Denominators include all messages
+with eligible mention contexts, including those with no lexicon hits. D/R advertiser
+comparisons are separate for Democratic and Republican mentions. Ranked comparisons require
+at least ten eligible messages per group and support in three messages on at least one side.
+The statistic is log2 of the ratio of message-presence odds, with 0.5 added to each present/
+absent cell. It is not a significance test, uncertainty interval or causal party effect.
+Each word figure shows at most five supported contrasts in each direction; CSV/JSON retain
+all supported words and identify the plotted subset.
+
+Temporal comparisons use the 90 calendar days ending at the saved cutoff and the preceding
+90 days. Only first-observed messages enter, so a repeated message does not appear again
+in the later window. Eligible data still start January 1; early snapshots can have shorter
+in-scope coverage and insufficient samples. The common-publisher check retains publishers
+with eligible messages in both windows and applies the same thresholds. Hollow chart markers
+are that sensitivity comparison, **not confidence intervals**. It does not control race,
+format, candidate, phase or template composition.
+
+`data/descriptor-context-reviews.json` contains individually read illustrations of these
+limitations. Their quotations, source hashes and alignment must still match before reuse;
+changed evidence stops generation for re-review. They are separate from the automated
+contexts and are not a representative semantic validation set.
+
+### Figures and unpublished article editions
+
+`analyze` and `build` generate ten restrained, 200-DPI **PNG-only** research figures with
+CSV/JSON source data in `outputs/figures/`. Missing denominators remain missing, not zero;
+monthly plots stop at the actual saved cutoff rather than showing future months as zeros.
+Full-snapshot figures do not change with interactive dashboard filters. Sponsor/publisher
+grouping combines matching names across collection-source IDs, not inferred legal payers;
+the dashboard's collection-source filter still selects acquisition IDs.
+
+The shared narrative in `outputs/article-data.json` generates Substack Markdown
+(`outputs/substack.md`) and The Margin of Error HTML (`outputs/themarginoferror.html`).
+Both carry the same snapshot, numerators, denominators, checked illustrations and PNGs.
+The local website build stages a matching `article.html`, with local complete-evidence links.
+Neither build nor scheduled research refresh uploads to Substack or deploys the website.
+The Markdown's relative images/evidence links require authorized hosting and image uploads
+before any future publication; no live destination is claimed.
 
 ## Interpretation
 

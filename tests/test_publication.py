@@ -44,6 +44,7 @@ def test_csv_preserves_full_text_evidence_and_protects_formulas():
 
 
 def test_real_snapshot_rebuild_is_deterministic_and_downloads_are_complete(tmp_path):
+    import json
     import shutil
 
     shutil.copytree(
@@ -60,9 +61,55 @@ def test_real_snapshot_rebuild_is_deterministic_and_downloads_are_complete(tmp_p
     validate(tmp_path)
     output = tmp_path / "web/public/data"
     first = {path.name: path.read_bytes() for path in output.iterdir()}
+    figures = tmp_path / "web/public/figures"
+    first_figures = {path.name: path.read_bytes() for path in figures.iterdir()}
+    manifest = json.loads(first_figures["manifest.json"])
+    assert len(manifest["charts"]) == 10 and manifest["publication_status"] == "local_only"
+    assert not any(name.endswith(".svg") for name in first_figures)
+    chart_data = json.loads(first_figures["chart-data.json"])
+    for chart in manifest["charts"]:
+        assert all(chart[extension] in first_figures for extension in ("png", "csv"))
+        assert "svg" not in chart
+        for row in chart_data["data"][chart["id"]]["rows"]:
+            assert row["count"] == len(row["ad_ids"])
+            if "total" in row:
+                assert row["share"] == (row["count"] / row["total"] if row["total"] else None)
+    dataset = json.loads(first["dataset.json"])
+    article = json.loads((tmp_path / "outputs/article-data.json").read_text())
+    assert article["snapshot_id"] == dataset["snapshot_id"]
+    editions = {
+        name: (tmp_path / "outputs" / name).read_bytes()
+        for name in ("substack.md", "themarginoferror.html", "article-data.json")
+    }
+    for name in ("substack.md", "themarginoferror.html"):
+        assert dataset["snapshot_id"].encode() in editions[name]
+        assert b"DRAFT - NOT PUBLISHED" in editions[name]
+        assert b".svg" not in editions[name]
+        assert all(chart["png"].encode() in editions[name] for chart in manifest["charts"])
+    assert (tmp_path / "web/public/article.html").exists()
+    assert chart_data["snapshot_id"] == dataset["snapshot_id"]
+    by_id = {ad["id"]: ad for ad in dataset["ads"]}
+    descriptors = json.loads(first_figures["descriptor-evidence.json"])
+    for hit in descriptors["evidence"]:
+        ad = by_id[hit["ad_id"]]
+        assert hit["source_hash"] == ad["source_hash"]
+        assert ad["text"][hit["start"] : hit["end"]] == hit["text"]
+        assert ad["text"][hit["context_start"] : hit["context_end"]] == hit["context"]
+        assert all(ad["text"][m["start"] : m["end"]] == m["text"] for m in hit["mentions"])
     build(tmp_path)
+    assert editions == {name: (tmp_path / "outputs" / name).read_bytes() for name in editions}
     assert first == {path.name: path.read_bytes() for path in output.iterdir()}
+    assert first_figures == {path.name: path.read_bytes() for path in figures.iterdir()}
     assert gzip.decompress(first["dataset.json.gz"]) == first["dataset.json"]
+    (output / "ads.csv").write_bytes(
+        first["ads.csv"].replace(dataset["ads"][0]["source_hash"].encode(), b"tampered", 1)
+    )
+    with pytest.raises(ValueError, match="Evidence downloads"):
+        validate(tmp_path)
+    (output / "ads.csv").write_bytes(first["ads.csv"])
+    (output / "dataset.json.gz").write_bytes(gzip.compress(b"{}"))
+    with pytest.raises(ValueError, match="Compressed evidence"):
+        validate(tmp_path)
 
 
 def test_real_metrics_or_evidence_tampering_fails():

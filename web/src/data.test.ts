@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { csv, EMPTY_FILTERS, filterAds, observationDate, shares, type Ad } from "./data";
+import { csv, EMPTY_FILTERS, filterAds, monthlyCounts, observationDate, publisher, shares, type Ad } from "./data";
 
 const base: Ad = {
   id: "", text: "", alignment: "D", message_id: "", published: "", chamber: "", race: "",
@@ -70,5 +70,26 @@ describe("synchronized evidence", () => {
     expect(filterAds([carryover], { ...EMPTY_FILTERS, start: "2026-04-01" })).toEqual([]);
     expect(observationDate(carryover)).toBe("2026-01-01");
     expect(observationDate(ads[0])).toBe("2026-09-01");
+  });
+  it("includes the final November 4 day but excludes November 5 by default", () => {
+    const final = { ...ads[0], id: "final", published: "2026-11-04" };
+    const after = { ...ads[0], id: "after", published: "2026-11-05" };
+    expect(filterAds([final, after], EMPTY_FILTERS)).toEqual([final]);
+  });
+  it("groups a sponsor across acquisition IDs, matching backend publisher counts", () => {
+    expect(publisher({ ...ads[0], source: "native-snap", sponsor: "Same payer" })).toBe("Same payer");
+    expect(publisher({ ...ads[0], source: "native-google", sponsor: "Same payer" })).toBe("Same payer");
+    expect(publisher({ ...ads[0], source: "native-snap", sponsor: "" })).toBe("native");
+  });
+  it("keeps real zero months without rendering unobserved future months as zeros", () => {
+    const rows = monthlyCounts(ads, "2026-08-01", "2026-10-27");
+    expect(rows).toEqual([
+      { month: "2026-08", D: 0, R: 0 }, { month: "2026-09", D: 1, R: 0 },
+      { month: "2026-10", D: 0, R: 1 },
+    ]);
+    expect(monthlyCounts([], "2026-11-01", "2026-10-27")).toEqual([]);
+    const carryover = { ...ads[0], delivery_start: "2025-11-01" };
+    expect(monthlyCounts([carryover], "2026-02-01", "2026-03-01")[0])
+      .toEqual({ month: "2026-01", D: 1, R: 0 });
   });
 });

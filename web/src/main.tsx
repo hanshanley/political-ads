@@ -2,7 +2,7 @@ import { StrictMode, useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
   type Ad, type Dataset, type Filters, EMPTY_FILTERS, csv, displayDate, filterAds,
-  observationDate, partyName, publisher, saveFile, shares, uniqueMessages,
+  monthlyCounts, partyName, publisher, saveFile, shares, uniqueMessages,
 } from "./data";
 import "./style.css";
 
@@ -50,17 +50,14 @@ function BarComparison({ ads, labels, field, onSelect }: {
   </div>;
 }
 
-function Timeline({ ads }: { ads: Ad[] }) {
-  const counts = Array.from({ length: 12 }, (_, month) => ({
-    month: new Date(Date.UTC(2026, month, 1)).toLocaleDateString("en", { month: "short" }),
-    D: 0, R: 0,
-  }));
-  for (const ad of uniqueMessages(ads)) {
-    if (ad.alignment === "D" || ad.alignment === "R") {
-      counts[Number(observationDate(ad).slice(5, 7)) - 1][ad.alignment]++;
-    }
-  }
+function Timeline({ ads, start, until }: { ads: Ad[]; start: string; until: string }) {
+  const counts = monthlyCounts(ads, start, until);
+  if (!counts.length) return <p>No months inside the saved collection window.</p>;
   const highest = Math.max(1, ...counts.flatMap(row => [row.D, row.R]));
+  const step = 600 / counts.length;
+  const ticks = [...new Set([0, Math.ceil(highest / 2), highest])];
+  const monthName = (month: string) => new Date(`${month}-01T00:00:00Z`)
+    .toLocaleDateString("en", { month: "short", timeZone: "UTC" });
   return <div className="timeline-wrap">
     <svg viewBox="0 0 650 180" className="timeline" role="img"
       aria-labelledby="timeline-title timeline-description">
@@ -68,23 +65,23 @@ function Timeline({ ads }: { ads: Ad[] }) {
       <desc id="timeline-description">First release, in-scope Google delivery or Snap scheduled-start month.
         Pre-2026 carryovers are anchored to January, not new launches.
         Exact counts are available below. Not airing volumes.</desc>
-      {[0, 0.5, 1].map(tick => <g key={tick}>
-        <line x1="25" x2="640" y1={145 - tick * 120} y2={145 - tick * 120} stroke="#e1e3df" />
-        <text x="0" y={150 - tick * 120} className="axis">{Math.round(tick * highest)}</text>
+      {ticks.map(tick => <g key={tick}>
+        <line x1="25" x2="640" y1={145 - tick / highest * 120} y2={145 - tick / highest * 120} stroke="#e1e3df" />
+        <text x="0" y={150 - tick / highest * 120} className="axis">{tick}</text>
       </g>)}
       {counts.map((row, index) => <g key={row.month}>
         {(["D", "R"] as const).map((party, offset) => <rect key={party}
-          x={35 + index * 50 + offset * 15} y={145 - row[party] / highest * 120}
+          x={40 + index * step + step / 2 - 15 + offset * 15} y={145 - row[party] / highest * 120}
           height={row[party] / highest * 120} width="12" className={`fill-${party}`}>
-          <title>{row.month}: {partyName(party)} {row[party]} unique messages</title>
+          <title>{monthName(row.month)}: {partyName(party)} {row[party]} unique messages</title>
         </rect>)}
-        <text x={46 + index * 50} y="170" textAnchor="middle" className="axis">{row.month}</text>
+        <text x={40 + index * step + step / 2} y="170" textAnchor="middle" className="axis">{monthName(row.month)}</text>
       </g>)}
     </svg>
     <details className="data-table"><summary>Monthly observed-message counts</summary><table>
       <caption>First release, reported delivery or scheduled start; not launches or airing totals</caption>
       <thead><tr><th>Month</th><th>Democratic</th><th>Republican</th></tr></thead>
-      <tbody>{counts.map(row => <tr key={row.month}><th>{row.month}</th>
+      <tbody>{counts.map(row => <tr key={row.month}><th>{monthName(row.month)}</th>
         <td>{row.D}</td><td>{row.R}</td></tr>)}</tbody>
     </table></details>
   </div>;
@@ -141,7 +138,8 @@ function AdCard({ ad, selected, examples }: {
 }
 
 function Dashboard({ dataset }: { dataset: Dataset }) {
-  const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS);
+  const defaults = { ...EMPTY_FILTERS, end: dataset.until };
+  const [filters, setFilters] = useState<Filters>(defaults);
   const [selected, setSelected] = useState("");
   const [limit, setLimit] = useState(12);
   const ads = useMemo(() => filterAds(dataset.ads, filters), [dataset.ads, filters]);
@@ -160,7 +158,7 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
   const options = (key: "source" | "race" | "sponsor_type") =>
     [...new Set(dataset.ads.map(ad => ad[key]))].sort().map(value =>
       [value, value === "outside_group" ? "Outside group" : value] as [string, string]);
-  const filtered = JSON.stringify(filters) !== JSON.stringify(EMPTY_FILTERS);
+  const filtered = JSON.stringify(filters) !== JSON.stringify(defaults);
   const sortedAds = [...ads].sort((a, b) => b.published.localeCompare(a.published) || a.id.localeCompare(b.id));
   return <>
     <a className="skip" href="#main">Skip to analysis</a>
@@ -173,6 +171,7 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
         <p className="dek">What Democrats and Republicans say in their ads—and how they describe
           the other side. Read the patterns. Then read the evidence.</p>
         <div className="edition"><span>Federal elections · English-language ads</span>
+          <span>Research snapshot · publication on hold</span>
           <span>Latest release {displayDate(dataset.latest_release)}</span>
           <a href={`${import.meta.env.BASE_URL}report.html`}>Read the report</a></div>
       </section>
@@ -185,7 +184,7 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
       </section>
       <section className="filters-panel" aria-labelledby="filter-heading">
         <div className="section-top"><h2 id="filter-heading">Choose your comparison</h2>
-          <button className="text-button" onClick={() => { setFilters(EMPTY_FILTERS); setLimit(12); setSelected(""); }}>Reset filters</button></div>
+          <button className="text-button" onClick={() => { setFilters(defaults); setLimit(12); setSelected(""); }}>Reset filters</button></div>
         <div className="filter-grid">
           <Select label="Parties" value={filters.party} options={[["D", "Democratic"], ["R", "Republican"],
             ["other", "Other alignment"], ["unknown", "Unresolved alignment"]]} onChange={value => change("party", value)} />
@@ -194,7 +193,7 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
             [...new Set(dataset.ads.map(ad => ad.state).filter(Boolean))].sort().map(state => [state, state])
           } onChange={value => change("state", value)} />
           <Select label="Races" value={filters.race} options={options("race")} onChange={value => change("race", value)} />
-          <Select label="Publishers" value={filters.source} options={options("source")} onChange={value => change("source", value)} />
+          <Select label="Collection sources" value={filters.source} options={options("source")} onChange={value => change("source", value)} />
           <Select label="Sponsor types" value={filters.sponsorType} options={options("sponsor_type")} onChange={value => change("sponsorType", value)} />
           <Select label="Election phases" value={filters.phase} options={[["general", "General"], ["primary", "Primary"], ["unknown", "Not established"]]} onChange={value => change("phase", value)} />
           <label className="select-label">Released from<input type="date" min="2026-01-01" max={dataset.until}
@@ -247,12 +246,31 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
           <h2>New messages over time.</h2><p>First observed release month for each exact unique
             message in the selection. Not spending, impressions, or airing volume.</p></div>
           <div className="legend"><span className="D">Democratic</span><span className="R">Republican</span></div>
-          <Timeline ads={ads} />
+          <Timeline ads={ads} start={filters.start} until={[filters.end || dataset.until, dataset.until].sort()[0]} />
           <div className="small-note"><strong>Read across like-for-like sources.</strong>
             <p>Publisher choice and race coverage can drive differences. Use chamber, race, and
               publisher filters before interpreting a party-level gap.</p>
             <button className="text-button" onClick={() => change("chamber", "Senate")}>Compare Senate ads</button></div>
         </div>
+      </section>
+      <section className="section" id="research-figures">
+        <div className="section-heading"><p className="eyebrow">FULL-SNAPSHOT RESEARCH</p>
+          <h2>Descriptive language, change and source mix.</h2>
+          <p>The expanded local report compares lexicon words near candidate and party mentions,
+            adjacent 90-day windows, monthly issue wording and publisher sensitivity.
+            These whole-collection figures do not change with the filters above.</p>
+          <p><a href={`${import.meta.env.BASE_URL}report.html`}>Read the illustrated research report</a>
+            {" · "}<a href={`${import.meta.env.BASE_URL}article.html`}>Read the unpublished article draft</a>
+            {" · "}<a href={`${import.meta.env.BASE_URL}figures/chart-data.json`}>Exact chart data</a>
+            {" · "}<a href={`${import.meta.env.BASE_URL}figures/descriptor-evidence.json`}>Descriptor contexts</a></p>
+          <p>Nearby wording is not verified target attribution or an ad sentiment score.
+            All original text and reviewed opponent examples remain available separately.</p>
+        </div>
+        <a href={`${import.meta.env.BASE_URL}report.html`}>
+          <img loading="lazy" style={{ width: "100%", height: "auto" }}
+            src={`${import.meta.env.BASE_URL}figures/issue-language.png`}
+            alt="Full-collection issue-language shares; open the report for exact counts and downloadable figures." />
+        </a>
       </section>
       <section className="section" id="evidence">
         <div className="section-heading"><p className="eyebrow">05 / READ IT FOR YOURSELF</p>
@@ -298,7 +316,7 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
           <p><a href={`${import.meta.env.BASE_URL}data/ads.csv`}>All transcripts and evidence (CSV)</a></p>
           <p><a href="https://github.com/hanshanley/political-ads">Source code and collection methods</a></p>
           <p className="fine-print">Snapshot <code>{dataset.snapshot_id.slice(0, 12)}</code>.
-            Collection window: January 1–November 3, 2026. No paid data or model API is required.</p>
+            Collection window: January 1–November 4, 2026, inclusive. No paid data or model API is required.</p>
         </div></div>
       </section>
     </main>

@@ -43,10 +43,50 @@ test("mobile layout, keyboard access, static report and base-path assets", async
   const report = await page.request.get("./report.html");
   expect(report.ok()).toBe(true);
   expect(await report.text()).toContain("Download the complete text and evidence");
+  const manifest = await (await page.request.get("./figures/manifest.json")).json();
+  expect(manifest.publication_status).toBe("local_only");
+  expect(manifest.charts).toHaveLength(10);
+  for (const chart of manifest.charts) {
+    for (const format of ["png", "csv"]) {
+      expect((await page.request.get(`./figures/${chart[format]}`)).ok()).toBe(true);
+    }
+  }
   const csv = await page.request.get("./data/ads.csv");
   expect(csv.ok()).toBe(true);
   expect(await csv.text()).toContain("publisher_transcript");
   await page.screenshot({ path: testInfo.outputPath("mobile.png"), fullPage: true });
+  await page.goto("./article.html");
+  await expect(page.getByText("DRAFT - NOT PUBLISHED.", { exact: true })).toBeVisible();
+  await expect(page.locator("figure img")).toHaveCount(10);
+  for (const image of await page.locator("figure img").all()) {
+    await image.scrollIntoViewIfNeeded();
+    await expect.poll(() => image.evaluate(node =>
+      (node as HTMLImageElement).complete
+      && (node as HTMLImageElement).naturalWidth > 0)).toBe(true);
+  }
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.screenshot({ path: testInfo.outputPath("article-mobile.png"), fullPage: true });
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.screenshot({ path: testInfo.outputPath("article-desktop.png"), fullPage: true });
+});
+
+test("final-day defaults and single-message timeline have no future zeros or duplicate ticks", async ({ page }) => {
+  const dataset = await (await page.request.get("./data/dataset.json")).json();
+  const finalDay = {
+    ...dataset, until: "2026-11-04", latest_release: "2026-11-04", examples: [],
+    ads: [{ ...dataset.ads[0], alignment: "D", published: "2026-11-04",
+      delivery_start: undefined, delivery_end: undefined }],
+  };
+  await page.route("**/data/dataset.json", route => route.fulfill({ json: finalDay }));
+  await page.goto("./");
+  await expect(page.getByRole("status")).toContainText("1 records");
+  await expect(page.getByLabel("Released through")).toHaveValue("2026-11-04");
+  const labels = await page.locator(".timeline .axis").allTextContents();
+  expect(labels).toContain("Nov");
+  expect(labels).not.toContain("Dec");
+  expect(labels.filter(label => /^\d+$/.test(label))).toEqual(["0", "1"]);
+  await page.getByRole("button", { name: "Reset filters" }).click();
+  await expect(page.getByRole("status")).toContainText("1 records");
 });
 
 test("unresolved alignment remains independently filterable with complete evidence", async ({ page }) => {

@@ -60,7 +60,6 @@ jobs:
           fi
           political-ads collect --until "$UNTIL"
           political-ads parquet
-          political-ads analyze
           political-ads build
           political-ads validate
           pytest -q
@@ -80,6 +79,7 @@ jobs:
           git config user.name "Hans Hanley"
           git config user.email "$(git log -1 --format=%ae)"
           git add data/site outputs/validation.json outputs/analysis.json outputs/analysis.html outputs/analysis-ads.csv
+          git add outputs/figures outputs/article-data.json outputs/substack.md outputs/themarginoferror.html
           if git diff --cached --quiet; then exit 0; fi
           git diff --cached --check -- data/site outputs/validation.json
           git commit -m "Refresh 2026 ad-language evidence"

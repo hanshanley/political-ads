@@ -39,7 +39,7 @@ export interface Filters {
 }
 export const EMPTY_FILTERS: Filters = {
   query: "", party: "", chamber: "", state: "", race: "", source: "", sponsorType: "",
-  phase: "", issue: "", start: "2026-01-01", end: "2026-11-03",
+  phase: "", issue: "", start: "2026-01-01", end: "2026-11-04",
 };
 
 export function filterAds(ads: Ad[], filters: Filters): Ad[] {
@@ -110,6 +110,22 @@ export const partyName = (party: string) => party === "D" ? "Democratic" :
   party === "R" ? "Republican" : party;
 export const observationDate = (ad: Ad) => ad.delivery_start ?
   (ad.delivery_start < "2026-01-01" ? "2026-01-01" : ad.delivery_start) : ad.published;
-export const publisher = (ad: Ad) => ad.source.replace(/-(media|images|google|snap)$/, "");
+export const publisher = (ad: Ad) => ad.sponsor || ad.source.replace(/-(media|images|google|snap)$/, "");
+
+export function monthlyCounts(ads: Ad[], start: string, until: string) {
+  const messages = uniqueMessages(ads).filter(ad => ad.alignment === "D" || ad.alignment === "R");
+  const first = [start || "2026-01-01", ...messages.map(observationDate)].sort()[0];
+  if (first > until) return [];
+  const firstMonth = Number(first.slice(5, 7));
+  const lastMonth = Number(until.slice(5, 7));
+  const counts = Array.from({ length: lastMonth - firstMonth + 1 }, (_, index) => ({
+    month: `2026-${String(firstMonth + index).padStart(2, "0")}`, D: 0, R: 0,
+  }));
+  for (const ad of messages) {
+    const row = counts.find(row => row.month === observationDate(ad).slice(0, 7));
+    if (row && (ad.alignment === "D" || ad.alignment === "R")) row[ad.alignment]++;
+  }
+  return counts;
+}
 export const displayDate = (value: string) => new Date(value + "T12:00:00Z")
   .toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });

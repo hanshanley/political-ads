@@ -5,16 +5,39 @@ from html import escape
 from pathlib import Path
 
 from political_ads.analysis import stratified_comparisons
-from political_ads.cli import write_json
+from political_ads.cli import read_json, write_json
+from political_ads.descriptors import descriptive_language
+from political_ads.editorial import article_data, margin_html, substack_markdown
+from political_ads.figures import build_figures
 from political_ads.publication import csv_export, prepare, report, validate_dataset
 
 
-def research(root: Path) -> dict:
-    dataset = prepare(root)
+def research(root: Path, dataset: dict | None = None) -> dict:
+    dataset = prepare(root) if dataset is None else dataset
     validate_dataset(dataset)
     strata = stratified_comparisons(dataset["ads"], dataset["codebook"])
+    candidates = {
+        candidate["candidate_id"]: candidate
+        for candidate in read_json(root / "data/site/candidates.json", {"candidates": []})[
+            "candidates"
+        ]
+    }
+    aliases = [
+        candidates[alias["candidate_id"]] | {"reviewed_alias": alias}
+        for alias in read_json(root / "data/snap-candidate-aliases.json", [])
+        if alias["candidate_id"] in candidates
+    ]
+    descriptors = descriptive_language(dataset, aliases)
+    figures = build_figures(dataset, strata, descriptors, root / "outputs/figures")
+    article = article_data(
+        dataset,
+        strata,
+        descriptors,
+        figures,
+        read_json(root / "data/descriptor-context-reviews.json", {}),
+    )
     result = {
-        "analysis_version": "stratified-1",
+        "analysis_version": "stratified-2",
         "publication_status": "local_only",
         "monthly_basis": "Earliest publisher release/post, in-scope Google delivery or "
         "Snap scheduled start of each exact party/message; pre-2026 carryovers anchored "
@@ -22,15 +45,28 @@ def research(root: Path) -> dict:
         "stratum_basis": "Exact party/messages deduplicated after each non-temporal filter",
         "dataset": dataset,
         "comparisons": strata,
+        "descriptive_language": descriptors,
+        "figures": figures,
+        "article": article,
     }
     output = root / "outputs"
     write_json(output / "analysis.json", result)
     (output / "analysis-ads.csv").write_text(csv_export(dataset["ads"]), newline="")
-    (output / "analysis.html").write_text(research_report(dataset, strata))
+    (output / "analysis.html").write_text(research_report(dataset, strata, descriptors, figures))
+    write_json(output / "article-data.json", article)
+    (output / "substack.md").write_text(substack_markdown(article))
+    (output / "themarginoferror.html").write_text(margin_html(article))
     return result
 
 
-def research_report(dataset: dict, strata: dict) -> str:
+def research_report(
+    dataset: dict,
+    strata: dict,
+    descriptors: dict | None = None,
+    figures: dict | None = None,
+    *,
+    web: bool = False,
+) -> str:
     def ratio(row, party):
         value = row[party]
         if not value["total"]:
@@ -113,12 +149,114 @@ def research_report(dataset: dict, strata: dict) -> str:
             alignment_counts.items(), key=lambda item: (-item[1], item[0])
         )
     ]
+    additions = ""
+    if figures:
+        additions += (
+            "<h2>Figures from the complete saved collection</h2>"
+            "<p>These full-snapshot figures do not change with dashboard filters. "
+            "Each has an original-size PNG and exact CSV, including ad IDs. "
+            "<a href='figures/chart-data.json'>Download all chart data</a> or "
+            "<a href='figures/descriptor-evidence.json'>"
+            "all descriptor contexts and comparisons</a>."
+            "</p>"
+            + "".join(
+                f"<figure><h3>{escape(chart['title'])}</h3>"
+                f"<a href='figures/{escape(chart['png'])}'><img loading='lazy' "
+                f"style='width:100%;height:auto' src='figures/{escape(chart['png'])}' "
+                f"alt='{escape(chart['description'], quote=True)}'></a>"
+                f"<figcaption>{escape(chart['description'])} "
+                + " / ".join(
+                    f"<a href='figures/{escape(chart[kind])}'>{kind.upper()}</a>"
+                    for kind in ("png", "csv")
+                )
+                + "</figcaption></figure>"
+                for chart in figures["charts"]
+            )
+        )
+    if descriptors:
+        additions += (
+            "<h2>Descriptive language near candidate and party mentions</h2>"
+            "<p>This exploratory comparison adapts the question asked in the Harris/Trump "
+            "coverage analysis to advertising. It does not import newspaper labels, "
+            "sentiment scores or conclusions into this different corpus.</p>"
+            f"<p>{escape(descriptors['method'])}</p>"
+            "<p>Unlike the issue-family charts, these denominators contain only messages "
+            "with eligible explicit mentions. Positive approval lines can be self-description; "
+            "a word near a name can describe a policy, another person or a quoted claim. "
+            "Neither proximity nor a lexicon entry establishes an advertiser's opinion "
+            "of a candidate. The existing context-reviewed examples remain separate.</p>"
+            "<p>The general-English lexicon does not cover every political descriptor. "
+            "Ideological wording such as radical/liberal is not a complete vocabulary here; "
+            "the separate published phrase families measure additional framing language.</p>"
+        )
+        for target, name in (("D", "Democratic"), ("R", "Republican")):
+            group = descriptors["targets"][target]
+            additions += f"<h3>Contexts mentioning {name} candidates or the party</h3>"
+            additions += table(
+                ("Advertiser alignment", "Eligible exact messages"),
+                [(party, group["coverage"][party]["total"]) for party in ("D", "R")],
+            )
+            additions += table(
+                ("Lexicon word", "D messages", "R messages", "Log2 odds (D relative to R)"),
+                [
+                    (
+                        row["word"],
+                        ratio(row, "D"),
+                        ratio(row, "R"),
+                        f"{row['log2_odds']:.2f}"
+                        if row["log2_odds"] is not None
+                        else "Insufficient groups",
+                    )
+                    for row in group["words"]
+                ],
+            )
+        periods = descriptors["periods"]
+        additions += (
+            "<h3>Did the opponent-context wording change?</h3>"
+            f"<p>Recent: {periods['recent']['start']} through {periods['recent']['end']}. "
+            f"Previous: {periods['previous']['start']} through {periods['previous']['end']}. "
+            "These are adjacent 90-day first-observed-message windows, not airing histories. "
+            "The same exact message enters only its first window. The common-publisher "
+            "check retains only publishers represented in both windows; it does not "
+            "control candidate, race, format or primary/general composition.</p>"
+        )
+        for party in ("D", "R"):
+            change = descriptors["changes"][party]
+            additions += f"<h4>{party}-aligned ads mentioning the opposing party</h4>"
+            additions += table(
+                ("Cohort", "Recent eligible messages", "Previous eligible messages"),
+                [
+                    (
+                        label,
+                        change[key]["coverage"]["recent"]["total"],
+                        change[key]["coverage"]["previous"]["total"],
+                    )
+                    for label, key in (
+                        ("All publishers", "all_publishers"),
+                        ("Common publishers", "common_publishers"),
+                    )
+                ],
+            )
+        additions += (
+            "<details><summary>Read the extracted descriptor contexts (unreviewed)</summary>"
+            "<p>Windows retain the original source spelling, quotation and negation. "
+            "These are extraction results, not manually approved opponent descriptions.</p>"
+            + table(
+                ("Ad ID", "Advertiser", "Mentioned party", "Lexicon word", "Original context"),
+                [
+                    (hit["ad_id"], hit["party"], hit["target_party"], hit["word"], hit["context"])
+                    for hit in descriptors["evidence"]
+                ],
+            )
+            + "</details>"
+        )
     sections = (
         "<h2>Local research snapshot - not published</h2>"
         "<p>All tables describe the saved collection, not national advertising volume. "
-        "The complete JSON contains text, exact match offsets, source hashes, and included ad IDs "
-        "for every comparison, including month, chamber, sponsor type, publisher, race, and phase."
-        "</p><h2>Publisher alignment audit</h2>"
+        "Evidence downloads retain the complete text, exact match offsets and source hashes. "
+        "Figure downloads contain included ad IDs; the local analysis JSON additionally "
+        "contains every month, chamber, sponsor-type, publisher, race and phase comparison."
+        "</p>" + additions + "<h2>Publisher alignment audit</h2>"
         "<p>The table accounts for reviewed records previously left outside D/R comparisons. "
         "Missing formal FEC party registration does not make electoral alignment unknowable. "
         "D/R describe documented publisher electoral programs, not exclusive endorsements "
@@ -195,9 +333,15 @@ def research_report(dataset: dict, strata: dict) -> str:
     content = report(dataset).replace(
         "<h2>A closer Senate comparison</h2>", sections + "<h2>A closer Senate comparison</h2>"
     )
+    content = content.replace(
+        "</head>",
+        "<style>figure{margin:2rem 0}table{display:block;max-width:100%;overflow-x:auto}"
+        "td{overflow-wrap:anywhere}figcaption{font-size:.85rem;color:#666}"
+        "img{max-width:100%}</style></head>",
+    )
     return (
-        content.replace("data/ads.csv", "analysis-ads.csv")
-        .replace("data/dataset.json", "analysis.json")
+        content.replace("data/ads.csv", "data/ads.csv" if web else "analysis-ads.csv")
+        .replace("data/dataset.json", "data/dataset.json" if web else "analysis.json")
         .replace(
             "<a href='./'>The Margin of Error / Political ads</a>",
             "<p><strong>LOCAL ONLY - website publication is on hold.</strong></p>",
