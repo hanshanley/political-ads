@@ -35,10 +35,33 @@ test("real corpus, synchronized filters, complete downloads, and empty state", a
   expect(errors).toEqual([]);
 });
 
-test("person portrayal scopes reconcile with Python evidence and preserve literal context", async ({ page }) => {
+test("same-ad strategy and person scopes reconcile with Python and preserve literal context", async ({ page }) => {
   await page.goto("./");
   const evidence = await (await page.request.get("./figures/portrayal-evidence.json")).json();
   const dataset = await (await page.request.get("./data/dataset.json")).json();
+  const strategyRows = page.locator(".ad-strategy-row");
+  for (const [row, key] of [
+    "own_positive_only", "contrast", "opponent_negative_only", "neither", "not_reviewed",
+  ].entries()) {
+    for (const [column, party] of ["D", "R"].entries()) {
+      const metric = evidence.ad_strategy.parties[party][key];
+      const cell = strategyRows.nth(row).getByRole("cell").nth(column);
+      await expect(cell.locator("small")).toHaveText(`${metric.count}/${metric.total}`);
+      await expect(cell.locator("b")).toHaveText(
+        metric.total ? `${(metric.share * 100).toFixed(1)}%` : "—");
+    }
+  }
+  await expect(page.getByRole("link", { name: "ad strategy", exact: true }))
+    .toHaveAttribute("href", /\/figures\/ad-strategy\.png$/);
+  await page.getByLabel("Parties", { exact: true }).selectOption("R");
+  for (const row of await strategyRows.all()) {
+    await expect(row.getByRole("cell").first().locator("b")).toHaveText("—");
+    await expect(row.getByRole("cell").first().locator("small")).toHaveText("—");
+  }
+  const republicanContrast = evidence.ad_strategy.parties.R.contrast;
+  await expect(strategyRows.nth(1).getByRole("cell").nth(1).locator("small"))
+    .toHaveText(`${republicanContrast.count}/${republicanContrast.total}`);
+  await page.getByRole("button", { name: "Reset filters" }).click();
   for (const [scope, button] of [["opponents", "Opponents"], ["self", "Their own candidates"]]) {
     await page.getByRole("button", { name: button, exact: true }).click();
     const columns = page.locator(".tone-column");
@@ -85,7 +108,7 @@ test("mobile layout, keyboard access, static report and base-path assets", async
   expect(await report.text()).toContain("Download the complete text and evidence");
   const manifest = await (await page.request.get("./figures/manifest.json")).json();
   expect(manifest.publication_status).toBe("local_only");
-  expect(manifest.charts).toHaveLength(10);
+  expect(manifest.charts).toHaveLength(11);
   for (const chart of manifest.charts) {
     for (const format of ["png", "csv"]) {
       expect((await page.request.get(`./figures/${chart[format]}`)).ok()).toBe(true);
@@ -97,7 +120,7 @@ test("mobile layout, keyboard access, static report and base-path assets", async
   await page.screenshot({ path: testInfo.outputPath("mobile.png"), fullPage: true });
   await page.goto("./article.html");
   await expect(page.getByText("DRAFT - NOT PUBLISHED.", { exact: true })).toBeVisible();
-  await expect(page.locator("figure img")).toHaveCount(10);
+  await expect(page.locator("figure img")).toHaveCount(manifest.charts.length);
   for (const image of await page.locator("figure img").all()) {
     await image.scrollIntoViewIfNeeded();
     await expect.poll(() => image.evaluate(node =>

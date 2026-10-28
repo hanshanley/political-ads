@@ -9,6 +9,24 @@ PARTIES = ("D", "R")
 TONES = ("negative_only", "positive_only", "mixed", "neutral_only")
 VOICES = ("advertiser", "adopted_clip")
 SCOPES = ("opponents", "self", "same_party_opponents", "collective_opponents")
+AD_STRATEGIES = {
+    "own_positive_only": "Own-side praise only",
+    "contrast": "Mixed: own praise and opponent criticism",
+    "opponent_negative_only": "Opponent criticism only",
+    "neither": "Neither signal",
+    "not_reviewed": "Uncertain or missing review",
+}
+AD_STRATEGY_DEFINITION = (
+    "Shares of all exact party/messages, not just messages describing people. "
+    "Own-side praise is an endorsed positive description of a supported person or collective "
+    "with the advertiser's party; opponent criticism is an endorsed negative description of "
+    "an opposing-party person or collective. Mixed/contrast requires both in the same message. "
+    "'Only' means one of these two signals without the other; other sentiments can coexist. "
+    "Neither is not neutral. Same-party rivals, unknown target parties, quoted opponents and "
+    "rebutted or unclear voices do not supply these signals. Uncertain, unreviewed and stale "
+    "messages stay in the denominator but are reported separately, never classified as neither. "
+    "Displayed percentages are rounded."
+)
 
 
 def validate_description(description: dict, text: str, codebook: dict) -> None:
@@ -218,6 +236,51 @@ def tone_category(descriptions: list[dict]) -> str:
     raise ValueError("No portrayal is not a neutral portrayal")
 
 
+def ad_strategy(ad: dict) -> str:
+    if ad.get("portrayal_review", {}).get("status") != "reviewed":
+        return "not_reviewed"
+    party = ad["alignment"]
+    descriptions = [d for d in ad["portrayal_review"]["descriptions"] if d["voice"] in VOICES]
+    praise = any(
+        d["target_party"] == party
+        and d["target_role"] == "self_or_supported"
+        and d["tone"] == "positive"
+        for d in descriptions
+    )
+    criticism = any(
+        d["target_party"] in PARTIES
+        and d["target_party"] != party
+        and d["target_role"] == "opponent"
+        and d["tone"] == "negative"
+        for d in descriptions
+    )
+    return (
+        "contrast"
+        if praise and criticism
+        else "own_positive_only"
+        if praise
+        else "opponent_negative_only"
+        if criticism
+        else "neither"
+    )
+
+
+def ad_strategy_summary(messages: list[dict]) -> dict:
+    parties = {}
+    for party in PARTIES:
+        group = [ad for ad in messages if ad["alignment"] == party]
+        categories = {ad["id"]: ad_strategy(ad) for ad in group}
+        parties[party] = {
+            key: metric([ad for ad in group if categories[ad["id"]] == key], len(group))
+            for key in AD_STRATEGIES
+        }
+    return {
+        "definition": AD_STRATEGY_DEFINITION,
+        "categories": AD_STRATEGIES,
+        "parties": parties,
+    }
+
+
 def scope_summary(messages: list[dict], codebook: dict, scope: str) -> dict:
     result = {}
     for party in PARTIES:
@@ -329,9 +392,11 @@ def portrayal_summary(ads: list[dict], codebook: dict) -> dict:
         "possibly of different people. "
         "Inclusive negative and positive overlap through mixed messages; frames also overlap.",
         "coverage": coverage,
+        "ad_strategy": ad_strategy_summary(messages),
         "scopes": {scope: scope_summary(messages, codebook, scope) for scope in SCOPES},
         "sensitivity": {
             "excluded_publishers": excluded,
+            "ad_strategy": ad_strategy_summary(reduced),
             "scopes": {
                 scope: scope_summary(reduced, codebook, scope) for scope in ("opponents", "self")
             },

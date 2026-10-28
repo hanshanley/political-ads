@@ -173,6 +173,22 @@ def article_data(dataset: dict, strata: dict, portrayals: dict, figures: dict) -
         "A reported allegation is a portrayal, not this project's finding that it is true."
     )
     figure("portrayal-coverage")
+    heading("Does the same ad praise its own side, attack the other side, or do both?")
+    strategy = portrayals["ad_strategy"]
+    paragraph(strategy["definition"])
+    for party in ("D", "R"):
+        group = strategy["parties"][party]
+        paragraph(
+            f"{NAMES[party]} ads: "
+            + "; ".join(
+                f"{label.lower()}: {ratio(group[key])}"
+                for key, label in strategy["categories"].items()
+            )
+            + ". These mutually exclusive categories account for every unique message. "
+            "This same-ad contrast measure is different from mixed positive/negative "
+            "descriptions within one target scope below."
+        )
+    figure("ad-strategy")
     for scope, prefix, title in (
         ("opponents", "opponent", "How they describe the other side"),
         ("self", "self", "How they describe their own candidates"),
@@ -249,6 +265,17 @@ def article_data(dataset: dict, strata: dict, portrayals: dict, figures: dict) -
         + ". This cannot turn an opportunistic collection into a representative sample."
     )
     for party in ("D", "R"):
+        full_strategy = strategy["parties"][party]
+        reduced_strategy = portrayals["sensitivity"]["ad_strategy"]["parties"][party]
+        paragraph(
+            f"For {NAMES[party]} ads, the whole-ad shares change after exclusion: "
+            + "; ".join(
+                f"{strategy['categories'][key].lower()} from {ratio(full_strategy[key])} "
+                f"to {ratio(reduced_strategy[key])}"
+                for key in ("own_positive_only", "contrast", "opponent_negative_only")
+            )
+            + ". Each denominator includes all unique messages remaining in that collection."
+        )
         full = portrayals["scopes"]["opponents"][party]["inclusive_tones"]["negative"]
         reduced = portrayals["sensitivity"]["scopes"]["opponents"][party]["inclusive_tones"][
             "negative"
@@ -258,6 +285,22 @@ def article_data(dataset: dict, strata: dict, portrayals: dict, figures: dict) -
             f"portrayals change from {ratio(full)} to {ratio(reduced)} after that exclusion. "
             "Differences can still reflect races, phases, extraction formats and repeated "
             "changed-target templates, not a pure party effect."
+        )
+    reversals = []
+    for key in ("own_positive_only", "contrast", "opponent_negative_only"):
+        full = [strategy["parties"][p][key]["share"] for p in ("D", "R")]
+        reduced = [
+            portrayals["sensitivity"]["ad_strategy"]["parties"][p][key]["share"] for p in ("D", "R")
+        ]
+        if all(value is not None for value in [*full, *reduced]) and (
+            (full[0] - full[1]) * (reduced[0] - reduced[1]) < 0
+        ):
+            reversals.append(strategy["categories"][key].lower())
+    if reversals:
+        paragraph(
+            "The party ordering reverses after this source exclusion for "
+            + " and ".join(reversals)
+            + ". Those raw gaps are source-sensitive, not general party differences."
         )
     figure("publisher-composition")
     heading("The issues and collection history are supporting context")

@@ -105,12 +105,107 @@ def test_contrast_ad_does_not_mix_opponent_attack_with_supported_candidate_prais
             ),
         ],
     )
-    scopes = portrayal_summary([record], CODEBOOK)["scopes"]
+    result = portrayal_summary([record], CODEBOOK)
+    scopes = result["scopes"]
     assert scopes["opponents"]["D"]["tones"]["negative_only"]["count"] == 1
     assert scopes["self"]["D"]["tones"]["positive_only"]["count"] == 1
     assert all(
         scopes[scope]["D"]["tones"]["mixed"]["count"] == 0 for scope in ("opponents", "self")
     )
+    assert result["ad_strategy"]["parties"]["D"]["contrast"]["ad_ids"] == ["contrast"]
+
+
+@pytest.mark.parametrize("party,other", [("D", "R"), ("R", "D")])
+def test_same_ad_strategy_partitions_all_messages_with_mirrored_party_direction(party, other):
+    praise = description(
+        target="Casey",
+        target_party=party,
+        target_role="self_or_supported",
+        tone="positive",
+        frame="record",
+        phrase="delivered reform",
+        quote="Casey delivered reform.",
+        target_quote="Casey",
+    )
+    attack = description(target_party=other)
+    positive = attach(ad("praise", text="Casey delivered reform.", alignment=party), [praise])
+    negative = attach(ad("attack", text="Alex is corrupt.", alignment=party), [attack])
+    contrast = attach(
+        ad("contrast", text="Alex is corrupt. Casey delivered reform.", alignment=party),
+        [attack, praise],
+    )
+    collective = attach(
+        ad(
+            "collective",
+            text="Alex is corrupt. Casey delivered reform. A different creative.",
+            alignment=party,
+        ),
+        [
+            attack | {"target_kind": "collective", "voice": "adopted_clip"},
+            praise | {"target_kind": "collective"},
+        ],
+    )
+    neither = attach(
+        ad("neither", text="An election date.", alignment=party),
+        [],
+        reason="No attributed description",
+    )
+    records = [
+        positive,
+        negative,
+        contrast,
+        collective,
+        neither,
+        positive | {"id": "praise-mirror", "source": "mirror"},
+        ad("unreviewed", text="No saved review.", alignment=party),
+        attach(
+            ad("uncertain", text="Uncertain evidence.", alignment=party),
+            [],
+            status="uncertain",
+            reason="Unclear extraction",
+        ),
+        ad("stale", text="Changed evidence.", alignment=party)
+        | {"portrayal_review": {"status": "stale", "descriptions": []}},
+    ]
+    result = portrayal_summary(records, CODEBOOK)
+    group = result["ad_strategy"]["parties"][party]
+    assert {key: value["count"] for key, value in group.items()} == {
+        "own_positive_only": 1,
+        "contrast": 2,
+        "opponent_negative_only": 1,
+        "neither": 1,
+        "not_reviewed": 3,
+    }
+    assert all(value["total"] == 8 for value in group.values())
+    assert sum(value["share"] for value in group.values()) == 1
+    assert group["own_positive_only"]["ad_ids"] == ["praise"]
+    assert set(group["contrast"]["ad_ids"]) == {"contrast", "collective"}
+    assert all(value["share"] is None for value in result["ad_strategy"]["parties"][other].values())
+    assert all(
+        value["total"] == 0
+        for value in result["sensitivity"]["ad_strategy"]["parties"][party].values()
+    )
+    filtered = portrayal_summary([records[5]], CODEBOOK)["ad_strategy"]["parties"][party]
+    assert filtered["own_positive_only"]["ad_ids"] == ["praise-mirror"]
+
+
+def test_strategy_does_not_infer_praise_or_attack_from_reverse_tones_or_unknown_parties():
+    record = attach(
+        ad("other"),
+        [
+            description(tone="positive"),
+            description(target_party="D", target_role="self_or_supported"),
+            description(target_party="unknown", party_basis="unknown"),
+            description(
+                target_party="unknown",
+                target_role="self_or_supported",
+                party_basis="unknown",
+                tone="positive",
+            ),
+        ],
+    )
+    result = portrayal_summary([record], CODEBOOK)["ad_strategy"]["parties"]["D"]
+    assert result["neither"]["ad_ids"] == ["other"]
 
 
 @pytest.mark.parametrize("voice", ["quoted_opponent", "rebutted_claim", "unclear"])
@@ -118,6 +213,7 @@ def test_quoted_or_rebutted_accusation_does_not_count_as_endorsed_attack(voice):
     result = portrayal_summary([attach(ad("quote"), [description(voice=voice)])], CODEBOOK)
     assert result["scopes"]["opponents"]["D"]["described"]["count"] == 0
     assert result["evidence"][0]["voice"] == voice
+    assert result["ad_strategy"]["parties"]["D"]["neither"]["count"] == 1
 
 
 @pytest.mark.parametrize(

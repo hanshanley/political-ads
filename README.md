@@ -82,10 +82,16 @@ stale texts are disclosed and excluded. Same-party rivals and collective-party r
 These exploratory codes are not independently validated human gold or national prevalence estimates.
 A largest-publisher exclusion check exposes source-composition sensitivity.
 
+The whole-ad comparison separately counts **own-side praise only, opponent criticism only,
+and both in the same message (mixed/contrast)**. It includes described people and party collectives
+with known target parties and uses all unique messages as its denominator. Neither signal and
+uncertain/missing reviews remain separate categories; neither is not neutral. "Only" refers to
+these two signals, not every sentiment in the ad.
+
 The same command generates both **unpublished article editions**:
 `outputs/substack.md` and `outputs/themarginoferror.html`. Shared copy, counts and source-bound
 illustrations are in `outputs/article-data.json`. Both editions use the same snapshot and
-ten original PNG figures under `outputs/figures/`; no new SVG charts are produced.
+eleven original PNG figures under `outputs/figures/`; no new SVG charts are produced.
 Every figure has exact CSV data, with all chart data in `figures/chart-data.json` and
 context-coded evidence in `figures/portrayal-evidence.json`.
 `validate` also recomputes research metrics and portrayal evidence, checks PNG/CSV and

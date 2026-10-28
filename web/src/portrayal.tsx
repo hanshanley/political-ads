@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import {
   type Ad, type Dataset, type PortrayalScope, type ToneCategory, partyName,
-  portrayalSummary, selectPortrayalEvidence,
+  adStrategyLabels, adStrategySummary, portrayalSummary, selectPortrayalEvidence,
 } from "./data";
 
 const toneLabels: Record<ToneCategory, string> = {
@@ -20,6 +20,7 @@ export function PortrayalAnalysis({ ads, codebook, reveal }: {
 }) {
   const [scope, setScope] = useState<PortrayalScope>("opponents");
   const summary = useMemo(() => portrayalSummary(ads, scope), [ads, scope]);
+  const strategies = useMemo(() => adStrategySummary(ads), [ads]);
   const frames = [...new Set((["D", "R"] as const).flatMap(party =>
     Object.keys(summary[party].frames)))]
     .sort((a, b) => (summary.D.frames[b] ?? 0) + (summary.R.frames[b] ?? 0) -
@@ -35,12 +36,6 @@ export function PortrayalAnalysis({ ads, codebook, reveal }: {
       <p>Target-attributed descriptions in exact, deduplicated messages—not words merely near a name.
         Tone describes the portrayal of the target, not the ad’s emotion or whether a claim is true.</p>
     </div>
-    <div className="portrayal-switch" role="group" aria-label="People being described">
-      {([["opponents", "Opponents"], ["self", "Their own candidates"]] as const).map(([value, label]) =>
-        <button key={value} aria-pressed={scope === value}
-          onClick={() => setScope(value)}>{label}</button>)}
-    </div>
-
     <aside className="review-coverage" aria-labelledby="coverage-heading">
       <div><p className="eyebrow">REVIEW COVERAGE</p><h3 id="coverage-heading">What has actually been reviewed</h3>
         <p>AI-assisted labels are source-bound editorial annotations, not an independent human gold set.
@@ -56,6 +51,50 @@ export function PortrayalAnalysis({ ads, codebook, reveal }: {
         </div>;
       })}</div>
     </aside>
+
+    <div className="frame-section ad-strategy">
+      <div className="section-heading"><p className="eyebrow">THE WHOLE AD</p>
+        <h3>Praise, attacks, or both in the same ad?</h3>
+        <p>Own-side praise means an endorsed positive description of a supported person or party
+          collective with the advertiser’s party. Opponent criticism means an endorsed negative
+          description of the opposing party’s people or collectives. Mixed/contrast requires both
+          in the same message.</p></div>
+      <div className="frame-table" role="table" aria-label="Same-ad praise and attack">
+        <div className="frame-row frame-header" role="row">
+          <span role="columnheader">Ad-level category</span>
+          <span role="columnheader" className="D">Democratic</span>
+          <span role="columnheader" className="R">Republican</span>
+        </div>
+        {Object.entries(adStrategyLabels).map(([key, label]) => {
+          const category = key as keyof typeof adStrategyLabels;
+          return <div className="frame-row ad-strategy-row" role="row" key={key}>
+            <span role="rowheader">{label}</span>
+            {(["D", "R"] as const).map(party => {
+              const { messages, counts } = strategies[party];
+              return <div role="cell" key={party} className={party}>
+                <div className="tone-track"><i style={{ width: `${
+                  messages ? counts[category] / messages * 100 : 0}%` }} /></div>
+                <b>{percent(counts[category], messages)}</b>
+                <small>{messages ? `${counts[category]}/${messages}` : "—"}</small>
+              </div>;
+            })}
+          </div>;
+        })}
+      </div>
+      <p className="chart-caption">Denominator: all unique messages of each advertiser alignment,
+        including ads without a person description. These five categories are mutually exclusive.
+        “Only” refers to the two signals above; other sentiments can coexist. Neither does not mean
+        neutral. Uncertain, unreviewed and stale messages remain separate. Quoted opponents,
+        rebutted/unclear voices, same-party rival attacks and unknown target parties do not supply
+        either signal. Displayed percentages are rounded. This is different from mixed tone
+        within one target scope below.</p>
+    </div>
+
+    <div className="portrayal-switch" role="group" aria-label="People being described">
+      {([["opponents", "Opponents"], ["self", "Their own candidates"]] as const).map(([value, label]) =>
+        <button key={value} aria-pressed={scope === value}
+          onClick={() => setScope(value)}>{label}</button>)}
+    </div>
 
     <div className="tone-columns">{(["D", "R"] as const).map(party => {
       const item = summary[party];

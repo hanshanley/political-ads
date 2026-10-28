@@ -1,6 +1,17 @@
 {
   "charts": [
     {
+      "csv": "ad-strategy.csv",
+      "description": "Own-side praise, opponent criticism or both within the same ad; shares of all unique messages.",
+      "id": "ad-strategy",
+      "png": "ad-strategy.png",
+      "sha256": {
+        "csv": "813e2f2663e92a2cf31455c956080d8b797d6767238e97bf4fd400a841fc7b94",
+        "png": "7c642df2081d6cd3d2bbed8f84854e43da44c1f5f4b057e94aa76cd8cdf59294"
+      },
+      "title": "Do ads praise, attack, or combine both?"
+    },
+    {
       "csv": "opponent-tone.csv",
       "description": "Context-coded message shares among reviewed ads with an eligible person description.",
       "id": "opponent-tone",

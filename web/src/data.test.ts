@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
-  csv, EMPTY_FILTERS, filterAds, monthlyCounts, observationDate, portrayalSummary, publisher,
+  adStrategySummary, csv, EMPTY_FILTERS, filterAds, monthlyCounts, observationDate, portrayalSummary, publisher,
   selectPortrayalEvidence, shares, type Ad, type Description,
 } from "./data";
 
@@ -42,6 +42,50 @@ const reviewed = (ad: Ad, descriptions: Description[]): Ad => ({
 });
 
 describe("synchronized evidence", () => {
+  it.each([["D", "R"], ["R", "D"]] as const)(
+    "partitions %s ads by same-ad praise/attack, including collectives and missing evidence",
+    (party, other) => {
+      const praise = description({ target_party: party, target_role: "self_or_supported", tone: "positive" });
+      const attack = description({ target_party: other });
+      const make = (id: string, descriptions: Description[]) =>
+        reviewed({ ...base, id, message_id: id, alignment: party }, descriptions);
+      const first = make("praise", [praise]);
+      const result = adStrategySummary([
+        first,
+        { ...first, id: "praise-mirror" },
+        make("attack", [attack]),
+        make("contrast", [praise, attack]),
+        make("collective", [praise, { ...attack, target_kind: "collective", voice: "adopted_clip" }]),
+        make("neither", []),
+        make("excluded", [
+          { ...attack, voice: "quoted_opponent" },
+          { ...attack, voice: "rebutted_claim" },
+          { ...attack, voice: "unclear" },
+          { ...attack, target_party: party },
+          { ...attack, target_party: "unknown" },
+          { ...praise, target_party: "unknown" },
+          { ...attack, tone: "positive" },
+          { ...praise, tone: "negative" },
+        ]),
+        { ...base, id: "unreviewed", message_id: "unreviewed", alignment: party },
+        { ...make("uncertain", []), portrayal_review: {
+          status: "uncertain", text_hash: "", reason: "Unclear.", descriptions: [],
+        } },
+        { ...make("stale", []), portrayal_review: {
+          status: "stale", text_hash: "", reason: "Changed.", descriptions: [],
+        } },
+      ]);
+      expect(result[party].messages).toBe(9);
+      expect(result[party].counts).toEqual({
+        own_positive_only: 1, contrast: 2, opponent_negative_only: 1, neither: 2, not_reviewed: 3,
+      });
+      expect(Object.values(result[party].counts).reduce((a, b) => a + b)).toBe(9);
+      expect(result[other].messages).toBe(0);
+      expect(Object.values(result[other].counts).every(count => count === 0)).toBe(true);
+      expect(adStrategySummary([{ ...first, id: "praise-mirror" }])[party].counts.own_positive_only).toBe(1);
+    },
+  );
+
   it("applies every requested dimension without mutating the corpus", () => {
     expect(filterAds(ads, { ...EMPTY_FILTERS, query: "health care", party: "D", chamber: "House",
       state: "PA", race: "PA-10", source: "dccc", sponsorType: "party", phase: "unknown",

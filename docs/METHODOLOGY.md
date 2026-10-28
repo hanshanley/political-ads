@@ -22,6 +22,25 @@ passages remain untranslated when a record passes the English threshold.
 Source status counts precede this exclusion. Empty results and inaccessible sources differ;
 neither establishes that an advertiser ran no ads.
 
+## Same-ad praise and criticism
+
+The whole-ad strategy partition uses all exact, deduplicated messages of each advertiser
+alignment as the denominator, not only messages with a person description. Endorsed positive
+descriptions of supported people/collectives with the advertiser's own party supply the
+own-side praise signal. Endorsed negative descriptions of opposing-party people/collectives
+supply the opponent-criticism signal. Mixed/contrast requires both in the same message.
+Same-party rival attacks, unknown target parties, quoted opponents, rebutted accusations and
+unclear voices do not supply either signal. Adopted clips can count.
+
+The mutually exclusive categories are own-side praise without opponent criticism, both signals,
+opponent criticism without own-side praise, neither signal, and uncertain/unreviewed/stale.
+"Only" refers to these two signals; other sentiments can coexist. Neither is not neutral,
+and missing reviews are not assigned to neither. Every category retains counts, the all-message
+denominator, shares and exact message IDs. Source sensitivity recomputes the partition after
+the largest-publisher exclusions and deduplication. This does not change the separate
+person-scope mixed-tone measure, which can combine positive and negative descriptions
+of people within one scope.
+
 ## Attribution and race
 
 Publisher alignment comes from official identity, not ad vocabulary. Publisher, sole creative
@@ -312,7 +331,7 @@ shorter passages and ad IDs; no message repeats within a scope. They are illustr
 not random samples or an intensity ranking.
 ### Figures and unpublished article editions
 
-`analyze` and `build` generate ten restrained, 200-DPI **PNG-only** research figures with
+`analyze` and `build` generate eleven restrained, 200-DPI **PNG-only** research figures with
 CSV/JSON source data in `outputs/figures/`. Missing denominators remain missing, not zero;
 monthly plots stop at the actual saved cutoff rather than showing future months as zeros.
 Full-snapshot figures do not change with interactive dashboard filters. Sponsor/publisher

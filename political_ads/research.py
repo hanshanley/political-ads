@@ -142,6 +142,23 @@ def research_report(
         "<p>Completion is not accuracy. There is no independent held-out human evaluation. "
         "Future refreshes can add unreviewed messages; their absence from these rates "
         "must not be interpreted as neutral or non-attacking advertising.</p>",
+        "<h2>Same-ad praise, opponent criticism and mixed/contrast advertising</h2>",
+        f"<p>{escape(portrayals['ad_strategy']['definition'])}</p>",
+        table(
+            ("Ad-level category / all unique messages", "Democratic", "Republican"),
+            [
+                (
+                    label,
+                    *(
+                        ratio(portrayals["ad_strategy"]["parties"][party][key])
+                        for party in ("D", "R")
+                    ),
+                )
+                for key, label in portrayals["ad_strategy"]["categories"].items()
+            ],
+        ),
+        "<p>Mixed/contrast here requires own-party praise and opposing-party criticism "
+        "in the same message. It is not the within-scope mixed tone measure below.</p>",
     ]
     for scope, title in (
         ("opponents", "How each party describes opposing-party people"),
@@ -215,6 +232,19 @@ def research_report(
                 )
             )
             + ".</p>",
+            table(
+                ("Advertiser", "Ad-level category", "All messages", "Excluding largest"),
+                [
+                    (
+                        party,
+                        label,
+                        ratio(portrayals["ad_strategy"]["parties"][party][key]),
+                        ratio(portrayals["sensitivity"]["ad_strategy"]["parties"][party][key]),
+                    )
+                    for party in ("D", "R")
+                    for key, label in portrayals["ad_strategy"]["categories"].items()
+                ],
+            ),
             table(
                 (
                     "Scope",

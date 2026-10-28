@@ -64,7 +64,7 @@ def test_real_snapshot_rebuild_is_deterministic_and_downloads_are_complete(tmp_p
     figures = tmp_path / "web/public/figures"
     first_figures = {path.name: path.read_bytes() for path in figures.iterdir()}
     manifest = json.loads(first_figures["manifest.json"])
-    assert len(manifest["charts"]) == 10 and manifest["publication_status"] == "local_only"
+    assert len(manifest["charts"]) == 11 and manifest["publication_status"] == "local_only"
     assert not any(name.endswith(".svg") for name in first_figures)
     chart_data = json.loads(first_figures["chart-data.json"])
     for chart in manifest["charts"]:

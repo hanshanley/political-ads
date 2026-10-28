@@ -396,7 +396,10 @@ def build_figures(dataset: dict, strata: dict, portrayals: dict, output: Path) -
         }
 
         def portrayal_panels(identity, title, scope, field, labels):
-            groups = portrayals["scopes"][scope]
+            strategy = field == "ad_strategy"
+            groups = (
+                portrayals["ad_strategy"]["parties"] if strategy else portrayals["scopes"][scope]
+            )
             keys = list(labels)
             if field == "frames":
                 keys.sort(
@@ -404,29 +407,38 @@ def build_figures(dataset: dict, strata: dict, portrayals: dict, output: Path) -
                 )
             fig, axes = frame(
                 title,
-                "Endorsed descriptions of people; each exact message counts once per category",
-                height=5.5 if field == "tones" else 8.0,
+                "Share of all unique messages; praise and criticism must occur in the same ad"
+                if strategy
+                else "Endorsed descriptions of people; each exact message counts once per category",
+                height=6.2 if strategy else 5.5 if field == "tones" else 8.0,
                 columns=2,
             )
             fig.subplots_adjust(left=0.26, right=0.96, top=0.76, bottom=0.23, wspace=0.22)
             rows = []
             for ax, party in zip(axes, COLORS, strict=True):
                 group = groups[party]
-                total = group["described"]["count"]
+                total = (
+                    next(iter(group.values()))["total"] if strategy else group["described"]["count"]
+                )
                 label = (
-                    ("Democrats on Republicans" if party == "D" else "Republicans on Democrats")
+                    f"{NAMES[party]} ads"
+                    if strategy
+                    else (
+                        "Democrats on Republicans" if party == "D" else "Republicans on Democrats"
+                    )
                     if scope == "opponents"
                     else f"{NAMES[party]} ads on their candidates"
                 )
                 ax.set_title(
-                    f"{label}\n{total:,} messages with a description",
+                    f"{label}\n{total:,} "
+                    + ("unique messages" if strategy else "messages with a description"),
                     loc="left",
                     fontsize=10,
                     color=COLORS[party],
                     pad=17,
                 )
                 for index, key in enumerate(keys):
-                    value = group[field][key]
+                    value = group[key] if strategy else group[field][key]
                     rows.append(
                         {"scope": scope, "label": labels[key], "key": key, "party": party, **value}
                     )
@@ -460,7 +472,7 @@ def build_figures(dataset: dict, strata: dict, portrayals: dict, output: Path) -
                     ax.text(
                         0.5,
                         0.5,
-                        "No reviewed descriptions",
+                        "No messages" if strategy else "No reviewed descriptions",
                         transform=ax.transAxes,
                         ha="center",
                         color="#777777",
@@ -469,17 +481,35 @@ def build_figures(dataset: dict, strata: dict, portrayals: dict, output: Path) -
                 fig,
                 identity,
                 title,
-                "Context-coded message shares among reviewed ads with "
+                "Own-side praise, opponent criticism or both within the same ad; "
+                "shares of all unique messages."
+                if strategy
+                else "Context-coded message shares among reviewed ads with "
                 "an eligible person description.",
                 rows,
                 (
-                    "Exclusive tone categories; no description is not neutral. "
-                    if field == "tones"
-                    else "Frames overlap; multiple claims count once per frame. "
+                    "People and party collectives included. 'Only' refers to these two signals; "
+                    "neither is not neutral. Missing/uncertain reviews remain separate. "
+                    if strategy
+                    else (
+                        "Exclusive tone categories; no description is not neutral. "
+                        if field == "tones"
+                        else "Frames overlap; multiple claims count once per frame. "
+                    )
                 )
                 + "Quoted opponents and rebutted claims excluded. AI-assisted, not human gold.",
             )
 
+        portrayal_panels(
+            "ad-strategy",
+            "Do ads praise, attack, or combine both?",
+            "all",
+            "ad_strategy",
+            {
+                key: textwrap.fill(label, 25)
+                for key, label in portrayals["ad_strategy"]["categories"].items()
+            },
+        )
         for scope, prefix, name in (
             ("opponents", "opponent", "their opponents"),
             ("self", "self", "their own candidates"),
@@ -571,6 +601,7 @@ def build_figures(dataset: dict, strata: dict, portrayals: dict, output: Path) -
         )
 
     order = (
+        "ad-strategy",
         "opponent-tone",
         "self-tone",
         "opponent-frames",

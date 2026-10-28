@@ -24,6 +24,18 @@ These are AI-assisted full-text contextual labels, not independently validated h
 
 *Reviewed, uncertain, unreviewed and stale exact messages by advertiser alignment.* [Exact data](figures/portrayal-coverage.csv).
 
+## Does the same ad praise its own side, attack the other side, or do both?
+
+Shares of all exact party/messages, not just messages describing people. Own-side praise is an endorsed positive description of a supported person or collective with the advertiser's party; opponent criticism is an endorsed negative description of an opposing-party person or collective. Mixed/contrast requires both in the same message. 'Only' means one of these two signals without the other; other sentiments can coexist. Neither is not neutral. Same-party rivals, unknown target parties, quoted opponents and rebutted or unclear voices do not supply these signals. Uncertain, unreviewed and stale messages stay in the denominator but are reported separately, never classified as neither. Displayed percentages are rounded.
+
+Democratic ads: own-side praise only: 478/1,200 (39.8%); mixed: own praise and opponent criticism: 105/1,200 (8.8%); opponent criticism only: 414/1,200 (34.5%); neither signal: 201/1,200 (16.8%); uncertain or missing review: 2/1,200 (0.2%). These mutually exclusive categories account for every unique message. This same-ad contrast measure is different from mixed positive/negative descriptions within one target scope below.
+
+Republican ads: own-side praise only: 126/459 (27.5%); mixed: own praise and opponent criticism: 76/459 (16.6%); opponent criticism only: 220/459 (47.9%); neither signal: 36/459 (7.8%); uncertain or missing review: 1/459 (0.2%). These mutually exclusive categories account for every unique message. This same-ad contrast measure is different from mixed positive/negative descriptions within one target scope below.
+
+![Own-side praise, opponent criticism or both within the same ad; shares of all unique messages.](figures/ad-strategy.png)
+
+*Own-side praise, opponent criticism or both within the same ad; shares of all unique messages.* [Exact data](figures/ad-strategy.csv).
+
 ## How they describe the other side
 
 This comparison counts endorsed descriptions of named people. Opposing-party collectives and same-party primary rivals are reported separately in the technical report. Quoted opponents and allegations being rebutted do not become the advertiser's own views.
@@ -129,9 +141,15 @@ Republican-aligned Brian Stover for Congress on Brian Stover: positive; independ
 
 A source-mix check removes each party's largest publisher by record count and deduplicates again: Democratic: AFL-CIO; Republican: Senate Leadership Fund. This cannot turn an opportunistic collection into a representative sample.
 
+For Democratic ads, the whole-ad shares change after exclusion: own-side praise only from 478/1,200 (39.8%) to 286/919 (31.1%); mixed: own praise and opponent criticism from 105/1,200 (8.8%) to 104/919 (11.3%); opponent criticism only from 414/1,200 (34.5%) to 412/919 (44.8%). Each denominator includes all unique messages remaining in that collection.
+
 For Democratic ads describing opposing-party people, any-negative portrayals change from 517/521 (99.2%) to 514/518 (99.2%) after that exclusion. Differences can still reflect races, phases, extraction formats and repeated changed-target templates, not a pure party effect.
 
+For Republican ads, the whole-ad shares change after exclusion: own-side praise only from 126/459 (27.5%) to 117/309 (37.9%); mixed: own praise and opponent criticism from 76/459 (16.6%) to 76/309 (24.6%); opponent criticism only from 220/459 (47.9%) to 97/309 (31.4%). Each denominator includes all unique messages remaining in that collection.
+
 For Republican ads describing opposing-party people, any-negative portrayals change from 274/275 (99.6%) to 154/155 (99.4%) after that exclusion. Differences can still reflect races, phases, extraction formats and repeated changed-target templates, not a pure party effect.
+
+The party ordering reverses after this source exclusion for own-side praise only and opponent criticism only. Those raw gaps are source-sensitive, not general party differences.
 
 ![Largest five publishers per party and all remaining publishers.](figures/publisher-composition.png)
 

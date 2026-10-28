@@ -236,16 +236,17 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
       </section>
       <section className="section" id="research-figures">
         <div className="section-heading"><p className="eyebrow">FULL-SNAPSHOT RESEARCH</p>
-          <h2>Person-level portrayals, with evidence attached.</h2>
-          <p>The full-snapshot artifacts compare opponent and supported-candidate tone, semantic
-            frames and review coverage. Issue, time and source-mix figures remain secondary collection
+          <h2>Ad strategy and person-level portrayals.</h2>
+          <p>The full-snapshot artifacts compare same-ad praise and attacks, opponent and
+            supported-candidate tone, semantic frames and review coverage.
+            Issue, time and source-mix figures remain secondary collection
             context. These whole-collection figures do not change with the filters above.</p>
           <p><a href={`${import.meta.env.BASE_URL}report.html`}>Read the illustrated research report</a>
             {" · "}<a href={`${import.meta.env.BASE_URL}article.html`}>Read the unpublished article draft</a>
             {" · "}<a href={`${import.meta.env.BASE_URL}figures/chart-data.json`}>Exact chart data</a>
             {" · "}<a href={`${import.meta.env.BASE_URL}figures/portrayal-evidence.json`}>Portrayal evidence</a></p>
           <p className="figure-links">
-            {["opponent-tone", "self-tone", "opponent-frames", "self-frames", "portrayal-coverage"]
+            {["ad-strategy", "opponent-tone", "self-tone", "opponent-frames", "self-frames", "portrayal-coverage"]
               .map((figure, index) => <span key={figure}>{index > 0 && " · "}
                 <a href={`${import.meta.env.BASE_URL}figures/${figure}.png`}>
                   {figure.replaceAll("-", " ")}</a></span>)}
@@ -260,8 +261,8 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
         </div>
         <a href={`${import.meta.env.BASE_URL}report.html`}>
           <img loading="lazy" style={{ width: "100%", height: "auto" }}
-            src={`${import.meta.env.BASE_URL}figures/opponent-tone.png`}
-            alt="Full-collection opponent-portrayal tone comparison; open the report for exact counts and evidence." />
+            src={`${import.meta.env.BASE_URL}figures/ad-strategy.png`}
+            alt="Full-collection shares of own-side praise only, opponent criticism only, both, neither, and uncertain reviews." />
         </a>
       </section>
       <section className="section" id="evidence">

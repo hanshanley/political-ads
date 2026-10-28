@@ -93,6 +93,41 @@ export function uniqueMessages(ads: Ad[]): Ad[] {
 
 const eligibleVoices = new Set<Description["voice"]>(["advertiser", "adopted_clip"]);
 
+export const adStrategyLabels = {
+  own_positive_only: "Own-side praise only",
+  contrast: "Mixed: own praise and opponent criticism",
+  opponent_negative_only: "Opponent criticism only",
+  neither: "Neither signal",
+  not_reviewed: "Uncertain or missing review",
+};
+export type AdStrategy = keyof typeof adStrategyLabels;
+
+export function adStrategySummary(ads: Ad[]):
+Record<"D" | "R", { messages: number; counts: Record<AdStrategy, number> }> {
+  const messages = uniqueMessages(ads);
+  return Object.fromEntries((["D", "R"] as const).map(party => {
+    const group = messages.filter(ad => ad.alignment === party);
+    const counts: Record<AdStrategy, number> = {
+      own_positive_only: 0, contrast: 0, opponent_negative_only: 0, neither: 0, not_reviewed: 0,
+    };
+    for (const ad of group) {
+      if (ad.portrayal_review?.status !== "reviewed") {
+        counts.not_reviewed++;
+        continue;
+      }
+      const descriptions = ad.portrayal_review.descriptions
+        .filter(d => eligibleVoices.has(d.voice));
+      const praise = descriptions.some(d => d.target_party === party &&
+        d.target_role === "self_or_supported" && d.tone === "positive");
+      const criticism = descriptions.some(d => (d.target_party === "D" || d.target_party === "R") &&
+        d.target_party !== party && d.target_role === "opponent" && d.tone === "negative");
+      counts[praise && criticism ? "contrast" : praise ? "own_positive_only" :
+        criticism ? "opponent_negative_only" : "neither"]++;
+    }
+    return [party, { messages: group.length, counts }];
+  })) as Record<"D" | "R", { messages: number; counts: Record<AdStrategy, number> }>;
+}
+
 export function eligibleDescriptions(ad: Ad, scope: PortrayalScope): Description[] {
   if (ad.portrayal_review?.status !== "reviewed") return [];
   return ad.portrayal_review.descriptions.filter(description =>
