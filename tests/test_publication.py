@@ -43,10 +43,19 @@ def test_csv_preserves_full_text_evidence_and_protects_formulas():
     assert rows[1]["release_title"] == "Original release"
 
 
-def test_real_snapshot_rebuild_is_deterministic_and_downloads_are_complete(tmp_path):
+def test_real_snapshot_rebuild_is_deterministic_and_downloads_are_complete(tmp_path, monkeypatch):
     import json
     import shutil
+    import socket
+    import subprocess
+    import sys
 
+    from political_ads.strategy_audit import audit_strategy
+
+    def reject_network(*args, **kwargs):
+        raise AssertionError("Reproduction must not make network requests")
+
+    monkeypatch.setattr(socket.socket, "connect", reject_network)
     shutil.copytree(
         ROOT / "data",
         tmp_path / "data",
@@ -55,7 +64,18 @@ def test_real_snapshot_rebuild_is_deterministic_and_downloads_are_complete(tmp_p
             "processed",
             "media",
             "models",
+            "cache",
         ),
+    )
+    assert not any(
+        (tmp_path / "data" / name).exists()
+        for name in (
+            "raw",
+            "processed",
+            "media",
+            "models",
+            "cache",
+        )
     )
     build(tmp_path)
     validate(tmp_path)
@@ -75,6 +95,48 @@ def test_real_snapshot_rebuild_is_deterministic_and_downloads_are_complete(tmp_p
             if "total" in row:
                 assert row["share"] == (row["count"] / row["total"] if row["total"] else None)
     dataset = json.loads(first["dataset.json"])
+    offline_audit = audit_strategy(tmp_path)
+    audit_path = tmp_path / "strategy-audit.json"
+    audit_command = [
+        sys.executable,
+        "-m",
+        "political_ads.cli",
+        "--root",
+        str(tmp_path),
+        "audit-strategy",
+        "--output",
+        str(audit_path),
+    ]
+    audited = subprocess.run(audit_command, check=True, capture_output=True, text=True)
+    audit = json.loads(audit_path.read_text())
+    assert audit == offline_audit
+    assert json.loads(audited.stdout)["verified_metric_groups"] == 20
+    assert audit["verified_chart_rows"] == 10
+    assert audit["snapshot_id"] == dataset["snapshot_id"]
+    assert len(audit["messages"]) == len(
+        {
+            (ad["alignment"], ad["message_id"])
+            for ad in dataset["ads"]
+            if ad["alignment"] in ("D", "R")
+        }
+    )
+    by_id = {ad["id"]: ad for ad in dataset["ads"]}
+    for row in audit["messages"]:
+        assert row["text"] == by_id[row["id"]]["text"]
+        assert row["review"] == by_id[row["id"]]["portrayal_review"]
+    audit_csv = tmp_path / "outputs/figures/ad-strategy.csv"
+    original_csv = audit_csv.read_bytes()
+    metric = audit["summary"]["full"]["D"]["own_positive_only"]
+    changed_csv = original_csv.replace(
+        f",{metric['count']},{metric['total']},".encode(),
+        f",{metric['count'] + 1},{metric['total']},".encode(),
+        1,
+    )
+    assert changed_csv != original_csv
+    audit_csv.write_bytes(changed_csv)
+    failed = subprocess.run(audit_command, capture_output=True, text=True)
+    assert failed.returncode == 1 and "Same-ad audit mismatch: chart CSV" in failed.stderr
+    audit_csv.write_bytes(original_csv)
     article = json.loads((tmp_path / "outputs/article-data.json").read_text())
     assert article["snapshot_id"] == dataset["snapshot_id"]
     editions = {

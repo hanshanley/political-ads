@@ -27,6 +27,7 @@ python3.12 -m venv .venv
 .venv/bin/python -m pip install -e '.[dev]'
 .venv/bin/python -m political_ads.cli build
 .venv/bin/python -m political_ads.cli validate
+.venv/bin/python -m political_ads.cli audit-strategy
 npm ci --prefix web
 npm run build --prefix web
 npm run preview --prefix web
@@ -88,7 +89,25 @@ with known target parties and uses all unique messages as its denominator. Neith
 uncertain/missing reviews remain separate categories; neither is not neutral. "Only" refers to
 these two signals, not every sentiment in the ad.
 
-The same command generates both **unpublished article editions**:
+For the exact decision table, message-selection tie-breaker, denominators and a worked
+calculation, see [same-ad methodology](docs/METHODOLOGY.md#same-ad-praise-and-criticism).
+**Reproducing the arithmetic is not rerunning the original AI review.** The saved ledger
+is a versioned analysis input; its judgments have not had independent human validation.
+The offline auditor does not call the production strategy classifier. It checks all 20
+full/source-excluded category groups and the ten chart CSV rows against the canonical inputs.
+To inspect every selected message's full text, complete review and signal evidence:
+
+```bash
+git rev-parse HEAD
+.venv/bin/python -m political_ads.cli audit-strategy --output /tmp/political-ads-strategy-audit.json
+```
+
+The audit records input SHA-256 hashes, snapshot ID, annotation provenance and runtime
+package versions. It fails on stale inputs, wrong message IDs/counts/denominators/shares,
+wrong publisher exclusions, or a mismatched chart CSV. CI and research refresh both run it.
+Neither audit nor build calls a model, collects new data or publishes anything.
+
+The `analyze` and `build` commands generate both **unpublished article editions**:
 `outputs/substack.md` and `outputs/themarginoferror.html`. Shared copy, counts and source-bound
 illustrations are in `outputs/article-data.json`. Both editions use the same snapshot and
 eleven original PNG figures under `outputs/figures/`; no new SVG charts are produced.

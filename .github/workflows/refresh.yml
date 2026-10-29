@@ -62,6 +62,7 @@ jobs:
           political-ads parquet
           political-ads build
           political-ads validate
+          political-ads audit-strategy
           pytest -q
       - name: Check dashboard against the new snapshot
         if: steps.scope.outputs.enabled == 'true'

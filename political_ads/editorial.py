@@ -164,8 +164,10 @@ def article_data(dataset: dict, strata: dict, portrayals: dict, figures: dict) -
             f"{NAMES[party]}-aligned messages: {ratio(reviewed['reviewed'])} reviewed; "
             f"{reviewed['uncertain']['count']:,} uncertain, "
             f"{reviewed['unreviewed']['count']:,} unreviewed and "
-            f"{reviewed['stale']['count']:,} stale. Only reviewed messages enter the "
-            "description rates below. Missing evidence is not neutral language."
+            f"{reviewed['stale']['count']:,} stale. Only reviewed messages supply counted "
+            "descriptions. The whole-ad table retains all messages in its denominator; "
+            "person-scope tone rates require an eligible description. "
+            "Missing evidence is not neutral language."
         )
     paragraph(
         "These are AI-assisted full-text contextual labels, not independently validated "
@@ -176,6 +178,17 @@ def article_data(dataset: dict, strata: dict, portrayals: dict, figures: dict) -
     heading("Does the same ad praise its own side, attack the other side, or do both?")
     strategy = portrayals["ad_strategy"]
     paragraph(strategy["definition"])
+    paragraph(
+        "How this is calculated: first select one record per advertiser-alignment/message, "
+        "normalizing only whitespace and case and keeping the earliest in-scope release or "
+        "reported/scheduled delivery date, then ad ID to break ties. Read its saved contextual "
+        "review for own-party praise and opposing-party criticism. Divide each category's "
+        "message count by all unique messages for that alignment, including missing reviews. "
+        "The open-source audit-strategy command independently checks these counts and exports "
+        "each message's full text, review and the passages supplying either signal. "
+        "This reproduces arithmetic from saved AI-assisted decisions, not the original "
+        "model judgments; exact original prompts and decoding settings are not in the ledger."
+    )
     for party in ("D", "R"):
         group = strategy["parties"][party]
         paragraph(

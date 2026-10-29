@@ -81,8 +81,11 @@ export function filterAds(ads: Ad[], filters: Filters): Ad[] {
 
 export function uniqueMessages(ads: Ad[]): Ad[] {
   const seen = new Set<string>();
-  return [...ads].sort((a, b) => observationDate(a).localeCompare(observationDate(b)) ||
-    a.id.localeCompare(b.id))
+  return [...ads].sort((a, b) => {
+    const left = observationDate(a), right = observationDate(b);
+    if (left !== right) return left < right ? -1 : 1;
+    return a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
+  })
     .filter(ad => {
       const key = `${ad.alignment}:${ad.message_id}`;
       if (seen.has(key)) return false;

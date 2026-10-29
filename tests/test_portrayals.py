@@ -10,6 +10,7 @@ from political_ads.portrayals import (
     validate_portrayal_review,
 )
 from political_ads.schema import digest
+from political_ads.strategy_audit import audit_ad_strategy
 
 CODEBOOK = {
     "version": "test",
@@ -168,6 +169,14 @@ def test_same_ad_strategy_partitions_all_messages_with_mirrored_party_direction(
         | {"portrayal_review": {"status": "stale", "descriptions": []}},
     ]
     result = portrayal_summary(records, CODEBOOK)
+    audit = audit_ad_strategy(records, result)
+    trace = {row["id"]: row for row in audit["messages"]}
+    assert trace["contrast"]["own_praise_description_indices"] == [1]
+    assert trace["contrast"]["opponent_criticism_description_indices"] == [0]
+    assert trace["praise"]["text"] == positive["text"]
+    assert trace["praise"]["review"] == positive["portrayal_review"]
+    assert "praise-mirror" not in trace
+    assert trace["uncertain"]["category"] == "not_reviewed"
     group = result["ad_strategy"]["parties"][party]
     assert {key: value["count"] for key, value in group.items()} == {
         "own_positive_only": 1,
@@ -187,6 +196,73 @@ def test_same_ad_strategy_partitions_all_messages_with_mirrored_party_direction(
     )
     filtered = portrayal_summary([records[5]], CODEBOOK)["ad_strategy"]["parties"][party]
     assert filtered["own_positive_only"]["ad_ids"] == ["praise-mirror"]
+
+
+@pytest.mark.parametrize(
+    "field,value",
+    [
+        ("count", 2),
+        ("total", 2),
+        ("share", 0.5),
+        ("ad_ids", ["wrong-message"]),
+    ],
+)
+def test_independent_strategy_audit_rejects_tampered_metrics(field, value):
+    record = attach(ad("attack"), [description()])
+    summary = portrayal_summary([record], CODEBOOK)
+    summary["ad_strategy"]["parties"]["D"]["opponent_negative_only"][field] = value
+    with pytest.raises(ValueError, match="Same-ad audit mismatch: full/D/opponent_negative_only"):
+        audit_ad_strategy([record], summary)
+
+
+def test_strategy_audit_does_not_call_production_classifier_and_checks_source_exclusion(
+    monkeypatch,
+):
+    import political_ads.portrayals as portrayals
+
+    record = attach(ad("attack"), [description()])
+    summary = portrayal_summary([record], CODEBOOK)
+
+    def forbidden(*args, **kwargs):
+        raise AssertionError("Production classification must not supply the audit result")
+
+    monkeypatch.setattr(portrayals, "ad_strategy", forbidden)
+    audit = audit_ad_strategy([record], summary)
+    assert audit["messages"][0]["category"] == "opponent_negative_only"
+    assert audit["source_excluded_message_ids"] == []
+    summary["sensitivity"]["excluded_publishers"]["D"] = "Wrong publisher"
+    with pytest.raises(ValueError, match="excluded publishers"):
+        audit_ad_strategy([record], summary)
+
+
+def test_earliest_unreviewed_mirror_stays_missing_until_publisher_exclusion_rededuplicates():
+    original = ad("a", text="Alex is corrupt.", sponsor="Alpha")
+    mirror = attach(original | {"id": "b", "sponsor": "Beta"}, [description()])
+    extra = attach(
+        ad("d", text="Alex is corrupt. Different policy.", sponsor="Beta"), [description()]
+    )
+    records = [
+        original,
+        original | {"id": "c"},
+        original | {"id": "e"},
+        mirror,
+        extra,
+    ]
+    summary = portrayal_summary(records, CODEBOOK)
+    audit = audit_ad_strategy(records, summary)
+    assert audit["excluded_publishers"] == {"D": "Alpha"}
+    assert {row["id"]: row["category"] for row in audit["messages"]} == {
+        "a": "not_reviewed",
+        "d": "opponent_negative_only",
+    }
+    assert audit["source_excluded_message_ids"] == ["b", "d"]
+    replacement = audit["source_excluded_replacement_messages"]
+    assert len(replacement) == 1 and replacement[0]["id"] == "b"
+    assert replacement[0]["text"] == mirror["text"]
+    assert replacement[0]["review"] == mirror["portrayal_review"]
+    assert replacement[0]["opponent_criticism_description_indices"] == [0]
+    reduced = audit["summary"]["excluding_largest_publishers"]["D"]
+    assert reduced["opponent_negative_only"] == {"count": 2, "total": 2, "share": 1}
 
 
 def test_strategy_does_not_infer_praise_or_attack_from_reverse_tones_or_unknown_parties():
@@ -214,6 +290,12 @@ def test_quoted_or_rebutted_accusation_does_not_count_as_endorsed_attack(voice):
     assert result["scopes"]["opponents"]["D"]["described"]["count"] == 0
     assert result["evidence"][0]["voice"] == voice
     assert result["ad_strategy"]["parties"]["D"]["neither"]["count"] == 1
+    assert (
+        audit_ad_strategy([attach(ad("quote"), [description(voice=voice)])], result)["messages"][0][
+            "category"
+        ]
+        == "neither"
+    )
 
 
 @pytest.mark.parametrize(

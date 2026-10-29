@@ -213,9 +213,21 @@ def main() -> None:
         "snap-discover",
         "snap-collect",
         "analyze",
+        "audit-strategy",
     ):
         command_parser = subcommands.add_parser(command)
         command_parser.add_argument("--offline", action="store_true")
+        if command == "audit-strategy":
+            command_parser.description = (
+                "Independently verify saved same-ad metrics and chart CSV using canonical "
+                "local inputs; no collection, model calls or publication."
+            )
+            command_parser.add_argument(
+                "--output",
+                type=Path,
+                help="Write full-text message/review evidence and provenance as JSON; "
+                "a compact verification summary is always printed",
+            )
         if command in {
             "collect",
             "update",
@@ -301,6 +313,28 @@ def main() -> None:
 
             research(root)
             print("Local analysis saved to outputs/analysis.html and complete JSON/CSV")
+        if args.command == "audit-strategy":
+            from political_ads.strategy_audit import audit_strategy
+
+            audit = audit_strategy(root)
+            if args.output:
+                write_json(args.output, audit)
+            print(
+                json.dumps(
+                    {
+                        key: value
+                        for key, value in audit.items()
+                        if key
+                        not in {
+                            "messages",
+                            "source_excluded_message_ids",
+                            "source_excluded_replacement_messages",
+                        }
+                    },
+                    indent=2,
+                    sort_keys=True,
+                )
+            )
     except (OSError, ValueError, KeyError, duckdb.Error) as error:
         print(f"{type(error).__name__}: {error}", file=sys.stderr)
         sys.exit(1)

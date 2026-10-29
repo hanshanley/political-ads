@@ -41,6 +41,126 @@ the largest-publisher exclusions and deduplication. This does not change the sep
 person-scope mixed-tone measure, which can combine positive and negative descriptions
 of people within one scope.
 
+### Exact calculation
+
+The **semantic input** is the saved, AI-assisted description ledger, not a sentiment-word
+count. Reviewers decide from the complete recovered text who is being described, their
+role/party, whether the advertiser endorses the description, and its tone. A negative
+description of a policy or price alone is not automatically an attack on a person.
+The **aggregation** below is deterministic and symmetric for D and R:
+
+1. Load the committed text partitions and candidate/alignment metadata; include only
+   eligible English, in-window records. Other and unknown advertiser alignments stay
+   in the explorer/export but not the D/R comparison.
+2. Attach saved reviews only to matching raw text, sponsor and alignment. A changed
+   publisher-page hash alone does not invalidate unchanged text; changed text/sponsor/
+   alignment makes the old decision stale. Missing reviews are not inferred.
+3. After any dashboard filters, normalize whitespace to single spaces, trim and case-fold
+   the complete text, then SHA-256 hash it. The deduplication key is `(alignment, message_id)`,
+   **not** sponsor, source, creative ID, target, wording similarity or a paid placement.
+   Punctuation, changed names and negation are preserved.
+4. Sort by in-scope observation date, then locale-independent lexicographic ad ID,
+   and keep the first record for each key. The date is
+   `max(2026-01-01, delivery_start)` when present; otherwise it
+   is `published`. Snap's delivery-start field is a scheduled date, not verified delivery.
+   Review status does **not** affect selection: a later reviewed mirror cannot replace an
+   earlier unreviewed record. Exact same-party text from different sponsors collapses
+   under this rule, but reviews do not transfer across sponsors. This may lose context;
+   the audit exposes the selected sponsor and review rather than combining their labels.
+5. If that representative is uncertain, unreviewed or stale, assign `not_reviewed`
+   before testing any descriptions. Otherwise consider only `advertiser` and `adopted_clip`
+   descriptions. A praise signal needs `target_party == alignment`,
+   `target_role == self_or_supported`, and `tone == positive`. A criticism signal needs
+   the **other D/R party**, `target_role == opponent`, and `tone == negative`.
+   Both person and collective targets can supply either signal. One eligible passage
+   suffices; repeated passages or frames do not add more than one message.
+6. Apply this mutually exclusive decision table, then divide each count by **all**
+   selected messages for that advertiser alignment. No spending/impression weight is used.
+
+| Review status | Own praise | Opponent criticism | Category |
+|---|---|---|---|
+| Reviewed | Yes | No | Own-side praise only |
+| Reviewed | Yes | Yes | Mixed/contrast |
+| Reviewed | No | Yes | Opponent criticism only |
+| Reviewed | No | No | Neither signal |
+| Uncertain, unreviewed or stale | Not tested | Not tested | Uncertain or missing review |
+
+For category `c` and alignment `p`, `share = count(c, p) / all_unique_messages(p)`.
+Store the unrounded fraction and exact IDs; multiply by 100 and round to one decimal
+only for display. All five counts exhaust the denominator; rounded percentages need
+not add to exactly 100. A zero denominator yields `null`/an em dash, not 0%.
+For the saved October 28 snapshot, Democratic mixed/contrast is `105 / 1200 = 8.75%`,
+displayed as **8.8%**; Republican mixed/contrast is `76 / 459 = 16.5577...%`,
+displayed as **16.6%**. These are shares of unique recovered messages, not airings.
+
+An ad praising its supported candidate and criticizing an opposing candidate has
+same-ad mixed/contrast strategy even when its self scope is positive-only and its
+opponent scope negative-only. Conversely, an ad both praising and criticizing an
+opponent has within-opponent mixed tone, but does not have same-ad contrast unless
+it also praises its own party's supported people/collectives.
+
+The source check removes each alignment's largest publisher by **pre-deduplication
+eligible source-record count**, with publisher-name alphabetical order breaking ties.
+Publisher is the sponsor name, falling back to the collection-source ID with its
+platform suffix removed. Exclude that publisher's records **before deduplicating again**;
+do not simply subtract its representative IDs, because another publisher's mirror can
+remain. At the saved snapshot this excludes AFL-CIO for D and Senate Leadership Fund
+for R, leaving 919 and 309 messages. Praise-only becomes 31.1% D / 37.9% R and
+criticism-only 44.8% D / 31.4% R: both raw party orderings reverse. This is a
+source-composition diagnostic, not representative adjustment.
+
+### Reproduce and inspect the decisions
+
+After installing the README dependencies, all commands below use the committed
+`data/site/*.json` partitions, metadata/codebooks and `data/portrayal-reviews.json`.
+They require no raw-media cache, processed Parquet, API credentials, network requests
+or model service. Record `git rev-parse HEAD`: daily research refreshes can change
+the inputs and results. The October 28 worked example above uses snapshot
+`dfdf38b6b26fd7d36924d0fe6c6e653ac68d5d5cc5a0998d304568867d1e35b0`.
+
+```bash
+git rev-parse HEAD
+.venv/bin/python -m political_ads.cli build
+.venv/bin/python -m political_ads.cli validate
+.venv/bin/python -m political_ads.cli audit-strategy --output /tmp/political-ads-strategy-audit.json
+```
+
+`political_ads/portrayals.py` is the production classifier.
+`political_ads/strategy_audit.py` independently applies the decision table; it does not
+call the production classifier, strategy summary or deduplication helper. It first
+checks the saved analysis against the canonical inputs, then verifies every full and
+source-excluded category's exact IDs/count/total/unrounded share and the chart CSV.
+Any discrepancy exits nonzero; the command does not overwrite or repair research outputs.
+CI and automatic research refresh run it after build/validation.
+
+The optional audit JSON retains each selected message's complete `text`, sponsor,
+source URL, hashes, selection date, assigned `category` and full attached `review`.
+`own_praise_description_indices` and `opponent_criticism_description_indices` are
+zero-based indices into `review.descriptions`: follow them to the literal passage,
+target anchor, character offsets, target party/role, tone and voice that supplied each
+signal. Empty lists for a reviewed message mean no eligible signal was coded, not
+that a human certified its absence. Missing-review rows preserve their status/reason.
+`source_excluded_message_ids` identifies the retained sensitivity representatives.
+If exclusion selects a different mirror, `source_excluded_replacement_messages`
+retains its complete text, review and signal indices too; no retained sensitivity
+record is represented only by metadata.
+The printed summary and JSON also record the snapshot ID, input SHA-256 hashes,
+saved annotation provenance, Python version and installed package versions.
+`outputs/analysis.json` retains **all** analyzed source records, including unselected
+mirrors; the audit export is the explicitly deduplicated D/R comparison set.
+
+**Reproducibility boundary:** the ledger identifies GPT-5.6 Sol as the AI-assisted
+reviewer and retains the original frozen input snapshot, repair-process metadata
+and bound decisions. It does not contain exact original prompts, backend revision,
+decoding parameters or random seeds. A build replays these decisions; it does not
+recreate them from raw text. Do not claim independent semantic accuracy, inter-rater
+agreement or a fully reproducible model-labeling experiment. Re-annotation requires
+reading the full text under the codebook and versioning any changed decisions; it
+is separate from reproducing the current calculations. PNG bytes may also vary with
+Matplotlib/font/platform versions even when all counts and evidence are identical;
+record the runtime when comparing images, rather than expecting cross-platform
+byte identity.
+
 ## Attribution and race
 
 Publisher alignment comes from official identity, not ad vocabulary. Publisher, sole creative

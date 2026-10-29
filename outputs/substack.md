@@ -14,9 +14,9 @@ The saved collection through 2026-10-28 contains 1,757 English ad-text records: 
 
 ## First, what has been reviewed?
 
-Democratic-aligned messages: 1,198/1,200 (99.8%) reviewed; 2 uncertain, 0 unreviewed and 0 stale. Only reviewed messages enter the description rates below. Missing evidence is not neutral language.
+Democratic-aligned messages: 1,198/1,200 (99.8%) reviewed; 2 uncertain, 0 unreviewed and 0 stale. Only reviewed messages supply counted descriptions. The whole-ad table retains all messages in its denominator; person-scope tone rates require an eligible description. Missing evidence is not neutral language.
 
-Republican-aligned messages: 458/459 (99.8%) reviewed; 1 uncertain, 0 unreviewed and 0 stale. Only reviewed messages enter the description rates below. Missing evidence is not neutral language.
+Republican-aligned messages: 458/459 (99.8%) reviewed; 1 uncertain, 0 unreviewed and 0 stale. Only reviewed messages supply counted descriptions. The whole-ad table retains all messages in its denominator; person-scope tone rates require an eligible description. Missing evidence is not neutral language.
 
 These are AI-assisted full-text contextual labels, not independently validated human judgments. Exact passages, target anchors and input hashes are retained. A reported allegation is a portrayal, not this project's finding that it is true.
 
@@ -27,6 +27,8 @@ These are AI-assisted full-text contextual labels, not independently validated h
 ## Does the same ad praise its own side, attack the other side, or do both?
 
 Shares of all exact party/messages, not just messages describing people. Own-side praise is an endorsed positive description of a supported person or collective with the advertiser's party; opponent criticism is an endorsed negative description of an opposing-party person or collective. Mixed/contrast requires both in the same message. 'Only' means one of these two signals without the other; other sentiments can coexist. Neither is not neutral. Same-party rivals, unknown target parties, quoted opponents and rebutted or unclear voices do not supply these signals. Uncertain, unreviewed and stale messages stay in the denominator but are reported separately, never classified as neither. Displayed percentages are rounded.
+
+How this is calculated: first select one record per advertiser-alignment/message, normalizing only whitespace and case and keeping the earliest in-scope release or reported/scheduled delivery date, then ad ID to break ties. Read its saved contextual review for own-party praise and opposing-party criticism. Divide each category's message count by all unique messages for that alignment, including missing reviews. The open-source audit-strategy command independently checks these counts and exports each message's full text, review and the passages supplying either signal. This reproduces arithmetic from saved AI-assisted decisions, not the original model judgments; exact original prompts and decoding settings are not in the ledger.
 
 Democratic ads: own-side praise only: 478/1,200 (39.8%); mixed: own praise and opponent criticism: 105/1,200 (8.8%); opponent criticism only: 414/1,200 (34.5%); neither signal: 201/1,200 (16.8%); uncertain or missing review: 2/1,200 (0.2%). These mutually exclusive categories account for every unique message. This same-ad contrast measure is different from mixed positive/negative descriptions within one target scope below.
 

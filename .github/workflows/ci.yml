@@ -25,6 +25,7 @@ jobs:
           pytest -q
           political-ads build
           political-ads validate
+          political-ads audit-strategy
       - uses: actions/setup-node@v6
         with:
           node-version: "22"

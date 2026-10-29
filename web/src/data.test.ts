@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   adStrategySummary, csv, EMPTY_FILTERS, filterAds, monthlyCounts, observationDate, portrayalSummary, publisher,
-  selectPortrayalEvidence, shares, type Ad, type Description,
+  selectPortrayalEvidence, shares, uniqueMessages, type Ad, type Description,
 } from "./data";
 
 const base: Ad = {
@@ -42,6 +42,20 @@ const reviewed = (ad: Ad, descriptions: Description[]): Ad => ({
 });
 
 describe("synchronized evidence", () => {
+  it("uses Python-compatible lexical IDs, not locale ordering or review status, to break ties", () => {
+    const missing: Ad = { ...ads[0], id: "A" };
+    const labeled = reviewed({ ...missing, id: "a" }, [
+      description({ target_party: "D", target_role: "self_or_supported", tone: "positive" }),
+    ]);
+    const later = { ...labeled, id: "0", published: "2026-09-02" };
+    const records = [labeled, later, missing];
+    expect(uniqueMessages(records).map(ad => ad.id)).toEqual(["A"]);
+    expect(uniqueMessages([...records].reverse()).map(ad => ad.id)).toEqual(["A"]);
+    expect(adStrategySummary(records).D.counts.not_reviewed).toBe(1);
+    expect(adStrategySummary(records).D.counts.own_positive_only).toBe(0);
+    expect(adStrategySummary([labeled]).D.counts.own_positive_only).toBe(1);
+  });
+
   it.each([["D", "R"], ["R", "D"]] as const)(
     "partitions %s ads by same-ad praise/attack, including collectives and missing evidence",
     (party, other) => {

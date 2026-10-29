@@ -159,6 +159,14 @@ def research_report(
         ),
         "<p>Mixed/contrast here requires own-party praise and opposing-party criticism "
         "in the same message. It is not the within-scope mixed tone measure below.</p>",
+        "<p>Reproduction has two stages: saved AI-assisted full-text judgments supply the "
+        "target, role, voice and tone; deterministic rules then assign the whole-ad category. "
+        "The audit-strategy command independently recomputes all category counts, denominators, "
+        "shares and IDs, including the publisher-exclusion check and chart CSV. Its optional "
+        "JSON output includes each selected message's complete text, review and signal indices. "
+        "It reproduces calculations from the saved labels, not the original model judgments. "
+        "Exact original prompts and decoding settings are not in the ledger. "
+        "See docs/METHODOLOGY.md for the decision table and exact-message selection rules.</p>",
     ]
     for scope, title in (
         ("opponents", "How each party describes opposing-party people"),
