@@ -16,7 +16,7 @@ from political_ads.local_gemma import MODEL, REVISION, LocalGemma
 from political_ads.registry import candidate_mentions
 from political_ads.schema import digest, eligible, message_key
 
-VERSION = "local-ad-claims-1"
+VERSION = "local-ad-claims-2"
 MAX_WORDS = 240
 CONTEXT_CHARS = 1200
 MAX_TOKENS = 8192
@@ -147,20 +147,19 @@ def blocks_for(ad: dict) -> list[dict]:
     offset = 0
     for segment in segments:
         # A unit never crosses a speech/overlay segment; offsets remain in the original text.
-        for match in re.finditer(r"[^\n]+", segment["text"]):
-            words = list(re.finditer(r"\S+", match.group()))
-            for first in range(0, len(words), MAX_WORDS):
-                last = min(first + MAX_WORDS, len(words)) - 1
-                start = offset + match.start() + words[first].start()
-                end = offset + match.start() + words[last].end()
-                units.append(
-                    {
-                        "start": start,
-                        "end": end,
-                        "text": ad["text"][start:end],
-                        "kind": segment["kind"],
-                    }
-                )
+        words = list(re.finditer(r"\S+", segment["text"]))
+        for first in range(0, len(words), MAX_WORDS):
+            last = min(first + MAX_WORDS, len(words)) - 1
+            start = offset + words[first].start()
+            end = offset + words[last].end()
+            units.append(
+                {
+                    "start": start,
+                    "end": end,
+                    "text": ad["text"][start:end],
+                    "kind": segment["kind"],
+                }
+            )
         offset += len(segment["text"]) + 1
     chunks, pending, count = [], [], 0
     for unit in units:
@@ -203,7 +202,11 @@ def prepare(root: Path, output: Path, ad_ids: list[str] | None = None) -> dict:
         "prompt": PROMPT,
         "review_prompt": REVIEW_PROMPT,
         "generation": {"temperature": 0.0, "seed": 0, "max_tokens": MAX_TOKENS, "max_attempts": 2},
-        "chunking": {"max_words": MAX_WORDS, "context_characters": CONTEXT_CHARS},
+        "chunking": {
+            "max_words": MAX_WORDS,
+            "context_characters": CONTEXT_CHARS,
+            "units": "contiguous_segment_windows",
+        },
     }
     path = output / "manifest.json"
     if path.exists():

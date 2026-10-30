@@ -234,6 +234,17 @@ def test_bounded_units_preserve_every_source_character_and_evidence_lane():
         blocks_for(record | {"text": "Changed text"})
 
 
+def test_ocr_line_wrapping_does_not_separate_target_from_predicate():
+    text = "John Doe\nfailed the voters by\nbreaking his promises."
+    block = blocks_for(ad(text=text, segments=[{"text": text, "kind": "video_ocr"}]))[0]
+    claim = validate_response(canonical(payload()), block)[0]
+    assert claim["evidence"][0]["text"] == text
+    assert claim["evidence"][0]["kind"] == "video_ocr"
+    assert (
+        text[claim["targets"][0]["anchor_start"] : claim["targets"][0]["anchor_end"]] == "John Doe"
+    )
+
+
 def test_frozen_inputs_resume_offline_without_model_or_live_corpus(tmp_path):
     fixture_corpus(tmp_path)
     output = tmp_path / "claims"

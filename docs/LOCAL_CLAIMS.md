@@ -47,9 +47,11 @@ DSA's extraction script. It runs on Apple Silicon with temperature 0 and seed 0.
 This is not a guarantee of byte-identical fresh generations across hardware or
 runtime changes. The response records retain runtime versions.
 
-Every input segment is split into source units at line/word boundaries, with at
-most 240 source words per chunk and at most 1,200 preceding characters of
-reference-only context. Units do not cross speech/OCR segment boundaries.
+Every input segment is split into contiguous source windows at word boundaries,
+with at most 240 source words per chunk and at most 1,200 preceding characters
+of reference-only context. Original line breaks remain inside each window:
+OCR line wrapping must not separate a candidate's name from its predicate.
+Units do not cross speech/OCR segment boundaries.
 Claims and anchors can cite only target units, never reference-only context.
 The first local pass extracts claims; a second local pass revises the full
 structured result for source fidelity, target attribution, voice and tone.
