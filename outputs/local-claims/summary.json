@@ -1884,7 +1884,7 @@
       "all_unique_messages": 490,
       "categories_overlap": true,
       "denominator": "normalized_unique_messages",
-      "normalized_unique_messages": 1,
+      "normalized_unique_messages": 2,
       "side_tone": {
         "not_partisan": {
           "negative": {
@@ -1960,9 +1960,10 @@
           },
           "neutral": {
             "ad_ids": [
-              "barr-1560-0"
+              "barr-1560-0",
+              "barr-1713-0"
             ],
-            "count": 1,
+            "count": 2,
             "share": 1.0
           },
           "positive": {
@@ -1983,14 +1984,18 @@
             "share": 0.0
           },
           "neutral": {
-            "ad_ids": [],
-            "count": 0,
-            "share": 0.0
+            "ad_ids": [
+              "barr-1713-0"
+            ],
+            "count": 1,
+            "share": 0.5
           },
           "positive": {
-            "ad_ids": [],
-            "count": 0,
-            "share": 0.0
+            "ad_ids": [
+              "barr-1713-0"
+            ],
+            "count": 1,
+            "share": 0.5
           },
           "uncertain": {
             "ad_ids": [],
@@ -2007,17 +2012,17 @@
   },
   "ads": 1792,
   "ads_by_status": {
-    "normalized": 1,
-    "not_run": 1790,
-    "validation_failed": 1
+    "normalized": 2,
+    "not_run": 1788,
+    "validation_failed": 2
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 1,
-    "not_run": 2014,
-    "validation_failed": 1
+    "normalized": 2,
+    "not_run": 2012,
+    "validation_failed": 2
   },
-  "claims": 6,
+  "claims": 15,
   "fingerprint": "b55ed6ded6b05dbd1e27aa45570fa327f8a140b828af141bcda23ea19df57837",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -2048,6 +2053,10 @@
         {
           "claim_id": "barr-1560-0-claims-001-003",
           "target_index": 0
+        },
+        {
+          "claim_id": "barr-1713-0-claims-001-008",
+          "target_index": 0
         }
       ],
       "positive": [],
@@ -2063,6 +2072,18 @@
         {
           "claim_id": "barr-1560-0-claims-001-005",
           "target_index": 0
+        },
+        {
+          "claim_id": "barr-1713-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "barr-1713-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "barr-1713-0-claims-001-004",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -2077,11 +2098,31 @@
         {
           "claim_id": "barr-1560-0-claims-001-006",
           "target_index": 0
+        },
+        {
+          "claim_id": "barr-1713-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "barr-1713-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "barr-1713-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "barr-1713-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "barr-1713-0-claims-001-009",
+          "target_index": 0
         }
       ],
       "uncertain": []
     }
   },
-  "targets": 6,
+  "targets": 15,
   "version": "local-ad-claims-3"
 }
