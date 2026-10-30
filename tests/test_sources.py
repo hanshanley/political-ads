@@ -43,6 +43,133 @@ def test_cassidy_party_ad_mirror_does_not_become_a_candidate_ad(party_produced):
     assert "NRSC-produced" not in ad["text"]
 
 
+@pytest.mark.parametrize("heading", ["ARTICLE EXCERPTS:", "STORY EXCERPTS:"])
+def test_cfg_affiliate_script_stops_before_republished_news_and_retains_payer(heading):
+    source = next(s for s in SOURCES if s.id == "cfg")
+    candidate = {
+        "candidate_id": "H6FL19228",
+        "name": "COLLINS, CHRIS",
+        "party": "REP",
+        "state": "FL",
+        "office": "H",
+        "district": "19",
+    }
+    script = (
+        "Chris Collins thinks he is qualified to represent Florida in Washington. "
+        "His record tells a very different story."
+    )
+    release = post(
+        "ICYMI: Win It Back PAC Clocks Collins",
+        "<p>Club for Growth Action’s affiliated Win It Back PAC launched a new ad "
+        "in Florida’s 19<sup>th</sup> Congressional District.</p>"
+        f"<p>AD TRANSCRIPT:</p><p>{script}</p><p>{heading}</p>"
+        "<p>The Republican primary has attracted several candidates and millions in spending.</p>",
+    )
+    ad = parse_post(release, source, "2026-10-30", [candidate])[0]
+    assert ad["text"] == script
+    assert (ad["sponsor"], ad["alignment"], ad["race"], ad["phase"]) == (
+        "Win It Back PAC",
+        "R",
+        "FL-19",
+        "primary",
+    )
+    assert ad["segments"][0]["federal_scope_candidate_ids"] == ["H6FL19228"]
+    assert "sole legal payer is not independently verified" in ad["attribution_basis"]
+    release["title"]["rendered"] = "New OK-GOV Ad Featuring Chris Collins"
+    assert not parse_post(release, source, "2026-10-30", [candidate])
+
+
+def test_cfg_multiple_ad_excerpts_bind_separately_to_named_originals_not_one_contrast():
+    source = next(s for s in SOURCES if s.id == "cfg")
+    candidates = [
+        {
+            "candidate_id": "S6AL00476",
+            "name": "MOORE, BARRY",
+            "party": "REP",
+            "state": "AL",
+            "office": "S",
+            "district": "00",
+        },
+        {
+            "candidate_id": "S6AL00450",
+            "name": "MARSHALL, STEVE",
+            "party": "REP",
+            "state": "AL",
+            "office": "S",
+            "district": "00",
+        },
+    ]
+    praise = (
+        "Barry Moore will never stop fighting for our families. "
+        "As Senator he will work even harder to deliver results."
+    )
+    attack = (
+        "After Steve Marshall spent years supporting bad policies, "
+        "why would we ever make him our next Senator?"
+    )
+    release = post(
+        "ICYMI: Alabama Freedom Fund Releases 2 Ads in AL-SEN",
+        "<p>Club for Growth Action’s affiliated Alabama Freedom Fund launched two new ads.</p>"
+        '<p><a href="https://youtu.be/aaaaaaaaaaa">Watch First</a>, supporting Barry Moore.</p>'
+        '<p><a href="https://youtu.be/bbbbbbbbbbb">View Second</a>, opposing Steve Marshall.</p>'
+        f"<p>“{attack}” the&nbsp;ad asked.</p><p>“{praise}” the ad states.</p>"
+        "<p>“Our candidates will win,” said the group's spokesperson.</p>",
+    )
+    ads = parse_post(release, source, "2026-10-30", candidates)
+    assert [a["text"] for a in ads] == [attack, praise]
+    assert [a["media_urls"] for a in ads] == [
+        ["https://youtu.be/bbbbbbbbbbb"],
+        ["https://youtu.be/aaaaaaaaaaa"],
+    ]
+    assert all(a["sponsor"] == "Alabama Freedom Fund" for a in ads)
+    assert all("publisher_ad_copy_completeness_unverified" in a["quality_flags"] for a in ads)
+    release["content"]["rendered"] = release["content"]["rendered"].replace(
+        "opposing Steve Marshall", "supporting Barry Moore and opposing Steve Marshall"
+    )
+    ambiguous = parse_post(release, source, "2026-10-30", candidates)
+    assert [a["text"] for a in ambiguous] == [attack]
+
+
+def test_cfg_one_ad_combines_only_explicit_quotes_and_rejects_non_ad_announcements():
+    source = next(s for s in SOURCES if s.id == "cfg")
+    candidate = {
+        "candidate_id": "H6AZ05265",
+        "name": "LAMB, MARK",
+        "party": "REP",
+        "state": "AZ",
+        "office": "H",
+        "district": "05",
+    }
+    first = (
+        "Mark Lamb protects our communities and works hard to keep families safe. "
+        "He has our full support."
+    )
+    second = (
+        "Mark Lamb will stand with law enforcement and fight to keep our border secure "
+        "and our communities safe."
+    )
+    release = post(
+        "ICYMI: New Ad in AZ-05 Republican Primary",
+        "<p>Win It Back PAC released a new ad.</p>"
+        '<p><a href="https://youtu.be/aaaaaaaaaaa">Watch the ad</a></p>'
+        f'<p>"{first}" a narrator says.</p><p>“{second}” the ad says.</p>'
+        "<p>“We spent a quarter million dollars,” said a spokesperson.</p>",
+    )
+    ads = parse_post(release, source, "2026-10-30", [candidate])
+    assert len(ads) == 1
+    assert ads[0]["text"] == first + "\n" + second
+    assert (ads[0]["race"], ads[0]["chamber"]) == ("AZ-05", "House")
+    content = release["content"]["rendered"]
+    for replacement in [
+        "Win It Back PAC criticized an opponent's new ad.",
+        "Win It Back PAC released a new poll.",
+    ]:
+        release["content"]["rendered"] = content.replace(
+            "Win It Back PAC released a new ad.", replacement
+        )
+        assert not parse_post(release, source, "2026-10-30", [candidate])
+
+
 def test_union_scripts_require_federal_candidate_evidence_in_the_actual_ad():
     source = next(s for s in SOURCES if s.id == "ua-vote-pac")
     candidates = [

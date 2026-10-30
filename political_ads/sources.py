@@ -511,6 +511,16 @@ SOURCES = [
         search="ad",
         requires_federal_candidate=True,
     ),
+    Source(
+        "cfg",
+        "https://www.clubforgrowth.org",
+        "Club for Growth Action",
+        "R",
+        "outside_group",
+        "",
+        search="ad",
+        requires_federal_candidate=True,
+    ),
 ]
 
 
@@ -568,6 +578,7 @@ def transcript_blocks(content: str) -> list[str]:
             r"You can watch\b|"
             r"Below is a list of [^\n]{0,120}\bad campaign:|"
             r"(?:On )?Background[ \t]*(?::|$)|See also:|About the |About [^\n:]{1,80}:|"
+            r"(?:ARTICLE|STORY) EXCERPTS[ \t]*:|"
             r"The post .+ appeared first on |Roy Cooper has launched |"
             r"Learn more about Mike Rogers and his plans? to |"
             r"DCCC (?:National |Spokesperson|Chair|Senior )|"
@@ -825,6 +836,39 @@ def is_ad_release(title: str) -> bool:
     )
 
 
+def cfg_creatives(content: str, candidates: list[dict]) -> list[dict]:
+    scripts = transcript_blocks(content)
+    if scripts:
+        return [{"text": script} for script in scripts]
+    soup = BeautifulSoup(content, "html.parser")
+    excerpts = []
+    linked_candidates = {}
+    for paragraph in soup.find_all("p"):
+        text = paragraph.get_text(" ", strip=True)
+        urls = media_links(str(paragraph))
+        if len(urls) == 1 and re.search(r"\b(?:watch|view)\b", text, re.I):
+            ids = {c["candidate_id"] for c in candidate_mentions(text, candidates)}
+            linked_candidates.setdefault(urls[0], set()).update(ids)
+        if re.search(r"\b(?:the\s+ad\s+(?:says|states|asked)|a\s+narrator\s+says)\b", text, re.I):
+            quotes = re.findall(r'“([^”]+)”|"([^"]+)"', text)
+            lines = [curly or straight for curly, straight in quotes]
+            if len(" ".join(lines).split()) >= 15:
+                excerpts.append("\n".join(lines))
+    urls = media_links(content)
+    if len(urls) == 1 and excerpts:
+        return [{"text": "\n".join(excerpts), "media_urls": urls, "quoted_copy": True}]
+    creatives = {}
+    for excerpt in excerpts:
+        ids = {c["candidate_id"] for c in candidate_mentions(excerpt, candidates)}
+        matches = [url for url, linked_ids in linked_candidates.items() if ids & linked_ids]
+        if len(matches) == 1:
+            creatives.setdefault(matches[0], []).append(excerpt)
+    return [
+        {"text": "\n".join(excerpts), "media_urls": [url], "quoted_copy": True}
+        for url, excerpts in creatives.items()
+    ]
+
+
 def parse_post(
     post: dict, source: Source, observed: str, candidates: list[dict] | None = None
 ) -> list[dict]:
@@ -842,6 +886,22 @@ def parse_post(
     }
     announcement_name = announcement_names.get(source.id)
     introduction = plain_html(content)[:1500]
+    cfg_producer = None
+    if source.id == "cfg":
+        if re.search(r"\b[A-Z]{2}[-–](?:GOV|AG)\b", title) or not re.search(
+            r"\b(?:[A-Z]{2}[-–](?:SEN|AL|\d{1,2})|"
+            r"\d{1,2}\s*(?:st|nd|rd|th)?\s+Congressional District|U\.S\.\s+Senate)\b",
+            title + "\n" + introduction,
+        ):
+            return []
+        announcement = re.search(
+            r"\b(Club for Growth Action|Win It Back PAC|Alabama Freedom Fund)\s+"
+            r"(?:launched|released|announced)[^.\n]{0,180}\b(?:ads?|investment|buy)\b",
+            introduction,
+        )
+        if not announcement:
+            return []
+        cfg_producer = announcement[1]
     reviewed_announcement = announcement_name and re.search(
         rf"\b{announcement_name}[^.\n]{{0,50}}"
         r"\b(?:released|launched|unveiled|is releasing|is out with|"
@@ -862,6 +922,8 @@ def parse_post(
         reviewed_announcement = re.match(
             r"^Winning For Women Launches\b.*\bAdvocacy Campaign\b", title, re.I
         ) and re.search(r"\bThe ads will run in\b", introduction, re.I)
+    if cfg_producer:
+        reviewed_announcement = True
     if (
         not is_ad_release(title)
         and source.id != "lcv-vf"
@@ -947,8 +1009,18 @@ def parse_post(
         r"\bahead of [^.\n]{0,80}\bprimary\b", introduction, re.I
     ):
         phase = "primary"
+    if source.id == "cfg" and re.search(
+        r"\b(?:Republican|GOP) (?:Senate )?(?:primary|runoff)\b|\bprimary elections\b",
+        full_text,
+        re.I,
+    ):
+        phase = "primary"
     creatives = (
-        lcv_creatives(post) if source.id == "lcv-vf" else [{"text": text} for text in blocks]
+        cfg_creatives(body, candidates or [])
+        if source.id == "cfg"
+        else lcv_creatives(post)
+        if source.id == "lcv-vf"
+        else [{"text": text} for text in blocks]
     )
     ads = []
     for index, creative in enumerate(creatives):
@@ -986,7 +1058,9 @@ def parse_post(
             ],
             source_hash=digest(content),
             phase=phase,
-            chamber=creative.get("chamber", source.chamber),
+            chamber=creative.get(
+                "chamber", "House" if source.id == "cfg" and race_match else source.chamber
+            ),
             race=creative.get("race")
             or (
                 f"{race_match[0]}-{int(race_match[1]):02}"
@@ -1020,6 +1094,16 @@ def parse_post(
                 f"Official Cassidy release at {post['link']} explicitly identifies the "
                 "NRSC as the ad's producer and releasing organization. The campaign "
                 "hosts the script; sole legal payer is not independently verified."
+            )
+        if cfg_producer:
+            ad.sponsor = cfg_producer
+            ad.quality_flags.append("affiliated_group_ad_published_by_club_for_growth")
+            ad.attribution_basis = (
+                f"The Club for Growth public release at {post['link']} explicitly names "
+                f"{cfg_producer} as the organization releasing this ad. These affiliated "
+                "organizations are not interchangeable payers; the sole legal payer is "
+                "not independently verified. Republican alignment describes the named "
+                "organization's electoral program."
             )
         if visible_release_date and visible_release_date != ad.published:
             ad.quality_flags.append("publisher_visible_release_date_differs_from_cms")

@@ -10,9 +10,50 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## October 30 Republican-coverage recovery
+## October 30 House-focused follow-up
 
-The current snapshot contains **1,824 acquired text records**, including **1,786 English
+The current snapshot contains **1,830 acquired text records**, including **1,792 English
+records: 1,226 Democratic-aligned, 527 Republican-aligned, 31 other and eight unresolved**.
+Exact party/message counts are **1,204 D / 490 R**. English House coverage is now
+**149 R / 698 D**, up from 146 R. These are recovered text records, not estimates of
+national ad volume, unique creative executions or audience exposure.
+
+The newly registered Club for Growth public WordPress archive supplies **six Republican
+records from five releases**, dated March 25-September 9: three House records
+(AK-at-large, AZ-05 and FL-19) and three Senate records (two AL, one NE). All 93
+in-window posts returned by its ad search were checked. Three records are explicitly
+marked full scripts; three contain only explicitly attributed ad quotations and retain
+the `publisher_ad_copy_completeness_unverified` flag. Separate excerpts from the same
+AZ-05 ad form one partial record. The two AL ads remain separate records, each linked
+to its own original video through the named candidate in the publisher's watch link;
+their praise and criticism are not combined into a fabricated contrast ad.
+
+Attribution follows each release's named organization: one Club for Growth Action,
+three Win It Back PAC and two Alabama Freedom Fund records. These affiliates are not
+interchangeable legal payers; sole payer identity is not independently verified.
+Appended news excerpts are excluded from marked scripts. Governor/state-only material,
+spokesperson statements, polling, spending announcements without ad text and ambiguous
+multi-video quotations are not admitted. Exact reviewed Senate aliases for Barry Moore
+and Steve Marshall are corroborated by their FEC principal committees, not surname-only
+or fuzzy matching. Recognized and publisher-quoted text is not rewritten.
+
+All **1,824 preceding acquired ad objects remain field-for-field unchanged**. The six
+additions have six new exact normalized message identities and remain explicitly
+unreviewed for semantic portrayals; unreviewed is not neutral. Selected cache-only
+collection reproduces the new partition. Complete exports, Parquet, eleven PNG figures,
+the technical report and both unpublished editions are rebuilt together.
+
+**The large Republican House gap remains unresolved.** AFL-CIO and Working America
+still supply 491 Democratic records. Additional public ad galleries exposed video
+links rather than usable scripts; the publisher's 31 in-window PDFs were polling,
+policy, organizational or legal material, not additional verified federal ad scripts.
+The new source is included in ordinary research-only refreshes, but this bounded
+follow-up does not exhaust accessible national sources or establish party ad prevalence.
+Existing access denials remain paused, and no website/Substack publication occurred.
+
+## Earlier October 30 Republican-coverage recovery
+
+The preceding snapshot contained **1,824 acquired text records**, including **1,786 English
 records: 1,226 Democratic-aligned, 521 Republican-aligned, 31 other and eight unresolved**.
 The exact party/message counts are **1,204 D / 484 R**. Neither measure certifies distinct
 creative executions or nationally representative advertising volume.
@@ -47,7 +88,7 @@ PNG figures, the technical report and both unpublished editions are rebuilt from
 inputs. `political-ads build`, `political-ads validate` and `political-ads audit-strategy`
 reproduce and check the saved analysis without fetching sources or invoking a model.
 
-**The larger coverage gap remains:** English House records are still **146 R / 698 D**;
+**At that checkpoint,** English House records were **146 R / 698 D**;
 all 24 additions above are Senate material. AFL-CIO and Working America alone supply **491
 of the 1,226 D records**, so the overall imbalance is materially source-dependent. A bounded
 House follow-up checked reachable campaign media pages and further source leads but recovered
@@ -96,6 +137,7 @@ collection is exhausted. The dated acquisition notes below describe earlier chec
 | Brandon Herrera | Individually reviewed original video linked by the official campaign homepage | Full local speech/frame OCR preserved in the media backlog; no verified release/delivery date, so excluded from the dated corpus; filename and storage timestamps are not release evidence |
 | Winning For Women | Official public WordPress advocacy release | One July TX-15 sample script supporting Monica De La Cruz; seven announced districts do not imply seven recovered scripts |
 | WFW Action Fund | Official public WordPress ad releases | Six February-July House primary scripts: Steinmann, Mealer (two), Honeycutt, Pridemore and McKinney; separate PAC identity from Winning For Women |
+| Club for Growth public archive | Public WordPress ad search; named affiliate announcements and actual federal-candidate evidence | Six records from five releases: three full scripts and three flagged partial ad quotations; three House and three Senate; CFGA, Win It Back PAC and Alabama Freedom Fund separately attributed; appended news and state races excluded |
 | Sarah Trone Garriott | Official public WordPress ad releases | Explicit transcripts; IA-03 |
 | Sean McCann | Official public WordPress ad releases | Explicit transcripts and separated ad copy; MI-04 |
 | Zach Nunn | Official public WordPress ad releases | IA-03 video leads; releases without transcripts are not counted as text |

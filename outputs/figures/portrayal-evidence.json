@@ -1331,8 +1331,8 @@
             "rogers-6ae0ac2f4af67c5c39abe46b-0"
           ],
           "count": 76,
-          "share": 0.15702479338842976,
-          "total": 484
+          "share": 0.15510204081632653,
+          "total": 490
         },
         "neither": {
           "ad_ids": [
@@ -1374,8 +1374,8 @@
             "snap-09c02155efc4fb626e7b9e7d"
           ],
           "count": 36,
-          "share": 0.0743801652892562,
-          "total": 484
+          "share": 0.07346938775510205,
+          "total": 490
         },
         "not_reviewed": {
           "ad_ids": [
@@ -1383,6 +1383,8 @@
             "nrsc-15083-0",
             "cassidy-b862646b5c1caf3d-0",
             "cassidy-72ef2c017e8b32e0-0",
+            "cfg-50973-0",
+            "cfg-50973-1",
             "cassidy-3ace2a6368367c94-0",
             "cassidy-291286157dae8a75-0",
             "cassidy-a18be43927f73742-0",
@@ -1390,8 +1392,12 @@
             "cassidy-107b696383099e06-0",
             "husted-native-122178315200803316",
             "husted-native-122179468724803316",
+            "cfg-51751-0",
             "husted-native-122183811296803316",
             "husted-native-122185186784803316",
+            "cfg-51861-0",
+            "cfg-52126-0",
+            "cfg-52130-0",
             "husted-native-122190700694803316",
             "husted-native-122190847664803316",
             "snap-40f88e4dd45c781bb4649736",
@@ -1406,9 +1412,9 @@
             "snap-d60d07b71c1c16da2cbdcb55",
             "snap-e9a3b27048e3b4952586b499"
           ],
-          "count": 26,
-          "share": 0.05371900826446281,
-          "total": 484
+          "count": 32,
+          "share": 0.0653061224489796,
+          "total": 490
         },
         "opponent_negative_only": {
           "ad_ids": [
@@ -1634,8 +1640,8 @@
             "nrsc-17816-0"
           ],
           "count": 220,
-          "share": 0.45454545454545453,
-          "total": 484
+          "share": 0.4489795918367347,
+          "total": 490
         },
         "own_positive_only": {
           "ad_ids": [
@@ -1767,8 +1773,8 @@
             "bresnahan-native-122245613072111841"
           ],
           "count": 126,
-          "share": 0.2603305785123967,
-          "total": 484
+          "share": 0.2571428571428571,
+          "total": 490
         }
       }
     }
@@ -3471,28 +3477,30 @@
           "rogers-6ae0ac2f4af67c5c39abe46b-0"
         ],
         "count": 458,
-        "share": 0.9462809917355371,
-        "total": 484
+        "share": 0.9346938775510204,
+        "total": 490
       },
       "stale": {
         "ad_ids": [],
         "count": 0,
         "share": 0.0,
-        "total": 484
+        "total": 490
       },
       "uncertain": {
         "ad_ids": [
           "nrsc-15083-0"
         ],
         "count": 1,
-        "share": 0.002066115702479339,
-        "total": 484
+        "share": 0.0020408163265306124,
+        "total": 490
       },
       "unreviewed": {
         "ad_ids": [
           "cassidy-35e759517bdff0d8-0",
           "cassidy-b862646b5c1caf3d-0",
           "cassidy-72ef2c017e8b32e0-0",
+          "cfg-50973-0",
+          "cfg-50973-1",
           "cassidy-3ace2a6368367c94-0",
           "cassidy-291286157dae8a75-0",
           "cassidy-a18be43927f73742-0",
@@ -3500,8 +3508,12 @@
           "cassidy-107b696383099e06-0",
           "husted-native-122178315200803316",
           "husted-native-122179468724803316",
+          "cfg-51751-0",
           "husted-native-122183811296803316",
           "husted-native-122185186784803316",
+          "cfg-51861-0",
+          "cfg-52126-0",
+          "cfg-52130-0",
           "husted-native-122190700694803316",
           "husted-native-122190847664803316",
           "snap-40f88e4dd45c781bb4649736",
@@ -3516,9 +3528,9 @@
           "snap-d60d07b71c1c16da2cbdcb55",
           "snap-e9a3b27048e3b4952586b499"
         ],
-        "count": 25,
-        "share": 0.05165289256198347,
-        "total": 484
+        "count": 31,
+        "share": 0.06326530612244897,
+        "total": 490
       }
     }
   },
@@ -89858,8 +89870,8 @@
               "rogers-6ae0ac2f4af67c5c39abe46b-0"
             ],
             "count": 76,
-            "share": 0.2331288343558282,
-            "total": 326
+            "share": 0.2289156626506024,
+            "total": 332
           },
           "neither": {
             "ad_ids": [
@@ -89883,8 +89895,8 @@
               "lawler-1429-0"
             ],
             "count": 18,
-            "share": 0.05521472392638037,
-            "total": 326
+            "share": 0.05421686746987952,
+            "total": 332
           },
           "not_reviewed": {
             "ad_ids": [
@@ -89892,6 +89904,8 @@
               "nrsc-15083-0",
               "cassidy-b862646b5c1caf3d-0",
               "cassidy-72ef2c017e8b32e0-0",
+              "cfg-50973-0",
+              "cfg-50973-1",
               "cassidy-3ace2a6368367c94-0",
               "cassidy-291286157dae8a75-0",
               "cassidy-a18be43927f73742-0",
@@ -89899,17 +89913,21 @@
               "cassidy-107b696383099e06-0",
               "husted-native-122178315200803316",
               "husted-native-122179468724803316",
+              "cfg-51751-0",
               "husted-native-122183811296803316",
               "husted-native-122185186784803316",
+              "cfg-51861-0",
+              "cfg-52126-0",
+              "cfg-52130-0",
               "husted-native-122190700694803316",
               "husted-native-122190847664803316",
               "nrsc-17881-0",
               "snap-914a11bf94d6885562dbca74",
               "snap-9e1b24b86d56bd153e8ba6c1"
             ],
-            "count": 18,
-            "share": 0.05521472392638037,
-            "total": 326
+            "count": 24,
+            "share": 0.07228915662650602,
+            "total": 332
           },
           "opponent_negative_only": {
             "ad_ids": [
@@ -90012,8 +90030,8 @@
               "nrsc-17816-0"
             ],
             "count": 97,
-            "share": 0.29754601226993865,
-            "total": 326
+            "share": 0.2921686746987952,
+            "total": 332
           },
           "own_positive_only": {
             "ad_ids": [
@@ -90136,8 +90154,8 @@
               "bresnahan-native-122245613072111841"
             ],
             "count": 117,
-            "share": 0.3588957055214724,
-            "total": 326
+            "share": 0.35240963855421686,
+            "total": 332
           }
         }
       }
