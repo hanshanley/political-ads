@@ -141,6 +141,16 @@ SOURCES = [
         fixed_race="IA-Senate",
     ),
     Source(
+        "cassidy",
+        "https://www.billcassidy.com",
+        "Bill Cassidy for US Senate",
+        "R",
+        "candidate",
+        "Senate",
+        fixed_race="LA-Senate",
+        discovery="wix_blog",
+    ),
+    Source(
         "sullivan",
         "https://dansullivanforalaska.com",
         "Dan Sullivan for Alaska",
@@ -998,6 +1008,19 @@ def parse_post(
                 "Joint or candidate-paid creative requires separate payer review."
             ),
         )
+        if (
+            source.id == "cassidy"
+            and title.startswith("NRSC Releases New Ad")
+            and "NRSC-produced video" in full_text
+        ):
+            ad.sponsor = "NRSC"
+            ad.sponsor_type = "party"
+            ad.quality_flags.append("party_ad_republished_by_candidate_campaign")
+            ad.attribution_basis = (
+                f"Official Cassidy release at {post['link']} explicitly identifies the "
+                "NRSC as the ad's producer and releasing organization. The campaign "
+                "hosts the script; sole legal payer is not independently verified."
+            )
         if visible_release_date and visible_release_date != ad.published:
             ad.quality_flags.append("publisher_visible_release_date_differs_from_cms")
             ad.segments[0].update(

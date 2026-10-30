@@ -48,7 +48,7 @@ def test_reviewed_release_mirror_excludes_calendar_and_uses_publisher_timezone(m
         assert "Calendar" not in posts[0]["content"]["rendered"]
 
 
-@pytest.mark.parametrize("invalid", [None, "title", "identity", "body"])
+@pytest.mark.parametrize("invalid", [None, "whitespace", "title", "identity", "body"])
 def test_wix_blog_uses_original_publication_and_exact_article_body(invalid):
     class News:
         def get(self, url, **kwargs):
@@ -64,7 +64,7 @@ def test_wix_blog_uses_original_publication_and_exact_article_body(invalid):
             metadata = {
                 "@type": "BlogPosting",
                 "url": url if invalid != "identity" else "https://other.example.test/",
-                "headline": "New Ad: Test",
+                "headline": " \nNew   Ad: Test " if invalid == "whitespace" else "New Ad: Test",
                 "datePublished": "2025-12-01T05:00:00Z"
                 if url.endswith("/old")
                 else "2026-06-09T05:00:00Z",
@@ -80,12 +80,13 @@ def test_wix_blog_uses_original_publication_and_exact_article_body(invalid):
                 "<aside>Recent posts and navigation must not become ad text.</aside>"
             ).encode(), {}
 
-    if invalid:
+    if invalid not in {None, "whitespace"}:
         with pytest.raises(ValueError, match="matching publication metadata|exact title"):
             wix_blog_posts(News(), source("letlow"), "2026-10-26")
     else:
         posts, complete = wix_blog_posts(News(), source("letlow"), "2026-10-26")
         assert complete and len(posts) == 1
+        assert posts[0]["title"]["rendered"] == "New Ad: Test"
         assert posts[0]["date"] == "2026-06-09"
         assert "Only actual ad text" in posts[0]["content"]["rendered"]
         assert "navigation" not in posts[0]["content"]["rendered"]

@@ -1,6 +1,6 @@
 # Free-source capabilities
 
-Verified October 27, 2026; collection cutoff October 27. Live acquisition status accompanies each snapshot.
+Verified October 30, 2026; collection cutoff October 30. Live acquisition status accompanies each snapshot.
 This is a source-limited collection of releases and native platform creatives, not a census.
 
 **Publication withdrawn:** the page, report, data downloads, preview, interactive-analysis card
@@ -8,7 +8,55 @@ and sitemap entry were removed and verified live. The host integration was remov
 daily automatic evidence refresh updates this research repository only. Research evidence
 may be pushed without updating the website; publication and host restoration still require
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
-snapshot's actual October 27 cutoff is distinct from that final scope limit.
+snapshot's actual October 30 cutoff is distinct from that final scope limit.
+
+## October 30 Republican-coverage recovery
+
+The current snapshot contains **1,824 acquired text records**, including **1,786 English
+records: 1,226 Democratic-aligned, 521 Republican-aligned, 31 other and eight unresolved**.
+The exact party/message counts are **1,204 D / 484 R**. Neither measure certifies distinct
+creative executions or nationally representative advertising volume.
+
+This recovery adds **24 Republican English records and 24 exact normalized messages** over
+the preceding snapshot's 497 R records / 460 R messages, without dropping Democratic records:
+
+- The fresh official October 30 Snap archive supplies eight Senate Leadership Fund creatives
+  and two Ken Paxton creatives. Every currently matched Republican Snap lead now has acquired
+  text; this does not cover unmatched advertisers or other platforms. Two short English image
+  texts needed individually reviewed, exact-source-hash-bound language overrides; original
+  automatic labels remain in the evidence.
+- The newly registered Cassidy campaign archive supplies eight January 27-May 4 Senate scripts.
+  Its 207-page public blog sitemap was checked against actual publication metadata and visible
+  article bodies. Whitespace in one JSON-LD headline had defeated the exact visible-heading
+  check; normalization fixes that without accepting genuinely mismatched titles. Seven scripts
+  are campaign releases; one explicitly NRSC-produced/released script is attributed to NRSC,
+  not automatically to the hosting campaign. Its sole legal payer is not independently verified.
+- Six May 27-September 20 Husted campaign-linked originals were recovered with local speech
+  recognition and frame OCR. The public widget exposed 109 post cards spanning May 13-October 30;
+  that is not complete account discovery. All six full extractions and actual closing payer
+  cards were reviewed: two Husted for Senate, one NRSC-paid/candidate-authorized, and three
+  Husted Victory joint-fundraising ads. FEC C00937797, designation J, corroborates the latter
+  identity. Exact post timestamps, public continuation forms, original-byte SHA-256, literal
+  evidence and extraction caveats are saved in `data/campaign-native-reviews.json` and the
+  canonical records. A separately recovered news clip was rejected, not counted as an ad.
+
+All **1,800 preceding acquired ad objects remain field-for-field unchanged**. Newly acquired
+messages are explicitly unreviewed for semantic portrayals; old saved judgments are not
+silently extended to them, and unreviewed does not mean neutral. Complete evidence downloads,
+PNG figures, the technical report and both unpublished editions are rebuilt from the same
+inputs. `political-ads build`, `political-ads validate` and `political-ads audit-strategy`
+reproduce and check the saved analysis without fetching sources or invoking a model.
+
+**The larger coverage gap remains:** English House records are still **146 R / 698 D**;
+all 24 additions above are Senate material. AFL-CIO and Working America alone supply **491
+of the 1,226 D records**, so the overall imbalance is materially source-dependent. A bounded
+House follow-up checked reachable campaign media pages and further source leads but recovered
+no additional qualifying House text. Unverified candidate-domain guesses were not treated as
+official campaign sites; video embeds, ordinary news/speeches and a CLF page explicitly labeled
+2024 were not counted as current-cycle ads. Meta authorization is still unconfigured, while
+previously denied Google/YouTube and other sources remain paused. These are acquisition
+limitations, not evidence that Republicans advertise less, nor a claim that accessible national
+collection is exhausted. The dated acquisition notes below describe earlier checkpoints.
 
 | Source | Working path | Text / limits |
 |---|---|---|
@@ -17,6 +65,8 @@ snapshot's actual October 27 cutoff is distinct from that final scope limit.
 | DSCC | Public `article` REST type, ACF body, ad search | Five explicit scripts; four recovered by expanded heading recognition |
 | Roy Cooper | Official public WordPress posts | Italic transcript paragraphs; NC Senate candidate |
 | Ashley Hinson | Official public WordPress ad releases | Separately quoted ad copy; IA Senate; completeness flagged |
+| Bill Cassidy | Public blog sitemap, publication metadata and exact article body | Eight January-May Senate scripts; seven campaign releases and one NRSC-produced mirror with explicit payer uncertainty; 207 sitemap pages checked |
+| Jon Husted | Individually reviewed originals exposed by the campaign's public feed and actual load-more form | Six Senate ads; two candidate-paid, one NRSC-paid and three Husted Victory joint-fundraising; exact post dates and original hashes; machine extraction errors preserved |
 | Dan Sullivan | Official public WordPress ad releases | Six explicit transcripts; AK Senate; own-ad ICYMI release retained separately from ordinary news |
 | John Hickenlooper | Official public WordPress ad releases | Explicit transcripts; CO Senate |
 | Jon Ossoff | Official public WordPress ad releases | Radio scripts and bracketed-speaker ad copy; GA Senate |
@@ -42,7 +92,7 @@ snapshot's actual October 27 cutoff is distinct from that final scope limit.
 | Aaron Flint | Official public WordPress ad releases | Seven August–October MT-01 scripts; original speaker labels and publisher errors retained |
 | Brian Stover | Official public WordPress ad releases | Two January GA-14 releases reproduce an ad script; post-script biography and placement commentary excluded; releases are not evidence of two distinct creatives |
 | Eric Conroy | Official public WordPress ad releases | Two September OH-01 scripts; candidate identity verified against FEC H6OH01138; release descriptions excluded |
-| Rob Bresnahan | Individually reviewed original videos linked by the campaign's public Facebook-feed widget | Two PA-08 ads; exact publisher post timestamps, original-byte SHA-256, approval/payer evidence and actual FEC identity; local speech/frame OCR; dates are publisher posts, not verified first release or delivery |
+| Rob Bresnahan | Individually reviewed original videos linked by the campaign's public Facebook-feed widget | Ten PA-08 ads; exact publisher post timestamps, original-byte SHA-256, approval/payer evidence and actual FEC identity; local speech/frame OCR; dates are publisher posts, not verified first release or delivery |
 | Brandon Herrera | Individually reviewed original video linked by the official campaign homepage | Full local speech/frame OCR preserved in the media backlog; no verified release/delivery date, so excluded from the dated corpus; filename and storage timestamps are not release evidence |
 | Winning For Women | Official public WordPress advocacy release | One July TX-15 sample script supporting Monica De La Cruz; seven announced districts do not imply seven recovered scripts |
 | WFW Action Fund | Official public WordPress ad releases | Six February-July House primary scripts: Steinmann, Mealer (two), Honeycutt, Pridemore and McKinney; separate PAC identity from Winning For Women |
@@ -81,6 +131,8 @@ Official entry points and explicitly identified release mirror:
 - https://www.dscc.org/
 - https://roycooper.com/
 - https://ashleyhinson.com/
+- https://www.billcassidy.com/
+- https://www.jonhustedforsenate.com/
 - https://dansullivanforalaska.com/
 - https://hickenlooper.com/
 - https://electjon.com/

@@ -22,6 +22,27 @@ def test_public_media_links_normalize_video_hosts_and_include_gallery_popup_urls
     ]
 
 
+@pytest.mark.parametrize("party_produced", [False, True])
+def test_cassidy_party_ad_mirror_does_not_become_a_candidate_ad(party_produced):
+    source = next(s for s in SOURCES if s.id == "cassidy")
+    release = post(
+        "NRSC Releases New Ad Highlighting Senator Cassidy"
+        if party_produced
+        else "New TV Ad: Cassidy Delivers",
+        ("<p>The NRSC-produced video highlights Senator Cassidy.</p>" if party_produced else "")
+        + "<p>TRANSCRIPT:</p><p>Senator Bill Cassidy works to lower costs for Louisiana "
+        "families and improve access to affordable health care.</p>",
+    )
+    ad = parse_post(release, source, "2026-10-30")[0]
+    assert (ad["sponsor"], ad["sponsor_type"]) == (
+        ("NRSC", "party") if party_produced else ("Bill Cassidy for US Senate", "candidate")
+    )
+    assert ad["source"] == "cassidy"
+    assert ("party_ad_republished_by_candidate_campaign" in ad["quality_flags"]) == party_produced
+    assert ad["text"].startswith("Senator Bill Cassidy")
+    assert "NRSC-produced" not in ad["text"]
+
+
 def test_union_scripts_require_federal_candidate_evidence_in_the_actual_ad():
     source = next(s for s in SOURCES if s.id == "ua-vote-pac")
     candidates = [

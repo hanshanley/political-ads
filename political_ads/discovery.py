@@ -184,7 +184,7 @@ def wix_blog_posts(client: Client, source: Source, until: str) -> tuple[list[dic
         if len(metadata) != 1:
             raise ValueError("Public blog release lacks matching publication metadata")
         published = datetime.fromisoformat(metadata[0]["datePublished"]).date().isoformat()
-        title = metadata[0]["headline"]
+        title = re.sub(r"\s+", " ", metadata[0]["headline"]).strip()
         if not START <= published <= until or not is_ad_release(title):
             continue
         content = soup.select_one('article[data-hook="post"] [data-hook="post-description"]')

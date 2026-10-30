@@ -161,7 +161,7 @@ function Dashboard({ dataset }: { dataset: Dataset }) {
   };
   const options = (key: "source" | "race" | "sponsor_type") =>
     [...new Set(dataset.ads.map(ad => ad[key]))].sort().map(value =>
-      [value, value === "outside_group" ? "Outside group" : value] as [string, string]);
+      [value, value === "outside_group" ? "Outside group" : value === "joint_fundraising" ? "Joint fundraising" : value] as [string, string]);
   const filtered = JSON.stringify(filters) !== JSON.stringify(defaults);
   const sortedAds = [...ads].sort((a, b) => b.published.localeCompare(a.published) || a.id.localeCompare(b.id));
   return <>
