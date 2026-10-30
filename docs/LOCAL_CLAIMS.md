@@ -47,11 +47,14 @@ DSA's extraction script. It runs on Apple Silicon with temperature 0 and seed 0.
 This is not a guarantee of byte-identical fresh generations across hardware or
 runtime changes. The response records retain runtime versions.
 
-Every input segment is split into contiguous source windows at word boundaries,
+Source text is split into contiguous windows at word boundaries,
 with at most 240 source words per chunk and at most 1,200 preceding characters
 of reference-only context. Original line breaks remain inside each window:
 OCR line wrapping must not separate a candidate's name from its predicate.
-Units do not cross speech/OCR segment boundaries.
+Adjacent `image_ocr` segments can share a window only when their image hashes
+and capture timestamps match. Speech segments, different images, different
+timestamps and OCR without an image hash remain separate. Original segments,
+including OCR coordinates, remain intact in the frozen manifest.
 Claims and anchors can cite only target units, never reference-only context.
 The first local pass extracts claims; a second local pass revises the full
 structured result for source fidelity, target attribution, voice and tone.
@@ -180,6 +183,11 @@ Structural validation proves neither that a paraphrase is supported by its cited
 nor that the model found every claim. Side is deterministic **conditional on the
 model's identity reference**; selecting the wrong reference still creates a wrong side.
 Tone, role, voice and claim boundaries are also semantic judgments.
+
+For example, a local smoke test produced extra speaker targets on general
+statements about social groups. Literal "I" anchors existed in the source window,
+but did not establish that each statement was about the speaker. `normalized`
+means schema/anchor checks passed, not human-certified accuracy.
 
 No human accuracy benchmark is created by this pipeline. Before replacing the
 article's results, independently evaluate extraction omissions, identity attribution,

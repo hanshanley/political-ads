@@ -16,7 +16,7 @@ from political_ads.local_gemma import MODEL, REVISION, LocalGemma
 from political_ads.registry import candidate_mentions
 from political_ads.schema import digest, eligible, message_key
 
-VERSION = "local-ad-claims-2"
+VERSION = "local-ad-claims-3"
 MAX_WORDS = 240
 CONTEXT_CHARS = 1200
 MAX_TOKENS = 8192
@@ -59,6 +59,8 @@ not proof that a passage refers to them. Never invent party affiliation or infer
 a policy does not inherit a party merely because a person is mentioned nearby.
 Use advertiser identity only when the text establishes the advertiser as the target, not for
 arbitrary first-person clips or speakers. Unknown people/collectives stay unknown.
+Do not add a speaker as a target merely because they assert something about another group.
+Names and logos alone are not assertions: never emit a claim consisting only of a target name.
 Python derives target party and same/other side from entity_id; do not generate those fields.
 anchor_quote must be an EXACT nonempty contiguous quotation from its anchor SOURCE UNIT,
 identifying the target or its unambiguous pronoun. anchor_unit_id must be in evidence_ids.
@@ -144,23 +146,35 @@ def blocks_for(ad: dict) -> list[dict]:
     segments = ad.get("segments") or [{"text": ad["text"], "kind": "recovered_text"}]
     if "\n".join(s["text"] for s in segments) != ad["text"]:
         raise ValueError(f"Unreconciled claim input segments: {ad['id']}")
-    offset = 0
+    groups, offset = [], 0
     for segment in segments:
-        # A unit never crosses a speech/overlay segment; offsets remain in the original text.
-        words = list(re.finditer(r"\S+", segment["text"]))
+        image_key = (
+            (segment["image_hash"], segment.get("start_seconds"), segment.get("end_seconds"))
+            if segment["kind"] == "image_ocr" and segment.get("image_hash")
+            else None
+        )
+        end = offset + len(segment["text"])
+        if image_key and groups and groups[-1]["image_key"] == image_key:
+            groups[-1]["end"] = end
+        else:
+            groups.append(
+                {"start": offset, "end": end, "kind": segment["kind"], "image_key": image_key}
+            )
+        offset = end + 1
+    for group in groups:
+        words = list(re.finditer(r"\S+", ad["text"][group["start"] : group["end"]]))
         for first in range(0, len(words), MAX_WORDS):
             last = min(first + MAX_WORDS, len(words)) - 1
-            start = offset + words[first].start()
-            end = offset + words[last].end()
+            start = group["start"] + words[first].start()
+            end = group["start"] + words[last].end()
             units.append(
                 {
                     "start": start,
                     "end": end,
                     "text": ad["text"][start:end],
-                    "kind": segment["kind"],
+                    "kind": group["kind"],
                 }
             )
-        offset += len(segment["text"]) + 1
     chunks, pending, count = [], [], 0
     for unit in units:
         size = len(unit["text"].split())
@@ -205,7 +219,7 @@ def prepare(root: Path, output: Path, ad_ids: list[str] | None = None) -> dict:
         "chunking": {
             "max_words": MAX_WORDS,
             "context_characters": CONTEXT_CHARS,
-            "units": "contiguous_segment_windows",
+            "units": "contiguous_segment_or_same_image_windows",
         },
     }
     path = output / "manifest.json"

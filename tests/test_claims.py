@@ -245,6 +245,36 @@ def test_ocr_line_wrapping_does_not_separate_target_from_predicate():
     )
 
 
+def test_same_image_ocr_segments_keep_target_and_predicate_together():
+    segments = [
+        {"text": "John Doe", "kind": "image_ocr", "image_hash": "image1"},
+        {"text": "failed the voters", "kind": "image_ocr", "image_hash": "image1"},
+    ]
+    text = "\n".join(s["text"] for s in segments)
+    block = blocks_for(ad(text=text, segments=segments))[0]
+    claim = validate_response(canonical(payload()), block)[0]
+    assert len(block["units"]) == 1
+    assert claim["evidence"][0]["text"] == text
+    assert text[block["units"][0]["start"] : block["units"][0]["end"]] == text
+
+
+@pytest.mark.parametrize(
+    "updates",
+    [
+        {"image_hash": "image2"},
+        {"image_hash": None},
+        {"start_seconds": 2},
+        {"end_seconds": 3},
+        {"kind": "local_asr"},
+    ],
+)
+def test_ocr_grouping_preserves_image_time_and_speech_boundaries(updates):
+    first = {"text": "John Doe", "kind": "image_ocr", "image_hash": "image1"}
+    second = first | {"text": "failed the voters"} | updates
+    block = blocks_for(ad(text=first["text"] + "\n" + second["text"], segments=[first, second]))[0]
+    assert [unit["text"] for unit in block["units"]] == [first["text"], second["text"]]
+
+
 def test_frozen_inputs_resume_offline_without_model_or_live_corpus(tmp_path):
     fixture_corpus(tmp_path)
     output = tmp_path / "claims"
