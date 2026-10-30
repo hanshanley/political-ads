@@ -119,8 +119,8 @@
             "dccc-669669-0"
           ],
           "count": 105,
-          "share": 0.08735440931780367,
-          "total": 1202
+          "share": 0.0872093023255814,
+          "total": 1204
         },
         "neither": {
           "ad_ids": [
@@ -327,8 +327,8 @@
             "snap-fd07379a3febd2fad6434340"
           ],
           "count": 201,
-          "share": 0.16722129783693843,
-          "total": 1202
+          "share": 0.1669435215946844,
+          "total": 1204
         },
         "not_reviewed": {
           "ad_ids": [
@@ -336,11 +336,13 @@
             "snap-29d506e1941b11a1ec102e35",
             "jackson-93075c70a1d4a5fc-0",
             "lcv-vf-3185-0",
-            "dccc-669729-0"
+            "dccc-669729-0",
+            "dccc-669808-0",
+            "dccc-669825-0"
           ],
-          "count": 5,
-          "share": 0.004159733777038269,
-          "total": 1202
+          "count": 7,
+          "share": 0.005813953488372093,
+          "total": 1204
         },
         "opponent_negative_only": {
           "ad_ids": [
@@ -759,8 +761,8 @@
             "dccc-669673-0"
           ],
           "count": 413,
-          "share": 0.34359400998336104,
-          "total": 1202
+          "share": 0.3430232558139535,
+          "total": 1204
         },
         "own_positive_only": {
           "ad_ids": [
@@ -1244,8 +1246,8 @@
             "smp-3904-0"
           ],
           "count": 478,
-          "share": 0.39767054908485855,
-          "total": 1202
+          "share": 0.39700996677740863,
+          "total": 1204
         }
       },
       "R": {
@@ -1329,8 +1331,8 @@
             "rogers-6ae0ac2f4af67c5c39abe46b-0"
           ],
           "count": 76,
-          "share": 0.1655773420479303,
-          "total": 459
+          "share": 0.16521739130434782,
+          "total": 460
         },
         "neither": {
           "ad_ids": [
@@ -1372,16 +1374,17 @@
             "snap-09c02155efc4fb626e7b9e7d"
           ],
           "count": 36,
-          "share": 0.0784313725490196,
-          "total": 459
+          "share": 0.0782608695652174,
+          "total": 460
         },
         "not_reviewed": {
           "ad_ids": [
-            "nrsc-15083-0"
+            "nrsc-15083-0",
+            "nrsc-17881-0"
           ],
-          "count": 1,
-          "share": 0.002178649237472767,
-          "total": 459
+          "count": 2,
+          "share": 0.004347826086956522,
+          "total": 460
         },
         "opponent_negative_only": {
           "ad_ids": [
@@ -1607,8 +1610,8 @@
             "nrsc-17816-0"
           ],
           "count": 220,
-          "share": 0.4793028322440087,
-          "total": 459
+          "share": 0.4782608695652174,
+          "total": 460
         },
         "own_positive_only": {
           "ad_ids": [
@@ -1740,8 +1743,8 @@
             "bresnahan-native-122245613072111841"
           ],
           "count": 126,
-          "share": 0.27450980392156865,
-          "total": 459
+          "share": 0.27391304347826084,
+          "total": 460
         }
       }
     }
@@ -2949,16 +2952,16 @@
           "smp-3904-0"
         ],
         "count": 1197,
-        "share": 0.9958402662229617,
-        "total": 1202
+        "share": 0.9941860465116279,
+        "total": 1204
       },
       "stale": {
         "ad_ids": [
           "lcv-vf-3185-0"
         ],
         "count": 1,
-        "share": 0.0008319467554076539,
-        "total": 1202
+        "share": 0.0008305647840531562,
+        "total": 1204
       },
       "uncertain": {
         "ad_ids": [
@@ -2966,17 +2969,19 @@
           "snap-29d506e1941b11a1ec102e35"
         ],
         "count": 2,
-        "share": 0.0016638935108153079,
-        "total": 1202
+        "share": 0.0016611295681063123,
+        "total": 1204
       },
       "unreviewed": {
         "ad_ids": [
           "jackson-93075c70a1d4a5fc-0",
-          "dccc-669729-0"
+          "dccc-669729-0",
+          "dccc-669808-0",
+          "dccc-669825-0"
         ],
-        "count": 2,
-        "share": 0.0016638935108153079,
-        "total": 1202
+        "count": 4,
+        "share": 0.0033222591362126247,
+        "total": 1204
       }
     },
     "R": {
@@ -3442,28 +3447,30 @@
           "rogers-6ae0ac2f4af67c5c39abe46b-0"
         ],
         "count": 458,
-        "share": 0.9978213507625272,
-        "total": 459
+        "share": 0.9956521739130435,
+        "total": 460
       },
       "stale": {
         "ad_ids": [],
         "count": 0,
         "share": 0.0,
-        "total": 459
+        "total": 460
       },
       "uncertain": {
         "ad_ids": [
           "nrsc-15083-0"
         ],
         "count": 1,
-        "share": 0.002178649237472767,
-        "total": 459
+        "share": 0.002173913043478261,
+        "total": 460
       },
       "unreviewed": {
-        "ad_ids": [],
-        "count": 0,
-        "share": 0.0,
-        "total": 459
+        "ad_ids": [
+          "nrsc-17881-0"
+        ],
+        "count": 1,
+        "share": 0.002173913043478261,
+        "total": 460
       }
     }
   },
@@ -13110,7 +13117,7 @@
       "review_source_hash": "33d290ce7e8f3f83e9f69cc0225378c23e9cb0d49d5d7d550c483aa66da1256c",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "fc2e8e6bc8022814b613bd29e136f5e30f4e1fe00e8eaab9a566582678bc703a",
+      "source_hash": "127f4c92960aa446dbf3816326ce3d09d6927ea0e244fbab666f26fd64397a82",
       "source_url": "https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary",
       "sponsor": "Nancy Lacore for Congress",
       "start": 49,
@@ -13136,7 +13143,7 @@
       "review_source_hash": "b28b0d99079b4fbc28c760165ef3628af093126b8369019b02f1f85b67cbaec8",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "ea45c2d1fa9d47c89c3d0ea20d016632b90e0d3ab033de5e82aa6dde2be614af",
+      "source_hash": "f6d33e44ff2a3b1be176095df4c6177e46af38681bc3a0bb194e2dca51d1ae67",
       "source_url": "https://rogersforsenate.com/news/team-rogers-announces-new-ad-on-investing-in-skilled-trades",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -13162,7 +13169,7 @@
       "review_source_hash": "b28b0d99079b4fbc28c760165ef3628af093126b8369019b02f1f85b67cbaec8",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "ea45c2d1fa9d47c89c3d0ea20d016632b90e0d3ab033de5e82aa6dde2be614af",
+      "source_hash": "f6d33e44ff2a3b1be176095df4c6177e46af38681bc3a0bb194e2dca51d1ae67",
       "source_url": "https://rogersforsenate.com/news/team-rogers-announces-new-ad-on-investing-in-skilled-trades",
       "sponsor": "Rogers for Senate",
       "start": 120,
@@ -14650,7 +14657,7 @@
       "review_source_hash": "680801d05ad6cf986238702dd1c67a2f8d8a9eafa1f93f32b5c18847e399843f",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "8a831a6909d96e524bba9090d9c68aef1d96fc32c3a8a25c674352a7f013cf09",
+      "source_hash": "0dfe5eb187fadd378cb5fbf9f931f834d85312509788085ad50e1ae03d8a21ba",
       "source_url": "https://www.nancylacore.com/media//admiral-nancy-lacore-lowcountry-tv-ad",
       "sponsor": "Nancy Lacore for Congress",
       "start": 165,
@@ -14676,7 +14683,7 @@
       "review_source_hash": "680801d05ad6cf986238702dd1c67a2f8d8a9eafa1f93f32b5c18847e399843f",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "8a831a6909d96e524bba9090d9c68aef1d96fc32c3a8a25c674352a7f013cf09",
+      "source_hash": "0dfe5eb187fadd378cb5fbf9f931f834d85312509788085ad50e1ae03d8a21ba",
       "source_url": "https://www.nancylacore.com/media//admiral-nancy-lacore-lowcountry-tv-ad",
       "sponsor": "Nancy Lacore for Congress",
       "start": 208,
@@ -15852,7 +15859,7 @@
       "review_source_hash": "c1103adde58875bb959336e59ef30593cf666bf75c74f95c9fe5adb016f0fc7d",
       "review_status": "reviewed",
       "source": "ciscomani",
-      "source_hash": "1cc7eed9fe1abbf2d251b53507778707e6bcfb6643c819b9e07ef827fcc0c55d",
+      "source_hash": "924c599e35917ebca4e62bc671726186c1c94ac7d65d0631ed1c8588121384d5",
       "source_url": "https://juanciscomani.com/news/74h3c38hwem76j2si8b0xorkjy89ga",
       "sponsor": "Ciscomani for Congress",
       "start": 1,
@@ -15878,7 +15885,7 @@
       "review_source_hash": "c1103adde58875bb959336e59ef30593cf666bf75c74f95c9fe5adb016f0fc7d",
       "review_status": "reviewed",
       "source": "ciscomani",
-      "source_hash": "1cc7eed9fe1abbf2d251b53507778707e6bcfb6643c819b9e07ef827fcc0c55d",
+      "source_hash": "924c599e35917ebca4e62bc671726186c1c94ac7d65d0631ed1c8588121384d5",
       "source_url": "https://juanciscomani.com/news/74h3c38hwem76j2si8b0xorkjy89ga",
       "sponsor": "Ciscomani for Congress",
       "start": 332,
@@ -18161,7 +18168,7 @@
       "review_source_hash": "35ae95a39cbb419631a436ecd3fbfdeb1801719c7f704ce5b83baaace74bbbe8",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "811bae52fee1314f5abf97fcf234b82876444279a9386a6f3ef6fae106784d45",
+      "source_hash": "f006495c91fdf32f6ef0198c1d39cd13c2a5b31f4ea3486980ee7b4f2e4bfc30",
       "source_url": "https://rogersforsenate.com/news/rogers-runs-six-figure-buy-on-lowering-prescription-drug-prices",
       "sponsor": "Rogers for Senate",
       "start": 294,
@@ -20282,7 +20289,7 @@
       "review_source_hash": "0eea4be18754b65330581abf02ff52f38b14a6fe73830b06d189b3a4c187f195",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "eeda8ade16ddb7c5f823e8e801e741477f1e0d6717726e20fcfe608ebca070fb",
+      "source_hash": "da74d9096ef00649b73a2a8183d6133cfde800938784601b2e1e02c834390acb",
       "source_url": "https://rogersforsenate.com/news/rogers-launches-builders-outlines-plan-to-build-more-homes-and-lower-housing-costs",
       "sponsor": "Rogers for Senate",
       "start": 68,
@@ -21354,7 +21361,7 @@
       "review_source_hash": "f8cad8fd7e0b182eec54afd7ccaff8249751a0fc08e35f636f0e539288b74e55",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "ac9c8c635c6cf72b4fcea3b1b610d4b268b0ee6d9451ff2f30477bac3d588e89",
+      "source_hash": "c5a55b6390dda8124cda1442ff4122f3ab92143731f8cecae1bd14e99ef6107d",
       "source_url": "https://rogersforsenate.com/news/ad-rogers-protects-michigan-manufacturing-puts-main-street-over-wall-street",
       "sponsor": "Rogers for Senate",
       "start": 75,
@@ -21380,7 +21387,7 @@
       "review_source_hash": "f8cad8fd7e0b182eec54afd7ccaff8249751a0fc08e35f636f0e539288b74e55",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "ac9c8c635c6cf72b4fcea3b1b610d4b268b0ee6d9451ff2f30477bac3d588e89",
+      "source_hash": "c5a55b6390dda8124cda1442ff4122f3ab92143731f8cecae1bd14e99ef6107d",
       "source_url": "https://rogersforsenate.com/news/ad-rogers-protects-michigan-manufacturing-puts-main-street-over-wall-street",
       "sponsor": "Rogers for Senate",
       "start": 226,
@@ -21406,7 +21413,7 @@
       "review_source_hash": "f8cad8fd7e0b182eec54afd7ccaff8249751a0fc08e35f636f0e539288b74e55",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "ac9c8c635c6cf72b4fcea3b1b610d4b268b0ee6d9451ff2f30477bac3d588e89",
+      "source_hash": "c5a55b6390dda8124cda1442ff4122f3ab92143731f8cecae1bd14e99ef6107d",
       "source_url": "https://rogersforsenate.com/news/ad-rogers-protects-michigan-manufacturing-puts-main-street-over-wall-street",
       "sponsor": "Rogers for Senate",
       "start": 388,
@@ -22860,7 +22867,7 @@
       "review_source_hash": "bc325d508681bf8dedc621e3c601720e8ae48cca5c0c2cc537cba1abd165ef53",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "887ebcad510783f1c63617492ca1a3760d7c141f5e36404d9090d29fea3c3ac8",
+      "source_hash": "05572f287021c905d0740c70ddd327d1e5e215a5b9421fc192cc0fd4116a26ca",
       "source_url": "https://rogersforsenate.com/news/ad-abdul-thinks-football-is-bad-but-men-in-womens-sports-is-good",
       "sponsor": "Rogers for Senate",
       "start": 46,
@@ -22886,7 +22893,7 @@
       "review_source_hash": "bc325d508681bf8dedc621e3c601720e8ae48cca5c0c2cc537cba1abd165ef53",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "887ebcad510783f1c63617492ca1a3760d7c141f5e36404d9090d29fea3c3ac8",
+      "source_hash": "05572f287021c905d0740c70ddd327d1e5e215a5b9421fc192cc0fd4116a26ca",
       "source_url": "https://rogersforsenate.com/news/ad-abdul-thinks-football-is-bad-but-men-in-womens-sports-is-good",
       "sponsor": "Rogers for Senate",
       "start": 260,
@@ -22912,7 +22919,7 @@
       "review_source_hash": "bc325d508681bf8dedc621e3c601720e8ae48cca5c0c2cc537cba1abd165ef53",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "887ebcad510783f1c63617492ca1a3760d7c141f5e36404d9090d29fea3c3ac8",
+      "source_hash": "05572f287021c905d0740c70ddd327d1e5e215a5b9421fc192cc0fd4116a26ca",
       "source_url": "https://rogersforsenate.com/news/ad-abdul-thinks-football-is-bad-but-men-in-womens-sports-is-good",
       "sponsor": "Rogers for Senate",
       "start": 418,
@@ -23276,7 +23283,7 @@
       "review_source_hash": "8392f198f348ddef3a1b4110f5c26cf45d56fb6580f1c4eec84c00942280e97c",
       "review_status": "reviewed",
       "source": "mccann",
-      "source_hash": "8392f198f348ddef3a1b4110f5c26cf45d56fb6580f1c4eec84c00942280e97c",
+      "source_hash": "2cb8508fec2fda89a80dad02ef9a2371b0cf13048975abf135d7a43223b963b1",
       "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/",
       "sponsor": "Sean McCann for Congress",
       "start": 1,
@@ -23302,7 +23309,7 @@
       "review_source_hash": "8392f198f348ddef3a1b4110f5c26cf45d56fb6580f1c4eec84c00942280e97c",
       "review_status": "reviewed",
       "source": "mccann",
-      "source_hash": "8392f198f348ddef3a1b4110f5c26cf45d56fb6580f1c4eec84c00942280e97c",
+      "source_hash": "2cb8508fec2fda89a80dad02ef9a2371b0cf13048975abf135d7a43223b963b1",
       "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/",
       "sponsor": "Sean McCann for Congress",
       "start": 307,
@@ -27781,7 +27788,7 @@
       "review_source_hash": "a2918fb1b3362c473f36118cf74e5bb20aa0438277b9730f0936cee94eb9893e",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "7e3affe04d2ee63da4288f66e12d16fd7095b49428115c56f0e95c6007c96559",
+      "source_hash": "26c1ef8926c4a00ef94c9eb75f9e9691a96f13d60c044ba263e04bca4a2c687a",
       "source_url": "https://rogersforsenate.com/news/ad-rogers-hunted-terrorists-abduls-running-mate-sympathizes-with-them",
       "sponsor": "Rogers for Senate",
       "start": 13,
@@ -27807,7 +27814,7 @@
       "review_source_hash": "a2918fb1b3362c473f36118cf74e5bb20aa0438277b9730f0936cee94eb9893e",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "7e3affe04d2ee63da4288f66e12d16fd7095b49428115c56f0e95c6007c96559",
+      "source_hash": "26c1ef8926c4a00ef94c9eb75f9e9691a96f13d60c044ba263e04bca4a2c687a",
       "source_url": "https://rogersforsenate.com/news/ad-rogers-hunted-terrorists-abduls-running-mate-sympathizes-with-them",
       "sponsor": "Rogers for Senate",
       "start": 409,
@@ -28353,7 +28360,7 @@
       "review_source_hash": "d896a85a2b4c496e8dea410518e486e553695a337f4788d11c4ec16cb6f3c830",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "c97dfb676c8d6e52fcd3b1cb5e8dcdc92735925dc47fd130d0d64b528c6eb506",
+      "source_hash": "350a738e6417f814c1821ce4e7f2fe10354376c1af598905526a852bdad91ec2",
       "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
       "sponsor": "Nancy Lacore for Congress",
       "start": 36,
@@ -28379,7 +28386,7 @@
       "review_source_hash": "d896a85a2b4c496e8dea410518e486e553695a337f4788d11c4ec16cb6f3c830",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "c97dfb676c8d6e52fcd3b1cb5e8dcdc92735925dc47fd130d0d64b528c6eb506",
+      "source_hash": "350a738e6417f814c1821ce4e7f2fe10354376c1af598905526a852bdad91ec2",
       "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
       "sponsor": "Nancy Lacore for Congress",
       "start": 116,
@@ -28405,7 +28412,7 @@
       "review_source_hash": "d896a85a2b4c496e8dea410518e486e553695a337f4788d11c4ec16cb6f3c830",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "c97dfb676c8d6e52fcd3b1cb5e8dcdc92735925dc47fd130d0d64b528c6eb506",
+      "source_hash": "350a738e6417f814c1821ce4e7f2fe10354376c1af598905526a852bdad91ec2",
       "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
       "sponsor": "Nancy Lacore for Congress",
       "start": 175,
@@ -28431,7 +28438,7 @@
       "review_source_hash": "d896a85a2b4c496e8dea410518e486e553695a337f4788d11c4ec16cb6f3c830",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "c97dfb676c8d6e52fcd3b1cb5e8dcdc92735925dc47fd130d0d64b528c6eb506",
+      "source_hash": "350a738e6417f814c1821ce4e7f2fe10354376c1af598905526a852bdad91ec2",
       "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
       "sponsor": "Nancy Lacore for Congress",
       "start": 36,
@@ -28457,7 +28464,7 @@
       "review_source_hash": "d896a85a2b4c496e8dea410518e486e553695a337f4788d11c4ec16cb6f3c830",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "c97dfb676c8d6e52fcd3b1cb5e8dcdc92735925dc47fd130d0d64b528c6eb506",
+      "source_hash": "350a738e6417f814c1821ce4e7f2fe10354376c1af598905526a852bdad91ec2",
       "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
       "sponsor": "Nancy Lacore for Congress",
       "start": 142,
@@ -28483,7 +28490,7 @@
       "review_source_hash": "d896a85a2b4c496e8dea410518e486e553695a337f4788d11c4ec16cb6f3c830",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "c97dfb676c8d6e52fcd3b1cb5e8dcdc92735925dc47fd130d0d64b528c6eb506",
+      "source_hash": "350a738e6417f814c1821ce4e7f2fe10354376c1af598905526a852bdad91ec2",
       "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
       "sponsor": "Nancy Lacore for Congress",
       "start": 142,
@@ -28509,7 +28516,7 @@
       "review_source_hash": "d896a85a2b4c496e8dea410518e486e553695a337f4788d11c4ec16cb6f3c830",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "c97dfb676c8d6e52fcd3b1cb5e8dcdc92735925dc47fd130d0d64b528c6eb506",
+      "source_hash": "350a738e6417f814c1821ce4e7f2fe10354376c1af598905526a852bdad91ec2",
       "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
       "sponsor": "Nancy Lacore for Congress",
       "start": 281,
@@ -29506,7 +29513,7 @@
       "review_source_hash": "3e7ae22250d7fda5157265b4d526e8f753ed59600457f31e9007960df016bd5b",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "3b6801b083790743902568a5c93913e1a47ef9b053db0e658fb5acbea31d1a69",
+      "source_hash": "301d497ec3224af0a1024a35a8b0de753deff15a52ed6cdc81db86ac277e5317",
       "source_url": "https://rogersforsenate.com/news/ad-mike-rogers-will-take-on-big-pharma-make-healthcare-more-affordable",
       "sponsor": "Rogers for Senate",
       "start": 234,
@@ -29532,7 +29539,7 @@
       "review_source_hash": "3e7ae22250d7fda5157265b4d526e8f753ed59600457f31e9007960df016bd5b",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "3b6801b083790743902568a5c93913e1a47ef9b053db0e658fb5acbea31d1a69",
+      "source_hash": "301d497ec3224af0a1024a35a8b0de753deff15a52ed6cdc81db86ac277e5317",
       "source_url": "https://rogersforsenate.com/news/ad-mike-rogers-will-take-on-big-pharma-make-healthcare-more-affordable",
       "sponsor": "Rogers for Senate",
       "start": 298,
@@ -29714,7 +29721,7 @@
       "review_source_hash": "c46f1a00879062ba260ef37e202d09385592420a301bb80a70630eb75d57c16f",
       "review_status": "reviewed",
       "source": "mccann",
-      "source_hash": "c46f1a00879062ba260ef37e202d09385592420a301bb80a70630eb75d57c16f",
+      "source_hash": "2f6f32a446b36e183b23b34cb4d369e3b8c6cb382aa150226f1f51be86a2125e",
       "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-tv-ad-highlighting-how-bill-huizenga-got-five-times-richer-in-congress-while-raising-costs/",
       "sponsor": "Sean McCann for Congress",
       "start": 93,
@@ -29740,7 +29747,7 @@
       "review_source_hash": "c46f1a00879062ba260ef37e202d09385592420a301bb80a70630eb75d57c16f",
       "review_status": "reviewed",
       "source": "mccann",
-      "source_hash": "c46f1a00879062ba260ef37e202d09385592420a301bb80a70630eb75d57c16f",
+      "source_hash": "2f6f32a446b36e183b23b34cb4d369e3b8c6cb382aa150226f1f51be86a2125e",
       "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-tv-ad-highlighting-how-bill-huizenga-got-five-times-richer-in-congress-while-raising-costs/",
       "sponsor": "Sean McCann for Congress",
       "start": 219,
@@ -29766,7 +29773,7 @@
       "review_source_hash": "c46f1a00879062ba260ef37e202d09385592420a301bb80a70630eb75d57c16f",
       "review_status": "reviewed",
       "source": "mccann",
-      "source_hash": "c46f1a00879062ba260ef37e202d09385592420a301bb80a70630eb75d57c16f",
+      "source_hash": "2f6f32a446b36e183b23b34cb4d369e3b8c6cb382aa150226f1f51be86a2125e",
       "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-tv-ad-highlighting-how-bill-huizenga-got-five-times-richer-in-congress-while-raising-costs/",
       "sponsor": "Sean McCann for Congress",
       "start": 347,
@@ -30832,7 +30839,7 @@
       "review_source_hash": "c696f39137f029bfc3e338cbf2883a593f88041ed125e59a37090b4b4c374d73",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "f4ee5d3fce39e2ddda9758d4169f5100d83c9b502e08bc3624e47a84ccbbe475",
+      "source_hash": "2374f8f60924d4b7326f9b076902bc2aaaf8d56343e0c414ed0d4a65561bbe34",
       "source_url": "https://rogersforsenate.com/news/rogers-launches-new-ad-blasting-doctor-abdul-for-calling-to-defund-breast-cancer-research",
       "sponsor": "Rogers for Senate",
       "start": 147,
@@ -30858,7 +30865,7 @@
       "review_source_hash": "c696f39137f029bfc3e338cbf2883a593f88041ed125e59a37090b4b4c374d73",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "f4ee5d3fce39e2ddda9758d4169f5100d83c9b502e08bc3624e47a84ccbbe475",
+      "source_hash": "2374f8f60924d4b7326f9b076902bc2aaaf8d56343e0c414ed0d4a65561bbe34",
       "source_url": "https://rogersforsenate.com/news/rogers-launches-new-ad-blasting-doctor-abdul-for-calling-to-defund-breast-cancer-research",
       "sponsor": "Rogers for Senate",
       "start": 391,
@@ -31560,7 +31567,7 @@
       "review_source_hash": "1e4acaab0161283b0fe0e6ed495afb39abb0087d2a437eb858dcb67052823f9e",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "8b3065cfa44c87ad44745dc275711369fb7f8f4f22afe04fd1b1e3c12344d057",
+      "source_hash": "c5b82655599633ccf193c3e2e66788410519342582ba3a54b9bb6b1d8433684b",
       "source_url": "https://www.nancylacore.com/media/nancy-lacore-fighting-for-healthcare-ad-release",
       "sponsor": "Nancy Lacore for Congress",
       "start": 18,
@@ -31586,7 +31593,7 @@
       "review_source_hash": "1e4acaab0161283b0fe0e6ed495afb39abb0087d2a437eb858dcb67052823f9e",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "8b3065cfa44c87ad44745dc275711369fb7f8f4f22afe04fd1b1e3c12344d057",
+      "source_hash": "c5b82655599633ccf193c3e2e66788410519342582ba3a54b9bb6b1d8433684b",
       "source_url": "https://www.nancylacore.com/media/nancy-lacore-fighting-for-healthcare-ad-release",
       "sponsor": "Nancy Lacore for Congress",
       "start": 118,
@@ -31612,7 +31619,7 @@
       "review_source_hash": "1e4acaab0161283b0fe0e6ed495afb39abb0087d2a437eb858dcb67052823f9e",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "8b3065cfa44c87ad44745dc275711369fb7f8f4f22afe04fd1b1e3c12344d057",
+      "source_hash": "c5b82655599633ccf193c3e2e66788410519342582ba3a54b9bb6b1d8433684b",
       "source_url": "https://www.nancylacore.com/media/nancy-lacore-fighting-for-healthcare-ad-release",
       "sponsor": "Nancy Lacore for Congress",
       "start": 335,
@@ -34001,7 +34008,7 @@
       "review_source_hash": "70c8d9b2b808d58dea4de5d8f4d0ac88443d6e5e7ff1040be2a310edf5ad5875",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "b3fe138d8166674d877770ea07d0e06e20a18086972a25cb9e8184a736b3fdd6",
+      "source_hash": "1925e658308838c9ae6be8980658ac67da9d6d3f0024f6e08e26adf61599042e",
       "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -34027,7 +34034,7 @@
       "review_source_hash": "70c8d9b2b808d58dea4de5d8f4d0ac88443d6e5e7ff1040be2a310edf5ad5875",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "b3fe138d8166674d877770ea07d0e06e20a18086972a25cb9e8184a736b3fdd6",
+      "source_hash": "1925e658308838c9ae6be8980658ac67da9d6d3f0024f6e08e26adf61599042e",
       "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -34053,7 +34060,7 @@
       "review_source_hash": "70c8d9b2b808d58dea4de5d8f4d0ac88443d6e5e7ff1040be2a310edf5ad5875",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "b3fe138d8166674d877770ea07d0e06e20a18086972a25cb9e8184a736b3fdd6",
+      "source_hash": "1925e658308838c9ae6be8980658ac67da9d6d3f0024f6e08e26adf61599042e",
       "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -34079,7 +34086,7 @@
       "review_source_hash": "70c8d9b2b808d58dea4de5d8f4d0ac88443d6e5e7ff1040be2a310edf5ad5875",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "b3fe138d8166674d877770ea07d0e06e20a18086972a25cb9e8184a736b3fdd6",
+      "source_hash": "1925e658308838c9ae6be8980658ac67da9d6d3f0024f6e08e26adf61599042e",
       "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -34105,7 +34112,7 @@
       "review_source_hash": "70c8d9b2b808d58dea4de5d8f4d0ac88443d6e5e7ff1040be2a310edf5ad5875",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "b3fe138d8166674d877770ea07d0e06e20a18086972a25cb9e8184a736b3fdd6",
+      "source_hash": "1925e658308838c9ae6be8980658ac67da9d6d3f0024f6e08e26adf61599042e",
       "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -34131,7 +34138,7 @@
       "review_source_hash": "70c8d9b2b808d58dea4de5d8f4d0ac88443d6e5e7ff1040be2a310edf5ad5875",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "b3fe138d8166674d877770ea07d0e06e20a18086972a25cb9e8184a736b3fdd6",
+      "source_hash": "1925e658308838c9ae6be8980658ac67da9d6d3f0024f6e08e26adf61599042e",
       "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -34157,7 +34164,7 @@
       "review_source_hash": "70c8d9b2b808d58dea4de5d8f4d0ac88443d6e5e7ff1040be2a310edf5ad5875",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "b3fe138d8166674d877770ea07d0e06e20a18086972a25cb9e8184a736b3fdd6",
+      "source_hash": "1925e658308838c9ae6be8980658ac67da9d6d3f0024f6e08e26adf61599042e",
       "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -34183,7 +34190,7 @@
       "review_source_hash": "70c8d9b2b808d58dea4de5d8f4d0ac88443d6e5e7ff1040be2a310edf5ad5875",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "b3fe138d8166674d877770ea07d0e06e20a18086972a25cb9e8184a736b3fdd6",
+      "source_hash": "1925e658308838c9ae6be8980658ac67da9d6d3f0024f6e08e26adf61599042e",
       "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -34209,7 +34216,7 @@
       "review_source_hash": "70c8d9b2b808d58dea4de5d8f4d0ac88443d6e5e7ff1040be2a310edf5ad5875",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "b3fe138d8166674d877770ea07d0e06e20a18086972a25cb9e8184a736b3fdd6",
+      "source_hash": "1925e658308838c9ae6be8980658ac67da9d6d3f0024f6e08e26adf61599042e",
       "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -39828,7 +39835,7 @@
       "review_source_hash": "141904c6d2623909b83211d7a6811720ac801c0b82b92dea780c7422c8e91c89",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "6eaf94442c57f03aedc6d715258535fe4f8fbd2742ef991aa26bb98ec452fefe",
+      "source_hash": "6f8250a8d19ae7523dbf6a79e188d599509802d191d5b81e7c701bb7e4299734",
       "source_url": "https://rogersforsenate.com/news/ad-abdul-threatens-our-nations-values-and-security",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -39854,7 +39861,7 @@
       "review_source_hash": "141904c6d2623909b83211d7a6811720ac801c0b82b92dea780c7422c8e91c89",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "6eaf94442c57f03aedc6d715258535fe4f8fbd2742ef991aa26bb98ec452fefe",
+      "source_hash": "6f8250a8d19ae7523dbf6a79e188d599509802d191d5b81e7c701bb7e4299734",
       "source_url": "https://rogersforsenate.com/news/ad-abdul-threatens-our-nations-values-and-security",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -39880,7 +39887,7 @@
       "review_source_hash": "141904c6d2623909b83211d7a6811720ac801c0b82b92dea780c7422c8e91c89",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "6eaf94442c57f03aedc6d715258535fe4f8fbd2742ef991aa26bb98ec452fefe",
+      "source_hash": "6f8250a8d19ae7523dbf6a79e188d599509802d191d5b81e7c701bb7e4299734",
       "source_url": "https://rogersforsenate.com/news/ad-abdul-threatens-our-nations-values-and-security",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -46622,7 +46629,7 @@
       "review_source_hash": "954a19a44e3d797002fff67223af373cbaa0001f694cc6dde66ce9beff5963e1",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "cc3cee31d439039935f1fe45afeb0ece58bd761fbfbf52ce2171d2bee7772d28",
+      "source_hash": "fb05c74758369630aa315beb532ecf39fb458d0ce130eef10bae0f2750da060b",
       "source_url": "https://rogersforsenate.com/news/ad-we-need-to-end-the-tariff-war-now",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -46648,7 +46655,7 @@
       "review_source_hash": "954a19a44e3d797002fff67223af373cbaa0001f694cc6dde66ce9beff5963e1",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "cc3cee31d439039935f1fe45afeb0ece58bd761fbfbf52ce2171d2bee7772d28",
+      "source_hash": "fb05c74758369630aa315beb532ecf39fb458d0ce130eef10bae0f2750da060b",
       "source_url": "https://rogersforsenate.com/news/ad-we-need-to-end-the-tariff-war-now",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -46674,7 +46681,7 @@
       "review_source_hash": "954a19a44e3d797002fff67223af373cbaa0001f694cc6dde66ce9beff5963e1",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "cc3cee31d439039935f1fe45afeb0ece58bd761fbfbf52ce2171d2bee7772d28",
+      "source_hash": "fb05c74758369630aa315beb532ecf39fb458d0ce130eef10bae0f2750da060b",
       "source_url": "https://rogersforsenate.com/news/ad-we-need-to-end-the-tariff-war-now",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -48801,7 +48808,7 @@
       "review_source_hash": "b20b7c47e3bb40e46112ef6b75007017c19d5390f9b89808a2d1c5b4075fa037",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "6ae897454b890597fdcd8716fd30e6de95394f7188336184622b92de0022f7b1",
+      "source_hash": "5436b94270181b9111db806f8d21ce27b983c28acf767c431301ac0d43cdf998",
       "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -48827,7 +48834,7 @@
       "review_source_hash": "b20b7c47e3bb40e46112ef6b75007017c19d5390f9b89808a2d1c5b4075fa037",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "6ae897454b890597fdcd8716fd30e6de95394f7188336184622b92de0022f7b1",
+      "source_hash": "5436b94270181b9111db806f8d21ce27b983c28acf767c431301ac0d43cdf998",
       "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -48853,7 +48860,7 @@
       "review_source_hash": "b20b7c47e3bb40e46112ef6b75007017c19d5390f9b89808a2d1c5b4075fa037",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "6ae897454b890597fdcd8716fd30e6de95394f7188336184622b92de0022f7b1",
+      "source_hash": "5436b94270181b9111db806f8d21ce27b983c28acf767c431301ac0d43cdf998",
       "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -48879,7 +48886,7 @@
       "review_source_hash": "b20b7c47e3bb40e46112ef6b75007017c19d5390f9b89808a2d1c5b4075fa037",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "6ae897454b890597fdcd8716fd30e6de95394f7188336184622b92de0022f7b1",
+      "source_hash": "5436b94270181b9111db806f8d21ce27b983c28acf767c431301ac0d43cdf998",
       "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -51233,7 +51240,7 @@
       "review_source_hash": "943933e9e5c1e0edd689847887b48d0cf6238d659c76d8167bf5bb5e912d5a98",
       "review_status": "reviewed",
       "source": "marshall",
-      "source_hash": "142993fc0b8d5835355a9c650012457dbc43a640fa38f66f1e6a0c1483f4d3c5",
+      "source_hash": "d1ef5374a0c21f15eb082074dd355f579cb0afd970c084e96558e89fd8a12a20",
       "source_url": "https://www.kansansformarshall.com/news/deb-ad-release",
       "sponsor": "Kansans for Marshall",
       "start": 0,
@@ -51259,7 +51266,7 @@
       "review_source_hash": "943933e9e5c1e0edd689847887b48d0cf6238d659c76d8167bf5bb5e912d5a98",
       "review_status": "reviewed",
       "source": "marshall",
-      "source_hash": "142993fc0b8d5835355a9c650012457dbc43a640fa38f66f1e6a0c1483f4d3c5",
+      "source_hash": "d1ef5374a0c21f15eb082074dd355f579cb0afd970c084e96558e89fd8a12a20",
       "source_url": "https://www.kansansformarshall.com/news/deb-ad-release",
       "sponsor": "Kansans for Marshall",
       "start": 0,
@@ -51285,7 +51292,7 @@
       "review_source_hash": "943933e9e5c1e0edd689847887b48d0cf6238d659c76d8167bf5bb5e912d5a98",
       "review_status": "reviewed",
       "source": "marshall",
-      "source_hash": "142993fc0b8d5835355a9c650012457dbc43a640fa38f66f1e6a0c1483f4d3c5",
+      "source_hash": "d1ef5374a0c21f15eb082074dd355f579cb0afd970c084e96558e89fd8a12a20",
       "source_url": "https://www.kansansformarshall.com/news/deb-ad-release",
       "sponsor": "Kansans for Marshall",
       "start": 0,
@@ -53097,7 +53104,7 @@
       "review_source_hash": "5aa0ee63f6c7a6c5f74001672e41117903289a6031cae6d1429dc2a060737f21",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "a09afe0c52d27248adf1a75c91554540358f58747621e816d25e7e58d6d65792",
+      "source_hash": "ae32c1ca463f0a00eecfb56f08dc5a3e67346ac212488120e0576c87d07e41dc",
       "source_url": "https://rogersforsenate.com/news/ad-michigan-cant-afford-abdul-el-sayed",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -53123,7 +53130,7 @@
       "review_source_hash": "5aa0ee63f6c7a6c5f74001672e41117903289a6031cae6d1429dc2a060737f21",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "a09afe0c52d27248adf1a75c91554540358f58747621e816d25e7e58d6d65792",
+      "source_hash": "ae32c1ca463f0a00eecfb56f08dc5a3e67346ac212488120e0576c87d07e41dc",
       "source_url": "https://rogersforsenate.com/news/ad-michigan-cant-afford-abdul-el-sayed",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -65296,7 +65303,7 @@
       "review_source_hash": "45393822fa38ba770826aa59f16e80104a09e65f095eef8e935700b4abbfce96",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "0f7f1918a36167d6a94524c7c9861dae21a5b34ef324529bbe9bad6506bcdd30",
+      "source_hash": "8567049c35426f16f6c8e5a6a77df1968bda21a4f419ae3f47b4112c2d03de1f",
       "source_url": "https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie",
       "sponsor": "Nancy Lacore for Congress",
       "start": 144,
@@ -65322,7 +65329,7 @@
       "review_source_hash": "45393822fa38ba770826aa59f16e80104a09e65f095eef8e935700b4abbfce96",
       "review_status": "reviewed",
       "source": "lacore",
-      "source_hash": "0f7f1918a36167d6a94524c7c9861dae21a5b34ef324529bbe9bad6506bcdd30",
+      "source_hash": "8567049c35426f16f6c8e5a6a77df1968bda21a4f419ae3f47b4112c2d03de1f",
       "source_url": "https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie",
       "sponsor": "Nancy Lacore for Congress",
       "start": 231,
@@ -65426,7 +65433,7 @@
       "review_source_hash": "d8f19c48c3241baefa58c621b53bcc4084927ac99c9a60b38c3d532a787994a5",
       "review_status": "reviewed",
       "source": "mccann",
-      "source_hash": "d8f19c48c3241baefa58c621b53bcc4084927ac99c9a60b38c3d532a787994a5",
+      "source_hash": "b22cc5bdf8f59a385d6446975db6eb73fed443b7d62c9039cbb999c28a07bc2e",
       "source_url": "https://seanmccannforcongress.com/this-place-is-broken-mccann-targets-washington-corruption-in-new-ad/",
       "sponsor": "Sean McCann for Congress",
       "start": 258,
@@ -65452,7 +65459,7 @@
       "review_source_hash": "d8f19c48c3241baefa58c621b53bcc4084927ac99c9a60b38c3d532a787994a5",
       "review_status": "reviewed",
       "source": "mccann",
-      "source_hash": "d8f19c48c3241baefa58c621b53bcc4084927ac99c9a60b38c3d532a787994a5",
+      "source_hash": "b22cc5bdf8f59a385d6446975db6eb73fed443b7d62c9039cbb999c28a07bc2e",
       "source_url": "https://seanmccannforcongress.com/this-place-is-broken-mccann-targets-washington-corruption-in-new-ad/",
       "sponsor": "Sean McCann for Congress",
       "start": 280,
@@ -66481,7 +66488,7 @@
       "review_source_hash": "9a420438f853571da3e6cc86bc952d720b1981f0464299680857f8b00fc533d3",
       "review_status": "reviewed",
       "source": "marshall",
-      "source_hash": "8c8062f946f8d5f5530dea8069951623793db678c7ffc1c9e3b83951f9795eda",
+      "source_hash": "5168bf04f4b2ed8b336db10f488002121c9c4886c338a93bd0414ca964277813",
       "source_url": "https://www.kansansformarshall.com/news/hamilton-in-his-own-words-ad",
       "sponsor": "Kansans for Marshall",
       "start": 0,
@@ -66507,7 +66514,7 @@
       "review_source_hash": "9a420438f853571da3e6cc86bc952d720b1981f0464299680857f8b00fc533d3",
       "review_status": "reviewed",
       "source": "marshall",
-      "source_hash": "8c8062f946f8d5f5530dea8069951623793db678c7ffc1c9e3b83951f9795eda",
+      "source_hash": "5168bf04f4b2ed8b336db10f488002121c9c4886c338a93bd0414ca964277813",
       "source_url": "https://www.kansansformarshall.com/news/hamilton-in-his-own-words-ad",
       "sponsor": "Kansans for Marshall",
       "start": 0,
@@ -66533,7 +66540,7 @@
       "review_source_hash": "9a420438f853571da3e6cc86bc952d720b1981f0464299680857f8b00fc533d3",
       "review_status": "reviewed",
       "source": "marshall",
-      "source_hash": "8c8062f946f8d5f5530dea8069951623793db678c7ffc1c9e3b83951f9795eda",
+      "source_hash": "5168bf04f4b2ed8b336db10f488002121c9c4886c338a93bd0414ca964277813",
       "source_url": "https://www.kansansformarshall.com/news/hamilton-in-his-own-words-ad",
       "sponsor": "Kansans for Marshall",
       "start": 0,
@@ -66559,7 +66566,7 @@
       "review_source_hash": "9a420438f853571da3e6cc86bc952d720b1981f0464299680857f8b00fc533d3",
       "review_status": "reviewed",
       "source": "marshall",
-      "source_hash": "8c8062f946f8d5f5530dea8069951623793db678c7ffc1c9e3b83951f9795eda",
+      "source_hash": "5168bf04f4b2ed8b336db10f488002121c9c4886c338a93bd0414ca964277813",
       "source_url": "https://www.kansansformarshall.com/news/hamilton-in-his-own-words-ad",
       "sponsor": "Kansans for Marshall",
       "start": 0,
@@ -74984,7 +74991,7 @@
       "review_source_hash": "1092222bb3c6e375e9764f92c04d8f5bdf7267ddf766c1f7e77d9d0ede0261b9",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "17e1f5f980b53aca5f9c06e0f0109acdf4fae6f74a246dd8100cfabf97825ae9",
+      "source_hash": "612416383d5aa5b691384a514c749f30033c49adb76d2373233089e86153fc9f",
       "source_url": "https://rogersforsenate.com/news/ad-abduls-green-new-deal-would-take-money-out-of-your-pocket",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -75010,7 +75017,7 @@
       "review_source_hash": "1092222bb3c6e375e9764f92c04d8f5bdf7267ddf766c1f7e77d9d0ede0261b9",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "17e1f5f980b53aca5f9c06e0f0109acdf4fae6f74a246dd8100cfabf97825ae9",
+      "source_hash": "612416383d5aa5b691384a514c749f30033c49adb76d2373233089e86153fc9f",
       "source_url": "https://rogersforsenate.com/news/ad-abduls-green-new-deal-would-take-money-out-of-your-pocket",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -75036,7 +75043,7 @@
       "review_source_hash": "1092222bb3c6e375e9764f92c04d8f5bdf7267ddf766c1f7e77d9d0ede0261b9",
       "review_status": "reviewed",
       "source": "rogers",
-      "source_hash": "17e1f5f980b53aca5f9c06e0f0109acdf4fae6f74a246dd8100cfabf97825ae9",
+      "source_hash": "612416383d5aa5b691384a514c749f30033c49adb76d2373233089e86153fc9f",
       "source_url": "https://rogersforsenate.com/news/ad-abduls-green-new-deal-would-take-money-out-of-your-pocket",
       "sponsor": "Rogers for Senate",
       "start": 0,
@@ -75504,7 +75511,7 @@
       "review_source_hash": "60b739fb060704b0f17f03c01509bb99a87ed0a6cc54b9c17bbf7484d9c015fc",
       "review_status": "reviewed",
       "source": "el-sayed",
-      "source_hash": "60b739fb060704b0f17f03c01509bb99a87ed0a6cc54b9c17bbf7484d9c015fc",
+      "source_hash": "d53bfdb0d77658f883ca70754e74b800eede9a890f2eb88eaff62c9ff21b563d",
       "source_url": "https://abdulforsenate.com/2026/10/new-ad-gallons-calls-out-trump-administrations-disastrous-economic-agenda/",
       "sponsor": "Abdul for U.S. Senate",
       "start": 513,
@@ -88871,8 +88878,8 @@
               "dccc-669669-0"
             ],
             "count": 104,
-            "share": 0.11292073832790445,
-            "total": 921
+            "share": 0.11267605633802817,
+            "total": 923
           },
           "neither": {
             "ad_ids": [
@@ -88993,8 +89000,8 @@
               "snap-fd07379a3febd2fad6434340"
             ],
             "count": 115,
-            "share": 0.1248642779587405,
-            "total": 921
+            "share": 0.12459371614301191,
+            "total": 923
           },
           "not_reviewed": {
             "ad_ids": [
@@ -89002,11 +89009,13 @@
               "snap-29d506e1941b11a1ec102e35",
               "jackson-93075c70a1d4a5fc-0",
               "lcv-vf-3185-0",
-              "dccc-669729-0"
+              "dccc-669729-0",
+              "dccc-669808-0",
+              "dccc-669825-0"
             ],
-            "count": 5,
-            "share": 0.0054288816503800215,
-            "total": 921
+            "count": 7,
+            "share": 0.007583965330444204,
+            "total": 923
           },
           "opponent_negative_only": {
             "ad_ids": [
@@ -89423,8 +89432,8 @@
               "dccc-669673-0"
             ],
             "count": 411,
-            "share": 0.44625407166123776,
-            "total": 921
+            "share": 0.4452871072589382,
+            "total": 923
           },
           "own_positive_only": {
             "ad_ids": [
@@ -89716,8 +89725,8 @@
               "smp-3904-0"
             ],
             "count": 286,
-            "share": 0.31053203040173727,
-            "total": 921
+            "share": 0.30985915492957744,
+            "total": 923
           }
         },
         "R": {
@@ -89801,8 +89810,8 @@
               "rogers-6ae0ac2f4af67c5c39abe46b-0"
             ],
             "count": 76,
-            "share": 0.2459546925566343,
-            "total": 309
+            "share": 0.24516129032258063,
+            "total": 310
           },
           "neither": {
             "ad_ids": [
@@ -89826,16 +89835,17 @@
               "lawler-1429-0"
             ],
             "count": 18,
-            "share": 0.05825242718446602,
-            "total": 309
+            "share": 0.05806451612903226,
+            "total": 310
           },
           "not_reviewed": {
             "ad_ids": [
-              "nrsc-15083-0"
+              "nrsc-15083-0",
+              "nrsc-17881-0"
             ],
-            "count": 1,
-            "share": 0.003236245954692557,
-            "total": 309
+            "count": 2,
+            "share": 0.0064516129032258064,
+            "total": 310
           },
           "opponent_negative_only": {
             "ad_ids": [
@@ -89938,8 +89948,8 @@
               "nrsc-17816-0"
             ],
             "count": 97,
-            "share": 0.313915857605178,
-            "total": 309
+            "share": 0.31290322580645163,
+            "total": 310
           },
           "own_positive_only": {
             "ad_ids": [
@@ -90062,8 +90072,8 @@
               "bresnahan-native-122245613072111841"
             ],
             "count": 117,
-            "share": 0.3786407766990291,
-            "total": 309
+            "share": 0.3774193548387097,
+            "total": 310
           }
         }
       }
