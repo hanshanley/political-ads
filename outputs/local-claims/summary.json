@@ -1884,116 +1884,118 @@
       "all_unique_messages": 490,
       "categories_overlap": true,
       "denominator": "normalized_unique_messages",
-      "normalized_unique_messages": 0,
+      "normalized_unique_messages": 1,
       "side_tone": {
         "not_partisan": {
           "negative": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "neutral": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "positive": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "uncertain": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           }
         },
         "other_party": {
           "negative": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "neutral": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "positive": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "uncertain": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           }
         },
         "other_side": {
           "negative": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "neutral": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "positive": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "uncertain": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           }
         },
         "same_side": {
           "negative": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "neutral": {
-            "ad_ids": [],
-            "count": 0,
-            "share": null
+            "ad_ids": [
+              "barr-1560-0"
+            ],
+            "count": 1,
+            "share": 1.0
           },
           "positive": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "uncertain": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           }
         },
         "unknown": {
           "negative": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "neutral": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "positive": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "uncertain": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           }
         }
       },
@@ -2005,15 +2007,17 @@
   },
   "ads": 1792,
   "ads_by_status": {
-    "not_run": 1791,
+    "normalized": 1,
+    "not_run": 1790,
     "validation_failed": 1
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "not_run": 2015,
+    "normalized": 1,
+    "not_run": 2014,
     "validation_failed": 1
   },
-  "claims": 0,
+  "claims": 6,
   "fingerprint": "b55ed6ded6b05dbd1e27aa45570fa327f8a140b828af141bcda23ea19df57837",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -2040,17 +2044,44 @@
     },
     "same_side": {
       "negative": [],
-      "neutral": [],
+      "neutral": [
+        {
+          "claim_id": "barr-1560-0-claims-001-003",
+          "target_index": 0
+        }
+      ],
       "positive": [],
       "uncertain": []
     },
     "unknown": {
       "negative": [],
-      "neutral": [],
-      "positive": [],
+      "neutral": [
+        {
+          "claim_id": "barr-1560-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "barr-1560-0-claims-001-005",
+          "target_index": 0
+        }
+      ],
+      "positive": [
+        {
+          "claim_id": "barr-1560-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "barr-1560-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "barr-1560-0-claims-001-006",
+          "target_index": 0
+        }
+      ],
       "uncertain": []
     }
   },
-  "targets": 0,
+  "targets": 6,
   "version": "local-ad-claims-3"
 }

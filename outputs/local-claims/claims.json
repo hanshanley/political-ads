@@ -1,1 +1,278 @@
-[]
+[
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "barr-1560-0",
+    "alignment": "R",
+    "block_id": "barr-1560-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "barr-1560-0-claims-001-001",
+    "claim_text": "Congressman Andy Barr has been with me all the way.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 154,
+        "kind": "publisher_transcript",
+        "start": 52,
+        "text": "President Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
+    "sponsor": "Andy Barr for Senate",
+    "targets": [
+      {
+        "anchor_end": 140,
+        "anchor_quote": "Congressman Andy Barr",
+        "anchor_start": 119,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Andy Barr",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Narrator: A message from President Donald J. Trump.\nPresident Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.\nCrowd: Andy Barr! Andy Barr!\nPresident Trump: He’s a good guy and a warrior.\nBarr: I’m Andy Barr and I approve this message",
+    "text_hash": "4b158234d6711bc2162071c258985b2ee8e5ca80b6d663ec971828724b817b1a",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "barr-1560-0",
+    "alignment": "R",
+    "block_id": "barr-1560-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "barr-1560-0-claims-001-002",
+    "claim_text": "He’s a good guy and a warrior.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 231,
+        "kind": "publisher_transcript",
+        "start": 184,
+        "text": "President Trump: He’s a good guy and a warrior.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
+    "sponsor": "Andy Barr for Senate",
+    "targets": [
+      {
+        "anchor_end": 203,
+        "anchor_quote": "He",
+        "anchor_start": 201,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Andy Barr",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Narrator: A message from President Donald J. Trump.\nPresident Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.\nCrowd: Andy Barr! Andy Barr!\nPresident Trump: He’s a good guy and a warrior.\nBarr: I’m Andy Barr and I approve this message",
+    "text_hash": "4b158234d6711bc2162071c258985b2ee8e5ca80b6d663ec971828724b817b1a",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "barr-1560-0",
+    "alignment": "R",
+    "block_id": "barr-1560-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "barr-1560-0-claims-001-003",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 278,
+        "kind": "publisher_transcript",
+        "start": 232,
+        "text": "Barr: I’m Andy Barr and I approve this message",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
+    "sponsor": "Andy Barr for Senate",
+    "targets": [
+      {
+        "anchor_end": 239,
+        "anchor_quote": "I",
+        "anchor_start": 238,
+        "anchor_unit_id": 5,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Andy Barr",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Narrator: A message from President Donald J. Trump.\nPresident Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.\nCrowd: Andy Barr! Andy Barr!\nPresident Trump: He’s a good guy and a warrior.\nBarr: I’m Andy Barr and I approve this message",
+    "text_hash": "4b158234d6711bc2162071c258985b2ee8e5ca80b6d663ec971828724b817b1a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "barr-1560-0",
+    "alignment": "R",
+    "block_id": "barr-1560-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "barr-1560-0-claims-001-004",
+    "claim_text": "A message is from President Donald J. Trump.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 51,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Narrator: A message from President Donald J. Trump.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
+    "sponsor": "Andy Barr for Senate",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "President Donald J. Trump",
+        "anchor_start": 25,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Donald J. Trump",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Narrator: A message from President Donald J. Trump.\nPresident Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.\nCrowd: Andy Barr! Andy Barr!\nPresident Trump: He’s a good guy and a warrior.\nBarr: I’m Andy Barr and I approve this message",
+    "text_hash": "4b158234d6711bc2162071c258985b2ee8e5ca80b6d663ec971828724b817b1a",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "barr-1560-0",
+    "alignment": "R",
+    "block_id": "barr-1560-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "barr-1560-0-claims-001-005",
+    "claim_text": "Andy Barr! Andy Barr!",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 183,
+        "kind": "publisher_transcript",
+        "start": 155,
+        "text": "Crowd: Andy Barr! Andy Barr!",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
+    "sponsor": "Andy Barr for Senate",
+    "targets": [
+      {
+        "anchor_end": 171,
+        "anchor_quote": "Andy Barr",
+        "anchor_start": 162,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Andy Barr",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Narrator: A message from President Donald J. Trump.\nPresident Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.\nCrowd: Andy Barr! Andy Barr!\nPresident Trump: He’s a good guy and a warrior.\nBarr: I’m Andy Barr and I approve this message",
+    "text_hash": "4b158234d6711bc2162071c258985b2ee8e5ca80b6d663ec971828724b817b1a",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "barr-1560-0",
+    "alignment": "R",
+    "block_id": "barr-1560-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "barr-1560-0-claims-001-006",
+    "claim_text": "A wonderful man who has been with me all the way, Congressman Andy Barr.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 154,
+        "kind": "publisher_transcript",
+        "start": 52,
+        "text": "President Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
+    "sponsor": "Andy Barr for Senate",
+    "targets": [
+      {
+        "anchor_end": 140,
+        "anchor_quote": "Congressman Andy Barr",
+        "anchor_start": 119,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Andy Barr",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Narrator: A message from President Donald J. Trump.\nPresident Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.\nCrowd: Andy Barr! Andy Barr!\nPresident Trump: He’s a good guy and a warrior.\nBarr: I’m Andy Barr and I approve this message",
+    "text_hash": "4b158234d6711bc2162071c258985b2ee8e5ca80b6d663ec971828724b817b1a",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
+  }
+]
