@@ -44,12 +44,56 @@ collection reproduces the new partition. Complete exports, Parquet, eleven PNG f
 the technical report and both unpublished editions are rebuilt together.
 
 **The large Republican House gap remains unresolved.** AFL-CIO and Working America
-still supply 491 Democratic records. Additional public ad galleries exposed video
+supply 491 Democratic records across all chambers, including 355 House records.
+Additional public ad galleries exposed video
 links rather than usable scripts; the publisher's 31 in-window PDFs were polling,
 policy, organizational or legal material, not additional verified federal ad scripts.
 The new source is included in ordinary research-only refreshes, but this bounded
 follow-up does not exhaust accessible national sources or establish party ad prevalence.
 Existing access denials remain paused, and no website/Substack publication occurred.
+
+### House platform-mix diagnosis
+
+The House gap depends strongly on the acquired platform mix:
+
+| English House text records | Democratic-aligned | Republican-aligned |
+|---|---:|---:|
+| All acquired sources | 698 | 149 |
+| Snap sources | 476 | 1 |
+| Sources other than Snap | 222 | 148 |
+
+Reproduce this table from `outputs/analysis.json` at `dataset.ads`: select
+`chamber == "House"` and alignment `D` or `R`, then classify Snap records by
+`source.endswith("-snap")`. This is a collection diagnostic, not a new exclusion
+rule: no records are removed. Neither the full nor the non-Snap subset estimates
+national party ad volume. The non-Snap comparison is still unmatched by publisher,
+race, format and date. The 149 Republican records are not an acquisition ceiling.
+
+Further first-party discovery found five House video links in Driving Force
+Action's [September release](https://drivingforceaction.org/2026/09/23/driving-force-action-launches-six-figure-ad-buy-in-battleground-states/)
+and [October follow-up](https://drivingforceaction.org/2026/10/20/driving-force-action-launches-six-figure-ad-buy-in-battleground-states-2/):
+
+| Supported candidate | Race | Publisher-linked YouTube IDs |
+|---|---|---|
+| Tom Barrett, FEC H2MI07123 | MI-07 | `nTbaSiApwMk`, `k1AdPSx5vXU` |
+| Ryan Mackenzie, FEC H8PA15195 | PA-07 | `byGYL96smGA` |
+| Derrick Van Orden, FEC H0WI03175 | WI-03 | `vWbuCYjt4WQ`, `4xgFtbkcAN0` |
+
+These are five linked videos, not five newly recovered texts or independently
+verified unique creatives. No release summary or link title is counted as spoken
+ad copy. The October page path says October 20 while its release PDF says October
+21; neither establishes first paid delivery. Candidate joins use the existing
+exact reviewed public-name aliases where needed, not surname-only matching.
+
+The publisher's public WordPress video inventory exposed one separate July-uploaded,
+15-second original. Local speech recognition recovered no speech; inspected frames
+show general voter-mobilization imagery without a named federal candidate. It is
+not substituted for the five linked House videos. Its original SHA-256 is
+`747a7030cdca1da392a77b3ba080da5c18bdd9d5b50ef377dcb301890ad4c3af`.
+Native video OCR failed; locally decoded frames were inspected instead. The five
+House leads still need permitted original media or actual transcripts. Existing
+provider denials were not retried. Discovery and text recovery remain separate;
+these results do not establish that available Republican House ads are exhausted.
 
 ## Earlier October 30 Republican-coverage recovery
 
