@@ -121,6 +121,21 @@ after-the-fact filter. `--offline` is an alias for **replay**, not fresh inferen
 Fresh inference already defaults to cached local weights.
 Nothing automatically starts inference during builds, refreshes or CI.
 
+While inference is running, publish a separate complete checkpoint without taking
+the inference lock or restarting the model:
+
+```bash
+.venv/bin/python scripts/publish_claim_checkpoint.py
+```
+
+This writes `outputs/local-claims/`, including CSV/JSON results and
+`complete-evidence.zip` with complete inputs, saved responses and history.
+The large input manifest and ad-input JSON/CSV are inside the ZIP, not duplicated
+as loose Git files. Unfinished records stay
+not-run; failures stay excluded. Identical checkpoints are not rewritten.
+Commit this directory to publish progress without replacing the article's legacy
+results. The active inference run remains in `data/local-claims/full/`.
+
 If your package proxy supports `pip` but not `uv`, the equivalent isolated
 environment (with Python 3.12+ selected as `python3`) is:
 

@@ -6,6 +6,7 @@ from unittest.mock import patch
 
 import pytest
 
+from political_ads.claim_checkpoints import publish_claim_checkpoint
 from political_ads.claims import (
     CONTEXT_CHARS,
     MAX_TOKENS,
@@ -273,6 +274,46 @@ def test_ocr_grouping_preserves_image_time_and_speech_boundaries(updates):
     second = first | {"text": "failed the voters"} | updates
     block = blocks_for(ad(text=first["text"] + "\n" + second["text"], segments=[first, second]))[0]
     assert [unit["text"] for unit in block["units"]] == [first["text"], second["text"]]
+
+
+def test_publish_checkpoint_does_not_interrupt_inference_and_skips_unchanged_data(tmp_path):
+    fixture_corpus(tmp_path)
+    source, output = tmp_path / "run", tmp_path / "published"
+    extract_claims(tmp_path, source, extractor=lambda *_: {"text": canonical(payload())})
+    original = (source / "summary.json").read_bytes()
+    with output_lock(source):
+        summary = publish_claim_checkpoint(tmp_path, source, output)
+    assert summary["ads_by_status"] == {"normalized": 1}
+    assert (source / "summary.json").read_bytes() == original
+    with zipfile.ZipFile(output / "complete-evidence.zip") as archive:
+        assert archive.testzip() is None
+        assert json.loads(archive.read("ads.json"))[0]["text"] == ad()["text"]
+        assert any(name.startswith("responses/") for name in archive.namelist())
+    timestamp = (output / "complete-evidence.zip").stat().st_mtime_ns
+    assert publish_claim_checkpoint(tmp_path, source, output) == summary
+    assert (output / "complete-evidence.zip").stat().st_mtime_ns == timestamp
+    (output / "claims.csv").write_text("corrupted")
+    publish_claim_checkpoint(tmp_path, source, output)
+    assert "John Doe" in (output / "claims.csv").read_text()
+
+
+def test_publish_checkpoint_preserves_inflight_records_as_not_run(tmp_path):
+    fixture_corpus(tmp_path)
+    source, output = tmp_path / "run", tmp_path / "published"
+    extract_claims(tmp_path, source, prepare_only=True)
+    manifest = json.loads((source / "manifest.json").read_text())
+    path = source / "responses" / f"{manifest['blocks'][0]['id']}.json"
+    path.parent.mkdir(exist_ok=True)
+    path.write_text('{"attempts":')
+    with output_lock(source):
+        summary = publish_claim_checkpoint(tmp_path, source, output)
+    assert summary["ads_by_status"] == {"not_run": 1}
+    assert path.read_text() == '{"attempts":'
+    assert json.loads((output / "checkpoint.json").read_text())["skipped_incomplete_records"] == [
+        f"responses/{path.name}"
+    ]
+    with zipfile.ZipFile(output / "complete-evidence.zip") as archive:
+        assert json.loads(archive.read("manifest.json"))["ads"][0]["text"] == ad()["text"]
 
 
 def test_frozen_inputs_resume_offline_without_model_or_live_corpus(tmp_path):
