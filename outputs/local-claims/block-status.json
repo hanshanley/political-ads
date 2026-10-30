@@ -27,19 +27,19 @@
     "ad_id": "barr-1942-0",
     "block_id": "barr-1942-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "barr-1946-0",
     "block_id": "barr-1946-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 8\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "barr-1992-0",
     "block_id": "barr-1992-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "barr-2062-0",
