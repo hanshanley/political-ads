@@ -41,6 +41,26 @@ The deployable output is `site/`; the base path defaults to `/political-ads/`.
 Override with `SITE_BASE=/ npm run build --prefix web` for root hosting.
 The static `report.html` works without JavaScript.
 
+## Local claim extraction and target-specific side/tone
+
+The opt-in [local claim pipeline](docs/LOCAL_CLAIMS.md) uses pinned local Gemma,
+not hosted inference or Copilot annotation agents. It extracts source-linked claims
+and target-specific tone, derives same/other-party side from identity metadata,
+and preserves complete inputs, exact prompts, raw replies and retry history.
+Existing GPT-derived article results are not overwritten or relabeled as local-model output.
+
+```bash
+# Freeze inputs without loading a model.
+.venv/bin/python -m political_ads.cli extract-claims --prepare-only
+# Bounded local inference using the isolated MLX environment and cached weights.
+uv run --with-editable . scripts/extract_claims.py --max-new-blocks 1
+# Inspect targets.csv and complete-evidence.zip under data/local-claims/full/.
+```
+
+The same model performs extraction and source-fidelity revision; neither this nor
+structural evidence checks establish semantic accuracy. Unknown targets, uncertain
+tone and failed/incomplete extractions remain explicit.
+
 ## Refresh and expand collection
 
 ```bash

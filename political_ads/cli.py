@@ -214,9 +214,41 @@ def main() -> None:
         "snap-collect",
         "analyze",
         "audit-strategy",
+        "extract-claims",
     ):
         command_parser = subcommands.add_parser(command)
         command_parser.add_argument("--offline", action="store_true")
+        if command == "extract-claims":
+            command_parser.description = (
+                "Extract source-linked claims and target-specific side/tone with pinned local "
+                "Gemma. Does not use hosted inference or change the legacy research outputs."
+            )
+            command_parser.add_argument(
+                "--output", type=Path, help="Frozen run directory (default: data/local-claims/full)"
+            )
+            command_parser.add_argument(
+                "--prepare-only", action="store_true", help="Freeze inputs; do not load a model"
+            )
+            command_parser.add_argument(
+                "--replay", action="store_true", help="Rebuild exports from saved responses only"
+            )
+            command_parser.add_argument(
+                "--download-model", action="store_true", help="Allow pinned model weight download"
+            )
+            command_parser.add_argument(
+                "--retry-failed",
+                action="store_true",
+                help="Retry failed/unresolved blocks, preserving prior responses",
+            )
+            command_parser.add_argument(
+                "--max-new-blocks",
+                type=int,
+                default=0,
+                help="Bound work in this invocation (0: all)",
+            )
+            command_parser.add_argument(
+                "--ad-id", action="append", help="Repeatable selection when freezing a new run"
+            )
         if command == "audit-strategy":
             command_parser.description = (
                 "Independently verify saved same-ad metrics and chart CSV using canonical "
@@ -258,6 +290,40 @@ def main() -> None:
     args = parser.parse_args()
     root = args.root.resolve()
     try:
+        if args.command == "extract-claims":
+            from political_ads.claims import extract_claims
+
+            summary = extract_claims(
+                root,
+                args.output,
+                prepare_only=args.prepare_only,
+                replay=args.replay or args.offline,
+                download_model=args.download_model,
+                retry_failed=args.retry_failed,
+                max_new_blocks=args.max_new_blocks,
+                ad_ids=args.ad_id,
+            )
+            print(
+                json.dumps(
+                    {
+                        key: summary[key]
+                        for key in (
+                            "status",
+                            "ads",
+                            "ads_by_status",
+                            "blocks",
+                            "blocks_by_status",
+                            "claims",
+                            "targets",
+                            "model",
+                            "model_revision",
+                            "semantic_validation",
+                        )
+                    },
+                    indent=2,
+                    sort_keys=True,
+                )
+            )
         if args.command == "campaign-native":
             from political_ads.campaign_native import collect_campaign_native
 

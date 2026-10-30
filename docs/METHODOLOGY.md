@@ -1,5 +1,11 @@
 # Methodology
 
+**New local pipeline:** [Local claim extraction, target side and tone](LOCAL_CLAIMS.md)
+documents the opt-in pinned-Gemma replacement annotation process and complete-evidence
+exports. It does not use hosted inference or the saved GPT labels. The existing
+article results and their saved-label methodology below remain unchanged pending
+evaluation of the new process.
+
 ## Start here: how classification actually works
 
 **The headline portrayal labels are saved AI judgments, not keyword scores and not
