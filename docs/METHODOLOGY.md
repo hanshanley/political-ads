@@ -1,5 +1,170 @@
 # Methodology
 
+## Start here: how classification actually works
+
+**The headline portrayal labels are saved AI judgments, not keyword scores and not
+independently validated human labels.** GPT-5.6 Sol was used to interpret the recovered
+ad text. Python then turns those saved judgments into chart categories using fixed
+rules. Running the build repeats the counting, not the AI interpretation.
+
+The project has three different kinds of classification. They answer different questions:
+
+| Classification | Question it answers | How it is assigned |
+|---|---|---|
+| Publisher alignment | Is this advertiser Democratic-aligned, Republican-aligned, other or unknown? | Publisher/candidate identity and documented electoral-program evidence, including saved alignment reviews; not the sentiment of the ad. |
+| Contextual portrayal | Who is being described, what is said about them, and is that description positive, negative or neutral? | Saved AI-assisted reading of the complete recovered text, under a written codebook. |
+| Issue/vocabulary match | Does the recovered text contain a listed word or phrase? | Automatic phrase matching against `data/codebook.json`; no contextual judgment. |
+
+Calling all three "classification" without distinguishing them obscures the method.
+In particular, an issue-word match is **not** a model's judgment about the ad's main
+issue, and a negative word is **not** automatically a negative portrayal of an opponent.
+
+### 1. First, recover the words and identify the advertiser
+
+The input is a collection of recovered ad texts: publisher scripts, captions, and
+locally recognized speech or on-screen text. It is not a representative sample of
+everything voters saw. A script's release does not prove that the ad aired, and
+machine transcription can miss or misrecognize words.
+
+Only eligible English, in-window records enter the comparisons. The collection's final
+date limit is November 4, 2026; that is not a claim that observations already extend
+to that date. Democratic and Republican comparisons use advertiser alignment, not an
+assumption that every person mentioned shares or opposes that alignment. Other and
+unknown advertisers remain in the exports but outside those two comparison groups.
+
+### 2. Next, the AI review assigns descriptions, not one sentiment to the whole ad
+
+The saved review process identifies **GPT-5.6 Sol** as the AI-assisted reviewer.
+The codebook instructs it to read the entire recovered message, including negation
+and quotations, rather than retrieve snippets containing negative words.
+The resulting review is stored in `data/portrayal-reviews.json`.
+
+A message can contain no descriptions, one description, or several. Each description
+records these separate judgments:
+
+| Field | What the reviewer must decide |
+|---|---|
+| Target and kind | Who is being described? Is it an individual person or a collective such as a party? |
+| Target party and role | What is that target's party, and is the target supported by the advertiser, an opponent, or unclear? Party must have an identity basis, not be inferred from hostility. |
+| Tone | Does this particular passage describe the target positively, negatively or neutrally? This is not the emotional mood of the whole ad. |
+| Frame | What kind of description is it: competence, integrity, interests, ideology, connection, leadership, independence, record, safety/rights, background or other? |
+| Voice | Is this the advertiser's own claim, an adopted clip, a quoted opponent, a rebutted accusation, or unclear? Only the first two count in the headline comparisons. |
+| Evidence | Which literal phrase and supporting passage express the description, and which words identify the target? Character positions link them to the saved text. |
+
+For example, saying that prices are high is not by itself a description of a candidate.
+Attributing a harmful vote to a named candidate can be a negative description of that
+candidate's record. A pledge can count as a record/policy-commitment description, but
+does not establish that the promised outcome happened. These distinctions require
+interpretation; the presence of a word alone cannot settle them.
+
+The review status is also separate from the labels: `reviewed` means a saved decision
+is available, `uncertain` means the review did not resolve the message, `unreviewed`
+means no applicable decision exists, and `stale` means changed text, sponsor or alignment
+prevents reuse. **Reviewed does not mean independently verified or correct.**
+A reviewed message with no attributable descriptions is not a neutral description.
+
+### 3. Then, Python derives two different headline measures
+
+Before counting, the code selects one representative of each exact message within
+each advertiser alignment. Here "exact" ignores capitalization and whitespace, but
+preserves punctuation, names and negation. Identical text within one alignment counts
+once even if multiple sponsors publish it. The earliest in-scope observation wins,
+with ad ID breaking ties; a later reviewed copy does not replace an unreviewed one.
+Filters are applied before this selection.
+
+**Whole-ad strategy asks: does this message praise its own side, criticize the other
+party, both, or neither?** It looks at all endorsed descriptions of people and collectives.
+Own-side praise requires a positive description of a supported target with the
+advertiser's party. Opponent criticism requires a negative description of an opponent
+with the other D/R party. Both signals in one message produce mixed/contrast.
+Unknown-party targets and same-party rivals cannot supply the cross-party criticism signal.
+Messages without usable reviews get a separate uncertain/missing category.
+
+**Person-portrayal tone asks: how does this message describe people in a particular
+scope?** The principal opponent scope includes only people identified as opponents
+from the other party. Supported people, same-party opponents and opposing collectives
+have separate scopes. Within a scope, positive and negative descriptions together
+produce mixed tone, even if they concern different people. Neutral facts do not turn
+an otherwise positive or negative message into mixed.
+
+These are not interchangeable. An ad praising its candidate and attacking the other
+party's candidate is mixed/contrast as a whole, but can be positive-only about supported
+people and negative-only about opponents.
+
+### 4. A real saved decision, from text to category
+
+Record `barr-1387-0`, sponsored by Andy Barr for Senate, has Republican advertiser
+alignment. Its saved review contains three descriptions:
+
+| Target | Saved interpretation | Contribution to whole-ad strategy |
+|---|---|---|
+| Andy Barr | Supported Republican person; positive leadership description, evidenced by "leading the fight to end it for good"; advertiser voice. | Supplies own-side praise. |
+| "woke liberals" | Opposing collective; negative ideology description; target party unknown. | Does not supply other-party criticism: the review does not identify a D/R party. |
+| "corporate losers" | Opposing collective; negative competence description; target party unknown. | Does not supply other-party criticism for the same reason. |
+
+The resulting whole-ad category is **own-side praise only**, even though the text
+contains insults. "Only" means that the other defined signal is absent, not that
+the entire ad is positive. Its supported-person tone is positive-only. It contributes
+no description to the cross-party-opponent-person tone denominator: neither negative
+description is of an identified other-party person.
+
+This example explains the saved labels and their consequences; it is not an independent
+endorsement of the AI's interpretation or a claim that its description list is exhaustive.
+The source record is in `data/site/corpus.json`; the decision is in
+`data/portrayal-reviews.json`. Search both for `barr-1387-0`.
+
+### 5. Read each percentage with its own denominator
+
+| Measure | Numerator | Denominator |
+|---|---|---|
+| Whole-ad strategy, such as mixed/contrast | Unique messages assigned that strategy | **All unique messages** for that advertiser alignment, including uncertain/missing reviews |
+| Person-portrayal tone, such as negative-only about opponents | Reviewed unique messages with that tone in the selected scope | **Reviewed unique messages with an endorsed description in that scope** |
+| Portrayal frame, such as integrity | Reviewed unique messages with that frame in the selected scope | The same scope-specific description denominator; multiple frames can count for one message |
+| Issue/vocabulary match, such as healthcare | Unique messages containing at least one listed phrase in that family | **All unique messages** for that advertiser alignment, whether context-reviewed or not |
+
+For a **hypothetical** group of 100 unique messages, suppose 40 have reviewed
+other-party-person descriptions and 30 of those are negative-only. The opponent-tone
+chart reports `30 / 40 = 75%`, not `30 / 100`. If 20 of the 100 have both own-side
+praise and other-party criticism, the strategy chart reports `20 / 100 = 20%`.
+The two percentages answer different questions. Repeated descriptions do not give
+a message extra weight, and no measure is weighted by spending or impressions.
+
+### 6. What is automated, and what has not been established?
+
+The phrase charts are fully rule-based: for example, a listed healthcare phrase
+can match even inside a denial or quotation. Families overlap, and there is no
+single exclusive "main issue" assignment.
+
+The portrayal charts instead depend on the saved AI judgments. The ledger records
+an AI-assisted repair pass, but **there is no independent held-out human evaluation,
+inter-rater agreement result or measured semantic accuracy**. Hash and quotation checks
+can establish that a label points to unchanged text; they cannot establish that the
+target, tone or frame was interpreted correctly.
+
+The original exact prompts, backend revision, decoding settings and random seeds
+are not retained. The saved codebook documents the intended rules; it is not a
+complete record of the original model calls. Therefore the original annotation run
+cannot be independently recreated from this repository alone.
+
+`build`, `analyze` and the scheduled refresh do not ask a model to label text.
+They reuse applicable saved reviews; new or changed texts remain unreviewed or stale.
+The independent strategy auditor checks that the saved labels were counted correctly,
+**not that the labels are semantically correct**.
+
+The defensible interpretation is: **these are exploratory patterns in this recovered
+collection, conditional on AI-assisted labels and uneven source coverage**. They do
+not estimate all national advertising, exposure, persuasion, or the truth of ad claims.
+
+## Technical reference
+
+The sections below retain the exact selection rules, decision table, reproduction
+commands and source-specific extraction details. For a count audit, start with
+[the exact calculation](#exact-calculation) and
+[reproduction instructions](#reproduce-and-inspect-the-decisions).
+For the annotation rules, see
+[`data/portrayal-codebook.json`](../data/portrayal-codebook.json) and
+[context-coded descriptions](#context-coded-descriptions-of-people).
+
 ## What is counted
 
 The target is nationwide federal House/Senate advertising during 2026 through November 4,
@@ -44,8 +209,8 @@ of people within one scope.
 ### Exact calculation
 
 The **semantic input** is the saved, AI-assisted description ledger, not a sentiment-word
-count. Reviewers decide from the complete recovered text who is being described, their
-role/party, whether the advertiser endorses the description, and its tone. A negative
+count. The AI-assisted review records who is being described in the complete recovered
+text, their role/party, whether the advertiser endorses the description, and its tone. A negative
 description of a policy or price alone is not automatically an attack on a person.
 The **aggregation** below is deterministic and symmetric for D and R:
 
@@ -125,7 +290,8 @@ git rev-parse HEAD
 .venv/bin/python -m political_ads.cli audit-strategy --output /tmp/political-ads-strategy-audit.json
 ```
 
-`political_ads/portrayals.py` is the production classifier.
+`political_ads/portrayals.py` attaches saved reviews and derives the production
+tone/frame/strategy categories; it does not run the AI reviewer.
 `political_ads/strategy_audit.py` independently applies the decision table; it does not
 call the production classifier, strategy summary or deduplication helper. It first
 checks the saved analysis against the canonical inputs, then verifies every full and

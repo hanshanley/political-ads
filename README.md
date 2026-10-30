@@ -15,7 +15,10 @@ outside-group publishers remain separately filterable. Dates are release dates u
 otherwise; reviewed native campaign videos use publisher post dates, not verified first airing.
 Google reports parent-creative delivery; Snap reports scheduled dates and positive
 impressions, not independently verified delivery days. Spending, reach and persuasion are not inferred.
-Party differences are confounded by source and race coverage. See [methodology](docs/METHODOLOGY.md).
+Party differences are confounded by source and race coverage.
+Start with the [plain-language classification guide](docs/METHODOLOGY.md#start-here-how-classification-actually-works):
+it separates saved AI portrayal judgments from keyword matches and explains the
+different chart denominators with a real classified ad.
 
 ## Reproduce the saved research build
 
