@@ -82404,5 +82404,765 @@
     "text_hash": "c8d14965c568a19590385b0ccfe8a805ef58060377178ffa72257fbe6d775611",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16716-0",
+    "alignment": "R",
+    "block_id": "nrsc-16716-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16716-0-claims-001-001",
+    "claim_text": "Chris Pappas wants a promotion, but what has he actually done?",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 74,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Voiceover: “Chris Pappas wants a promotion. But what has he actually done?",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-chris-pappas-for-being-washingtons-puppet-2026-07-17/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "Chris Pappas",
+        "anchor_start": 12,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H8NH01210",
+        "kind": "person",
+        "name": "PAPPAS, CHRIS",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voiceover: “Chris Pappas wants a promotion. But what has he actually done?\n“He voted for the biggest tax increase in American history. Pappas supported taxing tips, overtime pay, and even social security benefits.\n“Time after time, Chris Pappas chose D.C. Democrats over New Hampshire families.\n“That’s not independence, that’s a politician doing what he is told.\n“John Sununu spent his career solving problems. Chris Pappas followed the crowd.\n“New Hampshire needs a leader, not a lightweight.\n“John Sununu: Tough, independent, New Hampshire first.”",
+    "text_hash": "75f9abac6877538e73d2519fbddcbc5b634557c4af146dca4b9a8f412fc5dc40",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16716-0",
+    "alignment": "R",
+    "block_id": "nrsc-16716-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16716-0-claims-001-002",
+    "claim_text": "He voted for the biggest tax increase in American history.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 213,
+        "kind": "publisher_transcript",
+        "start": 75,
+        "text": "“He voted for the biggest tax increase in American history. Pappas supported taxing tips, overtime pay, and even social security benefits.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-chris-pappas-for-being-washingtons-puppet-2026-07-17/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 141,
+        "anchor_quote": "Pappas",
+        "anchor_start": 135,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H8NH01210",
+        "kind": "person",
+        "name": "PAPPAS, CHRIS",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voiceover: “Chris Pappas wants a promotion. But what has he actually done?\n“He voted for the biggest tax increase in American history. Pappas supported taxing tips, overtime pay, and even social security benefits.\n“Time after time, Chris Pappas chose D.C. Democrats over New Hampshire families.\n“That’s not independence, that’s a politician doing what he is told.\n“John Sununu spent his career solving problems. Chris Pappas followed the crowd.\n“New Hampshire needs a leader, not a lightweight.\n“John Sununu: Tough, independent, New Hampshire first.”",
+    "text_hash": "75f9abac6877538e73d2519fbddcbc5b634557c4af146dca4b9a8f412fc5dc40",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16716-0",
+    "alignment": "R",
+    "block_id": "nrsc-16716-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16716-0-claims-001-003",
+    "claim_text": "Pappas supported taxing tips, overtime pay, and even social security benefits.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 213,
+        "kind": "publisher_transcript",
+        "start": 75,
+        "text": "“He voted for the biggest tax increase in American history. Pappas supported taxing tips, overtime pay, and even social security benefits.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-chris-pappas-for-being-washingtons-puppet-2026-07-17/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 141,
+        "anchor_quote": "Pappas",
+        "anchor_start": 135,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H8NH01210",
+        "kind": "person",
+        "name": "PAPPAS, CHRIS",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voiceover: “Chris Pappas wants a promotion. But what has he actually done?\n“He voted for the biggest tax increase in American history. Pappas supported taxing tips, overtime pay, and even social security benefits.\n“Time after time, Chris Pappas chose D.C. Democrats over New Hampshire families.\n“That’s not independence, that’s a politician doing what he is told.\n“John Sununu spent his career solving problems. Chris Pappas followed the crowd.\n“New Hampshire needs a leader, not a lightweight.\n“John Sununu: Tough, independent, New Hampshire first.”",
+    "text_hash": "75f9abac6877538e73d2519fbddcbc5b634557c4af146dca4b9a8f412fc5dc40",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16716-0",
+    "alignment": "R",
+    "block_id": "nrsc-16716-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16716-0-claims-001-004",
+    "claim_text": "Chris Pappas chose D.C. Democrats over New Hampshire families time after time.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 294,
+        "kind": "publisher_transcript",
+        "start": 214,
+        "text": "“Time after time, Chris Pappas chose D.C. Democrats over New Hampshire families.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-chris-pappas-for-being-washingtons-puppet-2026-07-17/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 244,
+        "anchor_quote": "Chris Pappas",
+        "anchor_start": 232,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H8NH01210",
+        "kind": "person",
+        "name": "PAPPAS, CHRIS",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 265,
+        "anchor_quote": "D.C. Democrats",
+        "anchor_start": 251,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "D.C. Democrats",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 293,
+        "anchor_quote": "New Hampshire families",
+        "anchor_start": 271,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "New Hampshire families",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Voiceover: “Chris Pappas wants a promotion. But what has he actually done?\n“He voted for the biggest tax increase in American history. Pappas supported taxing tips, overtime pay, and even social security benefits.\n“Time after time, Chris Pappas chose D.C. Democrats over New Hampshire families.\n“That’s not independence, that’s a politician doing what he is told.\n“John Sununu spent his career solving problems. Chris Pappas followed the crowd.\n“New Hampshire needs a leader, not a lightweight.\n“John Sununu: Tough, independent, New Hampshire first.”",
+    "text_hash": "75f9abac6877538e73d2519fbddcbc5b634557c4af146dca4b9a8f412fc5dc40",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16716-0",
+    "alignment": "R",
+    "block_id": "nrsc-16716-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16716-0-claims-001-005",
+    "claim_text": "That is not independence, that’s a politician doing what he is told.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 363,
+        "kind": "publisher_transcript",
+        "start": 295,
+        "text": "“That’s not independence, that’s a politician doing what he is told.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-chris-pappas-for-being-washingtons-puppet-2026-07-17/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 354,
+        "anchor_quote": "he",
+        "anchor_start": 352,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H8NH01210",
+        "kind": "person",
+        "name": "Chris Pappas",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voiceover: “Chris Pappas wants a promotion. But what has he actually done?\n“He voted for the biggest tax increase in American history. Pappas supported taxing tips, overtime pay, and even social security benefits.\n“Time after time, Chris Pappas chose D.C. Democrats over New Hampshire families.\n“That’s not independence, that’s a politician doing what he is told.\n“John Sununu spent his career solving problems. Chris Pappas followed the crowd.\n“New Hampshire needs a leader, not a lightweight.\n“John Sununu: Tough, independent, New Hampshire first.”",
+    "text_hash": "75f9abac6877538e73d2519fbddcbc5b634557c4af146dca4b9a8f412fc5dc40",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16716-0",
+    "alignment": "R",
+    "block_id": "nrsc-16716-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16716-0-claims-001-006",
+    "claim_text": "John Sununu spent his career solving problems.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 444,
+        "kind": "publisher_transcript",
+        "start": 364,
+        "text": "“John Sununu spent his career solving problems. Chris Pappas followed the crowd.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-chris-pappas-for-being-washingtons-puppet-2026-07-17/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 376,
+        "anchor_quote": "John Sununu",
+        "anchor_start": 365,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6NH00208",
+        "kind": "person",
+        "name": "SUNUNU, JOHN E",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Voiceover: “Chris Pappas wants a promotion. But what has he actually done?\n“He voted for the biggest tax increase in American history. Pappas supported taxing tips, overtime pay, and even social security benefits.\n“Time after time, Chris Pappas chose D.C. Democrats over New Hampshire families.\n“That’s not independence, that’s a politician doing what he is told.\n“John Sununu spent his career solving problems. Chris Pappas followed the crowd.\n“New Hampshire needs a leader, not a lightweight.\n“John Sununu: Tough, independent, New Hampshire first.”",
+    "text_hash": "75f9abac6877538e73d2519fbddcbc5b634557c4af146dca4b9a8f412fc5dc40",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16716-0",
+    "alignment": "R",
+    "block_id": "nrsc-16716-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16716-0-claims-001-007",
+    "claim_text": "Chris Pappas followed the crowd.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 444,
+        "kind": "publisher_transcript",
+        "start": 364,
+        "text": "“John Sununu spent his career solving problems. Chris Pappas followed the crowd.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-chris-pappas-for-being-washingtons-puppet-2026-07-17/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 424,
+        "anchor_quote": "Chris Pappas",
+        "anchor_start": 412,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H8NH01210",
+        "kind": "person",
+        "name": "PAPPAS, CHRIS",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voiceover: “Chris Pappas wants a promotion. But what has he actually done?\n“He voted for the biggest tax increase in American history. Pappas supported taxing tips, overtime pay, and even social security benefits.\n“Time after time, Chris Pappas chose D.C. Democrats over New Hampshire families.\n“That’s not independence, that’s a politician doing what he is told.\n“John Sununu spent his career solving problems. Chris Pappas followed the crowd.\n“New Hampshire needs a leader, not a lightweight.\n“John Sununu: Tough, independent, New Hampshire first.”",
+    "text_hash": "75f9abac6877538e73d2519fbddcbc5b634557c4af146dca4b9a8f412fc5dc40",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16716-0",
+    "alignment": "R",
+    "block_id": "nrsc-16716-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16716-0-claims-001-008",
+    "claim_text": "New Hampshire needs a leader, not a lightweight.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 494,
+        "kind": "publisher_transcript",
+        "start": 445,
+        "text": "“New Hampshire needs a leader, not a lightweight.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-chris-pappas-for-being-washingtons-puppet-2026-07-17/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 459,
+        "anchor_quote": "New Hampshire",
+        "anchor_start": 446,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "New Hampshire",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Voiceover: “Chris Pappas wants a promotion. But what has he actually done?\n“He voted for the biggest tax increase in American history. Pappas supported taxing tips, overtime pay, and even social security benefits.\n“Time after time, Chris Pappas chose D.C. Democrats over New Hampshire families.\n“That’s not independence, that’s a politician doing what he is told.\n“John Sununu spent his career solving problems. Chris Pappas followed the crowd.\n“New Hampshire needs a leader, not a lightweight.\n“John Sununu: Tough, independent, New Hampshire first.”",
+    "text_hash": "75f9abac6877538e73d2519fbddcbc5b634557c4af146dca4b9a8f412fc5dc40",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16716-0",
+    "alignment": "R",
+    "block_id": "nrsc-16716-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16716-0-claims-001-009",
+    "claim_text": "John Sununu is tough, independent, and puts New Hampshire first.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 550,
+        "kind": "publisher_transcript",
+        "start": 495,
+        "text": "“John Sununu: Tough, independent, New Hampshire first.”",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-chris-pappas-for-being-washingtons-puppet-2026-07-17/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 507,
+        "anchor_quote": "John Sununu",
+        "anchor_start": 496,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:S6NH00208",
+        "kind": "person",
+        "name": "SUNUNU, JOHN E",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 542,
+        "anchor_quote": "New Hampshire",
+        "anchor_start": 529,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "New Hampshire",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Voiceover: “Chris Pappas wants a promotion. But what has he actually done?\n“He voted for the biggest tax increase in American history. Pappas supported taxing tips, overtime pay, and even social security benefits.\n“Time after time, Chris Pappas chose D.C. Democrats over New Hampshire families.\n“That’s not independence, that’s a politician doing what he is told.\n“John Sununu spent his career solving problems. Chris Pappas followed the crowd.\n“New Hampshire needs a leader, not a lightweight.\n“John Sununu: Tough, independent, New Hampshire first.”",
+    "text_hash": "75f9abac6877538e73d2519fbddcbc5b634557c4af146dca4b9a8f412fc5dc40",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16828-0",
+    "alignment": "R",
+    "block_id": "nrsc-16828-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16828-0-claims-001-001",
+    "claim_text": "Sherrod Brown opened our borders to dangerous illegals, and the consequences were deadly.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 100,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Voice Over : “Sherrod Brown opened our borders to dangerous illegals. The consequences were deadly.”",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-sherrod-browns-deadly-open-borders-2026-07-30/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 27,
+        "anchor_quote": "Sherrod Brown",
+        "anchor_start": 14,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "BROWN, SHERROD",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over : “Sherrod Brown opened our borders to dangerous illegals. The consequences were deadly.”\nAnchor : “Modou Ngom was behind the wheel of this semi truck.”\nAnchor 2 : “It caused a chain reaction crash that killed 37-year-old Luke Saposki, 36-year-old Lynnea Saposki, and their one-year-old child.”\nVoice Over : “But Brown doesn’t care.”\nSherrod Brown : “I don’t hear a lot about immigration from voters except people on the far-right.”\nVoice Over : “Because of him, Ohioans paid the price.”",
+    "text_hash": "3f25a991685bbe522339ee03fe650c0b456905e1e6488c2e5373fa86b3f3a5b8",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16828-0",
+    "alignment": "R",
+    "block_id": "nrsc-16828-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16828-0-claims-001-002",
+    "claim_text": "Modou Ngom was behind the wheel of this semi truck.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 163,
+        "kind": "publisher_transcript",
+        "start": 101,
+        "text": "Anchor : “Modou Ngom was behind the wheel of this semi truck.”",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-sherrod-browns-deadly-open-borders-2026-07-30/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 121,
+        "anchor_quote": "Modou Ngom",
+        "anchor_start": 111,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Modou Ngom",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Voice Over : “Sherrod Brown opened our borders to dangerous illegals. The consequences were deadly.”\nAnchor : “Modou Ngom was behind the wheel of this semi truck.”\nAnchor 2 : “It caused a chain reaction crash that killed 37-year-old Luke Saposki, 36-year-old Lynnea Saposki, and their one-year-old child.”\nVoice Over : “But Brown doesn’t care.”\nSherrod Brown : “I don’t hear a lot about immigration from voters except people on the far-right.”\nVoice Over : “Because of him, Ohioans paid the price.”",
+    "text_hash": "3f25a991685bbe522339ee03fe650c0b456905e1e6488c2e5373fa86b3f3a5b8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16828-0",
+    "alignment": "R",
+    "block_id": "nrsc-16828-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16828-0-claims-001-003",
+    "claim_text": "It caused a chain reaction crash that killed 37-year-old Luke Saposki, 36-year-old Lynnea Saposki, and their one-year-old child.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 305,
+        "kind": "publisher_transcript",
+        "start": 164,
+        "text": "Anchor 2 : “It caused a chain reaction crash that killed 37-year-old Luke Saposki, 36-year-old Lynnea Saposki, and their one-year-old child.”",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-sherrod-browns-deadly-open-borders-2026-07-30/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 245,
+        "anchor_quote": "Luke Saposki",
+        "anchor_start": 233,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Luke Saposki",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 273,
+        "anchor_quote": "Lynnea Saposki",
+        "anchor_start": 259,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Lynnea Saposki",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Voice Over : “Sherrod Brown opened our borders to dangerous illegals. The consequences were deadly.”\nAnchor : “Modou Ngom was behind the wheel of this semi truck.”\nAnchor 2 : “It caused a chain reaction crash that killed 37-year-old Luke Saposki, 36-year-old Lynnea Saposki, and their one-year-old child.”\nVoice Over : “But Brown doesn’t care.”\nSherrod Brown : “I don’t hear a lot about immigration from voters except people on the far-right.”\nVoice Over : “Because of him, Ohioans paid the price.”",
+    "text_hash": "3f25a991685bbe522339ee03fe650c0b456905e1e6488c2e5373fa86b3f3a5b8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16828-0",
+    "alignment": "R",
+    "block_id": "nrsc-16828-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16828-0-claims-001-004",
+    "claim_text": "Brown doesn’t care.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 344,
+        "kind": "publisher_transcript",
+        "start": 306,
+        "text": "Voice Over : “But Brown doesn’t care.”",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-sherrod-browns-deadly-open-borders-2026-07-30/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 329,
+        "anchor_quote": "Brown",
+        "anchor_start": 324,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "BROWN, SHERROD",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over : “Sherrod Brown opened our borders to dangerous illegals. The consequences were deadly.”\nAnchor : “Modou Ngom was behind the wheel of this semi truck.”\nAnchor 2 : “It caused a chain reaction crash that killed 37-year-old Luke Saposki, 36-year-old Lynnea Saposki, and their one-year-old child.”\nVoice Over : “But Brown doesn’t care.”\nSherrod Brown : “I don’t hear a lot about immigration from voters except people on the far-right.”\nVoice Over : “Because of him, Ohioans paid the price.”",
+    "text_hash": "3f25a991685bbe522339ee03fe650c0b456905e1e6488c2e5373fa86b3f3a5b8",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16828-0",
+    "alignment": "R",
+    "block_id": "nrsc-16828-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16828-0-claims-001-005",
+    "claim_text": "I don’t hear a lot about immigration from voters except people on the far-right.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 443,
+        "kind": "publisher_transcript",
+        "start": 345,
+        "text": "Sherrod Brown : “I don’t hear a lot about immigration from voters except people on the far-right.”",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-sherrod-browns-deadly-open-borders-2026-07-30/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 363,
+        "anchor_quote": "I",
+        "anchor_start": 362,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "BROWN, SHERROD",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Voice Over : “Sherrod Brown opened our borders to dangerous illegals. The consequences were deadly.”\nAnchor : “Modou Ngom was behind the wheel of this semi truck.”\nAnchor 2 : “It caused a chain reaction crash that killed 37-year-old Luke Saposki, 36-year-old Lynnea Saposki, and their one-year-old child.”\nVoice Over : “But Brown doesn’t care.”\nSherrod Brown : “I don’t hear a lot about immigration from voters except people on the far-right.”\nVoice Over : “Because of him, Ohioans paid the price.”",
+    "text_hash": "3f25a991685bbe522339ee03fe650c0b456905e1e6488c2e5373fa86b3f3a5b8",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16828-0",
+    "alignment": "R",
+    "block_id": "nrsc-16828-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16828-0-claims-001-006",
+    "claim_text": "Because of him, Ohioans paid the price.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 498,
+        "kind": "publisher_transcript",
+        "start": 444,
+        "text": "Voice Over : “Because of him, Ohioans paid the price.”",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-sherrod-browns-deadly-open-borders-2026-07-30/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 472,
+        "anchor_quote": "him",
+        "anchor_start": 469,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "BROWN, SHERROD",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 481,
+        "anchor_quote": "Ohioans",
+        "anchor_start": 474,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Ohioans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over : “Sherrod Brown opened our borders to dangerous illegals. The consequences were deadly.”\nAnchor : “Modou Ngom was behind the wheel of this semi truck.”\nAnchor 2 : “It caused a chain reaction crash that killed 37-year-old Luke Saposki, 36-year-old Lynnea Saposki, and their one-year-old child.”\nVoice Over : “But Brown doesn’t care.”\nSherrod Brown : “I don’t hear a lot about immigration from voters except people on the far-right.”\nVoice Over : “Because of him, Ohioans paid the price.”",
+    "text_hash": "3f25a991685bbe522339ee03fe650c0b456905e1e6488c2e5373fa86b3f3a5b8",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
