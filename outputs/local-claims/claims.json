@@ -68570,5 +68570,613 @@
     "text_hash": "8accc016509e9e7c19d6de4551fcc69e27c2ab8c862c9429189a23c236443de5",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-30930ed08443a68d-0",
+    "alignment": "R",
+    "block_id": "nrcc-30930ed08443a68d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-30930ed08443a68d-0-claims-001-001",
+    "claim_text": "An innocent life was taken and a bright future was snuffed out by an illegal who shouldn’t be here.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 93,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "VO: An innocent life, taken. A bright future snuffed out by an illegal who shouldn’t be here.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/14/new-nrcc-launches-ad-hitting-grays-radical-immigration-votes/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 70,
+        "anchor_quote": "an illegal",
+        "anchor_start": 60,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "illegal",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "VO: An innocent life, taken. A bright future snuffed out by an illegal who shouldn’t be here.\nREPORTER: A military family about to start the next chapter of their lives, until a sudden head-on crash killed their eight-year-old daughter. Now the suspect is a 25-year-old with a history of DUIs and who entered the country illegally.\nVO: Adam Gray voted to give criminal illegal aliens driver’s licenses.\nHe voted against funding to deport dangerous criminals.\nAdam Gray is dangerously radical on immigration.",
+    "text_hash": "946374402e8bc63e4b72d7de7481897e462f1c017a20484c38a651a474e72b6b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-30930ed08443a68d-0",
+    "alignment": "R",
+    "block_id": "nrcc-30930ed08443a68d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-30930ed08443a68d-0-claims-001-002",
+    "claim_text": "A military family about to start the next chapter of their lives had their eight-year-old daughter killed in a head-on crash.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 331,
+        "kind": "publisher_transcript",
+        "start": 94,
+        "text": "REPORTER: A military family about to start the next chapter of their lives, until a sudden head-on crash killed their eight-year-old daughter. Now the suspect is a 25-year-old with a history of DUIs and who entered the country illegally.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/14/new-nrcc-launches-ad-hitting-grays-radical-immigration-votes/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 121,
+        "anchor_quote": "military family",
+        "anchor_start": 106,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "military family",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "VO: An innocent life, taken. A bright future snuffed out by an illegal who shouldn’t be here.\nREPORTER: A military family about to start the next chapter of their lives, until a sudden head-on crash killed their eight-year-old daughter. Now the suspect is a 25-year-old with a history of DUIs and who entered the country illegally.\nVO: Adam Gray voted to give criminal illegal aliens driver’s licenses.\nHe voted against funding to deport dangerous criminals.\nAdam Gray is dangerously radical on immigration.",
+    "text_hash": "946374402e8bc63e4b72d7de7481897e462f1c017a20484c38a651a474e72b6b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-30930ed08443a68d-0",
+    "alignment": "R",
+    "block_id": "nrcc-30930ed08443a68d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-30930ed08443a68d-0-claims-001-003",
+    "claim_text": "The suspect in the head-on crash has a history of DUIs and entered the country illegally.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 331,
+        "kind": "publisher_transcript",
+        "start": 94,
+        "text": "REPORTER: A military family about to start the next chapter of their lives, until a sudden head-on crash killed their eight-year-old daughter. Now the suspect is a 25-year-old with a history of DUIs and who entered the country illegally.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/14/new-nrcc-launches-ad-hitting-grays-radical-immigration-votes/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 252,
+        "anchor_quote": "the suspect",
+        "anchor_start": 241,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "suspect",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "VO: An innocent life, taken. A bright future snuffed out by an illegal who shouldn’t be here.\nREPORTER: A military family about to start the next chapter of their lives, until a sudden head-on crash killed their eight-year-old daughter. Now the suspect is a 25-year-old with a history of DUIs and who entered the country illegally.\nVO: Adam Gray voted to give criminal illegal aliens driver’s licenses.\nHe voted against funding to deport dangerous criminals.\nAdam Gray is dangerously radical on immigration.",
+    "text_hash": "946374402e8bc63e4b72d7de7481897e462f1c017a20484c38a651a474e72b6b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-30930ed08443a68d-0",
+    "alignment": "R",
+    "block_id": "nrcc-30930ed08443a68d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-30930ed08443a68d-0-claims-001-004",
+    "claim_text": "Adam Gray voted to give driver’s licenses to criminal illegal aliens.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 402,
+        "kind": "publisher_transcript",
+        "start": 332,
+        "text": "VO: Adam Gray voted to give criminal illegal aliens driver’s licenses.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/14/new-nrcc-launches-ad-hitting-grays-radical-immigration-votes/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 345,
+        "anchor_quote": "Adam Gray",
+        "anchor_start": 336,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H2CA13115",
+        "kind": "person",
+        "name": "GRAY, ADAM C.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 383,
+        "anchor_quote": "criminal illegal aliens",
+        "anchor_start": 360,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "criminal illegal aliens",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "VO: An innocent life, taken. A bright future snuffed out by an illegal who shouldn’t be here.\nREPORTER: A military family about to start the next chapter of their lives, until a sudden head-on crash killed their eight-year-old daughter. Now the suspect is a 25-year-old with a history of DUIs and who entered the country illegally.\nVO: Adam Gray voted to give criminal illegal aliens driver’s licenses.\nHe voted against funding to deport dangerous criminals.\nAdam Gray is dangerously radical on immigration.",
+    "text_hash": "946374402e8bc63e4b72d7de7481897e462f1c017a20484c38a651a474e72b6b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-30930ed08443a68d-0",
+    "alignment": "R",
+    "block_id": "nrcc-30930ed08443a68d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-30930ed08443a68d-0-claims-001-005",
+    "claim_text": "He voted against funding to deport dangerous criminals.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 458,
+        "kind": "publisher_transcript",
+        "start": 403,
+        "text": "He voted against funding to deport dangerous criminals.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/14/new-nrcc-launches-ad-hitting-grays-radical-immigration-votes/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 405,
+        "anchor_quote": "He",
+        "anchor_start": 403,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H2CA13115",
+        "kind": "person",
+        "name": "He",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 457,
+        "anchor_quote": "dangerous criminals",
+        "anchor_start": 438,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "dangerous criminals",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "VO: An innocent life, taken. A bright future snuffed out by an illegal who shouldn’t be here.\nREPORTER: A military family about to start the next chapter of their lives, until a sudden head-on crash killed their eight-year-old daughter. Now the suspect is a 25-year-old with a history of DUIs and who entered the country illegally.\nVO: Adam Gray voted to give criminal illegal aliens driver’s licenses.\nHe voted against funding to deport dangerous criminals.\nAdam Gray is dangerously radical on immigration.",
+    "text_hash": "946374402e8bc63e4b72d7de7481897e462f1c017a20484c38a651a474e72b6b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-30930ed08443a68d-0",
+    "alignment": "R",
+    "block_id": "nrcc-30930ed08443a68d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-30930ed08443a68d-0-claims-001-006",
+    "claim_text": "Adam Gray is dangerously radical on immigration.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 507,
+        "kind": "publisher_transcript",
+        "start": 459,
+        "text": "Adam Gray is dangerously radical on immigration.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/14/new-nrcc-launches-ad-hitting-grays-radical-immigration-votes/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 468,
+        "anchor_quote": "Adam Gray",
+        "anchor_start": 459,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H2CA13115",
+        "kind": "person",
+        "name": "GRAY, ADAM C.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "VO: An innocent life, taken. A bright future snuffed out by an illegal who shouldn’t be here.\nREPORTER: A military family about to start the next chapter of their lives, until a sudden head-on crash killed their eight-year-old daughter. Now the suspect is a 25-year-old with a history of DUIs and who entered the country illegally.\nVO: Adam Gray voted to give criminal illegal aliens driver’s licenses.\nHe voted against funding to deport dangerous criminals.\nAdam Gray is dangerously radical on immigration.",
+    "text_hash": "946374402e8bc63e4b72d7de7481897e462f1c017a20484c38a651a474e72b6b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-3855f10797158bf4-0",
+    "alignment": "R",
+    "block_id": "nrcc-3855f10797158bf4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-3855f10797158bf4-0-claims-001-001",
+    "claim_text": "Republicans fought to protect your hard-earned paychecks.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 99,
+        "kind": "publisher_transcript",
+        "start": 42,
+        "text": "Republicans fought to protect your hard-earned paychecks.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-paid-ad-campaign-targeting-marcy-kaptur-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 53,
+        "anchor_quote": "Republicans",
+        "anchor_start": 42,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Republicans",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nMarcy Kaptur voted for the largest tax hike since World War II.\nMarcy Kaptur sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nMarcy Kaptur voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "039d4566642af7238452ac74b4cd23e19cc92f9da54ae7404a5f139ab6f77b2a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-3855f10797158bf4-0",
+    "alignment": "R",
+    "block_id": "nrcc-3855f10797158bf4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-3855f10797158bf4-0-claims-001-002",
+    "claim_text": "Marcy Kaptur voted for the largest tax hike since World War II.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 163,
+        "kind": "publisher_transcript",
+        "start": 100,
+        "text": "Marcy Kaptur voted for the largest tax hike since World War II.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-paid-ad-campaign-targeting-marcy-kaptur-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 112,
+        "anchor_quote": "Marcy Kaptur",
+        "anchor_start": 100,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H2OH09031",
+        "kind": "person",
+        "name": "Marcy Kaptur",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nMarcy Kaptur voted for the largest tax hike since World War II.\nMarcy Kaptur sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nMarcy Kaptur voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "039d4566642af7238452ac74b4cd23e19cc92f9da54ae7404a5f139ab6f77b2a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-3855f10797158bf4-0",
+    "alignment": "R",
+    "block_id": "nrcc-3855f10797158bf4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-3855f10797158bf4-0-claims-001-003",
+    "claim_text": "Marcy Kaptur sided with Bernie & AOC to vote against critical tax relief for you.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 245,
+        "kind": "publisher_transcript",
+        "start": 164,
+        "text": "Marcy Kaptur sided with Bernie & AOC to vote against critical tax relief for you.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-paid-ad-campaign-targeting-marcy-kaptur-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 176,
+        "anchor_quote": "Marcy Kaptur",
+        "anchor_start": 164,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H2OH09031",
+        "kind": "person",
+        "name": "Marcy Kaptur",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 194,
+        "anchor_quote": "Bernie",
+        "anchor_start": 188,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Bernie",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 200,
+        "anchor_quote": "AOC",
+        "anchor_start": 197,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "AOC",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nMarcy Kaptur voted for the largest tax hike since World War II.\nMarcy Kaptur sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nMarcy Kaptur voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "039d4566642af7238452ac74b4cd23e19cc92f9da54ae7404a5f139ab6f77b2a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-3855f10797158bf4-0",
+    "alignment": "R",
+    "block_id": "nrcc-3855f10797158bf4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-3855f10797158bf4-0-claims-001-004",
+    "claim_text": "Marcy Kaptur voted for higher taxes… and voted to make your life harder.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 368,
+        "kind": "publisher_transcript",
+        "start": 296,
+        "text": "Marcy Kaptur voted for higher taxes… and voted to make your life harder.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-paid-ad-campaign-targeting-marcy-kaptur-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 308,
+        "anchor_quote": "Marcy Kaptur",
+        "anchor_start": 296,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H2OH09031",
+        "kind": "person",
+        "name": "Marcy Kaptur",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nMarcy Kaptur voted for the largest tax hike since World War II.\nMarcy Kaptur sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nMarcy Kaptur voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "039d4566642af7238452ac74b4cd23e19cc92f9da54ae7404a5f139ab6f77b2a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-3855f10797158bf4-0",
+    "alignment": "R",
+    "block_id": "nrcc-3855f10797158bf4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-3855f10797158bf4-0-claims-001-005",
+    "claim_text": "This Tax Day… remember who made it worse.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 41,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "This Tax Day… remember who made it worse.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-paid-ad-campaign-targeting-marcy-kaptur-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 26,
+        "anchor_quote": "who",
+        "anchor_start": 23,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "who",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nMarcy Kaptur voted for the largest tax hike since World War II.\nMarcy Kaptur sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nMarcy Kaptur voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "039d4566642af7238452ac74b4cd23e19cc92f9da54ae7404a5f139ab6f77b2a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-3855f10797158bf4-0",
+    "alignment": "R",
+    "block_id": "nrcc-3855f10797158bf4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-3855f10797158bf4-0-claims-001-006",
+    "claim_text": "Higher costs, less freedom, and more pressure are on you.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 295,
+        "kind": "publisher_transcript",
+        "start": 246,
+        "text": "Higher costs. Less freedom. More pressure on you.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-paid-ad-campaign-targeting-marcy-kaptur-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 294,
+        "anchor_quote": "you",
+        "anchor_start": 291,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "you",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nMarcy Kaptur voted for the largest tax hike since World War II.\nMarcy Kaptur sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nMarcy Kaptur voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "039d4566642af7238452ac74b4cd23e19cc92f9da54ae7404a5f139ab6f77b2a",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
