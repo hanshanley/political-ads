@@ -67074,5 +67074,1501 @@
     "text_hash": "c274ce762ffbe50d4673a824d0c696fd32c82df740c161b7d6df47fde5325e66",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16602-0",
+    "alignment": "D",
+    "block_id": "mccann-16602-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16602-0-claims-001-001",
+    "claim_text": "I’ve spent my career standing up to powerful people.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 53,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "“I’ve spent my career standing up to powerful people.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 52,
+        "anchor_quote": "I’ve spent my career standing up to powerful people",
+        "anchor_start": 1,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6MI04204",
+        "kind": "person",
+        "name": "Sean McCann",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "“I’ve spent my career standing up to powerful people.\nGreedy landlords here.\nCorporate polluters here.\nAnd now I’m running for Congress to fix what’s broken here.\nI’m Sean McCann.\nToo many families are doing everything right and still can’t get ahead.\nWe need to end the tariffs that are driving prices up.\nBan Congress from trading stocks.\nAnd cap the cost of prescription drugs.\nI approve this message because we won’t bring costs down until we change who’s in charge.”",
+    "text_hash": "6b7f9009c5e39956a42f868544eab3cc5d7e3895091f46c8723794973cd356e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16602-0",
+    "alignment": "D",
+    "block_id": "mccann-16602-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16602-0-claims-001-002",
+    "claim_text": "Greedy landlords are here.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 76,
+        "kind": "publisher_transcript",
+        "start": 54,
+        "text": "Greedy landlords here.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 70,
+        "anchor_quote": "Greedy landlords",
+        "anchor_start": 54,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "landlords",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "“I’ve spent my career standing up to powerful people.\nGreedy landlords here.\nCorporate polluters here.\nAnd now I’m running for Congress to fix what’s broken here.\nI’m Sean McCann.\nToo many families are doing everything right and still can’t get ahead.\nWe need to end the tariffs that are driving prices up.\nBan Congress from trading stocks.\nAnd cap the cost of prescription drugs.\nI approve this message because we won’t bring costs down until we change who’s in charge.”",
+    "text_hash": "6b7f9009c5e39956a42f868544eab3cc5d7e3895091f46c8723794973cd356e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16602-0",
+    "alignment": "D",
+    "block_id": "mccann-16602-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16602-0-claims-001-003",
+    "claim_text": "Corporate polluters are here.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 102,
+        "kind": "publisher_transcript",
+        "start": 77,
+        "text": "Corporate polluters here.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 96,
+        "anchor_quote": "Corporate polluters",
+        "anchor_start": 77,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Corporate polluters",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "“I’ve spent my career standing up to powerful people.\nGreedy landlords here.\nCorporate polluters here.\nAnd now I’m running for Congress to fix what’s broken here.\nI’m Sean McCann.\nToo many families are doing everything right and still can’t get ahead.\nWe need to end the tariffs that are driving prices up.\nBan Congress from trading stocks.\nAnd cap the cost of prescription drugs.\nI approve this message because we won’t bring costs down until we change who’s in charge.”",
+    "text_hash": "6b7f9009c5e39956a42f868544eab3cc5d7e3895091f46c8723794973cd356e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16602-0",
+    "alignment": "D",
+    "block_id": "mccann-16602-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16602-0-claims-001-004",
+    "claim_text": "I’m running for Congress to fix what’s broken here.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 162,
+        "kind": "publisher_transcript",
+        "start": 103,
+        "text": "And now I’m running for Congress to fix what’s broken here.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 135,
+        "anchor_quote": "I’m running for Congress",
+        "anchor_start": 111,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6MI04204",
+        "kind": "person",
+        "name": "Sean McCann",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "“I’ve spent my career standing up to powerful people.\nGreedy landlords here.\nCorporate polluters here.\nAnd now I’m running for Congress to fix what’s broken here.\nI’m Sean McCann.\nToo many families are doing everything right and still can’t get ahead.\nWe need to end the tariffs that are driving prices up.\nBan Congress from trading stocks.\nAnd cap the cost of prescription drugs.\nI approve this message because we won’t bring costs down until we change who’s in charge.”",
+    "text_hash": "6b7f9009c5e39956a42f868544eab3cc5d7e3895091f46c8723794973cd356e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16602-0",
+    "alignment": "D",
+    "block_id": "mccann-16602-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16602-0-claims-001-005",
+    "claim_text": "I’m Sean McCann.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 179,
+        "kind": "publisher_transcript",
+        "start": 163,
+        "text": "I’m Sean McCann.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 178,
+        "anchor_quote": "I’m Sean McCann",
+        "anchor_start": 163,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H6MI04204",
+        "kind": "person",
+        "name": "Sean McCann",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "“I’ve spent my career standing up to powerful people.\nGreedy landlords here.\nCorporate polluters here.\nAnd now I’m running for Congress to fix what’s broken here.\nI’m Sean McCann.\nToo many families are doing everything right and still can’t get ahead.\nWe need to end the tariffs that are driving prices up.\nBan Congress from trading stocks.\nAnd cap the cost of prescription drugs.\nI approve this message because we won’t bring costs down until we change who’s in charge.”",
+    "text_hash": "6b7f9009c5e39956a42f868544eab3cc5d7e3895091f46c8723794973cd356e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16602-0",
+    "alignment": "D",
+    "block_id": "mccann-16602-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16602-0-claims-001-006",
+    "claim_text": "Too many families are doing everything right and still can’t get ahead.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 251,
+        "kind": "publisher_transcript",
+        "start": 180,
+        "text": "Too many families are doing everything right and still can’t get ahead.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 197,
+        "anchor_quote": "Too many families",
+        "anchor_start": 180,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "families",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "“I’ve spent my career standing up to powerful people.\nGreedy landlords here.\nCorporate polluters here.\nAnd now I’m running for Congress to fix what’s broken here.\nI’m Sean McCann.\nToo many families are doing everything right and still can’t get ahead.\nWe need to end the tariffs that are driving prices up.\nBan Congress from trading stocks.\nAnd cap the cost of prescription drugs.\nI approve this message because we won’t bring costs down until we change who’s in charge.”",
+    "text_hash": "6b7f9009c5e39956a42f868544eab3cc5d7e3895091f46c8723794973cd356e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16602-0",
+    "alignment": "D",
+    "block_id": "mccann-16602-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16602-0-claims-001-007",
+    "claim_text": "We need to end the tariffs that are driving prices up.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 306,
+        "kind": "publisher_transcript",
+        "start": 252,
+        "text": "We need to end the tariffs that are driving prices up.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 278,
+        "anchor_quote": "tariffs",
+        "anchor_start": 271,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "tariffs",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "“I’ve spent my career standing up to powerful people.\nGreedy landlords here.\nCorporate polluters here.\nAnd now I’m running for Congress to fix what’s broken here.\nI’m Sean McCann.\nToo many families are doing everything right and still can’t get ahead.\nWe need to end the tariffs that are driving prices up.\nBan Congress from trading stocks.\nAnd cap the cost of prescription drugs.\nI approve this message because we won’t bring costs down until we change who’s in charge.”",
+    "text_hash": "6b7f9009c5e39956a42f868544eab3cc5d7e3895091f46c8723794973cd356e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16602-0",
+    "alignment": "D",
+    "block_id": "mccann-16602-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16602-0-claims-001-008",
+    "claim_text": "We need to ban Congress from trading stocks.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 340,
+        "kind": "publisher_transcript",
+        "start": 307,
+        "text": "Ban Congress from trading stocks.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 319,
+        "anchor_quote": "Congress",
+        "anchor_start": 311,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Congress",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "“I’ve spent my career standing up to powerful people.\nGreedy landlords here.\nCorporate polluters here.\nAnd now I’m running for Congress to fix what’s broken here.\nI’m Sean McCann.\nToo many families are doing everything right and still can’t get ahead.\nWe need to end the tariffs that are driving prices up.\nBan Congress from trading stocks.\nAnd cap the cost of prescription drugs.\nI approve this message because we won’t bring costs down until we change who’s in charge.”",
+    "text_hash": "6b7f9009c5e39956a42f868544eab3cc5d7e3895091f46c8723794973cd356e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16602-0",
+    "alignment": "D",
+    "block_id": "mccann-16602-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16602-0-claims-001-009",
+    "claim_text": "We need to cap the cost of prescription drugs.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 380,
+        "kind": "publisher_transcript",
+        "start": 341,
+        "text": "And cap the cost of prescription drugs.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 379,
+        "anchor_quote": "prescription drugs",
+        "anchor_start": 361,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "prescription drugs",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "“I’ve spent my career standing up to powerful people.\nGreedy landlords here.\nCorporate polluters here.\nAnd now I’m running for Congress to fix what’s broken here.\nI’m Sean McCann.\nToo many families are doing everything right and still can’t get ahead.\nWe need to end the tariffs that are driving prices up.\nBan Congress from trading stocks.\nAnd cap the cost of prescription drugs.\nI approve this message because we won’t bring costs down until we change who’s in charge.”",
+    "text_hash": "6b7f9009c5e39956a42f868544eab3cc5d7e3895091f46c8723794973cd356e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16602-0",
+    "alignment": "D",
+    "block_id": "mccann-16602-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16602-0-claims-001-010",
+    "claim_text": "I approve this message because we won’t bring costs down until we change who’s in charge.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 471,
+        "kind": "publisher_transcript",
+        "start": 381,
+        "text": "I approve this message because we won’t bring costs down until we change who’s in charge.”",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://seanmccannforcongress.com/sean-mccann-releases-first-tv-ad-highlighting-how-he-stands-up-to-powerful-people-on-behalf-of-michigan-families/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 403,
+        "anchor_quote": "I approve this message",
+        "anchor_start": 381,
+        "anchor_unit_id": 10,
+        "entity_id": "candidate:H6MI04204",
+        "kind": "person",
+        "name": "Sean McCann",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "“I’ve spent my career standing up to powerful people.\nGreedy landlords here.\nCorporate polluters here.\nAnd now I’m running for Congress to fix what’s broken here.\nI’m Sean McCann.\nToo many families are doing everything right and still can’t get ahead.\nWe need to end the tariffs that are driving prices up.\nBan Congress from trading stocks.\nAnd cap the cost of prescription drugs.\nI approve this message because we won’t bring costs down until we change who’s in charge.”",
+    "text_hash": "6b7f9009c5e39956a42f868544eab3cc5d7e3895091f46c8723794973cd356e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16709-0",
+    "alignment": "D",
+    "block_id": "mccann-16709-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16709-0-claims-001-001",
+    "claim_text": "This place is broken. Really broken.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 36,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "This place is broken. Really broken.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://seanmccannforcongress.com/this-place-is-broken-mccann-targets-washington-corruption-in-new-ad/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 10,
+        "anchor_quote": "This place",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "place",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "This place is broken. Really broken.\nI’m Sean McCann.\nIf you’re ready to ban Congress from trading stocks, stop handing out billions to billionaires in tax breaks, and demand that drug companies finally negotiate to lower prices, I’m your guy.\nBill Huizenga will never do it.\nBut standing up for working people, that’s what I’ve done my whole life.\nI approve this message because nothing’s going to change until we change who’s walking up those steps.",
+    "text_hash": "740471a6e6f68945033d3e6338136c831c5be5406bdd6b4b5dd4b23f969dd705",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16709-0",
+    "alignment": "D",
+    "block_id": "mccann-16709-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16709-0-claims-001-002",
+    "claim_text": "I’m Sean McCann.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 53,
+        "kind": "publisher_ad_copy",
+        "start": 37,
+        "text": "I’m Sean McCann.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://seanmccannforcongress.com/this-place-is-broken-mccann-targets-washington-corruption-in-new-ad/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 52,
+        "anchor_quote": "I’m Sean McCann",
+        "anchor_start": 37,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6MI04204",
+        "kind": "person",
+        "name": "Sean McCann",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "This place is broken. Really broken.\nI’m Sean McCann.\nIf you’re ready to ban Congress from trading stocks, stop handing out billions to billionaires in tax breaks, and demand that drug companies finally negotiate to lower prices, I’m your guy.\nBill Huizenga will never do it.\nBut standing up for working people, that’s what I’ve done my whole life.\nI approve this message because nothing’s going to change until we change who’s walking up those steps.",
+    "text_hash": "740471a6e6f68945033d3e6338136c831c5be5406bdd6b4b5dd4b23f969dd705",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16709-0",
+    "alignment": "D",
+    "block_id": "mccann-16709-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16709-0-claims-001-003",
+    "claim_text": "If you’re ready to ban Congress from trading stocks, stop handing out billions to billionaires in tax breaks, and demand that drug companies finally negotiate to lower prices, I’m your guy.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 243,
+        "kind": "publisher_ad_copy",
+        "start": 54,
+        "text": "If you’re ready to ban Congress from trading stocks, stop handing out billions to billionaires in tax breaks, and demand that drug companies finally negotiate to lower prices, I’m your guy.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://seanmccannforcongress.com/this-place-is-broken-mccann-targets-washington-corruption-in-new-ad/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 85,
+        "anchor_quote": "Congress",
+        "anchor_start": 77,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Congress",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 148,
+        "anchor_quote": "billionaires",
+        "anchor_start": 136,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "billionaires",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 194,
+        "anchor_quote": "drug companies",
+        "anchor_start": 180,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "drug companies",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 242,
+        "anchor_quote": "I’m your guy",
+        "anchor_start": 230,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6MI04204",
+        "kind": "person",
+        "name": "Sean McCann",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "This place is broken. Really broken.\nI’m Sean McCann.\nIf you’re ready to ban Congress from trading stocks, stop handing out billions to billionaires in tax breaks, and demand that drug companies finally negotiate to lower prices, I’m your guy.\nBill Huizenga will never do it.\nBut standing up for working people, that’s what I’ve done my whole life.\nI approve this message because nothing’s going to change until we change who’s walking up those steps.",
+    "text_hash": "740471a6e6f68945033d3e6338136c831c5be5406bdd6b4b5dd4b23f969dd705",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16709-0",
+    "alignment": "D",
+    "block_id": "mccann-16709-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16709-0-claims-001-004",
+    "claim_text": "Bill Huizenga will never do it.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 275,
+        "kind": "publisher_ad_copy",
+        "start": 244,
+        "text": "Bill Huizenga will never do it.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://seanmccannforcongress.com/this-place-is-broken-mccann-targets-washington-corruption-in-new-ad/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 257,
+        "anchor_quote": "Bill Huizenga",
+        "anchor_start": 244,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H0MI02094",
+        "kind": "person",
+        "name": "Bill Huizenga",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "This place is broken. Really broken.\nI’m Sean McCann.\nIf you’re ready to ban Congress from trading stocks, stop handing out billions to billionaires in tax breaks, and demand that drug companies finally negotiate to lower prices, I’m your guy.\nBill Huizenga will never do it.\nBut standing up for working people, that’s what I’ve done my whole life.\nI approve this message because nothing’s going to change until we change who’s walking up those steps.",
+    "text_hash": "740471a6e6f68945033d3e6338136c831c5be5406bdd6b4b5dd4b23f969dd705",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16709-0",
+    "alignment": "D",
+    "block_id": "mccann-16709-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16709-0-claims-001-005",
+    "claim_text": "But standing up for working people, that’s what I’ve done my whole life.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 348,
+        "kind": "publisher_ad_copy",
+        "start": 276,
+        "text": "But standing up for working people, that’s what I’ve done my whole life.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://seanmccannforcongress.com/this-place-is-broken-mccann-targets-washington-corruption-in-new-ad/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 333,
+        "anchor_quote": "I’ve done",
+        "anchor_start": 324,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H6MI04204",
+        "kind": "person",
+        "name": "Sean McCann",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 310,
+        "anchor_quote": "working people",
+        "anchor_start": 296,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "working people",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "This place is broken. Really broken.\nI’m Sean McCann.\nIf you’re ready to ban Congress from trading stocks, stop handing out billions to billionaires in tax breaks, and demand that drug companies finally negotiate to lower prices, I’m your guy.\nBill Huizenga will never do it.\nBut standing up for working people, that’s what I’ve done my whole life.\nI approve this message because nothing’s going to change until we change who’s walking up those steps.",
+    "text_hash": "740471a6e6f68945033d3e6338136c831c5be5406bdd6b4b5dd4b23f969dd705",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "mccann-16709-0",
+    "alignment": "D",
+    "block_id": "mccann-16709-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "mccann-16709-0-claims-001-006",
+    "claim_text": "I approve this message because nothing’s going to change until we change who’s walking up those steps.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 451,
+        "kind": "publisher_ad_copy",
+        "start": 349,
+        "text": "I approve this message because nothing’s going to change until we change who’s walking up those steps.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://seanmccannforcongress.com/this-place-is-broken-mccann-targets-washington-corruption-in-new-ad/",
+    "sponsor": "Sean McCann for Congress",
+    "targets": [
+      {
+        "anchor_end": 358,
+        "anchor_quote": "I approve",
+        "anchor_start": 349,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H6MI04204",
+        "kind": "person",
+        "name": "Sean McCann",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 421,
+        "anchor_quote": "we change",
+        "anchor_start": 412,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "we",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "This place is broken. Really broken.\nI’m Sean McCann.\nIf you’re ready to ban Congress from trading stocks, stop handing out billions to billionaires in tax breaks, and demand that drug companies finally negotiate to lower prices, I’m your guy.\nBill Huizenga will never do it.\nBut standing up for working people, that’s what I’ve done my whole life.\nI approve this message because nothing’s going to change until we change who’s walking up those steps.",
+    "text_hash": "740471a6e6f68945033d3e6338136c831c5be5406bdd6b4b5dd4b23f969dd705",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-0cf36d0cb02f2a64-0",
+    "alignment": "R",
+    "block_id": "nrcc-0cf36d0cb02f2a64-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-0cf36d0cb02f2a64-0-claims-001-001",
+    "claim_text": "Juan Ciscomani delivered help for working families.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 396,
+        "kind": "publisher_transcript",
+        "start": 345,
+        "text": "Juan Ciscomani delivered help for working families.",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-juan-ciscomanis-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 359,
+        "anchor_quote": "Juan Ciscomani",
+        "anchor_start": 345,
+        "anchor_unit_id": 10,
+        "entity_id": "candidate:H2AZ02360",
+        "kind": "person",
+        "name": "CISCOMANI, JUAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Juan Ciscomani changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nJuan Ciscomani delivered help for working families.\nThank you, Representative Juan Ciscomani.",
+    "text_hash": "af09af0a68dba2ed8f8de0b402ac5258459cd42542e317795e3cadfe8502e4f5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-0cf36d0cb02f2a64-0",
+    "alignment": "R",
+    "block_id": "nrcc-0cf36d0cb02f2a64-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-0cf36d0cb02f2a64-0-claims-001-002",
+    "claim_text": "Thank you, Representative Juan Ciscomani.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 438,
+        "kind": "publisher_transcript",
+        "start": 397,
+        "text": "Thank you, Representative Juan Ciscomani.",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-juan-ciscomanis-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 437,
+        "anchor_quote": "Representative Juan Ciscomani",
+        "anchor_start": 408,
+        "anchor_unit_id": 11,
+        "entity_id": "candidate:H2AZ02360",
+        "kind": "person",
+        "name": "CISCOMANI, JUAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Juan Ciscomani changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nJuan Ciscomani delivered help for working families.\nThank you, Representative Juan Ciscomani.",
+    "text_hash": "af09af0a68dba2ed8f8de0b402ac5258459cd42542e317795e3cadfe8502e4f5",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-0cf36d0cb02f2a64-0",
+    "alignment": "R",
+    "block_id": "nrcc-0cf36d0cb02f2a64-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-0cf36d0cb02f2a64-0-claims-001-003",
+    "claim_text": "Hardworking Americans power this country.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 41,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Hardworking Americans power this country.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-juan-ciscomanis-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 21,
+        "anchor_quote": "Hardworking Americans",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Americans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Juan Ciscomani changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nJuan Ciscomani delivered help for working families.\nThank you, Representative Juan Ciscomani.",
+    "text_hash": "af09af0a68dba2ed8f8de0b402ac5258459cd42542e317795e3cadfe8502e4f5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-0cf36d0cb02f2a64-0",
+    "alignment": "R",
+    "block_id": "nrcc-0cf36d0cb02f2a64-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-0cf36d0cb02f2a64-0-claims-001-004",
+    "claim_text": "Democrats made it harder to get ahead.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 138,
+        "kind": "publisher_transcript",
+        "start": 100,
+        "text": "Democrats made it harder to get ahead.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-juan-ciscomanis-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 109,
+        "anchor_quote": "Democrats",
+        "anchor_start": 100,
+        "anchor_unit_id": 3,
+        "entity_id": "party:D",
+        "kind": "collective",
+        "name": "D",
+        "party_basis": "explicit_party_text",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Juan Ciscomani changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nJuan Ciscomani delivered help for working families.\nThank you, Representative Juan Ciscomani.",
+    "text_hash": "af09af0a68dba2ed8f8de0b402ac5258459cd42542e317795e3cadfe8502e4f5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-0cf36d0cb02f2a64-0",
+    "alignment": "R",
+    "block_id": "nrcc-0cf36d0cb02f2a64-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-0cf36d0cb02f2a64-0-claims-001-005",
+    "claim_text": "Spiking inflation to 40-year highs.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 174,
+        "kind": "publisher_transcript",
+        "start": 139,
+        "text": "Spiking inflation to 40-year highs.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-juan-ciscomanis-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 156,
+        "anchor_quote": "inflation",
+        "anchor_start": 147,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "inflation",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Juan Ciscomani changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nJuan Ciscomani delivered help for working families.\nThank you, Representative Juan Ciscomani.",
+    "text_hash": "af09af0a68dba2ed8f8de0b402ac5258459cd42542e317795e3cadfe8502e4f5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-0cf36d0cb02f2a64-0",
+    "alignment": "R",
+    "block_id": "nrcc-0cf36d0cb02f2a64-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-0cf36d0cb02f2a64-0-claims-001-006",
+    "claim_text": "Juan Ciscomani changed that.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 207,
+        "kind": "publisher_transcript",
+        "start": 175,
+        "text": "But Juan Ciscomani changed that.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-juan-ciscomanis-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 193,
+        "anchor_quote": "Juan Ciscomani",
+        "anchor_start": 179,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H2AZ02360",
+        "kind": "person",
+        "name": "CISCOMANI, JUAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Juan Ciscomani changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nJuan Ciscomani delivered help for working families.\nThank you, Representative Juan Ciscomani.",
+    "text_hash": "af09af0a68dba2ed8f8de0b402ac5258459cd42542e317795e3cadfe8502e4f5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-0cf36d0cb02f2a64-0",
+    "alignment": "R",
+    "block_id": "nrcc-0cf36d0cb02f2a64-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-0cf36d0cb02f2a64-0-claims-001-007",
+    "claim_text": "Juan Ciscomani voted for real tax relief that puts more money back in your pocket.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 276,
+        "kind": "publisher_transcript",
+        "start": 208,
+        "text": "Voting for real tax relief that puts more money back in your pocket:",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-juan-ciscomanis-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 214,
+        "anchor_quote": "Voting",
+        "anchor_start": 208,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H2AZ02360",
+        "kind": "person",
+        "name": "CISCOMANI, JUAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Juan Ciscomani changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nJuan Ciscomani delivered help for working families.\nThank you, Representative Juan Ciscomani.",
+    "text_hash": "af09af0a68dba2ed8f8de0b402ac5258459cd42542e317795e3cadfe8502e4f5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-0cf36d0cb02f2a64-0",
+    "alignment": "R",
+    "block_id": "nrcc-0cf36d0cb02f2a64-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-0cf36d0cb02f2a64-0-claims-001-008",
+    "claim_text": "There is no tax on tips.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 292,
+        "kind": "publisher_transcript",
+        "start": 277,
+        "text": "No tax on tips.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-juan-ciscomanis-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 291,
+        "anchor_quote": "tax on tips",
+        "anchor_start": 280,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "tax on tips",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Juan Ciscomani changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nJuan Ciscomani delivered help for working families.\nThank you, Representative Juan Ciscomani.",
+    "text_hash": "af09af0a68dba2ed8f8de0b402ac5258459cd42542e317795e3cadfe8502e4f5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-0cf36d0cb02f2a64-0",
+    "alignment": "R",
+    "block_id": "nrcc-0cf36d0cb02f2a64-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-0cf36d0cb02f2a64-0-claims-001-009",
+    "claim_text": "There is no tax on overtime.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 312,
+        "kind": "publisher_transcript",
+        "start": 293,
+        "text": "No tax on overtime.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-juan-ciscomanis-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 311,
+        "anchor_quote": "tax on overtime",
+        "anchor_start": 296,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "tax on overtime",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Juan Ciscomani changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nJuan Ciscomani delivered help for working families.\nThank you, Representative Juan Ciscomani.",
+    "text_hash": "af09af0a68dba2ed8f8de0b402ac5258459cd42542e317795e3cadfe8502e4f5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-0cf36d0cb02f2a64-0",
+    "alignment": "R",
+    "block_id": "nrcc-0cf36d0cb02f2a64-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-0cf36d0cb02f2a64-0-claims-001-010",
+    "claim_text": "The Child Tax Credit was doubled.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 344,
+        "kind": "publisher_transcript",
+        "start": 313,
+        "text": "And a doubled Child Tax Credit.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-juan-ciscomanis-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 343,
+        "anchor_quote": "Child Tax Credit",
+        "anchor_start": 327,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Child Tax Credit",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Juan Ciscomani changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nJuan Ciscomani delivered help for working families.\nThank you, Representative Juan Ciscomani.",
+    "text_hash": "af09af0a68dba2ed8f8de0b402ac5258459cd42542e317795e3cadfe8502e4f5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-1cc3b6156be4a05d-0",
+    "alignment": "R",
+    "block_id": "nrcc-1cc3b6156be4a05d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-1cc3b6156be4a05d-0-claims-001-001",
+    "claim_text": "Gabe Vasquez is gambling with New Mexicans’ lives",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 49,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Gabe Vasquez is gambling with New Mexicans’ lives",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/14/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-vasquez-for-voting-against-critical-funding/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 12,
+        "anchor_quote": "Gabe Vasquez",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2NM02191",
+        "kind": "person",
+        "name": "VASQUEZ, GABE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Gabe Vasquez is gambling with New Mexicans’ lives\nVasquez voted to block nearly $2 million for our local economy\nCritical funds for job training and the town of Mesilla\nTell Gabe Vasquez: stop betraying New Mexicans",
+    "text_hash": "8accc016509e9e7c19d6de4551fcc69e27c2ab8c862c9429189a23c236443de5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-1cc3b6156be4a05d-0",
+    "alignment": "R",
+    "block_id": "nrcc-1cc3b6156be4a05d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-1cc3b6156be4a05d-0-claims-001-002",
+    "claim_text": "Vasquez voted to block nearly $2 million for our local economy",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 112,
+        "kind": "publisher_transcript",
+        "start": 50,
+        "text": "Vasquez voted to block nearly $2 million for our local economy",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/14/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-vasquez-for-voting-against-critical-funding/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 57,
+        "anchor_quote": "Vasquez",
+        "anchor_start": 50,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H2NM02191",
+        "kind": "person",
+        "name": "VASQUEZ, GABE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Gabe Vasquez is gambling with New Mexicans’ lives\nVasquez voted to block nearly $2 million for our local economy\nCritical funds for job training and the town of Mesilla\nTell Gabe Vasquez: stop betraying New Mexicans",
+    "text_hash": "8accc016509e9e7c19d6de4551fcc69e27c2ab8c862c9429189a23c236443de5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-1cc3b6156be4a05d-0",
+    "alignment": "R",
+    "block_id": "nrcc-1cc3b6156be4a05d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-1cc3b6156be4a05d-0-claims-001-003",
+    "claim_text": "Critical funds were for job training",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 168,
+        "kind": "publisher_transcript",
+        "start": 113,
+        "text": "Critical funds for job training and the town of Mesilla",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/14/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-vasquez-for-voting-against-critical-funding/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 127,
+        "anchor_quote": "Critical funds",
+        "anchor_start": 113,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "funds",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Gabe Vasquez is gambling with New Mexicans’ lives\nVasquez voted to block nearly $2 million for our local economy\nCritical funds for job training and the town of Mesilla\nTell Gabe Vasquez: stop betraying New Mexicans",
+    "text_hash": "8accc016509e9e7c19d6de4551fcc69e27c2ab8c862c9429189a23c236443de5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-1cc3b6156be4a05d-0",
+    "alignment": "R",
+    "block_id": "nrcc-1cc3b6156be4a05d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-1cc3b6156be4a05d-0-claims-001-004",
+    "claim_text": "Critical funds were for the town of Mesilla",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 168,
+        "kind": "publisher_transcript",
+        "start": 113,
+        "text": "Critical funds for job training and the town of Mesilla",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/14/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-vasquez-for-voting-against-critical-funding/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 168,
+        "anchor_quote": "town of Mesilla",
+        "anchor_start": 153,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "town of Mesilla",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Gabe Vasquez is gambling with New Mexicans’ lives\nVasquez voted to block nearly $2 million for our local economy\nCritical funds for job training and the town of Mesilla\nTell Gabe Vasquez: stop betraying New Mexicans",
+    "text_hash": "8accc016509e9e7c19d6de4551fcc69e27c2ab8c862c9429189a23c236443de5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-1cc3b6156be4a05d-0",
+    "alignment": "R",
+    "block_id": "nrcc-1cc3b6156be4a05d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-1cc3b6156be4a05d-0-claims-001-005",
+    "claim_text": "Gabe Vasquez is betraying New Mexicans",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 215,
+        "kind": "publisher_transcript",
+        "start": 169,
+        "text": "Tell Gabe Vasquez: stop betraying New Mexicans",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/14/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-vasquez-for-voting-against-critical-funding/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 186,
+        "anchor_quote": "Gabe Vasquez",
+        "anchor_start": 174,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H2NM02191",
+        "kind": "person",
+        "name": "VASQUEZ, GABE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Gabe Vasquez is gambling with New Mexicans’ lives\nVasquez voted to block nearly $2 million for our local economy\nCritical funds for job training and the town of Mesilla\nTell Gabe Vasquez: stop betraying New Mexicans",
+    "text_hash": "8accc016509e9e7c19d6de4551fcc69e27c2ab8c862c9429189a23c236443de5",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
