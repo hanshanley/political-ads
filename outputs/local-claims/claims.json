@@ -2979,5 +2979,1471 @@
     "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-0fe807e0e52358a7-0",
+    "alignment": "R",
+    "block_id": "cassidy-0fe807e0e52358a7-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-0fe807e0e52358a7-0-claims-001-001",
+    "claim_text": "In a life threatening illness the enemy is the disease.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 55,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "In a life threatening illness the enemy is the disease.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-fights-for-patients-cuts-costs-and-delivers-for-you-when-it-matters-most",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 54,
+        "anchor_quote": "the disease",
+        "anchor_start": 43,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "disease",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "In a life threatening illness the enemy is the disease.\nThe enemy shouldn't be surprise medical bills from your insurance company that you can’t afford.\nSenator Bill Cassidy put a stop to surprise medical billing.\nSaving patients MILLIONS.\nBill Cassidy is the senate leader fighting to lower your health care costs - including prescriptions.\nDr. Bill Cassidy worked to heal patients.\nSenator Bill Cassidy fights for more affordable health care.\nEarly voting starts May 2.",
+    "text_hash": "7ad7f60292a15c86c5114c12c94804ad7741dbc5a949d1e942ce3fc13ceae8c4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-0fe807e0e52358a7-0",
+    "alignment": "R",
+    "block_id": "cassidy-0fe807e0e52358a7-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-0fe807e0e52358a7-0-claims-001-002",
+    "claim_text": "The enemy shouldn't be surprise medical bills from your insurance company that you can’t afford.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "publisher_transcript",
+        "start": 56,
+        "text": "The enemy shouldn't be surprise medical bills from your insurance company that you can’t afford.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-fights-for-patients-cuts-costs-and-delivers-for-you-when-it-matters-most",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 101,
+        "anchor_quote": "surprise medical bills",
+        "anchor_start": 79,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "surprise medical bills",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "In a life threatening illness the enemy is the disease.\nThe enemy shouldn't be surprise medical bills from your insurance company that you can’t afford.\nSenator Bill Cassidy put a stop to surprise medical billing.\nSaving patients MILLIONS.\nBill Cassidy is the senate leader fighting to lower your health care costs - including prescriptions.\nDr. Bill Cassidy worked to heal patients.\nSenator Bill Cassidy fights for more affordable health care.\nEarly voting starts May 2.",
+    "text_hash": "7ad7f60292a15c86c5114c12c94804ad7741dbc5a949d1e942ce3fc13ceae8c4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-0fe807e0e52358a7-0",
+    "alignment": "R",
+    "block_id": "cassidy-0fe807e0e52358a7-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-0fe807e0e52358a7-0-claims-001-003",
+    "claim_text": "Senator Bill Cassidy put a stop to surprise medical billing.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 213,
+        "kind": "publisher_transcript",
+        "start": 153,
+        "text": "Senator Bill Cassidy put a stop to surprise medical billing.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-fights-for-patients-cuts-costs-and-delivers-for-you-when-it-matters-most",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 173,
+        "anchor_quote": "Bill Cassidy",
+        "anchor_start": 161,
+        "anchor_unit_id": 3,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Bill Cassidy",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "In a life threatening illness the enemy is the disease.\nThe enemy shouldn't be surprise medical bills from your insurance company that you can’t afford.\nSenator Bill Cassidy put a stop to surprise medical billing.\nSaving patients MILLIONS.\nBill Cassidy is the senate leader fighting to lower your health care costs - including prescriptions.\nDr. Bill Cassidy worked to heal patients.\nSenator Bill Cassidy fights for more affordable health care.\nEarly voting starts May 2.",
+    "text_hash": "7ad7f60292a15c86c5114c12c94804ad7741dbc5a949d1e942ce3fc13ceae8c4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-0fe807e0e52358a7-0",
+    "alignment": "R",
+    "block_id": "cassidy-0fe807e0e52358a7-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-0fe807e0e52358a7-0-claims-001-004",
+    "claim_text": "Saving patients MILLIONS.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 239,
+        "kind": "publisher_transcript",
+        "start": 214,
+        "text": "Saving patients MILLIONS.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-fights-for-patients-cuts-costs-and-delivers-for-you-when-it-matters-most",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 229,
+        "anchor_quote": "patients",
+        "anchor_start": 221,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "patients",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "In a life threatening illness the enemy is the disease.\nThe enemy shouldn't be surprise medical bills from your insurance company that you can’t afford.\nSenator Bill Cassidy put a stop to surprise medical billing.\nSaving patients MILLIONS.\nBill Cassidy is the senate leader fighting to lower your health care costs - including prescriptions.\nDr. Bill Cassidy worked to heal patients.\nSenator Bill Cassidy fights for more affordable health care.\nEarly voting starts May 2.",
+    "text_hash": "7ad7f60292a15c86c5114c12c94804ad7741dbc5a949d1e942ce3fc13ceae8c4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-0fe807e0e52358a7-0",
+    "alignment": "R",
+    "block_id": "cassidy-0fe807e0e52358a7-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-0fe807e0e52358a7-0-claims-001-005",
+    "claim_text": "Bill Cassidy is the senate leader fighting to lower your health care costs - including prescriptions.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 341,
+        "kind": "publisher_transcript",
+        "start": 240,
+        "text": "Bill Cassidy is the senate leader fighting to lower your health care costs - including prescriptions.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-fights-for-patients-cuts-costs-and-delivers-for-you-when-it-matters-most",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 252,
+        "anchor_quote": "Bill Cassidy",
+        "anchor_start": 240,
+        "anchor_unit_id": 5,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Bill Cassidy",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "In a life threatening illness the enemy is the disease.\nThe enemy shouldn't be surprise medical bills from your insurance company that you can’t afford.\nSenator Bill Cassidy put a stop to surprise medical billing.\nSaving patients MILLIONS.\nBill Cassidy is the senate leader fighting to lower your health care costs - including prescriptions.\nDr. Bill Cassidy worked to heal patients.\nSenator Bill Cassidy fights for more affordable health care.\nEarly voting starts May 2.",
+    "text_hash": "7ad7f60292a15c86c5114c12c94804ad7741dbc5a949d1e942ce3fc13ceae8c4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-0fe807e0e52358a7-0",
+    "alignment": "R",
+    "block_id": "cassidy-0fe807e0e52358a7-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-0fe807e0e52358a7-0-claims-001-006",
+    "claim_text": "Dr. Bill Cassidy worked to heal patients.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 383,
+        "kind": "publisher_transcript",
+        "start": 342,
+        "text": "Dr. Bill Cassidy worked to heal patients.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-fights-for-patients-cuts-costs-and-delivers-for-you-when-it-matters-most",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 358,
+        "anchor_quote": "Bill Cassidy",
+        "anchor_start": 346,
+        "anchor_unit_id": 6,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Bill Cassidy",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 382,
+        "anchor_quote": "patients",
+        "anchor_start": 374,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "patients",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "In a life threatening illness the enemy is the disease.\nThe enemy shouldn't be surprise medical bills from your insurance company that you can’t afford.\nSenator Bill Cassidy put a stop to surprise medical billing.\nSaving patients MILLIONS.\nBill Cassidy is the senate leader fighting to lower your health care costs - including prescriptions.\nDr. Bill Cassidy worked to heal patients.\nSenator Bill Cassidy fights for more affordable health care.\nEarly voting starts May 2.",
+    "text_hash": "7ad7f60292a15c86c5114c12c94804ad7741dbc5a949d1e942ce3fc13ceae8c4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-0fe807e0e52358a7-0",
+    "alignment": "R",
+    "block_id": "cassidy-0fe807e0e52358a7-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-0fe807e0e52358a7-0-claims-001-007",
+    "claim_text": "Senator Bill Cassidy fights for more affordable health care.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 444,
+        "kind": "publisher_transcript",
+        "start": 384,
+        "text": "Senator Bill Cassidy fights for more affordable health care.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-fights-for-patients-cuts-costs-and-delivers-for-you-when-it-matters-most",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 404,
+        "anchor_quote": "Bill Cassidy",
+        "anchor_start": 392,
+        "anchor_unit_id": 7,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Bill Cassidy",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "In a life threatening illness the enemy is the disease.\nThe enemy shouldn't be surprise medical bills from your insurance company that you can’t afford.\nSenator Bill Cassidy put a stop to surprise medical billing.\nSaving patients MILLIONS.\nBill Cassidy is the senate leader fighting to lower your health care costs - including prescriptions.\nDr. Bill Cassidy worked to heal patients.\nSenator Bill Cassidy fights for more affordable health care.\nEarly voting starts May 2.",
+    "text_hash": "7ad7f60292a15c86c5114c12c94804ad7741dbc5a949d1e942ce3fc13ceae8c4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-0fe807e0e52358a7-0",
+    "alignment": "R",
+    "block_id": "cassidy-0fe807e0e52358a7-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-0fe807e0e52358a7-0-claims-001-008",
+    "claim_text": "Early voting starts May 2.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 471,
+        "kind": "publisher_transcript",
+        "start": 445,
+        "text": "Early voting starts May 2.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-fights-for-patients-cuts-costs-and-delivers-for-you-when-it-matters-most",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [],
+    "text": "In a life threatening illness the enemy is the disease.\nThe enemy shouldn't be surprise medical bills from your insurance company that you can’t afford.\nSenator Bill Cassidy put a stop to surprise medical billing.\nSaving patients MILLIONS.\nBill Cassidy is the senate leader fighting to lower your health care costs - including prescriptions.\nDr. Bill Cassidy worked to heal patients.\nSenator Bill Cassidy fights for more affordable health care.\nEarly voting starts May 2.",
+    "text_hash": "7ad7f60292a15c86c5114c12c94804ad7741dbc5a949d1e942ce3fc13ceae8c4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-107b696383099e06-0",
+    "alignment": "R",
+    "block_id": "cassidy-107b696383099e06-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-107b696383099e06-0-claims-001-001",
+    "claim_text": "Only one senate candidate delivers big things for Louisiana.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 60,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Only one senate candidate delivers big things for Louisiana.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-is-the-only-candidate-who-delivers",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 25,
+        "anchor_quote": "senate candidate",
+        "anchor_start": 9,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "senate candidate",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Only one senate candidate delivers big things for Louisiana.\nOnly Bill Cassidy protects our energy industry.\nOnly Bill Cassidy fights the drug cartels who kill Americans with fentanyl.\nOnly Bill Cassidy delivered billions to rebuild our bridges, power grids, flood protection.\nOnly Bill Cassidy is the senate leader in making health care more affordable.\nOthers talk. Only one delivers. Bill Cassidy.\nEarly Voting Starts May 2.",
+    "text_hash": "a54392b6886d73c82eff61768b447fe94fc261434334b0fd15571ec05ca00444",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-107b696383099e06-0",
+    "alignment": "R",
+    "block_id": "cassidy-107b696383099e06-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-107b696383099e06-0-claims-001-002",
+    "claim_text": "Only Bill Cassidy protects our energy industry.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 108,
+        "kind": "publisher_transcript",
+        "start": 61,
+        "text": "Only Bill Cassidy protects our energy industry.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-is-the-only-candidate-who-delivers",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 78,
+        "anchor_quote": "Bill Cassidy",
+        "anchor_start": 66,
+        "anchor_unit_id": 2,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Bill Cassidy",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Only one senate candidate delivers big things for Louisiana.\nOnly Bill Cassidy protects our energy industry.\nOnly Bill Cassidy fights the drug cartels who kill Americans with fentanyl.\nOnly Bill Cassidy delivered billions to rebuild our bridges, power grids, flood protection.\nOnly Bill Cassidy is the senate leader in making health care more affordable.\nOthers talk. Only one delivers. Bill Cassidy.\nEarly Voting Starts May 2.",
+    "text_hash": "a54392b6886d73c82eff61768b447fe94fc261434334b0fd15571ec05ca00444",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-107b696383099e06-0",
+    "alignment": "R",
+    "block_id": "cassidy-107b696383099e06-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-107b696383099e06-0-claims-001-003",
+    "claim_text": "Only Bill Cassidy fights the drug cartels who kill Americans with fentanyl.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 184,
+        "kind": "publisher_transcript",
+        "start": 109,
+        "text": "Only Bill Cassidy fights the drug cartels who kill Americans with fentanyl.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-is-the-only-candidate-who-delivers",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 126,
+        "anchor_quote": "Bill Cassidy",
+        "anchor_start": 114,
+        "anchor_unit_id": 3,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Bill Cassidy",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Only one senate candidate delivers big things for Louisiana.\nOnly Bill Cassidy protects our energy industry.\nOnly Bill Cassidy fights the drug cartels who kill Americans with fentanyl.\nOnly Bill Cassidy delivered billions to rebuild our bridges, power grids, flood protection.\nOnly Bill Cassidy is the senate leader in making health care more affordable.\nOthers talk. Only one delivers. Bill Cassidy.\nEarly Voting Starts May 2.",
+    "text_hash": "a54392b6886d73c82eff61768b447fe94fc261434334b0fd15571ec05ca00444",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-107b696383099e06-0",
+    "alignment": "R",
+    "block_id": "cassidy-107b696383099e06-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-107b696383099e06-0-claims-001-004",
+    "claim_text": "Only Bill Cassidy delivered billions to rebuild our bridges, power grids, flood protection.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 276,
+        "kind": "publisher_transcript",
+        "start": 185,
+        "text": "Only Bill Cassidy delivered billions to rebuild our bridges, power grids, flood protection.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-is-the-only-candidate-who-delivers",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 202,
+        "anchor_quote": "Bill Cassidy",
+        "anchor_start": 190,
+        "anchor_unit_id": 4,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Bill Cassidy",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Only one senate candidate delivers big things for Louisiana.\nOnly Bill Cassidy protects our energy industry.\nOnly Bill Cassidy fights the drug cartels who kill Americans with fentanyl.\nOnly Bill Cassidy delivered billions to rebuild our bridges, power grids, flood protection.\nOnly Bill Cassidy is the senate leader in making health care more affordable.\nOthers talk. Only one delivers. Bill Cassidy.\nEarly Voting Starts May 2.",
+    "text_hash": "a54392b6886d73c82eff61768b447fe94fc261434334b0fd15571ec05ca00444",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-107b696383099e06-0",
+    "alignment": "R",
+    "block_id": "cassidy-107b696383099e06-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-107b696383099e06-0-claims-001-005",
+    "claim_text": "Only Bill Cassidy is the senate leader in making health care more affordable.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 354,
+        "kind": "publisher_transcript",
+        "start": 277,
+        "text": "Only Bill Cassidy is the senate leader in making health care more affordable.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-is-the-only-candidate-who-delivers",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 294,
+        "anchor_quote": "Bill Cassidy",
+        "anchor_start": 282,
+        "anchor_unit_id": 5,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Bill Cassidy",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Only one senate candidate delivers big things for Louisiana.\nOnly Bill Cassidy protects our energy industry.\nOnly Bill Cassidy fights the drug cartels who kill Americans with fentanyl.\nOnly Bill Cassidy delivered billions to rebuild our bridges, power grids, flood protection.\nOnly Bill Cassidy is the senate leader in making health care more affordable.\nOthers talk. Only one delivers. Bill Cassidy.\nEarly Voting Starts May 2.",
+    "text_hash": "a54392b6886d73c82eff61768b447fe94fc261434334b0fd15571ec05ca00444",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-107b696383099e06-0",
+    "alignment": "R",
+    "block_id": "cassidy-107b696383099e06-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-107b696383099e06-0-claims-001-006",
+    "claim_text": "Others talk. Only one delivers. Bill Cassidy.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 400,
+        "kind": "publisher_transcript",
+        "start": 355,
+        "text": "Others talk. Only one delivers. Bill Cassidy.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-is-the-only-candidate-who-delivers",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 399,
+        "anchor_quote": "Bill Cassidy",
+        "anchor_start": 387,
+        "anchor_unit_id": 6,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Bill Cassidy",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Only one senate candidate delivers big things for Louisiana.\nOnly Bill Cassidy protects our energy industry.\nOnly Bill Cassidy fights the drug cartels who kill Americans with fentanyl.\nOnly Bill Cassidy delivered billions to rebuild our bridges, power grids, flood protection.\nOnly Bill Cassidy is the senate leader in making health care more affordable.\nOthers talk. Only one delivers. Bill Cassidy.\nEarly Voting Starts May 2.",
+    "text_hash": "a54392b6886d73c82eff61768b447fe94fc261434334b0fd15571ec05ca00444",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-107b696383099e06-0",
+    "alignment": "R",
+    "block_id": "cassidy-107b696383099e06-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-107b696383099e06-0-claims-001-007",
+    "claim_text": "Early Voting Starts May 2.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 427,
+        "kind": "publisher_transcript",
+        "start": 401,
+        "text": "Early Voting Starts May 2.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.billcassidy.com/post/new-tv-ad-dr-cassidy-is-the-only-candidate-who-delivers",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [],
+    "text": "Only one senate candidate delivers big things for Louisiana.\nOnly Bill Cassidy protects our energy industry.\nOnly Bill Cassidy fights the drug cartels who kill Americans with fentanyl.\nOnly Bill Cassidy delivered billions to rebuild our bridges, power grids, flood protection.\nOnly Bill Cassidy is the senate leader in making health care more affordable.\nOthers talk. Only one delivers. Bill Cassidy.\nEarly Voting Starts May 2.",
+    "text_hash": "a54392b6886d73c82eff61768b447fe94fc261434334b0fd15571ec05ca00444",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-35e759517bdff0d8-0",
+    "alignment": "R",
+    "block_id": "cassidy-35e759517bdff0d8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-35e759517bdff0d8-0-claims-001-001",
+    "claim_text": "I'm Dr. Bill Cassidy.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 63,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "I'm Dr. Bill Cassidy. I know first hand how deadly fentanyl is.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-first-tv-ad-with-half-a-million-dollar-statewide-investment",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 20,
+        "anchor_quote": "I'm Dr. Bill Cassidy",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Bill Cassidy",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I'm Dr. Bill Cassidy. I know first hand how deadly fentanyl is.\nA hundred thousand Americans die from overdose every year. Enough to fill Tiger Stadium.\nI wrote the HALT Fentanyl Act to put tough new penalties on criminals who manufacture and distribute this evil drug.\nPresident Trump said it was the most important legislation he would sign this year. It puts drug dealers in prison and saves innocent lives.",
+    "text_hash": "cf3a0f4b13818380a5a2da3fd0cf883fd8ec561fcdb324141a86b0b43d80ed28",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-35e759517bdff0d8-0",
+    "alignment": "R",
+    "block_id": "cassidy-35e759517bdff0d8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-35e759517bdff0d8-0-claims-001-002",
+    "claim_text": "I know first hand how deadly fentanyl is.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 63,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "I'm Dr. Bill Cassidy. I know first hand how deadly fentanyl is.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-first-tv-ad-with-half-a-million-dollar-statewide-investment",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 59,
+        "anchor_quote": "fentanyl",
+        "anchor_start": 51,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "fentanyl",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm Dr. Bill Cassidy. I know first hand how deadly fentanyl is.\nA hundred thousand Americans die from overdose every year. Enough to fill Tiger Stadium.\nI wrote the HALT Fentanyl Act to put tough new penalties on criminals who manufacture and distribute this evil drug.\nPresident Trump said it was the most important legislation he would sign this year. It puts drug dealers in prison and saves innocent lives.",
+    "text_hash": "cf3a0f4b13818380a5a2da3fd0cf883fd8ec561fcdb324141a86b0b43d80ed28",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-35e759517bdff0d8-0",
+    "alignment": "R",
+    "block_id": "cassidy-35e759517bdff0d8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-35e759517bdff0d8-0-claims-001-003",
+    "claim_text": "A hundred thousand Americans die from overdose every year.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "publisher_transcript",
+        "start": 64,
+        "text": "A hundred thousand Americans die from overdose every year. Enough to fill Tiger Stadium.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-first-tv-ad-with-half-a-million-dollar-statewide-investment",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 92,
+        "anchor_quote": "Americans",
+        "anchor_start": 83,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Americans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm Dr. Bill Cassidy. I know first hand how deadly fentanyl is.\nA hundred thousand Americans die from overdose every year. Enough to fill Tiger Stadium.\nI wrote the HALT Fentanyl Act to put tough new penalties on criminals who manufacture and distribute this evil drug.\nPresident Trump said it was the most important legislation he would sign this year. It puts drug dealers in prison and saves innocent lives.",
+    "text_hash": "cf3a0f4b13818380a5a2da3fd0cf883fd8ec561fcdb324141a86b0b43d80ed28",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-35e759517bdff0d8-0",
+    "alignment": "R",
+    "block_id": "cassidy-35e759517bdff0d8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-35e759517bdff0d8-0-claims-001-004",
+    "claim_text": "That number is enough to fill Tiger Stadium.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "publisher_transcript",
+        "start": 64,
+        "text": "A hundred thousand Americans die from overdose every year. Enough to fill Tiger Stadium.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-first-tv-ad-with-half-a-million-dollar-statewide-investment",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 151,
+        "anchor_quote": "Tiger Stadium",
+        "anchor_start": 138,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Tiger Stadium",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I'm Dr. Bill Cassidy. I know first hand how deadly fentanyl is.\nA hundred thousand Americans die from overdose every year. Enough to fill Tiger Stadium.\nI wrote the HALT Fentanyl Act to put tough new penalties on criminals who manufacture and distribute this evil drug.\nPresident Trump said it was the most important legislation he would sign this year. It puts drug dealers in prison and saves innocent lives.",
+    "text_hash": "cf3a0f4b13818380a5a2da3fd0cf883fd8ec561fcdb324141a86b0b43d80ed28",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-35e759517bdff0d8-0",
+    "alignment": "R",
+    "block_id": "cassidy-35e759517bdff0d8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-35e759517bdff0d8-0-claims-001-005",
+    "claim_text": "I wrote the HALT Fentanyl Act to put tough new penalties on criminals who manufacture and distribute this evil drug.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 269,
+        "kind": "publisher_transcript",
+        "start": 153,
+        "text": "I wrote the HALT Fentanyl Act to put tough new penalties on criminals who manufacture and distribute this evil drug.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-first-tv-ad-with-half-a-million-dollar-statewide-investment",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 182,
+        "anchor_quote": "HALT Fentanyl Act",
+        "anchor_start": 165,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "HALT Fentanyl Act",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 222,
+        "anchor_quote": "criminals",
+        "anchor_start": 213,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "criminals",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 268,
+        "anchor_quote": "this evil drug",
+        "anchor_start": 254,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "this evil drug",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm Dr. Bill Cassidy. I know first hand how deadly fentanyl is.\nA hundred thousand Americans die from overdose every year. Enough to fill Tiger Stadium.\nI wrote the HALT Fentanyl Act to put tough new penalties on criminals who manufacture and distribute this evil drug.\nPresident Trump said it was the most important legislation he would sign this year. It puts drug dealers in prison and saves innocent lives.",
+    "text_hash": "cf3a0f4b13818380a5a2da3fd0cf883fd8ec561fcdb324141a86b0b43d80ed28",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-35e759517bdff0d8-0",
+    "alignment": "R",
+    "block_id": "cassidy-35e759517bdff0d8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-35e759517bdff0d8-0-claims-001-006",
+    "claim_text": "President Trump said it was the most important legislation he would sign this year.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 410,
+        "kind": "publisher_transcript",
+        "start": 270,
+        "text": "President Trump said it was the most important legislation he would sign this year. It puts drug dealers in prison and saves innocent lives.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-first-tv-ad-with-half-a-million-dollar-statewide-investment",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 285,
+        "anchor_quote": "President Trump",
+        "anchor_start": 270,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "President Trump",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 328,
+        "anchor_quote": "legislation",
+        "anchor_start": 317,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "legislation",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I'm Dr. Bill Cassidy. I know first hand how deadly fentanyl is.\nA hundred thousand Americans die from overdose every year. Enough to fill Tiger Stadium.\nI wrote the HALT Fentanyl Act to put tough new penalties on criminals who manufacture and distribute this evil drug.\nPresident Trump said it was the most important legislation he would sign this year. It puts drug dealers in prison and saves innocent lives.",
+    "text_hash": "cf3a0f4b13818380a5a2da3fd0cf883fd8ec561fcdb324141a86b0b43d80ed28",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-35e759517bdff0d8-0",
+    "alignment": "R",
+    "block_id": "cassidy-35e759517bdff0d8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-35e759517bdff0d8-0-claims-001-007",
+    "claim_text": "It puts drug dealers in prison and saves innocent lives.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 410,
+        "kind": "publisher_transcript",
+        "start": 270,
+        "text": "President Trump said it was the most important legislation he would sign this year. It puts drug dealers in prison and saves innocent lives.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-first-tv-ad-with-half-a-million-dollar-statewide-investment",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 374,
+        "anchor_quote": "drug dealers",
+        "anchor_start": 362,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "drug dealers",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 409,
+        "anchor_quote": "innocent lives",
+        "anchor_start": 395,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "innocent lives",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "I'm Dr. Bill Cassidy. I know first hand how deadly fentanyl is.\nA hundred thousand Americans die from overdose every year. Enough to fill Tiger Stadium.\nI wrote the HALT Fentanyl Act to put tough new penalties on criminals who manufacture and distribute this evil drug.\nPresident Trump said it was the most important legislation he would sign this year. It puts drug dealers in prison and saves innocent lives.",
+    "text_hash": "cf3a0f4b13818380a5a2da3fd0cf883fd8ec561fcdb324141a86b0b43d80ed28",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-72ef2c017e8b32e0-0",
+    "alignment": "R",
+    "block_id": "cassidy-72ef2c017e8b32e0-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-72ef2c017e8b32e0-0-claims-001-001",
+    "claim_text": "Everything costs more these days.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 33,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Everything costs more these days.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-tv-ad-highlighting-his-work-to-help-pass-president-trumps-tax-cuts",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [],
+    "text": "Everything costs more these days.\nBut Bill Cassidy and Donald Trump are working to change that.\nCassidy worked with President Trump to pass tax cuts. Putting more money in our pockets.\nLowering taxes for seniors.\nNo taxes on overtime.\nNo taxes on tips.\nAnd they increased the child tax credit.\nSenator Cassidy I have one thing to say to you. Thank you!\nThank you!\nThank you Senator Cassidy!\nThank you Senator Cassidy!",
+    "text_hash": "f13765aac2952f3cff5d1108c72c071800a71e18b59e7c5499eca12adc7ffb04",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-72ef2c017e8b32e0-0",
+    "alignment": "R",
+    "block_id": "cassidy-72ef2c017e8b32e0-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-72ef2c017e8b32e0-0-claims-001-002",
+    "claim_text": "Bill Cassidy and Donald Trump are working to change that.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 95,
+        "kind": "publisher_transcript",
+        "start": 34,
+        "text": "But Bill Cassidy and Donald Trump are working to change that.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-tv-ad-highlighting-his-work-to-help-pass-president-trumps-tax-cuts",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "Bill Cassidy",
+        "anchor_start": 38,
+        "anchor_unit_id": 2,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Bill Cassidy",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 67,
+        "anchor_quote": "Donald Trump",
+        "anchor_start": 55,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Donald Trump",
+        "kind": "person",
+        "name": "Donald Trump",
+        "party_basis": "national_crosswalk",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Everything costs more these days.\nBut Bill Cassidy and Donald Trump are working to change that.\nCassidy worked with President Trump to pass tax cuts. Putting more money in our pockets.\nLowering taxes for seniors.\nNo taxes on overtime.\nNo taxes on tips.\nAnd they increased the child tax credit.\nSenator Cassidy I have one thing to say to you. Thank you!\nThank you!\nThank you Senator Cassidy!\nThank you Senator Cassidy!",
+    "text_hash": "f13765aac2952f3cff5d1108c72c071800a71e18b59e7c5499eca12adc7ffb04",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-72ef2c017e8b32e0-0",
+    "alignment": "R",
+    "block_id": "cassidy-72ef2c017e8b32e0-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-72ef2c017e8b32e0-0-claims-001-003",
+    "claim_text": "Cassidy worked with President Trump to pass tax cuts.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 184,
+        "kind": "publisher_transcript",
+        "start": 96,
+        "text": "Cassidy worked with President Trump to pass tax cuts. Putting more money in our pockets.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-tv-ad-highlighting-his-work-to-help-pass-president-trumps-tax-cuts",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 103,
+        "anchor_quote": "Cassidy",
+        "anchor_start": 96,
+        "anchor_unit_id": 3,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Cassidy",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 131,
+        "anchor_quote": "President Trump",
+        "anchor_start": 116,
+        "anchor_unit_id": 3,
+        "entity_id": "national:Donald Trump",
+        "kind": "person",
+        "name": "President Trump",
+        "party_basis": "national_crosswalk",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Everything costs more these days.\nBut Bill Cassidy and Donald Trump are working to change that.\nCassidy worked with President Trump to pass tax cuts. Putting more money in our pockets.\nLowering taxes for seniors.\nNo taxes on overtime.\nNo taxes on tips.\nAnd they increased the child tax credit.\nSenator Cassidy I have one thing to say to you. Thank you!\nThank you!\nThank you Senator Cassidy!\nThank you Senator Cassidy!",
+    "text_hash": "f13765aac2952f3cff5d1108c72c071800a71e18b59e7c5499eca12adc7ffb04",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-72ef2c017e8b32e0-0",
+    "alignment": "R",
+    "block_id": "cassidy-72ef2c017e8b32e0-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-72ef2c017e8b32e0-0-claims-001-004",
+    "claim_text": "Passing tax cuts put more money in our pockets.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 184,
+        "kind": "publisher_transcript",
+        "start": 96,
+        "text": "Cassidy worked with President Trump to pass tax cuts. Putting more money in our pockets.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-tv-ad-highlighting-his-work-to-help-pass-president-trumps-tax-cuts",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [],
+    "text": "Everything costs more these days.\nBut Bill Cassidy and Donald Trump are working to change that.\nCassidy worked with President Trump to pass tax cuts. Putting more money in our pockets.\nLowering taxes for seniors.\nNo taxes on overtime.\nNo taxes on tips.\nAnd they increased the child tax credit.\nSenator Cassidy I have one thing to say to you. Thank you!\nThank you!\nThank you Senator Cassidy!\nThank you Senator Cassidy!",
+    "text_hash": "f13765aac2952f3cff5d1108c72c071800a71e18b59e7c5499eca12adc7ffb04",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-72ef2c017e8b32e0-0",
+    "alignment": "R",
+    "block_id": "cassidy-72ef2c017e8b32e0-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-72ef2c017e8b32e0-0-claims-001-005",
+    "claim_text": "Lowering taxes for seniors occurred.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 212,
+        "kind": "publisher_transcript",
+        "start": 185,
+        "text": "Lowering taxes for seniors.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-tv-ad-highlighting-his-work-to-help-pass-president-trumps-tax-cuts",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 211,
+        "anchor_quote": "seniors",
+        "anchor_start": 204,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "seniors",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Everything costs more these days.\nBut Bill Cassidy and Donald Trump are working to change that.\nCassidy worked with President Trump to pass tax cuts. Putting more money in our pockets.\nLowering taxes for seniors.\nNo taxes on overtime.\nNo taxes on tips.\nAnd they increased the child tax credit.\nSenator Cassidy I have one thing to say to you. Thank you!\nThank you!\nThank you Senator Cassidy!\nThank you Senator Cassidy!",
+    "text_hash": "f13765aac2952f3cff5d1108c72c071800a71e18b59e7c5499eca12adc7ffb04",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-72ef2c017e8b32e0-0",
+    "alignment": "R",
+    "block_id": "cassidy-72ef2c017e8b32e0-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-72ef2c017e8b32e0-0-claims-001-006",
+    "claim_text": "There are no taxes on overtime.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 234,
+        "kind": "publisher_transcript",
+        "start": 213,
+        "text": "No taxes on overtime.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-tv-ad-highlighting-his-work-to-help-pass-president-trumps-tax-cuts",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [],
+    "text": "Everything costs more these days.\nBut Bill Cassidy and Donald Trump are working to change that.\nCassidy worked with President Trump to pass tax cuts. Putting more money in our pockets.\nLowering taxes for seniors.\nNo taxes on overtime.\nNo taxes on tips.\nAnd they increased the child tax credit.\nSenator Cassidy I have one thing to say to you. Thank you!\nThank you!\nThank you Senator Cassidy!\nThank you Senator Cassidy!",
+    "text_hash": "f13765aac2952f3cff5d1108c72c071800a71e18b59e7c5499eca12adc7ffb04",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-72ef2c017e8b32e0-0",
+    "alignment": "R",
+    "block_id": "cassidy-72ef2c017e8b32e0-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-72ef2c017e8b32e0-0-claims-001-007",
+    "claim_text": "There are no taxes on tips.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 252,
+        "kind": "publisher_transcript",
+        "start": 235,
+        "text": "No taxes on tips.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-tv-ad-highlighting-his-work-to-help-pass-president-trumps-tax-cuts",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [],
+    "text": "Everything costs more these days.\nBut Bill Cassidy and Donald Trump are working to change that.\nCassidy worked with President Trump to pass tax cuts. Putting more money in our pockets.\nLowering taxes for seniors.\nNo taxes on overtime.\nNo taxes on tips.\nAnd they increased the child tax credit.\nSenator Cassidy I have one thing to say to you. Thank you!\nThank you!\nThank you Senator Cassidy!\nThank you Senator Cassidy!",
+    "text_hash": "f13765aac2952f3cff5d1108c72c071800a71e18b59e7c5499eca12adc7ffb04",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-72ef2c017e8b32e0-0",
+    "alignment": "R",
+    "block_id": "cassidy-72ef2c017e8b32e0-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-72ef2c017e8b32e0-0-claims-001-008",
+    "claim_text": "The child tax credit was increased.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 293,
+        "kind": "publisher_transcript",
+        "start": 253,
+        "text": "And they increased the child tax credit.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-tv-ad-highlighting-his-work-to-help-pass-president-trumps-tax-cuts",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [],
+    "text": "Everything costs more these days.\nBut Bill Cassidy and Donald Trump are working to change that.\nCassidy worked with President Trump to pass tax cuts. Putting more money in our pockets.\nLowering taxes for seniors.\nNo taxes on overtime.\nNo taxes on tips.\nAnd they increased the child tax credit.\nSenator Cassidy I have one thing to say to you. Thank you!\nThank you!\nThank you Senator Cassidy!\nThank you Senator Cassidy!",
+    "text_hash": "f13765aac2952f3cff5d1108c72c071800a71e18b59e7c5499eca12adc7ffb04",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-72ef2c017e8b32e0-0",
+    "alignment": "R",
+    "block_id": "cassidy-72ef2c017e8b32e0-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-72ef2c017e8b32e0-0-claims-001-009",
+    "claim_text": "Thank you Senator Cassidy!",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 352,
+        "kind": "publisher_transcript",
+        "start": 294,
+        "text": "Senator Cassidy I have one thing to say to you. Thank you!",
+        "unit_id": 8
+      },
+      {
+        "end": 390,
+        "kind": "publisher_transcript",
+        "start": 364,
+        "text": "Thank you Senator Cassidy!",
+        "unit_id": 10
+      },
+      {
+        "end": 417,
+        "kind": "publisher_transcript",
+        "start": 391,
+        "text": "Thank you Senator Cassidy!",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      8,
+      10,
+      11
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-tv-ad-highlighting-his-work-to-help-pass-president-trumps-tax-cuts",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [
+      {
+        "anchor_end": 309,
+        "anchor_quote": "Senator Cassidy",
+        "anchor_start": 294,
+        "anchor_unit_id": 8,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Senator Cassidy",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Everything costs more these days.\nBut Bill Cassidy and Donald Trump are working to change that.\nCassidy worked with President Trump to pass tax cuts. Putting more money in our pockets.\nLowering taxes for seniors.\nNo taxes on overtime.\nNo taxes on tips.\nAnd they increased the child tax credit.\nSenator Cassidy I have one thing to say to you. Thank you!\nThank you!\nThank you Senator Cassidy!\nThank you Senator Cassidy!",
+    "text_hash": "f13765aac2952f3cff5d1108c72c071800a71e18b59e7c5499eca12adc7ffb04",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cassidy-72ef2c017e8b32e0-0",
+    "alignment": "R",
+    "block_id": "cassidy-72ef2c017e8b32e0-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cassidy-72ef2c017e8b32e0-0-claims-001-010",
+    "claim_text": "Thank you!",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 363,
+        "kind": "publisher_transcript",
+        "start": 353,
+        "text": "Thank you!",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.billcassidy.com/post/cassidy-launches-tv-ad-highlighting-his-work-to-help-pass-president-trumps-tax-cuts",
+    "sponsor": "Bill Cassidy for US Senate",
+    "targets": [],
+    "text": "Everything costs more these days.\nBut Bill Cassidy and Donald Trump are working to change that.\nCassidy worked with President Trump to pass tax cuts. Putting more money in our pockets.\nLowering taxes for seniors.\nNo taxes on overtime.\nNo taxes on tips.\nAnd they increased the child tax credit.\nSenator Cassidy I have one thing to say to you. Thank you!\nThank you!\nThank you Senator Cassidy!\nThank you Senator Cassidy!",
+    "text_hash": "f13765aac2952f3cff5d1108c72c071800a71e18b59e7c5499eca12adc7ffb04",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
   }
 ]

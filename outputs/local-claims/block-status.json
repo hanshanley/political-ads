@@ -147,49 +147,49 @@
     "ad_id": "cassidy-0fe807e0e52358a7-0",
     "block_id": "cassidy-0fe807e0e52358a7-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "cassidy-107b696383099e06-0",
     "block_id": "cassidy-107b696383099e06-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "cassidy-291286157dae8a75-0",
     "block_id": "cassidy-291286157dae8a75-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 7\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "cassidy-35e759517bdff0d8-0",
     "block_id": "cassidy-35e759517bdff0d8-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "cassidy-3ace2a6368367c94-0",
     "block_id": "cassidy-3ace2a6368367c94-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 13 for you: \\\"you\\\" is absent from unit 8. Exact source: \\\"With up to $5,400 more in wages.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "cassidy-72ef2c017e8b32e0-0",
     "block_id": "cassidy-72ef2c017e8b32e0-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "cassidy-a18be43927f73742-0",
     "block_id": "cassidy-a18be43927f73742-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for Bill Cassidy: \\\"Bill Cassidy\\\" is absent from unit 3. Exact source: \\\"Saving Louisiana jobs.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "cassidy-b862646b5c1caf3d-0",
     "block_id": "cassidy-b862646b5c1caf3d-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for border control: \\\"border control\\\" is absent from unit 3. Exact source: \\\"I worked with President Trump to shut this down. With high tech surveillance, more border ccontrol, and miles of border walls.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "cfg-50973-0",
