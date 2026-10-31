@@ -50424,5 +50424,1149 @@
     "text_hash": "37bde20991ea80eb4d9fa2934b23bc606e3a6bc0393b5d1ffee6f0d2abcb7e86",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmf-3786-3",
+    "alignment": "D",
+    "block_id": "hmf-3786-3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmf-3786-3-claims-001-001",
+    "claim_text": "we’re just trying to get by",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 38,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Out here, we’re just trying to get by.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.housemajorityforward.org/news/house-majority-forward-launches-new-tv-ads-across-pennsylvania",
+    "sponsor": "House Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 12,
+        "anchor_quote": "we",
+        "anchor_start": 10,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "we",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Out here, we’re just trying to get by.\nBut in DC, Scott Perry is voting with special interests and making it more expensive for us.\nScott Perry sided with Wall Street and voted to let them raise our costs with junk fees.\nHe voted to cut Medicaid and put thousands at risk of losing insurance, which could force local hospitals to close.\nAnd Perry even voted to raise our electricity costs.\nTell Scott Perry, vote to lower our costs.",
+    "text_hash": "c937debaf053c6a281c55d2139ce2103c3c82c769abca6e74d905c3178d5a5dc",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmf-3786-3",
+    "alignment": "D",
+    "block_id": "hmf-3786-3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmf-3786-3-claims-001-002",
+    "claim_text": "Scott Perry is voting with special interests and making it more expensive for us",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 131,
+        "kind": "publisher_transcript",
+        "start": 39,
+        "text": "But in DC, Scott Perry is voting with special interests and making it more expensive for us.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.housemajorityforward.org/news/house-majority-forward-launches-new-tv-ads-across-pennsylvania",
+    "sponsor": "House Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 61,
+        "anchor_quote": "Scott Perry",
+        "anchor_start": 50,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H2PA04135",
+        "kind": "person",
+        "name": "Scott Perry",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 130,
+        "anchor_quote": "us",
+        "anchor_start": 128,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "us",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Out here, we’re just trying to get by.\nBut in DC, Scott Perry is voting with special interests and making it more expensive for us.\nScott Perry sided with Wall Street and voted to let them raise our costs with junk fees.\nHe voted to cut Medicaid and put thousands at risk of losing insurance, which could force local hospitals to close.\nAnd Perry even voted to raise our electricity costs.\nTell Scott Perry, vote to lower our costs.",
+    "text_hash": "c937debaf053c6a281c55d2139ce2103c3c82c769abca6e74d905c3178d5a5dc",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmf-3786-3",
+    "alignment": "D",
+    "block_id": "hmf-3786-3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmf-3786-3-claims-001-003",
+    "claim_text": "Scott Perry sided with Wall Street and voted to let them raise our costs with junk fees",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 220,
+        "kind": "publisher_transcript",
+        "start": 132,
+        "text": "Scott Perry sided with Wall Street and voted to let them raise our costs with junk fees.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.housemajorityforward.org/news/house-majority-forward-launches-new-tv-ads-across-pennsylvania",
+    "sponsor": "House Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 143,
+        "anchor_quote": "Scott Perry",
+        "anchor_start": 132,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H2PA04135",
+        "kind": "person",
+        "name": "Scott Perry",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 166,
+        "anchor_quote": "Wall Street",
+        "anchor_start": 155,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Wall Street",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 204,
+        "anchor_quote": "our costs",
+        "anchor_start": 195,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "our costs",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Out here, we’re just trying to get by.\nBut in DC, Scott Perry is voting with special interests and making it more expensive for us.\nScott Perry sided with Wall Street and voted to let them raise our costs with junk fees.\nHe voted to cut Medicaid and put thousands at risk of losing insurance, which could force local hospitals to close.\nAnd Perry even voted to raise our electricity costs.\nTell Scott Perry, vote to lower our costs.",
+    "text_hash": "c937debaf053c6a281c55d2139ce2103c3c82c769abca6e74d905c3178d5a5dc",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmf-3786-3",
+    "alignment": "D",
+    "block_id": "hmf-3786-3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmf-3786-3-claims-001-004",
+    "claim_text": "He voted to cut Medicaid and put thousands at risk of losing insurance, which could force local hospitals to close",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 336,
+        "kind": "publisher_transcript",
+        "start": 221,
+        "text": "He voted to cut Medicaid and put thousands at risk of losing insurance, which could force local hospitals to close.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.housemajorityforward.org/news/house-majority-forward-launches-new-tv-ads-across-pennsylvania",
+    "sponsor": "House Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 223,
+        "anchor_quote": "He",
+        "anchor_start": 221,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H2PA04135",
+        "kind": "person",
+        "name": "He",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 245,
+        "anchor_quote": "Medicaid",
+        "anchor_start": 237,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Medicaid",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 263,
+        "anchor_quote": "thousands",
+        "anchor_start": 254,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "thousands",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 326,
+        "anchor_quote": "local hospitals",
+        "anchor_start": 311,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "local hospitals",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Out here, we’re just trying to get by.\nBut in DC, Scott Perry is voting with special interests and making it more expensive for us.\nScott Perry sided with Wall Street and voted to let them raise our costs with junk fees.\nHe voted to cut Medicaid and put thousands at risk of losing insurance, which could force local hospitals to close.\nAnd Perry even voted to raise our electricity costs.\nTell Scott Perry, vote to lower our costs.",
+    "text_hash": "c937debaf053c6a281c55d2139ce2103c3c82c769abca6e74d905c3178d5a5dc",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmf-3786-3",
+    "alignment": "D",
+    "block_id": "hmf-3786-3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmf-3786-3-claims-001-005",
+    "claim_text": "Perry even voted to raise our electricity costs",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 389,
+        "kind": "publisher_transcript",
+        "start": 337,
+        "text": "And Perry even voted to raise our electricity costs.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.housemajorityforward.org/news/house-majority-forward-launches-new-tv-ads-across-pennsylvania",
+    "sponsor": "House Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 346,
+        "anchor_quote": "Perry",
+        "anchor_start": 341,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H2PA04135",
+        "kind": "person",
+        "name": "Perry",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 388,
+        "anchor_quote": "our electricity costs",
+        "anchor_start": 367,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "our electricity costs",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Out here, we’re just trying to get by.\nBut in DC, Scott Perry is voting with special interests and making it more expensive for us.\nScott Perry sided with Wall Street and voted to let them raise our costs with junk fees.\nHe voted to cut Medicaid and put thousands at risk of losing insurance, which could force local hospitals to close.\nAnd Perry even voted to raise our electricity costs.\nTell Scott Perry, vote to lower our costs.",
+    "text_hash": "c937debaf053c6a281c55d2139ce2103c3c82c769abca6e74d905c3178d5a5dc",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmf-3786-3",
+    "alignment": "D",
+    "block_id": "hmf-3786-3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmf-3786-3-claims-001-006",
+    "claim_text": "Tell Scott Perry, vote to lower our costs",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 432,
+        "kind": "publisher_transcript",
+        "start": 390,
+        "text": "Tell Scott Perry, vote to lower our costs.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.housemajorityforward.org/news/house-majority-forward-launches-new-tv-ads-across-pennsylvania",
+    "sponsor": "House Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 406,
+        "anchor_quote": "Scott Perry",
+        "anchor_start": 395,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H2PA04135",
+        "kind": "person",
+        "name": "Scott Perry",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 431,
+        "anchor_quote": "our costs",
+        "anchor_start": 422,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "our costs",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Out here, we’re just trying to get by.\nBut in DC, Scott Perry is voting with special interests and making it more expensive for us.\nScott Perry sided with Wall Street and voted to let them raise our costs with junk fees.\nHe voted to cut Medicaid and put thousands at risk of losing insurance, which could force local hospitals to close.\nAnd Perry even voted to raise our electricity costs.\nTell Scott Perry, vote to lower our costs.",
+    "text_hash": "c937debaf053c6a281c55d2139ce2103c3c82c769abca6e74d905c3178d5a5dc",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmf-3793-0",
+    "alignment": "D",
+    "block_id": "hmf-3793-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmf-3793-0-claims-001-001",
+    "claim_text": "Members of Congress are making millions trading stocks.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 55,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Members of Congress are making millions trading stocks.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.housemajorityforward.org/news/house-majority-forward-launches-new-ad-in-mi-04",
+    "sponsor": "House Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 19,
+        "anchor_quote": "Members of Congress",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Members of Congress",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Members of Congress are making millions trading stocks.\nInvesting in big corporations, and then helping those corporations to rip us off.\nAnd Congressman Bill Huizenga just voted to let them keep getting rich trading stocks.\nHe’s got up to $400,000 in the market.\nSince taking office, Bill Huizenga’s stock investments have grown up to 500%.\nIt’s like the fox guarding the hen house, apparently.\nTell Bill Huizenga to stop the congressional stock trading.",
+    "text_hash": "7512cbfc852901255ce9411333491b39cbd24e27a2a08afac08aa5cc8ac03782",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmf-3793-0",
+    "alignment": "D",
+    "block_id": "hmf-3793-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmf-3793-0-claims-001-002",
+    "claim_text": "Investing in big corporations, and then helping those corporations to rip us off.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 137,
+        "kind": "publisher_transcript",
+        "start": 56,
+        "text": "Investing in big corporations, and then helping those corporations to rip us off.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.housemajorityforward.org/news/house-majority-forward-launches-new-ad-in-mi-04",
+    "sponsor": "House Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 85,
+        "anchor_quote": "big corporations",
+        "anchor_start": 69,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "big corporations",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Members of Congress are making millions trading stocks.\nInvesting in big corporations, and then helping those corporations to rip us off.\nAnd Congressman Bill Huizenga just voted to let them keep getting rich trading stocks.\nHe’s got up to $400,000 in the market.\nSince taking office, Bill Huizenga’s stock investments have grown up to 500%.\nIt’s like the fox guarding the hen house, apparently.\nTell Bill Huizenga to stop the congressional stock trading.",
+    "text_hash": "7512cbfc852901255ce9411333491b39cbd24e27a2a08afac08aa5cc8ac03782",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmf-3793-0",
+    "alignment": "D",
+    "block_id": "hmf-3793-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmf-3793-0-claims-001-003",
+    "claim_text": "Congressman Bill Huizenga just voted to let them keep getting rich trading stocks.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 224,
+        "kind": "publisher_transcript",
+        "start": 138,
+        "text": "And Congressman Bill Huizenga just voted to let them keep getting rich trading stocks.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.housemajorityforward.org/news/house-majority-forward-launches-new-ad-in-mi-04",
+    "sponsor": "House Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 167,
+        "anchor_quote": "Bill Huizenga",
+        "anchor_start": 154,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H0MI02094",
+        "kind": "person",
+        "name": "Bill Huizenga",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 190,
+        "anchor_quote": "them",
+        "anchor_start": 186,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "them",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Members of Congress are making millions trading stocks.\nInvesting in big corporations, and then helping those corporations to rip us off.\nAnd Congressman Bill Huizenga just voted to let them keep getting rich trading stocks.\nHe’s got up to $400,000 in the market.\nSince taking office, Bill Huizenga’s stock investments have grown up to 500%.\nIt’s like the fox guarding the hen house, apparently.\nTell Bill Huizenga to stop the congressional stock trading.",
+    "text_hash": "7512cbfc852901255ce9411333491b39cbd24e27a2a08afac08aa5cc8ac03782",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmf-3793-0",
+    "alignment": "D",
+    "block_id": "hmf-3793-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmf-3793-0-claims-001-004",
+    "claim_text": "He’s got up to $400,000 in the market.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 263,
+        "kind": "publisher_transcript",
+        "start": 225,
+        "text": "He’s got up to $400,000 in the market.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.housemajorityforward.org/news/house-majority-forward-launches-new-ad-in-mi-04",
+    "sponsor": "House Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 227,
+        "anchor_quote": "He",
+        "anchor_start": 225,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H0MI02094",
+        "kind": "person",
+        "name": "Bill Huizenga",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Members of Congress are making millions trading stocks.\nInvesting in big corporations, and then helping those corporations to rip us off.\nAnd Congressman Bill Huizenga just voted to let them keep getting rich trading stocks.\nHe’s got up to $400,000 in the market.\nSince taking office, Bill Huizenga’s stock investments have grown up to 500%.\nIt’s like the fox guarding the hen house, apparently.\nTell Bill Huizenga to stop the congressional stock trading.",
+    "text_hash": "7512cbfc852901255ce9411333491b39cbd24e27a2a08afac08aa5cc8ac03782",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmf-3793-0",
+    "alignment": "D",
+    "block_id": "hmf-3793-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmf-3793-0-claims-001-005",
+    "claim_text": "Since taking office, Bill Huizenga’s stock investments have grown up to 500%.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 341,
+        "kind": "publisher_transcript",
+        "start": 264,
+        "text": "Since taking office, Bill Huizenga’s stock investments have grown up to 500%.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.housemajorityforward.org/news/house-majority-forward-launches-new-ad-in-mi-04",
+    "sponsor": "House Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 298,
+        "anchor_quote": "Bill Huizenga",
+        "anchor_start": 285,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H0MI02094",
+        "kind": "person",
+        "name": "Bill Huizenga",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Members of Congress are making millions trading stocks.\nInvesting in big corporations, and then helping those corporations to rip us off.\nAnd Congressman Bill Huizenga just voted to let them keep getting rich trading stocks.\nHe’s got up to $400,000 in the market.\nSince taking office, Bill Huizenga’s stock investments have grown up to 500%.\nIt’s like the fox guarding the hen house, apparently.\nTell Bill Huizenga to stop the congressional stock trading.",
+    "text_hash": "7512cbfc852901255ce9411333491b39cbd24e27a2a08afac08aa5cc8ac03782",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmf-3793-0",
+    "alignment": "D",
+    "block_id": "hmf-3793-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmf-3793-0-claims-001-006",
+    "claim_text": "It’s like the fox guarding the hen house, apparently.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 395,
+        "kind": "publisher_transcript",
+        "start": 342,
+        "text": "It’s like the fox guarding the hen house, apparently.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.housemajorityforward.org/news/house-majority-forward-launches-new-ad-in-mi-04",
+    "sponsor": "House Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 359,
+        "anchor_quote": "the fox",
+        "anchor_start": 352,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "the fox",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 382,
+        "anchor_quote": "the hen house",
+        "anchor_start": 369,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "the hen house",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Members of Congress are making millions trading stocks.\nInvesting in big corporations, and then helping those corporations to rip us off.\nAnd Congressman Bill Huizenga just voted to let them keep getting rich trading stocks.\nHe’s got up to $400,000 in the market.\nSince taking office, Bill Huizenga’s stock investments have grown up to 500%.\nIt’s like the fox guarding the hen house, apparently.\nTell Bill Huizenga to stop the congressional stock trading.",
+    "text_hash": "7512cbfc852901255ce9411333491b39cbd24e27a2a08afac08aa5cc8ac03782",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmf-3793-0",
+    "alignment": "D",
+    "block_id": "hmf-3793-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmf-3793-0-claims-001-007",
+    "claim_text": "Tell Bill Huizenga to stop the congressional stock trading.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 455,
+        "kind": "publisher_transcript",
+        "start": 396,
+        "text": "Tell Bill Huizenga to stop the congressional stock trading.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.housemajorityforward.org/news/house-majority-forward-launches-new-ad-in-mi-04",
+    "sponsor": "House Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 414,
+        "anchor_quote": "Bill Huizenga",
+        "anchor_start": 401,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:H0MI02094",
+        "kind": "person",
+        "name": "Bill Huizenga",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 454,
+        "anchor_quote": "congressional stock trading",
+        "anchor_start": 427,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "congressional stock trading",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Members of Congress are making millions trading stocks.\nInvesting in big corporations, and then helping those corporations to rip us off.\nAnd Congressman Bill Huizenga just voted to let them keep getting rich trading stocks.\nHe’s got up to $400,000 in the market.\nSince taking office, Bill Huizenga’s stock investments have grown up to 500%.\nIt’s like the fox guarding the hen house, apparently.\nTell Bill Huizenga to stop the congressional stock trading.",
+    "text_hash": "7512cbfc852901255ce9411333491b39cbd24e27a2a08afac08aa5cc8ac03782",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmp-media-4198-9H4SBlufZ2o",
+    "alignment": "D",
+    "block_id": "hmp-media-4198-9H4SBlufZ2o-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmp-media-4198-9H4SBlufZ2o-claims-001-001",
+    "claim_text": "I've been in law enforcement for 45 years and I've never seen anything like this.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 35,
+        "kind": "youtube_auto_caption",
+        "start": 0,
+        "text": "I've been in law enforcement for 45",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.thehousemajoritypac.com/news/hmp-launches-new-ads-in-arizona-california-colorado-florida-iowa-maine-michigan-north-carolina-new-mexico-new-york-ohio-pennsylvania-texas-south-carolina-virginia-washington-and-wiscon",
+    "sponsor": "House Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 1,
+        "anchor_quote": "I",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I've been in law enforcement for 45\nyears and I've never seen anything like\nthis.\n>> Monica De La Cruz voted to dramatically\nexpand ICE.\nGiving them over 100 billion dollars.\nMore than the US Marines. Billions of\nour tax dollars going to new detention\ncenters. Immigration rates that target\nour innocent neighbors. And for what?\nNot for public safety. Texas deserves\nbetter than Monica De La Cruz.\n>> HMP is responsible [music] for the\ncontent of this ad.",
+    "text_hash": "b6d9a3342e2a9596cf50a2e1f7b0e92878e4349d923619cd012332d5fb349274",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmp-media-4198-9H4SBlufZ2o",
+    "alignment": "D",
+    "block_id": "hmp-media-4198-9H4SBlufZ2o-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmp-media-4198-9H4SBlufZ2o-claims-001-002",
+    "claim_text": "Monica De La Cruz voted to dramatically expand ICE.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 124,
+        "kind": "youtube_auto_caption",
+        "start": 82,
+        "text": ">> Monica De La Cruz voted to dramatically",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.thehousemajoritypac.com/news/hmp-launches-new-ads-in-arizona-california-colorado-florida-iowa-maine-michigan-north-carolina-new-mexico-new-york-ohio-pennsylvania-texas-south-carolina-virginia-washington-and-wiscon",
+    "sponsor": "House Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 102,
+        "anchor_quote": "Monica De La Cruz",
+        "anchor_start": 85,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H0TX15124",
+        "kind": "person",
+        "name": "Monica De La Cruz",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "I've been in law enforcement for 45\nyears and I've never seen anything like\nthis.\n>> Monica De La Cruz voted to dramatically\nexpand ICE.\nGiving them over 100 billion dollars.\nMore than the US Marines. Billions of\nour tax dollars going to new detention\ncenters. Immigration rates that target\nour innocent neighbors. And for what?\nNot for public safety. Texas deserves\nbetter than Monica De La Cruz.\n>> HMP is responsible [music] for the\ncontent of this ad.",
+    "text_hash": "b6d9a3342e2a9596cf50a2e1f7b0e92878e4349d923619cd012332d5fb349274",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmp-media-4198-9H4SBlufZ2o",
+    "alignment": "D",
+    "block_id": "hmp-media-4198-9H4SBlufZ2o-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmp-media-4198-9H4SBlufZ2o-claims-001-003",
+    "claim_text": "They gave ICE over 100 billion dollars.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 136,
+        "kind": "youtube_auto_caption",
+        "start": 125,
+        "text": "expand ICE.",
+        "unit_id": 5
+      },
+      {
+        "end": 174,
+        "kind": "youtube_auto_caption",
+        "start": 137,
+        "text": "Giving them over 100 billion dollars.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      5,
+      6
+    ],
+    "source_url": "https://www.thehousemajoritypac.com/news/hmp-launches-new-ads-in-arizona-california-colorado-florida-iowa-maine-michigan-north-carolina-new-mexico-new-york-ohio-pennsylvania-texas-south-carolina-virginia-washington-and-wiscon",
+    "sponsor": "House Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 148,
+        "anchor_quote": "them",
+        "anchor_start": 144,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "they",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I've been in law enforcement for 45\nyears and I've never seen anything like\nthis.\n>> Monica De La Cruz voted to dramatically\nexpand ICE.\nGiving them over 100 billion dollars.\nMore than the US Marines. Billions of\nour tax dollars going to new detention\ncenters. Immigration rates that target\nour innocent neighbors. And for what?\nNot for public safety. Texas deserves\nbetter than Monica De La Cruz.\n>> HMP is responsible [music] for the\ncontent of this ad.",
+    "text_hash": "b6d9a3342e2a9596cf50a2e1f7b0e92878e4349d923619cd012332d5fb349274",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmp-media-4198-9H4SBlufZ2o",
+    "alignment": "D",
+    "block_id": "hmp-media-4198-9H4SBlufZ2o-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmp-media-4198-9H4SBlufZ2o-claims-001-004",
+    "claim_text": "The amount given to ICE was more than the US Marines received.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 174,
+        "kind": "youtube_auto_caption",
+        "start": 137,
+        "text": "Giving them over 100 billion dollars.",
+        "unit_id": 6
+      },
+      {
+        "end": 212,
+        "kind": "youtube_auto_caption",
+        "start": 175,
+        "text": "More than the US Marines. Billions of",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      6,
+      7
+    ],
+    "source_url": "https://www.thehousemajoritypac.com/news/hmp-launches-new-ads-in-arizona-california-colorado-florida-iowa-maine-michigan-north-carolina-new-mexico-new-york-ohio-pennsylvania-texas-south-carolina-virginia-washington-and-wiscon",
+    "sponsor": "House Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 199,
+        "anchor_quote": "US Marines",
+        "anchor_start": 189,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "US Marines",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I've been in law enforcement for 45\nyears and I've never seen anything like\nthis.\n>> Monica De La Cruz voted to dramatically\nexpand ICE.\nGiving them over 100 billion dollars.\nMore than the US Marines. Billions of\nour tax dollars going to new detention\ncenters. Immigration rates that target\nour innocent neighbors. And for what?\nNot for public safety. Texas deserves\nbetter than Monica De La Cruz.\n>> HMP is responsible [music] for the\ncontent of this ad.",
+    "text_hash": "b6d9a3342e2a9596cf50a2e1f7b0e92878e4349d923619cd012332d5fb349274",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmp-media-4198-9H4SBlufZ2o",
+    "alignment": "D",
+    "block_id": "hmp-media-4198-9H4SBlufZ2o-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmp-media-4198-9H4SBlufZ2o-claims-001-005",
+    "claim_text": "Billions of our tax dollars went to new detention centers.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 212,
+        "kind": "youtube_auto_caption",
+        "start": 175,
+        "text": "More than the US Marines. Billions of",
+        "unit_id": 7
+      },
+      {
+        "end": 251,
+        "kind": "youtube_auto_caption",
+        "start": 213,
+        "text": "our tax dollars going to new detention",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      7,
+      8
+    ],
+    "source_url": "https://www.thehousemajoritypac.com/news/hmp-launches-new-ads-in-arizona-california-colorado-florida-iowa-maine-michigan-north-carolina-new-mexico-new-york-ohio-pennsylvania-texas-south-carolina-virginia-washington-and-wiscon",
+    "sponsor": "House Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 228,
+        "anchor_quote": "our tax dollars",
+        "anchor_start": 213,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "our tax dollars",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I've been in law enforcement for 45\nyears and I've never seen anything like\nthis.\n>> Monica De La Cruz voted to dramatically\nexpand ICE.\nGiving them over 100 billion dollars.\nMore than the US Marines. Billions of\nour tax dollars going to new detention\ncenters. Immigration rates that target\nour innocent neighbors. And for what?\nNot for public safety. Texas deserves\nbetter than Monica De La Cruz.\n>> HMP is responsible [music] for the\ncontent of this ad.",
+    "text_hash": "b6d9a3342e2a9596cf50a2e1f7b0e92878e4349d923619cd012332d5fb349274",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmp-media-4198-9H4SBlufZ2o",
+    "alignment": "D",
+    "block_id": "hmp-media-4198-9H4SBlufZ2o-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmp-media-4198-9H4SBlufZ2o-claims-001-006",
+    "claim_text": "Immigration rates target our innocent neighbors.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 290,
+        "kind": "youtube_auto_caption",
+        "start": 252,
+        "text": "centers. Immigration rates that target",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.thehousemajoritypac.com/news/hmp-launches-new-ads-in-arizona-california-colorado-florida-iowa-maine-michigan-north-carolina-new-mexico-new-york-ohio-pennsylvania-texas-south-carolina-virginia-washington-and-wiscon",
+    "sponsor": "House Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 278,
+        "anchor_quote": "Immigration rates",
+        "anchor_start": 261,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Immigration rates",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I've been in law enforcement for 45\nyears and I've never seen anything like\nthis.\n>> Monica De La Cruz voted to dramatically\nexpand ICE.\nGiving them over 100 billion dollars.\nMore than the US Marines. Billions of\nour tax dollars going to new detention\ncenters. Immigration rates that target\nour innocent neighbors. And for what?\nNot for public safety. Texas deserves\nbetter than Monica De La Cruz.\n>> HMP is responsible [music] for the\ncontent of this ad.",
+    "text_hash": "b6d9a3342e2a9596cf50a2e1f7b0e92878e4349d923619cd012332d5fb349274",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmp-media-4198-9H4SBlufZ2o",
+    "alignment": "D",
+    "block_id": "hmp-media-4198-9H4SBlufZ2o-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmp-media-4198-9H4SBlufZ2o-claims-001-007",
+    "claim_text": "Texas deserves better than Monica De La Cruz.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 397,
+        "kind": "youtube_auto_caption",
+        "start": 367,
+        "text": "better than Monica De La Cruz.",
+        "unit_id": 12
+      }
+    ],
+    "evidence_ids": [
+      12
+    ],
+    "source_url": "https://www.thehousemajoritypac.com/news/hmp-launches-new-ads-in-arizona-california-colorado-florida-iowa-maine-michigan-north-carolina-new-mexico-new-york-ohio-pennsylvania-texas-south-carolina-virginia-washington-and-wiscon",
+    "sponsor": "House Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 396,
+        "anchor_quote": "Monica De La Cruz",
+        "anchor_start": 379,
+        "anchor_unit_id": 12,
+        "entity_id": "candidate:H0TX15124",
+        "kind": "person",
+        "name": "Monica De La Cruz",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "I've been in law enforcement for 45\nyears and I've never seen anything like\nthis.\n>> Monica De La Cruz voted to dramatically\nexpand ICE.\nGiving them over 100 billion dollars.\nMore than the US Marines. Billions of\nour tax dollars going to new detention\ncenters. Immigration rates that target\nour innocent neighbors. And for what?\nNot for public safety. Texas deserves\nbetter than Monica De La Cruz.\n>> HMP is responsible [music] for the\ncontent of this ad.",
+    "text_hash": "b6d9a3342e2a9596cf50a2e1f7b0e92878e4349d923619cd012332d5fb349274",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "hmp-media-4198-9H4SBlufZ2o",
+    "alignment": "D",
+    "block_id": "hmp-media-4198-9H4SBlufZ2o-claims-001",
+    "block_status": "normalized",
+    "claim_id": "hmp-media-4198-9H4SBlufZ2o-claims-001-008",
+    "claim_text": "HMP is responsible for the content of this ad.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 435,
+        "kind": "youtube_auto_caption",
+        "start": 398,
+        "text": ">> HMP is responsible [music] for the",
+        "unit_id": 13
+      }
+    ],
+    "evidence_ids": [
+      13
+    ],
+    "source_url": "https://www.thehousemajoritypac.com/news/hmp-launches-new-ads-in-arizona-california-colorado-florida-iowa-maine-michigan-north-carolina-new-mexico-new-york-ohio-pennsylvania-texas-south-carolina-virginia-washington-and-wiscon",
+    "sponsor": "House Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 404,
+        "anchor_quote": "HMP",
+        "anchor_start": 401,
+        "anchor_unit_id": 13,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "HMP",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I've been in law enforcement for 45\nyears and I've never seen anything like\nthis.\n>> Monica De La Cruz voted to dramatically\nexpand ICE.\nGiving them over 100 billion dollars.\nMore than the US Marines. Billions of\nour tax dollars going to new detention\ncenters. Immigration rates that target\nour innocent neighbors. And for what?\nNot for public safety. Texas deserves\nbetter than Monica De La Cruz.\n>> HMP is responsible [music] for the\ncontent of this ad.",
+    "text_hash": "b6d9a3342e2a9596cf50a2e1f7b0e92878e4349d923619cd012332d5fb349274",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
