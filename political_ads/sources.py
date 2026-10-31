@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "shlomi-mediaite",
+        "https://www.mediaite.com",
+        "Offer Vince Shlomi campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="TX-31",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "calvert-rawstory",
         "https://www.rawstory.com",
         "Ken Calvert campaign (publisher-reported; payer unverified)",
@@ -1101,6 +1111,13 @@ def media_links(content: str) -> list[str]:
             "www.youtube-nocookie.com",
         }
         if parsed.scheme in {"http", "https"} and video_host:
+            urls.append(urlunsplit(parsed._replace(scheme="https")))
+        elif (
+            tag.name == "iframe"
+            and not parsed.scheme
+            and parsed.netloc in {"youtube.com", "www.youtube.com", "www.youtube-nocookie.com"}
+            and re.fullmatch(r"/embed/[A-Za-z0-9_-]{11}", parsed.path)
+        ):
             urls.append(urlunsplit(parsed._replace(scheme="https")))
         elif parsed.scheme == "https" and re.search(r"\.(?:mp4|webm|mp3|wav)(?:\?|$)", value):
             urls.append(value)

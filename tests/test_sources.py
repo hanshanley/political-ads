@@ -22,6 +22,30 @@ def test_public_media_links_normalize_video_hosts_and_include_gallery_popup_urls
     ]
 
 
+@pytest.mark.parametrize("host", ["youtube.com", "www.youtube.com", "www.youtube-nocookie.com"])
+def test_public_media_links_normalize_protocol_relative_individual_youtube_embeds(host):
+    original = f"//{host}/embed/EIz6B7aGC2E?si=f5b0AuX6CSy_s-TU&amp;start=2"
+    assert media_links(f'<iframe src="{original}"></iframe>') == [
+        f"https://{host}/embed/EIz6B7aGC2E?si=f5b0AuX6CSy_s-TU&start=2"
+    ]
+
+
+def test_protocol_relative_embed_support_does_not_accept_other_routes_or_hosts():
+    rejected = [
+        "//www.youtube.com.evil.example/embed/EIz6B7aGC2E",
+        "//user@www.youtube.com/embed/EIz6B7aGC2E",
+        "//www.youtube.com/watch?v=EIz6B7aGC2E",
+        "//www.youtube.com/@Campaign",
+        "//www.youtube.com/embed/not-an-id",
+        "/embed/EIz6B7aGC2E",
+        "//player.vimeo.com/video/1232657872",
+        "//platform.adimpact.com/viewer/e8bf81e2-73df-4110-84dd-5e756d5d803a",
+    ]
+    html = "".join(f'<iframe src="{url}"></iframe>' for url in rejected)
+    html += '<a href="//www.youtube.com/embed/EIz6B7aGC2E">Not an embed</a>'
+    assert media_links(html) == []
+
+
 @pytest.mark.parametrize("host", ["x.com", "www.x.com", "twitter.com", "www.twitter.com"])
 def test_public_media_links_recognize_individual_status_associations(host):
     post = f"https://{host}/Campaign_Name/status/2102681607672934852?ref_src=twsrc%5Etfw"

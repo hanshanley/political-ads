@@ -10,7 +10,140 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Calvert same-party primary quoted-ad expansion
+## Shlomi Texas House quoted-ad expansion
+
+One additional Republican House record, **shlomi-mediaite-5697898-0**,
+retains **six ordered literal ad quotations / 74 tokens** from Mediaite's
+actual first-ad report. Complete HTML SHA-256:
+`b8481c3d3bb60f8b27078746019217160f042e8a1e3cea8b1775d27f89ae5146`.
+The exact title, unique **h1.c-article__heading**, publication metadata,
+advertiser context, ordered passages and individual original are bound in
+`data/ad-release-reviews.json`. Reproduce with
+**`--source shlomi-mediaite --offline --until 2026-10-30`** using the
+previously cached actual publisher HTML; the exposed WordPress API is
+not requested.
+
+Visible **February 4, 2026, 7:08 pm** and metadata
+**2026-02-05T00:08:25+00:00** describe one publication, not two ads.
+The retained February 5 UTC date is the publisher report date. The report's
+Sunday-release description does not establish independently verified upload,
+first release, paid delivery or airing. Phase remains **unknown** because
+the dated report does not explicitly establish primary phase; February
+alone is not a phase rule.
+
+The first five passages are reported candidate speech; the sixth is an
+**animated fetus's line**, not authentic candidate speech. Original spelling,
+hyphens, curly apostrophes, lowercase opening and three terminal commas
+remain unchanged. Earlier political remarks, campaign biography, reporter
+paraphrases and payer-tagline reporting are excluded. **John Carter is a
+same-party Republican rival**; a separate Biden comparison does not make
+every criticism a Democratic-opponent attack. No new semantic labels are
+assigned, and this is explicitly **partial**, not a full video transcript.
+
+The actual iframe is protocol-relative and identifies **EIz6B7aGC2E**.
+Recognition narrowly normalizes individual YouTube iframe embeds to HTTPS,
+preserving their query, without accepting relative channel/watch links,
+credentials, deceptive hosts or other providers. Three positive regressions
+failed before the fix; a separate negative case preserves these boundaries.
+No YouTube, captions, original video, catalog or account is requested.
+
+Exact **H6TX31151 / C00928614**, **SHLOMI, OFFER VINCE**, REP, House,
+**TX-31**, agrees with the independently cached official principal
+**OFFER VINCE SHAMWOW SHLOMI FOR CONGRESS**, P / H / REP. The actual
+campaign homepage independently identifies the district and committee
+footer; its HTML SHA-256 is
+`cf8a68831dc4dbc4b908cb5027bbd4c3e8e637c91ca72eb11fd490e451803591`.
+Existing reviewed **full_name** alias support retains the complete
+**Offer Vince Shlomi** ordering, which the default first/last match drops.
+This exact alias is confined to H6TX31151; no fuzzy matching, roster edit,
+transcript repair or invented alternate spelling is used. The campaign-site
+footer does not independently inspect this video's closing payer/approval
+card. Advertiser attribution remains publisher-reported.
+
+Verified snapshot:
+`db25dc17d60740a408a5321016833ccc441179f3ad76239a9e8c9b7222a3ecba`.
+Totals: **1,892 acquired / 1,853 English**, **1,226 D / 588 R / 31 other /
+eight unresolved**; exact English messages **1,204 D / 551 R**.
+English House: **698 D / 210 R**, including **222 D / 209 R non-Snap**
+and unchanged **476 D / one R Snap**. All **1,891 preceding acquired /
+1,852 analyzed objects, 45 previous release reviews, seventeen protected
+files and every previous alias** persist unchanged. One exact full-name
+alias is added; native partitions, saved labels and media backlog are intact.
+
+**184 affected Python tests**, Python lint/format, **17 frontend tests**,
+frontend lint/typecheck/build and **seven browser cases** pass. Complete
+analysis/browser/production JSON, gzip/CSV, every identity/text/hash/alignment
+row in **1,892-row Parquet** and **eleven visually inspected PNG sets**
+reconcile. Socket-forbidden isolated **single-response replay** reproduces
+all **540 written objects and source states** from 539 using only the exact
+cached HTML and original observation date. Independent auditing verifies
+**20 metric groups / ten chart rows**. New semantic evidence remains
+unreviewed rather than becoming neutral or inferred sentiment.
+
+## Broadened discovery: permission uncertainty and bounded exclusions
+
+An anonymously rendered **AdImpact Creative Alert viewer** is not admitted.
+Its linked agreement defines licensed Content/Web Map and describes
+restricted licensed use, saving/sharing and mining. **Applicability to the
+public viewer and an explicit public-viewer redistribution exception remain
+unresolved**; this is a **permission-unresolved pause**, not a finding that
+the public viewer is definitively prohibited. Viewer and linked-terms
+SHA-256 hashes are respectively
+`bed1519c94bf4e6cc9a7c7ba333362c57505d1dc8c9806565c2746a6be901716`
+and `a5852edcb5bbdef8034dc94b501957501f89a7af3b7ef335f42fb875725711d1`.
+No transcript, viewer parser, catalog, account, API or subsequent provider
+request is added. The discovery helper refuses AdImpact and its subdomains
+before requesting, alongside existing paused publishers. Fifteen mocked
+checks distinguish paused hosts, deceptive lookalikes, transport failures
+and HTTP failures; paused-host cases issue zero requests.
+
+The actual WUNC-linked **Charlotte Observer article 317650861** timed out
+after 45 seconds: **no HTTP status or body was established**. This is a
+transport error, not a denial, empty article or evidence of no ads; the
+original request is not repeated. Calvert's actual media page has no
+independent Dropbox link; a previous Dropbox description was mistaken.
+Gruters's actual gallery resolves **/media** to **/media/**; its inspected
+screenshot-named PNG is an **event photograph with repeating campaign
+logos**, not substantive ad copy. Original PNG SHA-256:
+`665519120e6efb4da7b994a48094452f625561094c5e243b136bffbc62bc9fc0`.
+The filename's June 1 date is not independently verified ad eligibility.
+Cached AAN releases contain press statements and original-video leads,
+not additional recoverable ad speech.
+
+Kansas discovery reads Derek Schmidt's actual campaign homepage and
+Kansas Reflector's October 9 advertising report. Homepage issue/biographical
+copy is not ad speech. The Reflector's Republican examples concern state
+House or Senate races, while its explicit federal House example is
+Democratic; its 52-ad discussion is **not 52 Republican federal House
+acquisitions**. Neither page adds an eligible Republican House record.
+Discovery remains active, schedule #1 remains enabled, all existing
+provider pauses persist, and website/Substack publication stays on hold.
+
+Further actual roundups are read, not imported from search snippets.
+TPM's October 10 report repeats the already recovered Balkcom **Mom**
+creative; the other examples are Senate, gubernatorial, state-legislative
+or presidential material. A different reporter repost is not evidence of
+a new creative. Its HTML SHA-256 is
+`f467646e01939d57f9685f2e0da27803eef019dfce8f71b9415523488d853915`.
+Chron's October 24 Texas roundup supplies Senate and state-race examples,
+not Republican House acquisitions; HTML SHA-256:
+`3fcc8947414255cfeb7815a6f187ec9e53658ae54e4dd6c749ae7c8898e32d71`.
+Breitbart's actual October 20 Alvarado coordinated-buy report contains
+party-chairman and court quotations, **not the ad's words or an individual
+original**; HTML SHA-256:
+`3060701ee5d655f79e292f51b3eff1cb9482795ea6119919b06dbea101bd1365`.
+No monitoring-provider viewer/API or media is requested through these reports.
+
+Capitol Fax's actual **October 26** campaign roundup is a concrete new
+Illinois House lead: an expressly marked **Lincoln Legacy PAC transcript
+against Melissa Bean**, individual **ksonIug7Lcg**, and explicit
+**Republican Jennifer Davis** contest context. HTML SHA-256:
+`5d56b0f9dfb1b71311d880f39dd3d9c70e83bc8d4887ef77d035eb71583973f4`.
+This lead is **not yet acquired**; exact federal identity, distinctness,
+script boundaries and sponsor provenance still require review. Bus-tour
+statements, other election reports and comments are excluded from ad copy.
+
+## Previous Calvert same-party primary quoted-ad expansion
 
 One additional Republican House record, **calvert-rawstory-2676814922-0**,
 retains **four ordered literal ad quotations / 20 tokens** from Raw Story's
