@@ -10,6 +10,104 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Alvarado Kentucky House quoted-ad expansion
+
+One additional Republican House record, **alvarado-yahoo-090000614-0**,
+retains **four ordered literal ad passages / 72 tokens** from John Cheves's
+actual Yahoo fact-check. Complete publisher HTML SHA-256:
+`a2e5ddb7db97ff6684124b2b2c0c96b6404c60dc0daf6e0ee1eb56bc9e791937`.
+The unique h1, exact title, three uniquely matched paragraphs, publication
+date, advertiser context and individual original are bound in
+`data/ad-release-reviews.json`. Reproduce with
+**`--source alvarado-yahoo --offline --until 2026-10-30`** using that
+previously cached actual HTML.
+
+Visible **September 28, 2026, 9:00 AM UTC** and the time element's
+**2026-09-28T09:00:00.000Z** agree. This is the publisher report date,
+not independently verified upload, first release, paid delivery or airing.
+The report explicitly identifies the opposing nominees, November 3
+contest and Kentucky's 6th Congressional District, establishing
+**general-election** context; September alone does not establish phase.
+
+The first two passages are reported narrator speech; the final two are
+reported Alvarado speech. Contractions, hyphens, the standalone em dash
+and three terminal commas remain unchanged. Excluded material includes
+the repeated onscreen opening claim, the reporter's accuracy assessment,
+Dembo's separate forum/Bluesky speech, press statements and economic
+context. This remains **partial and semantically unreviewed**, not a
+complete transcript or a new truth, sentiment or target judgment.
+
+The introductory commercial anchor exposes individual Facebook reel
+**1560408291980008**. Narrow association recognition accepts only HTTPS
+`facebook.com` or `www.facebook.com`, a `/reel/` path with a 15-20-digit
+ID and optional trailing slash, and no fragment. It retains the actual
+query and rejects insecure, protocol-relative, credentialed, deceptive,
+encoded, malformed, profile and catalog routes. Both positive host
+regressions failed before the fix; the negative boundary case and existing
+Ad Library behavior remain covered. **No Meta, original-media, caption,
+catalog or account request is made.**
+
+Exact **H6KY06192 / C00912303**, **ALVARADO, RALPH A**, REP, House,
+**KY-06**, agrees with the independently cached official principal
+**ALVARADO FOR KENTUCKY**, P / H / REP. Existing candidate matching
+suffices; no alias or roster edit is made. The campaign's reported spoken
+approval does not independently inspect the closing payer/approval card.
+Advertiser attribution remains publisher-reported.
+
+Verified snapshot:
+`a4d436ec329313191037cab57168948c516768567119425e62a7fdea46819625`.
+Totals: **1,893 acquired / 1,854 English**, **1,226 D / 589 R / 31 other /
+eight unresolved**; exact English messages **1,204 D / 552 R**.
+English House: **698 D / 211 R**, including **222 D / 210 R non-Snap**
+and unchanged **476 D / one R Snap**. All **1,892 preceding acquired /
+1,853 analyzed objects, 46 previous release reviews, seventeen protected
+files and every alias** persist unchanged. The previous review bytes,
+native partitions, saved semantic labels and media backlog are preserved.
+
+**187 affected Python tests**, Python lint/format, **17 frontend tests**,
+frontend lint/typecheck/build and **seven browser cases** pass. Complete
+analysis/browser/production JSON, gzip/CSV, every identity/text/hash/alignment
+row in **1,893-row Parquet** and **eleven visually inspected PNG sets**
+reconcile. Socket-forbidden isolated **single-response replay** reproduces
+all **541 written objects and source states** from 540 using the exact
+cached HTML and original October 31 observation, without advancing the
+October 30 eligibility cutoff. Independent auditing verifies
+**20 metric groups / ten chart rows**. This incremental acquisition does
+not resolve national coverage or change missing reviews into neutral labels.
+
+Further independent discovery remains unadmitted. MTPR's actual October 2
+report contains a marked No Going Back / Flint script but exposes no
+individual original-ad link; its podcast audio is not automatically that
+ad. HTML SHA-256:
+`ee61cf39147be5e0fad4e458a522615ddc972b931633aa937a5a76817349693f`.
+American Bazaar's July 7 Gill report expressly attributes its quoted
+passage to an X post **caption**, not verified graphic text; original
+association **2074265235628650687** is a lead, not recovered ad speech.
+HTML SHA-256:
+`3730140ec939d84c7a4d58aaa2cfcf232133c05ec60fb8642d57710c11102743`.
+McGuire's actual homepage exposes `/media`; that page contains news
+links rather than original ad assets. Media-page HTML SHA-256:
+`5dfdec0cab69ad4ed4881d72f28dbabed1791427613f2f370221df5295d7fb43`.
+Cardinal News's October 23 McGuire profile was read in full: campaign-trail
+remarks and policy reporting are not recovered advertisement speech.
+HTML SHA-256:
+`f1c62694cb71a94b56f74ffd53fa0d27b61046e43f0089ec3bc8d0c3ba1205fd`.
+All provider pauses and the publication/host-restoration hold persist;
+schedule #1 remains active while broader acquisition continues.
+
+Montana Free Press's actual October 1 roundup was also read in full.
+Its Flint section reports polling and expenditures, not recovered
+Republican ad speech; its quoted surveillance ad concerns an independent
+Senate candidate. HTML SHA-256:
+`e45f4a2d268cf8740b158a6f2e4e70ac8f1320cef6261043dbf775816289d4a7`.
+Pikes Peak Bulletin's October 1 Crank/Killin report contains ad fragments,
+but its individually linked Facebook reel is **Killin's response**, not
+the Republican advertisement. The actual screenshot and explicitly
+linked No Going Back PAC website remain separate discovery leads, not
+acquisitions. HTML SHA-256:
+`1d558cd72c3584c156f270571af143e7fb0deac1c6e358c597a4c4771a6c2adb`.
+Neither report adds a record or authorizes a monitoring-provider request.
+
 ## Shlomi Texas House quoted-ad expansion
 
 One additional Republican House record, **shlomi-mediaite-5697898-0**,

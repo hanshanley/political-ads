@@ -46,6 +46,33 @@ def test_protocol_relative_embed_support_does_not_accept_other_routes_or_hosts()
     assert media_links(html) == []
 
 
+@pytest.mark.parametrize("host", ["facebook.com", "www.facebook.com"])
+def test_public_media_links_recognize_individual_facebook_reels(host):
+    originals = [
+        f"https://{host}/reel/1560408291980008",
+        f"https://{host}/reel/1560408291980008/?mibextid=abc123&share=1",
+    ]
+    html = "".join(f'<a href="{url}">The campaign commercial</a>' for url in originals)
+    assert media_links(html) == originals
+
+
+def test_facebook_reel_recognition_rejects_catalogs_malformed_paths_and_deceptive_hosts():
+    rejected = [
+        "http://www.facebook.com/reel/1560408291980008",
+        "//www.facebook.com/reel/1560408291980008",
+        "https://www.facebook.com.evil.example/reel/1560408291980008",
+        "https://user@www.facebook.com/reel/1560408291980008",
+        "https://www.facebook.com/reels/",
+        "https://www.facebook.com/Campaign/",
+        "https://www.facebook.com/reel/not-an-id",
+        "https://www.facebook.com/reel/123",
+        "https://www.facebook.com/reel/1560408291980008/extra",
+        "https://www.facebook.com/reel/1560408291980008#other",
+        "https://www.facebook.com/%72eel/1560408291980008",
+    ]
+    assert media_links("".join(f'<a href="{url}">Not an original</a>' for url in rejected)) == []
+
+
 @pytest.mark.parametrize("host", ["x.com", "www.x.com", "twitter.com", "www.twitter.com"])
 def test_public_media_links_recognize_individual_status_associations(host):
     post = f"https://{host}/Campaign_Name/status/2102681607672934852?ref_src=twsrc%5Etfw"

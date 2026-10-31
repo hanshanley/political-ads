@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "alvarado-yahoo",
+        "https://www.yahoo.com",
+        "Ralph Alvarado campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="KY-06",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "shlomi-mediaite",
         "https://www.mediaite.com",
         "Offer Vince Shlomi campaign (publisher-reported; payer unverified)",
@@ -1125,6 +1135,13 @@ def media_links(content: str) -> list[str]:
             parsed.scheme == "https"
             and parsed.hostname in {"x.com", "www.x.com", "twitter.com", "www.twitter.com"}
             and re.fullmatch(r"/[A-Za-z0-9_]{1,15}/status/[0-9]{15,20}", parsed.path)
+        ):
+            urls.append(value)
+        elif (
+            parsed.scheme == "https"
+            and parsed.netloc in {"facebook.com", "www.facebook.com"}
+            and re.fullmatch(r"/reel/[0-9]{15,20}/?", parsed.path)
+            and not parsed.fragment
         ):
             urls.append(value)
         elif (
