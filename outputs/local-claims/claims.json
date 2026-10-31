@@ -1,282 +1,6 @@
 [
   {
     "ad_claim_status": "normalized",
-    "ad_id": "barr-1560-0",
-    "alignment": "R",
-    "block_id": "barr-1560-0-claims-001",
-    "block_status": "normalized",
-    "claim_id": "barr-1560-0-claims-001-001",
-    "claim_text": "Congressman Andy Barr has been with me all the way.",
-    "claim_types": [
-      "factual_assertion"
-    ],
-    "evidence": [
-      {
-        "end": 154,
-        "kind": "publisher_transcript",
-        "start": 52,
-        "text": "President Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.",
-        "unit_id": 2
-      }
-    ],
-    "evidence_ids": [
-      2
-    ],
-    "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
-    "sponsor": "Andy Barr for Senate",
-    "targets": [
-      {
-        "anchor_end": 140,
-        "anchor_quote": "Congressman Andy Barr",
-        "anchor_start": 119,
-        "anchor_unit_id": 2,
-        "entity_id": "unknown",
-        "kind": "person",
-        "name": "Andy Barr",
-        "party_basis": "unknown",
-        "role": "self_or_supported",
-        "side": "unknown",
-        "target_party": "unknown",
-        "tone": "positive"
-      }
-    ],
-    "text": "Narrator: A message from President Donald J. Trump.\nPresident Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.\nCrowd: Andy Barr! Andy Barr!\nPresident Trump: He’s a good guy and a warrior.\nBarr: I’m Andy Barr and I approve this message",
-    "text_hash": "4b158234d6711bc2162071c258985b2ee8e5ca80b6d663ec971828724b817b1a",
-    "unresolved_references": [],
-    "voice": "quoted_opponent"
-  },
-  {
-    "ad_claim_status": "normalized",
-    "ad_id": "barr-1560-0",
-    "alignment": "R",
-    "block_id": "barr-1560-0-claims-001",
-    "block_status": "normalized",
-    "claim_id": "barr-1560-0-claims-001-002",
-    "claim_text": "He’s a good guy and a warrior.",
-    "claim_types": [
-      "characterization"
-    ],
-    "evidence": [
-      {
-        "end": 231,
-        "kind": "publisher_transcript",
-        "start": 184,
-        "text": "President Trump: He’s a good guy and a warrior.",
-        "unit_id": 4
-      }
-    ],
-    "evidence_ids": [
-      4
-    ],
-    "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
-    "sponsor": "Andy Barr for Senate",
-    "targets": [
-      {
-        "anchor_end": 203,
-        "anchor_quote": "He",
-        "anchor_start": 201,
-        "anchor_unit_id": 4,
-        "entity_id": "unknown",
-        "kind": "person",
-        "name": "Andy Barr",
-        "party_basis": "unknown",
-        "role": "self_or_supported",
-        "side": "unknown",
-        "target_party": "unknown",
-        "tone": "positive"
-      }
-    ],
-    "text": "Narrator: A message from President Donald J. Trump.\nPresident Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.\nCrowd: Andy Barr! Andy Barr!\nPresident Trump: He’s a good guy and a warrior.\nBarr: I’m Andy Barr and I approve this message",
-    "text_hash": "4b158234d6711bc2162071c258985b2ee8e5ca80b6d663ec971828724b817b1a",
-    "unresolved_references": [],
-    "voice": "quoted_opponent"
-  },
-  {
-    "ad_claim_status": "normalized",
-    "ad_id": "barr-1560-0",
-    "alignment": "R",
-    "block_id": "barr-1560-0-claims-001",
-    "block_status": "normalized",
-    "claim_id": "barr-1560-0-claims-001-003",
-    "claim_text": "I approve this message.",
-    "claim_types": [
-      "policy_position"
-    ],
-    "evidence": [
-      {
-        "end": 278,
-        "kind": "publisher_transcript",
-        "start": 232,
-        "text": "Barr: I’m Andy Barr and I approve this message",
-        "unit_id": 5
-      }
-    ],
-    "evidence_ids": [
-      5
-    ],
-    "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
-    "sponsor": "Andy Barr for Senate",
-    "targets": [
-      {
-        "anchor_end": 239,
-        "anchor_quote": "I",
-        "anchor_start": 238,
-        "anchor_unit_id": 5,
-        "entity_id": "advertiser",
-        "kind": "person",
-        "name": "Andy Barr",
-        "party_basis": "publisher_alignment",
-        "role": "self_or_supported",
-        "side": "same_side",
-        "target_party": "R",
-        "tone": "neutral"
-      }
-    ],
-    "text": "Narrator: A message from President Donald J. Trump.\nPresident Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.\nCrowd: Andy Barr! Andy Barr!\nPresident Trump: He’s a good guy and a warrior.\nBarr: I’m Andy Barr and I approve this message",
-    "text_hash": "4b158234d6711bc2162071c258985b2ee8e5ca80b6d663ec971828724b817b1a",
-    "unresolved_references": [],
-    "voice": "advertiser"
-  },
-  {
-    "ad_claim_status": "normalized",
-    "ad_id": "barr-1560-0",
-    "alignment": "R",
-    "block_id": "barr-1560-0-claims-001",
-    "block_status": "normalized",
-    "claim_id": "barr-1560-0-claims-001-004",
-    "claim_text": "A message is from President Donald J. Trump.",
-    "claim_types": [
-      "factual_assertion"
-    ],
-    "evidence": [
-      {
-        "end": 51,
-        "kind": "publisher_transcript",
-        "start": 0,
-        "text": "Narrator: A message from President Donald J. Trump.",
-        "unit_id": 1
-      }
-    ],
-    "evidence_ids": [
-      1
-    ],
-    "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
-    "sponsor": "Andy Barr for Senate",
-    "targets": [
-      {
-        "anchor_end": 50,
-        "anchor_quote": "President Donald J. Trump",
-        "anchor_start": 25,
-        "anchor_unit_id": 1,
-        "entity_id": "unknown",
-        "kind": "person",
-        "name": "Donald J. Trump",
-        "party_basis": "unknown",
-        "role": "unclear",
-        "side": "unknown",
-        "target_party": "unknown",
-        "tone": "neutral"
-      }
-    ],
-    "text": "Narrator: A message from President Donald J. Trump.\nPresident Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.\nCrowd: Andy Barr! Andy Barr!\nPresident Trump: He’s a good guy and a warrior.\nBarr: I’m Andy Barr and I approve this message",
-    "text_hash": "4b158234d6711bc2162071c258985b2ee8e5ca80b6d663ec971828724b817b1a",
-    "unresolved_references": [],
-    "voice": "unclear"
-  },
-  {
-    "ad_claim_status": "normalized",
-    "ad_id": "barr-1560-0",
-    "alignment": "R",
-    "block_id": "barr-1560-0-claims-001",
-    "block_status": "normalized",
-    "claim_id": "barr-1560-0-claims-001-005",
-    "claim_text": "Andy Barr! Andy Barr!",
-    "claim_types": [
-      "factual_assertion"
-    ],
-    "evidence": [
-      {
-        "end": 183,
-        "kind": "publisher_transcript",
-        "start": 155,
-        "text": "Crowd: Andy Barr! Andy Barr!",
-        "unit_id": 3
-      }
-    ],
-    "evidence_ids": [
-      3
-    ],
-    "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
-    "sponsor": "Andy Barr for Senate",
-    "targets": [
-      {
-        "anchor_end": 171,
-        "anchor_quote": "Andy Barr",
-        "anchor_start": 162,
-        "anchor_unit_id": 3,
-        "entity_id": "unknown",
-        "kind": "person",
-        "name": "Andy Barr",
-        "party_basis": "unknown",
-        "role": "unclear",
-        "side": "unknown",
-        "target_party": "unknown",
-        "tone": "neutral"
-      }
-    ],
-    "text": "Narrator: A message from President Donald J. Trump.\nPresident Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.\nCrowd: Andy Barr! Andy Barr!\nPresident Trump: He’s a good guy and a warrior.\nBarr: I’m Andy Barr and I approve this message",
-    "text_hash": "4b158234d6711bc2162071c258985b2ee8e5ca80b6d663ec971828724b817b1a",
-    "unresolved_references": [],
-    "voice": "unclear"
-  },
-  {
-    "ad_claim_status": "normalized",
-    "ad_id": "barr-1560-0",
-    "alignment": "R",
-    "block_id": "barr-1560-0-claims-001",
-    "block_status": "normalized",
-    "claim_id": "barr-1560-0-claims-001-006",
-    "claim_text": "A wonderful man who has been with me all the way, Congressman Andy Barr.",
-    "claim_types": [
-      "characterization"
-    ],
-    "evidence": [
-      {
-        "end": 154,
-        "kind": "publisher_transcript",
-        "start": 52,
-        "text": "President Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.",
-        "unit_id": 2
-      }
-    ],
-    "evidence_ids": [
-      2
-    ],
-    "source_url": "https://barrforsenate.com/press-release/new-barr-ad-features-president-trump-praising-him-as-a-good-guy-and-a-warrior/",
-    "sponsor": "Andy Barr for Senate",
-    "targets": [
-      {
-        "anchor_end": 140,
-        "anchor_quote": "Congressman Andy Barr",
-        "anchor_start": 119,
-        "anchor_unit_id": 2,
-        "entity_id": "unknown",
-        "kind": "person",
-        "name": "Andy Barr",
-        "party_basis": "unknown",
-        "role": "self_or_supported",
-        "side": "unknown",
-        "target_party": "unknown",
-        "tone": "positive"
-      }
-    ],
-    "text": "Narrator: A message from President Donald J. Trump.\nPresident Trump: A wonderful man who has been with me all the way, Congressman Andy Barr. All the way.\nCrowd: Andy Barr! Andy Barr!\nPresident Trump: He’s a good guy and a warrior.\nBarr: I’m Andy Barr and I approve this message",
-    "text_hash": "4b158234d6711bc2162071c258985b2ee8e5ca80b6d663ec971828724b817b1a",
-    "unresolved_references": [],
-    "voice": "quoted_opponent"
-  },
-  {
-    "ad_claim_status": "normalized",
     "ad_id": "barr-1713-0",
     "alignment": "R",
     "block_id": "barr-1713-0-claims-001",
@@ -1046,56 +770,10 @@
         "kind": "person",
         "name": "Andy Barr",
         "party_basis": "unknown",
-        "role": "self_or_supported",
+        "role": "opponent",
         "side": "unknown",
         "target_party": "unknown",
         "tone": "positive"
-      }
-    ],
-    "text": "Mary Clay Barr: My dad, Andy Barr, loves Kentucky—like a lot. Dad thinks coal for Christmas is a good gift. He blasts bluegrass in the school pickup line. Wears his Derby Day outfit around the house. He can go a little overboard, but nobody loves Kentucky more than my dad.\nAndy Barr: I’m Andy Barr, and I approve this message. I think.\nMary Clay Barr: Good job, Dad. I guess.",
-    "text_hash": "144538bee3792117bfde005450916cbe652c4bebce1cc78bdda3671f645311f7",
-    "unresolved_references": [],
-    "voice": "adopted_clip"
-  },
-  {
-    "ad_claim_status": "normalized",
-    "ad_id": "barr-1942-0",
-    "alignment": "R",
-    "block_id": "barr-1942-0-claims-001",
-    "block_status": "normalized",
-    "claim_id": "barr-1942-0-claims-001-009",
-    "claim_text": "I guess.",
-    "claim_types": [
-      "characterization"
-    ],
-    "evidence": [
-      {
-        "end": 376,
-        "kind": "publisher_transcript",
-        "start": 337,
-        "text": "Mary Clay Barr: Good job, Dad. I guess.",
-        "unit_id": 3
-      }
-    ],
-    "evidence_ids": [
-      3
-    ],
-    "source_url": "https://barrforsenate.com/press-release/new-barr-ad-mary-clay-barr-says-nobody-loves-kentucky-more-than-my-dad/",
-    "sponsor": "Andy Barr for Senate",
-    "targets": [
-      {
-        "anchor_end": 369,
-        "anchor_quote": "I",
-        "anchor_start": 368,
-        "anchor_unit_id": 3,
-        "entity_id": "unknown",
-        "kind": "person",
-        "name": "Mary Clay Barr",
-        "party_basis": "unknown",
-        "role": "self_or_supported",
-        "side": "unknown",
-        "target_party": "unknown",
-        "tone": "uncertain"
       }
     ],
     "text": "Mary Clay Barr: My dad, Andy Barr, loves Kentucky—like a lot. Dad thinks coal for Christmas is a good gift. He blasts bluegrass in the school pickup line. Wears his Derby Day outfit around the house. He can go a little overboard, but nobody loves Kentucky more than my dad.\nAndy Barr: I’m Andy Barr, and I approve this message. I think.\nMary Clay Barr: Good job, Dad. I guess.",
@@ -1110,7 +788,7 @@
     "block_id": "barr-1992-0-claims-001",
     "block_status": "normalized",
     "claim_id": "barr-1992-0-claims-001-001",
-    "claim_text": "Teresa remembers being homeless and ashamed of herself.",
+    "claim_text": "I remember being homeless, ashamed of myself, and I remember contacting Andy Barr.",
     "claim_types": [
       "factual_assertion"
     ],
@@ -1156,7 +834,7 @@
     "block_id": "barr-1992-0-claims-001",
     "block_status": "normalized",
     "claim_id": "barr-1992-0-claims-001-002",
-    "claim_text": "Teresa contacted Andy Barr because she needed help.",
+    "claim_text": "I said, “I need help.”",
     "claim_types": [
       "factual_assertion"
     ],
@@ -1202,7 +880,7 @@
     "block_id": "barr-1992-0-claims-001",
     "block_status": "normalized",
     "claim_id": "barr-1992-0-claims-001-003",
-    "claim_text": "Andy Barr doesn’t ask if you’re a Republican or Democrat.",
+    "claim_text": "Andy Barr doesn’t ask you if you’re a Republican or Democrat.",
     "claim_types": [
       "characterization"
     ],
@@ -1248,7 +926,7 @@
     "block_id": "barr-1992-0-claims-001",
     "block_status": "normalized",
     "claim_id": "barr-1992-0-claims-001-004",
-    "claim_text": "Andy Barr asked what he could help with.",
+    "claim_text": "He just says, “What can I help you with?”",
     "claim_types": [
       "factual_assertion"
     ],
@@ -1268,9 +946,9 @@
     "sponsor": "Andy Barr for Senate",
     "targets": [
       {
-        "anchor_end": 89,
-        "anchor_quote": "Andy Barr",
-        "anchor_start": 80,
+        "anchor_end": 116,
+        "anchor_quote": "He",
+        "anchor_start": 114,
         "anchor_unit_id": 1,
         "entity_id": "advertiser",
         "kind": "person",
@@ -1294,7 +972,7 @@
     "block_id": "barr-1992-0-claims-001",
     "block_status": "normalized",
     "claim_id": "barr-1992-0-claims-001-005",
-    "claim_text": "Teresa started to cry because somebody was actually listening.",
+    "claim_text": "I started to cry cause I’m like “Oh my god, somebody’s actually listening.”",
     "claim_types": [
       "factual_assertion"
     ],
@@ -1340,7 +1018,7 @@
     "block_id": "barr-1992-0-claims-001",
     "block_status": "normalized",
     "claim_id": "barr-1992-0-claims-001-006",
-    "claim_text": "A week to two weeks later, Teresa got a call from the V A.",
+    "claim_text": "A week to two weeks later, I got a call from the V A.",
     "claim_types": [
       "factual_assertion"
     ],
@@ -1386,7 +1064,7 @@
     "block_id": "barr-1992-0-claims-001",
     "block_status": "normalized",
     "claim_id": "barr-1992-0-claims-001-007",
-    "claim_text": "The V A was working on Teresa’s stuff.",
+    "claim_text": "They were working on my stuff.",
     "claim_types": [
       "factual_assertion"
     ],
@@ -1406,9 +1084,9 @@
     "sponsor": "Andy Barr for Senate",
     "targets": [
       {
-        "anchor_end": 347,
-        "anchor_quote": "V A",
-        "anchor_start": 344,
+        "anchor_end": 353,
+        "anchor_quote": "They",
+        "anchor_start": 349,
         "anchor_unit_id": 2,
         "entity_id": "unknown",
         "kind": "other",
@@ -1432,7 +1110,7 @@
     "block_id": "barr-1992-0-claims-001",
     "block_status": "normalized",
     "claim_id": "barr-1992-0-claims-001-008",
-    "claim_text": "Andy Barr saved Teresa’s life.",
+    "claim_text": "Andy Barr saved my life.",
     "claim_types": [
       "characterization"
     ],
@@ -1478,9 +1156,9 @@
     "block_id": "barr-1992-0-claims-001",
     "block_status": "normalized",
     "claim_id": "barr-1992-0-claims-001-009",
-    "claim_text": "Teresa will never forget that Andy Barr saved her life.",
+    "claim_text": "I’ll never forget it.",
     "claim_types": [
-      "factual_assertion"
+      "evaluation"
     ],
     "evidence": [
       {
@@ -1509,7 +1187,7 @@
         "role": "self_or_supported",
         "side": "unknown",
         "target_party": "unknown",
-        "tone": "neutral"
+        "tone": "positive"
       }
     ],
     "text": "Teresa: I remember being homeless, ashamed of myself, and I remember contacting Andy Barr. I said, “I need help.” He doesn’t ask you if you’re a Republican or Democrat. He just says, “What can I help you with?”\nTeresa: I started to cry cause I’m like “Oh my god, somebody’s actually listening.” A week to two weeks later, I got a call from the V A. They were working on my stuff. Andy Barr saved my life. I’ll never forget it. I’m voting for Andy Barr.\nBarr: I’m Andy Barr and I approve this message.",
@@ -1524,7 +1202,7 @@
     "block_id": "barr-1992-0-claims-001",
     "block_status": "normalized",
     "claim_id": "barr-1992-0-claims-001-010",
-    "claim_text": "Teresa is voting for Andy Barr.",
+    "claim_text": "I’m voting for Andy Barr.",
     "claim_types": [
       "policy_position"
     ],
@@ -1570,7 +1248,7 @@
     "block_id": "barr-1992-0-claims-001",
     "block_status": "normalized",
     "claim_id": "barr-1992-0-claims-001-011",
-    "claim_text": "Andy Barr approves this message.",
+    "claim_text": "I approve this message.",
     "claim_types": [
       "policy_position"
     ],
@@ -1606,6 +1284,306 @@
     ],
     "text": "Teresa: I remember being homeless, ashamed of myself, and I remember contacting Andy Barr. I said, “I need help.” He doesn’t ask you if you’re a Republican or Democrat. He just says, “What can I help you with?”\nTeresa: I started to cry cause I’m like “Oh my god, somebody’s actually listening.” A week to two weeks later, I got a call from the V A. They were working on my stuff. Andy Barr saved my life. I’ll never forget it. I’m voting for Andy Barr.\nBarr: I’m Andy Barr and I approve this message.",
     "text_hash": "5df03fd5be7a0783c5daf726c549c3a80e3e90728d14e784c2f6337613a9d66d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "bresnahan-native-122242721966111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122242721966111841-claims-003",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122242721966111841-claims-003-001",
+    "claim_text": "Rob Bresnahan is running for Congress.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 2247,
+        "kind": "video_ocr",
+        "start": 2238,
+        "text": "BRESNAHAN",
+        "unit_id": 2
+      },
+      {
+        "end": 2256,
+        "kind": "video_ocr",
+        "start": 2248,
+        "text": "CONGRESS",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      2,
+      3
+    ],
+    "source_url": "https://www.facebook.com/122242721966111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 2247,
+        "anchor_quote": "BRESNAHAN",
+        "anchor_start": 2238,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H4PA08124",
+        "kind": "person",
+        "name": "BRESNAHAN, ROB",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I had a spine surgery done, I received a bill in the mail for $280,000.\nI was having a hard time getting the VA to do anything.\nI didn't know how he was going to pay it. I felt forgotten.\nI reached out to Guapua's in-hand when no one else was able to help me,\nand the bill actually got paid in full. They never asked me if I was a Republican or Democrat.\nThey just looked at me as a American.\nNorth East Pennsylvania is lucky to have someone like Guapua's in-hand fighting for them.\nI'm Rob Reznihan, and I approve this message.\nSCOTT\nUS ARMY VETERAN\nDEPARTMENT OF THE NION\nTHE ARMY ACHEEVEMINT MOTENL\nFOR COMMENDARLE CERUCT\nFORRARD SUPPORT CONME\nEXCELLENCE AND DEDICATE\nMILITARY SERVICE AND 4\nSUPPORT COMPANTY TWE\nDEI\nTHI\nINCEPTIONAL FE\nHETLLERY RES\nDEPARTMENT OF THE AFMI\nTHIN IN TO CEKTIFY THAT THES\nTHE ARMY ACHIEVEMINT\n583RD FORWARD SUPPORT COMFUR\nFOR COMMENDABLE SERVICE WIULE N\nFORWARD SUPPORT COMPANY SE\nEXCELLENCE AND DEDICATION TO IE\nMILITARY SERVICE AND REFLICTY\nSUPPORT COMPANY, THE ISSTII BEIOADR\nDEPARTMI\nENIN IN TO CERTIFY THAY\nTHE ARMY\nSPE\n583RD FSC,\nEXCEPTIONALLY MERITORIE\nIPERATOR, IN SUPPORT OF OPERA)\nMEDALST SEILER'S RELENTLESS »\nIRPERTISE GREATLY CONTRIBUTI\nENCEPTIONAL PERFORMANCE REPL\nMATLLERY REGIMENT AND THE UINI\nРОR 290-006, 16 Остоbет 2015\nCommander, 158° Brigade Support Battátion\nFort Bragg. Nonth Carolina 28310\n70. 8065-005, 6 MARCH 2017\nDEPARTMENT OF THE AFM\nTHIS IS TO CERTIFY THAT THE NEXS\nTHE ARMY ACHIEVEMENT MEDNI\nSPECIALINT M\n583RD FORWARD SUPPORT COMPANT SN\nCOMMENDABLE SERVICE WIILE AS\nFORWARD SUPPORT COMPANY SPICIALINT\nEXCELLENCE AND DEDICATION TO DUTY ARE\nMILITARY SERVICE AND REFLECTS GREAI\nSUPPORT COMPANY, THE 188TH BRIGADE NE\nGIVEN THIS 167° DAY OE CK\nNosh Carolina 28316\nDEPARTMENT O\nMIN IN TO CERTIFT THAT THEM\nTHE ARMY ACHIEVT\nEXCEPTIONALLY MERITORICUN 1\nSFCRATOR, IN SUPPORT OF OPERATION IP\nIPECALST SELER'S RELENTLESS PURRL\nTIPTRTSE GREATLY CONTRIBUTED I TM\nENCEPTIONAL PERFORMANCE REFLECTA\nMETILLERY REGIMENT AND THE UNTED SNE\n7.0. 806S-005,5 MARCH 2017\nNPO AE 08304\nROB BRESNAHAN\nASSISTING VETERANS\nÄSSISTING VETERANS\nBIPARTISAN LEADER\nFIGHTING FOR NEPA\nPAID FOR BY ROB FORPA. AR\nROB BRESNAGAN\nPAID FOR BYROB FORPA.\nR\nAHAN\nC\n\"PAIDOFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.\nROBE\nBRESNAHAN\nCONGRESS\nPAIDFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.\nPAIDFOR BY ROB FOR PA. APPE\nROB BRESWAHAN\nPAIDFOR BY ROB FOR PA.\nESWAHAN.",
+    "text_hash": "5c27e6cabfaf77d83aff0cff808cef1587df1f4d8b4d56ec84f3db1a3ff550be",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "bresnahan-native-122242721966111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122242721966111841-claims-003",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122242721966111841-claims-003-002",
+    "claim_text": "This was paid for by Rob for PA.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 2305,
+        "kind": "video_ocr",
+        "start": 2257,
+        "text": "PAIDFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.",
+        "unit_id": 4
+      },
+      {
+        "end": 2333,
+        "kind": "video_ocr",
+        "start": 2306,
+        "text": "PAIDFOR BY ROB FOR PA. APPE",
+        "unit_id": 5
+      },
+      {
+        "end": 2370,
+        "kind": "video_ocr",
+        "start": 2348,
+        "text": "PAIDFOR BY ROB FOR PA.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      4,
+      5,
+      7
+    ],
+    "source_url": "https://www.facebook.com/122242721966111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 2278,
+        "anchor_quote": "ROB FOR PA",
+        "anchor_start": 2268,
+        "anchor_unit_id": 4,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Rob for PA",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I had a spine surgery done, I received a bill in the mail for $280,000.\nI was having a hard time getting the VA to do anything.\nI didn't know how he was going to pay it. I felt forgotten.\nI reached out to Guapua's in-hand when no one else was able to help me,\nand the bill actually got paid in full. They never asked me if I was a Republican or Democrat.\nThey just looked at me as a American.\nNorth East Pennsylvania is lucky to have someone like Guapua's in-hand fighting for them.\nI'm Rob Reznihan, and I approve this message.\nSCOTT\nUS ARMY VETERAN\nDEPARTMENT OF THE NION\nTHE ARMY ACHEEVEMINT MOTENL\nFOR COMMENDARLE CERUCT\nFORRARD SUPPORT CONME\nEXCELLENCE AND DEDICATE\nMILITARY SERVICE AND 4\nSUPPORT COMPANTY TWE\nDEI\nTHI\nINCEPTIONAL FE\nHETLLERY RES\nDEPARTMENT OF THE AFMI\nTHIN IN TO CEKTIFY THAT THES\nTHE ARMY ACHIEVEMINT\n583RD FORWARD SUPPORT COMFUR\nFOR COMMENDABLE SERVICE WIULE N\nFORWARD SUPPORT COMPANY SE\nEXCELLENCE AND DEDICATION TO IE\nMILITARY SERVICE AND REFLICTY\nSUPPORT COMPANY, THE ISSTII BEIOADR\nDEPARTMI\nENIN IN TO CERTIFY THAY\nTHE ARMY\nSPE\n583RD FSC,\nEXCEPTIONALLY MERITORIE\nIPERATOR, IN SUPPORT OF OPERA)\nMEDALST SEILER'S RELENTLESS »\nIRPERTISE GREATLY CONTRIBUTI\nENCEPTIONAL PERFORMANCE REPL\nMATLLERY REGIMENT AND THE UINI\nРОR 290-006, 16 Остоbет 2015\nCommander, 158° Brigade Support Battátion\nFort Bragg. Nonth Carolina 28310\n70. 8065-005, 6 MARCH 2017\nDEPARTMENT OF THE AFM\nTHIS IS TO CERTIFY THAT THE NEXS\nTHE ARMY ACHIEVEMENT MEDNI\nSPECIALINT M\n583RD FORWARD SUPPORT COMPANT SN\nCOMMENDABLE SERVICE WIILE AS\nFORWARD SUPPORT COMPANY SPICIALINT\nEXCELLENCE AND DEDICATION TO DUTY ARE\nMILITARY SERVICE AND REFLECTS GREAI\nSUPPORT COMPANY, THE 188TH BRIGADE NE\nGIVEN THIS 167° DAY OE CK\nNosh Carolina 28316\nDEPARTMENT O\nMIN IN TO CERTIFT THAT THEM\nTHE ARMY ACHIEVT\nEXCEPTIONALLY MERITORICUN 1\nSFCRATOR, IN SUPPORT OF OPERATION IP\nIPECALST SELER'S RELENTLESS PURRL\nTIPTRTSE GREATLY CONTRIBUTED I TM\nENCEPTIONAL PERFORMANCE REFLECTA\nMETILLERY REGIMENT AND THE UNTED SNE\n7.0. 806S-005,5 MARCH 2017\nNPO AE 08304\nROB BRESNAHAN\nASSISTING VETERANS\nÄSSISTING VETERANS\nBIPARTISAN LEADER\nFIGHTING FOR NEPA\nPAID FOR BY ROB FORPA. AR\nROB BRESNAGAN\nPAID FOR BYROB FORPA.\nR\nAHAN\nC\n\"PAIDOFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.\nROBE\nBRESNAHAN\nCONGRESS\nPAIDFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.\nPAIDFOR BY ROB FOR PA. APPE\nROB BRESWAHAN\nPAIDFOR BY ROB FOR PA.\nESWAHAN.",
+    "text_hash": "5c27e6cabfaf77d83aff0cff808cef1587df1f4d8b4d56ec84f3db1a3ff550be",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "bresnahan-native-122242721966111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122242721966111841-claims-003",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122242721966111841-claims-003-003",
+    "claim_text": "Rob Bresnahan approved this.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 2305,
+        "kind": "video_ocr",
+        "start": 2257,
+        "text": "PAIDFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.facebook.com/122242721966111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 2304,
+        "anchor_quote": "ROB BRESIAHAN",
+        "anchor_start": 2291,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H4PA08124",
+        "kind": "person",
+        "name": "BRESNAHAN, ROB",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I had a spine surgery done, I received a bill in the mail for $280,000.\nI was having a hard time getting the VA to do anything.\nI didn't know how he was going to pay it. I felt forgotten.\nI reached out to Guapua's in-hand when no one else was able to help me,\nand the bill actually got paid in full. They never asked me if I was a Republican or Democrat.\nThey just looked at me as a American.\nNorth East Pennsylvania is lucky to have someone like Guapua's in-hand fighting for them.\nI'm Rob Reznihan, and I approve this message.\nSCOTT\nUS ARMY VETERAN\nDEPARTMENT OF THE NION\nTHE ARMY ACHEEVEMINT MOTENL\nFOR COMMENDARLE CERUCT\nFORRARD SUPPORT CONME\nEXCELLENCE AND DEDICATE\nMILITARY SERVICE AND 4\nSUPPORT COMPANTY TWE\nDEI\nTHI\nINCEPTIONAL FE\nHETLLERY RES\nDEPARTMENT OF THE AFMI\nTHIN IN TO CEKTIFY THAT THES\nTHE ARMY ACHIEVEMINT\n583RD FORWARD SUPPORT COMFUR\nFOR COMMENDABLE SERVICE WIULE N\nFORWARD SUPPORT COMPANY SE\nEXCELLENCE AND DEDICATION TO IE\nMILITARY SERVICE AND REFLICTY\nSUPPORT COMPANY, THE ISSTII BEIOADR\nDEPARTMI\nENIN IN TO CERTIFY THAY\nTHE ARMY\nSPE\n583RD FSC,\nEXCEPTIONALLY MERITORIE\nIPERATOR, IN SUPPORT OF OPERA)\nMEDALST SEILER'S RELENTLESS »\nIRPERTISE GREATLY CONTRIBUTI\nENCEPTIONAL PERFORMANCE REPL\nMATLLERY REGIMENT AND THE UINI\nРОR 290-006, 16 Остоbет 2015\nCommander, 158° Brigade Support Battátion\nFort Bragg. Nonth Carolina 28310\n70. 8065-005, 6 MARCH 2017\nDEPARTMENT OF THE AFM\nTHIS IS TO CERTIFY THAT THE NEXS\nTHE ARMY ACHIEVEMENT MEDNI\nSPECIALINT M\n583RD FORWARD SUPPORT COMPANT SN\nCOMMENDABLE SERVICE WIILE AS\nFORWARD SUPPORT COMPANY SPICIALINT\nEXCELLENCE AND DEDICATION TO DUTY ARE\nMILITARY SERVICE AND REFLECTS GREAI\nSUPPORT COMPANY, THE 188TH BRIGADE NE\nGIVEN THIS 167° DAY OE CK\nNosh Carolina 28316\nDEPARTMENT O\nMIN IN TO CERTIFT THAT THEM\nTHE ARMY ACHIEVT\nEXCEPTIONALLY MERITORICUN 1\nSFCRATOR, IN SUPPORT OF OPERATION IP\nIPECALST SELER'S RELENTLESS PURRL\nTIPTRTSE GREATLY CONTRIBUTED I TM\nENCEPTIONAL PERFORMANCE REFLECTA\nMETILLERY REGIMENT AND THE UNTED SNE\n7.0. 806S-005,5 MARCH 2017\nNPO AE 08304\nROB BRESNAHAN\nASSISTING VETERANS\nÄSSISTING VETERANS\nBIPARTISAN LEADER\nFIGHTING FOR NEPA\nPAID FOR BY ROB FORPA. AR\nROB BRESNAGAN\nPAID FOR BYROB FORPA.\nR\nAHAN\nC\n\"PAIDOFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.\nROBE\nBRESNAHAN\nCONGRESS\nPAIDFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.\nPAIDFOR BY ROB FOR PA. APPE\nROB BRESWAHAN\nPAIDFOR BY ROB FOR PA.\nESWAHAN.",
+    "text_hash": "5c27e6cabfaf77d83aff0cff808cef1587df1f4d8b4d56ec84f3db1a3ff550be",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "bresnahan-native-122242721966111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122242721966111841-claims-003",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122242721966111841-claims-003-004",
+    "claim_text": "Rob Bresnahan is assisting veterans.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 2237,
+        "kind": "video_ocr",
+        "start": 2233,
+        "text": "ROBE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.facebook.com/122242721966111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 2237,
+        "anchor_quote": "ROBE",
+        "anchor_start": 2233,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H4PA08124",
+        "kind": "person",
+        "name": "BRESNAHAN, ROB",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "I had a spine surgery done, I received a bill in the mail for $280,000.\nI was having a hard time getting the VA to do anything.\nI didn't know how he was going to pay it. I felt forgotten.\nI reached out to Guapua's in-hand when no one else was able to help me,\nand the bill actually got paid in full. They never asked me if I was a Republican or Democrat.\nThey just looked at me as a American.\nNorth East Pennsylvania is lucky to have someone like Guapua's in-hand fighting for them.\nI'm Rob Reznihan, and I approve this message.\nSCOTT\nUS ARMY VETERAN\nDEPARTMENT OF THE NION\nTHE ARMY ACHEEVEMINT MOTENL\nFOR COMMENDARLE CERUCT\nFORRARD SUPPORT CONME\nEXCELLENCE AND DEDICATE\nMILITARY SERVICE AND 4\nSUPPORT COMPANTY TWE\nDEI\nTHI\nINCEPTIONAL FE\nHETLLERY RES\nDEPARTMENT OF THE AFMI\nTHIN IN TO CEKTIFY THAT THES\nTHE ARMY ACHIEVEMINT\n583RD FORWARD SUPPORT COMFUR\nFOR COMMENDABLE SERVICE WIULE N\nFORWARD SUPPORT COMPANY SE\nEXCELLENCE AND DEDICATION TO IE\nMILITARY SERVICE AND REFLICTY\nSUPPORT COMPANY, THE ISSTII BEIOADR\nDEPARTMI\nENIN IN TO CERTIFY THAY\nTHE ARMY\nSPE\n583RD FSC,\nEXCEPTIONALLY MERITORIE\nIPERATOR, IN SUPPORT OF OPERA)\nMEDALST SEILER'S RELENTLESS »\nIRPERTISE GREATLY CONTRIBUTI\nENCEPTIONAL PERFORMANCE REPL\nMATLLERY REGIMENT AND THE UINI\nРОR 290-006, 16 Остоbет 2015\nCommander, 158° Brigade Support Battátion\nFort Bragg. Nonth Carolina 28310\n70. 8065-005, 6 MARCH 2017\nDEPARTMENT OF THE AFM\nTHIS IS TO CERTIFY THAT THE NEXS\nTHE ARMY ACHIEVEMENT MEDNI\nSPECIALINT M\n583RD FORWARD SUPPORT COMPANT SN\nCOMMENDABLE SERVICE WIILE AS\nFORWARD SUPPORT COMPANY SPICIALINT\nEXCELLENCE AND DEDICATION TO DUTY ARE\nMILITARY SERVICE AND REFLECTS GREAI\nSUPPORT COMPANY, THE 188TH BRIGADE NE\nGIVEN THIS 167° DAY OE CK\nNosh Carolina 28316\nDEPARTMENT O\nMIN IN TO CERTIFT THAT THEM\nTHE ARMY ACHIEVT\nEXCEPTIONALLY MERITORICUN 1\nSFCRATOR, IN SUPPORT OF OPERATION IP\nIPECALST SELER'S RELENTLESS PURRL\nTIPTRTSE GREATLY CONTRIBUTED I TM\nENCEPTIONAL PERFORMANCE REFLECTA\nMETILLERY REGIMENT AND THE UNTED SNE\n7.0. 806S-005,5 MARCH 2017\nNPO AE 08304\nROB BRESNAHAN\nASSISTING VETERANS\nÄSSISTING VETERANS\nBIPARTISAN LEADER\nFIGHTING FOR NEPA\nPAID FOR BY ROB FORPA. AR\nROB BRESNAGAN\nPAID FOR BYROB FORPA.\nR\nAHAN\nC\n\"PAIDOFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.\nROBE\nBRESNAHAN\nCONGRESS\nPAIDFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.\nPAIDFOR BY ROB FOR PA. APPE\nROB BRESWAHAN\nPAIDFOR BY ROB FOR PA.\nESWAHAN.",
+    "text_hash": "5c27e6cabfaf77d83aff0cff808cef1587df1f4d8b4d56ec84f3db1a3ff550be",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "bresnahan-native-122242721966111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122242721966111841-claims-003",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122242721966111841-claims-003-005",
+    "claim_text": "Rob Bresnahan is a bipartisan leader.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 2237,
+        "kind": "video_ocr",
+        "start": 2233,
+        "text": "ROBE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.facebook.com/122242721966111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 2237,
+        "anchor_quote": "ROBE",
+        "anchor_start": 2233,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H4PA08124",
+        "kind": "person",
+        "name": "BRESNAHAN, ROB",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "I had a spine surgery done, I received a bill in the mail for $280,000.\nI was having a hard time getting the VA to do anything.\nI didn't know how he was going to pay it. I felt forgotten.\nI reached out to Guapua's in-hand when no one else was able to help me,\nand the bill actually got paid in full. They never asked me if I was a Republican or Democrat.\nThey just looked at me as a American.\nNorth East Pennsylvania is lucky to have someone like Guapua's in-hand fighting for them.\nI'm Rob Reznihan, and I approve this message.\nSCOTT\nUS ARMY VETERAN\nDEPARTMENT OF THE NION\nTHE ARMY ACHEEVEMINT MOTENL\nFOR COMMENDARLE CERUCT\nFORRARD SUPPORT CONME\nEXCELLENCE AND DEDICATE\nMILITARY SERVICE AND 4\nSUPPORT COMPANTY TWE\nDEI\nTHI\nINCEPTIONAL FE\nHETLLERY RES\nDEPARTMENT OF THE AFMI\nTHIN IN TO CEKTIFY THAT THES\nTHE ARMY ACHIEVEMINT\n583RD FORWARD SUPPORT COMFUR\nFOR COMMENDABLE SERVICE WIULE N\nFORWARD SUPPORT COMPANY SE\nEXCELLENCE AND DEDICATION TO IE\nMILITARY SERVICE AND REFLICTY\nSUPPORT COMPANY, THE ISSTII BEIOADR\nDEPARTMI\nENIN IN TO CERTIFY THAY\nTHE ARMY\nSPE\n583RD FSC,\nEXCEPTIONALLY MERITORIE\nIPERATOR, IN SUPPORT OF OPERA)\nMEDALST SEILER'S RELENTLESS »\nIRPERTISE GREATLY CONTRIBUTI\nENCEPTIONAL PERFORMANCE REPL\nMATLLERY REGIMENT AND THE UINI\nРОR 290-006, 16 Остоbет 2015\nCommander, 158° Brigade Support Battátion\nFort Bragg. Nonth Carolina 28310\n70. 8065-005, 6 MARCH 2017\nDEPARTMENT OF THE AFM\nTHIS IS TO CERTIFY THAT THE NEXS\nTHE ARMY ACHIEVEMENT MEDNI\nSPECIALINT M\n583RD FORWARD SUPPORT COMPANT SN\nCOMMENDABLE SERVICE WIILE AS\nFORWARD SUPPORT COMPANY SPICIALINT\nEXCELLENCE AND DEDICATION TO DUTY ARE\nMILITARY SERVICE AND REFLECTS GREAI\nSUPPORT COMPANY, THE 188TH BRIGADE NE\nGIVEN THIS 167° DAY OE CK\nNosh Carolina 28316\nDEPARTMENT O\nMIN IN TO CERTIFT THAT THEM\nTHE ARMY ACHIEVT\nEXCEPTIONALLY MERITORICUN 1\nSFCRATOR, IN SUPPORT OF OPERATION IP\nIPECALST SELER'S RELENTLESS PURRL\nTIPTRTSE GREATLY CONTRIBUTED I TM\nENCEPTIONAL PERFORMANCE REFLECTA\nMETILLERY REGIMENT AND THE UNTED SNE\n7.0. 806S-005,5 MARCH 2017\nNPO AE 08304\nROB BRESNAHAN\nASSISTING VETERANS\nÄSSISTING VETERANS\nBIPARTISAN LEADER\nFIGHTING FOR NEPA\nPAID FOR BY ROB FORPA. AR\nROB BRESNAGAN\nPAID FOR BYROB FORPA.\nR\nAHAN\nC\n\"PAIDOFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.\nROBE\nBRESNAHAN\nCONGRESS\nPAIDFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.\nPAIDFOR BY ROB FOR PA. APPE\nROB BRESWAHAN\nPAIDFOR BY ROB FOR PA.\nESWAHAN.",
+    "text_hash": "5c27e6cabfaf77d83aff0cff808cef1587df1f4d8b4d56ec84f3db1a3ff550be",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "bresnahan-native-122242721966111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122242721966111841-claims-003",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122242721966111841-claims-003-006",
+    "claim_text": "Rob Bresnahan's name is also spelled Rob Breswahan.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 2347,
+        "kind": "video_ocr",
+        "start": 2334,
+        "text": "ROB BRESWAHAN",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.facebook.com/122242721966111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 2347,
+        "anchor_quote": "ROB BRESWAHAN",
+        "anchor_start": 2334,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H4PA08124",
+        "kind": "person",
+        "name": "BRESNAHAN, ROB",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I had a spine surgery done, I received a bill in the mail for $280,000.\nI was having a hard time getting the VA to do anything.\nI didn't know how he was going to pay it. I felt forgotten.\nI reached out to Guapua's in-hand when no one else was able to help me,\nand the bill actually got paid in full. They never asked me if I was a Republican or Democrat.\nThey just looked at me as a American.\nNorth East Pennsylvania is lucky to have someone like Guapua's in-hand fighting for them.\nI'm Rob Reznihan, and I approve this message.\nSCOTT\nUS ARMY VETERAN\nDEPARTMENT OF THE NION\nTHE ARMY ACHEEVEMINT MOTENL\nFOR COMMENDARLE CERUCT\nFORRARD SUPPORT CONME\nEXCELLENCE AND DEDICATE\nMILITARY SERVICE AND 4\nSUPPORT COMPANTY TWE\nDEI\nTHI\nINCEPTIONAL FE\nHETLLERY RES\nDEPARTMENT OF THE AFMI\nTHIN IN TO CEKTIFY THAT THES\nTHE ARMY ACHIEVEMINT\n583RD FORWARD SUPPORT COMFUR\nFOR COMMENDABLE SERVICE WIULE N\nFORWARD SUPPORT COMPANY SE\nEXCELLENCE AND DEDICATION TO IE\nMILITARY SERVICE AND REFLICTY\nSUPPORT COMPANY, THE ISSTII BEIOADR\nDEPARTMI\nENIN IN TO CERTIFY THAY\nTHE ARMY\nSPE\n583RD FSC,\nEXCEPTIONALLY MERITORIE\nIPERATOR, IN SUPPORT OF OPERA)\nMEDALST SEILER'S RELENTLESS »\nIRPERTISE GREATLY CONTRIBUTI\nENCEPTIONAL PERFORMANCE REPL\nMATLLERY REGIMENT AND THE UINI\nРОR 290-006, 16 Остоbет 2015\nCommander, 158° Brigade Support Battátion\nFort Bragg. Nonth Carolina 28310\n70. 8065-005, 6 MARCH 2017\nDEPARTMENT OF THE AFM\nTHIS IS TO CERTIFY THAT THE NEXS\nTHE ARMY ACHIEVEMENT MEDNI\nSPECIALINT M\n583RD FORWARD SUPPORT COMPANT SN\nCOMMENDABLE SERVICE WIILE AS\nFORWARD SUPPORT COMPANY SPICIALINT\nEXCELLENCE AND DEDICATION TO DUTY ARE\nMILITARY SERVICE AND REFLECTS GREAI\nSUPPORT COMPANY, THE 188TH BRIGADE NE\nGIVEN THIS 167° DAY OE CK\nNosh Carolina 28316\nDEPARTMENT O\nMIN IN TO CERTIFT THAT THEM\nTHE ARMY ACHIEVT\nEXCEPTIONALLY MERITORICUN 1\nSFCRATOR, IN SUPPORT OF OPERATION IP\nIPECALST SELER'S RELENTLESS PURRL\nTIPTRTSE GREATLY CONTRIBUTED I TM\nENCEPTIONAL PERFORMANCE REFLECTA\nMETILLERY REGIMENT AND THE UNTED SNE\n7.0. 806S-005,5 MARCH 2017\nNPO AE 08304\nROB BRESNAHAN\nASSISTING VETERANS\nÄSSISTING VETERANS\nBIPARTISAN LEADER\nFIGHTING FOR NEPA\nPAID FOR BY ROB FORPA. AR\nROB BRESNAGAN\nPAID FOR BYROB FORPA.\nR\nAHAN\nC\n\"PAIDOFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.\nROBE\nBRESNAHAN\nCONGRESS\nPAIDFOR BY ROB FOR PA. APROVED BY ROB BRESIAHAN.\nPAIDFOR BY ROB FOR PA. APPE\nROB BRESWAHAN\nPAIDFOR BY ROB FOR PA.\nESWAHAN.",
+    "text_hash": "5c27e6cabfaf77d83aff0cff808cef1587df1f4d8b4d56ec84f3db1a3ff550be",
     "unresolved_references": [],
     "voice": "advertiser"
   }

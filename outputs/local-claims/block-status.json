@@ -8,8 +8,8 @@
   {
     "ad_id": "barr-1560-0",
     "block_id": "barr-1560-0-claims-001",
-    "error": "",
-    "status": "normalized"
+    "error": "Final attempt failed: [\"Invalid claim 1 fields or evidence IDs\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "barr-1639-0",
@@ -50,7 +50,7 @@
   {
     "ad_id": "bresnahan-native-122237253032111841",
     "block_id": "bresnahan-native-122237253032111841-claims-001",
-    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for Our fire company: \\\"Our fire company\\\" is absent from unit 2. Exact source: \\\"roast beef dinners, and supersonic contests.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
     "status": "validation_failed"
   },
   {
@@ -74,7 +74,7 @@
   {
     "ad_id": "bresnahan-native-122240759240111841",
     "block_id": "bresnahan-native-122240759240111841-claims-001",
-    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 9 for Rob Breskaan: \\\"Rob Breskaan\\\" is absent from unit 22. Exact source: \\\"PAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 9 for ROB FOR PAL: \\\"ROB FOR PAL\\\" is absent from unit 23. Exact source: \\\"PAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
     "status": "validation_failed"
   },
   {
@@ -92,26 +92,26 @@
   {
     "ad_id": "bresnahan-native-122242721966111841",
     "block_id": "bresnahan-native-122242721966111841-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for BRESNAHAN, ROB: \\\"ROB BRESNAHAN\\\" is absent from unit 38. Exact source: \\\"ASSISTING VETERANS\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "bresnahan-native-122242721966111841",
     "block_id": "bresnahan-native-122242721966111841-claims-003",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "bresnahan-native-122243093606111841",
     "block_id": "bresnahan-native-122243093606111841-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for Rob: \\\"Rob\\\" is absent from unit 5. Exact source: \\\"definitely one of a kind person who donates his salary to help fire companies like us.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "bresnahan-native-122243532710111841",
     "block_id": "bresnahan-native-122243532710111841-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting ',' delimiter: line 1 column 5118 (char 5117)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "bresnahan-native-122244548030111841",
