@@ -4445,5 +4445,2626 @@
     "text_hash": "f13765aac2952f3cff5d1108c72c071800a71e18b59e7c5499eca12adc7ffb04",
     "unresolved_references": [],
     "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-50973-0",
+    "alignment": "R",
+    "block_id": "cfg-50973-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-50973-0-claims-001-001",
+    "claim_text": "Steve Marshall spent most of his life as a soft-on-crime Democrat",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 111,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "So after Steve Marshall spent most of his life as a soft-on-crime Democrat, why would we ever make him Senator?",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-club-for-growth-pac-alabama-freedom-fund-release-new-poll-and-2-ads-in-al-sen-race/",
+    "sponsor": "Alabama Freedom Fund",
+    "targets": [
+      {
+        "anchor_end": 23,
+        "anchor_quote": "Steve Marshall",
+        "anchor_start": 9,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6AL00450",
+        "kind": "person",
+        "name": "MARSHALL, STEVE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "So after Steve Marshall spent most of his life as a soft-on-crime Democrat, why would we ever make him Senator?",
+    "text_hash": "ba349ca99abfd0dbd0c7cde97b4a0aaac03df738979d9c50400fa5ee895f6c77",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-50973-0",
+    "alignment": "R",
+    "block_id": "cfg-50973-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-50973-0-claims-001-002",
+    "claim_text": "we should not make Steve Marshall Senator",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 111,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "So after Steve Marshall spent most of his life as a soft-on-crime Democrat, why would we ever make him Senator?",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-club-for-growth-pac-alabama-freedom-fund-release-new-poll-and-2-ads-in-al-sen-race/",
+    "sponsor": "Alabama Freedom Fund",
+    "targets": [
+      {
+        "anchor_end": 23,
+        "anchor_quote": "Steve Marshall",
+        "anchor_start": 9,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6AL00450",
+        "kind": "person",
+        "name": "MARSHALL, STEVE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "So after Steve Marshall spent most of his life as a soft-on-crime Democrat, why would we ever make him Senator?",
+    "text_hash": "ba349ca99abfd0dbd0c7cde97b4a0aaac03df738979d9c50400fa5ee895f6c77",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-50973-1",
+    "alignment": "R",
+    "block_id": "cfg-50973-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-50973-1-claims-001-001",
+    "claim_text": "Barry has never stopped fighting for Trump’s agenda.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 179,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Barry has never stopped fighting for Trump’s agenda. As Senator, he’ll fight even harder. Barry Moore (is) completely and totally MAGA with Trump’s complete and total endorsement,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-club-for-growth-pac-alabama-freedom-fund-release-new-poll-and-2-ads-in-al-sen-race/",
+    "sponsor": "Alabama Freedom Fund",
+    "targets": [
+      {
+        "anchor_end": 5,
+        "anchor_quote": "Barry",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6AL00476",
+        "kind": "person",
+        "name": "MOORE, BARRY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Barry has never stopped fighting for Trump’s agenda. As Senator, he’ll fight even harder. Barry Moore (is) completely and totally MAGA with Trump’s complete and total endorsement,",
+    "text_hash": "3cba712bf893414bc203163c780599b037b5e8d3a30d2569b12fde5b305dca2e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-50973-1",
+    "alignment": "R",
+    "block_id": "cfg-50973-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-50973-1-claims-001-002",
+    "claim_text": "As Senator, he’ll fight even harder.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 179,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Barry has never stopped fighting for Trump’s agenda. As Senator, he’ll fight even harder. Barry Moore (is) completely and totally MAGA with Trump’s complete and total endorsement,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-club-for-growth-pac-alabama-freedom-fund-release-new-poll-and-2-ads-in-al-sen-race/",
+    "sponsor": "Alabama Freedom Fund",
+    "targets": [
+      {
+        "anchor_end": 70,
+        "anchor_quote": "he’ll",
+        "anchor_start": 65,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6AL00476",
+        "kind": "person",
+        "name": "MOORE, BARRY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Barry has never stopped fighting for Trump’s agenda. As Senator, he’ll fight even harder. Barry Moore (is) completely and totally MAGA with Trump’s complete and total endorsement,",
+    "text_hash": "3cba712bf893414bc203163c780599b037b5e8d3a30d2569b12fde5b305dca2e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-50973-1",
+    "alignment": "R",
+    "block_id": "cfg-50973-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-50973-1-claims-001-003",
+    "claim_text": "Barry Moore is completely and totally MAGA with Trump’s complete and total endorsement.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 179,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Barry has never stopped fighting for Trump’s agenda. As Senator, he’ll fight even harder. Barry Moore (is) completely and totally MAGA with Trump’s complete and total endorsement,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-club-for-growth-pac-alabama-freedom-fund-release-new-poll-and-2-ads-in-al-sen-race/",
+    "sponsor": "Alabama Freedom Fund",
+    "targets": [
+      {
+        "anchor_end": 101,
+        "anchor_quote": "Barry Moore",
+        "anchor_start": 90,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6AL00476",
+        "kind": "person",
+        "name": "MOORE, BARRY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Barry has never stopped fighting for Trump’s agenda. As Senator, he’ll fight even harder. Barry Moore (is) completely and totally MAGA with Trump’s complete and total endorsement,",
+    "text_hash": "3cba712bf893414bc203163c780599b037b5e8d3a30d2569b12fde5b305dca2e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-50973-1",
+    "alignment": "R",
+    "block_id": "cfg-50973-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-50973-1-claims-001-004",
+    "claim_text": "Trump’s complete and total endorsement.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 179,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Barry has never stopped fighting for Trump’s agenda. As Senator, he’ll fight even harder. Barry Moore (is) completely and totally MAGA with Trump’s complete and total endorsement,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-club-for-growth-pac-alabama-freedom-fund-release-new-poll-and-2-ads-in-al-sen-race/",
+    "sponsor": "Alabama Freedom Fund",
+    "targets": [
+      {
+        "anchor_end": 44,
+        "anchor_quote": "Trump’s",
+        "anchor_start": 37,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "TRUMP",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Barry has never stopped fighting for Trump’s agenda. As Senator, he’ll fight even harder. Barry Moore (is) completely and totally MAGA with Trump’s complete and total endorsement,",
+    "text_hash": "3cba712bf893414bc203163c780599b037b5e8d3a30d2569b12fde5b305dca2e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-50973-1",
+    "alignment": "R",
+    "block_id": "cfg-50973-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-50973-1-claims-001-005",
+    "claim_text": "Barry Moore is MAGA.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 179,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Barry has never stopped fighting for Trump’s agenda. As Senator, he’ll fight even harder. Barry Moore (is) completely and totally MAGA with Trump’s complete and total endorsement,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-club-for-growth-pac-alabama-freedom-fund-release-new-poll-and-2-ads-in-al-sen-race/",
+    "sponsor": "Alabama Freedom Fund",
+    "targets": [
+      {
+        "anchor_end": 101,
+        "anchor_quote": "Barry Moore",
+        "anchor_start": 90,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6AL00476",
+        "kind": "person",
+        "name": "MOORE, BARRY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Barry has never stopped fighting for Trump’s agenda. As Senator, he’ll fight even harder. Barry Moore (is) completely and totally MAGA with Trump’s complete and total endorsement,",
+    "text_hash": "3cba712bf893414bc203163c780599b037b5e8d3a30d2569b12fde5b305dca2e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-51751-0",
+    "alignment": "R",
+    "block_id": "cfg-51751-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-51751-0-claims-001-001",
+    "claim_text": "Mark’s hunted down cartels, ran down traffickers, and locked up illegals.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 73,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Mark’s hunted down cartels, ran down traffickers, and locked up illegals,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-lamb-leads-by-34-points-new-ad-in-az-05-republican-primary/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 6,
+        "anchor_quote": "Mark’s",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6AZ05265",
+        "kind": "person",
+        "name": "LAMB, MARK",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Mark’s hunted down cartels, ran down traffickers, and locked up illegals,\nThat’s why Trump gave Mark Lamb his complete and total endorsement.\nTrump says Mark strongly supports our incredible law enforcement, will work hard to keep our secure border secure and stop migrant crime,",
+    "text_hash": "76b9cfb540dcd5e065720c656398546d4839f79d9110b6eccccac940720311e2",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-51751-0",
+    "alignment": "R",
+    "block_id": "cfg-51751-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-51751-0-claims-001-002",
+    "claim_text": "Trump gave Mark Lamb his complete and total endorsement.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "publisher_ad_copy",
+        "start": 74,
+        "text": "That’s why Trump gave Mark Lamb his complete and total endorsement.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-lamb-leads-by-34-points-new-ad-in-az-05-republican-primary/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 90,
+        "anchor_quote": "Trump",
+        "anchor_start": 85,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "TRUMP",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 105,
+        "anchor_quote": "Mark Lamb",
+        "anchor_start": 96,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6AZ05265",
+        "kind": "person",
+        "name": "LAMB, MARK",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Mark’s hunted down cartels, ran down traffickers, and locked up illegals,\nThat’s why Trump gave Mark Lamb his complete and total endorsement.\nTrump says Mark strongly supports our incredible law enforcement, will work hard to keep our secure border secure and stop migrant crime,",
+    "text_hash": "76b9cfb540dcd5e065720c656398546d4839f79d9110b6eccccac940720311e2",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-51751-0",
+    "alignment": "R",
+    "block_id": "cfg-51751-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-51751-0-claims-001-003",
+    "claim_text": "Trump says Mark strongly supports our incredible law enforcement.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 279,
+        "kind": "publisher_ad_copy",
+        "start": 142,
+        "text": "Trump says Mark strongly supports our incredible law enforcement, will work hard to keep our secure border secure and stop migrant crime,",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-lamb-leads-by-34-points-new-ad-in-az-05-republican-primary/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 147,
+        "anchor_quote": "Trump",
+        "anchor_start": 142,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "TRUMP",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 157,
+        "anchor_quote": "Mark",
+        "anchor_start": 153,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6AZ05265",
+        "kind": "person",
+        "name": "LAMB, MARK",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 206,
+        "anchor_quote": "law enforcement",
+        "anchor_start": 191,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "law enforcement",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Mark’s hunted down cartels, ran down traffickers, and locked up illegals,\nThat’s why Trump gave Mark Lamb his complete and total endorsement.\nTrump says Mark strongly supports our incredible law enforcement, will work hard to keep our secure border secure and stop migrant crime,",
+    "text_hash": "76b9cfb540dcd5e065720c656398546d4839f79d9110b6eccccac940720311e2",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-51751-0",
+    "alignment": "R",
+    "block_id": "cfg-51751-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-51751-0-claims-001-004",
+    "claim_text": "Mark will work hard to keep our secure border secure.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 279,
+        "kind": "publisher_ad_copy",
+        "start": 142,
+        "text": "Trump says Mark strongly supports our incredible law enforcement, will work hard to keep our secure border secure and stop migrant crime,",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-lamb-leads-by-34-points-new-ad-in-az-05-republican-primary/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 157,
+        "anchor_quote": "Mark",
+        "anchor_start": 153,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6AZ05265",
+        "kind": "person",
+        "name": "LAMB, MARK",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 248,
+        "anchor_quote": "border",
+        "anchor_start": 242,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "border",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Mark’s hunted down cartels, ran down traffickers, and locked up illegals,\nThat’s why Trump gave Mark Lamb his complete and total endorsement.\nTrump says Mark strongly supports our incredible law enforcement, will work hard to keep our secure border secure and stop migrant crime,",
+    "text_hash": "76b9cfb540dcd5e065720c656398546d4839f79d9110b6eccccac940720311e2",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-51751-0",
+    "alignment": "R",
+    "block_id": "cfg-51751-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-51751-0-claims-001-005",
+    "claim_text": "Mark will stop migrant crime.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 279,
+        "kind": "publisher_ad_copy",
+        "start": 142,
+        "text": "Trump says Mark strongly supports our incredible law enforcement, will work hard to keep our secure border secure and stop migrant crime,",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-lamb-leads-by-34-points-new-ad-in-az-05-republican-primary/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 157,
+        "anchor_quote": "Mark",
+        "anchor_start": 153,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6AZ05265",
+        "kind": "person",
+        "name": "LAMB, MARK",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 278,
+        "anchor_quote": "migrant crime",
+        "anchor_start": 265,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "migrant crime",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mark’s hunted down cartels, ran down traffickers, and locked up illegals,\nThat’s why Trump gave Mark Lamb his complete and total endorsement.\nTrump says Mark strongly supports our incredible law enforcement, will work hard to keep our secure border secure and stop migrant crime,",
+    "text_hash": "76b9cfb540dcd5e065720c656398546d4839f79d9110b6eccccac940720311e2",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-51751-0",
+    "alignment": "R",
+    "block_id": "cfg-51751-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-51751-0-claims-001-006",
+    "claim_text": "Trump says Mark will work hard to keep our secure border secure and stop migrant crime.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 279,
+        "kind": "publisher_ad_copy",
+        "start": 142,
+        "text": "Trump says Mark strongly supports our incredible law enforcement, will work hard to keep our secure border secure and stop migrant crime,",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-lamb-leads-by-34-points-new-ad-in-az-05-republican-primary/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 147,
+        "anchor_quote": "Trump",
+        "anchor_start": 142,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "TRUMP",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 157,
+        "anchor_quote": "Mark",
+        "anchor_start": 153,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6AZ05265",
+        "kind": "person",
+        "name": "LAMB, MARK",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Mark’s hunted down cartels, ran down traffickers, and locked up illegals,\nThat’s why Trump gave Mark Lamb his complete and total endorsement.\nTrump says Mark strongly supports our incredible law enforcement, will work hard to keep our secure border secure and stop migrant crime,",
+    "text_hash": "76b9cfb540dcd5e065720c656398546d4839f79d9110b6eccccac940720311e2",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-52126-0",
+    "alignment": "R",
+    "block_id": "cfg-52126-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-52126-0-claims-001-001",
+    "claim_text": "Dan Osborn is so liberal he’d give Social Security benefits to illegal aliens.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 86,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "NARRATOR: Dan Osborn, so liberal he’d give Social Security benefits to illegal aliens.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-win-it-back-pac-launches-2-million-ne-sen-campaign/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 20,
+        "anchor_quote": "Dan Osborn",
+        "anchor_start": 10,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "OSBORN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_party",
+        "target_party": "other",
+        "tone": "negative"
+      }
+    ],
+    "text": "NARRATOR: Dan Osborn, so liberal he’d give Social Security benefits to illegal aliens.\nNARRATOR: Here’s Dan in his own words.\nDAN OSBORN: They’re our friends and neighbors. Let’s give ‘em a damn Social Security card already. It’s kinda crazy.\nNARRATOR: It’s crazy alright. And there’s more.\nDAN OSBORN: There definitely needs to be a clear path to citizenship too.\nNARRATOR: Amnesty and citizenship, Social Security, and a Senator who puts them first.\nIllegals win big if Dan Osborn is elected.\nWe lose if he wins.",
+    "text_hash": "546f6b1035970fec37446ee5f28dcc4d5212142f214bf4fa5de0fc7a42fe057c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-52126-0",
+    "alignment": "R",
+    "block_id": "cfg-52126-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-52126-0-claims-001-002",
+    "claim_text": "Dan Osborn said, “They’re our friends and neighbors.”",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 242,
+        "kind": "publisher_transcript",
+        "start": 126,
+        "text": "DAN OSBORN: They’re our friends and neighbors. Let’s give ‘em a damn Social Security card already. It’s kinda crazy.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-win-it-back-pac-launches-2-million-ne-sen-campaign/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 142,
+        "anchor_quote": "They",
+        "anchor_start": 138,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "DAN OSBORN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_party",
+        "target_party": "other",
+        "tone": "positive"
+      }
+    ],
+    "text": "NARRATOR: Dan Osborn, so liberal he’d give Social Security benefits to illegal aliens.\nNARRATOR: Here’s Dan in his own words.\nDAN OSBORN: They’re our friends and neighbors. Let’s give ‘em a damn Social Security card already. It’s kinda crazy.\nNARRATOR: It’s crazy alright. And there’s more.\nDAN OSBORN: There definitely needs to be a clear path to citizenship too.\nNARRATOR: Amnesty and citizenship, Social Security, and a Senator who puts them first.\nIllegals win big if Dan Osborn is elected.\nWe lose if he wins.",
+    "text_hash": "546f6b1035970fec37446ee5f28dcc4d5212142f214bf4fa5de0fc7a42fe057c",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-52126-0",
+    "alignment": "R",
+    "block_id": "cfg-52126-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-52126-0-claims-001-003",
+    "claim_text": "Dan Osborn said, “Let’s give ‘em a damn Social Security card already.”",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 242,
+        "kind": "publisher_transcript",
+        "start": 126,
+        "text": "DAN OSBORN: They’re our friends and neighbors. Let’s give ‘em a damn Social Security card already. It’s kinda crazy.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-win-it-back-pac-launches-2-million-ne-sen-campaign/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 187,
+        "anchor_quote": "Let’s give ‘em",
+        "anchor_start": 173,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "DAN OSBORN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_party",
+        "target_party": "other",
+        "tone": "neutral"
+      }
+    ],
+    "text": "NARRATOR: Dan Osborn, so liberal he’d give Social Security benefits to illegal aliens.\nNARRATOR: Here’s Dan in his own words.\nDAN OSBORN: They’re our friends and neighbors. Let’s give ‘em a damn Social Security card already. It’s kinda crazy.\nNARRATOR: It’s crazy alright. And there’s more.\nDAN OSBORN: There definitely needs to be a clear path to citizenship too.\nNARRATOR: Amnesty and citizenship, Social Security, and a Senator who puts them first.\nIllegals win big if Dan Osborn is elected.\nWe lose if he wins.",
+    "text_hash": "546f6b1035970fec37446ee5f28dcc4d5212142f214bf4fa5de0fc7a42fe057c",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-52126-0",
+    "alignment": "R",
+    "block_id": "cfg-52126-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-52126-0-claims-001-004",
+    "claim_text": "Dan Osborn said, “It’s kinda crazy.”",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 242,
+        "kind": "publisher_transcript",
+        "start": 126,
+        "text": "DAN OSBORN: They’re our friends and neighbors. Let’s give ‘em a damn Social Security card already. It’s kinda crazy.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-win-it-back-pac-launches-2-million-ne-sen-campaign/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 227,
+        "anchor_quote": "It",
+        "anchor_start": 225,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "DAN OSBORN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_party",
+        "target_party": "other",
+        "tone": "neutral"
+      }
+    ],
+    "text": "NARRATOR: Dan Osborn, so liberal he’d give Social Security benefits to illegal aliens.\nNARRATOR: Here’s Dan in his own words.\nDAN OSBORN: They’re our friends and neighbors. Let’s give ‘em a damn Social Security card already. It’s kinda crazy.\nNARRATOR: It’s crazy alright. And there’s more.\nDAN OSBORN: There definitely needs to be a clear path to citizenship too.\nNARRATOR: Amnesty and citizenship, Social Security, and a Senator who puts them first.\nIllegals win big if Dan Osborn is elected.\nWe lose if he wins.",
+    "text_hash": "546f6b1035970fec37446ee5f28dcc4d5212142f214bf4fa5de0fc7a42fe057c",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-52126-0",
+    "alignment": "R",
+    "block_id": "cfg-52126-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-52126-0-claims-001-005",
+    "claim_text": "Dan Osborn said, “There definitely needs to be a clear path to citizenship too.”",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 364,
+        "kind": "publisher_transcript",
+        "start": 291,
+        "text": "DAN OSBORN: There definitely needs to be a clear path to citizenship too.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-win-it-back-pac-launches-2-million-ne-sen-campaign/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 308,
+        "anchor_quote": "There",
+        "anchor_start": 303,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "DAN OSBORN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_party",
+        "target_party": "other",
+        "tone": "neutral"
+      }
+    ],
+    "text": "NARRATOR: Dan Osborn, so liberal he’d give Social Security benefits to illegal aliens.\nNARRATOR: Here’s Dan in his own words.\nDAN OSBORN: They’re our friends and neighbors. Let’s give ‘em a damn Social Security card already. It’s kinda crazy.\nNARRATOR: It’s crazy alright. And there’s more.\nDAN OSBORN: There definitely needs to be a clear path to citizenship too.\nNARRATOR: Amnesty and citizenship, Social Security, and a Senator who puts them first.\nIllegals win big if Dan Osborn is elected.\nWe lose if he wins.",
+    "text_hash": "546f6b1035970fec37446ee5f28dcc4d5212142f214bf4fa5de0fc7a42fe057c",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-52126-0",
+    "alignment": "R",
+    "block_id": "cfg-52126-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-52126-0-claims-001-006",
+    "claim_text": "Amnesty and citizenship, Social Security, and a Senator who puts them first.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 451,
+        "kind": "publisher_transcript",
+        "start": 365,
+        "text": "NARRATOR: Amnesty and citizenship, Social Security, and a Senator who puts them first.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-win-it-back-pac-launches-2-million-ne-sen-campaign/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 430,
+        "anchor_quote": "a Senator",
+        "anchor_start": 421,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "DAN OSBORN",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_party",
+        "target_party": "other",
+        "tone": "negative"
+      }
+    ],
+    "text": "NARRATOR: Dan Osborn, so liberal he’d give Social Security benefits to illegal aliens.\nNARRATOR: Here’s Dan in his own words.\nDAN OSBORN: They’re our friends and neighbors. Let’s give ‘em a damn Social Security card already. It’s kinda crazy.\nNARRATOR: It’s crazy alright. And there’s more.\nDAN OSBORN: There definitely needs to be a clear path to citizenship too.\nNARRATOR: Amnesty and citizenship, Social Security, and a Senator who puts them first.\nIllegals win big if Dan Osborn is elected.\nWe lose if he wins.",
+    "text_hash": "546f6b1035970fec37446ee5f28dcc4d5212142f214bf4fa5de0fc7a42fe057c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-52126-0",
+    "alignment": "R",
+    "block_id": "cfg-52126-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-52126-0-claims-001-007",
+    "claim_text": "If Dan Osborn is elected, illegals win big.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 494,
+        "kind": "publisher_transcript",
+        "start": 452,
+        "text": "Illegals win big if Dan Osborn is elected.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-win-it-back-pac-launches-2-million-ne-sen-campaign/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 482,
+        "anchor_quote": "Dan Osborn",
+        "anchor_start": 472,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "DAN OSBORN",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_party",
+        "target_party": "other",
+        "tone": "negative"
+      }
+    ],
+    "text": "NARRATOR: Dan Osborn, so liberal he’d give Social Security benefits to illegal aliens.\nNARRATOR: Here’s Dan in his own words.\nDAN OSBORN: They’re our friends and neighbors. Let’s give ‘em a damn Social Security card already. It’s kinda crazy.\nNARRATOR: It’s crazy alright. And there’s more.\nDAN OSBORN: There definitely needs to be a clear path to citizenship too.\nNARRATOR: Amnesty and citizenship, Social Security, and a Senator who puts them first.\nIllegals win big if Dan Osborn is elected.\nWe lose if he wins.",
+    "text_hash": "546f6b1035970fec37446ee5f28dcc4d5212142f214bf4fa5de0fc7a42fe057c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "cfg-52126-0",
+    "alignment": "R",
+    "block_id": "cfg-52126-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "cfg-52126-0-claims-001-008",
+    "claim_text": "If he wins, we lose.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 514,
+        "kind": "publisher_transcript",
+        "start": 495,
+        "text": "We lose if he wins.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.clubforgrowth.org/icymi-win-it-back-pac-launches-2-million-ne-sen-campaign/",
+    "sponsor": "Win It Back PAC",
+    "targets": [
+      {
+        "anchor_end": 508,
+        "anchor_quote": "he",
+        "anchor_start": 506,
+        "anchor_unit_id": 8,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "DAN OSBORN",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_party",
+        "target_party": "other",
+        "tone": "negative"
+      }
+    ],
+    "text": "NARRATOR: Dan Osborn, so liberal he’d give Social Security benefits to illegal aliens.\nNARRATOR: Here’s Dan in his own words.\nDAN OSBORN: They’re our friends and neighbors. Let’s give ‘em a damn Social Security card already. It’s kinda crazy.\nNARRATOR: It’s crazy alright. And there’s more.\nDAN OSBORN: There definitely needs to be a clear path to citizenship too.\nNARRATOR: Amnesty and citizenship, Social Security, and a Senator who puts them first.\nIllegals win big if Dan Osborn is elected.\nWe lose if he wins.",
+    "text_hash": "546f6b1035970fec37446ee5f28dcc4d5212142f214bf4fa5de0fc7a42fe057c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
+    "alignment": "R",
+    "block_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001-001",
+    "claim_text": "I became an American citizen 20 years ago.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 44,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "\"20 years ago, I became an American citizen.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://juanciscomani.com/news/74h3c38hwem76j2si8b0xorkjy89ga",
+    "sponsor": "Ciscomani for Congress",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "I",
+        "anchor_start": 15,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2AZ02360",
+        "kind": "person",
+        "name": "Juan Ciscomani",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "\"20 years ago, I became an American citizen.\nWe immigrated to the United States and started with nothing.\nDad drove a bus. Mom cleaned houses. Five of us in a two bedroom apartment.\nAnd like you, we worked hard pursuing the American Dream.\nSo when I saw the corruption in Washington – politicians getting rich off their positions – I stood up to both parties to cosponsor legislation to ban insider trading.\nBecause it’s time to end the greed.\nI’m Juan Ciscomani, and I approve this message because I don't work for Washington. I work for you.\"",
+    "text_hash": "b202dc7256bd95affb72852aa0bc87d36f82dd487c70b3b57443eeddfd9547d5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
+    "alignment": "R",
+    "block_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001-002",
+    "claim_text": "We immigrated to the United States and started with nothing.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 105,
+        "kind": "publisher_transcript",
+        "start": 45,
+        "text": "We immigrated to the United States and started with nothing.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://juanciscomani.com/news/74h3c38hwem76j2si8b0xorkjy89ga",
+    "sponsor": "Ciscomani for Congress",
+    "targets": [
+      {
+        "anchor_end": 47,
+        "anchor_quote": "We",
+        "anchor_start": 45,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Juan Ciscomani and family",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "\"20 years ago, I became an American citizen.\nWe immigrated to the United States and started with nothing.\nDad drove a bus. Mom cleaned houses. Five of us in a two bedroom apartment.\nAnd like you, we worked hard pursuing the American Dream.\nSo when I saw the corruption in Washington – politicians getting rich off their positions – I stood up to both parties to cosponsor legislation to ban insider trading.\nBecause it’s time to end the greed.\nI’m Juan Ciscomani, and I approve this message because I don't work for Washington. I work for you.\"",
+    "text_hash": "b202dc7256bd95affb72852aa0bc87d36f82dd487c70b3b57443eeddfd9547d5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
+    "alignment": "R",
+    "block_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001-003",
+    "claim_text": "Dad drove a bus.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 181,
+        "kind": "publisher_transcript",
+        "start": 106,
+        "text": "Dad drove a bus. Mom cleaned houses. Five of us in a two bedroom apartment.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://juanciscomani.com/news/74h3c38hwem76j2si8b0xorkjy89ga",
+    "sponsor": "Ciscomani for Congress",
+    "targets": [
+      {
+        "anchor_end": 109,
+        "anchor_quote": "Dad",
+        "anchor_start": 106,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Juan Ciscomani's father",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "\"20 years ago, I became an American citizen.\nWe immigrated to the United States and started with nothing.\nDad drove a bus. Mom cleaned houses. Five of us in a two bedroom apartment.\nAnd like you, we worked hard pursuing the American Dream.\nSo when I saw the corruption in Washington – politicians getting rich off their positions – I stood up to both parties to cosponsor legislation to ban insider trading.\nBecause it’s time to end the greed.\nI’m Juan Ciscomani, and I approve this message because I don't work for Washington. I work for you.\"",
+    "text_hash": "b202dc7256bd95affb72852aa0bc87d36f82dd487c70b3b57443eeddfd9547d5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
+    "alignment": "R",
+    "block_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001-004",
+    "claim_text": "Mom cleaned houses.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 181,
+        "kind": "publisher_transcript",
+        "start": 106,
+        "text": "Dad drove a bus. Mom cleaned houses. Five of us in a two bedroom apartment.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://juanciscomani.com/news/74h3c38hwem76j2si8b0xorkjy89ga",
+    "sponsor": "Ciscomani for Congress",
+    "targets": [
+      {
+        "anchor_end": 126,
+        "anchor_quote": "Mom",
+        "anchor_start": 123,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Juan Ciscomani's mother",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "\"20 years ago, I became an American citizen.\nWe immigrated to the United States and started with nothing.\nDad drove a bus. Mom cleaned houses. Five of us in a two bedroom apartment.\nAnd like you, we worked hard pursuing the American Dream.\nSo when I saw the corruption in Washington – politicians getting rich off their positions – I stood up to both parties to cosponsor legislation to ban insider trading.\nBecause it’s time to end the greed.\nI’m Juan Ciscomani, and I approve this message because I don't work for Washington. I work for you.\"",
+    "text_hash": "b202dc7256bd95affb72852aa0bc87d36f82dd487c70b3b57443eeddfd9547d5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
+    "alignment": "R",
+    "block_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001-005",
+    "claim_text": "Five of us lived in a two bedroom apartment.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 181,
+        "kind": "publisher_transcript",
+        "start": 106,
+        "text": "Dad drove a bus. Mom cleaned houses. Five of us in a two bedroom apartment.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://juanciscomani.com/news/74h3c38hwem76j2si8b0xorkjy89ga",
+    "sponsor": "Ciscomani for Congress",
+    "targets": [
+      {
+        "anchor_end": 153,
+        "anchor_quote": "Five of us",
+        "anchor_start": 143,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Juan Ciscomani and family",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "\"20 years ago, I became an American citizen.\nWe immigrated to the United States and started with nothing.\nDad drove a bus. Mom cleaned houses. Five of us in a two bedroom apartment.\nAnd like you, we worked hard pursuing the American Dream.\nSo when I saw the corruption in Washington – politicians getting rich off their positions – I stood up to both parties to cosponsor legislation to ban insider trading.\nBecause it’s time to end the greed.\nI’m Juan Ciscomani, and I approve this message because I don't work for Washington. I work for you.\"",
+    "text_hash": "b202dc7256bd95affb72852aa0bc87d36f82dd487c70b3b57443eeddfd9547d5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
+    "alignment": "R",
+    "block_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001-006",
+    "claim_text": "Like you, we worked hard pursuing the American Dream.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 239,
+        "kind": "publisher_transcript",
+        "start": 182,
+        "text": "And like you, we worked hard pursuing the American Dream.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://juanciscomani.com/news/74h3c38hwem76j2si8b0xorkjy89ga",
+    "sponsor": "Ciscomani for Congress",
+    "targets": [
+      {
+        "anchor_end": 198,
+        "anchor_quote": "we",
+        "anchor_start": 196,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Juan Ciscomani and family",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "\"20 years ago, I became an American citizen.\nWe immigrated to the United States and started with nothing.\nDad drove a bus. Mom cleaned houses. Five of us in a two bedroom apartment.\nAnd like you, we worked hard pursuing the American Dream.\nSo when I saw the corruption in Washington – politicians getting rich off their positions – I stood up to both parties to cosponsor legislation to ban insider trading.\nBecause it’s time to end the greed.\nI’m Juan Ciscomani, and I approve this message because I don't work for Washington. I work for you.\"",
+    "text_hash": "b202dc7256bd95affb72852aa0bc87d36f82dd487c70b3b57443eeddfd9547d5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
+    "alignment": "R",
+    "block_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001-007",
+    "claim_text": "When I saw the corruption in Washington, I stood up to both parties to cosponsor legislation to ban insider trading.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 407,
+        "kind": "publisher_transcript",
+        "start": 240,
+        "text": "So when I saw the corruption in Washington – politicians getting rich off their positions – I stood up to both parties to cosponsor legislation to ban insider trading.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://juanciscomani.com/news/74h3c38hwem76j2si8b0xorkjy89ga",
+    "sponsor": "Ciscomani for Congress",
+    "targets": [
+      {
+        "anchor_end": 249,
+        "anchor_quote": "I",
+        "anchor_start": 248,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H2AZ02360",
+        "kind": "person",
+        "name": "Juan Ciscomani",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "\"20 years ago, I became an American citizen.\nWe immigrated to the United States and started with nothing.\nDad drove a bus. Mom cleaned houses. Five of us in a two bedroom apartment.\nAnd like you, we worked hard pursuing the American Dream.\nSo when I saw the corruption in Washington – politicians getting rich off their positions – I stood up to both parties to cosponsor legislation to ban insider trading.\nBecause it’s time to end the greed.\nI’m Juan Ciscomani, and I approve this message because I don't work for Washington. I work for you.\"",
+    "text_hash": "b202dc7256bd95affb72852aa0bc87d36f82dd487c70b3b57443eeddfd9547d5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
+    "alignment": "R",
+    "block_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001-008",
+    "claim_text": "It’s time to end the greed.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 443,
+        "kind": "publisher_transcript",
+        "start": 408,
+        "text": "Because it’s time to end the greed.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://juanciscomani.com/news/74h3c38hwem76j2si8b0xorkjy89ga",
+    "sponsor": "Ciscomani for Congress",
+    "targets": [
+      {
+        "anchor_end": 442,
+        "anchor_quote": "the greed",
+        "anchor_start": 433,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Greed",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "\"20 years ago, I became an American citizen.\nWe immigrated to the United States and started with nothing.\nDad drove a bus. Mom cleaned houses. Five of us in a two bedroom apartment.\nAnd like you, we worked hard pursuing the American Dream.\nSo when I saw the corruption in Washington – politicians getting rich off their positions – I stood up to both parties to cosponsor legislation to ban insider trading.\nBecause it’s time to end the greed.\nI’m Juan Ciscomani, and I approve this message because I don't work for Washington. I work for you.\"",
+    "text_hash": "b202dc7256bd95affb72852aa0bc87d36f82dd487c70b3b57443eeddfd9547d5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
+    "alignment": "R",
+    "block_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001-009",
+    "claim_text": "I don't work for Washington. I work for you.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 544,
+        "kind": "publisher_transcript",
+        "start": 444,
+        "text": "I’m Juan Ciscomani, and I approve this message because I don't work for Washington. I work for you.\"",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://juanciscomani.com/news/74h3c38hwem76j2si8b0xorkjy89ga",
+    "sponsor": "Ciscomani for Congress",
+    "targets": [
+      {
+        "anchor_end": 526,
+        "anchor_quote": "Washington",
+        "anchor_start": 516,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Washington",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 445,
+        "anchor_quote": "I",
+        "anchor_start": 444,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:H2AZ02360",
+        "kind": "person",
+        "name": "Juan Ciscomani",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 542,
+        "anchor_quote": "you",
+        "anchor_start": 539,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "You",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "\"20 years ago, I became an American citizen.\nWe immigrated to the United States and started with nothing.\nDad drove a bus. Mom cleaned houses. Five of us in a two bedroom apartment.\nAnd like you, we worked hard pursuing the American Dream.\nSo when I saw the corruption in Washington – politicians getting rich off their positions – I stood up to both parties to cosponsor legislation to ban insider trading.\nBecause it’s time to end the greed.\nI’m Juan Ciscomani, and I approve this message because I don't work for Washington. I work for you.\"",
+    "text_hash": "b202dc7256bd95affb72852aa0bc87d36f82dd487c70b3b57443eeddfd9547d5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
+    "alignment": "R",
+    "block_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001-010",
+    "claim_text": "Juan Ciscomani approves this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 544,
+        "kind": "publisher_transcript",
+        "start": 444,
+        "text": "I’m Juan Ciscomani, and I approve this message because I don't work for Washington. I work for you.\"",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://juanciscomani.com/news/74h3c38hwem76j2si8b0xorkjy89ga",
+    "sponsor": "Ciscomani for Congress",
+    "targets": [
+      {
+        "anchor_end": 462,
+        "anchor_quote": "Juan Ciscomani",
+        "anchor_start": 448,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:H2AZ02360",
+        "kind": "person",
+        "name": "Juan Ciscomani",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "\"20 years ago, I became an American citizen.\nWe immigrated to the United States and started with nothing.\nDad drove a bus. Mom cleaned houses. Five of us in a two bedroom apartment.\nAnd like you, we worked hard pursuing the American Dream.\nSo when I saw the corruption in Washington – politicians getting rich off their positions – I stood up to both parties to cosponsor legislation to ban insider trading.\nBecause it’s time to end the greed.\nI’m Juan Ciscomani, and I approve this message because I don't work for Washington. I work for you.\"",
+    "text_hash": "b202dc7256bd95affb72852aa0bc87d36f82dd487c70b3b57443eeddfd9547d5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-001",
+    "claim_text": "These establishment politicians are all the same. They never deliver.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 1016,
+        "kind": "publisher_transcript",
+        "start": 947,
+        "text": "These establishment politicians are all the same. They never deliver.",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 978,
+        "anchor_quote": "establishment politicians",
+        "anchor_start": 953,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "establishment politicians",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-002",
+    "claim_text": "I’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 1113,
+        "kind": "publisher_transcript",
+        "start": 1017,
+        "text": "I’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 1033,
+        "anchor_quote": "I’m Mike Collins",
+        "anchor_start": 1017,
+        "anchor_unit_id": 11,
+        "entity_id": "candidate:S6GA00390",
+        "kind": "person",
+        "name": "Mike Collins",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 1094,
+        "anchor_quote": "John Ossoff",
+        "anchor_start": 1083,
+        "anchor_unit_id": 11,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "John Ossoff",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-003",
+    "claim_text": "He started a small business with his wife and turned it into a national trucking company.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 89,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "He started a small business with his wife and turned it into a national trucking company.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 2,
+        "anchor_quote": "He",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6GA00390",
+        "kind": "person",
+        "name": "He",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-004",
+    "claim_text": "Unlike Washington politicians, Mike Collins knows how to deliver.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "publisher_transcript",
+        "start": 90,
+        "text": "Unlike Washington politicians, Mike Collins knows how to deliver.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 133,
+        "anchor_quote": "Mike Collins",
+        "anchor_start": 121,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6GA00390",
+        "kind": "person",
+        "name": "Mike Collins",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 119,
+        "anchor_quote": "Washington politicians",
+        "anchor_start": 97,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Washington politicians",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-005",
+    "claim_text": "Collins authored two laws signed by two different presidents.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 292,
+        "kind": "publisher_transcript",
+        "start": 156,
+        "text": "One of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 238,
+        "anchor_quote": "Collins",
+        "anchor_start": 231,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6GA00390",
+        "kind": "person",
+        "name": "Collins",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-006",
+    "claim_text": "A bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 388,
+        "kind": "publisher_transcript",
+        "start": 293,
+        "text": "A bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 325,
+        "anchor_quote": "Biden",
+        "anchor_start": 320,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Biden",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-007",
+    "claim_text": "Collins worked with Trump and wrote the law to make sure that it never ever happens again.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 523,
+        "kind": "publisher_transcript",
+        "start": 389,
+        "text": "And when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 440,
+        "anchor_quote": "Collins",
+        "anchor_start": 433,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6GA00390",
+        "kind": "person",
+        "name": "Collins",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 458,
+        "anchor_quote": "Trump",
+        "anchor_start": 453,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-008",
+    "claim_text": "Hardworking, bipartisan, results, everything liberal John Ossoff isn’t.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 595,
+        "kind": "publisher_transcript",
+        "start": 524,
+        "text": "Hardworking, bipartisan, results, everything liberal John Ossoff isn’t.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 588,
+        "anchor_quote": "John Ossoff",
+        "anchor_start": 577,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "John Ossoff",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-009",
+    "claim_text": "Ossoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.",
+    "claim_types": [
+      "factual_assertion",
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 777,
+        "kind": "publisher_transcript",
+        "start": 596,
+        "text": "Ossoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 602,
+        "anchor_quote": "Ossoff",
+        "anchor_start": 596,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Ossoff",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 619,
+        "anchor_quote": "Biden",
+        "anchor_start": 614,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Biden",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-010",
+    "claim_text": "California crazies gave him three times as much money as the entire state of Georgia.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 873,
+        "kind": "publisher_transcript",
+        "start": 778,
+        "text": "No wonder California crazies gave him three times as much money as the entire state of Georgia.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 815,
+        "anchor_quote": "him",
+        "anchor_start": 812,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "him",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-011",
+    "claim_text": "Liberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 946,
+        "kind": "publisher_transcript",
+        "start": 874,
+        "text": "Liberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 893,
+        "anchor_quote": "John Ossoff",
+        "anchor_start": 882,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "John Ossoff",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-012",
+    "claim_text": "He’s weak.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 946,
+        "kind": "publisher_transcript",
+        "start": 874,
+        "text": "Liberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 897,
+        "anchor_quote": "He",
+        "anchor_start": 895,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "He",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-013",
+    "claim_text": "He’s woke.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 946,
+        "kind": "publisher_transcript",
+        "start": 874,
+        "text": "Liberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 897,
+        "anchor_quote": "He",
+        "anchor_start": 895,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "He",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-014",
+    "claim_text": "He’s the worst of Washington.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 946,
+        "kind": "publisher_transcript",
+        "start": 874,
+        "text": "Liberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 897,
+        "anchor_quote": "He",
+        "anchor_start": 895,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "He",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-015",
+    "claim_text": "John Ossoff is liberal.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 946,
+        "kind": "publisher_transcript",
+        "start": 874,
+        "text": "Liberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 893,
+        "anchor_quote": "John Ossoff",
+        "anchor_start": 882,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "John Ossoff",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-016",
+    "claim_text": "John Ossoff is weak.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 946,
+        "kind": "publisher_transcript",
+        "start": 874,
+        "text": "Liberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 897,
+        "anchor_quote": "He",
+        "anchor_start": 895,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "John Ossoff",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-017",
+    "claim_text": "John Ossoff is woke.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 946,
+        "kind": "publisher_transcript",
+        "start": 874,
+        "text": "Liberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 897,
+        "anchor_quote": "He",
+        "anchor_start": 895,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "John Ossoff",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-018",
+    "claim_text": "John Ossoff is the worst of Washington.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 946,
+        "kind": "publisher_transcript",
+        "start": 874,
+        "text": "Liberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 897,
+        "anchor_quote": "He",
+        "anchor_start": 895,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "John Ossoff",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-019",
+    "claim_text": "It’s time for John Ossoff to get a real job.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 1113,
+        "kind": "publisher_transcript",
+        "start": 1017,
+        "text": "I’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 1094,
+        "anchor_quote": "John Ossoff",
+        "anchor_start": 1083,
+        "anchor_unit_id": 11,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "John Ossoff",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-020",
+    "claim_text": "Mike Collins approves this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 1113,
+        "kind": "publisher_transcript",
+        "start": 1017,
+        "text": "I’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 1033,
+        "anchor_quote": "I’m Mike Collins",
+        "anchor_start": 1017,
+        "anchor_unit_id": 11,
+        "entity_id": "candidate:S6GA00390",
+        "kind": "person",
+        "name": "Mike Collins",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-021",
+    "claim_text": "Mike Collins is approving this message because it’s time for John Ossoff to get a real job.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 1113,
+        "kind": "publisher_transcript",
+        "start": 1017,
+        "text": "I’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 1033,
+        "anchor_quote": "I’m Mike Collins",
+        "anchor_start": 1017,
+        "anchor_unit_id": 11,
+        "entity_id": "candidate:S6GA00390",
+        "kind": "person",
+        "name": "Mike Collins",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 1094,
+        "anchor_quote": "John Ossoff",
+        "anchor_start": 1083,
+        "anchor_unit_id": 11,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "John Ossoff",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "collins-3604-0",
+    "alignment": "R",
+    "block_id": "collins-3604-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "collins-3604-0-claims-001-022",
+    "claim_text": "Mike Collins is Mike Collins.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 1113,
+        "kind": "publisher_transcript",
+        "start": 1017,
+        "text": "I’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://mikecollinsga.com/press/mike-collins-for-u-s-senate-launches-new-ad-delivers/",
+    "sponsor": "Mike Collins for Senate",
+    "targets": [
+      {
+        "anchor_end": 1033,
+        "anchor_quote": "I’m Mike Collins",
+        "anchor_start": 1017,
+        "anchor_unit_id": 11,
+        "entity_id": "candidate:S6GA00390",
+        "kind": "person",
+        "name": "Mike Collins",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "He started a small business with his wife and turned it into a national trucking company.\nUnlike Washington politicians, Mike Collins knows how to deliver.\nOne of the only members of Congress who has ever actually passed anything, Collins authored two laws signed by two different presidents.\nA bipartisan law signed by Biden to help law enforcement fight deadly drugs in our communities.\nAnd when Laken Riley was tragically killed, Collins worked with Trump and wrote the law to make sure that it never ever happens again.\nHardworking, bipartisan, results, everything liberal John Ossoff isn’t.\nOssoff voted with Biden 98% of the time, the deciding vote for Biden’s inflation disaster, higher taxes on gas and groceries, crazy far-left bills to let men compete in girl sports.\nNo wonder California crazies gave him three times as much money as the entire state of Georgia.\nLiberal John Ossoff. He’s weak. He’s woke. He’s the worst of Washington.\nThese establishment politicians are all the same. They never deliver.\nI’m Mike Collins and I approve this message because it’s time for John Ossoff to get a real job.\n>> Mike Collins, the Georgia workhorse who delivers.",
+    "text_hash": "a909827afb073ccd4b6dbe2165996788f51a37011d6fda0480db3d4ab67e8cdd",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
