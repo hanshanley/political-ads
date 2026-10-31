@@ -10,6 +10,82 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Expanded House discovery and exact Pennsylvania verification
+
+Pennsylvania research commit
+**51b036bace86fdb04701869370f79c9bdfc0368c** preserves actual concurrent
+parent **783f0e612697c418fc9fa55c0445466c9432901b**. Its exact remote
+36 research paths, Hans Hanley author/committer identities and absent
+attribution trailers were independently verified. The original watcher
+completed successfully, and exact CI **41245629082** independently
+matches that head SHA, completed/success status and **all 13 successful
+steps**. Validation completed October 31, 2026, at **22:03:11 UTC**.
+The **1,914 acquired / 1,875 English** snapshot below is unchanged.
+
+Fresh discovery now uses a cached official FEC lead pool of **875
+Republican House candidate/race entries**, selecting uncovered races or
+candidate IDs absent from existing Republican candidate mentions.
+Require office H, party REP, election year 2026, active candidate status,
+a principal committee and a numeric district. Entries without a district
+are excluded rather than assigned one. This pool establishes registration,
+**not nomination, advertising or a recoverable creative**.
+
+The Washington Reporter Kiggans report supplies an explicitly attributed
+24-word news-anchor clip during an ad, but its retained body supplies no
+individual original-media association. Sharing links, a fact-check and
+the report itself do not fill that gap; no record is admitted. Cached
+official **H2VA02064 / C00776120**, REP, House, VA-02, 2026, and the
+principal P/H/REP verify candidate identity, not ad acquisition.
+
+An ad-hoc request loop inadvertently requested the previously paused
+13News Now and Daily Signal providers, both returning 403. No ad was
+acquired and neither provider was retried or bypassed. The loop had
+failed to inherit documented holds. Subsequent requests use the existing
+guarded helper, with these hosts, WAVY, RealClearPolitics, WisPolitics
+and the standing denied original/caption providers checked before any
+request. The actual AJC Millsap page returns 200 but deliberately
+scrambles substantial article passages. Those passages are not
+reconstructed or admitted; AJC and subdomains are now permission-paused,
+without alternate-copy retrieval. **34 network-free mocked checks**
+cover paused hosts/subdomains, lookalikes and transport/HTTP failures;
+paused-host cases make zero requests. Check all documented holds before
+using a new publisher; the helper is not a license to retry another
+previously denied provider.
+
+Independent primary discovery identifies **Ryan Millsap**, exact
+**H6GA10191 / C00941229**, REP, House, GA-10, 2026, principal
+**MILLSAP FOR CONGRESS**, P/H/REP. His campaign homepage explicitly
+embeds its own public **Millsap-Intro.mp4**, SHA-256
+`0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60`.
+Existing local offline speech/frame extraction recovers **77.05 seconds**
+and eighteen speech segments; closing frames name **MILLSAP FOR
+CONGRESS** and its payer, and speech includes candidate approval.
+Retain the uncorrected automatic extraction: names, RINOs and negation
+can be misrecognized. No semantic judgment is assigned. Homepage
+creation metadata, the March upload path and currently undated media
+association **do not verify this individual creative's publication
+date**; video encoding supplies no creation date. It remains an
+**undated discovery lead**, not an added acquired/English ad or a
+change to any percentage. The Breitbart launch report quotes a radio
+interview, not an ad transcript; its SoundCloud interview is not
+substituted for this creative.
+
+The new **millsap-native-intro-0b12f80de0f5ffc0** review is persisted in
+`data/campaign-native-reviews.json`, and the existing native collector
+reproduces its **needs_date** entry in `outputs/media-backlog.json`.
+Native reviews increase **32 to 33**, backlog entries **352 to 353**;
+all preceding review/lead objects are unchanged. An isolated replay
+uses exactly two cached public bodies, empty response metadata and the
+existing local speech/OCR artifacts, with network connections forbidden.
+Acquired media/corpus, analysis, figure manifest and release-review
+bytes are unchanged. All **46 existing native campaign tests** pass.
+The linked May 4 campaign rebuttal and May 15 response contain neither
+an ad transcript nor this original-media association; their dates cannot
+be assigned to the homepage creative.
+
+Both editions remain unpublished. Scheduled Republican House discovery
+continues; no duplicate schedule, host restoration or publication occurred.
+
 ## No Going Back PAC PA-10 separately linked narrator quotation recovery
 
 The distinct **ngb-perry-breitbart-20261027-0** record adds **18 literal

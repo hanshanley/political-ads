@@ -10954,6 +10954,4241 @@
       "source": "herrera-native",
       "state": "needs_date",
       "video_url": "https://brandonherreraforcongress.nyc3.cdn.digitaloceanspaces.com/website/ads/Herrera_Ad26_March%201.mp4"
+    },
+    {
+      "alignment": "R",
+      "date_basis": "release_and_delivery_dates_unverified",
+      "date_uncertainty": "Homepage creation metadata and the March upload path do not establish the individual video's publication date; the original supplies no encoding creation timestamp. Retain only as an undated recovered lead until date evidence is independently established.",
+      "id": "millsap-native-intro-0b12f80de0f5ffc0",
+      "native_evidence": {
+        "ad_evidence": "Actual 77.05-second finished campaign advertisement. Visually inspected original closing frame at 73 seconds states PAID FOR BY MILLSAP FOR CONGRESS and names the campaign website; speech includes candidate approval. Exact cached official FEC H6GA10191 / C00941229 identifies MILLSAP, RYAN, REP, House, GA-10, 2026, with principal MILLSAP FOR CONGRESS, P/H/REP. Eligibility/payer review is not semantic or transcription certification. No publication date, paid delivery or election phase is claimed.",
+        "candidate_id": "H6GA10191",
+        "date_uncertainty": "Homepage creation metadata and the March upload path do not establish the individual video's publication date; the original supplies no encoding creation timestamp. Retain only as an undated recovered lead until date evidence is independently established.",
+        "extraction_caveat": "Preserve uncorrected local speech and frame OCR, including rhinos, lives and uncertain negation around hormone therapy. Do not infer policy endorsement or assign a semantic label from these errors.",
+        "id": "millsap-native-intro-0b12f80de0f5ffc0",
+        "media_sha256": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+        "media_url": "https://ryanmillsapforcongress.com/wp-content/uploads/2026/03/Millsap-Intro.mp4",
+        "post_url": "https://ryanmillsapforcongress.com/",
+        "publisher_html_sha256": "23a83ba1f3bff4593d591d75d10622ad3f679e788f18e040be0d7cb56b0418ce",
+        "publisher_url": "https://ryanmillsapforcongress.com/",
+        "quality_flags": [
+          "automatic_speech_misrecognizes_rinos_and_may_omit_negation"
+        ],
+        "required_quotes": [
+          "I approve this message.",
+          "PAID FOR BY MILLSAP FOR CONGRESS"
+        ],
+        "reviewed": "2026-10-31",
+        "source": "millsap-campaign",
+        "speech_engine": {
+          "engine": "faster-whisper 1.2.1",
+          "has_audio": true,
+          "language": "en",
+          "language_probability": 0.9951519966125488,
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "settings": {
+            "beam_size": 5,
+            "condition_on_previous_text": false,
+            "temperature": 0,
+            "vad_filter": true,
+            "word_timestamps": true
+          },
+          "word_alignment_error": null
+        },
+        "sponsor": "Millsap for Congress",
+        "title": "Millsap Intro campaign video",
+        "title_basis": "Descriptive label from the publisher-linked original filename and actual finished video"
+      },
+      "quality_flags": [
+        "local_speech_and_frame_ocr_not_manually_verified",
+        "automatic_speech_may_misrecognize_names_or_negation",
+        "release_and_delivery_dates_unverified",
+        "automatic_speech_misrecognizes_rinos_and_may_omit_negation"
+      ],
+      "recovered_segments": [
+        {
+          "avg_logprob": -0.17931730069897392,
+          "end_seconds": 4.39,
+          "excluded_low_confidence_ocr_observations": [
+            {
+              "bounds": [
+                0.2906976745157517,
+                0.34351851811174805,
+                0.059593021869659424,
+                0.028703703703703676
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 0.9592916666666667,
+              "text": "- ted"
+            },
+            {
+              "bounds": [
+                0.21075581291937542,
+                0.3385012931470063,
+                0.11482558250427247,
+                0.03372092953434702
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 2.961291666666667,
+              "text": "doad tolfig le"
+            },
+            {
+              "bounds": [
+                0.4092894644031371,
+                0.30872037671325947,
+                0.08391105333964027,
+                0.055376144691749896
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 10.969291666666667,
+              "text": "AHAT ANBNCA ERAT ASAME"
+            },
+            {
+              "bounds": [
+                0.44255047828518435,
+                0.31924271678030447,
+                0.05179560979207354,
+                0.04086791850902416
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 11.970291666666666,
+              "text": "PA BHEAT AAN"
+            },
+            {
+              "bounds": [
+                0.4520348837324815,
+                0.31007752000788413,
+                0.014534883697827683,
+                0.020671833886040547
+              ],
+              "confidence": 0.5,
+              "seconds": 11.970291666666666,
+              "text": "014"
+            },
+            {
+              "bounds": [
+                0.7107558140833581,
+                0.4677002583453038,
+                0.024709302186965987,
+                0.02325581444634328
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 11.970291666666666,
+              "text": "1A6"
+            },
+            {
+              "bounds": [
+                0.5087209298406751,
+                0.5452196383263941,
+                0.04360465208689368,
+                0.005167958471510081
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 32.99129166666667,
+              "text": "OCK0.2023"
+            },
+            {
+              "bounds": [
+                0.15406976511414286,
+                0.338501291557735,
+                0.17732558250427247,
+                0.03100775259512445
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 42.959583333333335,
+              "text": "Sdbr Rsdued d tsfig So"
+            },
+            {
+              "bounds": [
+                0.14618206939174042,
+                0.7544621776649989,
+                0.07243342399597169,
+                0.09628810882568362
+              ],
+              "confidence": 0.5,
+              "seconds": 48.965583333333335,
+              "text": "SAI"
+            },
+            {
+              "bounds": [
+                0.7578639591182127,
+                0.5622918226680768,
+                0.03618597984313965,
+                0.10885573493109801
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 65.98258333333334,
+              "text": "ITES"
+            },
+            {
+              "bounds": [
+                0.5203488327557988,
+                0.35142118814688217,
+                0.37063954671223953,
+                0.03100775259512445
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 74.99158333333334,
+              "text": "KNNLASKHINARAREHI"
+            }
+          ],
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.06021460145711899,
+          "speech_detection": {
+            "has_audio": true,
+            "language": "en",
+            "language_probability": 0.9951519966125488,
+            "settings": {
+              "beam_size": 5,
+              "condition_on_previous_text": false,
+              "temperature": 0,
+              "vad_filter": true,
+              "word_timestamps": true
+            },
+            "word_alignment_error": null
+          },
+          "speech_duplicate_ocr_observations": [
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.3995383029219513,
+                    0.31950144835310834,
+                    0.09952119986216229,
+                    0.08983127452709061
+                  ],
+                  "confidence": 1,
+                  "seconds": 10.969291666666667,
+                  "text": "TRUMP"
+                },
+                {
+                  "bounds": [
+                    0.4016757861630174,
+                    0.3166134654429231,
+                    0.10029069582621258,
+                    0.09074327680799699
+                  ],
+                  "confidence": 1,
+                  "seconds": 11.970291666666666,
+                  "text": "TRUMP"
+                }
+              ],
+              "text": "TRUMP"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.1247896559945262,
+                    0.28988290183719856,
+                    0.29693231582641605,
+                    0.09982075867829499
+                  ],
+                  "confidence": 1,
+                  "seconds": 14.973291666666666,
+                  "text": "RYAN MILLSAP"
+                },
+                {
+                  "bounds": [
+                    0.1219300372187897,
+                    0.29283572510008526,
+                    0.29974457422892253,
+                    0.09391511281331377
+                  ],
+                  "confidence": 1,
+                  "seconds": 15.974291666666666,
+                  "text": "RYAN MILLSAP"
+                },
+                {
+                  "bounds": [
+                    0.11918604259028467,
+                    0.294444443248597,
+                    0.3008721033732097,
+                    0.09074074074074079
+                  ],
+                  "confidence": 1,
+                  "seconds": 16.975291666666667,
+                  "text": "RYAN MILLSAP"
+                },
+                {
+                  "bounds": [
+                    0.11746185308747545,
+                    0.28412869961440557,
+                    0.30141350428263347,
+                    0.10357722882871279
+                  ],
+                  "confidence": 1,
+                  "seconds": 17.97629166666667,
+                  "text": "RYAN MILLSAP"
+                },
+                {
+                  "bounds": [
+                    0.12063952899238188,
+                    0.2916666675868631,
+                    0.30087210337320963,
+                    0.09351851851851856
+                  ],
+                  "confidence": 1,
+                  "seconds": 61.97858333333333,
+                  "text": "RYAN MILLSAP"
+                },
+                {
+                  "bounds": [
+                    0.1131916523813929,
+                    0.27738515563993715,
+                    0.3085004170735677,
+                    0.10931237538655603
+                  ],
+                  "confidence": 1,
+                  "seconds": 62.97958333333333,
+                  "text": "RYAN MILLSAP"
+                },
+                {
+                  "bounds": [
+                    0.10730495567891225,
+                    0.2816236073668368,
+                    0.31300636927286785,
+                    0.10341945577550815
+                  ],
+                  "confidence": 1,
+                  "seconds": 63.980583333333335,
+                  "text": "RYAN MILLSAP"
+                },
+                {
+                  "bounds": [
+                    0.10014801538949722,
+                    0.27766245820095037,
+                    0.3185993194580078,
+                    0.10617379082573786
+                  ],
+                  "confidence": 1,
+                  "seconds": 64.98158333333333,
+                  "text": "RYAN MILLSAP"
+                },
+                {
+                  "bounds": [
+                    0.09272682837916348,
+                    0.27596343378943655,
+                    0.32472076416015627,
+                    0.10698786135073057
+                  ],
+                  "confidence": 1,
+                  "seconds": 65.98258333333334,
+                  "text": "RYAN MILLSAP"
+                },
+                {
+                  "bounds": [
+                    0.08707133510236552,
+                    0.27505086026200853,
+                    0.3273108164469401,
+                    0.10364504920111761
+                  ],
+                  "confidence": 1,
+                  "seconds": 66.98358333333333,
+                  "text": "RYAN MILLSAP"
+                },
+                {
+                  "bounds": [
+                    0.0796807623160254,
+                    0.26859056484811406,
+                    0.3333710352579753,
+                    0.10881370261863432
+                  ],
+                  "confidence": 1,
+                  "seconds": 67.98458333333333,
+                  "text": "RYAN MILLSAP"
+                }
+              ],
+              "text": "RYAN MILLSAP"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.6627906970230576,
+                    0.702842378151799,
+                    0.05232558250427244,
+                    0.05684754406964343
+                  ],
+                  "confidence": 1,
+                  "seconds": 55.97258333333333,
+                  "text": "A!"
+                }
+              ],
+              "text": "A!"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    -0.00012466011192118208,
+                    0.6472405337009257,
+                    0.23280746142069497,
+                    0.07244399741843899
+                  ],
+                  "confidence": 1,
+                  "seconds": 56.97358333333333,
+                  "text": "COUNTRY"
+                }
+              ],
+              "text": "COUNTRY"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.5997251527660856,
+                    0.5827115556687231,
+                    0.2047163645426432,
+                    0.07902133376510057
+                  ],
+                  "confidence": 1,
+                  "seconds": 72.98958333333333,
+                  "text": "MILLSAP"
+                },
+                {
+                  "bounds": [
+                    0.6057909919485638,
+                    0.5859368521008885,
+                    0.1997552235921224,
+                    0.0710203523989077
+                  ],
+                  "confidence": 1,
+                  "seconds": 73.99058333333333,
+                  "text": "MILLSAP"
+                },
+                {
+                  "bounds": [
+                    0.6072528658990333,
+                    0.5833948944384046,
+                    0.20264542897542315,
+                    0.07093630896674263
+                  ],
+                  "confidence": 1,
+                  "seconds": 74.99158333333334,
+                  "text": "MILLSAP"
+                },
+                {
+                  "bounds": [
+                    0.6101221470137378,
+                    0.5779399443643041,
+                    0.20417431195576985,
+                    0.0740942707768193
+                  ],
+                  "confidence": 1,
+                  "seconds": 75.99258333333333,
+                  "text": "MILLSAP"
+                }
+              ],
+              "text": "MILLSAP"
+            }
+          ],
+          "start_seconds": 0.43,
+          "text": "When Antifa attacked my business, I had a choice to make.",
+          "video_sampling": {
+            "duration_seconds": 77.05466666666666,
+            "sample_interval_seconds": 1
+          },
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 0.91,
+              "probability": 0.6872059106826782,
+              "start_seconds": 0.43,
+              "text": " When"
+            },
+            {
+              "end_seconds": 1.47,
+              "probability": 0.9395832419395447,
+              "start_seconds": 0.91,
+              "text": " Antifa"
+            },
+            {
+              "end_seconds": 1.99,
+              "probability": 0.9959617257118225,
+              "start_seconds": 1.47,
+              "text": " attacked"
+            },
+            {
+              "end_seconds": 2.25,
+              "probability": 0.9959588646888733,
+              "start_seconds": 1.99,
+              "text": " my"
+            },
+            {
+              "end_seconds": 2.67,
+              "probability": 0.9979923963546753,
+              "start_seconds": 2.25,
+              "text": " business,"
+            },
+            {
+              "end_seconds": 3.43,
+              "probability": 0.9915972352027893,
+              "start_seconds": 3.05,
+              "text": " I"
+            },
+            {
+              "end_seconds": 3.57,
+              "probability": 0.9990166425704956,
+              "start_seconds": 3.43,
+              "text": " had"
+            },
+            {
+              "end_seconds": 3.67,
+              "probability": 0.9958576560020447,
+              "start_seconds": 3.57,
+              "text": " a"
+            },
+            {
+              "end_seconds": 3.91,
+              "probability": 0.9996298551559448,
+              "start_seconds": 3.67,
+              "text": " choice"
+            },
+            {
+              "end_seconds": 4.11,
+              "probability": 0.9984496831893921,
+              "start_seconds": 3.91,
+              "text": " to"
+            },
+            {
+              "end_seconds": 4.39,
+              "probability": 0.9940139651298523,
+              "start_seconds": 4.11,
+              "text": " make."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.17931730069897392,
+          "end_seconds": 7.61,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.06021460145711899,
+          "start_seconds": 4.93,
+          "text": "I could sit back and let the woke left win,",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 5.11,
+              "probability": 0.9750702381134033,
+              "start_seconds": 4.93,
+              "text": " I"
+            },
+            {
+              "end_seconds": 5.21,
+              "probability": 0.9576173424720764,
+              "start_seconds": 5.11,
+              "text": " could"
+            },
+            {
+              "end_seconds": 5.45,
+              "probability": 0.9934258460998535,
+              "start_seconds": 5.21,
+              "text": " sit"
+            },
+            {
+              "end_seconds": 5.79,
+              "probability": 0.9991625547409058,
+              "start_seconds": 5.45,
+              "text": " back"
+            },
+            {
+              "end_seconds": 6.47,
+              "probability": 0.7571282982826233,
+              "start_seconds": 5.79,
+              "text": " and"
+            },
+            {
+              "end_seconds": 6.61,
+              "probability": 0.9981322884559631,
+              "start_seconds": 6.47,
+              "text": " let"
+            },
+            {
+              "end_seconds": 6.77,
+              "probability": 0.9953157901763916,
+              "start_seconds": 6.61,
+              "text": " the"
+            },
+            {
+              "end_seconds": 6.97,
+              "probability": 0.623855471611023,
+              "start_seconds": 6.77,
+              "text": " woke"
+            },
+            {
+              "end_seconds": 7.23,
+              "probability": 0.3075932562351227,
+              "start_seconds": 6.97,
+              "text": " left"
+            },
+            {
+              "end_seconds": 7.61,
+              "probability": 0.9743152856826782,
+              "start_seconds": 7.23,
+              "text": " win,"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.17931730069897392,
+          "end_seconds": 9.87,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.06021460145711899,
+          "start_seconds": 8.37,
+          "text": "or step up and fight back.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 8.55,
+              "probability": 0.7055872678756714,
+              "start_seconds": 8.37,
+              "text": " or"
+            },
+            {
+              "end_seconds": 8.91,
+              "probability": 0.990221381187439,
+              "start_seconds": 8.55,
+              "text": " step"
+            },
+            {
+              "end_seconds": 9.21,
+              "probability": 0.9971413016319275,
+              "start_seconds": 8.91,
+              "text": " up"
+            },
+            {
+              "end_seconds": 9.33,
+              "probability": 0.9865754246711731,
+              "start_seconds": 9.21,
+              "text": " and"
+            },
+            {
+              "end_seconds": 9.57,
+              "probability": 0.9985052347183228,
+              "start_seconds": 9.33,
+              "text": " fight"
+            },
+            {
+              "end_seconds": 9.87,
+              "probability": 0.9986276626586914,
+              "start_seconds": 9.57,
+              "text": " back."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.17931730069897392,
+          "end_seconds": 13.05,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.06021460145711899,
+          "start_seconds": 10.47,
+          "text": "Just like President Trump, I chose to fight.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 10.77,
+              "probability": 0.9926438927650452,
+              "start_seconds": 10.47,
+              "text": " Just"
+            },
+            {
+              "end_seconds": 10.95,
+              "probability": 0.9991745352745056,
+              "start_seconds": 10.77,
+              "text": " like"
+            },
+            {
+              "end_seconds": 11.37,
+              "probability": 0.9245327115058899,
+              "start_seconds": 10.95,
+              "text": " President"
+            },
+            {
+              "end_seconds": 11.69,
+              "probability": 0.9829056262969971,
+              "start_seconds": 11.37,
+              "text": " Trump,"
+            },
+            {
+              "end_seconds": 12.39,
+              "probability": 0.9983443021774292,
+              "start_seconds": 12.29,
+              "text": " I"
+            },
+            {
+              "end_seconds": 12.67,
+              "probability": 0.9870348572731018,
+              "start_seconds": 12.39,
+              "text": " chose"
+            },
+            {
+              "end_seconds": 12.81,
+              "probability": 0.9986875653266907,
+              "start_seconds": 12.67,
+              "text": " to"
+            },
+            {
+              "end_seconds": 13.05,
+              "probability": 0.9987103939056396,
+              "start_seconds": 12.81,
+              "text": " fight."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.17931730069897392,
+          "end_seconds": 17.55,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.06021460145711899,
+          "start_seconds": 13.67,
+          "text": "I'm Ryan Millsap, political outsider, and Maga Warrior.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 14.15,
+              "probability": 0.9948900938034058,
+              "start_seconds": 13.67,
+              "text": " I'm"
+            },
+            {
+              "end_seconds": 14.29,
+              "probability": 0.9933465719223022,
+              "start_seconds": 14.15,
+              "text": " Ryan"
+            },
+            {
+              "end_seconds": 14.79,
+              "probability": 0.7194209694862366,
+              "start_seconds": 14.29,
+              "text": " Millsap,"
+            },
+            {
+              "end_seconds": 15.55,
+              "probability": 0.852989912033081,
+              "start_seconds": 15.35,
+              "text": " political"
+            },
+            {
+              "end_seconds": 16.15,
+              "probability": 0.9900220036506653,
+              "start_seconds": 15.55,
+              "text": " outsider,"
+            },
+            {
+              "end_seconds": 16.83,
+              "probability": 0.9948614239692688,
+              "start_seconds": 16.75,
+              "text": " and"
+            },
+            {
+              "end_seconds": 17.23,
+              "probability": 0.45423829555511475,
+              "start_seconds": 16.83,
+              "text": " Maga"
+            },
+            {
+              "end_seconds": 17.55,
+              "probability": 0.7430338263511658,
+              "start_seconds": 17.23,
+              "text": " Warrior."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.17931730069897392,
+          "end_seconds": 21.55,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.06021460145711899,
+          "start_seconds": 18.37,
+          "text": "I'm not a career politician, and I don't want to be one.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 18.63,
+              "probability": 0.9922362864017487,
+              "start_seconds": 18.37,
+              "text": " I'm"
+            },
+            {
+              "end_seconds": 18.81,
+              "probability": 0.998184859752655,
+              "start_seconds": 18.63,
+              "text": " not"
+            },
+            {
+              "end_seconds": 18.95,
+              "probability": 0.9990887641906738,
+              "start_seconds": 18.81,
+              "text": " a"
+            },
+            {
+              "end_seconds": 19.15,
+              "probability": 0.9639321565628052,
+              "start_seconds": 18.95,
+              "text": " career"
+            },
+            {
+              "end_seconds": 19.79,
+              "probability": 0.9981574416160583,
+              "start_seconds": 19.15,
+              "text": " politician,"
+            },
+            {
+              "end_seconds": 20.53,
+              "probability": 0.93352210521698,
+              "start_seconds": 20.47,
+              "text": " and"
+            },
+            {
+              "end_seconds": 20.63,
+              "probability": 0.9649298787117004,
+              "start_seconds": 20.53,
+              "text": " I"
+            },
+            {
+              "end_seconds": 20.91,
+              "probability": 0.9988099634647369,
+              "start_seconds": 20.63,
+              "text": " don't"
+            },
+            {
+              "end_seconds": 21.05,
+              "probability": 0.8202411532402039,
+              "start_seconds": 20.91,
+              "text": " want"
+            },
+            {
+              "end_seconds": 21.13,
+              "probability": 0.9928736686706543,
+              "start_seconds": 21.05,
+              "text": " to"
+            },
+            {
+              "end_seconds": 21.31,
+              "probability": 0.997086226940155,
+              "start_seconds": 21.13,
+              "text": " be"
+            },
+            {
+              "end_seconds": 21.55,
+              "probability": 0.9951593279838562,
+              "start_seconds": 21.31,
+              "text": " one."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.17931730069897392,
+          "end_seconds": 24.05,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.06021460145711899,
+          "start_seconds": 22.05,
+          "text": "I'm running to smash the status quo.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 22.27,
+              "probability": 0.9965089559555054,
+              "start_seconds": 22.05,
+              "text": " I'm"
+            },
+            {
+              "end_seconds": 22.51,
+              "probability": 0.996217668056488,
+              "start_seconds": 22.27,
+              "text": " running"
+            },
+            {
+              "end_seconds": 22.71,
+              "probability": 0.9976158142089844,
+              "start_seconds": 22.51,
+              "text": " to"
+            },
+            {
+              "end_seconds": 23.09,
+              "probability": 0.9757000803947449,
+              "start_seconds": 22.71,
+              "text": " smash"
+            },
+            {
+              "end_seconds": 23.43,
+              "probability": 0.9932053089141846,
+              "start_seconds": 23.09,
+              "text": " the"
+            },
+            {
+              "end_seconds": 23.71,
+              "probability": 0.9867246747016907,
+              "start_seconds": 23.43,
+              "text": " status"
+            },
+            {
+              "end_seconds": 24.05,
+              "probability": 0.999715268611908,
+              "start_seconds": 23.71,
+              "text": " quo."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.17931730069897392,
+          "end_seconds": 28.19,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.06021460145711899,
+          "start_seconds": 24.63,
+          "text": "And fight back against the radical left and rhinos.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 24.71,
+              "probability": 0.6115280985832214,
+              "start_seconds": 24.63,
+              "text": " And"
+            },
+            {
+              "end_seconds": 25.01,
+              "probability": 0.9822376370429993,
+              "start_seconds": 24.71,
+              "text": " fight"
+            },
+            {
+              "end_seconds": 25.43,
+              "probability": 0.9964404702186584,
+              "start_seconds": 25.01,
+              "text": " back"
+            },
+            {
+              "end_seconds": 26.09,
+              "probability": 0.9432066082954407,
+              "start_seconds": 25.43,
+              "text": " against"
+            },
+            {
+              "end_seconds": 26.29,
+              "probability": 0.988382875919342,
+              "start_seconds": 26.09,
+              "text": " the"
+            },
+            {
+              "end_seconds": 26.71,
+              "probability": 0.9958595633506775,
+              "start_seconds": 26.29,
+              "text": " radical"
+            },
+            {
+              "end_seconds": 27.07,
+              "probability": 0.6779574751853943,
+              "start_seconds": 26.71,
+              "text": " left"
+            },
+            {
+              "end_seconds": 27.63,
+              "probability": 0.5269477963447571,
+              "start_seconds": 27.07,
+              "text": " and"
+            },
+            {
+              "end_seconds": 28.19,
+              "probability": 0.5718696862459183,
+              "start_seconds": 27.63,
+              "text": " rhinos."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.23138459351582405,
+          "end_seconds": 35.99,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.21673206984996796,
+          "start_seconds": 28.19,
+          "text": "I bought into their lives too, but COVID and antifa made me realize they sold us out.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 29.35,
+              "probability": 0.38541117310523987,
+              "start_seconds": 28.19,
+              "text": " I"
+            },
+            {
+              "end_seconds": 29.57,
+              "probability": 0.8198004364967346,
+              "start_seconds": 29.35,
+              "text": " bought"
+            },
+            {
+              "end_seconds": 29.91,
+              "probability": 0.9685537219047546,
+              "start_seconds": 29.57,
+              "text": " into"
+            },
+            {
+              "end_seconds": 30.11,
+              "probability": 0.988831102848053,
+              "start_seconds": 29.91,
+              "text": " their"
+            },
+            {
+              "end_seconds": 30.45,
+              "probability": 0.6197753548622131,
+              "start_seconds": 30.11,
+              "text": " lives"
+            },
+            {
+              "end_seconds": 30.77,
+              "probability": 0.48087936639785767,
+              "start_seconds": 30.45,
+              "text": " too,"
+            },
+            {
+              "end_seconds": 31.55,
+              "probability": 0.7249462008476257,
+              "start_seconds": 31.23,
+              "text": " but"
+            },
+            {
+              "end_seconds": 32.03,
+              "probability": 0.8152804374694824,
+              "start_seconds": 31.55,
+              "text": " COVID"
+            },
+            {
+              "end_seconds": 32.65,
+              "probability": 0.9304324984550476,
+              "start_seconds": 32.03,
+              "text": " and"
+            },
+            {
+              "end_seconds": 33.19,
+              "probability": 0.5611799210309982,
+              "start_seconds": 32.65,
+              "text": " antifa"
+            },
+            {
+              "end_seconds": 33.45,
+              "probability": 0.9927127957344055,
+              "start_seconds": 33.19,
+              "text": " made"
+            },
+            {
+              "end_seconds": 33.59,
+              "probability": 0.9987371563911438,
+              "start_seconds": 33.45,
+              "text": " me"
+            },
+            {
+              "end_seconds": 34.11,
+              "probability": 0.9830462336540222,
+              "start_seconds": 33.59,
+              "text": " realize"
+            },
+            {
+              "end_seconds": 35.23,
+              "probability": 0.6649380922317505,
+              "start_seconds": 34.11,
+              "text": " they"
+            },
+            {
+              "end_seconds": 35.53,
+              "probability": 0.9906558394432068,
+              "start_seconds": 35.23,
+              "text": " sold"
+            },
+            {
+              "end_seconds": 35.81,
+              "probability": 0.9877524375915527,
+              "start_seconds": 35.53,
+              "text": " us"
+            },
+            {
+              "end_seconds": 35.99,
+              "probability": 0.9681752324104309,
+              "start_seconds": 35.81,
+              "text": " out."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.23138459351582405,
+          "end_seconds": 40.37,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.21673206984996796,
+          "start_seconds": 36.57,
+          "text": "With backroom deals and weak leadership, we had to pay the price.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 36.83,
+              "probability": 0.9870243072509766,
+              "start_seconds": 36.57,
+              "text": " With"
+            },
+            {
+              "end_seconds": 37.29,
+              "probability": 0.6698241233825684,
+              "start_seconds": 36.83,
+              "text": " backroom"
+            },
+            {
+              "end_seconds": 37.69,
+              "probability": 0.9933887720108032,
+              "start_seconds": 37.29,
+              "text": " deals"
+            },
+            {
+              "end_seconds": 37.89,
+              "probability": 0.7749951481819153,
+              "start_seconds": 37.69,
+              "text": " and"
+            },
+            {
+              "end_seconds": 38.09,
+              "probability": 0.8747374415397644,
+              "start_seconds": 37.89,
+              "text": " weak"
+            },
+            {
+              "end_seconds": 38.61,
+              "probability": 0.9932125806808472,
+              "start_seconds": 38.09,
+              "text": " leadership,"
+            },
+            {
+              "end_seconds": 39.35,
+              "probability": 0.9945019483566284,
+              "start_seconds": 39.11,
+              "text": " we"
+            },
+            {
+              "end_seconds": 39.59,
+              "probability": 0.9963493347167969,
+              "start_seconds": 39.35,
+              "text": " had"
+            },
+            {
+              "end_seconds": 39.73,
+              "probability": 0.998648464679718,
+              "start_seconds": 39.59,
+              "text": " to"
+            },
+            {
+              "end_seconds": 39.91,
+              "probability": 0.9993353486061096,
+              "start_seconds": 39.73,
+              "text": " pay"
+            },
+            {
+              "end_seconds": 40.03,
+              "probability": 0.9965115189552307,
+              "start_seconds": 39.91,
+              "text": " the"
+            },
+            {
+              "end_seconds": 40.37,
+              "probability": 0.9958516359329224,
+              "start_seconds": 40.03,
+              "text": " price."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.23138459351582405,
+          "end_seconds": 43.71,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.21673206984996796,
+          "start_seconds": 41.17,
+          "text": "Bad trade deals destroyed American jobs.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 41.47,
+              "probability": 0.16268731653690338,
+              "start_seconds": 41.17,
+              "text": " Bad"
+            },
+            {
+              "end_seconds": 41.79,
+              "probability": 0.9289154410362244,
+              "start_seconds": 41.47,
+              "text": " trade"
+            },
+            {
+              "end_seconds": 42.13,
+              "probability": 0.9980621933937073,
+              "start_seconds": 41.79,
+              "text": " deals"
+            },
+            {
+              "end_seconds": 42.71,
+              "probability": 0.954504668712616,
+              "start_seconds": 42.13,
+              "text": " destroyed"
+            },
+            {
+              "end_seconds": 43.19,
+              "probability": 0.9812096953392029,
+              "start_seconds": 42.71,
+              "text": " American"
+            },
+            {
+              "end_seconds": 43.71,
+              "probability": 0.9696221947669983,
+              "start_seconds": 43.19,
+              "text": " jobs."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.23138459351582405,
+          "end_seconds": 48.95,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.21673206984996796,
+          "start_seconds": 44.27,
+          "text": "Immigration policies allowed our country to be invaded by people who hate us.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 44.65,
+              "probability": 0.9767233431339264,
+              "start_seconds": 44.27,
+              "text": " Immigration"
+            },
+            {
+              "end_seconds": 45.33,
+              "probability": 0.9903194904327393,
+              "start_seconds": 44.65,
+              "text": " policies"
+            },
+            {
+              "end_seconds": 45.63,
+              "probability": 0.9935185313224792,
+              "start_seconds": 45.33,
+              "text": " allowed"
+            },
+            {
+              "end_seconds": 45.87,
+              "probability": 0.9970736503601074,
+              "start_seconds": 45.63,
+              "text": " our"
+            },
+            {
+              "end_seconds": 46.25,
+              "probability": 0.9980002045631409,
+              "start_seconds": 45.87,
+              "text": " country"
+            },
+            {
+              "end_seconds": 46.45,
+              "probability": 0.9984442591667175,
+              "start_seconds": 46.25,
+              "text": " to"
+            },
+            {
+              "end_seconds": 46.59,
+              "probability": 0.9991965889930725,
+              "start_seconds": 46.45,
+              "text": " be"
+            },
+            {
+              "end_seconds": 47.07,
+              "probability": 0.9715209007263184,
+              "start_seconds": 46.59,
+              "text": " invaded"
+            },
+            {
+              "end_seconds": 47.69,
+              "probability": 0.9957796335220337,
+              "start_seconds": 47.07,
+              "text": " by"
+            },
+            {
+              "end_seconds": 48.11,
+              "probability": 0.9979973435401917,
+              "start_seconds": 47.69,
+              "text": " people"
+            },
+            {
+              "end_seconds": 48.37,
+              "probability": 0.9987378716468811,
+              "start_seconds": 48.11,
+              "text": " who"
+            },
+            {
+              "end_seconds": 48.61,
+              "probability": 0.8856250643730164,
+              "start_seconds": 48.37,
+              "text": " hate"
+            },
+            {
+              "end_seconds": 48.95,
+              "probability": 0.9987659454345703,
+              "start_seconds": 48.61,
+              "text": " us."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.23138459351582405,
+          "end_seconds": 51.87,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.21673206984996796,
+          "start_seconds": 49.51,
+          "text": "And the American dream became unattainable.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 49.57,
+              "probability": 0.8278201818466187,
+              "start_seconds": 49.51,
+              "text": " And"
+            },
+            {
+              "end_seconds": 49.65,
+              "probability": 0.9871755242347717,
+              "start_seconds": 49.57,
+              "text": " the"
+            },
+            {
+              "end_seconds": 50.01,
+              "probability": 0.9883356094360352,
+              "start_seconds": 49.65,
+              "text": " American"
+            },
+            {
+              "end_seconds": 50.41,
+              "probability": 0.830020010471344,
+              "start_seconds": 50.01,
+              "text": " dream"
+            },
+            {
+              "end_seconds": 51.15,
+              "probability": 0.9626511931419373,
+              "start_seconds": 50.41,
+              "text": " became"
+            },
+            {
+              "end_seconds": 51.87,
+              "probability": 0.9603036642074585,
+              "start_seconds": 51.15,
+              "text": " unattainable."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.30069149732589723,
+          "end_seconds": 59.11,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.25988107919692993,
+          "start_seconds": 51.87,
+          "text": "Now more than ever, we need fighters who will stand when President Trump and deliver America",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 52.89,
+              "probability": 0.7316749691963196,
+              "start_seconds": 51.87,
+              "text": " Now"
+            },
+            {
+              "end_seconds": 53.21,
+              "probability": 0.8571166396141052,
+              "start_seconds": 52.89,
+              "text": " more"
+            },
+            {
+              "end_seconds": 53.37,
+              "probability": 0.9963080883026123,
+              "start_seconds": 53.21,
+              "text": " than"
+            },
+            {
+              "end_seconds": 53.67,
+              "probability": 0.9957671165466309,
+              "start_seconds": 53.37,
+              "text": " ever,"
+            },
+            {
+              "end_seconds": 54.29,
+              "probability": 0.9853085875511169,
+              "start_seconds": 54.09,
+              "text": " we"
+            },
+            {
+              "end_seconds": 54.47,
+              "probability": 0.990947425365448,
+              "start_seconds": 54.29,
+              "text": " need"
+            },
+            {
+              "end_seconds": 54.97,
+              "probability": 0.9706662893295288,
+              "start_seconds": 54.47,
+              "text": " fighters"
+            },
+            {
+              "end_seconds": 55.67,
+              "probability": 0.7488670349121094,
+              "start_seconds": 54.97,
+              "text": " who"
+            },
+            {
+              "end_seconds": 55.81,
+              "probability": 0.9822991490364075,
+              "start_seconds": 55.67,
+              "text": " will"
+            },
+            {
+              "end_seconds": 56.27,
+              "probability": 0.9935213923454285,
+              "start_seconds": 55.81,
+              "text": " stand"
+            },
+            {
+              "end_seconds": 56.53,
+              "probability": 0.5781142711639404,
+              "start_seconds": 56.27,
+              "text": " when"
+            },
+            {
+              "end_seconds": 56.97,
+              "probability": 0.9404826760292053,
+              "start_seconds": 56.53,
+              "text": " President"
+            },
+            {
+              "end_seconds": 57.37,
+              "probability": 0.9935761094093323,
+              "start_seconds": 56.97,
+              "text": " Trump"
+            },
+            {
+              "end_seconds": 57.95,
+              "probability": 0.8576716184616089,
+              "start_seconds": 57.37,
+              "text": " and"
+            },
+            {
+              "end_seconds": 58.41,
+              "probability": 0.9838038086891174,
+              "start_seconds": 57.95,
+              "text": " deliver"
+            },
+            {
+              "end_seconds": 59.11,
+              "probability": 0.9751709699630737,
+              "start_seconds": 58.41,
+              "text": " America"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.30069149732589723,
+          "end_seconds": 59.95,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.25988107919692993,
+          "start_seconds": 59.11,
+          "text": "first policies.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 59.47,
+              "probability": 0.4582076966762543,
+              "start_seconds": 59.11,
+              "text": " first"
+            },
+            {
+              "end_seconds": 59.95,
+              "probability": 0.8741945028305054,
+              "start_seconds": 59.47,
+              "text": " policies."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.30069149732589723,
+          "end_seconds": 67.87,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.25988107919692993,
+          "start_seconds": 60.59,
+          "text": "That means removing every illegal alien, passing national voter ID laws, and a hormone therapy",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 60.89,
+              "probability": 0.9930650591850281,
+              "start_seconds": 60.59,
+              "text": " That"
+            },
+            {
+              "end_seconds": 61.07,
+              "probability": 0.9984001517295837,
+              "start_seconds": 60.89,
+              "text": " means"
+            },
+            {
+              "end_seconds": 61.55,
+              "probability": 0.9666584730148315,
+              "start_seconds": 61.07,
+              "text": " removing"
+            },
+            {
+              "end_seconds": 62.09,
+              "probability": 0.8301316499710083,
+              "start_seconds": 61.55,
+              "text": " every"
+            },
+            {
+              "end_seconds": 62.49,
+              "probability": 0.9877140522003174,
+              "start_seconds": 62.09,
+              "text": " illegal"
+            },
+            {
+              "end_seconds": 62.91,
+              "probability": 0.9739635586738586,
+              "start_seconds": 62.49,
+              "text": " alien,"
+            },
+            {
+              "end_seconds": 63.91,
+              "probability": 0.9676297903060913,
+              "start_seconds": 63.45,
+              "text": " passing"
+            },
+            {
+              "end_seconds": 64.47,
+              "probability": 0.8217302560806274,
+              "start_seconds": 63.91,
+              "text": " national"
+            },
+            {
+              "end_seconds": 64.91,
+              "probability": 0.9946915507316589,
+              "start_seconds": 64.47,
+              "text": " voter"
+            },
+            {
+              "end_seconds": 65.31,
+              "probability": 0.9395761489868164,
+              "start_seconds": 64.91,
+              "text": " ID"
+            },
+            {
+              "end_seconds": 65.65,
+              "probability": 0.8875336050987244,
+              "start_seconds": 65.31,
+              "text": " laws,"
+            },
+            {
+              "end_seconds": 66.51,
+              "probability": 0.3395521640777588,
+              "start_seconds": 66.25,
+              "text": " and"
+            },
+            {
+              "end_seconds": 66.75,
+              "probability": 0.7389156222343445,
+              "start_seconds": 66.51,
+              "text": " a"
+            },
+            {
+              "end_seconds": 67.39,
+              "probability": 0.39759987592697144,
+              "start_seconds": 66.75,
+              "text": " hormone"
+            },
+            {
+              "end_seconds": 67.87,
+              "probability": 0.9996217489242554,
+              "start_seconds": 67.39,
+              "text": " therapy"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.30069149732589723,
+          "end_seconds": 71.47,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.25988107919692993,
+          "start_seconds": 67.87,
+          "text": "for children, and stopping the communist takeover of our country.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 68.09,
+              "probability": 0.9973884224891663,
+              "start_seconds": 67.87,
+              "text": " for"
+            },
+            {
+              "end_seconds": 68.47,
+              "probability": 0.9756873846054077,
+              "start_seconds": 68.09,
+              "text": " children,"
+            },
+            {
+              "end_seconds": 69.03,
+              "probability": 0.9464951753616333,
+              "start_seconds": 68.97,
+              "text": " and"
+            },
+            {
+              "end_seconds": 69.59,
+              "probability": 0.9950792789459229,
+              "start_seconds": 69.03,
+              "text": " stopping"
+            },
+            {
+              "end_seconds": 69.87,
+              "probability": 0.9250656366348267,
+              "start_seconds": 69.59,
+              "text": " the"
+            },
+            {
+              "end_seconds": 70.19,
+              "probability": 0.8608531951904297,
+              "start_seconds": 69.87,
+              "text": " communist"
+            },
+            {
+              "end_seconds": 70.79,
+              "probability": 0.94014772772789,
+              "start_seconds": 70.19,
+              "text": " takeover"
+            },
+            {
+              "end_seconds": 70.97,
+              "probability": 0.9954314231872559,
+              "start_seconds": 70.79,
+              "text": " of"
+            },
+            {
+              "end_seconds": 71.09,
+              "probability": 0.9988526105880737,
+              "start_seconds": 70.97,
+              "text": " our"
+            },
+            {
+              "end_seconds": 71.47,
+              "probability": 0.9976794123649597,
+              "start_seconds": 71.09,
+              "text": " country."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.30069149732589723,
+          "end_seconds": 76.55,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.25988107919692993,
+          "start_seconds": 72.03,
+          "text": "I'm Ryan Millsap, I'll always fight for you, and I approve this message.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 72.43,
+              "probability": 0.9859857261180878,
+              "start_seconds": 72.03,
+              "text": " I'm"
+            },
+            {
+              "end_seconds": 72.57,
+              "probability": 0.9883726239204407,
+              "start_seconds": 72.43,
+              "text": " Ryan"
+            },
+            {
+              "end_seconds": 73.07,
+              "probability": 0.6905322968959808,
+              "start_seconds": 72.57,
+              "text": " Millsap,"
+            },
+            {
+              "end_seconds": 73.71,
+              "probability": 0.8861908912658691,
+              "start_seconds": 73.65,
+              "text": " I'll"
+            },
+            {
+              "end_seconds": 74.17,
+              "probability": 0.9903738498687744,
+              "start_seconds": 73.71,
+              "text": " always"
+            },
+            {
+              "end_seconds": 74.47,
+              "probability": 0.9976800084114075,
+              "start_seconds": 74.17,
+              "text": " fight"
+            },
+            {
+              "end_seconds": 74.69,
+              "probability": 0.9981885552406311,
+              "start_seconds": 74.47,
+              "text": " for"
+            },
+            {
+              "end_seconds": 75.01,
+              "probability": 0.9970396161079407,
+              "start_seconds": 74.69,
+              "text": " you,"
+            },
+            {
+              "end_seconds": 75.65,
+              "probability": 0.9487353563308716,
+              "start_seconds": 75.35,
+              "text": " and"
+            },
+            {
+              "end_seconds": 75.73,
+              "probability": 0.9959126114845276,
+              "start_seconds": 75.65,
+              "text": " I"
+            },
+            {
+              "end_seconds": 75.97,
+              "probability": 0.17965175211429596,
+              "start_seconds": 75.73,
+              "text": " approve"
+            },
+            {
+              "end_seconds": 76.23,
+              "probability": 0.993152379989624,
+              "start_seconds": 75.97,
+              "text": " this"
+            },
+            {
+              "end_seconds": 76.55,
+              "probability": 0.9933533668518066,
+              "start_seconds": 76.23,
+              "text": " message."
+            }
+          ]
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 0.9592916666666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.4503698596641505,
+                0.6344289555383438,
+                0.09344632625579835,
+                0.05413950460928452
+              ],
+              "confidence": 1,
+              "seconds": 0.9592916666666667,
+              "text": "FOX NEWS"
+            },
+            {
+              "bounds": [
+                0.4505813966246258,
+                0.6379629622783046,
+                0.09302325248718257,
+                0.05195951815004707
+              ],
+              "confidence": 1,
+              "seconds": 1.9602916666666668,
+              "text": "FOX NEWS"
+            },
+            {
+              "bounds": [
+                0.4488957566199426,
+                0.6394522735411083,
+                0.09494104385375973,
+                0.05442878581859445
+              ],
+              "confidence": 1,
+              "seconds": 2.961291666666667,
+              "text": "FOX NEWS"
+            },
+            {
+              "bounds": [
+                0.6526162796584601,
+                0.44702842535127285,
+                0.09883720874786373,
+                0.054263563509340695
+              ],
+              "confidence": 1,
+              "seconds": 32.99129166666667,
+              "text": "FOX NEWS"
+            },
+            {
+              "bounds": [
+                0.6612830919276921,
+                0.4389725741689625,
+                0.0960384686787924,
+                0.054871389600965714
+              ],
+              "confidence": 1,
+              "seconds": 33.99229166666667,
+              "text": "FOX NEWS"
+            },
+            {
+              "bounds": [
+                0.6627906991072426,
+                0.4314814815589654,
+                0.10029069582621253,
+                0.05689061129534689
+              ],
+              "confidence": 1,
+              "seconds": 34.993291666666664,
+              "text": "FOX NEWS"
+            },
+            {
+              "bounds": [
+                0.6684367166336711,
+                0.42278971886021466,
+                0.09917307694753008,
+                0.05622934765285925
+              ],
+              "confidence": 1,
+              "seconds": 35.99429166666667,
+              "text": "FOX NEWS"
+            },
+            {
+              "bounds": [
+                0.45348837395971725,
+                0.6249999996008453,
+                0.08575580914815267,
+                0.047222222222222276
+              ],
+              "confidence": 1,
+              "seconds": 44.96158333333333,
+              "text": "FOX NEWS"
+            },
+            {
+              "bounds": [
+                0.45348837504594025,
+                0.6277777777741218,
+                0.08575580914815267,
+                0.04664082703766992
+              ],
+              "confidence": 1,
+              "seconds": 45.962583333333335,
+              "text": "FOX NEWS"
+            },
+            {
+              "bounds": [
+                0.45183124560935145,
+                0.6293025847050671,
+                0.08907006581624338,
+                0.05147234952008284
+              ],
+              "confidence": 1,
+              "seconds": 46.96358333333333,
+              "text": "FOX NEWS"
+            }
+          ],
+          "image_bounds": [
+            0.4503698596641505,
+            0.6344289555383438,
+            0.09344632625579835,
+            0.05413950460928452
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 0.9592916666666667,
+          "text": "FOX NEWS",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 0.9592916666666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.2185914879653924,
+                0.5031533175871726,
+                0.5524807612101237,
+                0.12324122676142946
+              ],
+              "confidence": 1,
+              "seconds": 0.9592916666666667,
+              "text": "\"Antifa thugs just tried to"
+            },
+            {
+              "bounds": [
+                0.21252143637258278,
+                0.49966296582866554,
+                0.5644949595133464,
+                0.1321081020213941
+              ],
+              "confidence": 1,
+              "seconds": 1.9602916666666668,
+              "text": "\"Antifa thugs just tried to"
+            },
+            {
+              "bounds": [
+                0.2112759370699507,
+                0.49971471212257135,
+                0.5684757232666016,
+                0.1291485680474176
+              ],
+              "confidence": 1,
+              "seconds": 2.961291666666667,
+              "text": "\"Antifa thugs just tried to"
+            }
+          ],
+          "image_bounds": [
+            0.2185914879653924,
+            0.5031533175871726,
+            0.5524807612101237,
+            0.12324122676142946
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 0.9592916666666667,
+          "text": "\"Antifa thugs just tried to",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 0.9592916666666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.2093023371813784,
+                0.4314814808245667,
+                0.6002906799316405,
+                0.11115417833681462
+              ],
+              "confidence": 1,
+              "seconds": 0.9592916666666667,
+              "text": "burn down a police facility\""
+            },
+            {
+              "bounds": [
+                0.20494185413534474,
+                0.43148148044064016,
+                0.6061046600341796,
+                0.11115417833681462
+              ],
+              "confidence": 1,
+              "seconds": 1.9602916666666668,
+              "text": "burn down a police facility\""
+            },
+            {
+              "bounds": [
+                0.20147660340480555,
+                0.41599188696994494,
+                0.6162017822265625,
+                0.12775577969021257
+              ],
+              "confidence": 1,
+              "seconds": 2.961291666666667,
+              "text": "burn down a police facility\""
+            }
+          ],
+          "image_bounds": [
+            0.2093023371813784,
+            0.4314814808245667,
+            0.6002906799316405,
+            0.11115417833681462
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 0.9592916666666667,
+          "text": "burn down a police facility\"",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 10.969291666666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.44186046575148386,
+                0.30749354039758614,
+                0.021802324056625355,
+                0.023255812680279764
+              ],
+              "confidence": 1,
+              "seconds": 10.969291666666667,
+              "text": "2038"
+            }
+          ],
+          "image_bounds": [
+            0.44186046575148386,
+            0.30749354039758614,
+            0.021802324056625355,
+            0.023255812680279764
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 10.969291666666667,
+          "text": "2038",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 10.969291666666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.566799120013109,
+                0.25805406828911426,
+                0.04082036415735879,
+                0.023943542551111308
+              ],
+              "confidence": 1,
+              "seconds": 10.969291666666667,
+              "text": "OU'RE"
+            }
+          ],
+          "image_bounds": [
+            0.566799120013109,
+            0.25805406828911426,
+            0.04082036415735879,
+            0.023943542551111308
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 10.969291666666667,
+          "text": "OU'RE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 10.969291666666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5654069779733436,
+                0.2351421190127837,
+                0.04215116103490191,
+                0.025839793240582498
+              ],
+              "confidence": 1,
+              "seconds": 10.969291666666667,
+              "text": "ARET"
+            }
+          ],
+          "image_bounds": [
+            0.5654069779733436,
+            0.2351421190127837,
+            0.04215116103490191,
+            0.025839793240582498
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 10.969291666666667,
+          "text": "ARET",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 10.969291666666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.8226744194026769,
+                0.8346253230570277,
+                0.04360464811325071,
+                0.01808785509180144
+              ],
+              "confidence": 1,
+              "seconds": 10.969291666666667,
+              "text": "ULTRA"
+            }
+          ],
+          "image_bounds": [
+            0.8226744194026769,
+            0.8346253230570277,
+            0.04360464811325071,
+            0.01808785509180144
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 10.969291666666667,
+          "text": "ULTRA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 12.971291666666668,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                -0.00216059044517695,
+                0.11893288903089472,
+                0.04741514523824056,
+                0.03889936164573393
+              ],
+              "confidence": 1,
+              "seconds": 12.971291666666668,
+              "text": "88022"
+            }
+          ],
+          "image_bounds": [
+            -0.00216059044517695,
+            0.11893288903089472,
+            0.04741514523824056,
+            0.03889936164573393
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 12.971291666666668,
+          "text": "88022",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 12.971291666666668,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.1624999986458334,
+                0.32592592777777774,
+                0.7125,
+                0.37037037037037046
+              ],
+              "confidence": 1,
+              "seconds": 12.971291666666668,
+              "text": "FIGRT"
+            }
+          ],
+          "image_bounds": [
+            0.1624999986458334,
+            0.32592592777777774,
+            0.7125,
+            0.37037037037037046
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 12.971291666666668,
+          "text": "FIGRT",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 15.974291666666666,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                4.395543943639761e-09,
+                0.11886304822915783,
+                0.13372092247009276,
+                0.09302325778537335
+              ],
+              "confidence": 1,
+              "seconds": 15.974291666666666,
+              "text": "ІСДІ"
+            }
+          ],
+          "image_bounds": [
+            4.395543943639761e-09,
+            0.11886304822915783,
+            0.13372092247009276,
+            0.09302325778537335
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 15.974291666666666,
+          "text": "ІСДІ",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 16.975291666666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.14166667070833322,
+                0.19259259288888886,
+                0.4041666666666666,
+                0.07407407407407418
+              ],
+              "confidence": 1,
+              "seconds": 16.975291666666667,
+              "text": "POLITICAL OUTSIDER. MAGA."
+            }
+          ],
+          "image_bounds": [
+            0.14166667070833322,
+            0.19259259288888886,
+            0.4041666666666666,
+            0.07407407407407418
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 16.975291666666667,
+          "text": "POLITICAL OUTSIDER. MAGA.",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 17.97629166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.14166667114583323,
+                0.19259259296296294,
+                0.5375,
+                0.0888888888888889
+              ],
+              "confidence": 1,
+              "seconds": 17.97629166666667,
+              "text": "POLITICAL OUTSIDER. MAGA WARRIOR"
+            }
+          ],
+          "image_bounds": [
+            0.14166667114583323,
+            0.19259259296296294,
+            0.5375,
+            0.0888888888888889
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 17.97629166666667,
+          "text": "POLITICAL OUTSIDER. MAGA WARRIOR",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 26.985291666666665,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.27591284081054906,
+                0.4238357124569746,
+                0.46270920435587565,
+                0.1523285759819879
+              ],
+              "confidence": 1,
+              "seconds": 26.985291666666665,
+              "text": "Stop the Radical Le]"
+            }
+          ],
+          "image_bounds": [
+            0.27591284081054906,
+            0.4238357124569746,
+            0.46270920435587565,
+            0.1523285759819879
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 26.985291666666665,
+          "text": "Stop the Radical Le]",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 27.986291666666666,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.13226744737629262,
+                0.43148148391807073,
+                0.7325581232706705,
+                0.12685185185185188
+              ],
+              "confidence": 1,
+              "seconds": 27.986291666666666,
+              "text": "sSiopthe Rauieaj LefkamiRNES"
+            }
+          ],
+          "image_bounds": [
+            0.13226744737629262,
+            0.43148148391807073,
+            0.7325581232706705,
+            0.12685185185185188
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 27.986291666666666,
+          "text": "sSiopthe Rauieaj LefkamiRNES",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 28.987291666666668,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.1264534882276042,
+                0.4185185156432155,
+                0.7718023300170899,
+                0.13981481481481484
+              ],
+              "confidence": 1,
+              "seconds": 28.987291666666668,
+              "text": "Siop the Radeal Lef amURNOS1"
+            }
+          ],
+          "image_bounds": [
+            0.1264534882276042,
+            0.4185185156432155,
+            0.7718023300170899,
+            0.13981481481481484
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 28.987291666666668,
+          "text": "Siop the Radeal Lef amURNOS1",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 31.990291666666668,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.624999998263889,
+                0.7185185180246914,
+                0.10416666666666674,
+                0.04444444444444451
+              ],
+              "confidence": 1,
+              "seconds": 31.990291666666668,
+              "text": "NEwVORK."
+            },
+            {
+              "bounds": [
+                0.6277284479450184,
+                0.7092746386142302,
+                0.11227566401163735,
+                0.05173495963767727
+              ],
+              "confidence": 1,
+              "seconds": 32.99129166666667,
+              "text": "NEWVORK"
+            },
+            {
+              "bounds": [
+                0.6291666647916667,
+                0.7111111104938271,
+                0.11250000000000004,
+                0.05185185185185193
+              ],
+              "confidence": 1,
+              "seconds": 33.99229166666667,
+              "text": "NEwVoRK"
+            },
+            {
+              "bounds": [
+                0.6363065825756228,
+                0.7055148940238408,
+                0.11546823183695476,
+                0.05408649091367368
+              ],
+              "confidence": 1,
+              "seconds": 34.993291666666664,
+              "text": "NEwVoRK"
+            },
+            {
+              "bounds": [
+                0.6424418599723579,
+                0.7080103365260031,
+                0.11337209542592364,
+                0.04909560592086215
+              ],
+              "confidence": 1,
+              "seconds": 35.99429166666667,
+              "text": "NewVoRK"
+            }
+          ],
+          "image_bounds": [
+            0.624999998263889,
+            0.7185185180246914,
+            0.10416666666666674,
+            0.04444444444444451
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 31.990291666666668,
+          "text": "NEwVORK.",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 31.990291666666668,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5029069857233092,
+                0.6481481476451285,
+                0.3720930099487305,
+                0.039190354170622665
+              ],
+              "confidence": 1,
+              "seconds": 31.990291666666668,
+              "text": "COVID Lockdowns Were a Giant"
+            },
+            {
+              "bounds": [
+                0.50000000484375,
+                0.6370370374074074,
+                0.38749999999999996,
+                0.0444444444444444
+              ],
+              "confidence": 1,
+              "seconds": 32.99129166666667,
+              "text": "COVID Lockdowns Were a Giant"
+            },
+            {
+              "bounds": [
+                0.5041666731944442,
+                0.6370370372839507,
+                0.3916666666666667,
+                0.0444444444444444
+              ],
+              "confidence": 1,
+              "seconds": 33.99229166666667,
+              "text": "COVID Lockdowns Were a Giant"
+            },
+            {
+              "bounds": [
+                0.5041666733333332,
+                0.6296296299999999,
+                0.4,
+                0.051851851851851816
+              ],
+              "confidence": 1,
+              "seconds": 34.993291666666664,
+              "text": "COVID Lockdowns Were a Giant"
+            },
+            {
+              "bounds": [
+                0.5043604639958301,
+                0.6304909556734594,
+                0.4040697733561198,
+                0.046511628892686674
+              ],
+              "confidence": 1,
+              "seconds": 35.99429166666667,
+              "text": "COVID Lockdowns Were a Giant"
+            }
+          ],
+          "image_bounds": [
+            0.5029069857233092,
+            0.6481481476451285,
+            0.3720930099487305,
+            0.039190354170622665
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 31.990291666666668,
+          "text": "COVID Lockdowns Were a Giant",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 31.990291666666668,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5000000035416665,
+                0.6000000008641975,
+                0.3375,
+                0.051851851851851816
+              ],
+              "confidence": 1,
+              "seconds": 31.990291666666668,
+              "text": "Experiment. It Was a Failure."
+            },
+            {
+              "bounds": [
+                0.5029069884769505,
+                0.5943152466261321,
+                0.3430232365926106,
+                0.0492032722190574
+              ],
+              "confidence": 1,
+              "seconds": 32.99129166666667,
+              "text": "Experiment. It Was a Failure."
+            },
+            {
+              "bounds": [
+                0.5043604636000995,
+                0.5888888894066653,
+                0.3488372166951498,
+                0.04935400397689249
+              ],
+              "confidence": 1,
+              "seconds": 33.99229166666667,
+              "text": "Experiment. It Was a Failure."
+            },
+            {
+              "bounds": [
+                0.5043604756321065,
+                0.5839793293134706,
+                0.3575581232706706,
+                0.0493540039768926
+              ],
+              "confidence": 1,
+              "seconds": 34.993291666666664,
+              "text": "Experiment. It Was a Failure."
+            },
+            {
+              "bounds": [
+                0.5043604704846015,
+                0.5736434116561824,
+                0.36482556660970056,
+                0.054263563509340695
+              ],
+              "confidence": 1,
+              "seconds": 35.99429166666667,
+              "text": "Experiment. It Was a Failure."
+            }
+          ],
+          "image_bounds": [
+            0.5000000035416665,
+            0.6000000008641975,
+            0.3375,
+            0.051851851851851816
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 31.990291666666668,
+          "text": "Experiment. It Was a Failure.",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 31.990291666666668,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5072674451271766,
+                0.5787037037918314,
+                0.10174418290456133,
+                0.013027562476970456
+              ],
+              "confidence": 1,
+              "seconds": 31.990291666666668,
+              "text": "By Joe Nocera and Bethany MeLean"
+            },
+            {
+              "bounds": [
+                0.5087209313530915,
+                0.5684754520774513,
+                0.10465115706125894,
+                0.013006029305634659
+              ],
+              "confidence": 1,
+              "seconds": 33.99229166666667,
+              "text": "By Joe Nocera and Bethany Melean"
+            }
+          ],
+          "image_bounds": [
+            0.5072674451271766,
+            0.5787037037918314,
+            0.10174418290456133,
+            0.013027562476970456
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 31.990291666666668,
+          "text": "By Joe Nocera and Bethany MeLean",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 31.990291666666668,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5072674427962547,
+                0.5478036177105262,
+                0.04505813916524248,
+                0.013307493262820769
+              ],
+              "confidence": 1,
+              "seconds": 31.990291666666668,
+              "text": "OCT. 30, 2023"
+            }
+          ],
+          "image_bounds": [
+            0.5072674427962547,
+            0.5478036177105262,
+            0.04505813916524248,
+            0.013307493262820769
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 31.990291666666668,
+          "text": "OCT. 30, 2023",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 32.99129166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5087209341703666,
+                0.5736434107745608,
+                0.10319766998291013,
+                0.015503876297562225
+              ],
+              "confidence": 1,
+              "seconds": 32.99129166666667,
+              "text": "By Joe Nocera and Bethany McLean"
+            },
+            {
+              "bounds": [
+                0.5101744205821074,
+                0.5629629629381447,
+                0.10755813916524248,
+                0.013264427361664888
+              ],
+              "confidence": 1,
+              "seconds": 34.993291666666664,
+              "text": "By Joe Nocera and Bethany McLean"
+            },
+            {
+              "bounds": [
+                0.5116279085060415,
+                0.558139534990888,
+                0.1075581391652426,
+                0.013156761504985681
+              ],
+              "confidence": 1,
+              "seconds": 35.99429166666667,
+              "text": "By Joe Nocera and Bethany McLean"
+            }
+          ],
+          "image_bounds": [
+            0.5087209341703666,
+            0.5736434107745608,
+            0.10319766998291013,
+            0.015503876297562225
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 32.99129166666667,
+          "text": "By Joe Nocera and Bethany McLean",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 32.99129166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5145348861036528,
+                0.37467700272840976,
+                0.4026162783304851,
+                0.051679586481164996
+              ],
+              "confidence": 1,
+              "seconds": 32.99129166666667,
+              "text": "Trump designates Antifa terrorists"
+            },
+            {
+              "bounds": [
+                0.5145348770863953,
+                0.3666666665106961,
+                0.41133721669514967,
+                0.051937984537195225
+              ],
+              "confidence": 1,
+              "seconds": 33.99229166666667,
+              "text": "Trump designates Antifa terrorists"
+            },
+            {
+              "bounds": [
+                0.5142233210545427,
+                0.35157216787166545,
+                0.4221216837565105,
+                0.06823409045184103
+              ],
+              "confidence": 1,
+              "seconds": 34.993291666666664,
+              "text": "Trump designates Antifa terrorists"
+            },
+            {
+              "bounds": [
+                0.515988376937731,
+                0.34625323095521154,
+                0.4287790616353353,
+                0.05684754406964332
+              ],
+              "confidence": 1,
+              "seconds": 35.99429166666667,
+              "text": "Trump designates Antifa terrorists"
+            }
+          ],
+          "image_bounds": [
+            0.5145348861036528,
+            0.37467700272840976,
+            0.4026162783304851,
+            0.051679586481164996
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 32.99129166666667,
+          "text": "Trump designates Antifa terrorists",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 32.99129166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5654069769478142,
+                0.33850129187073297,
+                0.0654069741566976,
+                0.013350560047008408
+              ],
+              "confidence": 1,
+              "seconds": 32.99129166666667,
+              "text": "By Emma Colton • Fox News"
+            },
+            {
+              "bounds": [
+                0.5683139543146474,
+                0.32777777791554186,
+                0.06686046123504641,
+                0.01330749326282088
+              ],
+              "confidence": 1,
+              "seconds": 33.99229166666667,
+              "text": "By Emma Colton - Fox News"
+            },
+            {
+              "bounds": [
+                0.5712209332875154,
+                0.31759259261911355,
+                0.06686046123504641,
+                0.013156761504985681
+              ],
+              "confidence": 1,
+              "seconds": 34.993291666666664,
+              "text": "By Emma Colton • Fox News"
+            },
+            {
+              "bounds": [
+                0.5726744190281594,
+                0.3074074075058031,
+                0.06976744333902996,
+                0.013006029305634659
+              ],
+              "confidence": 1,
+              "seconds": 35.99429166666667,
+              "text": "By Emma Colton - Fox News"
+            }
+          ],
+          "image_bounds": [
+            0.5654069769478142,
+            0.33850129187073297,
+            0.0654069741566976,
+            0.013350560047008408
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 32.99129166666667,
+          "text": "By Emma Colton • Fox News",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 32.99129166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5421511637357087,
+                0.31481481470603656,
+                0.09156976540883388,
+                0.005598621898227241
+              ],
+              "confidence": 1,
+              "seconds": 32.99129166666667,
+              "text": "Published October 14. 2025700am E01"
+            }
+          ],
+          "image_bounds": [
+            0.5421511637357087,
+            0.31481481470603656,
+            0.09156976540883388,
+            0.005598621898227241
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 32.99129166666667,
+          "text": "Published October 14. 2025700am E01",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 33.99229166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.508720934657107,
+                0.5398148147942792,
+                0.04505813519159951,
+                0.005555555555555536
+              ],
+              "confidence": 1,
+              "seconds": 33.99229166666667,
+              "text": "ОCT. 30.2023"
+            }
+          ],
+          "image_bounds": [
+            0.508720934657107,
+            0.5398148147942792,
+            0.04505813519159951,
+            0.005555555555555536
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 33.99229166666667,
+          "text": "ОCT. 30.2023",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 33.99229166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5436046494267308,
+                0.3046296295925338,
+                0.09447674751281732,
+                0.005555555555555536
+              ],
+              "confidence": 1,
+              "seconds": 33.99229166666667,
+              "text": "Published Oetcher 1: 2025 700am FOT"
+            }
+          ],
+          "image_bounds": [
+            0.5436046494267308,
+            0.3046296295925338,
+            0.09447674751281732,
+            0.005555555555555536
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 33.99229166666667,
+          "text": "Published Oetcher 1: 2025 700am FOT",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 34.993291666666664,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5101744202115377,
+                0.5296296297280252,
+                0.046511626243591286,
+                0.013006029305634659
+              ],
+              "confidence": 1,
+              "seconds": 34.993291666666664,
+              "text": "ост. 30, 2023"
+            }
+          ],
+          "image_bounds": [
+            0.5101744202115377,
+            0.5296296297280252,
+            0.046511626243591286,
+            0.013006029305634659
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 34.993291666666664,
+          "text": "ост. 30, 2023",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 34.993291666666664,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5465116261709169,
+                0.29444444447922324,
+                0.09447674751281743,
+                0.005555555555555536
+              ],
+              "confidence": 1,
+              "seconds": 34.993291666666664,
+              "text": "Dimlshad Oetoher 12 2025 700am F0T"
+            }
+          ],
+          "image_bounds": [
+            0.5465116261709169,
+            0.29444444447922324,
+            0.09447674751281743,
+            0.005555555555555536
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 34.993291666666664,
+          "text": "Dimlshad Oetoher 12 2025 700am F0T",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 35.99429166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5116279082880182,
+                0.5268518517008274,
+                0.04505813916524248,
+                0.008333333333333304
+              ],
+              "confidence": 1,
+              "seconds": 35.99429166666667,
+              "text": "ОСT. 30.2023"
+            }
+          ],
+          "image_bounds": [
+            0.5116279082880182,
+            0.5268518517008274,
+            0.04505813916524248,
+            0.008333333333333304
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 35.99429166666667,
+          "text": "ОСT. 30.2023",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 35.99429166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5479651158367542,
+                0.28148148159187303,
+                0.09738372166951492,
+                0.010508182313707093
+              ],
+              "confidence": 1,
+              "seconds": 35.99429166666667,
+              "text": "Published October 14, 2025 7:00am EDT"
+            }
+          ],
+          "image_bounds": [
+            0.5479651158367542,
+            0.28148148159187303,
+            0.09738372166951492,
+            0.010508182313707093
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 35.99429166666667,
+          "text": "Published October 14, 2025 7:00am EDT",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 36.99529166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.21635202562251366,
+                0.46099125513949923,
+                0.23444711367289228,
+                0.10902524524264867
+              ],
+              "confidence": 1,
+              "seconds": 36.99529166666667,
+              "text": "Career politi-"
+            }
+          ],
+          "image_bounds": [
+            0.21635202562251366,
+            0.46099125513949923,
+            0.23444711367289228,
+            0.10902524524264867
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 36.99529166666667,
+          "text": "Career politi-",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 37.996291666666664,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.2034883692133467,
+                0.4573643420630009,
+                0.5508721033732097,
+                0.11393195258246525
+              ],
+              "confidence": 1,
+              "seconds": 37.996291666666664,
+              "text": "Career politicans sold us out"
+            },
+            {
+              "bounds": [
+                0.19186047809234902,
+                0.4625322992365516,
+                0.549418576558431,
+                0.11154177630389173
+              ],
+              "confidence": 1,
+              "seconds": 38.99729166666667,
+              "text": "Career politicans sold us out"
+            }
+          ],
+          "image_bounds": [
+            0.2034883692133467,
+            0.4573643420630009,
+            0.5508721033732097,
+            0.11393195258246525
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 37.996291666666664,
+          "text": "Career politicans sold us out",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 40.999291666666664,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.6090116268386654,
+                0.3643410824197011,
+                0.167151165008545,
+                0.18346253854257089
+              ],
+              "confidence": 1,
+              "seconds": 40.999291666666664,
+              "text": "FEE"
+            }
+          ],
+          "image_bounds": [
+            0.6090116268386654,
+            0.3643410824197011,
+            0.167151165008545,
+            0.18346253854257089
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 40.999291666666664,
+          "text": "FEE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 41.95858333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.43159864806632336,
+                0.6325682069997631,
+                0.13680270512898768,
+                0.07594885649504479
+              ],
+              "confidence": 1,
+              "seconds": 41.95858333333333,
+              "text": "CNBC"
+            },
+            {
+              "bounds": [
+                0.430184356869751,
+                0.637947983160505,
+                0.13963128725687657,
+                0.07294124320701323
+              ],
+              "confidence": 1,
+              "seconds": 42.959583333333335,
+              "text": "CNBC"
+            }
+          ],
+          "image_bounds": [
+            0.43159864806632336,
+            0.6325682069997631,
+            0.13680270512898768,
+            0.07594885649504479
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 41.95858333333333,
+          "text": "CNBC",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 41.95858333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.1918604704280598,
+                0.5138888886378383,
+                0.4709302266438803,
+                0.11401808703387228
+              ],
+              "confidence": 1,
+              "seconds": 41.95858333333333,
+              "text": "\"Trump: NAFTA was"
+            },
+            {
+              "bounds": [
+                0.18313953354328164,
+                0.5064599496650093,
+                0.5,
+                0.12965116147641786
+              ],
+              "confidence": 1,
+              "seconds": 42.959583333333335,
+              "text": "\"Trump: NAFTA was"
+            }
+          ],
+          "image_bounds": [
+            0.1918604704280598,
+            0.5138888886378383,
+            0.4709302266438803,
+            0.11401808703387228
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 41.95858333333333,
+          "text": "\"Trump: NAFTA was",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 41.95858333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.19912790568046765,
+                0.4470284249223796,
+                0.6104651133219401,
+                0.09043927369294347
+              ],
+              "confidence": 1,
+              "seconds": 41.95858333333333,
+              "text": "worst frade deal ever made\""
+            }
+          ],
+          "image_bounds": [
+            0.19912790568046765,
+            0.4470284249223796,
+            0.6104651133219401,
+            0.09043927369294347
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 41.95858333333333,
+          "text": "worst frade deal ever made\"",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 42.959583333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.1933139558866279,
+                0.4444444461678544,
+                0.625,
+                0.09819121184172452
+              ],
+              "confidence": 1,
+              "seconds": 42.959583333333335,
+              "text": "worst trade deal ever made\""
+            }
+          ],
+          "image_bounds": [
+            0.1933139558866279,
+            0.4444444461678544,
+            0.625,
+            0.09819121184172452
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 42.959583333333335,
+          "text": "worst trade deal ever made\"",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 44.96158333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.1395348792679661,
+                0.511627908938412,
+                0.7049418767293294,
+                0.09043927369294347
+              ],
+              "confidence": 1,
+              "seconds": 44.96158333333333,
+              "text": "Unauthorized immigrant population"
+            },
+            {
+              "bounds": [
+                0.13226743624688667,
+                0.5138888901967936,
+                0.7194767634073893,
+                0.08559431499905057
+              ],
+              "confidence": 1,
+              "seconds": 45.962583333333335,
+              "text": "Unauthorized immigrant population"
+            },
+            {
+              "bounds": [
+                0.12500000852851254,
+                0.5138888872574092,
+                0.7325581232706705,
+                0.0881782955593533
+              ],
+              "confidence": 1,
+              "seconds": 46.96358333333333,
+              "text": "Unauthorized immigrant population"
+            }
+          ],
+          "image_bounds": [
+            0.1395348792679661,
+            0.511627908938412,
+            0.7049418767293294,
+            0.09043927369294347
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 44.96158333333333,
+          "text": "Unauthorized immigrant population",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 44.96158333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.13517443822570321,
+                0.436692508308567,
+                0.7485464731852213,
+                0.09043927369294347
+              ],
+              "confidence": 1,
+              "seconds": 44.96158333333333,
+              "text": "soared to an äll-time high under Biden"
+            }
+          ],
+          "image_bounds": [
+            0.13517443822570321,
+            0.436692508308567,
+            0.7485464731852213,
+            0.09043927369294347
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 44.96158333333333,
+          "text": "soared to an äll-time high under Biden",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 45.962583333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.1244766454405126,
+                0.4198514691773354,
+                0.7679112752278645,
+                0.1281479235048647
+              ],
+              "confidence": 1,
+              "seconds": 45.962583333333335,
+              "text": "soared to an all-time high under Biden"
+            },
+            {
+              "bounds": [
+                0.11615250731479397,
+                0.4197629570592757,
+                0.784556516011556,
+                0.1283692395245587
+              ],
+              "confidence": 1,
+              "seconds": 46.96358333333333,
+              "text": "soared to an all-time high under Biden"
+            }
+          ],
+          "image_bounds": [
+            0.1244766454405126,
+            0.4198514691773354,
+            0.7679112752278645,
+            0.1281479235048647
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 45.962583333333335,
+          "text": "soared to an all-time high under Biden",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 48.965583333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.14716072128536237,
+                0.6813210072976579,
+                0.06976744333902993,
+                0.0990761509648076
+              ],
+              "confidence": 1,
+              "seconds": 48.965583333333335,
+              "text": "GA"
+            }
+          ],
+          "image_bounds": [
+            0.14716072128536237,
+            0.6813210072976579,
+            0.06976744333902993,
+            0.0990761509648076
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 48.965583333333335,
+          "text": "GA",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 48.965583333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.15624999978823126,
+                0.5994832003399589,
+                0.0639534870783488,
+                0.11369509520354093
+              ],
+              "confidence": 1,
+              "seconds": 48.965583333333335,
+              "text": "END"
+            }
+          ],
+          "image_bounds": [
+            0.15624999978823126,
+            0.5994832003399589,
+            0.0639534870783488,
+            0.11369509520354093
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 48.965583333333335,
+          "text": "END",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 48.965583333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5465116279211285,
+                0.824289406553917,
+                0.010174418489138248,
+                0.023255812680279764
+              ],
+              "confidence": 1,
+              "seconds": 48.965583333333335,
+              "text": "U"
+            }
+          ],
+          "image_bounds": [
+            0.5465116279211285,
+            0.824289406553917,
+            0.010174418489138248,
+            0.023255812680279764
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 48.965583333333335,
+          "text": "U",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 48.965583333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.4405663504709931,
+                0.5365552195126426,
+                0.12015008926391596,
+                0.10801394427264177
+              ],
+              "confidence": 1,
+              "seconds": 48.965583333333335,
+              "text": "FREE"
+            },
+            {
+              "bounds": [
+                0.4444994856194117,
+                0.4723653187960394,
+                0.12612938880920405,
+                0.1053695042928059
+              ],
+              "confidence": 1,
+              "seconds": 48.965583333333335,
+              "text": "FREE"
+            }
+          ],
+          "image_bounds": [
+            0.4405663504709931,
+            0.5365552195126426,
+            0.12015008926391596,
+            0.10801394427264177
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 48.965583333333335,
+          "text": "FREE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 48.965583333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.44575953753742825,
+                0.4037239865027339,
+                0.13510651588439937,
+                0.10304879082573792
+              ],
+              "confidence": 1,
+              "seconds": 48.965583333333335,
+              "text": "PALESTINE"
+            }
+          ],
+          "image_bounds": [
+            0.44575953753742825,
+            0.4037239865027339,
+            0.13510651588439937,
+            0.10304879082573792
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 48.965583333333335,
+          "text": "PALESTINE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 55.97258333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                -2.641899736014845e-10,
+                0.6509259256336458,
+                0.24709302584330242,
+                0.0703703703703703
+              ],
+              "confidence": 1,
+              "seconds": 55.97258333333333,
+              "text": "P COUNTRY"
+            }
+          ],
+          "image_bounds": [
+            -2.641899736014845e-10,
+            0.6509259256336458,
+            0.24709302584330242,
+            0.0703703703703703
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 55.97258333333333,
+          "text": "P COUNTRY",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 55.97258333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.3907211292508207,
+                0.6497857152487321,
+                0.10809262593587238,
+                0.06993761415834765
+              ],
+              "confidence": 1,
+              "seconds": 55.97258333333333,
+              "text": "SAVE"
+            }
+          ],
+          "image_bounds": [
+            0.3907211292508207,
+            0.6497857152487321,
+            0.10809262593587238,
+            0.06993761415834765
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 55.97258333333333,
+          "text": "SAVE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 55.97258333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.8527728168170365,
+                0.7352674767796172,
+                0.1356199900309244,
+                0.09862292960838026
+              ],
+              "confidence": 1,
+              "seconds": 55.97258333333333,
+              "text": "OHIO"
+            }
+          ],
+          "image_bounds": [
+            0.8527728168170365,
+            0.7352674767796172,
+            0.1356199900309244,
+            0.09862292960838026
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 55.97258333333333,
+          "text": "OHIO",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 56.97358333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.40958836939990634,
+                0.6544248819757479,
+                0.11877434253692626,
+                0.06137210704662177
+              ],
+              "confidence": 1,
+              "seconds": 56.97358333333333,
+              "text": "AVE A"
+            }
+          ],
+          "image_bounds": [
+            0.40958836939990634,
+            0.6544248819757479,
+            0.11877434253692626,
+            0.06137210704662177
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 56.97358333333333,
+          "text": "AVE A",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 56.97358333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.8472271911522132,
+                0.7313854087963663,
+                0.14118962287902836,
+                0.10212682088216152
+              ],
+              "confidence": 1,
+              "seconds": 56.97358333333333,
+              "text": "ОHIO"
+            }
+          ],
+          "image_bounds": [
+            0.8472271911522132,
+            0.7313854087963663,
+            0.14118962287902836,
+            0.10212682088216152
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 56.97358333333333,
+          "text": "ОHIO",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 61.97858333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.1875000089189869,
+                0.20370370236356627,
+                0.42732556660970056,
+                0.06503014741120516
+              ],
+              "confidence": 1,
+              "seconds": 61.97858333333333,
+              "text": "REMOVE EVERY ILLEGAL ALIEN"
+            },
+            {
+              "bounds": [
+                0.18333333578703695,
+                0.19259259296296294,
+                0.44166666666666665,
+                0.08148148148148149
+              ],
+              "confidence": 1,
+              "seconds": 62.97958333333333,
+              "text": "REMOVE EVERY ILLEGAL ALIEN"
+            }
+          ],
+          "image_bounds": [
+            0.1875000089189869,
+            0.20370370236356627,
+            0.42732556660970056,
+            0.06503014741120516
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 61.97858333333333,
+          "text": "REMOVE EVERY ILLEGAL ALIEN",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 63.980583333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.7936046503987254,
+                0.5064599498460347,
+                0.09593023459116623,
+                0.09043927369294336
+              ],
+              "confidence": 1,
+              "seconds": 63.980583333333335,
+              "text": "OTE"
+            },
+            {
+              "bounds": [
+                0.7965116279096598,
+                0.5064599472485709,
+                0.09883720874786384,
+                0.09302325778537324
+              ],
+              "confidence": 1,
+              "seconds": 64.98158333333333,
+              "text": "OTE"
+            },
+            {
+              "bounds": [
+                0.8008720941980857,
+                0.5064599474768223,
+                0.10029069582621253,
+                0.09302325778537335
+              ],
+              "confidence": 1,
+              "seconds": 65.98258333333334,
+              "text": "OTE"
+            }
+          ],
+          "image_bounds": [
+            0.7936046503987254,
+            0.5064599498460347,
+            0.09593023459116623,
+            0.09043927369294336
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 63.980583333333335,
+          "text": "OTE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 63.980583333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5414222074444214,
+                0.37918460935023157,
+                0.14680674870808919,
+                0.11243181581850403
+              ],
+              "confidence": 1,
+              "seconds": 63.980583333333335,
+              "text": "VOTE"
+            },
+            {
+              "bounds": [
+                0.5417235697231911,
+                0.3805084398969928,
+                0.14911100069681804,
+                0.10978415453875512
+              ],
+              "confidence": 1,
+              "seconds": 64.98158333333333,
+              "text": "VOTE"
+            },
+            {
+              "bounds": [
+                0.541918403346406,
+                0.3762663188129435,
+                0.15308179855346682,
+                0.11568441744203928
+              ],
+              "confidence": 1,
+              "seconds": 65.98258333333334,
+              "text": "VOTE"
+            }
+          ],
+          "image_bounds": [
+            0.5414222074444214,
+            0.37918460935023157,
+            0.14680674870808919,
+            0.11243181581850403
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 63.980583333333335,
+          "text": "VOTE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 63.980583333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.03976880861595233,
+                0.13988194122980846,
+                0.5042478879292807,
+                0.1402045355902778
+              ],
+              "confidence": 1,
+              "seconds": 63.980583333333335,
+              "text": "VOT PASS NATIONAL VOTER ID"
+            }
+          ],
+          "image_bounds": [
+            0.03976880861595233,
+            0.13988194122980846,
+            0.5042478879292807,
+            0.1402045355902778
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 63.980583333333335,
+          "text": "VOT PASS NATIONAL VOTER ID",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 63.980583333333335,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5247093021112069,
+                0.2403100781211488,
+                0.04941860437393186,
+                0.04950473750079121
+              ],
+              "confidence": 1,
+              "seconds": 63.980583333333335,
+              "text": "ER II"
+            }
+          ],
+          "image_bounds": [
+            0.5247093021112069,
+            0.2403100781211488,
+            0.04941860437393186,
+            0.04950473750079121
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 63.980583333333335,
+          "text": "ER II",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 64.98158333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.034883715760952325,
+                0.147222225578727,
+                0.5988372166951498,
+                0.12685185185185177
+              ],
+              "confidence": 1,
+              "seconds": 64.98158333333333,
+              "text": "VOTPASS NATIONAL VOTER ID LAWS"
+            },
+            {
+              "bounds": [
+                0.02470930761603848,
+                0.1369509034125389,
+                0.6148255666097004,
+                0.13990094926622176
+              ],
+              "confidence": 1,
+              "seconds": 65.98258333333334,
+              "text": "VOTPASS NATIONAL VOTER ID LAWS"
+            }
+          ],
+          "image_bounds": [
+            0.034883715760952325,
+            0.147222225578727,
+            0.5988372166951498,
+            0.12685185185185177
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 64.98158333333333,
+          "text": "VOTPASS NATIONAL VOTER ID LAWS",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 66.98358333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.08750000437499991,
+                0.1703703707936508,
+                0.6124999999999999,
+                0.0888888888888889
+              ],
+              "confidence": 1,
+              "seconds": 66.98358333333333,
+              "text": "BAN HORMONE THERAPY FOR CHILDREN"
+            },
+            {
+              "bounds": [
+                0.08575581696629087,
+                0.17312661613147962,
+                0.6104651133219401,
+                0.07502153184678817
+              ],
+              "confidence": 1,
+              "seconds": 67.98458333333333,
+              "text": "BAN HORMONE THERAPY FOR CHILDREN"
+            }
+          ],
+          "image_bounds": [
+            0.08750000437499991,
+            0.1703703707936508,
+            0.6124999999999999,
+            0.0888888888888889
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 66.98358333333333,
+          "text": "BAN HORMONE THERAPY FOR CHILDREN",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 72.98958333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.616666669236111,
+                0.5333333325925926,
+                0.1625000000000001,
+                0.04444444444444451
+              ],
+              "confidence": 1,
+              "seconds": 72.98958333333333,
+              "text": "FOR CONGRESS"
+            },
+            {
+              "bounds": [
+                0.6293604651278593,
+                0.534883721232488,
+                0.14970930417378736,
+                0.03641257462678138
+              ],
+              "confidence": 1,
+              "seconds": 73.99058333333333,
+              "text": "FOR CONGRESS"
+            },
+            {
+              "bounds": [
+                0.6322674469812957,
+                0.5296296287902491,
+                0.15116278330485033,
+                0.03888888888888886
+              ],
+              "confidence": 1,
+              "seconds": 74.99158333333334,
+              "text": "FOR CONGRESS"
+            },
+            {
+              "bounds": [
+                0.6337209282383645,
+                0.5268518515791099,
+                0.15406977335611982,
+                0.036455641852484844
+              ],
+              "confidence": 1,
+              "seconds": 75.99258333333333,
+              "text": "FOR CONGRESS"
+            }
+          ],
+          "image_bounds": [
+            0.616666669236111,
+            0.5333333325925926,
+            0.1625000000000001,
+            0.04444444444444451
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 72.98958333333333,
+          "text": "FOR CONGRESS",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 72.98958333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.50726744979707,
+                0.3488372099243795,
+                0.3866278966267904,
+                0.06459948221842449
+              ],
+              "confidence": 1,
+              "seconds": 72.98958333333333,
+              "text": "RYANMILLSAPFORCONGRESS.COM"
+            },
+            {
+              "bounds": [
+                0.5072674524260866,
+                0.3410852731821632,
+                0.3924418449401855,
+                0.06718345924660007
+              ],
+              "confidence": 1,
+              "seconds": 73.99058333333333,
+              "text": "RYANMILLSAPFORCONGRESS.COM"
+            },
+            {
+              "bounds": [
+                0.5072674438693182,
+                0.33074935413913686,
+                0.40261627833048497,
+                0.06459948221842449
+              ],
+              "confidence": 1,
+              "seconds": 75.99258333333333,
+              "text": "RYANMILLSAPFORCONGRESS.COM"
+            }
+          ],
+          "image_bounds": [
+            0.50726744979707,
+            0.3488372099243795,
+            0.3866278966267904,
+            0.06459948221842449
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 72.98958333333333,
+          "text": "RYANMILLSAPFORCONGRESS.COM",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 72.98958333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.3633720929033211,
+                0.1731266143532808,
+                0.27034883499145507,
+                0.046511628892686674
+              ],
+              "confidence": 1,
+              "seconds": 72.98958333333333,
+              "text": "PAID FOR BY MILLSAP FOR CONGRESS"
+            },
+            {
+              "bounds": [
+                0.3648255867913839,
+                0.17312661462342416,
+                0.2688953399658204,
+                0.04651162889268656
+              ],
+              "confidence": 1,
+              "seconds": 73.99058333333333,
+              "text": "PAID FOR BY MILLSAP FOR CONGRESS"
+            },
+            {
+              "bounds": [
+                0.3619186004918704,
+                0.1703703708161689,
+                0.27180233001708987,
+                0.04926787129154908
+              ],
+              "confidence": 1,
+              "seconds": 74.99158333333334,
+              "text": "PAID FOR BY MILLSAP FOR CONGRESS"
+            },
+            {
+              "bounds": [
+                0.3633720926302415,
+                0.17312661435067067,
+                0.2703488349914551,
+                0.046511628892686674
+              ],
+              "confidence": 1,
+              "seconds": 75.99258333333333,
+              "text": "PAID FOR BY MILLSAP FOR CONGRESS"
+            },
+            {
+              "bounds": [
+                0.3633720927804353,
+                0.1731266143391864,
+                0.27034883499145507,
+                0.04651162889268656
+              ],
+              "confidence": 1,
+              "seconds": 76.99358333333333,
+              "text": "PAID FOR BY MILLSAP FOR CONGRESS"
+            },
+            {
+              "bounds": [
+                0.3633720927804353,
+                0.1731266143391864,
+                0.27034883499145507,
+                0.04651162889268656
+              ],
+              "confidence": 1,
+              "seconds": 76.99358333333333,
+              "text": "PAID FOR BY MILLSAP FOR CONGRESS"
+            }
+          ],
+          "image_bounds": [
+            0.3633720929033211,
+            0.1731266143532808,
+            0.27034883499145507,
+            0.046511628892686674
+          ],
+          "kind": "video_ocr",
+          "media_hash": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+          "start_seconds": 72.98958333333333,
+          "text": "PAID FOR BY MILLSAP FOR CONGRESS",
+          "voice": "unreviewed"
+        }
+      ],
+      "recovered_text": "When Antifa attacked my business, I had a choice to make.\nI could sit back and let the woke left win,\nor step up and fight back.\nJust like President Trump, I chose to fight.\nI'm Ryan Millsap, political outsider, and Maga Warrior.\nI'm not a career politician, and I don't want to be one.\nI'm running to smash the status quo.\nAnd fight back against the radical left and rhinos.\nI bought into their lives too, but COVID and antifa made me realize they sold us out.\nWith backroom deals and weak leadership, we had to pay the price.\nBad trade deals destroyed American jobs.\nImmigration policies allowed our country to be invaded by people who hate us.\nAnd the American dream became unattainable.\nNow more than ever, we need fighters who will stand when President Trump and deliver America\nfirst policies.\nThat means removing every illegal alien, passing national voter ID laws, and a hormone therapy\nfor children, and stopping the communist takeover of our country.\nI'm Ryan Millsap, I'll always fight for you, and I approve this message.\nFOX NEWS\n\"Antifa thugs just tried to\nburn down a police facility\"\n2038\nOU'RE\nARET\nULTRA\n88022\nFIGRT\nІСДІ\nPOLITICAL OUTSIDER. MAGA.\nPOLITICAL OUTSIDER. MAGA WARRIOR\nStop the Radical Le]\nsSiopthe Rauieaj LefkamiRNES\nSiop the Radeal Lef amURNOS1\nNEwVORK.\nCOVID Lockdowns Were a Giant\nExperiment. It Was a Failure.\nBy Joe Nocera and Bethany MeLean\nOCT. 30, 2023\nBy Joe Nocera and Bethany McLean\nTrump designates Antifa terrorists\nBy Emma Colton • Fox News\nPublished October 14. 2025700am E01\nОCT. 30.2023\nPublished Oetcher 1: 2025 700am FOT\nост. 30, 2023\nDimlshad Oetoher 12 2025 700am F0T\nОСT. 30.2023\nPublished October 14, 2025 7:00am EDT\nCareer politi-\nCareer politicans sold us out\nFEE\nCNBC\n\"Trump: NAFTA was\nworst frade deal ever made\"\nworst trade deal ever made\"\nUnauthorized immigrant population\nsoared to an äll-time high under Biden\nsoared to an all-time high under Biden\nGA\nEND\nU\nFREE\nPALESTINE\nP COUNTRY\nSAVE\nOHIO\nAVE A\nОHIO\nREMOVE EVERY ILLEGAL ALIEN\nOTE\nVOTE\nVOT PASS NATIONAL VOTER ID\nER II\nVOTPASS NATIONAL VOTER ID LAWS\nBAN HORMONE THERAPY FOR CHILDREN\nFOR CONGRESS\nRYANMILLSAPFORCONGRESS.COM\nPAID FOR BY MILLSAP FOR CONGRESS",
+      "releases": [
+        {
+          "published": null,
+          "title": "Millsap Intro campaign video",
+          "url": "https://ryanmillsapforcongress.com/"
+        }
+      ],
+      "source": "millsap-campaign",
+      "state": "needs_date",
+      "video_url": "https://ryanmillsapforcongress.com/wp-content/uploads/2026/03/Millsap-Intro.mp4"
     }
   ],
   "scope": "Discovery backlog, not analyzed ads or verified paid placements",

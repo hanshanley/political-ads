@@ -1,6 +1,24 @@
 {
   "reviews": [
     {
+      "id": "millsap-native-intro-0b12f80de0f5ffc0",
+      "source": "millsap-campaign",
+      "publisher_url": "https://ryanmillsapforcongress.com/",
+      "post_url": "https://ryanmillsapforcongress.com/",
+      "media_url": "https://ryanmillsapforcongress.com/wp-content/uploads/2026/03/Millsap-Intro.mp4",
+      "media_sha256": "0b12f80de0f5ffc01541a5bf6c6eb43008ef1c724a5690eb01e87267a19c0f60",
+      "title": "Millsap Intro campaign video",
+      "title_basis": "Descriptive label from the publisher-linked original filename and actual finished video",
+      "sponsor": "Millsap for Congress",
+      "candidate_id": "H6GA10191",
+      "required_quotes": ["I approve this message.", "PAID FOR BY MILLSAP FOR CONGRESS"],
+      "reviewed": "2026-10-31",
+      "ad_evidence": "Actual 77.05-second finished campaign advertisement. Visually inspected original closing frame at 73 seconds states PAID FOR BY MILLSAP FOR CONGRESS and names the campaign website; speech includes candidate approval. Exact cached official FEC H6GA10191 / C00941229 identifies MILLSAP, RYAN, REP, House, GA-10, 2026, with principal MILLSAP FOR CONGRESS, P/H/REP. Eligibility/payer review is not semantic or transcription certification. No publication date, paid delivery or election phase is claimed.",
+      "date_uncertainty": "Homepage creation metadata and the March upload path do not establish the individual video's publication date; the original supplies no encoding creation timestamp. Retain only as an undated recovered lead until date evidence is independently established.",
+      "quality_flags": ["automatic_speech_misrecognizes_rinos_and_may_omit_negation"],
+      "extraction_caveat": "Preserve uncorrected local speech and frame OCR, including rhinos, lives and uncertain negation around hormone therapy. Do not infer policy endorsement or assign a semantic label from these errors."
+    },
+    {
       "id": "mealer-archive-oilgas-ba2bc4adad70c75c",
       "source": "mealer-archive",
       "media_type": "video",
