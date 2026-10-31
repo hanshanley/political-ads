@@ -963,13 +963,13 @@
     "ad_id": "flint-2046-0",
     "block_id": "flint-2046-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "flint-2059-0",
     "block_id": "flint-2059-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "flint-2071-0",
@@ -981,25 +981,25 @@
     "ad_id": "flint-2131-0",
     "block_id": "flint-2131-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "flint-2146-0",
     "block_id": "flint-2146-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR01354225024042532865-4b2a0a5a6ad6",
     "block_id": "google-CR01354225024042532865-4b2a0a5a6ad6-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 5\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "google-CR01354225024042532865-9d1d26e26aea",
     "block_id": "google-CR01354225024042532865-9d1d26e26aea-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 6\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "google-CR01777644984804048897-e3c2ff65c582",
@@ -1011,7 +1011,7 @@
     "ad_id": "google-CR01777644984804048897-edb81730532d",
     "block_id": "google-CR01777644984804048897-edb81730532d-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR02223171494425395201-3c2f23c48db1",
@@ -1023,31 +1023,31 @@
     "ad_id": "google-CR02454877901938491393-d1c10306c536",
     "block_id": "google-CR02454877901938491393-d1c10306c536-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR02731653127865368577-92d4b54cb1de",
     "block_id": "google-CR02731653127865368577-92d4b54cb1de-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR02731653127865368577-a1caa7431b47",
     "block_id": "google-CR02731653127865368577-a1caa7431b47-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR02763954400077545473-2a58015dd7a3",
     "block_id": "google-CR02763954400077545473-2a58015dd7a3-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for unknown: \\\"your voice\\\" is absent from unit 1. Exact source: \\\"Paid for by HUIZENGA FOR CONGRESS\\\\nUS House Campaign, MI-04\\\\nHUIZENGA FOR CONGRESS\\\\nwww.huizengaformichigan.com/\\\\nVote Republican This Election -\\\\nVote Huizenga November 3rd\\\\nElection Day is November 3. Make your plan to vote for\\\\nBill Huizenga! November 3 is Election Day. Make your\\\\nvoice...\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "google-CR02763954400077545473-474d7721b21e",
     "block_id": "google-CR02763954400077545473-474d7721b21e-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR02901047763301040129-2318d9059a4d",
