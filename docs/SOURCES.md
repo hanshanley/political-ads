@@ -10,7 +10,83 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Mealer public archive expansion of the October 30 snapshot
+## Van Epps quoted-ad expansion of the October 30 snapshot
+
+One additional **TN-07 Republican general-election ad** is recovered from
+The Tennessee Star's actual October 14 report and explicitly exposed
+individual WordPress post **543492**. Its **four ordered literal passages /
+51 preserved tokens** belong to the single **Mission** original
+**mckmnmmjmMI**. Reporter summaries, campaign press quotations, interview
+speech, endorsements and duplicate page text are not added to the ad.
+Both terminal commas before reporter attribution and the source's curly
+apostrophes remain unchanged. This is **partial, semantically unreviewed
+ad copy**, not a complete transcript or a newly classified positive ad.
+
+The actual primary page has one `h1.entry-title`, one `div.entry-content`
+and an October 14 **19:31:04 -05:00** publication element. Its actually
+exposed individual JSON agrees on title, canonical elections URL and
+October 14 local / **October 15 00:31:04 UTC** dates. The discovery news
+URL redirects to the canonical elections page; these are not two records.
+Exact rendered-content SHA-256:
+`867db8801d3f7cd692fc8382e2bbc18e8e92ca5fa0d7f235e093d003e8f71440`.
+Post identity, title/date, literal passage order, explicit ad/advertiser/
+general-election context, federal identity and original association are bound.
+
+Saved FEC **H6TN07161 / C00908202**, REP, House, TN-07, identifies
+**VAN EPPS, MATTHEW ROBERT**. A separate exact **Matt Van Epps** alias is
+independently bound to the actual official House biography and same district:
+`https://vanepps.house.gov/about`, response SHA-256
+`73b5c32e606a5c3a8c498ec8d70af976af6081e2d66299f3f81451199d7a3439`.
+No surname-only/fuzzy matching, roster change or transcript repair is used.
+The campaign is the publisher-reported advertiser, not an independently
+inspected legal payer or approval card. October 14 is the **report date**,
+not verified first release, upload, airing or paid delivery. Neither the
+October 31 observation nor the UTC date advances the October 30 cutoff.
+No original video, caption service, denied route or licensed catalog was requested.
+
+```sh
+political-ads collect --until 2026-10-30 --source vanepps-tennessee-star --offline
+political-ads parquet
+political-ads build
+political-ads analyze
+political-ads validate
+political-ads audit-strategy
+```
+
+The verified snapshot contains **1,885 acquired / 1,847 English records:
+1,226 D / 582 R / 31 other / eight unresolved**. English House coverage is
+**698 D / 204 R**, comprising **222 D / 203 R non-Snap** and **476 D /
+one R Snap**. Exact observed-text messages are **1,204 D / 545 R**.
+All **1,884 previous acquired objects, 1,846 analyzed objects, 38 release
+reviews, seventeen untouched protected files and every prior exact alias**
+remain unchanged. The native partitions, undated backlog and semantic
+reviews are preserved.
+
+All **156 affected Python tests**, Python lint/format, **17 frontend tests**,
+frontend lint/typecheck/build and **seven browser cases** pass. Complete
+analysis/browser/production JSON, gzip and CSV, all **1,885 Parquet rows**
+and **eleven visually inspected PNG sets** reconcile. A socket-forbidden
+isolated **one-response** replay reproduces all **533 written objects and
+source states** from the preceding 532-record partition. Independent
+auditing passes **20 metric groups / ten chart rows**. Snapshot:
+`177253912dbe79a1d42afb9735ef08646791e721a125ab33a7e2c4028db39268`.
+The preceding Mealer commit **d03aecddfdd2bb41028055192d818d9242c081b2**
+has independently verified successful exact-head CI **41178030646**.
+
+Broader actual campaign discovery excludes Gruters' photo gallery, Gaines'
+B-roll/photos and news interviews, Alvarado's briefing copy/B-roll/interview,
+Steinmann's media appearances, Feely's media kit/news interviews and Jackley's
+campaign announcements. The new Rogers updates/news route exposes **one
+unadmitted Faith original**, **SEFGTsulJck**, with three actual quotations
+in campaign-hosted post **1441**, June 24, and exact FEC **H6FL02331 /
+C00936963**, REP, FL-02. Its April launch and June broadcast announcements
+do not establish separate creatives; press statements are not ad words.
+The original Florida Politics provider remains paused and was not accessed.
+Acquisition and recurring prompt #1 continue; these counts do not establish
+nationally representative coverage. Website/Substack publication and host
+restoration remain on hold.
+
+## Previous Mealer public archive expansion
 
 Seven additional Republican House text records are recovered from the actual
 campaign-linked `https://alexandramealer.com/Alex-Press-Kit.zip`: **six

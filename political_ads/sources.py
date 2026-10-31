@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "vanepps-tennessee-star",
+        "https://tennesseestar.com",
+        "Matt Van Epps campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="TN-07",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "hatcher-nashville-banner",
         "https://nashvillebanner.com",
         "Charlie Hatcher campaign (reported publisher; payer unverified)",
