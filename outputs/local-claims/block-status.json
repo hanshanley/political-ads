@@ -1827,49 +1827,49 @@
     "ad_id": "jackson-0b7853be4be45350-0",
     "block_id": "jackson-0b7853be4be45350-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "jackson-1bda9c50ef29e1df-0",
     "block_id": "jackson-1bda9c50ef29e1df-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim 2 fields or evidence IDs\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "jackson-208a7aa44fcf0655-0",
     "block_id": "jackson-208a7aa44fcf0655-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "jackson-3f864ab2d00264ad-0",
     "block_id": "jackson-3f864ab2d00264ad-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for She: \\\"She\\\" is absent from unit 8. Exact source: \\\"Sandra: The deciding vote for Trump's Supreme Court nominees who overturned Roe v. Wade.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "jackson-52df90b3947810ea-0",
     "block_id": "jackson-52df90b3947810ea-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "jackson-8f1b86280f5159ea-0",
     "block_id": "jackson-8f1b86280f5159ea-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "jackson-914abc10d942a13d-0",
     "block_id": "jackson-914abc10d942a13d-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "jackson-93075c70a1d4a5fc-0",
     "block_id": "jackson-93075c70a1d4a5fc-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "jackson-a5fd5ae62826d31c-0",

@@ -53307,5 +53307,2865 @@
     "text_hash": "6aaff0edbc2be67e3c0be98155d97553d60470a22bb9b0959bc8fa08900ab083",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-0b7853be4be45350-0",
+    "alignment": "D",
+    "block_id": "jackson-0b7853be4be45350-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-0b7853be4be45350-0-claims-001-001",
+    "claim_text": "I'm Troy Jackson, and I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 59,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainers-lose-trust-in-susan-collins-after-dozens-of-votes-to-confirm-anti-abortion-judges",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 30,
+        "anchor_quote": "I'm Troy Jackson",
+        "anchor_start": 14,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nDr. Anderson: My job is to look out for my patients every day, and I'm looking for leaders that will do the same.\nDr. Anderson: So when Susan Collins voted to confirm Trump's anti-abortion Supreme Court justices, she lost my trust.\nDr. Anderson: At the same time, Troy Jackson was protecting and expanding reproductive rights. As Senate President, he passed legislation to guarantee the right to abortion in Maine.\nDr. Anderson: Troy Jackson is looking out for us. Susan Collins — she's looking out for Trump.",
+    "text_hash": "3294f2dd0947a8e1b001953cdade64e21774b2e5c80d6ec30b4dd5b3d2530b0d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-0b7853be4be45350-0",
+    "alignment": "D",
+    "block_id": "jackson-0b7853be4be45350-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-0b7853be4be45350-0-claims-001-002",
+    "claim_text": "My job is to look out for my patients every day, and I'm looking for leaders that will do the same.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 173,
+        "kind": "publisher_transcript",
+        "start": 60,
+        "text": "Dr. Anderson: My job is to look out for my patients every day, and I'm looking for leaders that will do the same.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainers-lose-trust-in-susan-collins-after-dozens-of-votes-to-confirm-anti-abortion-judges",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 80,
+        "anchor_quote": "My job",
+        "anchor_start": 74,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Dr. Anderson",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nDr. Anderson: My job is to look out for my patients every day, and I'm looking for leaders that will do the same.\nDr. Anderson: So when Susan Collins voted to confirm Trump's anti-abortion Supreme Court justices, she lost my trust.\nDr. Anderson: At the same time, Troy Jackson was protecting and expanding reproductive rights. As Senate President, he passed legislation to guarantee the right to abortion in Maine.\nDr. Anderson: Troy Jackson is looking out for us. Susan Collins — she's looking out for Trump.",
+    "text_hash": "3294f2dd0947a8e1b001953cdade64e21774b2e5c80d6ec30b4dd5b3d2530b0d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-0b7853be4be45350-0",
+    "alignment": "D",
+    "block_id": "jackson-0b7853be4be45350-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-0b7853be4be45350-0-claims-001-003",
+    "claim_text": "When Susan Collins voted to confirm Trump's anti-abortion Supreme Court justices, she lost my trust.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 291,
+        "kind": "publisher_transcript",
+        "start": 174,
+        "text": "Dr. Anderson: So when Susan Collins voted to confirm Trump's anti-abortion Supreme Court justices, she lost my trust.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainers-lose-trust-in-susan-collins-after-dozens-of-votes-to-confirm-anti-abortion-judges",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 209,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 196,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 290,
+        "anchor_quote": "my trust",
+        "anchor_start": 282,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Dr. Anderson",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nDr. Anderson: My job is to look out for my patients every day, and I'm looking for leaders that will do the same.\nDr. Anderson: So when Susan Collins voted to confirm Trump's anti-abortion Supreme Court justices, she lost my trust.\nDr. Anderson: At the same time, Troy Jackson was protecting and expanding reproductive rights. As Senate President, he passed legislation to guarantee the right to abortion in Maine.\nDr. Anderson: Troy Jackson is looking out for us. Susan Collins — she's looking out for Trump.",
+    "text_hash": "3294f2dd0947a8e1b001953cdade64e21774b2e5c80d6ec30b4dd5b3d2530b0d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-0b7853be4be45350-0",
+    "alignment": "D",
+    "block_id": "jackson-0b7853be4be45350-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-0b7853be4be45350-0-claims-001-004",
+    "claim_text": "At the same time, Troy Jackson was protecting and expanding reproductive rights.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 474,
+        "kind": "publisher_transcript",
+        "start": 292,
+        "text": "Dr. Anderson: At the same time, Troy Jackson was protecting and expanding reproductive rights. As Senate President, he passed legislation to guarantee the right to abortion in Maine.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainers-lose-trust-in-susan-collins-after-dozens-of-votes-to-confirm-anti-abortion-judges",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 336,
+        "anchor_quote": "Troy Jackson",
+        "anchor_start": 324,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nDr. Anderson: My job is to look out for my patients every day, and I'm looking for leaders that will do the same.\nDr. Anderson: So when Susan Collins voted to confirm Trump's anti-abortion Supreme Court justices, she lost my trust.\nDr. Anderson: At the same time, Troy Jackson was protecting and expanding reproductive rights. As Senate President, he passed legislation to guarantee the right to abortion in Maine.\nDr. Anderson: Troy Jackson is looking out for us. Susan Collins — she's looking out for Trump.",
+    "text_hash": "3294f2dd0947a8e1b001953cdade64e21774b2e5c80d6ec30b4dd5b3d2530b0d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-0b7853be4be45350-0",
+    "alignment": "D",
+    "block_id": "jackson-0b7853be4be45350-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-0b7853be4be45350-0-claims-001-005",
+    "claim_text": "As Senate President, he passed legislation to guarantee the right to abortion in Maine.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 474,
+        "kind": "publisher_transcript",
+        "start": 292,
+        "text": "Dr. Anderson: At the same time, Troy Jackson was protecting and expanding reproductive rights. As Senate President, he passed legislation to guarantee the right to abortion in Maine.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainers-lose-trust-in-susan-collins-after-dozens-of-votes-to-confirm-anti-abortion-judges",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 312,
+        "anchor_quote": "he",
+        "anchor_start": 310,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nDr. Anderson: My job is to look out for my patients every day, and I'm looking for leaders that will do the same.\nDr. Anderson: So when Susan Collins voted to confirm Trump's anti-abortion Supreme Court justices, she lost my trust.\nDr. Anderson: At the same time, Troy Jackson was protecting and expanding reproductive rights. As Senate President, he passed legislation to guarantee the right to abortion in Maine.\nDr. Anderson: Troy Jackson is looking out for us. Susan Collins — she's looking out for Trump.",
+    "text_hash": "3294f2dd0947a8e1b001953cdade64e21774b2e5c80d6ec30b4dd5b3d2530b0d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-0b7853be4be45350-0",
+    "alignment": "D",
+    "block_id": "jackson-0b7853be4be45350-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-0b7853be4be45350-0-claims-001-006",
+    "claim_text": "Troy Jackson is looking out for us.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 569,
+        "kind": "publisher_transcript",
+        "start": 475,
+        "text": "Dr. Anderson: Troy Jackson is looking out for us. Susan Collins — she's looking out for Trump.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainers-lose-trust-in-susan-collins-after-dozens-of-votes-to-confirm-anti-abortion-judges",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 501,
+        "anchor_quote": "Troy Jackson",
+        "anchor_start": 489,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nDr. Anderson: My job is to look out for my patients every day, and I'm looking for leaders that will do the same.\nDr. Anderson: So when Susan Collins voted to confirm Trump's anti-abortion Supreme Court justices, she lost my trust.\nDr. Anderson: At the same time, Troy Jackson was protecting and expanding reproductive rights. As Senate President, he passed legislation to guarantee the right to abortion in Maine.\nDr. Anderson: Troy Jackson is looking out for us. Susan Collins — she's looking out for Trump.",
+    "text_hash": "3294f2dd0947a8e1b001953cdade64e21774b2e5c80d6ec30b4dd5b3d2530b0d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-0b7853be4be45350-0",
+    "alignment": "D",
+    "block_id": "jackson-0b7853be4be45350-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-0b7853be4be45350-0-claims-001-007",
+    "claim_text": "Susan Collins — she's looking out for Trump.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 569,
+        "kind": "publisher_transcript",
+        "start": 475,
+        "text": "Dr. Anderson: Troy Jackson is looking out for us. Susan Collins — she's looking out for Trump.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainers-lose-trust-in-susan-collins-after-dozens-of-votes-to-confirm-anti-abortion-judges",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 538,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 525,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 568,
+        "anchor_quote": "Trump",
+        "anchor_start": 563,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nDr. Anderson: My job is to look out for my patients every day, and I'm looking for leaders that will do the same.\nDr. Anderson: So when Susan Collins voted to confirm Trump's anti-abortion Supreme Court justices, she lost my trust.\nDr. Anderson: At the same time, Troy Jackson was protecting and expanding reproductive rights. As Senate President, he passed legislation to guarantee the right to abortion in Maine.\nDr. Anderson: Troy Jackson is looking out for us. Susan Collins — she's looking out for Trump.",
+    "text_hash": "3294f2dd0947a8e1b001953cdade64e21774b2e5c80d6ec30b4dd5b3d2530b0d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-0b7853be4be45350-0",
+    "alignment": "D",
+    "block_id": "jackson-0b7853be4be45350-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-0b7853be4be45350-0-claims-001-008",
+    "claim_text": "she's looking out for Trump",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 569,
+        "kind": "publisher_transcript",
+        "start": 475,
+        "text": "Dr. Anderson: Troy Jackson is looking out for us. Susan Collins — she's looking out for Trump.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainers-lose-trust-in-susan-collins-after-dozens-of-votes-to-confirm-anti-abortion-judges",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 568,
+        "anchor_quote": "Trump",
+        "anchor_start": 563,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nDr. Anderson: My job is to look out for my patients every day, and I'm looking for leaders that will do the same.\nDr. Anderson: So when Susan Collins voted to confirm Trump's anti-abortion Supreme Court justices, she lost my trust.\nDr. Anderson: At the same time, Troy Jackson was protecting and expanding reproductive rights. As Senate President, he passed legislation to guarantee the right to abortion in Maine.\nDr. Anderson: Troy Jackson is looking out for us. Susan Collins — she's looking out for Trump.",
+    "text_hash": "3294f2dd0947a8e1b001953cdade64e21774b2e5c80d6ec30b4dd5b3d2530b0d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-208a7aa44fcf0655-0",
+    "alignment": "D",
+    "block_id": "jackson-208a7aa44fcf0655-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-208a7aa44fcf0655-0-claims-001-001",
+    "claim_text": "Troy was born to two teenage parents, and we struggled a lot.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Troy was born to two teenage parents, and we struggled a lot. He didn't use that as an excuse. He used that as fuel to make things better for other people.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-highlights-troy-jacksons-working-class-roots",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 4,
+        "anchor_quote": "Troy",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "Troy",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy was born to two teenage parents, and we struggled a lot. He didn't use that as an excuse. He used that as fuel to make things better for other people.\nTroy never talks about what he's done. But somebody will come up to me in the grocery store or someplace in town, and they'll say, “Troy, helped me get a sewer. Troy helped me get my mother into a nursing home.”\nIf you need help, he's gonna be there for you. That is who he is.\nI'm Troy Jackson, this is my mom, and I approve this message.",
+    "text_hash": "f1ea49365825302507c6108157c61c261b0faf2ea63aabd7c976964e926cdd28",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-208a7aa44fcf0655-0",
+    "alignment": "D",
+    "block_id": "jackson-208a7aa44fcf0655-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-208a7aa44fcf0655-0-claims-001-002",
+    "claim_text": "He didn't use that as an excuse.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Troy was born to two teenage parents, and we struggled a lot. He didn't use that as an excuse. He used that as fuel to make things better for other people.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-highlights-troy-jacksons-working-class-roots",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 64,
+        "anchor_quote": "He",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "He",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy was born to two teenage parents, and we struggled a lot. He didn't use that as an excuse. He used that as fuel to make things better for other people.\nTroy never talks about what he's done. But somebody will come up to me in the grocery store or someplace in town, and they'll say, “Troy, helped me get a sewer. Troy helped me get my mother into a nursing home.”\nIf you need help, he's gonna be there for you. That is who he is.\nI'm Troy Jackson, this is my mom, and I approve this message.",
+    "text_hash": "f1ea49365825302507c6108157c61c261b0faf2ea63aabd7c976964e926cdd28",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-208a7aa44fcf0655-0",
+    "alignment": "D",
+    "block_id": "jackson-208a7aa44fcf0655-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-208a7aa44fcf0655-0-claims-001-003",
+    "claim_text": "He used that as fuel to make things better for other people.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Troy was born to two teenage parents, and we struggled a lot. He didn't use that as an excuse. He used that as fuel to make things better for other people.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-highlights-troy-jacksons-working-class-roots",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 64,
+        "anchor_quote": "He",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "He",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy was born to two teenage parents, and we struggled a lot. He didn't use that as an excuse. He used that as fuel to make things better for other people.\nTroy never talks about what he's done. But somebody will come up to me in the grocery store or someplace in town, and they'll say, “Troy, helped me get a sewer. Troy helped me get my mother into a nursing home.”\nIf you need help, he's gonna be there for you. That is who he is.\nI'm Troy Jackson, this is my mom, and I approve this message.",
+    "text_hash": "f1ea49365825302507c6108157c61c261b0faf2ea63aabd7c976964e926cdd28",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-208a7aa44fcf0655-0",
+    "alignment": "D",
+    "block_id": "jackson-208a7aa44fcf0655-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-208a7aa44fcf0655-0-claims-001-004",
+    "claim_text": "Somebody will come up to me in the grocery store or someplace in town, and they'll say, “Troy, helped me get a sewer.”",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 367,
+        "kind": "publisher_transcript",
+        "start": 156,
+        "text": "Troy never talks about what he's done. But somebody will come up to me in the grocery store or someplace in town, and they'll say, “Troy, helped me get a sewer. Troy helped me get my mother into a nursing home.”",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-highlights-troy-jacksons-working-class-roots",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 160,
+        "anchor_quote": "Troy",
+        "anchor_start": 156,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "Troy",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy was born to two teenage parents, and we struggled a lot. He didn't use that as an excuse. He used that as fuel to make things better for other people.\nTroy never talks about what he's done. But somebody will come up to me in the grocery store or someplace in town, and they'll say, “Troy, helped me get a sewer. Troy helped me get my mother into a nursing home.”\nIf you need help, he's gonna be there for you. That is who he is.\nI'm Troy Jackson, this is my mom, and I approve this message.",
+    "text_hash": "f1ea49365825302507c6108157c61c261b0faf2ea63aabd7c976964e926cdd28",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-208a7aa44fcf0655-0",
+    "alignment": "D",
+    "block_id": "jackson-208a7aa44fcf0655-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-208a7aa44fcf0655-0-claims-001-005",
+    "claim_text": "Troy helped me get my mother into a nursing home.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 367,
+        "kind": "publisher_transcript",
+        "start": 156,
+        "text": "Troy never talks about what he's done. But somebody will come up to me in the grocery store or someplace in town, and they'll say, “Troy, helped me get a sewer. Troy helped me get my mother into a nursing home.”",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-highlights-troy-jacksons-working-class-roots",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 160,
+        "anchor_quote": "Troy",
+        "anchor_start": 156,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "Troy",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy was born to two teenage parents, and we struggled a lot. He didn't use that as an excuse. He used that as fuel to make things better for other people.\nTroy never talks about what he's done. But somebody will come up to me in the grocery store or someplace in town, and they'll say, “Troy, helped me get a sewer. Troy helped me get my mother into a nursing home.”\nIf you need help, he's gonna be there for you. That is who he is.\nI'm Troy Jackson, this is my mom, and I approve this message.",
+    "text_hash": "f1ea49365825302507c6108157c61c261b0faf2ea63aabd7c976964e926cdd28",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-208a7aa44fcf0655-0",
+    "alignment": "D",
+    "block_id": "jackson-208a7aa44fcf0655-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-208a7aa44fcf0655-0-claims-001-006",
+    "claim_text": "If you need help, he's gonna be there for you.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 433,
+        "kind": "publisher_transcript",
+        "start": 368,
+        "text": "If you need help, he's gonna be there for you. That is who he is.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-highlights-troy-jacksons-working-class-roots",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 382,
+        "anchor_quote": "he",
+        "anchor_start": 380,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "he",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy was born to two teenage parents, and we struggled a lot. He didn't use that as an excuse. He used that as fuel to make things better for other people.\nTroy never talks about what he's done. But somebody will come up to me in the grocery store or someplace in town, and they'll say, “Troy, helped me get a sewer. Troy helped me get my mother into a nursing home.”\nIf you need help, he's gonna be there for you. That is who he is.\nI'm Troy Jackson, this is my mom, and I approve this message.",
+    "text_hash": "f1ea49365825302507c6108157c61c261b0faf2ea63aabd7c976964e926cdd28",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-208a7aa44fcf0655-0",
+    "alignment": "D",
+    "block_id": "jackson-208a7aa44fcf0655-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-208a7aa44fcf0655-0-claims-001-007",
+    "claim_text": "That is who he is.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 433,
+        "kind": "publisher_transcript",
+        "start": 368,
+        "text": "If you need help, he's gonna be there for you. That is who he is.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-highlights-troy-jacksons-working-class-roots",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 382,
+        "anchor_quote": "he",
+        "anchor_start": 380,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "he",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy was born to two teenage parents, and we struggled a lot. He didn't use that as an excuse. He used that as fuel to make things better for other people.\nTroy never talks about what he's done. But somebody will come up to me in the grocery store or someplace in town, and they'll say, “Troy, helped me get a sewer. Troy helped me get my mother into a nursing home.”\nIf you need help, he's gonna be there for you. That is who he is.\nI'm Troy Jackson, this is my mom, and I approve this message.",
+    "text_hash": "f1ea49365825302507c6108157c61c261b0faf2ea63aabd7c976964e926cdd28",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-208a7aa44fcf0655-0",
+    "alignment": "D",
+    "block_id": "jackson-208a7aa44fcf0655-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-208a7aa44fcf0655-0-claims-001-008",
+    "claim_text": "I'm Troy Jackson, and I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 495,
+        "kind": "publisher_transcript",
+        "start": 434,
+        "text": "I'm Troy Jackson, this is my mom, and I approve this message.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-highlights-troy-jacksons-working-class-roots",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 450,
+        "anchor_quote": "Troy Jackson",
+        "anchor_start": 438,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "Troy Jackson",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy was born to two teenage parents, and we struggled a lot. He didn't use that as an excuse. He used that as fuel to make things better for other people.\nTroy never talks about what he's done. But somebody will come up to me in the grocery store or someplace in town, and they'll say, “Troy, helped me get a sewer. Troy helped me get my mother into a nursing home.”\nIf you need help, he's gonna be there for you. That is who he is.\nI'm Troy Jackson, this is my mom, and I approve this message.",
+    "text_hash": "f1ea49365825302507c6108157c61c261b0faf2ea63aabd7c976964e926cdd28",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-208a7aa44fcf0655-0",
+    "alignment": "D",
+    "block_id": "jackson-208a7aa44fcf0655-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-208a7aa44fcf0655-0-claims-001-009",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 495,
+        "kind": "publisher_transcript",
+        "start": 434,
+        "text": "I'm Troy Jackson, this is my mom, and I approve this message.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-highlights-troy-jacksons-working-class-roots",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 435,
+        "anchor_quote": "I",
+        "anchor_start": 434,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy was born to two teenage parents, and we struggled a lot. He didn't use that as an excuse. He used that as fuel to make things better for other people.\nTroy never talks about what he's done. But somebody will come up to me in the grocery store or someplace in town, and they'll say, “Troy, helped me get a sewer. Troy helped me get my mother into a nursing home.”\nIf you need help, he's gonna be there for you. That is who he is.\nI'm Troy Jackson, this is my mom, and I approve this message.",
+    "text_hash": "f1ea49365825302507c6108157c61c261b0faf2ea63aabd7c976964e926cdd28",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-208a7aa44fcf0655-0",
+    "alignment": "D",
+    "block_id": "jackson-208a7aa44fcf0655-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-208a7aa44fcf0655-0-claims-001-010",
+    "claim_text": "This is my mom.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 495,
+        "kind": "publisher_transcript",
+        "start": 434,
+        "text": "I'm Troy Jackson, this is my mom, and I approve this message.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-highlights-troy-jacksons-working-class-roots",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 466,
+        "anchor_quote": "my mom",
+        "anchor_start": 460,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "my mom",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy was born to two teenage parents, and we struggled a lot. He didn't use that as an excuse. He used that as fuel to make things better for other people.\nTroy never talks about what he's done. But somebody will come up to me in the grocery store or someplace in town, and they'll say, “Troy, helped me get a sewer. Troy helped me get my mother into a nursing home.”\nIf you need help, he's gonna be there for you. That is who he is.\nI'm Troy Jackson, this is my mom, and I approve this message.",
+    "text_hash": "f1ea49365825302507c6108157c61c261b0faf2ea63aabd7c976964e926cdd28",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-52df90b3947810ea-0",
+    "alignment": "D",
+    "block_id": "jackson-52df90b3947810ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-52df90b3947810ea-0-claims-001-001",
+    "claim_text": "I'm Troy Jackson, and I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 45,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "I'm Troy Jackson, and I approve this message.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-jackson-for-maine-calls-out-collins-for-supporting-donald-trump-blank-check-for-ice",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "I'm Troy Jackson",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I'm Troy Jackson, and I approve this message.\nIt's not just a vote here or a vote there. Susan Collins voted with Trump 96% of the time.\nAnd things have only gotten worse for us.\nShe voted to give ICE an extra 70 billion.\nCuts to Medicare and Medicaid…\nPeople across Maine lost their health insurance…\nTo pay for what?\nTax cuts to billionaires.\nSusan Collins has let me down and all of us down so many times.",
+    "text_hash": "fb696be052d1c1896994f1acea90db8d4b72f35795a3903a1d6014e592a3a0a0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-52df90b3947810ea-0",
+    "alignment": "D",
+    "block_id": "jackson-52df90b3947810ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-52df90b3947810ea-0-claims-001-002",
+    "claim_text": "Susan Collins voted with Trump 96% of the time.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 136,
+        "kind": "publisher_transcript",
+        "start": 46,
+        "text": "It's not just a vote here or a vote there. Susan Collins voted with Trump 96% of the time.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-jackson-for-maine-calls-out-collins-for-supporting-donald-trump-blank-check-for-ice",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 102,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 89,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 119,
+        "anchor_quote": "Trump",
+        "anchor_start": 114,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm Troy Jackson, and I approve this message.\nIt's not just a vote here or a vote there. Susan Collins voted with Trump 96% of the time.\nAnd things have only gotten worse for us.\nShe voted to give ICE an extra 70 billion.\nCuts to Medicare and Medicaid…\nPeople across Maine lost their health insurance…\nTo pay for what?\nTax cuts to billionaires.\nSusan Collins has let me down and all of us down so many times.",
+    "text_hash": "fb696be052d1c1896994f1acea90db8d4b72f35795a3903a1d6014e592a3a0a0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-52df90b3947810ea-0",
+    "alignment": "D",
+    "block_id": "jackson-52df90b3947810ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-52df90b3947810ea-0-claims-001-003",
+    "claim_text": "Things have only gotten worse for us.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 178,
+        "kind": "publisher_transcript",
+        "start": 137,
+        "text": "And things have only gotten worse for us.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-jackson-for-maine-calls-out-collins-for-supporting-donald-trump-blank-check-for-ice",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 177,
+        "anchor_quote": "us",
+        "anchor_start": 175,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "us",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm Troy Jackson, and I approve this message.\nIt's not just a vote here or a vote there. Susan Collins voted with Trump 96% of the time.\nAnd things have only gotten worse for us.\nShe voted to give ICE an extra 70 billion.\nCuts to Medicare and Medicaid…\nPeople across Maine lost their health insurance…\nTo pay for what?\nTax cuts to billionaires.\nSusan Collins has let me down and all of us down so many times.",
+    "text_hash": "fb696be052d1c1896994f1acea90db8d4b72f35795a3903a1d6014e592a3a0a0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-52df90b3947810ea-0",
+    "alignment": "D",
+    "block_id": "jackson-52df90b3947810ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-52df90b3947810ea-0-claims-001-004",
+    "claim_text": "She voted to give ICE an extra 70 billion.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 221,
+        "kind": "publisher_transcript",
+        "start": 179,
+        "text": "She voted to give ICE an extra 70 billion.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-jackson-for-maine-calls-out-collins-for-supporting-donald-trump-blank-check-for-ice",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 182,
+        "anchor_quote": "She",
+        "anchor_start": 179,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 200,
+        "anchor_quote": "ICE",
+        "anchor_start": 197,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "ICE",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I'm Troy Jackson, and I approve this message.\nIt's not just a vote here or a vote there. Susan Collins voted with Trump 96% of the time.\nAnd things have only gotten worse for us.\nShe voted to give ICE an extra 70 billion.\nCuts to Medicare and Medicaid…\nPeople across Maine lost their health insurance…\nTo pay for what?\nTax cuts to billionaires.\nSusan Collins has let me down and all of us down so many times.",
+    "text_hash": "fb696be052d1c1896994f1acea90db8d4b72f35795a3903a1d6014e592a3a0a0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-52df90b3947810ea-0",
+    "alignment": "D",
+    "block_id": "jackson-52df90b3947810ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-52df90b3947810ea-0-claims-001-005",
+    "claim_text": "There were cuts to Medicare and Medicaid…",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 252,
+        "kind": "publisher_transcript",
+        "start": 222,
+        "text": "Cuts to Medicare and Medicaid…",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-jackson-for-maine-calls-out-collins-for-supporting-donald-trump-blank-check-for-ice",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 238,
+        "anchor_quote": "Medicare",
+        "anchor_start": 230,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Medicare",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 251,
+        "anchor_quote": "Medicaid",
+        "anchor_start": 243,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Medicaid",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm Troy Jackson, and I approve this message.\nIt's not just a vote here or a vote there. Susan Collins voted with Trump 96% of the time.\nAnd things have only gotten worse for us.\nShe voted to give ICE an extra 70 billion.\nCuts to Medicare and Medicaid…\nPeople across Maine lost their health insurance…\nTo pay for what?\nTax cuts to billionaires.\nSusan Collins has let me down and all of us down so many times.",
+    "text_hash": "fb696be052d1c1896994f1acea90db8d4b72f35795a3903a1d6014e592a3a0a0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-52df90b3947810ea-0",
+    "alignment": "D",
+    "block_id": "jackson-52df90b3947810ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-52df90b3947810ea-0-claims-001-006",
+    "claim_text": "People across Maine lost their health insurance…",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 301,
+        "kind": "publisher_transcript",
+        "start": 253,
+        "text": "People across Maine lost their health insurance…",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-jackson-for-maine-calls-out-collins-for-supporting-donald-trump-blank-check-for-ice",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 272,
+        "anchor_quote": "People across Maine",
+        "anchor_start": 253,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "People across Maine",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm Troy Jackson, and I approve this message.\nIt's not just a vote here or a vote there. Susan Collins voted with Trump 96% of the time.\nAnd things have only gotten worse for us.\nShe voted to give ICE an extra 70 billion.\nCuts to Medicare and Medicaid…\nPeople across Maine lost their health insurance…\nTo pay for what?\nTax cuts to billionaires.\nSusan Collins has let me down and all of us down so many times.",
+    "text_hash": "fb696be052d1c1896994f1acea90db8d4b72f35795a3903a1d6014e592a3a0a0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-52df90b3947810ea-0",
+    "alignment": "D",
+    "block_id": "jackson-52df90b3947810ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-52df90b3947810ea-0-claims-001-007",
+    "claim_text": "Tax cuts were given to billionaires.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 344,
+        "kind": "publisher_transcript",
+        "start": 319,
+        "text": "Tax cuts to billionaires.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-jackson-for-maine-calls-out-collins-for-supporting-donald-trump-blank-check-for-ice",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 343,
+        "anchor_quote": "billionaires",
+        "anchor_start": 331,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "billionaires",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm Troy Jackson, and I approve this message.\nIt's not just a vote here or a vote there. Susan Collins voted with Trump 96% of the time.\nAnd things have only gotten worse for us.\nShe voted to give ICE an extra 70 billion.\nCuts to Medicare and Medicaid…\nPeople across Maine lost their health insurance…\nTo pay for what?\nTax cuts to billionaires.\nSusan Collins has let me down and all of us down so many times.",
+    "text_hash": "fb696be052d1c1896994f1acea90db8d4b72f35795a3903a1d6014e592a3a0a0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-52df90b3947810ea-0",
+    "alignment": "D",
+    "block_id": "jackson-52df90b3947810ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-52df90b3947810ea-0-claims-001-008",
+    "claim_text": "Susan Collins has let me down and all of us down so many times.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 408,
+        "kind": "publisher_transcript",
+        "start": 345,
+        "text": "Susan Collins has let me down and all of us down so many times.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-jackson-for-maine-calls-out-collins-for-supporting-donald-trump-blank-check-for-ice",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 358,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 345,
+        "anchor_unit_id": 9,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 369,
+        "anchor_quote": "me",
+        "anchor_start": 367,
+        "anchor_unit_id": 9,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 348,
+        "anchor_quote": "us",
+        "anchor_start": 346,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "us",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm Troy Jackson, and I approve this message.\nIt's not just a vote here or a vote there. Susan Collins voted with Trump 96% of the time.\nAnd things have only gotten worse for us.\nShe voted to give ICE an extra 70 billion.\nCuts to Medicare and Medicaid…\nPeople across Maine lost their health insurance…\nTo pay for what?\nTax cuts to billionaires.\nSusan Collins has let me down and all of us down so many times.",
+    "text_hash": "fb696be052d1c1896994f1acea90db8d4b72f35795a3903a1d6014e592a3a0a0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-52df90b3947810ea-0",
+    "alignment": "D",
+    "block_id": "jackson-52df90b3947810ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-52df90b3947810ea-0-claims-001-009",
+    "claim_text": "Susan Collins has let us down so many times.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 408,
+        "kind": "publisher_transcript",
+        "start": 345,
+        "text": "Susan Collins has let me down and all of us down so many times.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-jackson-for-maine-calls-out-collins-for-supporting-donald-trump-blank-check-for-ice",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 358,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 345,
+        "anchor_unit_id": 9,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 348,
+        "anchor_quote": "us",
+        "anchor_start": 346,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "us",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm Troy Jackson, and I approve this message.\nIt's not just a vote here or a vote there. Susan Collins voted with Trump 96% of the time.\nAnd things have only gotten worse for us.\nShe voted to give ICE an extra 70 billion.\nCuts to Medicare and Medicaid…\nPeople across Maine lost their health insurance…\nTo pay for what?\nTax cuts to billionaires.\nSusan Collins has let me down and all of us down so many times.",
+    "text_hash": "fb696be052d1c1896994f1acea90db8d4b72f35795a3903a1d6014e592a3a0a0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-8f1b86280f5159ea-0",
+    "alignment": "D",
+    "block_id": "jackson-8f1b86280f5159ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-8f1b86280f5159ea-0-claims-001-001",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 59,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainer-calls-out-susan-collins-for-advancing-1-trillion-in-medicaid-cuts",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 15,
+        "anchor_quote": "I",
+        "anchor_start": 14,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nSupporter: You want to know what happens when Susan Collins votes with Trump 96% of the time? We get cut off at the knees, that's what.\nSupporter: She casts the deciding vote for Trump's cuts to Medicare and Medicaid to give tax cuts to billionaires.\nSupporter: And her attitude is like, well, the rest of us can just go pick **** with the chickens, I guess.\nSupporter: Troy Jackson votes with Mainers, and he'll protect the Social Security and Medicare we earned.",
+    "text_hash": "e1d881c95a503fa3169a64bae517c8cd9125c089dbb7d016b234d55a7f519800",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-8f1b86280f5159ea-0",
+    "alignment": "D",
+    "block_id": "jackson-8f1b86280f5159ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-8f1b86280f5159ea-0-claims-001-002",
+    "claim_text": "Susan Collins votes with Trump 96% of the time.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 195,
+        "kind": "publisher_transcript",
+        "start": 60,
+        "text": "Supporter: You want to know what happens when Susan Collins votes with Trump 96% of the time? We get cut off at the knees, that's what.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainer-calls-out-susan-collins-for-advancing-1-trillion-in-medicaid-cuts",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 119,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 106,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nSupporter: You want to know what happens when Susan Collins votes with Trump 96% of the time? We get cut off at the knees, that's what.\nSupporter: She casts the deciding vote for Trump's cuts to Medicare and Medicaid to give tax cuts to billionaires.\nSupporter: And her attitude is like, well, the rest of us can just go pick **** with the chickens, I guess.\nSupporter: Troy Jackson votes with Mainers, and he'll protect the Social Security and Medicare we earned.",
+    "text_hash": "e1d881c95a503fa3169a64bae517c8cd9125c089dbb7d016b234d55a7f519800",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-8f1b86280f5159ea-0",
+    "alignment": "D",
+    "block_id": "jackson-8f1b86280f5159ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-8f1b86280f5159ea-0-claims-001-003",
+    "claim_text": "When Susan Collins votes with Trump 96% of the time, we get cut off at the knees.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 195,
+        "kind": "publisher_transcript",
+        "start": 60,
+        "text": "Supporter: You want to know what happens when Susan Collins votes with Trump 96% of the time? We get cut off at the knees, that's what.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainer-calls-out-susan-collins-for-advancing-1-trillion-in-medicaid-cuts",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 119,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 106,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nSupporter: You want to know what happens when Susan Collins votes with Trump 96% of the time? We get cut off at the knees, that's what.\nSupporter: She casts the deciding vote for Trump's cuts to Medicare and Medicaid to give tax cuts to billionaires.\nSupporter: And her attitude is like, well, the rest of us can just go pick **** with the chickens, I guess.\nSupporter: Troy Jackson votes with Mainers, and he'll protect the Social Security and Medicare we earned.",
+    "text_hash": "e1d881c95a503fa3169a64bae517c8cd9125c089dbb7d016b234d55a7f519800",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-8f1b86280f5159ea-0",
+    "alignment": "D",
+    "block_id": "jackson-8f1b86280f5159ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-8f1b86280f5159ea-0-claims-001-004",
+    "claim_text": "She casts the deciding vote for Trump's cuts to Medicare and Medicaid to give tax cuts to billionaires.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 310,
+        "kind": "publisher_transcript",
+        "start": 196,
+        "text": "Supporter: She casts the deciding vote for Trump's cuts to Medicare and Medicaid to give tax cuts to billionaires.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainer-calls-out-susan-collins-for-advancing-1-trillion-in-medicaid-cuts",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 210,
+        "anchor_quote": "She",
+        "anchor_start": 207,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nSupporter: You want to know what happens when Susan Collins votes with Trump 96% of the time? We get cut off at the knees, that's what.\nSupporter: She casts the deciding vote for Trump's cuts to Medicare and Medicaid to give tax cuts to billionaires.\nSupporter: And her attitude is like, well, the rest of us can just go pick **** with the chickens, I guess.\nSupporter: Troy Jackson votes with Mainers, and he'll protect the Social Security and Medicare we earned.",
+    "text_hash": "e1d881c95a503fa3169a64bae517c8cd9125c089dbb7d016b234d55a7f519800",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-8f1b86280f5159ea-0",
+    "alignment": "D",
+    "block_id": "jackson-8f1b86280f5159ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-8f1b86280f5159ea-0-claims-001-005",
+    "claim_text": "Her attitude is like, well, the rest of us can just go pick **** with the chickens, I guess.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 418,
+        "kind": "publisher_transcript",
+        "start": 311,
+        "text": "Supporter: And her attitude is like, well, the rest of us can just go pick **** with the chickens, I guess.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainer-calls-out-susan-collins-for-advancing-1-trillion-in-medicaid-cuts",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 329,
+        "anchor_quote": "her",
+        "anchor_start": 326,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nSupporter: You want to know what happens when Susan Collins votes with Trump 96% of the time? We get cut off at the knees, that's what.\nSupporter: She casts the deciding vote for Trump's cuts to Medicare and Medicaid to give tax cuts to billionaires.\nSupporter: And her attitude is like, well, the rest of us can just go pick **** with the chickens, I guess.\nSupporter: Troy Jackson votes with Mainers, and he'll protect the Social Security and Medicare we earned.",
+    "text_hash": "e1d881c95a503fa3169a64bae517c8cd9125c089dbb7d016b234d55a7f519800",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-8f1b86280f5159ea-0",
+    "alignment": "D",
+    "block_id": "jackson-8f1b86280f5159ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-8f1b86280f5159ea-0-claims-001-006",
+    "claim_text": "Troy Jackson votes with Mainers.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 524,
+        "kind": "publisher_transcript",
+        "start": 419,
+        "text": "Supporter: Troy Jackson votes with Mainers, and he'll protect the Social Security and Medicare we earned.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainer-calls-out-susan-collins-for-advancing-1-trillion-in-medicaid-cuts",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 442,
+        "anchor_quote": "Troy Jackson",
+        "anchor_start": 430,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nSupporter: You want to know what happens when Susan Collins votes with Trump 96% of the time? We get cut off at the knees, that's what.\nSupporter: She casts the deciding vote for Trump's cuts to Medicare and Medicaid to give tax cuts to billionaires.\nSupporter: And her attitude is like, well, the rest of us can just go pick **** with the chickens, I guess.\nSupporter: Troy Jackson votes with Mainers, and he'll protect the Social Security and Medicare we earned.",
+    "text_hash": "e1d881c95a503fa3169a64bae517c8cd9125c089dbb7d016b234d55a7f519800",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-8f1b86280f5159ea-0",
+    "alignment": "D",
+    "block_id": "jackson-8f1b86280f5159ea-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-8f1b86280f5159ea-0-claims-001-007",
+    "claim_text": "He'll protect the Social Security and Medicare we earned.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 524,
+        "kind": "publisher_transcript",
+        "start": 419,
+        "text": "Supporter: Troy Jackson votes with Mainers, and he'll protect the Social Security and Medicare we earned.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-mainer-calls-out-susan-collins-for-advancing-1-trillion-in-medicaid-cuts",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 469,
+        "anchor_quote": "he",
+        "anchor_start": 467,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: I'm Troy Jackson, and I approve this message.\nSupporter: You want to know what happens when Susan Collins votes with Trump 96% of the time? We get cut off at the knees, that's what.\nSupporter: She casts the deciding vote for Trump's cuts to Medicare and Medicaid to give tax cuts to billionaires.\nSupporter: And her attitude is like, well, the rest of us can just go pick **** with the chickens, I guess.\nSupporter: Troy Jackson votes with Mainers, and he'll protect the Social Security and Medicare we earned.",
+    "text_hash": "e1d881c95a503fa3169a64bae517c8cd9125c089dbb7d016b234d55a7f519800",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-914abc10d942a13d-0",
+    "alignment": "D",
+    "block_id": "jackson-914abc10d942a13d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-914abc10d942a13d-0-claims-001-001",
+    "claim_text": "I’m a fifth-generation logger from Allagash.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 153,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "I’m a fifth-generation logger from Allagash. I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-troy-jackson-fights-for-everyday-mainers-struggling-to-get-by-in-trump-collins-economy",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 1,
+        "anchor_quote": "I",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m a fifth-generation logger from Allagash. I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.\nAnd it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.\nI’m Troy Jackson. I’m running for Senate, and I approve this message.",
+    "text_hash": "2d1db5549c45505c2ac70192dc87399f610218bb946efc7bc686d3599a205f33",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-914abc10d942a13d-0",
+    "alignment": "D",
+    "block_id": "jackson-914abc10d942a13d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-914abc10d942a13d-0-claims-001-002",
+    "claim_text": "I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 153,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "I’m a fifth-generation logger from Allagash. I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-troy-jackson-fights-for-everyday-mainers-struggling-to-get-by-in-trump-collins-economy",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 1,
+        "anchor_quote": "I",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m a fifth-generation logger from Allagash. I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.\nAnd it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.\nI’m Troy Jackson. I’m running for Senate, and I approve this message.",
+    "text_hash": "2d1db5549c45505c2ac70192dc87399f610218bb946efc7bc686d3599a205f33",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-914abc10d942a13d-0",
+    "alignment": "D",
+    "block_id": "jackson-914abc10d942a13d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-914abc10d942a13d-0-claims-001-003",
+    "claim_text": "People in this country work so damn hard and still feel so damn broke.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 434,
+        "kind": "publisher_transcript",
+        "start": 154,
+        "text": "And it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-troy-jackson-fights-for-everyday-mainers-struggling-to-get-by-in-trump-collins-economy",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 196,
+        "anchor_quote": "People in this country",
+        "anchor_start": 174,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "People in this country",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I’m a fifth-generation logger from Allagash. I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.\nAnd it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.\nI’m Troy Jackson. I’m running for Senate, and I approve this message.",
+    "text_hash": "2d1db5549c45505c2ac70192dc87399f610218bb946efc7bc686d3599a205f33",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-914abc10d942a13d-0",
+    "alignment": "D",
+    "block_id": "jackson-914abc10d942a13d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-914abc10d942a13d-0-claims-001-004",
+    "claim_text": "That’s no way to live.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 434,
+        "kind": "publisher_transcript",
+        "start": 154,
+        "text": "And it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-troy-jackson-fights-for-everyday-mainers-struggling-to-get-by-in-trump-collins-economy",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 249,
+        "anchor_quote": "That",
+        "anchor_start": 245,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "That",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I’m a fifth-generation logger from Allagash. I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.\nAnd it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.\nI’m Troy Jackson. I’m running for Senate, and I approve this message.",
+    "text_hash": "2d1db5549c45505c2ac70192dc87399f610218bb946efc7bc686d3599a205f33",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-914abc10d942a13d-0",
+    "alignment": "D",
+    "block_id": "jackson-914abc10d942a13d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-914abc10d942a13d-0-claims-001-005",
+    "claim_text": "Susan Collins keeps telling us that everything’s fine, but we know it’s not.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 434,
+        "kind": "publisher_transcript",
+        "start": 154,
+        "text": "And it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-troy-jackson-fights-for-everyday-mainers-struggling-to-get-by-in-trump-collins-economy",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 281,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 268,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "Susan Collins",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 329,
+        "anchor_quote": "we",
+        "anchor_start": 327,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "we",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I’m a fifth-generation logger from Allagash. I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.\nAnd it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.\nI’m Troy Jackson. I’m running for Senate, and I approve this message.",
+    "text_hash": "2d1db5549c45505c2ac70192dc87399f610218bb946efc7bc686d3599a205f33",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-914abc10d942a13d-0",
+    "alignment": "D",
+    "block_id": "jackson-914abc10d942a13d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-914abc10d942a13d-0-claims-001-006",
+    "claim_text": "We all have eyes.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 434,
+        "kind": "publisher_transcript",
+        "start": 154,
+        "text": "And it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-troy-jackson-fights-for-everyday-mainers-struggling-to-get-by-in-trump-collins-economy",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 347,
+        "anchor_quote": "We",
+        "anchor_start": 345,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "We",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m a fifth-generation logger from Allagash. I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.\nAnd it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.\nI’m Troy Jackson. I’m running for Senate, and I approve this message.",
+    "text_hash": "2d1db5549c45505c2ac70192dc87399f610218bb946efc7bc686d3599a205f33",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-914abc10d942a13d-0",
+    "alignment": "D",
+    "block_id": "jackson-914abc10d942a13d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-914abc10d942a13d-0-claims-001-007",
+    "claim_text": "Paychecks and bills, we know we’re getting screwed.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 434,
+        "kind": "publisher_transcript",
+        "start": 154,
+        "text": "And it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-troy-jackson-fights-for-everyday-mainers-struggling-to-get-by-in-trump-collins-economy",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 329,
+        "anchor_quote": "we",
+        "anchor_start": 327,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "we",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I’m a fifth-generation logger from Allagash. I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.\nAnd it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.\nI’m Troy Jackson. I’m running for Senate, and I approve this message.",
+    "text_hash": "2d1db5549c45505c2ac70192dc87399f610218bb946efc7bc686d3599a205f33",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-914abc10d942a13d-0",
+    "alignment": "D",
+    "block_id": "jackson-914abc10d942a13d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-914abc10d942a13d-0-claims-001-008",
+    "claim_text": "You deserve better.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 434,
+        "kind": "publisher_transcript",
+        "start": 154,
+        "text": "And it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-troy-jackson-fights-for-everyday-mainers-struggling-to-get-by-in-trump-collins-economy",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 418,
+        "anchor_quote": "You",
+        "anchor_start": 415,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "You",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "I’m a fifth-generation logger from Allagash. I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.\nAnd it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.\nI’m Troy Jackson. I’m running for Senate, and I approve this message.",
+    "text_hash": "2d1db5549c45505c2ac70192dc87399f610218bb946efc7bc686d3599a205f33",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-914abc10d942a13d-0",
+    "alignment": "D",
+    "block_id": "jackson-914abc10d942a13d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-914abc10d942a13d-0-claims-001-009",
+    "claim_text": "I’m Troy Jackson.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 504,
+        "kind": "publisher_transcript",
+        "start": 435,
+        "text": "I’m Troy Jackson. I’m running for Senate, and I approve this message.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-troy-jackson-fights-for-everyday-mainers-struggling-to-get-by-in-trump-collins-economy",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 436,
+        "anchor_quote": "I",
+        "anchor_start": 435,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m a fifth-generation logger from Allagash. I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.\nAnd it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.\nI’m Troy Jackson. I’m running for Senate, and I approve this message.",
+    "text_hash": "2d1db5549c45505c2ac70192dc87399f610218bb946efc7bc686d3599a205f33",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-914abc10d942a13d-0",
+    "alignment": "D",
+    "block_id": "jackson-914abc10d942a13d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-914abc10d942a13d-0-claims-001-010",
+    "claim_text": "I’m running for Senate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 504,
+        "kind": "publisher_transcript",
+        "start": 435,
+        "text": "I’m Troy Jackson. I’m running for Senate, and I approve this message.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-troy-jackson-fights-for-everyday-mainers-struggling-to-get-by-in-trump-collins-economy",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 436,
+        "anchor_quote": "I",
+        "anchor_start": 435,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m a fifth-generation logger from Allagash. I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.\nAnd it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.\nI’m Troy Jackson. I’m running for Senate, and I approve this message.",
+    "text_hash": "2d1db5549c45505c2ac70192dc87399f610218bb946efc7bc686d3599a205f33",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-914abc10d942a13d-0",
+    "alignment": "D",
+    "block_id": "jackson-914abc10d942a13d-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-914abc10d942a13d-0-claims-001-011",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 504,
+        "kind": "publisher_transcript",
+        "start": 435,
+        "text": "I’m Troy Jackson. I’m running for Senate, and I approve this message.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-tv-ad-troy-jackson-fights-for-everyday-mainers-struggling-to-get-by-in-trump-collins-economy",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 436,
+        "anchor_quote": "I",
+        "anchor_start": 435,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m a fifth-generation logger from Allagash. I grew up a poor kid in a town full of poor people doing everything right and still struggling to get ahead.\nAnd it’s worse now. People in this country work so damn hard and still feel so damn broke. That’s no way to live. Susan Collins keeps telling us that everything’s fine, but we know it’s not. We all have eyes. Paychecks and bills, we know we’re getting screwed. You deserve better.\nI’m Troy Jackson. I’m running for Senate, and I approve this message.",
+    "text_hash": "2d1db5549c45505c2ac70192dc87399f610218bb946efc7bc686d3599a205f33",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-93075c70a1d4a5fc-0",
+    "alignment": "D",
+    "block_id": "jackson-93075c70a1d4a5fc-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-001",
+    "claim_text": "This November, Mainers will decide the direction of this whole country.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 151,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/final-ad-i-owe-nothing-to-the-billionaires-or-trump-i-owe-everything-to-the-people-of-maine",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 36,
+        "anchor_quote": "Mainers",
+        "anchor_start": 29,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Mainers",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?\nTroy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.\nTroy Jackson: It won't be easy, but I've learned if your heart is in the right place, you can make things better.\nTroy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.\nTroy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+    "text_hash": "b5ebfaf0a7613852eea913ec2cd926ee24c9e744903cc057df6d150a28cf90f9",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-93075c70a1d4a5fc-0",
+    "alignment": "D",
+    "block_id": "jackson-93075c70a1d4a5fc-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-002",
+    "claim_text": "The direction of this whole country is a choice between billionaires and Trump, or everyday people like us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 151,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/final-ad-i-owe-nothing-to-the-billionaires-or-trump-i-owe-everything-to-the-people-of-maine",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 122,
+        "anchor_quote": "billionaires and Trump",
+        "anchor_start": 100,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "billionaires and Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 150,
+        "anchor_quote": "everyday people like us",
+        "anchor_start": 127,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "everyday people like us",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?\nTroy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.\nTroy Jackson: It won't be easy, but I've learned if your heart is in the right place, you can make things better.\nTroy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.\nTroy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+    "text_hash": "b5ebfaf0a7613852eea913ec2cd926ee24c9e744903cc057df6d150a28cf90f9",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-93075c70a1d4a5fc-0",
+    "alignment": "D",
+    "block_id": "jackson-93075c70a1d4a5fc-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-003",
+    "claim_text": "We can protect Social Security.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 252,
+        "kind": "publisher_transcript",
+        "start": 152,
+        "text": "Troy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/final-ad-i-owe-nothing-to-the-billionaires-or-trump-i-owe-everything-to-the-people-of-maine",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 168,
+        "anchor_quote": "We",
+        "anchor_start": 166,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "collective",
+        "name": "We",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 196,
+        "anchor_quote": "Social Security",
+        "anchor_start": 181,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Social Security",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?\nTroy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.\nTroy Jackson: It won't be easy, but I've learned if your heart is in the right place, you can make things better.\nTroy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.\nTroy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+    "text_hash": "b5ebfaf0a7613852eea913ec2cd926ee24c9e744903cc057df6d150a28cf90f9",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-93075c70a1d4a5fc-0",
+    "alignment": "D",
+    "block_id": "jackson-93075c70a1d4a5fc-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-004",
+    "claim_text": "We can get people health care.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 252,
+        "kind": "publisher_transcript",
+        "start": 152,
+        "text": "Troy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/final-ad-i-owe-nothing-to-the-billionaires-or-trump-i-owe-everything-to-the-people-of-maine",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 168,
+        "anchor_quote": "We",
+        "anchor_start": 166,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "collective",
+        "name": "We",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 208,
+        "anchor_quote": "people",
+        "anchor_start": 202,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "people",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 220,
+        "anchor_quote": "health care",
+        "anchor_start": 209,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "health care",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?\nTroy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.\nTroy Jackson: It won't be easy, but I've learned if your heart is in the right place, you can make things better.\nTroy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.\nTroy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+    "text_hash": "b5ebfaf0a7613852eea913ec2cd926ee24c9e744903cc057df6d150a28cf90f9",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-93075c70a1d4a5fc-0",
+    "alignment": "D",
+    "block_id": "jackson-93075c70a1d4a5fc-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-005",
+    "claim_text": "We can keep more of what we earn.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 252,
+        "kind": "publisher_transcript",
+        "start": 152,
+        "text": "Troy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/final-ad-i-owe-nothing-to-the-billionaires-or-trump-i-owe-everything-to-the-people-of-maine",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 168,
+        "anchor_quote": "We",
+        "anchor_start": 166,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "collective",
+        "name": "We",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?\nTroy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.\nTroy Jackson: It won't be easy, but I've learned if your heart is in the right place, you can make things better.\nTroy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.\nTroy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+    "text_hash": "b5ebfaf0a7613852eea913ec2cd926ee24c9e744903cc057df6d150a28cf90f9",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-93075c70a1d4a5fc-0",
+    "alignment": "D",
+    "block_id": "jackson-93075c70a1d4a5fc-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-006",
+    "claim_text": "If your heart is in the right place, you can make things better.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 366,
+        "kind": "publisher_transcript",
+        "start": 253,
+        "text": "Troy Jackson: It won't be easy, but I've learned if your heart is in the right place, you can make things better.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/final-ad-i-owe-nothing-to-the-billionaires-or-trump-i-owe-everything-to-the-people-of-maine",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 315,
+        "anchor_quote": "your heart",
+        "anchor_start": 305,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "you",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?\nTroy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.\nTroy Jackson: It won't be easy, but I've learned if your heart is in the right place, you can make things better.\nTroy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.\nTroy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+    "text_hash": "b5ebfaf0a7613852eea913ec2cd926ee24c9e744903cc057df6d150a28cf90f9",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-93075c70a1d4a5fc-0",
+    "alignment": "D",
+    "block_id": "jackson-93075c70a1d4a5fc-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-007",
+    "claim_text": "I owe nothing to the billionaires or Trump.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 492,
+        "kind": "publisher_transcript",
+        "start": 367,
+        "text": "Troy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/final-ad-i-owe-nothing-to-the-billionaires-or-trump-i-owe-everything-to-the-people-of-maine",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 382,
+        "anchor_quote": "I",
+        "anchor_start": 381,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 423,
+        "anchor_quote": "billionaires or Trump",
+        "anchor_start": 402,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "billionaires or Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?\nTroy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.\nTroy Jackson: It won't be easy, but I've learned if your heart is in the right place, you can make things better.\nTroy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.\nTroy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+    "text_hash": "b5ebfaf0a7613852eea913ec2cd926ee24c9e744903cc057df6d150a28cf90f9",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-93075c70a1d4a5fc-0",
+    "alignment": "D",
+    "block_id": "jackson-93075c70a1d4a5fc-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-008",
+    "claim_text": "I owe everything to the people of Maine.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 492,
+        "kind": "publisher_transcript",
+        "start": 367,
+        "text": "Troy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/final-ad-i-owe-nothing-to-the-billionaires-or-trump-i-owe-everything-to-the-people-of-maine",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 382,
+        "anchor_quote": "I",
+        "anchor_start": 381,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 464,
+        "anchor_quote": "the people of Maine",
+        "anchor_start": 445,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "the people of Maine",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?\nTroy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.\nTroy Jackson: It won't be easy, but I've learned if your heart is in the right place, you can make things better.\nTroy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.\nTroy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+    "text_hash": "b5ebfaf0a7613852eea913ec2cd926ee24c9e744903cc057df6d150a28cf90f9",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-93075c70a1d4a5fc-0",
+    "alignment": "D",
+    "block_id": "jackson-93075c70a1d4a5fc-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-009",
+    "claim_text": "That's what's in my heart.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 492,
+        "kind": "publisher_transcript",
+        "start": 367,
+        "text": "Troy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/final-ad-i-owe-nothing-to-the-billionaires-or-trump-i-owe-everything-to-the-people-of-maine",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 491,
+        "anchor_quote": "my heart",
+        "anchor_start": 483,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?\nTroy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.\nTroy Jackson: It won't be easy, but I've learned if your heart is in the right place, you can make things better.\nTroy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.\nTroy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+    "text_hash": "b5ebfaf0a7613852eea913ec2cd926ee24c9e744903cc057df6d150a28cf90f9",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-93075c70a1d4a5fc-0",
+    "alignment": "D",
+    "block_id": "jackson-93075c70a1d4a5fc-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-010",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 586,
+        "kind": "publisher_transcript",
+        "start": 493,
+        "text": "Troy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/final-ad-i-owe-nothing-to-the-billionaires-or-trump-i-owe-everything-to-the-people-of-maine",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 508,
+        "anchor_quote": "I",
+        "anchor_start": 507,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?\nTroy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.\nTroy Jackson: It won't be easy, but I've learned if your heart is in the right place, you can make things better.\nTroy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.\nTroy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+    "text_hash": "b5ebfaf0a7613852eea913ec2cd926ee24c9e744903cc057df6d150a28cf90f9",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-93075c70a1d4a5fc-0",
+    "alignment": "D",
+    "block_id": "jackson-93075c70a1d4a5fc-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-011",
+    "claim_text": "I'd be honored to have your vote.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 586,
+        "kind": "publisher_transcript",
+        "start": 493,
+        "text": "Troy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/final-ad-i-owe-nothing-to-the-billionaires-or-trump-i-owe-everything-to-the-people-of-maine",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 508,
+        "anchor_quote": "I",
+        "anchor_start": 507,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 585,
+        "anchor_quote": "your vote",
+        "anchor_start": 576,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "your vote",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?\nTroy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.\nTroy Jackson: It won't be easy, but I've learned if your heart is in the right place, you can make things better.\nTroy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.\nTroy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+    "text_hash": "b5ebfaf0a7613852eea913ec2cd926ee24c9e744903cc057df6d150a28cf90f9",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-93075c70a1d4a5fc-0",
+    "alignment": "D",
+    "block_id": "jackson-93075c70a1d4a5fc-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-012",
+    "claim_text": "I am Troy Jackson.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 586,
+        "kind": "publisher_transcript",
+        "start": 493,
+        "text": "Troy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/final-ad-i-owe-nothing-to-the-billionaires-or-trump-i-owe-everything-to-the-people-of-maine",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 508,
+        "anchor_quote": "I",
+        "anchor_start": 507,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 505,
+        "anchor_quote": "Troy Jackson",
+        "anchor_start": 493,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "Troy Jackson",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: This November, Mainers will decide the direction of this whole country. Is it for the billionaires and Trump, or everyday people like us?\nTroy Jackson: We can protect Social Security, get people health care, and keep more of what we earn.\nTroy Jackson: It won't be easy, but I've learned if your heart is in the right place, you can make things better.\nTroy Jackson: I owe nothing to the billionaires or Trump. I owe everything to the people of Maine. That's what's in my heart.\nTroy Jackson: I'm Troy Jackson. I approve this message, and I'd be honored to have your vote.",
+    "text_hash": "b5ebfaf0a7613852eea913ec2cd926ee24c9e744903cc057df6d150a28cf90f9",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
