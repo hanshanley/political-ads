@@ -61764,5 +61764,1161 @@
     "text_hash": "341a8cd20f66bcbbea9fb128cfc2f7db06d5ced17eaeb1e20a7d14195bb48d27",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2962-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-2962-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2962-2-claims-001-001",
+    "claim_text": "These days, costs are rising everywhere",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 39,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "These days, costs are rising everywhere",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-2-6-million-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [],
+    "text": "These days, costs are rising everywhere\nAnd instead of helping, Scott Perry spent almost 15 years in DC working for his wealthy donors\nHe voted to spike our electric bills,\nTaking almost $300,000 from energy companies\nHe voted to let Wall Street charge higher junk fees\nTaking over half a million from the financial industry\nThis isn’t the cost of doing business,\nIt’s the cost of keeping Scott Perry in DC\nIt’s time for change",
+    "text_hash": "5ae39cd663fe8fecf03f8c35b2a772812c41ec24238c01d770843a8b420e966d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2962-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-2962-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2962-2-claims-001-002",
+    "claim_text": "Scott Perry spent almost 15 years in DC working for his wealthy donors",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 134,
+        "kind": "publisher_transcript",
+        "start": 40,
+        "text": "And instead of helping, Scott Perry spent almost 15 years in DC working for his wealthy donors",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-2-6-million-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 75,
+        "anchor_quote": "Scott Perry",
+        "anchor_start": 64,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H2PA04135",
+        "kind": "person",
+        "name": "PERRY, SCOTT",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "These days, costs are rising everywhere\nAnd instead of helping, Scott Perry spent almost 15 years in DC working for his wealthy donors\nHe voted to spike our electric bills,\nTaking almost $300,000 from energy companies\nHe voted to let Wall Street charge higher junk fees\nTaking over half a million from the financial industry\nThis isn’t the cost of doing business,\nIt’s the cost of keeping Scott Perry in DC\nIt’s time for change",
+    "text_hash": "5ae39cd663fe8fecf03f8c35b2a772812c41ec24238c01d770843a8b420e966d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2962-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-2962-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2962-2-claims-001-003",
+    "claim_text": "He voted to spike our electric bills",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 172,
+        "kind": "publisher_transcript",
+        "start": 135,
+        "text": "He voted to spike our electric bills,",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-2-6-million-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 137,
+        "anchor_quote": "He",
+        "anchor_start": 135,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H2PA04135",
+        "kind": "person",
+        "name": "PERRY, SCOTT",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "These days, costs are rising everywhere\nAnd instead of helping, Scott Perry spent almost 15 years in DC working for his wealthy donors\nHe voted to spike our electric bills,\nTaking almost $300,000 from energy companies\nHe voted to let Wall Street charge higher junk fees\nTaking over half a million from the financial industry\nThis isn’t the cost of doing business,\nIt’s the cost of keeping Scott Perry in DC\nIt’s time for change",
+    "text_hash": "5ae39cd663fe8fecf03f8c35b2a772812c41ec24238c01d770843a8b420e966d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2962-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-2962-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2962-2-claims-001-004",
+    "claim_text": "He is taking almost $300,000 from energy companies",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 217,
+        "kind": "publisher_transcript",
+        "start": 173,
+        "text": "Taking almost $300,000 from energy companies",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-2-6-million-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 179,
+        "anchor_quote": "Taking",
+        "anchor_start": 173,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H2PA04135",
+        "kind": "person",
+        "name": "PERRY, SCOTT",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "These days, costs are rising everywhere\nAnd instead of helping, Scott Perry spent almost 15 years in DC working for his wealthy donors\nHe voted to spike our electric bills,\nTaking almost $300,000 from energy companies\nHe voted to let Wall Street charge higher junk fees\nTaking over half a million from the financial industry\nThis isn’t the cost of doing business,\nIt’s the cost of keeping Scott Perry in DC\nIt’s time for change",
+    "text_hash": "5ae39cd663fe8fecf03f8c35b2a772812c41ec24238c01d770843a8b420e966d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2962-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-2962-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2962-2-claims-001-005",
+    "claim_text": "He voted to let Wall Street charge higher junk fees",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 269,
+        "kind": "publisher_transcript",
+        "start": 218,
+        "text": "He voted to let Wall Street charge higher junk fees",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-2-6-million-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 220,
+        "anchor_quote": "He",
+        "anchor_start": 218,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H2PA04135",
+        "kind": "person",
+        "name": "PERRY, SCOTT",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "These days, costs are rising everywhere\nAnd instead of helping, Scott Perry spent almost 15 years in DC working for his wealthy donors\nHe voted to spike our electric bills,\nTaking almost $300,000 from energy companies\nHe voted to let Wall Street charge higher junk fees\nTaking over half a million from the financial industry\nThis isn’t the cost of doing business,\nIt’s the cost of keeping Scott Perry in DC\nIt’s time for change",
+    "text_hash": "5ae39cd663fe8fecf03f8c35b2a772812c41ec24238c01d770843a8b420e966d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2962-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-2962-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2962-2-claims-001-006",
+    "claim_text": "He is taking over half a million from the financial industry",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 324,
+        "kind": "publisher_transcript",
+        "start": 270,
+        "text": "Taking over half a million from the financial industry",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-2-6-million-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 276,
+        "anchor_quote": "Taking",
+        "anchor_start": 270,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H2PA04135",
+        "kind": "person",
+        "name": "PERRY, SCOTT",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "These days, costs are rising everywhere\nAnd instead of helping, Scott Perry spent almost 15 years in DC working for his wealthy donors\nHe voted to spike our electric bills,\nTaking almost $300,000 from energy companies\nHe voted to let Wall Street charge higher junk fees\nTaking over half a million from the financial industry\nThis isn’t the cost of doing business,\nIt’s the cost of keeping Scott Perry in DC\nIt’s time for change",
+    "text_hash": "5ae39cd663fe8fecf03f8c35b2a772812c41ec24238c01d770843a8b420e966d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2962-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-2962-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2962-2-claims-001-007",
+    "claim_text": "This isn’t the cost of doing business",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 363,
+        "kind": "publisher_transcript",
+        "start": 325,
+        "text": "This isn’t the cost of doing business,",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-2-6-million-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [],
+    "text": "These days, costs are rising everywhere\nAnd instead of helping, Scott Perry spent almost 15 years in DC working for his wealthy donors\nHe voted to spike our electric bills,\nTaking almost $300,000 from energy companies\nHe voted to let Wall Street charge higher junk fees\nTaking over half a million from the financial industry\nThis isn’t the cost of doing business,\nIt’s the cost of keeping Scott Perry in DC\nIt’s time for change",
+    "text_hash": "5ae39cd663fe8fecf03f8c35b2a772812c41ec24238c01d770843a8b420e966d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2962-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-2962-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2962-2-claims-001-008",
+    "claim_text": "It’s the cost of keeping Scott Perry in DC",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 406,
+        "kind": "publisher_transcript",
+        "start": 364,
+        "text": "It’s the cost of keeping Scott Perry in DC",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-2-6-million-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 400,
+        "anchor_quote": "Scott Perry",
+        "anchor_start": 389,
+        "anchor_unit_id": 8,
+        "entity_id": "candidate:H2PA04135",
+        "kind": "person",
+        "name": "PERRY, SCOTT",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "These days, costs are rising everywhere\nAnd instead of helping, Scott Perry spent almost 15 years in DC working for his wealthy donors\nHe voted to spike our electric bills,\nTaking almost $300,000 from energy companies\nHe voted to let Wall Street charge higher junk fees\nTaking over half a million from the financial industry\nThis isn’t the cost of doing business,\nIt’s the cost of keeping Scott Perry in DC\nIt’s time for change",
+    "text_hash": "5ae39cd663fe8fecf03f8c35b2a772812c41ec24238c01d770843a8b420e966d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2962-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-2962-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2962-2-claims-001-009",
+    "claim_text": "It’s time for change",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 427,
+        "kind": "publisher_transcript",
+        "start": 407,
+        "text": "It’s time for change",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-2-6-million-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [],
+    "text": "These days, costs are rising everywhere\nAnd instead of helping, Scott Perry spent almost 15 years in DC working for his wealthy donors\nHe voted to spike our electric bills,\nTaking almost $300,000 from energy companies\nHe voted to let Wall Street charge higher junk fees\nTaking over half a million from the financial industry\nThis isn’t the cost of doing business,\nIt’s the cost of keeping Scott Perry in DC\nIt’s time for change",
+    "text_hash": "5ae39cd663fe8fecf03f8c35b2a772812c41ec24238c01d770843a8b420e966d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-0-claims-001-001",
+    "claim_text": "We can’t do anything extra",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 26,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "We can’t do anything extra",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 2,
+        "anchor_quote": "We",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "We",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "We can’t do anything extra\nBills have changed\nWe were paying $200 a month and now it’s up over $300\nAnd the thing is PG&E has given David Valadao over $100,000\nAnd Valadao has given them massive tax cuts\nI’m pissed off, like this man is benefitting on the backs of his constituents\nI do not trust Valadao at all\nValadao has had 12 years to prove himself and he doesn’t deserve another chance",
+    "text_hash": "bee6bf1ecc6a341437d659e75511e37bb703fc1c29463707d8d7addc7f80c345",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-0-claims-001-002",
+    "claim_text": "Bills have changed",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 45,
+        "kind": "publisher_transcript",
+        "start": 27,
+        "text": "Bills have changed",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [],
+    "text": "We can’t do anything extra\nBills have changed\nWe were paying $200 a month and now it’s up over $300\nAnd the thing is PG&E has given David Valadao over $100,000\nAnd Valadao has given them massive tax cuts\nI’m pissed off, like this man is benefitting on the backs of his constituents\nI do not trust Valadao at all\nValadao has had 12 years to prove himself and he doesn’t deserve another chance",
+    "text_hash": "bee6bf1ecc6a341437d659e75511e37bb703fc1c29463707d8d7addc7f80c345",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-0-claims-001-003",
+    "claim_text": "We were paying $200 a month and now it’s up over $300",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 99,
+        "kind": "publisher_transcript",
+        "start": 46,
+        "text": "We were paying $200 a month and now it’s up over $300",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 48,
+        "anchor_quote": "We",
+        "anchor_start": 46,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "We",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "We can’t do anything extra\nBills have changed\nWe were paying $200 a month and now it’s up over $300\nAnd the thing is PG&E has given David Valadao over $100,000\nAnd Valadao has given them massive tax cuts\nI’m pissed off, like this man is benefitting on the backs of his constituents\nI do not trust Valadao at all\nValadao has had 12 years to prove himself and he doesn’t deserve another chance",
+    "text_hash": "bee6bf1ecc6a341437d659e75511e37bb703fc1c29463707d8d7addc7f80c345",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-0-claims-001-004",
+    "claim_text": "PG&E has given David Valadao over $100,000",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 159,
+        "kind": "publisher_transcript",
+        "start": 100,
+        "text": "And the thing is PG&E has given David Valadao over $100,000",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 145,
+        "anchor_quote": "David Valadao",
+        "anchor_start": 132,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H2CA20094",
+        "kind": "person",
+        "name": "David Valadao",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 121,
+        "anchor_quote": "PG&E",
+        "anchor_start": 117,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "PG&E",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "We can’t do anything extra\nBills have changed\nWe were paying $200 a month and now it’s up over $300\nAnd the thing is PG&E has given David Valadao over $100,000\nAnd Valadao has given them massive tax cuts\nI’m pissed off, like this man is benefitting on the backs of his constituents\nI do not trust Valadao at all\nValadao has had 12 years to prove himself and he doesn’t deserve another chance",
+    "text_hash": "bee6bf1ecc6a341437d659e75511e37bb703fc1c29463707d8d7addc7f80c345",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-0-claims-001-005",
+    "claim_text": "Valadao has given them massive tax cuts",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 203,
+        "kind": "publisher_transcript",
+        "start": 160,
+        "text": "And Valadao has given them massive tax cuts",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 171,
+        "anchor_quote": "Valadao",
+        "anchor_start": 164,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H2CA20094",
+        "kind": "person",
+        "name": "Valadao",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 186,
+        "anchor_quote": "them",
+        "anchor_start": 182,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "them",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "We can’t do anything extra\nBills have changed\nWe were paying $200 a month and now it’s up over $300\nAnd the thing is PG&E has given David Valadao over $100,000\nAnd Valadao has given them massive tax cuts\nI’m pissed off, like this man is benefitting on the backs of his constituents\nI do not trust Valadao at all\nValadao has had 12 years to prove himself and he doesn’t deserve another chance",
+    "text_hash": "bee6bf1ecc6a341437d659e75511e37bb703fc1c29463707d8d7addc7f80c345",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-0-claims-001-006",
+    "claim_text": "I’m pissed off, like this man is benefitting on the backs of his constituents",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 281,
+        "kind": "publisher_transcript",
+        "start": 204,
+        "text": "I’m pissed off, like this man is benefitting on the backs of his constituents",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 233,
+        "anchor_quote": "this man",
+        "anchor_start": 225,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H2CA20094",
+        "kind": "person",
+        "name": "this man",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 281,
+        "anchor_quote": "his constituents",
+        "anchor_start": 265,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "his constituents",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "We can’t do anything extra\nBills have changed\nWe were paying $200 a month and now it’s up over $300\nAnd the thing is PG&E has given David Valadao over $100,000\nAnd Valadao has given them massive tax cuts\nI’m pissed off, like this man is benefitting on the backs of his constituents\nI do not trust Valadao at all\nValadao has had 12 years to prove himself and he doesn’t deserve another chance",
+    "text_hash": "bee6bf1ecc6a341437d659e75511e37bb703fc1c29463707d8d7addc7f80c345",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-0-claims-001-007",
+    "claim_text": "I do not trust Valadao at all",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 311,
+        "kind": "publisher_transcript",
+        "start": 282,
+        "text": "I do not trust Valadao at all",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 304,
+        "anchor_quote": "Valadao",
+        "anchor_start": 297,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:H2CA20094",
+        "kind": "person",
+        "name": "Valadao",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "We can’t do anything extra\nBills have changed\nWe were paying $200 a month and now it’s up over $300\nAnd the thing is PG&E has given David Valadao over $100,000\nAnd Valadao has given them massive tax cuts\nI’m pissed off, like this man is benefitting on the backs of his constituents\nI do not trust Valadao at all\nValadao has had 12 years to prove himself and he doesn’t deserve another chance",
+    "text_hash": "bee6bf1ecc6a341437d659e75511e37bb703fc1c29463707d8d7addc7f80c345",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-0-claims-001-008",
+    "claim_text": "Valadao has had 12 years to prove himself and he doesn’t deserve another chance",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 391,
+        "kind": "publisher_transcript",
+        "start": 312,
+        "text": "Valadao has had 12 years to prove himself and he doesn’t deserve another chance",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 319,
+        "anchor_quote": "Valadao",
+        "anchor_start": 312,
+        "anchor_unit_id": 8,
+        "entity_id": "candidate:H2CA20094",
+        "kind": "person",
+        "name": "Valadao",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "We can’t do anything extra\nBills have changed\nWe were paying $200 a month and now it’s up over $300\nAnd the thing is PG&E has given David Valadao over $100,000\nAnd Valadao has given them massive tax cuts\nI’m pissed off, like this man is benefitting on the backs of his constituents\nI do not trust Valadao at all\nValadao has had 12 years to prove himself and he doesn’t deserve another chance",
+    "text_hash": "bee6bf1ecc6a341437d659e75511e37bb703fc1c29463707d8d7addc7f80c345",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-2-claims-001-001",
+    "claim_text": "Mike Beltran puts his corporate donors first",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 44,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Mike Beltran puts his corporate donors first",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 12,
+        "anchor_quote": "Mike Beltran",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6FL14237",
+        "kind": "person",
+        "name": "BELTRAN, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 38,
+        "anchor_quote": "corporate donors",
+        "anchor_start": 22,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "corporate donors",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mike Beltran puts his corporate donors first\nNo matter what it costs us\nOur utility bills are already among the highest in the nation\nAnd Beltran voted to let utility companies charge us even more\nAnd while our home insurance rate rise the fastest\nBeltran used one billion dollars in taxpayer money to bail out private insurance companies\nMike Beltran’s donors put money in his pocket\nAnd he let’s them take money out of ours",
+    "text_hash": "93d6ab418f34bb94c9aadb5c1b3cbda2529d80018cb7478a8e94525cc37c45ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-2-claims-001-002",
+    "claim_text": "Our utility bills are already among the highest in the nation",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 133,
+        "kind": "publisher_transcript",
+        "start": 72,
+        "text": "Our utility bills are already among the highest in the nation",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 89,
+        "anchor_quote": "Our utility bills",
+        "anchor_start": 72,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "utility bills",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mike Beltran puts his corporate donors first\nNo matter what it costs us\nOur utility bills are already among the highest in the nation\nAnd Beltran voted to let utility companies charge us even more\nAnd while our home insurance rate rise the fastest\nBeltran used one billion dollars in taxpayer money to bail out private insurance companies\nMike Beltran’s donors put money in his pocket\nAnd he let’s them take money out of ours",
+    "text_hash": "93d6ab418f34bb94c9aadb5c1b3cbda2529d80018cb7478a8e94525cc37c45ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-2-claims-001-003",
+    "claim_text": "And Beltran voted to let utility companies charge us even more",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 196,
+        "kind": "publisher_transcript",
+        "start": 134,
+        "text": "And Beltran voted to let utility companies charge us even more",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 145,
+        "anchor_quote": "Beltran",
+        "anchor_start": 138,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6FL14237",
+        "kind": "person",
+        "name": "BELTRAN, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 176,
+        "anchor_quote": "utility companies",
+        "anchor_start": 159,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "utility companies",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mike Beltran puts his corporate donors first\nNo matter what it costs us\nOur utility bills are already among the highest in the nation\nAnd Beltran voted to let utility companies charge us even more\nAnd while our home insurance rate rise the fastest\nBeltran used one billion dollars in taxpayer money to bail out private insurance companies\nMike Beltran’s donors put money in his pocket\nAnd he let’s them take money out of ours",
+    "text_hash": "93d6ab418f34bb94c9aadb5c1b3cbda2529d80018cb7478a8e94525cc37c45ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-2-claims-001-004",
+    "claim_text": "And while our home insurance rate rise the fastest",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 247,
+        "kind": "publisher_transcript",
+        "start": 197,
+        "text": "And while our home insurance rate rise the fastest",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 230,
+        "anchor_quote": "our home insurance rate",
+        "anchor_start": 207,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "home insurance rate",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mike Beltran puts his corporate donors first\nNo matter what it costs us\nOur utility bills are already among the highest in the nation\nAnd Beltran voted to let utility companies charge us even more\nAnd while our home insurance rate rise the fastest\nBeltran used one billion dollars in taxpayer money to bail out private insurance companies\nMike Beltran’s donors put money in his pocket\nAnd he let’s them take money out of ours",
+    "text_hash": "93d6ab418f34bb94c9aadb5c1b3cbda2529d80018cb7478a8e94525cc37c45ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-2-claims-001-005",
+    "claim_text": "Beltran used one billion dollars in taxpayer money to bail out private insurance companies",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 338,
+        "kind": "publisher_transcript",
+        "start": 248,
+        "text": "Beltran used one billion dollars in taxpayer money to bail out private insurance companies",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 255,
+        "anchor_quote": "Beltran",
+        "anchor_start": 248,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H6FL14237",
+        "kind": "person",
+        "name": "BELTRAN, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 338,
+        "anchor_quote": "private insurance companies",
+        "anchor_start": 311,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "private insurance companies",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mike Beltran puts his corporate donors first\nNo matter what it costs us\nOur utility bills are already among the highest in the nation\nAnd Beltran voted to let utility companies charge us even more\nAnd while our home insurance rate rise the fastest\nBeltran used one billion dollars in taxpayer money to bail out private insurance companies\nMike Beltran’s donors put money in his pocket\nAnd he let’s them take money out of ours",
+    "text_hash": "93d6ab418f34bb94c9aadb5c1b3cbda2529d80018cb7478a8e94525cc37c45ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-2-claims-001-006",
+    "claim_text": "Mike Beltran’s donors put money in his pocket",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 384,
+        "kind": "publisher_transcript",
+        "start": 339,
+        "text": "Mike Beltran’s donors put money in his pocket",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 351,
+        "anchor_quote": "Mike Beltran",
+        "anchor_start": 339,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:H6FL14237",
+        "kind": "person",
+        "name": "BELTRAN, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 360,
+        "anchor_quote": "donors",
+        "anchor_start": 354,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "donors",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mike Beltran puts his corporate donors first\nNo matter what it costs us\nOur utility bills are already among the highest in the nation\nAnd Beltran voted to let utility companies charge us even more\nAnd while our home insurance rate rise the fastest\nBeltran used one billion dollars in taxpayer money to bail out private insurance companies\nMike Beltran’s donors put money in his pocket\nAnd he let’s them take money out of ours",
+    "text_hash": "93d6ab418f34bb94c9aadb5c1b3cbda2529d80018cb7478a8e94525cc37c45ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-2",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-2-claims-001-007",
+    "claim_text": "And he lets them take money out of ours",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 425,
+        "kind": "publisher_transcript",
+        "start": 385,
+        "text": "And he let’s them take money out of ours",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 391,
+        "anchor_quote": "he",
+        "anchor_start": 389,
+        "anchor_unit_id": 8,
+        "entity_id": "candidate:H6FL14237",
+        "kind": "person",
+        "name": "he",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 402,
+        "anchor_quote": "them",
+        "anchor_start": 398,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "them",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mike Beltran puts his corporate donors first\nNo matter what it costs us\nOur utility bills are already among the highest in the nation\nAnd Beltran voted to let utility companies charge us even more\nAnd while our home insurance rate rise the fastest\nBeltran used one billion dollars in taxpayer money to bail out private insurance companies\nMike Beltran’s donors put money in his pocket\nAnd he let’s them take money out of ours",
+    "text_hash": "93d6ab418f34bb94c9aadb5c1b3cbda2529d80018cb7478a8e94525cc37c45ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
