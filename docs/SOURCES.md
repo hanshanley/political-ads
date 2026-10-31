@@ -10,6 +10,78 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## No Going Back Colorado House quoted-ad expansion
+
+One additional Republican outside-group record, **ngb-colsun-502218-0**,
+retains **two ordered literal quotations / 17 tokens** from Jesse Paul's
+September 15 Colorado Sun report. It concerns the same No Going Back PAC
+TV ad opposing Jessica Killin and benefiting Jeff Crank in **CO-05**.
+Complete actual HTML SHA-256:
+`49c8b59632b55c4fe39120a0e765496d46ab594c1018dbae0e4db4b3a804eadb`.
+The publisher's shortlink, body post ID and exposed post API independently
+agree on **502218**; the API is not requested. Reproduce with
+**`--source ngb-colsun --offline --until 2026-10-30`** using the exact
+previously cached HTML.
+
+The unique h1, visible **3:30 AM MDT on September 15, 2026** and
+**2026-09-15T03:30:00-06:00** agree. The adapter selects only
+`time.entry-date.published` and parses the literal MDT date format;
+the September 16 update is not another release. The publisher date does
+not independently establish first upload, release, paid delivery or airing.
+The opposing-party contest, November 3 Election Day and district-specific
+lead-up spending establish **general-election** context, not September alone.
+
+The first passage is expressly narrator speech; the second is the same
+ad's reported accusation. Both terminal periods are preserved. Reporter
+background, accuracy judgments, campaign responses, debate remarks,
+Trump event speech, financial/legal reporting and a shorter fragment
+repeated later are excluded. The first ad paragraph links journalist
+Shane Goldmacher's individual X repost **2098413105554272413**.
+It is not a campaign upload; no X, media or caption request is made.
+
+Exact beneficiary **H6CO05142 / C00865592**, **CRANK, JEFF**, REP, House,
+CO-05, and opponent **H6CO05324 / C00911941**, **KILLIN, JESSICA WILLOW**,
+DEM, House, CO-05, match the saved 2026 roster. The independently cached
+official principal committees are **JEFF CRANK FOR CONGRESS**, P / H / REP,
+and **KILLIN FOR COLORADO**, P / H / DEM. No alias or roster edit is made.
+Advertiser alignment follows the report's No Going Back PAC / MAGA Inc.
+and Republican-beneficiary evidence, not the Democratic target's party.
+Legal payer, closing disclaimer, candidate authorization, authenticity
+and measured paid delivery remain uninspected. This is **partial and
+semantically unreviewed**, never a neutral label or a full transcript.
+
+The pre-edit baseline freezes all **1,893 acquired / 1,854 analyzed objects,
+47 release reviews, seventeen protected files and every alias**.
+The new association and both distinctive phrases are absent from the
+complete prior acquired corpus; this does not certify nationally unique
+creative executions or resolve the coverage gap.
+
+Verified snapshot:
+`fa9d1018101d0477c4ca727381e8435e8b4bd37f58466f0a922386519e7df04e`.
+Totals: **1,894 acquired / 1,855 English**, **1,226 D / 590 R / 31 other /
+eight unresolved**; exact English messages **1,204 D / 553 R**.
+English House: **698 D / 212 R**, including **222 D / 211 R non-Snap**
+and unchanged **476 D / one R Snap**. Every preceding object, protected
+file and alias is unchanged, and all 47 preceding review bytes persist.
+
+**219 affected Python tests**, Python lint/format, **17 frontend tests**,
+frontend lint/typecheck/build and **seven browser cases** pass. Complete
+JSON/gzip/CSV exports, **1,894 Parquet rows** and **eleven visually inspected
+PNG sets** reconcile. A socket-forbidden, one-response isolated replay
+reproduces all **542 written objects and source states** from 541.
+The independent audit verifies **20 metric groups / ten chart rows**.
+New semantics remain unreviewed; no website or Substack publication occurs.
+
+The expanded Iowa party archive has exposed three further House script
+reports, two Miller-Meeks ads and Mitchell's *Bulldozer*. They remain
+discovery until their actual pages, scripts, originals, dates, candidate
+identities and full-corpus duplicates are checked. The earlier Nunn
+*The Work* party script corroborates the already recovered RMSP native
+video; it is not a new creative. The actual Harrigan homepage and linked
+media kit contain undated embeds, B-roll and a background PDF, not newly
+recovered dated 2026 ad speech. Oberacker's homepage contains campaign
+introduction/form text, not a recovered ad. Broader acquisition continues.
+
 ## Alvarado Kentucky House quoted-ad expansion
 
 One additional Republican House record, **alvarado-yahoo-090000614-0**,
@@ -102,11 +174,63 @@ Senate candidate. HTML SHA-256:
 `e45f4a2d268cf8740b158a6f2e4e70ac8f1320cef6261043dbf775816289d4a7`.
 Pikes Peak Bulletin's October 1 Crank/Killin report contains ad fragments,
 but its individually linked Facebook reel is **Killin's response**, not
-the Republican advertisement. The actual screenshot and explicitly
-linked No Going Back PAC website remain separate discovery leads, not
-acquisitions. HTML SHA-256:
+the Republican advertisement. The actual screenshot remains a separate
+uninspected discovery lead, not an acquisition. HTML SHA-256:
 `1d558cd72c3584c156f270571af143e7fb0deac1c6e358c597a4c4771a6c2adb`.
 Neither report adds a record or authorizes a monitoring-provider request.
+
+The explicitly linked No Going Back PAC homepage was subsequently read
+in full. It supplies voter-planning forms and a legal footer, not an ad
+gallery, script or original video. HTML SHA-256:
+`51c25ec3cccb871f3c5d2b1fb2c5df31940de5a9da4372a9b1ec1d877c2b3ce9`.
+No forms, state-information routes or page API were requested.
+
+Colorado Times Recorder's October 28 Crank complaint report was read in
+full. Its complaint quotations, campaign-meeting speech, opponent remarks
+and legal analysis are not ad narration. HTML SHA-256:
+`f5f9f6274debe895fc9b2c243a8ac5aa8f98b1ae902cc093b8140e5b9f1b7ab6`.
+The actually exposed 2048-pixel screenshot rendition was downloaded and
+visually inspected; image SHA-256:
+`2639c9ea850c0528c9027a9b51f6b13f73db4b41a33fd80243e926759d3fc267`.
+It contains a five-word attack and the campaign payer/approval disclaimer.
+The disclaimer must not pad an otherwise insufficient substantive text
+sample. This is one inspected frame, not a recovered video transcript;
+no ad was admitted.
+
+Tennessee Lookout's March 17 Garrett report was read from its unique
+`#dataContent` container, excluding the separate republication textarea.
+HTML SHA-256:
+`7bd18e39d34e870d060bdd641e7956f975c6bd422e962c80e4b9b543e5987805`.
+Both actually exposed 2048-pixel mailer photographs were downloaded and
+visually inspected; image SHA-256:
+`cdfcde1648ea9d2b55c213df5979c696336ec46aac192f24730d0fa8b6e55e20`
+and
+`e66de721d73601d98d6d28377ff692bdecce43b7c0777f48a08e9d0afcdea1d7`.
+They identify Garrett as a state representative, promote state-legislative
+work and show a state-representative campaign payer. The article reports
+state **campaign-account** funding, not taxpayer-funded constituent mail.
+His simultaneous congressional candidacy does not independently establish
+that these particular state-role communications are federal campaign ads.
+Their federal eligibility remains unestablished; two photographs are not
+automatically two separate creatives. No legal finding or federal ad
+record was inferred, and the photographed recipient redaction was retained.
+
+Discovery images and exact response hashes remain in ignored `data/raw`
+inspection artifacts and `data/cache`, outside the published corpus.
+The original Florida Politics HTTP 402 pause also remains in force; the
+ignored discovery helper now explicitly gates that domain and subdomains.
+Three request-forbidden checks pass without any publisher request or
+canonical write. Its newly discovered Luna headline is only a search lead,
+not permission to retry that provider or import its snippets as ad text.
+Both earlier Colorado reports actually linked by Pikes Peak Bulletin
+have now been inspected. The September 10 Bulletin report describes a
+No Going Back SMS attack but lacks an individual original association.
+Its YouTube link is Killin discussing her work, not the Republican ad;
+its featured image is a headshot, not an ad graphic. HTML SHA-256:
+`d374a751ed2a5fc948c9e424d5f117669422d98be31ee82501ec83f40297cdb2`.
+The independently linked Colorado Sun report supplies the separately
+registered TV-ad quotations documented above. The SMS report adds no
+record. Acquisition and schedule #1 continue.
 
 ## Shlomi Texas House quoted-ad expansion
 

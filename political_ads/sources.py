@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "ngb-colsun",
+        "https://coloradosun.com",
+        "No Going Back PAC (publisher-reported; payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="CO-05",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "alvarado-yahoo",
         "https://www.yahoo.com",
         "Ralph Alvarado campaign (publisher-reported; payer unverified)",
