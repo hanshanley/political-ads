@@ -14346,6 +14346,91 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Credit: The Midwesterner, June 29, 2026. The actual report is directly linked by the September Jump article; its explicitly exposed individual WordPress post 1250671 binds the canonical URL, exact title, June 29 09:00:12 local / 13:00:12 UTC, exact rendered-content hash and the individually embedded Border Mission original urPpIu3PBm8. Retain only two ordered expressly attributed spoken-ad quotations, 41 whitespace-separated tokens, preserving the first passage's terminal comma and the second's standalone ellipsis. Exclude the later The contrast couldn't be clearer campaign press statement, Trump's endorsement statements/social post, reporter characterization of border policy, fundraising speculation, polling and electoral analysis. Required statement context locates the excluded press quotation; it does not make that statement ad speech. The same primary-ad quotation repeated in September is corroboration, not a third record or part of Jump. Exact saved FEC H6MI10359 / C00925743 identifies BOUCHARD, MICHAEL, REP, House, MI-10; cached official principal FRIENDS OF MICHAEL BOUCHARD INC independently links the same candidate, with ordinary full-name matching and no new alias or fuzzy match. The candidate's sheriff father is a distinct person. Explicit 10th District Republican-primary context establishes primary phase, not the report month alone. The candidate campaign is publisher-reported advertiser; closing legal payer and approval, first original upload/release/paid airing and delivery intervals are not independently inspected or verified. June 29 is the report date. This is a distinct original and observed text from Jump, both absent from the preceding acquired corpus. Collection uses only the exact cached exposed individual JSON, with no original media, captions, endorsement-post retrieval, denied route, monitoring catalog, purchase or publication. This partial ad and all new semantic judgments remain unreviewed.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6MI10359",
+          "district": "10",
+          "name": "BOUCHARD, MICHAEL",
+          "office": "H",
+          "party": "REP",
+          "state": "MI"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "bouchard-midwesterner-1250671-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/urPpIu3PBm8?feature=oembed"
+      ],
+      "message_id": "9d02a8cbe378bb394fc4ad38b33c4aeb3e94b843974eb7547b31c9a114659dea",
+      "observed": "2026-10-31",
+      "phase": "primary",
+      "placement": "campaign_release",
+      "published": "2026-06-29",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "MI-10",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6MI10359"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Credit: The Midwesterner, June 29, 2026. The actual report is directly linked by the September Jump article; its explicitly exposed individual WordPress post 1250671 binds the canonical URL, exact title, June 29 09:00:12 local / 13:00:12 UTC, exact rendered-content hash and the individually embedded Border Mission original urPpIu3PBm8. Retain only two ordered expressly attributed spoken-ad quotations, 41 whitespace-separated tokens, preserving the first passage's terminal comma and the second's standalone ellipsis. Exclude the later The contrast couldn't be clearer campaign press statement, Trump's endorsement statements/social post, reporter characterization of border policy, fundraising speculation, polling and electoral analysis. Required statement context locates the excluded press quotation; it does not make that statement ad speech. The same primary-ad quotation repeated in September is corroboration, not a third record or part of Jump. Exact saved FEC H6MI10359 / C00925743 identifies BOUCHARD, MICHAEL, REP, House, MI-10; cached official principal FRIENDS OF MICHAEL BOUCHARD INC independently links the same candidate, with ordinary full-name matching and no new alias or fuzzy match. The candidate's sheriff father is a distinct person. Explicit 10th District Republican-primary context establishes primary phase, not the report month alone. The candidate campaign is publisher-reported advertiser; closing legal payer and approval, first original upload/release/paid airing and delivery intervals are not independently inspected or verified. June 29 is the report date. This is a distinct original and observed text from Jump, both absent from the preceding acquired corpus. Collection uses only the exact cached exposed individual JSON, with no original media, captions, endorsement-post retrieval, denied route, monitoring catalog, purchase or publication. This partial ad and all new semantic judgments remain unreviewed.",
+            "candidate_id": "H6MI10359",
+            "completeness": "partial_quotation",
+            "content_sha256": "8415d3364d2dc088180b88ccba7ae8e144e0d4d074fce91661a0ed466f24dbbc",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/urPpIu3PBm8?feature=oembed",
+            "passages": [
+              "Under President Trump, I led missions on the southern border,",
+              "Back then, we got the job done. But on day one, Joe Biden shut us all down. He opened the border. Human trafficking, drug smuggling … known terrorists walked right in."
+            ],
+            "phase": "primary",
+            "published": "2026-06-29",
+            "record_id": "1250671",
+            "release_title": "Exclusive: Trump-endorsed Michael Bouchard launches ‘Border Mission’ ad in 10th District primary",
+            "required_context": [
+              "Michael Bouchard’s U.S. Congressional campaign on Monday launched an ad titled “Border Mission”",
+              "10th Congressional District Republican primary",
+              "Bouchard says in the ad first shared with The Midwesterner.",
+              "Bouchard said in a statement first shared with The Midwesterner."
+            ],
+            "retrieval_url": "https://www.themidwesterner.news/wp-json/wp/v2/posts/1250671",
+            "source": "bouchard-midwesterner",
+            "source_url": "https://www.themidwesterner.news/2026/06/exclusive-trump-endorsed-michael-bouchard-launches-border-mission-ad-in-10th-district-primary/"
+          },
+          "text": "Under President Trump, I led missions on the southern border,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "Back then, we got the job done. But on day one, Joe Biden shut us all down. He opened the border. Human trafficking, drug smuggling … known terrorists walked right in."
+        }
+      ],
+      "source": "bouchard-midwesterner",
+      "source_hash": "8415d3364d2dc088180b88ccba7ae8e144e0d4d074fce91661a0ed466f24dbbc",
+      "source_record_id": "1250671",
+      "source_url": "https://www.themidwesterner.news/2026/06/exclusive-trump-endorsed-michael-bouchard-launches-border-mission-ad-in-10th-district-primary/",
+      "sponsor": "Michael Bouchard campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "MI",
+      "text": "Under President Trump, I led missions on the southern border,\nBack then, we got the job done. But on day one, Joe Biden shut us all down. He opened the border. Human trafficking, drug smuggling … known terrorists walked right in.",
+      "title": "Exclusive: Trump-endorsed Michael Bouchard launches ‘Border Mission’ ad in 10th District primary"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Credit: Anna Blubaugh, Nashville Banner, June 29, 2026. The unique primary h1.entry-title and time.entry-date.published agree with the actually exposed single-post API 30144, local June 29 06:01 / GMT 11:01. The separate June 28 updated element is not the publication date. The report embeds Johnny Garrett's individual June 25 X creative, then explicitly marks an eight-paragraph Transcript ending at his candidate-approval line. These are 79 spoken words with three publisher speaker-label tokens retained, totaling 82 whitespace-separated transcript tokens. Exact preserved narrator/candidate labels and quotation marks retain the source's speaker distinction without a new semantic judgment. The reporter's Analysis section, preceding post caption, Gaines statements, previous baseball ad and separate Hilleary creative are excluded. Exact saved FEC H6TN06213 / C00910935 identifies GARRETT, JOHNNY, REP, House, TN-06; no alias or fuzzy match is added. July 22 post 30952 explicitly places these campaigns in the Republican primary and links this same ad report. Campaign production and online/broadcast placement are publisher-reported, not an independently inspected closing legal payer or verified delivery interval. The June 25 original post and June 29 report dates remain distinct. Strict source hash/title/date, candidate, literal ordered text and individual original association are bound. Anonymous public browser reads of the actual publisher pages and exposed single-post JSON are cached; no X, YouTube, audio reader, denied provider or licensed catalog was requested. The complete marked publisher transcript remains semantically unreviewed.",
       "candidate_mentions": [
         {
@@ -23277,6 +23362,98 @@
       "state": "MI",
       "text": "“I’ve spent my career standing up to powerful people.\nGreedy landlords here.\nCorporate polluters here.\nAnd now I’m running for Congress to fix what’s broken here.\nI’m Sean McCann.\nToo many families are doing everything right and still can’t get ahead.\nWe need to end the tariffs that are driving prices up.\nBan Congress from trading stocks.\nAnd cap the cost of prescription drugs.\nI approve this message because we won’t bring costs down until we change who’s in charge.”",
       "title": "SEAN McCANN RELEASES FIRST TV AD HIGHLIGHTING HOW HE STANDS UP TO POWERFUL PEOPLE ON BEHALF OF MICHIGAN FAMILIES"
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "Credit: The Midwesterner, September 2, 2026. The actual primary report and its explicitly exposed individual WordPress post 1252695 bind the canonical URL, exact title, September 2 17:07:49 local / 21:07:49 UTC, exact rendered-content hash and individual Jump original NFLAH1_lrNM. Retain only three ordered, expressly attributed ad quotations, 47 whitespace-separated tokens; preserve both terminal commas, the standalone en dash and original curly apostrophes. Exclude the later Border Mission primary quotation, Trump's separate endorsement speech/social post, campaign-spend reporting, candidate biography and election analysis. The September page's later link led to the actual June 29 primary report; it is not an additional Jump creative. Exact saved FEC H6MI10359 / C00925743 identifies BOUCHARD, MICHAEL, REP, House, MI-10. Cached official committee master independently links principal FRIENDS OF MICHAEL BOUCHARD INC, designation P / type H / REP, to the same candidate. Ordinary Michael Bouchard matching requires no alias or fuzzy match. Both report and campaign biography distinguish the congressional candidate from his Oakland County sheriff father, Mike Bouchard. Explicit first-general-ad and Democratic opponent Christina Hines context establish general phase; phase is not inferred from September alone. The candidate campaign is the publisher-reported advertiser; the actual legal-payer/approval card and delivery intervals are unverified. Reported seven-figure TV/social distribution is not independently measured spend or a verified airing schedule. September 2 is the publisher report date, not verified first upload, release or paid delivery. Only the actual previously cached exposed individual JSON is used for collection. No media, captions, Trump post, monitoring catalog, purchase, denied route or publication is used. Original association and exact observed text are absent from all 1,886 preceding acquired objects. Partial acquisition and new semantic judgments remain explicitly unreviewed.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6MI10359",
+          "district": "10",
+          "name": "BOUCHARD, MICHAEL",
+          "office": "H",
+          "party": "REP",
+          "state": "MI"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "bouchard-midwesterner-1252695-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/watch?v=NFLAH1_lrNM"
+      ],
+      "message_id": "9fe3daa65782b008674b7019596806fb578e53773361393cd5a99b9a9efe8cee",
+      "observed": "2026-10-31",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-09-02",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "MI-10",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6MI10359"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Credit: The Midwesterner, September 2, 2026. The actual primary report and its explicitly exposed individual WordPress post 1252695 bind the canonical URL, exact title, September 2 17:07:49 local / 21:07:49 UTC, exact rendered-content hash and individual Jump original NFLAH1_lrNM. Retain only three ordered, expressly attributed ad quotations, 47 whitespace-separated tokens; preserve both terminal commas, the standalone en dash and original curly apostrophes. Exclude the later Border Mission primary quotation, Trump's separate endorsement speech/social post, campaign-spend reporting, candidate biography and election analysis. The September page's later link led to the actual June 29 primary report; it is not an additional Jump creative. Exact saved FEC H6MI10359 / C00925743 identifies BOUCHARD, MICHAEL, REP, House, MI-10. Cached official committee master independently links principal FRIENDS OF MICHAEL BOUCHARD INC, designation P / type H / REP, to the same candidate. Ordinary Michael Bouchard matching requires no alias or fuzzy match. Both report and campaign biography distinguish the congressional candidate from his Oakland County sheriff father, Mike Bouchard. Explicit first-general-ad and Democratic opponent Christina Hines context establish general phase; phase is not inferred from September alone. The candidate campaign is the publisher-reported advertiser; the actual legal-payer/approval card and delivery intervals are unverified. Reported seven-figure TV/social distribution is not independently measured spend or a verified airing schedule. September 2 is the publisher report date, not verified first upload, release or paid delivery. Only the actual previously cached exposed individual JSON is used for collection. No media, captions, Trump post, monitoring catalog, purchase, denied route or publication is used. Original association and exact observed text are absent from all 1,886 preceding acquired objects. Partial acquisition and new semantic judgments remain explicitly unreviewed.",
+            "candidate_id": "H6MI10359",
+            "completeness": "partial_quotation",
+            "content_sha256": "b32c2e17db2a2fab62d07d1a47b6b609884a35d91da8293a28eb3757bc04588f",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/watch?v=NFLAH1_lrNM",
+            "passages": [
+              "Washington politicians like to talk tough. But taking on radical socialism and rising costs – that makes their knees weak,",
+              "They might be scared, but I’m not.",
+              "Socialism? That’s never going to win on my watch. I’m ready to lead the fight. Join me. Let’s fight back,"
+            ],
+            "phase": "general",
+            "published": "2026-09-02",
+            "record_id": "1252695",
+            "release_title": "WATCH: Michael Bouchard jumps from plane in first campaign ad for Michigan’s battleground 10th district",
+            "required_context": [
+              "Michael Bouchard, the Republican candidate to represent Michigan’s 10th Congressional District",
+              "launched his first general election ad this week",
+              "he says in the ad shared first with The Midwesterner.",
+              "Bouchard adds before jumping out the plane.",
+              "The campaign is spending seven figures to distribute the ad on television and social media.",
+              "faces Democratic prosecutor Christina Hines"
+            ],
+            "retrieval_url": "https://www.themidwesterner.news/wp-json/wp/v2/posts/1252695",
+            "source": "bouchard-midwesterner",
+            "source_url": "https://www.themidwesterner.news/2026/09/watch-michael-bouchard-jumps-from-plane-in-first-campaign-ad-for-michigans-battleground-10th-district/"
+          },
+          "text": "Washington politicians like to talk tough. But taking on radical socialism and rising costs – that makes their knees weak,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "They might be scared, but I’m not."
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "Socialism? That’s never going to win on my watch. I’m ready to lead the fight. Join me. Let’s fight back,"
+        }
+      ],
+      "source": "bouchard-midwesterner",
+      "source_hash": "b32c2e17db2a2fab62d07d1a47b6b609884a35d91da8293a28eb3757bc04588f",
+      "source_record_id": "1252695",
+      "source_url": "https://www.themidwesterner.news/2026/09/watch-michael-bouchard-jumps-from-plane-in-first-campaign-ad-for-michigans-battleground-10th-district/",
+      "sponsor": "Michael Bouchard campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "MI",
+      "text": "Washington politicians like to talk tough. But taking on radical socialism and rising costs – that makes their knees weak,\nThey might be scared, but I’m not.\nSocialism? That’s never going to win on my watch. I’m ready to lead the fight. Join me. Let’s fight back,",
+      "title": "WATCH: Michael Bouchard jumps from plane in first campaign ad for Michigan’s battleground 10th district"
     },
     {
       "alignment": "R",
@@ -46185,6 +46362,22 @@
       "source": "barr",
       "state": "ok",
       "url": "https://barrforsenate.com"
+    },
+    {
+      "ads_with_text": 2,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 2
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 2,
+      "retained_ads": 2,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "bouchard-midwesterner",
+      "state": "partial",
+      "url": "https://www.themidwesterner.news"
     },
     {
       "ads_with_text": 1,

@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "bouchard-midwesterner",
+        "https://www.themidwesterner.news",
+        "Michael Bouchard campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="MI-10",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "rogers-florida",
         "https://rogersforflorida.com",
         "Rogers for Florida (publisher-reported; ad payer unverified)",

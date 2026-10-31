@@ -10,7 +10,109 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Rogers quoted-ad expansion of the October 30 snapshot
+## Bouchard primary/general quoted-ad expansion of the October 30 snapshot
+
+**Two additional MI-10 Republican campaign ads** are recovered from
+the actual Midwesterner reports and their explicitly exposed individual
+WordPress posts. September 2 **Jump**, post **1252695**, supplies **three
+ordered literal quotations / 47 preserved tokens**, original **NFLAH1_lrNM**.
+June 29 **Border Mission**, post **1250671**, supplies **two quotations /
+41 tokens**, original **urPpIu3PBm8**. The first report directly links the
+second. Its later repetition of the primary quotation is corroboration,
+**not a third acquisition or part of Jump**. Terminal commas, curly
+apostrophes, the standalone en dash and the standalone ellipsis are
+preserved. Both records are **partial and semantically unreviewed**.
+
+Exact primary HTML, exposed individual JSON, canonical URL, title,
+rendered-content hash, report date, advertiser/phase context, quotation
+order and original association are bound. Jump's local/UTC observation is
+September 2 **17:07:49 / 21:07:49**, rendered SHA-256
+`b32c2e17db2a2fab62d07d1a47b6b609884a35d91da8293a28eb3757bc04588f`;
+Border Mission's is June 29 **09:00:12 / 13:00:12**, rendered SHA-256
+`8415d3364d2dc088180b88ccba7ae8e144e0d4d074fce91661a0ed466f24dbbc`.
+These are **publisher report dates**, not independently verified original
+upload, first release, first paid airing or delivery intervals.
+
+The exact saved FEC **H6MI10359 / C00925743** identifies **BOUCHARD,
+MICHAEL**, REP, House, MI-10. The independently cached official committee
+master links principal **FRIENDS OF MICHAEL BOUCHARD INC**, designation
+P / type H / REP, to the same candidate. Both report and campaign biography
+distinguish the congressional candidate from his sheriff father, Mike
+Bouchard. Existing ordinary full-name matching suffices: **no alias,
+fuzzy matching or parser change**. Explicit first-general-ad and Democratic
+opponent Christina Hines context establish Jump's general phase; the
+June report explicitly establishes the Republican primary. Calendar month
+alone does not assign either phase.
+
+The candidate campaign is publisher-reported advertiser, not an inspected
+legal-payer or approval card. Jump's reported TV/social purchase is not
+independently measured spend or an airing schedule. Reporter summaries,
+Trump's endorsement/social post, candidate biography, polling and campaign
+press quotations are excluded. In particular, the June report's later
+**The contrast couldn't be clearer** statement is **not ad speech**.
+No original media, captions, endorsement-post retrieval, licensed catalog,
+purchase or publication is used. The source remains explicitly partial,
+with incomplete discovery. Exact offline collection is:
+
+```sh
+political-ads collect --until 2026-10-30 --source bouchard-midwesterner --offline
+political-ads parquet
+political-ads build
+political-ads analyze
+political-ads validate
+political-ads audit-strategy
+```
+
+Verified totals are **1,888 acquired / 1,850 English: 1,226 D / 585 R /
+31 other / eight unresolved**. English House coverage is **698 D / 207 R**,
+comprising **222 D / 206 R non-Snap** and **476 D / one R Snap**.
+Exact observed-text messages are **1,204 D / 548 R**. All **1,886 preceding
+acquired objects, 1,848 analyzed objects, 40 release reviews, seventeen
+protected files and every previous alias** remain unchanged. Native
+partitions, undated backlog, semantic reviews and frozen claims persist.
+The source registry and two individually reviewed bindings are the only
+production logic/evidence-input additions.
+
+All **156 affected Python tests**, Python lint/format, **17 frontend tests**,
+frontend lint/typecheck/build and **seven browser cases** pass. Complete
+analysis/browser/production JSON, gzip and CSV, all **1,888 Parquet rows**
+and **eleven visually inspected PNG sets** reconcile. A socket-forbidden
+isolated **two-response replay** reproduces all **536 written objects and
+source states** from the preceding 534-record partition. Independent
+auditing passes **20 metric groups / ten chart rows**. Snapshot:
+`461c344e755eb4616f84843f06dee02aa8bf7f30119a8fa75a935e8a00dd2663`.
+The preceding Rogers commit **a28e851c20c5867998d47e3161337fb8954a20b1**
+has successful exact-head CI **41179930266**, independently confirmed
+including every job step.
+
+Expanded metadata-only discovery reads all **30 Bouchard / 17 NRCC /
+18 television-ad** query matches, each on one actual exposed collection
+page. Three selected actual post self links were then read. Huizenga's
+July 8 **Thrifty**, post **1250888**, supplies **six ad quotations /
+77 tokens** and novel **211R1YDhHa0**; exact current **H0MI02094 /
+C00459297**, REP, MI-04, principal **HUIZENGA FOR CONGRESS** and the
+previously reviewed Bill Huizenga alias are verified. It remains a
+**concrete unadmitted next recovery**, not part of these totals.
+The July 28 NRCC tariff report supplies only **five ad-heading words**
+and no individual ad association; its spokesman's statement is not
+inserted as ad speech. The October Hines report explicitly links a
+**2024 CPAC ad**; no eligible 2026 delivery is verified. Its court
+testimony, campaign remarks, NRCC statement and keyed third-party media
+link are not ad acquisitions or requested original media.
+
+Hilleary's actual official House history biography **15045** returns
+HTTP 200 and names **HILLEARY, Van**; it is historical, not proof of a
+current TN-04 campaign. The actual current Form 2 HTML at
+**docquery.fec.gov**, candidate **H6TN06205**, filing **1897744**, returns
+**403**. That host is paused; **no alternate filing, PDF, reader or API**
+is requested and no signature or alias is invented. The existing cached
+official candidate/principal committee and source-bound 16-token first-ad
+quotations remain intact and unadmitted pending strict name/association
+review. Schedule #1 stays active. Continue independent candidates and
+publishers; website/Substack publication and host restoration remain on
+hold. Source counts do not establish national coverage or party ad volume.
+
+## Previous Rogers quoted-ad expansion
 
 One additional **FL-02 Republican primary ad** is recovered from the
 actual Rogers for Florida campaign-hosted report and its explicitly
