@@ -81,8 +81,9 @@ Already completed blocks do not cause another model call.
 `scripts/extract_claims_fast.py` uses the same pinned 27B 8-bit model, prompts,
 source units and structural checks, but runs independent requests through
 MLX-VLM's native batch generator. Both extraction and source-fidelity revision
-remain mandatory. The default completion batch size is 16. Each stage initially
-allows 2,048 generated tokens; a failed or truncated attempt is retried with the
+remain mandatory. The conservative default completion batch size is eight, with
+prompt prefills limited to two requests at a time to bound activation memory.
+Each stage initially allows 2,048 generated tokens; a failed or truncated attempt is retried with the
 full 8,192-token budget. Truncated output is never accepted, even when it happens
 to parse as JSON. Infrastructure failures stop the worker rather than turning
 unprocessed ads into exclusions.
@@ -100,6 +101,20 @@ sequentially and 37.63 seconds batched (2.21x faster), with the original worker
 sharing the GPU. This used 64-token completions, not accepted annotations; it is
 not a full-pipeline speed or accuracy measurement.
 
+A second controlled test repeated the same eight-input distribution at batch
+sizes 16 and 32. Throughput rose from 14.83 to 18.09 generated tokens per second
+(22% higher), again with another worker sharing the GPU and 64-token completions.
+Those measurements used full-batch prefills. A subsequent overlapping production
+handoff stalled Metal, including a standalone tiny GPU computation; the exact
+driver cause has not been established. Do not treat those timings as evidence of
+whole-corpus stability or end-to-end speed. Run only one large model worker at a
+time, and verify device health before restarting after a stall. The original,
+16-way and experimental 32-way artifacts remain intact.
+
+The bounded-prefill configuration is frozen separately in `full-fast-safe`.
+It does not change any previous manifest and must pass real-runtime checks
+before it is described as a working full-corpus run.
+
 ```bash
 # Freeze the exact original corpus with separately recorded fast settings.
 uv run --with-editable . scripts/extract_claims_fast.py --prepare-only
@@ -111,10 +126,11 @@ uv run --with-editable . scripts/extract_claims_fast.py
 uv run --with-editable . scripts/extract_claims_fast.py --retry-failed
 
 # Publish complete fast-run evidence without interrupting inference.
-.venv/bin/python scripts/publish_claim_checkpoint.py --input data/local-claims/full-fast
+.venv/bin/python scripts/publish_claim_checkpoint.py --input data/local-claims/full-fast-safe
 ```
 
-`--batch-size` and `--initial-tokens` are frozen settings, not live tuning knobs.
+`--batch-size`, `--prefill-batch-size` and `--initial-tokens` are frozen settings,
+not live tuning knobs.
 Use a new directory when changing them. `--ad-id`, `--max-new-blocks`,
 `--prepare-only` and `--replay` also support separate bounded pilots.
 Ordinary offline replay and the checkpoint publisher infer the saved generation

@@ -216,6 +216,7 @@ def prepare(
     *,
     batch_size: int = 1,
     initial_tokens: int = MAX_TOKENS,
+    prefill_batch_size: int | None = None,
     frozen_from: Path | None = None,
 ) -> dict:
     settings = {
@@ -231,13 +232,15 @@ def prepare(
             "units": "contiguous_segment_or_same_image_windows",
         },
     }
-    if batch_size != 1 or initial_tokens != MAX_TOKENS:
+    if batch_size != 1 or initial_tokens != MAX_TOKENS or prefill_batch_size is not None:
         settings["version"] = FAST_VERSION
         settings["generation"] |= {
             "backend": "mlx-vlm.BatchGenerator",
             "batch_size": batch_size,
             "initial_tokens": initial_tokens,
         }
+        if prefill_batch_size is not None:
+            settings["generation"]["prefill_batch_size"] = prefill_batch_size
     path = output / "manifest.json"
     if path.exists():
         manifest = read_json(path, None)
@@ -884,7 +887,10 @@ def extract_batches(output: Path, manifest: dict, pending: list[dict], extractor
                     f"{stage}: {len(active)} requests, max_tokens={budget}",
                     flush=True,
                 )
-                results = extractor.batch([state["request"] for state in active], budget)
+                options = {}
+                if "prefill_batch_size" in generation:
+                    options["prefill_batch_size"] = generation["prefill_batch_size"]
+                results = extractor.batch([state["request"] for state in active], budget, **options)
                 if len(results) != len(active):
                     raise ValueError("Batch inference returned the wrong number of responses")
                 retry = []
@@ -950,6 +956,7 @@ def extract_claims(
     extractor=None,
     batch_size: int = 1,
     initial_tokens: int = MAX_TOKENS,
+    prefill_batch_size: int | None = None,
     frozen_from: Path | None = None,
 ) -> dict:
     if max_new_blocks < 0:
@@ -958,6 +965,8 @@ def extract_claims(
         raise ValueError("Model downloads cannot be combined with prepare-only/replay")
     if batch_size < 1 or not 1 <= initial_tokens <= MAX_TOKENS:
         raise ValueError("Batch size must be positive and initial tokens between 1 and 8192")
+    if prefill_batch_size is not None and prefill_batch_size < 1:
+        raise ValueError("Prefill batch size must be positive")
     root = root.resolve()
     output = (output or root / "data/local-claims/full").resolve()
     if (
@@ -973,12 +982,14 @@ def extract_claims(
             verify_manifest(saved)
             batch_size = saved["generation"].get("batch_size", 1)
             initial_tokens = saved["generation"].get("initial_tokens", MAX_TOKENS)
+            prefill_batch_size = saved["generation"].get("prefill_batch_size")
         manifest = prepare(
             root,
             output,
             ad_ids,
             batch_size=batch_size,
             initial_tokens=initial_tokens,
+            prefill_batch_size=prefill_batch_size,
             frozen_from=frozen_from,
         )
         summary = export_results(output, manifest)

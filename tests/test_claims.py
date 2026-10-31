@@ -552,6 +552,33 @@ def test_fast_finish_reason_rejects_even_short_parseable_truncation(tmp_path):
     assert summary["blocks_by_status"] == {"validation_failed": 1}
 
 
+def test_fast_prefill_limit_is_frozen_and_replays_with_legacy_runs(tmp_path):
+    fixture_corpus(tmp_path, [ad(), ad("second")])
+    output = tmp_path / "fast-safe"
+    calls = []
+
+    def batch(requests, budget, *, prefill_batch_size):
+        calls.append((len(requests), budget, prefill_batch_size))
+        return [{"text": canonical(payload())} for _ in requests]
+
+    summary = extract_claims(
+        tmp_path,
+        output,
+        batch_size=32,
+        initial_tokens=2048,
+        prefill_batch_size=8,
+        extractor=SimpleNamespace(batch=batch),
+    )
+    assert summary["ads_by_status"] == {"normalized": 2}
+    assert calls == [(2, 2048, 8), (2, 2048, 8)]
+    with patch("political_ads.claims.LocalGemma", side_effect=AssertionError("Must not load")):
+        assert extract_claims(tmp_path, output, replay=True) == summary
+    with pytest.raises(ValueError, match="implementation changed"):
+        extract_claims(tmp_path, output, prepare_only=True, batch_size=32, initial_tokens=2048)
+    with pytest.raises(ValueError, match="Prefill batch size"):
+        extract_claims(tmp_path, tmp_path / "invalid", prefill_batch_size=0)
+
+
 def test_fast_run_clones_original_frozen_inputs_not_changed_live_corpus(tmp_path):
     fixture_corpus(tmp_path)
     original = tmp_path / "baseline"

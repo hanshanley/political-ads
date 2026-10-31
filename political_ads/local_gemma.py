@@ -91,7 +91,9 @@ class LocalGemma:
             },
         }
 
-    def batch(self, prompts: list[str], max_tokens: int) -> list[dict]:
+    def batch(
+        self, prompts: list[str], max_tokens: int, *, prefill_batch_size: int | None = None
+    ) -> list[dict]:
         import mlx.core as mx
         from mlx_vlm.generate import BatchGenerator, generation_stream, wired_limit
 
@@ -109,13 +111,14 @@ class LocalGemma:
         generator = BatchGenerator(
             self.model.language_model,
             self.processor,
-            prefill_batch_size=len(prompts),
+            prefill_batch_size=min(prefill_batch_size or len(prompts), len(prompts)),
             completion_batch_size=len(prompts),
         )
         uids = generator.insert(encoded, max_tokens)
         tokens = {uid: [] for uid in uids}
         results = {}
         started = time.perf_counter()
+        last_progress = started
         with wired_limit(self.model, [generation_stream]):
             while responses := generator.next():
                 for response in responses:
@@ -128,12 +131,22 @@ class LocalGemma:
                             "generation_tokens": len(tokens[response.uid]),
                             "finish_reason": response.finish_reason,
                         }
+                now = time.perf_counter()
+                if now - last_progress >= 60:
+                    print(
+                        f"Native batch: {len(results)}/{len(prompts)} complete; "
+                        f"{sum(len(value) for value in tokens.values())} generated tokens; "
+                        f"{now - started:.0f}s",
+                        flush=True,
+                    )
+                    last_progress = now
         elapsed = time.perf_counter() - started
         return [
             results[uid]
             | {
                 "prompt_tokens": len(encoded[index]),
                 "batch_size": len(prompts),
+                "prefill_batch_size": min(prefill_batch_size or len(prompts), len(prompts)),
                 "batch_seconds": elapsed,
                 "peak_memory": mx.get_peak_memory() / 1e9,
             }
