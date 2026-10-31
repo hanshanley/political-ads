@@ -10,9 +10,85 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## October 30: eight marked Republican House scripts from New Jersey Globe
+## October 30: two North Carolina Republican House ad quotations
 
-The latest acquisition contains **1,852 text records**, including **1,814
+The latest acquisition contains **1,854 text records**, including **1,816
+English records: 1,226 D / 551 R / 31 other / eight unresolved**. It adds
+two distinct Laurie Buckhout campaign ads in **NC-01**, both **partial
+quotations**, not full recovered transcripts. All **1,852 preceding acquired
+objects**, **1,814 preceding analyzed objects** and saved semantic reviews
+are unchanged. Both additions remain semantically **unreviewed**.
+Exact-message counts are **1,204 D / 514 R**. English House coverage is now
+**698 D / 173 R**: 476 D / one R Snap and 222 D / 172 R non-Snap. This
+remains a source-coverage imbalance, not national party advertising prevalence.
+
+| Reported advertiser | Recovered ad | Original publisher / report date | Recovered words |
+|---|---|---|---|
+| Laurie Buckhout campaign | Show Up | The North State Journal / September 1 | Two literal passages, 29 words |
+| Laurie Buckhout campaign | Veterans and family | The Center Square / September 15 | Four literal passages, 46 words |
+
+Credit: **A.P. Dillon, The North State Journal**, and **Alan Wooten, The
+Center Square**. Each review in `data/ad-release-reviews.json` binds the
+original article URL/title/date, exact public response SHA-256, advertiser
+context, original-video association and literal passages. Both video IDs and
+both exact messages are absent from the preceding corpus. Multiple passages
+within one ad remain one record. Speaker punctuation, including trailing
+commas, is retained rather than reconstructing omitted words.
+
+The North State Journal article exposes its public WordPress post endpoint.
+Only two quotations explicitly attributed to Show Up are admitted; campaign
+statements, voting-record reporting and a tiny isolated phrase are excluded.
+The Center Square article links a different original ad. Its four admitted
+passages comprise the child's opening question, a reported on-screen caption,
+and two candidate-voice quotations; the surrounding biography, district
+analysis and reporter narration are excluded.
+
+The Wilmington Standard syndication displays **September 14**. Following its
+original-publisher link establishes **September 15** on The Center Square,
+with matching machine timestamp and Tuesday-release context. The original
+is authoritative; the discrepant mirror is neither a separate acquisition
+nor the date source. The original has navigation headings before the story
+and an abbreviated visible date. Reviewed selectors must uniquely identify
+the actual article `h1` and publication element; an explicit date format
+parses `Sep 15, 2026`. Visible dates must agree with publication metadata and
+any selected element's `datetime` attribute. Full-response hashes remain
+strict: dynamic HTML changes require renewed acquisition review.
+
+Both records use exact FEC candidate **H4NC01137**, Laurie Buckhout, REP,
+House NC-01, principal committee **C00853499**. No alias or fuzzy identity
+match was added. General-election phase follows the explicit contest against
+Democratic incumbent Don Davis, not the calendar alone. Advertiser attribution
+follows the campaign identified by the reporting; closing legal payers and
+paid-delivery dates were not independently inspected or established.
+
+```sh
+political-ads collect --source buckhout-nsj --source buckhout-centersquare \
+  --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+Isolated network-forbidden replay reproduces all **509 written objects and
+source states** from the preceding 507-object corpus using only the two exact
+cached responses. All **341 Python tests**, Python lint/format, frontend lint,
+**17 frontend tests**, production build and **seven browser cases** pass.
+Independent auditing reconciles **20 metric groups and ten chart rows**.
+Complete JSON/gzip/CSV exports reconcile across analysis, browser and production;
+all **1,854 Parquet identity/text/hash/alignment rows** and all **eleven PNG
+copies** agree.
+
+Broader Florida searches encountered **HTTP 402** on Florida Politics articles;
+those articles were not retried through alternative routes, and snippets or
+audio links were not counted as recovered ads. Other campaign and public-video
+leads remain unacquired without verified ad words and associations. No paused
+caption provider was retried. Recurring acquisition continues; both article
+editions and the website remain unpublished.
+
+## Preceding October 30: eight marked Republican House scripts from New Jersey Globe
+
+That acquisition contains **1,852 text records**, including **1,814
 English records: 1,226 D / 549 R / 31 other / eight unresolved**. It adds
 eight Republican House scripts, not eight newly discovered districts or a
 representative national sample. All **1,844 preceding acquired objects** and

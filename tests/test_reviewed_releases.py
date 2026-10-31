@@ -233,6 +233,62 @@ def test_reviewed_script_element_excludes_surrounding_news(format, selector):
         assert not ads and status["state"] == "error"
 
 
+@pytest.mark.parametrize("selector", ["article h1", "h1", "article .missing", "p.not-heading"])
+def test_reviewed_article_heading_selection_excludes_navigation(selector):
+    source, candidate, review, body = release_fixture("html")
+    content = (
+        "<h1>State news navigation</h1><article>"
+        '<p class="not-heading">A new House ad</p>' + body.decode() + "</article>"
+    )
+    review["heading_selector"] = selector
+    review["content_sha256"] = digest(content)
+
+    class Client:
+        def get(self, *args, **kwargs):
+            return content.encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-10-30", [candidate], [review]
+    )
+    if selector == "article h1":
+        assert len(ads) == 1 and ads[0]["title"] == review["release_title"]
+    else:
+        assert not ads and status["state"] == "error"
+
+
+@pytest.mark.parametrize(
+    "date_markup", ["matching", "no_format", "conflicting_datetime", "ambiguous", "missing"]
+)
+def test_reviewed_article_abbreviated_date_binds_visible_and_machine_dates(date_markup):
+    source, candidate, review, body = release_fixture("html")
+    markup = '<time class="storydate" datetime="2026-07-14T12:00:00">Jul 14, 2026</time>'
+    content = body.decode().replace(
+        '<meta property="article:published_time" content="2026-07-14T12:00:00">', markup
+    )
+    if date_markup == "conflicting_datetime":
+        content = content.replace("2026-07-14T12:00:00", "2026-07-15T12:00:00")
+    elif date_markup == "ambiguous":
+        content += markup
+    elif date_markup == "missing":
+        content = content.replace('class="storydate"', 'class="other"')
+    review["publication_selector"] = "time.storydate"
+    if date_markup != "no_format":
+        review["publication_date_format"] = "%b %d, %Y"
+    review["content_sha256"] = digest(content)
+
+    class Client:
+        def get(self, *args, **kwargs):
+            return content.encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-10-30", [candidate], [review]
+    )
+    if date_markup == "matching":
+        assert len(ads) == 1 and ads[0]["published"] == "2026-07-14"
+    else:
+        assert not ads and status["state"] == "error"
+
+
 def test_reviewed_script_boundary_cannot_be_applied_to_partial_quotations():
     source, candidate, review, body = release_fixture()
     review["script_selector"] = "p"

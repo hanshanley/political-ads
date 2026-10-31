@@ -37,6 +37,11 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         soup = BeautifulSoup(content, "html.parser")
         publication = soup.find("meta", property="article:published_time")
         heading = soup.find("h1")
+        if review.get("heading_selector"):
+            headings = soup.select(review["heading_selector"])
+            if len(headings) != 1 or headings[0].name != "h1":
+                raise ValueError("Reviewed article heading must match exactly one h1")
+            heading = headings[0]
         if heading is None:
             raise ValueError("Reviewed article publication metadata or heading is missing")
         if review.get("publication_selector"):
@@ -44,12 +49,17 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
             if len(dates) != 1:
                 raise ValueError("Reviewed visible publication date must match exactly one element")
             published = (
-                datetime.strptime(dates[0].get_text(" ", strip=True), "%B %d, %Y")
+                datetime.strptime(
+                    dates[0].get_text(" ", strip=True),
+                    review.get("publication_date_format", "%B %d, %Y"),
+                )
                 .date()
                 .isoformat()
             )
             if publication is not None and publication["content"][:10] != published:
                 raise ValueError("Reviewed visible and metadata publication dates disagree")
+            if dates[0].has_attr("datetime") and dates[0]["datetime"][:10] != published:
+                raise ValueError("Reviewed visible and datetime publication dates disagree")
         elif publication is not None:
             published = publication["content"][:10]
         else:

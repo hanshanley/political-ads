@@ -411,6 +411,19 @@ links are associations only, not recovered transcripts or access to its catalog.
 Publisher dates remain distinct from first airing, and quoted allegations are not
 verified findings. Target party does not determine the advertiser's alignment.
 
+Reviewed HTML reports can specify an exact `heading_selector` when navigation
+contains other `h1` elements. The selector must match exactly one actual `h1`;
+missing, ambiguous or non-heading selections fail closed. A reviewed visible
+`publication_selector` must likewise be unique. `publication_date_format`
+explicitly records an abbreviated-month format when necessary; otherwise the
+existing full-month format remains unchanged. Visible dates must agree with
+any selected element's `datetime` attribute and publication metadata. These
+selectors do not narrow the full-response SHA-256 boundary. The Buckhout
+veterans advertisement uses The Center Square's September 15 original,
+not the discrepant September 14 date on a syndicated mirror. It remains one
+partial advertisement with a child-voice quotation, a reported on-screen
+caption and candidate-voice quotations, not a complete recovered transcript.
+
 For individually reviewed complete news-publisher scripts, an optional
 `script_selector` restricts extraction to one explicitly marked element within
 the full hash-bound response. It must match exactly one element, and its marked

@@ -22322,6 +22322,90 @@
       "title": "Hinson Releases New Ad: “Outrageous”"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "Credit: The North State Journal, A.P. Dillon. The September 1 report explicitly identifies Republican Laurie Buckhout's Show Up television ad against Democratic incumbent Don Davis and embeds the matching original. Exact 2026 FEC identity H4NC01137, principal committee C00853499, establishes the campaign's NC-01 House scope and Republican advertiser alignment, not the Democratic target's party or the news publisher's alignment. Two literal ad quotations remain in publisher order, including the first quotation's trailing comma. They form one partial ad, not two creatives or a complete recovered script. Reporter voting-record analysis, quoted campaign statements about Kalshi, and ordinary campaign remarks are excluded. This report date is not independently verified first release or paid delivery; the creative's sole legal closing payer has not been inspected. The entire rendered-content hash, post ID, article title/date, advertiser context and original-video association remain bound. This is acquisition review, not semantic portrayal coding or verification of ad claims.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H2NC02287",
+          "district": "01",
+          "name": "DAVIS, DON",
+          "office": "H",
+          "party": "DEM",
+          "state": "NC"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "buckhout-nsj-106955-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/HxAlHWbeCIs?feature=oembed"
+      ],
+      "message_id": "29f510d5747da01df7d64ef9ce1a4d1393b32b9ddb3ad31f7bcf67c0ccfd12db",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-09-01",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "NC-01",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H4NC01137"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Credit: The North State Journal, A.P. Dillon. The September 1 report explicitly identifies Republican Laurie Buckhout's Show Up television ad against Democratic incumbent Don Davis and embeds the matching original. Exact 2026 FEC identity H4NC01137, principal committee C00853499, establishes the campaign's NC-01 House scope and Republican advertiser alignment, not the Democratic target's party or the news publisher's alignment. Two literal ad quotations remain in publisher order, including the first quotation's trailing comma. They form one partial ad, not two creatives or a complete recovered script. Reporter voting-record analysis, quoted campaign statements about Kalshi, and ordinary campaign remarks are excluded. This report date is not independently verified first release or paid delivery; the creative's sole legal closing payer has not been inspected. The entire rendered-content hash, post ID, article title/date, advertiser context and original-video association remain bound. This is acquisition review, not semantic portrayal coding or verification of ad claims.",
+            "candidate_id": "H4NC01137",
+            "completeness": "partial_quotation",
+            "content_sha256": "04cffd960b935fc5ed2f6137b6a8ed42600407bd6ed20032e1b95f4350da691c",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/HxAlHWbeCIs?feature=oembed",
+            "passages": [
+              "When the vote is hard, Don Davis doesn’t show up. Not on the border, for the farmers or our kids,",
+              "Eastern Carolina deserves someone who fights every single day."
+            ],
+            "phase": "general",
+            "published": "2026-09-01",
+            "record_id": "106955",
+            "release_title": "Buckhout releases first TV ad in NC First Congressional District race",
+            "required_context": [
+              "Republican Army Col. Laurie Buckhout dropped her first TV ad today in her bid to unseat Congressman Don Davis",
+              "The ad, titled “Show up,”",
+              "Buckhout says in the ad."
+            ],
+            "retrieval_url": "https://nsjonline.com/wp-json/wp/v2/posts/106955",
+            "source": "buckhout-nsj",
+            "source_url": "https://nsjonline.com/article/2026/09/buckhout-releases-first-tv-ad-in-nc-first-congressional-districtrace/"
+          },
+          "text": "When the vote is hard, Don Davis doesn’t show up. Not on the border, for the farmers or our kids,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "Eastern Carolina deserves someone who fights every single day."
+        }
+      ],
+      "source": "buckhout-nsj",
+      "source_hash": "04cffd960b935fc5ed2f6137b6a8ed42600407bd6ed20032e1b95f4350da691c",
+      "source_record_id": "106955",
+      "source_url": "https://nsjonline.com/article/2026/09/buckhout-releases-first-tv-ad-in-nc-first-congressional-districtrace/",
+      "sponsor": "Laurie Buckhout campaign",
+      "sponsor_type": "candidate",
+      "state": "NC",
+      "text": "When the vote is hard, Don Davis doesn’t show up. Not on the border, for the farmers or our kids,\nEastern Carolina deserves someone who fights every single day.",
+      "title": "Buckhout releases first TV ad in NC First Congressional District race"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official Cooper for North Carolina release at https://roycooper.com/new-tv-ad-michael-whatley-in-his-own-words-grocery-prices-are-down/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
@@ -24313,6 +24397,94 @@
       "state": "MI",
       "text": "Across the Detroit River is Canada.\nIn Windsor, this hard medication costs about 200 bucks a month.\nHere in Michigan, the same prescription for a Michigan family costs $800.\nThat’s four times what the Canadians pay for the same drug.\nThe pharmaceutical companies are ripping American families off.\nI’ll take on Big Pharma.\nI’ll take on insurers.\nI’ll take on hospital monopolies.\nI have a plan to make your healthcare more affordable.\nI’m Mike Rogers, and I approve this message.",
       "title": "AD: MIKE ROGERS WILL TAKE ON BIG PHARMA, MAKE HEALTHCARE MORE AFFORDABLE"
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "Credit: Alan Wooten, The Center Square. The original report identifies this as Republican Laurie Buckhout's NC-01 general-election campaign advertisement and links its original video. Exact 2026 FEC identity H4NC01137, principal committee C00853499, establishes candidate and Republican advertiser identity. The four literal reported passages are, in source order, a child's opening question, a reported on-screen shrapnel caption, and two candidate-voice quotations. They remain one partial advertisement; missing narration is not reconstructed and publisher punctuation is retained. Historical explanations, military biographies, district analysis and press commentary are excluded. The original publisher's visible September 15 date agrees with its datetime attribute and the report's Tuesday release context. A Wilmington Standard syndication displays September 14; that discrepant mirror is not used to date this record and is not counted as another ad. Exact uniquely selected article h1 and abbreviated visible date prevent navigation headings or duplicate print-only dates from supplying metadata. The complete HTML hash includes all source markup; incidental changes fail closed. The query-bearing retrieval URL is the original publisher link actually exposed by the syndication; source_url retains its canonical article URL. Report date is not independently verified first release or paid delivery, and the sole legal closing payer has not been inspected. No new semantic portrayal judgment or truth verification is added.",
+      "candidate_mentions": [],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "buckhout-centersquare-1024f5e8-c40f-48c1-b504-38b6839373c6-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/watch?v=Q4aQnY5L194"
+      ],
+      "message_id": "886968305289b9d23c8ec9be46330755f8732eee2619b54ce0dfa3778a9cf379",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-09-15",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "NC-01",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H4NC01137"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Credit: Alan Wooten, The Center Square. The original report identifies this as Republican Laurie Buckhout's NC-01 general-election campaign advertisement and links its original video. Exact 2026 FEC identity H4NC01137, principal committee C00853499, establishes candidate and Republican advertiser identity. The four literal reported passages are, in source order, a child's opening question, a reported on-screen shrapnel caption, and two candidate-voice quotations. They remain one partial advertisement; missing narration is not reconstructed and publisher punctuation is retained. Historical explanations, military biographies, district analysis and press commentary are excluded. The original publisher's visible September 15 date agrees with its datetime attribute and the report's Tuesday release context. A Wilmington Standard syndication displays September 14; that discrepant mirror is not used to date this record and is not counted as another ad. Exact uniquely selected article h1 and abbreviated visible date prevent navigation headings or duplicate print-only dates from supplying metadata. The complete HTML hash includes all source markup; incidental changes fail closed. The query-bearing retrieval URL is the original publisher link actually exposed by the syndication; source_url retains its canonical article URL. Report date is not independently verified first release or paid delivery, and the sole legal closing payer has not been inspected. No new semantic portrayal judgment or truth verification is added.",
+            "candidate_id": "H4NC01137",
+            "completeness": "partial_quotation",
+            "content_sha256": "fbc5554427dabfade1d8b439a5a8db028fef1f9aa06b8b0be73e410e05ab1f40",
+            "format": "html",
+            "heading_selector": "article h1",
+            "media_url": "https://www.youtube.com/watch?v=Q4aQnY5L194",
+            "passages": [
+              "Momma, are the bad guys trying to kill you?",
+              "from near miss on LTC Buckhout and troops",
+              "I know the high price military families pay,",
+              "We did it for 30 years. In Congress, I will show up to fight for veterans because for me, it’s personal."
+            ],
+            "phase": "general",
+            "publication_date_format": "%b %d, %Y",
+            "publication_selector": "article li.hidden-print time.asset-date",
+            "published": "2026-09-15",
+            "record_id": "1024f5e8-c40f-48c1-b504-38b6839373c6",
+            "release_title": "Election 2026: Buckhout’s new ad mixes family, deployment, fight for veterans",
+            "required_context": [
+              "Republican Laurie Buckhout, challenging two-term incumbent Democratic U.S. Rep. Don Davis",
+              "mixed family, her military career and the quest to work for veterans in advertising released Tuesday.",
+              "The campaign ad images include"
+            ],
+            "retrieval_url": "https://www.thecentersquare.com/north_carolina/article_1024f5e8-c40f-48c1-b504-38b6839373c6.html?a",
+            "source": "buckhout-centersquare",
+            "source_url": "https://www.thecentersquare.com/north_carolina/article_1024f5e8-c40f-48c1-b504-38b6839373c6.html"
+          },
+          "text": "Momma, are the bad guys trying to kill you?"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "from near miss on LTC Buckhout and troops"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "I know the high price military families pay,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "We did it for 30 years. In Congress, I will show up to fight for veterans because for me, it’s personal."
+        }
+      ],
+      "source": "buckhout-centersquare",
+      "source_hash": "fbc5554427dabfade1d8b439a5a8db028fef1f9aa06b8b0be73e410e05ab1f40",
+      "source_record_id": "1024f5e8-c40f-48c1-b504-38b6839373c6",
+      "source_url": "https://www.thecentersquare.com/north_carolina/article_1024f5e8-c40f-48c1-b504-38b6839373c6.html",
+      "sponsor": "Laurie Buckhout campaign",
+      "sponsor_type": "candidate",
+      "state": "NC",
+      "text": "Momma, are the bad guys trying to kill you?\nfrom near miss on LTC Buckhout and troops\nI know the high price military families pay,\nWe did it for 30 years. In Congress, I will show up to fight for veterans because for me, it’s personal.",
+      "title": "Election 2026: Buckhout’s new ad mixes family, deployment, fight for veterans"
     },
     {
       "alignment": "D",
@@ -43726,6 +43898,38 @@
       "source": "barr",
       "state": "ok",
       "url": "https://barrforsenate.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "buckhout-centersquare",
+      "state": "partial",
+      "url": "https://www.thecentersquare.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "buckhout-nsj",
+      "state": "partial",
+      "url": "https://nsjonline.com"
     },
     {
       "ads_with_text": 8,
