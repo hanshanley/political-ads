@@ -31871,5 +31871,1244 @@
     "text_hash": "f32466b1be18a1efc70154d657fbef7055a1127e74cdbd3fe59e6a0080f6701d",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR02901047763301040129-2318d9059a4d",
+    "alignment": "D",
+    "block_id": "google-CR02901047763301040129-2318d9059a4d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR02901047763301040129-2318d9059a4d-claims-001-001",
+    "claim_text": "SCOTUS is undoing the Voting Rights movement.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 163,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by Terri Sewell for Congress\nsecure.actblue.com/\nTerri Sewell For Congress\nSCOTUS is undoing the Voting Rights movement.\nThat's why Terri needs your help.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR09205833039685353473/creative/CR02901047763301040129?political=&region=US",
+    "sponsor": "Terri Sewell for Congress",
+    "targets": [
+      {
+        "anchor_end": 90,
+        "anchor_quote": "SCOTUS",
+        "anchor_start": 84,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "SCOTUS",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Paid for by Terri Sewell for Congress\nsecure.actblue.com/\nTerri Sewell For Congress\nSCOTUS is undoing the Voting Rights movement.\nThat's why Terri needs your help.",
+    "text_hash": "3db2ac997512196b67cb5fa28f80a3ec61208d3ae8b5b98e845930b208ac8519",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR02901047763301040129-2318d9059a4d",
+    "alignment": "D",
+    "block_id": "google-CR02901047763301040129-2318d9059a4d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR02901047763301040129-2318d9059a4d-claims-001-002",
+    "claim_text": "Terri needs your help.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 163,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by Terri Sewell for Congress\nsecure.actblue.com/\nTerri Sewell For Congress\nSCOTUS is undoing the Voting Rights movement.\nThat's why Terri needs your help.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR09205833039685353473/creative/CR02901047763301040129?political=&region=US",
+    "sponsor": "Terri Sewell for Congress",
+    "targets": [
+      {
+        "anchor_end": 17,
+        "anchor_quote": "Terri",
+        "anchor_start": 12,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H0AL07086",
+        "kind": "person",
+        "name": "Terri",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by Terri Sewell for Congress\nsecure.actblue.com/\nTerri Sewell For Congress\nSCOTUS is undoing the Voting Rights movement.\nThat's why Terri needs your help.",
+    "text_hash": "3db2ac997512196b67cb5fa28f80a3ec61208d3ae8b5b98e845930b208ac8519",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR03891604591992635393-09d11cc7c035",
+    "alignment": "R",
+    "block_id": "google-CR03891604591992635393-09d11cc7c035-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR03891604591992635393-09d11cc7c035-claims-001-001",
+    "claim_text": "We need PRO-Trump Ann Wagner in Congress to keep our Missouri families safe.",
+    "claim_types": [
+      "policy_position",
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR17221395951474704385/creative/CR03891604591992635393?political=&region=US",
+    "sponsor": "ANN WAGNER FOR CONGRESS",
+    "targets": [
+      {
+        "anchor_end": 71,
+        "anchor_quote": "Ann Wagner",
+        "anchor_start": 61,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2MO02102",
+        "kind": "person",
+        "name": "Ann Wagner",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 216,
+        "anchor_quote": "our Missouri families",
+        "anchor_start": 195,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Missouri families",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+    "text_hash": "a5dd04f89c65aa08e214dedf1b41a5464678667981c52cd7b70d59f91f742587",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR03891604591992635393-09d11cc7c035",
+    "alignment": "R",
+    "block_id": "google-CR03891604591992635393-09d11cc7c035-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR03891604591992635393-09d11cc7c035-claims-001-002",
+    "claim_text": "Ann Wagner is PRO-Trump.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR17221395951474704385/creative/CR03891604591992635393?political=&region=US",
+    "sponsor": "ANN WAGNER FOR CONGRESS",
+    "targets": [
+      {
+        "anchor_end": 71,
+        "anchor_quote": "Ann Wagner",
+        "anchor_start": 61,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2MO02102",
+        "kind": "person",
+        "name": "Ann Wagner",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+    "text_hash": "a5dd04f89c65aa08e214dedf1b41a5464678667981c52cd7b70d59f91f742587",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR03891604591992635393-09d11cc7c035",
+    "alignment": "R",
+    "block_id": "google-CR03891604591992635393-09d11cc7c035-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR03891604591992635393-09d11cc7c035-claims-001-003",
+    "claim_text": "Ann Wagner for Congress is the name of the campaign.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR17221395951474704385/creative/CR03891604591992635393?political=&region=US",
+    "sponsor": "ANN WAGNER FOR CONGRESS",
+    "targets": [
+      {
+        "anchor_end": 84,
+        "anchor_quote": "Ann Wagner for Congress",
+        "anchor_start": 61,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Ann Wagner for Congress",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+    "text_hash": "a5dd04f89c65aa08e214dedf1b41a5464678667981c52cd7b70d59f91f742587",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR03891604591992635393-09d11cc7c035",
+    "alignment": "R",
+    "block_id": "google-CR03891604591992635393-09d11cc7c035-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR03891604591992635393-09d11cc7c035-claims-001-004",
+    "claim_text": "The campaign is paid for by ANN WAGNER FOR CONGRESS.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR17221395951474704385/creative/CR03891604591992635393?political=&region=US",
+    "sponsor": "ANN WAGNER FOR CONGRESS",
+    "targets": [
+      {
+        "anchor_end": 35,
+        "anchor_quote": "ANN WAGNER FOR CONGRESS",
+        "anchor_start": 12,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "ANN WAGNER FOR CONGRESS",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+    "text_hash": "a5dd04f89c65aa08e214dedf1b41a5464678667981c52cd7b70d59f91f742587",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR03891604591992635393-09d11cc7c035",
+    "alignment": "R",
+    "block_id": "google-CR03891604591992635393-09d11cc7c035-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR03891604591992635393-09d11cc7c035-claims-001-005",
+    "claim_text": "Ann Wagner is running for Congress.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR17221395951474704385/creative/CR03891604591992635393?political=&region=US",
+    "sponsor": "ANN WAGNER FOR CONGRESS",
+    "targets": [
+      {
+        "anchor_end": 71,
+        "anchor_quote": "Ann Wagner",
+        "anchor_start": 61,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2MO02102",
+        "kind": "person",
+        "name": "Ann Wagner",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+    "text_hash": "a5dd04f89c65aa08e214dedf1b41a5464678667981c52cd7b70d59f91f742587",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR03891604591992635393-09d11cc7c035",
+    "alignment": "R",
+    "block_id": "google-CR03891604591992635393-09d11cc7c035-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR03891604591992635393-09d11cc7c035-claims-001-006",
+    "claim_text": "Ann Wagner's campaign website is annwagner.com.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR17221395951474704385/creative/CR03891604591992635393?political=&region=US",
+    "sponsor": "ANN WAGNER FOR CONGRESS",
+    "targets": [
+      {
+        "anchor_end": 71,
+        "anchor_quote": "Ann Wagner",
+        "anchor_start": 61,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2MO02102",
+        "kind": "person",
+        "name": "Ann Wagner",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+    "text_hash": "a5dd04f89c65aa08e214dedf1b41a5464678667981c52cd7b70d59f91f742587",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR03891604591992635393-09d11cc7c035",
+    "alignment": "R",
+    "block_id": "google-CR03891604591992635393-09d11cc7c035-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR03891604591992635393-09d11cc7c035-claims-001-007",
+    "claim_text": "Ann Wagner is running for Congress in 2026.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR17221395951474704385/creative/CR03891604591992635393?political=&region=US",
+    "sponsor": "ANN WAGNER FOR CONGRESS",
+    "targets": [
+      {
+        "anchor_end": 71,
+        "anchor_quote": "Ann Wagner",
+        "anchor_start": 61,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2MO02102",
+        "kind": "person",
+        "name": "Ann Wagner",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+    "text_hash": "a5dd04f89c65aa08e214dedf1b41a5464678667981c52cd7b70d59f91f742587",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR03891604591992635393-09d11cc7c035",
+    "alignment": "R",
+    "block_id": "google-CR03891604591992635393-09d11cc7c035-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR03891604591992635393-09d11cc7c035-claims-001-008",
+    "claim_text": "The campaign is for the US House.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR17221395951474704385/creative/CR03891604591992635393?political=&region=US",
+    "sponsor": "ANN WAGNER FOR CONGRESS",
+    "targets": [
+      {
+        "anchor_end": 44,
+        "anchor_quote": "US House",
+        "anchor_start": 36,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "US House",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+    "text_hash": "a5dd04f89c65aa08e214dedf1b41a5464678667981c52cd7b70d59f91f742587",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR03891604591992635393-09d11cc7c035",
+    "alignment": "R",
+    "block_id": "google-CR03891604591992635393-09d11cc7c035-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR03891604591992635393-09d11cc7c035-claims-001-009",
+    "claim_text": "The campaign is for a seat in Missouri's 2nd district.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR17221395951474704385/creative/CR03891604591992635393?political=&region=US",
+    "sponsor": "ANN WAGNER FOR CONGRESS",
+    "targets": [
+      {
+        "anchor_end": 207,
+        "anchor_quote": "Missouri",
+        "anchor_start": 199,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Missouri",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+    "text_hash": "a5dd04f89c65aa08e214dedf1b41a5464678667981c52cd7b70d59f91f742587",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR03891604591992635393-09d11cc7c035",
+    "alignment": "R",
+    "block_id": "google-CR03891604591992635393-09d11cc7c035-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR03891604591992635393-09d11cc7c035-claims-001-010",
+    "claim_text": "Ann Wagner is running for Congress in Missouri's 2nd district.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR17221395951474704385/creative/CR03891604591992635393?political=&region=US",
+    "sponsor": "ANN WAGNER FOR CONGRESS",
+    "targets": [
+      {
+        "anchor_end": 71,
+        "anchor_quote": "Ann Wagner",
+        "anchor_start": 61,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2MO02102",
+        "kind": "person",
+        "name": "Ann Wagner",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 207,
+        "anchor_quote": "Missouri",
+        "anchor_start": 199,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Missouri",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by ANN WAGNER FOR CONGRESS\nUS House Campaign, MO-02\nAnn Wagner for Congress\nwww.annwagner.com/\nAnn Wagner for Congress - Ann\nWagner 2026\nWe need PRO-Trump Ann Wagner in Congress to keep\nour Missouri families safe.",
+    "text_hash": "a5dd04f89c65aa08e214dedf1b41a5464678667981c52cd7b70d59f91f742587",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR04673184916404436993-c2236a9945da",
+    "alignment": "R",
+    "block_id": "google-CR04673184916404436993-c2236a9945da-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR04673184916404436993-c2236a9945da-claims-001-001",
+    "claim_text": "President Trump is backing Lindsey Graham for US Senate.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 169,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by TEAM GRAHAM, INC.\nwinred.lindseygraham.com/\nSupport Senator Graham\nJoin President Trump in backing Lindsey Graham for\nUS Senate. Chip into Team Graham today.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR02636709834950443009/creative/CR04673184916404436993?political=&region=US",
+    "sponsor": "TEAM GRAHAM, INC.",
+    "targets": [
+      {
+        "anchor_end": 99,
+        "anchor_quote": "President Trump",
+        "anchor_start": 84,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "TRUMP, PRESIDENT",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Paid for by TEAM GRAHAM, INC.\nwinred.lindseygraham.com/\nSupport Senator Graham\nJoin President Trump in backing Lindsey Graham for\nUS Senate. Chip into Team Graham today.",
+    "text_hash": "2e8aa519de593616a4245dd899c8c8ac1f7db079e333f39a8b72a94c2d333859",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR04673184916404436993-c2236a9945da",
+    "alignment": "R",
+    "block_id": "google-CR04673184916404436993-c2236a9945da-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR04673184916404436993-c2236a9945da-claims-001-002",
+    "claim_text": "You can support Senator Graham.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 169,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by TEAM GRAHAM, INC.\nwinred.lindseygraham.com/\nSupport Senator Graham\nJoin President Trump in backing Lindsey Graham for\nUS Senate. Chip into Team Graham today.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR02636709834950443009/creative/CR04673184916404436993?political=&region=US",
+    "sponsor": "TEAM GRAHAM, INC.",
+    "targets": [
+      {
+        "anchor_end": 78,
+        "anchor_quote": "Senator Graham",
+        "anchor_start": 64,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S0SC00149",
+        "kind": "person",
+        "name": "GRAHAM, LINDSEY O.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by TEAM GRAHAM, INC.\nwinred.lindseygraham.com/\nSupport Senator Graham\nJoin President Trump in backing Lindsey Graham for\nUS Senate. Chip into Team Graham today.",
+    "text_hash": "2e8aa519de593616a4245dd899c8c8ac1f7db079e333f39a8b72a94c2d333859",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR04673184916404436993-c2236a9945da",
+    "alignment": "R",
+    "block_id": "google-CR04673184916404436993-c2236a9945da-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR04673184916404436993-c2236a9945da-claims-001-003",
+    "claim_text": "TEAM GRAHAM, INC. paid for this communication.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 169,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by TEAM GRAHAM, INC.\nwinred.lindseygraham.com/\nSupport Senator Graham\nJoin President Trump in backing Lindsey Graham for\nUS Senate. Chip into Team Graham today.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR02636709834950443009/creative/CR04673184916404436993?political=&region=US",
+    "sponsor": "TEAM GRAHAM, INC.",
+    "targets": [
+      {
+        "anchor_end": 29,
+        "anchor_quote": "TEAM GRAHAM, INC.",
+        "anchor_start": 12,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "TEAM GRAHAM, INC.",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by TEAM GRAHAM, INC.\nwinred.lindseygraham.com/\nSupport Senator Graham\nJoin President Trump in backing Lindsey Graham for\nUS Senate. Chip into Team Graham today.",
+    "text_hash": "2e8aa519de593616a4245dd899c8c8ac1f7db079e333f39a8b72a94c2d333859",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR04673184916404436993-c2236a9945da",
+    "alignment": "R",
+    "block_id": "google-CR04673184916404436993-c2236a9945da-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR04673184916404436993-c2236a9945da-claims-001-004",
+    "claim_text": "You can join President Trump in backing Lindsey Graham for US Senate.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 169,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by TEAM GRAHAM, INC.\nwinred.lindseygraham.com/\nSupport Senator Graham\nJoin President Trump in backing Lindsey Graham for\nUS Senate. Chip into Team Graham today.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR02636709834950443009/creative/CR04673184916404436993?political=&region=US",
+    "sponsor": "TEAM GRAHAM, INC.",
+    "targets": [
+      {
+        "anchor_end": 99,
+        "anchor_quote": "President Trump",
+        "anchor_start": 84,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "TRUMP, PRESIDENT",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 125,
+        "anchor_quote": "Lindsey Graham",
+        "anchor_start": 111,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S0SC00149",
+        "kind": "person",
+        "name": "GRAHAM, LINDSEY O.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by TEAM GRAHAM, INC.\nwinred.lindseygraham.com/\nSupport Senator Graham\nJoin President Trump in backing Lindsey Graham for\nUS Senate. Chip into Team Graham today.",
+    "text_hash": "2e8aa519de593616a4245dd899c8c8ac1f7db079e333f39a8b72a94c2d333859",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR04673184916404436993-c2236a9945da",
+    "alignment": "R",
+    "block_id": "google-CR04673184916404436993-c2236a9945da-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR04673184916404436993-c2236a9945da-claims-001-005",
+    "claim_text": "You can chip into Team Graham today.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 169,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by TEAM GRAHAM, INC.\nwinred.lindseygraham.com/\nSupport Senator Graham\nJoin President Trump in backing Lindsey Graham for\nUS Senate. Chip into Team Graham today.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR02636709834950443009/creative/CR04673184916404436993?political=&region=US",
+    "sponsor": "TEAM GRAHAM, INC.",
+    "targets": [
+      {
+        "anchor_end": 162,
+        "anchor_quote": "Team Graham",
+        "anchor_start": 151,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "TEAM GRAHAM, INC.",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by TEAM GRAHAM, INC.\nwinred.lindseygraham.com/\nSupport Senator Graham\nJoin President Trump in backing Lindsey Graham for\nUS Senate. Chip into Team Graham today.",
+    "text_hash": "2e8aa519de593616a4245dd899c8c8ac1f7db079e333f39a8b72a94c2d333859",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR04742165278043930625-1bce26e2b38f",
+    "alignment": "D",
+    "block_id": "google-CR04742165278043930625-1bce26e2b38f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR04742165278043930625-1bce26e2b38f-claims-001-001",
+    "claim_text": "Ed Markey is the progressive champion we need in the U.S. Senate.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 287,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by THE MARKEY COMMITTEE\nUS Senate Campaign, MA\nedmarkey.com\nwww.edmarkey.com/\nEd Markey for Senate - Re-elect\nSenator Ed Markey\nEd Markey is the progressive champion we need in the\nU.S. Senate. Ed Markey is working to abolish ICE, pass\nMedicare for All, & hold MAGA accountable.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR00594950552152965121/creative/CR04742165278043930625?political=&region=US",
+    "sponsor": "THE MARKEY COMMITTEE",
+    "targets": [
+      {
+        "anchor_end": 96,
+        "anchor_quote": "Ed Markey",
+        "anchor_start": 87,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Ed Markey",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Paid for by THE MARKEY COMMITTEE\nUS Senate Campaign, MA\nedmarkey.com\nwww.edmarkey.com/\nEd Markey for Senate - Re-elect\nSenator Ed Markey\nEd Markey is the progressive champion we need in the\nU.S. Senate. Ed Markey is working to abolish ICE, pass\nMedicare for All, & hold MAGA accountable.",
+    "text_hash": "de16037254dacb5c520fbd932a264bb0c442f295bc252dfb66b072b88c08b949",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR04742165278043930625-1bce26e2b38f",
+    "alignment": "D",
+    "block_id": "google-CR04742165278043930625-1bce26e2b38f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR04742165278043930625-1bce26e2b38f-claims-001-002",
+    "claim_text": "Ed Markey is working to abolish ICE.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 287,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by THE MARKEY COMMITTEE\nUS Senate Campaign, MA\nedmarkey.com\nwww.edmarkey.com/\nEd Markey for Senate - Re-elect\nSenator Ed Markey\nEd Markey is the progressive champion we need in the\nU.S. Senate. Ed Markey is working to abolish ICE, pass\nMedicare for All, & hold MAGA accountable.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR00594950552152965121/creative/CR04742165278043930625?political=&region=US",
+    "sponsor": "THE MARKEY COMMITTEE",
+    "targets": [
+      {
+        "anchor_end": 96,
+        "anchor_quote": "Ed Markey",
+        "anchor_start": 87,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Ed Markey",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by THE MARKEY COMMITTEE\nUS Senate Campaign, MA\nedmarkey.com\nwww.edmarkey.com/\nEd Markey for Senate - Re-elect\nSenator Ed Markey\nEd Markey is the progressive champion we need in the\nU.S. Senate. Ed Markey is working to abolish ICE, pass\nMedicare for All, & hold MAGA accountable.",
+    "text_hash": "de16037254dacb5c520fbd932a264bb0c442f295bc252dfb66b072b88c08b949",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR04742165278043930625-1bce26e2b38f",
+    "alignment": "D",
+    "block_id": "google-CR04742165278043930625-1bce26e2b38f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR04742165278043930625-1bce26e2b38f-claims-001-003",
+    "claim_text": "Ed Markey is working to pass Medicare for All.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 287,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by THE MARKEY COMMITTEE\nUS Senate Campaign, MA\nedmarkey.com\nwww.edmarkey.com/\nEd Markey for Senate - Re-elect\nSenator Ed Markey\nEd Markey is the progressive champion we need in the\nU.S. Senate. Ed Markey is working to abolish ICE, pass\nMedicare for All, & hold MAGA accountable.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR00594950552152965121/creative/CR04742165278043930625?political=&region=US",
+    "sponsor": "THE MARKEY COMMITTEE",
+    "targets": [
+      {
+        "anchor_end": 96,
+        "anchor_quote": "Ed Markey",
+        "anchor_start": 87,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Ed Markey",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by THE MARKEY COMMITTEE\nUS Senate Campaign, MA\nedmarkey.com\nwww.edmarkey.com/\nEd Markey for Senate - Re-elect\nSenator Ed Markey\nEd Markey is the progressive champion we need in the\nU.S. Senate. Ed Markey is working to abolish ICE, pass\nMedicare for All, & hold MAGA accountable.",
+    "text_hash": "de16037254dacb5c520fbd932a264bb0c442f295bc252dfb66b072b88c08b949",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR04742165278043930625-1bce26e2b38f",
+    "alignment": "D",
+    "block_id": "google-CR04742165278043930625-1bce26e2b38f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR04742165278043930625-1bce26e2b38f-claims-001-004",
+    "claim_text": "Ed Markey is working to hold MAGA accountable.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 287,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by THE MARKEY COMMITTEE\nUS Senate Campaign, MA\nedmarkey.com\nwww.edmarkey.com/\nEd Markey for Senate - Re-elect\nSenator Ed Markey\nEd Markey is the progressive champion we need in the\nU.S. Senate. Ed Markey is working to abolish ICE, pass\nMedicare for All, & hold MAGA accountable.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR00594950552152965121/creative/CR04742165278043930625?political=&region=US",
+    "sponsor": "THE MARKEY COMMITTEE",
+    "targets": [
+      {
+        "anchor_end": 274,
+        "anchor_quote": "MAGA",
+        "anchor_start": 270,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "MAGA",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Paid for by THE MARKEY COMMITTEE\nUS Senate Campaign, MA\nedmarkey.com\nwww.edmarkey.com/\nEd Markey for Senate - Re-elect\nSenator Ed Markey\nEd Markey is the progressive champion we need in the\nU.S. Senate. Ed Markey is working to abolish ICE, pass\nMedicare for All, & hold MAGA accountable.",
+    "text_hash": "de16037254dacb5c520fbd932a264bb0c442f295bc252dfb66b072b88c08b949",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR04742165278043930625-b1775e8fdaac",
+    "alignment": "D",
+    "block_id": "google-CR04742165278043930625-b1775e8fdaac-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR04742165278043930625-b1775e8fdaac-claims-001-001",
+    "claim_text": "Ed Markey is the progressive champion we need in the U.S. Senate.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 248,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by THE MARKEY COMMITTEE\nUS Senate Campaign, MA\nedmarkey.com\nwww.edmarkey.com/\nEd Markey for Senate - Re-elect\nSenator Ed Markey\nEd Markey is the progressive champion we need in the\nU.S. Senate. Vote for Ed Markey by Tuesday,\nSeptember 1st.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR00594950552152965121/creative/CR04742165278043930625?political=&region=US",
+    "sponsor": "THE MARKEY COMMITTEE",
+    "targets": [
+      {
+        "anchor_end": 96,
+        "anchor_quote": "Ed Markey",
+        "anchor_start": 87,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Ed Markey",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Paid for by THE MARKEY COMMITTEE\nUS Senate Campaign, MA\nedmarkey.com\nwww.edmarkey.com/\nEd Markey for Senate - Re-elect\nSenator Ed Markey\nEd Markey is the progressive champion we need in the\nU.S. Senate. Vote for Ed Markey by Tuesday,\nSeptember 1st.",
+    "text_hash": "9fda13f3fe1ebf6a4b125f464d2fac4fa7efcf234cc19cb7e4a3f34c0b2b86da",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR04742165278043930625-b1775e8fdaac",
+    "alignment": "D",
+    "block_id": "google-CR04742165278043930625-b1775e8fdaac-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR04742165278043930625-b1775e8fdaac-claims-001-002",
+    "claim_text": "Vote for Ed Markey by Tuesday, September 1st.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 248,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by THE MARKEY COMMITTEE\nUS Senate Campaign, MA\nedmarkey.com\nwww.edmarkey.com/\nEd Markey for Senate - Re-elect\nSenator Ed Markey\nEd Markey is the progressive champion we need in the\nU.S. Senate. Vote for Ed Markey by Tuesday,\nSeptember 1st.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR00594950552152965121/creative/CR04742165278043930625?political=&region=US",
+    "sponsor": "THE MARKEY COMMITTEE",
+    "targets": [
+      {
+        "anchor_end": 96,
+        "anchor_quote": "Ed Markey",
+        "anchor_start": 87,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Ed Markey",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by THE MARKEY COMMITTEE\nUS Senate Campaign, MA\nedmarkey.com\nwww.edmarkey.com/\nEd Markey for Senate - Re-elect\nSenator Ed Markey\nEd Markey is the progressive champion we need in the\nU.S. Senate. Vote for Ed Markey by Tuesday,\nSeptember 1st.",
+    "text_hash": "9fda13f3fe1ebf6a4b125f464d2fac4fa7efcf234cc19cb7e4a3f34c0b2b86da",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR05618399569193730049-1348a51e2efc",
+    "alignment": "D",
+    "block_id": "google-CR05618399569193730049-1348a51e2efc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR05618399569193730049-1348a51e2efc-claims-001-001",
+    "claim_text": "We will stop MAGA extremists like Marjorie Taylor Greene and their far-right agenda.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 221,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by JOSH HARDER FOR CONGRESS\nHAROER\nsecure.actblue.com\nsecure.actblue.com/\nRepresentative Josh Harder -\nCompetitive Race in 2026\nHelp us stop MAGA extremists like Marjorie Taylor\nGreene and their far-right agenda.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR17361091377684807681/creative/CR05618399569193730049?political=&region=US",
+    "sponsor": "JOSH HARDER FOR CONGRESS",
+    "targets": [
+      {
+        "anchor_end": 165,
+        "anchor_quote": "MAGA extremists",
+        "anchor_start": 150,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "MAGA extremists",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Paid for by JOSH HARDER FOR CONGRESS\nHAROER\nsecure.actblue.com\nsecure.actblue.com/\nRepresentative Josh Harder -\nCompetitive Race in 2026\nHelp us stop MAGA extremists like Marjorie Taylor\nGreene and their far-right agenda.",
+    "text_hash": "fe1579fa135014a81b4e4c2356add42897aed5a25be7d43b92442a8dc92487f7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR05618399569193730049-1348a51e2efc",
+    "alignment": "D",
+    "block_id": "google-CR05618399569193730049-1348a51e2efc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR05618399569193730049-1348a51e2efc-claims-001-002",
+    "claim_text": "MAGA extremists like Marjorie Taylor Greene have a far-right agenda.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 221,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by JOSH HARDER FOR CONGRESS\nHAROER\nsecure.actblue.com\nsecure.actblue.com/\nRepresentative Josh Harder -\nCompetitive Race in 2026\nHelp us stop MAGA extremists like Marjorie Taylor\nGreene and their far-right agenda.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR17361091377684807681/creative/CR05618399569193730049?political=&region=US",
+    "sponsor": "JOSH HARDER FOR CONGRESS",
+    "targets": [
+      {
+        "anchor_end": 165,
+        "anchor_quote": "MAGA extremists",
+        "anchor_start": 150,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "MAGA extremists",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Paid for by JOSH HARDER FOR CONGRESS\nHAROER\nsecure.actblue.com\nsecure.actblue.com/\nRepresentative Josh Harder -\nCompetitive Race in 2026\nHelp us stop MAGA extremists like Marjorie Taylor\nGreene and their far-right agenda.",
+    "text_hash": "fe1579fa135014a81b4e4c2356add42897aed5a25be7d43b92442a8dc92487f7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "google-CR05618399569193730049-1348a51e2efc",
+    "alignment": "D",
+    "block_id": "google-CR05618399569193730049-1348a51e2efc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "google-CR05618399569193730049-1348a51e2efc-claims-001-003",
+    "claim_text": "Representative Josh Harder is in a competitive race in 2026.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 221,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Paid for by JOSH HARDER FOR CONGRESS\nHAROER\nsecure.actblue.com\nsecure.actblue.com/\nRepresentative Josh Harder -\nCompetitive Race in 2026\nHelp us stop MAGA extremists like Marjorie Taylor\nGreene and their far-right agenda.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://adstransparency.google.com/advertiser/AR17361091377684807681/creative/CR05618399569193730049?political=&region=US",
+    "sponsor": "JOSH HARDER FOR CONGRESS",
+    "targets": [
+      {
+        "anchor_end": 109,
+        "anchor_quote": "Josh Harder",
+        "anchor_start": 98,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H8CA10126",
+        "kind": "person",
+        "name": "Josh Harder",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Paid for by JOSH HARDER FOR CONGRESS\nHAROER\nsecure.actblue.com\nsecure.actblue.com/\nRepresentative Josh Harder -\nCompetitive Race in 2026\nHelp us stop MAGA extremists like Marjorie Taylor\nGreene and their far-right agenda.",
+    "text_hash": "fe1579fa135014a81b4e4c2356add42897aed5a25be7d43b92442a8dc92487f7",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]

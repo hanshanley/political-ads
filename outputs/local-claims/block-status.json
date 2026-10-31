@@ -1016,8 +1016,8 @@
   {
     "ad_id": "google-CR02223171494425395201-3c2f23c48db1",
     "block_id": "google-CR02223171494425395201-3c2f23c48db1-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "google-CR02454877901938491393-d1c10306c536",
@@ -1053,55 +1053,55 @@
     "ad_id": "google-CR02901047763301040129-2318d9059a4d",
     "block_id": "google-CR02901047763301040129-2318d9059a4d-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR03499796586962092033-7c5b31c45830",
     "block_id": "google-CR03499796586962092033-7c5b31c45830-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for Hakeem Jeffries: \\\"HAKEEM JEFFRIES\\\" is absent from unit 1. Exact source: \\\"Paid for by JEFFRIES FOR CONGRESS\\\\nUS House Campaign, NY-08\\\\nHAKEEM\\\\nJEFFRIES\\\\nsecure.actblue.com\\\\nsecure.actblue.com/\\\\nOfficial Hakeem Jeffries Page - Help\\\\nelect Democrats\\\\nYour donation will help flip the House and put a check\\\\non MAGA extremism.\\\\nElect Democrats\\\\nSupport Democrats\\\\nMake a\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "google-CR03891604591992635393-09d11cc7c035",
     "block_id": "google-CR03891604591992635393-09d11cc7c035-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR04673184916404436993-c2236a9945da",
     "block_id": "google-CR04673184916404436993-c2236a9945da-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR04742165278043930625-1bce26e2b38f",
     "block_id": "google-CR04742165278043930625-1bce26e2b38f-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR04742165278043930625-b1775e8fdaac",
     "block_id": "google-CR04742165278043930625-b1775e8fdaac-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR04921736623739109377-5afd8d21ae59",
     "block_id": "google-CR04921736623739109377-5afd8d21ae59-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Julia Brownley: \\\"Julia Brownley\\\" is absent from unit 1. Exact source: \\\"Paid for by SHERMAN FOR CONGRESS\\\\n• www.bradsherman.com/\\\\nBrad Sherman for Congress -\\\\nCongressman Brad Sherman -..\\\\nBrad Sherman is endorsed by Congresswoman Julia\\\\nBrownley Brad Sherman is standing up to Trump and\\\\nfighting back against ICE\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "google-CR05049101473720303617-efc1459752e8",
     "block_id": "google-CR05049101473720303617-efc1459752e8-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for our communities: \\\"our communities\\\" is absent from unit 1. Exact source: \\\"Paid for by GLENN GROTHMAN FOR CONGRESS\\\\nUS House Campaign, WI-06\\\\n• Glenn Grothman\\\\nwww.glenngrothman.com/\\\\nGlenn Grothman for Congress -\\\\nFighting For Our Communities\\\\nGlenn supports law enforcement and cares about the\\\\ncitizens of Wisconsin. Click here!\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "google-CR05618399569193730049-1348a51e2efc",
     "block_id": "google-CR05618399569193730049-1348a51e2efc-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR05687623300860084225-b0a16bcadbad",
