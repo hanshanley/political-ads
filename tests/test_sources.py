@@ -73,6 +73,34 @@ def test_facebook_reel_recognition_rejects_catalogs_malformed_paths_and_deceptiv
     assert media_links("".join(f'<a href="{url}">Not an original</a>' for url in rejected)) == []
 
 
+@pytest.mark.parametrize("host", ["facebook.com", "www.facebook.com"])
+def test_public_media_links_recognize_individual_facebook_watch_videos(host):
+    original = f"https://{host}/watch/?v=4172296496420217"
+    assert media_links(f'<a href="{original}">Ad</a>') == [original]
+
+
+def test_facebook_watch_recognition_rejects_unbound_or_malformed_video_associations():
+    original = "https://www.facebook.com/watch/?v=4172296496420217"
+    rejected = [
+        original.replace("https:", "http:"),
+        original.replace("https:", ""),
+        original.replace("www.facebook.com", "www.facebook.com.evil.example"),
+        original.replace("www.facebook.com", "user@www.facebook.com"),
+        original.replace("www.facebook.com", "www.facebook.com:443"),
+        original.replace("/watch/", "/Campaign/"),
+        original.replace("/watch/", "/watch/extra"),
+        original.replace("?v=4172296496420217", ""),
+        original.replace("4172296496420217", "123"),
+        original.replace("4172296496420217", "not-a-video"),
+        original.replace("4172296496420217", ""),
+        original + "&v=4172296496420217",
+        original + "&v=",
+        original + "&feed=1",
+        original + "#other",
+    ]
+    assert media_links("".join(f'<a href="{url}">Not an ad</a>' for url in rejected)) == []
+
+
 @pytest.mark.parametrize("host", ["x.com", "www.x.com", "twitter.com", "www.twitter.com"])
 def test_public_media_links_recognize_individual_status_associations(host):
     post = f"https://{host}/Campaign_Name/status/2102681607672934852?ref_src=twsrc%5Etfw"

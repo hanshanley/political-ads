@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "toth-tribune",
+        "https://www.texastribune.org",
+        "Steve Toth campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="TX-02",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "elijah-everyturn-flvoice",
         "https://flvoicenews.com",
         "Ryan Elijah campaign (publisher-reported; payer unverified)",
@@ -1290,6 +1300,17 @@ def media_links(content: str) -> list[str]:
             and parsed.netloc in {"facebook.com", "www.facebook.com"}
             and re.fullmatch(r"/reel/[0-9]{15,20}/?", parsed.path)
             and not parsed.fragment
+        ):
+            urls.append(value)
+        elif (
+            parsed.scheme == "https"
+            and parsed.netloc in {"facebook.com", "www.facebook.com"}
+            and parsed.path == "/watch/"
+            and not parsed.fragment
+            and (query := parse_qs(parsed.query, keep_blank_values=True))
+            and set(query) == {"v"}
+            and len(query["v"]) == 1
+            and re.fullmatch(r"[0-9]{15,20}", query["v"][0])
         ):
             urls.append(value)
         elif (

@@ -10,6 +10,97 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Toth TX-02 primary-ad quotation recovery
+
+The distinct Republican House record **toth-tribune-20260126-0** retains
+two narrator quotations from the same individually linked ad, **12 words
+each / 24 substantive words combined**. It remains a **partial quotation
+and semantically unreviewed**, not a complete transcript or a new neutral
+judgment. Explicit Republican-primary competition against Dan Crenshaw
+supports **primary** phase. An attack on a Republican primary opponent
+must not be described as an attack on Democrats.
+
+The actual January 26 Texas Tribune report:
+`https://www.texastribune.org/2026/01/26/texas-republicans-sharia-law-anti-muslim-rhetoric/`.
+HTML SHA-256:
+`515cdbe1f1947e122eb0fda7577aff2bbdf667e3a442fa3a934e3880eb21068f`.
+**Gabby Birenbaum**, the unique
+**h1.entry-title.entry-title--with-subtitle**, the visible **January 26,
+2026, 5:00 a.m. Central**, and publication metadata
+**2026-01-26T11:00:00+00:00** bind the report. The other h1 and sidebar
+dates are not selected. January 26 is a **publisher observation**, not
+an independently verified first release, upload or airing date. The
+article's reference to a July campaign launch does not establish the
+advertisement's launch date.
+
+The single qualifying paragraph explicitly attributes both quotations
+to the narrator in Toth's ad and contains the actual individual
+Facebook-video link:
+`https://www.facebook.com/watch/?v=4172296496420217`.
+Retain the two quotations in source order, including the first one's
+terminal comma. The linked video is association evidence only: **no
+Facebook request, captions, video, API call or payer card** was inspected.
+State-office, attorney-general and Senate material elsewhere in the
+article, descriptions and campaign statements are not extra House speech.
+
+Exact saved **H6TX08175 / C00911669**, **TOTH, STEVE**, **REP**, **House**,
+**TX-02**, **2026**, matches cached official principal **TOTH FOR
+CONGRESS**, **P/H/REP**.
+Principal identity is not an independently inspected creative approval
+or payment authorization. No name alias, roster or semantic-input edit
+is required.
+
+The collector previously rejected this actual Facebook watch
+association. Two positive regression cases reproduced that gap before
+the fix. The surgical recognition rule accepts only **HTTPS**, exact
+**facebook.com / www.facebook.com**, **/watch/**, one **15-20-digit v**
+value, no other query key and no fragment. It rejects duplicate/empty
+parameters, profile/feed routes, malformed IDs, extra paths, user-info,
+ports and deceptive hosts. Recognition retains the literal individual
+link; it does **not** fetch Facebook or collect a catalog.
+
+The fresh immutable **house-toth-baseline.json** freezes the preceding
+**1,908 acquired / 1,869 analyzed / 62 acquisition reviews**, all aliases
+and **17 protected inputs**. The strict verifier reconstructs the
+preceding written corpus from its actual saved commit, uses only the
+original Tribune response with sockets forbidden, and fixes observation
+to October 31. The completed verifier proves every preceding acquired
+and analyzed object, all **62 prior review entries**, the full alias
+list and all **17 protected inputs** unchanged. One cached response
+reproduces **556 to 557 written objects** with sockets forbidden.
+Complete JSON/gzip/CSV/Parquet and browser/production byte parity passes.
+All **430 Python tests**, backend lint/format, frontend lint and **17
+unit tests**, production typecheck/build and **seven browser tests**
+pass. The strategy audit reconciles **20 metric groups / 10 chart
+rows**. All **eleven actual manifest PNGs** were visually inspected,
+with the tall monthly figure also inspected at full size; text and
+labels remain legible and unclipped.
+
+Validated snapshot:
+`5211d6e69c7d6dae14b2a27e301ea0bcd57f170d7f37465b594ad1fddf377b57`.
+Totals are **1,909 acquired / 1,870 English**, **D 1,226 / R 605 /
+other 31 / unknown 8**. Exact messages are **D 1,204 / R 568**;
+English House records are **D 698 / R 227 / other 19 / unknown 3**.
+Non-Snap House is **D 222 / R 226**; Snap remains **D 476 / R 1 /
+other 19 / unknown 3**. These source counts do not establish matched
+race coverage, spending, national volume or representativeness.
+
+The preceding Elijah research commit
+**98b9f786574c4073ba7eaa21c54499467dbe8a3d** is pushed as Hans Hanley with
+no Copilot/co-author/session trailers. Its exact CI **41236935016**
+completed successfully; independently fetched GitHub JSON verifies the
+full SHA and **all thirteen successful steps**.
+
+Broader discovery continues rather than treating these counts as a
+national census. Actual AP reporting inspected for a Nunn lead contains
+no Nunn occurrence or individual Nunn-ad association. The actual Axios
+October 28 Simonson/Gatto story returned **403** and is paused: no retry,
+mirror, provider transcript or bypass. The continuing **USA Today 402**,
+The Hill **403**, Dailymotion **403** and inherited holds remain in force.
+The earlier Crenshaw/Toth Texas Tribune route furnished only two
+attack-label words; this is a different January 26 article and original,
+not a second count of those labels.
+
 ## Further Elijah affordability and public-safety ad expansion
 
 Two additional Republican FL-07 ads are acquired, both **partial and

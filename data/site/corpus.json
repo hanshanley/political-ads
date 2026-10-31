@@ -927,6 +927,86 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Actual cached HTML SHA256 515cdbe1f1947e122eb0fda7577aff2bbdf667e3a442fa3a934e3880eb21068f binds the unique h1.entry-title.entry-title--with-subtitle, named author Gabby Birenbaum and article:published_time2026-01-26T11:00:00+00:00, agreeing with visible January26,2026 at5:00 a.m. Central. This is the publisher observation, not an independently established first upload, release or airing date; the article's reference to a July primary-campaign launch does not date this ad. Both selected quotations are in one unique paragraph explicitly attributed to the narrator in Toth's ad. Preserve their order and the first quotation's terminal comma; twelve words each, twenty-four substantive words combined. That same paragraph's ad anchor binds exactly one Facebook watch video4172296496420217. This is a publisher-linked individual-video association, not an independently inspected campaign upload, payer card or paid delivery. No Facebook, caption, media or API request is made. Exact saved H6TX08175/C00911669, TOTH,STEVE, REP, House, TX-02,2026 agrees with cached official principal TOTH FOR CONGRESS, P/H/REP; the principal is identity evidence rather than creative authorization. Explicit Republican-primary contest against Dan Crenshaw supports primary phase, not the month alone. No alias or roster change is needed. A narrow recognition rule accepts only HTTPS Facebook /watch/ with one numeric v parameter and no other query keys or fragment; it does not collect Facebook videos. This is a separate partial quotation, semantically unreviewed. Attorney-general, Senate and state-office ads elsewhere in the article, article characterization and campaign launch summaries are excluded. Primary attacks on a Republican opponent are not represented as attacks on Democrats.",
+      "candidate_mentions": [],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "toth-tribune-20260126-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.facebook.com/watch/?v=4172296496420217"
+      ],
+      "message_id": "c2ea906d0c0c429e9e657bb71c53bb187653a5e8a524df725f0ba74eb9822ba5",
+      "observed": "2026-10-31",
+      "phase": "primary",
+      "placement": "campaign_release",
+      "published": "2026-01-26",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "TX-02",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6TX08175"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Actual cached HTML SHA256 515cdbe1f1947e122eb0fda7577aff2bbdf667e3a442fa3a934e3880eb21068f binds the unique h1.entry-title.entry-title--with-subtitle, named author Gabby Birenbaum and article:published_time2026-01-26T11:00:00+00:00, agreeing with visible January26,2026 at5:00 a.m. Central. This is the publisher observation, not an independently established first upload, release or airing date; the article's reference to a July primary-campaign launch does not date this ad. Both selected quotations are in one unique paragraph explicitly attributed to the narrator in Toth's ad. Preserve their order and the first quotation's terminal comma; twelve words each, twenty-four substantive words combined. That same paragraph's ad anchor binds exactly one Facebook watch video4172296496420217. This is a publisher-linked individual-video association, not an independently inspected campaign upload, payer card or paid delivery. No Facebook, caption, media or API request is made. Exact saved H6TX08175/C00911669, TOTH,STEVE, REP, House, TX-02,2026 agrees with cached official principal TOTH FOR CONGRESS, P/H/REP; the principal is identity evidence rather than creative authorization. Explicit Republican-primary contest against Dan Crenshaw supports primary phase, not the month alone. No alias or roster change is needed. A narrow recognition rule accepts only HTTPS Facebook /watch/ with one numeric v parameter and no other query keys or fragment; it does not collect Facebook videos. This is a separate partial quotation, semantically unreviewed. Attorney-general, Senate and state-office ads elsewhere in the article, article characterization and campaign launch summaries are excluded. Primary attacks on a Republican opponent are not represented as attacks on Democrats.",
+            "candidate_id": "H6TX08175",
+            "completeness": "partial_quotation",
+            "content_sha256": "515cdbe1f1947e122eb0fda7577aff2bbdf667e3a442fa3a934e3880eb21068f",
+            "format": "html",
+            "heading_selector": "h1.entry-title.entry-title--with-subtitle",
+            "media_url": "https://www.facebook.com/watch/?v=4172296496420217",
+            "passages": [
+              "Dan Crenshaw’s immigration plan is dangerous, demanding we allow more Muslim immigrants,",
+              "Crenshaw even voted to bring thousands more from Afghanistan to our neighborhoods."
+            ],
+            "phase": "primary",
+            "published": "2026-01-26",
+            "publisher_credit": "Gabby Birenbaum, The Texas Tribune.",
+            "record_id": "20260126",
+            "release_title": "Anti-Islam rhetoric takes center stage in Texas Republican primary",
+            "required_context": [
+              "Gabby Birenbaum",
+              "Steve Toth",
+              "primary",
+              "Dan Crenshaw",
+              "a narrator says in Toth’s ad"
+            ],
+            "retrieval_url": "https://www.texastribune.org/2026/01/26/texas-republicans-sharia-law-anti-muslim-rhetoric/",
+            "reuse_basis": "Retain only these two literal twelve-token ad quotations, twenty-four words combined, with author/publisher/source credit for noncommercial comparative research. Exclude article reporting, photographs, other candidates' words and media. No blanket reuse license, original-media redistribution or permission to publish either edition is asserted.",
+            "source": "toth-tribune",
+            "source_url": "https://www.texastribune.org/2026/01/26/texas-republicans-sharia-law-anti-muslim-rhetoric/"
+          },
+          "text": "Dan Crenshaw’s immigration plan is dangerous, demanding we allow more Muslim immigrants,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "Crenshaw even voted to bring thousands more from Afghanistan to our neighborhoods."
+        }
+      ],
+      "source": "toth-tribune",
+      "source_hash": "515cdbe1f1947e122eb0fda7577aff2bbdf667e3a442fa3a934e3880eb21068f",
+      "source_record_id": "20260126",
+      "source_url": "https://www.texastribune.org/2026/01/26/texas-republicans-sharia-law-anti-muslim-rhetoric/",
+      "sponsor": "Steve Toth campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "TX",
+      "text": "Dan Crenshaw’s immigration plan is dangerous, demanding we allow more Muslim immigrants,\nCrenshaw even voted to bring thousands more from Afghanistan to our neighborhoods.",
+      "title": "Anti-Islam rhetoric takes center stage in Texas Republican primary"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Official Bill Cassidy for US Senate release at https://www.billcassidy.com/post/cassidy-launches-first-tv-ad-with-half-a-million-dollar-statewide-investment; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
       "date_basis": "release_date",
@@ -49594,6 +49674,22 @@
       "source": "susan-collins",
       "state": "ok",
       "url": "https://susancollins.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "toth-tribune",
+      "state": "partial",
+      "url": "https://www.texastribune.org"
     },
     {
       "ads_with_text": 6,
