@@ -59664,5 +59664,1755 @@
     "text_hash": "405fa1ff2d542dc728599f0e543e741eb4752780fdaa9c24cbaff0487e59e100",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ad7dba8b25fce01a35e5a0c-0",
+    "alignment": "D",
+    "block_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001-001",
+    "claim_text": "I’m a lifelong Republican supporting a Democrat for Congress.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 98,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Will Haynie: “I’m Mayor Will Haynie. I'm a lifelong Republican supporting a Democrat for Congress.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 35,
+        "anchor_quote": "I’m Mayor Will Haynie",
+        "anchor_start": 14,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Will Haynie",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Will Haynie: “I’m Mayor Will Haynie. I'm a lifelong Republican supporting a Democrat for Congress.\n“Partisan politics won’t solve our problems. We need leaders who put service first.\n“That’s Nancy Lacore. Nancy will represent us.\n“She’ll be a watchdog for our tax dollars and stand up to both parties to lower costs, secure our border and protect girls’ sports.\n“Nancy knows what makes the Lowcountry special.”\nNancy Lacore: “I'm Nancy Lacore. I'm proud to have Mayor Haynie’s support, and I approve this message.”",
+    "text_hash": "3b64eb2840199fb07d09ba13c286d2a995bbff3b37b17bf2d6d08f4ce9e9223f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ad7dba8b25fce01a35e5a0c-0",
+    "alignment": "D",
+    "block_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001-002",
+    "claim_text": "Partisan politics won’t solve our problems.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 182,
+        "kind": "publisher_transcript",
+        "start": 99,
+        "text": "“Partisan politics won’t solve our problems. We need leaders who put service first.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 117,
+        "anchor_quote": "Partisan politics",
+        "anchor_start": 100,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "partisan politics",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Will Haynie: “I’m Mayor Will Haynie. I'm a lifelong Republican supporting a Democrat for Congress.\n“Partisan politics won’t solve our problems. We need leaders who put service first.\n“That’s Nancy Lacore. Nancy will represent us.\n“She’ll be a watchdog for our tax dollars and stand up to both parties to lower costs, secure our border and protect girls’ sports.\n“Nancy knows what makes the Lowcountry special.”\nNancy Lacore: “I'm Nancy Lacore. I'm proud to have Mayor Haynie’s support, and I approve this message.”",
+    "text_hash": "3b64eb2840199fb07d09ba13c286d2a995bbff3b37b17bf2d6d08f4ce9e9223f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ad7dba8b25fce01a35e5a0c-0",
+    "alignment": "D",
+    "block_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001-003",
+    "claim_text": "We need leaders who put service first.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 182,
+        "kind": "publisher_transcript",
+        "start": 99,
+        "text": "“Partisan politics won’t solve our problems. We need leaders who put service first.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 159,
+        "anchor_quote": "leaders",
+        "anchor_start": 152,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "leaders",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Will Haynie: “I’m Mayor Will Haynie. I'm a lifelong Republican supporting a Democrat for Congress.\n“Partisan politics won’t solve our problems. We need leaders who put service first.\n“That’s Nancy Lacore. Nancy will represent us.\n“She’ll be a watchdog for our tax dollars and stand up to both parties to lower costs, secure our border and protect girls’ sports.\n“Nancy knows what makes the Lowcountry special.”\nNancy Lacore: “I'm Nancy Lacore. I'm proud to have Mayor Haynie’s support, and I approve this message.”",
+    "text_hash": "3b64eb2840199fb07d09ba13c286d2a995bbff3b37b17bf2d6d08f4ce9e9223f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ad7dba8b25fce01a35e5a0c-0",
+    "alignment": "D",
+    "block_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001-004",
+    "claim_text": "That’s Nancy Lacore.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 229,
+        "kind": "publisher_transcript",
+        "start": 183,
+        "text": "“That’s Nancy Lacore. Nancy will represent us.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 203,
+        "anchor_quote": "Nancy Lacore",
+        "anchor_start": 191,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Will Haynie: “I’m Mayor Will Haynie. I'm a lifelong Republican supporting a Democrat for Congress.\n“Partisan politics won’t solve our problems. We need leaders who put service first.\n“That’s Nancy Lacore. Nancy will represent us.\n“She’ll be a watchdog for our tax dollars and stand up to both parties to lower costs, secure our border and protect girls’ sports.\n“Nancy knows what makes the Lowcountry special.”\nNancy Lacore: “I'm Nancy Lacore. I'm proud to have Mayor Haynie’s support, and I approve this message.”",
+    "text_hash": "3b64eb2840199fb07d09ba13c286d2a995bbff3b37b17bf2d6d08f4ce9e9223f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ad7dba8b25fce01a35e5a0c-0",
+    "alignment": "D",
+    "block_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001-005",
+    "claim_text": "Nancy will represent us.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 229,
+        "kind": "publisher_transcript",
+        "start": 183,
+        "text": "“That’s Nancy Lacore. Nancy will represent us.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 196,
+        "anchor_quote": "Nancy",
+        "anchor_start": 191,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Will Haynie: “I’m Mayor Will Haynie. I'm a lifelong Republican supporting a Democrat for Congress.\n“Partisan politics won’t solve our problems. We need leaders who put service first.\n“That’s Nancy Lacore. Nancy will represent us.\n“She’ll be a watchdog for our tax dollars and stand up to both parties to lower costs, secure our border and protect girls’ sports.\n“Nancy knows what makes the Lowcountry special.”\nNancy Lacore: “I'm Nancy Lacore. I'm proud to have Mayor Haynie’s support, and I approve this message.”",
+    "text_hash": "3b64eb2840199fb07d09ba13c286d2a995bbff3b37b17bf2d6d08f4ce9e9223f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ad7dba8b25fce01a35e5a0c-0",
+    "alignment": "D",
+    "block_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001-006",
+    "claim_text": "She’ll be a watchdog for our tax dollars and stand up to both parties to lower costs, secure our border and protect girls’ sports.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 361,
+        "kind": "publisher_transcript",
+        "start": 230,
+        "text": "“She’ll be a watchdog for our tax dollars and stand up to both parties to lower costs, secure our border and protect girls’ sports.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 237,
+        "anchor_quote": "She’ll",
+        "anchor_start": 231,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "She",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 271,
+        "anchor_quote": "our tax dollars",
+        "anchor_start": 256,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "our tax dollars",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 300,
+        "anchor_quote": "both parties",
+        "anchor_start": 288,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "both parties",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 334,
+        "anchor_quote": "our border",
+        "anchor_start": 324,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "our border",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 360,
+        "anchor_quote": "girls’ sports",
+        "anchor_start": 347,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "girls’ sports",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Will Haynie: “I’m Mayor Will Haynie. I'm a lifelong Republican supporting a Democrat for Congress.\n“Partisan politics won’t solve our problems. We need leaders who put service first.\n“That’s Nancy Lacore. Nancy will represent us.\n“She’ll be a watchdog for our tax dollars and stand up to both parties to lower costs, secure our border and protect girls’ sports.\n“Nancy knows what makes the Lowcountry special.”\nNancy Lacore: “I'm Nancy Lacore. I'm proud to have Mayor Haynie’s support, and I approve this message.”",
+    "text_hash": "3b64eb2840199fb07d09ba13c286d2a995bbff3b37b17bf2d6d08f4ce9e9223f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ad7dba8b25fce01a35e5a0c-0",
+    "alignment": "D",
+    "block_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001-007",
+    "claim_text": "Nancy knows what makes the Lowcountry special.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 410,
+        "kind": "publisher_transcript",
+        "start": 362,
+        "text": "“Nancy knows what makes the Lowcountry special.”",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 368,
+        "anchor_quote": "Nancy",
+        "anchor_start": 363,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Will Haynie: “I’m Mayor Will Haynie. I'm a lifelong Republican supporting a Democrat for Congress.\n“Partisan politics won’t solve our problems. We need leaders who put service first.\n“That’s Nancy Lacore. Nancy will represent us.\n“She’ll be a watchdog for our tax dollars and stand up to both parties to lower costs, secure our border and protect girls’ sports.\n“Nancy knows what makes the Lowcountry special.”\nNancy Lacore: “I'm Nancy Lacore. I'm proud to have Mayor Haynie’s support, and I approve this message.”",
+    "text_hash": "3b64eb2840199fb07d09ba13c286d2a995bbff3b37b17bf2d6d08f4ce9e9223f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ad7dba8b25fce01a35e5a0c-0",
+    "alignment": "D",
+    "block_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001-008",
+    "claim_text": "I'm proud to have Mayor Haynie’s support, and I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 514,
+        "kind": "publisher_transcript",
+        "start": 411,
+        "text": "Nancy Lacore: “I'm Nancy Lacore. I'm proud to have Mayor Haynie’s support, and I approve this message.”",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 442,
+        "anchor_quote": "I'm Nancy Lacore",
+        "anchor_start": 426,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 474,
+        "anchor_quote": "Mayor Haynie",
+        "anchor_start": 462,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Mayor Haynie",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Will Haynie: “I’m Mayor Will Haynie. I'm a lifelong Republican supporting a Democrat for Congress.\n“Partisan politics won’t solve our problems. We need leaders who put service first.\n“That’s Nancy Lacore. Nancy will represent us.\n“She’ll be a watchdog for our tax dollars and stand up to both parties to lower costs, secure our border and protect girls’ sports.\n“Nancy knows what makes the Lowcountry special.”\nNancy Lacore: “I'm Nancy Lacore. I'm proud to have Mayor Haynie’s support, and I approve this message.”",
+    "text_hash": "3b64eb2840199fb07d09ba13c286d2a995bbff3b37b17bf2d6d08f4ce9e9223f",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ad7dba8b25fce01a35e5a0c-0",
+    "alignment": "D",
+    "block_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ad7dba8b25fce01a35e5a0c-0-claims-001-009",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 514,
+        "kind": "publisher_transcript",
+        "start": 411,
+        "text": "Nancy Lacore: “I'm Nancy Lacore. I'm proud to have Mayor Haynie’s support, and I approve this message.”",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 427,
+        "anchor_quote": "I",
+        "anchor_start": 426,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Will Haynie: “I’m Mayor Will Haynie. I'm a lifelong Republican supporting a Democrat for Congress.\n“Partisan politics won’t solve our problems. We need leaders who put service first.\n“That’s Nancy Lacore. Nancy will represent us.\n“She’ll be a watchdog for our tax dollars and stand up to both parties to lower costs, secure our border and protect girls’ sports.\n“Nancy knows what makes the Lowcountry special.”\nNancy Lacore: “I'm Nancy Lacore. I'm proud to have Mayor Haynie’s support, and I approve this message.”",
+    "text_hash": "3b64eb2840199fb07d09ba13c286d2a995bbff3b37b17bf2d6d08f4ce9e9223f",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1174-0",
+    "alignment": "R",
+    "block_id": "lawler-1174-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1174-0-claims-001-001",
+    "claim_text": "If you’re going to fight for the Hudson Valley, you’ve got to know who you’re fighting for",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 91,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "If you’re going to fight for the Hudson Valley, you’ve got to know who you’re fighting for,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/08/11/lawler-for-congress-launches-5-million-ad-campaign-marking-the-beginning-of-significant-spend-in-top-swing-seat/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 46,
+        "anchor_quote": "Hudson Valley",
+        "anchor_start": 33,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Hudson Valley",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "If you’re going to fight for the Hudson Valley, you’ve got to know who you’re fighting for,\nMike Lawler will never let us down,",
+    "text_hash": "910144e59f871f6aeea03b5f809280114f5c8c4b5c348d90640bfeb3938af052",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1174-0",
+    "alignment": "R",
+    "block_id": "lawler-1174-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1174-0-claims-001-002",
+    "claim_text": "Mike Lawler will never let us down",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 127,
+        "kind": "publisher_ad_copy",
+        "start": 92,
+        "text": "Mike Lawler will never let us down,",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/08/11/lawler-for-congress-launches-5-million-ad-campaign-marking-the-beginning-of-significant-spend-in-top-swing-seat/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 103,
+        "anchor_quote": "Mike Lawler",
+        "anchor_start": 92,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H2NY17162",
+        "kind": "person",
+        "name": "LAWLER, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "If you’re going to fight for the Hudson Valley, you’ve got to know who you’re fighting for,\nMike Lawler will never let us down,",
+    "text_hash": "910144e59f871f6aeea03b5f809280114f5c8c4b5c348d90640bfeb3938af052",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1379-0",
+    "alignment": "R",
+    "block_id": "lawler-1379-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1379-0-claims-001-001",
+    "claim_text": "I thought I knew what sanctuary city policies are. I didn’t.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 60,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "I thought I knew what sanctuary city policies are. I didn’t,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/09/30/yes-or-no-cait-conley-two-new-lawler-ads-ask-the-question-she-would-not-answer-for-the-gormans/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 1,
+        "anchor_quote": "I",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I thought I knew what sanctuary city policies are. I didn’t,\nIt was a death sentence for our daughter,\nThe sanctuary policies being pushed by Kathy Hochul and Democrats killed our daughter.\nneed to choose leaders who choose us,\nI couldn’t protect her from these policies,\nBut Mike Lawler can.",
+    "text_hash": "0ced395b0fd5c439c77cdc72d4cc06c40e9193ee63870f5e30ab6f21917a3254",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1379-0",
+    "alignment": "R",
+    "block_id": "lawler-1379-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1379-0-claims-001-002",
+    "claim_text": "It was a death sentence for our daughter.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 102,
+        "kind": "publisher_ad_copy",
+        "start": 61,
+        "text": "It was a death sentence for our daughter,",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/09/30/yes-or-no-cait-conley-two-new-lawler-ads-ask-the-question-she-would-not-answer-for-the-gormans/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 101,
+        "anchor_quote": "our daughter",
+        "anchor_start": 89,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "our daughter",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I thought I knew what sanctuary city policies are. I didn’t,\nIt was a death sentence for our daughter,\nThe sanctuary policies being pushed by Kathy Hochul and Democrats killed our daughter.\nneed to choose leaders who choose us,\nI couldn’t protect her from these policies,\nBut Mike Lawler can.",
+    "text_hash": "0ced395b0fd5c439c77cdc72d4cc06c40e9193ee63870f5e30ab6f21917a3254",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1379-0",
+    "alignment": "R",
+    "block_id": "lawler-1379-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1379-0-claims-001-003",
+    "claim_text": "The sanctuary policies being pushed by Kathy Hochul and Democrats killed our daughter.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 189,
+        "kind": "publisher_ad_copy",
+        "start": 103,
+        "text": "The sanctuary policies being pushed by Kathy Hochul and Democrats killed our daughter.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/09/30/yes-or-no-cait-conley-two-new-lawler-ads-ask-the-question-she-would-not-answer-for-the-gormans/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 154,
+        "anchor_quote": "Kathy Hochul",
+        "anchor_start": 142,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Kathy Hochul",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 168,
+        "anchor_quote": "Democrats",
+        "anchor_start": 159,
+        "anchor_unit_id": 3,
+        "entity_id": "party:D",
+        "kind": "collective",
+        "name": "Democrats",
+        "party_basis": "explicit_party_text",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 188,
+        "anchor_quote": "our daughter",
+        "anchor_start": 176,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "our daughter",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I thought I knew what sanctuary city policies are. I didn’t,\nIt was a death sentence for our daughter,\nThe sanctuary policies being pushed by Kathy Hochul and Democrats killed our daughter.\nneed to choose leaders who choose us,\nI couldn’t protect her from these policies,\nBut Mike Lawler can.",
+    "text_hash": "0ced395b0fd5c439c77cdc72d4cc06c40e9193ee63870f5e30ab6f21917a3254",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1379-0",
+    "alignment": "R",
+    "block_id": "lawler-1379-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1379-0-claims-001-004",
+    "claim_text": "I couldn’t protect her from these policies.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 271,
+        "kind": "publisher_ad_copy",
+        "start": 228,
+        "text": "I couldn’t protect her from these policies,",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/09/30/yes-or-no-cait-conley-two-new-lawler-ads-ask-the-question-she-would-not-answer-for-the-gormans/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 229,
+        "anchor_quote": "I",
+        "anchor_start": 228,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 250,
+        "anchor_quote": "her",
+        "anchor_start": 247,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "her",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I thought I knew what sanctuary city policies are. I didn’t,\nIt was a death sentence for our daughter,\nThe sanctuary policies being pushed by Kathy Hochul and Democrats killed our daughter.\nneed to choose leaders who choose us,\nI couldn’t protect her from these policies,\nBut Mike Lawler can.",
+    "text_hash": "0ced395b0fd5c439c77cdc72d4cc06c40e9193ee63870f5e30ab6f21917a3254",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1379-0",
+    "alignment": "R",
+    "block_id": "lawler-1379-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1379-0-claims-001-005",
+    "claim_text": "But Mike Lawler can.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 292,
+        "kind": "publisher_ad_copy",
+        "start": 272,
+        "text": "But Mike Lawler can.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/09/30/yes-or-no-cait-conley-two-new-lawler-ads-ask-the-question-she-would-not-answer-for-the-gormans/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 287,
+        "anchor_quote": "Mike Lawler",
+        "anchor_start": 276,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H2NY17162",
+        "kind": "person",
+        "name": "Mike Lawler",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "I thought I knew what sanctuary city policies are. I didn’t,\nIt was a death sentence for our daughter,\nThe sanctuary policies being pushed by Kathy Hochul and Democrats killed our daughter.\nneed to choose leaders who choose us,\nI couldn’t protect her from these policies,\nBut Mike Lawler can.",
+    "text_hash": "0ced395b0fd5c439c77cdc72d4cc06c40e9193ee63870f5e30ab6f21917a3254",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1379-0",
+    "alignment": "R",
+    "block_id": "lawler-1379-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1379-0-claims-001-006",
+    "claim_text": "need to choose leaders who choose us",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 227,
+        "kind": "publisher_ad_copy",
+        "start": 190,
+        "text": "need to choose leaders who choose us,",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/09/30/yes-or-no-cait-conley-two-new-lawler-ads-ask-the-question-she-would-not-answer-for-the-gormans/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 226,
+        "anchor_quote": "us",
+        "anchor_start": 224,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "us",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "I thought I knew what sanctuary city policies are. I didn’t,\nIt was a death sentence for our daughter,\nThe sanctuary policies being pushed by Kathy Hochul and Democrats killed our daughter.\nneed to choose leaders who choose us,\nI couldn’t protect her from these policies,\nBut Mike Lawler can.",
+    "text_hash": "0ced395b0fd5c439c77cdc72d4cc06c40e9193ee63870f5e30ab6f21917a3254",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1379-0",
+    "alignment": "R",
+    "block_id": "lawler-1379-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1379-0-claims-001-007",
+    "claim_text": "I couldn’t protect her from these policies",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 271,
+        "kind": "publisher_ad_copy",
+        "start": 228,
+        "text": "I couldn’t protect her from these policies,",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/09/30/yes-or-no-cait-conley-two-new-lawler-ads-ask-the-question-she-would-not-answer-for-the-gormans/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 229,
+        "anchor_quote": "I",
+        "anchor_start": 228,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 250,
+        "anchor_quote": "her",
+        "anchor_start": 247,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "her",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I thought I knew what sanctuary city policies are. I didn’t,\nIt was a death sentence for our daughter,\nThe sanctuary policies being pushed by Kathy Hochul and Democrats killed our daughter.\nneed to choose leaders who choose us,\nI couldn’t protect her from these policies,\nBut Mike Lawler can.",
+    "text_hash": "0ced395b0fd5c439c77cdc72d4cc06c40e9193ee63870f5e30ab6f21917a3254",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1379-0",
+    "alignment": "R",
+    "block_id": "lawler-1379-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1379-0-claims-001-008",
+    "claim_text": "Mike Lawler can",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 292,
+        "kind": "publisher_ad_copy",
+        "start": 272,
+        "text": "But Mike Lawler can.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/09/30/yes-or-no-cait-conley-two-new-lawler-ads-ask-the-question-she-would-not-answer-for-the-gormans/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 287,
+        "anchor_quote": "Mike Lawler",
+        "anchor_start": 276,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H2NY17162",
+        "kind": "person",
+        "name": "Mike Lawler",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "I thought I knew what sanctuary city policies are. I didn’t,\nIt was a death sentence for our daughter,\nThe sanctuary policies being pushed by Kathy Hochul and Democrats killed our daughter.\nneed to choose leaders who choose us,\nI couldn’t protect her from these policies,\nBut Mike Lawler can.",
+    "text_hash": "0ced395b0fd5c439c77cdc72d4cc06c40e9193ee63870f5e30ab6f21917a3254",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1429-0",
+    "alignment": "R",
+    "block_id": "lawler-1429-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1429-0-claims-001-001",
+    "claim_text": "Social Security kept my parents afloat when my dad was dying of cancer.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 72,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "When my dad was dying of cancer, Social Security kept my parents afloat,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/10/09/new-lawler-ad-highlights-medicaid-reforms-that-protect-the-system-for-citizens-and-taxpayers-does-cait-conley-support-undoing-them-and-giving-benefits-to-illegal-immigrants/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 48,
+        "anchor_quote": "Social Security",
+        "anchor_start": 33,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Social Security",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 64,
+        "anchor_quote": "my parents",
+        "anchor_start": 54,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "my parents",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 11,
+        "anchor_quote": "my dad",
+        "anchor_start": 5,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "my dad",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "When my dad was dying of cancer, Social Security kept my parents afloat,\nSo I know firsthand how health care costs can bankrupt a family.\nillegal immigrants and other scam artists from ripping off the system.\nI’m Mike Lawler, and I approve this message, and so would my dad.",
+    "text_hash": "7ddff8afae33a3ae99e4ddafa3086408c61ec49d04718b8408f048af6b23e852",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1429-0",
+    "alignment": "R",
+    "block_id": "lawler-1429-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1429-0-claims-001-002",
+    "claim_text": "I know firsthand how health care costs can bankrupt a family.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 137,
+        "kind": "publisher_ad_copy",
+        "start": 73,
+        "text": "So I know firsthand how health care costs can bankrupt a family.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/10/09/new-lawler-ad-highlights-medicaid-reforms-that-protect-the-system-for-citizens-and-taxpayers-does-cait-conley-support-undoing-them-and-giving-benefits-to-illegal-immigrants/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 77,
+        "anchor_quote": "I",
+        "anchor_start": 76,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H2NY17162",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 114,
+        "anchor_quote": "health care costs",
+        "anchor_start": 97,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "health care costs",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 136,
+        "anchor_quote": "a family",
+        "anchor_start": 128,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "a family",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "When my dad was dying of cancer, Social Security kept my parents afloat,\nSo I know firsthand how health care costs can bankrupt a family.\nillegal immigrants and other scam artists from ripping off the system.\nI’m Mike Lawler, and I approve this message, and so would my dad.",
+    "text_hash": "7ddff8afae33a3ae99e4ddafa3086408c61ec49d04718b8408f048af6b23e852",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1429-0",
+    "alignment": "R",
+    "block_id": "lawler-1429-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1429-0-claims-001-003",
+    "claim_text": "There are illegal immigrants and other scam artists from ripping off the system.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 208,
+        "kind": "publisher_ad_copy",
+        "start": 138,
+        "text": "illegal immigrants and other scam artists from ripping off the system.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/10/09/new-lawler-ad-highlights-medicaid-reforms-that-protect-the-system-for-citizens-and-taxpayers-does-cait-conley-support-undoing-them-and-giving-benefits-to-illegal-immigrants/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 156,
+        "anchor_quote": "illegal immigrants",
+        "anchor_start": 138,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "illegal immigrants",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 179,
+        "anchor_quote": "scam artists",
+        "anchor_start": 167,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "scam artists",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 207,
+        "anchor_quote": "the system",
+        "anchor_start": 197,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "the system",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "When my dad was dying of cancer, Social Security kept my parents afloat,\nSo I know firsthand how health care costs can bankrupt a family.\nillegal immigrants and other scam artists from ripping off the system.\nI’m Mike Lawler, and I approve this message, and so would my dad.",
+    "text_hash": "7ddff8afae33a3ae99e4ddafa3086408c61ec49d04718b8408f048af6b23e852",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lawler-1429-0",
+    "alignment": "R",
+    "block_id": "lawler-1429-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lawler-1429-0-claims-001-004",
+    "claim_text": "I approve this message, and so would my dad.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 274,
+        "kind": "publisher_ad_copy",
+        "start": 209,
+        "text": "I’m Mike Lawler, and I approve this message, and so would my dad.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.lawlerforcongress.com/2026/10/09/new-lawler-ad-highlights-medicaid-reforms-that-protect-the-system-for-citizens-and-taxpayers-does-cait-conley-support-undoing-them-and-giving-benefits-to-illegal-immigrants/",
+    "sponsor": "Lawler for Congress",
+    "targets": [
+      {
+        "anchor_end": 210,
+        "anchor_quote": "I",
+        "anchor_start": 209,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H2NY17162",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 273,
+        "anchor_quote": "my dad",
+        "anchor_start": 267,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "my dad",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "When my dad was dying of cancer, Social Security kept my parents afloat,\nSo I know firsthand how health care costs can bankrupt a family.\nillegal immigrants and other scam artists from ripping off the system.\nI’m Mike Lawler, and I approve this message, and so would my dad.",
+    "text_hash": "7ddff8afae33a3ae99e4ddafa3086408c61ec49d04718b8408f048af6b23e852",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2658-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-2658-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2658-0-claims-001-001",
+    "claim_text": "Congressman Huizenga, your votes are crushing us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 387,
+        "kind": "publisher_transcript",
+        "start": 338,
+        "text": "Congressman Huizenga, your votes are crushing us.",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-announces-at-least-50-million-investment-in-2026-midterm-cycle/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 358,
+        "anchor_quote": "Congressman Huizenga",
+        "anchor_start": 338,
+        "anchor_unit_id": 10,
+        "entity_id": "candidate:H0MI02094",
+        "kind": "person",
+        "name": "HUIZENGA, BILL",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Do you see what I’m holding here?\nThis is my utility bill.\n$350, $350!\nLast year, it was $160.\nThat’s on top of groceries and everything else.\nI hope you’re hearing me, Congressman Bill Huizenga\nYour votes to cut our clean energy supply made our utility rates go up.\nWhy?\nSo you can give billionaires another tax cut? I’ve got four kids.\nCongressman Huizenga, your votes are crushing us.",
+    "text_hash": "c4f18062a8b08418b49dd5d0b428f4c34ce6b67847e88d65620dcf20a831b8c8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2658-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-2658-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2658-0-claims-001-002",
+    "claim_text": "I am holding my utility bill.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 33,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Do you see what I’m holding here?",
+        "unit_id": 1
+      },
+      {
+        "end": 58,
+        "kind": "publisher_transcript",
+        "start": 34,
+        "text": "This is my utility bill.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      1,
+      2
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-announces-at-least-50-million-investment-in-2026-midterm-cycle/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 17,
+        "anchor_quote": "I",
+        "anchor_start": 16,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Do you see what I’m holding here?\nThis is my utility bill.\n$350, $350!\nLast year, it was $160.\nThat’s on top of groceries and everything else.\nI hope you’re hearing me, Congressman Bill Huizenga\nYour votes to cut our clean energy supply made our utility rates go up.\nWhy?\nSo you can give billionaires another tax cut? I’ve got four kids.\nCongressman Huizenga, your votes are crushing us.",
+    "text_hash": "c4f18062a8b08418b49dd5d0b428f4c34ce6b67847e88d65620dcf20a831b8c8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2658-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-2658-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2658-0-claims-001-003",
+    "claim_text": "My utility bill is $350.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 70,
+        "kind": "publisher_transcript",
+        "start": 59,
+        "text": "$350, $350!",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-announces-at-least-50-million-investment-in-2026-midterm-cycle/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 63,
+        "anchor_quote": "$350",
+        "anchor_start": 59,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Do you see what I’m holding here?\nThis is my utility bill.\n$350, $350!\nLast year, it was $160.\nThat’s on top of groceries and everything else.\nI hope you’re hearing me, Congressman Bill Huizenga\nYour votes to cut our clean energy supply made our utility rates go up.\nWhy?\nSo you can give billionaires another tax cut? I’ve got four kids.\nCongressman Huizenga, your votes are crushing us.",
+    "text_hash": "c4f18062a8b08418b49dd5d0b428f4c34ce6b67847e88d65620dcf20a831b8c8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2658-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-2658-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2658-0-claims-001-004",
+    "claim_text": "Last year, my utility bill was $160.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 94,
+        "kind": "publisher_transcript",
+        "start": 71,
+        "text": "Last year, it was $160.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-announces-at-least-50-million-investment-in-2026-midterm-cycle/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 93,
+        "anchor_quote": "$160",
+        "anchor_start": 89,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Do you see what I’m holding here?\nThis is my utility bill.\n$350, $350!\nLast year, it was $160.\nThat’s on top of groceries and everything else.\nI hope you’re hearing me, Congressman Bill Huizenga\nYour votes to cut our clean energy supply made our utility rates go up.\nWhy?\nSo you can give billionaires another tax cut? I’ve got four kids.\nCongressman Huizenga, your votes are crushing us.",
+    "text_hash": "c4f18062a8b08418b49dd5d0b428f4c34ce6b67847e88d65620dcf20a831b8c8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2658-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-2658-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2658-0-claims-001-005",
+    "claim_text": "This is on top of groceries and everything else.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 142,
+        "kind": "publisher_transcript",
+        "start": 95,
+        "text": "That’s on top of groceries and everything else.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-announces-at-least-50-million-investment-in-2026-midterm-cycle/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 141,
+        "anchor_quote": "everything else",
+        "anchor_start": 126,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Do you see what I’m holding here?\nThis is my utility bill.\n$350, $350!\nLast year, it was $160.\nThat’s on top of groceries and everything else.\nI hope you’re hearing me, Congressman Bill Huizenga\nYour votes to cut our clean energy supply made our utility rates go up.\nWhy?\nSo you can give billionaires another tax cut? I’ve got four kids.\nCongressman Huizenga, your votes are crushing us.",
+    "text_hash": "c4f18062a8b08418b49dd5d0b428f4c34ce6b67847e88d65620dcf20a831b8c8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2658-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-2658-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2658-0-claims-001-006",
+    "claim_text": "I hope you are hearing me, Congressman Bill Huizenga.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 194,
+        "kind": "publisher_transcript",
+        "start": 143,
+        "text": "I hope you’re hearing me, Congressman Bill Huizenga",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-announces-at-least-50-million-investment-in-2026-midterm-cycle/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 194,
+        "anchor_quote": "Congressman Bill Huizenga",
+        "anchor_start": 169,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H0MI02094",
+        "kind": "person",
+        "name": "HUIZENGA, BILL",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Do you see what I’m holding here?\nThis is my utility bill.\n$350, $350!\nLast year, it was $160.\nThat’s on top of groceries and everything else.\nI hope you’re hearing me, Congressman Bill Huizenga\nYour votes to cut our clean energy supply made our utility rates go up.\nWhy?\nSo you can give billionaires another tax cut? I’ve got four kids.\nCongressman Huizenga, your votes are crushing us.",
+    "text_hash": "c4f18062a8b08418b49dd5d0b428f4c34ce6b67847e88d65620dcf20a831b8c8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2658-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-2658-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2658-0-claims-001-007",
+    "claim_text": "Your votes to cut our clean energy supply made our utility rates go up.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 266,
+        "kind": "publisher_transcript",
+        "start": 195,
+        "text": "Your votes to cut our clean energy supply made our utility rates go up.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-announces-at-least-50-million-investment-in-2026-midterm-cycle/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 205,
+        "anchor_quote": "Your votes",
+        "anchor_start": 195,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:H0MI02094",
+        "kind": "person",
+        "name": "HUIZENGA, BILL",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Do you see what I’m holding here?\nThis is my utility bill.\n$350, $350!\nLast year, it was $160.\nThat’s on top of groceries and everything else.\nI hope you’re hearing me, Congressman Bill Huizenga\nYour votes to cut our clean energy supply made our utility rates go up.\nWhy?\nSo you can give billionaires another tax cut? I’ve got four kids.\nCongressman Huizenga, your votes are crushing us.",
+    "text_hash": "c4f18062a8b08418b49dd5d0b428f4c34ce6b67847e88d65620dcf20a831b8c8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2658-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-2658-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2658-0-claims-001-008",
+    "claim_text": "Why?",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 271,
+        "kind": "publisher_transcript",
+        "start": 267,
+        "text": "Why?",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-announces-at-least-50-million-investment-in-2026-midterm-cycle/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 270,
+        "anchor_quote": "Why",
+        "anchor_start": 267,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Do you see what I’m holding here?\nThis is my utility bill.\n$350, $350!\nLast year, it was $160.\nThat’s on top of groceries and everything else.\nI hope you’re hearing me, Congressman Bill Huizenga\nYour votes to cut our clean energy supply made our utility rates go up.\nWhy?\nSo you can give billionaires another tax cut? I’ve got four kids.\nCongressman Huizenga, your votes are crushing us.",
+    "text_hash": "c4f18062a8b08418b49dd5d0b428f4c34ce6b67847e88d65620dcf20a831b8c8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2658-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-2658-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2658-0-claims-001-009",
+    "claim_text": "So you can give billionaires another tax cut?",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 337,
+        "kind": "publisher_transcript",
+        "start": 272,
+        "text": "So you can give billionaires another tax cut? I’ve got four kids.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-announces-at-least-50-million-investment-in-2026-midterm-cycle/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 300,
+        "anchor_quote": "billionaires",
+        "anchor_start": 288,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Do you see what I’m holding here?\nThis is my utility bill.\n$350, $350!\nLast year, it was $160.\nThat’s on top of groceries and everything else.\nI hope you’re hearing me, Congressman Bill Huizenga\nYour votes to cut our clean energy supply made our utility rates go up.\nWhy?\nSo you can give billionaires another tax cut? I’ve got four kids.\nCongressman Huizenga, your votes are crushing us.",
+    "text_hash": "c4f18062a8b08418b49dd5d0b428f4c34ce6b67847e88d65620dcf20a831b8c8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-2658-0",
+    "alignment": "D",
+    "block_id": "lcv-vf-2658-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-2658-0-claims-001-010",
+    "claim_text": "I have four kids.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 337,
+        "kind": "publisher_transcript",
+        "start": 272,
+        "text": "So you can give billionaires another tax cut? I’ve got four kids.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-announces-at-least-50-million-investment-in-2026-midterm-cycle/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 319,
+        "anchor_quote": "I",
+        "anchor_start": 318,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Do you see what I’m holding here?\nThis is my utility bill.\n$350, $350!\nLast year, it was $160.\nThat’s on top of groceries and everything else.\nI hope you’re hearing me, Congressman Bill Huizenga\nYour votes to cut our clean energy supply made our utility rates go up.\nWhy?\nSo you can give billionaires another tax cut? I’ve got four kids.\nCongressman Huizenga, your votes are crushing us.",
+    "text_hash": "c4f18062a8b08418b49dd5d0b428f4c34ce6b67847e88d65620dcf20a831b8c8",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]
