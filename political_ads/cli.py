@@ -79,6 +79,7 @@ def collect(root: Path, until: str, source_ids: list[str], offline: bool = False
             )
     old_ads = {s.id: [a for a in old["ads"] if a["source"] == s.id] for s in SOURCES}
     statuses = {s["source"]: s for s in old["sources"]}
+    release_reviews = read_json(root / "data/ad-release-reviews.json", {"reviews": []})["reviews"]
     active = []
     for source in selected:
         previous = statuses.get(source.id, {})
@@ -96,7 +97,7 @@ def collect(root: Path, until: str, source_ids: list[str], offline: bool = False
         results = executor.map(
             lambda source: (
                 source,
-                *collect_wordpress(client, source, until, None, candidates),
+                *collect_wordpress(client, source, until, None, candidates, release_reviews),
             ),
             active,
         )

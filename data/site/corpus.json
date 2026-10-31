@@ -8157,6 +8157,133 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Campaign-issued NRCC release reproduced by The Iowa Standard explicitly names the NRCC as the organization launching this paid advertisement. Republican alignment describes NRCC, not the mirror's editorial alignment. The marked SCRIPT excludes the spokesperson's release quotation. Sole legal payer and actual first paid-delivery date are not independently verified. This is a Nunn variant of an already observed NRCC template, not proof of an independent national creative execution.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H2IA03119",
+          "district": "03",
+          "name": "NUNN, ZACH",
+          "office": "H",
+          "party": "REP",
+          "state": "IA"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "nrcc-iowa-standard-64223-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/RH_RfBI8D3Y?list=PLBquoxfIxnry9-aXhCHSY_Oyu9JOskP99"
+      ],
+      "message_id": "319bf60870b05e0a6b86098a581a31c8e8e1c3763029bb920b1c71d8e8116e29",
+      "observed": "2026-10-30",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-04-14",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "campaign_release_reproduced_by_news_publisher"
+      ],
+      "race": "IA-03",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H2IA03119"
+          ],
+          "kind": "publisher_transcript",
+          "release_evidence": {
+            "attribution_basis": "Campaign-issued NRCC release reproduced by The Iowa Standard explicitly names the NRCC as the organization launching this paid advertisement. Republican alignment describes NRCC, not the mirror's editorial alignment. The marked SCRIPT excludes the spokesperson's release quotation. Sole legal payer and actual first paid-delivery date are not independently verified. This is a Nunn variant of an already observed NRCC template, not proof of an independent national creative execution.",
+            "candidate_id": "H2IA03119",
+            "completeness": "marked_script",
+            "content_sha256": "b92e83b6ca79de5c46531af662041f96ff63731f5866ecd7c841992a6a3f7962",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/RH_RfBI8D3Y?list=PLBquoxfIxnry9-aXhCHSY_Oyu9JOskP99",
+            "passages": [
+              "Hardworking Americans power this country.",
+              "Clocking in early, staying late, doing whatever it takes.",
+              "Democrats made it harder to get ahead.",
+              "Spiking inflation to 40-year highs.",
+              "But Zach Nunn changed that.",
+              "Voting for real tax relief that puts more money back in your pocket:",
+              "No tax on tips.",
+              "No tax on overtime.",
+              "And a doubled Child Tax Credit.",
+              "Zach Nunn delivered help for working families.",
+              "Thank you, Representative Zach Nunn."
+            ],
+            "phase": "unknown",
+            "published": "2026-04-14",
+            "record_id": "64223",
+            "release_title": "NRCC Launches Tax Day Ad Blitz Highlighting Zach Nunn’s Tax Relief",
+            "required_context": [
+              "National Republican Congressional Committee (NRCC) launched a paid advertisement campaign",
+              "SCRIPT:"
+            ],
+            "retrieval_url": "https://theiowastandard.com/wp-json/wp/v2/posts/64223",
+            "source": "nrcc-iowa-standard",
+            "source_url": "https://theiowastandard.com/nrcc-launches-tax-day-ad-blitz-highlighting-zach-nunns-tax-relief/"
+          },
+          "text": "Hardworking Americans power this country."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "Clocking in early, staying late, doing whatever it takes."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "Democrats made it harder to get ahead."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "Spiking inflation to 40-year highs."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "But Zach Nunn changed that."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "Voting for real tax relief that puts more money back in your pocket:"
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "No tax on tips."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "No tax on overtime."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "And a doubled Child Tax Credit."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "Zach Nunn delivered help for working families."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "Thank you, Representative Zach Nunn."
+        }
+      ],
+      "source": "nrcc-iowa-standard",
+      "source_hash": "b92e83b6ca79de5c46531af662041f96ff63731f5866ecd7c841992a6a3f7962",
+      "source_record_id": "64223",
+      "source_url": "https://theiowastandard.com/nrcc-launches-tax-day-ad-blitz-highlighting-zach-nunns-tax-relief/",
+      "sponsor": "NRCC",
+      "sponsor_type": "party",
+      "state": "IA",
+      "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Zach Nunn changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nZach Nunn delivered help for working families.\nThank you, Representative Zach Nunn.",
+      "title": "NRCC Launches Tax Day Ad Blitz Highlighting Zach Nunn’s Tax Relief"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Official NRSC release at https://www.nrsc.org/press-releases/a-dramatic-reading-of-graham-platners-reddit-comments-2026-04-14/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
       "date_basis": "release_date",
@@ -14628,6 +14755,95 @@
       "title": "NEW AD: Grandma Knows Best in Michigan Senate Race"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "Yellowhammer News explicitly identifies the Marques campaign's 30-second Alabama Values ad for the Republican AL-02 special primary and quotes these three passages while describing that spot. Republican alignment follows the exact 2026 FEC candidate H6AL01086, district 02, principal committee C00916775, not the news publisher. The campaign is the reported advertiser; the creative's sole legal payer is not independently verified. These are partial quotations, not a complete transcript; the reporter's tax-policy explanations and endorsement quotations are excluded.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6AL01086",
+          "district": "02",
+          "name": "MARQUES, RHETT",
+          "office": "H",
+          "party": "REP",
+          "state": "AL"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "marques-yellowhammer-353423-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/QgxldZ-CP1E?si=1AGGlCLKwi1RC5K3"
+      ],
+      "message_id": "fea314b47e5b2a8bb1ddb41dcb8609cdfd27d3507e82738de245b12a909581e9",
+      "observed": "2026-10-30",
+      "phase": "primary",
+      "placement": "campaign_release",
+      "published": "2026-07-14",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "AL-02",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6AL01086"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Yellowhammer News explicitly identifies the Marques campaign's 30-second Alabama Values ad for the Republican AL-02 special primary and quotes these three passages while describing that spot. Republican alignment follows the exact 2026 FEC candidate H6AL01086, district 02, principal committee C00916775, not the news publisher. The campaign is the reported advertiser; the creative's sole legal payer is not independently verified. These are partial quotations, not a complete transcript; the reporter's tax-policy explanations and endorsement quotations are excluded.",
+            "candidate_id": "H6AL01086",
+            "completeness": "partial_quotation",
+            "content_sha256": "9ef370c137e378f8d604a63e7b63b0726c38773596aed651c305eba06c1fb777",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/QgxldZ-CP1E?si=1AGGlCLKwi1RC5K3",
+            "passages": [
+              "I’m Rhett Marques, the America First fighter President Trump trusts to get the job done, because the fight to save our country is far from over,",
+              "I cut $1.5 billion in taxes to lower costs for Alabama families,",
+              "I’ll work alongside them to deport criminal illegals, ban DEI, and keep boys out of girls’ locker rooms,"
+            ],
+            "phase": "primary",
+            "published": "2026-07-14",
+            "record_id": "353423",
+            "release_title": "Rhett Marques launches ‘Alabama Values’ ad: ‘The America first fighter President Trump trusts’",
+            "required_context": [
+              "Marques’ campaign released the new 30-second spot on YouTube",
+              "Marques says in the ad.",
+              "Republican special primary for Alabama’s 2nd Congressional District"
+            ],
+            "retrieval_url": "https://yellowhammernews.com/wp-json/wp/v2/posts/353423",
+            "source": "marques-yellowhammer",
+            "source_url": "https://yellowhammernews.com/rhett-marques-launches-alabama-values-ad-the-america-first-fighter-president-trump-trusts/"
+          },
+          "text": "I’m Rhett Marques, the America First fighter President Trump trusts to get the job done, because the fight to save our country is far from over,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "I cut $1.5 billion in taxes to lower costs for Alabama families,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "I’ll work alongside them to deport criminal illegals, ban DEI, and keep boys out of girls’ locker rooms,"
+        }
+      ],
+      "source": "marques-yellowhammer",
+      "source_hash": "9ef370c137e378f8d604a63e7b63b0726c38773596aed651c305eba06c1fb777",
+      "source_record_id": "353423",
+      "source_url": "https://yellowhammernews.com/rhett-marques-launches-alabama-values-ad-the-america-first-fighter-president-trump-trusts/",
+      "sponsor": "Rhett Marques for Congress",
+      "sponsor_type": "candidate",
+      "state": "AL",
+      "text": "I’m Rhett Marques, the America First fighter President Trump trusts to get the job done, because the fight to save our country is far from over,\nI cut $1.5 billion in taxes to lower costs for Alabama families,\nI’ll work alongside them to deport criminal illegals, ban DEI, and keep boys out of girls’ locker rooms,",
+      "title": "Rhett Marques launches ‘Alabama Values’ ad: ‘The America first fighter President Trump trusts’"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official Jon Ossoff for Senate release at https://electjon.com/new-ossoff-tv-ad-ossoff-hits-mike-collins-for-vote-against-releasing-the-epstein-files/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
@@ -18059,6 +18275,81 @@
       "state": "",
       "text": "Voice Over: “Abdulrahman Mohamed El-Sayed: The most radical Senate candidate in America.”\nEl-Sayed: “I’m pretty damn dangerous.”\nVoice Over: “El-Sayed pledged support for the leader of the Muslim Brotherhood, a designated foreign terrorist group.\n“He wants to hike taxes on Michigan waitresses, delivery drivers, and seniors on Social Security.\n“He joined a sex offender and a murder to demand the mass release of dangerous prisoners.\n“And when his ally claimed America deserved 9/11…”\nHasan Piker: “America deserved 9/11, dude.”\nVoice Over: “… El-Sayed refused to disavow.”\nEl-Sayed: “I’m not here to disavow people’s views.”\nVoice Over: “Abdul El-Sayed. Too radical. Too dangerous. Wrong for Michigan.”",
       "title": "Abdul El-Sayed is the Most Radical Candidate in America"
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "The Nevada Independent identifies O'Donnell's Tune ad, supplied first to the publisher, and explicitly attributes both quoted passages to what he says in the ad. Republican alignment follows exact 2026 FEC candidate H6NV03204, NV-03, principal committee C00900910, not the publisher. The campaign is the reported advertiser; the creative's sole legal payer is not independently verified. These are partial quotations, not a complete transcript. August 5 comes from the article:published_time metadata, not an inferred first airing; the article also refers to September reservations, so its timeline is not independently reconciled.",
+      "candidate_mentions": [],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "odonnell-nevada-independent-tune-20260805-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/watch?v=kipkyJmNtyE"
+      ],
+      "message_id": "6897c12efd47fdae54350703ec66df8f5610e9cf542920adee2b7f7b0b5b23ba",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-08-05",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "NV-03",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6NV03204"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The Nevada Independent identifies O'Donnell's Tune ad, supplied first to the publisher, and explicitly attributes both quoted passages to what he says in the ad. Republican alignment follows exact 2026 FEC candidate H6NV03204, NV-03, principal committee C00900910, not the publisher. The campaign is the reported advertiser; the creative's sole legal payer is not independently verified. These are partial quotations, not a complete transcript. August 5 comes from the article:published_time metadata, not an inferred first airing; the article also refers to September reservations, so its timeline is not independently reconciled.",
+            "candidate_id": "H6NV03204",
+            "completeness": "partial_quotation",
+            "content_sha256": "69d69bdac5afd96899c2f68e9d8eae3c4023b19a8a2fd41cb296d91d5ee077c8",
+            "format": "html",
+            "media_url": "https://www.youtube.com/watch?v=kipkyJmNtyE",
+            "passages": [
+              "This piano's in tune because I take care of it,",
+              "Neglect it, and nothing sounds right. That's our economy. Congress neglects us while lining their pockets, self-dealing, insider trading, while you do more with less. One good job used to buy a home, fill your tank, raise a family. Not any more."
+            ],
+            "phase": "general",
+            "published": "2026-08-05",
+            "record_id": "tune-20260805",
+            "release_title": "O'Donnell launches first TV ad of the general election, plans more than $2M in spending",
+            "required_context": [
+              "Marty O'Donnell, the GOP nominee",
+              "he says in the ad.",
+              "shared first with The Nevada Independent"
+            ],
+            "retrieval_url": "https://thenevadaindependent.com/article/odonnell-launches-first-tv-ad-of-the-general-election-plans-more-than-2m-in-spending",
+            "source": "odonnell-nevada-independent",
+            "source_url": "https://thenevadaindependent.com/article/odonnell-launches-first-tv-ad-of-the-general-election-plans-more-than-2m-in-spending"
+          },
+          "text": "This piano's in tune because I take care of it,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "Neglect it, and nothing sounds right. That's our economy. Congress neglects us while lining their pockets, self-dealing, insider trading, while you do more with less. One good job used to buy a home, fill your tank, raise a family. Not any more."
+        }
+      ],
+      "source": "odonnell-nevada-independent",
+      "source_hash": "69d69bdac5afd96899c2f68e9d8eae3c4023b19a8a2fd41cb296d91d5ee077c8",
+      "source_record_id": "tune-20260805",
+      "source_url": "https://thenevadaindependent.com/article/odonnell-launches-first-tv-ad-of-the-general-election-plans-more-than-2m-in-spending",
+      "sponsor": "Marty for Congress",
+      "sponsor_type": "candidate",
+      "state": "NV",
+      "text": "This piano's in tune because I take care of it,\nNeglect it, and nothing sounds right. That's our economy. Congress neglects us while lining their pockets, self-dealing, insider trading, while you do more with less. One good job used to buy a home, fill your tank, raise a family. Not any more.",
+      "title": "O'Donnell launches first TV ad of the general election, plans more than $2M in spending"
     },
     {
       "alignment": "R",
@@ -42851,6 +43142,22 @@
       "url": "https://www.julialetlow.com"
     },
     {
+      "ads_with_text": 1,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "marques-yellowhammer",
+      "state": "partial",
+      "url": "https://yellowhammernews.com"
+    },
+    {
       "ads_with_text": 2,
       "checked": "2026-10-30",
       "discovery_complete": false,
@@ -42896,6 +43203,22 @@
       "url": "https://www.nrcc.org"
     },
     {
+      "ads_with_text": 1,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "nrcc-iowa-standard",
+      "state": "partial",
+      "url": "https://theiowastandard.com"
+    },
+    {
       "ads_with_text": 59,
       "checked": "2026-10-30",
       "excluded_posts": 1211,
@@ -42920,6 +43243,22 @@
       "source": "nunn",
       "state": "ok",
       "url": "https://zachnunn.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "odonnell-nevada-independent",
+      "state": "partial",
+      "url": "https://thenevadaindependent.com"
     },
     {
       "ads_with_text": 0,

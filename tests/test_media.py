@@ -35,6 +35,12 @@ def test_custom_media_endpoint_does_not_claim_full_discovery():
     assert not complete
 
 
+def test_reviewed_news_excerpts_do_not_become_a_publisher_wide_video_crawl():
+    for source in SOURCES:
+        if source.discovery == "reviewed_releases":
+            assert discover(None, source, "2026-10-30") == ([], False)
+
+
 def test_video_id_is_constrained_to_a_public_youtube_link():
     assert youtube_id("https://www.youtube.com/watch?v=5NTptJ2PpMw&feature=share") == "5NTptJ2PpMw"
     assert youtube_id("https://youtu.be/5NTptJ2PpMw") == "5NTptJ2PpMw"

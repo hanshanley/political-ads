@@ -24,13 +24,14 @@ from political_ads.registry import enrich
 from political_ads.schema import Ad, digest, eligible
 
 METHODOLOGY = [
-    "This is an observed corpus of official ad releases, reviewed campaign originals, "
-    "Google previews and native Snap creatives, not a census of all ads aired.",
+    "This is an observed corpus of official ad releases, explicitly quoted ad passages, "
+    "reviewed campaign originals, Google previews and native Snap creatives, "
+    "not a census of all ads aired.",
     "Dates distinguish publisher releases/posts, Google-reported delivery and "
     "Snap scheduled intervals. "
     "Snap's positive impressions do not independently locate delivery within its scheduled dates.",
-    "Party alignment describes the source publisher; "
-    "joint creative payers require separate review.",
+    "Party alignment describes the identified advertiser or reviewed electoral program, "
+    "not a news mirror's editorial alignment; joint creative payers require separate review.",
     "Reviewed publisher alignment uses documented electoral programs and FEC support/oppose "
     "filings, not a blank formal party field. Democratic-leaning can include cross-party "
     "endorsements; documented bipartisan programs stay separate. Per-record hash-bound "

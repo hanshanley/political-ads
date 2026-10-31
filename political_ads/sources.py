@@ -77,6 +77,36 @@ SOURCES = [
         discovery="rss",
     ),
     Source(
+        "nrcc-iowa-standard",
+        "https://theiowastandard.com",
+        "NRCC",
+        "R",
+        "party",
+        "House",
+        fixed_race="IA-03",
+        discovery="reviewed_releases",
+    ),
+    Source(
+        "marques-yellowhammer",
+        "https://yellowhammernews.com",
+        "Rhett Marques for Congress",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="AL-02",
+        discovery="reviewed_releases",
+    ),
+    Source(
+        "odonnell-nevada-independent",
+        "https://thenevadaindependent.com",
+        "Marty for Congress",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="NV-03",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "slf",
         "https://senateleadershipfund.org",
         "Senate Leadership Fund",
@@ -1133,6 +1163,7 @@ def collect_wordpress(
     until: str,
     observed: str | None = None,
     candidates: list[dict] | None = None,
+    reviews: list[dict] | None = None,
 ) -> tuple[list[dict], dict]:
     observed = observed or date.today().isoformat()
     ads = []
@@ -1148,6 +1179,23 @@ def collect_wordpress(
         "scope": "Official ad-release text; not all paid placements",
     }
     try:
+        if source.discovery == "reviewed_releases":
+            from political_ads.reviewed_releases import reviewed_release
+
+            selected = [review for review in reviews or [] if review["source"] == source.id]
+            if not selected:
+                raise ValueError("Reviewed release source requires its explicit evidence ledger")
+            for review in selected:
+                if "2026-01-01" <= review["published"] <= until:
+                    ads.append(reviewed_release(client, source, review, candidates or [], observed))
+                    status["posts_scanned"] += 1
+            status.update(
+                state="partial",
+                discovery_complete=False,
+                ads_with_text=len(ads),
+                scope="Individually reviewed public ad scripts/quotations; not complete discovery",
+            )
+            return ads, status
         if source.discovery != "wordpress":
             from political_ads.discovery import public_posts
 

@@ -53,6 +53,8 @@ def discover_rss(client: Client, source, until: str) -> tuple[list[dict], bool]:
 
 
 def discover(client: Client, source, until: str) -> tuple[list[dict], bool]:
+    if source.discovery == "reviewed_releases":
+        return [], False
     if source.discovery not in {"wordpress", "rss"}:
         posts, complete = public_posts(client, source, until)
         return sorted(posts, key=lambda post: post["date"], reverse=True), complete

@@ -10,9 +10,63 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## October 30 House-focused follow-up
+## October 30: overlooked House scripts and independently reported ad quotations
 
-The current snapshot contains **1,830 acquired text records**, including **1,792 English
+The snapshot now contains **1,833 acquired text records**, including **1,795 English
+records: 1,226 D / 530 R / 31 other / eight unresolved**. Exact party/message
+counts are **1,204 D / 493 R**. English Republican House coverage rises from
+**149 to 152**, alongside 698 Democratic House records. The additions are:
+
+| Reported advertiser | Candidate/race | Publisher date | Recovered evidence |
+|---|---|---|---|
+| NRCC | Zach Nunn, IA-03 | April 14 | Complete marked script reproduced by The Iowa Standard |
+| Rhett Marques campaign | Rhett Marques, AL-02 | July 14 | Three ad quotations in Yellowhammer News; partial, special primary |
+| Marty for Congress | Marty O'Donnell, NV-03 | August 5 | Two passages explicitly quoted from “Tune” by The Nevada Independent; partial, general election |
+
+These are **three additional text records**, not three verified paid deliveries or
+independently certified creative executions. Nunn's script is a candidate variant
+of an already observed NRCC Tax Day template. The two news excerpts retain
+`publisher_ad_copy_completeness_unverified`; no omitted words, intervening narration
+or closing payer card are invented. Neither release commentary nor journalists'
+policy explanations enter the ad text. All three remain semantically unreviewed,
+not neutral or automatically classified as praise/attack.
+
+`data/ad-release-reviews.json` specifies each exact public retrieval URL, source
+content SHA-256, publication metadata, original video association, literal
+passages in source order, advertiser evidence and exact 2026 FEC candidate ID.
+The registered `reviewed_releases` collector rejects changed content, mismatched
+dates/titles, missing quotations/media links and nonmatching federal identities.
+Marked full scripts must also equal the existing transcript extractor's output.
+Failures retain the last-good partition; access denials remain paused. These
+sources deliberately report incomplete discovery, rather than suggesting their
+whole archives were acquired. Replay just these additions with:
+
+```sh
+political-ads collect --source nrcc-iowa-standard --source marques-yellowhammer \
+  --source odonnell-nevada-independent --until 2026-10-30 --offline
+```
+
+Offline replay requires the saved HTTP cache; the committed ledger and extracted
+text are not a substitute for missing original response bytes. Without `--offline`,
+the same public URLs are checked against the reviewed hashes. Date basis is
+`publisher_report_date`, not verified first airing. O'Donnell's August 5 date
+comes from the article's publication metadata, not its discussion of September
+reservations. Named campaigns and NRCC are the reported advertisers; a news
+publisher's editorial alignment is never assigned to the ad or its legal payer.
+
+All **1,830 prior acquired records and saved portrayal reviews remain unchanged**.
+The House composition is now 476 D / one R Snap records and 222 D / 151 R
+non-Snap records. This is still an unmatched, source-limited collection, not
+national party ad prevalence. Broader campaign galleries and new public archives
+were investigated, but video links, ordinary campaign statements, short closing
+slogans, state-election ads and CLF's explicitly 2024 gallery were not counted as
+new usable federal ad text. Five Driving Force Action House links remain leads.
+Complete exports, eleven PNG figures, the report and both unpublished editions
+are rebuilt together. Website/Substack publication remains on hold.
+
+## Earlier October 30 House-focused follow-up
+
+The preceding snapshot contained **1,830 acquired text records**, including **1,792 English
 records: 1,226 Democratic-aligned, 527 Republican-aligned, 31 other and eight unresolved**.
 Exact party/message counts are **1,204 D / 490 R**. English House coverage is now
 **149 R / 698 D**, up from 146 R. These are recovered text records, not estimates of
@@ -54,7 +108,8 @@ Existing access denials remain paused, and no website/Substack publication occur
 
 ### House platform-mix diagnosis
 
-The House gap depends strongly on the acquired platform mix:
+Before the three-record recovery above, the House gap depended strongly on the
+acquired platform mix:
 
 | English House text records | Democratic-aligned | Republican-aligned |
 |---|---:|---:|

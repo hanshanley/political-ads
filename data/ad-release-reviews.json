@@ -1,0 +1,87 @@
+{
+  "schema_version": "1",
+  "scope": "Individually reviewed public ad words, not complete publisher discovery or semantic portrayal review.",
+  "reviews": [
+    {
+      "source": "nrcc-iowa-standard",
+      "record_id": "64223",
+      "source_url": "https://theiowastandard.com/nrcc-launches-tax-day-ad-blitz-highlighting-zach-nunns-tax-relief/",
+      "retrieval_url": "https://theiowastandard.com/wp-json/wp/v2/posts/64223",
+      "format": "wordpress",
+      "content_sha256": "b92e83b6ca79de5c46531af662041f96ff63731f5866ecd7c841992a6a3f7962",
+      "published": "2026-04-14",
+      "release_title": "NRCC Launches Tax Day Ad Blitz Highlighting Zach Nunn\u2019s Tax Relief",
+      "candidate_id": "H2IA03119",
+      "media_url": "https://www.youtube.com/embed/RH_RfBI8D3Y?list=PLBquoxfIxnry9-aXhCHSY_Oyu9JOskP99",
+      "phase": "unknown",
+      "completeness": "marked_script",
+      "required_context": [
+        "National Republican Congressional Committee (NRCC) launched a paid advertisement campaign",
+        "SCRIPT:"
+      ],
+      "passages": [
+        "Hardworking Americans power this country.",
+        "Clocking in early, staying late, doing whatever it takes.",
+        "Democrats made it harder to get ahead.",
+        "Spiking inflation to 40-year highs.",
+        "But Zach Nunn changed that.",
+        "Voting for real tax relief that puts more money back in your pocket:",
+        "No tax on tips.",
+        "No tax on overtime.",
+        "And a doubled Child Tax Credit.",
+        "Zach Nunn delivered help for working families.",
+        "Thank you, Representative Zach Nunn."
+      ],
+      "attribution_basis": "Campaign-issued NRCC release reproduced by The Iowa Standard explicitly names the NRCC as the organization launching this paid advertisement. Republican alignment describes NRCC, not the mirror's editorial alignment. The marked SCRIPT excludes the spokesperson's release quotation. Sole legal payer and actual first paid-delivery date are not independently verified. This is a Nunn variant of an already observed NRCC template, not proof of an independent national creative execution."
+    },
+    {
+      "source": "marques-yellowhammer",
+      "record_id": "353423",
+      "source_url": "https://yellowhammernews.com/rhett-marques-launches-alabama-values-ad-the-america-first-fighter-president-trump-trusts/",
+      "retrieval_url": "https://yellowhammernews.com/wp-json/wp/v2/posts/353423",
+      "format": "wordpress",
+      "content_sha256": "9ef370c137e378f8d604a63e7b63b0726c38773596aed651c305eba06c1fb777",
+      "published": "2026-07-14",
+      "release_title": "Rhett Marques launches \u2018Alabama Values\u2019 ad: \u2018The America first fighter President Trump trusts\u2019",
+      "candidate_id": "H6AL01086",
+      "media_url": "https://www.youtube.com/embed/QgxldZ-CP1E?si=1AGGlCLKwi1RC5K3",
+      "phase": "primary",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Marques\u2019 campaign released the new 30-second spot on YouTube",
+        "Marques says in the ad.",
+        "Republican special primary for Alabama\u2019s 2nd Congressional District"
+      ],
+      "passages": [
+        "I\u2019m Rhett Marques, the America First fighter President Trump trusts to get the job done, because the fight to save our country is far from over,",
+        "I cut $1.5 billion in taxes to lower costs for Alabama families,",
+        "I\u2019ll work alongside them to deport criminal illegals, ban DEI, and keep boys out of girls\u2019 locker rooms,"
+      ],
+      "attribution_basis": "Yellowhammer News explicitly identifies the Marques campaign's 30-second Alabama Values ad for the Republican AL-02 special primary and quotes these three passages while describing that spot. Republican alignment follows the exact 2026 FEC candidate H6AL01086, district 02, principal committee C00916775, not the news publisher. The campaign is the reported advertiser; the creative's sole legal payer is not independently verified. These are partial quotations, not a complete transcript; the reporter's tax-policy explanations and endorsement quotations are excluded."
+    },
+    {
+      "source": "odonnell-nevada-independent",
+      "record_id": "tune-20260805",
+      "source_url": "https://thenevadaindependent.com/article/odonnell-launches-first-tv-ad-of-the-general-election-plans-more-than-2m-in-spending",
+      "retrieval_url": "https://thenevadaindependent.com/article/odonnell-launches-first-tv-ad-of-the-general-election-plans-more-than-2m-in-spending",
+      "format": "html",
+      "content_sha256": "69d69bdac5afd96899c2f68e9d8eae3c4023b19a8a2fd41cb296d91d5ee077c8",
+      "published": "2026-08-05",
+      "release_title": "O'Donnell launches first TV ad of the general election, plans more than $2M in spending",
+      "candidate_id": "H6NV03204",
+      "media_url": "https://www.youtube.com/watch?v=kipkyJmNtyE",
+      "phase": "general",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Marty O'Donnell, the GOP nominee",
+        "he says in the ad.",
+        "shared first with The Nevada Independent"
+      ],
+      "passages": [
+        "This piano's in tune because I take care of it,",
+        "Neglect it, and nothing sounds right. That's our economy. Congress neglects us while lining their pockets, self-dealing, insider trading, while you do more with less. One good job used to buy a home, fill your tank, raise a family. Not any more."
+      ],
+      "attribution_basis": "The Nevada Independent identifies O'Donnell's Tune ad, supplied first to the publisher, and explicitly attributes both quoted passages to what he says in the ad. Republican alignment follows exact 2026 FEC candidate H6NV03204, NV-03, principal committee C00900910, not the publisher. The campaign is the reported advertiser; the creative's sole legal payer is not independently verified. These are partial quotations, not a complete transcript. August 5 comes from the article:published_time metadata, not an inferred first airing; the article also refers to September reservations, so its timeline is not independently reconciled."
+    }
+  ]
+}
