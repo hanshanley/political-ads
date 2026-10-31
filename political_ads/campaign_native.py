@@ -4,12 +4,18 @@ import hashlib
 import html
 import json
 import re
+import time
 from datetime import date, datetime, timezone
+from email.utils import parsedate_to_datetime
+from io import BytesIO
 from pathlib import Path
-from urllib.parse import parse_qsl, urlencode, urlparse
+from urllib.parse import parse_qsl, urlencode, urljoin, urlparse
 
 from bs4 import BeautifulSoup
+from pypdf import PdfReader
+from pypdf import __version__ as pdf_version
 
+from political_ads.archives import archive_member
 from political_ads.cli import read_json, write_json
 from political_ads.http import Client
 from political_ads.images import image_segments, recognize_image
@@ -38,7 +44,9 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
     for review in reviews:
         identity, source = review["id"], review["source"]
         gallery = review.get("publisher_gallery")
+        archive = review.get("publisher_archive")
         is_image = review.get("media_type") == "image"
+        is_pdf = review.get("media_type") == "pdf"
         if identity in ads or (identity in leads and leads[identity].get("recovered_segments")):
             continue
         if review.get("post_timestamp"):
@@ -55,10 +63,14 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             published = datetime.fromisoformat(gallery["created"]).date().isoformat()
             if not START <= published <= until:
                 continue
+        elif archive:
+            published = parsedate_to_datetime(archive["last_modified"]).date().isoformat()
+            if not START <= published <= until:
+                continue
         else:
             published = None
         status = statuses.get(source, {})
-        if re.match(r"^HTTPError: HTTP Error (401|403|429)\b", status.get("error", "")):
+        if re.match(r"^HTTPError: HTTP Error (401|402|403|429)\b", status.get("error", "")):
             continue
         status = status | {
             "source": source,
@@ -68,7 +80,11 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             "state": "partial",
             "discovery_complete": False,
             "scope": (
-                "Individually reviewed original campaign images, not complete discovery"
+                "Individually reviewed campaign PDF/video archive members, not complete discovery"
+                if archive
+                else "Individually reviewed original campaign PDFs, not complete discovery"
+                if is_pdf
+                else "Individually reviewed original campaign images, not complete discovery"
                 if is_image
                 else "Individually reviewed original campaign videos, not complete discovery"
             ),
@@ -84,6 +100,33 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             alignment = {"DEM": "D", "REP": "R"}.get(candidate["party"], "other")
             if is_image != bool(gallery):
                 raise ValueError("Reviewed images require exact public gallery upload evidence")
+            if is_pdf and not archive:
+                raise ValueError("Reviewed PDFs require exact public archive creative evidence")
+            if archive:
+                if (
+                    gallery
+                    or review.get("post_id")
+                    or review.get("post_timestamp")
+                    or review.get("publisher_release")
+                    or review.get("publisher_request")
+                    or review["post_url"] != review["publisher_url"]
+                    or review.get("media_type") not in {"pdf", "video"}
+                    or publisher_hash != archive["publisher_sha256"]
+                    or soup.title is None
+                    or soup.title.get_text(" ", strip=True) != archive["publisher_title"]
+                    or archive["url"]
+                    not in {
+                        urljoin(review["publisher_url"], link["href"])
+                        for link in soup.select("a[href]")
+                    }
+                    or not START <= archive["creative_created"][:10] <= published
+                    or not archive["date_uncertainty"]
+                    or review["media_url"] != archive["url"]
+                ):
+                    raise ValueError(
+                        "Creative requires exact publisher-linked archive and date evidence"
+                    )
+                client._archive_request_at = time.monotonic()
             if gallery:
                 script = soup.find("script", id="wix-warmup-data")
                 if (
@@ -195,7 +238,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             else:
                 video_url = review["media_url"]
                 markup = html.unescape(body.decode("utf-8")).replace("\\/", "/")
-                if not gallery and video_url not in markup:
+                if not gallery and not archive and video_url not in markup:
                     raise ValueError("Reviewed original video is not linked by the publisher")
             download_url = video_url
             parsed = urlparse(video_url)
@@ -203,10 +246,41 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                 query = dict(parse_qsl(parsed.query))
                 query["dl"] = "1"
                 download_url = parsed._replace(query=urlencode(query)).geturl()
-            media, _ = client.get(download_url, retry=False)
+            if archive:
+                media = archive_member(client, archive)
+            else:
+                media, _ = client.get(download_url, retry=False)
             if hashlib.sha256(media).hexdigest() != review["media_sha256"]:
                 raise ValueError("Original video bytes differ from the individually reviewed ad")
-            if is_image:
+            if is_pdf:
+                reader = PdfReader(BytesIO(media))
+                pages = [page.extract_text() or "" for page in reader.pages]
+                if (
+                    reader.metadata is None
+                    or reader.metadata.creation_date is None
+                    or reader.metadata.creation_date.isoformat() != archive["creative_created"]
+                    or len(pages) != review["pdf"]["page_count"]
+                    or [hashlib.sha256(page.encode()).hexdigest() for page in pages]
+                    != review["pdf"]["page_text_sha256"]
+                ):
+                    raise ValueError(
+                        "PDF creation metadata or complete ordered text layers changed"
+                    )
+                media_hash = review["media_sha256"]
+                segments = [
+                    {
+                        "text": page,
+                        "kind": "publisher_pdf_text_layer",
+                        "pdf_page": index + 1,
+                        "original_sha256": media_hash,
+                        "source_url": video_url,
+                    }
+                    for index, page in enumerate(pages)
+                    if page.strip()
+                ]
+                language = language_of("\n".join(segment["text"] for segment in segments))
+                engine = {"pdf_engine": {"name": "pypdf", "version": pdf_version}}
+            elif is_image:
                 media_hash, ocr = recognize_image(root / "data/media/campaign-images", media)
                 segments = image_segments(ocr, media_hash, video_url)
                 language = language_of("\n".join(segment["text"] for segment in segments))
@@ -214,6 +288,15 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     "image_engine": {key: value for key, value in ocr.items() if key != "lines"}
                 }
             else:
+                if archive:
+                    import av
+
+                    with av.open(BytesIO(media)) as container:
+                        created = container.metadata.get("creation_time")
+                    if created != archive["creative_created"]:
+                        raise ValueError(
+                            "Video creation metadata differs from reviewed archive creative"
+                        )
                 media_hash, ocr, speech = recognize_video(root, media, offline=offline)
                 segments = video_segments(ocr, speech, media_hash)
                 language = (
@@ -249,6 +332,16 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     "image_reading_order_unverified",
                     "publisher_gallery_upload_not_verified_first_publication_or_paid_delivery",
                 ]
+            if archive:
+                quality[-1] = "archive_modification_date_not_verified_publication_or_paid_delivery"
+            if is_pdf:
+                quality = [
+                    "printed_ad_eligibility_and_payer_visually_reviewed",
+                    "pdf_text_layer_not_verified_complete_visible_transcription",
+                    "pdf_reading_order_and_repeated_design_words_unverified",
+                    "rasterized_words_may_be_missing_from_text_layer",
+                    "archive_modification_date_not_verified_publication_or_paid_delivery",
+                ]
             quality.extend(review.get("quality_flags", []))
             if published is None:
                 leads[identity] = {
@@ -283,6 +376,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     sponsor_type=review.get("sponsor_type", "candidate"),
                     alignment=alignment,
                     published=published,
+                    phase=review.get("phase", "unknown"),
                     observed=date.today().isoformat(),
                     text=text,
                     segments=segments,
@@ -292,6 +386,8 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     date_basis=(
                         "publisher_gallery_upload_date"
                         if gallery
+                        else "publisher_archive_modification_date"
+                        if archive
                         else "publisher_release_date"
                         if release
                         else "publisher_post_date"
@@ -303,7 +399,9 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     else f"{candidate['state']}-Senate",
                     language=language,
                     language_basis=(
-                        "Local English OCR plus seeded language detection"
+                        "Publisher PDF text layer plus seeded language detection"
+                        if is_pdf
+                        else "Local English OCR plus seeded language detection"
                         if is_image
                         else "Local Whisper language detection; speech and frame OCR"
                     ),
@@ -311,7 +409,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     attribution_basis=(
                         (
                             "Publisher-linked original with individually reviewed payer evidence; "
-                            if release or gallery
+                            if release or gallery or archive
                             else (
                                 "Campaign-linked original with candidate approval "
                                 "and payer evidence; "

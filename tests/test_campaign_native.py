@@ -1,13 +1,154 @@
 import hashlib
+import io
 import json
+import zipfile
 from datetime import datetime, timezone
 from urllib.error import HTTPError
 from urllib.parse import urlencode
 
 import pytest
+from pypdf import PdfReader, PdfWriter
+from pypdf.generic import DecodedStreamObject, DictionaryObject, NameObject
 
 from political_ads.campaign_native import collect_campaign_native
 from political_ads.cli import read_json, write_json
+
+
+@pytest.fixture
+def archived_pdf_review(tmp_path, monkeypatch, native_review):
+    writer = PdfWriter()
+    for text in ["I approve this message.", "We will protect families and deliver results."]:
+        page = writer.add_blank_page(width=300, height=300)
+        page[NameObject("/Resources")] = DictionaryObject(
+            {
+                NameObject("/Font"): DictionaryObject(
+                    {
+                        NameObject("/F1"): DictionaryObject(
+                            {
+                                NameObject("/Type"): NameObject("/Font"),
+                                NameObject("/Subtype"): NameObject("/Type1"),
+                                NameObject("/BaseFont"): NameObject("/Helvetica"),
+                            }
+                        )
+                    }
+                )
+            }
+        )
+        stream = DecodedStreamObject()
+        stream.set_data(f"BT /F1 12 Tf 10 10 Td ({text}) Tj ET".encode())
+        page[NameObject("/Contents")] = stream
+    writer.add_metadata({"/CreationDate": "D:20261007120000Z"})
+    output = io.BytesIO()
+    writer.write(output)
+    pdf = output.getvalue()
+    reader = PdfReader(io.BytesIO(pdf))
+    name = "Press Kit/Ad.pdf"
+    output = io.BytesIO()
+    with zipfile.ZipFile(output, "w") as archive:
+        info = zipfile.ZipInfo(name, (2026, 10, 7, 12, 0, 0))
+        info.compress_type = zipfile.ZIP_DEFLATED
+        archive.writestr(info, pdf)
+    body = output.getvalue()
+    with zipfile.ZipFile(io.BytesIO(body)) as archive:
+        info = archive.getinfo(name)
+    markup = b"<title>Campaign</title><a href='/kit.zip'>Public press kit</a>"
+    native_review.pop("post_id")
+    native_review.pop("post_timestamp")
+    native_review.update(
+        post_url=native_review["publisher_url"],
+        media_url="https://campaign.example/kit.zip",
+        media_type="pdf",
+        media_sha256=hashlib.sha256(pdf).hexdigest(),
+        sponsor="NRCC",
+        sponsor_type="party",
+        phase="general",
+        publisher_archive={
+            "url": "https://campaign.example/kit.zip",
+            "archive_bytes": len(body),
+            "tail_bytes": len(body),
+            "directory_sha256": hashlib.sha256(body).hexdigest(),
+            "etag": '"original"',
+            "last_modified": "Mon, 12 Oct 2026 18:21:26 GMT",
+            "publisher_sha256": hashlib.sha256(markup).hexdigest(),
+            "publisher_title": "Campaign",
+            "member": name,
+            "member_modified": "2026-10-07T12:00:00",
+            "local_header_offset": info.header_offset,
+            "compressed_bytes": info.compress_size,
+            "uncompressed_bytes": info.file_size,
+            "crc32": info.CRC,
+            "creative_created": reader.metadata.creation_date.isoformat(),
+            "date_uncertainty": (
+                "Creation and archive modification are not first publication or delivery."
+            ),
+        },
+        pdf={
+            "page_count": 2,
+            "page_text_sha256": [
+                hashlib.sha256(page.extract_text().encode()).hexdigest() for page in reader.pages
+            ],
+        },
+    )
+    calls = []
+
+    def get(self, url, **kwargs):
+        calls.append((url, kwargs.get("byte_range")))
+        if url == native_review["publisher_url"]:
+            return markup, {}
+        start, end = kwargs["byte_range"]
+        return body[start : end + 1], {
+            "Content-Range": f"bytes {start}-{end}/{len(body)}",
+            "ETag": '"original"',
+            "Last-Modified": "Mon, 12 Oct 2026 18:21:26 GMT",
+        }
+
+    monkeypatch.setattr("political_ads.campaign_native.Client.get", get)
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [native_review]})
+    return native_review, calls
+
+
+def test_archived_pdf_retains_both_pages_as_one_ad_and_keeps_payer(tmp_path, archived_pdf_review):
+    review, calls = archived_pdf_review
+    result = collect_campaign_native(tmp_path, "2026-10-27", offline=True)
+    assert len(result["ads"]) == 1
+    ad = result["ads"][0]
+    assert ad["sponsor"] == "NRCC" and ad["sponsor_type"] == "party" and ad["alignment"] == "R"
+    assert ad["published"] == "2026-10-12" and ad["delivery_start"] is None
+    assert ad["date_basis"] == "publisher_archive_modification_date" and ad["phase"] == "general"
+    assert [segment["pdf_page"] for segment in ad["segments"]] == [1, 2]
+    assert ad["text"] == "\n".join(segment["text"] for segment in ad["segments"])
+    assert "pdf_text_layer_not_verified_complete_visible_transcription" in ad["quality_flags"]
+    assert (
+        ad["segments"][0]["native_campaign_evidence"]["publisher_archive"]
+        == review["publisher_archive"]
+    )
+    assert collect_campaign_native(tmp_path, "2026-10-27", offline=True) == result
+    assert len(calls) == 4
+
+
+@pytest.mark.parametrize(
+    "change", ["publisher", "creation", "pages", "quotation", "undated", "format"]
+)
+def test_archived_pdf_requires_bound_current_creative_evidence(
+    tmp_path, archived_pdf_review, change
+):
+    review, _ = archived_pdf_review
+    if change == "publisher":
+        review["publisher_archive"]["publisher_sha256"] = "0" * 64
+    elif change == "creation":
+        review["publisher_archive"]["creative_created"] = "2025-10-07T12:00:00+00:00"
+    elif change == "pages":
+        review["pdf"]["page_text_sha256"] = review["pdf"]["page_text_sha256"][:1]
+    elif change == "quotation":
+        review["required_quotes"] = ["Words that are not in the creative"]
+    elif change == "undated":
+        review.pop("publisher_archive")
+    else:
+        review["media_type"] = "unreviewed_b_roll"
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    result = collect_campaign_native(tmp_path, "2026-10-27", offline=True)
+    assert result["ads"] == []
+    assert result["attempts"][review["id"]]["state"] == "error"
 
 
 @pytest.fixture
@@ -134,19 +275,20 @@ def test_undated_original_is_preserved_in_backlog_not_dated_corpus(
     assert lead["native_evidence"]["media_sha256"] == native_review["media_sha256"]
 
 
-def test_native_denial_is_not_retried_on_later_runs(tmp_path, native_review, monkeypatch):
+@pytest.mark.parametrize("code", [401, 402, 403, 429])
+def test_native_denial_is_not_retried_on_later_runs(tmp_path, native_review, monkeypatch, code):
     requests = []
 
     def denied(self, url, **kwargs):
         requests.append(url)
-        raise HTTPError(url, 403, "Forbidden", {}, None)
+        raise HTTPError(url, code, "Forbidden", {}, None)
 
     monkeypatch.setattr("political_ads.campaign_native.Client.get", denied)
     first = collect_campaign_native(tmp_path, "2026-10-27")
     second = collect_campaign_native(tmp_path, "2026-10-27")
     assert len(requests) == 1
     assert first["ads"] == second["ads"] == []
-    assert "403" in second["sources"][0]["error"]
+    assert str(code) in second["sources"][0]["error"]
 
 
 @pytest.mark.parametrize("post_date", ["2025-12-31", "2026-10-28"])

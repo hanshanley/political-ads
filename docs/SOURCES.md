@@ -10,9 +10,103 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Pennsylvania Mackenzie linked-PDF expansion of the October 30 snapshot
+## Mealer public archive expansion of the October 30 snapshot
 
-The latest acquisition contains **1,877 text records**, including **1,839
+Seven additional Republican House text records are recovered from the actual
+campaign-linked `https://alexandramealer.com/Alex-Press-Kit.zip`: **six
+two-sided printed creatives and one finished 30.08-second video**, not
+photographs or ordinary B-roll. Each two-page PDF remains one ad. The push
+card, Results For You, General Intro and video are paid for by **Alexandra
+del Moral Mealer for Congress**; She Wins Texas Loses, Corrupt Contrast
+and Hates Texas are **NRCC-paid and Mealer-campaign-authorized**. All twelve
+printed pages and the video's actual closing payer card were visually
+inspected. Exact 2026 FEC **H6TX09140 / C00917112**, REP, TX-09, is retained.
+The Democratic target, Leticia Gutierrez **H6TX09231 / C00931121**, is not
+substituted as the advertiser.
+
+The public ZIP is **3,171,808,804 bytes**. The collector never requests its
+entire body: it replays the actual **65,536-byte directory tail** and exact
+local-header/compressed-member spans, retrieving only the seven reviewed
+originals. Ordinary public HTTP byte ranges require **206**, exact
+Content-Range and length, separate range-cache keys, bounded reads,
+consistent ETag/Last-Modified and a directory SHA-256. Exact member name,
+modification, offset, compressed/uncompressed size, local-header
+agreement, bounded DEFLATE decoding, CRC32 and original SHA-256 are checked
+before extraction. No `extractall`, B-roll collection, denied-provider
+retry or whole-archive download is used. The publisher's **ten-second
+crawl delay** is respected. The exact primary homepage body/title and its
+explicit archive link are bound into each acquisition review.
+
+**Dates are not interchangeable.** PDF creation dates span September 9
+through October 7; video container creation is October 7; ZIP member
+modification dates are September 23 or October 12. The public archive's
+Last-Modified is **October 12, 2026, 18:21:26 GMT**. Current federal ad
+content and independently retained in-window creation metadata support
+2026 eligibility, but the record's explicit
+`publisher_archive_modification_date` is **not verified publication,
+first release, first airing or paid delivery**. The October 31 observation
+does not advance the October 30 snapshot cutoff. Only the push card's
+explicit October 19-30 early voting / November 3 election-day call
+establishes general-election phase; the other six remain unknown.
+
+The PDFs retain **all ordered text layers**, including repeated design
+headings, split drop-cap letters and extraction artifacts. Rasterized
+words and the push-card disclaimer may be missing; these are **not
+verified complete visible transcriptions**. Each page's extracted hash
+is bound with pinned **pypdf 5.9.0**. The uncorrected local video speech
+misreads Mealer and Gutierrez names; exact identities come from inspected
+original frames and FEC evidence, not silent transcript repairs. All seven
+messages remain **semantically unreviewed**. Seven distinct original
+hashes and exact observed-text messages do not certify independent
+message families, especially the two related oil/gas executions.
+
+```sh
+political-ads campaign-native --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+The verified snapshot contains **1,884 acquired / 1,846 English records:
+1,226 D / 581 R / 31 other / eight unresolved**. English House coverage is
+**698 D / 203 R**, comprising **222 D / 202 R non-Snap** and **476 D /
+one R Snap**. Exact observed-text messages are **1,204 D / 544 R**.
+All **1,877 prior acquisition objects, 1,839 prior analyzed objects,
+38 release reviews, 25 native reviews and fifteen untouched protected
+input files** persist unchanged. Native reviews and their partition receive
+only the seven reviewed additions; the existing undated backlog is retained.
+
+All **399 Python tests**, Python lint/format, **17 frontend tests**,
+frontend lint/typecheck/build and **seven browser cases** pass. Complete
+analysis/browser/production JSON, gzip and CSV, all **1,884 Parquet rows**
+and **eleven visually inspected PNG sets** reconcile. Independent auditing
+passes **20 metric groups / ten chart rows**. A socket-forbidden isolated
+replay reproduces all **96 native objects and states** using **16 actual
+cached responses**, the preserved undated backlog and hash-bound local video
+extractions. Snapshot:
+`5c3edc50aadcdfce98e152e4fe723a0a02b0577aa8644b2beefee98106b6c135`.
+The preceding documentation checkpoint **ca92790ecbff1b755bfd8b1a4956dbfb475de104**
+has independently verified successful exact-head CI **41176103344**.
+
+The publisher's actual public media index exposes **AMs.zip**, media
+**273343**, dated **February 9, 2026**. Its three exact original PNGs were
+recovered with verified ranges, sizes, names, CRC32 and hashes and visually
+inspected: **all three are textless portrait assets, not advertisements**.
+They add no records and do not justify broader production archive-image
+support. Mark Teixeira's January 21 New York Post/Dailymotion repost has
+a rendered public timed transcript, but the actual ordinary raw response
+is a JavaScript shell without that text or JSON-LD. Its explicitly exposed
+crawler resource returned **403**; **Dailymotion is now paused**, with no
+alternate retrieval or admission. Other independent campaign/publisher
+discovery continues. This acquisition
+does not resolve nationally representative Republican House coverage.
+The recurring acquisition prompt remains active; website/Substack
+publication and host restoration remain on hold.
+
+## Previous Pennsylvania Mackenzie linked-PDF expansion
+
+That checkpoint contains **1,877 text records**, including **1,839
 English records: 1,226 D / 574 R / 31 other / eight unresolved**.
 One additional **PA-07 general-election Mackenzie campaign / NRCC ad**
 has **three partial literal quotations / 39 preserved tokens**. Its
