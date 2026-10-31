@@ -317,6 +317,64 @@ def test_publish_checkpoint_preserves_inflight_records_as_not_run(tmp_path):
         assert json.loads(archive.read("manifest.json"))["ads"][0]["text"] == ad()["text"]
 
 
+@pytest.mark.parametrize(
+    "corruption", ["missing_input", "changed_response", "metadata_only_json", "metadata_only_csv"]
+)
+def test_publish_checkpoint_rejects_incomplete_evidence_before_replacing_output(
+    tmp_path, corruption
+):
+    fixture_corpus(tmp_path)
+    source, output = tmp_path / "run", tmp_path / "published"
+    extract_claims(tmp_path, source, extractor=lambda *_: {"text": canonical(payload())})
+    publish_claim_checkpoint(tmp_path, source, output)
+    previous = {path.name: path.read_bytes() for path in output.iterdir() if path.is_file()}
+    response = next((source / "responses").glob("*.json"))
+    response.write_text(response.read_text() + "\n")
+
+    def corrupt_replay(root, snapshot, **kwargs):
+        summary = extract_claims(root, snapshot, **kwargs)
+        path = snapshot / "complete-evidence.zip"
+        with zipfile.ZipFile(path) as archive:
+            members = {name: archive.read(name) for name in archive.namelist()}
+        if corruption == "missing_input":
+            del members["ads.json"]
+        elif corruption == "changed_response":
+            name = next(name for name in members if name.startswith("responses/"))
+            members[name] = b"{}"
+        elif corruption == "metadata_only_json":
+            ads = json.loads(members["ads.json"])
+            del ads[0]["text"]
+            members["ads.json"] = canonical(ads).encode()
+            (snapshot / "ads.json").write_bytes(members["ads.json"])
+        else:
+            members["ads.csv"] = b"id,claim_status\ntest-ad,normalized\n"
+            (snapshot / "ads.csv").write_bytes(members["ads.csv"])
+        with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as archive:
+            for name, data in members.items():
+                archive.writestr(name, data)
+        return summary
+
+    with (
+        patch("political_ads.claim_checkpoints.extract_claims", side_effect=corrupt_replay),
+        pytest.raises(ValueError, match="Checkpoint"),
+    ):
+        publish_claim_checkpoint(tmp_path, source, output)
+    assert {path.name: path.read_bytes() for path in output.iterdir() if path.is_file()} == previous
+
+
+def test_publish_checkpoint_verifies_large_spreadsheet_safe_source_text(tmp_path):
+    text = "-Jane Smith\n" + "word " * 27000
+    fixture_corpus(tmp_path, [ad(text=text)])
+    source, output = tmp_path / "run", tmp_path / "published"
+    extract_claims(tmp_path, source, prepare_only=True)
+    summary = publish_claim_checkpoint(tmp_path, source, output)
+    assert summary["ads"] == 1
+    assert json.loads((output / "checkpoint.json").read_text())["evidence_verified"] is True
+    with zipfile.ZipFile(output / "complete-evidence.zip") as archive:
+        assert json.loads(archive.read("ads.json"))[0]["text"] == text
+        assert "'" + text in archive.read("ads.csv").decode()
+
+
 def test_frozen_inputs_resume_offline_without_model_or_live_corpus(tmp_path):
     fixture_corpus(tmp_path)
     output = tmp_path / "claims"

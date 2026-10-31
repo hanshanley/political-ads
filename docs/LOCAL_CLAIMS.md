@@ -228,6 +228,9 @@ This writes `outputs/local-claims/`, including CSV/JSON results and
 The large input manifest and ad-input JSON/CSV are inside the ZIP, not duplicated
 as loose Git files. Unfinished records stay
 not-run; failures stay excluded. Identical checkpoints are not rewritten.
+Before replacing published files, the publisher verifies complete frozen ad JSON,
+full spreadsheet-safe CSV texts and original text hashes, archive CRC, and exact
+archive membership and bytes for all snapshotted inputs, outputs and raw history.
 Commit this directory to publish progress without replacing the article's legacy
 results. The active inference run remains in `data/local-claims/full/`.
 
