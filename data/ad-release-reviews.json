@@ -3,6 +3,37 @@
   "scope": "Individually reviewed public ad words, not complete publisher discovery or semantic portrayal review.",
   "reviews": [
     {
+      "source": "barrett-prospect",
+      "record_id": "143174",
+      "source_url": "https://prospect.org/2026/08/20/mi-07-tom-barrett-scrambles-to-bury-his-data-center-past/",
+      "retrieval_url": "https://prospect.org/2026/08/20/mi-07-tom-barrett-scrambles-to-bury-his-data-center-past/",
+      "format": "html",
+      "published": "2026-08-20",
+      "release_title": "MI-07: Tom Barrett Scrambles to Bury His Data Center Past",
+      "heading_selector": "h1.entry-title",
+      "publication_selector": "time.entry-date.published",
+      "publication_date_format": "%B %d, %Y",
+      "candidate_id": "H2MI07123",
+      "media_url": "https://x.com/ddayen/status/2090108651650605149?ref_src=twsrc%5Etfw",
+      "content_sha256": "d8bce02f07694629f0509e8d1caf29aeebd1da41847da85becd8c000e10d7db8",
+      "phase": "general",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "If you watched this new ad in the toss-up Seventh Congressional District in Michigan",
+        "the candidate says, shooting from the hip from a bar.",
+        "Here's Barrett's data center ad,",
+        "The ad comes from Rep. Tom Barrett, the Republican incumbent trying to hold onto his seat.",
+        "Will Lawrence, the progressive organizer who won the Democratic primary in MI-07"
+      ],
+      "passages": [
+        "Michigan water, Michigan land, and Michigan’s future belong to Michiganders,",
+        "So while politicians are cozying up with Big Tech billionaires to force data centers on our communities, I stood up to my own party and voted against giving your tax dollars to data centers."
+      ],
+      "publisher_credit": "David Dayen, The American Prospect.",
+      "reuse_basis": "Retain only these two unmodified candidate-speech excerpts, 44 whitespace tokens total, for noncommercial comparative research with author/publisher/source credit, not the 1,262-word article, reporting, photograph, reporter captions, narration audio or embedded media. The actual publisher footer says All Rights Reserved; no blanket license, catalog reuse consent or host-publication authorization is asserted. No media is redistributed.",
+      "attribution_basis": "Actual cached full HTML SHA256 d8bce02f07694629f0509e8d1caf29aeebd1da41847da85becd8c000e10d7db8, body postid-143174, one h1.entry-title and one time.entry-date.published bind the individual August 20, 2026 report. Visible publication, article:published_time 2026-08-20T09:00:00+00:00 and the two Article JSON-LD publication instants agree, including local 2026-08-20T05:00:00-04:00. Modification 2026-08-20T13:48:50+00:00 is separate. One uniquely matched .entry-content paragraph expressly quotes these two ordered passages from Barrett's new ad; preserve the first terminal comma, second terminal period and curly apostrophe. The immediately following reporter Twitter blockquote explicitly identifies Barrett's data-center ad and binds the exact August 19 reporter repost 2090108651650605149, not a profile/channel or unrelated interview. The opening paragraph separately links reporter Bluesky post 3mth4tacb2224; no unsupported handle-post parser change or request is made. The later K3gfFTSTIas original is explicitly Lawrence's separate first general-election ad and is excluded, as are interview clip 2090105467993227572 and article-narration audio. Exact saved H2MI07123/C00793976 identifies BARRETT, THOMAS MORE, REP, House, MI-07, 2026; the existing same-ID Tom Barrett alias and independently cached official principal TOM BARRETT FOR CONGRESS, P/H/REP, agree. Neither principal nor publisher attribution establishes an inspected creative payer. General phase follows the explicit incumbent-versus-Democratic-primary-winner contest, not the separate Lawrence ad's first-general-ad label or August alone. Reporter commentary, ad caption, tiny-print vote-date reporting, ordinary candidate/interview quotations and other clips are excluded; the ad's assertions are retained as speech, not independently verified facts. No X/Bluesky/media/caption/API request, alias change or new semantic judgment."
+    },
+    {
       "source": "herrera-jezebel",
       "record_id": "18261610",
       "source_url": "https://www.jezebel.com/brandon-herrera-last-minute-ad-against-trumps-border-wall-texas",

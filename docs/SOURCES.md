@@ -10,6 +10,119 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Barrett Michigan House quoted-ad expansion
+
+One additional Republican House record, **barrett-prospect-143174-0**,
+retains **two literal passages / 44 whitespace tokens** from David Dayen's
+August 20 American Prospect report. It is one **partial, semantically
+unreviewed** ad, not two ads or a full transcript. Preserve the first
+passage's comma, second passage's period and curly apostrophe.
+
+Actual full HTML SHA-256:
+`d8bce02f07694629f0509e8d1caf29aeebd1da41847da85becd8c000e10d7db8`.
+The exact **postid-143174**, unique **h1.entry-title**, unique
+**time.entry-date.published** and quotation paragraph in **.entry-content**
+bind the report. Visible **August 20, 2026** and both Article JSON-LD
+publication instants agree: **09:00 UTC / 05:00 EDT**.
+Modification **13:48:50 UTC** is separate. Reproduce with
+**`--source barrett-prospect --offline --until 2026-10-30`** and the
+actual cached report; no parser or alias change is required.
+
+The immediately following reporter blockquote expressly identifies
+Barrett's data-center ad and links individual X repost
+**2090108651650605149**, dated August 19. Retain the actual query string;
+this is a reporter repost, not verified first release, campaign upload
+or paid delivery. The opening paragraph separately links reporter Bluesky
+post **3mth4tacb2224**. No X, Bluesky, media, caption or API request was
+made. The later **K3gfFTSTIas** original is expressly **Lawrence's**
+separate ad; interview clip **2090105467993227572** and the article's
+generated narration audio are excluded.
+
+Exact saved **H2MI07123 / C00793976**, **BARRETT, THOMAS MORE**, REP,
+House, MI-07, 2026, the existing same-ID **Tom Barrett** alias and
+independently cached official principal **TOM BARRETT FOR CONGRESS**,
+P/H/REP, agree. General phase follows the explicit incumbent-versus-
+Democratic-primary-winner contest, not the separate Lawrence ad's
+first-general-ad label or August alone. Campaign attribution is reported;
+the creative's payer is uninspected. Reporter commentary, caption,
+vote-date reporting and ordinary interview quotations are not ad text.
+The ad's assertions are recorded as speech, not independently verified facts.
+
+Credit **David Dayen / The American Prospect** and retain the report link.
+The actual publisher footer reserves rights; reuse here is limited to the
+selected unmodified 44-token speech excerpts, not wholesale reporting,
+photographs, audio or media. No blanket license or publication permission
+is asserted. Both editions remain unpublished.
+
+Final locally verified snapshot:
+`dfb5bd52eee3399199d9434d75b6879ee3cb16b5b8b6efd8c423df73710717a4`.
+It contains **1,900 acquired / 1,861 English** records: **1,226 D / 596 R**,
+31 other and eight unresolved. Exact English messages are **1,204 D /
+559 R**. English House coverage is **698 D / 218 R**: **222 D / 217 R**
+non-Snap and **476 D / one R** Snap. Near non-Snap parity does not establish
+matched-race coverage or nationally representative party advertising prevalence.
+
+All **227 affected Python tests**, **17 frontend tests**, **seven final
+production browser cases**, lint, formatting, typecheck and builds pass.
+Independent auditing reconciles **twenty metric groups / ten chart rows**.
+The immutable pre-edit baseline at pushed **2a11412** preserves every
+**1,899 old acquired / 1,860 old analyzed object**, all **53 preceding
+release reviews and their raw suffix bytes**, seventeen protected files,
+every alias and the old native backlog. Complete JSON/gzip/CSV and all
+**1,900 Parquet rows** reconcile. All eleven actual PNGs were visually
+inspected and match production copies. An isolated socket-forbidden
+**one-response 547-to-548 written replay** reproduces all objects and source
+states. Additional literal paragraph, publication instant, reporter-blockquote,
+exact candidate/principal and raw-review preservation assertions pass.
+The new message remains semantically unreviewed; no neutral or strategy
+label is inferred from its missing review.
+
+## Broader House discovery: Missouri, Virginia, Nebraska and California
+
+Wagner's September 24 LGBTQ Nation report supplies **eighteen literal
+tokens**, also repeated by The Pink Times, but the individual-original
+association remains unresolved. The first embed **T3fUbrc8yRY** follows
+the introduction to **Wellman's September 19 response**, not a uniquely
+identified Wagner-ad wrapper. The second, **kpzXb6s_BGg**, follows
+KSDK interview discussion. Neither is admitted or definitively reassigned.
+The actual October 30 STLPR headline is **As 2026 campaign nears end,
+national observers taking notice of Wagner-Wellman race**; its
+**article.ArtP-mainContent** contains race reporting and podcast/interview
+remarks, not recovered ad speech. Empty guessed article selectors were
+not treated as an empty article.
+
+Wittman's actual homepage, site-map, facts page, **This Community Built Me**
+and **Hearing from Rob** provide biography, issue/response copy and links,
+not a marked ad script or individual media original. Campaign email
+**2446484**, dated October 6 and announcing **Neonatal**, is release
+commentary with explicitly removed links. Those links were not reconstructed;
+its prose and legal-case quotations were not counted as ad words.
+
+Harding's actual campaign news page exposes the August 21 **Outnumbered**
+first-TV-ad card, but the linked campaign page contains no recovered
+script or individual media. KETV's Buffett-ad dispute report, published
+**September 10 / 03:22 UTC**, quotes Harding's **statement to KETV**,
+not a verified ad transcript,
+and exposes no matching individual original. Desmond's actual ArcaMax
+report provides a three-token NRCC-mailer phrase and separate interview
+responses; its longer ad quotation is from **Democratic House Majority
+PAC**, not Republican Desmond. None of these discovery pages adds an ad.
+Harding's actually linked **Press Resources** page offers campaign/raw
+advertising **B-roll**, photographs and stills, not a recovered finished-ad
+script. Its Vimeo links were not requested; that provider remains paused.
+The actual exposed Omaha World-Herald first-ad link returned **HTTP 429**.
+Omaha is now paused, including subdomains, with no retry or alternate
+retrieval. Sixteen request-forbidden root/subdomain checks cover this
+new pause and the existing seven helper gates.
+The independently search-discovered October 22 **Religion News Service**
+report on religious AI-ad portrayals returned **HTTP 403**. That provider
+and its subdomains are now paused; no alternate route, syndicated copy,
+media request or ad admission follows the denial. Eighteen mocked
+root/subdomain checks enforce the nine helper gates without requests.
+Denied providers, source permissions, the final November 4 inclusive
+cutoff, old native backlog, concurrent claims and publication hold remain
+unchanged; discovery is continuing, not nationally exhausted.
+
 ## Herrera Texas House quoted-ad expansion
 
 One additional Republican House record, **herrera-jezebel-18261610-0**,
@@ -80,11 +193,29 @@ An isolated socket-forbidden **one-response 546-to-547 written replay**
 reproduces all objects and source states. Additional actual paragraph,
 byline, JSON-LD, reporter-video and old-backlog assertions pass.
 
+Herrera was pushed as **2a11412478b704c46238197ea8480a8e05aab689**,
+Hans author/committer/login, without attribution or session trailers.
+Exact-commit CI **41222036696** and all thirteen job steps independently
+succeeded. The later concurrent claims commits remain preserved.
+
 Fresh Minnesota discovery reached MinnPost's October 28 report and KSTP's
 October 7 report. Only KSTP supplies Republican ad quotations: **eighteen
 tokens**, but without a matching individual original, so unadmitted.
-The actually linked Finstad news archive returns HTTP 200 and exposes a
-**Direction** ad release; its date and actual copy still require inspection.
+The actually linked Finstad **Direction** release returns HTTP 200 /
+SHA-256
+`49f33780a9d4cb55383a0746e9aab9c111c6fdc4b740420eac2bf0cb8608b401`.
+Visible **October 19, 2022** agrees with publication
+**2022-10-19T13:18:00+00:00**; modification
+**2026-03-17T13:19:12+00:00** does not make its marked script or
+**28odirfcWXk** original a 2026 ad. It is out of scope.
+The independently surfaced Bring Me The News report returns **HTTP 403**;
+the provider is paused, with no retry, mirror or acquisition. Fourteen
+mocked root/subdomain checks enforce this and the existing provider holds
+without requests. FOX9's actual report returns HTTP 200 / SHA-256
+`04790d4227d5bf7499f61efc66bc7cc7cb3c35c9a228be695d2b69112ceacf60`.
+Its one Republican ad quotation has **ten tokens** and only a station
+YouTube channel/news presentation, not an individual original. Separate
+campaign responses are not added to that quotation; it stays unadmitted.
 The independently discovered current Montana Free Press Downing profile
 links the actual campaign homepage, which returns HTTP 200 but supplies
 biography, policy and photographs, not dated ad speech. These are discovery

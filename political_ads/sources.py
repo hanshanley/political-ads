@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "barrett-prospect",
+        "https://prospect.org",
+        "Tom Barrett campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="MI-07",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "herrera-jezebel",
         "https://www.jezebel.com",
         "Brandon Herrera campaign (publisher-reported; payer unverified)",
