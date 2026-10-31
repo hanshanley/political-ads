@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "herrera-jezebel",
+        "https://www.jezebel.com",
+        "Brandon Herrera campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="TX-23",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "perry-capitalstar",
         "https://penncapital-star.com",
         "Patriots for Perry (publisher-reported; payer unverified)",
@@ -1175,6 +1185,14 @@ def media_links(content: str) -> list[str]:
             parsed.scheme == "https"
             and parsed.hostname in {"x.com", "www.x.com", "twitter.com", "www.twitter.com"}
             and re.fullmatch(r"/[A-Za-z0-9_]{1,15}/status/[0-9]{15,20}", parsed.path)
+        ):
+            urls.append(value)
+        elif (
+            parsed.scheme == "https"
+            and parsed.netloc == "bsky.app"
+            and re.fullmatch(r"/profile/did:plc:[a-z2-7]{24}/post/[a-z2-7]{13}", parsed.path)
+            and parsed.query in {"", "ref_src=embed"}
+            and not parsed.fragment
         ):
             urls.append(value)
         elif (

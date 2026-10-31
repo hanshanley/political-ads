@@ -95,6 +95,34 @@ def test_public_media_links_reject_profiles_feeds_and_malformed_status_associati
     )
 
 
+@pytest.mark.parametrize("suffix", ["", "?ref_src=embed"])
+def test_public_media_links_recognize_individual_bluesky_did_posts(suffix):
+    post = f"https://bsky.app/profile/did:plc:mmnyofxqepaufkj6ggpjg3uz/post/3mz434vd3hk2l{suffix}"
+    assert media_links(f'<a href="{post}">Reporter repost of the ad</a>') == [post]
+
+
+def test_bluesky_post_recognition_rejects_unbound_routes_hosts_and_queries():
+    post = "https://bsky.app/profile/did:plc:mmnyofxqepaufkj6ggpjg3uz/post/3mz434vd3hk2l"
+    rejected = [
+        post.replace("https:", "http:"),
+        post.replace("https:", ""),
+        post.replace("bsky.app", "bsky.app.evil.example"),
+        post.replace("bsky.app", "user@bsky.app"),
+        post.replace("bsky.app", "bsky.app:443"),
+        post.replace("/post/3mz434vd3hk2l", ""),
+        post.replace("3mz434vd3hk2l", "not-a-post"),
+        post.replace("did:plc:", "did%3Aplc%3A"),
+        post + "/extra",
+        post + "#other",
+        post + "?ref_src=embed&ref_src=embed",
+        post + "?ref_src=",
+        post + "?ref_src=other",
+        post + "?feed=1",
+        "https://video.bsky.app/watch/unknown/playlist.m3u8",
+    ]
+    assert media_links("".join(f'<a href="{url}">Not a bound post</a>' for url in rejected)) == []
+
+
 def test_public_media_links_recognize_only_exact_public_bigal_player_paths():
     player = "https://bigal.media/mediaplayer.php?q=EwHIaRA%3De7eb5c0e6adf5743506e9298c570aa2e"
     rejected = [

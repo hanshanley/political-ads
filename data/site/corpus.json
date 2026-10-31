@@ -47166,6 +47166,82 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Actual cached HTML body postid-18261610 and unique article post_id/id/url/title, h1.title, .bylinepublished and div.copy.entry.manual-ads bind this individual report. The visible October30/1:37pm date parses with the actual fixed byline prefix; Article/WebPage JSON-LD datePublished 2026-10-30T17:37:27+00:00 independently agrees. The uniquely matched paragraph expressly attributes this literal 35-token passage to Herrera in the television spot; preserve its terminal comma and curly apostrophe. The first embedded reporter post, DID did:plc:mmnyofxqepaufkj6ggpjg3uz / 3mz434vd3hk2l, is independently verified as a real ad-video repost by its actual cached HTTP200 body SHA256 4de0d6111d62a3d2e8dc2e739b27dd81355015d189935cc99daea381580f0ac0: og:url, og:video and VideoObject contentUrl bind CID bafkreibe2pyrnxs5l4kpnmhek6cxiwsknsfkokmv6ydacfzsaehd67lada, with actual reporter-post timestamp 2026-10-30T15:15:55.474Z. This is a reporter repost, not independently verified first release, candidate upload or paid delivery. The caption is not acquired speech. The second American Bridge post 3myv2cbnqem2h is separate opposition material and is not this ad. Exact saved H4TX23120/C00844324 identifies HERRERA, BRANDON, REP, House, TX-23, 2026; independently cached official principal BRANDON HERRERA FOR CONGRESS is P/H/REP, but neither principal nor the homepage joint-fundraising entity is an inspected ad payer. General phase follows the explicit last-days midterm/opposing-party contest, not October alone. Reporter commentary, polling, rival/candidate history, opposition quotations and the separate AlterNet passage are excluded. The old native original 9bd70329b03ece7b remains undated and unchanged. No HLS/thumbnail/original/caption/API request, alias change or new semantic judgment.",
+      "candidate_mentions": [],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "herrera-jezebel-18261610-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://bsky.app/profile/did:plc:mmnyofxqepaufkj6ggpjg3uz/post/3mz434vd3hk2l?ref_src=embed"
+      ],
+      "message_id": "7ba32750efa14677647b256b15f54e1a68981c1c8d782903d1825ac3e5de2946",
+      "observed": "2026-10-31",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-10-30",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "TX-23",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H4TX23120"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Actual cached HTML body postid-18261610 and unique article post_id/id/url/title, h1.title, .bylinepublished and div.copy.entry.manual-ads bind this individual report. The visible October30/1:37pm date parses with the actual fixed byline prefix; Article/WebPage JSON-LD datePublished 2026-10-30T17:37:27+00:00 independently agrees. The uniquely matched paragraph expressly attributes this literal 35-token passage to Herrera in the television spot; preserve its terminal comma and curly apostrophe. The first embedded reporter post, DID did:plc:mmnyofxqepaufkj6ggpjg3uz / 3mz434vd3hk2l, is independently verified as a real ad-video repost by its actual cached HTTP200 body SHA256 4de0d6111d62a3d2e8dc2e739b27dd81355015d189935cc99daea381580f0ac0: og:url, og:video and VideoObject contentUrl bind CID bafkreibe2pyrnxs5l4kpnmhek6cxiwsknsfkokmv6ydacfzsaehd67lada, with actual reporter-post timestamp 2026-10-30T15:15:55.474Z. This is a reporter repost, not independently verified first release, candidate upload or paid delivery. The caption is not acquired speech. The second American Bridge post 3myv2cbnqem2h is separate opposition material and is not this ad. Exact saved H4TX23120/C00844324 identifies HERRERA, BRANDON, REP, House, TX-23, 2026; independently cached official principal BRANDON HERRERA FOR CONGRESS is P/H/REP, but neither principal nor the homepage joint-fundraising entity is an inspected ad payer. General phase follows the explicit last-days midterm/opposing-party contest, not October alone. Reporter commentary, polling, rival/candidate history, opposition quotations and the separate AlterNet passage are excluded. The old native original 9bd70329b03ece7b remains undated and unchanged. No HLS/thumbnail/original/caption/API request, alias change or new semantic judgment.",
+            "candidate_id": "H4TX23120",
+            "completeness": "partial_quotation",
+            "content_sha256": "713b5947c83b95a881aed2013c1f13f614581629466853977a08a64f18c4dbbd",
+            "format": "html",
+            "heading_selector": "h1.title",
+            "media_url": "https://bsky.app/profile/did:plc:mmnyofxqepaufkj6ggpjg3uz/post/3mz434vd3hk2l?ref_src=embed",
+            "passages": [
+              "When Big Bend faced unnecessary construction that didn’t make the border any more secure, I brought the fight directly to the Department of Homeland Security in Washington, D.C., and pressured them to stop the project,"
+            ],
+            "phase": "general",
+            "publication_date_format": "By Nathalie Baptiste | %B %d, %Y | %I:%M%p",
+            "publication_selector": ".bylinepublished",
+            "published": "2026-10-30",
+            "publisher_credit": "Nathalie Baptiste, Jezebel / Paste Media Group.",
+            "record_id": "18261610",
+            "release_title": "MAGA Candidate Trashes Trump’s Big Beautiful Border Wall in Last-Minute, Desperate Ad",
+            "required_context": [
+              "Brandon Herrera, the Republican running in Texas’ 23rd district",
+              "His new ad comes out against Trump’s proposal to bulldoze through Big Bend",
+              "Herrera says in the television spot.",
+              "polling shows Herrera essentially tied with his Democratic opponent"
+            ],
+            "retrieval_url": "https://www.jezebel.com/brandon-herrera-last-minute-ad-against-trumps-border-wall-texas",
+            "reuse_basis": "Retain only this unmodified 35-token candidate-speech excerpt for noncommercial comparative research with author/publisher/source credit, not the article, reporting, stock photograph, captions or reposted media. The actual linked copyright notice, https://www.jezebel.com/copyright, HTTP200 SHA256 78992ff33cd84e5cdf202a2c4378ef32298a028f2942d63af77834c1d59e8126, reserves publisher rights; no Creative Commons license, blanket permission, catalog consent or host-publication authorization is asserted. No media is redistributed.",
+            "source": "herrera-jezebel",
+            "source_url": "https://www.jezebel.com/brandon-herrera-last-minute-ad-against-trumps-border-wall-texas"
+          },
+          "text": "When Big Bend faced unnecessary construction that didn’t make the border any more secure, I brought the fight directly to the Department of Homeland Security in Washington, D.C., and pressured them to stop the project,"
+        }
+      ],
+      "source": "herrera-jezebel",
+      "source_hash": "713b5947c83b95a881aed2013c1f13f614581629466853977a08a64f18c4dbbd",
+      "source_record_id": "18261610",
+      "source_url": "https://www.jezebel.com/brandon-herrera-last-minute-ad-against-trumps-border-wall-texas",
+      "sponsor": "Brandon Herrera campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "TX",
+      "text": "When Big Bend faced unnecessary construction that didn’t make the border any more secure, I brought the fight directly to the Department of Homeland Security in Washington, D.C., and pressured them to stop the project,",
+      "title": "MAGA Candidate Trashes Trump’s Big Beautiful Border Wall in Last-Minute, Desperate Ad"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "The Brown and White's actual October 30 local / October 31 UTC report and exposed individual WordPress post 138743 directly link the October 18 campaign-hosted letter and individual advertisement. The actual PDF's page-one link annotation independently identifies the same original, 77e3ee73-8536-4eb5-8076-859279aa3ee4. Only three expressly attributed ad quotations are retained, in source order; the lawyer's allegations of falsity, legal analysis, facts, demands, campaign press statements and later repeated or bracketed paraphrases are excluded. PDF extraction preserves the source's separate curly-apostrophe token in employees ’ insurance, without silently repairing typography or adding words. The letter calls the ad Criminal Offense; the reporter reproduces a campaign statement calling it Crooked Liberal. Preserve this title discrepancy rather than invent two advertisements or silently reconcile the names. No individual viewer, provider API, account, catalog or media was requested. Exact saved FEC H8PA15195 / C00846501 identifies MACKENZIE, RYAN EDWARD, REP, House, PA-07. No alias or fuzzy match is added. The reported joint Mackenzie campaign / NRCC advertiser is Republican-aligned despite the PDF being hosted by the Democratic target's campaign. Sole legal payer, closing disclaimer and candidate approval are not independently inspected. General-election context identifies incumbent Mackenzie and Democratic opponent Brooks and the upcoming midterm election. October 30 is the publisher report date; October 18 is the letter date and the response's October 19 last-modified header is a separate observation, not an inferred release or verified paid-delivery start. Main rendered-content hash/title/date, explicit publisher links, PDF byte and extracted-page hashes, ordered page selection, exact PDF original association, federal identity and literal quotations are bound. pypdf 5.9.0 is pinned for the reviewed extraction. This is an explicitly partial, semantically unreviewed acquisition, not an adjudication of the quoted claims.",
       "candidate_mentions": [
         {
@@ -47766,6 +47842,22 @@
       "source": "hathaway-globe",
       "state": "partial",
       "url": "https://newjerseyglobe.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "herrera-jezebel",
+      "state": "partial",
+      "url": "https://www.jezebel.com"
     },
     {
       "ads_with_text": 4,

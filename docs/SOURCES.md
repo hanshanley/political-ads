@@ -10,6 +10,87 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Herrera Texas House quoted-ad expansion
+
+One additional Republican House record, **herrera-jezebel-18261610-0**,
+retains one explicitly attributed **35-token** Brandon Herrera television-ad
+quotation from Nathalie Baptiste's October 30 Jezebel report. It remains
+**partial and semantically unreviewed**. Reporting, captions, photographs,
+the separate American Bridge post and the earlier AlterNet passage are not
+added to the ad text. The literal curly apostrophe and terminal comma remain.
+
+Actual full HTML SHA-256:
+`713b5947c83b95a881aed2013c1f13f614581629466853977a08a64f18c4dbbd`.
+The exact headline, **postid-18261610**, unique **h1.title**,
+**.bylinepublished**, article attributes and unique quotation paragraph in
+**div.copy.entry.manual-ads** are independently checked. Visible
+**October 30, 2026 / 1:37pm** agrees with Article/WebPage publication
+**2026-10-30T17:37:27+00:00**. The existing explicitly configured date
+format handles the actual byline; no date-parser implementation changes.
+Reproduce with **`--source herrera-jezebel --offline --until 2026-10-30`**
+and the actual cached report. No media, caption or API request is required.
+
+The article's two exact links to reporter post **3mz434vd3hk2l** bind the
+quotation to that individual video, not a profile or channel. Actual cached
+post SHA-256:
+`4de0d6111d62a3d2e8dc2e739b27dd81355015d189935cc99daea381580f0ac0`.
+Its canonical URL, video metadata, VideoObject URL, content CID and
+**2026-10-30T15:15:55.474Z** timestamp independently agree.
+Narrow individual **HTTPS / bsky.app / DID-post** recognition accepts
+only no query or literal **ref_src=embed**, and no fragment. Profiles,
+feeds, handles, credentials, ports, deceptive hosts, encoded or malformed
+paths and other queries stay excluded. Two positive regressions failed
+before the fix. This is association recognition, not a new Bluesky crawler
+or HLS/media downloader.
+
+Exact saved **H4TX23120 / C00844324**, **HERRERA, BRANDON**, REP,
+House, TX-23, 2026, and independently cached official principal
+**BRANDON HERRERA FOR CONGRESS**, P/H/REP, agree. General phase follows
+the explicit last-days midterm/opposing-party contest, not October alone.
+Campaign attribution is publisher-reported; the ad payer is uninspected.
+The campaign's joint-fundraising footer is not substituted for that payer.
+The earlier native original's actual **recovered_text** is family,
+business and affordability material, not this Big Bend passage. Its ASR/OCR
+artifacts and undated state remain unchanged; this report does not date it.
+
+Credit **Nathalie Baptiste / Jezebel** and retain the original report link.
+The actual publisher copyright notice reserves rights; no blanket license,
+catalog consent or host-publication permission is asserted. Reuse is limited
+to the selected unmodified candidate-speech excerpt, not the reporting or
+media. Both editions remain unpublished.
+
+Final locally verified snapshot:
+`0e546467de0a26aff0397c609424d1a1cf1334ad9321108b4b65546ab0b62f36`.
+It contains **1,899 acquired / 1,860 English** records: **1,226 D / 595 R**,
+31 other and eight unresolved. Exact English messages are **1,204 D /
+558 R**. English House coverage is **698 D / 217 R**: **222 D / 216 R**
+non-Snap and **476 D / one R** Snap, unchanged. These remain collection
+counts, not nationally representative party advertising prevalence.
+
+All **195 primary-path and thirteen additional media-consumer Python tests**,
+**17 frontend tests**, **seven final production browser cases**, lint,
+formatting, typecheck and builds pass. Independent auditing reconciles
+**twenty metric groups / ten chart rows**. The immutable pre-edit baseline
+at pushed **3b6e13e** preserves every **1,898 old acquired / 1,859 old
+analyzed object**, all **52 prior release reviews and their raw suffix
+bytes**, seventeen protected files, every alias and the complete old native
+backlog. Complete JSON/gzip/CSV and all **1,899 Parquet rows** reconcile.
+All eleven actual PNGs were visually inspected and match production copies.
+An isolated socket-forbidden **one-response 546-to-547 written replay**
+reproduces all objects and source states. Additional actual paragraph,
+byline, JSON-LD, reporter-video and old-backlog assertions pass.
+
+Fresh Minnesota discovery reached MinnPost's October 28 report and KSTP's
+October 7 report. Only KSTP supplies Republican ad quotations: **eighteen
+tokens**, but without a matching individual original, so unadmitted.
+The actually linked Finstad news archive returns HTTP 200 and exposes a
+**Direction** ad release; its date and actual copy still require inspection.
+The independently discovered current Montana Free Press Downing profile
+links the actual campaign homepage, which returns HTTP 200 but supplies
+biography, policy and photographs, not dated ad speech. These are discovery
+findings, not acquired records. Broader acquisition and the twenty-minute
+continuation schedule remain active.
+
 ## Perry Pennsylvania House quoted-ad expansion
 
 One additional Republican House record, **perry-capitalstar-70025-0**,
@@ -103,6 +184,9 @@ production assets pass all seven browser cases and strict full preservation,
 export/Parquet/PNG parity and socket-forbidden replay. The original Perry
 push **2b8877** passed exact CI **41219701665**, with every step independently
 verified; the extra metadata changes the snapshot, not counts or labels.
+The provenance-only push **3b6e13e** also passed exact CI **41220862458**;
+the original watcher was read and the exact SHA and all thirteen steps
+were independently verified successful.
 
 Broader discovery also reached the actual October 23 Washington Examiner
 Chamber-of-Commerce eight-House-member ad report, HTTP 200 / SHA-256
@@ -157,7 +241,8 @@ association, content CID
 and reporter-post timestamp **2026-10-30T15:15:55.474Z**. The visible shell
 alone had obscured that association. Neither caption nor the separate
 American Bridge embed is Herrera ad speech. No HLS, thumbnail, original
-media or API was requested, and no new Herrera record is admitted yet.
+media or API was requested. This initially unadmitted lead is now recovered
+through the individually reviewed source documented above.
 The actual linked copyright notice returned HTTP 200 / SHA-256
 `78992ff33cd84e5cdf202a2c4378ef32298a028f2942d63af77834c1d59e8126`;
 publisher rights remain reserved, not a blanket license or catalog consent.
