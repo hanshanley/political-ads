@@ -79454,5 +79454,2237 @@
     "text_hash": "7440d483e532ce0950868b2a84c820ebb094ba6cded1f69494294dfbc630cd56",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15995-0",
+    "alignment": "R",
+    "block_id": "nrsc-15995-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15995-0-claims-001-001",
+    "claim_text": "Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 106,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-roy-coopers-soft-on-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 34,
+        "anchor_quote": "Republicans",
+        "anchor_start": 23,
+        "anchor_unit_id": 1,
+        "entity_id": "party:R",
+        "kind": "collective",
+        "name": "Republicans",
+        "party_basis": "explicit_party_text",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Roy Cooper wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Roy Cooper, and stop the anti-police agenda.”",
+    "text_hash": "825f95fa4bf271a31c5bcf94f5415882d5da1966f922a9bdbd9476f73e2eae9e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15995-0",
+    "alignment": "R",
+    "block_id": "nrsc-15995-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15995-0-claims-001-002",
+    "claim_text": "Roy Cooper wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 321,
+        "kind": "publisher_transcript",
+        "start": 107,
+        "text": "“But Roy Cooper wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-roy-coopers-soft-on-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 122,
+        "anchor_quote": "Roy Cooper",
+        "anchor_start": 112,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6NC00407",
+        "kind": "person",
+        "name": "Roy Cooper",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 176,
+        "anchor_quote": "Joe Biden",
+        "anchor_start": 167,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Joe Biden",
+        "kind": "person",
+        "name": "Joe Biden",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 194,
+        "anchor_quote": "Chuck Schumer",
+        "anchor_start": 181,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Chuck Schumer",
+        "kind": "person",
+        "name": "Chuck Schumer",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Roy Cooper wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Roy Cooper, and stop the anti-police agenda.”",
+    "text_hash": "825f95fa4bf271a31c5bcf94f5415882d5da1966f922a9bdbd9476f73e2eae9e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15995-0",
+    "alignment": "R",
+    "block_id": "nrsc-15995-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15995-0-claims-001-003",
+    "claim_text": "America can’t afford another Democrat crime wave.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 425,
+        "kind": "publisher_transcript",
+        "start": 322,
+        "text": "“America can’t afford another Democrat crime wave. Reject Roy Cooper, and stop the anti-police agenda.”",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-roy-coopers-soft-on-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 360,
+        "anchor_quote": "Democrat",
+        "anchor_start": 352,
+        "anchor_unit_id": 3,
+        "entity_id": "party:D",
+        "kind": "collective",
+        "name": "Democrat",
+        "party_basis": "explicit_party_text",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Roy Cooper wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Roy Cooper, and stop the anti-police agenda.”",
+    "text_hash": "825f95fa4bf271a31c5bcf94f5415882d5da1966f922a9bdbd9476f73e2eae9e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15995-0",
+    "alignment": "R",
+    "block_id": "nrsc-15995-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15995-0-claims-001-004",
+    "claim_text": "Reject Roy Cooper, and stop the anti-police agenda.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 425,
+        "kind": "publisher_transcript",
+        "start": 322,
+        "text": "“America can’t afford another Democrat crime wave. Reject Roy Cooper, and stop the anti-police agenda.”",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-roy-coopers-soft-on-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 390,
+        "anchor_quote": "Roy Cooper",
+        "anchor_start": 380,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6NC00407",
+        "kind": "person",
+        "name": "Roy Cooper",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 423,
+        "anchor_quote": "anti-police agenda",
+        "anchor_start": 405,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "anti-police agenda",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Roy Cooper wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Roy Cooper, and stop the anti-police agenda.”",
+    "text_hash": "825f95fa4bf271a31c5bcf94f5415882d5da1966f922a9bdbd9476f73e2eae9e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15997-0",
+    "alignment": "R",
+    "block_id": "nrsc-15997-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15997-0-claims-001-001",
+    "claim_text": "Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 106,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-mary-peltolas-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 34,
+        "anchor_quote": "Republicans",
+        "anchor_start": 23,
+        "anchor_unit_id": 1,
+        "entity_id": "party:R",
+        "kind": "collective",
+        "name": "Republicans",
+        "party_basis": "explicit_party_text",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Mary Peltola wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Mary Peltola, and stop the anti-police agenda.”",
+    "text_hash": "1e5f0713627e8fb1413a9e156e0d0995e7f118b08e70228dbd728e369e59ea0b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15997-0",
+    "alignment": "R",
+    "block_id": "nrsc-15997-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15997-0-claims-001-002",
+    "claim_text": "Mary Peltola wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 323,
+        "kind": "publisher_transcript",
+        "start": 107,
+        "text": "“But Mary Peltola wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-mary-peltolas-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 124,
+        "anchor_quote": "Mary Peltola",
+        "anchor_start": 112,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "Mary Peltola",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 178,
+        "anchor_quote": "Joe Biden",
+        "anchor_start": 169,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Joe Biden",
+        "kind": "person",
+        "name": "Joe Biden",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 196,
+        "anchor_quote": "Chuck Schumer",
+        "anchor_start": 183,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Chuck Schumer",
+        "kind": "person",
+        "name": "Chuck Schumer",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Mary Peltola wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Mary Peltola, and stop the anti-police agenda.”",
+    "text_hash": "1e5f0713627e8fb1413a9e156e0d0995e7f118b08e70228dbd728e369e59ea0b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15997-0",
+    "alignment": "R",
+    "block_id": "nrsc-15997-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15997-0-claims-001-003",
+    "claim_text": "Joe Biden and Chuck Schumer’s pro-crime agenda vilifies law enforcement.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 323,
+        "kind": "publisher_transcript",
+        "start": 107,
+        "text": "“But Mary Peltola wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-mary-peltolas-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 178,
+        "anchor_quote": "Joe Biden",
+        "anchor_start": 169,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Joe Biden",
+        "kind": "person",
+        "name": "Joe Biden",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 196,
+        "anchor_quote": "Chuck Schumer",
+        "anchor_start": 183,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Chuck Schumer",
+        "kind": "person",
+        "name": "Chuck Schumer",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Mary Peltola wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Mary Peltola, and stop the anti-police agenda.”",
+    "text_hash": "1e5f0713627e8fb1413a9e156e0d0995e7f118b08e70228dbd728e369e59ea0b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15997-0",
+    "alignment": "R",
+    "block_id": "nrsc-15997-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15997-0-claims-001-004",
+    "claim_text": "Joe Biden and Chuck Schumer’s pro-crime agenda denies law enforcement crucial resources.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 323,
+        "kind": "publisher_transcript",
+        "start": 107,
+        "text": "“But Mary Peltola wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-mary-peltolas-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 178,
+        "anchor_quote": "Joe Biden",
+        "anchor_start": 169,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Joe Biden",
+        "kind": "person",
+        "name": "Joe Biden",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 196,
+        "anchor_quote": "Chuck Schumer",
+        "anchor_start": 183,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Chuck Schumer",
+        "kind": "person",
+        "name": "Chuck Schumer",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Mary Peltola wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Mary Peltola, and stop the anti-police agenda.”",
+    "text_hash": "1e5f0713627e8fb1413a9e156e0d0995e7f118b08e70228dbd728e369e59ea0b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15997-0",
+    "alignment": "R",
+    "block_id": "nrsc-15997-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15997-0-claims-001-005",
+    "claim_text": "Joe Biden and Chuck Schumer’s pro-crime agenda prioritizes dangerous illegal immigrants.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 323,
+        "kind": "publisher_transcript",
+        "start": 107,
+        "text": "“But Mary Peltola wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-mary-peltolas-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 178,
+        "anchor_quote": "Joe Biden",
+        "anchor_start": 169,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Joe Biden",
+        "kind": "person",
+        "name": "Joe Biden",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 196,
+        "anchor_quote": "Chuck Schumer",
+        "anchor_start": 183,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Chuck Schumer",
+        "kind": "person",
+        "name": "Chuck Schumer",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Mary Peltola wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Mary Peltola, and stop the anti-police agenda.”",
+    "text_hash": "1e5f0713627e8fb1413a9e156e0d0995e7f118b08e70228dbd728e369e59ea0b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15997-0",
+    "alignment": "R",
+    "block_id": "nrsc-15997-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15997-0-claims-001-006",
+    "claim_text": "America can’t afford another Democrat crime wave.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 429,
+        "kind": "publisher_transcript",
+        "start": 324,
+        "text": "“America can’t afford another Democrat crime wave. Reject Mary Peltola, and stop the anti-police agenda.”",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-mary-peltolas-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 362,
+        "anchor_quote": "Democrat",
+        "anchor_start": 354,
+        "anchor_unit_id": 3,
+        "entity_id": "party:D",
+        "kind": "collective",
+        "name": "Democrat",
+        "party_basis": "explicit_party_text",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Mary Peltola wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Mary Peltola, and stop the anti-police agenda.”",
+    "text_hash": "1e5f0713627e8fb1413a9e156e0d0995e7f118b08e70228dbd728e369e59ea0b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15997-0",
+    "alignment": "R",
+    "block_id": "nrsc-15997-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15997-0-claims-001-007",
+    "claim_text": "Reject Mary Peltola, and stop the anti-police agenda.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 429,
+        "kind": "publisher_transcript",
+        "start": 324,
+        "text": "“America can’t afford another Democrat crime wave. Reject Mary Peltola, and stop the anti-police agenda.”",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-mary-peltolas-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 394,
+        "anchor_quote": "Mary Peltola",
+        "anchor_start": 382,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "Mary Peltola",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Mary Peltola wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Mary Peltola, and stop the anti-police agenda.”",
+    "text_hash": "1e5f0713627e8fb1413a9e156e0d0995e7f118b08e70228dbd728e369e59ea0b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15999-0",
+    "alignment": "R",
+    "block_id": "nrsc-15999-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15999-0-claims-001-001",
+    "claim_text": "Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 106,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-sherrod-browns-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 34,
+        "anchor_quote": "Republicans",
+        "anchor_start": 23,
+        "anchor_unit_id": 1,
+        "entity_id": "party:R",
+        "kind": "collective",
+        "name": "Republicans",
+        "party_basis": "explicit_party_text",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Sherrod Brown wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Sherrod Brown, and stop the anti-police agenda.”",
+    "text_hash": "37e28fff6578459276ef6523829de972bd49c45b7aee7bb625cd73c7cc3426b5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15999-0",
+    "alignment": "R",
+    "block_id": "nrsc-15999-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15999-0-claims-001-002",
+    "claim_text": "Sherrod Brown wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 324,
+        "kind": "publisher_transcript",
+        "start": 107,
+        "text": "“But Sherrod Brown wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-sherrod-browns-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 125,
+        "anchor_quote": "Sherrod Brown",
+        "anchor_start": 112,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "Sherrod Brown",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 179,
+        "anchor_quote": "Joe Biden",
+        "anchor_start": 170,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Joe Biden",
+        "kind": "person",
+        "name": "Joe Biden",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 197,
+        "anchor_quote": "Chuck Schumer",
+        "anchor_start": 184,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Chuck Schumer",
+        "kind": "person",
+        "name": "Chuck Schumer",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Sherrod Brown wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Sherrod Brown, and stop the anti-police agenda.”",
+    "text_hash": "37e28fff6578459276ef6523829de972bd49c45b7aee7bb625cd73c7cc3426b5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15999-0",
+    "alignment": "R",
+    "block_id": "nrsc-15999-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15999-0-claims-001-003",
+    "claim_text": "America can’t afford another Democrat crime wave.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 431,
+        "kind": "publisher_transcript",
+        "start": 325,
+        "text": "“America can’t afford another Democrat crime wave. Reject Sherrod Brown, and stop the anti-police agenda.”",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-sherrod-browns-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 363,
+        "anchor_quote": "Democrat",
+        "anchor_start": 355,
+        "anchor_unit_id": 3,
+        "entity_id": "party:D",
+        "kind": "collective",
+        "name": "Democrat",
+        "party_basis": "explicit_party_text",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Sherrod Brown wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Sherrod Brown, and stop the anti-police agenda.”",
+    "text_hash": "37e28fff6578459276ef6523829de972bd49c45b7aee7bb625cd73c7cc3426b5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15999-0",
+    "alignment": "R",
+    "block_id": "nrsc-15999-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15999-0-claims-001-004",
+    "claim_text": "Reject Sherrod Brown, and stop the anti-police agenda.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 431,
+        "kind": "publisher_transcript",
+        "start": 325,
+        "text": "“America can’t afford another Democrat crime wave. Reject Sherrod Brown, and stop the anti-police agenda.”",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-sherrod-browns-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 396,
+        "anchor_quote": "Sherrod Brown",
+        "anchor_start": 383,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "Sherrod Brown",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 429,
+        "anchor_quote": "anti-police agenda",
+        "anchor_start": 411,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "anti-police agenda",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Sherrod Brown wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Sherrod Brown, and stop the anti-police agenda.”",
+    "text_hash": "37e28fff6578459276ef6523829de972bd49c45b7aee7bb625cd73c7cc3426b5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16001-0",
+    "alignment": "R",
+    "block_id": "nrsc-16001-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16001-0-claims-001-001",
+    "claim_text": "Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 106,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-jon-ossoffs-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 34,
+        "anchor_quote": "Republicans",
+        "anchor_start": 23,
+        "anchor_unit_id": 1,
+        "entity_id": "party:R",
+        "kind": "collective",
+        "name": "Republicans",
+        "party_basis": "explicit_party_text",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Jon Ossoff wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Jon Ossoff, and stop the anti-police agenda.”",
+    "text_hash": "bd6891c5557dfc367bfbc847c986fa4a92e2b3006451425e26feb3b3641ec747",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16001-0",
+    "alignment": "R",
+    "block_id": "nrsc-16001-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16001-0-claims-001-002",
+    "claim_text": "Jon Ossoff wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 321,
+        "kind": "publisher_transcript",
+        "start": 107,
+        "text": "“But Jon Ossoff wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-jon-ossoffs-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 122,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 112,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "Jon Ossoff",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 176,
+        "anchor_quote": "Joe Biden",
+        "anchor_start": 167,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Joe Biden",
+        "kind": "person",
+        "name": "Joe Biden",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 194,
+        "anchor_quote": "Chuck Schumer",
+        "anchor_start": 181,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Chuck Schumer",
+        "kind": "person",
+        "name": "Chuck Schumer",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Jon Ossoff wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Jon Ossoff, and stop the anti-police agenda.”",
+    "text_hash": "bd6891c5557dfc367bfbc847c986fa4a92e2b3006451425e26feb3b3641ec747",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16001-0",
+    "alignment": "R",
+    "block_id": "nrsc-16001-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16001-0-claims-001-003",
+    "claim_text": "The agenda vilifies law enforcement.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 321,
+        "kind": "publisher_transcript",
+        "start": 107,
+        "text": "“But Jon Ossoff wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-jon-ossoffs-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 213,
+        "anchor_quote": "agenda",
+        "anchor_start": 207,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "agenda",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 243,
+        "anchor_quote": "law enforcement",
+        "anchor_start": 228,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "law enforcement",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Jon Ossoff wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Jon Ossoff, and stop the anti-police agenda.”",
+    "text_hash": "bd6891c5557dfc367bfbc847c986fa4a92e2b3006451425e26feb3b3641ec747",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16001-0",
+    "alignment": "R",
+    "block_id": "nrsc-16001-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16001-0-claims-001-004",
+    "claim_text": "The agenda denies law enforcement crucial resources.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 321,
+        "kind": "publisher_transcript",
+        "start": 107,
+        "text": "“But Jon Ossoff wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-jon-ossoffs-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 213,
+        "anchor_quote": "agenda",
+        "anchor_start": 207,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "agenda",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 243,
+        "anchor_quote": "law enforcement",
+        "anchor_start": 228,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "law enforcement",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Jon Ossoff wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Jon Ossoff, and stop the anti-police agenda.”",
+    "text_hash": "bd6891c5557dfc367bfbc847c986fa4a92e2b3006451425e26feb3b3641ec747",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16001-0",
+    "alignment": "R",
+    "block_id": "nrsc-16001-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16001-0-claims-001-005",
+    "claim_text": "The agenda prioritizes dangerous illegal immigrants.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 321,
+        "kind": "publisher_transcript",
+        "start": 107,
+        "text": "“But Jon Ossoff wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-jon-ossoffs-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 213,
+        "anchor_quote": "agenda",
+        "anchor_start": 207,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "agenda",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 320,
+        "anchor_quote": "illegal immigrants",
+        "anchor_start": 302,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "illegal immigrants",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Jon Ossoff wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Jon Ossoff, and stop the anti-police agenda.”",
+    "text_hash": "bd6891c5557dfc367bfbc847c986fa4a92e2b3006451425e26feb3b3641ec747",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16001-0",
+    "alignment": "R",
+    "block_id": "nrsc-16001-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16001-0-claims-001-006",
+    "claim_text": "America can’t afford another Democrat crime wave.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 425,
+        "kind": "publisher_transcript",
+        "start": 322,
+        "text": "“America can’t afford another Democrat crime wave. Reject Jon Ossoff, and stop the anti-police agenda.”",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-jon-ossoffs-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 360,
+        "anchor_quote": "Democrat",
+        "anchor_start": 352,
+        "anchor_unit_id": 3,
+        "entity_id": "party:D",
+        "kind": "collective",
+        "name": "Democrat",
+        "party_basis": "explicit_party_text",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Jon Ossoff wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Jon Ossoff, and stop the anti-police agenda.”",
+    "text_hash": "bd6891c5557dfc367bfbc847c986fa4a92e2b3006451425e26feb3b3641ec747",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16001-0",
+    "alignment": "R",
+    "block_id": "nrsc-16001-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16001-0-claims-001-007",
+    "claim_text": "Reject Jon Ossoff, and stop the anti-police agenda.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 425,
+        "kind": "publisher_transcript",
+        "start": 322,
+        "text": "“America can’t afford another Democrat crime wave. Reject Jon Ossoff, and stop the anti-police agenda.”",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-launches-police-week-ad-condemning-jon-ossoffs-pro-crime-agenda-2026-05-13/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 390,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 380,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "Jon Ossoff",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 423,
+        "anchor_quote": "anti-police agenda",
+        "anchor_start": 405,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "anti-police agenda",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Thanks to Republicans, violent crime is at all-time lows, and American communities are safer.\n“But Jon Ossoff wants to turn back the clock and bring back Joe Biden and Chuck Schumer’s pro-crime agenda that vilifies law enforcement, denies them crucial resources, and prioritizes dangerous illegal immigrants.\n“America can’t afford another Democrat crime wave. Reject Jon Ossoff, and stop the anti-police agenda.”",
+    "text_hash": "bd6891c5557dfc367bfbc847c986fa4a92e2b3006451425e26feb3b3641ec747",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16172-0",
+    "alignment": "R",
+    "block_id": "nrsc-16172-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16172-0-claims-001-001",
+    "claim_text": "Josh Turek is the Democratic Party’s establishment candidate.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 100,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "News Broadcast: Iowa Senate candidate Josh Turek… is the Democratic Party’s establishment candidate.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-liberal-josh-turek-in-new-ad-2026-06-03/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 48,
+        "anchor_quote": "Josh Turek",
+        "anchor_start": 38,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6IA00298",
+        "kind": "person",
+        "name": "TUREK, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "News Broadcast: Iowa Senate candidate Josh Turek… is the Democratic Party’s establishment candidate.\nJosh Turek: That’s when we had the strength of the middle class. The wealthiest Americans during that time were paying a 91% marginalized tax rate.\nThat is when the largest earners were paying 90%.\nI think that we need a wealth tax in place.\nI would like to see us return to a 1990’s… assault weapons ban for example.\nWe also need an easier pathway to citizenship.\nIn the United States Senate I would not have supported any DHS funding.\nZach Wahls: Senator Schumer wants a nominee whose vote he can count on.",
+    "text_hash": "3cd668868572877904e0bcd3e24dd108685469bb0770cc6d1d1b32d656527c24",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16172-0",
+    "alignment": "R",
+    "block_id": "nrsc-16172-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16172-0-claims-001-002",
+    "claim_text": "The wealthiest Americans during that time were paying a 91% marginalized tax rate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 248,
+        "kind": "publisher_transcript",
+        "start": 101,
+        "text": "Josh Turek: That’s when we had the strength of the middle class. The wealthiest Americans during that time were paying a 91% marginalized tax rate.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-liberal-josh-turek-in-new-ad-2026-06-03/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 190,
+        "anchor_quote": "wealthiest Americans",
+        "anchor_start": 170,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "wealthiest Americans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "News Broadcast: Iowa Senate candidate Josh Turek… is the Democratic Party’s establishment candidate.\nJosh Turek: That’s when we had the strength of the middle class. The wealthiest Americans during that time were paying a 91% marginalized tax rate.\nThat is when the largest earners were paying 90%.\nI think that we need a wealth tax in place.\nI would like to see us return to a 1990’s… assault weapons ban for example.\nWe also need an easier pathway to citizenship.\nIn the United States Senate I would not have supported any DHS funding.\nZach Wahls: Senator Schumer wants a nominee whose vote he can count on.",
+    "text_hash": "3cd668868572877904e0bcd3e24dd108685469bb0770cc6d1d1b32d656527c24",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16172-0",
+    "alignment": "R",
+    "block_id": "nrsc-16172-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16172-0-claims-001-003",
+    "claim_text": "The largest earners were paying 90%.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 298,
+        "kind": "publisher_transcript",
+        "start": 249,
+        "text": "That is when the largest earners were paying 90%.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-liberal-josh-turek-in-new-ad-2026-06-03/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 281,
+        "anchor_quote": "largest earners",
+        "anchor_start": 266,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "largest earners",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "News Broadcast: Iowa Senate candidate Josh Turek… is the Democratic Party’s establishment candidate.\nJosh Turek: That’s when we had the strength of the middle class. The wealthiest Americans during that time were paying a 91% marginalized tax rate.\nThat is when the largest earners were paying 90%.\nI think that we need a wealth tax in place.\nI would like to see us return to a 1990’s… assault weapons ban for example.\nWe also need an easier pathway to citizenship.\nIn the United States Senate I would not have supported any DHS funding.\nZach Wahls: Senator Schumer wants a nominee whose vote he can count on.",
+    "text_hash": "3cd668868572877904e0bcd3e24dd108685469bb0770cc6d1d1b32d656527c24",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16172-0",
+    "alignment": "R",
+    "block_id": "nrsc-16172-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16172-0-claims-001-004",
+    "claim_text": "I think that we need a wealth tax in place.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 342,
+        "kind": "publisher_transcript",
+        "start": 299,
+        "text": "I think that we need a wealth tax in place.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-liberal-josh-turek-in-new-ad-2026-06-03/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 300,
+        "anchor_quote": "I",
+        "anchor_start": 299,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6IA00298",
+        "kind": "person",
+        "name": "TUREK, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "News Broadcast: Iowa Senate candidate Josh Turek… is the Democratic Party’s establishment candidate.\nJosh Turek: That’s when we had the strength of the middle class. The wealthiest Americans during that time were paying a 91% marginalized tax rate.\nThat is when the largest earners were paying 90%.\nI think that we need a wealth tax in place.\nI would like to see us return to a 1990’s… assault weapons ban for example.\nWe also need an easier pathway to citizenship.\nIn the United States Senate I would not have supported any DHS funding.\nZach Wahls: Senator Schumer wants a nominee whose vote he can count on.",
+    "text_hash": "3cd668868572877904e0bcd3e24dd108685469bb0770cc6d1d1b32d656527c24",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16172-0",
+    "alignment": "R",
+    "block_id": "nrsc-16172-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16172-0-claims-001-005",
+    "claim_text": "I would like to see us return to a 1990’s… assault weapons ban for example.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 418,
+        "kind": "publisher_transcript",
+        "start": 343,
+        "text": "I would like to see us return to a 1990’s… assault weapons ban for example.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-liberal-josh-turek-in-new-ad-2026-06-03/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 344,
+        "anchor_quote": "I",
+        "anchor_start": 343,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6IA00298",
+        "kind": "person",
+        "name": "TUREK, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "News Broadcast: Iowa Senate candidate Josh Turek… is the Democratic Party’s establishment candidate.\nJosh Turek: That’s when we had the strength of the middle class. The wealthiest Americans during that time were paying a 91% marginalized tax rate.\nThat is when the largest earners were paying 90%.\nI think that we need a wealth tax in place.\nI would like to see us return to a 1990’s… assault weapons ban for example.\nWe also need an easier pathway to citizenship.\nIn the United States Senate I would not have supported any DHS funding.\nZach Wahls: Senator Schumer wants a nominee whose vote he can count on.",
+    "text_hash": "3cd668868572877904e0bcd3e24dd108685469bb0770cc6d1d1b32d656527c24",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16172-0",
+    "alignment": "R",
+    "block_id": "nrsc-16172-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16172-0-claims-001-006",
+    "claim_text": "We also need an easier pathway to citizenship.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 465,
+        "kind": "publisher_transcript",
+        "start": 419,
+        "text": "We also need an easier pathway to citizenship.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-liberal-josh-turek-in-new-ad-2026-06-03/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 421,
+        "anchor_quote": "We",
+        "anchor_start": 419,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S6IA00298",
+        "kind": "person",
+        "name": "TUREK, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "News Broadcast: Iowa Senate candidate Josh Turek… is the Democratic Party’s establishment candidate.\nJosh Turek: That’s when we had the strength of the middle class. The wealthiest Americans during that time were paying a 91% marginalized tax rate.\nThat is when the largest earners were paying 90%.\nI think that we need a wealth tax in place.\nI would like to see us return to a 1990’s… assault weapons ban for example.\nWe also need an easier pathway to citizenship.\nIn the United States Senate I would not have supported any DHS funding.\nZach Wahls: Senator Schumer wants a nominee whose vote he can count on.",
+    "text_hash": "3cd668868572877904e0bcd3e24dd108685469bb0770cc6d1d1b32d656527c24",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16172-0",
+    "alignment": "R",
+    "block_id": "nrsc-16172-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16172-0-claims-001-007",
+    "claim_text": "I would not have supported any DHS funding.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 537,
+        "kind": "publisher_transcript",
+        "start": 466,
+        "text": "In the United States Senate I would not have supported any DHS funding.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-liberal-josh-turek-in-new-ad-2026-06-03/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 467,
+        "anchor_quote": "I",
+        "anchor_start": 466,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:S6IA00298",
+        "kind": "person",
+        "name": "TUREK, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "News Broadcast: Iowa Senate candidate Josh Turek… is the Democratic Party’s establishment candidate.\nJosh Turek: That’s when we had the strength of the middle class. The wealthiest Americans during that time were paying a 91% marginalized tax rate.\nThat is when the largest earners were paying 90%.\nI think that we need a wealth tax in place.\nI would like to see us return to a 1990’s… assault weapons ban for example.\nWe also need an easier pathway to citizenship.\nIn the United States Senate I would not have supported any DHS funding.\nZach Wahls: Senator Schumer wants a nominee whose vote he can count on.",
+    "text_hash": "3cd668868572877904e0bcd3e24dd108685469bb0770cc6d1d1b32d656527c24",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16172-0",
+    "alignment": "R",
+    "block_id": "nrsc-16172-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16172-0-claims-001-008",
+    "claim_text": "Senator Schumer wants a nominee whose vote he can count on.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 609,
+        "kind": "publisher_transcript",
+        "start": 538,
+        "text": "Zach Wahls: Senator Schumer wants a nominee whose vote he can count on.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-liberal-josh-turek-in-new-ad-2026-06-03/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 565,
+        "anchor_quote": "Senator Schumer",
+        "anchor_start": 550,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Schumer",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "News Broadcast: Iowa Senate candidate Josh Turek… is the Democratic Party’s establishment candidate.\nJosh Turek: That’s when we had the strength of the middle class. The wealthiest Americans during that time were paying a 91% marginalized tax rate.\nThat is when the largest earners were paying 90%.\nI think that we need a wealth tax in place.\nI would like to see us return to a 1990’s… assault weapons ban for example.\nWe also need an easier pathway to citizenship.\nIn the United States Senate I would not have supported any DHS funding.\nZach Wahls: Senator Schumer wants a nominee whose vote he can count on.",
+    "text_hash": "3cd668868572877904e0bcd3e24dd108685469bb0770cc6d1d1b32d656527c24",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16259-0",
+    "alignment": "R",
+    "block_id": "nrsc-16259-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16259-0-claims-001-001",
+    "claim_text": "Susan Collins spent time as a kid picking potatoes in Maine.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 72,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Voice Over: Susan Collins spent time as a kid picking potatoes in Maine.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-graham-platner-in-new-ad-2026-06-09/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 25,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 12,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Voice Over: Susan Collins spent time as a kid picking potatoes in Maine.\nGraham Platner spent time as a kid at a $70,000 a year prep school in Connecticut.\nSusan Collins has brought more than $1.5 billion back to Maine for hospitals, schools, roads and communities across the state.\nGraham Platner runs a hobby oyster farm whose only customer is his mother’s restaurant… Graham say hi to your mother for me okay?\nSusan Collins doesn’t have a Nazi tattoo and she doesn’t have an account on a notorious predator’s paradise app.\nGraham Platner did for years…and this was his profile picture… oh gosh please, please get that off the screen… anyway…\nSusan Collins: A Senator we can be proud of.",
+    "text_hash": "2c9260f8f0661e829d1b4e4860e9e767841220ed98179a22c5ba6faf5c358461",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16259-0",
+    "alignment": "R",
+    "block_id": "nrsc-16259-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16259-0-claims-001-002",
+    "claim_text": "Graham Platner spent time as a kid at a $70,000 a year prep school in Connecticut.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "publisher_transcript",
+        "start": 73,
+        "text": "Graham Platner spent time as a kid at a $70,000 a year prep school in Connecticut.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-graham-platner-in-new-ad-2026-06-09/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 87,
+        "anchor_quote": "Graham Platner",
+        "anchor_start": 73,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00373",
+        "kind": "person",
+        "name": "PLATNER, GRAHAM",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: Susan Collins spent time as a kid picking potatoes in Maine.\nGraham Platner spent time as a kid at a $70,000 a year prep school in Connecticut.\nSusan Collins has brought more than $1.5 billion back to Maine for hospitals, schools, roads and communities across the state.\nGraham Platner runs a hobby oyster farm whose only customer is his mother’s restaurant… Graham say hi to your mother for me okay?\nSusan Collins doesn’t have a Nazi tattoo and she doesn’t have an account on a notorious predator’s paradise app.\nGraham Platner did for years…and this was his profile picture… oh gosh please, please get that off the screen… anyway…\nSusan Collins: A Senator we can be proud of.",
+    "text_hash": "2c9260f8f0661e829d1b4e4860e9e767841220ed98179a22c5ba6faf5c358461",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16259-0",
+    "alignment": "R",
+    "block_id": "nrsc-16259-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16259-0-claims-001-003",
+    "claim_text": "Susan Collins has brought more than $1.5 billion back to Maine for hospitals, schools, roads and communities across the state.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 282,
+        "kind": "publisher_transcript",
+        "start": 156,
+        "text": "Susan Collins has brought more than $1.5 billion back to Maine for hospitals, schools, roads and communities across the state.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-graham-platner-in-new-ad-2026-06-09/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 169,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 156,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Voice Over: Susan Collins spent time as a kid picking potatoes in Maine.\nGraham Platner spent time as a kid at a $70,000 a year prep school in Connecticut.\nSusan Collins has brought more than $1.5 billion back to Maine for hospitals, schools, roads and communities across the state.\nGraham Platner runs a hobby oyster farm whose only customer is his mother’s restaurant… Graham say hi to your mother for me okay?\nSusan Collins doesn’t have a Nazi tattoo and she doesn’t have an account on a notorious predator’s paradise app.\nGraham Platner did for years…and this was his profile picture… oh gosh please, please get that off the screen… anyway…\nSusan Collins: A Senator we can be proud of.",
+    "text_hash": "2c9260f8f0661e829d1b4e4860e9e767841220ed98179a22c5ba6faf5c358461",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16259-0",
+    "alignment": "R",
+    "block_id": "nrsc-16259-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16259-0-claims-001-004",
+    "claim_text": "Graham Platner runs a hobby oyster farm whose only customer is his mother’s restaurant.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 412,
+        "kind": "publisher_transcript",
+        "start": 283,
+        "text": "Graham Platner runs a hobby oyster farm whose only customer is his mother’s restaurant… Graham say hi to your mother for me okay?",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-graham-platner-in-new-ad-2026-06-09/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 297,
+        "anchor_quote": "Graham Platner",
+        "anchor_start": 283,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00373",
+        "kind": "person",
+        "name": "PLATNER, GRAHAM",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: Susan Collins spent time as a kid picking potatoes in Maine.\nGraham Platner spent time as a kid at a $70,000 a year prep school in Connecticut.\nSusan Collins has brought more than $1.5 billion back to Maine for hospitals, schools, roads and communities across the state.\nGraham Platner runs a hobby oyster farm whose only customer is his mother’s restaurant… Graham say hi to your mother for me okay?\nSusan Collins doesn’t have a Nazi tattoo and she doesn’t have an account on a notorious predator’s paradise app.\nGraham Platner did for years…and this was his profile picture… oh gosh please, please get that off the screen… anyway…\nSusan Collins: A Senator we can be proud of.",
+    "text_hash": "2c9260f8f0661e829d1b4e4860e9e767841220ed98179a22c5ba6faf5c358461",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16259-0",
+    "alignment": "R",
+    "block_id": "nrsc-16259-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16259-0-claims-001-005",
+    "claim_text": "Susan Collins doesn’t have a Nazi tattoo and she doesn’t have an account on a notorious predator’s paradise app.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 525,
+        "kind": "publisher_transcript",
+        "start": 413,
+        "text": "Susan Collins doesn’t have a Nazi tattoo and she doesn’t have an account on a notorious predator’s paradise app.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-graham-platner-in-new-ad-2026-06-09/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 426,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 413,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Voice Over: Susan Collins spent time as a kid picking potatoes in Maine.\nGraham Platner spent time as a kid at a $70,000 a year prep school in Connecticut.\nSusan Collins has brought more than $1.5 billion back to Maine for hospitals, schools, roads and communities across the state.\nGraham Platner runs a hobby oyster farm whose only customer is his mother’s restaurant… Graham say hi to your mother for me okay?\nSusan Collins doesn’t have a Nazi tattoo and she doesn’t have an account on a notorious predator’s paradise app.\nGraham Platner did for years…and this was his profile picture… oh gosh please, please get that off the screen… anyway…\nSusan Collins: A Senator we can be proud of.",
+    "text_hash": "2c9260f8f0661e829d1b4e4860e9e767841220ed98179a22c5ba6faf5c358461",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16259-0",
+    "alignment": "R",
+    "block_id": "nrsc-16259-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16259-0-claims-001-006",
+    "claim_text": "Graham Platner did for years…and this was his profile picture…",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 644,
+        "kind": "publisher_transcript",
+        "start": 526,
+        "text": "Graham Platner did for years…and this was his profile picture… oh gosh please, please get that off the screen… anyway…",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-graham-platner-in-new-ad-2026-06-09/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 540,
+        "anchor_quote": "Graham Platner",
+        "anchor_start": 526,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S6ME00373",
+        "kind": "person",
+        "name": "PLATNER, GRAHAM",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: Susan Collins spent time as a kid picking potatoes in Maine.\nGraham Platner spent time as a kid at a $70,000 a year prep school in Connecticut.\nSusan Collins has brought more than $1.5 billion back to Maine for hospitals, schools, roads and communities across the state.\nGraham Platner runs a hobby oyster farm whose only customer is his mother’s restaurant… Graham say hi to your mother for me okay?\nSusan Collins doesn’t have a Nazi tattoo and she doesn’t have an account on a notorious predator’s paradise app.\nGraham Platner did for years…and this was his profile picture… oh gosh please, please get that off the screen… anyway…\nSusan Collins: A Senator we can be proud of.",
+    "text_hash": "2c9260f8f0661e829d1b4e4860e9e767841220ed98179a22c5ba6faf5c358461",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16259-0",
+    "alignment": "R",
+    "block_id": "nrsc-16259-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16259-0-claims-001-007",
+    "claim_text": "Susan Collins is a Senator we can be proud of.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 689,
+        "kind": "publisher_transcript",
+        "start": 645,
+        "text": "Susan Collins: A Senator we can be proud of.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-graham-platner-in-new-ad-2026-06-09/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 658,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 645,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Voice Over: Susan Collins spent time as a kid picking potatoes in Maine.\nGraham Platner spent time as a kid at a $70,000 a year prep school in Connecticut.\nSusan Collins has brought more than $1.5 billion back to Maine for hospitals, schools, roads and communities across the state.\nGraham Platner runs a hobby oyster farm whose only customer is his mother’s restaurant… Graham say hi to your mother for me okay?\nSusan Collins doesn’t have a Nazi tattoo and she doesn’t have an account on a notorious predator’s paradise app.\nGraham Platner did for years…and this was his profile picture… oh gosh please, please get that off the screen… anyway…\nSusan Collins: A Senator we can be proud of.",
+    "text_hash": "2c9260f8f0661e829d1b4e4860e9e767841220ed98179a22c5ba6faf5c358461",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16352-0",
+    "alignment": "R",
+    "block_id": "nrsc-16352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16352-0-claims-001-001",
+    "claim_text": "Multiple girlfriends of Graham Platner say he was abusive and doesn’t tell the truth.",
+    "claim_types": [
+      "characterization",
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 97,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Voice Over: Multiple girlfriends of Graham Platner say he was abusive and doesn’t tell the truth.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/graham-platner-is-a-proven-liar-2026-06-23/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "Graham Platner",
+        "anchor_start": 36,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00373",
+        "kind": "person",
+        "name": "PLATNER, GRAHAM",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: Multiple girlfriends of Graham Platner say he was abusive and doesn’t tell the truth.\nPlatner even deceived his own wife by sexting a dozen women shortly after he was married.\nSo it is no surprise that he is lying about Susan Collins.\nCan you really believe a man who posts this profile picture on the notorious sexual predator website called Kik?\nSusan Collins is a Senator we can be proud of, Graham Platner is a proven liar… and worse.",
+    "text_hash": "5ae012b178488c4a538bf67eefb199fed5b96449fd91dda05812d3969fb4d967",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16352-0",
+    "alignment": "R",
+    "block_id": "nrsc-16352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16352-0-claims-001-002",
+    "claim_text": "Platner even deceived his own wife by sexting a dozen women shortly after he was married.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 187,
+        "kind": "publisher_transcript",
+        "start": 98,
+        "text": "Platner even deceived his own wife by sexting a dozen women shortly after he was married.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/graham-platner-is-a-proven-liar-2026-06-23/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 105,
+        "anchor_quote": "Platner",
+        "anchor_start": 98,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00373",
+        "kind": "person",
+        "name": "PLATNER, GRAHAM",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: Multiple girlfriends of Graham Platner say he was abusive and doesn’t tell the truth.\nPlatner even deceived his own wife by sexting a dozen women shortly after he was married.\nSo it is no surprise that he is lying about Susan Collins.\nCan you really believe a man who posts this profile picture on the notorious sexual predator website called Kik?\nSusan Collins is a Senator we can be proud of, Graham Platner is a proven liar… and worse.",
+    "text_hash": "5ae012b178488c4a538bf67eefb199fed5b96449fd91dda05812d3969fb4d967",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16352-0",
+    "alignment": "R",
+    "block_id": "nrsc-16352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16352-0-claims-001-003",
+    "claim_text": "It is no surprise that he is lying about Susan Collins.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 246,
+        "kind": "publisher_transcript",
+        "start": 188,
+        "text": "So it is no surprise that he is lying about Susan Collins.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/graham-platner-is-a-proven-liar-2026-06-23/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 216,
+        "anchor_quote": "he",
+        "anchor_start": 214,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6ME00373",
+        "kind": "person",
+        "name": "PLATNER, GRAHAM",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 245,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 232,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Voice Over: Multiple girlfriends of Graham Platner say he was abusive and doesn’t tell the truth.\nPlatner even deceived his own wife by sexting a dozen women shortly after he was married.\nSo it is no surprise that he is lying about Susan Collins.\nCan you really believe a man who posts this profile picture on the notorious sexual predator website called Kik?\nSusan Collins is a Senator we can be proud of, Graham Platner is a proven liar… and worse.",
+    "text_hash": "5ae012b178488c4a538bf67eefb199fed5b96449fd91dda05812d3969fb4d967",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16352-0",
+    "alignment": "R",
+    "block_id": "nrsc-16352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16352-0-claims-001-004",
+    "claim_text": "Can you really believe a man who posts this profile picture on the notorious sexual predator website called Kik?",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 359,
+        "kind": "publisher_transcript",
+        "start": 247,
+        "text": "Can you really believe a man who posts this profile picture on the notorious sexual predator website called Kik?",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/graham-platner-is-a-proven-liar-2026-06-23/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 275,
+        "anchor_quote": "a man",
+        "anchor_start": 270,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00373",
+        "kind": "person",
+        "name": "PLATNER, GRAHAM",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: Multiple girlfriends of Graham Platner say he was abusive and doesn’t tell the truth.\nPlatner even deceived his own wife by sexting a dozen women shortly after he was married.\nSo it is no surprise that he is lying about Susan Collins.\nCan you really believe a man who posts this profile picture on the notorious sexual predator website called Kik?\nSusan Collins is a Senator we can be proud of, Graham Platner is a proven liar… and worse.",
+    "text_hash": "5ae012b178488c4a538bf67eefb199fed5b96449fd91dda05812d3969fb4d967",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16352-0",
+    "alignment": "R",
+    "block_id": "nrsc-16352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16352-0-claims-001-005",
+    "claim_text": "Susan Collins is a Senator we can be proud of.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 450,
+        "kind": "publisher_transcript",
+        "start": 360,
+        "text": "Susan Collins is a Senator we can be proud of, Graham Platner is a proven liar… and worse.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/graham-platner-is-a-proven-liar-2026-06-23/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 373,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 360,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Voice Over: Multiple girlfriends of Graham Platner say he was abusive and doesn’t tell the truth.\nPlatner even deceived his own wife by sexting a dozen women shortly after he was married.\nSo it is no surprise that he is lying about Susan Collins.\nCan you really believe a man who posts this profile picture on the notorious sexual predator website called Kik?\nSusan Collins is a Senator we can be proud of, Graham Platner is a proven liar… and worse.",
+    "text_hash": "5ae012b178488c4a538bf67eefb199fed5b96449fd91dda05812d3969fb4d967",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16352-0",
+    "alignment": "R",
+    "block_id": "nrsc-16352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16352-0-claims-001-006",
+    "claim_text": "Graham Platner is a proven liar… and worse.",
+    "claim_types": [
+      "characterization",
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 450,
+        "kind": "publisher_transcript",
+        "start": 360,
+        "text": "Susan Collins is a Senator we can be proud of, Graham Platner is a proven liar… and worse.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/graham-platner-is-a-proven-liar-2026-06-23/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 421,
+        "anchor_quote": "Graham Platner",
+        "anchor_start": 407,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00373",
+        "kind": "person",
+        "name": "PLATNER, GRAHAM",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: Multiple girlfriends of Graham Platner say he was abusive and doesn’t tell the truth.\nPlatner even deceived his own wife by sexting a dozen women shortly after he was married.\nSo it is no surprise that he is lying about Susan Collins.\nCan you really believe a man who posts this profile picture on the notorious sexual predator website called Kik?\nSusan Collins is a Senator we can be proud of, Graham Platner is a proven liar… and worse.",
+    "text_hash": "5ae012b178488c4a538bf67eefb199fed5b96449fd91dda05812d3969fb4d967",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
