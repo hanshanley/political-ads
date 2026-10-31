@@ -23217,5 +23217,861 @@
     "text_hash": "758b0a0dd5eafe120546b40d507410a401c68b9d27ece722a16fa7488138bdd3",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dccc-669825-0",
+    "alignment": "D",
+    "block_id": "dccc-669825-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dccc-669825-0-claims-001-001",
+    "claim_text": "Don Coover has been cleaning up bull— for fifty years.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 84,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Don Coover: Fifty years I’ve been cleaning up bull— (MOOOO) Figured I’d seen it all.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://dccc.org/dccc-releases-first-tv-ad-in-ks-02-bullsht/",
+    "sponsor": "DCCC",
+    "targets": [
+      {
+        "anchor_end": 25,
+        "anchor_quote": "I",
+        "anchor_start": 24,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6KS02276",
+        "kind": "person",
+        "name": "COOVER, DON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Don Coover: Fifty years I’ve been cleaning up bull— (MOOOO) Figured I’d seen it all.\nDon Coover: Then I saw Congressman Derek Schmidt’s corruption.\nDon Coover: Drug companies gave… and he voted to make prescriptions cost more.\nDon Coover: Massive corporations donated… and he gave them huge tax breaks.\nDon Coover: He even tried to keep the Epstein files secret… protecting DC insiders.\nDon Coover: That’s just bull— (MOOOO) I can’t clean it all up in DC, but I know where to start.\nDon Coover: I’m Don Coover, and I approve this message. They make you say that.",
+    "text_hash": "b0c80dbbc48358a451d3dc920326e19c0f8abde0adbd5b26b8a250412f5158ab",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dccc-669825-0",
+    "alignment": "D",
+    "block_id": "dccc-669825-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dccc-669825-0-claims-001-002",
+    "claim_text": "Don Coover saw Congressman Derek Schmidt’s corruption.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 147,
+        "kind": "publisher_transcript",
+        "start": 85,
+        "text": "Don Coover: Then I saw Congressman Derek Schmidt’s corruption.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://dccc.org/dccc-releases-first-tv-ad-in-ks-02-bullsht/",
+    "sponsor": "DCCC",
+    "targets": [
+      {
+        "anchor_end": 146,
+        "anchor_quote": "Derek Schmidt’s corruption",
+        "anchor_start": 120,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H4KS02164",
+        "kind": "person",
+        "name": "SCHMIDT, DEREK",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Don Coover: Fifty years I’ve been cleaning up bull— (MOOOO) Figured I’d seen it all.\nDon Coover: Then I saw Congressman Derek Schmidt’s corruption.\nDon Coover: Drug companies gave… and he voted to make prescriptions cost more.\nDon Coover: Massive corporations donated… and he gave them huge tax breaks.\nDon Coover: He even tried to keep the Epstein files secret… protecting DC insiders.\nDon Coover: That’s just bull— (MOOOO) I can’t clean it all up in DC, but I know where to start.\nDon Coover: I’m Don Coover, and I approve this message. They make you say that.",
+    "text_hash": "b0c80dbbc48358a451d3dc920326e19c0f8abde0adbd5b26b8a250412f5158ab",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dccc-669825-0",
+    "alignment": "D",
+    "block_id": "dccc-669825-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dccc-669825-0-claims-001-003",
+    "claim_text": "Drug companies gave to Derek Schmidt.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 226,
+        "kind": "publisher_transcript",
+        "start": 148,
+        "text": "Don Coover: Drug companies gave… and he voted to make prescriptions cost more.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://dccc.org/dccc-releases-first-tv-ad-in-ks-02-bullsht/",
+    "sponsor": "DCCC",
+    "targets": [
+      {
+        "anchor_end": 187,
+        "anchor_quote": "he",
+        "anchor_start": 185,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H4KS02164",
+        "kind": "person",
+        "name": "SCHMIDT, DEREK",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Don Coover: Fifty years I’ve been cleaning up bull— (MOOOO) Figured I’d seen it all.\nDon Coover: Then I saw Congressman Derek Schmidt’s corruption.\nDon Coover: Drug companies gave… and he voted to make prescriptions cost more.\nDon Coover: Massive corporations donated… and he gave them huge tax breaks.\nDon Coover: He even tried to keep the Epstein files secret… protecting DC insiders.\nDon Coover: That’s just bull— (MOOOO) I can’t clean it all up in DC, but I know where to start.\nDon Coover: I’m Don Coover, and I approve this message. They make you say that.",
+    "text_hash": "b0c80dbbc48358a451d3dc920326e19c0f8abde0adbd5b26b8a250412f5158ab",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dccc-669825-0",
+    "alignment": "D",
+    "block_id": "dccc-669825-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dccc-669825-0-claims-001-004",
+    "claim_text": "Derek Schmidt voted to make prescriptions cost more.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 226,
+        "kind": "publisher_transcript",
+        "start": 148,
+        "text": "Don Coover: Drug companies gave… and he voted to make prescriptions cost more.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://dccc.org/dccc-releases-first-tv-ad-in-ks-02-bullsht/",
+    "sponsor": "DCCC",
+    "targets": [
+      {
+        "anchor_end": 187,
+        "anchor_quote": "he",
+        "anchor_start": 185,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H4KS02164",
+        "kind": "person",
+        "name": "SCHMIDT, DEREK",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Don Coover: Fifty years I’ve been cleaning up bull— (MOOOO) Figured I’d seen it all.\nDon Coover: Then I saw Congressman Derek Schmidt’s corruption.\nDon Coover: Drug companies gave… and he voted to make prescriptions cost more.\nDon Coover: Massive corporations donated… and he gave them huge tax breaks.\nDon Coover: He even tried to keep the Epstein files secret… protecting DC insiders.\nDon Coover: That’s just bull— (MOOOO) I can’t clean it all up in DC, but I know where to start.\nDon Coover: I’m Don Coover, and I approve this message. They make you say that.",
+    "text_hash": "b0c80dbbc48358a451d3dc920326e19c0f8abde0adbd5b26b8a250412f5158ab",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dccc-669825-0",
+    "alignment": "D",
+    "block_id": "dccc-669825-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dccc-669825-0-claims-001-005",
+    "claim_text": "Massive corporations donated to Derek Schmidt.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 302,
+        "kind": "publisher_transcript",
+        "start": 227,
+        "text": "Don Coover: Massive corporations donated… and he gave them huge tax breaks.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://dccc.org/dccc-releases-first-tv-ad-in-ks-02-bullsht/",
+    "sponsor": "DCCC",
+    "targets": [
+      {
+        "anchor_end": 275,
+        "anchor_quote": "he",
+        "anchor_start": 273,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H4KS02164",
+        "kind": "person",
+        "name": "SCHMIDT, DEREK",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Don Coover: Fifty years I’ve been cleaning up bull— (MOOOO) Figured I’d seen it all.\nDon Coover: Then I saw Congressman Derek Schmidt’s corruption.\nDon Coover: Drug companies gave… and he voted to make prescriptions cost more.\nDon Coover: Massive corporations donated… and he gave them huge tax breaks.\nDon Coover: He even tried to keep the Epstein files secret… protecting DC insiders.\nDon Coover: That’s just bull— (MOOOO) I can’t clean it all up in DC, but I know where to start.\nDon Coover: I’m Don Coover, and I approve this message. They make you say that.",
+    "text_hash": "b0c80dbbc48358a451d3dc920326e19c0f8abde0adbd5b26b8a250412f5158ab",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dccc-669825-0",
+    "alignment": "D",
+    "block_id": "dccc-669825-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dccc-669825-0-claims-001-006",
+    "claim_text": "Derek Schmidt gave huge tax breaks to massive corporations.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 302,
+        "kind": "publisher_transcript",
+        "start": 227,
+        "text": "Don Coover: Massive corporations donated… and he gave them huge tax breaks.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://dccc.org/dccc-releases-first-tv-ad-in-ks-02-bullsht/",
+    "sponsor": "DCCC",
+    "targets": [
+      {
+        "anchor_end": 275,
+        "anchor_quote": "he",
+        "anchor_start": 273,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H4KS02164",
+        "kind": "person",
+        "name": "SCHMIDT, DEREK",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Don Coover: Fifty years I’ve been cleaning up bull— (MOOOO) Figured I’d seen it all.\nDon Coover: Then I saw Congressman Derek Schmidt’s corruption.\nDon Coover: Drug companies gave… and he voted to make prescriptions cost more.\nDon Coover: Massive corporations donated… and he gave them huge tax breaks.\nDon Coover: He even tried to keep the Epstein files secret… protecting DC insiders.\nDon Coover: That’s just bull— (MOOOO) I can’t clean it all up in DC, but I know where to start.\nDon Coover: I’m Don Coover, and I approve this message. They make you say that.",
+    "text_hash": "b0c80dbbc48358a451d3dc920326e19c0f8abde0adbd5b26b8a250412f5158ab",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dccc-669825-0",
+    "alignment": "D",
+    "block_id": "dccc-669825-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dccc-669825-0-claims-001-007",
+    "claim_text": "Derek Schmidt tried to keep the Epstein files secret.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 386,
+        "kind": "publisher_transcript",
+        "start": 303,
+        "text": "Don Coover: He even tried to keep the Epstein files secret… protecting DC insiders.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://dccc.org/dccc-releases-first-tv-ad-in-ks-02-bullsht/",
+    "sponsor": "DCCC",
+    "targets": [
+      {
+        "anchor_end": 317,
+        "anchor_quote": "He",
+        "anchor_start": 315,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H4KS02164",
+        "kind": "person",
+        "name": "SCHMIDT, DEREK",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Don Coover: Fifty years I’ve been cleaning up bull— (MOOOO) Figured I’d seen it all.\nDon Coover: Then I saw Congressman Derek Schmidt’s corruption.\nDon Coover: Drug companies gave… and he voted to make prescriptions cost more.\nDon Coover: Massive corporations donated… and he gave them huge tax breaks.\nDon Coover: He even tried to keep the Epstein files secret… protecting DC insiders.\nDon Coover: That’s just bull— (MOOOO) I can’t clean it all up in DC, but I know where to start.\nDon Coover: I’m Don Coover, and I approve this message. They make you say that.",
+    "text_hash": "b0c80dbbc48358a451d3dc920326e19c0f8abde0adbd5b26b8a250412f5158ab",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dccc-669825-0",
+    "alignment": "D",
+    "block_id": "dccc-669825-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dccc-669825-0-claims-001-008",
+    "claim_text": "Derek Schmidt was protecting DC insiders.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 386,
+        "kind": "publisher_transcript",
+        "start": 303,
+        "text": "Don Coover: He even tried to keep the Epstein files secret… protecting DC insiders.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://dccc.org/dccc-releases-first-tv-ad-in-ks-02-bullsht/",
+    "sponsor": "DCCC",
+    "targets": [
+      {
+        "anchor_end": 317,
+        "anchor_quote": "He",
+        "anchor_start": 315,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H4KS02164",
+        "kind": "person",
+        "name": "SCHMIDT, DEREK",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Don Coover: Fifty years I’ve been cleaning up bull— (MOOOO) Figured I’d seen it all.\nDon Coover: Then I saw Congressman Derek Schmidt’s corruption.\nDon Coover: Drug companies gave… and he voted to make prescriptions cost more.\nDon Coover: Massive corporations donated… and he gave them huge tax breaks.\nDon Coover: He even tried to keep the Epstein files secret… protecting DC insiders.\nDon Coover: That’s just bull— (MOOOO) I can’t clean it all up in DC, but I know where to start.\nDon Coover: I’m Don Coover, and I approve this message. They make you say that.",
+    "text_hash": "b0c80dbbc48358a451d3dc920326e19c0f8abde0adbd5b26b8a250412f5158ab",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dccc-669825-0",
+    "alignment": "D",
+    "block_id": "dccc-669825-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dccc-669825-0-claims-001-009",
+    "claim_text": "Don Coover approves this message.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 562,
+        "kind": "publisher_transcript",
+        "start": 483,
+        "text": "Don Coover: I’m Don Coover, and I approve this message. They make you say that.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://dccc.org/dccc-releases-first-tv-ad-in-ks-02-bullsht/",
+    "sponsor": "DCCC",
+    "targets": [
+      {
+        "anchor_end": 496,
+        "anchor_quote": "I",
+        "anchor_start": 495,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:H6KS02276",
+        "kind": "person",
+        "name": "COOVER, DON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Don Coover: Fifty years I’ve been cleaning up bull— (MOOOO) Figured I’d seen it all.\nDon Coover: Then I saw Congressman Derek Schmidt’s corruption.\nDon Coover: Drug companies gave… and he voted to make prescriptions cost more.\nDon Coover: Massive corporations donated… and he gave them huge tax breaks.\nDon Coover: He even tried to keep the Epstein files secret… protecting DC insiders.\nDon Coover: That’s just bull— (MOOOO) I can’t clean it all up in DC, but I know where to start.\nDon Coover: I’m Don Coover, and I approve this message. They make you say that.",
+    "text_hash": "b0c80dbbc48358a451d3dc920326e19c0f8abde0adbd5b26b8a250412f5158ab",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dccc-669825-0",
+    "alignment": "D",
+    "block_id": "dccc-669825-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dccc-669825-0-claims-001-010",
+    "claim_text": "They make you say that.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 562,
+        "kind": "publisher_transcript",
+        "start": 483,
+        "text": "Don Coover: I’m Don Coover, and I approve this message. They make you say that.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://dccc.org/dccc-releases-first-tv-ad-in-ks-02-bullsht/",
+    "sponsor": "DCCC",
+    "targets": [
+      {
+        "anchor_end": 543,
+        "anchor_quote": "They",
+        "anchor_start": 539,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Don Coover: Fifty years I’ve been cleaning up bull— (MOOOO) Figured I’d seen it all.\nDon Coover: Then I saw Congressman Derek Schmidt’s corruption.\nDon Coover: Drug companies gave… and he voted to make prescriptions cost more.\nDon Coover: Massive corporations donated… and he gave them huge tax breaks.\nDon Coover: He even tried to keep the Epstein files secret… protecting DC insiders.\nDon Coover: That’s just bull— (MOOOO) I can’t clean it all up in DC, but I know where to start.\nDon Coover: I’m Don Coover, and I approve this message. They make you say that.",
+    "text_hash": "b0c80dbbc48358a451d3dc920326e19c0f8abde0adbd5b26b8a250412f5158ab",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dscc-12483-0",
+    "alignment": "D",
+    "block_id": "dscc-12483-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dscc-12483-0-claims-001-001",
+    "claim_text": "The Texas Republican clown car just lost one of its passengers.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 63,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "The Texas Republican clown car just lost one of its passengers.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.dscc.org/article/dscc-releases-new-digital-ad-on-texas-republican-runoff-clown-car/",
+    "sponsor": "DSCC",
+    "targets": [
+      {
+        "anchor_end": 20,
+        "anchor_quote": "Texas Republican",
+        "anchor_start": 4,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Texas Republican",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "The Texas Republican clown car just lost one of its passengers.\nBut the two that are left could make up the whole circus.\nKen Paxton is so corrupt his own party tried to remove him from office.\nAnd John Cornyn is so unpopular that his party says he’s the “ Washington swamp .”\nNow Republicans are facing a primary that is…\n[HEADLINE RIPS ON SCREEN]\n“ personal and contentious ,”\n“ increasingly vicious ,” and\n“ could cost them a must-win Senate seat ”\n[REPORTER] “ You have Republican leadership saying right now that there’s a possibility of this being flipped .”\nBuckle up Texas. The circus is in town. [HONK SOUND]",
+    "text_hash": "a0ee00b92378ef6b20ff3103e15170ab494af4330073d68331e08a280dd3efdd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dscc-12483-0",
+    "alignment": "D",
+    "block_id": "dscc-12483-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dscc-12483-0-claims-001-002",
+    "claim_text": "The two that are left could make up the whole circus.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 121,
+        "kind": "publisher_transcript",
+        "start": 64,
+        "text": "But the two that are left could make up the whole circus.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.dscc.org/article/dscc-releases-new-digital-ad-on-texas-republican-runoff-clown-car/",
+    "sponsor": "DSCC",
+    "targets": [
+      {
+        "anchor_end": 89,
+        "anchor_quote": "the two that are left",
+        "anchor_start": 68,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "the two that are left",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "The Texas Republican clown car just lost one of its passengers.\nBut the two that are left could make up the whole circus.\nKen Paxton is so corrupt his own party tried to remove him from office.\nAnd John Cornyn is so unpopular that his party says he’s the “ Washington swamp .”\nNow Republicans are facing a primary that is…\n[HEADLINE RIPS ON SCREEN]\n“ personal and contentious ,”\n“ increasingly vicious ,” and\n“ could cost them a must-win Senate seat ”\n[REPORTER] “ You have Republican leadership saying right now that there’s a possibility of this being flipped .”\nBuckle up Texas. The circus is in town. [HONK SOUND]",
+    "text_hash": "a0ee00b92378ef6b20ff3103e15170ab494af4330073d68331e08a280dd3efdd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dscc-12483-0",
+    "alignment": "D",
+    "block_id": "dscc-12483-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dscc-12483-0-claims-001-003",
+    "claim_text": "Ken Paxton is so corrupt his own party tried to remove him from office.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 193,
+        "kind": "publisher_transcript",
+        "start": 122,
+        "text": "Ken Paxton is so corrupt his own party tried to remove him from office.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.dscc.org/article/dscc-releases-new-digital-ad-on-texas-republican-runoff-clown-car/",
+    "sponsor": "DSCC",
+    "targets": [
+      {
+        "anchor_end": 132,
+        "anchor_quote": "Ken Paxton",
+        "anchor_start": 122,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6TX00388",
+        "kind": "person",
+        "name": "Ken Paxton",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 160,
+        "anchor_quote": "his own party",
+        "anchor_start": 147,
+        "anchor_unit_id": 3,
+        "entity_id": "party:R",
+        "kind": "collective",
+        "name": "his own party",
+        "party_basis": "explicit_party_text",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Texas Republican clown car just lost one of its passengers.\nBut the two that are left could make up the whole circus.\nKen Paxton is so corrupt his own party tried to remove him from office.\nAnd John Cornyn is so unpopular that his party says he’s the “ Washington swamp .”\nNow Republicans are facing a primary that is…\n[HEADLINE RIPS ON SCREEN]\n“ personal and contentious ,”\n“ increasingly vicious ,” and\n“ could cost them a must-win Senate seat ”\n[REPORTER] “ You have Republican leadership saying right now that there’s a possibility of this being flipped .”\nBuckle up Texas. The circus is in town. [HONK SOUND]",
+    "text_hash": "a0ee00b92378ef6b20ff3103e15170ab494af4330073d68331e08a280dd3efdd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dscc-12483-0",
+    "alignment": "D",
+    "block_id": "dscc-12483-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dscc-12483-0-claims-001-004",
+    "claim_text": "John Cornyn is so unpopular that his party says he’s the “ Washington swamp .”",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 276,
+        "kind": "publisher_transcript",
+        "start": 194,
+        "text": "And John Cornyn is so unpopular that his party says he’s the “ Washington swamp .”",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.dscc.org/article/dscc-releases-new-digital-ad-on-texas-republican-runoff-clown-car/",
+    "sponsor": "DSCC",
+    "targets": [
+      {
+        "anchor_end": 209,
+        "anchor_quote": "John Cornyn",
+        "anchor_start": 198,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S2TX00106",
+        "kind": "person",
+        "name": "John Cornyn",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 240,
+        "anchor_quote": "his party",
+        "anchor_start": 231,
+        "anchor_unit_id": 4,
+        "entity_id": "party:R",
+        "kind": "collective",
+        "name": "his party",
+        "party_basis": "explicit_party_text",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Texas Republican clown car just lost one of its passengers.\nBut the two that are left could make up the whole circus.\nKen Paxton is so corrupt his own party tried to remove him from office.\nAnd John Cornyn is so unpopular that his party says he’s the “ Washington swamp .”\nNow Republicans are facing a primary that is…\n[HEADLINE RIPS ON SCREEN]\n“ personal and contentious ,”\n“ increasingly vicious ,” and\n“ could cost them a must-win Senate seat ”\n[REPORTER] “ You have Republican leadership saying right now that there’s a possibility of this being flipped .”\nBuckle up Texas. The circus is in town. [HONK SOUND]",
+    "text_hash": "a0ee00b92378ef6b20ff3103e15170ab494af4330073d68331e08a280dd3efdd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dscc-12483-0",
+    "alignment": "D",
+    "block_id": "dscc-12483-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dscc-12483-0-claims-001-005",
+    "claim_text": "Republicans are facing a primary that is “ personal and contentious ,”",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 322,
+        "kind": "publisher_transcript",
+        "start": 277,
+        "text": "Now Republicans are facing a primary that is…",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.dscc.org/article/dscc-releases-new-digital-ad-on-texas-republican-runoff-clown-car/",
+    "sponsor": "DSCC",
+    "targets": [
+      {
+        "anchor_end": 292,
+        "anchor_quote": "Republicans",
+        "anchor_start": 281,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Republicans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Texas Republican clown car just lost one of its passengers.\nBut the two that are left could make up the whole circus.\nKen Paxton is so corrupt his own party tried to remove him from office.\nAnd John Cornyn is so unpopular that his party says he’s the “ Washington swamp .”\nNow Republicans are facing a primary that is…\n[HEADLINE RIPS ON SCREEN]\n“ personal and contentious ,”\n“ increasingly vicious ,” and\n“ could cost them a must-win Senate seat ”\n[REPORTER] “ You have Republican leadership saying right now that there’s a possibility of this being flipped .”\nBuckle up Texas. The circus is in town. [HONK SOUND]",
+    "text_hash": "a0ee00b92378ef6b20ff3103e15170ab494af4330073d68331e08a280dd3efdd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dscc-12483-0",
+    "alignment": "D",
+    "block_id": "dscc-12483-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dscc-12483-0-claims-001-006",
+    "claim_text": "Republicans are facing a primary that is “ increasingly vicious ,”",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 322,
+        "kind": "publisher_transcript",
+        "start": 277,
+        "text": "Now Republicans are facing a primary that is…",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.dscc.org/article/dscc-releases-new-digital-ad-on-texas-republican-runoff-clown-car/",
+    "sponsor": "DSCC",
+    "targets": [
+      {
+        "anchor_end": 292,
+        "anchor_quote": "Republicans",
+        "anchor_start": 281,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Republicans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "The Texas Republican clown car just lost one of its passengers.\nBut the two that are left could make up the whole circus.\nKen Paxton is so corrupt his own party tried to remove him from office.\nAnd John Cornyn is so unpopular that his party says he’s the “ Washington swamp .”\nNow Republicans are facing a primary that is…\n[HEADLINE RIPS ON SCREEN]\n“ personal and contentious ,”\n“ increasingly vicious ,” and\n“ could cost them a must-win Senate seat ”\n[REPORTER] “ You have Republican leadership saying right now that there’s a possibility of this being flipped .”\nBuckle up Texas. The circus is in town. [HONK SOUND]",
+    "text_hash": "a0ee00b92378ef6b20ff3103e15170ab494af4330073d68331e08a280dd3efdd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dscc-12483-0",
+    "alignment": "D",
+    "block_id": "dscc-12483-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dscc-12483-0-claims-001-007",
+    "claim_text": "Republicans are facing a primary that could cost them a must-win Senate seat.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 322,
+        "kind": "publisher_transcript",
+        "start": 277,
+        "text": "Now Republicans are facing a primary that is…",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.dscc.org/article/dscc-releases-new-digital-ad-on-texas-republican-runoff-clown-car/",
+    "sponsor": "DSCC",
+    "targets": [
+      {
+        "anchor_end": 292,
+        "anchor_quote": "Republicans",
+        "anchor_start": 281,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Republicans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "The Texas Republican clown car just lost one of its passengers.\nBut the two that are left could make up the whole circus.\nKen Paxton is so corrupt his own party tried to remove him from office.\nAnd John Cornyn is so unpopular that his party says he’s the “ Washington swamp .”\nNow Republicans are facing a primary that is…\n[HEADLINE RIPS ON SCREEN]\n“ personal and contentious ,”\n“ increasingly vicious ,” and\n“ could cost them a must-win Senate seat ”\n[REPORTER] “ You have Republican leadership saying right now that there’s a possibility of this being flipped .”\nBuckle up Texas. The circus is in town. [HONK SOUND]",
+    "text_hash": "a0ee00b92378ef6b20ff3103e15170ab494af4330073d68331e08a280dd3efdd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "dscc-12483-0",
+    "alignment": "D",
+    "block_id": "dscc-12483-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "dscc-12483-0-claims-001-008",
+    "claim_text": "There’s a possibility of this being flipped.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 564,
+        "kind": "publisher_transcript",
+        "start": 452,
+        "text": "[REPORTER] “ You have Republican leadership saying right now that there’s a possibility of this being flipped .”",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.dscc.org/article/dscc-releases-new-digital-ad-on-texas-republican-runoff-clown-car/",
+    "sponsor": "DSCC",
+    "targets": [
+      {
+        "anchor_end": 547,
+        "anchor_quote": "this",
+        "anchor_start": 543,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "this",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Texas Republican clown car just lost one of its passengers.\nBut the two that are left could make up the whole circus.\nKen Paxton is so corrupt his own party tried to remove him from office.\nAnd John Cornyn is so unpopular that his party says he’s the “ Washington swamp .”\nNow Republicans are facing a primary that is…\n[HEADLINE RIPS ON SCREEN]\n“ personal and contentious ,”\n“ increasingly vicious ,” and\n“ could cost them a must-win Senate seat ”\n[REPORTER] “ You have Republican leadership saying right now that there’s a possibility of this being flipped .”\nBuckle up Texas. The circus is in town. [HONK SOUND]",
+    "text_hash": "a0ee00b92378ef6b20ff3103e15170ab494af4330073d68331e08a280dd3efdd",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
   }
 ]

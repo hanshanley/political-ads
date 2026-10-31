@@ -723,7 +723,7 @@
     "ad_id": "dccc-669825-0",
     "block_id": "dccc-669825-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "dembo-1270-0",
@@ -741,13 +741,13 @@
     "ad_id": "dscc-12483-0",
     "block_id": "dscc-12483-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "dscc-12657-0",
     "block_id": "dscc-12657-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for Mike Rogers: \\\"Mike Rogers\\\" is absent from unit 6. Exact source: \\\"[MIKE ROGERS] We’re gonna be fine. We’ve got plenty of oil.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dscc-12717-0",
