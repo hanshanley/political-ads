@@ -18,6 +18,15 @@ RUNTIME_VERSIONS = {
     "mlx-lm": "0.30.7",
     "transformers": "5.1.0",
 }
+CPU_GENERATION = {
+    "backend": "mlx-vlm.cpu-sharded-greedy",
+    "device": "cpu",
+    "float_dtype": "float32",
+    "cpu_streams": 8,
+    "prefill_tokens": 128,
+    "prefill_kernel": "streamed-dequantized-matmul",
+    "decode_kernel": "quantized-matmul",
+}
 
 
 class LocalGemma:
@@ -152,3 +161,144 @@ class LocalGemma:
             }
             for index, uid in enumerate(uids)
         ]
+
+
+def prepare_cpu_language_model(model):
+    import mlx.core as mx
+    import mlx.nn as nn
+    from mlx.utils import tree_unflatten
+
+    streams = [mx.new_stream(mx.cpu) for _ in range(CPU_GENERATION["cpu_streams"])]
+
+    class CpuQuantizedModule(nn.Module):
+        def __init__(self, layer):
+            super().__init__()
+            self.layer = layer
+
+        @property
+        def weight(self):
+            return self.layer.weight
+
+        def __call__(self, inputs):
+            if isinstance(self.layer, nn.QuantizedEmbedding):
+                return self.layer(inputs)
+            return self.as_linear(inputs)
+
+        def as_linear(self, inputs):
+            layer = self.layer
+            width = layer.weight.shape[0]
+            count = min(len(streams), width)
+            options = {"group_size": layer.group_size, "bits": layer.bits}
+            if hasattr(layer, "mode"):
+                options["mode"] = layer.mode
+            outputs = []
+            for index in range(count):
+                start, end = index * width // count, (index + 1) * width // count
+                stream = streams[index]
+                args = (layer.weight[start:end], layer.scales[start:end], layer.biases[start:end])
+                if inputs.ndim > 1 and inputs.shape[-2] > 1:
+                    weight = mx.dequantize(*args, **options, stream=stream)
+                    result = mx.matmul(
+                        inputs, mx.swapaxes(weight, -1, -2, stream=stream), stream=stream
+                    )
+                else:
+                    result = mx.quantized_matmul(
+                        inputs, *args, transpose=True, **options, stream=stream
+                    )
+                outputs.append(result)
+            result = mx.concatenate(outputs, axis=-1)
+            if "bias" in layer:
+                result = result + layer.bias
+            # Release temporary dense weights before advancing to another layer.
+            mx.eval(result)
+            return result
+
+    model.set_dtype(mx.float32)
+    mx.eval(model.parameters())
+    replacements = [
+        (name, CpuQuantizedModule(layer))
+        for name, layer in model.named_modules()
+        if isinstance(layer, (nn.QuantizedLinear, nn.QuantizedEmbedding))
+    ]
+    model.update_modules(tree_unflatten(replacements))
+
+
+class LocalGemmaCpu(LocalGemma):
+    def __init__(self, *, download: bool = False):
+        import mlx.core as mx
+
+        mx.set_default_device(mx.cpu)
+        mx.random.seed(0)
+        super().__init__(download=download)
+        started = time.perf_counter()
+        prepare_cpu_language_model(self.model.language_model)
+        self.metadata |= CPU_GENERATION | {"cpu_prepare_seconds": time.perf_counter() - started}
+        eos = self.config.get("eos_token_id")
+        if eos is None:
+            eos = self.processor.tokenizer.eos_token_id
+        self.eos = {eos} if isinstance(eos, int) else set(eos or [])
+        if not self.eos:
+            raise ValueError("Pinned CPU model has no end-of-sequence token configuration")
+        print("CPU model ready: packed weights, float32 arithmetic, eight CPU streams", flush=True)
+
+    def __call__(self, prompt: str, max_tokens: int) -> dict:
+        import mlx.core as mx
+
+        with mx.stream(mx.cpu):
+            mx.random.seed(0)
+            tokenizer = self.processor.tokenizer
+            encoded = tokenizer.encode(
+                self.template(self.processor, self.config, prompt, num_images=0),
+                add_special_tokens=not hasattr(self.processor, "chat_template"),
+            )
+            if not encoded:
+                raise ValueError("CPU model prompt has no tokens")
+            model = self.model.language_model
+            cache = model.make_cache()
+            started = time.perf_counter()
+            step = CPU_GENERATION["prefill_tokens"]
+            for first in range(0, len(encoded), step):
+                result = model(
+                    mx.array([encoded[first : first + step]], dtype=mx.int32), cache=cache
+                )
+                token = mx.argmax(result.logits[:, -1, :], axis=-1)
+                mx.eval(token)
+                print(
+                    f"CPU prefill: {min(first + step, len(encoded))}/{len(encoded)} tokens; "
+                    f"{time.perf_counter() - started:.0f}s",
+                    flush=True,
+                )
+            tokens = []
+            finish = "length"
+            last_progress = time.perf_counter()
+            for index in range(max_tokens):
+                token = mx.argmax(result.logits[:, -1, :], axis=-1)
+                mx.eval(token)
+                value = token.item()
+                if value in self.eos:
+                    finish = "stop"
+                    break
+                tokens.append(value)
+                now = time.perf_counter()
+                if now - last_progress >= 60:
+                    print(
+                        f"CPU generation: {len(tokens)} tokens; {now - started:.0f}s",
+                        flush=True,
+                    )
+                    last_progress = now
+                if index + 1 < max_tokens:
+                    result = model(token[:, None], cache=cache)
+            return {
+                "text": tokenizer.decode(tokens),
+                "prompt_tokens": len(encoded),
+                "generation_tokens": len(tokens),
+                "finish_reason": finish,
+                "seconds": time.perf_counter() - started,
+                "batch_size": 1,
+                "prefill_batch_size": 1,
+            }
+
+    def batch(
+        self, prompts: list[str], max_tokens: int, *, prefill_batch_size: int | None = None
+    ) -> list[dict]:
+        return [self(prompt, max_tokens) for prompt in prompts]

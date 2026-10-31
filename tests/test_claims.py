@@ -552,6 +552,35 @@ def test_fast_finish_reason_rejects_even_short_parseable_truncation(tmp_path):
     assert summary["blocks_by_status"] == {"validation_failed": 1}
 
 
+def test_cpu_profile_uses_both_stages_and_replays_without_model_loading(tmp_path):
+    fixture_corpus(tmp_path)
+    output = tmp_path / "cpu"
+    requests_seen = []
+
+    def batch(requests, budget):
+        requests_seen.extend(requests)
+        return [{"text": canonical(payload()), "finish_reason": "stop"} for _ in requests]
+
+    with patch(
+        "political_ads.claims.LocalGemmaCpu", return_value=SimpleNamespace(batch=batch)
+    ) as factory:
+        summary = extract_claims(tmp_path, output, cpu=True, initial_tokens=2048)
+    factory.assert_called_once_with(download=False)
+    assert summary["blocks_by_status"] == {"normalized": 1}
+    assert len(requests_seen) == 2 and "PROPOSAL" in requests_seen[1]
+    manifest = json.loads((output / "manifest.json").read_text())
+    assert manifest["generation"]["backend"] == "mlx-vlm.cpu-sharded-greedy"
+    assert manifest["generation"]["device"] == "cpu"
+    assert manifest["generation"]["float_dtype"] == "float32"
+    with patch("political_ads.claims.LocalGemmaCpu", side_effect=AssertionError("Must not load")):
+        assert extract_claims(tmp_path, output, replay=True) == summary
+        assert publish_claim_checkpoint(tmp_path, output, tmp_path / "cpu-published") == summary
+    with pytest.raises(ValueError, match="implementation changed"):
+        extract_claims(tmp_path, output, prepare_only=True, initial_tokens=2048)
+    with pytest.raises(ValueError, match="one request"):
+        extract_claims(tmp_path, tmp_path / "invalid-cpu", cpu=True, batch_size=8)
+
+
 def test_fast_prefill_limit_is_frozen_and_replays_with_legacy_runs(tmp_path):
     fixture_corpus(tmp_path, [ad(), ad("second")])
     output = tmp_path / "fast-safe"

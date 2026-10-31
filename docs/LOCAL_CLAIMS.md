@@ -83,8 +83,8 @@ source units and structural checks, but runs independent requests through
 MLX-VLM's native batch generator. Both extraction and source-fidelity revision
 remain mandatory. The conservative default completion batch size is eight, with
 prompt prefills limited to two requests at a time to bound activation memory.
-Each stage initially allows 2,048 generated tokens; a failed or truncated attempt is retried with the
-full 8,192-token budget. Truncated output is never accepted, even when it happens
+Each stage initially allows 2,048 generated tokens; a failed or truncated attempt
+is retried with the full 8,192-token budget. Truncated output is never accepted, even when it happens
 to parse as JSON. Infrastructure failures stop the worker rather than turning
 unprocessed ads into exclusions.
 
@@ -135,6 +135,30 @@ Use a new directory when changing them. `--ad-id`, `--max-new-blocks`,
 `--prepare-only` and `--replay` also support separate bounded pilots.
 Ordinary offline replay and the checkpoint publisher infer the saved generation
 settings from either protocol's manifest.
+
+### CPU recovery fallback
+
+`--cpu` selects a separately frozen `full-cpu` run when Metal is unavailable.
+It still uses the pinned local 27B model, both mandatory stages, literal evidence
+checks and the same retry budgets. It is not a non-LLM classifier.
+
+Packed eight-bit weights remain unchanged. Floating parameters and arithmetic
+use float32. Eight CPU streams split projections by output rows; prefills
+temporarily dequantize one layer at a time, while single-token decoding uses
+quantized matrix multiplication. The backend, precision, stream count and
+128-token prefill windows are recorded in the manifest. These numerical changes
+can change generated labels; CPU and GPU responses are never mixed under one
+fingerprint. Do not retain a fully dequantized model in memory.
+
+```bash
+uv run --with-editable . scripts/extract_claims_fast.py --cpu --prepare-only
+uv run --with-editable . scripts/extract_claims_fast.py --cpu
+uv run --with-editable . scripts/extract_claims_fast.py --cpu --retry-failed
+```
+
+Real full-model CPU generation and a structurally checked chunk must be verified
+before describing this fallback as productive. Small-kernel timings are not
+whole-pipeline throughput or accuracy measurements.
 
 ## Commands
 

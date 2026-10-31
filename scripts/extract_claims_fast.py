@@ -19,25 +19,30 @@ from political_ads.claims import extract_claims
 def main():
     root = Path(__file__).resolve().parents[1]
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=root / "data/local-claims/full-fast-safe")
+    parser.add_argument("--output", type=Path)
     parser.add_argument(
         "--frozen-from", type=Path, default=root / "data/local-claims/full/manifest.json"
     )
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--prefill-batch-size", type=int, default=2)
     parser.add_argument("--initial-tokens", type=int, default=2048)
+    parser.add_argument("--cpu", action="store_true", help="Use the separately frozen CPU fallback")
     parser.add_argument("--ad-id", action="append")
     parser.add_argument("--max-new-blocks", type=int, default=0)
     parser.add_argument("--prepare-only", action="store_true")
     parser.add_argument("--replay", action="store_true")
     parser.add_argument("--retry-failed", action="store_true")
     args = parser.parse_args()
+    output = args.output or root / "data/local-claims" / (
+        "full-cpu" if args.cpu else "full-fast-safe"
+    )
     summary = extract_claims(
         root,
-        args.output,
+        output,
         frozen_from=args.frozen_from,
-        batch_size=args.batch_size,
-        prefill_batch_size=args.prefill_batch_size,
+        batch_size=1 if args.cpu else args.batch_size,
+        prefill_batch_size=1 if args.cpu else args.prefill_batch_size,
+        cpu=args.cpu,
         initial_tokens=args.initial_tokens,
         ad_ids=args.ad_id,
         max_new_blocks=args.max_new_blocks,

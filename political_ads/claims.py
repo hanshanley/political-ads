@@ -12,7 +12,7 @@ from pathlib import Path
 
 from political_ads.analysis import unique_messages
 from political_ads.cli import load_corpus, read_json, write_json
-from political_ads.local_gemma import MODEL, REVISION, LocalGemma
+from political_ads.local_gemma import CPU_GENERATION, MODEL, REVISION, LocalGemma, LocalGemmaCpu
 from political_ads.registry import candidate_mentions
 from political_ads.schema import digest, eligible, message_key
 
@@ -217,6 +217,7 @@ def prepare(
     batch_size: int = 1,
     initial_tokens: int = MAX_TOKENS,
     prefill_batch_size: int | None = None,
+    cpu: bool = False,
     frozen_from: Path | None = None,
 ) -> dict:
     settings = {
@@ -232,7 +233,7 @@ def prepare(
             "units": "contiguous_segment_or_same_image_windows",
         },
     }
-    if batch_size != 1 or initial_tokens != MAX_TOKENS or prefill_batch_size is not None:
+    if batch_size != 1 or initial_tokens != MAX_TOKENS or prefill_batch_size is not None or cpu:
         settings["version"] = FAST_VERSION
         settings["generation"] |= {
             "backend": "mlx-vlm.BatchGenerator",
@@ -241,6 +242,8 @@ def prepare(
         }
         if prefill_batch_size is not None:
             settings["generation"]["prefill_batch_size"] = prefill_batch_size
+        if cpu:
+            settings["generation"] |= CPU_GENERATION
     path = output / "manifest.json"
     if path.exists():
         manifest = read_json(path, None)
@@ -957,6 +960,7 @@ def extract_claims(
     batch_size: int = 1,
     initial_tokens: int = MAX_TOKENS,
     prefill_batch_size: int | None = None,
+    cpu: bool = False,
     frozen_from: Path | None = None,
 ) -> dict:
     if max_new_blocks < 0:
@@ -967,6 +971,8 @@ def extract_claims(
         raise ValueError("Batch size must be positive and initial tokens between 1 and 8192")
     if prefill_batch_size is not None and prefill_batch_size < 1:
         raise ValueError("Prefill batch size must be positive")
+    if cpu and (batch_size != 1 or prefill_batch_size not in (None, 1)):
+        raise ValueError("CPU inference processes one request at a time")
     root = root.resolve()
     output = (output or root / "data/local-claims/full").resolve()
     if (
@@ -983,6 +989,7 @@ def extract_claims(
             batch_size = saved["generation"].get("batch_size", 1)
             initial_tokens = saved["generation"].get("initial_tokens", MAX_TOKENS)
             prefill_batch_size = saved["generation"].get("prefill_batch_size")
+            cpu = saved["generation"].get("backend") == CPU_GENERATION["backend"]
         manifest = prepare(
             root,
             output,
@@ -990,6 +997,7 @@ def extract_claims(
             batch_size=batch_size,
             initial_tokens=initial_tokens,
             prefill_batch_size=prefill_batch_size,
+            cpu=cpu,
             frozen_from=frozen_from,
         )
         summary = export_results(output, manifest)
@@ -1006,7 +1014,8 @@ def extract_claims(
         if not pending:
             return summary
         if extractor is None:
-            extractor = LocalGemma(download=download_model)
+            factory = LocalGemmaCpu if cpu else LocalGemma
+            extractor = factory(download=download_model)
         if manifest["version"] == FAST_VERSION:
             return extract_batches(output, manifest, pending, extractor)
         for index, block in enumerate(pending, 1):
