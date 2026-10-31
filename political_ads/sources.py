@@ -147,6 +147,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "nrcc-nevada-globe",
+        "https://thenevadaglobe.com",
+        "National Republican Congressional Committee (publisher-attributed; payer unverified)",
+        "R",
+        "party",
+        "House",
+        fixed_race="NV-01",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "aan-iowa-nunn",
         "https://iowacapitaldispatch.com",
         "American Action Network (publisher-attributed; payer unverified)",

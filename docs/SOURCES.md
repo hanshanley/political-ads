@@ -10,6 +10,103 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## NRCC NV-01 independently linked narrator quotation recovery
+
+The distinct **nrcc-nevada-globe-20261020-0** record adds **17 literal
+words** from two expressly attributed narrator quotations in **TAX
+ATTACK**, an NRCC paid digital ad against Dina Titus. It remains a
+**partial quotation and semantically unreviewed**. Retain only the
+twelve-word first quotation from the first narrator paragraph and the
+five-word first quotation from the later narrator paragraph, in source
+order, preserving both literal trailing commas. Exclude the intervening
+nine-word Titus clip, the other eleven-word narrator quotation, Christian
+Martinez's press statement, reporting, photographs and media. Quoted
+opponent speech is not the narrator's endorsement.
+
+Actual Nevada Globe report:
+`https://thenevadaglobe.com/articles/tax-attack-nrcc-drops-new-dina-titus-ad-as-nevada-early-voting-gets-underway/`.
+Retained HTML SHA-256:
+`54775e615e7af24ce0406c759d49b55c8e4104459f4fc0b9a65237eca436560f`.
+Its unique **article.post-103728 h1** and unique
+**header.entry-header > p** bind **TheNevadaGlobeStaff**, **October
+20, 2026, 6:00 a.m.** The author meta and
+`article:published_time2026-10-20T13:00:17+00:00` agree on the calendar
+date. There is no time element or datetime attribute. This is publisher
+observation, not independently established first airing, upload or paid
+delivery; **October 20 publication differs from the reported October
+17 ad launch**.
+
+The article twice individually links **CM24rsW8AnI**, through **new paid
+digital advertising** and **ad** anchors, and explicitly identifies the
+NRCC. The selected passages immediately accompany **the narrator
+declares** and **the narrator says**. Exact official **H8NV03036 /
+C00499467**, **TITUS, DINA**, **DEM**, **House**, **NV-01**, **2026**
+agrees with principal **TITUS FOR CONGRESS**, **P/H/DEM**. The stable
+candidate ID's historical **NV03** substring does not override her
+current **NV-01** district. Titus is the **Democratic opponent**, not
+the Republican advertiser or its own candidate. Source alignment
+**R** and **party** sponsorship derive from the identified NRCC ad;
+no Republican candidate, approval or inspected payer card is invented.
+Explicit early voting and the November 3 federal election support
+general phase, not October alone.
+
+The complete preceding acquired corpus contains neither this individual
+original in **media_urls** nor these normalized speech fragments in
+source order. The separately reported Carrie Buck **Getting Hosed**
+original, AdImpact viewer **606f03a2-f176-4c29-b7f9-f7b5b3ebcebf**, is
+a different linked creative and remains an unacquired lead at this
+checkpoint. Its October 1 publisher date is not a verified first airing.
+No media, AdImpact, YouTube, caption, API or denied-provider request was
+made. Only the public report's retained HTML body is copied to replay
+storage; cached response headers are deliberately omitted and replay
+metadata is empty.
+
+Immutable **house-nrcc-nevada-globe-baseline.json** freezes **1,912
+acquired / 1,873 analyzed / 66 reviews**, aliases and **17 protected
+inputs** before acquisition. The existing parser suffices; the new
+source fixes **NV-01**. Strict verification preserves every preceding
+acquired/analyzed object and review, including broadcast-media limitations,
+and replays **560 to 561 written objects** with the single retained
+response and network sockets forbidden. Complete JSON/gzip/CSV/Parquet,
+eleven PNGs and browser/production copies reconcile. Parquet independently
+preserves the individual-original URL and quality flags, and preceding
+review bytes remain an unchanged suffix. All **437 Python tests**
+pass in **340.32 seconds**, with backend lint/format, frontend lint,
+**17 unit cases**, production typecheck/build and **all eight browser
+cases together** passing. All eleven figures were visually inspected,
+including the full-size monthly-issues chart. The saved audit reconciles
+**20 metric groups / 10 chart rows**.
+
+Snapshot:
+`94d6ec7e6d063c1f2e5705a62446aaa287e55f156a51638e99e6b1ee89f9a7bb`.
+Totals: **1,913 acquired / 1,874 English**; **D 1,226 / R 609 /
+other 31 / unknown 8**; exact messages **D 1,204 / R 572**.
+English House: **D 698 / R 231 / other 19 / unknown 3**; non-Snap
+House **D 222 / R 230**. Snap stays **D 476 / R 1 / other 19 /
+unknown 3**. These are source-dependent collection counts, not national
+ad volume, spending or matched-race estimates.
+
+The preceding Nunn research commit
+**137b84a867d29b3c9de4c1f909fcad3a67468834** preserves actual concurrent
+parent **55e64c2dae2c8ac1d4649b2c973178faf38b4c0d**. Exact remote paths,
+Hans author/committer identities and absence of Copilot/co-author/session
+trailers were independently verified. Original watcher and exact CI
+**41242854035** completed successfully; all **13 successful steps**
+were independently checked.
+
+Further discovery does not inflate the corpus. Gober's gallery was
+resolved from his actual campaign-overview link, not an assumed homepage
+route; retained HTML contains no script or video link. Its images were
+not visually reviewed, so no event/photo classification is asserted.
+The PBS NewsHour attack-ad segment's House clips are too short or
+insufficiently identified; its nineteen-word Ashley Hinson item is
+**Senate**, not House. Neither whole-program media nor unrelated clips
+are combined into a fictional individual ad. Newly requested public
+WisPolitics Steil school-lockdown and socialist-agenda reports returned
+**HTTP 403**; that publisher route is paused. No alternate endpoint,
+cached credentials, media request or access-control workaround is used,
+and the previously acquired Grothman evidence remains unchanged.
+
 ## AAN IA-03 separately linked narrator quotation recovery
 
 The distinct **aan-iowa-nunn-20260820-0** record adds **17 literal
