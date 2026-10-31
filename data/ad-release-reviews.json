@@ -3,6 +3,90 @@
   "scope": "Individually reviewed public ad words, not complete publisher discovery or semantic portrayal review.",
   "reviews": [
     {
+      "source": "millermeeks-iowagop",
+      "record_id": "10970",
+      "source_url": "https://iowagop.org/watch-miller-meeks-drops-new-ad-dsa/",
+      "retrieval_url": "https://iowagop.org/watch-miller-meeks-drops-new-ad-dsa/",
+      "format": "html",
+      "published": "2026-09-04",
+      "release_title": "[WATCH] Miller-Meeks Drops New Ad “DSA”",
+      "heading_selector": "h2.wp-block-post-title",
+      "candidate_id": "H8IA02043",
+      "media_url": "https://youtu.be/02q-ni0IfGQ?si=O8WIV6rlX9LZueMN",
+      "content_sha256": "75b8ee63fef91577ca6a0803165f40b6d1278397e49b0d53644bf2898c30403b",
+      "phase": "unknown",
+      "completeness": "marked_script",
+      "script_selector": ".entry-content",
+      "required_context": [
+        "Rep. Mariannette Miller-Meeks dropped a new ad,",
+        "Posted by Iowa GOP Team · September 2, 2026",
+        "Transcript:",
+        "Christina Bohannan would fit right in.",
+        "I’m Mariannette Miller-Meeks, and I approve this message."
+      ],
+      "passages": [
+        "Miller-Meeks: “DSA. That’s the label the new Democrats in Congress prefer. It stands for Democratic Socialists of America, and they are different. They want no prisons, no police, and no borders. Christina Bohannan would fit right in. She’s been soft on crime, wrong on prisons, and weak on immigration. Professor Bohannan might be right for the DSA, but she’s wrong for Iowa. I’m Mariannette Miller-Meeks, and I approve this message.”"
+      ],
+      "attribution_basis": "The actual Iowa GOP post 10970 has one h2 article title, one entry-content body, an expressly marked complete ad script and individual 02q-ni0IfGQ watch/embed links. The script retains the Miller-Meeks label and outer quotation marks, not the announcement, Transcript heading, ### boundary or website footer. Official saved H8IA02043/C00558825 identifies MILLER-MEEKS, MARIANNETTE JANE, REP, House, IA-01, 2026; the independently cached principal is MILLER-MEEKS FOR CONGRESS, P/H/REP. The Democratic target is H2IA02111/C00787820, BOHANNAN, CHRISTINA, DEM, House, IA-01, 2026, not the advertiser. Published uses actual article:published_time 2026-09-04T19:08:46+00:00, agreeing with the archive date, while the body says September 2; both observations are retained, neither is independently verified first release or paid delivery. Phase stays unknown without explicit general-election evidence. Advertiser alignment follows the named campaign and exact candidate, not the hosting party's website disclaimer. Legal ad payer, closing card, candidate authorization, authenticity and delivery remain uninspected; approval wording is transcribed, not independently verified authorization. No YouTube/media/caption/API request, alias change or semantic judgment."
+    },
+    {
+      "source": "millermeeks-iowagop",
+      "record_id": "10964",
+      "source_url": "https://iowagop.org/watch-miller-meeks-drops-new-ad-no-individual-stocks/",
+      "retrieval_url": "https://iowagop.org/watch-miller-meeks-drops-new-ad-no-individual-stocks/",
+      "format": "html",
+      "published": "2026-09-02",
+      "release_title": "[WATCH] Miller-Meeks Drops New Ad “No Individual Stocks”",
+      "heading_selector": "h2.wp-block-post-title",
+      "publication_selector": ".entry-content h4",
+      "publication_date_format": "Posted by Iowa GOP Team · %B %d, %Y",
+      "candidate_id": "H8IA02043",
+      "media_url": "https://www.youtube.com/embed/oHYTyKkSZo8?feature=oembed",
+      "content_sha256": "632d84d6bfc9136863f9b471cdb1e8047b45630e6f6cf7b9fdb70c403f5d3a2b",
+      "phase": "unknown",
+      "completeness": "marked_script",
+      "script_selector": ".entry-content",
+      "required_context": [
+        "Rep. Mariannette Miller-Meeks dropped a new ad, “No Individual Stocks.”",
+        "Posted by Iowa GOP Team · September 2, 2026",
+        "Transcript:",
+        "Voiceover:",
+        "I approve this message, and I don’t care if the D.C. insiders approve it or not."
+      ],
+      "passages": [
+        "Miller-Meeks: “Do you ever think the system is rigged? You’re right. It is. Members of Congress in both parties make money trading stocks with inside knowledge of regulations. Except me. I don’t own individual stocks. I’m Mariannette Miller-Meeks. I wrote the legislation that will block insider trading by Congressman. I approve this message, and I don’t care if the D.C. insiders approve it or not.”",
+        "Voiceover: “A proven fighter for Congress, Mariannette Miller-Meeks.”"
+      ],
+      "attribution_basis": "The actual Iowa GOP post 10964 has one h2 article title, one entry-content body, an expressly marked complete two-paragraph ad script and original oHYTyKkSZo8 iframe. Miller-Meeks and Voiceover labels, outer quotation marks and the publisher's literal Congressman wording remain unchanged; announcement, Transcript heading, ### boundary and website footer are excluded. Official saved H8IA02043/C00558825 identifies MILLER-MEEKS, MARIANNETTE JANE, REP, House, IA-01, 2026; independently cached principal MILLER-MEEKS FOR CONGRESS is P/H/REP. Actual archive date, visible body September 2 and article:published_time 2026-09-02T19:02:04+00:00 agree; September 4 modification is not another release. The publisher date is not verified first release or paid delivery. Phase stays unknown without explicit general-election evidence. Candidate campaign alignment is distinct from the hosting Iowa GOP website disclaimer; no legal payer, closing card, candidate authorization, authenticity or delivery inspection is claimed. No YouTube/media/caption/API request, alias change or semantic judgment."
+    },
+    {
+      "source": "mitchell-iowagop",
+      "record_id": "10928",
+      "source_url": "https://iowagop.org/mitchell-drops-new-ad-bulldozer-2/",
+      "retrieval_url": "https://iowagop.org/mitchell-drops-new-ad-bulldozer-2/",
+      "format": "html",
+      "published": "2026-08-25",
+      "release_title": "Mitchell Drops New Ad “Bulldozer”",
+      "heading_selector": "h2.wp-block-post-title",
+      "candidate_id": "H6IA02237",
+      "media_url": "https://www.youtube.com/watch?v=GKiXYNqcifY",
+      "content_sha256": "4ba366eedfcd4fb703f55ae9c7fc786da0f7123b88496c00fdb6d6f4f644e5ea",
+      "phase": "general",
+      "completeness": "marked_script",
+      "script_selector": ".entry-content",
+      "required_context": [
+        "Republican nominee for Iowa’s 2nd Congressional District Joe Mitchell released his first ad of the general election,",
+        "Posted by Iowa GOP Team · August 21, 2026",
+        "Transcript:",
+        "Joe Mitchell:",
+        "I’m Joe Mitchell, and I approve this message."
+      ],
+      "passages": [
+        "Joe Mitchell: “Washington wasn’t built for people like us. It was built for lobbyists, special interests, and career politicians. I’m Joe Mitchell, and we need to run a bulldozer straight through the corrupt system. I’ll support term limits, ban insider trading, and refuse PAC money because politicians shouldn’t get rich while Iowa families struggle to afford groceries, housing, and childcare. It’s time to put regular people back in charge. I’m Joe Mitchell, and I approve this message.”"
+      ],
+      "attribution_basis": "The actual Iowa GOP post 10928 has one h2 article title, one entry-content body, an expressly marked complete script and individual GKiXYNqcifY watch/embed links. The Joe Mitchell label and outer quotation marks are retained; announcement, Transcript heading, ### boundary and website footer are not ad words. Official saved H6IA02237/C00918979 identifies MITCHELL, JOE, REP, House, IA-02, 2026; independently cached principal JOE MITCHELL FOR CONGRESS is P/H/REP. Published uses actual article:published_time 2026-08-25T20:11:30+00:00, agreeing with the archive, while the body says August 21; both are retained, neither establishes verified first release or delivery. Explicit Republican nominee/2nd Congressional District/first ad of the general election wording establishes general phase, not August alone. Campaign alignment does not make the hosting Iowa GOP website disclaimer the ad's legal payer. Closing payer, candidate authorization, authenticity and delivery remain uninspected; the approval line is literal script, not inspected authorization. No YouTube/media/caption/API request, alias change or semantic judgment."
+    },
+    {
       "source": "ngb-colsun",
       "record_id": "502218",
       "source_url": "https://coloradosun.com/2026/09/15/no-going-back-pac-jeff-crank-jessica-killin/",

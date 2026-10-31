@@ -114,8 +114,8 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         heading = soup.find("h1")
         if review.get("heading_selector"):
             headings = soup.select(review["heading_selector"])
-            if len(headings) != 1 or headings[0].name != "h1":
-                raise ValueError("Reviewed article heading must match exactly one h1")
+            if len(headings) != 1 or headings[0].name not in {"h1", "h2"}:
+                raise ValueError("Reviewed article heading must match exactly one h1 or h2")
             heading = headings[0]
         if heading is None:
             raise ValueError("Reviewed article publication metadata or heading is missing")

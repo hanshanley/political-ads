@@ -530,6 +530,40 @@ def test_reviewed_article_heading_selection_excludes_navigation(selector):
 
 
 @pytest.mark.parametrize(
+    "variant", ["selected", "ambiguous", "nonheading", "changed_title", "conflicting_date"]
+)
+def test_reviewed_article_can_bind_a_unique_h2_without_accepting_navigation(variant):
+    source, candidate, review, body = release_fixture("html", "marked_script")
+    title = review["release_title"]
+    heading = f'<h2 class="article-title">{title}</h2>'
+    content = "<h1>Latest News</h1>" + body.decode().replace(f"<h1>{title}</h1>", heading)
+    if variant == "ambiguous":
+        content += heading
+    elif variant == "nonheading":
+        content = content.replace(heading, f'<p class="article-title">{title}</p>')
+    elif variant == "changed_title":
+        content = content.replace(heading, '<h2 class="article-title">Another ad</h2>')
+    elif variant == "conflicting_date":
+        content += '<time class="storydate">July 13, 2026</time>'
+        review["publication_selector"] = "time.storydate"
+    review["heading_selector"] = ".article-title"
+    review["content_sha256"] = digest(content)
+
+    class Client:
+        def get(self, *args, **kwargs):
+            return content.encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-10-30", [candidate], [review]
+    )
+    if variant == "selected":
+        assert len(ads) == 1 and ads[0]["title"] == title
+        assert ads[0]["text"] == review["passages"][0]
+    else:
+        assert not ads and status["state"] == "error"
+
+
+@pytest.mark.parametrize(
     "date_markup", ["matching", "no_format", "conflicting_datetime", "ambiguous", "missing"]
 )
 def test_reviewed_article_abbreviated_date_binds_visible_and_machine_dates(date_markup):

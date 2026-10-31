@@ -10,6 +10,108 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Iowa House marked-script expansion
+
+Three new Republican House records retain **complete publisher-marked ad
+scripts / 220 whitespace-separated tokens**: Miller-Meeks *DSA*
+**millermeeks-iowagop-10970-0**, Miller-Meeks *No Individual Stocks*
+**millermeeks-iowagop-10964-0**, and Joe Mitchell *Bulldozer*
+**mitchell-iowagop-10928-0**. Counts are **70 / 73 / 77**, including
+five speaker-label tokens. Exact public HTML, title, marked script,
+original association and candidate are bound in `data/ad-release-reviews.json`.
+Reproduce with **`--source millermeeks-iowagop --source mitchell-iowagop
+--offline --until 2026-10-30`**, using the three actual cached responses.
+Curated discovery remains partial even though these scripts are complete.
+
+The real archive card URLs are absolute overlay anchors on the heading's
+grandparent, not links inside its immediate parent. Individual pages expose
+post IDs **10970 / 10964 / 10928** and original YouTube identities
+**02q-ni0IfGQ / oHYTyKkSZo8 / GKiXYNqcifY**. No YouTube, media, caption
+or post-API request is made. Every prior acquired record was checked for
+these identities and distinctive script phrases; none matched.
+This establishes no independently certified national creative uniqueness.
+
+Publisher title selection explicitly binds the unique **h2.wp-block-post-title**,
+not the unrelated **Latest News** h1. A focused failing-before regression
+justifies the narrow unique-h2 option. Missing/ambiguous/non-heading
+matches, changed titles and conflicting selected publication dates still fail
+closed. The default h1 behavior is unchanged. A unique **.entry-content**
+selection and marked Transcript-to-### boundary retain only the actual script,
+not announcements, bylines, forms or the site's disclaimer.
+Both speaker labels in *No Individual Stocks*, quotation marks and the
+publisher's literal **Congressman** wording remain unchanged.
+
+Actual full HTML SHA-256, in that order:
+`75b8ee63fef91577ca6a0803165f40b6d1278397e49b0d53644bf2898c30403b`,
+`632d84d6bfc9136863f9b471cdb1e8047b45630e6f6cf7b9fdb70c403f5d3a2b`,
+`4ba366eedfcd4fb703f55ae9c7fc786da0f7123b88496c00fdb6d6f4f644e5ea`.
+For *DSA*, actual article publication **September 4 / 19:08:46 UTC**
+agrees with the archive, while its body byline says **September 2**.
+For *Bulldozer*, actual article publication **August 25 / 20:11:30 UTC**
+agrees with the archive, while its body says **August 21**.
+The existing metadata date is used; both conflicting body observations
+remain literal required context and are explicitly documented in each
+review's attribution. This is not a timezone reconciliation or a claim
+that the earlier body date is a verified first release. Both alternatives
+are in the saved window. *No Individual Stocks*'s **September 2 /
+19:02:04 UTC**, archive and selected body date agree; its September 4
+modification is not another ad.
+
+Exact saved candidates and independently cached official principals:
+**H8IA02043 / C00558825**, MILLER-MEEKS, MARIANNETTE JANE, REP, House,
+IA-01, 2026 / **MILLER-MEEKS FOR CONGRESS**, P/H/REP; and
+**H6IA02237 / C00918979**, MITCHELL, JOE, REP, House, IA-02, 2026 /
+**JOE MITCHELL FOR CONGRESS**, P/H/REP. *DSA* names Democratic opponent
+**H2IA02111 / C00787820**, BOHANNAN, CHRISTINA, IA-01; her party does
+not determine advertiser alignment. No name alias or registry edit is made.
+Mitchell's explicit nominee/district/first-general-ad announcement establishes
+**general** phase. Both Miller-Meeks phases stay **unknown** without
+explicit general-election context; September alone is not sufficient.
+The Iowa GOP footer concerns the website, not an inspected ad closing card.
+Campaign attribution, approval wording and alignment do not independently
+verify legal payer, candidate authorization, authenticity or paid delivery.
+All three semantic judgments remain **unreviewed**, not neutral.
+
+The immutable pre-edit baseline at pushed **8ea7a97** freezes
+**1,894 acquired / 1,855 analyzed objects, 48 release reviews, seventeen
+protected files and every alias**, before any Iowa code/canonical edit.
+Every earlier review byte is unchanged. A wider cached-archive review
+found five in-window House-related ad cards: these three, the already
+acquired Nunn *The Work*, and an explicitly labeled Daily Signal reprint.
+The denied Daily Signal report is not retrieved through that reprint.
+Five cards do not establish national or archive-wide exhaustive acquisition.
+
+Verified snapshot:
+`41fed1c2b3455586119b4ca3104d95027aedb08554c6e0985d7d5341f54418ef`.
+Totals are **1,897 acquired / 1,858 English**, including **1,226 D /
+593 R**, with **1,204 D / 556 R** exact messages. English House coverage
+is **698 D / 215 R**; excluding Snap it is **222 D / 214 R**.
+Snap House remains **476 D / one R**. These are observed collection
+counts, not nationally representative advertising proportions.
+
+All **224 affected Python tests, 17 frontend tests and seven browser cases**
+pass, alongside Python/frontend lint, formatting, typechecking and both
+builds. All eleven refreshed PNGs were visually inspected. Independent
+verification preserves every frozen acquired/analyzed object, old review
+byte, protected file and alias; complete JSON/gzip/CSV downloads and
+**1,897 Parquet rows** reconcile. A socket-forbidden isolated replay uses
+exactly **three cached responses**, reproducing all **545 written objects
+and states** from the preceding 542. Independent paragraph extraction
+checks the complete script boundaries and literal date discrepancies.
+The strategy audit reconciles **twenty metric groups / ten chart rows**.
+No saved semantic review, claims input, publication or host integration changes.
+
+Broader independent discovery reached McGowan's actual campaign homepage
+and linked media page, both HTTP 200. Their interviews, debates, coverage,
+endorsement material and photographs are not recovered ad speech.
+The October 1 NH Journal DiLorenzo report also returned 200 and contains
+literal ad quotations, but exposes no individual association for that ad:
+its separate **aZ9BjKWV6NM** embed explicitly concerns One Nation /
+Chris Pappas, not DiLorenzo's *Silver Spoon Shaheen*. It is not assigned
+to those quotations. DiLorenzo and McDowell homepages returned 200 with
+biography/issue copy and actual news links, not acquired ad scripts.
+These remain discovery leads, with no additional records or relaxed gates.
+
 ## No Going Back Colorado House quoted-ad expansion
 
 One additional Republican outside-group record, **ngb-colsun-502218-0**,
