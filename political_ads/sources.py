@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "butler-flvoice",
+        "https://flvoicenews.com",
+        "Ben Butler campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="FL-09",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "luke-murphy-flvoice",
         "https://flvoicenews.com",
         "Luke Murphy campaign (publisher-reported; payer unverified)",

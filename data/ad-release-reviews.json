@@ -3,6 +3,38 @@
   "scope": "Individually reviewed public ad words, not complete publisher discovery or semantic portrayal review.",
   "reviews": [
     {
+      "source": "butler-flvoice",
+      "record_id": "142440",
+      "source_url": "https://flvoicenews.com/ben-butler-releases-new-congressional-campaign-ad-targeting-washington-politicians/",
+      "retrieval_url": "https://flvoicenews.com/ben-butler-releases-new-congressional-campaign-ad-targeting-washington-politicians/",
+      "format": "html",
+      "published": "2026-08-04",
+      "release_title": "Ben Butler releases new congressional campaign ad targeting Washington politicians",
+      "heading_selector": "h1.fl-heading",
+      "publication_selector": ".uabb-infobox-text > p:-soup-contains('Published Aug. 4, 2026, 11:43 a.m. ET')",
+      "publication_date_format": "Published %b. %d, %Y, 11:43 a.m. ET | Updated Aug. 4, 2026",
+      "candidate_id": "H6FL09278",
+      "media_url": "https://www.youtube.com/watch?v=zsLEwiXlWFQ",
+      "content_sha256": "ab309fc6bb64e97adf8d95be1a108af9c9d43fa41469b6b15812f747db6ab86b",
+      "phase": "primary",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Kennedy Owens",
+        "Republican congressional candidate Ben Butler",
+        "The ad, titled “ Honesty in Washington ,”",
+        "Butler says in the ad.",
+        "Butler is seeking the Republican nomination in Florida’s 9th Congressional District.",
+        "The Republican primary is scheduled for Aug. 18."
+      ],
+      "passages": [
+        "After meeting these guys, I owe them an apology,",
+        "They’re a lot more honest than the jackasses in Washington."
+      ],
+      "publisher_credit": "Kennedy Owens, Florida’s Voice.",
+      "reuse_basis": "Retain only these two unmodified ad-speech excerpts, 19 whitespace tokens total, for noncommercial comparative research with author/publisher/source credit, not the article, reporting, photograph or media. The actual publisher footer reserves rights; no blanket license, licensed-catalog consent or host-publication authorization is asserted. No original media is redistributed.",
+      "attribution_basis": "Actual cached full HTML SHA256 ab309fc6bb64e97adf8d95be1a108af9c9d43fa41469b6b15812f747db6ab86b, body postid-142440, unique h1.fl-heading and unique visible publication paragraph bind the individual report. Visible August4/11:43 a.m. ET agrees with article:published_time and NewsArticle datePublished 2026-08-04T15:43:11+00:00; modification 2026-08-04T15:43:12+00:00 is separate. The exact fixed date-format suffix preserves the actual Updated date and time notation; this is the publisher's August4 observation, not independently verified first airing, upload or paid delivery. One uniquely matched wp-block-paragraph explicitly attributes the two ordered quotations to Butler in the ad; retain the first comma, second period and curly contraction, 9+10 whitespace tokens. The actual Honesty in Washington anchor individually binds zsLEwiXlWFQ; this report has no YouTube iframe, and no media/caption/API request was made. The independently cached actual campaign August4 individual release, SHA256 34dcddd97f918890725b92e878064da299be0406877f7eda4323d3ce8dcec6e1, corroborates the ad wording with ASCII-apostrophe and punctuation differences but supplies no individual original; its incorrect fundraising browser title and missing h1 are not used as canonical metadata, and it is not a second acquisition. Exact saved H6FL09278/C00951053 identifies BUTLER, BENJAMIN BEN, REP, House, FL-09, 2026; independently cached official principal BUTLER FOR FLORIDA is P/H/REP. Principal registration, publisher attribution and the generic campaign footer do not establish an inspected creative payer or authorization. Primary phase follows the explicit Republican nomination/August18 primary, not August alone. Unqualified campaign statements, the separate July20 first-ad report, short setup/tagline fragments, biography, fundraising and reporter paraphrases do not pad these nineteen words. The separate No Bull PAC page expressly labels itself a design concept and is excluded, with no MP4 request. The identity guard initially rejected the public Ben Butler name because default first/last recognition uses Benjamin Butler. One independently bound H6FL09278 full_name alias now uses the existing reviewed-alias mechanism, preserves all old aliases and leaves the roster/parser unchanged; BEN is present in the registered given names, and the primary campaign/footer and independent FL-09 report bind the exact public name. No new semantic judgment."
+    },
+    {
       "source": "luke-murphy-flvoice",
       "record_id": "141905",
       "source_url": "https://flvoicenews.com/luke-murphy-to-launch-first-tv-ad-in-floridas-2nd-congressional-district-race/",
