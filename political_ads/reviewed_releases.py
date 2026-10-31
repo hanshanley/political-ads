@@ -12,6 +12,43 @@ from political_ads.schema import Ad, digest
 from political_ads.sources import Source, language_of, media_links, plain_html, transcript_blocks
 
 
+def linked_ad_text(client, content: str, review: dict, identities: list[dict]) -> str:
+    evidence = review["linked_ad_text"]
+    url = evidence["url"]
+    target = urlsplit(url)
+    public_player = (
+        target.netloc == "bigal.media"
+        and target.path == "/mediaplayer.php"
+        and url in media_links(content)
+    )
+    public_report = (
+        target.netloc == "www.washingtonexaminer.com"
+        and target.path.startswith("/news/campaigns/congressional/")
+        and not target.query
+        and not target.fragment
+    )
+    links = {a.get("href") for a in BeautifulSoup(content, "html.parser").select("a[href]")}
+    if target.scheme != "https" or not (public_player or public_report) or url not in links:
+        raise ValueError("Ad text must come from an explicitly linked supported public page")
+    if review["completeness"] != "partial_quotation":
+        raise ValueError("Linked ad words require explicitly unverified completeness")
+    body, _ = client.get(url, refresh=True, retry=False)
+    linked = body.decode("utf-8")
+    if digest(linked) != evidence["content_sha256"]:
+        raise ValueError("Linked source changed; literal ad evidence requires a new review")
+    visible = re.sub(r"\s+", " ", plain_html(linked)).strip()
+    if not evidence["required_context"] or not all(
+        context in visible for context in evidence["required_context"]
+    ):
+        raise ValueError("Linked source's explicit ad context is missing")
+    if not candidate_mentions(visible, identities):
+        raise ValueError("Linked source does not identify the reviewed federal candidate")
+    selected = BeautifulSoup(linked, "html.parser").select(evidence["selector"])
+    if len(selected) != 1:
+        raise ValueError("Linked ad text must match exactly one reviewed element")
+    return re.sub(r"\s+", " ", plain_html(str(selected[0]))).strip()
+
+
 def reviewed_release(client, source: Source, review: dict, candidates: list[dict], observed: str):
     for key in ("source_url", "retrieval_url"):
         url = urlsplit(review[key])
@@ -80,12 +117,17 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         raise ValueError("Reviewed candidate is not identified in the publisher's evidence")
     if review["media_url"] not in media_links(content):
         raise ValueError("Reviewed original ad link is missing")
+    passage_source = (
+        linked_ad_text(client, content, review, identities)
+        if review.get("linked_ad_text")
+        else visible
+    )
     passages = review["passages"]
     if not passages or len(" ".join(passages).split()) < 15:
         raise ValueError("Reviewed ad needs substantive literal text")
     position = 0
     for passage in passages:
-        match = visible.find(passage, position)
+        match = passage_source.find(passage, position)
         if match < 0:
             raise ValueError("Reviewed ad passages must be literal and retain source order")
         position = match + len(passage)
@@ -113,7 +155,11 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
             else "campaign_release_reproduced_by_news_publisher"
         )
         if full_script
-        else "news_report_quotes_partial_ad_copy",
+        else (
+            "publisher_linked_source_quotes_partial_ad_copy"
+            if review.get("linked_ad_text")
+            else "news_report_quotes_partial_ad_copy"
+        ),
     ]
     if not full_script:
         flags.append("publisher_ad_copy_completeness_unverified")

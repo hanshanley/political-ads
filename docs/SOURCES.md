@@ -10,9 +10,132 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Three-state expansion of the October 30 snapshot
+## Publisher-linked expansion of the October 30 snapshot
 
-The latest acquisition contains **1,857 text records**, including **1,819
+The latest acquisition contains **1,862 text records**, including **1,824
+English records: 1,226 D / 559 R / 31 other / eight unresolved**. It adds
+five Republican House ad records in **OH-07, NM-02, AZ-01 and AZ-06**, all
+explicitly retained as **partial quotations**, not complete transcripts.
+All **1,857 preceding acquired objects**, **1,819 preceding analyzed
+objects**, eighteen earlier acquisition reviews and saved semantic reviews
+are unchanged. The additions remain semantically **unreviewed**.
+Exact observed-text message counts are **1,204 D / 522 R**. English House
+coverage is **698 D / 181 R**: 476 D / one R Snap and 222 D / 180 R
+non-Snap. These are source-limited collection counts, not national advertising
+prevalence or independently certified complete creative/message families.
+
+| Reported advertiser | Recovered ad | Publisher / report date | Recovered words |
+|---|---|---|---|
+| Max Miller and NRCC, reported coordinated ad | Socialist, OH-07 | American Journal News / September 16; linked Big AL public player | One passage, 89 words |
+| Greg Cunningham and NRCC, reported joint ad | Barbershop, NM-02 | American Journal News / October 9; linked Washington Examiner report / September 25 | Two passages, 27 words |
+| Safety and Affordability PAC | Attack on Amish Shah, AZ-01 | American Journal News / October 20 | Five fragments, 22 words |
+| Congressional Leadership Fund | Mendoza tax comments, AZ-06 | American Journal News / September 11 | Two passages, 23 words |
+| Juan Ciscomani campaign | Separate ad using the same Mendoza clip, AZ-06 | American Journal News / September 11 | One shared clip, 15 words |
+
+Credit: **Jesse Valentine, American Journal News**; **Lauren Green,
+Washington Examiner**; and the explicitly publisher-linked **Big AL public
+player**. Broader public WordPress discovery inspected all **218 matching
+2026 posts across three pages**, not just the eleven posts returned by two
+exact-phrase queries. The `bigal.media` search returned one report. These
+are bounded publisher-query results, not complete national discovery.
+
+The two linked-text recoveries bind **both complete response SHA-256
+hashes**, not merely the original report. The main article must identify
+the exact candidate, advertiser, date/title and media association, and must
+literally link the secondary page. Only the supported public Big AL player
+or the linked Washington Examiner congressional report can supply secondary
+text. Its own hash, explicit ad context, exact federal identity and unique
+reviewed element are checked before literal ordered quotations are admitted.
+Changed or ambiguous evidence fails closed. These remain partial quotations;
+the secondary selector cannot turn them into a claimed complete script.
+
+The Miller player publicly exposes its transcript without login. The
+**Negative Ad** label, specifications and September 7 upload date are player
+metadata, not ad words or an adopted semantic judgment. The complete HTML
+hash includes incidental expiring media markup and is not weakened to make
+future changes pass. Only the public HTML page was requested: **no login,
+API, catalog, embedded credential, signed storage URL or original video**
+was used. The recorded September 16 report date is distinct from the
+player's reported September 7 upload; neither proves first paid delivery.
+The displayed text is not an independently checked complete audio/on-screen
+transcript or closing-payer inspection.
+
+The Cunningham report explicitly links both the individual Barbershop video
+and the September 25 Washington Examiner story about that same creative.
+The latter supplies two quotations from the men conversing in the ad and
+reports production with NRCC. Its ordinary visible HTML was sufficient;
+no login, subscription or paywall workaround was used. October 9 remains
+the primary report date, while the earlier September 25 report is retained
+in provenance: this is **not** a newly released October 9 advertisement.
+Candidate and NRCC press responses are not imported as ad words. Neither
+reported campaign/party attribution independently establishes a sole legal
+closing payer.
+
+The Arizona reports' exact legacy AdImpact `/admo/viewer/<UUID>` links
+are recognized **as associations only**; no AdImpact page, API, account,
+catalog, credential or media was requested. The Safety and Affordability
+advertisement is Republican-aligned by the reported organization's
+Trump/MAGA Inc. connection, not by its Democratic target's party. Its
+several short fragments remain **one** incomplete ad, not several creatives
+or automatically assigned descriptions of Shah. Exact federal identities
+are **H2OH16051 / C00770818** (Miller), **H6NM02127 / C00921791**
+(Cunningham), **H4AZ01194 / C00836502** (Shah, the Democratic target),
+and **H2AZ02360 / C00786194** (Ciscomani). No new alias or fuzzy matching
+was introduced.
+
+The CLF and Ciscomani records have **different reported advertisers and
+different individual media associations**, but explicitly share the same
+15-word Mendoza clip. Only CLF's record includes its separately attributed
+eight-word voiceover. The campaign record does not inherit that narration
+or the longer original-forum quotation. Their different observed-text
+identities do not certify unrelated full-message families. Publisher
+fact-checking, editorial assessments and reported press statements remain
+outside ad text and semantic analysis.
+
+```sh
+political-ads collect --source miller-americanjournal \
+  --source cunningham-americanjournal \
+  --source safety-affordability-americanjournal \
+  --source clf-americanjournal --source ciscomani-americanjournal \
+  --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+The two secondary-text cases failed before the collector extension; two
+legacy-viewer association cases also failed before their narrow recognition
+fix. Focused regressions reject unlinked or unsupported pages, login/catalog
+paths, deceptive hosts, changed hashes, missing context/identity, missing or
+ambiguous selectors, quotations outside the selected element, and claimed
+full-script completeness. These changes do not relax existing primary
+publisher, exact candidate, article heading/date or quotation checks.
+
+Network-forbidden isolated replay reproduces all **517 written objects and
+source states** from the preceding 512-object corpus using only **six**
+cached responses, including both secondary pages and the shared CLF/campaign
+report. All **362 Python tests**, Python lint/format, frontend lint,
+**17 frontend tests**, production build and **seven browser cases** pass.
+Independent auditing verifies **20 metric groups and ten chart rows**.
+Complete analysis/browser/production JSON, gzip and CSV agree; all **1,862
+Parquet identity/text/hash/alignment rows** and eleven visually inspected
+PNG sets reconcile. Every preceding acquired/analyzed object, all eighteen
+earlier acquisition reviews and saved semantic reviews remain unchanged.
+
+Further discovery does not count as acquired text. Barrett's verified
+campaign homepage exposes a B-roll video and channel, not the health-care
+creative. A Semblen race page exposes third-party Meta-ad excerpts, but its
+terms prohibit bulk automated copying; no dataset, model output or archive
+from that service is imported, and no account or trial is started. Its
+primary-campaign link is useful discovery, not permission to copy a catalog.
+Ordinary campaign biography, B-roll and secondary paraphrases remain
+excluded. Acquisition continues through other public primary/publisher
+routes; website and both article editions remain unpublished.
+
+## Preceding three-state expansion of the October 30 snapshot
+
+That acquisition contains **1,857 text records**, including **1,819
 English records: 1,226 D / 554 R / 31 other / eight unresolved**. It adds
 three Republican House advertisements from **ME-02, AZ-06 and NV-02**,
 each explicitly retained as **partial quotations**, not a recovered full

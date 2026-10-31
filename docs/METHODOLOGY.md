@@ -411,6 +411,49 @@ links are associations only, not recovered transcripts or access to its catalog.
 Publisher dates remain distinct from first airing, and quoted allegations are not
 verified findings. Target party does not determine the advertiser's alignment.
 
+An optional `linked_ad_text` entry supports literal quotations exposed by an
+explicitly linked secondary page, not inferred text from a video link. The
+primary article must still pass every publisher, full-hash, heading/date,
+advertiser, exact candidate and individual-media-association check. The
+secondary URL must be a literal article hyperlink to the supported public
+Big AL `/mediaplayer.php?q=...` player or Washington Examiner congressional
+report. Both complete responses are hash-bound. The secondary page must
+retain its reviewed ad context, the exact federal candidate and exactly one
+selected text element; the admitted passages must occur there literally and
+in order. Missing, changed, unlinked or ambiguous evidence fails closed.
+Only `partial_quotation` completeness is supported on this path. Its segments
+retain the entire two-response review and the
+`publisher_linked_source_quotes_partial_ad_copy` quality flag.
+
+Miller's public player supplies 89 quoted words, excluding its own negative-ad
+label and specifications. Its September 7 upload date is distinct from the
+September 16 primary report date. Cunningham's 27 quoted words come from the
+September 25 report explicitly linked by the October 9 Barbershop article;
+the earlier report is retained rather than implying an October 9 first
+release. Reported campaign/NRCC involvement does not establish a sole legal
+payer. Neither secondary page requires a login or subscription workaround.
+No signed storage URL, media download, embedded credential or catalog is
+used. Incidental expiring player markup remains within the full-hash boundary.
+
+Individual legacy AdImpact associations require HTTPS on exactly
+`host2.adimpact.com`, an `/admo/viewer/<UUID>` path (optional trailing slash)
+and no query or fragment. A Big AL association requires HTTPS on exactly
+`bigal.media`, the `/mediaplayer.php` path and one nonempty `q` parameter,
+without other parameters or fragments. Login/catalog paths, deceptive hosts,
+userinfo and malformed identities are excluded. Recognizing an association
+does not request those providers. The reviewed public Big AL HTML is the
+only additional player response used here; no AdImpact request is made.
+
+The CLF and Ciscomani Arizona advertisements are explicitly reported as
+separate ads with different advertisers and original associations, but share
+one 15-word quoted Mendoza clip. The CLF record additionally retains its
+eight-word reported voiceover; the campaign record does not inherit those
+words. Both remain particularly incomplete quotations. Distinct normalized
+observed-text message identities do not certify unrelated complete messaging
+or independent message families. News-clip fragments in the Safety and
+Affordability ad likewise remain one partial advertisement; source wording
+is not automatically attributed as the advertiser's description of Shah.
+
 Public X/Twitter associations must be HTTPS links on exact `x.com` or
 `twitter.com` hosts (optionally `www`) with a valid handle and an individual
 15-20-digit `/status/` ID. Profiles, media feeds, malformed IDs, extra path

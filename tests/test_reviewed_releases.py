@@ -144,6 +144,124 @@ def test_reviewed_release_never_calls_an_unregistered_host():
     )
 
 
+@pytest.mark.parametrize(
+    "linked_url",
+    [
+        "https://bigal.media/mediaplayer.php?q=publicshare",
+        "https://www.washingtonexaminer.com/news/campaigns/congressional/123/ad/",
+    ],
+)
+def test_reviewed_release_binds_explicitly_linked_ad_words(linked_url):
+    source, candidate, review, body = release_fixture("html")
+    passage = review["passages"][0]
+    content = body.decode().replace(passage, "Rhett Marques discussed the campaign.")
+    content += f'<a href="{linked_url}">The reported advertisement</a>'
+    linked = (
+        "<p>The linked publisher quotes Rhett Marques's advertisement.</p>"
+        f'<section class="ad-copy"><p>{passage}</p></section>'
+        "<p>The reporter's assessment is not part of the ad.</p>"
+    )
+    review["content_sha256"] = digest(content)
+    review["linked_ad_text"] = {
+        "url": linked_url,
+        "content_sha256": digest(linked),
+        "selector": "section.ad-copy",
+        "required_context": ["The linked publisher quotes Rhett Marques's advertisement."],
+    }
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return (content if url == review["retrieval_url"] else linked).encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-10-30", [candidate], [review]
+    )
+    assert len(ads) == 1 and status["state"] == "partial"
+    assert calls == [review["retrieval_url"], linked_url]
+    assert ads[0]["text"] == passage
+    assert ads[0]["source_hash"] == digest(content)
+    assert ads[0]["segments"][0]["release_evidence"]["linked_ad_text"] == review["linked_ad_text"]
+    assert "publisher_linked_source_quotes_partial_ad_copy" in ads[0]["quality_flags"]
+    assert ads[0]["date_basis"] == "publisher_report_date"
+    assert ads[0]["delivery_start"] is None
+
+
+@pytest.mark.parametrize(
+    "failure",
+    [
+        "unlinked",
+        "unregistered_host",
+        "login_page",
+        "changed_primary_hash",
+        "changed_linked_hash",
+        "missing_selector",
+        "ambiguous_selector",
+        "missing_context",
+        "wrong_candidate",
+        "outside_selected_text",
+        "claimed_full_script",
+    ],
+)
+def test_reviewed_linked_ad_text_fails_closed(failure):
+    source, candidate, review, body = release_fixture("html")
+    passage = review["passages"][0]
+    linked_url = "https://bigal.media/mediaplayer.php?q=publicshare"
+    if failure == "unregistered_host":
+        linked_url = "https://another-publisher.example/ad/"
+    elif failure == "login_page":
+        linked_url = "https://bigal.media/login.php"
+    content = body.decode().replace(passage, "Rhett Marques discussed the campaign.")
+    if failure != "unlinked":
+        content += f'<a href="{linked_url}">The reported advertisement</a>'
+    linked = (
+        "<p>The linked publisher quotes Rhett Marques's advertisement.</p>"
+        f'<section class="ad-copy"><p>{passage}</p></section>'
+    )
+    if failure == "ambiguous_selector":
+        linked += '<section class="ad-copy">An unrelated second ad.</section>'
+    elif failure == "wrong_candidate":
+        linked = linked.replace("Rhett Marques", "Another Candidate")
+    elif failure == "outside_selected_text":
+        linked = linked.replace(
+            f'<section class="ad-copy"><p>{passage}</p></section>',
+            f'<section class="ad-copy">No recovered words.</section><p>{passage}</p>',
+        )
+    review["content_sha256"] = "0" * 64 if failure == "changed_primary_hash" else digest(content)
+    review["linked_ad_text"] = {
+        "url": linked_url,
+        "content_sha256": "0" * 64 if failure == "changed_linked_hash" else digest(linked),
+        "selector": "section.missing" if failure == "missing_selector" else "section.ad-copy",
+        "required_context": [
+            "An absent attribution."
+            if failure == "missing_context"
+            else "The linked publisher quotes"
+        ],
+    }
+    if failure == "claimed_full_script":
+        review["completeness"] = "marked_script"
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return (content if url == review["retrieval_url"] else linked).encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-10-30", [candidate], [review]
+    )
+    assert not ads and status["state"] == "error"
+    if failure in {
+        "unlinked",
+        "unregistered_host",
+        "login_page",
+        "changed_primary_hash",
+        "claimed_full_script",
+    }:
+        assert calls == [review["retrieval_url"]]
+
+
 @pytest.mark.parametrize("removed", ["h1", "meta"])
 def test_reviewed_article_missing_metadata_is_a_source_error_not_a_collection_crash(removed):
     source, candidate, review, body = release_fixture("html")

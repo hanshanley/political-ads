@@ -44,6 +44,46 @@ def test_public_media_links_reject_profiles_feeds_and_malformed_status_associati
     )
 
 
+def test_public_media_links_recognize_only_exact_public_bigal_player_paths():
+    player = "https://bigal.media/mediaplayer.php?q=EwHIaRA%3De7eb5c0e6adf5743506e9298c570aa2e"
+    rejected = [
+        player.replace("bigal.media", "bigal.media.evil.example"),
+        player.replace("bigal.media", "user@bigal.media"),
+        player.replace("https:", "http:"),
+        player.replace("/mediaplayer.php", "/login.php"),
+        player.replace("/mediaplayer.php", "/catalog.php"),
+        player + "&apikey=not-a-public-link",
+        player + "&unused=",
+        player + "&q=another-player",
+        player + "#catalog",
+        "https://bigal.media/mediaplayer.php",
+        "https://bigal.media/mediaplayer.php?q=",
+    ]
+    assert media_links(
+        f'<a href="{player}">The reported ad</a>'
+        + "".join(f'<a href="{url}">Not a public ad player</a>' for url in rejected)
+    ) == [player]
+
+
+@pytest.mark.parametrize("suffix", ["", "/"])
+def test_public_media_links_recognize_exact_legacy_adimpact_viewers(suffix):
+    viewer = "https://host2.adimpact.com/admo/viewer/68fc10f7-099b-4627-8b91-f04ea64b52bc" + suffix
+    rejected = [
+        viewer.replace("host2.adimpact.com", "host2.adimpact.com.evil.example"),
+        viewer.replace("host2.adimpact.com", "user@host2.adimpact.com"),
+        viewer.replace("/admo/viewer/", "/admo/catalog/"),
+        viewer.replace("https:", "http:"),
+        viewer + "?token=not-a-public-link",
+        viewer + "#catalog",
+        viewer + "extra",
+        "https://host2.adimpact.com/admo/viewer/not-a-uuid",
+    ]
+    assert media_links(
+        f'<a href="{viewer}">The reported ad</a>'
+        + "".join(f'<a href="{url}">Not a public viewer</a>' for url in rejected)
+    ) == [viewer]
+
+
 def test_public_media_links_recognize_only_exact_public_adimpact_viewer_paths():
     viewer = "https://platform.adimpact.com/viewer/7510c197-092a-4b98-9ac4-ad3945897342"
     rejected = [

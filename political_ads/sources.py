@@ -127,6 +127,56 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "safety-affordability-americanjournal",
+        "https://americanjournalnews.com",
+        "Safety and Affordability PAC",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="AZ-01",
+        discovery="reviewed_releases",
+    ),
+    Source(
+        "clf-americanjournal",
+        "https://americanjournalnews.com",
+        "Congressional Leadership Fund",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="AZ-06",
+        discovery="reviewed_releases",
+    ),
+    Source(
+        "ciscomani-americanjournal",
+        "https://americanjournalnews.com",
+        "Juan Ciscomani campaign",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="AZ-06",
+        discovery="reviewed_releases",
+    ),
+    Source(
+        "miller-americanjournal",
+        "https://americanjournalnews.com",
+        "Max Miller and NRCC (reported coordinated ad)",
+        "R",
+        "party",
+        "House",
+        fixed_race="OH-07",
+        discovery="reviewed_releases",
+    ),
+    Source(
+        "cunningham-americanjournal",
+        "https://americanjournalnews.com",
+        "Greg Cunningham and NRCC (reported joint ad)",
+        "R",
+        "party",
+        "House",
+        fixed_race="NM-02",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "lepage-mediaite",
         "https://www.mediaite.com",
         "Paul LePage campaign",
@@ -857,6 +907,25 @@ def media_links(content: str) -> list[str]:
             parsed.scheme == "https"
             and parsed.hostname in {"x.com", "www.x.com", "twitter.com", "www.twitter.com"}
             and re.fullmatch(r"/[A-Za-z0-9_]{1,15}/status/[0-9]{15,20}", parsed.path)
+        ):
+            urls.append(value)
+        elif (
+            parsed.scheme == "https"
+            and parsed.netloc == "bigal.media"
+            and parsed.path == "/mediaplayer.php"
+            and not parsed.fragment
+            and set(parse_qs(parsed.query, keep_blank_values=True)) == {"q"}
+            and len(parse_qs(parsed.query).get("q", [])) == 1
+        ):
+            urls.append(value)
+        elif (
+            parsed.scheme == "https"
+            and parsed.netloc == "host2.adimpact.com"
+            and not parsed.query
+            and not parsed.fragment
+            and re.fullmatch(
+                r"/admo/viewer/[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}/?", parsed.path
+            )
         ):
             urls.append(value)
         elif (
