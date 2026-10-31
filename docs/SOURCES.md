@@ -10,7 +10,93 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## RJC expansion of the October 30 snapshot
+## Arizona/Kentucky expansion of the October 30 snapshot
+
+The latest acquisition contains **1,868 text records**, including **1,830
+English records: 1,226 D / 565 R / 31 other / eight unresolved**. Two
+additional Republican House ads contribute **66 and 92 literal words**.
+Both are **partial quotations**, not complete transcripts, and remain
+semantically **unreviewed**. All **1,866 preceding acquired objects**,
+**1,828 preceding analyzed objects**, **27 earlier acquisition reviews**
+and **17 protected canonical JSON inputs** are unchanged. Concurrent
+frozen claims work was not touched.
+
+Exact observed-text messages are **1,204 D / 528 R**. English House
+coverage is **698 D / 187 R**: 476 D / one R Snap and 222 D / 186 R
+non-Snap. These are collection counts, not national advertising prevalence.
+Neither individual original-video ID nor observed text duplicates an
+earlier acquisition, after normalizing YouTube link variants.
+
+| Reported advertiser | Recovered ad | Publisher / report date | Recovered words |
+|---|---|---|---|
+| NRCC | Amish Shah attack, AZ-01 general | Amy Curtis, Townhall / July 22 | Two passages, 66 words |
+| Restore Freedom PAC, Hold the Line PAC project | Massie support / Gallrein attack, KY-04 primary | John Riley, Metro Weekly / May 18 | Six narrator passages, 92 words |
+
+The AZ-01 report explicitly identifies Democratic nominee **Amish Shah,
+H4AZ01194 / C00836502**, and Republican opponent Jay Feely. Advertiser
+alignment/type follow the **NRCC: R / party**, not Shah's Democratic
+registration. Preserve the printed ellipsis, terminal comma and original
+wording. Shah's other speeches and clips, election-night commentary and
+the following NRCC spokesperson statement are not this ad's words.
+
+The KY-04 report explicitly identifies the May 19 Republican primary.
+Supported **Thomas Massie, H2KY04121 / C00509729**, and opponent **Ed
+Gallrein, H6KY04171 / C00923995**, are both REP, KY-04. This same-party
+attack is not a Republican ad attacking Democrats. Advertiser alignment/
+type are **R / outside_group**. The six recovered narrator passages exclude
+a separate four-word on-screen label, Singer's archival quoted clip and
+reporter assessments. The actual linked `holdthelinepac.com` is distinct
+from a differently aligned similarly named `.org` organization.
+
+Both original-video associations come from publisher HTML; no YouTube,
+caption service or licensed creative catalog was requested. Sponsor and
+project relationships are publisher-reported, not independently inspected
+closing-payer disclaimers. Entire decoded HTML SHA-256, unique primary h1,
+exact title/date, candidate/race/advertiser/contest context, individual
+association and ordered literal passages are bound by the existing
+reviewed-release collector. No extraction logic, alias or semantic label
+changed.
+
+```sh
+political-ads collect --source nrcc-townhall \
+  --source holdtheline-metroweekly --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+Independent checks reconcile complete analysis/browser/built JSON,
+decompressed gzip and text-complete CSV, all **1,868 Parquet rows** and
+eleven visually inspected PNG sets. Network-forbidden isolated replay
+reproduces all **523 written records and source states** from the preceding
+521 records using exactly **two cached publisher responses**, with the
+actual October 31 observation/check date and unchanged October 30
+eligibility cutoff. Final affected tests pass **150 cases**; Python
+lint/format, frontend lint, **17 frontend tests**, production build and
+**seven browser cases** pass. The immediately preceding checkpoint's full
+Python suite passed **362 tests**; no production behavior changed here.
+Publication validation and independent auditing pass **20 metric groups /
+ten chart rows**. Snapshot:
+`08a5357d0c85d3467484f673dde4fdc3f0ea25ad2927b3b24e6db3359ae545cf`.
+Both editions remain unpublished.
+
+Expanded FactCheck.org discovery follows the article's actually exposed
+single-post JSON link and public taxonomy links. Its **2026-ads** archive
+returns **34 reports**, not 34 acquired ads. The October 8 tax-ad report
+quotes a separate Safety and Affordability PAC attack on **Bob Brooks,
+H6PA07188 / C00917096, PA-07**, and associates it with one individual
+public viewer URL. That remains an **unadmitted lead**, distinct from the
+unresolved CLF/Brooks creative. No viewer, API, catalog, account or media
+request was made to the monitoring provider. The report's three other
+viewer associations concern Senate races, not House ads. Continue checking
+the publisher's actual ad passages and contest identities; do not turn
+archive counts, former House offices or reporting prose into House texts.
+Denied 13News Now, WAVY and RealClearPolitics pages remain untouched.
+Recurring acquisition stays active; publication and host restoration stay
+on hold.
+
+## Earlier RJC expansion of the October 30 snapshot
 
 The latest acquisition contains **1,866 text records**, including **1,828
 English records: 1,226 D / 563 R / 31 other / eight unresolved**. Two
@@ -92,12 +178,13 @@ second same-host lead was not requested after that denial. WAVY and
 RealClearPolitics also returned **403**, with no retries or alternate
 retrieval of the denied pages. A public Townhall report supplies a new
 NRCC AZ-01 quotation and individual original-video association that
-remain **unadmitted** pending review and collection. JTA's separate
+were subsequently admitted in the Arizona/Kentucky checkpoint above. JTA's separate
 pro-Massie report supplies quoted ad words but no individual original
 association; its linked advertiser's issues page contains policy prose,
 not recovered advertising. Independent Metro Weekly reporting links an
 individual pro-Massie creative and quotes its narration; that is another
-**unadmitted** acquisition lead. Those are not counted as new ads.
+acquisition lead subsequently admitted above. They were not counted in this
+earlier RJC snapshot.
 Continued discovery and recurring acquisition remain active; publication
 and host restoration stay on hold.
 
