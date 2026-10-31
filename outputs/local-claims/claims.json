@@ -81686,5 +81686,723 @@
     "text_hash": "5ae012b178488c4a538bf67eefb199fed5b96449fd91dda05812d3969fb4d967",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16391-0",
+    "alignment": "R",
+    "block_id": "nrsc-16391-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16391-0-claims-001-001",
+    "claim_text": "Abdul El-Sayed said that we oughta abolish ICE.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 154,
+        "kind": "publisher_transcript",
+        "start": 35,
+        "text": "Abdul El-Sayed: “I’m the only person on this stage who has said and had the courage to say that we oughta abolish ICE.”",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-abdul-el-sayed-in-new-ad-ahead-of-rally-swing-2026-06-25/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 98,
+        "anchor_quote": "I’m the only person on this stage who has said",
+        "anchor_start": 52,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "EL-SAYED, ABDUL",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Voice Over: “Meet Abdul El-Sayed.”\nAbdul El-Sayed: “I’m the only person on this stage who has said and had the courage to say that we oughta abolish ICE.”\nVoice Over: “And that’s not all.\n“Abdul campaigned with anti-Israel, radical Hasan Piker.\n“He called to abolish private health insurance and he’s championing socialist tax hikes with Senator Bernie Sanders.”\nBernie Sanders: “That’s why we need Dr. Abdul El-Sayed in the Senate.”\nVoice Over: “Too radical for Michigan. Too radical for the U.S. Senate. Reject Abdul El-Sayed.”",
+    "text_hash": "1405f96c826a7b2a05deddd38120aba06e89534dc3afdb8fc613d1b01760463b",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16391-0",
+    "alignment": "R",
+    "block_id": "nrsc-16391-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16391-0-claims-001-002",
+    "claim_text": "Abdul El-Sayed campaigned with anti-Israel, radical Hasan Piker.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 244,
+        "kind": "publisher_transcript",
+        "start": 188,
+        "text": "“Abdul campaigned with anti-Israel, radical Hasan Piker.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-abdul-el-sayed-in-new-ad-ahead-of-rally-swing-2026-06-25/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 205,
+        "anchor_quote": "Abdul campaigned",
+        "anchor_start": 189,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "EL-SAYED, ABDUL",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Meet Abdul El-Sayed.”\nAbdul El-Sayed: “I’m the only person on this stage who has said and had the courage to say that we oughta abolish ICE.”\nVoice Over: “And that’s not all.\n“Abdul campaigned with anti-Israel, radical Hasan Piker.\n“He called to abolish private health insurance and he’s championing socialist tax hikes with Senator Bernie Sanders.”\nBernie Sanders: “That’s why we need Dr. Abdul El-Sayed in the Senate.”\nVoice Over: “Too radical for Michigan. Too radical for the U.S. Senate. Reject Abdul El-Sayed.”",
+    "text_hash": "1405f96c826a7b2a05deddd38120aba06e89534dc3afdb8fc613d1b01760463b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16391-0",
+    "alignment": "R",
+    "block_id": "nrsc-16391-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16391-0-claims-001-003",
+    "claim_text": "Abdul El-Sayed called to abolish private health insurance.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 362,
+        "kind": "publisher_transcript",
+        "start": 245,
+        "text": "“He called to abolish private health insurance and he’s championing socialist tax hikes with Senator Bernie Sanders.”",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-abdul-el-sayed-in-new-ad-ahead-of-rally-swing-2026-06-25/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 291,
+        "anchor_quote": "He called to abolish private health insurance",
+        "anchor_start": 246,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "EL-SAYED, ABDUL",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Meet Abdul El-Sayed.”\nAbdul El-Sayed: “I’m the only person on this stage who has said and had the courage to say that we oughta abolish ICE.”\nVoice Over: “And that’s not all.\n“Abdul campaigned with anti-Israel, radical Hasan Piker.\n“He called to abolish private health insurance and he’s championing socialist tax hikes with Senator Bernie Sanders.”\nBernie Sanders: “That’s why we need Dr. Abdul El-Sayed in the Senate.”\nVoice Over: “Too radical for Michigan. Too radical for the U.S. Senate. Reject Abdul El-Sayed.”",
+    "text_hash": "1405f96c826a7b2a05deddd38120aba06e89534dc3afdb8fc613d1b01760463b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16391-0",
+    "alignment": "R",
+    "block_id": "nrsc-16391-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16391-0-claims-001-004",
+    "claim_text": "Abdul El-Sayed is championing socialist tax hikes with Senator Bernie Sanders.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 362,
+        "kind": "publisher_transcript",
+        "start": 245,
+        "text": "“He called to abolish private health insurance and he’s championing socialist tax hikes with Senator Bernie Sanders.”",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-abdul-el-sayed-in-new-ad-ahead-of-rally-swing-2026-06-25/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 332,
+        "anchor_quote": "he’s championing socialist tax hikes",
+        "anchor_start": 296,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "EL-SAYED, ABDUL",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 360,
+        "anchor_quote": "with Senator Bernie Sanders",
+        "anchor_start": 333,
+        "anchor_unit_id": 5,
+        "entity_id": "national:Bernie Sanders",
+        "kind": "person",
+        "name": "Bernie Sanders",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_party",
+        "target_party": "other",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Meet Abdul El-Sayed.”\nAbdul El-Sayed: “I’m the only person on this stage who has said and had the courage to say that we oughta abolish ICE.”\nVoice Over: “And that’s not all.\n“Abdul campaigned with anti-Israel, radical Hasan Piker.\n“He called to abolish private health insurance and he’s championing socialist tax hikes with Senator Bernie Sanders.”\nBernie Sanders: “That’s why we need Dr. Abdul El-Sayed in the Senate.”\nVoice Over: “Too radical for Michigan. Too radical for the U.S. Senate. Reject Abdul El-Sayed.”",
+    "text_hash": "1405f96c826a7b2a05deddd38120aba06e89534dc3afdb8fc613d1b01760463b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16391-0",
+    "alignment": "R",
+    "block_id": "nrsc-16391-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16391-0-claims-001-005",
+    "claim_text": "Bernie Sanders said that we need Dr. Abdul El-Sayed in the Senate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 433,
+        "kind": "publisher_transcript",
+        "start": 363,
+        "text": "Bernie Sanders: “That’s why we need Dr. Abdul El-Sayed in the Senate.”",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-abdul-el-sayed-in-new-ad-ahead-of-rally-swing-2026-06-25/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 417,
+        "anchor_quote": "That’s why we need Dr. Abdul El-Sayed",
+        "anchor_start": 380,
+        "anchor_unit_id": 6,
+        "entity_id": "national:Bernie Sanders",
+        "kind": "person",
+        "name": "Bernie Sanders",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_party",
+        "target_party": "other",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 417,
+        "anchor_quote": "Dr. Abdul El-Sayed",
+        "anchor_start": 399,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "EL-SAYED, ABDUL",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Voice Over: “Meet Abdul El-Sayed.”\nAbdul El-Sayed: “I’m the only person on this stage who has said and had the courage to say that we oughta abolish ICE.”\nVoice Over: “And that’s not all.\n“Abdul campaigned with anti-Israel, radical Hasan Piker.\n“He called to abolish private health insurance and he’s championing socialist tax hikes with Senator Bernie Sanders.”\nBernie Sanders: “That’s why we need Dr. Abdul El-Sayed in the Senate.”\nVoice Over: “Too radical for Michigan. Too radical for the U.S. Senate. Reject Abdul El-Sayed.”",
+    "text_hash": "1405f96c826a7b2a05deddd38120aba06e89534dc3afdb8fc613d1b01760463b",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16391-0",
+    "alignment": "R",
+    "block_id": "nrsc-16391-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16391-0-claims-001-006",
+    "claim_text": "Abdul El-Sayed is too radical for Michigan.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 529,
+        "kind": "publisher_transcript",
+        "start": 434,
+        "text": "Voice Over: “Too radical for Michigan. Too radical for the U.S. Senate. Reject Abdul El-Sayed.”",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-abdul-el-sayed-in-new-ad-ahead-of-rally-swing-2026-06-25/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 527,
+        "anchor_quote": "Abdul El-Sayed",
+        "anchor_start": 513,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "EL-SAYED, ABDUL",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Meet Abdul El-Sayed.”\nAbdul El-Sayed: “I’m the only person on this stage who has said and had the courage to say that we oughta abolish ICE.”\nVoice Over: “And that’s not all.\n“Abdul campaigned with anti-Israel, radical Hasan Piker.\n“He called to abolish private health insurance and he’s championing socialist tax hikes with Senator Bernie Sanders.”\nBernie Sanders: “That’s why we need Dr. Abdul El-Sayed in the Senate.”\nVoice Over: “Too radical for Michigan. Too radical for the U.S. Senate. Reject Abdul El-Sayed.”",
+    "text_hash": "1405f96c826a7b2a05deddd38120aba06e89534dc3afdb8fc613d1b01760463b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16391-0",
+    "alignment": "R",
+    "block_id": "nrsc-16391-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16391-0-claims-001-007",
+    "claim_text": "Abdul El-Sayed is too radical for the U.S. Senate.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 529,
+        "kind": "publisher_transcript",
+        "start": 434,
+        "text": "Voice Over: “Too radical for Michigan. Too radical for the U.S. Senate. Reject Abdul El-Sayed.”",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-abdul-el-sayed-in-new-ad-ahead-of-rally-swing-2026-06-25/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 527,
+        "anchor_quote": "Abdul El-Sayed",
+        "anchor_start": 513,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "EL-SAYED, ABDUL",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “Meet Abdul El-Sayed.”\nAbdul El-Sayed: “I’m the only person on this stage who has said and had the courage to say that we oughta abolish ICE.”\nVoice Over: “And that’s not all.\n“Abdul campaigned with anti-Israel, radical Hasan Piker.\n“He called to abolish private health insurance and he’s championing socialist tax hikes with Senator Bernie Sanders.”\nBernie Sanders: “That’s why we need Dr. Abdul El-Sayed in the Senate.”\nVoice Over: “Too radical for Michigan. Too radical for the U.S. Senate. Reject Abdul El-Sayed.”",
+    "text_hash": "1405f96c826a7b2a05deddd38120aba06e89534dc3afdb8fc613d1b01760463b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16391-0",
+    "alignment": "R",
+    "block_id": "nrsc-16391-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16391-0-claims-001-008",
+    "claim_text": "Abdul El-Sayed is the only person on the stage who has said that we oughta abolish ICE.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 154,
+        "kind": "publisher_transcript",
+        "start": 35,
+        "text": "Abdul El-Sayed: “I’m the only person on this stage who has said and had the courage to say that we oughta abolish ICE.”",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/nrsc-slams-abdul-el-sayed-in-new-ad-ahead-of-rally-swing-2026-06-25/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 98,
+        "anchor_quote": "I’m the only person on this stage who has said",
+        "anchor_start": 52,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "EL-SAYED, ABDUL",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Voice Over: “Meet Abdul El-Sayed.”\nAbdul El-Sayed: “I’m the only person on this stage who has said and had the courage to say that we oughta abolish ICE.”\nVoice Over: “And that’s not all.\n“Abdul campaigned with anti-Israel, radical Hasan Piker.\n“He called to abolish private health insurance and he’s championing socialist tax hikes with Senator Bernie Sanders.”\nBernie Sanders: “That’s why we need Dr. Abdul El-Sayed in the Senate.”\nVoice Over: “Too radical for Michigan. Too radical for the U.S. Senate. Reject Abdul El-Sayed.”",
+    "text_hash": "1405f96c826a7b2a05deddd38120aba06e89534dc3afdb8fc613d1b01760463b",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16472-0",
+    "alignment": "R",
+    "block_id": "nrsc-16472-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16472-0-claims-001-001",
+    "claim_text": "Under Joe Biden, Democrats let in millions of illegal immigrants, straining resources, putting communities at risk.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 120,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "VO: “Under Joe Biden, Democrats let in millions of illegal immigrants, straining resources, putting communities at risk.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-nrsc-ads-blast-democrats-for-putting-illegals-over-working-families-2026-07-01/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 20,
+        "anchor_quote": "Joe Biden",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "national:Joe Biden",
+        "kind": "person",
+        "name": "Joe Biden",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "VO: “Under Joe Biden, Democrats let in millions of illegal immigrants, straining resources, putting communities at risk.\n“And Sherrod Brown chose them over you—supporting a tax increase on working-class families by $250 per month to give free healthcare to illegal immigrants.\n“Dangerous criminals got the benefits you earned, and now Sherrod Brown wants your vote.\n“No way—reject Sherrod Brown, and put Ohio first.”",
+    "text_hash": "c8d14965c568a19590385b0ccfe8a805ef58060377178ffa72257fbe6d775611",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16472-0",
+    "alignment": "R",
+    "block_id": "nrsc-16472-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16472-0-claims-001-002",
+    "claim_text": "Sherrod Brown chose illegal immigrants over you.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 276,
+        "kind": "publisher_transcript",
+        "start": 121,
+        "text": "“And Sherrod Brown chose them over you—supporting a tax increase on working-class families by $250 per month to give free healthcare to illegal immigrants.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-nrsc-ads-blast-democrats-for-putting-illegals-over-working-families-2026-07-01/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 139,
+        "anchor_quote": "Sherrod Brown",
+        "anchor_start": 126,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "Sherrod Brown",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "VO: “Under Joe Biden, Democrats let in millions of illegal immigrants, straining resources, putting communities at risk.\n“And Sherrod Brown chose them over you—supporting a tax increase on working-class families by $250 per month to give free healthcare to illegal immigrants.\n“Dangerous criminals got the benefits you earned, and now Sherrod Brown wants your vote.\n“No way—reject Sherrod Brown, and put Ohio first.”",
+    "text_hash": "c8d14965c568a19590385b0ccfe8a805ef58060377178ffa72257fbe6d775611",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16472-0",
+    "alignment": "R",
+    "block_id": "nrsc-16472-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16472-0-claims-001-003",
+    "claim_text": "Sherrod Brown supported a tax increase on working-class families by $250 per month to give free healthcare to illegal immigrants.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 276,
+        "kind": "publisher_transcript",
+        "start": 121,
+        "text": "“And Sherrod Brown chose them over you—supporting a tax increase on working-class families by $250 per month to give free healthcare to illegal immigrants.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-nrsc-ads-blast-democrats-for-putting-illegals-over-working-families-2026-07-01/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 139,
+        "anchor_quote": "Sherrod Brown",
+        "anchor_start": 126,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "Sherrod Brown",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "VO: “Under Joe Biden, Democrats let in millions of illegal immigrants, straining resources, putting communities at risk.\n“And Sherrod Brown chose them over you—supporting a tax increase on working-class families by $250 per month to give free healthcare to illegal immigrants.\n“Dangerous criminals got the benefits you earned, and now Sherrod Brown wants your vote.\n“No way—reject Sherrod Brown, and put Ohio first.”",
+    "text_hash": "c8d14965c568a19590385b0ccfe8a805ef58060377178ffa72257fbe6d775611",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16472-0",
+    "alignment": "R",
+    "block_id": "nrsc-16472-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16472-0-claims-001-004",
+    "claim_text": "Dangerous criminals got the benefits you earned.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 365,
+        "kind": "publisher_transcript",
+        "start": 277,
+        "text": "“Dangerous criminals got the benefits you earned, and now Sherrod Brown wants your vote.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-nrsc-ads-blast-democrats-for-putting-illegals-over-working-families-2026-07-01/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 297,
+        "anchor_quote": "Dangerous criminals",
+        "anchor_start": 278,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Dangerous criminals",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "VO: “Under Joe Biden, Democrats let in millions of illegal immigrants, straining resources, putting communities at risk.\n“And Sherrod Brown chose them over you—supporting a tax increase on working-class families by $250 per month to give free healthcare to illegal immigrants.\n“Dangerous criminals got the benefits you earned, and now Sherrod Brown wants your vote.\n“No way—reject Sherrod Brown, and put Ohio first.”",
+    "text_hash": "c8d14965c568a19590385b0ccfe8a805ef58060377178ffa72257fbe6d775611",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16472-0",
+    "alignment": "R",
+    "block_id": "nrsc-16472-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16472-0-claims-001-005",
+    "claim_text": "Sherrod Brown wants your vote.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 365,
+        "kind": "publisher_transcript",
+        "start": 277,
+        "text": "“Dangerous criminals got the benefits you earned, and now Sherrod Brown wants your vote.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-nrsc-ads-blast-democrats-for-putting-illegals-over-working-families-2026-07-01/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 348,
+        "anchor_quote": "Sherrod Brown",
+        "anchor_start": 335,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "Sherrod Brown",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "VO: “Under Joe Biden, Democrats let in millions of illegal immigrants, straining resources, putting communities at risk.\n“And Sherrod Brown chose them over you—supporting a tax increase on working-class families by $250 per month to give free healthcare to illegal immigrants.\n“Dangerous criminals got the benefits you earned, and now Sherrod Brown wants your vote.\n“No way—reject Sherrod Brown, and put Ohio first.”",
+    "text_hash": "c8d14965c568a19590385b0ccfe8a805ef58060377178ffa72257fbe6d775611",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16472-0",
+    "alignment": "R",
+    "block_id": "nrsc-16472-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16472-0-claims-001-006",
+    "claim_text": "You should reject Sherrod Brown.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 416,
+        "kind": "publisher_transcript",
+        "start": 366,
+        "text": "“No way—reject Sherrod Brown, and put Ohio first.”",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-nrsc-ads-blast-democrats-for-putting-illegals-over-working-families-2026-07-01/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 394,
+        "anchor_quote": "Sherrod Brown",
+        "anchor_start": 381,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "Sherrod Brown",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "VO: “Under Joe Biden, Democrats let in millions of illegal immigrants, straining resources, putting communities at risk.\n“And Sherrod Brown chose them over you—supporting a tax increase on working-class families by $250 per month to give free healthcare to illegal immigrants.\n“Dangerous criminals got the benefits you earned, and now Sherrod Brown wants your vote.\n“No way—reject Sherrod Brown, and put Ohio first.”",
+    "text_hash": "c8d14965c568a19590385b0ccfe8a805ef58060377178ffa72257fbe6d775611",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-16472-0",
+    "alignment": "R",
+    "block_id": "nrsc-16472-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-16472-0-claims-001-007",
+    "claim_text": "You should put Ohio first.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 416,
+        "kind": "publisher_transcript",
+        "start": 366,
+        "text": "“No way—reject Sherrod Brown, and put Ohio first.”",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-nrsc-ads-blast-democrats-for-putting-illegals-over-working-families-2026-07-01/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 408,
+        "anchor_quote": "Ohio",
+        "anchor_start": 404,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Ohio",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "VO: “Under Joe Biden, Democrats let in millions of illegal immigrants, straining resources, putting communities at risk.\n“And Sherrod Brown chose them over you—supporting a tax increase on working-class families by $250 per month to give free healthcare to illegal immigrants.\n“Dangerous criminals got the benefits you earned, and now Sherrod Brown wants your vote.\n“No way—reject Sherrod Brown, and put Ohio first.”",
+    "text_hash": "c8d14965c568a19590385b0ccfe8a805ef58060377178ffa72257fbe6d775611",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
