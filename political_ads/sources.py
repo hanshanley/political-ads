@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "huizenga-midwesterner",
+        "https://www.themidwesterner.news",
+        "Bill Huizenga campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="MI-04",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "bouchard-midwesterner",
         "https://www.themidwesterner.news",
         "Michael Bouchard campaign (publisher-reported; payer unverified)",

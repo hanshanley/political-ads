@@ -10,7 +10,83 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Bouchard primary/general quoted-ad expansion of the October 30 snapshot
+## Huizenga quoted-ad expansion of the October 30 snapshot
+
+One additional Republican House ad, **Bill Huizenga's Thrifty**, is
+recovered offline from the actual Midwesterner report and exposed
+individual WordPress post **1250888**. Its **six ordered literal
+ad quotations / 77 preserved tokens** are linked to original **211R1YDhHa0**,
+present as both a watch link and an embedded iframe. Four terminal
+commas and curly apostrophes remain exact. This is **partial acquisition
+and semantically unreviewed**, not an independently verified full script.
+
+The July 8 report's local/UTC timestamps are **07:41:29 / 11:41:29**;
+rendered-content SHA-256:
+`27e2363936cf9b234f3d8ee1b6f11e2a50d8ecaf4cd67df683a2e48e971420f8`.
+The exact title, canonical URL, exposed retrieval URL, passages, order,
+advertiser context, original and date are individually bound in the
+release review. July 8 is the report date, not verified first upload,
+release or paid airing. First-TV-ad/30-second descriptions and campaign
+advertiser attribution are publisher-reported; closing legal payer,
+approval card, actual spend and delivery intervals are uninspected.
+
+Saved official **H0MI02094 / C00459297** identifies **HUIZENGA, WILLIAM P**,
+REP, House, MI-04. The cached official committee master independently
+links principal **HUIZENGA FOR CONGRESS**, designation P / type H / REP,
+to the same candidate. Existing exact **Bill Huizenga** alias cites the
+official House website and same district and remains unchanged: no new
+alias, roster change, fuzzy/surname matching or parser change. Explicit
+Republican challenger Philip Tanis and GOP-primary context establish
+**primary phase**. Mention of Democrats competing for their nomination
+does not make this a general-election creative.
+
+Reporter descriptions, Calvin Moore's expressly separate campaign
+statement, opponent-site text and policy-report quotations are excluded.
+Only the already cached exposed individual post is used; no media,
+captions, tax-site request, denied route, licensed catalog, purchase or
+publication. The source remains partial with incomplete discovery.
+The exact original and observed text are novel against all preceding
+**1,888 acquired objects**. Reproduce the acquisition using the existing
+pipeline in the Bouchard section below, with **`--source huizenga-midwesterner --offline`** and
+**`--until 2026-10-30`**.
+
+Verified snapshot:
+`af6e33eead315039de5993e5b827d379514a38582c8f09e55a58caf8b3318d1d`.
+Totals: **1,889 acquired / 1,851 English**, **1,226 D / 586 R / 31 other /
+eight unresolved**; exact messages **1,204 D / 549 R**. English House:
+**698 D / 208 R**, with **222 D / 207 R non-Snap** and unchanged
+**476 D / one R Snap**. Every preceding **1,888 acquired / 1,850 analyzed
+object, 42 release reviews, seventeen protected files and all aliases**
+is unchanged. Native partitions, semantic reviews, media backlog and
+frozen claims persist.
+
+**156 affected Python tests**, Python lint/format, **17 frontend tests**,
+frontend lint/typecheck/build and **seven browser cases** pass. Complete
+analysis/browser/production JSON, gzip/CSV, **1,889 Parquet rows** and
+**eleven visually inspected PNG sets** reconcile. Socket-forbidden
+isolated **one-response replay** reproduces all **537 written objects
+and source states** from 536. Independent auditing verifies **20 metric
+groups / ten chart rows**. New text stays in the unreviewed category;
+denominator changes are not newly reviewed portrayal findings.
+Preceding Bouchard commit **ff1aaef44bab419c6a001b57a0a270ac735ba21f**
+has successful exact-head CI **41180856622**, including every step.
+
+Next, a separate socket-free Hilleary evidence check independently
+confirms the cached actual Banner post **30952**, July 22 **06:02:00 /
+11:02:00 UTC**, its unchanged rendered hash, **three ordered first-ad
+passages / 16 tokens** and novel individual Facebook library
+**1023109076854193**. Exact current **H6TN06205 / C00909838**, REP, TN-06,
+principal **VAN FOR TENNESSEE**, and the actual official historical House
+**HILLEARY, Van** biography are verified independently. Historical TN-04
+representation is not current TN-06 registration. The collector still
+does not recognize this individual library association, and no alias,
+production fix or Hilleary admission has been made in this snapshot.
+Reported artificial Trump/Hilleary visuals are not a genuine Trump
+endorsement. No Meta request, second-ad padding or denied Form 2
+retrieval occurs. All provider pauses and the publication hold persist;
+schedule #1 remains active while actionable acquisition continues.
+
+## Previous Bouchard primary/general quoted-ad expansion
 
 **Two additional MI-10 Republican campaign ads** are recovered from
 the actual Midwesterner reports and their explicitly exposed individual
