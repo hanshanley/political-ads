@@ -74,7 +74,7 @@ assigned to those quotations. The actual Politico page returns a
 navigation shell, not recovered ad text. No acquisitions follow from either.
 
 Final locally verified snapshot:
-`d925954db8651d6241d4e81268a9da7c323fbe1e37911cac32e8faae112f0457`.
+`f9ef1b4374213e3fa783df6de7ea468ece23c412b8a38cd1139a71e0e15122e9`.
 It contains **1,898 acquired / 1,859 English** records: **1,226 D / 594 R**,
 31 other and eight unresolved. Exact English messages are **1,204 D /
 557 R**. English House coverage is **698 D / 216 R**: **222 D / 215 R**
@@ -94,6 +94,15 @@ visually inspected and match browser/production copies. An isolated
 socket-forbidden **one-response 545-to-546 written replay** reproduces all
 objects and source states. Separate literal-quotation/post-ID/date/identity
 assertions pass. The new semantic review remains explicitly unreviewed.
+
+The provenance-only follow-up adds **publisher_original_url** to the new
+Perry review and nested released evidence: the actual linked WITF report,
+not an inferred URL. Complete JSON and CSV retain that link, the reprint
+link, author/publisher credit, reuse basis and unchanged ad text. Rebuilt
+production assets pass all seven browser cases and strict full preservation,
+export/Parquet/PNG parity and socket-forbidden replay. The original Perry
+push **2b8877** passed exact CI **41219701665**, with every step independently
+verified; the extra metadata changes the snapshot, not counts or labels.
 
 Broader discovery also reached the actual October 23 Washington Examiner
 Chamber-of-Commerce eight-House-member ad report, HTTP 200 / SHA-256
@@ -124,10 +133,34 @@ and contains only 2025 cards. No ad script was recovered from these pages.
 The independently discovered Chamber primary newsroom returns HTTP 200 /
 SHA-256
 `0b787751f7d65edf50900af7cced55790ac0cb8ccd8c56af75d9381a1ab9f029`.
-Its first ten cards are endorsement/event releases, not recovered ad speech;
-follow actual pagination toward the October 23 campaign before concluding.
+Its first ten cards are endorsement/event releases, not recovered ad speech.
+Its actually linked terms returned HTTP 200 / SHA-256
+`c50827c0ad940f04f6ca148d52839b1292e20a643d9ca970c0679264de0ec4a0`.
+They permit internal access but restrict redistribution without written
+consent; no ad-text reuse exception is established. Primary Chamber hosts
+and subdomains are **permission_unresolved_paused**, not HTTP-denied.
+No page-two or subsequent primary request was made after reading the terms.
+Ten mocked provider/root/subdomain checks enforce the request gate.
 The earlier reviewed Herrera original remains
 in the undated backlog; filenames and homepage dates still do not date it.
+
+An independently discovered actual Jezebel October 30 report, post
+**18261610**, returned HTTP 200 / SHA-256
+`713b5947c83b95a881aed2013c1f13f614581629466853977a08a64f18c4dbbd`.
+Its unique article/body/byline and **2026-10-30T17:37:27+00:00** agree.
+One paragraph contains a literal **35-token** Big Bend ad quotation.
+The first actual reporter Bluesky embed **3mz434vd3hk2l** returned HTTP 200 /
+SHA-256 `4de0d6111d62a3d2e8dc2e739b27dd81355015d189935cc99daea381580f0ac0`.
+Cached head metadata and JSON-LD independently establish a real video
+association, content CID
+**bafkreibe2pyrnxs5l4kpnmhek6cxiwsknsfkokmv6ydacfzsaehd67lada**
+and reporter-post timestamp **2026-10-30T15:15:55.474Z**. The visible shell
+alone had obscured that association. Neither caption nor the separate
+American Bridge embed is Herrera ad speech. No HLS, thumbnail, original
+media or API was requested, and no new Herrera record is admitted yet.
+The actual linked copyright notice returned HTTP 200 / SHA-256
+`78992ff33cd84e5cdf202a2c4378ef32298a028f2942d63af77834c1d59e8126`;
+publisher rights remain reserved, not a blanket license or catalog consent.
 The campaign's joint-fundraising footer is not the new ad's inspected payer.
 Keep all provider pauses and the publication/host hold; broader acquisition
 and the twenty-minute continuation schedule remain active.
