@@ -728,14 +728,14 @@
   {
     "ad_id": "dembo-1270-0",
     "block_id": "dembo-1270-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for Zach Dembo: \\\"I prosecuted\\\" is absent from unit 4. Exact source: \\\"and prosecuted violent criminals for the Department of Justice.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dscc-12477-0",
     "block_id": "dscc-12477-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dscc-12483-0",
@@ -752,20 +752,20 @@
   {
     "ad_id": "dscc-12717-0",
     "block_id": "dscc-12717-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting ',' delimiter: line 1 column 4920 (char 4919)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dscc-12751-0",
     "block_id": "dscc-12751-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 9\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "el-sayed-08795546ee6c2925-0",
     "block_id": "el-sayed-08795546ee6c2925-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "el-sayed-131e52d10499cc47-0",
