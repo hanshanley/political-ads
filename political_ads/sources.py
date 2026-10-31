@@ -641,7 +641,18 @@ def candidate_ad_copy(content: str, source_id: str) -> list[str]:
             quotes = re.findall(r"“([^”]+)”", text)[1 if titled else 0 :]
             if len(" ".join(quotes).split()) >= 15:
                 blocks.append("\n".join(quotes))
-        return blocks
+        if blocks or len(media_links(content)) != 1:
+            return blocks
+        passages = []
+        for paragraph in soup.find_all("p"):
+            for match in re.finditer(
+                r"“([^”]+)”\s+Lawler\s+says\s+in\s+the\s+ad\s*\."
+                r"(?:\s+“([^”]+)”(?!\s+(?:says?|said)\b))?",
+                paragraph.get_text(" ", strip=True),
+                re.I,
+            ):
+                passages.extend(quote for quote in match.groups() if quote)
+        return ["\n".join(passages)] if len(" ".join(passages).split()) >= 15 else []
     if source_id == "salazar":
         blocks = []
         for paragraph in soup.find_all("p"):

@@ -6,7 +6,7 @@ import json
 import re
 from datetime import date, datetime, timezone
 from pathlib import Path
-from urllib.parse import urlencode, urlparse
+from urllib.parse import parse_qsl, urlencode, urlparse
 
 from bs4 import BeautifulSoup
 
@@ -43,6 +43,10 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             )
             if not START <= published <= until:
                 continue
+        elif release := review.get("publisher_release"):
+            published = release["published"]
+            if not START <= published <= until:
+                continue
         else:
             published = None
         status = statuses.get(source, {})
@@ -65,6 +69,21 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             body, _ = client.get(review["publisher_url"], retry=False)
             soup = BeautifulSoup(body, "html.parser")
             publisher_hash = hashlib.sha256(body).hexdigest()
+            if release := review.get("publisher_release"):
+                metadata = soup.select_one('meta[property="article:published_time"]')
+                if (
+                    review.get("post_id")
+                    or review.get("post_timestamp")
+                    or review["post_url"] != review["publisher_url"]
+                    or publisher_hash != release["sha256"]
+                    or soup.title is None
+                    or soup.title.get_text(" ", strip=True) != release["title"]
+                    or metadata is None
+                    or metadata.get("content", "")[:10] != published
+                ):
+                    raise ValueError(
+                        "Original requires the exact reviewed release title, hash and date"
+                    )
             if request := review.get("publisher_request"):
                 ajax_url = (
                     urlparse(review["publisher_url"])
@@ -119,7 +138,13 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                 markup = html.unescape(body.decode("utf-8")).replace("\\/", "/")
                 if video_url not in markup:
                     raise ValueError("Reviewed original video is not linked by the publisher")
-            media, _ = client.get(video_url, retry=False)
+            download_url = video_url
+            parsed = urlparse(video_url)
+            if parsed.scheme == "https" and parsed.hostname == "www.dropbox.com":
+                query = dict(parse_qsl(parsed.query))
+                query["dl"] = "1"
+                download_url = parsed._replace(query=urlencode(query)).geturl()
+            media, _ = client.get(download_url, retry=False)
             if hashlib.sha256(media).hexdigest() != review["media_sha256"]:
                 raise ValueError("Original video bytes differ from the individually reviewed ad")
             media_hash, ocr, speech = recognize_video(root, media, offline=offline)
@@ -140,6 +165,9 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                 if published is None
                 else "publisher_post_date_not_verified_first_release_or_paid_delivery",
             ]
+            if release:
+                quality[-1] = "publisher_release_date_not_verified_first_airing"
+            quality.extend(review.get("quality_flags", []))
             if published is None:
                 leads[identity] = {
                     "id": identity,
@@ -167,7 +195,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     id=identity,
                     source=source,
                     source_url=review["post_url"],
-                    source_record_id=review["post_id"],
+                    source_record_id=review.get("post_id", identity),
                     title=review["title"],
                     sponsor=review["sponsor"],
                     sponsor_type=review.get("sponsor_type", "candidate"),
@@ -179,7 +207,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     source_hash=digest(
                         json.dumps({"evidence": evidence, "segments": segments}, sort_keys=True)
                     ),
-                    date_basis="publisher_post_date",
+                    date_basis="publisher_release_date" if release else "publisher_post_date",
                     state=candidate["state"],
                     chamber="House" if candidate["office"] == "H" else "Senate",
                     race=f"{candidate['state']}-{int(candidate['district']):02}"
@@ -191,8 +219,15 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     language_basis="Local Whisper language detection; speech and frame OCR",
                     media_urls=[review["post_url"]],
                     attribution_basis=(
-                        f"Campaign-linked original with candidate approval and payer evidence; "
-                        f"FEC {candidate['candidate_id']}, {candidate['party']}, principal "
+                        (
+                            "Publisher-linked original with individually reviewed payer evidence; "
+                            if release
+                            else (
+                                "Campaign-linked original with candidate approval "
+                                "and payer evidence; "
+                            )
+                        )
+                        + f"FEC {candidate['candidate_id']}, {candidate['party']}, principal "
                         f"committee {candidate['principal_committee']}. "
                         f"Primary publisher: {review['publisher_url']}"
                     ),

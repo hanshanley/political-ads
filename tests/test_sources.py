@@ -496,6 +496,48 @@ def test_lawler_multiple_ad_descriptions_do_not_include_titles_or_join_creatives
     assert result[1]["text"] == spoken + " We can do better."
 
 
+def test_lawler_explicit_speech_pairs_stay_one_ad_and_exclude_press_commentary():
+    source = next(s for s in SOURCES if s.id == "lawler")
+    passages = [
+        "Our families deserve someone who understands what it costs to live here,",
+        "We can lower costs by working together.",
+        "Our family has made our home in this community,",
+        "That is why I am fighting to make life affordable for everyone.",
+    ]
+    release = post(
+        "Lawler's closing ad",
+        '<iframe src="https://www.youtube.com/embed/aaaaaaaaaaa"></iframe>'
+        f"<p>“{passages[0]}” <strong>Lawler says in the ad</strong>. “{passages[1]}”</p>"
+        "<p>The campaign's policy explanation is not ad speech.</p>"
+        f"<p>“{passages[2]}” Lawler says in the ad. “{passages[3]}”</p>"
+        "<p>“This separate statement is for reporters and is not spoken in the ad,” "
+        "said the campaign manager.</p>",
+    )
+    result = parse_post(release, source, "2026-10-30")
+    assert len(result) == 1
+    assert result[0]["text"] == "\n".join(passages)
+    assert result[0]["media_urls"] == ["https://www.youtube.com/embed/aaaaaaaaaaa"]
+    assert result[0]["quality_flags"] == ["publisher_ad_copy_completeness_unverified"]
+
+
+@pytest.mark.parametrize(
+    "media",
+    [
+        "",
+        '<iframe src="https://www.youtube.com/embed/aaaaaaaaaaa"></iframe>'
+        '<iframe src="https://www.youtube.com/embed/bbbbbbbbbbb"></iframe>',
+    ],
+)
+def test_lawler_unassigned_explicit_speech_does_not_merge_unlinked_or_multiple_ads(media):
+    source = next(s for s in SOURCES if s.id == "lawler")
+    release = post(
+        "Lawler's closing ad",
+        media + "<p>“Our families deserve leaders who will work to lower the cost "
+        "of living and make life more affordable,” Lawler says in the ad.</p>",
+    )
+    assert not parse_post(release, source, "2026-10-30")
+
+
 def test_lcv_actual_scripts_not_teasers_commentary_or_all_release_video_links():
     source = next(s for s in SOURCES if s.id == "lcv-vf")
     text = (

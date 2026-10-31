@@ -258,3 +258,105 @@ def test_native_public_pagination_denial_pauses_future_requests(tmp_path, pagina
     assert first["ads"] == second["ads"] == []
     assert len(calls) == 2
     assert "403" in second["sources"][0]["error"]
+
+
+@pytest.fixture
+def release_review(tmp_path, native_review, monkeypatch):
+    native_review.pop("post_id")
+    native_review.pop("post_timestamp")
+    native_review.update(
+        publisher_url="https://publisher.example/house-ad",
+        post_url="https://publisher.example/house-ad",
+        media_url="https://video.example/ad.mp4",
+        sponsor="Reviewed outside organization",
+        sponsor_type="outside_group",
+    )
+    markup = (
+        b"<title>House ad release</title>"
+        b'<meta property="article:published_time" content="2026-03-19T14:30:10Z">'
+        b'<video src="https://video.example/ad.mp4"></video>'
+    )
+    native_review["publisher_release"] = {
+        "published": "2026-03-19",
+        "title": "House ad release",
+        "sha256": hashlib.sha256(markup).hexdigest(),
+    }
+    payloads = {native_review["publisher_url"]: markup, native_review["media_url"]: b"original"}
+    calls = []
+
+    def get(self, url, **kwargs):
+        calls.append(url)
+        return payloads[url], {}
+
+    monkeypatch.setattr("political_ads.campaign_native.Client.get", get)
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [native_review]})
+    return native_review, payloads, calls
+
+
+def test_dated_direct_original_binds_release_and_keeps_reviewed_payer(tmp_path, release_review):
+    review, _, calls = release_review
+    result = collect_campaign_native(tmp_path, "2026-10-30", offline=True)
+    ad = result["ads"][0]
+    assert ad["published"] == "2026-03-19" and ad["date_basis"] == "publisher_release_date"
+    assert ad["source_record_id"] == review["id"]
+    assert ad["sponsor"] == "Reviewed outside organization"
+    assert ad["sponsor_type"] == "outside_group" and ad["race"] == "ZZ-01"
+    assert "candidate approval" not in ad["attribution_basis"]
+    assert (
+        ad["segments"][0]["native_campaign_evidence"]["publisher_release"]
+        == (review["publisher_release"])
+    )
+    assert calls == [review["publisher_url"], review["media_url"]]
+    assert collect_campaign_native(tmp_path, "2026-10-30", offline=True) == result
+    assert len(calls) == 2
+
+
+@pytest.mark.parametrize("change", ["date", "title", "hash", "missing_date", "unlinked_media"])
+def test_dated_original_rejects_unbound_release_before_media_request(
+    tmp_path, release_review, change
+):
+    review, payloads, calls = release_review
+    if change == "date":
+        review["publisher_release"]["published"] = "2026-03-20"
+    elif change == "title":
+        review["publisher_release"]["title"] = "A different ad release"
+    elif change == "hash":
+        review["publisher_release"]["sha256"] = "0" * 64
+    else:
+        body = payloads[review["publisher_url"]]
+        body = body.replace(
+            b"article:published_time"
+            if change == "missing_date"
+            else b"https://video.example/ad.mp4",
+            b"missing",
+        )
+        payloads[review["publisher_url"]] = body
+        review["publisher_release"]["sha256"] = hashlib.sha256(body).hexdigest()
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    result = collect_campaign_native(tmp_path, "2026-10-30", offline=True)
+    assert not result["ads"]
+    assert result["attempts"][review["id"]]["state"] == "error"
+    assert calls == [review["publisher_url"]]
+
+
+def test_direct_release_outside_cutoff_is_not_requested(tmp_path, release_review):
+    _, _, calls = release_review
+    assert not collect_campaign_native(tmp_path, "2026-03-18", offline=True)["ads"]
+    assert calls == []
+
+
+def test_public_dropbox_original_uses_only_standard_download_switch(tmp_path, release_review):
+    review, payloads, calls = release_review
+    original = "https://www.dropbox.com/scl/fi/public/ad.mp4?rlkey=public-share&dl=0"
+    download = "https://www.dropbox.com/scl/fi/public/ad.mp4?rlkey=public-share&dl=1"
+    body = payloads[review["publisher_url"]].replace(
+        b"https://video.example/ad.mp4", original.replace("&", "&amp;").encode()
+    )
+    payloads[review["publisher_url"]] = body
+    payloads[download] = payloads.pop(review["media_url"])
+    review["media_url"] = original
+    review["publisher_release"]["sha256"] = hashlib.sha256(body).hexdigest()
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    ad = collect_campaign_native(tmp_path, "2026-10-30", offline=True)["ads"][0]
+    assert calls == [review["publisher_url"], download]
+    assert ad["segments"][0]["native_campaign_evidence"]["media_url"] == original

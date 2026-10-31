@@ -10,9 +10,78 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## October 30: overlooked House scripts and independently reported ad quotations
+## October 30: wider House recovery through public original media
 
-The snapshot now contains **1,833 acquired text records**, including **1,795 English
+The snapshot contains **1,839 acquired text records**, including **1,801 English
+records: 1,226 D / 536 R / 31 other / eight unresolved**. Exact party/message
+counts are **1,204 D / 499 R**. English House coverage is **698 D / 158 R**,
+up from 152 Republican House records in the preceding checkpoint. The six
+additions are actual recovered words, not discovery-link counts:
+
+| Reported or inspected payer | Candidate/race | Publisher date | Recovered evidence |
+|---|---|---|---|
+| Lawler for Congress | Mike Lawler, NY-17 | October 20 | Four literal passages, 76 words, from the closing-ad release; one partial record |
+| Republican Main Street Partnership | Nick LaLota, NY-01 | March 19 | Original 30-second Fair Share video, speech and frame OCR |
+| Republican Main Street Partnership | Andrew Garbarino, NY-02 | March 19 | Separately linked 30-second Fair Share candidate variant |
+| Republican Main Street Partnership | Mike Lawler, NY-17 | March 19 | Separately linked 30-second Fair Share candidate variant |
+| Republican Main Street Partnership | Blake Moore, FEC UT-02 | June 3 | Original 30-second issue-advocacy video; publisher describes UT-01 |
+| Iowans for Zach Nunn | Zach Nunn, IA-03 | August 3 | Candidate-paid original linked by an RMSP release; approximately one minute plus a black tail |
+
+RMSP's public sitemap exposes 331 posts and seven campaign-related release paths.
+Three of those releases are dated in 2026; the four older releases are excluded.
+The Moore and Nunn releases directly embed Wix-hosted MP4s. The New York release
+explicitly links three public Dropbox shares, retrieved using their standard
+`dl=1` download option. No blocked caption provider, account API, third-party access
+credential or bulk licensed catalog is used. Each of the five originals has a new
+byte hash relative to previously acquired native media. The three Fair Share
+executions are candidate variants of the same template, not three unrelated
+message families.
+
+The closing cards of all five originals were visually inspected. Four name
+Republican Main Street Partnership as payer; Nunn's card names **Iowans for Zach
+Nunn**, not RMSP. Publisher, campaign target and legal payer are not interchangeable.
+Moore's release describes Utah's first district, whereas his exact saved 2026 FEC
+identity `H0UT01205` lists district 02. The canonical election race follows that
+roster, with both observations and an explicit discrepancy flag retained.
+
+`data/campaign-native-reviews.json` binds each exact release title, publication
+metadata and response SHA-256 to its linked original, media SHA-256, exact FEC
+candidate identity, inspected payer and literal recovered evidence. The existing
+`campaign-native` collector now accepts those individually reviewed dated releases.
+Changed or missing release dates/titles/hashes and missing original links fail
+closed. Local speech recognition and frame OCR retain their name errors,
+incidental background text and imperfect disclaimers; these are **not manually
+certified complete transcripts**. New semantic portrayal labels are not invented.
+The publisher release dates do not establish first upload, first airing or paid
+delivery.
+
+Replay the native additions using the saved original HTTP and local extraction
+caches:
+
+```sh
+political-ads campaign-native --until 2026-10-30 --offline
+political-ads collect --source lawler --until 2026-10-30 --offline
+```
+
+An isolated native reconstruction reproduces all acquired objects, source states
+and attempts; selected Lawler replay is byte-identical. All **1,833 preceding
+acquired records**, saved portrayal reviews and unrelated native partitions are
+preserved. The Lawler fallback requires one original video association and groups
+explicitly attributed speech into one ad, excluding policy explanations and press
+statements. Complete downloads, figures and both unpublished editions are rebuilt
+together. House composition is now 476 D / one R Snap and 222 D / 157 R non-Snap.
+
+The gap remains unresolved, not a national advertising-volume estimate or a
+collection ceiling. Expanded Wittman, Evans and Buckhout campaign checks did not
+yield additional usable text: Wittman's linked ZIP is photographs, and Buckhout's
+media kit links channels. Defending Main Street is a separate organization from
+RMSP; its campaign materials and American Action Network's releases are continuing
+discovery leads, not counted records. The recurring acquisition reminder remains
+active. Website/Substack publication stays on hold.
+
+## Preceding October 30: scripts and independently reported ad quotations
+
+The preceding snapshot contained **1,833 acquired text records**, including **1,795 English
 records: 1,226 D / 530 R / 31 other / eight unresolved**. Exact party/message
 counts are **1,204 D / 493 R**. English Republican House coverage rises from
 **149 to 152**, alongside 698 Democratic House records. The additions are:

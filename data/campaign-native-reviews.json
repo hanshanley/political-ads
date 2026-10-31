@@ -1,6 +1,134 @@
 {
   "reviews": [
     {
+      "id": "rmsp-native-moore-8a48c04da3c079ee",
+      "source": "rmsp-native",
+      "publisher_url": "https://www.republicanmainstreet.org/post/rmsp-launches-digital-education-campaign-highlighting-rep-blake-moore-s-support-for-the-one-big-bea",
+      "post_url": "https://www.republicanmainstreet.org/post/rmsp-launches-digital-education-campaign-highlighting-rep-blake-moore-s-support-for-the-one-big-bea",
+      "publisher_release": {
+        "published": "2026-06-03",
+        "title": "RMSP Launches Digital Education Campaign Highlighting Rep. Blake Moore's Support for the One Big Beautiful Bill",
+        "sha256": "cf131c0e6ecdd58b2b5e55f954a4dbb45bdbafc88b09e93aee5dbb8e74851112"
+      },
+      "media_url": "https://video.wixstatic.com/video/610979_24e1b0b8eb89423d88b1960a087e2dee/1080p/mp4/file.mp4",
+      "media_sha256": "8a48c04da3c079ee59514e5cad6c914ebe99ba0422ce2c4999900c88150f8b1c",
+      "title": "RMSP-linked Blake Moore tax-relief ad",
+      "title_basis": "Descriptive label, not a verified creative title",
+      "sponsor": "Republican Main Street Partnership",
+      "sponsor_type": "outside_group",
+      "candidate_id": "H0UT01205",
+      "publisher_race": "UT-01",
+      "fec_2026_race": "UT-02",
+      "required_quotes": [
+        "President Donald Trump and Congressman Blake Moore",
+        "PAID FOR BY REPUBLICAN MAIN STREET PARTNERSHIP."
+      ],
+      "reviewed": "2026-10-30",
+      "ad_evidence": "Actual 30-second issue-advocacy original directly embedded in RMSP's dated release. Visually inspected closing card identifies Republican Main Street Partnership as payer. The release announces a digital campaign in Utah's first district, while the saved exact 2026 FEC identity H0UT01205 lists district 02. Preserve both observations; the canonical election race follows the 2026 FEC roster. Publisher release metadata does not establish first airing.",
+      "quality_flags": ["publisher_district_differs_from_current_fec_2026_district"],
+      "extraction_caveat": "Preserve automatic speech/OCR, including background article snippets, date strings and unrelated incidental signage. Payer inspection does not certify every extracted word."
+    },
+    {
+      "id": "rmsp-native-nunn-01e89be71e19902d",
+      "source": "rmsp-native",
+      "publisher_url": "https://www.republicanmainstreet.org/post/rmsp-launches-six-figure-education-campaign-highlighting-rep-zach-nunn-s-work-for-working-families",
+      "post_url": "https://www.republicanmainstreet.org/post/rmsp-launches-six-figure-education-campaign-highlighting-rep-zach-nunn-s-work-for-working-families",
+      "publisher_release": {
+        "published": "2026-08-03",
+        "title": "RMSP Launches Six-Figure Education Campaign Highlighting Rep. Zach Nunn's Work for Working Families",
+        "sha256": "fb38ba8f06e3d145f48f7d5f6975ab26a2406d5cce084705606088844cddf794"
+      },
+      "media_url": "https://video.wixstatic.com/video/610979_296f5ae4599b4a60a12edcd52133c1cf/480p/mp4/file.mp4",
+      "media_sha256": "01e89be71e19902d21752b55f6f918b15d4508c2953e0619d18e0bbf1b418c17",
+      "title": "RMSP-linked Zach Nunn day-in-the-life ad",
+      "title_basis": "Descriptive label, not a verified creative title",
+      "sponsor": "Iowans for Zach Nunn",
+      "sponsor_type": "candidate",
+      "candidate_id": "H2IA03119",
+      "required_quotes": [
+        "It's how Zach Nunn lives his life,",
+        "and I approve this message."
+      ],
+      "reviewed": "2026-10-30",
+      "ad_evidence": "Actual approximately one-minute candidate original embedded in RMSP's August 3 release; the file includes a black tail. Visually inspected disclaimer at 55 seconds says paid for by Iowans for Zach Nunn and approved by Zach Nunn. RMSP is the release publisher, not this video's payer. The exact candidate's principal committee is C00784389. Publisher metadata dates the release linking the original, not first production, first upload or paid delivery.",
+      "extraction_caveat": "Preserve automatic name errors such as Nuns and Non and garbled military/payer OCR; these are not corrected by the identity/payer review."
+    },
+    {
+      "id": "rmsp-native-lalota-b100945b4d221520",
+      "source": "rmsp-native",
+      "publisher_url": "https://www.republicanmainstreet.org/post/rmsp-launches-600-000-digital-ad-campaign-in-new-york-highlighting-salt-relief-efforts",
+      "post_url": "https://www.republicanmainstreet.org/post/rmsp-launches-600-000-digital-ad-campaign-in-new-york-highlighting-salt-relief-efforts",
+      "publisher_release": {
+        "published": "2026-03-19",
+        "title": "RMSP Launches $600,000 Digital Ad Campaign in New York Highlighting SALT Relief Efforts",
+        "sha256": "94e5518ef78ef11efef2dd76d3cd0a1b9c980f33bda203b518adcecabdfca96d"
+      },
+      "media_url": "https://www.dropbox.com/scl/fi/aj5fyj5g0quqqiolkmo4j/RMSP-26USRMSP02V30A-NY-CD01-Fair-Share-LaLota.mp4?rlkey=yueyuu9hatejw6286izs3jlvj&e=2&st=a4zddl5e&dl=0",
+      "media_sha256": "b100945b4d221520a5944f2b44b77d077c07398133ba5149a21f99efbbcbe6ff",
+      "title": "Fair Share - Nick LaLota (NY-01)",
+      "title_basis": "Publisher-linked original filename and district label",
+      "sponsor": "Republican Main Street Partnership",
+      "sponsor_type": "outside_group",
+      "candidate_id": "H2NY01190",
+      "required_quotes": [
+        "New Yorkers have always paid our fair share,",
+        "PAID FOR BY REPUBLICAN MAIN STREET PARTNERSHIP."
+      ],
+      "reviewed": "2026-10-30",
+      "ad_evidence": "Actual 30-second original linked under NY-01 (Rep. Nick LaLota) in the March 19 release. Retrieved through the publisher's explicitly public Dropbox share using its standard dl=1 download option, not an account API or exposed credential. Visually inspected closing card identifies RMSP as payer. Exact FEC H2NY01190 is REP, NY-01. This is one candidate variant of the three-district Fair Share template, not proof of independently conceived messages or first paid delivery.",
+      "extraction_caveat": "Preserve automatic Lelota/name errors and incidental frame OCR; no transcript rewriting or new semantic labels."
+    },
+    {
+      "id": "rmsp-native-garbarino-dc8b3b31c3db6cf6",
+      "source": "rmsp-native",
+      "publisher_url": "https://www.republicanmainstreet.org/post/rmsp-launches-600-000-digital-ad-campaign-in-new-york-highlighting-salt-relief-efforts",
+      "post_url": "https://www.republicanmainstreet.org/post/rmsp-launches-600-000-digital-ad-campaign-in-new-york-highlighting-salt-relief-efforts",
+      "publisher_release": {
+        "published": "2026-03-19",
+        "title": "RMSP Launches $600,000 Digital Ad Campaign in New York Highlighting SALT Relief Efforts",
+        "sha256": "94e5518ef78ef11efef2dd76d3cd0a1b9c980f33bda203b518adcecabdfca96d"
+      },
+      "media_url": "https://www.dropbox.com/scl/fi/x9rce4ll0ijz41mw3avg4/RMSP-26USRMSP02V30B-NY-CD02-Fair-Share-Garbarino.mp4?rlkey=mt5m7wjr6y74eb6io6h2shkmy&e=3&dl=0",
+      "media_sha256": "dc8b3b31c3db6cf67cc388f59de6d5d711390da05318c5c3b66247507c146218",
+      "title": "Fair Share - Andrew Garbarino (NY-02)",
+      "title_basis": "Publisher-linked original filename and district label",
+      "sponsor": "Republican Main Street Partnership",
+      "sponsor_type": "outside_group",
+      "candidate_id": "H0NY02234",
+      "required_quotes": [
+        "New Yorkers have always paid our fair share.",
+        "PAID FOR BY REPUBLICAN MAIN STREET PARTNERSHIP."
+      ],
+      "reviewed": "2026-10-30",
+      "ad_evidence": "Actual 30-second original separately linked under NY-02 (Rep. Andrew Garbarino) in the March 19 release, retrieved by the public share's standard download switch. Visually inspected closing card identifies RMSP as payer. Exact FEC H0NY02234 is REP, NY-02. Keep this candidate variant separate from the LaLota and Lawler executions without implying unrelated message families.",
+      "extraction_caveat": "Preserve automatic Garberino/name errors, repeated OCR variants and original evidence; publisher release date is not verified first airing."
+    },
+    {
+      "id": "rmsp-native-lawler-fd62cc850deda1a4",
+      "source": "rmsp-native",
+      "publisher_url": "https://www.republicanmainstreet.org/post/rmsp-launches-600-000-digital-ad-campaign-in-new-york-highlighting-salt-relief-efforts",
+      "post_url": "https://www.republicanmainstreet.org/post/rmsp-launches-600-000-digital-ad-campaign-in-new-york-highlighting-salt-relief-efforts",
+      "publisher_release": {
+        "published": "2026-03-19",
+        "title": "RMSP Launches $600,000 Digital Ad Campaign in New York Highlighting SALT Relief Efforts",
+        "sha256": "94e5518ef78ef11efef2dd76d3cd0a1b9c980f33bda203b518adcecabdfca96d"
+      },
+      "media_url": "https://www.dropbox.com/scl/fi/nhg44slafrsze5aoxr5o7/RMSP-26USRMSP02V30C-NY-CD17-Fair-Share-Lawler.mp4?rlkey=j6zq6aoq5zl5s3fk8ljgf75u5&e=2&dl=0",
+      "media_sha256": "fd62cc850deda1a4af37ac8e6effb304b4ad6f700502608509a900fe7072aa08",
+      "title": "Fair Share - Mike Lawler (NY-17)",
+      "title_basis": "Publisher-linked original filename and district label",
+      "sponsor": "Republican Main Street Partnership",
+      "sponsor_type": "outside_group",
+      "candidate_id": "H2NY17162",
+      "required_quotes": [
+        "That's why Congressman Mike Lawler is fighting back",
+        "PAID FOR BY REPUBLICAN MAIN STREET PARTNERSHIP."
+      ],
+      "reviewed": "2026-10-30",
+      "ad_evidence": "Actual 30-second original separately linked under NY-17 (Rep. Mike Lawler) in the March 19 release, retrieved by its public Dropbox download option. Visually inspected closing card identifies RMSP as payer. Exact FEC H2NY17162 is REP, NY-17. This Fair Share variant is distinct from the October 20 candidate-paid closing-ad quotations.",
+      "extraction_caveat": "Preserve incidental background question text, imperfect OCR and the unchanged original extraction. Do not equate exact-text uniqueness with unrelated message families or verified paid-delivery counts."
+    },
+    {
       "id": "husted-native-122190847664803316",
       "source": "husted-native",
       "publisher_url": "https://www.jonhustedforsenate.com/",

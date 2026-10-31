@@ -36618,6 +36618,70 @@
       "title": "RELEASE: Republican Mayor Will Haynie Backs Rear Admiral Nancy Lacore in Closing General Election Ad"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "Official Lawler for Congress release at https://www.lawlerforcongress.com/2026/10/20/lawlers-closing-ad-cait-conley-doesnt-pay-property-taxes-in-ny-17-but-wants-to-raise-taxes-on-those-who-do-by-4000/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
+      "chamber": "House",
+      "date_basis": "release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "lawler-1471-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/SK0Tz0VFwY8"
+      ],
+      "message_id": "4ab932b1c87e7a9a9c541c7a12c6cbe1527776febc7662e9d616a9181c85f95b",
+      "observed": "2026-10-30",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-20",
+      "quality_flags": [
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "NY-17",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "end_seconds": null,
+          "kind": "publisher_ad_copy",
+          "start_seconds": null,
+          "text": "Cait Conley doesn’t own a home here, and she’s never paid taxes here. But do you know where she does? Virginia,",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_ad_copy",
+          "start_seconds": null,
+          "text": "Think about it. Cait doesn’t pay taxes here, but wants to raise ours even higher. Is she serious?",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_ad_copy",
+          "start_seconds": null,
+          "text": "Unlike Cait, we own a home, pay taxes, and this is where we’re raising our family,",
+          "voice": "unreviewed"
+        },
+        {
+          "end_seconds": null,
+          "kind": "publisher_ad_copy",
+          "start_seconds": null,
+          "text": "It’s why I fought both sides to restore SALT and why I’m fighting to reopen Indian Point to cut energy costs.",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "lawler",
+      "source_hash": "b22d0546d47abf4b97b926acd53babb15638ee1f213a5fea9c464427f6eb8be4",
+      "source_record_id": "1471",
+      "source_url": "https://www.lawlerforcongress.com/2026/10/20/lawlers-closing-ad-cait-conley-doesnt-pay-property-taxes-in-ny-17-but-wants-to-raise-taxes-on-those-who-do-by-4000/",
+      "sponsor": "Lawler for Congress",
+      "sponsor_type": "candidate",
+      "state": "NY",
+      "text": "Cait Conley doesn’t own a home here, and she’s never paid taxes here. But do you know where she does? Virginia,\nThink about it. Cait doesn’t pay taxes here, but wants to raise ours even higher. Is she serious?\nUnlike Cait, we own a home, pay taxes, and this is where we’re raising our family,\nIt’s why I fought both sides to restore SALT and why I’m fighting to reopen Indian Point to cut energy costs.",
+      "title": "LAWLER’S CLOSING AD: CAIT CONLEY DOESN’T PAY PROPERTY TAXES IN NY-17, BUT WANTS TO RAISE TAXES ON THOSE WHO DO BY $4,000"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official LCV Victory Fund release at https://www.lcvvictoryfund.org/news/rising-home-insurance-costs-focus-of-new-2-3-million-ad-program-from-lcv-victory-fund/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
@@ -43098,11 +43162,11 @@
       "url": "https://www.nancylacore.com"
     },
     {
-      "ads_with_text": 5,
+      "ads_with_text": 6,
       "checked": "2026-10-30",
-      "excluded_posts": 53,
+      "excluded_posts": 52,
       "languages": {
-        "en": 5
+        "en": 6
       },
       "last_success": "2026-10-30",
       "posts_scanned": 57,
