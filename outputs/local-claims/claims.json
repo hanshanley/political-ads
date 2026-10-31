@@ -65338,5 +65338,811 @@
     "text_hash": "07997e148a6e88cf022fd8253b1bc3da7015f55a141e449f6f9f0cd4453b87bc",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3134-7",
+    "alignment": "D",
+    "block_id": "lcv-vf-3134-7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3134-7-claims-001-001",
+    "claim_text": "Trump’s policies are raising our costs",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 333,
+        "kind": "publisher_transcript",
+        "start": 295,
+        "text": "Trump’s policies are raising our costs",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-over-5-million-in-ad-programming/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 311,
+        "anchor_quote": "Trump’s policies",
+        "anchor_start": 295,
+        "anchor_unit_id": 11,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Wow, welcome back to the Anthony DiLorenzo show\nToday we’re quizzing Anthony on the issues\nTrump’s healthcare cuts,\nI love the Big Beautiful Bill\nThe Iran War\nI would support the President\nEverything else,\nI support the President\nOn the issues, I can’t argue with him\nAnd for our daily trouble,\nTrump’s policies are raising our costs\nWould you still vote for him?\nI’d vote for President Trump 1,000 times in a row\nDiLorenzo choose Trump over New Hampshire every time",
+    "text_hash": "3264295e40121ea6f530074adc2bb9bd073bd3719abb70b3f04806e006c1871b",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3134-7",
+    "alignment": "D",
+    "block_id": "lcv-vf-3134-7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3134-7-claims-001-002",
+    "claim_text": "I’d vote for President Trump 1,000 times in a row",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 413,
+        "kind": "publisher_transcript",
+        "start": 364,
+        "text": "I’d vote for President Trump 1,000 times in a row",
+        "unit_id": 13
+      }
+    ],
+    "evidence_ids": [
+      13
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-over-5-million-in-ad-programming/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 392,
+        "anchor_quote": "President Trump",
+        "anchor_start": 377,
+        "anchor_unit_id": 13,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Wow, welcome back to the Anthony DiLorenzo show\nToday we’re quizzing Anthony on the issues\nTrump’s healthcare cuts,\nI love the Big Beautiful Bill\nThe Iran War\nI would support the President\nEverything else,\nI support the President\nOn the issues, I can’t argue with him\nAnd for our daily trouble,\nTrump’s policies are raising our costs\nWould you still vote for him?\nI’d vote for President Trump 1,000 times in a row\nDiLorenzo choose Trump over New Hampshire every time",
+    "text_hash": "3264295e40121ea6f530074adc2bb9bd073bd3719abb70b3f04806e006c1871b",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3134-7",
+    "alignment": "D",
+    "block_id": "lcv-vf-3134-7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3134-7-claims-001-003",
+    "claim_text": "DiLorenzo choose Trump over New Hampshire every time",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 466,
+        "kind": "publisher_transcript",
+        "start": 414,
+        "text": "DiLorenzo choose Trump over New Hampshire every time",
+        "unit_id": 14
+      }
+    ],
+    "evidence_ids": [
+      14
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-over-5-million-in-ad-programming/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 423,
+        "anchor_quote": "DiLorenzo",
+        "anchor_start": 414,
+        "anchor_unit_id": 14,
+        "entity_id": "candidate:H6NH01420",
+        "kind": "person",
+        "name": "DiLorenzo",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Wow, welcome back to the Anthony DiLorenzo show\nToday we’re quizzing Anthony on the issues\nTrump’s healthcare cuts,\nI love the Big Beautiful Bill\nThe Iran War\nI would support the President\nEverything else,\nI support the President\nOn the issues, I can’t argue with him\nAnd for our daily trouble,\nTrump’s policies are raising our costs\nWould you still vote for him?\nI’d vote for President Trump 1,000 times in a row\nDiLorenzo choose Trump over New Hampshire every time",
+    "text_hash": "3264295e40121ea6f530074adc2bb9bd073bd3719abb70b3f04806e006c1871b",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3134-7",
+    "alignment": "D",
+    "block_id": "lcv-vf-3134-7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3134-7-claims-001-004",
+    "claim_text": "I love the Big Beautiful Bill",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 145,
+        "kind": "publisher_transcript",
+        "start": 116,
+        "text": "I love the Big Beautiful Bill",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-over-5-million-in-ad-programming/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 145,
+        "anchor_quote": "the Big Beautiful Bill",
+        "anchor_start": 123,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Big Beautiful Bill",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Wow, welcome back to the Anthony DiLorenzo show\nToday we’re quizzing Anthony on the issues\nTrump’s healthcare cuts,\nI love the Big Beautiful Bill\nThe Iran War\nI would support the President\nEverything else,\nI support the President\nOn the issues, I can’t argue with him\nAnd for our daily trouble,\nTrump’s policies are raising our costs\nWould you still vote for him?\nI’d vote for President Trump 1,000 times in a row\nDiLorenzo choose Trump over New Hampshire every time",
+    "text_hash": "3264295e40121ea6f530074adc2bb9bd073bd3719abb70b3f04806e006c1871b",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3134-7",
+    "alignment": "D",
+    "block_id": "lcv-vf-3134-7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3134-7-claims-001-005",
+    "claim_text": "I would support the President",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 188,
+        "kind": "publisher_transcript",
+        "start": 159,
+        "text": "I would support the President",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-over-5-million-in-ad-programming/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 188,
+        "anchor_quote": "the President",
+        "anchor_start": 175,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "President",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Wow, welcome back to the Anthony DiLorenzo show\nToday we’re quizzing Anthony on the issues\nTrump’s healthcare cuts,\nI love the Big Beautiful Bill\nThe Iran War\nI would support the President\nEverything else,\nI support the President\nOn the issues, I can’t argue with him\nAnd for our daily trouble,\nTrump’s policies are raising our costs\nWould you still vote for him?\nI’d vote for President Trump 1,000 times in a row\nDiLorenzo choose Trump over New Hampshire every time",
+    "text_hash": "3264295e40121ea6f530074adc2bb9bd073bd3719abb70b3f04806e006c1871b",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3134-7",
+    "alignment": "D",
+    "block_id": "lcv-vf-3134-7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3134-7-claims-001-006",
+    "claim_text": "I support the President",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 229,
+        "kind": "publisher_transcript",
+        "start": 206,
+        "text": "I support the President",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-over-5-million-in-ad-programming/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 229,
+        "anchor_quote": "the President",
+        "anchor_start": 216,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "President",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Wow, welcome back to the Anthony DiLorenzo show\nToday we’re quizzing Anthony on the issues\nTrump’s healthcare cuts,\nI love the Big Beautiful Bill\nThe Iran War\nI would support the President\nEverything else,\nI support the President\nOn the issues, I can’t argue with him\nAnd for our daily trouble,\nTrump’s policies are raising our costs\nWould you still vote for him?\nI’d vote for President Trump 1,000 times in a row\nDiLorenzo choose Trump over New Hampshire every time",
+    "text_hash": "3264295e40121ea6f530074adc2bb9bd073bd3719abb70b3f04806e006c1871b",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3134-7",
+    "alignment": "D",
+    "block_id": "lcv-vf-3134-7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3134-7-claims-001-007",
+    "claim_text": "On the issues, I can’t argue with him",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 267,
+        "kind": "publisher_transcript",
+        "start": 230,
+        "text": "On the issues, I can’t argue with him",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-over-5-million-in-ad-programming/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 267,
+        "anchor_quote": "him",
+        "anchor_start": 264,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "him",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Wow, welcome back to the Anthony DiLorenzo show\nToday we’re quizzing Anthony on the issues\nTrump’s healthcare cuts,\nI love the Big Beautiful Bill\nThe Iran War\nI would support the President\nEverything else,\nI support the President\nOn the issues, I can’t argue with him\nAnd for our daily trouble,\nTrump’s policies are raising our costs\nWould you still vote for him?\nI’d vote for President Trump 1,000 times in a row\nDiLorenzo choose Trump over New Hampshire every time",
+    "text_hash": "3264295e40121ea6f530074adc2bb9bd073bd3719abb70b3f04806e006c1871b",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3153-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3153-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3153-1-claims-001-001",
+    "claim_text": "Mike Lawler costing us way more than we can afford",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 394,
+        "kind": "publisher_transcript",
+        "start": 344,
+        "text": "Mike Lawler costing us way more than we can afford",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-1-6-million-in-house-ads/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 355,
+        "anchor_quote": "Mike Lawler",
+        "anchor_start": 344,
+        "anchor_unit_id": 10,
+        "entity_id": "candidate:H2NY17162",
+        "kind": "person",
+        "name": "LAWLER, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "They break our bank accounts\nThe costly data centers no one asked for\nDriving up power bills\nBut even on data centers,\nMike Lawler followed Trump\nYup, Mike Lawler voted for Trump’s $80 billion tax break for data center developers\nMeanwhile, our utility bills have gone up 60% under Lawler\nWe needed a watchdog\nInstead, we’ve got a Trump lapdog\nMike Lawler costing us way more than we can afford",
+    "text_hash": "602ebce5427ddc51bc2eeee6682c41c37c770d3ef2396ab643f62a5d991ec2e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3153-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3153-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3153-1-claims-001-002",
+    "claim_text": "They break our bank accounts",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 28,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "They break our bank accounts",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-1-6-million-in-house-ads/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 4,
+        "anchor_quote": "They",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "They break our bank accounts\nThe costly data centers no one asked for\nDriving up power bills\nBut even on data centers,\nMike Lawler followed Trump\nYup, Mike Lawler voted for Trump’s $80 billion tax break for data center developers\nMeanwhile, our utility bills have gone up 60% under Lawler\nWe needed a watchdog\nInstead, we’ve got a Trump lapdog\nMike Lawler costing us way more than we can afford",
+    "text_hash": "602ebce5427ddc51bc2eeee6682c41c37c770d3ef2396ab643f62a5d991ec2e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3153-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3153-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3153-1-claims-001-003",
+    "claim_text": "The costly data centers no one asked for",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 69,
+        "kind": "publisher_transcript",
+        "start": 29,
+        "text": "The costly data centers no one asked for",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-1-6-million-in-house-ads/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 52,
+        "anchor_quote": "data centers",
+        "anchor_start": 40,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "data centers",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "They break our bank accounts\nThe costly data centers no one asked for\nDriving up power bills\nBut even on data centers,\nMike Lawler followed Trump\nYup, Mike Lawler voted for Trump’s $80 billion tax break for data center developers\nMeanwhile, our utility bills have gone up 60% under Lawler\nWe needed a watchdog\nInstead, we’ve got a Trump lapdog\nMike Lawler costing us way more than we can afford",
+    "text_hash": "602ebce5427ddc51bc2eeee6682c41c37c770d3ef2396ab643f62a5d991ec2e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3153-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3153-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3153-1-claims-001-004",
+    "claim_text": "Driving up power bills",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 92,
+        "kind": "publisher_transcript",
+        "start": 70,
+        "text": "Driving up power bills",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-1-6-million-in-house-ads/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 92,
+        "anchor_quote": "power bills",
+        "anchor_start": 81,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "power bills",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "They break our bank accounts\nThe costly data centers no one asked for\nDriving up power bills\nBut even on data centers,\nMike Lawler followed Trump\nYup, Mike Lawler voted for Trump’s $80 billion tax break for data center developers\nMeanwhile, our utility bills have gone up 60% under Lawler\nWe needed a watchdog\nInstead, we’ve got a Trump lapdog\nMike Lawler costing us way more than we can afford",
+    "text_hash": "602ebce5427ddc51bc2eeee6682c41c37c770d3ef2396ab643f62a5d991ec2e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3153-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3153-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3153-1-claims-001-005",
+    "claim_text": "Mike Lawler followed Trump",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 145,
+        "kind": "publisher_transcript",
+        "start": 119,
+        "text": "Mike Lawler followed Trump",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-1-6-million-in-house-ads/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 130,
+        "anchor_quote": "Mike Lawler",
+        "anchor_start": 119,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H2NY17162",
+        "kind": "person",
+        "name": "LAWLER, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 145,
+        "anchor_quote": "Trump",
+        "anchor_start": 140,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They break our bank accounts\nThe costly data centers no one asked for\nDriving up power bills\nBut even on data centers,\nMike Lawler followed Trump\nYup, Mike Lawler voted for Trump’s $80 billion tax break for data center developers\nMeanwhile, our utility bills have gone up 60% under Lawler\nWe needed a watchdog\nInstead, we’ve got a Trump lapdog\nMike Lawler costing us way more than we can afford",
+    "text_hash": "602ebce5427ddc51bc2eeee6682c41c37c770d3ef2396ab643f62a5d991ec2e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3153-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3153-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3153-1-claims-001-006",
+    "claim_text": "Mike Lawler voted for Trump’s $80 billion tax break for data center developers",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 229,
+        "kind": "publisher_transcript",
+        "start": 146,
+        "text": "Yup, Mike Lawler voted for Trump’s $80 billion tax break for data center developers",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-1-6-million-in-house-ads/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 162,
+        "anchor_quote": "Mike Lawler",
+        "anchor_start": 151,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H2NY17162",
+        "kind": "person",
+        "name": "LAWLER, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 178,
+        "anchor_quote": "Trump",
+        "anchor_start": 173,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 229,
+        "anchor_quote": "data center developers",
+        "anchor_start": 207,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "data center developers",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They break our bank accounts\nThe costly data centers no one asked for\nDriving up power bills\nBut even on data centers,\nMike Lawler followed Trump\nYup, Mike Lawler voted for Trump’s $80 billion tax break for data center developers\nMeanwhile, our utility bills have gone up 60% under Lawler\nWe needed a watchdog\nInstead, we’ve got a Trump lapdog\nMike Lawler costing us way more than we can afford",
+    "text_hash": "602ebce5427ddc51bc2eeee6682c41c37c770d3ef2396ab643f62a5d991ec2e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3153-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3153-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3153-1-claims-001-007",
+    "claim_text": "Our utility bills have gone up 60% under Lawler",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 288,
+        "kind": "publisher_transcript",
+        "start": 230,
+        "text": "Meanwhile, our utility bills have gone up 60% under Lawler",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-1-6-million-in-house-ads/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 288,
+        "anchor_quote": "Lawler",
+        "anchor_start": 282,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:H2NY17162",
+        "kind": "person",
+        "name": "LAWLER, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 258,
+        "anchor_quote": "utility bills",
+        "anchor_start": 245,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "utility bills",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "They break our bank accounts\nThe costly data centers no one asked for\nDriving up power bills\nBut even on data centers,\nMike Lawler followed Trump\nYup, Mike Lawler voted for Trump’s $80 billion tax break for data center developers\nMeanwhile, our utility bills have gone up 60% under Lawler\nWe needed a watchdog\nInstead, we’ve got a Trump lapdog\nMike Lawler costing us way more than we can afford",
+    "text_hash": "602ebce5427ddc51bc2eeee6682c41c37c770d3ef2396ab643f62a5d991ec2e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3153-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3153-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3153-1-claims-001-008",
+    "claim_text": "We needed a watchdog",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 309,
+        "kind": "publisher_transcript",
+        "start": 289,
+        "text": "We needed a watchdog",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-1-6-million-in-house-ads/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 291,
+        "anchor_quote": "We",
+        "anchor_start": 289,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "They break our bank accounts\nThe costly data centers no one asked for\nDriving up power bills\nBut even on data centers,\nMike Lawler followed Trump\nYup, Mike Lawler voted for Trump’s $80 billion tax break for data center developers\nMeanwhile, our utility bills have gone up 60% under Lawler\nWe needed a watchdog\nInstead, we’ve got a Trump lapdog\nMike Lawler costing us way more than we can afford",
+    "text_hash": "602ebce5427ddc51bc2eeee6682c41c37c770d3ef2396ab643f62a5d991ec2e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3153-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3153-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3153-1-claims-001-009",
+    "claim_text": "We’ve got a Trump lapdog",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 343,
+        "kind": "publisher_transcript",
+        "start": 310,
+        "text": "Instead, we’ve got a Trump lapdog",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-1-6-million-in-house-ads/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 321,
+        "anchor_quote": "we",
+        "anchor_start": 319,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 343,
+        "anchor_quote": "Trump lapdog",
+        "anchor_start": 331,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump lapdog",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "They break our bank accounts\nThe costly data centers no one asked for\nDriving up power bills\nBut even on data centers,\nMike Lawler followed Trump\nYup, Mike Lawler voted for Trump’s $80 billion tax break for data center developers\nMeanwhile, our utility bills have gone up 60% under Lawler\nWe needed a watchdog\nInstead, we’ve got a Trump lapdog\nMike Lawler costing us way more than we can afford",
+    "text_hash": "602ebce5427ddc51bc2eeee6682c41c37c770d3ef2396ab643f62a5d991ec2e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
