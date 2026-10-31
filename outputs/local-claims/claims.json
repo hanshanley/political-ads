@@ -56167,5 +56167,3502 @@
     "text_hash": "b5ebfaf0a7613852eea913ec2cd926ee24c9e744903cc057df6d150a28cf90f9",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-a5fd5ae62826d31c-0",
+    "alignment": "D",
+    "block_id": "jackson-a5fd5ae62826d31c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-001",
+    "claim_text": "It was a terrible feeling as a parent.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 38,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "It was a terrible feeling as a parent.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-highlights-troy-jacksons-firsthand-experience-trying-to-make-ends-meet-for-his-family",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 1,
+        "anchor_quote": "I",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "It was a terrible feeling as a parent.\nI'd work 80 hours a week in the woods, and there still wouldn't be enough at the end of the week. You know, I never got a chance to see my kids grow up, and I still didn't make enough for what we needed.\nThe people in power aren't suddenly going to make it easy for all of us.\nThat's why I've been fighting back to protect Social Security and Medicare, and to cut taxes for working people, because you should keep more of what you earn.\nMainers aren't looking for a handout, but we all deserve a fair shot.\nI'm Troy Jackson, and I approve this message.",
+    "text_hash": "370d191b152eddecbccfddf4a4760fe1f380f4daf7e8b853b48a4a8ea9f23bf7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-a5fd5ae62826d31c-0",
+    "alignment": "D",
+    "block_id": "jackson-a5fd5ae62826d31c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-002",
+    "claim_text": "I'd work 80 hours a week in the woods, and there still wouldn't be enough at the end of the week.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 242,
+        "kind": "publisher_transcript",
+        "start": 39,
+        "text": "I'd work 80 hours a week in the woods, and there still wouldn't be enough at the end of the week. You know, I never got a chance to see my kids grow up, and I still didn't make enough for what we needed.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-highlights-troy-jacksons-firsthand-experience-trying-to-make-ends-meet-for-his-family",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 40,
+        "anchor_quote": "I",
+        "anchor_start": 39,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "It was a terrible feeling as a parent.\nI'd work 80 hours a week in the woods, and there still wouldn't be enough at the end of the week. You know, I never got a chance to see my kids grow up, and I still didn't make enough for what we needed.\nThe people in power aren't suddenly going to make it easy for all of us.\nThat's why I've been fighting back to protect Social Security and Medicare, and to cut taxes for working people, because you should keep more of what you earn.\nMainers aren't looking for a handout, but we all deserve a fair shot.\nI'm Troy Jackson, and I approve this message.",
+    "text_hash": "370d191b152eddecbccfddf4a4760fe1f380f4daf7e8b853b48a4a8ea9f23bf7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-a5fd5ae62826d31c-0",
+    "alignment": "D",
+    "block_id": "jackson-a5fd5ae62826d31c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-003",
+    "claim_text": "I never got a chance to see my kids grow up, and I still didn't make enough for what we needed.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 242,
+        "kind": "publisher_transcript",
+        "start": 39,
+        "text": "I'd work 80 hours a week in the woods, and there still wouldn't be enough at the end of the week. You know, I never got a chance to see my kids grow up, and I still didn't make enough for what we needed.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-highlights-troy-jacksons-firsthand-experience-trying-to-make-ends-meet-for-his-family",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 40,
+        "anchor_quote": "I",
+        "anchor_start": 39,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "It was a terrible feeling as a parent.\nI'd work 80 hours a week in the woods, and there still wouldn't be enough at the end of the week. You know, I never got a chance to see my kids grow up, and I still didn't make enough for what we needed.\nThe people in power aren't suddenly going to make it easy for all of us.\nThat's why I've been fighting back to protect Social Security and Medicare, and to cut taxes for working people, because you should keep more of what you earn.\nMainers aren't looking for a handout, but we all deserve a fair shot.\nI'm Troy Jackson, and I approve this message.",
+    "text_hash": "370d191b152eddecbccfddf4a4760fe1f380f4daf7e8b853b48a4a8ea9f23bf7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-a5fd5ae62826d31c-0",
+    "alignment": "D",
+    "block_id": "jackson-a5fd5ae62826d31c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-004",
+    "claim_text": "The people in power aren't suddenly going to make it easy for all of us.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 315,
+        "kind": "publisher_transcript",
+        "start": 243,
+        "text": "The people in power aren't suddenly going to make it easy for all of us.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-highlights-troy-jacksons-firsthand-experience-trying-to-make-ends-meet-for-his-family",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 262,
+        "anchor_quote": "The people in power",
+        "anchor_start": 243,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "The people in power",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "It was a terrible feeling as a parent.\nI'd work 80 hours a week in the woods, and there still wouldn't be enough at the end of the week. You know, I never got a chance to see my kids grow up, and I still didn't make enough for what we needed.\nThe people in power aren't suddenly going to make it easy for all of us.\nThat's why I've been fighting back to protect Social Security and Medicare, and to cut taxes for working people, because you should keep more of what you earn.\nMainers aren't looking for a handout, but we all deserve a fair shot.\nI'm Troy Jackson, and I approve this message.",
+    "text_hash": "370d191b152eddecbccfddf4a4760fe1f380f4daf7e8b853b48a4a8ea9f23bf7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-a5fd5ae62826d31c-0",
+    "alignment": "D",
+    "block_id": "jackson-a5fd5ae62826d31c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-005",
+    "claim_text": "I've been fighting back to protect Social Security and Medicare, and to cut taxes for working people, because you should keep more of what you earn.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 475,
+        "kind": "publisher_transcript",
+        "start": 316,
+        "text": "That's why I've been fighting back to protect Social Security and Medicare, and to cut taxes for working people, because you should keep more of what you earn.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-highlights-troy-jacksons-firsthand-experience-trying-to-make-ends-meet-for-his-family",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 328,
+        "anchor_quote": "I",
+        "anchor_start": 327,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 377,
+        "anchor_quote": "Social Security",
+        "anchor_start": 362,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Social Security",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 390,
+        "anchor_quote": "Medicare",
+        "anchor_start": 382,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Medicare",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 427,
+        "anchor_quote": "working people",
+        "anchor_start": 413,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "working people",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "It was a terrible feeling as a parent.\nI'd work 80 hours a week in the woods, and there still wouldn't be enough at the end of the week. You know, I never got a chance to see my kids grow up, and I still didn't make enough for what we needed.\nThe people in power aren't suddenly going to make it easy for all of us.\nThat's why I've been fighting back to protect Social Security and Medicare, and to cut taxes for working people, because you should keep more of what you earn.\nMainers aren't looking for a handout, but we all deserve a fair shot.\nI'm Troy Jackson, and I approve this message.",
+    "text_hash": "370d191b152eddecbccfddf4a4760fe1f380f4daf7e8b853b48a4a8ea9f23bf7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-a5fd5ae62826d31c-0",
+    "alignment": "D",
+    "block_id": "jackson-a5fd5ae62826d31c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-006",
+    "claim_text": "Mainers aren't looking for a handout, but we all deserve a fair shot.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 545,
+        "kind": "publisher_transcript",
+        "start": 476,
+        "text": "Mainers aren't looking for a handout, but we all deserve a fair shot.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-highlights-troy-jacksons-firsthand-experience-trying-to-make-ends-meet-for-his-family",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 483,
+        "anchor_quote": "Mainers",
+        "anchor_start": 476,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Mainers",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "It was a terrible feeling as a parent.\nI'd work 80 hours a week in the woods, and there still wouldn't be enough at the end of the week. You know, I never got a chance to see my kids grow up, and I still didn't make enough for what we needed.\nThe people in power aren't suddenly going to make it easy for all of us.\nThat's why I've been fighting back to protect Social Security and Medicare, and to cut taxes for working people, because you should keep more of what you earn.\nMainers aren't looking for a handout, but we all deserve a fair shot.\nI'm Troy Jackson, and I approve this message.",
+    "text_hash": "370d191b152eddecbccfddf4a4760fe1f380f4daf7e8b853b48a4a8ea9f23bf7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-a5fd5ae62826d31c-0",
+    "alignment": "D",
+    "block_id": "jackson-a5fd5ae62826d31c-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-007",
+    "claim_text": "I'm Troy Jackson, and I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 591,
+        "kind": "publisher_transcript",
+        "start": 546,
+        "text": "I'm Troy Jackson, and I approve this message.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-highlights-troy-jacksons-firsthand-experience-trying-to-make-ends-meet-for-his-family",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 547,
+        "anchor_quote": "I",
+        "anchor_start": 546,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "It was a terrible feeling as a parent.\nI'd work 80 hours a week in the woods, and there still wouldn't be enough at the end of the week. You know, I never got a chance to see my kids grow up, and I still didn't make enough for what we needed.\nThe people in power aren't suddenly going to make it easy for all of us.\nThat's why I've been fighting back to protect Social Security and Medicare, and to cut taxes for working people, because you should keep more of what you earn.\nMainers aren't looking for a handout, but we all deserve a fair shot.\nI'm Troy Jackson, and I approve this message.",
+    "text_hash": "370d191b152eddecbccfddf4a4760fe1f380f4daf7e8b853b48a4a8ea9f23bf7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-b6172e104766686e-0",
+    "alignment": "D",
+    "block_id": "jackson-b6172e104766686e-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-b6172e104766686e-0-claims-001-001",
+    "claim_text": "People are struggling, but there's nothing we can do, according to people in Washington.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 129,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Troy Jackson: We hear this from people in Washington all the time. They say people are struggling, but there's nothing we can do.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-jackson-cuts-taxes-for-mainers-while-susan-collins-cuts-taxes-for-billionaire-allies",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 52,
+        "anchor_quote": "people in Washington",
+        "anchor_start": 32,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "people in Washington",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: We hear this from people in Washington all the time. They say people are struggling, but there's nothing we can do.\nTroy Jackson: But it seems like there's always money for Susan Collins and Donald Trump to give huge tax breaks to their rich billionaire friends.\nTroy Jackson: Well, I think that is insane. As Senate President, I passed tax cuts for our veterans and our seniors working with both parties to get it done, and I'll do it in the U.S. Senate too.\nTroy Jackson: I'm Troy Jackson, and I approve this ad because working people should keep more of what they earn.",
+    "text_hash": "5d2c95f4134ec79106d3086b4f2afefcc5a93f1c67a9228f31f8a03f8d8f0a2a",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-b6172e104766686e-0",
+    "alignment": "D",
+    "block_id": "jackson-b6172e104766686e-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-b6172e104766686e-0-claims-001-002",
+    "claim_text": "There's always money for Susan Collins and Donald Trump to give huge tax breaks to their rich billionaire friends.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 276,
+        "kind": "publisher_transcript",
+        "start": 130,
+        "text": "Troy Jackson: But it seems like there's always money for Susan Collins and Donald Trump to give huge tax breaks to their rich billionaire friends.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-jackson-cuts-taxes-for-mainers-while-susan-collins-cuts-taxes-for-billionaire-allies",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 200,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 187,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "Susan Collins",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 217,
+        "anchor_quote": "Donald Trump",
+        "anchor_start": 205,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Donald Trump",
+        "kind": "person",
+        "name": "Donald Trump",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 275,
+        "anchor_quote": "rich billionaire friends",
+        "anchor_start": 251,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "rich billionaire friends",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Troy Jackson: We hear this from people in Washington all the time. They say people are struggling, but there's nothing we can do.\nTroy Jackson: But it seems like there's always money for Susan Collins and Donald Trump to give huge tax breaks to their rich billionaire friends.\nTroy Jackson: Well, I think that is insane. As Senate President, I passed tax cuts for our veterans and our seniors working with both parties to get it done, and I'll do it in the U.S. Senate too.\nTroy Jackson: I'm Troy Jackson, and I approve this ad because working people should keep more of what they earn.",
+    "text_hash": "5d2c95f4134ec79106d3086b4f2afefcc5a93f1c67a9228f31f8a03f8d8f0a2a",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-b6172e104766686e-0",
+    "alignment": "D",
+    "block_id": "jackson-b6172e104766686e-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-b6172e104766686e-0-claims-001-003",
+    "claim_text": "I passed tax cuts for our veterans and our seniors working with both parties to get it done.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 473,
+        "kind": "publisher_transcript",
+        "start": 277,
+        "text": "Troy Jackson: Well, I think that is insane. As Senate President, I passed tax cuts for our veterans and our seniors working with both parties to get it done, and I'll do it in the U.S. Senate too.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-jackson-cuts-taxes-for-mainers-while-susan-collins-cuts-taxes-for-billionaire-allies",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 298,
+        "anchor_quote": "I",
+        "anchor_start": 297,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 376,
+        "anchor_quote": "veterans",
+        "anchor_start": 368,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "veterans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 392,
+        "anchor_quote": "seniors",
+        "anchor_start": 385,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "seniors",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: We hear this from people in Washington all the time. They say people are struggling, but there's nothing we can do.\nTroy Jackson: But it seems like there's always money for Susan Collins and Donald Trump to give huge tax breaks to their rich billionaire friends.\nTroy Jackson: Well, I think that is insane. As Senate President, I passed tax cuts for our veterans and our seniors working with both parties to get it done, and I'll do it in the U.S. Senate too.\nTroy Jackson: I'm Troy Jackson, and I approve this ad because working people should keep more of what they earn.",
+    "text_hash": "5d2c95f4134ec79106d3086b4f2afefcc5a93f1c67a9228f31f8a03f8d8f0a2a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-b6172e104766686e-0",
+    "alignment": "D",
+    "block_id": "jackson-b6172e104766686e-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-b6172e104766686e-0-claims-001-004",
+    "claim_text": "I'll do it in the U.S. Senate too.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 473,
+        "kind": "publisher_transcript",
+        "start": 277,
+        "text": "Troy Jackson: Well, I think that is insane. As Senate President, I passed tax cuts for our veterans and our seniors working with both parties to get it done, and I'll do it in the U.S. Senate too.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-jackson-cuts-taxes-for-mainers-while-susan-collins-cuts-taxes-for-billionaire-allies",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 298,
+        "anchor_quote": "I",
+        "anchor_start": 297,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: We hear this from people in Washington all the time. They say people are struggling, but there's nothing we can do.\nTroy Jackson: But it seems like there's always money for Susan Collins and Donald Trump to give huge tax breaks to their rich billionaire friends.\nTroy Jackson: Well, I think that is insane. As Senate President, I passed tax cuts for our veterans and our seniors working with both parties to get it done, and I'll do it in the U.S. Senate too.\nTroy Jackson: I'm Troy Jackson, and I approve this ad because working people should keep more of what they earn.",
+    "text_hash": "5d2c95f4134ec79106d3086b4f2afefcc5a93f1c67a9228f31f8a03f8d8f0a2a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-b6172e104766686e-0",
+    "alignment": "D",
+    "block_id": "jackson-b6172e104766686e-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-b6172e104766686e-0-claims-001-005",
+    "claim_text": "Working people should keep more of what they earn.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 586,
+        "kind": "publisher_transcript",
+        "start": 474,
+        "text": "Troy Jackson: I'm Troy Jackson, and I approve this ad because working people should keep more of what they earn.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-jackson-cuts-taxes-for-mainers-while-susan-collins-cuts-taxes-for-billionaire-allies",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 550,
+        "anchor_quote": "working people",
+        "anchor_start": 536,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "working people",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: We hear this from people in Washington all the time. They say people are struggling, but there's nothing we can do.\nTroy Jackson: But it seems like there's always money for Susan Collins and Donald Trump to give huge tax breaks to their rich billionaire friends.\nTroy Jackson: Well, I think that is insane. As Senate President, I passed tax cuts for our veterans and our seniors working with both parties to get it done, and I'll do it in the U.S. Senate too.\nTroy Jackson: I'm Troy Jackson, and I approve this ad because working people should keep more of what they earn.",
+    "text_hash": "5d2c95f4134ec79106d3086b4f2afefcc5a93f1c67a9228f31f8a03f8d8f0a2a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-b6172e104766686e-0",
+    "alignment": "D",
+    "block_id": "jackson-b6172e104766686e-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-b6172e104766686e-0-claims-001-006",
+    "claim_text": "I approve this ad.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 586,
+        "kind": "publisher_transcript",
+        "start": 474,
+        "text": "Troy Jackson: I'm Troy Jackson, and I approve this ad because working people should keep more of what they earn.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-jackson-cuts-taxes-for-mainers-while-susan-collins-cuts-taxes-for-billionaire-allies",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 489,
+        "anchor_quote": "I",
+        "anchor_start": 488,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: We hear this from people in Washington all the time. They say people are struggling, but there's nothing we can do.\nTroy Jackson: But it seems like there's always money for Susan Collins and Donald Trump to give huge tax breaks to their rich billionaire friends.\nTroy Jackson: Well, I think that is insane. As Senate President, I passed tax cuts for our veterans and our seniors working with both parties to get it done, and I'll do it in the U.S. Senate too.\nTroy Jackson: I'm Troy Jackson, and I approve this ad because working people should keep more of what they earn.",
+    "text_hash": "5d2c95f4134ec79106d3086b4f2afefcc5a93f1c67a9228f31f8a03f8d8f0a2a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-f4d90cba7d2a12c2-0",
+    "alignment": "D",
+    "block_id": "jackson-f4d90cba7d2a12c2-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-001",
+    "claim_text": "In November 2022, I was hearing from Mainers worried that they couldn't heat their homes with heating oil at $5.20 a gallon.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 146,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Troy Jackson: It was November 2022, and I was hearing from Mainers worried that they couldn't heat their homes with heating oil at $5.20 a gallon.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-jackson-demands-action-on-heating-oil-points-to-record-delivering-energy-relief-for-mainers",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 66,
+        "anchor_quote": "Mainers",
+        "anchor_start": 59,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Mainers",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Troy Jackson: It was November 2022, and I was hearing from Mainers worried that they couldn't heat their homes with heating oil at $5.20 a gallon.\nTroy Jackson: So we took action quickly. I passed a law working with both parties that rushed emergency heating assistance to almost a million Mainers.\nTroy Jackson: Today, with the war in Iran, heating oil is at $6 a gallon.\nTroy Jackson: This winter is going to break some people. It's time to act quickly. Again.\nTroy Jackson: I'm Troy Jackson. I approve this message.",
+    "text_hash": "09938af98ce62ef2b39470c5f9b632280eea9ffbbcf96c54e6a471c5c0824fc3",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-f4d90cba7d2a12c2-0",
+    "alignment": "D",
+    "block_id": "jackson-f4d90cba7d2a12c2-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-002",
+    "claim_text": "I passed a law working with both parties that rushed emergency heating assistance to almost a million Mainers.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 298,
+        "kind": "publisher_transcript",
+        "start": 147,
+        "text": "Troy Jackson: So we took action quickly. I passed a law working with both parties that rushed emergency heating assistance to almost a million Mainers.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-jackson-demands-action-on-heating-oil-points-to-record-delivering-energy-relief-for-mainers",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 189,
+        "anchor_quote": "I",
+        "anchor_start": 188,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 297,
+        "anchor_quote": "Mainers",
+        "anchor_start": 290,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Mainers",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Troy Jackson: It was November 2022, and I was hearing from Mainers worried that they couldn't heat their homes with heating oil at $5.20 a gallon.\nTroy Jackson: So we took action quickly. I passed a law working with both parties that rushed emergency heating assistance to almost a million Mainers.\nTroy Jackson: Today, with the war in Iran, heating oil is at $6 a gallon.\nTroy Jackson: This winter is going to break some people. It's time to act quickly. Again.\nTroy Jackson: I'm Troy Jackson. I approve this message.",
+    "text_hash": "09938af98ce62ef2b39470c5f9b632280eea9ffbbcf96c54e6a471c5c0824fc3",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-f4d90cba7d2a12c2-0",
+    "alignment": "D",
+    "block_id": "jackson-f4d90cba7d2a12c2-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-003",
+    "claim_text": "Today, with the war in Iran, heating oil is at $6 a gallon.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 372,
+        "kind": "publisher_transcript",
+        "start": 299,
+        "text": "Troy Jackson: Today, with the war in Iran, heating oil is at $6 a gallon.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-jackson-demands-action-on-heating-oil-points-to-record-delivering-energy-relief-for-mainers",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 353,
+        "anchor_quote": "heating oil",
+        "anchor_start": 342,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "heating oil",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 340,
+        "anchor_quote": "Iran",
+        "anchor_start": 336,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Iran",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: It was November 2022, and I was hearing from Mainers worried that they couldn't heat their homes with heating oil at $5.20 a gallon.\nTroy Jackson: So we took action quickly. I passed a law working with both parties that rushed emergency heating assistance to almost a million Mainers.\nTroy Jackson: Today, with the war in Iran, heating oil is at $6 a gallon.\nTroy Jackson: This winter is going to break some people. It's time to act quickly. Again.\nTroy Jackson: I'm Troy Jackson. I approve this message.",
+    "text_hash": "09938af98ce62ef2b39470c5f9b632280eea9ffbbcf96c54e6a471c5c0824fc3",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-f4d90cba7d2a12c2-0",
+    "alignment": "D",
+    "block_id": "jackson-f4d90cba7d2a12c2-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-004",
+    "claim_text": "This winter is going to break some people.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 462,
+        "kind": "publisher_transcript",
+        "start": 373,
+        "text": "Troy Jackson: This winter is going to break some people. It's time to act quickly. Again.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-jackson-demands-action-on-heating-oil-points-to-record-delivering-energy-relief-for-mainers",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 428,
+        "anchor_quote": "people",
+        "anchor_start": 422,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "people",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Troy Jackson: It was November 2022, and I was hearing from Mainers worried that they couldn't heat their homes with heating oil at $5.20 a gallon.\nTroy Jackson: So we took action quickly. I passed a law working with both parties that rushed emergency heating assistance to almost a million Mainers.\nTroy Jackson: Today, with the war in Iran, heating oil is at $6 a gallon.\nTroy Jackson: This winter is going to break some people. It's time to act quickly. Again.\nTroy Jackson: I'm Troy Jackson. I approve this message.",
+    "text_hash": "09938af98ce62ef2b39470c5f9b632280eea9ffbbcf96c54e6a471c5c0824fc3",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-f4d90cba7d2a12c2-0",
+    "alignment": "D",
+    "block_id": "jackson-f4d90cba7d2a12c2-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-005",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 518,
+        "kind": "publisher_transcript",
+        "start": 463,
+        "text": "Troy Jackson: I'm Troy Jackson. I approve this message.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-jackson-demands-action-on-heating-oil-points-to-record-delivering-energy-relief-for-mainers",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 478,
+        "anchor_quote": "I",
+        "anchor_start": 477,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: It was November 2022, and I was hearing from Mainers worried that they couldn't heat their homes with heating oil at $5.20 a gallon.\nTroy Jackson: So we took action quickly. I passed a law working with both parties that rushed emergency heating assistance to almost a million Mainers.\nTroy Jackson: Today, with the war in Iran, heating oil is at $6 a gallon.\nTroy Jackson: This winter is going to break some people. It's time to act quickly. Again.\nTroy Jackson: I'm Troy Jackson. I approve this message.",
+    "text_hash": "09938af98ce62ef2b39470c5f9b632280eea9ffbbcf96c54e6a471c5c0824fc3",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "jackson-f4d90cba7d2a12c2-0",
+    "alignment": "D",
+    "block_id": "jackson-f4d90cba7d2a12c2-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-006",
+    "claim_text": "I am Troy Jackson.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 518,
+        "kind": "publisher_transcript",
+        "start": 463,
+        "text": "Troy Jackson: I'm Troy Jackson. I approve this message.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.jacksonformaine.com/news/new-ad-jackson-demands-action-on-heating-oil-points-to-record-delivering-energy-relief-for-mainers",
+    "sponsor": "Troy Jackson for Maine",
+    "targets": [
+      {
+        "anchor_end": 478,
+        "anchor_quote": "I",
+        "anchor_start": 477,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 475,
+        "anchor_quote": "Troy Jackson",
+        "anchor_start": 463,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "Troy Jackson",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Troy Jackson: It was November 2022, and I was hearing from Mainers worried that they couldn't heat their homes with heating oil at $5.20 a gallon.\nTroy Jackson: So we took action quickly. I passed a law working with both parties that rushed emergency heating assistance to almost a million Mainers.\nTroy Jackson: Today, with the war in Iran, heating oil is at $6 a gallon.\nTroy Jackson: This winter is going to break some people. It's time to act quickly. Again.\nTroy Jackson: I'm Troy Jackson. I approve this message.",
+    "text_hash": "09938af98ce62ef2b39470c5f9b632280eea9ffbbcf96c54e6a471c5c0824fc3",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a0361048e32cb4ef8e5d34f-0",
+    "alignment": "D",
+    "block_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-001",
+    "claim_text": "I’m Nancy Lacore.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 17,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "I’m Nancy Lacore.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "I’m Nancy Lacore",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nI was never political.\nI was a three-star Navy Admiral.\nMission focused.\nThen the Trump administration removed Military officials in command positions without cause…\nBecause of politics.\nPolitics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.\nI served this country for 35 years and that won't stop just because I hung up the uniform.\nI’m Nancy Lacore and I approve this message, because I’m not done yet.",
+    "text_hash": "46f0746cfb9ea8ab60a9e036ca89dcd2ee2f87232ff7445c00cdf2b38ec7f22c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a0361048e32cb4ef8e5d34f-0",
+    "alignment": "D",
+    "block_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-002",
+    "claim_text": "I was never political.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 40,
+        "kind": "publisher_transcript",
+        "start": 18,
+        "text": "I was never political.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 19,
+        "anchor_quote": "I",
+        "anchor_start": 18,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nI was never political.\nI was a three-star Navy Admiral.\nMission focused.\nThen the Trump administration removed Military officials in command positions without cause…\nBecause of politics.\nPolitics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.\nI served this country for 35 years and that won't stop just because I hung up the uniform.\nI’m Nancy Lacore and I approve this message, because I’m not done yet.",
+    "text_hash": "46f0746cfb9ea8ab60a9e036ca89dcd2ee2f87232ff7445c00cdf2b38ec7f22c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a0361048e32cb4ef8e5d34f-0",
+    "alignment": "D",
+    "block_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-003",
+    "claim_text": "I was a three-star Navy Admiral.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 73,
+        "kind": "publisher_transcript",
+        "start": 41,
+        "text": "I was a three-star Navy Admiral.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 42,
+        "anchor_quote": "I",
+        "anchor_start": 41,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nI was never political.\nI was a three-star Navy Admiral.\nMission focused.\nThen the Trump administration removed Military officials in command positions without cause…\nBecause of politics.\nPolitics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.\nI served this country for 35 years and that won't stop just because I hung up the uniform.\nI’m Nancy Lacore and I approve this message, because I’m not done yet.",
+    "text_hash": "46f0746cfb9ea8ab60a9e036ca89dcd2ee2f87232ff7445c00cdf2b38ec7f22c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a0361048e32cb4ef8e5d34f-0",
+    "alignment": "D",
+    "block_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-004",
+    "claim_text": "Mission focused.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 90,
+        "kind": "publisher_transcript",
+        "start": 74,
+        "text": "Mission focused.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 89,
+        "anchor_quote": "Mission focused",
+        "anchor_start": 74,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nI was never political.\nI was a three-star Navy Admiral.\nMission focused.\nThen the Trump administration removed Military officials in command positions without cause…\nBecause of politics.\nPolitics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.\nI served this country for 35 years and that won't stop just because I hung up the uniform.\nI’m Nancy Lacore and I approve this message, because I’m not done yet.",
+    "text_hash": "46f0746cfb9ea8ab60a9e036ca89dcd2ee2f87232ff7445c00cdf2b38ec7f22c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a0361048e32cb4ef8e5d34f-0",
+    "alignment": "D",
+    "block_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-005",
+    "claim_text": "The Trump administration removed Military officials in command positions without cause…",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 183,
+        "kind": "publisher_transcript",
+        "start": 91,
+        "text": "Then the Trump administration removed Military officials in command positions without cause…",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 120,
+        "anchor_quote": "Trump administration",
+        "anchor_start": 100,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Trump administration",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 147,
+        "anchor_quote": "Military officials",
+        "anchor_start": 129,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Military officials",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nI was never political.\nI was a three-star Navy Admiral.\nMission focused.\nThen the Trump administration removed Military officials in command positions without cause…\nBecause of politics.\nPolitics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.\nI served this country for 35 years and that won't stop just because I hung up the uniform.\nI’m Nancy Lacore and I approve this message, because I’m not done yet.",
+    "text_hash": "46f0746cfb9ea8ab60a9e036ca89dcd2ee2f87232ff7445c00cdf2b38ec7f22c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a0361048e32cb4ef8e5d34f-0",
+    "alignment": "D",
+    "block_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-006",
+    "claim_text": "…Because of politics.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 204,
+        "kind": "publisher_transcript",
+        "start": 184,
+        "text": "Because of politics.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 203,
+        "anchor_quote": "politics",
+        "anchor_start": 195,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "politics",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nI was never political.\nI was a three-star Navy Admiral.\nMission focused.\nThen the Trump administration removed Military officials in command positions without cause…\nBecause of politics.\nPolitics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.\nI served this country for 35 years and that won't stop just because I hung up the uniform.\nI’m Nancy Lacore and I approve this message, because I’m not done yet.",
+    "text_hash": "46f0746cfb9ea8ab60a9e036ca89dcd2ee2f87232ff7445c00cdf2b38ec7f22c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a0361048e32cb4ef8e5d34f-0",
+    "alignment": "D",
+    "block_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-007",
+    "claim_text": "Politics is hurting all of us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 313,
+        "kind": "publisher_transcript",
+        "start": 205,
+        "text": "Politics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 213,
+        "anchor_quote": "Politics",
+        "anchor_start": 205,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "politics",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 234,
+        "anchor_quote": "us",
+        "anchor_start": 232,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "us",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nI was never political.\nI was a three-star Navy Admiral.\nMission focused.\nThen the Trump administration removed Military officials in command positions without cause…\nBecause of politics.\nPolitics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.\nI served this country for 35 years and that won't stop just because I hung up the uniform.\nI’m Nancy Lacore and I approve this message, because I’m not done yet.",
+    "text_hash": "46f0746cfb9ea8ab60a9e036ca89dcd2ee2f87232ff7445c00cdf2b38ec7f22c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a0361048e32cb4ef8e5d34f-0",
+    "alignment": "D",
+    "block_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-008",
+    "claim_text": "Our democracy is under attack and people work hard and still can’t get ahead.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 313,
+        "kind": "publisher_transcript",
+        "start": 205,
+        "text": "Politics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 249,
+        "anchor_quote": "Our democracy",
+        "anchor_start": 236,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Our democracy",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 276,
+        "anchor_quote": "people",
+        "anchor_start": 270,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "people",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nI was never political.\nI was a three-star Navy Admiral.\nMission focused.\nThen the Trump administration removed Military officials in command positions without cause…\nBecause of politics.\nPolitics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.\nI served this country for 35 years and that won't stop just because I hung up the uniform.\nI’m Nancy Lacore and I approve this message, because I’m not done yet.",
+    "text_hash": "46f0746cfb9ea8ab60a9e036ca89dcd2ee2f87232ff7445c00cdf2b38ec7f22c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a0361048e32cb4ef8e5d34f-0",
+    "alignment": "D",
+    "block_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-009",
+    "claim_text": "I served this country for 35 years and that won't stop just because I hung up the uniform.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 404,
+        "kind": "publisher_transcript",
+        "start": 314,
+        "text": "I served this country for 35 years and that won't stop just because I hung up the uniform.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 315,
+        "anchor_quote": "I",
+        "anchor_start": 314,
+        "anchor_unit_id": 8,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 335,
+        "anchor_quote": "this country",
+        "anchor_start": 323,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "this country",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nI was never political.\nI was a three-star Navy Admiral.\nMission focused.\nThen the Trump administration removed Military officials in command positions without cause…\nBecause of politics.\nPolitics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.\nI served this country for 35 years and that won't stop just because I hung up the uniform.\nI’m Nancy Lacore and I approve this message, because I’m not done yet.",
+    "text_hash": "46f0746cfb9ea8ab60a9e036ca89dcd2ee2f87232ff7445c00cdf2b38ec7f22c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a0361048e32cb4ef8e5d34f-0",
+    "alignment": "D",
+    "block_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-010",
+    "claim_text": "I’m Nancy Lacore and I approve this message, because I’m not done yet.",
+    "claim_types": [
+      "characterization",
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 475,
+        "kind": "publisher_transcript",
+        "start": 405,
+        "text": "I’m Nancy Lacore and I approve this message, because I’m not done yet.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 421,
+        "anchor_quote": "I’m Nancy Lacore",
+        "anchor_start": 405,
+        "anchor_unit_id": 9,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nI was never political.\nI was a three-star Navy Admiral.\nMission focused.\nThen the Trump administration removed Military officials in command positions without cause…\nBecause of politics.\nPolitics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.\nI served this country for 35 years and that won't stop just because I hung up the uniform.\nI’m Nancy Lacore and I approve this message, because I’m not done yet.",
+    "text_hash": "46f0746cfb9ea8ab60a9e036ca89dcd2ee2f87232ff7445c00cdf2b38ec7f22c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a0361048e32cb4ef8e5d34f-0",
+    "alignment": "D",
+    "block_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-011",
+    "claim_text": "I’m not done yet.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 475,
+        "kind": "publisher_transcript",
+        "start": 405,
+        "text": "I’m Nancy Lacore and I approve this message, because I’m not done yet.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-first-tv-ad-sc-01-primary",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 406,
+        "anchor_quote": "I",
+        "anchor_start": 405,
+        "anchor_unit_id": 9,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nI was never political.\nI was a three-star Navy Admiral.\nMission focused.\nThen the Trump administration removed Military officials in command positions without cause…\nBecause of politics.\nPolitics is hurting all of us. Our democracy is under attack and people work hard and still can’t get ahead.\nI served this country for 35 years and that won't stop just because I hung up the uniform.\nI’m Nancy Lacore and I approve this message, because I’m not done yet.",
+    "text_hash": "46f0746cfb9ea8ab60a9e036ca89dcd2ee2f87232ff7445c00cdf2b38ec7f22c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a1842f46d96d833b54c0fd9-0",
+    "alignment": "D",
+    "block_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-001",
+    "claim_text": "There’s no place like the Lowcountry. Reminds me a lot of the military.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 71,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "There’s no place like the Lowcountry. Reminds me a lot of the military.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nancylacore.com/media//admiral-nancy-lacore-lowcountry-tv-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 36,
+        "anchor_quote": "Lowcountry",
+        "anchor_start": 26,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Lowcountry",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "There’s no place like the Lowcountry. Reminds me a lot of the military.\nHard-working people who love their country and put service first.\nI’m Democrat Nancy Lacore.\nI served in the U.S. Navy for 35 years and led 60,000 sailors through times of crisis.\nThe crisis today is people work hard and can’t get ahead, veterans can’t get healthcare, and politicians are loyal to a broken system.\nI’m running for Congress to put service first – like the Lowcountry does.\nI’m Nancy Lacore and I approve this message",
+    "text_hash": "2d047cde087d082a0c3d7ff723eeaee4f68c4cb90aae7f4884b978ff6817ee21",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a1842f46d96d833b54c0fd9-0",
+    "alignment": "D",
+    "block_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-002",
+    "claim_text": "Hard-working people who love their country and put service first.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 137,
+        "kind": "publisher_transcript",
+        "start": 72,
+        "text": "Hard-working people who love their country and put service first.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nancylacore.com/media//admiral-nancy-lacore-lowcountry-tv-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 91,
+        "anchor_quote": "people",
+        "anchor_start": 85,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "people",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "There’s no place like the Lowcountry. Reminds me a lot of the military.\nHard-working people who love their country and put service first.\nI’m Democrat Nancy Lacore.\nI served in the U.S. Navy for 35 years and led 60,000 sailors through times of crisis.\nThe crisis today is people work hard and can’t get ahead, veterans can’t get healthcare, and politicians are loyal to a broken system.\nI’m running for Congress to put service first – like the Lowcountry does.\nI’m Nancy Lacore and I approve this message",
+    "text_hash": "2d047cde087d082a0c3d7ff723eeaee4f68c4cb90aae7f4884b978ff6817ee21",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a1842f46d96d833b54c0fd9-0",
+    "alignment": "D",
+    "block_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-003",
+    "claim_text": "I’m Democrat Nancy Lacore.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 164,
+        "kind": "publisher_transcript",
+        "start": 138,
+        "text": "I’m Democrat Nancy Lacore.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nancylacore.com/media//admiral-nancy-lacore-lowcountry-tv-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 163,
+        "anchor_quote": "Nancy Lacore",
+        "anchor_start": 151,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "There’s no place like the Lowcountry. Reminds me a lot of the military.\nHard-working people who love their country and put service first.\nI’m Democrat Nancy Lacore.\nI served in the U.S. Navy for 35 years and led 60,000 sailors through times of crisis.\nThe crisis today is people work hard and can’t get ahead, veterans can’t get healthcare, and politicians are loyal to a broken system.\nI’m running for Congress to put service first – like the Lowcountry does.\nI’m Nancy Lacore and I approve this message",
+    "text_hash": "2d047cde087d082a0c3d7ff723eeaee4f68c4cb90aae7f4884b978ff6817ee21",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a1842f46d96d833b54c0fd9-0",
+    "alignment": "D",
+    "block_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-004",
+    "claim_text": "I served in the U.S. Navy for 35 years and led 60,000 sailors through times of crisis.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 251,
+        "kind": "publisher_transcript",
+        "start": 165,
+        "text": "I served in the U.S. Navy for 35 years and led 60,000 sailors through times of crisis.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nancylacore.com/media//admiral-nancy-lacore-lowcountry-tv-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 166,
+        "anchor_quote": "I",
+        "anchor_start": 165,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 226,
+        "anchor_quote": "sailors",
+        "anchor_start": 219,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "sailors",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "There’s no place like the Lowcountry. Reminds me a lot of the military.\nHard-working people who love their country and put service first.\nI’m Democrat Nancy Lacore.\nI served in the U.S. Navy for 35 years and led 60,000 sailors through times of crisis.\nThe crisis today is people work hard and can’t get ahead, veterans can’t get healthcare, and politicians are loyal to a broken system.\nI’m running for Congress to put service first – like the Lowcountry does.\nI’m Nancy Lacore and I approve this message",
+    "text_hash": "2d047cde087d082a0c3d7ff723eeaee4f68c4cb90aae7f4884b978ff6817ee21",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a1842f46d96d833b54c0fd9-0",
+    "alignment": "D",
+    "block_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-005",
+    "claim_text": "The crisis today is people work hard and can’t get ahead, veterans can’t get healthcare, and politicians are loyal to a broken system.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 386,
+        "kind": "publisher_transcript",
+        "start": 252,
+        "text": "The crisis today is people work hard and can’t get ahead, veterans can’t get healthcare, and politicians are loyal to a broken system.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nancylacore.com/media//admiral-nancy-lacore-lowcountry-tv-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 278,
+        "anchor_quote": "people",
+        "anchor_start": 272,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "people",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 318,
+        "anchor_quote": "veterans",
+        "anchor_start": 310,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "veterans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 356,
+        "anchor_quote": "politicians",
+        "anchor_start": 345,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "politicians",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 385,
+        "anchor_quote": "system",
+        "anchor_start": 379,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "system",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "There’s no place like the Lowcountry. Reminds me a lot of the military.\nHard-working people who love their country and put service first.\nI’m Democrat Nancy Lacore.\nI served in the U.S. Navy for 35 years and led 60,000 sailors through times of crisis.\nThe crisis today is people work hard and can’t get ahead, veterans can’t get healthcare, and politicians are loyal to a broken system.\nI’m running for Congress to put service first – like the Lowcountry does.\nI’m Nancy Lacore and I approve this message",
+    "text_hash": "2d047cde087d082a0c3d7ff723eeaee4f68c4cb90aae7f4884b978ff6817ee21",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a1842f46d96d833b54c0fd9-0",
+    "alignment": "D",
+    "block_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-006",
+    "claim_text": "I’m running for Congress to put service first – like the Lowcountry does.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 460,
+        "kind": "publisher_transcript",
+        "start": 387,
+        "text": "I’m running for Congress to put service first – like the Lowcountry does.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nancylacore.com/media//admiral-nancy-lacore-lowcountry-tv-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 388,
+        "anchor_quote": "I",
+        "anchor_start": 387,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 454,
+        "anchor_quote": "Lowcountry",
+        "anchor_start": 444,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Lowcountry",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "There’s no place like the Lowcountry. Reminds me a lot of the military.\nHard-working people who love their country and put service first.\nI’m Democrat Nancy Lacore.\nI served in the U.S. Navy for 35 years and led 60,000 sailors through times of crisis.\nThe crisis today is people work hard and can’t get ahead, veterans can’t get healthcare, and politicians are loyal to a broken system.\nI’m running for Congress to put service first – like the Lowcountry does.\nI’m Nancy Lacore and I approve this message",
+    "text_hash": "2d047cde087d082a0c3d7ff723eeaee4f68c4cb90aae7f4884b978ff6817ee21",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6a1842f46d96d833b54c0fd9-0",
+    "alignment": "D",
+    "block_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-007",
+    "claim_text": "I approve this message",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 504,
+        "kind": "publisher_transcript",
+        "start": 461,
+        "text": "I’m Nancy Lacore and I approve this message",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nancylacore.com/media//admiral-nancy-lacore-lowcountry-tv-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 462,
+        "anchor_quote": "I",
+        "anchor_start": 461,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "There’s no place like the Lowcountry. Reminds me a lot of the military.\nHard-working people who love their country and put service first.\nI’m Democrat Nancy Lacore.\nI served in the U.S. Navy for 35 years and led 60,000 sailors through times of crisis.\nThe crisis today is people work hard and can’t get ahead, veterans can’t get healthcare, and politicians are loyal to a broken system.\nI’m running for Congress to put service first – like the Lowcountry does.\nI’m Nancy Lacore and I approve this message",
+    "text_hash": "2d047cde087d082a0c3d7ff723eeaee4f68c4cb90aae7f4884b978ff6817ee21",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-0",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-001",
+    "claim_text": "They’ve called her a lot of things.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 35,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "They’ve called her a lot of things.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 18,
+        "anchor_quote": "her",
+        "anchor_start": 15,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore.\nShe led 60,000 sailors – she won’t be bossed around in DC.\nShe’ll put the Lowcountry first. It’s time to send in the Admiral.",
+    "text_hash": "9598e35d21cd98d4d5186da962145030f4dab053777a8a7b6ac4702cb9a5d4b8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-0",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-002",
+    "claim_text": "Nancy Lacore was a Navy helicopter pilot.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 115,
+        "kind": "publisher_transcript",
+        "start": 36,
+        "text": "Navy helicopter pilot. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 114,
+        "anchor_quote": "Nancy Lacore",
+        "anchor_start": 102,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore.\nShe led 60,000 sailors – she won’t be bossed around in DC.\nShe’ll put the Lowcountry first. It’s time to send in the Admiral.",
+    "text_hash": "9598e35d21cd98d4d5186da962145030f4dab053777a8a7b6ac4702cb9a5d4b8",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-0",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-003",
+    "claim_text": "Nancy Lacore was a three-star Admiral.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 115,
+        "kind": "publisher_transcript",
+        "start": 36,
+        "text": "Navy helicopter pilot. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 114,
+        "anchor_quote": "Nancy Lacore",
+        "anchor_start": 102,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore.\nShe led 60,000 sailors – she won’t be bossed around in DC.\nShe’ll put the Lowcountry first. It’s time to send in the Admiral.",
+    "text_hash": "9598e35d21cd98d4d5186da962145030f4dab053777a8a7b6ac4702cb9a5d4b8",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-0",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-004",
+    "claim_text": "Nancy Lacore was Chief of Navy Reserve.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 115,
+        "kind": "publisher_transcript",
+        "start": 36,
+        "text": "Navy helicopter pilot. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 114,
+        "anchor_quote": "Nancy Lacore",
+        "anchor_start": 102,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore.\nShe led 60,000 sailors – she won’t be bossed around in DC.\nShe’ll put the Lowcountry first. It’s time to send in the Admiral.",
+    "text_hash": "9598e35d21cd98d4d5186da962145030f4dab053777a8a7b6ac4702cb9a5d4b8",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-0",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-005",
+    "claim_text": "She led 60,000 sailors.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 174,
+        "kind": "publisher_transcript",
+        "start": 116,
+        "text": "She led 60,000 sailors – she won’t be bossed around in DC.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 119,
+        "anchor_quote": "She",
+        "anchor_start": 116,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore.\nShe led 60,000 sailors – she won’t be bossed around in DC.\nShe’ll put the Lowcountry first. It’s time to send in the Admiral.",
+    "text_hash": "9598e35d21cd98d4d5186da962145030f4dab053777a8a7b6ac4702cb9a5d4b8",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-0",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-006",
+    "claim_text": "She won’t be bossed around in DC.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 174,
+        "kind": "publisher_transcript",
+        "start": 116,
+        "text": "She led 60,000 sailors – she won’t be bossed around in DC.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 119,
+        "anchor_quote": "She",
+        "anchor_start": 116,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore.\nShe led 60,000 sailors – she won’t be bossed around in DC.\nShe’ll put the Lowcountry first. It’s time to send in the Admiral.",
+    "text_hash": "9598e35d21cd98d4d5186da962145030f4dab053777a8a7b6ac4702cb9a5d4b8",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-0",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-007",
+    "claim_text": "She’ll put the Lowcountry first.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 241,
+        "kind": "publisher_transcript",
+        "start": 175,
+        "text": "She’ll put the Lowcountry first. It’s time to send in the Admiral.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 178,
+        "anchor_quote": "She",
+        "anchor_start": 175,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore.\nShe led 60,000 sailors – she won’t be bossed around in DC.\nShe’ll put the Lowcountry first. It’s time to send in the Admiral.",
+    "text_hash": "9598e35d21cd98d4d5186da962145030f4dab053777a8a7b6ac4702cb9a5d4b8",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-0",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-008",
+    "claim_text": "It’s time to send in the Admiral.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 241,
+        "kind": "publisher_transcript",
+        "start": 175,
+        "text": "She’ll put the Lowcountry first. It’s time to send in the Admiral.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 240,
+        "anchor_quote": "the Admiral",
+        "anchor_start": 229,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore.\nShe led 60,000 sailors – she won’t be bossed around in DC.\nShe’ll put the Lowcountry first. It’s time to send in the Admiral.",
+    "text_hash": "9598e35d21cd98d4d5186da962145030f4dab053777a8a7b6ac4702cb9a5d4b8",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-001",
+    "claim_text": "They’ve called her a lot of things.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 35,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "They’ve called her a lot of things.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 18,
+        "anchor_quote": "her",
+        "anchor_start": 15,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-002",
+    "claim_text": "She is a Navy helicopter pilot.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "publisher_transcript",
+        "start": 36,
+        "text": "Navy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 128,
+        "anchor_quote": "Nancy Lacore",
+        "anchor_start": 116,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-003",
+    "claim_text": "She is a Rear Admiral.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "publisher_transcript",
+        "start": 36,
+        "text": "Navy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 128,
+        "anchor_quote": "Nancy Lacore",
+        "anchor_start": 116,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-004",
+    "claim_text": "She is a Three-star Admiral.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "publisher_transcript",
+        "start": 36,
+        "text": "Navy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 128,
+        "anchor_quote": "Nancy Lacore",
+        "anchor_start": 116,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-005",
+    "claim_text": "She is the Chief of Navy Reserve.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "publisher_transcript",
+        "start": 36,
+        "text": "Navy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 128,
+        "anchor_quote": "Nancy Lacore",
+        "anchor_start": 116,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-006",
+    "claim_text": "She is a mom of six.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "publisher_transcript",
+        "start": 36,
+        "text": "Navy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 128,
+        "anchor_quote": "Nancy Lacore",
+        "anchor_start": 116,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-007",
+    "claim_text": "She led 60,000 sailors.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 250,
+        "kind": "publisher_transcript",
+        "start": 142,
+        "text": "She led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 145,
+        "anchor_quote": "She",
+        "anchor_start": 142,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-008",
+    "claim_text": "She held the line against China.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 250,
+        "kind": "publisher_transcript",
+        "start": 142,
+        "text": "She led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 145,
+        "anchor_quote": "She",
+        "anchor_start": 142,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-009",
+    "claim_text": "She served for 35 years.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 250,
+        "kind": "publisher_transcript",
+        "start": 142,
+        "text": "She led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 145,
+        "anchor_quote": "She",
+        "anchor_start": 142,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-010",
+    "claim_text": "She won’t be bossed around in DC.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 250,
+        "kind": "publisher_transcript",
+        "start": 142,
+        "text": "She led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 145,
+        "anchor_quote": "She",
+        "anchor_start": 142,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-011",
+    "claim_text": "She’ll put people over party.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 404,
+        "kind": "publisher_transcript",
+        "start": 251,
+        "text": "She’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 254,
+        "anchor_quote": "She",
+        "anchor_start": 251,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-012",
+    "claim_text": "She’ll secure the border.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 404,
+        "kind": "publisher_transcript",
+        "start": 251,
+        "text": "She’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 254,
+        "anchor_quote": "She",
+        "anchor_start": 251,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-013",
+    "claim_text": "She’ll ban Members of Congress from stock trading.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 404,
+        "kind": "publisher_transcript",
+        "start": 251,
+        "text": "She’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 254,
+        "anchor_quote": "She",
+        "anchor_start": 251,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-014",
+    "claim_text": "She’ll make healthcare affordable.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 404,
+        "kind": "publisher_transcript",
+        "start": 251,
+        "text": "She’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 254,
+        "anchor_quote": "She",
+        "anchor_start": 251,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-015",
+    "claim_text": "She’ll put the Lowcountry first.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 404,
+        "kind": "publisher_transcript",
+        "start": 251,
+        "text": "She’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 254,
+        "anchor_quote": "She",
+        "anchor_start": 251,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-016",
+    "claim_text": "Washington has enough politicians.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 460,
+        "kind": "publisher_transcript",
+        "start": 405,
+        "text": "Washington has enough politicians. Send in the Admiral.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 415,
+        "anchor_quote": "Washington",
+        "anchor_start": 405,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Washington",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-017",
+    "claim_text": "I am Nancy Lacore.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 506,
+        "kind": "publisher_transcript",
+        "start": 461,
+        "text": "I’m Nancy Lacore, and I approve this message.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 462,
+        "anchor_quote": "I",
+        "anchor_start": 461,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6aa1c0731d98c26fe17488c8-1",
+    "alignment": "D",
+    "block_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-018",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 506,
+        "kind": "publisher_transcript",
+        "start": 461,
+        "text": "I’m Nancy Lacore, and I approve this message.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nancylacore.com/media/admiral-nancy-lacore-debuts-sc01-general-election-ad",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 462,
+        "anchor_quote": "I",
+        "anchor_start": 461,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "They’ve called her a lot of things.\nNavy helicopter pilot. Rear Admiral. Three-star Admiral. Chief of Navy Reserve. Nancy Lacore. Mom of six.\nShe led 60,000 sailors, held the line against China, served for 35 years – she won’t be bossed around in DC.\nShe’ll put people over party. She’ll secure the border, ban Members of Congress from stock trading, make healthcare affordable, put the Lowcountry first.\nWashington has enough politicians. Send in the Admiral.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "05906bda5ae2a5945f93f01ee1bd496916e2e4cbd625f6e4c7d9ac62d9b9d8d8",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ab41ce155b3f9087901e43e-0",
+    "alignment": "D",
+    "block_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-001",
+    "claim_text": "I’m Nancy Lacore.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 17,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "I’m Nancy Lacore.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-fighting-for-healthcare-ad-release",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "I’m Nancy Lacore",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nEach day I was deployed overseas, my kids had a handwritten letter from me. And then, I got a call.\nMy daughter was diagnosed with cancer, and I raced home from a warzone.\nWe were lucky, but too many families aren’t. Healthcare is too expensive, driving families into debt, and politicians are too corrupt to fix it.\nI’m running for Congress to stand up to both parties, and the drug and insurance companies jacking up healthcare costs.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "405fa1ff2d542dc728599f0e543e741eb4752780fdaa9c24cbaff0487e59e100",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ab41ce155b3f9087901e43e-0",
+    "alignment": "D",
+    "block_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-002",
+    "claim_text": "Each day I was deployed overseas, my kids had a handwritten letter from me.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 117,
+        "kind": "publisher_transcript",
+        "start": 18,
+        "text": "Each day I was deployed overseas, my kids had a handwritten letter from me. And then, I got a call.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-fighting-for-healthcare-ad-release",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "I was deployed overseas",
+        "anchor_start": 27,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nEach day I was deployed overseas, my kids had a handwritten letter from me. And then, I got a call.\nMy daughter was diagnosed with cancer, and I raced home from a warzone.\nWe were lucky, but too many families aren’t. Healthcare is too expensive, driving families into debt, and politicians are too corrupt to fix it.\nI’m running for Congress to stand up to both parties, and the drug and insurance companies jacking up healthcare costs.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "405fa1ff2d542dc728599f0e543e741eb4752780fdaa9c24cbaff0487e59e100",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ab41ce155b3f9087901e43e-0",
+    "alignment": "D",
+    "block_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-003",
+    "claim_text": "My daughter was diagnosed with cancer, and I raced home from a warzone.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 189,
+        "kind": "publisher_transcript",
+        "start": 118,
+        "text": "My daughter was diagnosed with cancer, and I raced home from a warzone.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-fighting-for-healthcare-ad-release",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 173,
+        "anchor_quote": "I raced home",
+        "anchor_start": 161,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nEach day I was deployed overseas, my kids had a handwritten letter from me. And then, I got a call.\nMy daughter was diagnosed with cancer, and I raced home from a warzone.\nWe were lucky, but too many families aren’t. Healthcare is too expensive, driving families into debt, and politicians are too corrupt to fix it.\nI’m running for Congress to stand up to both parties, and the drug and insurance companies jacking up healthcare costs.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "405fa1ff2d542dc728599f0e543e741eb4752780fdaa9c24cbaff0487e59e100",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ab41ce155b3f9087901e43e-0",
+    "alignment": "D",
+    "block_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-004",
+    "claim_text": "Healthcare is too expensive, driving families into debt, and politicians are too corrupt to fix it.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 334,
+        "kind": "publisher_transcript",
+        "start": 190,
+        "text": "We were lucky, but too many families aren’t. Healthcare is too expensive, driving families into debt, and politicians are too corrupt to fix it.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-fighting-for-healthcare-ad-release",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 262,
+        "anchor_quote": "Healthcare is too expensive",
+        "anchor_start": 235,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Healthcare",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 290,
+        "anchor_quote": "families into debt",
+        "anchor_start": 272,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "families",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 323,
+        "anchor_quote": "politicians are too corrupt",
+        "anchor_start": 296,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "politicians",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nEach day I was deployed overseas, my kids had a handwritten letter from me. And then, I got a call.\nMy daughter was diagnosed with cancer, and I raced home from a warzone.\nWe were lucky, but too many families aren’t. Healthcare is too expensive, driving families into debt, and politicians are too corrupt to fix it.\nI’m running for Congress to stand up to both parties, and the drug and insurance companies jacking up healthcare costs.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "405fa1ff2d542dc728599f0e543e741eb4752780fdaa9c24cbaff0487e59e100",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ab41ce155b3f9087901e43e-0",
+    "alignment": "D",
+    "block_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-005",
+    "claim_text": "I’m running for Congress to stand up to both parties, and the drug and insurance companies jacking up healthcare costs.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 454,
+        "kind": "publisher_transcript",
+        "start": 335,
+        "text": "I’m running for Congress to stand up to both parties, and the drug and insurance companies jacking up healthcare costs.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-fighting-for-healthcare-ad-release",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 359,
+        "anchor_quote": "I’m running for Congress",
+        "anchor_start": 335,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 387,
+        "anchor_quote": "both parties",
+        "anchor_start": 375,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "both parties",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 453,
+        "anchor_quote": "drug and insurance companies jacking up healthcare costs",
+        "anchor_start": 397,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "drug and insurance companies",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nEach day I was deployed overseas, my kids had a handwritten letter from me. And then, I got a call.\nMy daughter was diagnosed with cancer, and I raced home from a warzone.\nWe were lucky, but too many families aren’t. Healthcare is too expensive, driving families into debt, and politicians are too corrupt to fix it.\nI’m running for Congress to stand up to both parties, and the drug and insurance companies jacking up healthcare costs.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "405fa1ff2d542dc728599f0e543e741eb4752780fdaa9c24cbaff0487e59e100",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lacore-6ab41ce155b3f9087901e43e-0",
+    "alignment": "D",
+    "block_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-006",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 500,
+        "kind": "publisher_transcript",
+        "start": 455,
+        "text": "I’m Nancy Lacore, and I approve this message.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nancylacore.com/media/nancy-lacore-fighting-for-healthcare-ad-release",
+    "sponsor": "Nancy Lacore for Congress",
+    "targets": [
+      {
+        "anchor_end": 499,
+        "anchor_quote": "I approve this message",
+        "anchor_start": 477,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H6SC01359",
+        "kind": "person",
+        "name": "Nancy Lacore",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I’m Nancy Lacore.\nEach day I was deployed overseas, my kids had a handwritten letter from me. And then, I got a call.\nMy daughter was diagnosed with cancer, and I raced home from a warzone.\nWe were lucky, but too many families aren’t. Healthcare is too expensive, driving families into debt, and politicians are too corrupt to fix it.\nI’m running for Congress to stand up to both parties, and the drug and insurance companies jacking up healthcare costs.\nI’m Nancy Lacore, and I approve this message.",
+    "text_hash": "405fa1ff2d542dc728599f0e543e741eb4752780fdaa9c24cbaff0487e59e100",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]

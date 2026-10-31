@@ -12,12 +12,13 @@
             "jackson-0b7853be4be45350-0",
             "jackson-8f1b86280f5159ea-0",
             "dccc-668740-0",
+            "jackson-b6172e104766686e-0",
             "dccc-669581-0",
             "dccc-669589-0",
             "dccc-669729-0"
           ],
-          "count": 11,
-          "share": 0.009136212624584718
+          "count": 12,
+          "share": 0.009966777408637873
         },
         "neither_detected": {
           "ad_ids": [
@@ -642,7 +643,6 @@
             "el-sayed-9937f98393eba15f-0",
             "hmp-media-4196--LRmIw1pyts",
             "hmp-media-4196-0L1bsJ-07hQ",
-            "jackson-b6172e104766686e-0",
             "snap-0cbda6cd4803c8d440c48f32",
             "snap-40026221950ec567793fff29",
             "snap-490096d2bd8b81da10f0c522",
@@ -1208,8 +1208,8 @@
             "smp-3904-0",
             "dccc-669808-0"
           ],
-          "count": 1179,
-          "share": 0.979235880398671
+          "count": 1178,
+          "share": 0.978405315614618
         },
         "opponent_negative_only": {
           "ad_ids": [
@@ -1770,11 +1770,13 @@
       "all_unique_messages": 1204,
       "categories_overlap": true,
       "denominator": "normalized_unique_messages",
-      "normalized_unique_messages": 101,
+      "normalized_unique_messages": 109,
       "side_tone": {
         "not_partisan": {
           "negative": {
             "ad_ids": [
+              "lacore-6a0361048e32cb4ef8e5d34f-0",
+              "lacore-6a1842f46d96d833b54c0fd9-0",
               "hickenlooper-9643-0",
               "cooper-483-0",
               "el-sayed-26b1bbab2ef09980-0",
@@ -1790,6 +1792,7 @@
               "jackson-914abc10d942a13d-0",
               "jackson-52df90b3947810ea-0",
               "dccc-667867-0",
+              "lacore-6ab41ce155b3f9087901e43e-0",
               "dccc-668421-0",
               "dccc-668435-0",
               "dccc-668454-1",
@@ -1810,12 +1813,14 @@
               "dccc-669591-0",
               "el-sayed-17c2f002642e20d9-0"
             ],
-            "count": 34,
-            "share": 0.33663366336633666
+            "count": 37,
+            "share": 0.3394495412844037
           },
           "neutral": {
             "ad_ids": [
               "google-CR11879751413271625729-64e058772554",
+              "lacore-6a0361048e32cb4ef8e5d34f-0",
+              "lacore-6a1842f46d96d833b54c0fd9-0",
               "el-sayed-26b1bbab2ef09980-0",
               "cooper-551-0",
               "hmf-3760-0",
@@ -1834,6 +1839,7 @@
               "dccc-668458-0",
               "google-CR12506657836366823425-b7f2f2fe72ab",
               "dccc-668664-0",
+              "jackson-f4d90cba7d2a12c2-0",
               "el-sayed-1cf3d59b64338ef2-0",
               "hmp-media-4198-9H4SBlufZ2o",
               "hmp-media-4198-rywzzuFJoiQ",
@@ -1842,8 +1848,8 @@
               "jackson-93075c70a1d4a5fc-0",
               "dccc-669825-0"
             ],
-            "count": 26,
-            "share": 0.25742574257425743
+            "count": 29,
+            "share": 0.26605504587155965
           },
           "positive": {
             "ad_ids": [
@@ -1870,14 +1876,14 @@
               "el-sayed-17c2f002642e20d9-0"
             ],
             "count": 21,
-            "share": 0.2079207920792079
+            "share": 0.1926605504587156
           },
           "uncertain": {
             "ad_ids": [
               "dccc-668789-0"
             ],
             "count": 1,
-            "share": 0.009900990099009901
+            "share": 0.009174311926605505
           }
         },
         "other_party": {
@@ -1891,7 +1897,7 @@
               "el-sayed-83b0f5c9ffd13be4-0"
             ],
             "count": 1,
-            "share": 0.009900990099009901
+            "share": 0.009174311926605505
           },
           "positive": {
             "ad_ids": [],
@@ -1938,6 +1944,7 @@
               "dccc-668740-0",
               "dccc-668789-0",
               "cooper-944-0",
+              "jackson-b6172e104766686e-0",
               "hmp-media-4198-9H4SBlufZ2o",
               "dccc-669384-0",
               "dccc-669581-0",
@@ -1945,8 +1952,8 @@
               "dccc-669729-0",
               "dccc-669825-0"
             ],
-            "count": 37,
-            "share": 0.36633663366336633
+            "count": 38,
+            "share": 0.3486238532110092
           },
           "neutral": {
             "ad_ids": [
@@ -1963,14 +1970,14 @@
               "dccc-669729-0"
             ],
             "count": 11,
-            "share": 0.10891089108910891
+            "share": 0.10091743119266056
           },
           "positive": {
             "ad_ids": [
               "dccc-669729-0"
             ],
             "count": 1,
-            "share": 0.009900990099009901
+            "share": 0.009174311926605505
           },
           "uncertain": {
             "ad_ids": [],
@@ -1990,7 +1997,7 @@
               "dccc-669589-0"
             ],
             "count": 7,
-            "share": 0.06930693069306931
+            "share": 0.06422018348623854
           },
           "neutral": {
             "ad_ids": [
@@ -2002,6 +2009,8 @@
               "google-CR16646149343476187137-847f71b8174b",
               "google-CR16042100470042329089-bffebe17040f",
               "google-CR08397042740243726337-d84236dbfa27",
+              "lacore-6a0361048e32cb4ef8e5d34f-0",
+              "lacore-6a1842f46d96d833b54c0fd9-0",
               "google-CR17495478026748559361-f55a360015fc",
               "cooper-445-0",
               "hickenlooper-9630-0",
@@ -2015,7 +2024,10 @@
               "jackson-914abc10d942a13d-0",
               "google-CR11799669007848570881-61a1cc78cc41",
               "jackson-208a7aa44fcf0655-0",
+              "jackson-a5fd5ae62826d31c-0",
               "el-sayed-a629307c1187b24e-0",
+              "lacore-6aa1c0731d98c26fe17488c8-0",
+              "lacore-6aa1c0731d98c26fe17488c8-1",
               "google-CR12110621341544087553-e00fc818fe21",
               "google-CR12110621341544087553-f4ef487b44ae",
               "jackson-52df90b3947810ea-0",
@@ -2023,6 +2035,7 @@
               "cooper-877-0",
               "dccc-668184-0",
               "fletcher-3644-0",
+              "lacore-6ab41ce155b3f9087901e43e-0",
               "dccc-668250-0",
               "jackson-0b7853be4be45350-0",
               "jackson-8f1b86280f5159ea-0",
@@ -2041,6 +2054,8 @@
               "cooper-944-0",
               "cooper-952-0",
               "dccc-669046-0",
+              "jackson-b6172e104766686e-0",
+              "jackson-f4d90cba7d2a12c2-0",
               "google-CR17221850230165602305-bb11397a40cc",
               "google-CR17221850230165602305-ca006fe2aba6",
               "el-sayed-1cf3d59b64338ef2-0",
@@ -2057,8 +2072,8 @@
               "el-sayed-17c2f002642e20d9-0",
               "dccc-669825-0"
             ],
-            "count": 62,
-            "share": 0.6138613861386139
+            "count": 70,
+            "share": 0.6422018348623854
           },
           "positive": {
             "ad_ids": [
@@ -2069,6 +2084,7 @@
               "google-CR11072533724695363585-6168f21bb4a6",
               "google-CR16646149343476187137-847f71b8174b",
               "google-CR16042100470042329089-bffebe17040f",
+              "lacore-6a0361048e32cb4ef8e5d34f-0",
               "google-CR10954824751469559809-410930d4ef33",
               "cooper-445-0",
               "hickenlooper-9630-0",
@@ -2087,6 +2103,7 @@
               "el-sayed-a629307c1187b24e-0",
               "google-CR06013474223270395905-222ee1a81746",
               "google-CR06013474223270395905-b9acbeddd175",
+              "lacore-6aa1c0731d98c26fe17488c8-0",
               "google-CR12110621341544087553-e00fc818fe21",
               "dccc-668184-0",
               "el-sayed-ac04d83be1821aa7-0",
@@ -2104,6 +2121,8 @@
               "dccc-668751-0",
               "cooper-952-0",
               "dccc-669046-0",
+              "jackson-b6172e104766686e-0",
+              "jackson-f4d90cba7d2a12c2-0",
               "google-CR17221850230165602305-bb11397a40cc",
               "google-CR17221850230165602305-ca006fe2aba6",
               "el-sayed-1cf3d59b64338ef2-0",
@@ -2117,8 +2136,8 @@
               "el-sayed-17c2f002642e20d9-0",
               "dccc-669729-0"
             ],
-            "count": 54,
-            "share": 0.5346534653465347
+            "count": 58,
+            "share": 0.5321100917431193
           },
           "uncertain": {
             "ad_ids": [],
@@ -2132,7 +2151,9 @@
               "google-CR05618399569193730049-1348a51e2efc",
               "dscc-12483-0",
               "google-CR16042100470042329089-bffebe17040f",
+              "lacore-6a0361048e32cb4ef8e5d34f-0",
               "google-CR10954824751469559809-410930d4ef33",
+              "lacore-6a1842f46d96d833b54c0fd9-0",
               "cooper-445-0",
               "hickenlooper-9643-0",
               "cooper-483-0",
@@ -2157,6 +2178,7 @@
               "jackson-52df90b3947810ea-0",
               "cooper-877-0",
               "dccc-668184-0",
+              "lacore-6ab41ce155b3f9087901e43e-0",
               "jackson-0b7853be4be45350-0",
               "dccc-668421-0",
               "dccc-668435-0",
@@ -2170,6 +2192,8 @@
               "dccc-668751-0",
               "cooper-944-0",
               "cooper-952-0",
+              "jackson-b6172e104766686e-0",
+              "jackson-f4d90cba7d2a12c2-0",
               "el-sayed-1cf3d59b64338ef2-0",
               "dccc-669328-0",
               "dccc-669384-0",
@@ -2180,13 +2204,15 @@
               "jackson-93075c70a1d4a5fc-0",
               "el-sayed-17c2f002642e20d9-0"
             ],
-            "count": 50,
-            "share": 0.49504950495049505
+            "count": 55,
+            "share": 0.5045871559633027
           },
           "neutral": {
             "ad_ids": [
               "dscc-12483-0",
               "google-CR12686401977186254849-1e719f22467e",
+              "lacore-6a0361048e32cb4ef8e5d34f-0",
+              "lacore-6a1842f46d96d833b54c0fd9-0",
               "cooper-445-0",
               "cooper-483-0",
               "el-sayed-7c690cb7f4afe702-0",
@@ -2218,6 +2244,7 @@
               "dccc-668751-0",
               "cooper-944-0",
               "cooper-952-0",
+              "jackson-b6172e104766686e-0",
               "dccc-669328-0",
               "hmp-media-4198-9H4SBlufZ2o",
               "dccc-669384-0",
@@ -2227,8 +2254,8 @@
               "dccc-669591-0",
               "jackson-93075c70a1d4a5fc-0"
             ],
-            "count": 41,
-            "share": 0.40594059405940597
+            "count": 44,
+            "share": 0.4036697247706422
           },
           "positive": {
             "ad_ids": [
@@ -2237,6 +2264,7 @@
               "google-CR05687623300860084225-b0a16bcadbad",
               "google-CR16188677876969635841-8030bf5bc343",
               "google-CR08397042740243726337-d84236dbfa27",
+              "lacore-6a1842f46d96d833b54c0fd9-0",
               "cooper-445-0",
               "hickenlooper-9643-0",
               "cooper-483-0",
@@ -2260,14 +2288,16 @@
               "dccc-668664-0",
               "dccc-668747-0",
               "cooper-944-0",
+              "jackson-b6172e104766686e-0",
+              "jackson-f4d90cba7d2a12c2-0",
               "el-sayed-1cf3d59b64338ef2-0",
               "dccc-669328-0",
               "google-CR10993849133558661121-dad10d8dba1a",
               "dccc-669396-0",
               "jackson-93075c70a1d4a5fc-0"
             ],
-            "count": 33,
-            "share": 0.32673267326732675
+            "count": 36,
+            "share": 0.3302752293577982
           },
           "uncertain": {
             "ad_ids": [],
@@ -2596,17 +2626,17 @@
   },
   "ads": 1792,
   "ads_by_status": {
-    "normalized": 157,
-    "not_run": 1493,
+    "normalized": 165,
+    "not_run": 1485,
     "validation_failed": 142
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 161,
-    "not_run": 1704,
+    "normalized": 169,
+    "not_run": 1696,
     "validation_failed": 151
   },
-  "claims": 1143,
+  "claims": 1212,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -3042,6 +3072,30 @@
         {
           "claim_id": "jackson-914abc10d942a13d-0-claims-001-004",
           "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-005",
+          "target_index": 3
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-016",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-004",
+          "target_index": 0
         }
       ],
       "neutral": [
@@ -3356,6 +3410,26 @@
         {
           "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-011",
           "target_index": 1
+        },
+        {
+          "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-003",
+          "target_index": 1
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-009",
+          "target_index": 1
+        },
+        {
+          "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-006",
+          "target_index": 1
         }
       ],
       "positive": [
@@ -3534,6 +3608,14 @@
         {
           "claim_id": "jackson-085474d7f07a7fe5-0-claims-001-011",
           "target_index": 0
+        },
+        {
+          "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-005",
+          "target_index": 1
+        },
+        {
+          "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-005",
+          "target_index": 2
         }
       ],
       "uncertain": [
@@ -4341,6 +4423,14 @@
         {
           "claim_id": "jackson-914abc10d942a13d-0-claims-001-005",
           "target_index": 0
+        },
+        {
+          "claim_id": "jackson-b6172e104766686e-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-b6172e104766686e-0-claims-001-002",
+          "target_index": 1
         }
       ],
       "neutral": [
@@ -4543,6 +4633,14 @@
         {
           "claim_id": "jackson-52df90b3947810ea-0-claims-001-008",
           "target_index": 1
+        },
+        {
+          "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-003",
+          "target_index": 0
         }
       ],
       "neutral": [
@@ -5345,6 +5443,166 @@
         {
           "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-012",
           "target_index": 1
+        },
+        {
+          "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-b6172e104766686e-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-006",
+          "target_index": 1
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-010",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-011",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-009",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-012",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-013",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-014",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-015",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-017",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-018",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-006",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -6351,6 +6609,50 @@
         {
           "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-011",
           "target_index": 0
+        },
+        {
+          "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-b6172e104766686e-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-b6172e104766686e-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-009",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-0-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-010",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6aa1c0731d98c26fe17488c8-1-claims-001-011",
+          "target_index": 0
         }
       ],
       "uncertain": [
@@ -7181,6 +7483,62 @@
         {
           "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-007",
           "target_index": 1
+        },
+        {
+          "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-b6172e104766686e-0-claims-001-002",
+          "target_index": 2
+        },
+        {
+          "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-007",
+          "target_index": 1
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-008",
+          "target_index": 1
+        },
+        {
+          "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-005",
+          "target_index": 1
+        },
+        {
+          "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-005",
+          "target_index": 2
+        },
+        {
+          "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-004",
+          "target_index": 1
+        },
+        {
+          "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-004",
+          "target_index": 2
+        },
+        {
+          "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-005",
+          "target_index": 1
+        },
+        {
+          "claim_id": "lacore-6ab41ce155b3f9087901e43e-0-claims-001-005",
+          "target_index": 2
         }
       ],
       "neutral": [
@@ -7783,6 +8141,22 @@
         {
           "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-004",
           "target_index": 1
+        },
+        {
+          "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-b6172e104766686e-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "lacore-6a0361048e32cb4ef8e5d34f-0-claims-001-005",
+          "target_index": 1
+        },
+        {
+          "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-004",
+          "target_index": 1
         }
       ],
       "positive": [
@@ -8237,11 +8611,35 @@
         {
           "claim_id": "jackson-93075c70a1d4a5fc-0-claims-001-008",
           "target_index": 1
+        },
+        {
+          "claim_id": "jackson-a5fd5ae62826d31c-0-claims-001-005",
+          "target_index": 3
+        },
+        {
+          "claim_id": "jackson-b6172e104766686e-0-claims-001-003",
+          "target_index": 1
+        },
+        {
+          "claim_id": "jackson-b6172e104766686e-0-claims-001-003",
+          "target_index": 2
+        },
+        {
+          "claim_id": "jackson-b6172e104766686e-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "jackson-f4d90cba7d2a12c2-0-claims-001-002",
+          "target_index": 1
+        },
+        {
+          "claim_id": "lacore-6a1842f46d96d833b54c0fd9-0-claims-001-002",
+          "target_index": 0
         }
       ],
       "uncertain": []
     }
   },
-  "targets": 1395,
+  "targets": 1487,
   "version": "local-ad-claims-4"
 }
