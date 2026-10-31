@@ -127,6 +127,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "evans-coloradotimes",
+        "https://coloradotimesrecorder.com",
+        "Gabe Evans campaign (reported advertiser; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="CO-08",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "saf-factcheck",
         "https://www.factcheck.org",
         "Safety and Affordability PAC (reported ad sponsor)",

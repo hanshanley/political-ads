@@ -10,7 +10,7 @@
     },
     {
       "kind": "paragraph",
-      "text": "The saved collection through 2026-10-30 contains 1,832 English ad-text records: 1,226 Democratic-aligned, 567 Republican-aligned, 31 other and 8 unresolved. After exact-message deduplication, the D/R comparison contains 1,204 and 530 messages. These are recovered ad releases, previews and creatives, not all ads aired, and there is no exposure or spending weight."
+      "text": "The saved collection through 2026-10-30 contains 1,833 English ad-text records: 1,226 Democratic-aligned, 568 Republican-aligned, 31 other and 8 unresolved. After exact-message deduplication, the D/R comparison contains 1,204 and 531 messages. These are recovered ad releases, previews and creatives, not all ads aired, and there is no exposure or spending weight."
     },
     {
       "kind": "heading",
@@ -22,7 +22,7 @@
     },
     {
       "kind": "paragraph",
-      "text": "Republican-aligned messages: 458/530 (86.4%) reviewed; 1 uncertain, 71 unreviewed and 0 stale. Only reviewed messages supply counted descriptions. The whole-ad table retains all messages in its denominator; person-scope tone rates require an eligible description. Missing evidence is not neutral language."
+      "text": "Republican-aligned messages: 458/531 (86.3%) reviewed; 1 uncertain, 72 unreviewed and 0 stale. Only reviewed messages supply counted descriptions. The whole-ad table retains all messages in its denominator; person-scope tone rates require an eligible description. Missing evidence is not neutral language."
     },
     {
       "kind": "paragraph",
@@ -35,8 +35,8 @@
       "kind": "figure",
       "png": "portrayal-coverage.png",
       "sha256": {
-        "csv": "4d1d20ce9de893205bb25b2796bc5712d157f4512cf74ba14a8d25cfcf9516c4",
-        "png": "8c5d02a1f96706fccb9cea828da857da9563c04a6821d6fe03a70cb7bff808b7"
+        "csv": "8d639e36d5d6e48f8efc0363f2377df37118e2465ddb2868c1cc100d561aaa9c",
+        "png": "91e21753c2bed58f0c4842b57bdcfb53ce564b62445c8bda5572648e959f638b"
       },
       "title": "What has actually been reviewed?"
     },
@@ -58,7 +58,7 @@
     },
     {
       "kind": "paragraph",
-      "text": "Republican ads: own-side praise only: 126/530 (23.8%); mixed: own praise and opponent criticism: 76/530 (14.3%); opponent criticism only: 220/530 (41.5%); neither signal: 36/530 (6.8%); uncertain or missing review: 72/530 (13.6%). These mutually exclusive categories account for every unique message. This same-ad contrast measure is different from mixed positive/negative descriptions within one target scope below."
+      "text": "Republican ads: own-side praise only: 126/531 (23.7%); mixed: own praise and opponent criticism: 76/531 (14.3%); opponent criticism only: 220/531 (41.4%); neither signal: 36/531 (6.8%); uncertain or missing review: 73/531 (13.7%). These mutually exclusive categories account for every unique message. This same-ad contrast measure is different from mixed positive/negative descriptions within one target scope below."
     },
     {
       "csv": "ad-strategy.csv",
@@ -67,8 +67,8 @@
       "kind": "figure",
       "png": "ad-strategy.png",
       "sha256": {
-        "csv": "3b4993008ec8914aa4fecc6e3b4e0a6642824331734074f086084f7a952723a2",
-        "png": "205a7d356ec473206a754417490d12f5c42be41c1885ea739dd188a4aadc5962"
+        "csv": "9d1f2ac8e7401b0aa928eda14f5f3af2e8ae63e5b49ddb35bebb5ec3950597eb",
+        "png": "a9cb91ffce52b43a0a3f4d664d8a75b29e8c2b503dacbcb0624c0a75e2ef6903"
       },
       "title": "Do ads praise, attack, or combine both?"
     },
@@ -103,8 +103,8 @@
       "kind": "figure",
       "png": "opponent-tone.png",
       "sha256": {
-        "csv": "805de39e5458bff5e104809da34590832794167e2c788527af79b278693d99b2",
-        "png": "7e453b13ce9076b5777e53c664e7156665d202529fe5b04fc0ac4c8e20005743"
+        "csv": "acc9913bb754c7b5a6d7c846df28a3dae2dc9abf1fdfff6a58f96913c118ad7c",
+        "png": "1af2aae18f07ac39b77d5f88363e24d8b76594256842f259d4d3981a3ad12cf4"
       },
       "title": "How they describe their opponents"
     },
@@ -159,8 +159,8 @@
       "kind": "figure",
       "png": "opponent-frames.png",
       "sha256": {
-        "csv": "001bfcdcdc80ad7e7c55cac073459f058f56045fe012cdd825166049620ae32b",
-        "png": "9f8c97ec8bb907480fd2f41cb13abe2b9ea6dadb84054b4164bde617c2893e84"
+        "csv": "ce5264294abac007ded83ede22d136fe56e1666b1d3e649cc218de9558219c3b",
+        "png": "b0684bc6f2152f492f8b0469a26e97376af9f6d56fdeb174d2bdf81471103953"
       },
       "title": "What they say about their opponents"
     },
@@ -195,8 +195,8 @@
       "kind": "figure",
       "png": "self-tone.png",
       "sha256": {
-        "csv": "322927d122c97ff7f9de04d6ed591764c91838b531a237a9d32a66595ebdd348",
-        "png": "a19fdebc7e99046517648738a569765ae0cca8f34bd82f1614287d71c86ac804"
+        "csv": "53f1a1298de937b5e87cec8fa533fba3f86b7f88ccd62cca249492df76e3dbd3",
+        "png": "ed142ef3bb929df82c7802270bc05622c83c12f2e65d947198bda0a4c5b01af9"
       },
       "title": "How they describe their own candidates"
     },
@@ -251,8 +251,8 @@
       "kind": "figure",
       "png": "self-frames.png",
       "sha256": {
-        "csv": "bec7f94fca6ddde83f9fb49ff785eb25d14904dba1c37b9c3aeb10faaaecce06",
-        "png": "f5d54796056057b72fa52f9fcef98b1a97a14fb3287154c308b6642a443037f6"
+        "csv": "34e6717333f2d5cbd979a9e28f83a7bc4abed1780e23a13721a501be1daac5a4",
+        "png": "e568becd21b0f80a38f1eac667b2ab98576cb252dd7c210c31d59909b1e33dde"
       },
       "title": "What they say about their own candidates"
     },
@@ -274,7 +274,7 @@
     },
     {
       "kind": "paragraph",
-      "text": "For Republican ads, the whole-ad shares change after exclusion: own-side praise only from 126/530 (23.8%) to 117/372 (31.5%); mixed: own praise and opponent criticism from 76/530 (14.3%) to 76/372 (20.4%); opponent criticism only from 220/530 (41.5%) to 97/372 (26.1%). Each denominator includes all unique messages remaining in that collection."
+      "text": "For Republican ads, the whole-ad shares change after exclusion: own-side praise only from 126/531 (23.7%) to 117/373 (31.4%); mixed: own praise and opponent criticism from 76/531 (14.3%) to 76/373 (20.4%); opponent criticism only from 220/531 (41.4%) to 97/373 (26.0%). Each denominator includes all unique messages remaining in that collection."
     },
     {
       "kind": "paragraph",
@@ -291,8 +291,8 @@
       "kind": "figure",
       "png": "publisher-composition.png",
       "sha256": {
-        "csv": "bf1e0ae27a328b7d6d3196f73d0725c12ef171357493771b6caadf0e532895c1",
-        "png": "83b86fc8a4b81e908d10bf9d404466be8cc5095d087b704d14b85743af9c3c96"
+        "csv": "e7addfb1c16b0eed2aab9e5767c17db5025b42ce7319862f8142576cbb02ec25",
+        "png": "f4a6acf3ecf46e9666c22b1b5e19036a9799455a68e33c9a2c535aedae73d447"
       },
       "title": "Who supplies the observed ads?"
     },
@@ -311,8 +311,8 @@
       "kind": "figure",
       "png": "issue-language.png",
       "sha256": {
-        "csv": "a2d5d221b92e743f6d982a748d537094631cdd76c115f04fb03cdc2b4272c893",
-        "png": "388a9ef29729df53a818839ee724491ceb64cdac8c3c23c173a86083a54a1447"
+        "csv": "2b17c3ade0242871df5a0c1ef7ba7b0eb35692f746c705b1f1c94a9e4e8e7bb9",
+        "png": "8fc7f07867be7e24b3c4e707c20015f2d525915a6ff246169fc00ee8afbac9a5"
       },
       "title": "What issues appear in the wording?"
     },
@@ -323,8 +323,8 @@
       "kind": "figure",
       "png": "source-sensitivity.png",
       "sha256": {
-        "csv": "71a4b85eb3fd607aa155ae001568a610277d1ce09d722fac3b11def235162614",
-        "png": "74497183adb19d54e6d803fe2aefdc04f44017e501f1e241dddac222edc627fb"
+        "csv": "06a5137d055c7c5b8c16e8502e0811eed986d104f0c3a2ef06e1c85dea863990",
+        "png": "b381069afe9aabc0517585a3d776c89878a58090c8353a7f52095d529734d874"
       },
       "title": "How dependent are the issue gaps on sources?"
     },
@@ -335,8 +335,8 @@
       "kind": "figure",
       "png": "monthly-coverage.png",
       "sha256": {
-        "csv": "d46d8cdd7f95c5182e942271e3122b414155bdc1cc6dd4c468c41c4c81fc3019",
-        "png": "f5ef7140b96754cd5721af3d0f62cf70dd065de080bb47597c5f1301aebeaae7"
+        "csv": "b6f8690ba8596f4e0b7dc8083bd0df7c75cf3af88c1ad4ce16cc4bc991055998",
+        "png": "9a362924d01ca3adf6f521b5ec99734d18382ed3610a7c04227e07f14425c0b8"
       },
       "title": "Messages in the saved collection"
     },
@@ -347,8 +347,8 @@
       "kind": "figure",
       "png": "monthly-issues.png",
       "sha256": {
-        "csv": "10bb0dfacc51880e75974d5b6b253a979ac61d4691b2b5210d1f7cd7efbb6284",
-        "png": "f1c996c6a0f5978c63dbf1e577f010afa49f47533e392e3e90bb7c3b5a48ff03"
+        "csv": "665e83ae5e82159a6be7bc20c916d3d9ace1f2286981b2268db1738b88365483",
+        "png": "0fdc2c47d7118d2e0bf03c36bb7692ed6ee97d853a622828c8b1f4110662781c"
       },
       "title": "Issue wording over the cycle"
     },
@@ -1839,6 +1839,7 @@
       "snap-6e3f632de581f6592512fce0",
       "snap-bb07b6ccdf0ab1d2ce009142",
       "snap-f61695c1b05db019be7243b5",
+      "evans-coloradotimes-boots-20260908-0",
       "hinson-746-0",
       "rogers-6aa0250bf684390971db992a-0",
       "snap-312bc2d1a1f9fb232b58bab2",
@@ -2441,14 +2442,14 @@
   "publication_status": "draft_not_published",
   "record_counts": {
     "D": 1226,
-    "R": 567,
+    "R": 568,
     "other": 31,
     "unknown": 8
   },
-  "snapshot_id": "13ad2f689a153d6afae82d9aa2f1c32fadfbbb8e41edefdf2434860a6998bbad",
+  "snapshot_id": "7561ef45860d95fa0284d8c6bc433dbfc0113fea7ae31b2650850574af79fa2c",
   "subtitle": "Opponents, their own candidates, and the balance of negative and positive portrayals.",
   "title": "How Democrats and Republicans describe each other",
-  "total_unique_messages": 1773,
+  "total_unique_messages": 1774,
   "until": "2026-10-30",
   "version": "article-2"
 }

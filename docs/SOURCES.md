@@ -10,9 +10,68 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Colorado Evans expansion of the October 30 snapshot
+
+The latest acquisition contains **1,871 text records**, including **1,833
+English records: 1,226 D / 568 R / 31 other / eight unresolved**.
+One new Gabe Evans campaign record contains **46 literal words in two
+passages** from the **Boots** ad, CO-08 general. Jason Salzman's Colorado
+Times Recorder report is dated **September 8, 2026**. This remains a
+**partial quotation**, semantically **unreviewed**, with the closing
+legal payer uninspected.
+
+Exact saved identity is **H4CO08034 / C00849844**, REP, House, CO-08;
+the independently documented Gabe Evans alias is unchanged. The report
+explicitly identifies Democratic challenger Manny Rutinel. The unique
+`article.postSingle h1` and `article.postSingle abbr[itemprop="datePublished"]`
+bind the primary heading and visible date, which agrees with citation
+and JSON-LD dates. Entire decoded HTML SHA-256
+`507d3f083000e47622d422121845f6d862fddc82baa63d631957a02ec1a322a7`
+binds the exact title, ordered literal passages, advertiser/contest
+context and individual YouTube association `67Czj04MG-Y`.
+The comma, contractions and published ellipsis are preserved.
+Reporter commentary, photographs, other politicians' criticism and
+campaign spokesperson responses are excluded. No video, caption
+provider or guessed API was requested.
+
+All **1,870 preceding acquired objects**, **1,832 preceding analyzed
+objects**, **31 acquisition reviews** and **17 protected canonical JSON
+inputs** remain unchanged. Exact observed-text messages are **1,204 D /
+531 R**. English House coverage is **698 D / 190 R**, comprising 476 D /
+one R Snap and 222 D / 189 R non-Snap. This is not national advertising
+prevalence or a resolved Republican House coverage gap.
+
+```sh
+political-ads collect --source evans-coloradotimes \
+  --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+Network-forbidden isolated replay reproduces **526 written objects and
+source states** from 525 using one cached publisher response. Complete
+JSON/gzip/text-complete CSV, **1,871 Parquet rows** and eleven visually
+inspected PNG sets reconcile. Final affected Python tests pass **150
+cases**; Python/frontend lint and formatting, **17 frontend tests**,
+production build and **seven browser cases** pass. Independent auditing
+verifies **20 metric groups / ten chart rows**. Snapshot:
+`7561ef45860d95fa0284d8c6bc433dbfc0113fea7ae31b2650850574af79fa2c`.
+Both editions remain unpublished; concurrent frozen claims work is unchanged.
+
+The next unadmitted lead is Colorado Pols' August 31 Jeff Hurd CO-03
+ad report, with an individually embedded original `Aupn7FH4M-Y`, exact
+saved identity **H4CO03357 / C00848333**, and an existing reviewed alias.
+Its actually exposed single-post API corroborates the date. The visible
+page labels 12:07 as UTC, whereas the API records 12:07 local and 18:07
+GMT; retain both observations rather than silently equating timestamps.
+Three apparent fragments still require individual acquisition review.
+CPR and PennLive's denied pages remain untouched.
+
 ## Pennsylvania expansion of the October 30 snapshot
 
-The latest acquisition contains **1,870 text records**, including **1,832
+This checkpoint contains **1,870 text records**, including **1,832
 English records: 1,226 D / 567 R / 31 other / eight unresolved**. Two
 new Republican outside-group House records contain **23 and 17 literal
 ad words**. These are **partial quotations**, not complete transcripts,
@@ -85,7 +144,7 @@ words are insufficient and one shared paragraph's viewer cannot simply
 be assigned to both ads. Further search found an accessible Colorado
 Times Recorder report quoting Evans' **Boots** ad and embedding an
 individual original. Its visible report date is **September 8, 2026**;
-the ad remains unadmitted pending exact date/identity/source review.
+at this checkpoint the ad was unadmitted pending exact date/identity/source review.
 The existing Gabe Evans/FEC alias is already independently documented.
 New CPR and PennLive requests returned **403**; no retries or denied-page
 alternate retrieval were made. Existing denied providers remain paused.

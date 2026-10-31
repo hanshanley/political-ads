@@ -3,6 +3,33 @@
   "scope": "Individually reviewed public ad words, not complete publisher discovery or semantic portrayal review.",
   "reviews": [
     {
+      "source": "evans-coloradotimes",
+      "record_id": "boots-20260908",
+      "source_url": "https://coloradotimesrecorder.com/2026/09/gabe-evans-raises-3-cows-but-in-a-new-campaign-ad-he-says-hes-ranching-in-colorado/81473/",
+      "retrieval_url": "https://coloradotimesrecorder.com/2026/09/gabe-evans-raises-3-cows-but-in-a-new-campaign-ad-he-says-hes-ranching-in-colorado/81473/",
+      "format": "html",
+      "heading_selector": "article.postSingle h1",
+      "publication_selector": "article.postSingle abbr[itemprop=\"datePublished\"]",
+      "content_sha256": "507d3f083000e47622d422121845f6d862fddc82baa63d631957a02ec1a322a7",
+      "published": "2026-09-08",
+      "release_title": "Gabe Evans Raises 3 Cows, But in a New Campaign Ad He Says He’s ‘Ranching’ in Colorado",
+      "candidate_id": "H4CO08034",
+      "media_url": "https://www.youtube.com/embed/67Czj04MG-Y?start=17&feature=oembed",
+      "phase": "general",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "U.S. Rep. Gabe Evans (R-CO)",
+        "A new campaign ad shows Evans hauling hay",
+        "says Evans in the ad",
+        "His midterm race against Democrat Manny Rutinel"
+      ],
+      "passages": [
+        "They say my boots don’t fit my suit,",
+        "They are probably right. But I’ve worn these for 15 years, ranching here on my place in Weld, on patrol in Adams, in a Black Hawk over Colorado wildfires. … The last thing Washington needs is another suit."
+      ],
+      "attribution_basis": "Credit: Jason Salzman, Colorado Times Recorder, September 8, 2026. The actual primary article, not preceding or recommended story cards, explicitly reports a new Gabe Evans campaign ad, quotes Evans speaking in it, and embeds the individual Boots creative. Its uniquely selected visible September 8 date agrees with article-specific citation and JSON-LD dates; unrelated recommendation dates are excluded. Exact saved FEC H4CO08034 / C00849844 identifies REP, House, CO-08 candidate EVANS, TIMOTHY GABRIEL JOSEPH. The existing independently reviewed Gabe Evans alias already binds that identity to the official House member and district; no alias or fuzzy match was added. The article identifies his general-election opponent as Democrat Manny Rutinel. Campaign-advertiser attribution follows the publisher's report, not an independently inspected legal payer or assumed committee disclaimer. Two source-ordered passages total 46 words, retaining the terminal comma, contractions and printed ellipsis; whitespace is normalized as in the existing collector, without inventing missing narration. The author's ranching assessments, financial discussion, past campaign photographs, John Salazar's criticism and the campaign spokesperson's response are not ad speech and are excluded. This is partial quotation, not a complete script or a new semantic judgment. The entire decoded HTML hash, unique primary h1 and visible date, exact title/date, advertiser/candidate/contest context and individual original association remain bound. No original video, caption service, denied page or licensed catalog was requested. The new message remains semantically unreviewed."
+    },
+    {
       "source": "saf-factcheck",
       "record_id": "brooks-tax-20261008",
       "source_url": "https://www.factcheck.org/2026/10/misleading-gop-attacks-over-taxes-on-tips-overtime-social-security/",
