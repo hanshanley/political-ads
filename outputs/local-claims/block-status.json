@@ -1934,8 +1934,8 @@
   {
     "ad_id": "lawler-1312-0",
     "block_id": "lawler-1312-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 5\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "lawler-1379-0",
@@ -1946,8 +1946,8 @@
   {
     "ad_id": "lawler-1379-1",
     "block_id": "lawler-1379-1-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for Lawler for Congress: \\\"We\\\" is absent from unit 2. Exact source: \\\"prepared to enforce the law.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "lawler-1429-0",
@@ -1958,8 +1958,8 @@
   {
     "ad_id": "lcv-vf-2653-0",
     "block_id": "lcv-vf-2653-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for we: \\\"we\\\" is absent from unit 3. Exact source: \\\"And at the gas pump,\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "lcv-vf-2658-0",
