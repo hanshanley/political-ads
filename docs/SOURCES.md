@@ -10,6 +10,101 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## MTPR MT-01 labeled broadcast-ad excerpt recovery
+
+The distinct Republican House record **ngb-mtpr-20261002-0** retains
+only the first **20 literal words** of an expressly labeled **No Going
+Back PAC Inc** ad supporting Aaron Flint against Democrat Sam Forstag.
+It remains a **partial quotation and semantically unreviewed**. The
+excerpt ends at an existing word boundary without an added period;
+the remaining **46 words**, the other party's ad and program discussion
+are not acquired. Advertiser allegations are not verified findings.
+
+The actual MTPR episode:
+`https://www.mtpr.org/podcast/campaign-beat/2026-10-02/campaign-beat-new-polling-new-ads-new-challenges`.
+HTML SHA-256:
+`5c70040f7224ca2cfce9874181e93e3b17522e5d96365a948ec2b765425214ae`.
+The unique **h1** names **Campaign Beat: New polling, new ads, new
+challenges**. The unique **.PCEP-timestamp** gives **October 2, 2026,
+7:52 p.m. MDT**, agreeing with the dated episode path. This is the
+publisher's local observation date, not first ad release, upload or
+paid delivery. Sidebar timestamps and an inferred UTC calendar date
+are not substituted.
+
+Inside **.PCEP-articleBody**, exactly one reviewed paragraph begins
+**Flint Ad** and contains a quotation ending in No Going Back's
+responsibility statement. The preceding presenter paragraph explicitly
+identifies the pro-Flint PAC advertisement; subsequent discussion names
+No Going Back. **Sally Mauk, Rob Saldin and Seaborn Larson** are credited.
+The separate **Forstag Ad** paragraph is excluded, even when it discusses
+the same people or issues. Exact saved **H6MT01152 / C00941575**,
+**FLINT, AARON**, **REP**, **House**, **MT-01**, **2026**, agrees with
+cached official principal **FLINT FOR MONTANA**, **P/H/REP**.
+General phase follows explicit competing-party House-election context,
+not October alone. Committee identity is not inspected creative approval.
+
+The episode player exposes stream
+**000001a0-ff73-d8ab-aba7-ff7755ec0000**, the matching program title,
+**14:12** duration and one **audio/mpeg** Omny audio association. That
+URL is the **complete program**, not an independently identified
+individual-ad original. The explicit quality flag
+**publisher_audio_episode_not_individual_ad_original** accompanies the
+record and complete exports, including Parquet. The dashboard therefore
+links **Read broadcast transcript** to the publisher page and displays
+the extraction distinction, rather than labeling the program an
+original ad. **No audio, Omny, video, caption, YouTube or API request**
+was made and no media is redistributed.
+
+The former original-link-only gate rejected this otherwise explicit
+broadcast-ad evidence. A focused positive regression reproduced the
+gap. The narrow extension accepts only the registered **ngb-mtpr**
+publisher, a dated Campaign Beat episode agreeing with the reviewed
+date, the exact federal candidate, partial-quotation status, matching
+stream/title/audio identity and a unique in-transcript paragraph with
+both the explicit ad label and payer attribution. Six negative cases
+reject the opponent paragraph, wrong stream, wrong program, missing
+attribution, foreign audio host and foreign publisher. Existing reviewed
+releases keep their original-link checks. No generic podcast discussion,
+unverified ad creative or monitoring-provider transcript is admitted.
+
+Fresh immutable **house-ngb-mtpr-baseline.json** freezes **1,910
+acquired / 1,871 analyzed / 64 acquisition reviews**, all aliases and
+**17 protected inputs**. Strict verification proves every preceding
+object/review unchanged and **558 to 559 written objects** replayed
+from the actual saved parent with only one original response and sockets
+forbidden. Complete JSON/gzip/CSV/Parquet, browser/production and all
+eleven PNG copies reconcile; the episode media association and quality
+flags are independently checked in Parquet.
+All **437 Python tests**, backend lint/format, frontend lint and **17
+unit cases**, production typecheck/build, the **seven existing browser
+cases** and the **new broadcast/provenance/complete-download browser
+case** pass. All eleven manifest PNGs were visually inspected.
+The audit reconciles **20 metric groups / 10 chart rows**.
+
+Validated snapshot:
+`411f819c67e35af8b61166cdae43b2db987aaa54cd6dfdad1a4f5a9642390a82`.
+Totals are **1,911 acquired / 1,872 English**, **D 1,226 / R 607 /
+other 31 / unknown 8**; exact messages are **D 1,204 / R 570**.
+English House is **D 698 / R 229 / other 19 / unknown 3**; non-Snap
+House is **D 222 / R 228**. Snap remains **D 476 / R 1 / other 19 /
+unknown 3**. Counts remain source-dependent, not a national-volume,
+spending or matched-race estimate. No prior Democratic data or semantic
+judgment was removed or changed.
+
+The preceding AAN Iowa research push
+**df19a8992acc4ec1274aed8afd360db716713b96** preserves concurrent parent
+**46f5c867461004e8dbf667fc905e1ea185fad760**, with Hans Hanley as remote
+author/committer and no Copilot/co-author/session trailers. The original
+CI watcher completed successfully; exact run **41240298422** and all
+**13 successful steps** were independently verified.
+Continued direct checks established that Flint's sports/bathrooms and
+Portland campaign creatives **uuhA1ovlg-U / XZYqvwYYuUA** are already
+acquired; neither is counted again. The newly located AAN Nunn primary
+release failed TLS; no insecure fallback or text acquisition occurred.
+The independently reported Nunn **XyXegST-OjY** remains a concrete
+unacquired lead, not a metadata-only record. Acquisition continues,
+all provider/permission holds remain, and both editions stay unpublished.
+
 ## AAN IA-01 individual-ad quotation recovery
 
 The distinct Republican House record **aan-iowa-20260820-0** retains

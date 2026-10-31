@@ -87,6 +87,62 @@ def linked_ad_text(client, content: str, review: dict, identities: list[dict]) -
     return re.sub(r"\s+", " ", plain_html(str(selected[0]))).strip()
 
 
+def broadcast_ad_text(content: str, source: Source, review: dict) -> str:
+    url = urlsplit(review["source_url"])
+    audio = urlsplit(review["media_url"])
+    if (
+        source.id != "ngb-mtpr"
+        or source.url != "https://www.mtpr.org"
+        or review["retrieval_url"] != review["source_url"]
+        or url.netloc != "www.mtpr.org"
+        or not re.fullmatch(r"/podcast/campaign-beat/\d{4}-\d{2}-\d{2}/[^/]+", url.path)
+        or url.path.split("/")[3] != review["published"]
+        or url.query
+        or url.fragment
+        or review["format"] != "html"
+        or review["candidate_id"] != "H6MT01152"
+        or review["completeness"] != "partial_quotation"
+        or review.get("linked_ad_text")
+        or audio.scheme != "https"
+        or audio.netloc != "traffic.omny.fm"
+        or not audio.path.startswith("/d/clips/")
+        or not audio.path.endswith("/audio.mp3")
+        or audio.query
+        or audio.fragment
+    ):
+        raise ValueError("Broadcast evidence requires the reviewed MTPR episode and public audio")
+    evidence = review["broadcast_evidence"]
+    soup = BeautifulSoup(content, "html.parser")
+    players = [
+        node
+        for node in soup.select(".PCEP-audioPlayer ps-stream")
+        if node.get("data-stream-id") == evidence["stream_id"]
+    ]
+    if len(players) != 1 or players[0].get("data-stream-program-name") != review["release_title"]:
+        raise ValueError("Reviewed broadcast stream identity or episode title is missing")
+    streams = players[0].select("ps-stream-url")
+    if (
+        len(streams) != 1
+        or streams[0].get("data-stream-format") != "audio/mpeg"
+        or streams[0].get("data-stream-url") != review["media_url"]
+    ):
+        raise ValueError("Reviewed broadcast's exact episode audio association is missing")
+    paragraphs = soup.select(evidence["paragraph_selector"])
+    if (
+        len(paragraphs) != 1
+        or paragraphs[0].name != "p"
+        or paragraphs[0].find_parent(class_="PCEP-articleBody") is None
+    ):
+        raise ValueError("Broadcast ad must match one paragraph inside the episode transcript")
+    text = re.sub(r"\s+", " ", plain_html(str(paragraphs[0]))).strip()
+    disclaimer = "No Going Back PAC Inc is responsible for the content of this advertisement."
+    if not text.startswith("Flint Ad ") or not text.rstrip('"”').endswith(disclaimer):
+        raise ValueError(
+            "Broadcast paragraph's explicit ad label and payer attribution are missing"
+        )
+    return text
+
+
 def reviewed_release(client, source: Source, review: dict, candidates: list[dict], observed: str):
     for key in ("source_url", "retrieval_url"):
         url = urlsplit(review[key])
@@ -153,13 +209,15 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         row["candidate_id"] for row in candidate_mentions(visible, identities)
     }:
         raise ValueError("Reviewed candidate is not identified in the publisher's evidence")
-    if review["media_url"] not in media_links(content):
+    broadcast = review.get("broadcast_evidence")
+    if not broadcast and review["media_url"] not in media_links(content):
         raise ValueError("Reviewed original ad link is missing")
-    passage_source = (
-        linked_ad_text(client, content, review, identities)
-        if review.get("linked_ad_text")
-        else visible
-    )
+    if broadcast:
+        passage_source = broadcast_ad_text(content, source, review)
+    elif review.get("linked_ad_text"):
+        passage_source = linked_ad_text(client, content, review, identities)
+    else:
+        passage_source = visible
     passages = review["passages"]
     if not passages or len(" ".join(passages).split()) < 15:
         raise ValueError("Reviewed ad needs substantive literal text")
@@ -201,6 +259,8 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
     ]
     if not full_script:
         flags.append("publisher_ad_copy_completeness_unverified")
+    if broadcast:
+        flags.append("publisher_audio_episode_not_individual_ad_original")
     segments = [
         {"text": passage, "kind": "publisher_transcript" if full_script else "publisher_ad_copy"}
         for passage in passages

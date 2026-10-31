@@ -12,6 +12,137 @@ from political_ads.schema import digest
 from political_ads.sources import SOURCES, collect_wordpress
 
 
+def broadcast_fixture():
+    from political_ads.sources import Source
+
+    source = Source(
+        "ngb-mtpr",
+        "https://www.mtpr.org",
+        "No Going Back PAC Inc",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="MT-01",
+        discovery="reviewed_releases",
+    )
+    candidate = {
+        "candidate_id": "H6MT01152",
+        "name": "FLINT, AARON",
+        "party": "REP",
+        "state": "MT",
+        "office": "H",
+        "district": "01",
+        "election_year": "2026",
+    }
+    passage = (
+        "Sam Forstag has failed Montana families and supports policies that "
+        "will make everyday life more expensive."
+    )
+    url = "https://www.mtpr.org/podcast/campaign-beat/2026-10-02/fixture-episode"
+    audio = (
+        "https://traffic.omny.fm/d/clips/"
+        "e09de6da-b14d-486a-8271-b19c00d572a0/"
+        "e4b419f7-79b4-4815-9b27-b3ce0020c349/"
+        "cd8f5757-899c-403f-8c03-b4d8001cf6ae/audio.mp3"
+    )
+    disclaimer = "No Going Back PAC Inc is responsible for the content of this advertisement."
+    content = (
+        "<h1>Fixture episode</h1>"
+        '<div class="PCEP-timestamp">Published October 2, 2026 at 7:52 PM MDT</div>'
+        "<p>A PAC supporting Aaron Flint has a new ad.</p>"
+        '<div class="PCEP-audioPlayer">'
+        '<ps-stream data-stream-id="fixture-stream" '
+        'data-stream-program-name="Fixture episode">'
+        f'<ps-stream-url data-stream-format="audio/mpeg" data-stream-url="{audio}">'
+        "</ps-stream-url></ps-stream></div>"
+        '<div class="PCEP-articleBody">'
+        f'<p class="opponent">Forstag Ad "{passage}"</p>'
+        f'<p class="supporter">Flint Ad "{passage} {disclaimer}"</p>'
+        "</div>"
+    )
+    review = {
+        "source": source.id,
+        "record_id": "20261002",
+        "source_url": url,
+        "retrieval_url": url,
+        "format": "html",
+        "published": "2026-10-02",
+        "release_title": "Fixture episode",
+        "heading_selector": "h1",
+        "publication_selector": ".PCEP-timestamp",
+        "publication_date_format": "Published %B %d, %Y at %I:%M %p MDT",
+        "candidate_id": candidate["candidate_id"],
+        "media_url": audio,
+        "phase": "general",
+        "completeness": "partial_quotation",
+        "required_context": ["A PAC supporting Aaron Flint has a new ad."],
+        "passages": [passage],
+        "content_sha256": digest(content),
+        "broadcast_evidence": {
+            "stream_id": "fixture-stream",
+            "paragraph_selector": ".PCEP-articleBody p.supporter",
+        },
+        "attribution_basis": "Fixture explicitly labeled ad in a publisher audio episode.",
+    }
+    return source, candidate, review, content.encode()
+
+
+def test_reviewed_broadcast_binds_the_labeled_ad_and_episode_without_media_requests():
+    from political_ads.reviewed_releases import reviewed_release
+
+    source, candidate, review, body = broadcast_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return body, {}
+
+    ad = reviewed_release(Client(), source, review, [candidate], "2026-10-31")
+    assert ad["text"] == review["passages"][0]
+    assert ad["media_urls"] == [review["media_url"]]
+    assert "publisher_audio_episode_not_individual_ad_original" in ad["quality_flags"]
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "change",
+    ["opponent", "stream", "program", "disclaimer", "audio", "publisher"],
+)
+def test_reviewed_broadcast_rejects_unbound_ad_or_episode_evidence(change):
+    from dataclasses import replace
+
+    from political_ads.reviewed_releases import reviewed_release
+
+    source, candidate, review, body = broadcast_fixture()
+    if change == "opponent":
+        review["broadcast_evidence"]["paragraph_selector"] = ".PCEP-articleBody p.opponent"
+    elif change == "stream":
+        review["broadcast_evidence"]["stream_id"] = "different-stream"
+    elif change == "program":
+        body = body.replace(
+            b'data-stream-program-name="Fixture episode"',
+            b'data-stream-program-name="Different episode"',
+        )
+    elif change == "disclaimer":
+        body = body.replace(b"No Going Back PAC Inc is responsible", b"Another PAC is responsible")
+    elif change == "audio":
+        review["media_url"] = review["media_url"].replace("traffic.omny.fm", "example.com")
+        body = body.replace(b"traffic.omny.fm", b"example.com")
+    else:
+        source = replace(source, url="https://example.com")
+        review["source_url"] = review["source_url"].replace("www.mtpr.org", "example.com")
+        review["retrieval_url"] = review["source_url"]
+    review["content_sha256"] = digest(body.decode())
+
+    class Client:
+        def get(self, url, **kwargs):
+            return body, {}
+
+    with pytest.raises(ValueError):
+        reviewed_release(Client(), source, review, [candidate], "2026-10-31")
+
+
 def linked_pdf_fixture():
     source, candidate, review, body = release_fixture("html")
     passage = review["passages"][0]

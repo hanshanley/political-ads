@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "ngb-mtpr",
+        "https://www.mtpr.org",
+        "No Going Back PAC Inc (publisher-transcribed attribution; payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="MT-01",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "aan-iowa",
         "https://iowacapitaldispatch.com",
         "American Action Network (publisher-reported; payer unverified)",

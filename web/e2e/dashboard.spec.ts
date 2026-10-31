@@ -35,6 +35,32 @@ test("real corpus, synchronized filters, complete downloads, and empty state", a
   expect(errors).toEqual([]);
 });
 
+test("broadcast excerpts link their transcript and export the episode association without claiming an ad original", async ({ page }) => {
+  await page.goto("./");
+  const dataset = await (await page.request.get("./data/dataset.json")).json();
+  const ad = dataset.ads.find((item: { id: string }) => item.id === "ngb-mtpr-20261002-0");
+  expect(ad).toBeDefined();
+  await page.getByLabel("Search the ad text", { exact: true }).fill(ad.text);
+  const card = page.locator(".ad-card").filter({
+    has: page.getByRole("link", { name: "Read broadcast transcript" }),
+  });
+  await expect(card).toHaveCount(1);
+  await expect(card.getByRole("link", { name: "Read broadcast transcript" }))
+    .toHaveAttribute("href", ad.source_url);
+  await card.getByRole("button", { name: "Read all available text", exact: true }).click();
+  await expect(card.locator(".provenance")).toContainText(
+    "publisher audio episode not individual ad original");
+  const pendingDownload = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Download JSON" }).click();
+  const download = await pendingDownload;
+  const stream = await download.createReadStream();
+  const chunks: Buffer[] = [];
+  for await (const chunk of stream) chunks.push(chunk);
+  const exported = JSON.parse(Buffer.concat(chunks).toString());
+  expect(exported.ads.find((item: { id: string }) => item.id === ad.id)).toEqual(ad);
+  expect(ad.portrayal_review.status).toBe("unreviewed");
+});
+
 test("same-ad strategy and person scopes reconcile with Python and preserve literal context", async ({ page }) => {
   await page.goto("./");
   const evidence = await (await page.request.get("./figures/portrayal-evidence.json")).json();

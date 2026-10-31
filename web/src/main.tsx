@@ -137,7 +137,9 @@ function AdCard({ ad, selected, examples }: {
       <p><strong>Matching phrases:</strong> {[...new Set(ad.issues.map(match => match.text))].join(", ") || "None in codebook"}</p>
     </div>}
     <a className="source-link" href={ad.source_url} target="_blank" rel="noopener noreferrer">
-      {ad.delivery_start ? "View original creative" : "Read original release"} <span aria-hidden="true">↗</span></a>
+      {ad.delivery_start ? "View original creative" :
+        ad.quality_flags.includes("publisher_audio_episode_not_individual_ad_original") ?
+          "Read broadcast transcript" : "Read original release"} <span aria-hidden="true">↗</span></a>
   </article>;
 }
 
