@@ -1,10 +1,132 @@
 import json
+from hashlib import sha256
+from io import BytesIO
 
 import pytest
+from pypdf import PdfReader, PdfWriter
+from pypdf.annotations import Link
+from pypdf.generic import DecodedStreamObject, DictionaryObject, NameObject
 
 from political_ads import cli
 from political_ads.schema import digest
 from political_ads.sources import SOURCES, collect_wordpress
+
+
+def linked_pdf_fixture():
+    source, candidate, review, body = release_fixture("html")
+    passage = review["passages"][0]
+    url = "https://www.brooksforcongress.com/wp-content/uploads/2026/10/Fixture-Letter.pdf"
+    content = body.decode().replace(passage, "Rhett Marques discussed the campaign.")
+    content += f'<a href="{url}">The letter quoting the advertisement</a>'
+    context = "The document quotes Rhett Marques's advertisement."
+    writer = PdfWriter()
+    for text in (
+        f"{context} {passage}",
+        "The attorney disputes the advertisement and demands a retraction.",
+    ):
+        page = writer.add_blank_page(width=612, height=792)
+        page[NameObject("/Resources")] = DictionaryObject(
+            {
+                NameObject("/Font"): DictionaryObject(
+                    {
+                        NameObject("/F1"): DictionaryObject(
+                            {
+                                NameObject("/Type"): NameObject("/Font"),
+                                NameObject("/Subtype"): NameObject("/Type1"),
+                                NameObject("/BaseFont"): NameObject("/Helvetica"),
+                            }
+                        )
+                    }
+                )
+            }
+        )
+        stream = DecodedStreamObject()
+        stream.set_data(f"BT /F1 12 Tf 20 750 Td ({text}) Tj ET".encode())
+        page[NameObject("/Contents")] = writer._add_object(stream)
+    writer.add_annotation(
+        page_number=0,
+        annotation=Link(rect=(0, 0, 20, 20), url=review["media_url"]),
+    )
+    output = BytesIO()
+    writer.write(output)
+    pdf = output.getvalue()
+    extracted = PdfReader(BytesIO(pdf)).pages[0].extract_text()
+    review["content_sha256"] = digest(content)
+    review["linked_ad_text"] = {
+        "url": url,
+        "format": "pdf",
+        "file_sha256": sha256(pdf).hexdigest(),
+        "content_sha256": digest(extracted),
+        "pages": [1],
+        "required_context": [context],
+    }
+    return source, candidate, review, content.encode(), pdf
+
+
+def test_reviewed_linked_pdf_keeps_only_ad_words_and_binds_the_original():
+    source, candidate, review, body, pdf = linked_pdf_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return (body if url == review["retrieval_url"] else pdf), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-10-30", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    assert ads[0]["text"] == review["passages"][0]
+    assert "attorney" not in ads[0]["text"]
+    assert ads[0]["segments"][0]["release_evidence"]["linked_ad_text"] == review["linked_ad_text"]
+    assert calls == [review["retrieval_url"], review["linked_ad_text"]["url"]]
+
+
+@pytest.mark.parametrize(
+    ("field", "value"),
+    [
+        ("file_sha256", "0" * 64),
+        ("content_sha256", "0" * 64),
+        ("pages", []),
+        ("pages", [1, 1]),
+        ("pages", [3]),
+        ("required_context", ["A statement absent from the document."]),
+    ],
+)
+def test_reviewed_linked_pdf_rejects_changed_or_unbound_evidence(field, value):
+    from political_ads.reviewed_releases import reviewed_release
+
+    source, candidate, review, body, pdf = linked_pdf_fixture()
+    review["linked_ad_text"][field] = value
+
+    class Client:
+        def get(self, url, **kwargs):
+            return (body if url == review["retrieval_url"] else pdf), {}
+
+    with pytest.raises(ValueError):
+        reviewed_release(Client(), source, review, [candidate], "2026-10-30")
+
+
+def test_reviewed_linked_pdf_requires_its_own_exact_original_link():
+    from political_ads.reviewed_releases import reviewed_release
+
+    source, candidate, review, body, pdf = linked_pdf_fixture()
+    reader = PdfReader(BytesIO(pdf))
+    reader.pages[0].pop("/Annots")
+    writer = PdfWriter()
+    for page in reader.pages:
+        writer.add_page(page)
+    output = BytesIO()
+    writer.write(output)
+    pdf = output.getvalue()
+    review["linked_ad_text"]["file_sha256"] = sha256(pdf).hexdigest()
+
+    class Client:
+        def get(self, url, **kwargs):
+            return (body if url == review["retrieval_url"] else pdf), {}
+
+    with pytest.raises(ValueError, match="original"):
+        reviewed_release(Client(), source, review, [candidate], "2026-10-30")
 
 
 def release_fixture(format="wordpress", completeness="partial_quotation"):

@@ -3,9 +3,12 @@ from __future__ import annotations
 import json
 import re
 from datetime import datetime
+from hashlib import sha256
+from io import BytesIO
 from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup
+from pypdf import PdfReader
 
 from political_ads.registry import candidate_mentions, enrich
 from political_ads.schema import Ad, digest
@@ -27,13 +30,46 @@ def linked_ad_text(client, content: str, review: dict, identities: list[dict]) -
         and not target.query
         and not target.fragment
     )
+    public_campaign_pdf = (
+        target.netloc == "www.brooksforcongress.com"
+        and target.path.startswith("/wp-content/uploads/2026/")
+        and target.path.endswith(".pdf")
+        and not target.query
+        and not target.fragment
+    )
     links = {a.get("href") for a in BeautifulSoup(content, "html.parser").select("a[href]")}
-    if target.scheme != "https" or not (public_player or public_report) or url not in links:
+    if (
+        target.scheme != "https"
+        or not (public_player or public_report or public_campaign_pdf)
+        or url not in links
+    ):
         raise ValueError("Ad text must come from an explicitly linked supported public page")
     if review["completeness"] != "partial_quotation":
         raise ValueError("Linked ad words require explicitly unverified completeness")
     body, _ = client.get(url, refresh=True, retry=False)
-    linked = body.decode("utf-8")
+    if public_campaign_pdf:
+        if evidence.get("format") != "pdf" or sha256(body).hexdigest() != evidence["file_sha256"]:
+            raise ValueError("Linked PDF bytes changed; literal ad evidence requires a new review")
+        reader = PdfReader(BytesIO(body))
+        pages = evidence["pages"]
+        if (
+            not pages
+            or any(type(page) is not int or not 1 <= page <= len(reader.pages) for page in pages)
+            or pages != sorted(set(pages))
+        ):
+            raise ValueError("Linked PDF needs distinct, ordered, in-range reviewed pages")
+        selected_pages = [reader.pages[page - 1] for page in pages]
+        originals = {
+            (annotation.get_object().get("/A") or {}).get("/URI")
+            for page in selected_pages
+            for annotation in page.get("/Annots", [])
+            if annotation.get_object().get("/Subtype") == "/Link"
+        }
+        if review["media_url"] not in originals:
+            raise ValueError("Linked PDF's exact original ad link is missing")
+        linked = "\n".join(page.extract_text() or "" for page in selected_pages)
+    else:
+        linked = body.decode("utf-8")
     if digest(linked) != evidence["content_sha256"]:
         raise ValueError("Linked source changed; literal ad evidence requires a new review")
     visible = re.sub(r"\s+", " ", plain_html(linked)).strip()
@@ -43,6 +79,8 @@ def linked_ad_text(client, content: str, review: dict, identities: list[dict]) -
         raise ValueError("Linked source's explicit ad context is missing")
     if not candidate_mentions(visible, identities):
         raise ValueError("Linked source does not identify the reviewed federal candidate")
+    if public_campaign_pdf:
+        return visible
     selected = BeautifulSoup(linked, "html.parser").select(evidence["selector"])
     if len(selected) != 1:
         raise ValueError("Linked ad text must match exactly one reviewed element")

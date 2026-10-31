@@ -3,6 +3,47 @@
   "scope": "Individually reviewed public ad words, not complete publisher discovery or semantic portrayal review.",
   "reviews": [
     {
+      "source": "mackenzie-brownwhite",
+      "record_id": "138743",
+      "source_url": "https://thebrownandwhite.com/2026/10/30/bob-brooks-and-ryan-mackenzie-send-each-other-cease-and-desists-for-defamation/",
+      "retrieval_url": "https://thebrownandwhite.com/wp-json/wp/v2/posts/138743",
+      "format": "wordpress",
+      "content_sha256": "829fefe874ad68863c4ae69b9a679c04a4a9a418588bbc5d86eb3e0955cf6667",
+      "published": "2026-10-30",
+      "release_title": "Bob Brooks and Ryan Mackenzie send each other cease-and-desists for defamation",
+      "candidate_id": "H8PA15195",
+      "media_url": "https://platform.adimpact.com/viewer/77e3ee73-8536-4eb5-8076-859279aa3ee4",
+      "phase": "general",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Democratic congressional candidate Bob Brooks sent his Republican opponent and incumbent Ryan Mackenzie",
+        "on Oct. 18 for a recent",
+        "Mackenzie for Congress Campaign and the National Republican Congressional Committee",
+        "The midterm election is now less than a week away."
+      ],
+      "linked_ad_text": {
+        "url": "https://www.brooksforcongress.com/wp-content/uploads/2026/10/Mackenzie-CD-Ltr-10.18.2026.pdf",
+        "format": "pdf",
+        "file_sha256": "219b902a5e2071bd961437837cad32cade5429ee125f24c37d128b95d7c0e6bd",
+        "content_sha256": "848b374709a6001d55092b6aa2739ddc062ba34b3d91eeb7abeeb2bb3991f63d",
+        "pages": [1],
+        "required_context": [
+          "October 18, 2026",
+          "I write about a television advertisement named",
+          "that Mr. Ryan Mackenzie, his campaign committee, Mackenzie for Congress Committee, and the National Republican Congressional Committee are running",
+          "Your advertisement ‘Criminal Offense,’ begins with the statement:",
+          "The ad continues with the following claim:",
+          "The ad ends with the statement"
+        ]
+      },
+      "passages": [
+        "What do you know about the real Bob Brooks? Brooks violated state law.",
+        "Brooks violated state law requiring him to cover his employees ’ insurance, a criminal offense. His employees lost coverage. Brooks, he got paid.",
+        "Bob, got paid."
+      ],
+      "attribution_basis": "The Brown and White's actual October 30 local / October 31 UTC report and exposed individual WordPress post 138743 directly link the October 18 campaign-hosted letter and individual advertisement. The actual PDF's page-one link annotation independently identifies the same original, 77e3ee73-8536-4eb5-8076-859279aa3ee4. Only three expressly attributed ad quotations are retained, in source order; the lawyer's allegations of falsity, legal analysis, facts, demands, campaign press statements and later repeated or bracketed paraphrases are excluded. PDF extraction preserves the source's separate curly-apostrophe token in employees ’ insurance, without silently repairing typography or adding words. The letter calls the ad Criminal Offense; the reporter reproduces a campaign statement calling it Crooked Liberal. Preserve this title discrepancy rather than invent two advertisements or silently reconcile the names. No individual viewer, provider API, account, catalog or media was requested. Exact saved FEC H8PA15195 / C00846501 identifies MACKENZIE, RYAN EDWARD, REP, House, PA-07. No alias or fuzzy match is added. The reported joint Mackenzie campaign / NRCC advertiser is Republican-aligned despite the PDF being hosted by the Democratic target's campaign. Sole legal payer, closing disclaimer and candidate approval are not independently inspected. General-election context identifies incumbent Mackenzie and Democratic opponent Brooks and the upcoming midterm election. October 30 is the publisher report date; October 18 is the letter date and the response's October 19 last-modified header is a separate observation, not an inferred release or verified paid-delivery start. Main rendered-content hash/title/date, explicit publisher links, PDF byte and extracted-page hashes, ordered page selection, exact PDF original association, federal identity and literal quotations are bound. pypdf 5.9.0 is pinned for the reviewed extraction. This is an explicitly partial, semantically unreviewed acquisition, not an adjudication of the quoted claims."
+    },
+    {
       "source": "hatcher-nashville-banner",
       "record_id": "35281",
       "source_url": "https://nashvillebanner.com/2026/10/07/charlie-hatcher-tennessee-5th-district/",

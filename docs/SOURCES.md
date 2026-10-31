@@ -10,9 +10,118 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Pennsylvania Mackenzie linked-PDF expansion of the October 30 snapshot
+
+The latest acquisition contains **1,877 text records**, including **1,839
+English records: 1,226 D / 574 R / 31 other / eight unresolved**.
+One additional **PA-07 general-election Mackenzie campaign / NRCC ad**
+has **three partial literal quotations / 39 preserved tokens**. Its
+October 18 letter calls it **“Criminal Offense”**; the October 30 news
+report reproduces a campaign statement calling it **“Crooked Liberal.”**
+Both sources identify the same individual original,
+**77e3ee73-8536-4eb5-8076-859279aa3ee4**. The names remain an explicit
+discrepancy, not two invented advertisements. The text remains **partial
+and semantically unreviewed**, not automatically classified as negative.
+
+The Brown and White's actual public article and exposed individual
+WordPress post **138743** agree on **October 30 local 22:46 / October 31
+UTC 02:46**. The report directly links both the individual advertisement
+and Brooks's campaign-hosted October 18 letter:
+`https://www.brooksforcongress.com/wp-content/uploads/2026/10/Mackenzie-CD-Ltr-10.18.2026.pdf`.
+The actual first PDF page independently links that exact individual
+original in a `/Link` annotation. No AdImpact viewer, API, account,
+catalog or original media was requested. The parent rendered-content
+SHA-256 is
+`829fefe874ad68863c4ae69b9a679c04a4a9a418588bbc5d86eb3e0955cf6667`;
+the three-page PDF byte SHA-256 is
+`219b902a5e2071bd961437837cad32cade5429ee125f24c37d128b95d7c0e6bd`;
+the reviewed first-page extraction SHA-256 is
+`848b374709a6001d55092b6aa2739ddc062ba34b3d91eeb7abeeb2bb3991f63d`.
+
+The narrow linked-source collector accepts only an explicitly linked
+2026 PDF on this reviewed campaign domain. It binds PDF bytes, extracted
+text, distinct ordered page numbers, required ad context, exact federal
+identity, the PDF's own original association and literal quotation order.
+**pypdf 5.9.0 is pinned** because the extraction itself is hash-bound.
+Eight focused regressions cover recovery, changed bytes/text/context,
+invalid pages and a missing original association; two relevant failures
+were reproduced before the fix. All existing HTML/player paths remain.
+
+Only the three expressly attributed ad quotations on page one are
+retained. The lawyer's factual/legal arguments, allegations of falsity,
+demands, campaign press statements and later repeated/bracketed claims
+are excluded. The PDF's separate curly-apostrophe token in
+`employees ’ insurance` is preserved, not silently repaired. These are
+39 extracted whitespace tokens, not a certified spoken-word total.
+The Democratic target's hosting of this document does not make its
+quoted Republican advertisement Democratic-aligned. Exact saved FEC
+**H8PA15195 / C00846501**, MACKENZIE, RYAN EDWARD, REP, House, PA-07,
+supports identity; no alias or fuzzy match is added. The publisher and
+letter report a joint Mackenzie campaign / NRCC advertiser. Sole legal
+payer, closing disclaimer and approval remain unverified. October 30 is
+the publisher report date, October 18 the letter date, and the response's
+October 19 last-modified header a separate observation; none establishes
+the first release or a verified paid-delivery interval.
+
+```sh
+political-ads collect --source mackenzie-brownwhite \
+  --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+Exact messages are **1,204 D / 537 R**. English House coverage is **698 D /
+196 R**, including **222 D / 195 R non-Snap**, plus 476 D / one R Snap.
+All **1,876 preceding acquired / 1,838 analyzed objects, 37 acquisition
+reviews and 17 protected canonical files** remain unchanged. Complete
+JSON/gzip/CSV exports, **1,877 Parquet rows** and **eleven visually
+inspected PNGs** reconcile. Isolated socket-forbidden replay reproduces
+**532 written objects and states** from 531 using exactly **two cached
+responses**, the post and PDF. All **169 affected Python tests**, Python
+lint/format, frontend lint, **17 frontend tests**, production build and
+**seven browser cases** pass. Independent auditing verifies **20 metric
+groups / ten chart rows**. Snapshot:
+`f9c001f51a68ee8da06e860615757f77ababdb7a66e4ccc03e1671c741e2f2fa`.
+
+Discovery remains active; these counts do not establish national party
+advertising proportions or resolve the Republican House coverage gap.
+The actually linked Texas Tribune Herrera letter is a concrete further
+lead, not recovered ad text. Website/Substack publication and host
+restoration remain on hold.
+
+### Persistent new source denials and excluded leads
+
+The actually linked Washington Times September 12 Barrett report returned
+**403**. It is paused: no retry or alternative retrieval was made.
+MAGA Report Cards' independently read September 17 quotations do not
+establish an individual original and are not admitted.
+
+PoliticsPA's Brooks HTML article returned **200** and exposed individual
+WordPress post **152954**; that actual API request returned **403**, a
+“Just a moment…” challenge. The planned candidate/phrase collection
+queries **never ran**. This is an access denial, not zero results.
+PoliticsPA is paused, including alternate HTML/API retrieval.
+
+Barrett's actual campaign `/first-ad` page returned **200**, exposing a
+30-second native Squarespace video configuration but no verifiable
+publication date or 2026 association. Its responsive logo images are not
+video originals. No video download or ASR was attempted; object IDs,
+page existence and search snippets cannot establish eligibility.
+
+Additional Nashville Banner House profiles **30699, 30600 and 30529**
+were read and contain interviews/events/election reporting, not ad
+scripts. The newly read Texas Tribune Herrera report exposes a real
+January 27 letter through a February 12 report, not a recovered mailer.
+The cached MS NOW Fitzpatrick report needs a correct article-content
+boundary; the initially selected element was a membership panel, not
+ad words or an HTTP denial. Neither is counted. Broader discovery and
+schedule #1 continue without duplicating watchers or retrying providers.
+
 ## Tennessee Hatcher expansion of the October 30 snapshot
 
-The latest acquisition contains **1,876 text records**, including **1,838
+This checkpoint contains **1,876 text records**, including **1,838
 English records: 1,226 D / 573 R / 31 other / eight unresolved**.
 Charlie Hatcher's **TN-05 general-election campaign ad**, “Hire A Farmer,”
 is recovered from Stephen Elliott's October 7 Nashville Banner report.

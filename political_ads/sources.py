@@ -127,6 +127,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "mackenzie-brownwhite",
+        "https://thebrownandwhite.com",
+        "Mackenzie for Congress / NRCC (reported joint campaign; payer unverified)",
+        "R",
+        "party",
+        "House",
+        fixed_race="PA-07",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "hatcher-nashville-banner",
         "https://nashvillebanner.com",
         "Charlie Hatcher campaign (reported publisher; payer unverified)",
