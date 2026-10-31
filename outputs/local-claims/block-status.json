@@ -74,20 +74,20 @@
   {
     "ad_id": "bresnahan-native-122240759240111841",
     "block_id": "bresnahan-native-122240759240111841-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 9 for Rob Breskaan: \\\"Rob Breskaan\\\" is absent from unit 22. Exact source: \\\"PAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "bresnahan-native-122241580490111841",
     "block_id": "bresnahan-native-122241580490111841-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim 2 fields or evidence IDs\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "bresnahan-native-122242721966111841",
     "block_id": "bresnahan-native-122242721966111841-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":10,\\\"label\\\":\\\"SCOTT\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "bresnahan-native-122242721966111841",
