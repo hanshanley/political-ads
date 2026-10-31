@@ -10,9 +10,88 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Wisconsin synthetic-creative expansion of the October 30 snapshot
+
+The latest acquisition contains **1,873 text records**, including **1,835
+English records: 1,226 D / 570 R / 31 other / eight unresolved**.
+One new **WI-03 general-election campaign-social attack** contains **22
+literal quoted words** from a fictional Cooke likeness in a Van Orden
+creative. It is **publisher-reported AI-generated satire, not authentic
+Rebecca Cooke speech**, not verified paid placement, and remains **partial
+quotation / semantically unreviewed**. No other synthetic videos, ordinary
+remarks, article commentary or spokesperson statements are imported.
+
+The Badger Herald's **September 17, 2026** report actually links individual
+X creative **2088062029433020509** and reports an **August 13** post date.
+Its unique `h1.sno-story-headline` and `.sno-story-date` agree with the
+exposed single-post API, **380463**, local 10:00:42 / GMT 15:00:42. The
+site's current-day masthead and unrelated calendar datetime are not
+publication evidence. Rendered-content SHA-256:
+`cc0c1c47509b10102e19a392ee2c71e50f2d3a9fb8897758b54059f07d0e6ca0`.
+Exact FEC **H0WI03175 / C00742007** identifies the REP, House, WI-03
+candidate; no identity alias is added. Van Orden's campaign is the reported
+publisher, not an independently inspected legal payer.
+
+Wisconsin Public Radio's independently read **August 28** report
+corroborates the same synthetic quotation and satire explanation. Its
+exposed post **471639** has rendered-content SHA-256
+`9f5eb2883f370e5f3dc967ad63b1f29751d2692670c3e6d3d47e2dbfa227042b`.
+It is supporting evidence, **not a second ad**. The acquisition review
+retains this corroboration, synthetic-speech disclosure and all distinct
+dates; complete downloads retain the review in the first segment.
+Successful anonymous-browser responses are cached byte-for-byte. No X
+account, original video or caption service was accessed.
+
+```sh
+political-ads collect --source vanorden-badgerherald \
+  --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+Exact messages are **1,204 D / 533 R**. English House coverage is **698 D /
+192 R**: 476 D / one R Snap and **222 D / 191 R non-Snap**. These remain
+collection counts, not national advertising proportions or a resolved gap.
+All **1,872 earlier acquired objects**, **1,834 earlier analyzed objects**,
+**33 earlier acquisition reviews** and **17 protected canonical inputs**
+are verified unchanged. Complete JSON/gzip/CSV downloads, all **1,873
+Parquet rows** and **eleven visually inspected PNGs** reconcile across
+analysis, browser and production assets. Isolated network-forbidden replay
+reproduces **528 written records and source states** from the earlier 527
+using one cached response and the original October 31 observation date.
+All **151 affected Python tests**, lint/format, **17 frontend tests**,
+production build and **seven browser cases** pass. Independent auditing
+verifies **20 metric groups / ten chart rows**. Snapshot:
+`53b8befe615635a0435a62d711310223fe39fb0bc41ca3d02af127f12eb6d370`.
+
+Expanded discovery remains active. FCC's public WQOW search exposes 2026
+federal House folders and **78 campaign / 33 campaign-NRCC file entries**;
+filenames alone are not ad copy. The first actually linked PDF download
+returned **HTTP 403**, was saved, and was not retried through another
+route. This is not a claim that FCC files never contain scripts.
+The CNBC tariff report did not expose an ad image. An inspected AAN/Evans
+frame has only eight claim words plus the two-word candidate label; it is
+not padded with its citation. Iowa's two Inside the Majority profiles do
+not establish ads, and American Journal's Van Orden tariff report contains
+no ad. Daily Signal retrieval returned 403; the already exposed Iowa GOP
+image is only its logo, not the steel-ad creative. Michigan Advance,
+Wisconsin Examiner and Alaska Beacon discovery returned 403 and stays
+paused. These unsuccessful leads add no corpus records.
+
+The newly read WPLN Tennessee report contains actual campaign-ad
+quotations but exposes screenshots rather than individual video links;
+its news audio is not an original ad. LPM's Kentucky report has short
+ad quotations and individually linked reposts, not recovered full
+scripts. OPB's Oregon report exposes originals but quotes only four ad
+words. None is added yet. Broader Tennessee discovery identifies Nashville
+Banner's June 29 explicit Garrett transcript and July 22 multi-ad report
+as further evidence leads, not verified acquisitions.
+
 ## Colorado Hurd expansion of the October 30 snapshot
 
-The latest acquisition contains **1,872 text records**, including **1,834
+This checkpoint contains **1,872 text records**, including **1,834
 English records: 1,226 D / 569 R / 31 other / eight unresolved**.
 One new Jeff Hurd campaign record contains **28 literal words in three
 fragments**, CO-03 general, from Colorado Pols' **August 31, 2026** report.

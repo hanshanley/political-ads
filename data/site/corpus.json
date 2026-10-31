@@ -26195,6 +26195,86 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Credit: Lillian Ward, The Badger Herald, September 17, 2026. The primary h1.sno-story-headline and .sno-story-date identify the article, not the site's current-day masthead or unrelated calendar datetime. The actually exposed single-post API identifies post 380463, its exact URL/title, September 17 local and GMT publication dates and rendered-content hash. The report identifies Republican incumbent Derrick Van Orden's targeted WI-03 campaign material against Democratic nominee Rebecca Cooke, explicitly links his individual August 13 X creative and quotes these 22 literal words from the synthetic figure. Exact saved FEC H0WI03175 / C00742007 identifies VAN ORDEN, DERRICK F. MR., REP, House, WI-03; no new identity alias or fuzzy match is needed. This is publisher-reported AI-generated satire, not Cooke's authentic speech or a new portrayal judgment. Campaign publication is not verified paid placement, and the creative's legal payer or closing disclaimer was not independently inspected. The publisher-report date is September 17; the reported original post date is August 13, not an inferred first airing. Preserve the source's terminal comma and exclude the reporter's explanations, interview/press statements, other synthetic videos and unrelated commercial advertisements. Wisconsin Public Radio's separately inspected August 28 report corroborates the synthetic quotation and campaign satire explanation, without being counted as another ad. Exact rendered-content hash, title/date, federal identity, campaign/contest context, individual original association and literal quotation are bound. Only public publisher pages and their actually exposed single-post JSON were retrieved in an anonymous browser; no X account, video, caption provider, denied page or licensed catalog was requested. This remains incomplete quoted copy and semantically unreviewed.",
+      "candidate_mentions": [],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "vanorden-badgerherald-380463-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://x.com/derrickvanorden/status/2088062029433020509?s=20"
+      ],
+      "message_id": "32f6424fc88c7ce5825fffb821043e6e5c41a0428dce795fee323ee50aa47d86",
+      "observed": "2026-10-31",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-09-17",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "WI-03",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H0WI03175"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Credit: Lillian Ward, The Badger Herald, September 17, 2026. The primary h1.sno-story-headline and .sno-story-date identify the article, not the site's current-day masthead or unrelated calendar datetime. The actually exposed single-post API identifies post 380463, its exact URL/title, September 17 local and GMT publication dates and rendered-content hash. The report identifies Republican incumbent Derrick Van Orden's targeted WI-03 campaign material against Democratic nominee Rebecca Cooke, explicitly links his individual August 13 X creative and quotes these 22 literal words from the synthetic figure. Exact saved FEC H0WI03175 / C00742007 identifies VAN ORDEN, DERRICK F. MR., REP, House, WI-03; no new identity alias or fuzzy match is needed. This is publisher-reported AI-generated satire, not Cooke's authentic speech or a new portrayal judgment. Campaign publication is not verified paid placement, and the creative's legal payer or closing disclaimer was not independently inspected. The publisher-report date is September 17; the reported original post date is August 13, not an inferred first airing. Preserve the source's terminal comma and exclude the reporter's explanations, interview/press statements, other synthetic videos and unrelated commercial advertisements. Wisconsin Public Radio's separately inspected August 28 report corroborates the synthetic quotation and campaign satire explanation, without being counted as another ad. Exact rendered-content hash, title/date, federal identity, campaign/contest context, individual original association and literal quotation are bound. Only public publisher pages and their actually exposed single-post JSON were retrieved in an anonymous browser; no X account, video, caption provider, denied page or licensed catalog was requested. This remains incomplete quoted copy and semantically unreviewed.",
+            "candidate_id": "H0WI03175",
+            "completeness": "partial_quotation",
+            "content_sha256": "cc0c1c47509b10102e19a392ee2c71e50f2d3a9fb8897758b54059f07d0e6ca0",
+            "corroborating_report": {
+              "basis": "Wisconsin Public Radio independently quotes the same synthetic figure, identifies Van Orden's campaign social-media publication and the campaign's satire explanation. It does not establish paid delivery or supply the individually linked original used by this review.",
+              "content_sha256": "9f5eb2883f370e5f3dc967ad63b1f29751d2692670c3e6d3d47e2dbfa227042b",
+              "published": "2026-08-28",
+              "retrieval_url": "https://www.wpr.org/wp-json/wp/v2/posts/471639",
+              "url": "https://www.wpr.org/news/social-media-deepfakes-ai-grok-rebecca-cooke-derrick-van-orden"
+            },
+            "creative_authenticity": "Publisher-reported AI-generated satire. The fictional Cooke likeness is not authentic Rebecca Cooke speech.",
+            "format": "wordpress",
+            "media_url": "https://x.com/derrickvanorden/status/2088062029433020509?s=20",
+            "passages": [
+              "I am the Anointed One. You will comply and you will vote for me. That is an order from your D.C. masters,"
+            ],
+            "phase": "general",
+            "published": "2026-09-17",
+            "record_id": "380463",
+            "release_title": "AI use in Wisconsin District 3 campaign ads draws criticism",
+            "reported_original_post_date": "2026-08-13",
+            "required_context": [
+              "Rep. Derrick Van Orden, R-Prairie du Chien",
+              "posted an AI-generated video of Democratic nominee for District 3 Rebecca Cooke Aug. 13 to X",
+              "the video simulated Cooke saying.",
+              "videos are intended to be satire"
+            ],
+            "retrieval_url": "https://badgerherald.com/wp-json/wp/v2/posts/380463",
+            "source": "vanorden-badgerherald",
+            "source_url": "https://badgerherald.com/news/wisconsin/2026/09/17/ai-use-in-wisconsin-district-3-campaign-ads-draws-criticism/"
+          },
+          "text": "I am the Anointed One. You will comply and you will vote for me. That is an order from your D.C. masters,"
+        }
+      ],
+      "source": "vanorden-badgerherald",
+      "source_hash": "cc0c1c47509b10102e19a392ee2c71e50f2d3a9fb8897758b54059f07d0e6ca0",
+      "source_record_id": "380463",
+      "source_url": "https://badgerherald.com/news/wisconsin/2026/09/17/ai-use-in-wisconsin-district-3-campaign-ads-draws-criticism/",
+      "sponsor": "Derrick Van Orden campaign (reported publisher; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "WI",
+      "text": "I am the Anointed One. You will comply and you will vote for me. That is an order from your D.C. masters,",
+      "title": "AI use in Wisconsin District 3 campaign ads draws criticism"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Official Conroy for Congress release at https://ericconroy.com/news/press-release/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
       "date_basis": "release_date",
@@ -46540,6 +46620,22 @@
       "source": "unrig",
       "state": "ok",
       "url": "https://unrigoureconomy.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "vanorden-badgerherald",
+      "state": "partial",
+      "url": "https://badgerherald.com"
     },
     {
       "ads_with_text": 13,

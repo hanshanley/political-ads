@@ -127,6 +127,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "vanorden-badgerherald",
+        "https://badgerherald.com",
+        "Derrick Van Orden campaign (reported publisher; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="WI-03",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "hurd-coloradopols",
         "https://www.coloradopols.com",
         "Jeff Hurd campaign (reported advertiser; payer unverified)",
