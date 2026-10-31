@@ -76,6 +76,50 @@ updated live corpus. Changed selection or prompts require a **new output directo
 To analyze newly collected ads, prepare a new run rather than reusing the old directory.
 Already completed blocks do not cause another model call.
 
+### Batched acceleration
+
+`scripts/extract_claims_fast.py` uses the same pinned 27B 8-bit model, prompts,
+source units and structural checks, but runs independent requests through
+MLX-VLM's native batch generator. Both extraction and source-fidelity revision
+remain mandatory. The default completion batch size is 16. Each stage initially
+allows 2,048 generated tokens; a failed or truncated attempt is retried with the
+full 8,192-token budget. Truncated output is never accepted, even when it happens
+to parse as JSON. Infrastructure failures stop the worker rather than turning
+unprocessed ads into exclusions.
+
+These are different generation settings, recorded as protocol
+`local-ad-claims-4` in a **new output directory**. The fast runner copies the
+original frozen ads, metadata and source units from an existing manifest instead
+of rereading potentially changed live corpus files. It retains that input
+fingerprint. The baseline manifest and saved responses are not modified or mixed
+into the new run. Batched numerical execution can change fresh model outputs;
+neither batching nor structural acceptance establishes semantic accuracy.
+
+An initial throughput-only benchmark on eight frozen inputs took 83.11 seconds
+sequentially and 37.63 seconds batched (2.21x faster), with the original worker
+sharing the GPU. This used 64-token completions, not accepted annotations; it is
+not a full-pipeline speed or accuracy measurement.
+
+```bash
+# Freeze the exact original corpus with separately recorded fast settings.
+uv run --with-editable . scripts/extract_claims_fast.py --prepare-only
+
+# Process every pending frozen chunk, using the same isolated pinned runtime.
+uv run --with-editable . scripts/extract_claims_fast.py
+
+# Retry failed/unresolved chunks, retaining their previous raw attempts.
+uv run --with-editable . scripts/extract_claims_fast.py --retry-failed
+
+# Publish complete fast-run evidence without interrupting inference.
+.venv/bin/python scripts/publish_claim_checkpoint.py --input data/local-claims/full-fast
+```
+
+`--batch-size` and `--initial-tokens` are frozen settings, not live tuning knobs.
+Use a new directory when changing them. `--ad-id`, `--max-new-blocks`,
+`--prepare-only` and `--replay` also support separate bounded pilots.
+Ordinary offline replay and the checkpoint publisher infer the saved generation
+settings from either protocol's manifest.
+
 ## Commands
 
 Run from the repository root. Preparation and replay use the ordinary README

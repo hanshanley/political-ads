@@ -17,6 +17,7 @@ from political_ads.registry import candidate_mentions
 from political_ads.schema import digest, eligible, message_key
 
 VERSION = "local-ad-claims-3"
+FAST_VERSION = "local-ad-claims-4"
 MAX_WORDS = 240
 CONTEXT_CHARS = 1200
 MAX_TOKENS = 8192
@@ -208,7 +209,15 @@ def blocks_for(ad: dict) -> list[dict]:
     ]
 
 
-def prepare(root: Path, output: Path, ad_ids: list[str] | None = None) -> dict:
+def prepare(
+    root: Path,
+    output: Path,
+    ad_ids: list[str] | None = None,
+    *,
+    batch_size: int = 1,
+    initial_tokens: int = MAX_TOKENS,
+    frozen_from: Path | None = None,
+) -> dict:
     settings = {
         "version": VERSION,
         "model": MODEL,
@@ -222,6 +231,13 @@ def prepare(root: Path, output: Path, ad_ids: list[str] | None = None) -> dict:
             "units": "contiguous_segment_or_same_image_windows",
         },
     }
+    if batch_size != 1 or initial_tokens != MAX_TOKENS:
+        settings["version"] = FAST_VERSION
+        settings["generation"] |= {
+            "backend": "mlx-vlm.BatchGenerator",
+            "batch_size": batch_size,
+            "initial_tokens": initial_tokens,
+        }
     path = output / "manifest.json"
     if path.exists():
         manifest = read_json(path, None)
@@ -233,6 +249,23 @@ def prepare(root: Path, output: Path, ad_ids: list[str] | None = None) -> dict:
         return manifest
     if output.exists() and any(path.name != ".claims.lock" for path in output.iterdir()):
         raise ValueError("New claim output directory must be empty")
+    if frozen_from is not None:
+        original = read_json(frozen_from, None)
+        verify_manifest(original)
+        if ad_ids and set(ad_ids) - {ad["id"] for ad in original["ads"]}:
+            raise ValueError("Requested ad IDs are absent from the frozen inputs")
+        selected = set(ad_ids or [ad["id"] for ad in original["ads"]])
+        config = settings | {
+            "until": original["until"],
+            "selection": sorted(set(ad_ids)) if ad_ids else original["selection"],
+            "ads": [ad for ad in original["ads"] if ad["id"] in selected],
+            "blocks": [block for block in original["blocks"] if block["ad_id"] in selected],
+            "input_fingerprint": original["fingerprint"],
+            "semantic_validation": original["semantic_validation"],
+        }
+        manifest = config | {"fingerprint": digest(canonical(config))}
+        write_json(path, manifest)
+        return manifest
     corpus = load_corpus(root)
     candidates = read_json(root / "data/site/candidates.json", {"candidates": []})["candidates"]
     by_id = {row["candidate_id"]: row for row in candidates}
@@ -465,7 +498,10 @@ def disposition(record: dict | None, block: dict) -> tuple[str, list[dict], str]
         if final.get("inference_error") or final.get("errors"):
             raise ValueError("Final attempt failed: " + canonical(final.get("errors", [])))
         claims = validate_response(final["text"], block)
-        if final.get("generation_tokens", 0) >= MAX_TOKENS:
+        if (
+            final.get("generation_tokens", 0) >= final.get("max_tokens", MAX_TOKENS)
+            or final.get("finish_reason") == "length"
+        ):
             raise ValueError("Output token limit reached")
         if final["stage"] != "source_fidelity_revision":
             raise ValueError("Source-fidelity revision not completed")
@@ -565,7 +601,7 @@ def export_results(output: Path, manifest: dict) -> dict:
         )
     selected = unique_messages([ad for ad in ads if ad["alignment"] in {"D", "R"}])
     summary = {
-        "version": VERSION,
+        "version": manifest["version"],
         "fingerprint": manifest["fingerprint"],
         "model": MODEL,
         "model_revision": REVISION,
@@ -799,6 +835,108 @@ def repair_prompt(base: str, previous: str, errors: list[str]) -> str:
     )
 
 
+def save_response(output: Path, manifest: dict, block: dict, extractor, attempts: list) -> None:
+    record = {
+        "fingerprint": manifest["fingerprint"],
+        "prompt_sha256": digest(make_prompt(block)),
+        "runtime": getattr(extractor, "metadata", {}),
+        "attempts": attempts,
+    }
+    path = output / "responses" / f"{block['id']}.json"
+    if path.exists():
+        old = path.read_text()
+        write_json(
+            output / "response-history" / f"{block['id']}-{digest(old)[:16]}.json",
+            json.loads(old),
+        )
+    temporary = path.with_suffix(".json.tmp")
+    write_json(temporary, record)
+    temporary.replace(path)
+
+
+def extract_batches(output: Path, manifest: dict, pending: list[dict], extractor) -> dict:
+    generation = manifest["generation"]
+    completed = 0
+    for first in range(0, len(pending), generation["batch_size"]):
+        states = []
+        for block in pending[first : first + generation["batch_size"]]:
+            prompt = make_prompt(block)
+            request = prompt
+            previous = checked_record(output, manifest, block)
+            if previous is not None:
+                _, _, error = disposition(previous, block)
+                request = repair_prompt(
+                    prompt,
+                    previous["attempts"][-1]["text"],
+                    [error or "Recheck unresolved references; do not guess missing information."],
+                )
+            states.append({"block": block, "request": request, "attempts": [], "done": False})
+        for stage in ("extraction", "source_fidelity_revision"):
+            active = [state for state in states if not state["done"]]
+            for state in active:
+                state["base"] = state["request"]
+            for attempt in range(generation["max_attempts"]):
+                if not active:
+                    break
+                budget = generation["initial_tokens"] if attempt == 0 else MAX_TOKENS
+                print(
+                    f"Batch {first + 1}-{first + len(states)}/{len(pending)} "
+                    f"{stage}: {len(active)} requests, max_tokens={budget}",
+                    flush=True,
+                )
+                results = extractor.batch([state["request"] for state in active], budget)
+                if len(results) != len(active):
+                    raise ValueError("Batch inference returned the wrong number of responses")
+                retry = []
+                for state, result in zip(active, results, strict=True):
+                    errors = []
+                    try:
+                        if result.get("inference_error"):
+                            raise ValueError(result["inference_error"])
+                        validate_response(result["text"], state["block"])
+                        if (
+                            result.get("generation_tokens", 0) >= budget
+                            or result.get("finish_reason") == "length"
+                        ):
+                            errors = ["Output token limit reached"]
+                    except (ValueError, KeyError) as error:
+                        errors = [str(error)]
+                    state["attempts"].append(
+                        result
+                        | {
+                            "stage": stage,
+                            "max_tokens": budget,
+                            "request": state["request"],
+                            "request_sha256": digest(state["request"]),
+                            "text_sha256": digest(result["text"]),
+                            "errors": errors,
+                        }
+                    )
+                    if errors and attempt + 1 < generation["max_attempts"]:
+                        state["request"] = repair_prompt(state["base"], result["text"], errors)
+                        retry.append(state)
+                    elif errors or stage == "source_fidelity_revision":
+                        state["done"] = True
+                        save_response(
+                            output, manifest, state["block"], extractor, state["attempts"]
+                        )
+                        record = checked_record(output, manifest, state["block"])
+                        status, _, error = disposition(record, state["block"])
+                        completed += 1
+                        print(
+                            f"{completed}/{len(pending)} {state['block']['id']}: {status} {error}",
+                            flush=True,
+                        )
+                        if completed % 10 == 0:
+                            export_results(output, manifest)
+                    else:
+                        state["request"] = (
+                            make_prompt(state["block"]) + REVIEW_PROMPT + result["text"]
+                        )
+                active = retry
+    return export_results(output, manifest)
+
+
 def extract_claims(
     root: Path,
     output: Path | None = None,
@@ -810,11 +948,16 @@ def extract_claims(
     max_new_blocks: int = 0,
     ad_ids: list[str] | None = None,
     extractor=None,
+    batch_size: int = 1,
+    initial_tokens: int = MAX_TOKENS,
+    frozen_from: Path | None = None,
 ) -> dict:
     if max_new_blocks < 0:
         raise ValueError("max-new-blocks must be nonnegative")
     if download_model and (prepare_only or replay):
         raise ValueError("Model downloads cannot be combined with prepare-only/replay")
+    if batch_size < 1 or not 1 <= initial_tokens <= MAX_TOKENS:
+        raise ValueError("Batch size must be positive and initial tokens between 1 and 8192")
     root = root.resolve()
     output = (output or root / "data/local-claims/full").resolve()
     if (
@@ -825,7 +968,19 @@ def extract_claims(
     ):
         raise ValueError("Claim output must not be the repository, a parent, or its .git directory")
     with output_lock(output):
-        manifest = prepare(root, output, ad_ids)
+        if replay and (output / "manifest.json").exists():
+            saved = read_json(output / "manifest.json", None)
+            verify_manifest(saved)
+            batch_size = saved["generation"].get("batch_size", 1)
+            initial_tokens = saved["generation"].get("initial_tokens", MAX_TOKENS)
+        manifest = prepare(
+            root,
+            output,
+            ad_ids,
+            batch_size=batch_size,
+            initial_tokens=initial_tokens,
+            frozen_from=frozen_from,
+        )
         summary = export_results(output, manifest)
         if prepare_only or replay:
             return summary
@@ -841,6 +996,8 @@ def extract_claims(
             return summary
         if extractor is None:
             extractor = LocalGemma(download=download_model)
+        if manifest["version"] == FAST_VERSION:
+            return extract_batches(output, manifest, pending, extractor)
         for index, block in enumerate(pending, 1):
             prompt = make_prompt(block)
             attempts, errors, request = [], [], prompt
@@ -884,20 +1041,8 @@ def extract_claims(
                 if errors:
                     break
                 request = prompt + REVIEW_PROMPT + result["text"]
-            record = {
-                "fingerprint": manifest["fingerprint"],
-                "prompt_sha256": digest(prompt),
-                "runtime": getattr(extractor, "metadata", {}),
-                "attempts": attempts,
-            }
-            path = output / "responses" / f"{block['id']}.json"
-            if path.exists():
-                old = path.read_text()
-                write_json(
-                    output / "response-history" / f"{block['id']}-{digest(old)[:16]}.json",
-                    json.loads(old),
-                )
-            write_json(path, record)
+            save_response(output, manifest, block, extractor, attempts)
+            record = checked_record(output, manifest, block)
             state, _, error = disposition(record, block)
             print(f"{index}/{len(pending)} {block['id']}: {state} {error}", flush=True)
             if index % 10 == 0:

@@ -90,3 +90,52 @@ class LocalGemma:
                 if hasattr(result, key)
             },
         }
+
+    def batch(self, prompts: list[str], max_tokens: int) -> list[dict]:
+        import mlx.core as mx
+        from mlx_vlm.generate import BatchGenerator, generation_stream, wired_limit
+
+        if not prompts:
+            return []
+        mx.random.seed(0)
+        tokenizer = self.processor.tokenizer
+        encoded = [
+            tokenizer.encode(
+                self.template(self.processor, self.config, prompt, num_images=0),
+                add_special_tokens=not hasattr(self.processor, "chat_template"),
+            )
+            for prompt in prompts
+        ]
+        generator = BatchGenerator(
+            self.model.language_model,
+            self.processor,
+            prefill_batch_size=len(prompts),
+            completion_batch_size=len(prompts),
+        )
+        uids = generator.insert(encoded, max_tokens)
+        tokens = {uid: [] for uid in uids}
+        results = {}
+        started = time.perf_counter()
+        with wired_limit(self.model, [generation_stream]):
+            while responses := generator.next():
+                for response in responses:
+                    if response.finish_reason != "stop":
+                        tokens[response.uid].append(response.token)
+                    if response.finish_reason is not None:
+                        results[response.uid] = {
+                            "text": tokenizer.decode(tokens[response.uid]),
+                            "seconds": time.perf_counter() - started,
+                            "generation_tokens": len(tokens[response.uid]),
+                            "finish_reason": response.finish_reason,
+                        }
+        elapsed = time.perf_counter() - started
+        return [
+            results[uid]
+            | {
+                "prompt_tokens": len(encoded[index]),
+                "batch_size": len(prompts),
+                "batch_seconds": elapsed,
+                "peak_memory": mx.get_peak_memory() / 1e9,
+            }
+            for index, uid in enumerate(uids)
+        ]

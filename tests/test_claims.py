@@ -2,7 +2,8 @@ import csv
 import json
 import zipfile
 from pathlib import Path
-from unittest.mock import patch
+from types import SimpleNamespace
+from unittest.mock import Mock, patch
 
 import pytest
 
@@ -468,6 +469,159 @@ def test_default_full_run_can_be_prepared_alongside_pilot(tmp_path):
     extract_claims(tmp_path, prepare_only=True)
     assert (pilot / "manifest.json").exists()
     assert (tmp_path / "data/local-claims/full/manifest.json").exists()
+
+
+def test_fast_run_batches_both_stages_and_replays_without_live_inputs(tmp_path):
+    fixture_corpus(tmp_path, [ad(), ad("second"), ad("third")])
+    output = tmp_path / "fast"
+    calls = []
+
+    def batch(requests, budget):
+        calls.append((requests, budget))
+        return [
+            {"text": canonical(payload()), "generation_tokens": 100, "finish_reason": "stop"}
+            for _ in requests
+        ]
+
+    summary = extract_claims(
+        tmp_path, output, batch_size=8, initial_tokens=2048, extractor=SimpleNamespace(batch=batch)
+    )
+    assert summary["ads_by_status"] == {"normalized": 3}
+    assert [(len(requests), budget) for requests, budget in calls] == [(3, 2048), (3, 2048)]
+    assert all("PROPOSAL" in request for request in calls[1][0])
+    assert summary["version"] == "local-ad-claims-4"
+    (tmp_path / "data/site/corpus.json").unlink()
+    with patch("political_ads.claims.LocalGemma", side_effect=AssertionError("Must not load")):
+        assert extract_claims(tmp_path, output, replay=True) == summary
+    with output_lock(output):
+        assert publish_claim_checkpoint(tmp_path, output, tmp_path / "published") == summary
+    with zipfile.ZipFile(tmp_path / "published/complete-evidence.zip") as archive:
+        assert len(json.loads(archive.read("ads.json"))) == 3
+        assert len([name for name in archive.namelist() if name.startswith("responses/")]) == 3
+
+
+def test_fast_short_budget_retries_only_truncated_inputs_at_full_budget(tmp_path):
+    fixture_corpus(tmp_path, [ad(), ad("second")])
+    output = tmp_path / "fast"
+    calls = []
+
+    def batch(requests, budget):
+        calls.append((requests, budget))
+        responses = [
+            {"text": canonical(payload()), "generation_tokens": 100, "finish_reason": "stop"}
+            for _ in requests
+        ]
+        if len(calls) == 1:
+            responses[0] |= {"generation_tokens": budget, "finish_reason": "length"}
+        return responses
+
+    summary = extract_claims(
+        tmp_path, output, batch_size=8, initial_tokens=2048, extractor=SimpleNamespace(batch=batch)
+    )
+    assert summary["ads_by_status"] == {"normalized": 2}
+    assert [(len(requests), budget) for requests, budget in calls] == [
+        (2, 2048),
+        (1, MAX_TOKENS),
+        (2, 2048),
+    ]
+    assert "Output token limit reached" in calls[1][0][0]
+    record = json.loads((output / "responses/second-claims-001.json").read_text())
+    assert record["attempts"][0]["errors"] == ["Output token limit reached"]
+    assert [attempt["max_tokens"] for attempt in record["attempts"]] == [
+        2048,
+        MAX_TOKENS,
+        2048,
+    ]
+
+
+def test_fast_finish_reason_rejects_even_short_parseable_truncation(tmp_path):
+    fixture_corpus(tmp_path)
+    summary = extract_claims(
+        tmp_path,
+        tmp_path / "fast",
+        batch_size=8,
+        initial_tokens=2048,
+        extractor=SimpleNamespace(
+            batch=lambda requests, _: [
+                {"text": canonical(payload()), "generation_tokens": 100, "finish_reason": "length"}
+                for _ in requests
+            ]
+        ),
+    )
+    assert summary["claims"] == 0
+    assert summary["blocks_by_status"] == {"validation_failed": 1}
+
+
+def test_fast_run_clones_original_frozen_inputs_not_changed_live_corpus(tmp_path):
+    fixture_corpus(tmp_path)
+    original = tmp_path / "baseline"
+    extract_claims(tmp_path, original, prepare_only=True)
+    manifest = json.loads((original / "manifest.json").read_text())
+    (tmp_path / "data/site/corpus.json").write_text("live inputs are no longer available")
+    output = tmp_path / "fast"
+    extract_claims(
+        tmp_path,
+        output,
+        prepare_only=True,
+        batch_size=8,
+        initial_tokens=2048,
+        frozen_from=original / "manifest.json",
+    )
+    frozen = json.loads((output / "manifest.json").read_text())
+    assert frozen["ads"] == manifest["ads"]
+    assert frozen["blocks"] == manifest["blocks"]
+    assert frozen["input_fingerprint"] == manifest["fingerprint"]
+    assert frozen["fingerprint"] != manifest["fingerprint"]
+    with pytest.raises(ValueError, match="implementation changed"):
+        extract_claims(tmp_path, output, prepare_only=True)
+
+
+def test_fast_failure_retry_preserves_original_attempts_and_strict_anchors(tmp_path):
+    fixture_corpus(tmp_path)
+    output = tmp_path / "fast"
+    options = {"batch_size": 8, "initial_tokens": 2048}
+    bad = canonical(payload(targets=[target(anchor_quote="john doe")]))
+    failed = extract_claims(
+        tmp_path,
+        output,
+        **options,
+        extractor=SimpleNamespace(batch=lambda requests, _: [{"text": bad} for _ in requests]),
+    )
+    assert failed["blocks_by_status"] == {"validation_failed": 1}
+    assert failed["claims"] == 0
+    original = json.loads((output / "responses/test-ad-claims-001.json").read_text())
+    requests_seen = []
+
+    def retry(requests, _):
+        requests_seen.extend(requests)
+        return [{"text": canonical(payload())} for _ in requests]
+
+    completed = extract_claims(
+        tmp_path,
+        output,
+        **options,
+        retry_failed=True,
+        extractor=SimpleNamespace(batch=retry),
+    )
+    assert completed["status"] == "complete"
+    assert "PREVIOUS FAILED RESPONSE" in requests_seen[0]
+    assert json.loads(next((output / "response-history").glob("*.json")).read_text()) == original
+    assert not list((output / "responses").glob("*.tmp"))
+
+
+def test_fast_backend_failure_does_not_misclassify_unprocessed_ads(tmp_path):
+    fixture_corpus(tmp_path, [ad(), ad("second")])
+    output = tmp_path / "fast"
+    options = {"batch_size": 8, "initial_tokens": 2048}
+    with pytest.raises(RuntimeError, match="GPU unavailable"):
+        extract_claims(
+            tmp_path,
+            output,
+            **options,
+            extractor=SimpleNamespace(batch=Mock(side_effect=RuntimeError("GPU unavailable"))),
+        )
+    assert not list((output / "responses").glob("*.json"))
+    assert extract_claims(tmp_path, output, replay=True)["blocks_by_status"] == {"not_run": 2}
 
 
 @pytest.mark.parametrize(
