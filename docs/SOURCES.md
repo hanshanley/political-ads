@@ -10,6 +10,94 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## AAN IA-03 separately linked narrator quotation recovery
+
+The distinct **aan-iowa-nunn-20260820-0** record adds **17 literal
+words** from the expressly attributed narrator of **Hard to Get Ahead**,
+an American Action Network ad supporting Zach Nunn. It remains a
+**partial quotation and semantically unreviewed**. Only the first
+seventeen words of the second twenty-four-word quotation are retained,
+ending at the source's existing sentence boundary. The other seven
+words, preceding nine-word quotation, press statements, reporting,
+photographs and media are excluded. No punctuation or speech is invented.
+
+The actual Iowa Capital Dispatch report:
+`https://iowacapitaldispatch.com/2026/08/20/conservative-group-launches-ad-campaign-highlighting-rep-miller-meeks-nunn-work-on-tax-cuts/`.
+Retained HTML SHA-256:
+`7b81981c3d6831c765bf81d3be33f950c6c3ca1a7df7b96c575abdb4475a2f05`.
+Its unique **h1.singleHed**, **Robin Opsahl** author meta and unique
+**time.singleByline** bind **August 20, 2026, 6:00 a.m.**;
+`datetime2026-08-20 06:00` and
+`article:published_time2026-08-20T11:00:57+00:00` agree on the calendar
+date. This is publisher observation, not independently established
+first airing, release, upload or paid delivery.
+
+The unique paragraph describing **the ad supporting Nunn** individually
+links **Hard to Get Ahead / XyXegST-OjY**. Its immediately following
+paragraph expressly attributes the two quotations to that ad's narrator.
+The earlier Miller-Meeks **DnXpR5P4_4k** creative and hospital-funding
+quotation are separate and unchanged. A broad metadata-string match
+initially found the Nunn video in the earlier review's explanation of
+excluded material. That is **not acquired Nunn speech or media**:
+exact preceding **media_urls** and normalized **ad text** independently
+exclude this original and quotation. Provenance references are not used
+as creative-duplicate evidence.
+
+Exact saved **H2IA03119 / C00784389**, **NUNN, ZACH**, **REP**,
+**House**, **IA-03**, **2026**, agrees with official principal
+**IOWANS FOR ZACH NUNN**, **P/H/REP**. This is identity, not creative
+approval or verified advertiser payment. Explicit reelection against
+**Democrat Sarah Trone Garriott** supports general phase, not August
+alone. No media, YouTube, caption, API or denied-provider request was
+made; the failed AAN primary TLS route was not bypassed. The existing
+parser suffices. A separate source registration fixes **IA-03** without
+changing the preceding **IA-01** registration or its review.
+
+Immutable **house-aan-iowa-nunn-baseline.json** freezes **1,911
+acquired / 1,872 analyzed / 65 reviews**, aliases and **17 protected
+inputs** before acquisition. Strict verification preserves every
+preceding acquired/analyzed object and review, including the broadcast
+episode limitation, and replays **559 to 560 written objects** using
+only the retained original response, with network sockets forbidden.
+Complete JSON/gzip/CSV/Parquet, eleven PNGs and browser/production copies
+reconcile. The individual-ad URL and quality flags are independently
+checked in Parquet, and preceding review bytes remain an unchanged suffix.
+All **437 Python tests**, backend lint/format, frontend lint and **17
+unit cases**, production typecheck/build and **all eight browser cases
+together** pass. All eleven manifest PNGs were visually inspected.
+The saved audit reconciles **20 metric groups / 10 chart rows**.
+
+Snapshot:
+`edbb74a85c5e3d828f7b562de892fdc1a85ae6b73e8c1e9982292a320df3946c`.
+Totals: **1,912 acquired / 1,873 English**; **D 1,226 / R 608 /
+other 31 / unknown 8**; exact messages **D 1,204 / R 571**.
+English House: **D 698 / R 230 / other 19 / unknown 3**; non-Snap
+House **D 222 / R 229**. Snap stays **D 476 / R 1 / other 19 /
+unknown 3**. These are source-dependent collection counts, not national
+ad volume, spending or matched-race estimates.
+
+The preceding MTPR research commit
+**1b7d80fd168e9c98eade802bd1c47dfb173eb2cc** preserves actual concurrent
+parent **a9107c91e13ac90000a345ceae76c38bcd02d71e**. Exact remote paths,
+Hans author/committer identities and absence of Copilot/co-author/session
+trailers were independently verified. Original watcher and exact CI
+**41241817132** completed successfully; all **13 successful steps**
+were independently checked.
+
+Five actually linked Campaign Beat episodes dated **September 25 and
+October 9, 16, 23 and 30** were also inspected. None supplied another
+qualifying No Going Back pro-Flint paragraph with the scoped payer
+attribution. September 25's labeled Bodnar ad is not a Republican House
+ad. October 30 contains a distinct labeled Flint AI-ad quotation but no
+No Going Back disclaimer or independently bound individual-ad original;
+it remains an unacquired lead, not a fabricated payer association.
+Other programs' discussion and the Democratic ad are excluded.
+The publisher-attributed Flint AI-ad lead has no exact-prefix text match
+in the existing seven campaign records; its individual original,
+creative distinctness and payer still need verification.
+Broader discovery continues, all holds remain in force,
+and neither edition is published.
+
 ## MTPR MT-01 labeled broadcast-ad excerpt recovery
 
 The distinct Republican House record **ngb-mtpr-20261002-0** retains

@@ -147,6 +147,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "aan-iowa-nunn",
+        "https://iowacapitaldispatch.com",
+        "American Action Network (publisher-attributed; payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="IA-03",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "aan-iowa",
         "https://iowacapitaldispatch.com",
         "American Action Network (publisher-reported; payer unverified)",
