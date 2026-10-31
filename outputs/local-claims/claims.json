@@ -69178,5 +69178,925 @@
     "text_hash": "039d4566642af7238452ac74b4cd23e19cc92f9da54ae7404a5f139ab6f77b2a",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-491fde0bead29243-0",
+    "alignment": "R",
+    "block_id": "nrcc-491fde0bead29243-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-491fde0bead29243-0-claims-001-001",
+    "claim_text": "It’s dangerous",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 442,
+        "kind": "publisher_transcript",
+        "start": 416,
+        "text": "It’s dangerous. It’s wrong",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.nrcc.org/2026/09/03/new-ad-radical-cait-conley-wants-taxpayers-to-fund-chemical-castrations-on-kids/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 430,
+        "anchor_quote": "It’s dangerous",
+        "anchor_start": 416,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "it",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Chemical castration drugs\nUsed to sterilize repeat sex offenders\nAnd now?\nSame chemical. Different patient.\nChildren may suffer this brutal procedure\nCait Conley is so radical, she would force taxpayers to pay for injecting kids with chemical castration drugs\nThat’s right, Cait Conley took thousands from extreme groups pushing transgender sex changes for kids\nThe consequences — irreversible\nThe cost — outrageous\nIt’s dangerous. It’s wrong\nAnd it’s Cait Conley’s agenda",
+    "text_hash": "dcc9e8f51102d59c36652c8c37a98c526a4806b6475fb3ba11eab24cf7822ee1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-491fde0bead29243-0",
+    "alignment": "R",
+    "block_id": "nrcc-491fde0bead29243-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-491fde0bead29243-0-claims-001-002",
+    "claim_text": "It’s wrong",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 442,
+        "kind": "publisher_transcript",
+        "start": 416,
+        "text": "It’s dangerous. It’s wrong",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.nrcc.org/2026/09/03/new-ad-radical-cait-conley-wants-taxpayers-to-fund-chemical-castrations-on-kids/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 442,
+        "anchor_quote": "It’s wrong",
+        "anchor_start": 432,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "it",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Chemical castration drugs\nUsed to sterilize repeat sex offenders\nAnd now?\nSame chemical. Different patient.\nChildren may suffer this brutal procedure\nCait Conley is so radical, she would force taxpayers to pay for injecting kids with chemical castration drugs\nThat’s right, Cait Conley took thousands from extreme groups pushing transgender sex changes for kids\nThe consequences — irreversible\nThe cost — outrageous\nIt’s dangerous. It’s wrong\nAnd it’s Cait Conley’s agenda",
+    "text_hash": "dcc9e8f51102d59c36652c8c37a98c526a4806b6475fb3ba11eab24cf7822ee1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-491fde0bead29243-0",
+    "alignment": "R",
+    "block_id": "nrcc-491fde0bead29243-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-491fde0bead29243-0-claims-001-003",
+    "claim_text": "It’s Cait Conley’s agenda",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 472,
+        "kind": "publisher_transcript",
+        "start": 443,
+        "text": "And it’s Cait Conley’s agenda",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.nrcc.org/2026/09/03/new-ad-radical-cait-conley-wants-taxpayers-to-fund-chemical-castrations-on-kids/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 472,
+        "anchor_quote": "Cait Conley’s agenda",
+        "anchor_start": 452,
+        "anchor_unit_id": 11,
+        "entity_id": "candidate:H6NY17171",
+        "kind": "person",
+        "name": "Cait Conley",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Chemical castration drugs\nUsed to sterilize repeat sex offenders\nAnd now?\nSame chemical. Different patient.\nChildren may suffer this brutal procedure\nCait Conley is so radical, she would force taxpayers to pay for injecting kids with chemical castration drugs\nThat’s right, Cait Conley took thousands from extreme groups pushing transgender sex changes for kids\nThe consequences — irreversible\nThe cost — outrageous\nIt’s dangerous. It’s wrong\nAnd it’s Cait Conley’s agenda",
+    "text_hash": "dcc9e8f51102d59c36652c8c37a98c526a4806b6475fb3ba11eab24cf7822ee1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-491fde0bead29243-0",
+    "alignment": "R",
+    "block_id": "nrcc-491fde0bead29243-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-491fde0bead29243-0-claims-001-004",
+    "claim_text": "Chemical castration drugs are used to sterilize repeat sex offenders",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 25,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Chemical castration drugs",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrcc.org/2026/09/03/new-ad-radical-cait-conley-wants-taxpayers-to-fund-chemical-castrations-on-kids/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 25,
+        "anchor_quote": "Chemical castration drugs",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Chemical castration drugs",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Chemical castration drugs\nUsed to sterilize repeat sex offenders\nAnd now?\nSame chemical. Different patient.\nChildren may suffer this brutal procedure\nCait Conley is so radical, she would force taxpayers to pay for injecting kids with chemical castration drugs\nThat’s right, Cait Conley took thousands from extreme groups pushing transgender sex changes for kids\nThe consequences — irreversible\nThe cost — outrageous\nIt’s dangerous. It’s wrong\nAnd it’s Cait Conley’s agenda",
+    "text_hash": "dcc9e8f51102d59c36652c8c37a98c526a4806b6475fb3ba11eab24cf7822ee1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-491fde0bead29243-0",
+    "alignment": "R",
+    "block_id": "nrcc-491fde0bead29243-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-491fde0bead29243-0-claims-001-005",
+    "claim_text": "Same chemical is used with a different patient",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 107,
+        "kind": "publisher_transcript",
+        "start": 74,
+        "text": "Same chemical. Different patient.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrcc.org/2026/09/03/new-ad-radical-cait-conley-wants-taxpayers-to-fund-chemical-castrations-on-kids/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 87,
+        "anchor_quote": "Same chemical",
+        "anchor_start": 74,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Same chemical",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Chemical castration drugs\nUsed to sterilize repeat sex offenders\nAnd now?\nSame chemical. Different patient.\nChildren may suffer this brutal procedure\nCait Conley is so radical, she would force taxpayers to pay for injecting kids with chemical castration drugs\nThat’s right, Cait Conley took thousands from extreme groups pushing transgender sex changes for kids\nThe consequences — irreversible\nThe cost — outrageous\nIt’s dangerous. It’s wrong\nAnd it’s Cait Conley’s agenda",
+    "text_hash": "dcc9e8f51102d59c36652c8c37a98c526a4806b6475fb3ba11eab24cf7822ee1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-491fde0bead29243-0",
+    "alignment": "R",
+    "block_id": "nrcc-491fde0bead29243-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-491fde0bead29243-0-claims-001-006",
+    "claim_text": "Children may suffer this brutal procedure",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 149,
+        "kind": "publisher_transcript",
+        "start": 108,
+        "text": "Children may suffer this brutal procedure",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrcc.org/2026/09/03/new-ad-radical-cait-conley-wants-taxpayers-to-fund-chemical-castrations-on-kids/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 116,
+        "anchor_quote": "Children",
+        "anchor_start": 108,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Children",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Chemical castration drugs\nUsed to sterilize repeat sex offenders\nAnd now?\nSame chemical. Different patient.\nChildren may suffer this brutal procedure\nCait Conley is so radical, she would force taxpayers to pay for injecting kids with chemical castration drugs\nThat’s right, Cait Conley took thousands from extreme groups pushing transgender sex changes for kids\nThe consequences — irreversible\nThe cost — outrageous\nIt’s dangerous. It’s wrong\nAnd it’s Cait Conley’s agenda",
+    "text_hash": "dcc9e8f51102d59c36652c8c37a98c526a4806b6475fb3ba11eab24cf7822ee1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-491fde0bead29243-0",
+    "alignment": "R",
+    "block_id": "nrcc-491fde0bead29243-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-491fde0bead29243-0-claims-001-007",
+    "claim_text": "Cait Conley would force taxpayers to pay for injecting kids with chemical castration drugs",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 259,
+        "kind": "publisher_transcript",
+        "start": 150,
+        "text": "Cait Conley is so radical, she would force taxpayers to pay for injecting kids with chemical castration drugs",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nrcc.org/2026/09/03/new-ad-radical-cait-conley-wants-taxpayers-to-fund-chemical-castrations-on-kids/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 161,
+        "anchor_quote": "Cait Conley",
+        "anchor_start": 150,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H6NY17171",
+        "kind": "person",
+        "name": "Cait Conley",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Chemical castration drugs\nUsed to sterilize repeat sex offenders\nAnd now?\nSame chemical. Different patient.\nChildren may suffer this brutal procedure\nCait Conley is so radical, she would force taxpayers to pay for injecting kids with chemical castration drugs\nThat’s right, Cait Conley took thousands from extreme groups pushing transgender sex changes for kids\nThe consequences — irreversible\nThe cost — outrageous\nIt’s dangerous. It’s wrong\nAnd it’s Cait Conley’s agenda",
+    "text_hash": "dcc9e8f51102d59c36652c8c37a98c526a4806b6475fb3ba11eab24cf7822ee1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-491fde0bead29243-0",
+    "alignment": "R",
+    "block_id": "nrcc-491fde0bead29243-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-491fde0bead29243-0-claims-001-008",
+    "claim_text": "Cait Conley took thousands from extreme groups pushing transgender sex changes for kids",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 361,
+        "kind": "publisher_transcript",
+        "start": 260,
+        "text": "That’s right, Cait Conley took thousands from extreme groups pushing transgender sex changes for kids",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nrcc.org/2026/09/03/new-ad-radical-cait-conley-wants-taxpayers-to-fund-chemical-castrations-on-kids/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 285,
+        "anchor_quote": "Cait Conley",
+        "anchor_start": 274,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:H6NY17171",
+        "kind": "person",
+        "name": "Cait Conley",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Chemical castration drugs\nUsed to sterilize repeat sex offenders\nAnd now?\nSame chemical. Different patient.\nChildren may suffer this brutal procedure\nCait Conley is so radical, she would force taxpayers to pay for injecting kids with chemical castration drugs\nThat’s right, Cait Conley took thousands from extreme groups pushing transgender sex changes for kids\nThe consequences — irreversible\nThe cost — outrageous\nIt’s dangerous. It’s wrong\nAnd it’s Cait Conley’s agenda",
+    "text_hash": "dcc9e8f51102d59c36652c8c37a98c526a4806b6475fb3ba11eab24cf7822ee1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-491fde0bead29243-0",
+    "alignment": "R",
+    "block_id": "nrcc-491fde0bead29243-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-491fde0bead29243-0-claims-001-009",
+    "claim_text": "The consequences are irreversible",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 393,
+        "kind": "publisher_transcript",
+        "start": 362,
+        "text": "The consequences — irreversible",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.nrcc.org/2026/09/03/new-ad-radical-cait-conley-wants-taxpayers-to-fund-chemical-castrations-on-kids/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 378,
+        "anchor_quote": "The consequences",
+        "anchor_start": 362,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "The consequences",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Chemical castration drugs\nUsed to sterilize repeat sex offenders\nAnd now?\nSame chemical. Different patient.\nChildren may suffer this brutal procedure\nCait Conley is so radical, she would force taxpayers to pay for injecting kids with chemical castration drugs\nThat’s right, Cait Conley took thousands from extreme groups pushing transgender sex changes for kids\nThe consequences — irreversible\nThe cost — outrageous\nIt’s dangerous. It’s wrong\nAnd it’s Cait Conley’s agenda",
+    "text_hash": "dcc9e8f51102d59c36652c8c37a98c526a4806b6475fb3ba11eab24cf7822ee1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-491fde0bead29243-0",
+    "alignment": "R",
+    "block_id": "nrcc-491fde0bead29243-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-491fde0bead29243-0-claims-001-010",
+    "claim_text": "The cost is outrageous",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 415,
+        "kind": "publisher_transcript",
+        "start": 394,
+        "text": "The cost — outrageous",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.nrcc.org/2026/09/03/new-ad-radical-cait-conley-wants-taxpayers-to-fund-chemical-castrations-on-kids/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 402,
+        "anchor_quote": "The cost",
+        "anchor_start": 394,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "The cost",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Chemical castration drugs\nUsed to sterilize repeat sex offenders\nAnd now?\nSame chemical. Different patient.\nChildren may suffer this brutal procedure\nCait Conley is so radical, she would force taxpayers to pay for injecting kids with chemical castration drugs\nThat’s right, Cait Conley took thousands from extreme groups pushing transgender sex changes for kids\nThe consequences — irreversible\nThe cost — outrageous\nIt’s dangerous. It’s wrong\nAnd it’s Cait Conley’s agenda",
+    "text_hash": "dcc9e8f51102d59c36652c8c37a98c526a4806b6475fb3ba11eab24cf7822ee1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-5573a28d4fdcc310-0",
+    "alignment": "R",
+    "block_id": "nrcc-5573a28d4fdcc310-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-5573a28d4fdcc310-0-claims-001-001",
+    "claim_text": "Derrick Van Orden delivered help for working families.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 402,
+        "kind": "publisher_transcript",
+        "start": 348,
+        "text": "Derrick Van Orden delivered help for working families.",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-derrick-van-ordens-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 365,
+        "anchor_quote": "Derrick Van Orden",
+        "anchor_start": 348,
+        "anchor_unit_id": 10,
+        "entity_id": "candidate:H0WI03175",
+        "kind": "person",
+        "name": "VAN ORDEN, DERRICK F. MR.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Derrick Van Orden changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDerrick Van Orden delivered help for working families.\nThank you, Representative Derrick Van Orden.",
+    "text_hash": "52e9144e5605444b23520182c440da4542dc30f658b83d2aa6ed6f41afc7256b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-5573a28d4fdcc310-0",
+    "alignment": "R",
+    "block_id": "nrcc-5573a28d4fdcc310-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-5573a28d4fdcc310-0-claims-001-002",
+    "claim_text": "Thank you, Representative Derrick Van Orden.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 447,
+        "kind": "publisher_transcript",
+        "start": 403,
+        "text": "Thank you, Representative Derrick Van Orden.",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-derrick-van-ordens-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 446,
+        "anchor_quote": "Representative Derrick Van Orden",
+        "anchor_start": 414,
+        "anchor_unit_id": 11,
+        "entity_id": "candidate:H0WI03175",
+        "kind": "person",
+        "name": "VAN ORDEN, DERRICK F. MR.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Derrick Van Orden changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDerrick Van Orden delivered help for working families.\nThank you, Representative Derrick Van Orden.",
+    "text_hash": "52e9144e5605444b23520182c440da4542dc30f658b83d2aa6ed6f41afc7256b",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-5573a28d4fdcc310-0",
+    "alignment": "R",
+    "block_id": "nrcc-5573a28d4fdcc310-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-5573a28d4fdcc310-0-claims-001-003",
+    "claim_text": "Hardworking Americans power this country.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 41,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Hardworking Americans power this country.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-derrick-van-ordens-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 21,
+        "anchor_quote": "Hardworking Americans",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Americans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Derrick Van Orden changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDerrick Van Orden delivered help for working families.\nThank you, Representative Derrick Van Orden.",
+    "text_hash": "52e9144e5605444b23520182c440da4542dc30f658b83d2aa6ed6f41afc7256b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-5573a28d4fdcc310-0",
+    "alignment": "R",
+    "block_id": "nrcc-5573a28d4fdcc310-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-5573a28d4fdcc310-0-claims-001-004",
+    "claim_text": "Democrats made it harder to get ahead.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 138,
+        "kind": "publisher_transcript",
+        "start": 100,
+        "text": "Democrats made it harder to get ahead.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-derrick-van-ordens-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 109,
+        "anchor_quote": "Democrats",
+        "anchor_start": 100,
+        "anchor_unit_id": 3,
+        "entity_id": "party:D",
+        "kind": "collective",
+        "name": "D",
+        "party_basis": "explicit_party_text",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Derrick Van Orden changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDerrick Van Orden delivered help for working families.\nThank you, Representative Derrick Van Orden.",
+    "text_hash": "52e9144e5605444b23520182c440da4542dc30f658b83d2aa6ed6f41afc7256b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-5573a28d4fdcc310-0",
+    "alignment": "R",
+    "block_id": "nrcc-5573a28d4fdcc310-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-5573a28d4fdcc310-0-claims-001-005",
+    "claim_text": "Spiking inflation to 40-year highs.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 174,
+        "kind": "publisher_transcript",
+        "start": 139,
+        "text": "Spiking inflation to 40-year highs.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-derrick-van-ordens-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 156,
+        "anchor_quote": "inflation",
+        "anchor_start": 147,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "inflation",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Derrick Van Orden changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDerrick Van Orden delivered help for working families.\nThank you, Representative Derrick Van Orden.",
+    "text_hash": "52e9144e5605444b23520182c440da4542dc30f658b83d2aa6ed6f41afc7256b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-5573a28d4fdcc310-0",
+    "alignment": "R",
+    "block_id": "nrcc-5573a28d4fdcc310-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-5573a28d4fdcc310-0-claims-001-006",
+    "claim_text": "Derrick Van Orden changed that.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 210,
+        "kind": "publisher_transcript",
+        "start": 175,
+        "text": "But Derrick Van Orden changed that.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-derrick-van-ordens-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 196,
+        "anchor_quote": "Derrick Van Orden",
+        "anchor_start": 179,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H0WI03175",
+        "kind": "person",
+        "name": "VAN ORDEN, DERRICK F. MR.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Derrick Van Orden changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDerrick Van Orden delivered help for working families.\nThank you, Representative Derrick Van Orden.",
+    "text_hash": "52e9144e5605444b23520182c440da4542dc30f658b83d2aa6ed6f41afc7256b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-5573a28d4fdcc310-0",
+    "alignment": "R",
+    "block_id": "nrcc-5573a28d4fdcc310-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-5573a28d4fdcc310-0-claims-001-007",
+    "claim_text": "Voting for real tax relief that puts more money back in your pocket.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 279,
+        "kind": "publisher_transcript",
+        "start": 211,
+        "text": "Voting for real tax relief that puts more money back in your pocket:",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-derrick-van-ordens-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 217,
+        "anchor_quote": "Voting",
+        "anchor_start": 211,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H0WI03175",
+        "kind": "person",
+        "name": "VAN ORDEN, DERRICK F. MR.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Derrick Van Orden changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDerrick Van Orden delivered help for working families.\nThank you, Representative Derrick Van Orden.",
+    "text_hash": "52e9144e5605444b23520182c440da4542dc30f658b83d2aa6ed6f41afc7256b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-5573a28d4fdcc310-0",
+    "alignment": "R",
+    "block_id": "nrcc-5573a28d4fdcc310-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-5573a28d4fdcc310-0-claims-001-008",
+    "claim_text": "There is no tax on tips.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 295,
+        "kind": "publisher_transcript",
+        "start": 280,
+        "text": "No tax on tips.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-derrick-van-ordens-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 294,
+        "anchor_quote": "tax on tips",
+        "anchor_start": 283,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "tax on tips",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Derrick Van Orden changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDerrick Van Orden delivered help for working families.\nThank you, Representative Derrick Van Orden.",
+    "text_hash": "52e9144e5605444b23520182c440da4542dc30f658b83d2aa6ed6f41afc7256b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-5573a28d4fdcc310-0",
+    "alignment": "R",
+    "block_id": "nrcc-5573a28d4fdcc310-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-5573a28d4fdcc310-0-claims-001-009",
+    "claim_text": "There is no tax on overtime.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 315,
+        "kind": "publisher_transcript",
+        "start": 296,
+        "text": "No tax on overtime.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-derrick-van-ordens-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 314,
+        "anchor_quote": "tax on overtime",
+        "anchor_start": 299,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "tax on overtime",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Derrick Van Orden changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDerrick Van Orden delivered help for working families.\nThank you, Representative Derrick Van Orden.",
+    "text_hash": "52e9144e5605444b23520182c440da4542dc30f658b83d2aa6ed6f41afc7256b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-5573a28d4fdcc310-0",
+    "alignment": "R",
+    "block_id": "nrcc-5573a28d4fdcc310-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-5573a28d4fdcc310-0-claims-001-010",
+    "claim_text": "And the Child Tax Credit has been doubled.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 347,
+        "kind": "publisher_transcript",
+        "start": 316,
+        "text": "And a doubled Child Tax Credit.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-derrick-van-ordens-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 346,
+        "anchor_quote": "Child Tax Credit",
+        "anchor_start": 330,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Child Tax Credit",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut Derrick Van Orden changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDerrick Van Orden delivered help for working families.\nThank you, Representative Derrick Van Orden.",
+    "text_hash": "52e9144e5605444b23520182c440da4542dc30f658b83d2aa6ed6f41afc7256b",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
