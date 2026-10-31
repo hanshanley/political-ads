@@ -1,6 +1,6 @@
 # Free-source capabilities
 
-Verified October 30, 2026; collection cutoff October 30. Live acquisition status accompanies each snapshot.
+Verified October 31, 2026; collection cutoff October 30. Live acquisition status accompanies each snapshot.
 This is a source-limited collection of releases and native platform creatives, not a census.
 
 **Publication withdrawn:** the page, report, data downloads, preview, interactive-analysis card
@@ -10,9 +10,94 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Publisher-linked expansion of the October 30 snapshot
+## NC-11 expansion of the October 30 snapshot
 
-The latest acquisition contains **1,862 text records**, including **1,824
+The latest acquisition contains **1,864 text records**, including **1,826
+English records: 1,226 D / 561 R / 31 other / eight unresolved**. Two
+additional **NRCC-funded, publisher-reported NC-11 ads** contribute actual
+quoted ad words, not press statements, social captions or reporting prose.
+All **1,862 preceding acquired objects**, **1,824 preceding analyzed
+objects**, 23 earlier acquisition reviews and **17 protected canonical
+JSON inputs**, including native partitions, identities and saved semantic
+reviews, are unchanged. Both additions remain **partial quotations** and
+semantically **unreviewed**.
+
+Exact observed-text messages are **1,204 D / 524 R**. English House
+coverage is **698 D / 183 R**: 476 D / one R Snap and 222 D / 182 R
+non-Snap. These collection counts do not estimate national ad prevalence.
+Distinct original-video links and observed-text identities establish two
+new records here, not independently certified complete message families.
+
+| Reported advertiser | Recovered ad | Publisher / report date | Recovered words |
+|---|---|---|---|
+| NRCC | Mom, Jennifer Balkcom NC-11 | NC Newsline / September 30 | Seven fragments, 51 words |
+| NRCC | Barn-dance attack on Jamie Ager, NC-11 | Cardinal & Pine / October 27 | Two passages, 24 words |
+
+Credit: **Christine Zhu, NC Newsline**; **Cardinal & Pine, credited to USA
+Today Network via Reuters Connect**. Each report explicitly identifies
+the advertised NC-11 contest, reports NRCC funding and links a different
+individual YouTube creative. Advertiser alignment/type are **R / party**,
+not inferred candidate-committee payment. Neither video nor a caption
+provider was requested; no closing-payer card was independently inspected.
+Exact saved FEC identity is **H6NC11321 / C00958785**, Jennifer Balkcom,
+REP, NC-11. No roster refresh, new alias or fuzzy match was needed.
+
+Mom retains only literal fragments of Balkcom and her mother's ad speech,
+including the publisher's singular *lower cost* and punctuation. Its
+three-word opening fragment is not a complete opening sentence. Ager's
+separate Barn Dance, NRCC/DCCC statements and the political scientist's
+analysis remain outside the Republican text. AOL separately reports a
+September 29 video posting; the admitted original report's September 30
+date remains authoritative for this record, not verified paid delivery.
+
+The attack ad retains only the narrator's two quoted passages. They are
+not authentic Ager statements, campaign responses, LGBTQ+ community
+responses or the publisher's fact-checking. Reported synthetic imagery
+does not become an independently checked factual or semantic label.
+October 27 is the report date, not independently verified first release.
+The full decoded HTML hashes, exact titles/dates, federal identity,
+advertiser context, individual-media associations and ordered literal
+passages are checked by the existing fail-closed reviewed-release path.
+
+```sh
+political-ads collect --source nrcc-ncnewsline \
+  --source nrcc-cardinalpine --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+Independent preservation checks reconcile complete analysis/browser/built
+JSON, decompressed gzip and text-complete CSV, all **1,864 Parquet rows**
+and eleven PNG sets. Network-forbidden isolated replay starts from the
+preceding **517-record written corpus** and reproduces all **519 records
+and source states** using only **two cached HTML responses**. It replays
+the recorded original-observation and subsequent cached-check dates;
+crossing midnight does not rewrite first observation or advance the
+October 30 eligibility cutoff. This clock-bound replay is distinct from
+an ordinary new check whose status uses the actual current date.
+
+Final checks pass **362 Python tests**, Python lint/format, frontend
+lint, **17 frontend tests**, the production build and **seven browser
+cases**. Publication validation and the independent strategy audit pass
+**20 metric groups / ten chart rows**. All eleven updated PNGs were
+visually inspected. Both article editions remain unpublished.
+
+Broader PA-01 discovery found a distinct **RJC Victory Fund ad quotation**
+in Jewish Insider's October report. Its public 2026 RJC search returned
+**56 posts**, also identifying a separate **KY-04 RJC primary ad**
+supporting Ed Gallrein and criticizing Thomas Massie. Both remain
+unadmitted leads; search results and RJC press statements are not new ads.
+WHYY's October 15 report supplies a long quoted **Patch post**, not a
+verified ad transcript, and no individual ad association. That post is
+not counted as ad speech. Original Kiggans fact-check URLs remain
+unresolved. Continued discovery and recurring acquisition stay active;
+website/Substack publication and host restoration remain on hold.
+
+## Earlier publisher-linked expansion of the October 30 snapshot
+
+The preceding acquisition checkpoint contains **1,862 text records**, including **1,824
 English records: 1,226 D / 559 R / 31 other / eight unresolved**. It adds
 five Republican House ad records in **OH-07, NM-02, AZ-01 and AZ-06**, all
 explicitly retained as **partial quotations**, not complete transcripts.
