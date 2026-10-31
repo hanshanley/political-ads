@@ -1250,6 +1250,10 @@
             "nrcc-a79e97b60b8c0196-0",
             "nrcc-cba220c3370174da-0",
             "nrcc-c3e4fe2f590d66e4-0",
+            "nrsc-15918-0",
+            "nrsc-15979-0",
+            "nrsc-15981-0",
+            "nrsc-15983-0",
             "flint-2046-0",
             "conroy-1243-0",
             "flint-2059-0",
@@ -1260,8 +1264,8 @@
             "hinson-823-0",
             "flint-2146-0"
           ],
-          "count": 16,
-          "share": 0.0326530612244898
+          "count": 20,
+          "share": 0.04081632653061224
         },
         "neither_detected": {
           "ad_ids": [
@@ -1345,7 +1349,6 @@
             "cassidy-a18be43927f73742-0",
             "google-CR11804576059523858433-8c1305334034",
             "cassidy-0fe807e0e52358a7-0",
-            "nrsc-15817-0",
             "wfw-af-13479-0",
             "wfw-af-13482-0",
             "google-CR02763954400077545473-2a58015dd7a3",
@@ -1354,12 +1357,8 @@
             "cassidy-107b696383099e06-0",
             "wfw-af-13484-0",
             "nrsc-15888-0",
-            "nrsc-15918-0",
             "hinson-569-0",
             "rogers-6a0347fcecb386341bf60f75-0",
-            "nrsc-15979-0",
-            "nrsc-15981-0",
-            "nrsc-15983-0",
             "nrsc-15985-0",
             "nrsc-15995-0",
             "nrsc-15997-0",
@@ -1728,20 +1727,21 @@
             "snap-d60d07b71c1c16da2cbdcb55",
             "snap-e9a3b27048e3b4952586b499"
           ],
-          "count": 453,
-          "share": 0.9244897959183673
+          "count": 448,
+          "share": 0.9142857142857143
         },
         "opponent_negative_only": {
           "ad_ids": [
             "nrcc-1cc3b6156be4a05d-0",
             "nrcc-ba37130cffd8ce63-0",
+            "nrsc-15817-0",
             "hinson-668-0",
             "hinson-706-0",
             "google-CR11028699425911341057-cbf254e4d012",
             "marshall-f57ec8d2874d6b9c-0"
           ],
-          "count": 6,
-          "share": 0.012244897959183673
+          "count": 7,
+          "share": 0.014285714285714285
         },
         "own_positive_only": {
           "ad_ids": [
@@ -2365,7 +2365,7 @@
       "all_unique_messages": 490,
       "categories_overlap": true,
       "denominator": "normalized_unique_messages",
-      "normalized_unique_messages": 86,
+      "normalized_unique_messages": 93,
       "side_tone": {
         "not_partisan": {
           "negative": {
@@ -2385,6 +2385,7 @@
               "nrcc-b3415d8eb84536c0-0",
               "nrcc-c3e4fe2f590d66e4-0",
               "nrcc-c6d52847d0062af3-0",
+              "nrsc-15983-0",
               "letlow-61f6df1b225024c8-0",
               "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
               "flint-2038-0",
@@ -2393,8 +2394,8 @@
               "hinson-825-0",
               "grothman-b574d494ebff6312-0"
             ],
-            "count": 22,
-            "share": 0.2558139534883721
+            "count": 23,
+            "share": 0.24731182795698925
           },
           "neutral": {
             "ad_ids": [
@@ -2418,7 +2419,7 @@
               "marshall-f57ec8d2874d6b9c-0"
             ],
             "count": 18,
-            "share": 0.20930232558139536
+            "share": 0.1935483870967742
           },
           "positive": {
             "ad_ids": [
@@ -2432,14 +2433,15 @@
               "nrcc-a37dc0e224f4f4a0-0",
               "nrcc-a79e97b60b8c0196-0",
               "nrcc-c3e4fe2f590d66e4-0",
+              "nrsc-15918-0",
               "hinson-569-0",
               "google-CR01777644984804048897-edb81730532d",
               "bresnahan-native-122240759240111841",
               "hinson-768-0",
               "lawler-1429-0"
             ],
-            "count": 15,
-            "share": 0.1744186046511628
+            "count": 16,
+            "share": 0.17204301075268819
           },
           "uncertain": {
             "ad_ids": [],
@@ -2453,21 +2455,21 @@
               "cfg-52126-0"
             ],
             "count": 1,
-            "share": 0.011627906976744186
+            "share": 0.010752688172043012
           },
           "neutral": {
             "ad_ids": [
               "cfg-52126-0"
             ],
             "count": 1,
-            "share": 0.011627906976744186
+            "share": 0.010752688172043012
           },
           "positive": {
             "ad_ids": [
               "cfg-52126-0"
             ],
             "count": 1,
-            "share": 0.011627906976744186
+            "share": 0.010752688172043012
           },
           "uncertain": {
             "ad_ids": [],
@@ -2498,6 +2500,13 @@
               "nrcc-c3e4fe2f590d66e4-0",
               "nrcc-c6d52847d0062af3-0",
               "nrsc-15623-0",
+              "nrsc-15817-0",
+              "nrsc-15888-0",
+              "nrsc-15918-0",
+              "nrsc-15979-0",
+              "nrsc-15981-0",
+              "nrsc-15983-0",
+              "nrsc-15985-0",
               "hinson-668-0",
               "hinson-706-0",
               "google-CR11028699425911341057-cbf254e4d012",
@@ -2514,37 +2523,39 @@
               "flint-2146-0",
               "marshall-f57ec8d2874d6b9c-0"
             ],
-            "count": 35,
-            "share": 0.4069767441860465
+            "count": 42,
+            "share": 0.45161290322580644
           },
           "neutral": {
             "ad_ids": [
               "nrcc-ba37130cffd8ce63-0",
               "nrsc-15083-0",
               "nrsc-15321-0",
+              "nrsc-15817-0",
               "hinson-706-0",
               "google-CR11028699425911341057-cbf254e4d012",
               "hinson-768-0",
               "google-CR09386677044319879169-7af3a24af0a4",
               "marshall-f57ec8d2874d6b9c-0"
             ],
-            "count": 8,
-            "share": 0.09302325581395349
+            "count": 9,
+            "share": 0.0967741935483871
           },
           "positive": {
             "ad_ids": [
               "nrcc-b128ffb40d907f80-0",
-              "nrsc-15321-0"
+              "nrsc-15321-0",
+              "nrsc-15817-0"
             ],
-            "count": 2,
-            "share": 0.023255813953488372
+            "count": 3,
+            "share": 0.03225806451612903
           },
           "uncertain": {
             "ad_ids": [
               "google-CR09386677044319879169-7af3a24af0a4"
             ],
             "count": 1,
-            "share": 0.011627906976744186
+            "share": 0.010752688172043012
           }
         },
         "same_side": {
@@ -2553,7 +2564,7 @@
               "cfg-50973-0"
             ],
             "count": 1,
-            "share": 0.011627906976744186
+            "share": 0.010752688172043012
           },
           "neutral": {
             "ad_ids": [
@@ -2594,7 +2605,7 @@
               "flint-2146-0"
             ],
             "count": 35,
-            "share": 0.4069767441860465
+            "share": 0.3763440860215054
           },
           "positive": {
             "ad_ids": [
@@ -2623,8 +2634,12 @@
               "cassidy-0fe807e0e52358a7-0",
               "google-CR02763954400077545473-474d7721b21e",
               "cassidy-107b696383099e06-0",
+              "nrsc-15918-0",
               "hinson-569-0",
               "google-CR07026585265263083521-34aa236da0c3",
+              "nrsc-15979-0",
+              "nrsc-15981-0",
+              "nrsc-15983-0",
               "google-CR13446214745916964865-cf1275055561",
               "letlow-61f6df1b225024c8-0",
               "collins-3604-0",
@@ -2649,15 +2664,15 @@
               "grothman-b574d494ebff6312-0",
               "flint-2146-0"
             ],
-            "count": 50,
-            "share": 0.5813953488372093
+            "count": 54,
+            "share": 0.5806451612903226
           },
           "uncertain": {
             "ad_ids": [
               "barr-1942-0"
             ],
             "count": 1,
-            "share": 0.011627906976744186
+            "share": 0.010752688172043012
           }
         },
         "unknown": {
@@ -2675,7 +2690,10 @@
               "nrcc-86974f0de4fc3d6a-0",
               "nrcc-b3415d8eb84536c0-0",
               "nrcc-c6d52847d0062af3-0",
+              "nrsc-15888-0",
               "hinson-569-0",
+              "nrsc-15981-0",
+              "nrsc-15985-0",
               "letlow-61f6df1b225024c8-0",
               "collins-3604-0",
               "flint-2038-0",
@@ -2689,8 +2707,8 @@
               "grothman-b574d494ebff6312-0",
               "flint-2146-0"
             ],
-            "count": 25,
-            "share": 0.29069767441860467
+            "count": 28,
+            "share": 0.3010752688172043
           },
           "neutral": {
             "ad_ids": [
@@ -2722,7 +2740,7 @@
               "flint-2146-0"
             ],
             "count": 26,
-            "share": 0.3023255813953488
+            "share": 0.27956989247311825
           },
           "positive": {
             "ad_ids": [
@@ -2751,7 +2769,9 @@
               "cassidy-0fe807e0e52358a7-0",
               "barr-1713-0",
               "cassidy-107b696383099e06-0",
+              "nrsc-15888-0",
               "hinson-569-0",
+              "nrsc-15985-0",
               "google-CR13446214745916964865-cf1275055561",
               "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
               "cfg-51751-0",
@@ -2765,8 +2785,8 @@
               "barr-1992-0",
               "grothman-b574d494ebff6312-0"
             ],
-            "count": 38,
-            "share": 0.4418604651162791
+            "count": 40,
+            "share": 0.43010752688172044
           },
           "uncertain": {
             "ad_ids": [],
@@ -2783,17 +2803,17 @@
   },
   "ads": 1792,
   "ads_by_status": {
-    "normalized": 210,
-    "not_run": 1326,
-    "validation_failed": 256
+    "normalized": 217,
+    "not_run": 1318,
+    "validation_failed": 257
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 215,
-    "not_run": 1536,
-    "validation_failed": 265
+    "normalized": 222,
+    "not_run": 1528,
+    "validation_failed": 266
   },
-  "claims": 1574,
+  "claims": 1617,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -3449,6 +3469,10 @@
         {
           "claim_id": "nrsc-15567-0-claims-001-009",
           "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15983-0-claims-001-004",
+          "target_index": 1
         }
       ],
       "neutral": [
@@ -4169,6 +4193,18 @@
         {
           "claim_id": "nrsc-15321-0-claims-001-006",
           "target_index": 2
+        },
+        {
+          "claim_id": "nrsc-15918-0-claims-001-004",
+          "target_index": 1
+        },
+        {
+          "claim_id": "nrsc-15918-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15918-0-claims-001-008",
+          "target_index": 0
         }
       ],
       "uncertain": [
@@ -5448,6 +5484,134 @@
         {
           "claim_id": "nrsc-15623-0-claims-001-006",
           "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15817-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15888-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15888-0-claims-001-001",
+          "target_index": 1
+        },
+        {
+          "claim_id": "nrsc-15888-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15888-0-claims-001-003",
+          "target_index": 2
+        },
+        {
+          "claim_id": "nrsc-15888-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15888-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15888-0-claims-001-005",
+          "target_index": 1
+        },
+        {
+          "claim_id": "nrsc-15918-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15918-0-claims-001-001",
+          "target_index": 1
+        },
+        {
+          "claim_id": "nrsc-15979-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15979-0-claims-001-002",
+          "target_index": 1
+        },
+        {
+          "claim_id": "nrsc-15979-0-claims-001-002",
+          "target_index": 2
+        },
+        {
+          "claim_id": "nrsc-15979-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15979-0-claims-001-003",
+          "target_index": 1
+        },
+        {
+          "claim_id": "nrsc-15979-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15979-0-claims-001-004",
+          "target_index": 1
+        },
+        {
+          "claim_id": "nrsc-15979-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15979-0-claims-001-005",
+          "target_index": 1
+        },
+        {
+          "claim_id": "nrsc-15979-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15979-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15981-0-claims-001-002",
+          "target_index": 1
+        },
+        {
+          "claim_id": "nrsc-15981-0-claims-001-002",
+          "target_index": 2
+        },
+        {
+          "claim_id": "nrsc-15981-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15983-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15983-0-claims-001-002",
+          "target_index": 1
+        },
+        {
+          "claim_id": "nrsc-15983-0-claims-001-002",
+          "target_index": 2
+        },
+        {
+          "claim_id": "nrsc-15983-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15983-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15985-0-claims-001-002",
+          "target_index": 1
+        },
+        {
+          "claim_id": "nrsc-15985-0-claims-001-002",
+          "target_index": 2
+        },
+        {
+          "claim_id": "nrsc-15985-0-claims-001-003",
+          "target_index": 0
         }
       ],
       "neutral": [
@@ -5646,6 +5810,38 @@
         {
           "claim_id": "nrsc-15567-0-claims-001-006",
           "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15817-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15817-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15817-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15817-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15817-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15817-0-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15817-0-claims-001-009",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15817-0-claims-001-010",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -5671,6 +5867,10 @@
         },
         {
           "claim_id": "nrsc-15567-0-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15817-0-claims-001-004",
           "target_index": 0
         }
       ],
@@ -7974,6 +8174,42 @@
         {
           "claim_id": "nrsc-14844-0-claims-001-005",
           "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15918-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15918-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15918-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15918-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15918-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15918-0-claims-001-009",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15979-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15981-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15983-0-claims-001-001",
+          "target_index": 0
         }
       ],
       "uncertain": [
@@ -9123,6 +9359,26 @@
         },
         {
           "claim_id": "nrsc-15567-0-claims-001-010",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15888-0-claims-001-005",
+          "target_index": 2
+        },
+        {
+          "claim_id": "nrsc-15981-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15981-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15985-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15985-0-claims-001-004",
           "target_index": 0
         }
       ],
@@ -10496,11 +10752,23 @@
         {
           "claim_id": "nrsc-15623-0-claims-001-001",
           "target_index": 1
+        },
+        {
+          "claim_id": "nrsc-15888-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "nrsc-15888-0-claims-001-003",
+          "target_index": 1
+        },
+        {
+          "claim_id": "nrsc-15985-0-claims-001-001",
+          "target_index": 0
         }
       ],
       "uncertain": []
     }
   },
-  "targets": 1913,
+  "targets": 1975,
   "version": "local-ad-claims-4"
 }
