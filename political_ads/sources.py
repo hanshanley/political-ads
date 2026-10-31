@@ -127,6 +127,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "garrett-nashville-banner",
+        "https://nashvillebanner.com",
+        "Johnny Garrett campaign (reported publisher; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="TN-06",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "vanorden-badgerherald",
         "https://badgerherald.com",
         "Derrick Van Orden campaign (reported publisher; payer unverified)",
@@ -877,7 +887,8 @@ def transcript_blocks(content: str) -> list[str]:
             r"Watch\s+[‘“\"']|"
             r"You can watch\b|"
             r"Below is a list of [^\n]{0,120}\bad campaign:|"
-            r"(?:On )?Background[ \t]*(?::|$)|See also:|About the |About [^\n:]{1,80}:|"
+            r"(?:On )?Background[ \t]*(?::|$)|Analysis[ \t]*:|"
+            r"See also:|About the |About [^\n:]{1,80}:|"
             r"(?:ARTICLE|STORY) EXCERPTS[ \t]*:|"
             r"The post .+ appeared first on |Roy Cooper has launched |"
             r"Learn more about Mike Rogers and his plans? to |"

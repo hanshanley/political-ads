@@ -14253,6 +14253,128 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Credit: Anna Blubaugh, Nashville Banner, June 29, 2026. The unique primary h1.entry-title and time.entry-date.published agree with the actually exposed single-post API 30144, local June 29 06:01 / GMT 11:01. The separate June 28 updated element is not the publication date. The report embeds Johnny Garrett's individual June 25 X creative, then explicitly marks an eight-paragraph Transcript ending at his candidate-approval line. These are 79 spoken words with three publisher speaker-label tokens retained, totaling 82 whitespace-separated transcript tokens. Exact preserved narrator/candidate labels and quotation marks retain the source's speaker distinction without a new semantic judgment. The reporter's Analysis section, preceding post caption, Gaines statements, previous baseball ad and separate Hilleary creative are excluded. Exact saved FEC H6TN06213 / C00910935 identifies GARRETT, JOHNNY, REP, House, TN-06; no alias or fuzzy match is added. July 22 post 30952 explicitly places these campaigns in the Republican primary and links this same ad report. Campaign production and online/broadcast placement are publisher-reported, not an independently inspected closing legal payer or verified delivery interval. The June 25 original post and June 29 report dates remain distinct. Strict source hash/title/date, candidate, literal ordered text and individual original association are bound. Anonymous public browser reads of the actual publisher pages and exposed single-post JSON are cached; no X, YouTube, audio reader, denied provider or licensed catalog was requested. The complete marked publisher transcript remains semantically unreviewed.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6TN06213",
+          "district": "06",
+          "name": "GARRETT, JOHNNY",
+          "office": "H",
+          "party": "REP",
+          "state": "TN"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "garrett-nashville-banner-30144-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://x.com/JohnnyGarrett/status/2070267637859336250?ref_src=twsrc%5Etfw"
+      ],
+      "message_id": "8d796b62c792f8afcee71f8c5824a3a1413fd5f208b278fa2e0487f8fd1ffc3e",
+      "observed": "2026-10-31",
+      "phase": "primary",
+      "placement": "campaign_release",
+      "published": "2026-06-29",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "campaign_release_reproduced_by_news_publisher"
+      ],
+      "race": "TN-06",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6TN06213"
+          ],
+          "kind": "publisher_transcript",
+          "release_evidence": {
+            "attribution_basis": "Credit: Anna Blubaugh, Nashville Banner, June 29, 2026. The unique primary h1.entry-title and time.entry-date.published agree with the actually exposed single-post API 30144, local June 29 06:01 / GMT 11:01. The separate June 28 updated element is not the publication date. The report embeds Johnny Garrett's individual June 25 X creative, then explicitly marks an eight-paragraph Transcript ending at his candidate-approval line. These are 79 spoken words with three publisher speaker-label tokens retained, totaling 82 whitespace-separated transcript tokens. Exact preserved narrator/candidate labels and quotation marks retain the source's speaker distinction without a new semantic judgment. The reporter's Analysis section, preceding post caption, Gaines statements, previous baseball ad and separate Hilleary creative are excluded. Exact saved FEC H6TN06213 / C00910935 identifies GARRETT, JOHNNY, REP, House, TN-06; no alias or fuzzy match is added. July 22 post 30952 explicitly places these campaigns in the Republican primary and links this same ad report. Campaign production and online/broadcast placement are publisher-reported, not an independently inspected closing legal payer or verified delivery interval. The June 25 original post and June 29 report dates remain distinct. Strict source hash/title/date, candidate, literal ordered text and individual original association are bound. Anonymous public browser reads of the actual publisher pages and exposed single-post JSON are cached; no X, YouTube, audio reader, denied provider or licensed catalog was requested. The complete marked publisher transcript remains semantically unreviewed.",
+            "candidate_id": "H6TN06213",
+            "completeness": "marked_script",
+            "content_sha256": "ee761490bcd39482e0933d1d98c75dafbed6c20f7f735402588838fdca64a3b3",
+            "format": "wordpress",
+            "media_url": "https://x.com/JohnnyGarrett/status/2070267637859336250?ref_src=twsrc%5Etfw",
+            "passages": [
+              "Narrator: “Liberals don’t get it, but it’s pretty obvious.",
+              "“Their policies are messed up.",
+              "“That’s why pro-Trump conservative Johnny Garrett spearheaded legislation banning men from playing girls’ sports.",
+              "“Garrett’s a married father of three and endorsed by Riley Gaines.",
+              "“Garrett will protect girls’ sports and stop the radical left from pushing sex changes for minors.",
+              "“We need more Tennessee in D.C., and Trump needs an ally.",
+              "“Vote conservative Johnny Garrett for Congress.”",
+              "Johnny Garrett: “I’m Johnny Garrett, and I approve this message.”"
+            ],
+            "phase": "primary",
+            "phase_evidence": {
+              "basis": "The separately inspected July 22 report explicitly identifies the TN-06 Republican primary competition and directly links this same June 29 Garrett ad report. Phase is not inferred from the calendar alone.",
+              "content_sha256": "612e6781c1f072c876c48fba78271e4e9a795b50ac9d9b724263c15ed46bf16f",
+              "url": "https://nashvillebanner.com/2026/07/22/republican-deepfake-ads-tennessee-6th-congressional-district/"
+            },
+            "published": "2026-06-29",
+            "publisher_speaker_label_word_count": 3,
+            "record_id": "30144",
+            "release_title": "Drag Queen Dunks on High School Basketball Team in New Johnny Garrett Ad",
+            "reported_original_post_date": "2026-06-25",
+            "required_context": [
+              "Transcript:",
+              "In his latest ad, Tennessee congressional candidate Johnny Garrett",
+              "Like other Republicans seeking to represent the 6th Congressional District",
+              "Where it’s running: Online, broadcast"
+            ],
+            "retrieval_url": "https://nashvillebanner.com/wp-json/wp/v2/posts/30144",
+            "source": "garrett-nashville-banner",
+            "source_url": "https://nashvillebanner.com/2026/06/29/johnny-garrett-campaign-ad-riley-gaines/",
+            "spoken_word_count": 79
+          },
+          "text": "Narrator: “Liberals don’t get it, but it’s pretty obvious."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "“Their policies are messed up."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "“That’s why pro-Trump conservative Johnny Garrett spearheaded legislation banning men from playing girls’ sports."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "“Garrett’s a married father of three and endorsed by Riley Gaines."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "“Garrett will protect girls’ sports and stop the radical left from pushing sex changes for minors."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "“We need more Tennessee in D.C., and Trump needs an ally."
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "“Vote conservative Johnny Garrett for Congress.”"
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "Johnny Garrett: “I’m Johnny Garrett, and I approve this message.”"
+        }
+      ],
+      "source": "garrett-nashville-banner",
+      "source_hash": "ee761490bcd39482e0933d1d98c75dafbed6c20f7f735402588838fdca64a3b3",
+      "source_record_id": "30144",
+      "source_url": "https://nashvillebanner.com/2026/06/29/johnny-garrett-campaign-ad-riley-gaines/",
+      "sponsor": "Johnny Garrett campaign (reported publisher; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "TN",
+      "text": "Narrator: “Liberals don’t get it, but it’s pretty obvious.\n“Their policies are messed up.\n“That’s why pro-Trump conservative Johnny Garrett spearheaded legislation banning men from playing girls’ sports.\n“Garrett’s a married father of three and endorsed by Riley Gaines.\n“Garrett will protect girls’ sports and stop the radical left from pushing sex changes for minors.\n“We need more Tennessee in D.C., and Trump needs an ally.\n“Vote conservative Johnny Garrett for Congress.”\nJohnny Garrett: “I’m Johnny Garrett, and I approve this message.”",
+      "title": "Drag Queen Dunks on High School Basketball Team in New Johnny Garrett Ad"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Official NRSC release at https://www.nrsc.org/press-releases/new-ad-mary-peltola-puts-herself-first-and-alaskans-last-2026-06-30/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
       "date_basis": "release_date",
@@ -16576,6 +16698,99 @@
       "state": "AK",
       "text": "I’m retired Marine Lance Corporal Nick Woodard.\nIt was a car accident that left me in this wheelchair.\nAt first, the VA wanted me to move to Seattle for treatment, but fellow Marine Senator Dan Sullivan became my champion.\nHe worked and worked.\nDan personally made the bureaucrats in DC approve the healthcare I needed here in Alaska.\nI’m living proof of how much Dan Sullivan cares about veterans and healthcare for Alaskans.",
       "title": "Senator Dan Sullivan’s Campaign Begins Airing Second Statewide Ad Featuring Retired Marine"
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "Credit: Anna Blubaugh, Nashville Banner, July 22, 2026. The unique primary h1.entry-title and time.entry-date.published agree with actual single-post API 30952, local July 22 06:02 / GMT 11:02. The report identifies Garrett's TN-06 Republican primary campaign attack on Van Hilleary and links its individual YouTube creative f5HU1j-efzU. These three ordered literal ad quotations total 23 words and belong to that Garrett swamp/border/lobbying spot, not the separate Hilleary creatives or the already reviewed Garrett basketball ad. Exact saved FEC H6TN06213 / C00910935 identifies GARRETT, JOHNNY, REP, House, TN-06. Hilleary's earlier TN-04 service is a quoted claim context, not this ad's race or a Democratic target. Both contestants are Republicans; no cross-party opponent portrayal is invented. The primary phase is explicit in the report, not inferred from July alone. Preserve the article's statements about AI-generated visuals and do not treat them as authentic Hilleary speech. Campaign production is reported, not an independently inspected legal payer or paid-delivery interval. Publisher prose, workplace DEI policy, legislative quotation, interview responses and Hilleary-ad fragments are excluded. Strict rendered hash/title/date, exact federal identity, campaign/primary context, original link and ordered literal words are bound. Public anonymous browser reads and actually exposed single-post JSON are cached; no video, caption provider, reader audio, denied page or licensed catalog was requested. This remains an explicitly incomplete quotation and semantically unreviewed.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6TN06213",
+          "district": "06",
+          "name": "GARRETT, JOHNNY",
+          "office": "H",
+          "party": "REP",
+          "state": "TN"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "garrett-nashville-banner-30952-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://youtu.be/f5HU1j-efzU?si=ZaPreI6-YtKZR8yi"
+      ],
+      "message_id": "502632396f6c187f2d5f0d333b69e2f6cb582a8f16afdc3ebfd53d772ef5ae67",
+      "observed": "2026-10-31",
+      "phase": "primary",
+      "placement": "campaign_release",
+      "published": "2026-07-22",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "TN-06",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6TN06213"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Credit: Anna Blubaugh, Nashville Banner, July 22, 2026. The unique primary h1.entry-title and time.entry-date.published agree with actual single-post API 30952, local July 22 06:02 / GMT 11:02. The report identifies Garrett's TN-06 Republican primary campaign attack on Van Hilleary and links its individual YouTube creative f5HU1j-efzU. These three ordered literal ad quotations total 23 words and belong to that Garrett swamp/border/lobbying spot, not the separate Hilleary creatives or the already reviewed Garrett basketball ad. Exact saved FEC H6TN06213 / C00910935 identifies GARRETT, JOHNNY, REP, House, TN-06. Hilleary's earlier TN-04 service is a quoted claim context, not this ad's race or a Democratic target. Both contestants are Republicans; no cross-party opponent portrayal is invented. The primary phase is explicit in the report, not inferred from July alone. Preserve the article's statements about AI-generated visuals and do not treat them as authentic Hilleary speech. Campaign production is reported, not an independently inspected legal payer or paid-delivery interval. Publisher prose, workplace DEI policy, legislative quotation, interview responses and Hilleary-ad fragments are excluded. Strict rendered hash/title/date, exact federal identity, campaign/primary context, original link and ordered literal words are bound. Public anonymous browser reads and actually exposed single-post JSON are cached; no video, caption provider, reader audio, denied page or licensed catalog was requested. This remains an explicitly incomplete quotation and semantically unreviewed.",
+            "candidate_id": "H6TN06213",
+            "completeness": "partial_quotation",
+            "content_sha256": "612e6781c1f072c876c48fba78271e4e9a795b50ac9d9b724263c15ed46bf16f",
+            "creative_authenticity": "Publisher-reported AI-generated visual depictions of primary rival Van Hilleary; these quoted narrator/onscreen claims are not authenticated Hilleary speech.",
+            "format": "wordpress",
+            "media_url": "https://youtu.be/f5HU1j-efzU?si=ZaPreI6-YtKZR8yi",
+            "passages": [
+              "voted against E-Verify",
+              "opened our borders and put illegals over Americans",
+              "working for a group funded by pro-amnesty and gun-grabber billionaire Michael Bloomberg"
+            ],
+            "phase": "primary",
+            "published": "2026-07-22",
+            "record_id": "30952",
+            "release_title": "Van Hilleary, Johnny Garrett Turn to Deepfake Ads in 6th Congressional District Primary Battle",
+            "required_context": [
+              "Two Republican candidates",
+              "in Tennessee’s 6th Congressional District",
+              "his main primary competition",
+              "Garrett recently released an ad targeting his opponent’s age and voting record.",
+              "Garrett’s ad criticizes Hilleary’s time as representative",
+              "Garrett’s ad spotlights Hilleary’s work with Dentons LLP"
+            ],
+            "retrieval_url": "https://nashvillebanner.com/wp-json/wp/v2/posts/30952",
+            "source": "garrett-nashville-banner",
+            "source_url": "https://nashvillebanner.com/2026/07/22/republican-deepfake-ads-tennessee-6th-congressional-district/"
+          },
+          "text": "voted against E-Verify"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "opened our borders and put illegals over Americans"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "working for a group funded by pro-amnesty and gun-grabber billionaire Michael Bloomberg"
+        }
+      ],
+      "source": "garrett-nashville-banner",
+      "source_hash": "612e6781c1f072c876c48fba78271e4e9a795b50ac9d9b724263c15ed46bf16f",
+      "source_record_id": "30952",
+      "source_url": "https://nashvillebanner.com/2026/07/22/republican-deepfake-ads-tennessee-6th-congressional-district/",
+      "sponsor": "Johnny Garrett campaign (reported publisher; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "TN",
+      "text": "voted against E-Verify\nopened our borders and put illegals over Americans\nworking for a group funded by pro-amnesty and gun-grabber billionaire Michael Bloomberg",
+      "title": "Van Hilleary, Johnny Garrett Turn to Deepfake Ads in 6th Congressional District Primary Battle"
     },
     {
       "alignment": "R",
@@ -45907,6 +46122,22 @@
       "source": "flippo-americanjournal",
       "state": "partial",
       "url": "https://americanjournalnews.com"
+    },
+    {
+      "ads_with_text": 2,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 2
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 2,
+      "retained_ads": 2,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "garrett-nashville-banner",
+      "state": "partial",
+      "url": "https://nashvillebanner.com"
     },
     {
       "ads_with_text": 0,

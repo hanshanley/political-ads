@@ -10,9 +10,79 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Tennessee Garrett expansion of the October 30 snapshot
+
+The latest acquisition contains **1,875 text records**, including **1,837
+English records: 1,226 D / 572 R / 31 other / eight unresolved**.
+Two distinct Johnny Garrett **TN-06 Republican-primary campaign ads**
+are recovered from Nashville Banner: the June 29 basketball-ad report
+contains a **complete eight-paragraph marked transcript**, and the July 22
+swamp/border/lobbying-ad report contains **three partial quotations / 23
+words**. The full transcript preserves **79 spoken words and three
+publisher speaker-label tokens**, 82 tokens total. Both remain
+**semantically unreviewed**. Same-party primary criticism is not invented
+as a Democratic-opponent portrayal.
+
+Exact FEC **H6TN06213 / C00910935** identifies GARRETT, JOHNNY, REP,
+House, TN-06; no alias or fuzzy match is added. The actual publisher pages'
+unique `h1.entry-title` and `time.entry-date.published` agree with their
+exposed single-post JSON, **30144 / 30952**. The June report's older
+updated timestamp is not its publication date. Actual original links are
+X status **2070267637859336250** and YouTube **f5HU1j-efzU**.
+The first post's explicitly reported **June 25** release remains distinct
+from its **June 29** report. The July 22 report explicitly identifies the
+primary competition and links the June ad report; phase is not inferred
+from dates alone. Campaign production/placement are publisher-reported,
+not an independently inspected payer or verified paid-delivery interval.
+The July spot's AI-generated Hilleary depictions are disclosed, not
+treated as authentic Hilleary speech.
+
+Rendered-content SHA-256, in post order:
+`ee761490bcd39482e0933d1d98c75dafbed6c20f7f735402588838fdca64a3b3`;
+`612e6781c1f072c876c48fba78271e4e9a795b50ac9d9b724263c15ed46bf16f`.
+Anonymous public browser responses are cached exactly. No X/YouTube,
+reader audio, caption provider, denied source or licensed catalog was
+requested. The full-script extractor now stops at the reporter's
+line-start `Analysis:` section. Two failing-before regressions reproduce
+the contamination; a third confirms that ordinary analysis wording inside
+an ad is retained. Prior ads are not re-extracted or relabeled.
+
+```sh
+political-ads collect --source garrett-nashville-banner \
+  --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+Exact messages are **1,204 D / 535 R**. English House coverage is **698 D /
+194 R**, including **222 D / 193 R non-Snap** and 476 D / one R Snap.
+This is still source-limited collection coverage, not national advertising
+volume or a resolved Republican House gap. The frozen Wisconsin baseline
+contains **1,873 acquired / 1,835 analyzed objects, 34 acquisition reviews
+and 17 protected canonical files**, all verified unchanged. Complete
+JSON/gzip/CSV downloads, all **1,875 Parquet rows** and **eleven visually
+inspected PNGs** reconcile across analysis, browser and production assets.
+Isolated network-forbidden replay reproduces **530 written records and
+source states** from 528 using only the two cached single-post responses.
+All **154 affected Python tests**, lint/format, **17 frontend tests**,
+production build and **seven browser cases** pass. Independent auditing
+verifies **20 metric groups / ten chart rows**. Snapshot:
+`c4aae9d54a53d8853ef3c9860de9d5d51fa06c2f795bd8b7f23e4496f98811bc`.
+
+Broader public discovery follows the collection link actually exposed in
+the publisher's single-post JSON. Its in-window `Transcript` search
+returns **17 reports / one page**: most are state races or non-ad news,
+not eligible federal ads. The October 7 Charlie Hatcher **TN-05 general**
+report is a new full-script lead. Its actual primary heading, visible
+publication date and exposed single-post **35281** agree; original
+**mkGJBbt_94c** and exact FEC **H6TN05405 / C00923383** are verified.
+It remains unadmitted pending its own preservation/acquisition checkpoint.
+
 ## Wisconsin synthetic-creative expansion of the October 30 snapshot
 
-The latest acquisition contains **1,873 text records**, including **1,835
+This checkpoint contains **1,873 text records**, including **1,835
 English records: 1,226 D / 570 R / 31 other / eight unresolved**.
 One new **WI-03 general-election campaign-social attack** contains **22
 literal quoted words** from a fictional Cooke likeness in a Van Orden

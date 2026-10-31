@@ -293,6 +293,26 @@ def test_script_background_heading_allows_spacing_before_the_colon():
     assert blocks == [script]
 
 
+@pytest.mark.parametrize("heading", ["Analysis:", "<strong>Analysis:</strong>"])
+def test_script_excludes_reporter_analysis_after_transcript(heading):
+    script = (
+        "Our candidate will fight corruption in Washington and bring down costs "
+        "for working families across the district."
+    )
+    assert transcript_blocks(
+        f"<p>Transcript:</p><p>{script}</p><p>{heading} This is the reporter's "
+        "assessment, not the advertiser's words.</p><p>More reporting follows.</p>"
+    ) == [script]
+
+
+def test_analysis_wording_inside_script_is_not_an_editorial_heading():
+    script = (
+        "Analysis shows that families need lower costs and better jobs. "
+        "Our analysis: voters deserve leaders who will work together."
+    )
+    assert transcript_blocks(f"<p>Transcript:</p><p>{script}</p>") == [script]
+
+
 def test_wfw_sample_script_is_one_creative_not_all_announced_districts():
     source = next(s for s in SOURCES if s.id == "wfw")
     candidates = [
