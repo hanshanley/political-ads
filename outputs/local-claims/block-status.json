@@ -482,50 +482,50 @@
   {
     "ad_id": "dccc-668728-0",
     "block_id": "dccc-668728-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 4: {\\\"anchor_quote\\\":\\\"They\\\",\\\"anchor_unit_id\\\":4,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"unknown\\\",\\\"name\\\":\\\"They\\\",\\\"role\\\":\\\"unclear\\\",\\\"tone\\\":\\\"negative\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-668738-0",
     "block_id": "dccc-668738-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for insurance companies: \\\"insurance companies\\\" is absent from unit 3. Exact source: \\\"That’s why I’m fighting the insurance and drug companies in Congress.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-668740-0",
     "block_id": "dccc-668740-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "dccc-668744-0",
     "block_id": "dccc-668744-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for Marques: \\\"Marques\\\" is absent from unit 5. Exact source: \\\"voting for a 67% increase in gas and diesel taxes.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-668747-0",
     "block_id": "dccc-668747-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "dccc-668747-1",
     "block_id": "dccc-668747-1-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":10,\\\"label\\\":\\\"Janelle Stelson\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-668751-0",
     "block_id": "dccc-668751-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "dccc-668754-0",
     "block_id": "dccc-668754-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for Ralph A. Alvarado: \\\"Ralph Alvarado\\\" is absent from unit 5. Exact source: \\\"He was Bevin’s running mate.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-668759-0",
