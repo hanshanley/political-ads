@@ -10,7 +10,89 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Ben Butler Florida House quoted-ad expansion
+## Max Miller Ohio House quoted-ad expansion
+
+**miller-yahoo-161749271-0** retains **two noncontiguous literal excerpts /
+sixteen whitespace tokens**, **9 + 7**, from Jennifer Bendery's October 16
+HuffPost report via Yahoo. This is one Republican OH-07 **general, partial,
+semantically unreviewed** ad, not a continuous sentence or full transcript.
+Both terminal commas and the second excerpt's lowercase opening remain literal.
+The actual HTML uses straight quotation delimiters. Longer unselected quotations,
+reporter allegations, family commentary and polling assessments are not added.
+The retained denial is campaign speech, not independent factual verification.
+
+Actual report:
+`https://www.yahoo.com/news/politics/articles/embattled-gop-rep-max-miller-161749271.html`.
+Full HTML SHA-256:
+`3d42050756c81b283e47cb300a0b0090378c7f4cfc648f062badb2b01d0d9794`.
+The unique h1, **Jennifer Bendery** author, article URL suffix **161749271**
+and unique visible **Fri, October 16, 2026 at 4:17 PM UTC** bind the report.
+The time element's **2026-10-16T16:17:49.000Z** agrees with NewsArticle
+publication and modification at **2026-10-16T16:17:49Z**. This is the
+publisher observation, not independently verified first airing or upload.
+
+The first excerpt is explicitly attributed to Miller speaking in the ad;
+the second is introduced as a claim in his latest ad. Both unique paragraphs
+and the actual opposing-party House-race paragraph share the same nearest
+**div.max-w-screen-sm** story container. That real story context establishes
+general phase; unrelated Yahoo recommendation cards mentioning November or
+midterms are not dating or phase evidence. Exact unchanged FEC
+**H2OH16051 / C00770818**, **MILLER, MAX**, REP, House, OH-07, 2026, agrees
+with cached official principal **MAX MILLER FOR CONGRESS**, P/H/REP.
+No alias, roster or parser change is needed. The principal is identity
+evidence, not an inspected creative payer or authorization.
+
+The actual introductory **a new campaign ad** anchor individually identifies
+**PollTracker2024 X status 2111118886838075510**. This is a publisher-linked
+reporter/shared ad post, **not a verified campaign-original upload**. The
+actual story has no iframe. No original media, social-media API or caption
+request was made; the individual status association is distinct from every
+preceding media identity and Miller's earlier Socialist ad. Credit
+**Jennifer Bendery / HuffPost via Yahoo**; no blanket article/media license
+or authorization to publish either edition is asserted.
+
+```sh
+.venv/bin/python -m political_ads.cli collect --source miller-yahoo --offline --until 2026-10-30
+.venv/bin/python -m political_ads.cli parquet
+.venv/bin/python -m political_ads.cli build --offline
+.venv/bin/python -m political_ads.cli analyze --offline
+.venv/bin/python -m political_ads.cli validate --offline
+.venv/bin/python -m political_ads.cli audit-strategy --offline --output data/raw/house-miller-yahoo-strategy-audit.json
+```
+
+Offline source verification requires the actual hash-bound response preserved
+in **data/raw/http**, not a search snippet. Locally verified snapshot
+`eceb11bc8ed1c45fa8655384ced8478646824d1c5f8db11b54f75f002f1e22fd`
+contains **1,904 acquired / 1,865 English** records: **1,226 D / 600 R**,
+31 other and eight unresolved. Exact English messages are **1,204 D /
+563 R**. English House coverage is **698 D / 222 R**, including
+**222 D / 221 R non-Snap** and **476 D / one R Snap**. These are
+source-collection counts, not national prevalence or matched-race coverage.
+All **227 affected Python tests**, **17 frontend tests**, **seven browser
+cases**, lint, formatting, typecheck and builds pass. The independent audit
+reconciles **twenty metric groups / ten chart rows**. Complete
+analysis/browser/production JSON/gzip/CSV, all **1,904 Parquet rows** and
+eleven visually inspected PNG sets reconcile. An isolated socket-forbidden
+**one-response 551-to-552 written replay** reproduces every object and
+source state with the original October 31 observation. Supplemental literal
+quotation/date/author/real-story-container/general-phase/original/principal/
+raw-review-byte/production-export assertions pass. The immutable baseline
+preserves every **1,903 preceding acquired / 1,864 analyzed object**, all
+**57 preceding review objects and raw suffix bytes**, seventeen protected
+inputs, the complete alias list and native backlog. Concurrent claims work,
+frozen semantic judgments and publication/provider holds remain protected.
+
+Further NC primary discovery remains **unacquired**. The February 15 Daily
+Haymaker Asa Buck report links **hLfHqDxPufw** but supplies no qualifying
+literal ad speech. The February 27 WRAL report supplies only a short
+quotation, without an individual Asa Buck ad link. The Assembly's actual
+February 27 report links Buckhout ad **vkOhdKkVhW4**, but quotes only
+**nine ad tokens** and explicitly identifies reused **2024** endorsement
+clips. Interview remarks and shot descriptions do not pad those quotations.
+None clears the fifteen-token partial-quotation threshold; no media was
+requested and none is counted as an acquired ad.
+
+## Previous Ben Butler Florida House quoted-ad expansion
 
 **butler-flvoice-142440-0** retains **two literal passages / nineteen
 whitespace tokens**, **9 + 10**, from Kennedy Owens's August 4 Florida's
@@ -89,15 +171,12 @@ objects and raw suffix bytes**, seventeen protected inputs, every old alias
 and the native backlog. Concurrent claims work and publication/provider
 holds remain protected; no new semantic judgment is inferred.
 
+Committed and pushed as Hans Hanley, without Copilot attribution, in
+**d649229ab8cea2e9244ec11c090900a9b24a09cd**. Exact CI **41233811442**
+completed successfully for that exact SHA; all thirteen steps passed.
 Broader searches also surfaced Bouchard **Jump** and Buckhout's veterans
-ad, already acquired below; these are not new messages. A separate actual
-**October 16 Max Miller** report has explicit ad quotations and an
-individual publisher-linked **PollTracker2024 X status
-2111118886838075510**; actual Yahoo HTML SHA-256
-`3d42050756c81b283e47cb300a0b0090378c7f4cfc648f062badb2b01d0d9794`.
-This remains an **unacquired lead**, pending exact metadata/phase,
-candidate/principal and original-identity checks. Reporter allegations and
-commentary are not ad speech; no social-media request has been made.
+ad, already acquired below; these are not new messages. The formerly
+unacquired October 16 Miller lead is now verified in the section above.
 
 ## Previous Luke Murphy Florida House quoted-ad expansion
 
