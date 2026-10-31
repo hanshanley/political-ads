@@ -10,7 +10,124 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Strada and Elijah Florida House quoted-ad expansion
+## Further Elijah affordability and public-safety ad expansion
+
+Two additional Republican FL-07 ads are acquired, both **partial and
+semantically unreviewed**. **elijah-everyturn-flvoice-145089-0** retains
+one complete selected **18-whitespace-token** quotation from **At Every
+Turn**, including the literal standalone en dash (**17 substantive word
+tokens**). The unique paragraph explicitly attributes it to Elijah in the
+campaign spot. The other quotation, title and platform summaries are not
+extra speech. **General** phase follows explicit opposing-party context
+against Democrat Bale Dalton, not September alone.
+**elijah-sheriffs-flvoice-145819-0** retains one complete selected
+**19-token** Chitwood quotation, immediately following the explicit
+description of Chitwood opening the advertisement. Its terminal comma
+remains literal. Phase stays **unknown** because the report does not
+explicitly establish nomination or opposing-party general context.
+
+The actual affordability report:
+`https://flvoicenews.com/gop-congressional-candidate-ryan-elijah-rolls-out-ad-campaign-targeting-grocery-costs-and-liberal-tax-policies/`.
+HTML SHA-256:
+`aefb05b6a62255022e2a03e4ac55551ccc64394ce9c6bc9a7d756bb610028761`.
+**Michelle Vecerina**, **postid-145089**, unique **h1.fl-heading** and
+visible **September 23, 2026, 4:00 p.m. ET** bind the source. Publication
+metadata is **2026-09-23T20:00:41+00:00**, modification **20:00:42 UTC**.
+The actual YouTube iframe individually binds **VkktThIa-iM**, preserving
+**start=19&feature=oembed** rather than claiming an inspected full upload.
+
+The actual sheriff-support report:
+`https://flvoicenews.com/ryan-elijah-highlights-support-from-chitwood-lemma-and-ivey-2-appear-in-new-ad/`.
+HTML SHA-256:
+`8b926320d3a459fe09fee00a60e7f768b1aa6e054f5e4585f051f36a57e19314`.
+Its author is **Kennedy Owens**, not the author of the other Elijah
+reports. **postid-145819**, unique **h1.fl-heading** and visible
+**October 7, 2026, 3:00 p.m. ET** bind the source. Publication metadata
+is **2026-10-07T19:00:57+00:00**, modification **19:00:59 UTC**.
+The adjacent first campaign tweet announces release of the second
+commercial focused on public safety and individually links
+**RyanElijah status 2107813401624023070**, with its **ref_src** query
+unchanged. This is a publisher-linked campaign announcement association,
+not an independently inspected original upload. The second status,
+**2107862672884834312**, is a separate support post; it is neither a
+second counted creative nor the selected original association.
+
+Both exact identities are unchanged **H6FL07231 / C00948661**,
+**ELIJAH, RYAN**, REP, House, FL-07, 2026, corroborated by official cached
+principal **RYAN ELIJAH FOR CONGRESS**, P/H/REP. Existing name recognition
+requires no alias, roster or collector-logic edit. Chitwood's endorsement
+concerns this federal candidate, not a local-office campaign. Dates are
+publisher observations, not independently verified airing, upload or paid
+delivery; principal registration is not an inspected legal approval card.
+No original media, social page, caption or API was requested. Credit
+**Michelle Vecerina / Florida's Voice** and **Kennedy Owens / Florida's
+Voice** respectively; no blanket license or authorization to publish either
+edition is asserted.
+
+```sh
+.venv/bin/python -m political_ads.cli collect --source elijah-everyturn-flvoice --source elijah-sheriffs-flvoice --offline --until 2026-10-30
+.venv/bin/python -m political_ads.cli parquet
+.venv/bin/python -m political_ads.cli build --offline
+.venv/bin/python -m political_ads.cli analyze --offline
+.venv/bin/python -m political_ads.cli validate --offline
+.venv/bin/python -m political_ads.cli audit-strategy --offline --output data/raw/house-elijah-everyturn-sheriffs-strategy-audit.json
+```
+
+Actual hash-bound responses are preserved in **data/raw/http**. Immediate
+pre/post verification preserves every preceding **1,906 acquired / 1,867
+analyzed object**. The immutable baseline freezes all **60 preceding review
+entries**, every alias and seventeen protected inputs. Full validation
+passes: **227 Python cases**, Python lint/format, Parquet/build/analysis/
+validation and the strategy audit; frontend lint and **17 unit cases**;
+production typecheck/build and **seven browser cases**. The strict verifier
+preserves every prior acquired/analyzed object, old review and protected
+input, exact alias-list equality, complete JSON/gzip/CSV/Parquet export
+parity and both unpublished editions. An isolated, socket-forbidden replay
+uses exactly the two original cached responses, fixes the October 31
+observation and changes **554 → 556** written objects. Supplementary
+checks verify literal punctuation, differing actual authors, phase,
+individual iframe/status and first-ad-announcement associations, principal
+registration and raw prior-review bytes. All **eleven actual manifest
+PNG figures** were inspected in two contact sheets; labels and source notes
+remain legible and unclipped.
+
+Verified snapshot:
+`5f2d343cb663a9266798dca5dedd832248dcd15fe74ea6789114772a9505ec77`.
+It contains **1,908 acquired / 1,869 English records**: **1,226 D /
+604 R / 31 other / eight unresolved**. Exact English messages are
+**1,204 D / 567 R**. English House coverage is **698 D / 226 R /
+19 other / three unresolved**. Non-Snap House is **222 D / 225 R**;
+Snap remains **476 D / one R / 19 other / three unresolved**. Written
+objects are **556**, acquisition reviews **62**. Neither the newly
+exceeding non-Snap R count nor raw collection totals establish
+representative national or matched-race coverage.
+
+The previous Strada/Bad Bet research commit
+**86279aafd8b4370ec2a05a0ca97a3eab567ea0e7** is pushed to sole
+**main**, preserving concurrent claims parent **6d8b5e8**, with Hans
+Hanley author/committer and no Copilot/co-author/session trailers. Its
+exact CI **41235913866** completed successfully; independent GitHub
+JSON verification confirms the full exact SHA and all **thirteen
+successful steps**. Website/Substack publication and host restoration
+remain withdrawn.
+
+Broader discovery does not turn titles or summaries into ads. Young Kim's
+already cached actual **October 6** general-election release, post **1608**,
+links **EQ99ybmtijU / ScwJTPzzGds**, but contains only ad descriptions and
+spokesperson comments, not scripts or qualifying literal ad speech. No
+repeat network request or acquisition was made. The actual Brown and
+White Mackenzie/NRCC report supplies campaign statements, not extra
+literal ad words: its individually linked-PDF **Criminal Offense /
+Crooked Liberal** ad is already acquired below and must not be counted
+again under either title. LePage's immigration ad,
+Stover's release and TPM's Balkcom example are already acquired; Jackley's
+previously inspected campaign announcements do not establish a new script.
+USA Today's actual October 15 national roundup returned **402 Payment
+Required** and is paused without purchase, retry or mirror. House discovery
+and recurring prompt #1 continue; no national or matched-race coverage
+claim is made.
+
+## Previous Strada and Elijah Florida House quoted-ad expansion
 
 Two additional Republican House ads are acquired from actual Michelle
 Vecerina / Florida's Voice reports, **partial and semantically unreviewed**.
@@ -105,7 +222,8 @@ Its stylistic imitation of a Flores ad does not change the advertiser;
 no billboard or video link is acquired as ad text. The Republican House
 coverage gap remains unresolved, not explained away by non-Snap counts.
 
-Concrete next leads are preserved, **not yet acquired**. The actual
+The formerly unacquired next leads are now acquired in the section above.
+The actual
 **At Every Turn** report supplies one selected **18-token** quotation,
 HTML SHA-256
 `aefb05b6a62255022e2a03e4ac55551ccc64394ce9c6bc9a7d756bb610028761`,
@@ -118,9 +236,9 @@ and **2107862672884834312**. Their respective actual URLs are
 `https://flvoicenews.com/gop-congressional-candidate-ryan-elijah-rolls-out-ad-campaign-targeting-grocery-costs-and-liberal-tax-policies/`
 and
 `https://flvoicenews.com/ryan-elijah-highlights-support-from-chitwood-lemma-and-ivey-2-appear-in-new-ad/`.
-Dates, paragraph attribution, phase and which status actually associates
-the selected ad passage still require review; no extra creative is inferred
-from two social links. A guessed earlier Elijah slug returned **404** and
+Dates, paragraph attribution, phase and the actual campaign-announcement
+association are now individually checked above; no extra creative is
+inferred from two social links. A guessed earlier Elijah slug returned **404** and
 was not retried; discovery resumed with these actual indexed article URLs.
 
 ## Previous Max Miller Ohio House quoted-ad expansion
