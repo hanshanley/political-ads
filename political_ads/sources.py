@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "perry-capitalstar",
+        "https://penncapital-star.com",
+        "Patriots for Perry (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="PA-10",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "millermeeks-iowagop",
         "https://iowagop.org",
         "Mariannette Miller-Meeks campaign (publisher-reported; payer unverified)",

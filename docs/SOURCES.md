@@ -10,6 +10,137 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Perry Pennsylvania House quoted-ad expansion
+
+One additional Republican House record, **perry-capitalstar-70025-0**,
+retains one expressly attributed **voiceover quotation / sixteen tokens**
+from the Pennsylvania Capital-Star's October 21 WITF reprint. It is
+**partial and semantically unreviewed**, not a complete script, factual
+endorsement of the allegation, or neutral label. The literal terminal
+period remains; opening approval, closing payer, highlighted document
+fragments, neighbor allegations, reporting, rebuttals and debate remarks
+are not padding for the ad text.
+
+Actual full HTML SHA-256:
+`5297d6d4d25a2945550bed6bf3e29bae0b7383963e8870f9f44b5e63ac881a1f`.
+The body and exposed single-post link agree on **70025** without an API
+request. One h1, one **time.singleByline**, visible October 21 / 12:00 pm
+and **2026-10-21T16:00:29+00:00** agree. The unique paragraph within
+**#dataContent** attributes the quotation to the ad voiceover; the earlier
+ad paragraph links original **2wYgN0-t36M**.
+Reproduce with **`--source perry-capitalstar --offline --until 2026-10-30`**
+and that actual cached HTML. No original media or captions are requested.
+
+Credit **Jordan Wilkie, Pennsylvania Capital-Star / WITF**, with reporting
+contributed by **WITF's Katie Knol**. The actual reprint displays
+**CC BY-NC-ND 4.0**; its actually linked republishing guidelines were read
+once, HTTP 200 / SHA-256
+`652137805d4212d41f1f371d27c3923168b805d4d8634ace33004c06f5d74af1`.
+They allow shortening with author/publisher credit and original links,
+without selling the story or putting it behind a paywall. This is one
+unmodified sixteen-token quotation for noncommercial research, not
+wholesale article republication. WITF's actually linked general terms
+were also read, HTTP 200 / SHA-256
+`41861947d9d2cf4f2cc0b5cd8e66e2f5d7c4028c7420f118ef49561c62635689`.
+They restrict copying without applicable express permission and give
+specific content licenses precedence. Do not infer general WITF catalog
+reuse from this expressly licensed reprint; WITF is corroboration,
+not the redistributed text source. Preserve credit and both source links.
+Neither edition is published, monetized or placed behind a paywall.
+
+The actually linked original WITF report independently returned HTTP 200,
+SHA-256
+`649dcae079c5d4db3203f43de882ec001e766b455e2993b386801c87fb60324b`,
+and corroborates the same quotation and original, not a second ad.
+Its visible October 20 / 10:05 PM, the reprint's October 21 and reported
+October 19 ad release remain distinct. None verifies first upload,
+paid delivery or airing. The original publisher is not denied or bypassed.
+Exact saved **H2PA04135 / C00510164**, **PERRY, SCOTT**, REP, House,
+PA-10, 2026, and independently cached official principal
+**PATRIOTS FOR PERRY**, P/H/REP, agree. Target **H4PA10104 / C00852368**,
+**STELSON, JANELLE**, is Democratic, not the advertiser.
+General phase follows the explicit opposing-party final-weeks/rematch
+race, not October alone. Reported payer and authorization are not an
+independently inspected closing disclaimer. No alias is changed.
+Full acquired-corpus original/phrase checks find no duplicate; this
+does not establish national creative uniqueness or representative coverage.
+
+The immutable baseline at pushed **9333d58** freezes all **1,897 acquired /
+1,858 analyzed objects, 51 release reviews, seventeen protected files and
+every alias** before any Perry canonical edit. The separate WGAL
+September 16 report contains other partial ad quotations but no matching
+individual ad association; its station channel/news presentation is not
+assigned to those quotations. The actual Politico page returns a
+navigation shell, not recovered ad text. No acquisitions follow from either.
+
+Final locally verified snapshot:
+`d925954db8651d6241d4e81268a9da7c323fbe1e37911cac32e8faae112f0457`.
+It contains **1,898 acquired / 1,859 English** records: **1,226 D / 594 R**,
+31 other and eight unresolved. Exact English messages are **1,204 D /
+557 R**. English House coverage is **698 D / 216 R**: **222 D / 215 R**
+non-Snap and **476 D / one R** Snap, unchanged. These are source-limited
+collection counts, not national advertising prevalence.
+
+All **224 affected Python tests**, **17 frontend tests**, **seven final
+browser cases**, Python/frontend lint, formatting, typecheck and builds pass.
+Independent auditing reconciles **twenty metric groups / ten chart rows**.
+Strict checks retain every **1,897 old acquired / 1,858 old analyzed object**,
+all **51 prior release reviews and their raw suffix bytes**, seventeen
+protected files and every alias. Complete JSON/gzip/CSV and all **1,898
+Parquet identity/text/hash/alignment rows** reconcile. The first strict
+check caught a stale Parquet cache; the existing `parquet` command repaired
+it without weakening comparison. All eleven refreshed PNG sets were
+visually inspected and match browser/production copies. An isolated
+socket-forbidden **one-response 545-to-546 written replay** reproduces all
+objects and source states. Separate literal-quotation/post-ID/date/identity
+assertions pass. The new semantic review remains explicitly unreviewed.
+
+Broader discovery also reached the actual October 23 Washington Examiner
+Chamber-of-Commerce eight-House-member ad report, HTTP 200 / SHA-256
+`d7e24ffd5591b2116b002b72024d4dd8031edb270a1f3defbb1189fb2e6767d5`.
+It quotes an opening and a Lawler example and exposes one **VUzUhtTvBiU**
+link, not eight recovered variants. The individual variant association
+still requires verification; discovery adds no records.
+The actual October 30 AlterNet Herrera/Big Bend report returns HTTP 200 /
+SHA-256
+`7265564ea2c8cb1698503aeab5edab39144bf0149a7ebb6e3cea8c4a46048eae`.
+It has quoted ad speech but links reporter/commentator posts rather than
+an expressly identified original-ad repost; do not infer that association.
+The independently checked known Herrera campaign homepage returns HTTP
+200 / SHA-256
+`624ef65a639028f72d588a22ee473ef00882b45e148cece304a62e6df608dfd7`.
+Its biography, issue pages, endorsements, events and muted background
+videos are not recovered new ad speech. Its actually linked news archive
+page one returns HTTP 200 / SHA-256
+`fda2c39b949ba14bae8d91af715b5588ce1fd46377827dcba0138ecd821695e8`.
+The actual cards span May 11 through October 20 and contain fundraising,
+policy/endorsement statements and an ad-buy announcement, not recovered
+ad words. Its exposed page two returns HTTP 200 / SHA-256
+`3ba0afebd34544b6281ed166871cb94be430a7e6e195d2de8581bfd7974fca60`
+and reaches the 2025 boundary after policy, nomination and campaign updates.
+Actual page three returns HTTP 200 / SHA-256
+`01fb07c13f006f5513f66ab25283fb17b91b8db601125f1db94cb0fe215ac154`
+and contains only 2025 cards. No ad script was recovered from these pages.
+The independently discovered Chamber primary newsroom returns HTTP 200 /
+SHA-256
+`0b787751f7d65edf50900af7cced55790ac0cb8ccd8c56af75d9381a1ab9f029`.
+Its first ten cards are endorsement/event releases, not recovered ad speech;
+follow actual pagination toward the October 23 campaign before concluding.
+The earlier reviewed Herrera original remains
+in the undated backlog; filenames and homepage dates still do not date it.
+The campaign's joint-fundraising footer is not the new ad's inspected payer.
+Keep all provider pauses and the publication/host hold; broader acquisition
+and the twenty-minute continuation schedule remain active.
+
+The preceding Iowa checkpoint was pushed as **3bd0112**. Its first exact
+CI run failed collecting the concurrent CUDA tests, which could not import
+the repository's `scripts` namespace. The identical failure was reproduced
+locally; one existing pytest setting, `pythonpath = ["."]`, fixes all four
+existing CUDA tests without changing claims code, tests, dependencies or
+workflows. The single-file repair **9333d58** is pushed. Exact fixed-tree
+CI **41217734232** succeeds; the original watcher and independently checked
+SHA confirm every job and all thirteen steps passed.
+
 ## Iowa House marked-script expansion
 
 Three new Republican House records retain **complete publisher-marked ad
