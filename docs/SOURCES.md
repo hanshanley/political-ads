@@ -10,9 +10,100 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## NC-11 expansion of the October 30 snapshot
+## RJC expansion of the October 30 snapshot
 
-The latest acquisition contains **1,864 text records**, including **1,826
+The latest acquisition contains **1,866 text records**, including **1,828
+English records: 1,226 D / 563 R / 31 other / eight unresolved**. Two
+additional Republican outside-group House ads contribute **15 and 47
+literal quoted words**, respectively. Both remain **partial quotations**
+and semantically **unreviewed**. All **1,864 preceding acquired objects**,
+**1,826 preceding analyzed objects**, **25 earlier acquisition reviews**
+and **17 protected canonical JSON inputs**, including native partitions,
+candidate identities and saved semantic reviews, are unchanged. Concurrent
+frozen claims work was not touched.
+
+Exact observed-text messages are **1,204 D / 526 R**. English House
+coverage is **698 D / 185 R**: 476 D / one R Snap and 222 D / 184 R
+non-Snap. These are source-limited collection counts, not national
+advertising prevalence. Each new record has a different individual media
+association and observed-text identity; neither is a certified full
+transcript or independently established complete message family.
+
+| Reported advertiser | Recovered ad | Publisher / report date | Recovered words |
+|---|---|---|---|
+| RJC Victory Fund | Fitzpatrick support / Harvie attack, PA-01 general | Jewish Insider / October 17 local, October 18 UTC | Two fragments, 15 words |
+| RJC | Gallrein support / Massie attack, KY-04 primary | Jewish Insider / March 10 | Two passages, 47 words |
+
+Credit: **Marc Rod, Jewish Insider**. The PA-01 report explicitly names
+the Victory Fund and links an individual 30-second YouTube ad. Its quoted
+label retains the publisher's **Harvey** spelling and terminal comma;
+the quoted ending uses **Harvie**. Neither spelling is silently repaired.
+The visible byline and public WordPress local timestamp say October 17;
+HTML publication metadata says October 18 UTC. Both observations are
+retained. The report's announced Sunday launch does not independently
+establish first paid delivery. Exact saved FEC identity is **H6PA08277 /
+C00607416**, Brian Fitzpatrick, REP, PA-01.
+
+The KY-04 report explicitly describes the May 19 Republican primary and
+quotes the RJC ad. Gallrein is **H6KY04171 / C00923995**, and Massie is
+**H2KY04121 / C00509729**; both are REP, KY-04. A same-party Republican
+target must not become a Democratic opponent. The individual association
+is the report's linked **Massie campaign repost of the RJC ad**, not an
+asserted first uploader or Massie-produced original. Its first quotation
+retains the publisher's terminal comma. This report names RJC, not a
+verified Victory Fund legal payer.
+
+RJC CEO press statements, Massie's fundraising reply, Gallrein's
+separately linked statement, the unnamed Trump-linked PAC, a separate
+Massie ad and reporter assessments remain outside these ad texts.
+Advertiser alignment/type are **R / outside_group**. Sponsor attribution
+is publisher-reported; neither closing-payer card was independently
+inspected. No YouTube, X, caption service, denied RJC archive or licensed
+catalog was requested. Full HTML or rendered-content SHA-256, exact
+title/date, candidate/advertiser/phase context, individual association
+and literal passage order remain bound by the existing reviewed-release
+collector. No extraction logic, alias or semantic label changed.
+
+```sh
+political-ads collect --source rjc-vf-jewishinsider \
+  --source rjc-jewishinsider --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+Independent preservation checks reconcile complete analysis/browser/built
+JSON, decompressed gzip and text-complete CSV, all **1,866 Parquet rows**
+and eleven visually inspected PNG sets. Network-forbidden isolated replay
+starts with the preceding **519-record written corpus** and reproduces
+all **521 records and source states** from exactly **two cached publisher
+responses**, using their actual October 31 observation/check date without
+advancing the October 30 eligibility cutoff. Source/collector regressions
+pass **150 tests**, and the full Python suite passes **362 tests**.
+Python lint/format, frontend lint, **17 frontend
+tests**, production build and **seven browser cases** also passing.
+Publication validation and independent auditing pass **20 metric groups /
+ten chart rows**. Both article editions remain unpublished.
+
+Broader discovery resolved the previously missing Kiggans original
+fact-check URLs, but direct 13News Now retrieval returned **403**. The
+second same-host lead was not requested after that denial. WAVY and
+RealClearPolitics also returned **403**, with no retries or alternate
+retrieval of the denied pages. A public Townhall report supplies a new
+NRCC AZ-01 quotation and individual original-video association that
+remain **unadmitted** pending review and collection. JTA's separate
+pro-Massie report supplies quoted ad words but no individual original
+association; its linked advertiser's issues page contains policy prose,
+not recovered advertising. Independent Metro Weekly reporting links an
+individual pro-Massie creative and quotes its narration; that is another
+**unadmitted** acquisition lead. Those are not counted as new ads.
+Continued discovery and recurring acquisition remain active; publication
+and host restoration stay on hold.
+
+## Earlier NC-11 expansion of the October 30 snapshot
+
+The preceding acquisition contains **1,864 text records**, including **1,826
 English records: 1,226 D / 561 R / 31 other / eight unresolved**. Two
 additional **NRCC-funded, publisher-reported NC-11 ads** contribute actual
 quoted ad words, not press statements, social captions or reporting prose.
@@ -87,12 +178,14 @@ visually inspected. Both article editions remain unpublished.
 Broader PA-01 discovery found a distinct **RJC Victory Fund ad quotation**
 in Jewish Insider's October report. Its public 2026 RJC search returned
 **56 posts**, also identifying a separate **KY-04 RJC primary ad**
-supporting Ed Gallrein and criticizing Thomas Massie. Both remain
-unadmitted leads; search results and RJC press statements are not new ads.
+supporting Ed Gallrein and criticizing Thomas Massie. Both were unadmitted
+at this checkpoint and are recovered in the RJC expansion above; search
+results and RJC press statements themselves are not new ads.
 WHYY's October 15 report supplies a long quoted **Patch post**, not a
 verified ad transcript, and no individual ad association. That post is
-not counted as ad speech. Original Kiggans fact-check URLs remain
-unresolved. Continued discovery and recurring acquisition stay active;
+not counted as ad speech. Original Kiggans fact-check URLs were unresolved
+at this checkpoint; the subsequent access result is recorded above.
+Continued discovery and recurring acquisition stay active;
 website/Substack publication and host restoration remain on hold.
 
 ## Earlier publisher-linked expansion of the October 30 snapshot
