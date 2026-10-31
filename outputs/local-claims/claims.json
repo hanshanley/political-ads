@@ -2286,5 +2286,698 @@
     "text_hash": "5df03fd5be7a0783c5daf726c549c3a80e3e90728d14e784c2f6337613a9d66d",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-001",
+    "claim_text": "I'm doing something about it.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 243,
+        "kind": "local_asr",
+        "start": 214,
+        "text": "I'm doing something about it.",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 215,
+        "anchor_quote": "I",
+        "anchor_start": 214,
+        "anchor_unit_id": 10,
+        "entity_id": "candidate:H4PA08124",
+        "kind": "person",
+        "name": "Rob Brezdahan",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-002",
+    "claim_text": "My local farmers feeding our communities",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 284,
+        "kind": "local_asr",
+        "start": 244,
+        "text": "My local farmers feeding our communities",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 260,
+        "anchor_quote": "local farmers",
+        "anchor_start": 247,
+        "anchor_unit_id": 11,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "local farmers",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-003",
+    "claim_text": "act gets food from local farms directly to the people who need it right here at home.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 324,
+        "kind": "local_asr",
+        "start": 285,
+        "text": "act gets food from local farms directly",
+        "unit_id": 12
+      },
+      {
+        "end": 370,
+        "kind": "local_asr",
+        "start": 325,
+        "text": "to the people who need it right here at home.",
+        "unit_id": 13
+      }
+    ],
+    "evidence_ids": [
+      12,
+      13
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 288,
+        "anchor_quote": "act",
+        "anchor_start": 285,
+        "anchor_unit_id": 12,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "act",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 315,
+        "anchor_quote": "local farms",
+        "anchor_start": 304,
+        "anchor_unit_id": 12,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "local farms",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 338,
+        "anchor_quote": "people",
+        "anchor_start": 332,
+        "anchor_unit_id": 13,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "people",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-004",
+    "claim_text": "Fresher food, lower prices, and no middlemen.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 416,
+        "kind": "local_asr",
+        "start": 371,
+        "text": "Fresher food, lower prices, and no middlemen.",
+        "unit_id": 14
+      }
+    ],
+    "evidence_ids": [
+      14
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 383,
+        "anchor_quote": "food",
+        "anchor_start": 379,
+        "anchor_unit_id": 14,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "food",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 397,
+        "anchor_quote": "prices",
+        "anchor_start": 391,
+        "anchor_unit_id": 14,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "prices",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 415,
+        "anchor_quote": "middlemen",
+        "anchor_start": 406,
+        "anchor_unit_id": 14,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "middlemen",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-005",
+    "claim_text": "I'm Rob Brezdahan, and I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 510,
+        "kind": "local_asr",
+        "start": 464,
+        "text": "I'm Rob Brezdahan, and I approve this message.",
+        "unit_id": 17
+      }
+    ],
+    "evidence_ids": [
+      17
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 465,
+        "anchor_quote": "I",
+        "anchor_start": 464,
+        "anchor_unit_id": 17,
+        "entity_id": "candidate:H4PA08124",
+        "kind": "person",
+        "name": "Rob Brezdahan",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-006",
+    "claim_text": "Politicians talk about lowering the cost of living.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 213,
+        "kind": "local_asr",
+        "start": 162,
+        "text": "Politicians talk about lowering the cost of living.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 173,
+        "anchor_quote": "Politicians",
+        "anchor_start": 162,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Politicians",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-007",
+    "claim_text": "I'm Rob Brezdahan.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 161,
+        "kind": "local_asr",
+        "start": 143,
+        "text": "I'm Rob Brezdahan.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 144,
+        "anchor_quote": "I",
+        "anchor_start": 143,
+        "anchor_unit_id": 8,
+        "entity_id": "candidate:H4PA08124",
+        "kind": "person",
+        "name": "Rob Brezdahan",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-008",
+    "claim_text": "We're standing in it.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 66,
+        "kind": "local_asr",
+        "start": 45,
+        "text": "We're standing in it.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 47,
+        "anchor_quote": "We",
+        "anchor_start": 45,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "We",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-009",
+    "claim_text": "Thanks, and dairy.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 85,
+        "kind": "local_asr",
+        "start": 67,
+        "text": "Thanks, and dairy.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 84,
+        "anchor_quote": "dairy",
+        "anchor_start": 79,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "dairy",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-010",
+    "claim_text": "Down there at the barn.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 109,
+        "kind": "local_asr",
+        "start": 86,
+        "text": "Down there at the barn.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 108,
+        "anchor_quote": "barn",
+        "anchor_start": 104,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "barn",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-011",
+    "claim_text": "Over here at the coop.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 138,
+        "kind": "local_asr",
+        "start": 116,
+        "text": "Over here at the coop.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 137,
+        "anchor_quote": "coop",
+        "anchor_start": 133,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "coop",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-012",
+    "claim_text": "OK.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 142,
+        "kind": "local_asr",
+        "start": 139,
+        "text": "OK.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-013",
+    "claim_text": "Excuse me, sir. Where's the produce section?",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 44,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Excuse me, sir. Where's the produce section?",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 14,
+        "anchor_quote": "sir",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "sir",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "bresnahan-native-122240759240111841",
+    "alignment": "R",
+    "block_id": "bresnahan-native-122240759240111841-claims-001",
+    "block_status": "normalized",
+    "claim_id": "bresnahan-native-122240759240111841-claims-001-014",
+    "claim_text": "Rob Brezdahan approved this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 510,
+        "kind": "local_asr",
+        "start": 464,
+        "text": "I'm Rob Brezdahan, and I approve this message.",
+        "unit_id": 17
+      }
+    ],
+    "evidence_ids": [
+      17
+    ],
+    "source_url": "https://www.facebook.com/122240759240111841",
+    "sponsor": "Rob for PA",
+    "targets": [
+      {
+        "anchor_end": 481,
+        "anchor_quote": "Rob Brezdahan",
+        "anchor_start": 468,
+        "anchor_unit_id": 17,
+        "entity_id": "candidate:H4PA08124",
+        "kind": "person",
+        "name": "Rob Brezdahan",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Excuse me, sir. Where's the produce section?\nWe're standing in it.\nThanks, and dairy.\nDown there at the barn.\nNext.\nOver here at the coop.\nOK.\nI'm Rob Brezdahan.\nPoliticians talk about lowering the cost of living.\nI'm doing something about it.\nMy local farmers feeding our communities\nact gets food from local farms directly\nto the people who need it right here at home.\nFresher food, lower prices, and no middlemen.\nAnything else?\nYeah, to me, here's a lack guy.\nI'm Rob Brezdahan, and I approve this message.\nBRESNAHAN\nROB BRESNAHAN\nLOCAL TARMERS\nH.R.4782\nPAIDFOR BY ROB FOR PA. APPROYED BYROB BRESKAAN\nPAIDFOR BY ROBFOR PAL APIOVED BY RO BRESUAHANE\nRO\nS NAHAN\nCA\nPAIDFOR BY ROB FORPA.L APPROVED BY ROB BRESNAHAN.\nROBI\nCONGRESS\nPAID FOR BY ROB FOR PRZ APROVEDBIYROB BRESWAAN.\nROBY\nPAIDFOR BY ROBFORPAL APROVEO SY ROBRESNAHAN.\nROBE\nPADFOR BY ROB FORPAL APRDYEO SY ROB BRESVAHAN.",
+    "text_hash": "effad776816d8f60810dc808bf9abdfa342df50a23b11b2c218776ba0b419708",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]

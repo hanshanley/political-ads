@@ -1884,31 +1884,34 @@
       "all_unique_messages": 490,
       "categories_overlap": true,
       "denominator": "normalized_unique_messages",
-      "normalized_unique_messages": 5,
+      "normalized_unique_messages": 6,
       "side_tone": {
         "not_partisan": {
           "negative": {
             "ad_ids": [
               "barr-1387-0",
-              "barr-1639-0"
+              "barr-1639-0",
+              "bresnahan-native-122240759240111841"
             ],
-            "count": 2,
-            "share": 0.4
+            "count": 3,
+            "share": 0.5
           },
           "neutral": {
             "ad_ids": [
+              "bresnahan-native-122240759240111841",
               "barr-1992-0"
             ],
-            "count": 1,
-            "share": 0.2
+            "count": 2,
+            "share": 0.3333333333333333
           },
           "positive": {
             "ad_ids": [
               "barr-1387-0",
-              "barr-1639-0"
+              "barr-1639-0",
+              "bresnahan-native-122240759240111841"
             ],
-            "count": 2,
-            "share": 0.4
+            "count": 3,
+            "share": 0.5
           },
           "uncertain": {
             "ad_ids": [],
@@ -1970,11 +1973,12 @@
             "ad_ids": [
               "barr-1387-0",
               "barr-1713-0",
+              "bresnahan-native-122240759240111841",
               "barr-1942-0",
               "barr-1992-0"
             ],
-            "count": 4,
-            "share": 0.8
+            "count": 5,
+            "share": 0.8333333333333334
           },
           "positive": {
             "ad_ids": [
@@ -1982,34 +1986,36 @@
               "barr-1992-0"
             ],
             "count": 2,
-            "share": 0.4
+            "share": 0.3333333333333333
           },
           "uncertain": {
             "ad_ids": [
               "barr-1942-0"
             ],
             "count": 1,
-            "share": 0.2
+            "share": 0.16666666666666666
           }
         },
         "unknown": {
           "negative": {
             "ad_ids": [
               "barr-1387-0",
-              "barr-1639-0"
+              "barr-1639-0",
+              "bresnahan-native-122240759240111841"
             ],
-            "count": 2,
-            "share": 0.4
+            "count": 3,
+            "share": 0.5
           },
           "neutral": {
             "ad_ids": [
               "barr-1639-0",
               "barr-1713-0",
+              "bresnahan-native-122240759240111841",
               "barr-1942-0",
               "barr-1992-0"
             ],
-            "count": 4,
-            "share": 0.8
+            "count": 5,
+            "share": 0.8333333333333334
           },
           "positive": {
             "ad_ids": [
@@ -2020,7 +2026,7 @@
               "barr-1992-0"
             ],
             "count": 5,
-            "share": 1.0
+            "share": 0.8333333333333334
           },
           "uncertain": {
             "ad_ids": [],
@@ -2037,17 +2043,17 @@
   },
   "ads": 1792,
   "ads_by_status": {
-    "normalized": 5,
-    "not_run": 1784,
-    "validation_failed": 3
+    "normalized": 6,
+    "not_run": 1779,
+    "validation_failed": 7
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 5,
-    "not_run": 2008,
-    "validation_failed": 3
+    "normalized": 6,
+    "not_run": 2000,
+    "validation_failed": 10
   },
-  "claims": 47,
+  "claims": 61,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -2067,11 +2073,31 @@
         {
           "claim_id": "barr-1639-0-claims-001-006",
           "target_index": 1
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-004",
+          "target_index": 1
         }
       ],
       "neutral": [
         {
           "claim_id": "barr-1992-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-009",
+          "target_index": 0
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-010",
+          "target_index": 0
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-011",
           "target_index": 0
         }
       ],
@@ -2091,6 +2117,10 @@
         {
           "claim_id": "barr-1639-0-claims-001-007",
           "target_index": 1
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-004",
+          "target_index": 0
         }
       ],
       "uncertain": []
@@ -2124,6 +2154,22 @@
         },
         {
           "claim_id": "barr-1992-0-claims-001-011",
+          "target_index": 0
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-014",
           "target_index": 0
         }
       ],
@@ -2177,6 +2223,10 @@
         {
           "claim_id": "barr-1639-0-claims-001-005",
           "target_index": 1
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-004",
+          "target_index": 2
         }
       ],
       "neutral": [
@@ -2234,6 +2284,30 @@
         },
         {
           "claim_id": "barr-1992-0-claims-001-009",
+          "target_index": 0
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-003",
+          "target_index": 1
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-003",
+          "target_index": 2
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "bresnahan-native-122240759240111841-claims-001-013",
           "target_index": 0
         }
       ],
@@ -2318,6 +2392,6 @@
       "uncertain": []
     }
   },
-  "targets": 56,
+  "targets": 73,
   "version": "local-ad-claims-4"
 }
