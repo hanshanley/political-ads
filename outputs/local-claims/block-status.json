@@ -686,8 +686,8 @@
   {
     "ad_id": "dccc-669591-1",
     "block_id": "dccc-669591-1-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for COGNETTI, PAIGE: \\\"She\\\" is absent from unit 4. Exact source: \\\"Her own party. And the big corporations.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-669665-0",
@@ -698,8 +698,8 @@
   {
     "ad_id": "dccc-669669-0",
     "block_id": "dccc-669669-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-669673-0",
