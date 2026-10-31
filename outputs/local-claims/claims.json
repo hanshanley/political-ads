@@ -62531,6 +62531,550 @@
   },
   {
     "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-1-claims-001-001",
+    "claim_text": "We just can’t afford Gabe Evans",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 409,
+        "kind": "publisher_transcript",
+        "start": 378,
+        "text": "We just can’t afford Gabe Evans",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 409,
+        "anchor_quote": "Gabe Evans",
+        "anchor_start": 399,
+        "anchor_unit_id": 10,
+        "entity_id": "candidate:H4CO08034",
+        "kind": "person",
+        "name": "EVANS, GABE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Filling up\nKeeping the lights on\nFeeding our families\nCosts are skyrocketing in Colorado\nAnd we can thank Gabe Evans\nHe voted to give Donald Trump a blank check for the war in Iran\nAnd Gabe Evans voted eight times for the Trump tariffs\nThat blew up family budgets with higher costs for gas, groceries and farm supplies\nLeaving Colorado families and farmers paying more and more\nWe just can’t afford Gabe Evans",
+    "text_hash": "2d2d4fb35c6ad50058fff74d0694b2ead4543e1920dfdb00103c40ec83e78875",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-1-claims-001-002",
+    "claim_text": "Costs are skyrocketing in Colorado",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 88,
+        "kind": "publisher_transcript",
+        "start": 54,
+        "text": "Costs are skyrocketing in Colorado",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 88,
+        "anchor_quote": "Colorado",
+        "anchor_start": 80,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Colorado",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Filling up\nKeeping the lights on\nFeeding our families\nCosts are skyrocketing in Colorado\nAnd we can thank Gabe Evans\nHe voted to give Donald Trump a blank check for the war in Iran\nAnd Gabe Evans voted eight times for the Trump tariffs\nThat blew up family budgets with higher costs for gas, groceries and farm supplies\nLeaving Colorado families and farmers paying more and more\nWe just can’t afford Gabe Evans",
+    "text_hash": "2d2d4fb35c6ad50058fff74d0694b2ead4543e1920dfdb00103c40ec83e78875",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-1-claims-001-003",
+    "claim_text": "And we can thank Gabe Evans",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 116,
+        "kind": "publisher_transcript",
+        "start": 89,
+        "text": "And we can thank Gabe Evans",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 116,
+        "anchor_quote": "Gabe Evans",
+        "anchor_start": 106,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H4CO08034",
+        "kind": "person",
+        "name": "EVANS, GABE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Filling up\nKeeping the lights on\nFeeding our families\nCosts are skyrocketing in Colorado\nAnd we can thank Gabe Evans\nHe voted to give Donald Trump a blank check for the war in Iran\nAnd Gabe Evans voted eight times for the Trump tariffs\nThat blew up family budgets with higher costs for gas, groceries and farm supplies\nLeaving Colorado families and farmers paying more and more\nWe just can’t afford Gabe Evans",
+    "text_hash": "2d2d4fb35c6ad50058fff74d0694b2ead4543e1920dfdb00103c40ec83e78875",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-1-claims-001-004",
+    "claim_text": "He voted to give Donald Trump a blank check for the war in Iran",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 180,
+        "kind": "publisher_transcript",
+        "start": 117,
+        "text": "He voted to give Donald Trump a blank check for the war in Iran",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 119,
+        "anchor_quote": "He",
+        "anchor_start": 117,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H4CO08034",
+        "kind": "person",
+        "name": "EVANS, GABE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 146,
+        "anchor_quote": "Donald Trump",
+        "anchor_start": 134,
+        "anchor_unit_id": 6,
+        "entity_id": "national:Donald Trump",
+        "kind": "person",
+        "name": "Donald Trump",
+        "party_basis": "national_crosswalk",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Filling up\nKeeping the lights on\nFeeding our families\nCosts are skyrocketing in Colorado\nAnd we can thank Gabe Evans\nHe voted to give Donald Trump a blank check for the war in Iran\nAnd Gabe Evans voted eight times for the Trump tariffs\nThat blew up family budgets with higher costs for gas, groceries and farm supplies\nLeaving Colorado families and farmers paying more and more\nWe just can’t afford Gabe Evans",
+    "text_hash": "2d2d4fb35c6ad50058fff74d0694b2ead4543e1920dfdb00103c40ec83e78875",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-1-claims-001-005",
+    "claim_text": "And Gabe Evans voted eight times for the Trump tariffs",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 235,
+        "kind": "publisher_transcript",
+        "start": 181,
+        "text": "And Gabe Evans voted eight times for the Trump tariffs",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 195,
+        "anchor_quote": "Gabe Evans",
+        "anchor_start": 185,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:H4CO08034",
+        "kind": "person",
+        "name": "EVANS, GABE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 235,
+        "anchor_quote": "Trump tariffs",
+        "anchor_start": 222,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Trump tariffs",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Filling up\nKeeping the lights on\nFeeding our families\nCosts are skyrocketing in Colorado\nAnd we can thank Gabe Evans\nHe voted to give Donald Trump a blank check for the war in Iran\nAnd Gabe Evans voted eight times for the Trump tariffs\nThat blew up family budgets with higher costs for gas, groceries and farm supplies\nLeaving Colorado families and farmers paying more and more\nWe just can’t afford Gabe Evans",
+    "text_hash": "2d2d4fb35c6ad50058fff74d0694b2ead4543e1920dfdb00103c40ec83e78875",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-1-claims-001-006",
+    "claim_text": "That blew up family budgets with higher costs for gas, groceries and farm supplies",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 318,
+        "kind": "publisher_transcript",
+        "start": 236,
+        "text": "That blew up family budgets with higher costs for gas, groceries and farm supplies",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 263,
+        "anchor_quote": "family budgets",
+        "anchor_start": 249,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "family budgets",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 289,
+        "anchor_quote": "gas",
+        "anchor_start": 286,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "gas",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 300,
+        "anchor_quote": "groceries",
+        "anchor_start": 291,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "groceries",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 318,
+        "anchor_quote": "farm supplies",
+        "anchor_start": 305,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "farm supplies",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Filling up\nKeeping the lights on\nFeeding our families\nCosts are skyrocketing in Colorado\nAnd we can thank Gabe Evans\nHe voted to give Donald Trump a blank check for the war in Iran\nAnd Gabe Evans voted eight times for the Trump tariffs\nThat blew up family budgets with higher costs for gas, groceries and farm supplies\nLeaving Colorado families and farmers paying more and more\nWe just can’t afford Gabe Evans",
+    "text_hash": "2d2d4fb35c6ad50058fff74d0694b2ead4543e1920dfdb00103c40ec83e78875",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-1-claims-001-007",
+    "claim_text": "Leaving Colorado families and farmers paying more and more",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 377,
+        "kind": "publisher_transcript",
+        "start": 319,
+        "text": "Leaving Colorado families and farmers paying more and more",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 344,
+        "anchor_quote": "Colorado families",
+        "anchor_start": 327,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Colorado families",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 356,
+        "anchor_quote": "farmers",
+        "anchor_start": 349,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "farmers",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Filling up\nKeeping the lights on\nFeeding our families\nCosts are skyrocketing in Colorado\nAnd we can thank Gabe Evans\nHe voted to give Donald Trump a blank check for the war in Iran\nAnd Gabe Evans voted eight times for the Trump tariffs\nThat blew up family budgets with higher costs for gas, groceries and farm supplies\nLeaving Colorado families and farmers paying more and more\nWe just can’t afford Gabe Evans",
+    "text_hash": "2d2d4fb35c6ad50058fff74d0694b2ead4543e1920dfdb00103c40ec83e78875",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-1-claims-001-008",
+    "claim_text": "Filling up",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 10,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Filling up",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 10,
+        "anchor_quote": "Filling up",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Filling up\nKeeping the lights on\nFeeding our families\nCosts are skyrocketing in Colorado\nAnd we can thank Gabe Evans\nHe voted to give Donald Trump a blank check for the war in Iran\nAnd Gabe Evans voted eight times for the Trump tariffs\nThat blew up family budgets with higher costs for gas, groceries and farm supplies\nLeaving Colorado families and farmers paying more and more\nWe just can’t afford Gabe Evans",
+    "text_hash": "2d2d4fb35c6ad50058fff74d0694b2ead4543e1920dfdb00103c40ec83e78875",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-1-claims-001-009",
+    "claim_text": "Keeping the lights on",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 32,
+        "kind": "publisher_transcript",
+        "start": 11,
+        "text": "Keeping the lights on",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 32,
+        "anchor_quote": "Keeping the lights on",
+        "anchor_start": 11,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Filling up\nKeeping the lights on\nFeeding our families\nCosts are skyrocketing in Colorado\nAnd we can thank Gabe Evans\nHe voted to give Donald Trump a blank check for the war in Iran\nAnd Gabe Evans voted eight times for the Trump tariffs\nThat blew up family budgets with higher costs for gas, groceries and farm supplies\nLeaving Colorado families and farmers paying more and more\nWe just can’t afford Gabe Evans",
+    "text_hash": "2d2d4fb35c6ad50058fff74d0694b2ead4543e1920dfdb00103c40ec83e78875",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "lcv-vf-3039-1",
+    "alignment": "D",
+    "block_id": "lcv-vf-3039-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "lcv-vf-3039-1-claims-001-010",
+    "claim_text": "Feeding our families",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 53,
+        "kind": "publisher_transcript",
+        "start": 33,
+        "text": "Feeding our families",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/",
+    "sponsor": "LCV Victory Fund",
+    "targets": [
+      {
+        "anchor_end": 53,
+        "anchor_quote": "our families",
+        "anchor_start": 41,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "our families",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Filling up\nKeeping the lights on\nFeeding our families\nCosts are skyrocketing in Colorado\nAnd we can thank Gabe Evans\nHe voted to give Donald Trump a blank check for the war in Iran\nAnd Gabe Evans voted eight times for the Trump tariffs\nThat blew up family budgets with higher costs for gas, groceries and farm supplies\nLeaving Colorado families and farmers paying more and more\nWe just can’t afford Gabe Evans",
+    "text_hash": "2d2d4fb35c6ad50058fff74d0694b2ead4543e1920dfdb00103c40ec83e78875",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
     "ad_id": "lcv-vf-3039-2",
     "alignment": "D",
     "block_id": "lcv-vf-3039-2-claims-001",
