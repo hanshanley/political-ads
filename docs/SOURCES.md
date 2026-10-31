@@ -87,9 +87,15 @@ groups / ten chart rows**. Snapshot:
 
 Discovery remains active; these counts do not establish national party
 advertising proportions or resolve the Republican House coverage gap.
-The actually linked Texas Tribune Herrera letter is a concrete further
-lead, not recovered ad text. Website/Substack publication and host
-restoration remain on hold.
+The actually linked Texas Tribune Herrera letter was assessed and does
+not supply substantive ad text, as detailed below. Website/Substack
+publication and host restoration remain on hold.
+
+Research commit **7280b47aa614cf869a528e2c1fcb4e900b416371** is pushed to
+sole `main`, verified with Hans Hanley author/committer and no attribution
+trailers. Exact-commit CI **41175329084** succeeded; the original watcher
+was read once and GitHub independently confirmed the same head SHA and
+successful validation steps.
 
 ### Persistent new source denials and excluded leads
 
@@ -114,10 +120,53 @@ Additional Nashville Banner House profiles **30699, 30600 and 30529**
 were read and contain interviews/events/election reporting, not ad
 scripts. The newly read Texas Tribune Herrera report exposes a real
 January 27 letter through a February 12 report, not a recovered mailer.
-The cached MS NOW Fitzpatrick report needs a correct article-content
-boundary; the initially selected element was a membership panel, not
-ad words or an HTTP denial. Neither is counted. Broader discovery and
-schedule #1 continue without duplicating watchers or retrying providers.
+The Herrera letter was then read fully: its only actual mailer quotation
+is a five-word heading, and its two visually inspected image objects are
+the law firm's logo and signature, not the mailer. No ad is counted.
+The cached MS NOW Fitzpatrick report's correct unique `div.entry-content`
+was read after the initial selector matched a membership panel. It has
+only three literal ad words, “under FBI investigation,” not substantive
+copy. Commentary, politician remarks and legal claims are not added.
+
+Washington State Standard's actual October 14 Braun page returned
+**403 / “Just a moment…”**; it is paused, with no API or alternate
+retrieval. The independently read primary Braun homepage returned
+**200**, identifies WA-03 and links `/news`, but has no dated ad copy
+or original media. Neither supplies an acquisition. Broader discovery
+and schedule #1 continue without duplicate watchers or denied requests.
+
+### Continued primary-campaign lead review
+
+The Braun primary site's actual `/news` inventory and its three linked
+campaign fact-checks were read: August 31, September 15 and October 13.
+They contain campaign statements and rebuttals of **Democratic**
+advertisements. A Republican publisher's quoting an opponent's ad does
+not make the quoted ad Republican-aligned, and the publisher's own
+responses are not presumed to be an advertisement. No record is added.
+
+Lily Tang Williams's actual October 7 announcement and single-post page
+identify two TV ads, **Make the American Dream Affordable** and
+**Complaints Department**, originals **gwOVPJK-cwc** and **w_TIgHDYai0**.
+The single-post page exposes post **1567**, a visible October 7 date
+and `2026-10-07T09:00:00-04:00`, agreeing with its UTC publication
+metadata. The separate landing page's campaign copy is not a verified
+transcript. Neither original has recovered substantive ad text; the
+press announcement's politician quotations remain press statements.
+Video links and the short explicitly quoted ending label are not counted.
+The cached discovery is `house-lily-seattlered-original-discovery.json`.
+
+HuffPost's actual MS NOW-linked August 12 report returned **200** and
+also quotes only **“under FBI investigation”** as TV-ad words. The longer
+material is interviews, campaign website claims and litigation
+reporting, not a recovered script. No new record or duplicate is added.
+The cached discovery is `house-braun-news-harvie-lawsuit-discovery.json`.
+
+Seattle Red's two planned Braun/NRCC report requests each returned
+**403 / “Forbidden”**. That publisher is paused; no future request,
+API or alternate retrieval is authorized by these leads. Its search
+summaries are not admitted as evidence. Discovery remains active across
+independent campaigns and publishers; these exclusions establish no
+national discovery ceiling.
 
 ## Tennessee Hatcher expansion of the October 30 snapshot
 
