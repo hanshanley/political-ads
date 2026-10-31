@@ -87435,5 +87435,2172 @@
     "text_hash": "bd8fbf4b2daecfa9d6815c1f9c2bf30675abb21ec7fc8950ec9db7a0c493f2a0",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001-001",
+    "claim_text": "Drew died from opioid poisoning right before his birthday.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 69,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "GREG SWAN: Drew died from opioid poisoning right before his birthday.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 15,
+        "anchor_quote": "Drew",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Drew",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "GREG SWAN: Drew died from opioid poisoning right before his birthday.\nNow, I'm working to educate kids about the dangers of fentanyl.\nAbdul El-Sayed is exploiting parents' pain and lying about Mike Rogers. That's shameful.\nHere's the truth: Mike Rogers' bill helped wounded warriors get pain medication.\nIt's Abdul El-Sayed who would surrender our borders to the drug cartels.\nThis guy can't be trusted. Let's send an FBI agent to the Senate and protect all kids.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "4330d8b99ad917ad6ed919c8141adc202787eef6d95b9fa7c89c8efde40078c7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001-002",
+    "claim_text": "I'm working to educate kids about the dangers of fentanyl.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 133,
+        "kind": "publisher_transcript",
+        "start": 70,
+        "text": "Now, I'm working to educate kids about the dangers of fentanyl.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 76,
+        "anchor_quote": "I",
+        "anchor_start": 75,
+        "anchor_unit_id": 2,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Rogers for Senate",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "GREG SWAN: Drew died from opioid poisoning right before his birthday.\nNow, I'm working to educate kids about the dangers of fentanyl.\nAbdul El-Sayed is exploiting parents' pain and lying about Mike Rogers. That's shameful.\nHere's the truth: Mike Rogers' bill helped wounded warriors get pain medication.\nIt's Abdul El-Sayed who would surrender our borders to the drug cartels.\nThis guy can't be trusted. Let's send an FBI agent to the Senate and protect all kids.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "4330d8b99ad917ad6ed919c8141adc202787eef6d95b9fa7c89c8efde40078c7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001-003",
+    "claim_text": "Abdul El-Sayed is exploiting parents' pain and lying about Mike Rogers.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "publisher_transcript",
+        "start": 134,
+        "text": "Abdul El-Sayed is exploiting parents' pain and lying about Mike Rogers. That's shameful.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 148,
+        "anchor_quote": "Abdul El-Sayed",
+        "anchor_start": 134,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "EL-SAYED, ABDUL",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 204,
+        "anchor_quote": "Mike Rogers",
+        "anchor_start": 193,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "GREG SWAN: Drew died from opioid poisoning right before his birthday.\nNow, I'm working to educate kids about the dangers of fentanyl.\nAbdul El-Sayed is exploiting parents' pain and lying about Mike Rogers. That's shameful.\nHere's the truth: Mike Rogers' bill helped wounded warriors get pain medication.\nIt's Abdul El-Sayed who would surrender our borders to the drug cartels.\nThis guy can't be trusted. Let's send an FBI agent to the Senate and protect all kids.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "4330d8b99ad917ad6ed919c8141adc202787eef6d95b9fa7c89c8efde40078c7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001-004",
+    "claim_text": "Mike Rogers' bill helped wounded warriors get pain medication.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 303,
+        "kind": "publisher_transcript",
+        "start": 223,
+        "text": "Here's the truth: Mike Rogers' bill helped wounded warriors get pain medication.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 252,
+        "anchor_quote": "Mike Rogers",
+        "anchor_start": 241,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "GREG SWAN: Drew died from opioid poisoning right before his birthday.\nNow, I'm working to educate kids about the dangers of fentanyl.\nAbdul El-Sayed is exploiting parents' pain and lying about Mike Rogers. That's shameful.\nHere's the truth: Mike Rogers' bill helped wounded warriors get pain medication.\nIt's Abdul El-Sayed who would surrender our borders to the drug cartels.\nThis guy can't be trusted. Let's send an FBI agent to the Senate and protect all kids.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "4330d8b99ad917ad6ed919c8141adc202787eef6d95b9fa7c89c8efde40078c7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001-005",
+    "claim_text": "Abdul El-Sayed would surrender our borders to the drug cartels.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 376,
+        "kind": "publisher_transcript",
+        "start": 304,
+        "text": "It's Abdul El-Sayed who would surrender our borders to the drug cartels.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 323,
+        "anchor_quote": "Abdul El-Sayed",
+        "anchor_start": 309,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "EL-SAYED, ABDUL",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "GREG SWAN: Drew died from opioid poisoning right before his birthday.\nNow, I'm working to educate kids about the dangers of fentanyl.\nAbdul El-Sayed is exploiting parents' pain and lying about Mike Rogers. That's shameful.\nHere's the truth: Mike Rogers' bill helped wounded warriors get pain medication.\nIt's Abdul El-Sayed who would surrender our borders to the drug cartels.\nThis guy can't be trusted. Let's send an FBI agent to the Senate and protect all kids.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "4330d8b99ad917ad6ed919c8141adc202787eef6d95b9fa7c89c8efde40078c7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001-006",
+    "claim_text": "This guy can't be trusted.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 463,
+        "kind": "publisher_transcript",
+        "start": 377,
+        "text": "This guy can't be trusted. Let's send an FBI agent to the Senate and protect all kids.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 385,
+        "anchor_quote": "This guy",
+        "anchor_start": 377,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "EL-SAYED, ABDUL",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "GREG SWAN: Drew died from opioid poisoning right before his birthday.\nNow, I'm working to educate kids about the dangers of fentanyl.\nAbdul El-Sayed is exploiting parents' pain and lying about Mike Rogers. That's shameful.\nHere's the truth: Mike Rogers' bill helped wounded warriors get pain medication.\nIt's Abdul El-Sayed who would surrender our borders to the drug cartels.\nThis guy can't be trusted. Let's send an FBI agent to the Senate and protect all kids.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "4330d8b99ad917ad6ed919c8141adc202787eef6d95b9fa7c89c8efde40078c7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001-007",
+    "claim_text": "Let's send an FBI agent to the Senate and protect all kids.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 463,
+        "kind": "publisher_transcript",
+        "start": 377,
+        "text": "This guy can't be trusted. Let's send an FBI agent to the Senate and protect all kids.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 427,
+        "anchor_quote": "an FBI agent",
+        "anchor_start": 415,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 462,
+        "anchor_quote": "all kids",
+        "anchor_start": 454,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "kids",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "GREG SWAN: Drew died from opioid poisoning right before his birthday.\nNow, I'm working to educate kids about the dangers of fentanyl.\nAbdul El-Sayed is exploiting parents' pain and lying about Mike Rogers. That's shameful.\nHere's the truth: Mike Rogers' bill helped wounded warriors get pain medication.\nIt's Abdul El-Sayed who would surrender our borders to the drug cartels.\nThis guy can't be trusted. Let's send an FBI agent to the Senate and protect all kids.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "4330d8b99ad917ad6ed919c8141adc202787eef6d95b9fa7c89c8efde40078c7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-0-claims-001-008",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 521,
+        "kind": "publisher_transcript",
+        "start": 464,
+        "text": "MIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 466,
+        "anchor_quote": "I",
+        "anchor_start": 465,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "GREG SWAN: Drew died from opioid poisoning right before his birthday.\nNow, I'm working to educate kids about the dangers of fentanyl.\nAbdul El-Sayed is exploiting parents' pain and lying about Mike Rogers. That's shameful.\nHere's the truth: Mike Rogers' bill helped wounded warriors get pain medication.\nIt's Abdul El-Sayed who would surrender our borders to the drug cartels.\nThis guy can't be trusted. Let's send an FBI agent to the Senate and protect all kids.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "4330d8b99ad917ad6ed919c8141adc202787eef6d95b9fa7c89c8efde40078c7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001-001",
+    "claim_text": "I'm raising four children, and I don't trust Abdul El Sayed with their safety.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "ABBY TOTORAITIS: I'm raising four children, and I don't trust Abdul El Sayed with their safety. El Sayed supported defunding our police. Then he called for abolishing prisons and releasing criminals into our neighborhoods.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 76,
+        "anchor_quote": "Abdul El Sayed",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "Abdul El-Sayed",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "ABBY TOTORAITIS: I'm raising four children, and I don't trust Abdul El Sayed with their safety. El Sayed supported defunding our police. Then he called for abolishing prisons and releasing criminals into our neighborhoods.\nABDUL EL-SAYED: Any and all efforts to get people out of jails and prisons.\nABBY TOTORAITIS: Is this guy for real? I'm voting for the FBI agent. Mike Rogers is endorsed by Michigan law enforcement because he's tough on crime. I trust Mike to keep us safe.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "c964a614732c10c5c34faa630778b407673fd032a2da78c70c782eaf281c549f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001-002",
+    "claim_text": "El Sayed supported defunding our police.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "ABBY TOTORAITIS: I'm raising four children, and I don't trust Abdul El Sayed with their safety. El Sayed supported defunding our police. Then he called for abolishing prisons and releasing criminals into our neighborhoods.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 76,
+        "anchor_quote": "El Sayed",
+        "anchor_start": 68,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "Abdul El-Sayed",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "ABBY TOTORAITIS: I'm raising four children, and I don't trust Abdul El Sayed with their safety. El Sayed supported defunding our police. Then he called for abolishing prisons and releasing criminals into our neighborhoods.\nABDUL EL-SAYED: Any and all efforts to get people out of jails and prisons.\nABBY TOTORAITIS: Is this guy for real? I'm voting for the FBI agent. Mike Rogers is endorsed by Michigan law enforcement because he's tough on crime. I trust Mike to keep us safe.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "c964a614732c10c5c34faa630778b407673fd032a2da78c70c782eaf281c549f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001-003",
+    "claim_text": "He called for abolishing prisons and releasing criminals into our neighborhoods.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 222,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "ABBY TOTORAITIS: I'm raising four children, and I don't trust Abdul El Sayed with their safety. El Sayed supported defunding our police. Then he called for abolishing prisons and releasing criminals into our neighborhoods.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 85,
+        "anchor_quote": "he",
+        "anchor_start": 83,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "Abdul El-Sayed",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "ABBY TOTORAITIS: I'm raising four children, and I don't trust Abdul El Sayed with their safety. El Sayed supported defunding our police. Then he called for abolishing prisons and releasing criminals into our neighborhoods.\nABDUL EL-SAYED: Any and all efforts to get people out of jails and prisons.\nABBY TOTORAITIS: Is this guy for real? I'm voting for the FBI agent. Mike Rogers is endorsed by Michigan law enforcement because he's tough on crime. I trust Mike to keep us safe.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "c964a614732c10c5c34faa630778b407673fd032a2da78c70c782eaf281c549f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001-004",
+    "claim_text": "Any and all efforts to get people out of jails and prisons.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 298,
+        "kind": "publisher_transcript",
+        "start": 223,
+        "text": "ABDUL EL-SAYED: Any and all efforts to get people out of jails and prisons.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 242,
+        "anchor_quote": "Any",
+        "anchor_start": 239,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "Abdul El-Sayed",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "ABBY TOTORAITIS: I'm raising four children, and I don't trust Abdul El Sayed with their safety. El Sayed supported defunding our police. Then he called for abolishing prisons and releasing criminals into our neighborhoods.\nABDUL EL-SAYED: Any and all efforts to get people out of jails and prisons.\nABBY TOTORAITIS: Is this guy for real? I'm voting for the FBI agent. Mike Rogers is endorsed by Michigan law enforcement because he's tough on crime. I trust Mike to keep us safe.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "c964a614732c10c5c34faa630778b407673fd032a2da78c70c782eaf281c549f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001-005",
+    "claim_text": "I'm voting for the FBI agent.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 478,
+        "kind": "publisher_transcript",
+        "start": 299,
+        "text": "ABBY TOTORAITIS: Is this guy for real? I'm voting for the FBI agent. Mike Rogers is endorsed by Michigan law enforcement because he's tough on crime. I trust Mike to keep us safe.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 311,
+        "anchor_quote": "I",
+        "anchor_start": 310,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Abby Totoraits",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "ABBY TOTORAITIS: I'm raising four children, and I don't trust Abdul El Sayed with their safety. El Sayed supported defunding our police. Then he called for abolishing prisons and releasing criminals into our neighborhoods.\nABDUL EL-SAYED: Any and all efforts to get people out of jails and prisons.\nABBY TOTORAITIS: Is this guy for real? I'm voting for the FBI agent. Mike Rogers is endorsed by Michigan law enforcement because he's tough on crime. I trust Mike to keep us safe.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "c964a614732c10c5c34faa630778b407673fd032a2da78c70c782eaf281c549f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001-006",
+    "claim_text": "Mike Rogers is endorsed by Michigan law enforcement.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 478,
+        "kind": "publisher_transcript",
+        "start": 299,
+        "text": "ABBY TOTORAITIS: Is this guy for real? I'm voting for the FBI agent. Mike Rogers is endorsed by Michigan law enforcement because he's tough on crime. I trust Mike to keep us safe.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 379,
+        "anchor_quote": "Mike Rogers",
+        "anchor_start": 368,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "Mike Rogers",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "ABBY TOTORAITIS: I'm raising four children, and I don't trust Abdul El Sayed with their safety. El Sayed supported defunding our police. Then he called for abolishing prisons and releasing criminals into our neighborhoods.\nABDUL EL-SAYED: Any and all efforts to get people out of jails and prisons.\nABBY TOTORAITIS: Is this guy for real? I'm voting for the FBI agent. Mike Rogers is endorsed by Michigan law enforcement because he's tough on crime. I trust Mike to keep us safe.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "c964a614732c10c5c34faa630778b407673fd032a2da78c70c782eaf281c549f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001-007",
+    "claim_text": "Mike Rogers is tough on crime.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 478,
+        "kind": "publisher_transcript",
+        "start": 299,
+        "text": "ABBY TOTORAITIS: Is this guy for real? I'm voting for the FBI agent. Mike Rogers is endorsed by Michigan law enforcement because he's tough on crime. I trust Mike to keep us safe.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 379,
+        "anchor_quote": "Mike Rogers",
+        "anchor_start": 368,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "Mike Rogers",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "ABBY TOTORAITIS: I'm raising four children, and I don't trust Abdul El Sayed with their safety. El Sayed supported defunding our police. Then he called for abolishing prisons and releasing criminals into our neighborhoods.\nABDUL EL-SAYED: Any and all efforts to get people out of jails and prisons.\nABBY TOTORAITIS: Is this guy for real? I'm voting for the FBI agent. Mike Rogers is endorsed by Michigan law enforcement because he's tough on crime. I trust Mike to keep us safe.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "c964a614732c10c5c34faa630778b407673fd032a2da78c70c782eaf281c549f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001-008",
+    "claim_text": "I trust Mike to keep us safe.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 478,
+        "kind": "publisher_transcript",
+        "start": 299,
+        "text": "ABBY TOTORAITIS: Is this guy for real? I'm voting for the FBI agent. Mike Rogers is endorsed by Michigan law enforcement because he's tough on crime. I trust Mike to keep us safe.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 372,
+        "anchor_quote": "Mike",
+        "anchor_start": 368,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "Mike Rogers",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "ABBY TOTORAITIS: I'm raising four children, and I don't trust Abdul El Sayed with their safety. El Sayed supported defunding our police. Then he called for abolishing prisons and releasing criminals into our neighborhoods.\nABDUL EL-SAYED: Any and all efforts to get people out of jails and prisons.\nABBY TOTORAITIS: Is this guy for real? I'm voting for the FBI agent. Mike Rogers is endorsed by Michigan law enforcement because he's tough on crime. I trust Mike to keep us safe.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "c964a614732c10c5c34faa630778b407673fd032a2da78c70c782eaf281c549f",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1",
+    "alignment": "R",
+    "block_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ab5a2e26b9d084c4a3e3e23-1-claims-001-009",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 536,
+        "kind": "publisher_transcript",
+        "start": 479,
+        "text": "MIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 481,
+        "anchor_quote": "I",
+        "anchor_start": 480,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "Mike Rogers",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "ABBY TOTORAITIS: I'm raising four children, and I don't trust Abdul El Sayed with their safety. El Sayed supported defunding our police. Then he called for abolishing prisons and releasing criminals into our neighborhoods.\nABDUL EL-SAYED: Any and all efforts to get people out of jails and prisons.\nABBY TOTORAITIS: Is this guy for real? I'm voting for the FBI agent. Mike Rogers is endorsed by Michigan law enforcement because he's tough on crime. I trust Mike to keep us safe.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "c964a614732c10c5c34faa630778b407673fd032a2da78c70c782eaf281c549f",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6abfceafba230905e3202068-0",
+    "alignment": "R",
+    "block_id": "rogers-6abfceafba230905e3202068-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6abfceafba230905e3202068-0-claims-001-001",
+    "claim_text": "I'm a Persian-American.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 23,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "I'm a Persian-American.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-abdul-threatens-our-nations-values-and-security",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 1,
+        "anchor_quote": "I",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I'm a Persian-American.\nMy family escaped oppression in Iran to find freedom in America.\nAbdul El-Sayed is a real threat to our national security and our values.\nAbdul raises money from dangerous people who finance terrorist networks.\nAnd his family has been linked to the Muslim Brotherhood and Al-Qaeda.\nI know the threats of radical Islam, and I know Abdul El-Sayed can never, ever be a U.S. Senator.",
+    "text_hash": "6af8bbbb5841ca54b6421373cb023faf53bd9c2287b7d29fa62410853f9f2c3e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6abfceafba230905e3202068-0",
+    "alignment": "R",
+    "block_id": "rogers-6abfceafba230905e3202068-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6abfceafba230905e3202068-0-claims-001-002",
+    "claim_text": "My family escaped oppression in Iran to find freedom in America.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 88,
+        "kind": "publisher_transcript",
+        "start": 24,
+        "text": "My family escaped oppression in Iran to find freedom in America.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-abdul-threatens-our-nations-values-and-security",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 33,
+        "anchor_quote": "My family",
+        "anchor_start": 24,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "My family",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 60,
+        "anchor_quote": "Iran",
+        "anchor_start": 56,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Iran",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 87,
+        "anchor_quote": "America",
+        "anchor_start": 80,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "America",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "I'm a Persian-American.\nMy family escaped oppression in Iran to find freedom in America.\nAbdul El-Sayed is a real threat to our national security and our values.\nAbdul raises money from dangerous people who finance terrorist networks.\nAnd his family has been linked to the Muslim Brotherhood and Al-Qaeda.\nI know the threats of radical Islam, and I know Abdul El-Sayed can never, ever be a U.S. Senator.",
+    "text_hash": "6af8bbbb5841ca54b6421373cb023faf53bd9c2287b7d29fa62410853f9f2c3e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6abfceafba230905e3202068-0",
+    "alignment": "R",
+    "block_id": "rogers-6abfceafba230905e3202068-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6abfceafba230905e3202068-0-claims-001-003",
+    "claim_text": "Abdul El-Sayed is a real threat to our national security and our values.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 161,
+        "kind": "publisher_transcript",
+        "start": 89,
+        "text": "Abdul El-Sayed is a real threat to our national security and our values.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-abdul-threatens-our-nations-values-and-security",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 103,
+        "anchor_quote": "Abdul El-Sayed",
+        "anchor_start": 89,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "Abdul El-Sayed",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 145,
+        "anchor_quote": "our national security",
+        "anchor_start": 124,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "our national security",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 160,
+        "anchor_quote": "our values",
+        "anchor_start": 150,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "our values",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm a Persian-American.\nMy family escaped oppression in Iran to find freedom in America.\nAbdul El-Sayed is a real threat to our national security and our values.\nAbdul raises money from dangerous people who finance terrorist networks.\nAnd his family has been linked to the Muslim Brotherhood and Al-Qaeda.\nI know the threats of radical Islam, and I know Abdul El-Sayed can never, ever be a U.S. Senator.",
+    "text_hash": "6af8bbbb5841ca54b6421373cb023faf53bd9c2287b7d29fa62410853f9f2c3e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6abfceafba230905e3202068-0",
+    "alignment": "R",
+    "block_id": "rogers-6abfceafba230905e3202068-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6abfceafba230905e3202068-0-claims-001-004",
+    "claim_text": "Abdul raises money from dangerous people who finance terrorist networks.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 234,
+        "kind": "publisher_transcript",
+        "start": 162,
+        "text": "Abdul raises money from dangerous people who finance terrorist networks.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-abdul-threatens-our-nations-values-and-security",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 167,
+        "anchor_quote": "Abdul",
+        "anchor_start": 162,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "Abdul",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 202,
+        "anchor_quote": "dangerous people",
+        "anchor_start": 186,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "dangerous people",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 233,
+        "anchor_quote": "terrorist networks",
+        "anchor_start": 215,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "terrorist networks",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm a Persian-American.\nMy family escaped oppression in Iran to find freedom in America.\nAbdul El-Sayed is a real threat to our national security and our values.\nAbdul raises money from dangerous people who finance terrorist networks.\nAnd his family has been linked to the Muslim Brotherhood and Al-Qaeda.\nI know the threats of radical Islam, and I know Abdul El-Sayed can never, ever be a U.S. Senator.",
+    "text_hash": "6af8bbbb5841ca54b6421373cb023faf53bd9c2287b7d29fa62410853f9f2c3e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6abfceafba230905e3202068-0",
+    "alignment": "R",
+    "block_id": "rogers-6abfceafba230905e3202068-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6abfceafba230905e3202068-0-claims-001-005",
+    "claim_text": "And his family has been linked to the Muslim Brotherhood and Al-Qaeda.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 305,
+        "kind": "publisher_transcript",
+        "start": 235,
+        "text": "And his family has been linked to the Muslim Brotherhood and Al-Qaeda.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-abdul-threatens-our-nations-values-and-security",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 249,
+        "anchor_quote": "his family",
+        "anchor_start": 239,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "his family",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 291,
+        "anchor_quote": "the Muslim Brotherhood",
+        "anchor_start": 269,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "the Muslim Brotherhood",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 304,
+        "anchor_quote": "Al-Qaeda",
+        "anchor_start": 296,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Al-Qaeda",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm a Persian-American.\nMy family escaped oppression in Iran to find freedom in America.\nAbdul El-Sayed is a real threat to our national security and our values.\nAbdul raises money from dangerous people who finance terrorist networks.\nAnd his family has been linked to the Muslim Brotherhood and Al-Qaeda.\nI know the threats of radical Islam, and I know Abdul El-Sayed can never, ever be a U.S. Senator.",
+    "text_hash": "6af8bbbb5841ca54b6421373cb023faf53bd9c2287b7d29fa62410853f9f2c3e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6abfceafba230905e3202068-0",
+    "alignment": "R",
+    "block_id": "rogers-6abfceafba230905e3202068-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6abfceafba230905e3202068-0-claims-001-006",
+    "claim_text": "I know the threats of radical Islam, and I know Abdul El-Sayed can never, ever be a U.S. Senator.",
+    "claim_types": [
+      "evaluation",
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 403,
+        "kind": "publisher_transcript",
+        "start": 306,
+        "text": "I know the threats of radical Islam, and I know Abdul El-Sayed can never, ever be a U.S. Senator.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-abdul-threatens-our-nations-values-and-security",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 307,
+        "anchor_quote": "I",
+        "anchor_start": 306,
+        "anchor_unit_id": 6,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 341,
+        "anchor_quote": "the threats of radical Islam",
+        "anchor_start": 313,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "the threats of radical Islam",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 368,
+        "anchor_quote": "Abdul El-Sayed",
+        "anchor_start": 354,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "Abdul El-Sayed",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "I'm a Persian-American.\nMy family escaped oppression in Iran to find freedom in America.\nAbdul El-Sayed is a real threat to our national security and our values.\nAbdul raises money from dangerous people who finance terrorist networks.\nAnd his family has been linked to the Muslim Brotherhood and Al-Qaeda.\nI know the threats of radical Islam, and I know Abdul El-Sayed can never, ever be a U.S. Senator.",
+    "text_hash": "6af8bbbb5841ca54b6421373cb023faf53bd9c2287b7d29fa62410853f9f2c3e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ac5cc545b585529942467da-0",
+    "alignment": "R",
+    "block_id": "rogers-6ac5cc545b585529942467da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ac5cc545b585529942467da-0-claims-001-001",
+    "claim_text": "Drinking a Labatt and watching the Red Wings doesn't get any more Michigan than that.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 112,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "MIKE ROGERS: Drinking a Labatt and watching the Red Wings. Man, it just doesn't get any more Michigan than that.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-we-need-to-end-the-tariff-war-now",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 11,
+        "anchor_quote": "MIKE ROGERS",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "MIKE ROGERS: Drinking a Labatt and watching the Red Wings. Man, it just doesn't get any more Michigan than that.\nAnd here in Michigan, we know that Canada is not our enemy.\nWe need to end this tariff war — now.\nAs Michigan’s Senator, I'll bring both parties together to lower your prices. That's job number one.\nAnd Abdul, he wants to hit Michigan families with a $3,000 tax increase, the biggest in history.\nI'm Mike Rogers, and I approve this message because I'll actually put dollars back in your pocket.",
+    "text_hash": "d2d57b153d2dc00cf3d46a8715481d9a1d3a0a8aad80afa98aa437fc74dc838a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ac5cc545b585529942467da-0",
+    "alignment": "R",
+    "block_id": "rogers-6ac5cc545b585529942467da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ac5cc545b585529942467da-0-claims-001-002",
+    "claim_text": "Canada is not our enemy.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 172,
+        "kind": "publisher_transcript",
+        "start": 113,
+        "text": "And here in Michigan, we know that Canada is not our enemy.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-we-need-to-end-the-tariff-war-now",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 154,
+        "anchor_quote": "Canada",
+        "anchor_start": 148,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Canada",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "MIKE ROGERS: Drinking a Labatt and watching the Red Wings. Man, it just doesn't get any more Michigan than that.\nAnd here in Michigan, we know that Canada is not our enemy.\nWe need to end this tariff war — now.\nAs Michigan’s Senator, I'll bring both parties together to lower your prices. That's job number one.\nAnd Abdul, he wants to hit Michigan families with a $3,000 tax increase, the biggest in history.\nI'm Mike Rogers, and I approve this message because I'll actually put dollars back in your pocket.",
+    "text_hash": "d2d57b153d2dc00cf3d46a8715481d9a1d3a0a8aad80afa98aa437fc74dc838a",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ac5cc545b585529942467da-0",
+    "alignment": "R",
+    "block_id": "rogers-6ac5cc545b585529942467da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ac5cc545b585529942467da-0-claims-001-003",
+    "claim_text": "We need to end this tariff war — now.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 210,
+        "kind": "publisher_transcript",
+        "start": 173,
+        "text": "We need to end this tariff war — now.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-we-need-to-end-the-tariff-war-now",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 203,
+        "anchor_quote": "this tariff war",
+        "anchor_start": 188,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "tariff war",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "MIKE ROGERS: Drinking a Labatt and watching the Red Wings. Man, it just doesn't get any more Michigan than that.\nAnd here in Michigan, we know that Canada is not our enemy.\nWe need to end this tariff war — now.\nAs Michigan’s Senator, I'll bring both parties together to lower your prices. That's job number one.\nAnd Abdul, he wants to hit Michigan families with a $3,000 tax increase, the biggest in history.\nI'm Mike Rogers, and I approve this message because I'll actually put dollars back in your pocket.",
+    "text_hash": "d2d57b153d2dc00cf3d46a8715481d9a1d3a0a8aad80afa98aa437fc74dc838a",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ac5cc545b585529942467da-0",
+    "alignment": "R",
+    "block_id": "rogers-6ac5cc545b585529942467da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ac5cc545b585529942467da-0-claims-001-004",
+    "claim_text": "As Michigan’s Senator, I'll bring both parties together to lower your prices.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 311,
+        "kind": "publisher_transcript",
+        "start": 211,
+        "text": "As Michigan’s Senator, I'll bring both parties together to lower your prices. That's job number one.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-we-need-to-end-the-tariff-war-now",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 238,
+        "anchor_quote": "I'll",
+        "anchor_start": 234,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "MIKE ROGERS: Drinking a Labatt and watching the Red Wings. Man, it just doesn't get any more Michigan than that.\nAnd here in Michigan, we know that Canada is not our enemy.\nWe need to end this tariff war — now.\nAs Michigan’s Senator, I'll bring both parties together to lower your prices. That's job number one.\nAnd Abdul, he wants to hit Michigan families with a $3,000 tax increase, the biggest in history.\nI'm Mike Rogers, and I approve this message because I'll actually put dollars back in your pocket.",
+    "text_hash": "d2d57b153d2dc00cf3d46a8715481d9a1d3a0a8aad80afa98aa437fc74dc838a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ac5cc545b585529942467da-0",
+    "alignment": "R",
+    "block_id": "rogers-6ac5cc545b585529942467da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ac5cc545b585529942467da-0-claims-001-005",
+    "claim_text": "Lowering your prices is job number one.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 311,
+        "kind": "publisher_transcript",
+        "start": 211,
+        "text": "As Michigan’s Senator, I'll bring both parties together to lower your prices. That's job number one.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-we-need-to-end-the-tariff-war-now",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 287,
+        "anchor_quote": "lower your prices",
+        "anchor_start": 270,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "lowering prices",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "MIKE ROGERS: Drinking a Labatt and watching the Red Wings. Man, it just doesn't get any more Michigan than that.\nAnd here in Michigan, we know that Canada is not our enemy.\nWe need to end this tariff war — now.\nAs Michigan’s Senator, I'll bring both parties together to lower your prices. That's job number one.\nAnd Abdul, he wants to hit Michigan families with a $3,000 tax increase, the biggest in history.\nI'm Mike Rogers, and I approve this message because I'll actually put dollars back in your pocket.",
+    "text_hash": "d2d57b153d2dc00cf3d46a8715481d9a1d3a0a8aad80afa98aa437fc74dc838a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ac5cc545b585529942467da-0",
+    "alignment": "R",
+    "block_id": "rogers-6ac5cc545b585529942467da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ac5cc545b585529942467da-0-claims-001-006",
+    "claim_text": "Abdul wants to hit Michigan families with a $3,000 tax increase, the biggest in history.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 408,
+        "kind": "publisher_transcript",
+        "start": 312,
+        "text": "And Abdul, he wants to hit Michigan families with a $3,000 tax increase, the biggest in history.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-we-need-to-end-the-tariff-war-now",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 321,
+        "anchor_quote": "Abdul",
+        "anchor_start": 316,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Abdul",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 356,
+        "anchor_quote": "Michigan families",
+        "anchor_start": 339,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Michigan families",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 383,
+        "anchor_quote": "$3,000 tax increase",
+        "anchor_start": 364,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "$3,000 tax increase",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "MIKE ROGERS: Drinking a Labatt and watching the Red Wings. Man, it just doesn't get any more Michigan than that.\nAnd here in Michigan, we know that Canada is not our enemy.\nWe need to end this tariff war — now.\nAs Michigan’s Senator, I'll bring both parties together to lower your prices. That's job number one.\nAnd Abdul, he wants to hit Michigan families with a $3,000 tax increase, the biggest in history.\nI'm Mike Rogers, and I approve this message because I'll actually put dollars back in your pocket.",
+    "text_hash": "d2d57b153d2dc00cf3d46a8715481d9a1d3a0a8aad80afa98aa437fc74dc838a",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ac5cc545b585529942467da-0",
+    "alignment": "R",
+    "block_id": "rogers-6ac5cc545b585529942467da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ac5cc545b585529942467da-0-claims-001-007",
+    "claim_text": "I'll actually put dollars back in your pocket.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 507,
+        "kind": "publisher_transcript",
+        "start": 409,
+        "text": "I'm Mike Rogers, and I approve this message because I'll actually put dollars back in your pocket.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-we-need-to-end-the-tariff-war-now",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 465,
+        "anchor_quote": "I'll",
+        "anchor_start": 461,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "MIKE ROGERS: Drinking a Labatt and watching the Red Wings. Man, it just doesn't get any more Michigan than that.\nAnd here in Michigan, we know that Canada is not our enemy.\nWe need to end this tariff war — now.\nAs Michigan’s Senator, I'll bring both parties together to lower your prices. That's job number one.\nAnd Abdul, he wants to hit Michigan families with a $3,000 tax increase, the biggest in history.\nI'm Mike Rogers, and I approve this message because I'll actually put dollars back in your pocket.",
+    "text_hash": "d2d57b153d2dc00cf3d46a8715481d9a1d3a0a8aad80afa98aa437fc74dc838a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ac5cc545b585529942467da-0",
+    "alignment": "R",
+    "block_id": "rogers-6ac5cc545b585529942467da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ac5cc545b585529942467da-0-claims-001-008",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 507,
+        "kind": "publisher_transcript",
+        "start": 409,
+        "text": "I'm Mike Rogers, and I approve this message because I'll actually put dollars back in your pocket.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-we-need-to-end-the-tariff-war-now",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 410,
+        "anchor_quote": "I",
+        "anchor_start": 409,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "MIKE ROGERS: Drinking a Labatt and watching the Red Wings. Man, it just doesn't get any more Michigan than that.\nAnd here in Michigan, we know that Canada is not our enemy.\nWe need to end this tariff war — now.\nAs Michigan’s Senator, I'll bring both parties together to lower your prices. That's job number one.\nAnd Abdul, he wants to hit Michigan families with a $3,000 tax increase, the biggest in history.\nI'm Mike Rogers, and I approve this message because I'll actually put dollars back in your pocket.",
+    "text_hash": "d2d57b153d2dc00cf3d46a8715481d9a1d3a0a8aad80afa98aa437fc74dc838a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6ac5cc545b585529942467da-0",
+    "alignment": "R",
+    "block_id": "rogers-6ac5cc545b585529942467da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6ac5cc545b585529942467da-0-claims-001-009",
+    "claim_text": "It just doesn't get any more Michigan than that.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 112,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "MIKE ROGERS: Drinking a Labatt and watching the Red Wings. Man, it just doesn't get any more Michigan than that.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-we-need-to-end-the-tariff-war-now",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 101,
+        "anchor_quote": "Michigan",
+        "anchor_start": 93,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Michigan",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "MIKE ROGERS: Drinking a Labatt and watching the Red Wings. Man, it just doesn't get any more Michigan than that.\nAnd here in Michigan, we know that Canada is not our enemy.\nWe need to end this tariff war — now.\nAs Michigan’s Senator, I'll bring both parties together to lower your prices. That's job number one.\nAnd Abdul, he wants to hit Michigan families with a $3,000 tax increase, the biggest in history.\nI'm Mike Rogers, and I approve this message because I'll actually put dollars back in your pocket.",
+    "text_hash": "d2d57b153d2dc00cf3d46a8715481d9a1d3a0a8aad80afa98aa437fc74dc838a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6acd08220f7cad7d1a84f0a5-0",
+    "alignment": "R",
+    "block_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001-001",
+    "claim_text": "I'm a lifelong Detroiter.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 40,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "VALERIA BERRY: I'm a lifelong Detroiter.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 40,
+        "anchor_quote": "I'm a lifelong Detroiter.",
+        "anchor_start": 15,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "VALERIA BERRY",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "VALERIA BERRY: I'm a lifelong Detroiter.\nDAMARI COVINGTON-WOODS: I'm passionate about education.\nNAURA EVANS: I voted for Barack Obama, but this year I'm voting for Mike Rogers.\nVALERIA BERRY: Abdul is way too arrogant and way too extreme.\nNAURA EVANS: He will kill our jobs and make our communities less safe.\nDAMARI COVINGTON-WOODS: Mike Rogers will get to work for us.\nVALERIA BERRY: Better schools, safer streets, more jobs, and affordable health care.\nNAURA EVANS: Let's send Mike Rogers to the Senate.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "cf3a5b84cda52b412673c765b5876823afab3e5916d93b5be0f824b573ab4416",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6acd08220f7cad7d1a84f0a5-0",
+    "alignment": "R",
+    "block_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001-002",
+    "claim_text": "I'm passionate about education.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 96,
+        "kind": "publisher_transcript",
+        "start": 41,
+        "text": "DAMARI COVINGTON-WOODS: I'm passionate about education.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 96,
+        "anchor_quote": "I'm passionate about education.",
+        "anchor_start": 65,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "DAMARI COVINGTON-WOODS",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "VALERIA BERRY: I'm a lifelong Detroiter.\nDAMARI COVINGTON-WOODS: I'm passionate about education.\nNAURA EVANS: I voted for Barack Obama, but this year I'm voting for Mike Rogers.\nVALERIA BERRY: Abdul is way too arrogant and way too extreme.\nNAURA EVANS: He will kill our jobs and make our communities less safe.\nDAMARI COVINGTON-WOODS: Mike Rogers will get to work for us.\nVALERIA BERRY: Better schools, safer streets, more jobs, and affordable health care.\nNAURA EVANS: Let's send Mike Rogers to the Senate.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "cf3a5b84cda52b412673c765b5876823afab3e5916d93b5be0f824b573ab4416",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6acd08220f7cad7d1a84f0a5-0",
+    "alignment": "R",
+    "block_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001-003",
+    "claim_text": "I voted for Barack Obama, but this year I'm voting for Mike Rogers.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 177,
+        "kind": "publisher_transcript",
+        "start": 97,
+        "text": "NAURA EVANS: I voted for Barack Obama, but this year I'm voting for Mike Rogers.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 177,
+        "anchor_quote": "I voted for Barack Obama, but this year I'm voting for Mike Rogers.",
+        "anchor_start": 110,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "NAURA EVANS",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 134,
+        "anchor_quote": "Barack Obama",
+        "anchor_start": 122,
+        "anchor_unit_id": 3,
+        "entity_id": "national:Barack Obama",
+        "kind": "person",
+        "name": "Barack Obama",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 176,
+        "anchor_quote": "Mike Rogers",
+        "anchor_start": 165,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "Mike Rogers",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "VALERIA BERRY: I'm a lifelong Detroiter.\nDAMARI COVINGTON-WOODS: I'm passionate about education.\nNAURA EVANS: I voted for Barack Obama, but this year I'm voting for Mike Rogers.\nVALERIA BERRY: Abdul is way too arrogant and way too extreme.\nNAURA EVANS: He will kill our jobs and make our communities less safe.\nDAMARI COVINGTON-WOODS: Mike Rogers will get to work for us.\nVALERIA BERRY: Better schools, safer streets, more jobs, and affordable health care.\nNAURA EVANS: Let's send Mike Rogers to the Senate.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "cf3a5b84cda52b412673c765b5876823afab3e5916d93b5be0f824b573ab4416",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6acd08220f7cad7d1a84f0a5-0",
+    "alignment": "R",
+    "block_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001-004",
+    "claim_text": "Abdul is way too arrogant and way too extreme.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 239,
+        "kind": "publisher_transcript",
+        "start": 178,
+        "text": "VALERIA BERRY: Abdul is way too arrogant and way too extreme.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 198,
+        "anchor_quote": "Abdul",
+        "anchor_start": 193,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Abdul",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "VALERIA BERRY: I'm a lifelong Detroiter.\nDAMARI COVINGTON-WOODS: I'm passionate about education.\nNAURA EVANS: I voted for Barack Obama, but this year I'm voting for Mike Rogers.\nVALERIA BERRY: Abdul is way too arrogant and way too extreme.\nNAURA EVANS: He will kill our jobs and make our communities less safe.\nDAMARI COVINGTON-WOODS: Mike Rogers will get to work for us.\nVALERIA BERRY: Better schools, safer streets, more jobs, and affordable health care.\nNAURA EVANS: Let's send Mike Rogers to the Senate.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "cf3a5b84cda52b412673c765b5876823afab3e5916d93b5be0f824b573ab4416",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6acd08220f7cad7d1a84f0a5-0",
+    "alignment": "R",
+    "block_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001-005",
+    "claim_text": "He will kill our jobs and make our communities less safe.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 310,
+        "kind": "publisher_transcript",
+        "start": 240,
+        "text": "NAURA EVANS: He will kill our jobs and make our communities less safe.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 255,
+        "anchor_quote": "He",
+        "anchor_start": 253,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "He",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "VALERIA BERRY: I'm a lifelong Detroiter.\nDAMARI COVINGTON-WOODS: I'm passionate about education.\nNAURA EVANS: I voted for Barack Obama, but this year I'm voting for Mike Rogers.\nVALERIA BERRY: Abdul is way too arrogant and way too extreme.\nNAURA EVANS: He will kill our jobs and make our communities less safe.\nDAMARI COVINGTON-WOODS: Mike Rogers will get to work for us.\nVALERIA BERRY: Better schools, safer streets, more jobs, and affordable health care.\nNAURA EVANS: Let's send Mike Rogers to the Senate.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "cf3a5b84cda52b412673c765b5876823afab3e5916d93b5be0f824b573ab4416",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6acd08220f7cad7d1a84f0a5-0",
+    "alignment": "R",
+    "block_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001-006",
+    "claim_text": "Mike Rogers will get to work for us.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 371,
+        "kind": "publisher_transcript",
+        "start": 311,
+        "text": "DAMARI COVINGTON-WOODS: Mike Rogers will get to work for us.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 346,
+        "anchor_quote": "Mike Rogers",
+        "anchor_start": 335,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "Mike Rogers",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "VALERIA BERRY: I'm a lifelong Detroiter.\nDAMARI COVINGTON-WOODS: I'm passionate about education.\nNAURA EVANS: I voted for Barack Obama, but this year I'm voting for Mike Rogers.\nVALERIA BERRY: Abdul is way too arrogant and way too extreme.\nNAURA EVANS: He will kill our jobs and make our communities less safe.\nDAMARI COVINGTON-WOODS: Mike Rogers will get to work for us.\nVALERIA BERRY: Better schools, safer streets, more jobs, and affordable health care.\nNAURA EVANS: Let's send Mike Rogers to the Senate.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "cf3a5b84cda52b412673c765b5876823afab3e5916d93b5be0f824b573ab4416",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6acd08220f7cad7d1a84f0a5-0",
+    "alignment": "R",
+    "block_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001-007",
+    "claim_text": "Better schools, safer streets, more jobs, and affordable health care.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 456,
+        "kind": "publisher_transcript",
+        "start": 372,
+        "text": "VALERIA BERRY: Better schools, safer streets, more jobs, and affordable health care.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 401,
+        "anchor_quote": "schools",
+        "anchor_start": 394,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "schools",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 416,
+        "anchor_quote": "streets",
+        "anchor_start": 409,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "streets",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 427,
+        "anchor_quote": "jobs",
+        "anchor_start": 423,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "jobs",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 455,
+        "anchor_quote": "health care",
+        "anchor_start": 444,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "health care",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "VALERIA BERRY: I'm a lifelong Detroiter.\nDAMARI COVINGTON-WOODS: I'm passionate about education.\nNAURA EVANS: I voted for Barack Obama, but this year I'm voting for Mike Rogers.\nVALERIA BERRY: Abdul is way too arrogant and way too extreme.\nNAURA EVANS: He will kill our jobs and make our communities less safe.\nDAMARI COVINGTON-WOODS: Mike Rogers will get to work for us.\nVALERIA BERRY: Better schools, safer streets, more jobs, and affordable health care.\nNAURA EVANS: Let's send Mike Rogers to the Senate.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "cf3a5b84cda52b412673c765b5876823afab3e5916d93b5be0f824b573ab4416",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6acd08220f7cad7d1a84f0a5-0",
+    "alignment": "R",
+    "block_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001-008",
+    "claim_text": "Let's send Mike Rogers to the Senate.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 507,
+        "kind": "publisher_transcript",
+        "start": 457,
+        "text": "NAURA EVANS: Let's send Mike Rogers to the Senate.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 492,
+        "anchor_quote": "Mike Rogers",
+        "anchor_start": 481,
+        "anchor_unit_id": 8,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "Mike Rogers",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 506,
+        "anchor_quote": "Senate",
+        "anchor_start": 500,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Senate",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "VALERIA BERRY: I'm a lifelong Detroiter.\nDAMARI COVINGTON-WOODS: I'm passionate about education.\nNAURA EVANS: I voted for Barack Obama, but this year I'm voting for Mike Rogers.\nVALERIA BERRY: Abdul is way too arrogant and way too extreme.\nNAURA EVANS: He will kill our jobs and make our communities less safe.\nDAMARI COVINGTON-WOODS: Mike Rogers will get to work for us.\nVALERIA BERRY: Better schools, safer streets, more jobs, and affordable health care.\nNAURA EVANS: Let's send Mike Rogers to the Senate.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "cf3a5b84cda52b412673c765b5876823afab3e5916d93b5be0f824b573ab4416",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "rogers-6acd08220f7cad7d1a84f0a5-0",
+    "alignment": "R",
+    "block_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001-009",
+    "claim_text": "I'm Mike Rogers, and I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 565,
+        "kind": "publisher_transcript",
+        "start": 508,
+        "text": "MIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://rogersforsenate.com/news/ad-democrat-detroiters-emphasize-support-for-mike-rogers",
+    "sponsor": "Rogers for Senate",
+    "targets": [
+      {
+        "anchor_end": 536,
+        "anchor_quote": "I'm Mike Rogers",
+        "anchor_start": 521,
+        "anchor_unit_id": 9,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "Mike Rogers",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "VALERIA BERRY: I'm a lifelong Detroiter.\nDAMARI COVINGTON-WOODS: I'm passionate about education.\nNAURA EVANS: I voted for Barack Obama, but this year I'm voting for Mike Rogers.\nVALERIA BERRY: Abdul is way too arrogant and way too extreme.\nNAURA EVANS: He will kill our jobs and make our communities less safe.\nDAMARI COVINGTON-WOODS: Mike Rogers will get to work for us.\nVALERIA BERRY: Better schools, safer streets, more jobs, and affordable health care.\nNAURA EVANS: Let's send Mike Rogers to the Senate.\nMIKE ROGERS: I'm Mike Rogers, and I approve this message.",
+    "text_hash": "cf3a5b84cda52b412673c765b5876823afab3e5916d93b5be0f824b573ab4416",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
