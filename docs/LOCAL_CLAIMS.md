@@ -112,8 +112,19 @@ time, and verify device health before restarting after a stall. The original,
 16-way and experimental 32-way artifacts remain intact.
 
 The bounded-prefill configuration is frozen separately in `full-fast-safe`.
-It does not change any previous manifest and must pass real-runtime checks
-before it is described as a working full-corpus run.
+It does not change any previous manifest. After Metal recovered, an eight-chunk
+check on an Apple M5 Max with 128 GiB memory completed extraction, required
+source-fidelity revision and structural checks. Generation took 380.82 seconds
+across its four batch stages, versus 9,374.07 seconds for the same eight frozen
+inputs on the CPU fallback: 24.6x faster generation, including each backend's
+actual retries. Five GPU chunks normalized and three failed validation; all raw
+attempts and failures remain explicit. Complete-source archive CRC and offline
+checkpoint replay were verified.
+
+This small check is not a representative whole-corpus completion estimate or
+an independent accuracy evaluation. The full GPU run resumes this exact frozen
+configuration; it does not incorporate CPU responses or newly collected ads.
+Only one large model worker runs at a time, with worker-scoped sleep prevention.
 
 ```bash
 # Freeze the exact original corpus with separately recorded fast settings.
