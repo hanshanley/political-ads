@@ -83164,5 +83164,1922 @@
     "text_hash": "3f25a991685bbe522339ee03fe650c0b456905e1e6488c2e5373fa86b3f3a5b8",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-17881-0",
+    "alignment": "R",
+    "block_id": "nrsc-17881-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-17881-0-claims-001-001",
+    "claim_text": "The New York Times reported on a secret Democratic plot to sabotage the campaign of Republican Senator Dan Sullivan.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 144,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "NBC Nightly News Anchor: “The New York Times reporting on a secret Democratic plot to sabotage the campaign of Republican Senator Dan Sullivan.”",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-alaskans-wont-fall-for-peltolas-scheme-2026-10-29/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 142,
+        "anchor_quote": "Dan Sullivan",
+        "anchor_start": 130,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4AK00214",
+        "kind": "person",
+        "name": "Dan Sullivan",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "NBC Nightly News Anchor: “The New York Times reporting on a secret Democratic plot to sabotage the campaign of Republican Senator Dan Sullivan.”\nCBS News Reporter: “Aides to Peltola helped recruit the other Dan Sullivan in hopes of confusing voters on the state’s ballot.”\nCNN Contributor Bryan Lanza: “They’re trying to cheat because they know their policies just don’t work for the people of Alaska.”\nABC News Anchor: “Alaska Senator Lisa Murkowski blunt, ‘Recruiting candidates to manipulate the field and influence voting outcomes is simply wrong.'”\nCNN Contributor Brad Todd: “ This is an effort to defraud the voters.”\nCNN Anchor: “How much did Mary Peltola know?”\nNew York Times Reporter: “Mary Peltola was aware of this effort.”\nMary Peltola: “It should be a criminal offense to lie or mislead the electorate. Yes!”",
+    "text_hash": "30da08d462041110e30a78173de238e0b55a00894c3322957c1844f1e8c32fa1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-17881-0",
+    "alignment": "R",
+    "block_id": "nrsc-17881-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-17881-0-claims-001-002",
+    "claim_text": "Aides to Peltola helped recruit the other Dan Sullivan in hopes of confusing voters on the state’s ballot.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 272,
+        "kind": "publisher_transcript",
+        "start": 145,
+        "text": "CBS News Reporter: “Aides to Peltola helped recruit the other Dan Sullivan in hopes of confusing voters on the state’s ballot.”",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-alaskans-wont-fall-for-peltolas-scheme-2026-10-29/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 181,
+        "anchor_quote": "Peltola",
+        "anchor_start": 174,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "Peltola",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "NBC Nightly News Anchor: “The New York Times reporting on a secret Democratic plot to sabotage the campaign of Republican Senator Dan Sullivan.”\nCBS News Reporter: “Aides to Peltola helped recruit the other Dan Sullivan in hopes of confusing voters on the state’s ballot.”\nCNN Contributor Bryan Lanza: “They’re trying to cheat because they know their policies just don’t work for the people of Alaska.”\nABC News Anchor: “Alaska Senator Lisa Murkowski blunt, ‘Recruiting candidates to manipulate the field and influence voting outcomes is simply wrong.'”\nCNN Contributor Brad Todd: “ This is an effort to defraud the voters.”\nCNN Anchor: “How much did Mary Peltola know?”\nNew York Times Reporter: “Mary Peltola was aware of this effort.”\nMary Peltola: “It should be a criminal offense to lie or mislead the electorate. Yes!”",
+    "text_hash": "30da08d462041110e30a78173de238e0b55a00894c3322957c1844f1e8c32fa1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-17881-0",
+    "alignment": "R",
+    "block_id": "nrsc-17881-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-17881-0-claims-001-003",
+    "claim_text": "They’re trying to cheat because they know their policies just don’t work for the people of Alaska.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 402,
+        "kind": "publisher_transcript",
+        "start": 273,
+        "text": "CNN Contributor Bryan Lanza: “They’re trying to cheat because they know their policies just don’t work for the people of Alaska.”",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-alaskans-wont-fall-for-peltolas-scheme-2026-10-29/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 307,
+        "anchor_quote": "They",
+        "anchor_start": 303,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "They",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "NBC Nightly News Anchor: “The New York Times reporting on a secret Democratic plot to sabotage the campaign of Republican Senator Dan Sullivan.”\nCBS News Reporter: “Aides to Peltola helped recruit the other Dan Sullivan in hopes of confusing voters on the state’s ballot.”\nCNN Contributor Bryan Lanza: “They’re trying to cheat because they know their policies just don’t work for the people of Alaska.”\nABC News Anchor: “Alaska Senator Lisa Murkowski blunt, ‘Recruiting candidates to manipulate the field and influence voting outcomes is simply wrong.'”\nCNN Contributor Brad Todd: “ This is an effort to defraud the voters.”\nCNN Anchor: “How much did Mary Peltola know?”\nNew York Times Reporter: “Mary Peltola was aware of this effort.”\nMary Peltola: “It should be a criminal offense to lie or mislead the electorate. Yes!”",
+    "text_hash": "30da08d462041110e30a78173de238e0b55a00894c3322957c1844f1e8c32fa1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-17881-0",
+    "alignment": "R",
+    "block_id": "nrsc-17881-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-17881-0-claims-001-004",
+    "claim_text": "Recruiting candidates to manipulate the field and influence voting outcomes is simply wrong, according to Lisa Murkowski.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 553,
+        "kind": "publisher_transcript",
+        "start": 403,
+        "text": "ABC News Anchor: “Alaska Senator Lisa Murkowski blunt, ‘Recruiting candidates to manipulate the field and influence voting outcomes is simply wrong.'”",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-alaskans-wont-fall-for-peltolas-scheme-2026-10-29/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 450,
+        "anchor_quote": "Lisa Murkowski",
+        "anchor_start": 436,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Lisa Murkowski",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "NBC Nightly News Anchor: “The New York Times reporting on a secret Democratic plot to sabotage the campaign of Republican Senator Dan Sullivan.”\nCBS News Reporter: “Aides to Peltola helped recruit the other Dan Sullivan in hopes of confusing voters on the state’s ballot.”\nCNN Contributor Bryan Lanza: “They’re trying to cheat because they know their policies just don’t work for the people of Alaska.”\nABC News Anchor: “Alaska Senator Lisa Murkowski blunt, ‘Recruiting candidates to manipulate the field and influence voting outcomes is simply wrong.'”\nCNN Contributor Brad Todd: “ This is an effort to defraud the voters.”\nCNN Anchor: “How much did Mary Peltola know?”\nNew York Times Reporter: “Mary Peltola was aware of this effort.”\nMary Peltola: “It should be a criminal offense to lie or mislead the electorate. Yes!”",
+    "text_hash": "30da08d462041110e30a78173de238e0b55a00894c3322957c1844f1e8c32fa1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-17881-0",
+    "alignment": "R",
+    "block_id": "nrsc-17881-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-17881-0-claims-001-005",
+    "claim_text": "This is an effort to defraud the voters.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 624,
+        "kind": "publisher_transcript",
+        "start": 554,
+        "text": "CNN Contributor Brad Todd: “ This is an effort to defraud the voters.”",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-alaskans-wont-fall-for-peltolas-scheme-2026-10-29/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 587,
+        "anchor_quote": "This",
+        "anchor_start": 583,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "This",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "NBC Nightly News Anchor: “The New York Times reporting on a secret Democratic plot to sabotage the campaign of Republican Senator Dan Sullivan.”\nCBS News Reporter: “Aides to Peltola helped recruit the other Dan Sullivan in hopes of confusing voters on the state’s ballot.”\nCNN Contributor Bryan Lanza: “They’re trying to cheat because they know their policies just don’t work for the people of Alaska.”\nABC News Anchor: “Alaska Senator Lisa Murkowski blunt, ‘Recruiting candidates to manipulate the field and influence voting outcomes is simply wrong.'”\nCNN Contributor Brad Todd: “ This is an effort to defraud the voters.”\nCNN Anchor: “How much did Mary Peltola know?”\nNew York Times Reporter: “Mary Peltola was aware of this effort.”\nMary Peltola: “It should be a criminal offense to lie or mislead the electorate. Yes!”",
+    "text_hash": "30da08d462041110e30a78173de238e0b55a00894c3322957c1844f1e8c32fa1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-17881-0",
+    "alignment": "R",
+    "block_id": "nrsc-17881-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-17881-0-claims-001-006",
+    "claim_text": "Mary Peltola was aware of this effort.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 736,
+        "kind": "publisher_transcript",
+        "start": 671,
+        "text": "New York Times Reporter: “Mary Peltola was aware of this effort.”",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-alaskans-wont-fall-for-peltolas-scheme-2026-10-29/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 709,
+        "anchor_quote": "Mary Peltola",
+        "anchor_start": 697,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:S6AK00276",
+        "kind": "person",
+        "name": "Mary Peltola",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "NBC Nightly News Anchor: “The New York Times reporting on a secret Democratic plot to sabotage the campaign of Republican Senator Dan Sullivan.”\nCBS News Reporter: “Aides to Peltola helped recruit the other Dan Sullivan in hopes of confusing voters on the state’s ballot.”\nCNN Contributor Bryan Lanza: “They’re trying to cheat because they know their policies just don’t work for the people of Alaska.”\nABC News Anchor: “Alaska Senator Lisa Murkowski blunt, ‘Recruiting candidates to manipulate the field and influence voting outcomes is simply wrong.'”\nCNN Contributor Brad Todd: “ This is an effort to defraud the voters.”\nCNN Anchor: “How much did Mary Peltola know?”\nNew York Times Reporter: “Mary Peltola was aware of this effort.”\nMary Peltola: “It should be a criminal offense to lie or mislead the electorate. Yes!”",
+    "text_hash": "30da08d462041110e30a78173de238e0b55a00894c3322957c1844f1e8c32fa1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-17881-0",
+    "alignment": "R",
+    "block_id": "nrsc-17881-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-17881-0-claims-001-007",
+    "claim_text": "It should be a criminal offense to lie or mislead the electorate, according to Mary Peltola.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 823,
+        "kind": "publisher_transcript",
+        "start": 737,
+        "text": "Mary Peltola: “It should be a criminal offense to lie or mislead the electorate. Yes!”",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-alaskans-wont-fall-for-peltolas-scheme-2026-10-29/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 753,
+        "anchor_quote": "I",
+        "anchor_start": 752,
+        "anchor_unit_id": 8,
+        "entity_id": "candidate:S6AK00276",
+        "kind": "person",
+        "name": "Mary Peltola",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "NBC Nightly News Anchor: “The New York Times reporting on a secret Democratic plot to sabotage the campaign of Republican Senator Dan Sullivan.”\nCBS News Reporter: “Aides to Peltola helped recruit the other Dan Sullivan in hopes of confusing voters on the state’s ballot.”\nCNN Contributor Bryan Lanza: “They’re trying to cheat because they know their policies just don’t work for the people of Alaska.”\nABC News Anchor: “Alaska Senator Lisa Murkowski blunt, ‘Recruiting candidates to manipulate the field and influence voting outcomes is simply wrong.'”\nCNN Contributor Brad Todd: “ This is an effort to defraud the voters.”\nCNN Anchor: “How much did Mary Peltola know?”\nNew York Times Reporter: “Mary Peltola was aware of this effort.”\nMary Peltola: “It should be a criminal offense to lie or mislead the electorate. Yes!”",
+    "text_hash": "30da08d462041110e30a78173de238e0b55a00894c3322957c1844f1e8c32fa1",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-17881-0",
+    "alignment": "R",
+    "block_id": "nrsc-17881-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-17881-0-claims-001-008",
+    "claim_text": "Yes!",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 823,
+        "kind": "publisher_transcript",
+        "start": 737,
+        "text": "Mary Peltola: “It should be a criminal offense to lie or mislead the electorate. Yes!”",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-alaskans-wont-fall-for-peltolas-scheme-2026-10-29/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 753,
+        "anchor_quote": "I",
+        "anchor_start": 752,
+        "anchor_unit_id": 8,
+        "entity_id": "candidate:S6AK00276",
+        "kind": "person",
+        "name": "Mary Peltola",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "NBC Nightly News Anchor: “The New York Times reporting on a secret Democratic plot to sabotage the campaign of Republican Senator Dan Sullivan.”\nCBS News Reporter: “Aides to Peltola helped recruit the other Dan Sullivan in hopes of confusing voters on the state’s ballot.”\nCNN Contributor Bryan Lanza: “They’re trying to cheat because they know their policies just don’t work for the people of Alaska.”\nABC News Anchor: “Alaska Senator Lisa Murkowski blunt, ‘Recruiting candidates to manipulate the field and influence voting outcomes is simply wrong.'”\nCNN Contributor Brad Todd: “ This is an effort to defraud the voters.”\nCNN Anchor: “How much did Mary Peltola know?”\nNew York Times Reporter: “Mary Peltola was aware of this effort.”\nMary Peltola: “It should be a criminal offense to lie or mislead the electorate. Yes!”",
+    "text_hash": "30da08d462041110e30a78173de238e0b55a00894c3322957c1844f1e8c32fa1",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9291-0",
+    "alignment": "D",
+    "block_id": "ossoff-9291-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9291-0-claims-001-001",
+    "claim_text": "Powerful officials were denying the abuse in Georgia’s foster care system, so I launched an investigation.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 120,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "[Sen. Ossoff] Powerful officials were denying the abuse in Georgia’s foster care system, so I launched an investigation.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://electjon.com/first-ossoff-tv-ad-our-kids/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 93,
+        "anchor_quote": "I",
+        "anchor_start": 92,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "Sen. Ossoff",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "[Sen. Ossoff] Powerful officials were denying the abuse in Georgia’s foster care system, so I launched an investigation.\n[WAGA] Ossoff has released a scathing report after a yearlong bipartisan investigation.\n[Sen. Ossoff] Those could be my daughters, or any of our kids.\n[WAGA] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] And we passed a new law to help stop it.\n[WSB-TV] A new anti-trafficking bill is now federal law… Jon Ossoff wrote the bill.\n[Sen. Ossoff] Every child should be safe. I’m Jon Ossoff and I approve this message.",
+    "text_hash": "770b7ecdbcb20e768a8507e300abd097b1e9ad7daa328f321b168308668f06b3",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9291-0",
+    "alignment": "D",
+    "block_id": "ossoff-9291-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9291-0-claims-001-002",
+    "claim_text": "Ossoff has released a scathing report after a yearlong bipartisan investigation.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 208,
+        "kind": "publisher_ad_copy",
+        "start": 121,
+        "text": "[WAGA] Ossoff has released a scathing report after a yearlong bipartisan investigation.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://electjon.com/first-ossoff-tv-ad-our-kids/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 134,
+        "anchor_quote": "Ossoff",
+        "anchor_start": 128,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "Ossoff",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "[Sen. Ossoff] Powerful officials were denying the abuse in Georgia’s foster care system, so I launched an investigation.\n[WAGA] Ossoff has released a scathing report after a yearlong bipartisan investigation.\n[Sen. Ossoff] Those could be my daughters, or any of our kids.\n[WAGA] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] And we passed a new law to help stop it.\n[WSB-TV] A new anti-trafficking bill is now federal law… Jon Ossoff wrote the bill.\n[Sen. Ossoff] Every child should be safe. I’m Jon Ossoff and I approve this message.",
+    "text_hash": "770b7ecdbcb20e768a8507e300abd097b1e9ad7daa328f321b168308668f06b3",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9291-0",
+    "alignment": "D",
+    "block_id": "ossoff-9291-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9291-0-claims-001-003",
+    "claim_text": "Those could be my daughters, or any of our kids.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 271,
+        "kind": "publisher_ad_copy",
+        "start": 209,
+        "text": "[Sen. Ossoff] Those could be my daughters, or any of our kids.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://electjon.com/first-ossoff-tv-ad-our-kids/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 240,
+        "anchor_quote": "my",
+        "anchor_start": 238,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "Sen. Ossoff",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "[Sen. Ossoff] Powerful officials were denying the abuse in Georgia’s foster care system, so I launched an investigation.\n[WAGA] Ossoff has released a scathing report after a yearlong bipartisan investigation.\n[Sen. Ossoff] Those could be my daughters, or any of our kids.\n[WAGA] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] And we passed a new law to help stop it.\n[WSB-TV] A new anti-trafficking bill is now federal law… Jon Ossoff wrote the bill.\n[Sen. Ossoff] Every child should be safe. I’m Jon Ossoff and I approve this message.",
+    "text_hash": "770b7ecdbcb20e768a8507e300abd097b1e9ad7daa328f321b168308668f06b3",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9291-0",
+    "alignment": "D",
+    "block_id": "ossoff-9291-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9291-0-claims-001-004",
+    "claim_text": "Hundreds of children sex trafficked while under state care.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 338,
+        "kind": "publisher_ad_copy",
+        "start": 272,
+        "text": "[WAGA] Hundreds of children sex trafficked while under state care.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://electjon.com/first-ossoff-tv-ad-our-kids/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 299,
+        "anchor_quote": "children",
+        "anchor_start": 291,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "children",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sen. Ossoff] Powerful officials were denying the abuse in Georgia’s foster care system, so I launched an investigation.\n[WAGA] Ossoff has released a scathing report after a yearlong bipartisan investigation.\n[Sen. Ossoff] Those could be my daughters, or any of our kids.\n[WAGA] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] And we passed a new law to help stop it.\n[WSB-TV] A new anti-trafficking bill is now federal law… Jon Ossoff wrote the bill.\n[Sen. Ossoff] Every child should be safe. I’m Jon Ossoff and I approve this message.",
+    "text_hash": "770b7ecdbcb20e768a8507e300abd097b1e9ad7daa328f321b168308668f06b3",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9291-0",
+    "alignment": "D",
+    "block_id": "ossoff-9291-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9291-0-claims-001-005",
+    "claim_text": "We passed a new law to help stop it.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 393,
+        "kind": "publisher_ad_copy",
+        "start": 339,
+        "text": "[Sen. Ossoff] And we passed a new law to help stop it.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://electjon.com/first-ossoff-tv-ad-our-kids/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 359,
+        "anchor_quote": "we",
+        "anchor_start": 357,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "Sen. Ossoff",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "[Sen. Ossoff] Powerful officials were denying the abuse in Georgia’s foster care system, so I launched an investigation.\n[WAGA] Ossoff has released a scathing report after a yearlong bipartisan investigation.\n[Sen. Ossoff] Those could be my daughters, or any of our kids.\n[WAGA] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] And we passed a new law to help stop it.\n[WSB-TV] A new anti-trafficking bill is now federal law… Jon Ossoff wrote the bill.\n[Sen. Ossoff] Every child should be safe. I’m Jon Ossoff and I approve this message.",
+    "text_hash": "770b7ecdbcb20e768a8507e300abd097b1e9ad7daa328f321b168308668f06b3",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9291-0",
+    "alignment": "D",
+    "block_id": "ossoff-9291-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9291-0-claims-001-006",
+    "claim_text": "Jon Ossoff wrote the bill.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 477,
+        "kind": "publisher_ad_copy",
+        "start": 394,
+        "text": "[WSB-TV] A new anti-trafficking bill is now federal law… Jon Ossoff wrote the bill.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://electjon.com/first-ossoff-tv-ad-our-kids/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 461,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 451,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "Jon Ossoff",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "[Sen. Ossoff] Powerful officials were denying the abuse in Georgia’s foster care system, so I launched an investigation.\n[WAGA] Ossoff has released a scathing report after a yearlong bipartisan investigation.\n[Sen. Ossoff] Those could be my daughters, or any of our kids.\n[WAGA] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] And we passed a new law to help stop it.\n[WSB-TV] A new anti-trafficking bill is now federal law… Jon Ossoff wrote the bill.\n[Sen. Ossoff] Every child should be safe. I’m Jon Ossoff and I approve this message.",
+    "text_hash": "770b7ecdbcb20e768a8507e300abd097b1e9ad7daa328f321b168308668f06b3",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9291-0",
+    "alignment": "D",
+    "block_id": "ossoff-9291-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9291-0-claims-001-007",
+    "claim_text": "Every child should be safe.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 562,
+        "kind": "publisher_ad_copy",
+        "start": 478,
+        "text": "[Sen. Ossoff] Every child should be safe. I’m Jon Ossoff and I approve this message.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://electjon.com/first-ossoff-tv-ad-our-kids/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 503,
+        "anchor_quote": "child",
+        "anchor_start": 498,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "child",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "[Sen. Ossoff] Powerful officials were denying the abuse in Georgia’s foster care system, so I launched an investigation.\n[WAGA] Ossoff has released a scathing report after a yearlong bipartisan investigation.\n[Sen. Ossoff] Those could be my daughters, or any of our kids.\n[WAGA] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] And we passed a new law to help stop it.\n[WSB-TV] A new anti-trafficking bill is now federal law… Jon Ossoff wrote the bill.\n[Sen. Ossoff] Every child should be safe. I’m Jon Ossoff and I approve this message.",
+    "text_hash": "770b7ecdbcb20e768a8507e300abd097b1e9ad7daa328f321b168308668f06b3",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9291-0",
+    "alignment": "D",
+    "block_id": "ossoff-9291-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9291-0-claims-001-008",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 562,
+        "kind": "publisher_ad_copy",
+        "start": 478,
+        "text": "[Sen. Ossoff] Every child should be safe. I’m Jon Ossoff and I approve this message.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://electjon.com/first-ossoff-tv-ad-our-kids/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 521,
+        "anchor_quote": "I",
+        "anchor_start": 520,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "Sen. Ossoff",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "[Sen. Ossoff] Powerful officials were denying the abuse in Georgia’s foster care system, so I launched an investigation.\n[WAGA] Ossoff has released a scathing report after a yearlong bipartisan investigation.\n[Sen. Ossoff] Those could be my daughters, or any of our kids.\n[WAGA] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] And we passed a new law to help stop it.\n[WSB-TV] A new anti-trafficking bill is now federal law… Jon Ossoff wrote the bill.\n[Sen. Ossoff] Every child should be safe. I’m Jon Ossoff and I approve this message.",
+    "text_hash": "770b7ecdbcb20e768a8507e300abd097b1e9ad7daa328f321b168308668f06b3",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9315-0",
+    "alignment": "D",
+    "block_id": "ossoff-9315-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9315-0-claims-001-001",
+    "claim_text": "I’ve investigated cases of sexual assault, and people need to know the truth about Mike Collins.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 110,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "[Sgt. Austin] I’ve investigated cases of sexual assault, and people need to know the truth about Mike Collins.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-ossoff-hits-mike-collins-for-vote-against-releasing-the-epstein-files/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 109,
+        "anchor_quote": "Mike Collins",
+        "anchor_start": 97,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6GA00390",
+        "kind": "person",
+        "name": "COLLINS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sgt. Austin] I’ve investigated cases of sexual assault, and people need to know the truth about Mike Collins.\n[Sgt. Austin] Mike Collins voted against releasing the Epstein files, even after he knew Epstein’s sex trafficking operation exploited 14 year old girls for sex.\n[Sgt. Austin] Mike Collins protected powerful elites instead of our children.\n[Sgt. Austin] Jon Ossoff is going after the powerful, and passed a law to stop child sex trafficking.\n[Sgt. Austin] We need Jon in the Senate.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message.",
+    "text_hash": "8c562bda7732a5139f862f6a9bba288987d078aec39de5b3ad4f2c31450b2372",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9315-0",
+    "alignment": "D",
+    "block_id": "ossoff-9315-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9315-0-claims-001-002",
+    "claim_text": "Mike Collins voted against releasing the Epstein files, even after he knew Epstein’s sex trafficking operation exploited 14 year old girls for sex.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 272,
+        "kind": "publisher_ad_copy",
+        "start": 111,
+        "text": "[Sgt. Austin] Mike Collins voted against releasing the Epstein files, even after he knew Epstein’s sex trafficking operation exploited 14 year old girls for sex.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-ossoff-hits-mike-collins-for-vote-against-releasing-the-epstein-files/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 137,
+        "anchor_quote": "Mike Collins",
+        "anchor_start": 125,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6GA00390",
+        "kind": "person",
+        "name": "COLLINS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sgt. Austin] I’ve investigated cases of sexual assault, and people need to know the truth about Mike Collins.\n[Sgt. Austin] Mike Collins voted against releasing the Epstein files, even after he knew Epstein’s sex trafficking operation exploited 14 year old girls for sex.\n[Sgt. Austin] Mike Collins protected powerful elites instead of our children.\n[Sgt. Austin] Jon Ossoff is going after the powerful, and passed a law to stop child sex trafficking.\n[Sgt. Austin] We need Jon in the Senate.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message.",
+    "text_hash": "8c562bda7732a5139f862f6a9bba288987d078aec39de5b3ad4f2c31450b2372",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9315-0",
+    "alignment": "D",
+    "block_id": "ossoff-9315-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9315-0-claims-001-003",
+    "claim_text": "Mike Collins protected powerful elites instead of our children.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 350,
+        "kind": "publisher_ad_copy",
+        "start": 273,
+        "text": "[Sgt. Austin] Mike Collins protected powerful elites instead of our children.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-ossoff-hits-mike-collins-for-vote-against-releasing-the-epstein-files/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 299,
+        "anchor_quote": "Mike Collins",
+        "anchor_start": 287,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6GA00390",
+        "kind": "person",
+        "name": "COLLINS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sgt. Austin] I’ve investigated cases of sexual assault, and people need to know the truth about Mike Collins.\n[Sgt. Austin] Mike Collins voted against releasing the Epstein files, even after he knew Epstein’s sex trafficking operation exploited 14 year old girls for sex.\n[Sgt. Austin] Mike Collins protected powerful elites instead of our children.\n[Sgt. Austin] Jon Ossoff is going after the powerful, and passed a law to stop child sex trafficking.\n[Sgt. Austin] We need Jon in the Senate.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message.",
+    "text_hash": "8c562bda7732a5139f862f6a9bba288987d078aec39de5b3ad4f2c31450b2372",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9315-0",
+    "alignment": "D",
+    "block_id": "ossoff-9315-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9315-0-claims-001-004",
+    "claim_text": "Jon Ossoff is going after the powerful, and passed a law to stop child sex trafficking.",
+    "claim_types": [
+      "factual_assertion",
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 452,
+        "kind": "publisher_ad_copy",
+        "start": 351,
+        "text": "[Sgt. Austin] Jon Ossoff is going after the powerful, and passed a law to stop child sex trafficking.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-ossoff-hits-mike-collins-for-vote-against-releasing-the-epstein-files/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 375,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 365,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "[Sgt. Austin] I’ve investigated cases of sexual assault, and people need to know the truth about Mike Collins.\n[Sgt. Austin] Mike Collins voted against releasing the Epstein files, even after he knew Epstein’s sex trafficking operation exploited 14 year old girls for sex.\n[Sgt. Austin] Mike Collins protected powerful elites instead of our children.\n[Sgt. Austin] Jon Ossoff is going after the powerful, and passed a law to stop child sex trafficking.\n[Sgt. Austin] We need Jon in the Senate.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message.",
+    "text_hash": "8c562bda7732a5139f862f6a9bba288987d078aec39de5b3ad4f2c31450b2372",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9315-0",
+    "alignment": "D",
+    "block_id": "ossoff-9315-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9315-0-claims-001-005",
+    "claim_text": "We need Jon in the Senate.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 493,
+        "kind": "publisher_ad_copy",
+        "start": 453,
+        "text": "[Sgt. Austin] We need Jon in the Senate.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-ossoff-hits-mike-collins-for-vote-against-releasing-the-epstein-files/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 478,
+        "anchor_quote": "Jon",
+        "anchor_start": 475,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "[Sgt. Austin] I’ve investigated cases of sexual assault, and people need to know the truth about Mike Collins.\n[Sgt. Austin] Mike Collins voted against releasing the Epstein files, even after he knew Epstein’s sex trafficking operation exploited 14 year old girls for sex.\n[Sgt. Austin] Mike Collins protected powerful elites instead of our children.\n[Sgt. Austin] Jon Ossoff is going after the powerful, and passed a law to stop child sex trafficking.\n[Sgt. Austin] We need Jon in the Senate.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message.",
+    "text_hash": "8c562bda7732a5139f862f6a9bba288987d078aec39de5b3ad4f2c31450b2372",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9315-0",
+    "alignment": "D",
+    "block_id": "ossoff-9315-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9315-0-claims-001-006",
+    "claim_text": "I approve this message.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 551,
+        "kind": "publisher_ad_copy",
+        "start": 494,
+        "text": "[Sen. Ossoff] I’m Jon Ossoff, and I approve this message.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-ossoff-hits-mike-collins-for-vote-against-releasing-the-epstein-files/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 509,
+        "anchor_quote": "I",
+        "anchor_start": 508,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "[Sgt. Austin] I’ve investigated cases of sexual assault, and people need to know the truth about Mike Collins.\n[Sgt. Austin] Mike Collins voted against releasing the Epstein files, even after he knew Epstein’s sex trafficking operation exploited 14 year old girls for sex.\n[Sgt. Austin] Mike Collins protected powerful elites instead of our children.\n[Sgt. Austin] Jon Ossoff is going after the powerful, and passed a law to stop child sex trafficking.\n[Sgt. Austin] We need Jon in the Senate.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message.",
+    "text_hash": "8c562bda7732a5139f862f6a9bba288987d078aec39de5b3ad4f2c31450b2372",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9315-0",
+    "alignment": "D",
+    "block_id": "ossoff-9315-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9315-0-claims-001-007",
+    "claim_text": "people need to know the truth about Mike Collins.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 110,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "[Sgt. Austin] I’ve investigated cases of sexual assault, and people need to know the truth about Mike Collins.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-ossoff-hits-mike-collins-for-vote-against-releasing-the-epstein-files/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 109,
+        "anchor_quote": "Mike Collins",
+        "anchor_start": 97,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6GA00390",
+        "kind": "person",
+        "name": "COLLINS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sgt. Austin] I’ve investigated cases of sexual assault, and people need to know the truth about Mike Collins.\n[Sgt. Austin] Mike Collins voted against releasing the Epstein files, even after he knew Epstein’s sex trafficking operation exploited 14 year old girls for sex.\n[Sgt. Austin] Mike Collins protected powerful elites instead of our children.\n[Sgt. Austin] Jon Ossoff is going after the powerful, and passed a law to stop child sex trafficking.\n[Sgt. Austin] We need Jon in the Senate.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message.",
+    "text_hash": "8c562bda7732a5139f862f6a9bba288987d078aec39de5b3ad4f2c31450b2372",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9352-0",
+    "alignment": "D",
+    "block_id": "ossoff-9352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9352-0-claims-001-001",
+    "claim_text": "The cost of healthcare is an emergency.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 120,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "[Sen. Ossoff] The cost of healthcare is an emergency. That’s why I fought the drug companies to cap the cost of insulin.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-emergency/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 36,
+        "anchor_quote": "healthcare",
+        "anchor_start": 26,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "healthcare",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sen. Ossoff] The cost of healthcare is an emergency. That’s why I fought the drug companies to cap the cost of insulin.\n[WAGT] Senator Ossoff passed the law that would cap the price of insulin at $35 a month.\n[Sen. Ossoff] And now I’m fighting the insurance companies to ban them from delaying or denying you care you need.\n[WANF] Senator Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[WTVM] Ossoff wants insurers held accountable.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because when Georgians can’t afford healthcare, it’s an emergency.",
+    "text_hash": "8525871f8a03a898366180bc34516410e20f8f2f718985a5d021016f50d50ca0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9352-0",
+    "alignment": "D",
+    "block_id": "ossoff-9352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9352-0-claims-001-002",
+    "claim_text": "I fought the drug companies to cap the cost of insulin.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 120,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "[Sen. Ossoff] The cost of healthcare is an emergency. That’s why I fought the drug companies to cap the cost of insulin.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-emergency/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 66,
+        "anchor_quote": "I",
+        "anchor_start": 65,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 92,
+        "anchor_quote": "drug companies",
+        "anchor_start": 78,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "drug companies",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sen. Ossoff] The cost of healthcare is an emergency. That’s why I fought the drug companies to cap the cost of insulin.\n[WAGT] Senator Ossoff passed the law that would cap the price of insulin at $35 a month.\n[Sen. Ossoff] And now I’m fighting the insurance companies to ban them from delaying or denying you care you need.\n[WANF] Senator Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[WTVM] Ossoff wants insurers held accountable.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because when Georgians can’t afford healthcare, it’s an emergency.",
+    "text_hash": "8525871f8a03a898366180bc34516410e20f8f2f718985a5d021016f50d50ca0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9352-0",
+    "alignment": "D",
+    "block_id": "ossoff-9352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9352-0-claims-001-003",
+    "claim_text": "Senator Ossoff passed the law that would cap the price of insulin at $35 a month.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 209,
+        "kind": "publisher_ad_copy",
+        "start": 121,
+        "text": "[WAGT] Senator Ossoff passed the law that would cap the price of insulin at $35 a month.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-emergency/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 142,
+        "anchor_quote": "Senator Ossoff",
+        "anchor_start": 128,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "[Sen. Ossoff] The cost of healthcare is an emergency. That’s why I fought the drug companies to cap the cost of insulin.\n[WAGT] Senator Ossoff passed the law that would cap the price of insulin at $35 a month.\n[Sen. Ossoff] And now I’m fighting the insurance companies to ban them from delaying or denying you care you need.\n[WANF] Senator Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[WTVM] Ossoff wants insurers held accountable.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because when Georgians can’t afford healthcare, it’s an emergency.",
+    "text_hash": "8525871f8a03a898366180bc34516410e20f8f2f718985a5d021016f50d50ca0",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9352-0",
+    "alignment": "D",
+    "block_id": "ossoff-9352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9352-0-claims-001-004",
+    "claim_text": "I’m fighting the insurance companies to ban them from delaying or denying you care you need.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 324,
+        "kind": "publisher_ad_copy",
+        "start": 210,
+        "text": "[Sen. Ossoff] And now I’m fighting the insurance companies to ban them from delaying or denying you care you need.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-emergency/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 233,
+        "anchor_quote": "I",
+        "anchor_start": 232,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 268,
+        "anchor_quote": "insurance companies",
+        "anchor_start": 249,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "insurance companies",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sen. Ossoff] The cost of healthcare is an emergency. That’s why I fought the drug companies to cap the cost of insulin.\n[WAGT] Senator Ossoff passed the law that would cap the price of insulin at $35 a month.\n[Sen. Ossoff] And now I’m fighting the insurance companies to ban them from delaying or denying you care you need.\n[WANF] Senator Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[WTVM] Ossoff wants insurers held accountable.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because when Georgians can’t afford healthcare, it’s an emergency.",
+    "text_hash": "8525871f8a03a898366180bc34516410e20f8f2f718985a5d021016f50d50ca0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9352-0",
+    "alignment": "D",
+    "block_id": "ossoff-9352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9352-0-claims-001-005",
+    "claim_text": "Senator Jon Ossoff is pushing to ban health insurance companies from denying coverage.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 418,
+        "kind": "publisher_ad_copy",
+        "start": 325,
+        "text": "[WANF] Senator Jon Ossoff is pushing to ban health insurance companies from denying coverage.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-emergency/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 350,
+        "anchor_quote": "Senator Jon Ossoff",
+        "anchor_start": 332,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 395,
+        "anchor_quote": "health insurance companies",
+        "anchor_start": 369,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "health insurance companies",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sen. Ossoff] The cost of healthcare is an emergency. That’s why I fought the drug companies to cap the cost of insulin.\n[WAGT] Senator Ossoff passed the law that would cap the price of insulin at $35 a month.\n[Sen. Ossoff] And now I’m fighting the insurance companies to ban them from delaying or denying you care you need.\n[WANF] Senator Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[WTVM] Ossoff wants insurers held accountable.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because when Georgians can’t afford healthcare, it’s an emergency.",
+    "text_hash": "8525871f8a03a898366180bc34516410e20f8f2f718985a5d021016f50d50ca0",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9352-0",
+    "alignment": "D",
+    "block_id": "ossoff-9352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9352-0-claims-001-006",
+    "claim_text": "Ossoff wants insurers held accountable.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 465,
+        "kind": "publisher_ad_copy",
+        "start": 419,
+        "text": "[WTVM] Ossoff wants insurers held accountable.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-emergency/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 432,
+        "anchor_quote": "Ossoff",
+        "anchor_start": 426,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 447,
+        "anchor_quote": "insurers",
+        "anchor_start": 439,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "insurers",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sen. Ossoff] The cost of healthcare is an emergency. That’s why I fought the drug companies to cap the cost of insulin.\n[WAGT] Senator Ossoff passed the law that would cap the price of insulin at $35 a month.\n[Sen. Ossoff] And now I’m fighting the insurance companies to ban them from delaying or denying you care you need.\n[WANF] Senator Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[WTVM] Ossoff wants insurers held accountable.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because when Georgians can’t afford healthcare, it’s an emergency.",
+    "text_hash": "8525871f8a03a898366180bc34516410e20f8f2f718985a5d021016f50d50ca0",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9352-0",
+    "alignment": "D",
+    "block_id": "ossoff-9352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9352-0-claims-001-007",
+    "claim_text": "I approve this message because when Georgians can’t afford healthcare, it’s an emergency.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 589,
+        "kind": "publisher_ad_copy",
+        "start": 466,
+        "text": "[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because when Georgians can’t afford healthcare, it’s an emergency.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-emergency/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 481,
+        "anchor_quote": "I",
+        "anchor_start": 480,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 545,
+        "anchor_quote": "Georgians",
+        "anchor_start": 536,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Georgians",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 569,
+        "anchor_quote": "healthcare",
+        "anchor_start": 559,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "healthcare",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sen. Ossoff] The cost of healthcare is an emergency. That’s why I fought the drug companies to cap the cost of insulin.\n[WAGT] Senator Ossoff passed the law that would cap the price of insulin at $35 a month.\n[Sen. Ossoff] And now I’m fighting the insurance companies to ban them from delaying or denying you care you need.\n[WANF] Senator Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[WTVM] Ossoff wants insurers held accountable.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because when Georgians can’t afford healthcare, it’s an emergency.",
+    "text_hash": "8525871f8a03a898366180bc34516410e20f8f2f718985a5d021016f50d50ca0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9352-0",
+    "alignment": "D",
+    "block_id": "ossoff-9352-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9352-0-claims-001-008",
+    "claim_text": "Georgians can’t afford healthcare.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 589,
+        "kind": "publisher_ad_copy",
+        "start": 466,
+        "text": "[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because when Georgians can’t afford healthcare, it’s an emergency.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-emergency/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 545,
+        "anchor_quote": "Georgians",
+        "anchor_start": 536,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Georgians",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 569,
+        "anchor_quote": "healthcare",
+        "anchor_start": 559,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "healthcare",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sen. Ossoff] The cost of healthcare is an emergency. That’s why I fought the drug companies to cap the cost of insulin.\n[WAGT] Senator Ossoff passed the law that would cap the price of insulin at $35 a month.\n[Sen. Ossoff] And now I’m fighting the insurance companies to ban them from delaying or denying you care you need.\n[WANF] Senator Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[WTVM] Ossoff wants insurers held accountable.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because when Georgians can’t afford healthcare, it’s an emergency.",
+    "text_hash": "8525871f8a03a898366180bc34516410e20f8f2f718985a5d021016f50d50ca0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9479-0",
+    "alignment": "D",
+    "block_id": "ossoff-9479-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9479-0-claims-001-001",
+    "claim_text": "When state officials denied the abuse of foster kids, I exposed the truth.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 88,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "[Sen. Ossoff] When state officials denied the abuse of foster kids, I exposed the truth.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-exposed-the-truth/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 69,
+        "anchor_quote": "I",
+        "anchor_start": 68,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "[Sen. Ossoff] When state officials denied the abuse of foster kids, I exposed the truth.\n[News Clip] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] Then, I passed a law to help stop it.\n[News Clip] A new anti-trafficking bill is now federal law. Jon Ossoff wrote the bill.\n[Sen. Ossoff] Now, I’m taking on the insurance companies to ban them from denying you or your kids the healthcare you need.\n[News Clip] Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because if they put our kids at risk, I’m going after them.",
+    "text_hash": "8784af47d5a72cdd028e67769ce3439411ddcf4fbf3f2b3ca8b296f1a99880e6",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9479-0",
+    "alignment": "D",
+    "block_id": "ossoff-9479-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9479-0-claims-001-002",
+    "claim_text": "Hundreds of children were sex trafficked while under state care.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 160,
+        "kind": "publisher_ad_copy",
+        "start": 89,
+        "text": "[News Clip] Hundreds of children sex trafficked while under state care.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-exposed-the-truth/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 121,
+        "anchor_quote": "children",
+        "anchor_start": 113,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "children",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 159,
+        "anchor_quote": "state care",
+        "anchor_start": 149,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "state",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sen. Ossoff] When state officials denied the abuse of foster kids, I exposed the truth.\n[News Clip] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] Then, I passed a law to help stop it.\n[News Clip] A new anti-trafficking bill is now federal law. Jon Ossoff wrote the bill.\n[Sen. Ossoff] Now, I’m taking on the insurance companies to ban them from denying you or your kids the healthcare you need.\n[News Clip] Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because if they put our kids at risk, I’m going after them.",
+    "text_hash": "8784af47d5a72cdd028e67769ce3439411ddcf4fbf3f2b3ca8b296f1a99880e6",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9479-0",
+    "alignment": "D",
+    "block_id": "ossoff-9479-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9479-0-claims-001-003",
+    "claim_text": "Then, I passed a law to help stop it.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 212,
+        "kind": "publisher_ad_copy",
+        "start": 161,
+        "text": "[Sen. Ossoff] Then, I passed a law to help stop it.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-exposed-the-truth/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 182,
+        "anchor_quote": "I",
+        "anchor_start": 181,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "[Sen. Ossoff] When state officials denied the abuse of foster kids, I exposed the truth.\n[News Clip] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] Then, I passed a law to help stop it.\n[News Clip] A new anti-trafficking bill is now federal law. Jon Ossoff wrote the bill.\n[Sen. Ossoff] Now, I’m taking on the insurance companies to ban them from denying you or your kids the healthcare you need.\n[News Clip] Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because if they put our kids at risk, I’m going after them.",
+    "text_hash": "8784af47d5a72cdd028e67769ce3439411ddcf4fbf3f2b3ca8b296f1a99880e6",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9479-0",
+    "alignment": "D",
+    "block_id": "ossoff-9479-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9479-0-claims-001-004",
+    "claim_text": "Jon Ossoff wrote the bill.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 299,
+        "kind": "publisher_ad_copy",
+        "start": 213,
+        "text": "[News Clip] A new anti-trafficking bill is now federal law. Jon Ossoff wrote the bill.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-exposed-the-truth/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 283,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 273,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "[Sen. Ossoff] When state officials denied the abuse of foster kids, I exposed the truth.\n[News Clip] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] Then, I passed a law to help stop it.\n[News Clip] A new anti-trafficking bill is now federal law. Jon Ossoff wrote the bill.\n[Sen. Ossoff] Now, I’m taking on the insurance companies to ban them from denying you or your kids the healthcare you need.\n[News Clip] Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because if they put our kids at risk, I’m going after them.",
+    "text_hash": "8784af47d5a72cdd028e67769ce3439411ddcf4fbf3f2b3ca8b296f1a99880e6",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9479-0",
+    "alignment": "D",
+    "block_id": "ossoff-9479-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9479-0-claims-001-005",
+    "claim_text": "Now, I’m taking on the insurance companies to ban them from denying you or your kids the healthcare you need.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 423,
+        "kind": "publisher_ad_copy",
+        "start": 300,
+        "text": "[Sen. Ossoff] Now, I’m taking on the insurance companies to ban them from denying you or your kids the healthcare you need.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-exposed-the-truth/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 320,
+        "anchor_quote": "I",
+        "anchor_start": 319,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 356,
+        "anchor_quote": "insurance companies",
+        "anchor_start": 337,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "insurance companies",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sen. Ossoff] When state officials denied the abuse of foster kids, I exposed the truth.\n[News Clip] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] Then, I passed a law to help stop it.\n[News Clip] A new anti-trafficking bill is now federal law. Jon Ossoff wrote the bill.\n[Sen. Ossoff] Now, I’m taking on the insurance companies to ban them from denying you or your kids the healthcare you need.\n[News Clip] Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because if they put our kids at risk, I’m going after them.",
+    "text_hash": "8784af47d5a72cdd028e67769ce3439411ddcf4fbf3f2b3ca8b296f1a99880e6",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9479-0",
+    "alignment": "D",
+    "block_id": "ossoff-9479-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9479-0-claims-001-006",
+    "claim_text": "Jon Ossoff is pushing to ban health insurance companies from denying coverage.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 514,
+        "kind": "publisher_ad_copy",
+        "start": 424,
+        "text": "[News Clip] Jon Ossoff is pushing to ban health insurance companies from denying coverage.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-exposed-the-truth/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 446,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 436,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 491,
+        "anchor_quote": "health insurance companies",
+        "anchor_start": 465,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "health insurance companies",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Sen. Ossoff] When state officials denied the abuse of foster kids, I exposed the truth.\n[News Clip] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] Then, I passed a law to help stop it.\n[News Clip] A new anti-trafficking bill is now federal law. Jon Ossoff wrote the bill.\n[Sen. Ossoff] Now, I’m taking on the insurance companies to ban them from denying you or your kids the healthcare you need.\n[News Clip] Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because if they put our kids at risk, I’m going after them.",
+    "text_hash": "8784af47d5a72cdd028e67769ce3439411ddcf4fbf3f2b3ca8b296f1a99880e6",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "ossoff-9479-0",
+    "alignment": "D",
+    "block_id": "ossoff-9479-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "ossoff-9479-0-claims-001-007",
+    "claim_text": "I approve this message because if they put our kids at risk, I’m going after them.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 631,
+        "kind": "publisher_ad_copy",
+        "start": 515,
+        "text": "[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because if they put our kids at risk, I’m going after them.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://electjon.com/new-ossoff-tv-ad-exposed-the-truth/",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 530,
+        "anchor_quote": "I",
+        "anchor_start": 529,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 587,
+        "anchor_quote": "they",
+        "anchor_start": 583,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "they",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 600,
+        "anchor_quote": "our kids",
+        "anchor_start": 592,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "kids",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "[Sen. Ossoff] When state officials denied the abuse of foster kids, I exposed the truth.\n[News Clip] Hundreds of children sex trafficked while under state care.\n[Sen. Ossoff] Then, I passed a law to help stop it.\n[News Clip] A new anti-trafficking bill is now federal law. Jon Ossoff wrote the bill.\n[Sen. Ossoff] Now, I’m taking on the insurance companies to ban them from denying you or your kids the healthcare you need.\n[News Clip] Jon Ossoff is pushing to ban health insurance companies from denying coverage.\n[Sen. Ossoff] I’m Jon Ossoff, and I approve this message because if they put our kids at risk, I’m going after them.",
+    "text_hash": "8784af47d5a72cdd028e67769ce3439411ddcf4fbf3f2b3ca8b296f1a99880e6",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
