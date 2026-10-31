@@ -1238,9 +1238,11 @@
     "R": {
       "categories": {
         "contrast": {
-          "ad_ids": [],
-          "count": 0,
-          "share": 0.0
+          "ad_ids": [
+            "conroy-1243-0"
+          ],
+          "count": 1,
+          "share": 0.0020408163265306124
         },
         "neither_detected": {
           "ad_ids": [
@@ -1553,7 +1555,6 @@
             "snap-cd84afd30be53c8d0cf73aec",
             "snap-e43ec944a0e456d8197ab015",
             "bresnahan-native-122241580490111841",
-            "conroy-1243-0",
             "rogers-6aad61ca534c9b0dd9de31e6-0",
             "snap-0315aef1cf9b222254f815f9",
             "snap-65f0d70fcc56c172d977116d",
@@ -1741,8 +1742,8 @@
             "snap-d60d07b71c1c16da2cbdcb55",
             "snap-e9a3b27048e3b4952586b499"
           ],
-          "count": 488,
-          "share": 0.9959183673469387
+          "count": 487,
+          "share": 0.9938775510204082
         },
         "opponent_negative_only": {
           "ad_ids": [],
@@ -1763,116 +1764,141 @@
       "all_unique_messages": 1204,
       "categories_overlap": true,
       "denominator": "normalized_unique_messages",
-      "normalized_unique_messages": 0,
+      "normalized_unique_messages": 3,
       "side_tone": {
         "not_partisan": {
           "negative": {
-            "ad_ids": [],
-            "count": 0,
-            "share": null
+            "ad_ids": [
+              "cooper-483-0"
+            ],
+            "count": 1,
+            "share": 0.3333333333333333
           },
           "neutral": {
-            "ad_ids": [],
-            "count": 0,
-            "share": null
+            "ad_ids": [
+              "cooper-551-0"
+            ],
+            "count": 1,
+            "share": 0.3333333333333333
           },
           "positive": {
-            "ad_ids": [],
-            "count": 0,
-            "share": null
+            "ad_ids": [
+              "cooper-483-0"
+            ],
+            "count": 1,
+            "share": 0.3333333333333333
           },
           "uncertain": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           }
         },
         "other_party": {
           "negative": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "neutral": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "positive": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "uncertain": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           }
         },
         "other_side": {
           "negative": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "neutral": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "positive": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           },
           "uncertain": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           }
         },
         "same_side": {
           "negative": {
-            "ad_ids": [],
-            "count": 0,
-            "share": null
+            "ad_ids": [
+              "cooper-445-0"
+            ],
+            "count": 1,
+            "share": 0.3333333333333333
           },
           "neutral": {
-            "ad_ids": [],
-            "count": 0,
-            "share": null
+            "ad_ids": [
+              "cooper-445-0"
+            ],
+            "count": 1,
+            "share": 0.3333333333333333
           },
           "positive": {
-            "ad_ids": [],
-            "count": 0,
-            "share": null
+            "ad_ids": [
+              "cooper-445-0",
+              "cooper-483-0",
+              "cooper-551-0"
+            ],
+            "count": 3,
+            "share": 1.0
           },
           "uncertain": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           }
         },
         "unknown": {
           "negative": {
-            "ad_ids": [],
-            "count": 0,
-            "share": null
+            "ad_ids": [
+              "cooper-445-0",
+              "cooper-483-0",
+              "cooper-551-0"
+            ],
+            "count": 3,
+            "share": 1.0
           },
           "neutral": {
-            "ad_ids": [],
-            "count": 0,
-            "share": null
+            "ad_ids": [
+              "cooper-445-0",
+              "cooper-483-0",
+              "cooper-551-0"
+            ],
+            "count": 3,
+            "share": 1.0
           },
           "positive": {
-            "ad_ids": [],
-            "count": 0,
-            "share": null
+            "ad_ids": [
+              "cooper-445-0",
+              "cooper-483-0"
+            ],
+            "count": 2,
+            "share": 0.6666666666666666
           },
           "uncertain": {
             "ad_ids": [],
             "count": 0,
-            "share": null
+            "share": 0.0
           }
         }
       },
@@ -1885,7 +1911,7 @@
       "all_unique_messages": 490,
       "categories_overlap": true,
       "denominator": "normalized_unique_messages",
-      "normalized_unique_messages": 15,
+      "normalized_unique_messages": 17,
       "side_tone": {
         "not_partisan": {
           "negative": {
@@ -1897,7 +1923,7 @@
               "bresnahan-native-122240759240111841"
             ],
             "count": 5,
-            "share": 0.3333333333333333
+            "share": 0.29411764705882354
           },
           "neutral": {
             "ad_ids": [
@@ -1906,7 +1932,7 @@
               "barr-1992-0"
             ],
             "count": 3,
-            "share": 0.2
+            "share": 0.17647058823529413
           },
           "positive": {
             "ad_ids": [
@@ -1916,7 +1942,7 @@
               "bresnahan-native-122240759240111841"
             ],
             "count": 4,
-            "share": 0.26666666666666666
+            "share": 0.23529411764705882
           },
           "uncertain": {
             "ad_ids": [],
@@ -1930,21 +1956,21 @@
               "cfg-52126-0"
             ],
             "count": 1,
-            "share": 0.06666666666666667
+            "share": 0.058823529411764705
           },
           "neutral": {
             "ad_ids": [
               "cfg-52126-0"
             ],
             "count": 1,
-            "share": 0.06666666666666667
+            "share": 0.058823529411764705
           },
           "positive": {
             "ad_ids": [
               "cfg-52126-0"
             ],
             "count": 1,
-            "share": 0.06666666666666667
+            "share": 0.058823529411764705
           },
           "uncertain": {
             "ad_ids": [],
@@ -1954,9 +1980,11 @@
         },
         "other_side": {
           "negative": {
-            "ad_ids": [],
-            "count": 0,
-            "share": 0.0
+            "ad_ids": [
+              "conroy-1243-0"
+            ],
+            "count": 1,
+            "share": 0.058823529411764705
           },
           "neutral": {
             "ad_ids": [],
@@ -1980,20 +2008,22 @@
               "cfg-50973-0"
             ],
             "count": 1,
-            "share": 0.06666666666666667
+            "share": 0.058823529411764705
           },
           "neutral": {
             "ad_ids": [
               "cassidy-35e759517bdff0d8-0",
               "barr-1387-0",
               "barr-1713-0",
+              "collins-3604-0",
               "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
               "bresnahan-native-122240759240111841",
               "barr-1942-0",
+              "conroy-1243-0",
               "barr-1992-0"
             ],
-            "count": 7,
-            "share": 0.4666666666666667
+            "count": 9,
+            "share": 0.5294117647058824
           },
           "positive": {
             "ad_ids": [
@@ -2002,19 +2032,21 @@
               "cfg-50973-1",
               "cassidy-0fe807e0e52358a7-0",
               "cassidy-107b696383099e06-0",
+              "collins-3604-0",
               "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
               "cfg-51751-0",
+              "conroy-1243-0",
               "barr-1992-0"
             ],
-            "count": 8,
-            "share": 0.5333333333333333
+            "count": 10,
+            "share": 0.5882352941176471
           },
           "uncertain": {
             "ad_ids": [
               "barr-1942-0"
             ],
             "count": 1,
-            "share": 0.06666666666666667
+            "share": 0.058823529411764705
           }
         },
         "unknown": {
@@ -2023,10 +2055,11 @@
               "cassidy-35e759517bdff0d8-0",
               "barr-1387-0",
               "barr-1639-0",
+              "collins-3604-0",
               "bresnahan-native-122240759240111841"
             ],
-            "count": 4,
-            "share": 0.26666666666666666
+            "count": 5,
+            "share": 0.29411764705882354
           },
           "neutral": {
             "ad_ids": [
@@ -2036,10 +2069,11 @@
               "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
               "bresnahan-native-122240759240111841",
               "barr-1942-0",
+              "conroy-1243-0",
               "barr-1992-0"
             ],
-            "count": 7,
-            "share": 0.4666666666666667
+            "count": 8,
+            "share": 0.47058823529411764
           },
           "positive": {
             "ad_ids": [
@@ -2053,10 +2087,11 @@
               "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
               "cfg-51751-0",
               "barr-1942-0",
+              "conroy-1243-0",
               "barr-1992-0"
             ],
-            "count": 11,
-            "share": 0.7333333333333333
+            "count": 12,
+            "share": 0.7058823529411765
           },
           "uncertain": {
             "ad_ids": [],
@@ -2073,17 +2108,17 @@
   },
   "ads": 1792,
   "ads_by_status": {
-    "normalized": 15,
-    "not_run": 1759,
-    "validation_failed": 18
+    "normalized": 20,
+    "not_run": 1751,
+    "validation_failed": 21
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 16,
-    "not_run": 1976,
-    "validation_failed": 24
+    "normalized": 21,
+    "not_run": 1968,
+    "validation_failed": 27
   },
-  "claims": 146,
+  "claims": 181,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -2135,6 +2170,10 @@
         {
           "claim_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001-009",
           "target_index": 0
+        },
+        {
+          "claim_id": "cooper-483-0-claims-001-006",
+          "target_index": 1
         }
       ],
       "neutral": [
@@ -2169,6 +2208,18 @@
         {
           "claim_id": "cfg-51751-0-claims-001-004",
           "target_index": 1
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-006",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -2194,6 +2245,14 @@
         },
         {
           "claim_id": "cassidy-35e759517bdff0d8-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-483-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-483-0-claims-001-008",
           "target_index": 0
         }
       ],
@@ -2241,7 +2300,24 @@
       "uncertain": []
     },
     "other_side": {
-      "negative": [],
+      "negative": [
+        {
+          "claim_id": "conroy-1243-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "conroy-1243-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "conroy-1243-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "conroy-1243-0-claims-001-007",
+          "target_index": 0
+        }
+      ],
       "neutral": [],
       "positive": [],
       "uncertain": []
@@ -2258,6 +2334,10 @@
         },
         {
           "claim_id": "cfg-51751-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-445-0-claims-001-006",
           "target_index": 0
         }
       ],
@@ -2320,6 +2400,14 @@
         },
         {
           "claim_id": "collins-3604-0-claims-001-022",
+          "target_index": 0
+        },
+        {
+          "claim_id": "conroy-1243-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-445-0-claims-001-001",
           "target_index": 0
         }
       ],
@@ -2455,6 +2543,66 @@
         {
           "claim_id": "collins-3604-0-claims-001-007",
           "target_index": 0
+        },
+        {
+          "claim_id": "collins-3604-0-claims-002-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "conroy-1243-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "conroy-1243-0-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-445-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-445-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-445-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-445-0-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-445-0-claims-001-009",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-483-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-483-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-483-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-483-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-009",
+          "target_index": 0
         }
       ],
       "uncertain": [
@@ -2572,6 +2720,54 @@
         },
         {
           "claim_id": "collins-3604-0-claims-001-021",
+          "target_index": 1
+        },
+        {
+          "claim_id": "cooper-445-0-claims-001-006",
+          "target_index": 1
+        },
+        {
+          "claim_id": "cooper-483-0-claims-001-003",
+          "target_index": 1
+        },
+        {
+          "claim_id": "cooper-483-0-claims-001-003",
+          "target_index": 2
+        },
+        {
+          "claim_id": "cooper-483-0-claims-001-003",
+          "target_index": 3
+        },
+        {
+          "claim_id": "cooper-483-0-claims-001-005",
+          "target_index": 1
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-002",
+          "target_index": 1
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-003",
+          "target_index": 1
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-005",
+          "target_index": 1
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-009",
           "target_index": 1
         }
       ],
@@ -2695,6 +2891,26 @@
         {
           "claim_id": "collins-3604-0-claims-001-007",
           "target_index": 1
+        },
+        {
+          "claim_id": "conroy-1243-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-445-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-445-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-483-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "cooper-551-0-claims-001-004",
+          "target_index": 1
         }
       ],
       "positive": [
@@ -2809,11 +3025,23 @@
         {
           "claim_id": "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0-claims-001-006",
           "target_index": 0
+        },
+        {
+          "claim_id": "conroy-1243-0-claims-001-008",
+          "target_index": 1
+        },
+        {
+          "claim_id": "cooper-445-0-claims-001-008",
+          "target_index": 1
+        },
+        {
+          "claim_id": "cooper-483-0-claims-001-007",
+          "target_index": 0
         }
       ],
       "uncertain": []
     }
   },
-  "targets": 170,
+  "targets": 218,
   "version": "local-ad-claims-4"
 }
