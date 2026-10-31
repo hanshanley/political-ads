@@ -825,7 +825,7 @@
     "ad_id": "el-sayed-7c690cb7f4afe702-0",
     "block_id": "el-sayed-7c690cb7f4afe702-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "el-sayed-812063375d01e3fd-0",
@@ -837,31 +837,31 @@
     "ad_id": "el-sayed-83b0f5c9ffd13be4-0",
     "block_id": "el-sayed-83b0f5c9ffd13be4-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "el-sayed-9937f98393eba15f-0",
     "block_id": "el-sayed-9937f98393eba15f-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 7 for ROGERS, MIKE: \\\"Mike\\\" is absent from unit 4. Exact source: \\\"Took more than a million dollars from big pharma.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "el-sayed-a629307c1187b24e-0",
     "block_id": "el-sayed-a629307c1187b24e-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "el-sayed-ac0466f5759ae0a9-0",
     "block_id": "el-sayed-ac0466f5759ae0a9-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 8 for EL-SAYED, ABDUL: \\\"I\\\" is absent from unit 14. Exact source: \\\"Reformed broken systems. Fought opioids and government waste.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "el-sayed-ac0466f5759ae0a9-0",
     "block_id": "el-sayed-ac0466f5759ae0a9-0-claims-002",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "el-sayed-ac04d83be1821aa7-0",
