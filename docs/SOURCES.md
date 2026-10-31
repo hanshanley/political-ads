@@ -10,6 +10,108 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## No Going Back PAC PA-10 separately linked narrator quotation recovery
+
+The distinct **ngb-perry-breitbart-20261027-0** record adds **18 literal
+words** from an expressly attributed narrator quotation in a **No Going
+Back PAC** ad against Janelle Stelson. It remains a **partial quotation
+and semantically unreviewed**. The narrator paragraph contains two
+quotations of nine and eighteen words; retain only its second, complete
+quotation, unchanged and with its literal terminal period. Exclude the
+first quotation, other narration, press statements, reporting, campaign
+denials, photographs and media. The allegation is observed ad speech,
+not a verified factual finding. Neither the cited affidavit nor police
+records were investigated, and no private identifying details were added.
+
+Actual Breitbart report:
+`https://www.breitbart.com/politics/2026/10/27/democrat-janelle-stelsons-former-tv-station-refuses-to-air-ad-highlighting-allegation-she-exposed-herself-to-child/`.
+Retained HTML SHA-256:
+`dcf535ddda8a3098fdf2d6c781a4e4d4d78a4576be7d3cdd7ad312df13f7e09c`.
+Its unique **h1**, **Jasmyn Jordan** author meta and unique **time**
+displaying **27 Oct 2026** bind the report. The time's
+**2026-10-27T17:27:37Z** datetime and
+**2026-10-27T17:27:37+00:00** publication meta agree. This is publisher
+observation, not independently verified first airing, upload or paid delivery.
+
+The selected narrator paragraph individually links AdImpact viewer
+**79f0089f-c4b8-4c29-9888-d78cbe91ab13** through its **says** anchor.
+The opening explicitly attributes this advertisement to a **No Going
+Back PAC spokesman**. The article expressly calls the previously
+reported **Scott Perry campaign advertisement separate**; that preceding
+**perry-capitalstar / 2wYgN0-t36M** creative remains unchanged and is
+not conflated with this PAC ad. Source alignment **R**, sponsorship
+**outside_group**, fixed **PA-10** and general phase follow the
+identified Republican-versus-Democratic House contest, not the target's
+party, the publisher's ideology or the calendar month alone.
+
+Exact official **H2PA04135 / C00510164**, **PERRY, SCOTT**, **REP**,
+**House**, **PA-10**, **2026** agrees with principal **PATRIOTS FOR
+PERRY**, **P/H/REP**. This verifies the supported candidate, **not
+the PAC ad's payer**. Publisher sponsor attribution is not an independently
+inspected sole legal payer card. The entire preceding acquired corpus
+contains neither this individual original in **media_urls** nor the
+normalized selected quotation. No AdImpact viewer, API, account,
+catalog, media, caption, credential or denied-provider request was made.
+Only the retained public HTML body is copied to replay storage, with
+empty metadata and no cached response headers.
+
+Immutable **house-ngb-perry-breitbart-baseline.json** freezes **1,913
+acquired / 1,874 analyzed / 67 reviews**, aliases and **17 protected
+inputs** before acquisition. The existing parser suffices. Strict
+verification preserves all preceding acquired/analyzed objects and reviews,
+including an exact unchanged review-byte suffix, and replays **561 to
+562 written objects** using the single retained response with network
+sockets forbidden. Complete JSON/gzip/CSV/Parquet, eleven PNGs and
+browser/production copies reconcile; Parquet independently preserves
+original-media association and quality flags. The audit reconciles
+**20 metric groups / 10 chart rows**. All **437 Python tests** pass
+in **265.57 seconds**, with backend lint/format, frontend lint,
+**17 unit cases**, production typecheck/build and **all eight browser
+cases together** passing. Both contact sheets covering all eleven
+figures were visually inspected. Neither edition is published.
+
+Snapshot:
+`4380553ea777a3ac2a7356cb402ce71ea0093705ba861180e7023bb8f4923e69`.
+Totals: **1,914 acquired / 1,875 English**; **D 1,226 / R 610 /
+other 31 / unknown 8**; exact messages **D 1,204 / R 573**.
+English House: **D 698 / R 232 / other 19 / unknown 3**; non-Snap
+House **D 222 / R 231**. Snap stays **D 476 / R 1 / other 19 /
+unknown 3**. These are source-dependent collection counts, not national
+ad volume, spending or matched-race estimates.
+
+The preceding Nevada research commit
+**eb9a4f22f7b8c386b443899f24360cbf8c57a1ec** preserves actual concurrent
+parent **28f14e076a74f3c62f6b1b4fc0effafdf38412ad**. Exact remote paths,
+Hans author/committer identities and absent attribution trailers were
+independently verified. The original watcher and exact CI **41244206582**
+completed successfully; all **13 successful steps** were independently
+checked and persisted.
+
+Discovery exclusions remain explicit. Carrie Buck's separately linked
+**Getting Hosed** report provides only **twelve distinct literal words**:
+five narrator words and a seven-word opponent clip. Exact **H6NV01331 /
+C00914804** establishes her Republican **NV-01** House identity, but
+does not overcome the fifteen-word admission minimum. Repetition,
+the title and a described approval cannot pad the quotation. The two
+separate Kentucky ads reported by LPM also remain separate: the MAGA KY
+spot's six on-screen and eight disclosure words do not supply a spoken
+transcript, while the anti-Gallrein spot has only thirteen narrator words.
+Crank's meeting speech and DCCC comment, and the Valadao report's AAN
+president statement, are not ad narration. No new records result.
+
+All eight actually linked Ciscomani campaign releases were inspected.
+They supply titles, media associations and ordinary candidate/campaign
+manager statements, but no explicitly delimited ad transcript; those
+statements and the quoted Mendoza policy remark are not promoted to
+verified ad speech. The already acquired June **Work For You** record
+remains unchanged. A Kean father-narrated report under an alternative
+category path reproduces the previously acquired **Bn-S9ZP9ChQ**
+creative, not an additional ad. Previously acquired Kean insurance and
+Buckhout **Show Up** source URLs were skipped before requesting them.
+Carolina Journal's Buckhout report quotes an X announcement and expert
+commentary, not a qualifying ad script. Broader searches also rediscovered
+the two already acquired official Conroy scripts; they are not new items.
+
 ## NRCC NV-01 independently linked narrator quotation recovery
 
 The distinct **nrcc-nevada-globe-20261020-0** record adds **17 literal

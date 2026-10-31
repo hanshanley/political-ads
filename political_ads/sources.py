@@ -147,6 +147,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "ngb-perry-breitbart",
+        "https://www.breitbart.com",
+        "No Going Back PAC (publisher-attributed; payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="PA-10",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "nrcc-nevada-globe",
         "https://thenevadaglobe.com",
         "National Republican Congressional Committee (publisher-attributed; payer unverified)",

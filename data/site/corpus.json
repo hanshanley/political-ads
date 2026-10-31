@@ -46966,6 +46966,94 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "The original public Breitbart response, SHA256 dcf535ddda8a3098fdf2d6c781a4e4d4d78a4576be7d3cdd7ad312df13f7e09c, binds one h1, author meta Jasmyn Jordan, and one time displaying 27 Oct2026 with datetime2026-10-27T17:27:37Z. article:published_time2026-10-27T17:27:37+00:00 agrees. This is the publisher observation, not independently verified first airing, release, upload or paid delivery. The opening report attributes this ad to a No Going Back PAC spokesman and identifies its anti-Stelson PA-10 contest against Republican Scott Perry. One paragraph expressly attributes its two quotations to the advertisement's narrator and individually links AdImpact viewer79f0089f-c4b8-4c29-9888-d78cbe91ab13 through the says anchor. Retain only its second eighteen-word quotation. The article explicitly calls the previously reported Perry campaign advertisement separate; this new PAC record is not assigned to Perry's candidate committee or conflated with the preceding perry-capitalstar original2wYgN0-t36M. Source alignment R/outside_group follows the identified PAC ad and Republican House contest, not the Democratic target's party or the publisher's ideology. No Going Back PAC is publisher attribution, not an independently inspected sole legal payer. Exact official H2PA04135/C00510164, PERRY,SCOTT, REP, House, PA-10,2026 agrees with PATRIOTS FOR PERRY, P/H/REP; that principal verifies the supported candidate's identity, NOT this PAC ad's payer. Explicit Democrat-versus-Republican final-election context supports general phase, not October alone. A complete preceding-corpus check must exclude this individual original and normalized quotation before acquisition. The ad's allegation is literal speech, not a verified factual finding or a semantic judgment. Neither the cited affidavit nor police records are inspected; no identifying information about neighbors, children or addresses is added. Other ad quotations, campaign denials, reporter judgments and the separate Perry campaign ad are excluded. Only the retained publisher HTML body is copied to replay storage with empty metadata and no cached response headers. No AdImpact viewer, API, account, catalog, media, caption, credential or denied-provider request is made. Partial quotation and semantically unreviewed; preceding objects/reviews, aliases, rosters and protected semantic inputs remain unchanged.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H4PA10104",
+          "district": "10",
+          "name": "STELSON, JANELLE",
+          "office": "H",
+          "party": "DEM",
+          "state": "PA"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "ngb-perry-breitbart-20261027-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://platform.adimpact.com/viewer/79f0089f-c4b8-4c29-9888-d78cbe91ab13"
+      ],
+      "message_id": "8a07416b53ecac98108b4883b434ecb56325872f888d669629d51c1880f1fd7d",
+      "observed": "2026-10-31",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-10-27",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "PA-10",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H2PA04135"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The original public Breitbart response, SHA256 dcf535ddda8a3098fdf2d6c781a4e4d4d78a4576be7d3cdd7ad312df13f7e09c, binds one h1, author meta Jasmyn Jordan, and one time displaying 27 Oct2026 with datetime2026-10-27T17:27:37Z. article:published_time2026-10-27T17:27:37+00:00 agrees. This is the publisher observation, not independently verified first airing, release, upload or paid delivery. The opening report attributes this ad to a No Going Back PAC spokesman and identifies its anti-Stelson PA-10 contest against Republican Scott Perry. One paragraph expressly attributes its two quotations to the advertisement's narrator and individually links AdImpact viewer79f0089f-c4b8-4c29-9888-d78cbe91ab13 through the says anchor. Retain only its second eighteen-word quotation. The article explicitly calls the previously reported Perry campaign advertisement separate; this new PAC record is not assigned to Perry's candidate committee or conflated with the preceding perry-capitalstar original2wYgN0-t36M. Source alignment R/outside_group follows the identified PAC ad and Republican House contest, not the Democratic target's party or the publisher's ideology. No Going Back PAC is publisher attribution, not an independently inspected sole legal payer. Exact official H2PA04135/C00510164, PERRY,SCOTT, REP, House, PA-10,2026 agrees with PATRIOTS FOR PERRY, P/H/REP; that principal verifies the supported candidate's identity, NOT this PAC ad's payer. Explicit Democrat-versus-Republican final-election context supports general phase, not October alone. A complete preceding-corpus check must exclude this individual original and normalized quotation before acquisition. The ad's allegation is literal speech, not a verified factual finding or a semantic judgment. Neither the cited affidavit nor police records are inspected; no identifying information about neighbors, children or addresses is added. Other ad quotations, campaign denials, reporter judgments and the separate Perry campaign ad are excluded. Only the retained publisher HTML body is copied to replay storage with empty metadata and no cached response headers. No AdImpact viewer, API, account, catalog, media, caption, credential or denied-provider request is made. Partial quotation and semantically unreviewed; preceding objects/reviews, aliases, rosters and protected semantic inputs remain unchanged.",
+            "candidate_id": "H2PA04135",
+            "completeness": "partial_quotation",
+            "content_sha256": "dcf535ddda8a3098fdf2d6c781a4e4d4d78a4576be7d3cdd7ad312df13f7e09c",
+            "format": "html",
+            "heading_selector": "h1",
+            "media_url": "https://platform.adimpact.com/viewer/79f0089f-c4b8-4c29-9888-d78cbe91ab13",
+            "passages": [
+              "The affidavit says Stelson was walking around outdoors naked and exposed herself to a child with special needs."
+            ],
+            "phase": "general",
+            "publication_date_format": "%d %b %Y",
+            "publication_selector": "time",
+            "published": "2026-10-27",
+            "publisher_credit": "Jasmyn Jordan, Breitbart News.",
+            "record_id": "20261027",
+            "release_title": "Pennsylvania Democrat Janelle Stelson’s Former TV Station Refuses to Air Ad Highlighting Allegation She Exposed Herself to Child",
+            "required_context": [
+              "No Going Back PAC",
+              "the advertisement’s narrator says",
+              "the narrator continues",
+              "the narrator concludes",
+              "a separate campaign advertisement released by Rep. Scott Perry (R-PA)",
+              "Stelson is challenging in Pennsylvania’s congressional election",
+              "WHP and WPMT"
+            ],
+            "retrieval_url": "https://www.breitbart.com/politics/2026/10/27/democrat-janelle-stelsons-former-tv-station-refuses-to-air-ad-highlighting-allegation-she-exposed-herself-to-child/",
+            "reuse_basis": "Retain only the second, eighteen-word narrator quotation from the individually linked ad paragraph, unchanged and with its literal terminal period, for noncommercial comparative research with author/publisher/source credit. Exclude the preceding nine-word quotation, later seven-, fifteen- and thirteen-word narration, the spokesperson's statement, reporting, private identifying details, photographs and media. No blanket reuse license or authorization to publish either edition is asserted.",
+            "source": "ngb-perry-breitbart",
+            "source_url": "https://www.breitbart.com/politics/2026/10/27/democrat-janelle-stelsons-former-tv-station-refuses-to-air-ad-highlighting-allegation-she-exposed-herself-to-child/"
+          },
+          "text": "The affidavit says Stelson was walking around outdoors naked and exposed herself to a child with special needs."
+        }
+      ],
+      "source": "ngb-perry-breitbart",
+      "source_hash": "dcf535ddda8a3098fdf2d6c781a4e4d4d78a4576be7d3cdd7ad312df13f7e09c",
+      "source_record_id": "20261027",
+      "source_url": "https://www.breitbart.com/politics/2026/10/27/democrat-janelle-stelsons-former-tv-station-refuses-to-air-ad-highlighting-allegation-she-exposed-herself-to-child/",
+      "sponsor": "No Going Back PAC (publisher-attributed; payer unverified)",
+      "sponsor_type": "outside_group",
+      "state": "PA",
+      "text": "The affidavit says Stelson was walking around outdoors naked and exposed herself to a child with special needs.",
+      "title": "Pennsylvania Democrat Janelle Stelson’s Former TV Station Refuses to Air Ad Highlighting Allegation She Exposed Herself to Child"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Credit: Cardinal & Pine, October 27, 2026, credited on the article to USA Today Network via Reuters Connect. The report explicitly identifies a Republican congressional ad from Jennifer Balkcom, names NRCC as the reported funder and links the individual advertisement. Exact FEC H6NC11321, REP, NC-11, principal committee C00958785, verifies the candidate separately from her state office. Two literal ordered quotations are the ad narrator's words about Democratic opponent Jamie Ager, not authentic Ager statements, the publisher's fact-checking, lyrics, candidate responses, NRCC press statements or drag performers' responses. The report describes synthetic likenesses; its editorial assessments and reported events do not become semantic labels or independently verified factual findings. Gaps between the two quotations remain explicit: they are 24 observed words, not a recovered complete ad. The publicly linked video was not requested; no YouTube/caption service, account or third-party catalog was used. Full response hash, exact heading/publication date, advertiser/candidate context, distinct individual video association and literal passage order remain bound. October 27 is the publisher's report date, not verified first release or paid delivery. The sole closing payer was not independently inspected. This is acquisition review only; the new message remains semantically unreviewed.",
       "candidate_mentions": [
         {
@@ -49651,6 +49739,22 @@
       "source": "ngb-mtpr",
       "state": "partial",
       "url": "https://www.mtpr.org"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "ngb-perry-breitbart",
+      "state": "partial",
+      "url": "https://www.breitbart.com"
     },
     {
       "ads_with_text": 1,
