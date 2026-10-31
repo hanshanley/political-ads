@@ -530,50 +530,50 @@
   {
     "ad_id": "dccc-668759-0",
     "block_id": "dccc-668759-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-668763-0",
     "block_id": "dccc-668763-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim 8 fields or evidence IDs\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-668789-0",
     "block_id": "dccc-668789-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "dccc-669014-0",
     "block_id": "dccc-669014-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim 1 fields or evidence IDs\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-669018-0",
     "block_id": "dccc-669018-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 7 for customers: \\\"customers\\\" is absent from unit 4. Exact source: \\\"spend.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-669020-0",
     "block_id": "dccc-669020-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for Laura Gillen: \\\"I\\\" is absent from unit 4. Exact source: \\\"Going after the insurance companies ripping us off.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-669024-0",
     "block_id": "dccc-669024-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "dccc-669046-0",
     "block_id": "dccc-669046-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "dccc-669070-0",
