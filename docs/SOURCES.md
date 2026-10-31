@@ -10,6 +10,100 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## AAN IA-01 individual-ad quotation recovery
+
+The distinct Republican House record **aan-iowa-20260820-0** retains
+one **17-word narrator quotation** from **Lower Taxes**, an American
+Action Network ad supporting Mariannette Miller-Meeks. It remains a
+**partial quotation and semantically unreviewed**, not a complete script
+or a new neutral judgment. Hospital-funding language is advertiser
+speech, not an independently verified factual finding.
+
+The actual August 20 Iowa Capital Dispatch report:
+`https://iowacapitaldispatch.com/2026/08/20/conservative-group-launches-ad-campaign-highlighting-rep-miller-meeks-nunn-work-on-tax-cuts/`.
+HTML SHA-256:
+`7b81981c3d6831c765bf81d3be33f950c6c3ca1a7df7b96c575abdb4475a2f05`.
+**Robin Opsahl**, the unique **h1.singleHed**, visible **August 20,
+2026, 6:00 a.m.**, **time.singleByline datetime2026-08-20 06:00**, and
+**article:published_time2026-08-20T11:00:57+00:00** bind the report.
+The minute-only visible time is not promoted to a precise first-release,
+upload or airing timestamp. This remains a publisher-observation date.
+
+The selected paragraph explicitly attributes its complete quotation to
+the ad narrator about Miller-Meeks. The immediately preceding paragraph
+names **Lower Taxes** and has exactly one **ad supporting Miller-Meeks**
+anchor:
+`https://www.youtube.com/watch?v=DnXpR5P4_4k`.
+This is an individual publisher-linked creative, not an inspected upload
+or payer card. The later Nunn ad separately links **XyXegST-OjY**; it is
+not counted by this review. No YouTube, media, caption or API request was
+made. Article summaries, the short tax excerpts and Chris Winkelman's
+press statement do not pad the acquired speech.
+
+Exact saved **H8IA02043 / C00558825**, **MILLER-MEEKS, MARIANNETTE
+JANE**, **REP**, **House**, **IA-01**, **2026**, agrees with cached
+official principal **MILLER-MEEKS FOR CONGRESS**, **P/H/REP**.
+The principal is identity evidence, not creative authorization. Explicit
+incumbent reelection against Democratic challengers supports **general**
+phase rather than August alone. Existing source/review extraction works
+without parser, alias, roster or semantic-input changes.
+
+Fresh immutable **house-aan-iowa-baseline.json** freezes **1,909
+acquired / 1,870 analyzed / 63 acquisition reviews**, all aliases and
+**17 protected inputs**. The completed strict verifier proves every
+preceding object and review unchanged, full JSON/gzip/CSV/Parquet and
+browser/production parity, and **557 to 558 written objects** reproduced
+from the actual saved parent using only one original response with
+sockets forbidden. All **430 Python tests**, backend lint/format,
+frontend lint and **17 unit cases**, production typecheck/build and
+**seven browser cases** pass. The audit reconciles **20 metric groups /
+10 chart rows**. All **eleven manifest PNGs** were visually inspected,
+including the monthly-issues figure at full size; labels remain legible
+and unclipped.
+
+Validated snapshot:
+`804f2e4d8144ec372a0a947eb0035e4836bc142ab9429181746e58de266bd1b7`.
+Totals are **1,910 acquired / 1,871 English**, **D 1,226 / R 606 /
+other 31 / unknown 8**. Exact messages are **D 1,204 / R 569**.
+English House is **D 698 / R 228 / other 19 / unknown 3**; non-Snap
+House is **D 222 / R 227**. Snap remains **D 476 / R 1 / other 19 /
+unknown 3**. These source counts do not establish national volume,
+spending, matched-race coverage or representativeness.
+
+The preceding Toth research commit
+**3806cb4294f83b74a1566b6a79ace3093fc0eea0** is pushed as Hans Hanley
+without Copilot/co-author/session trailers. Its exact CI **41238224016**
+completed successfully; the original watcher and all **13 successful
+steps** were independently verified.
+
+Continuing discovery retains explicit exclusions and holds. The actual
+AP Iowa battleground report returned **403**: APNews is paused, without
+retry, mirror or bypass. Florida's Voice public-news search returned
+**401**: new provider requests are paused; previously reviewed hash-bound
+responses remain valid for offline replay. The Las Vegas Sun search
+route returned **410** and is not retried. A guessed Gonzales domain
+failed TLS and established neither campaign identity nor ad text; no
+insecure fallback was used. All preceding provider and permission holds,
+including Google/YouTube and Chamber primary hosts, remain in force.
+
+Further CFG discovery established **Great Honor**, **DtRMYZSIrKo**,
+supporting exact **Chris Gober / TX-10**, but the report's quotations
+are spokesperson statements, not ad speech. Gober's actual January 22
+and February 18 news cards link only **./**; the campaign overview has
+a video but no qualifying script. An April 1 Tribune report supplies
+only twelve combined Gober ad words and five Steinmann words, below the
+threshold. Carolina Journal's first Balkcom-ad report supplies
+descriptions, a campaign announcement and an analyst quotation, not
+qualifying ad speech. Teixeira's actual campaign homepage and linked
+news index expose videos, interviews and campaign announcements, not
+recovered new ad text. The refreshed Chamber Examiner report still
+does not bind its single linked video to a verified individual variant.
+These observations add no records. A different October 2 MTPR episode
+explicitly transcribes a pro-Flint No Going Back ad; its individual
+creative/media association remains to be established before acquisition.
+Concrete evidence and remaining leads are retained in ignored
+**data/raw/** artifacts. Acquisition continues; publication stays withdrawn.
+
 ## Toth TX-02 primary-ad quotation recovery
 
 The distinct Republican House record **toth-tribune-20260126-0** retains

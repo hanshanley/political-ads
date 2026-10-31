@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "aan-iowa",
+        "https://iowacapitaldispatch.com",
+        "American Action Network (publisher-reported; payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="IA-01",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "toth-tribune",
         "https://www.texastribune.org",
         "Steve Toth campaign (publisher-reported; payer unverified)",
