@@ -26999,6 +26999,84 @@
       "title": "NEW AD ALERT: Julie Fate Sullivan Responds Directly to Peltola’s Attacks on Her Family"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "Credit: Paul Cuno-Booth, FactCheck.org, September 23, 2026. The report explicitly quotes a House Republican leadership-backed advertisement attacking Democratic Janelle Stelson in PA-10, names Republican Scott Perry as her opponent, and separately identifies Congressional Leadership Fund as the group behind the Pennsylvania ad. Exact saved FEC H4PA10104 / C00852368, DEM, House, PA-10, verifies Stelson. Advertiser alignment/type follow CLF, R / outside_group, not the target's Democratic party. The first embedded individual public viewer follows the Stelson quotation and the paragraph identifying both contested races; it is not the later MAGA Inc. Texas Senate creative. Two source-ordered fragments total 17 words, preserving the second quotation's terminal period. They form one partially recovered ad, not two ads, and do not include the CLF spokesperson's statement, Stelson's response, Talarico's Texas material, study estimates or reporter analysis. September 23 is the original report date, not independently verified first delivery. The exact whole decoded HTML hash, unique primary h1, title/date, federal candidate and advertiser/contest context, original association and ordered literal fragments remain bound. This is association-only evidence: no monitoring-provider viewer, API, account, credential, catalog or media request was made. A sole legal closing payer was not independently inspected. The new message remains semantically unreviewed.",
+      "candidate_mentions": [],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "clf-factcheck-stelson-hospitals-20260923-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://platform.adimpact.com/viewer/1b6cc194-5da1-4515-96dc-89553f1ba737"
+      ],
+      "message_id": "97586f01582b1c4261322d3aee6619c76c6fe9ec76e0bfdb1d5e9a8bebd740c4",
+      "observed": "2026-10-31",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-09-23",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "PA-10",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H4PA10104"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Credit: Paul Cuno-Booth, FactCheck.org, September 23, 2026. The report explicitly quotes a House Republican leadership-backed advertisement attacking Democratic Janelle Stelson in PA-10, names Republican Scott Perry as her opponent, and separately identifies Congressional Leadership Fund as the group behind the Pennsylvania ad. Exact saved FEC H4PA10104 / C00852368, DEM, House, PA-10, verifies Stelson. Advertiser alignment/type follow CLF, R / outside_group, not the target's Democratic party. The first embedded individual public viewer follows the Stelson quotation and the paragraph identifying both contested races; it is not the later MAGA Inc. Texas Senate creative. Two source-ordered fragments total 17 words, preserving the second quotation's terminal period. They form one partially recovered ad, not two ads, and do not include the CLF spokesperson's statement, Stelson's response, Talarico's Texas material, study estimates or reporter analysis. September 23 is the original report date, not independently verified first delivery. The exact whole decoded HTML hash, unique primary h1, title/date, federal candidate and advertiser/contest context, original association and ordered literal fragments remain bound. This is association-only evidence: no monitoring-provider viewer, API, account, credential, catalog or media request was made. A sole legal closing payer was not independently inspected. The new message remains semantically unreviewed.",
+            "candidate_id": "H4PA10104",
+            "completeness": "partial_quotation",
+            "content_sha256": "0fbf2f01a9322ed1009fd7aea5d469f56ab0796ac0239acdf6ab5244bb26a82b",
+            "format": "html",
+            "heading_selector": "h1.entry-title",
+            "media_url": "https://platform.adimpact.com/viewer/1b6cc194-5da1-4515-96dc-89553f1ba737",
+            "passages": [
+              "a plan to close up to 25 Pennsylvania rural hospitals",
+              "closing the hospitals your family depends on."
+            ],
+            "phase": "general",
+            "published": "2026-09-23",
+            "record_id": "stelson-hospitals-20260923",
+            "release_title": "GOP Ads Mislead on Public Option Proposals’ Impact on Rural Hospitals",
+            "required_context": [
+              "Pennsylvania’s 10th Congressional District",
+              "claims Democrat Janelle Stelson supports",
+              "Congressional Leadership Fund",
+              "the group behind the Pennsylvania ad",
+              "Stelson, a former local news anchor, is challenging incumbent Republican Rep. Scott Perry."
+            ],
+            "retrieval_url": "https://www.factcheck.org/2026/09/gop-ads-mislead-on-public-option-proposals-impact-on-rural-hospitals/",
+            "source": "clf-factcheck",
+            "source_url": "https://www.factcheck.org/2026/09/gop-ads-mislead-on-public-option-proposals-impact-on-rural-hospitals/"
+          },
+          "text": "a plan to close up to 25 Pennsylvania rural hospitals"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "closing the hospitals your family depends on."
+        }
+      ],
+      "source": "clf-factcheck",
+      "source_hash": "0fbf2f01a9322ed1009fd7aea5d469f56ab0796ac0239acdf6ab5244bb26a82b",
+      "source_record_id": "stelson-hospitals-20260923",
+      "source_url": "https://www.factcheck.org/2026/09/gop-ads-mislead-on-public-option-proposals-impact-on-rural-hospitals/",
+      "sponsor": "Congressional Leadership Fund (reported ad sponsor)",
+      "sponsor_type": "outside_group",
+      "state": "PA",
+      "text": "a plan to close up to 25 Pennsylvania rural hospitals\nclosing the hospitals your family depends on.",
+      "title": "GOP Ads Mislead on Public Option Proposals’ Impact on Rural Hospitals"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official LCV Victory Fund release at https://www.lcvvictoryfund.org/news/lcv-victory-fund-puts-data-center-tax-break-vote-by-house-republicans-at-the-heart-of-new-2-million-ad-program/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
@@ -33847,6 +33925,77 @@
       "state": "GA",
       "text": "[President Obama] This is Barack Obama. And Georgia, the whole country’s counting on you to vote for Jon Ossoff this November.\n[President Obama] The cost of gas, groceries, and healthcare is out of control.\n[President Obama] And by voting for Jon Ossoff, we have the chance to protect voting rights, stand up for Civil Rights, and help build an economy that works for everyone.\n[President Obama] You can also help make sure that every Georgian has access to quality healthcare. Jon’s already taken on the big drug companies and capped the cost of insulin. Now he’s taking on insurance companies that try to deny families the care they need.\n[President Obama] Georgia, this election matters. Folks across the state are voting for Jon and you can join them.\n[President Obama] Civil Rights heroes marched and even died to secure your right to vote. So use it.\n[President Obama] Vote for Jon Ossoff by November 3rd. Early voting starts October 13th.\n[Senator Ossoff] I’m Jon Ossoff, candidate for Senate, and I approve this message.\n[V/O] Paid for by Jon Ossoff for Senate.",
       "title": "President Barack Obama Encourages Georgians to Vote for Jon Ossoff In New Ad "
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "Credit: Robert Farley, FactCheck.org, October 8, 2026. The Pennsylvania's 7th House District subsection explicitly attributes an ad attacking Democratic Bob Brooks to Safety and Affordability PAC and embeds the fourth individual public viewer immediately after that ad's quoted paragraph. Exact saved FEC H6PA07188 / C00917096, DEM, House, PA-07, verifies Brooks; the report names Republican incumbent Ryan Mackenzie as his opponent. Republican advertiser alignment follows the organization's separately documented Trump-affiliated MAGA Inc. relationship in the previously acquired American Journal News October 20 AZ-01 report, not Brooks' party or the ad's hostile wording. The 23-word literal passage is reported ad speech, not the author's tax analysis, Brooks' campaign responses, his interview, or the article's three Senate ads. This creative is distinct from the separate unresolved CLF/Brooks lead. October 8 is the visible and metadata report date, not verified first release or airing. The exact whole decoded HTML hash, unique primary h1, title/date, advertiser and federal contest context, individual viewer association and literal passage are bound. The viewer URL is association-only evidence in publisher HTML: no monitoring-provider viewer, API, account, credential, catalog or media was requested. Closing payment was not independently inspected. Partial quotation acquisition does not constitute semantic portrayal review; this message remains unreviewed.",
+      "candidate_mentions": [],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "saf-factcheck-brooks-tax-20261008-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://platform.adimpact.com/viewer/c0f5e833-b5ab-4fbd-8672-4b1e94cfdde9"
+      ],
+      "message_id": "885a2ce8ddc4a60683bf7bf6bbf19f5026a137b11c2466fd37017e75d2ca159a",
+      "observed": "2026-10-31",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-10-08",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "PA-07",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6PA07188"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Credit: Robert Farley, FactCheck.org, October 8, 2026. The Pennsylvania's 7th House District subsection explicitly attributes an ad attacking Democratic Bob Brooks to Safety and Affordability PAC and embeds the fourth individual public viewer immediately after that ad's quoted paragraph. Exact saved FEC H6PA07188 / C00917096, DEM, House, PA-07, verifies Brooks; the report names Republican incumbent Ryan Mackenzie as his opponent. Republican advertiser alignment follows the organization's separately documented Trump-affiliated MAGA Inc. relationship in the previously acquired American Journal News October 20 AZ-01 report, not Brooks' party or the ad's hostile wording. The 23-word literal passage is reported ad speech, not the author's tax analysis, Brooks' campaign responses, his interview, or the article's three Senate ads. This creative is distinct from the separate unresolved CLF/Brooks lead. October 8 is the visible and metadata report date, not verified first release or airing. The exact whole decoded HTML hash, unique primary h1, title/date, advertiser and federal contest context, individual viewer association and literal passage are bound. The viewer URL is association-only evidence in publisher HTML: no monitoring-provider viewer, API, account, credential, catalog or media was requested. Closing payment was not independently inspected. Partial quotation acquisition does not constitute semantic portrayal review; this message remains unreviewed.",
+            "candidate_id": "H6PA07188",
+            "completeness": "partial_quotation",
+            "content_sha256": "d24c5470ad314aa5401d3c0bc02d3519a9ea901f5c3f05f54583688886c7a968",
+            "format": "html",
+            "heading_selector": "h1.entry-title",
+            "media_url": "https://platform.adimpact.com/viewer/c0f5e833-b5ab-4fbd-8672-4b1e94cfdde9",
+            "passages": [
+              "wants to keep higher taxes on overtime pay and Social Security benefits. Families, firefighters, nurses, and seniors would see their taxes go up."
+            ],
+            "phase": "general",
+            "published": "2026-10-08",
+            "record_id": "brooks-tax-20261008",
+            "release_title": "Misleading GOP Attacks Over Taxes on Tips, Overtime, Social Security",
+            "required_context": [
+              "an ad from Safety and Affordability PAC claims Democrat Bob Brooks",
+              "Pennsylvania’s 7th Congressional District",
+              "Republican incumbent Rep. Ryan Mackenzie"
+            ],
+            "retrieval_url": "https://www.factcheck.org/2026/10/misleading-gop-attacks-over-taxes-on-tips-overtime-social-security/",
+            "source": "saf-factcheck",
+            "source_url": "https://www.factcheck.org/2026/10/misleading-gop-attacks-over-taxes-on-tips-overtime-social-security/"
+          },
+          "text": "wants to keep higher taxes on overtime pay and Social Security benefits. Families, firefighters, nurses, and seniors would see their taxes go up."
+        }
+      ],
+      "source": "saf-factcheck",
+      "source_hash": "d24c5470ad314aa5401d3c0bc02d3519a9ea901f5c3f05f54583688886c7a968",
+      "source_record_id": "brooks-tax-20261008",
+      "source_url": "https://www.factcheck.org/2026/10/misleading-gop-attacks-over-taxes-on-tips-overtime-social-security/",
+      "sponsor": "Safety and Affordability PAC (reported ad sponsor)",
+      "sponsor_type": "outside_group",
+      "state": "PA",
+      "text": "wants to keep higher taxes on overtime pay and Social Security benefits. Families, firefighters, nurses, and seniors would see their taxes go up.",
+      "title": "Misleading GOP Attacks Over Taxes on Tips, Overtime, Social Security"
     },
     {
       "alignment": "D",
@@ -45311,6 +45460,22 @@
       "url": "https://americanjournalnews.com"
     },
     {
+      "ads_with_text": 1,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "clf-factcheck",
+      "state": "partial",
+      "url": "https://www.factcheck.org"
+    },
+    {
       "ads_with_text": 2,
       "checked": "2026-10-30",
       "excluded_posts": 14,
@@ -45993,6 +46158,22 @@
       "source": "rogers",
       "state": "ok",
       "url": "https://rogersforsenate.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "saf-factcheck",
+      "state": "partial",
+      "url": "https://www.factcheck.org"
     },
     {
       "ads_with_text": 1,

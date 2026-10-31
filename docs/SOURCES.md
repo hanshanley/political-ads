@@ -10,7 +10,89 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Arizona/Kentucky expansion of the October 30 snapshot
+## Pennsylvania expansion of the October 30 snapshot
+
+The latest acquisition contains **1,870 text records**, including **1,832
+English records: 1,226 D / 567 R / 31 other / eight unresolved**. Two
+new Republican outside-group House records contain **23 and 17 literal
+ad words**. These are **partial quotations**, not complete transcripts,
+and remain semantically **unreviewed**. All **1,868 preceding acquired
+objects**, **1,830 preceding analyzed objects**, **29 acquisition reviews**
+and **17 protected canonical JSON inputs** are unchanged. Concurrent
+frozen claims work was not touched.
+
+Exact observed-text messages are **1,204 D / 530 R**. English House
+coverage is **698 D / 189 R**: 476 D / one R Snap and 222 D / 188 R
+non-Snap. These remain source-limited collection counts, not national
+advertising proportions or a resolved Republican coverage gap.
+
+| Reported advertiser | Recovered ad | Publisher / report date | Recovered words |
+|---|---|---|---|
+| Safety and Affordability PAC | Bob Brooks tax attack, PA-07 general | Robert Farley, FactCheck.org / October 8 | One passage, 23 words |
+| Congressional Leadership Fund | Janelle Stelson rural-hospital attack, PA-10 general | Paul Cuno-Booth, FactCheck.org / September 23 | Two fragments, 17 words |
+
+Exact saved FEC identities are **Brooks H6PA07188 / C00917096** and
+**Stelson H4PA10104 / C00852368**, both DEM, House, in their respective
+districts. The reports explicitly identify Republican opponents Ryan
+Mackenzie and Scott Perry. Advertiser alignment/type follow the reported
+Republican organizations, not the Democratic targets. Safety and
+Affordability PAC's organizational alignment retains the separately
+documented Trump-affiliated MAGA Inc. relationship in the earlier
+American Journal News AZ-01 report. Sole legal closing payers were not
+independently inspected.
+
+The Brooks quotation is tied to the fourth embedded individual viewer
+in its House subsection; the other three viewers concern Senate races.
+This is not the separate unresolved CLF/Brooks creative. The Stelson
+fragments share the first viewer after her quotation and the paragraph
+identifying the two races, not the later Texas Senate viewer. Preserve
+the second fragment's terminal period. Each record has a novel
+observed-text identity and individual creative UUID, including comparison
+across the monitoring provider's legacy/current viewer URL forms.
+Spokesperson statements, policy responses, reporting, study estimates and
+other-race advertisements are excluded.
+
+Entire decoded publisher HTML SHA-256, unique primary h1, exact title/date,
+candidate/advertiser/contest context, original association and ordered
+literal passages are bound. Report dates are not independently verified
+first delivery. No monitoring-provider viewer, API, catalog, account,
+credential or original media was requested. No collector logic, alias,
+semantic judgment or protected native partition changed.
+
+```sh
+political-ads collect --source saf-factcheck \
+  --source clf-factcheck --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+Network-forbidden isolated replay reproduces all **525 written objects
+and source states** from the preceding 523 using exactly **two cached
+publisher responses** and their actual October 31 observation/check date.
+The October 30 snapshot cutoff remains unchanged. Complete
+analysis/browser/built JSON, gzip and text-complete CSV, all **1,870 Parquet
+rows** and eleven visually inspected PNG sets reconcile. Final affected
+Python tests pass **150 cases**; lint/format, frontend lint, **17 frontend
+tests**, production build and **seven browser cases** pass. Independent
+auditing verifies **20 metric groups / ten chart rows**. Snapshot:
+`13ad2f689a153d6afae82d9aa2f1c32fadfbbb8e41edefdf2434860a6998bbad`.
+Both editions remain unpublished.
+
+The broader archive's AAN IA-01/CO-08 quotations remain leads: literal
+words are insufficient and one shared paragraph's viewer cannot simply
+be assigned to both ads. Further search found an accessible Colorado
+Times Recorder report quoting Evans' **Boots** ad and embedding an
+individual original. Its visible report date is **September 8, 2026**;
+the ad remains unadmitted pending exact date/identity/source review.
+The existing Gabe Evans/FEC alias is already independently documented.
+New CPR and PennLive requests returned **403**; no retries or denied-page
+alternate retrieval were made. Existing denied providers remain paused.
+Recurring acquisition stays active; publication and host restoration
+remain on hold.
+
+## Earlier Arizona/Kentucky expansion of the October 30 snapshot
 
 The latest acquisition contains **1,868 text records**, including **1,830
 English records: 1,226 D / 565 R / 31 other / eight unresolved**. Two
@@ -86,7 +168,8 @@ single-post JSON link and public taxonomy links. Its **2026-ads** archive
 returns **34 reports**, not 34 acquired ads. The October 8 tax-ad report
 quotes a separate Safety and Affordability PAC attack on **Bob Brooks,
 H6PA07188 / C00917096, PA-07**, and associates it with one individual
-public viewer URL. That remains an **unadmitted lead**, distinct from the
+public viewer URL. That was then an **unadmitted lead**, subsequently
+admitted above and distinct from the
 unresolved CLF/Brooks creative. No viewer, API, catalog, account or media
 request was made to the monitoring provider. The report's three other
 viewer associations concern Senate races, not House ads. Continue checking

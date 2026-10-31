@@ -3,6 +3,57 @@
   "scope": "Individually reviewed public ad words, not complete publisher discovery or semantic portrayal review.",
   "reviews": [
     {
+      "source": "saf-factcheck",
+      "record_id": "brooks-tax-20261008",
+      "source_url": "https://www.factcheck.org/2026/10/misleading-gop-attacks-over-taxes-on-tips-overtime-social-security/",
+      "retrieval_url": "https://www.factcheck.org/2026/10/misleading-gop-attacks-over-taxes-on-tips-overtime-social-security/",
+      "format": "html",
+      "heading_selector": "h1.entry-title",
+      "content_sha256": "d24c5470ad314aa5401d3c0bc02d3519a9ea901f5c3f05f54583688886c7a968",
+      "published": "2026-10-08",
+      "release_title": "Misleading GOP Attacks Over Taxes on Tips, Overtime, Social Security",
+      "candidate_id": "H6PA07188",
+      "media_url": "https://platform.adimpact.com/viewer/c0f5e833-b5ab-4fbd-8672-4b1e94cfdde9",
+      "phase": "general",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "an ad from Safety and Affordability PAC claims Democrat Bob Brooks",
+        "Pennsylvania’s 7th Congressional District",
+        "Republican incumbent Rep. Ryan Mackenzie"
+      ],
+      "passages": [
+        "wants to keep higher taxes on overtime pay and Social Security benefits. Families, firefighters, nurses, and seniors would see their taxes go up."
+      ],
+      "attribution_basis": "Credit: Robert Farley, FactCheck.org, October 8, 2026. The Pennsylvania's 7th House District subsection explicitly attributes an ad attacking Democratic Bob Brooks to Safety and Affordability PAC and embeds the fourth individual public viewer immediately after that ad's quoted paragraph. Exact saved FEC H6PA07188 / C00917096, DEM, House, PA-07, verifies Brooks; the report names Republican incumbent Ryan Mackenzie as his opponent. Republican advertiser alignment follows the organization's separately documented Trump-affiliated MAGA Inc. relationship in the previously acquired American Journal News October 20 AZ-01 report, not Brooks' party or the ad's hostile wording. The 23-word literal passage is reported ad speech, not the author's tax analysis, Brooks' campaign responses, his interview, or the article's three Senate ads. This creative is distinct from the separate unresolved CLF/Brooks lead. October 8 is the visible and metadata report date, not verified first release or airing. The exact whole decoded HTML hash, unique primary h1, title/date, advertiser and federal contest context, individual viewer association and literal passage are bound. The viewer URL is association-only evidence in publisher HTML: no monitoring-provider viewer, API, account, credential, catalog or media was requested. Closing payment was not independently inspected. Partial quotation acquisition does not constitute semantic portrayal review; this message remains unreviewed."
+    },
+    {
+      "source": "clf-factcheck",
+      "record_id": "stelson-hospitals-20260923",
+      "source_url": "https://www.factcheck.org/2026/09/gop-ads-mislead-on-public-option-proposals-impact-on-rural-hospitals/",
+      "retrieval_url": "https://www.factcheck.org/2026/09/gop-ads-mislead-on-public-option-proposals-impact-on-rural-hospitals/",
+      "format": "html",
+      "heading_selector": "h1.entry-title",
+      "content_sha256": "0fbf2f01a9322ed1009fd7aea5d469f56ab0796ac0239acdf6ab5244bb26a82b",
+      "published": "2026-09-23",
+      "release_title": "GOP Ads Mislead on Public Option Proposals’ Impact on Rural Hospitals",
+      "candidate_id": "H4PA10104",
+      "media_url": "https://platform.adimpact.com/viewer/1b6cc194-5da1-4515-96dc-89553f1ba737",
+      "phase": "general",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Pennsylvania’s 10th Congressional District",
+        "claims Democrat Janelle Stelson supports",
+        "Congressional Leadership Fund",
+        "the group behind the Pennsylvania ad",
+        "Stelson, a former local news anchor, is challenging incumbent Republican Rep. Scott Perry."
+      ],
+      "passages": [
+        "a plan to close up to 25 Pennsylvania rural hospitals",
+        "closing the hospitals your family depends on."
+      ],
+      "attribution_basis": "Credit: Paul Cuno-Booth, FactCheck.org, September 23, 2026. The report explicitly quotes a House Republican leadership-backed advertisement attacking Democratic Janelle Stelson in PA-10, names Republican Scott Perry as her opponent, and separately identifies Congressional Leadership Fund as the group behind the Pennsylvania ad. Exact saved FEC H4PA10104 / C00852368, DEM, House, PA-10, verifies Stelson. Advertiser alignment/type follow CLF, R / outside_group, not the target's Democratic party. The first embedded individual public viewer follows the Stelson quotation and the paragraph identifying both contested races; it is not the later MAGA Inc. Texas Senate creative. Two source-ordered fragments total 17 words, preserving the second quotation's terminal period. They form one partially recovered ad, not two ads, and do not include the CLF spokesperson's statement, Stelson's response, Talarico's Texas material, study estimates or reporter analysis. September 23 is the original report date, not independently verified first delivery. The exact whole decoded HTML hash, unique primary h1, title/date, federal candidate and advertiser/contest context, original association and ordered literal fragments remain bound. This is association-only evidence: no monitoring-provider viewer, API, account, credential, catalog or media request was made. A sole legal closing payer was not independently inspected. The new message remains semantically unreviewed."
+    },
+    {
       "source": "nrcc-townhall",
       "record_id": "nrcc-shah-20260722",
       "source_url": "https://townhall.com/news/amy-curtis/2026/07/22/nrcc-amish-shah-n2679970",
