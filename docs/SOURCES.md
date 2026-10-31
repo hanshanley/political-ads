@@ -10,9 +10,110 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## October 30: public House mailers and independently quoted ad words
+## October 30: eight marked Republican House scripts from New Jersey Globe
 
-The latest snapshot contains **1,844 acquired text records**, including **1,806
+The latest acquisition contains **1,852 text records**, including **1,814
+English records: 1,226 D / 549 R / 31 other / eight unresolved**. It adds
+eight Republican House scripts, not eight newly discovered districts or a
+representative national sample. All **1,844 preceding acquired objects** and
+saved semantic reviews are preserved. The eight additions remain semantically
+unreviewed; acquisition review does not supply tone or strategy judgments.
+Exact-message counts are **1,204 D / 512 R**. English House coverage is now
+**698 D / 171 R**: 476 D / one R Snap and 222 D / 170 R non-Snap.
+
+| Reported advertiser | Ad | Report date | Federal race |
+|---|---|---|---|
+| American Action Network | SALT deduction issue-advocacy ad | August 14 | Kean, NJ-07 |
+| Tom Kean Jr. campaign | Every Patient | August 26 | NJ-07 |
+| Tom Kean Jr. campaign | Proud | September 2 | NJ-07 |
+| Tom Kean Jr. campaign | Accountable | September 4 | NJ-07 |
+| Tom Kean Jr. campaign | Profits Over Patients | October 8 | NJ-07 |
+| Tom Kean Jr. campaign | Conversation | October 20 | NJ-07 |
+| New Jersey Republican State Committee | Two-Faced | October 21 | Kean, NJ-07 |
+| Joe Hathaway campaign | First special-general-election digital ad | March 19 | NJ-11 |
+
+Credit: **New Jersey Globe**, whose original article URL, exact public post
+response, report date, marked script and advertiser attribution are bound in
+each `data/ad-release-reviews.json` entry. Only ad words enter the corpus, not
+the articles, policy explanations, spokesperson quotations or reporter
+assessments. Each record links the original article and the separately embedded
+original-ad association. The publisher's [terms](https://newjerseyglobe.com/terms-conditions/)
+specify permission or credit for reuse; publisher credit and provenance remain
+in the complete exports.
+
+Discovery followed the publisher's disclosed public WordPress API, not an
+invented private endpoint. The initial `"TV ad"` and `"Hathaway" "ad"` searches
+returned 32 and 103 results across their completed pages, comprising 134
+distinct posts. Broader `script` and `transcript` searches returned 104 and six
+results, respectively, and exposed the additional AAN script. These are bounded
+queries, not exhaustive archive discovery. State/local ads, debates, suggested
+campaign messaging and unquoted descriptions of advertisements are excluded.
+The October 5 NRCC childcare ad is already acquired as
+`nrcc-a9673d0617ba52de-0`; its newly found news reproduction is **not added
+again**. The AAN article describes two districts but supplies only one linked,
+marked NJ-07 script; no NJ-09 execution is fabricated.
+
+Every review binds the full `content.rendered` SHA-256, post ID, exact article
+URL/title/date, required advertiser context, one original-video association,
+literal passages and an individually inspected `script_selector`. The selector
+must match **exactly one** element, whose explicitly marked script must equal
+the complete admitted text. Missing, ambiguous or non-script selections fail
+closed. This prevents inline `Script:` paragraphs from absorbing subsequent
+reporting without globally truncating genuine multi-paragraph scripts.
+Selectors cannot be applied to partial quotations.
+
+The full content hash intentionally retains the video plugin's generated
+iframe ID. Archive-list and individual-post responses can therefore differ
+despite identical visible words and media links. Admission uses the exact
+reviewed individual-post response; no hash normalization or silent approval of
+changed HTML occurs. Subsequent changes require renewed acquisition review,
+and collection preserves the last good record rather than replacing it.
+`--offline` requires those already reviewed cached responses.
+
+Exact 2026 FEC identities are Kean `H0NJ07261`, principal committee `C00703058`,
+and Hathaway `H6NJ11211`, principal committee `C00921809`. The adapter now honors
+the **existing** reviewed Tom Kean alias of Thomas H. Kean Jr.; it does not add
+fuzzy matching or change the roster. A speaker calling himself a Democrat does
+not change the Kean campaign advertiser's Republican alignment. The New Jersey
+Republican State Committee ad is not attributed to the NRCC. American Action
+Network remains a separate outside nonprofit, not Congressional Leadership
+Fund. Its legislative thank-you ad retains unknown election phase; Hathaway's
+general phase follows the explicit **special general election** context.
+
+Advertisers follow the publisher's attribution and candidate approvals, not
+independently inspected sole legal closing payers. `publisher_report_date` is
+not verified first release, paid delivery or a delivery interval. Publisher
+speaker labels, punctuation and transcription oddities are retained; claims
+are not verified findings. No YouTube or paused caption-provider request is
+needed.
+
+```sh
+political-ads collect --source aan-globe --source kean-globe \
+  --source nj-gop-globe --source hathaway-globe --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+An isolated, network-forbidden reconstruction reproduces all **507 written
+objects and source states** using only eight reviewed cached responses.
+All **1,806 preceding analyzed objects** are unchanged. The implementation
+passed the 331-test Python suite; the final eight-record snapshot additionally
+passes 138 affected source, collection, analysis, editorial and publication
+tests, Python lint/format, frontend lint and all 17 unit tests, the production
+build and seven browser tests. Independent auditing reconciles all 20 same-ad
+metric groups and ten chart rows. Complete analysis/browser/production JSON,
+gzip and CSV exports, all 1,852 Parquet identity/text/hash/alignment rows and
+all eleven visually inspected PNGs reconcile. Both article editions remain
+unpublished.
+
+The recurring acquisition prompt remains active. Wider House discovery
+continues, and website/Substack publication stays on hold.
+
+## Preceding October 30: public House mailers and independently quoted ad words
+
+That snapshot contains **1,844 acquired text records**, including **1,806
 English records: 1,226 D / 541 R / 31 other / eight unresolved**. Exact
 party/message counts are **1,204 D / 504 R**. English House coverage is now
 **698 D / 163 R**, five more Republican House records than the preceding

@@ -17,7 +17,8 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         url = urlsplit(review[key])
         if url.scheme != "https" or url.hostname != urlsplit(source.url).hostname:
             raise ValueError("Reviewed release must remain on its registered public publisher")
-    candidate = next((c for c in candidates if c["candidate_id"] == review["candidate_id"]), None)
+    identities = [c for c in candidates if c["candidate_id"] == review["candidate_id"]]
+    candidate = next(iter(identities), None)
     if not candidate or candidate["office"] != "H" or candidate["election_year"] != "2026":
         raise ValueError("Reviewed release requires an exact 2026 federal House candidate")
     race = f"{candidate['state']}-{int(candidate['district']):02}"
@@ -64,7 +65,7 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
     if not all(context in visible for context in review["required_context"]):
         raise ValueError("Explicit advertiser/ad quotation context is missing")
     if candidate["candidate_id"] not in {
-        row["candidate_id"] for row in candidate_mentions(visible, [candidate])
+        row["candidate_id"] for row in candidate_mentions(visible, identities)
     }:
         raise ValueError("Reviewed candidate is not identified in the publisher's evidence")
     if review["media_url"] not in media_links(content):
@@ -80,15 +81,27 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         position = match + len(passage)
     full_script = review["completeness"] == "marked_script"
     text = "\n".join(passages)
+    if review.get("script_selector") and not full_script:
+        raise ValueError("Reviewed script boundary requires an explicitly marked full script")
     if full_script:
-        if text not in transcript_blocks(content):
+        script_content = content
+        if review.get("script_selector"):
+            scripts = BeautifulSoup(content, "html.parser").select(review["script_selector"])
+            if len(scripts) != 1:
+                raise ValueError("Reviewed script boundary must match exactly one element")
+            script_content = str(scripts[0])
+        if text not in transcript_blocks(script_content):
             raise ValueError("Complete script must equal an explicitly marked transcript block")
     elif review["completeness"] != "partial_quotation":
         raise ValueError("Unknown reviewed ad completeness")
     flags = [
         "individually_reviewed_public_ad_text",
         "publisher_date_not_verified_first_release_or_paid_delivery",
-        "campaign_release_reproduced_by_news_publisher"
+        (
+            "news_publisher_reports_marked_ad_script"
+            if review.get("script_selector")
+            else "campaign_release_reproduced_by_news_publisher"
+        )
         if full_script
         else "news_report_quotes_partial_ad_copy",
     ]

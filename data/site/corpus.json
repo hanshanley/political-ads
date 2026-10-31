@@ -2737,6 +2737,84 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "New Jersey Globe explicitly identifies Republican nominee Joe Hathaway's first digital ad for the NJ-11 special general election against Analilia Mejia, with campaign-reported six-figure backing, one original-video association and a complete marked script in the fifth paragraph. Exact Republican 2026 FEC identity H6NJ11211, principal committee C00921809, verifies the federal candidate. General phase follows the article's explicit special-general-election context, not an assumed calendar rule. The reported advertiser is Hathaway's campaign; the sole legal payer is not independently inspected. March 19 is the publisher's report date, not verified first paid delivery. Surrounding campaign and race reporting is excluded; literal speaker labeling and punctuation remain. The full rendered-content hash includes the generated iframe ID; changes require renewed review. No semantic portrayal labels or factual verification are added.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6NJ11211",
+          "district": "11",
+          "name": "HATHAWAY, JOE",
+          "office": "H",
+          "party": "REP",
+          "state": "NJ"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "hathaway-globe-159526-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/vucVRp8Pc9g?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&"
+      ],
+      "message_id": "9b127240ca29ae1bd37d9e6e563fd7694e0d65d8e4b465648b1d202428b1ce4e",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-03-19",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_publisher_reports_marked_ad_script"
+      ],
+      "race": "NJ-11",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6NJ11211"
+          ],
+          "kind": "publisher_transcript",
+          "release_evidence": {
+            "attribution_basis": "New Jersey Globe explicitly identifies Republican nominee Joe Hathaway's first digital ad for the NJ-11 special general election against Analilia Mejia, with campaign-reported six-figure backing, one original-video association and a complete marked script in the fifth paragraph. Exact Republican 2026 FEC identity H6NJ11211, principal committee C00921809, verifies the federal candidate. General phase follows the article's explicit special-general-election context, not an assumed calendar rule. The reported advertiser is Hathaway's campaign; the sole legal payer is not independently inspected. March 19 is the publisher's report date, not verified first paid delivery. Surrounding campaign and race reporting is excluded; literal speaker labeling and punctuation remain. The full rendered-content hash includes the generated iframe ID; changes require renewed review. No semantic portrayal labels or factual verification are added.",
+            "candidate_id": "H6NJ11211",
+            "completeness": "marked_script",
+            "content_sha256": "c497ef0a274e52b47c87374d73b7ec1a89b7b32723a99fa36d29cd0a47eded0a",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/vucVRp8Pc9g?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&",
+            "passages": [
+              "Joe Hathaway: “I’ve had many titles: mayor, workhorse, chief diaper changer. That’s why I’m running for Congress – to change Washington. As mayor, working with both parties, I saved taxpayers more than a million dollars. Being independent isn’t dirty to me. My opponent’s title? Radical. Mejia’s plans would take away your doctor, and my daughter’s too. I won’t let that happen.”"
+            ],
+            "phase": "general",
+            "published": "2026-03-19",
+            "record_id": "159526",
+            "release_title": "Hathaway goes up with first digital ad of NJ-11 special election",
+            "required_context": [
+              "the special election for New Jersey’s 11th congressional district, GOP nominee Joe Hathaway is up with his first digital ad.",
+              "the general election has so far been relatively quiet"
+            ],
+            "retrieval_url": "https://newjerseyglobe.com/wp-json/wp/v2/posts/159526",
+            "script_selector": "p:nth-of-type(5)",
+            "source": "hathaway-globe",
+            "source_url": "https://newjerseyglobe.com/congress/hathaway-goes-up-with-first-ad-of-nj-11-special-election/"
+          },
+          "text": "Joe Hathaway: “I’ve had many titles: mayor, workhorse, chief diaper changer. That’s why I’m running for Congress – to change Washington. As mayor, working with both parties, I saved taxpayers more than a million dollars. Being independent isn’t dirty to me. My opponent’s title? Radical. Mejia’s plans would take away your doctor, and my daughter’s too. I won’t let that happen.”"
+        }
+      ],
+      "source": "hathaway-globe",
+      "source_hash": "c497ef0a274e52b47c87374d73b7ec1a89b7b32723a99fa36d29cd0a47eded0a",
+      "source_record_id": "159526",
+      "source_url": "https://newjerseyglobe.com/congress/hathaway-goes-up-with-first-ad-of-nj-11-special-election/",
+      "sponsor": "Joe Hathaway campaign",
+      "sponsor_type": "candidate",
+      "state": "NJ",
+      "text": "Joe Hathaway: “I’ve had many titles: mayor, workhorse, chief diaper changer. That’s why I’m running for Congress – to change Washington. As mayor, working with both parties, I saved taxpayers more than a million dollars. Being independent isn’t dirty to me. My opponent’s title? Radical. Mejia’s plans would take away your doctor, and my daughter’s too. I won’t let that happen.”",
+      "title": "Hathaway goes up with first digital ad of NJ-11 special election"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Official NRCC release at https://www.nrcc.org/2026/03/19/nrcc-launches-ad-targeting-josh-riley-for-refusing-to-stand-for-americans/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
       "date_basis": "release_date",
@@ -20207,6 +20285,84 @@
       "title": "NEW ADS: Unrig Our Economy Launches English and Bilingual Ads Highlighting Congresswoman Monica De La Cruz’s Votes to Raise Costs For Texans / transcript 2"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "New Jersey Globe explicitly attributes this pro-Kean SALT advertisement to American Action Network, a House-Republican-aligned 501(c)(4) issue-advocacy nonprofit, not its separate sister super PAC Congressional Leadership Fund. Exact supported Republican 2026 FEC identity H0NJ07261, principal committee C00703058, establishes NJ-07 scope. The one matching original-video association and twenty-first paragraph bind one complete marked script; the article's other NJ-09 campaign is not acquired or counted. The article establishes the reported advertiser, not independent inspection of the creative's sole legal payer. Election phase remains unknown because the recovered ad asks constituents to thank Kean and urge legislative votes rather than expressly elect him. August 14 is the report date, not verified first paid delivery. Only literal ad words are retained, excluding policy explanations and organizational press quotations. The entire rendered-content hash includes the generated iframe ID and fails closed on changes. No semantic portrayal labels or factual verification are added.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H0NJ07261",
+          "district": "07",
+          "name": "KEAN, TOM",
+          "office": "H",
+          "party": "REP",
+          "state": "NJ"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "aan-globe-167113-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/r9qDjcRZ_jk?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&"
+      ],
+      "message_id": "ceb22df90e508ac8503439b60a57bb0686b1254df83060170b1f002af4430106",
+      "observed": "2026-10-30",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-08-14",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_publisher_reports_marked_ad_script"
+      ],
+      "race": "NJ-07",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H0NJ07261"
+          ],
+          "kind": "publisher_transcript",
+          "release_evidence": {
+            "attribution_basis": "New Jersey Globe explicitly attributes this pro-Kean SALT advertisement to American Action Network, a House-Republican-aligned 501(c)(4) issue-advocacy nonprofit, not its separate sister super PAC Congressional Leadership Fund. Exact supported Republican 2026 FEC identity H0NJ07261, principal committee C00703058, establishes NJ-07 scope. The one matching original-video association and twenty-first paragraph bind one complete marked script; the article's other NJ-09 campaign is not acquired or counted. The article establishes the reported advertiser, not independent inspection of the creative's sole legal payer. Election phase remains unknown because the recovered ad asks constituents to thank Kean and urge legislative votes rather than expressly elect him. August 14 is the report date, not verified first paid delivery. Only literal ad words are retained, excluding policy explanations and organizational press quotations. The entire rendered-content hash includes the generated iframe ID and fails closed on changes. No semantic portrayal labels or factual verification are added.",
+            "candidate_id": "H0NJ07261",
+            "completeness": "marked_script",
+            "content_sha256": "0e0895aa3fc5ff99c1d2a8643b2caf025ba94126e867550f06979ec3d6f0f0f1",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/r9qDjcRZ_jk?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&",
+            "passages": [
+              "“Property taxes in New Jersey are too high, and you paid the price twice — because Washington didn’t recognize your state taxes. Tom Kean led the fight to quadruple the SALT deduction. Restoring New Jersey’s property tax deduction was Kean’s priority number one. That’s why Tom Kean took on both parties to bring real tax relief for New Jersey families — and he delivered. Thank Tom Kean for putting New Jersey first, and tell him to keep voting for working families.”"
+            ],
+            "phase": "unknown",
+            "published": "2026-08-14",
+            "record_id": "167113",
+            "release_title": "GOP group launches nearly $1 million ad campaign in two N.J. House districts",
+            "required_context": [
+              "The American Action Network, a 501(c)(4) issue advocacy organization affiliated with the Congressional Leadership Fund",
+              "An advertisement supporting Kean focuses exclusively on his role in securing an increase in the federal deduction for state and local taxes"
+            ],
+            "retrieval_url": "https://newjerseyglobe.com/wp-json/wp/v2/posts/167113",
+            "script_selector": "p:nth-of-type(21)",
+            "source": "aan-globe",
+            "source_url": "https://newjerseyglobe.com/congress/gop-group-launches-nearly-1-million-ad-campaign-in-two-n-j-house-districts/"
+          },
+          "text": "“Property taxes in New Jersey are too high, and you paid the price twice — because Washington didn’t recognize your state taxes. Tom Kean led the fight to quadruple the SALT deduction. Restoring New Jersey’s property tax deduction was Kean’s priority number one. That’s why Tom Kean took on both parties to bring real tax relief for New Jersey families — and he delivered. Thank Tom Kean for putting New Jersey first, and tell him to keep voting for working families.”"
+        }
+      ],
+      "source": "aan-globe",
+      "source_hash": "0e0895aa3fc5ff99c1d2a8643b2caf025ba94126e867550f06979ec3d6f0f0f1",
+      "source_record_id": "167113",
+      "source_url": "https://newjerseyglobe.com/congress/gop-group-launches-nearly-1-million-ad-campaign-in-two-n-j-house-districts/",
+      "sponsor": "American Action Network",
+      "sponsor_type": "outside_group",
+      "state": "NJ",
+      "text": "“Property taxes in New Jersey are too high, and you paid the price twice — because Washington didn’t recognize your state taxes. Tom Kean led the fight to quadruple the SALT deduction. Restoring New Jersey’s property tax deduction was Kean’s priority number one. That’s why Tom Kean took on both parties to bring real tax relief for New Jersey families — and he delivered. Thank Tom Kean for putting New Jersey first, and tell him to keep voting for working families.”",
+      "title": "GOP group launches nearly $1 million ad campaign in two N.J. House districts"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official LCV Victory Fund release at https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-new-550k-ad-buy-in-nh-01/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
@@ -21547,6 +21703,84 @@
       "title": "New Ad Highlights Troy Jackson’s Firsthand Experience Trying To Make Ends Meet For His Family"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "New Jersey Globe explicitly reports Tom Kean Jr.'s Every Patient television ad for his NJ-07 re-election campaign and supplies this one marked script and original-video association. Exact Republican 2026 FEC identity H0NJ07261, principal committee C00703058, establishes federal identity; publisher and candidate approval establish the reported campaign advertiser, not an independently inspected sole legal payer. The fifth paragraph is the entire explicitly marked script; surrounding candidate press statements and reporting are excluded. August 26 is the publisher's report date, not verified first paid delivery. Publisher punctuation and transcription are retained. The complete rendered-content hash includes the video plugin's generated iframe ID; any changed response requires renewed review. This is acquisition review, not semantic portrayal review or verification of ad claims.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H0NJ07261",
+          "district": "07",
+          "name": "KEAN, TOM",
+          "office": "H",
+          "party": "REP",
+          "state": "NJ"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "kean-globe-167686-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/kh8e_7rq_F0?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&"
+      ],
+      "message_id": "a8e30cc60322e9d7ace192903b2921b1ae9d4c129be1ea59349881e9d87b9f23",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-08-26",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_publisher_reports_marked_ad_script"
+      ],
+      "race": "NJ-07",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H0NJ07261"
+          ],
+          "kind": "publisher_transcript",
+          "release_evidence": {
+            "attribution_basis": "New Jersey Globe explicitly reports Tom Kean Jr.'s Every Patient television ad for his NJ-07 re-election campaign and supplies this one marked script and original-video association. Exact Republican 2026 FEC identity H0NJ07261, principal committee C00703058, establishes federal identity; publisher and candidate approval establish the reported campaign advertiser, not an independently inspected sole legal payer. The fifth paragraph is the entire explicitly marked script; surrounding candidate press statements and reporting are excluded. August 26 is the publisher's report date, not verified first paid delivery. Publisher punctuation and transcription are retained. The complete rendered-content hash includes the video plugin's generated iframe ID; any changed response requires renewed review. This is acquisition review, not semantic portrayal review or verification of ad claims.",
+            "candidate_id": "H0NJ07261",
+            "completeness": "marked_script",
+            "content_sha256": "6719c70e0a3ac8fd611f331197b8f4c3137fd6e659b366b8d6e762982d5b8587",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/kh8e_7rq_F0?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&",
+            "passages": [
+              "(Kean) I meet too many families who pay too much, who get denied care, who suffer because of big insurance companies. I had enough. I took on the insurance companies…to get costs down…to make sure they provide the same access to mental health care as they do for physical care. And I’m not done…we’re not done, until every patient, every family gets the care they need. I’m Tom Kean Jr., and I approve this message.”"
+            ],
+            "phase": "general",
+            "published": "2026-08-26",
+            "record_id": "167686",
+            "release_title": "Kean launches new TV ad targeting health insurance companies",
+            "required_context": [
+              "Rep. Tom Kean, Jr. (R-Westfield) launched a new TV ad this morning",
+              "In “Every Patient,” Kean appears on camera and narrates the ad."
+            ],
+            "retrieval_url": "https://newjerseyglobe.com/wp-json/wp/v2/posts/167686",
+            "script_selector": "p:nth-of-type(5)",
+            "source": "kean-globe",
+            "source_url": "https://newjerseyglobe.com/congress/kean-launches-new-tv-ad-targeting-health-insurance-companies/"
+          },
+          "text": "(Kean) I meet too many families who pay too much, who get denied care, who suffer because of big insurance companies. I had enough. I took on the insurance companies…to get costs down…to make sure they provide the same access to mental health care as they do for physical care. And I’m not done…we’re not done, until every patient, every family gets the care they need. I’m Tom Kean Jr., and I approve this message.”"
+        }
+      ],
+      "source": "kean-globe",
+      "source_hash": "6719c70e0a3ac8fd611f331197b8f4c3137fd6e659b366b8d6e762982d5b8587",
+      "source_record_id": "167686",
+      "source_url": "https://newjerseyglobe.com/congress/kean-launches-new-tv-ad-targeting-health-insurance-companies/",
+      "sponsor": "Tom Kean Jr. campaign",
+      "sponsor_type": "candidate",
+      "state": "NJ",
+      "text": "(Kean) I meet too many families who pay too much, who get denied care, who suffer because of big insurance companies. I had enough. I took on the insurance companies…to get costs down…to make sure they provide the same access to mental health care as they do for physical care. And I’m not done…we’re not done, until every patient, every family gets the care they need. I’m Tom Kean Jr., and I approve this message.”",
+      "title": "Kean launches new TV ad targeting health insurance companies"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official Abdul for U.S. Senate release at https://abdulforsenate.com/2026/08/new-ad-canon-michigan-kid-abdul-el-sayed-fights-to-rebuild-the-american-dream/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
@@ -22267,6 +22501,84 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "New Jersey Globe identifies Proud as a new TV ad for incumbent Republican Tom Kean Jr.'s NJ-07 re-election and supplies its original-video association and complete marked script. Exact 2026 FEC identity H0NJ07261, principal committee C00703058, is the son, not the former governor narrating the ad. Candidate approval and publisher context identify the campaign advertiser; the sole legal payer has not been independently inspected. Only the fourth paragraph is the marked script, including both speaker labels; later campaign quotations and biography are excluded. September 2 is the publisher's report date, not verified first paid delivery. The entire rendered-content hash retains the generated iframe ID and fails closed if changed. No semantic portrayal judgment or factual verification is added.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H0NJ07261",
+          "district": "07",
+          "name": "KEAN, TOM",
+          "office": "H",
+          "party": "REP",
+          "state": "NJ"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "kean-globe-168049-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/Bn-S9ZP9ChQ?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&"
+      ],
+      "message_id": "af1198a7cf414ff9d374f44a43cec02292bd8a9c517875fcdd771929f2b5b750",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-09-02",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_publisher_reports_marked_ad_script"
+      ],
+      "race": "NJ-07",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H0NJ07261"
+          ],
+          "kind": "publisher_transcript",
+          "release_evidence": {
+            "attribution_basis": "New Jersey Globe identifies Proud as a new TV ad for incumbent Republican Tom Kean Jr.'s NJ-07 re-election and supplies its original-video association and complete marked script. Exact 2026 FEC identity H0NJ07261, principal committee C00703058, is the son, not the former governor narrating the ad. Candidate approval and publisher context identify the campaign advertiser; the sole legal payer has not been independently inspected. Only the fourth paragraph is the marked script, including both speaker labels; later campaign quotations and biography are excluded. September 2 is the publisher's report date, not verified first paid delivery. The entire rendered-content hash retains the generated iframe ID and fails closed if changed. No semantic portrayal judgment or factual verification is added.",
+            "candidate_id": "H0NJ07261",
+            "completeness": "marked_script",
+            "content_sha256": "cc0ffd408035f501688cae2782b9b8d5f5bf6bd4b65f24d2ac9e72d9e8628f43",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/Bn-S9ZP9ChQ?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&",
+            "passages": [
+              "“(Kean Sr.) You watch your children grow and wonder who will they become. I couldn’t be prouder of my son Tom. He cares about people. That’s why he worked to protect Medicare and Medicaid for every New Jersey senior, child, disabled person. He’s never going to stop fighting, advocating, serving those in need. That’s what drives him. Makes him a leader we can all be proud of. I’m Tom Kean. (Kean Jr.) And I’m Tom Kean, Jr., and I approve this message.”"
+            ],
+            "phase": "general",
+            "published": "2026-09-02",
+            "record_id": "168049",
+            "release_title": "Former Gov. Tom Kean narrates a new TV ad for his son’s re-election bid",
+            "required_context": [
+              "A new TV ad features former Gov. Thomas H. Kean touting the character and record of his son, Rep. Tom Kean, Jr.",
+              "who is seeking re-election to a third term as the congressman from New Jersey’s 7th district."
+            ],
+            "retrieval_url": "https://newjerseyglobe.com/wp-json/wp/v2/posts/168049",
+            "script_selector": "p:nth-of-type(4)",
+            "source": "kean-globe",
+            "source_url": "https://newjerseyglobe.com/congress/former-gov-tom-kean-narrates-a-new-tv-ad-for-his-sons-re-election-bid/"
+          },
+          "text": "“(Kean Sr.) You watch your children grow and wonder who will they become. I couldn’t be prouder of my son Tom. He cares about people. That’s why he worked to protect Medicare and Medicaid for every New Jersey senior, child, disabled person. He’s never going to stop fighting, advocating, serving those in need. That’s what drives him. Makes him a leader we can all be proud of. I’m Tom Kean. (Kean Jr.) And I’m Tom Kean, Jr., and I approve this message.”"
+        }
+      ],
+      "source": "kean-globe",
+      "source_hash": "cc0ffd408035f501688cae2782b9b8d5f5bf6bd4b65f24d2ac9e72d9e8628f43",
+      "source_record_id": "168049",
+      "source_url": "https://newjerseyglobe.com/congress/former-gov-tom-kean-narrates-a-new-tv-ad-for-his-sons-re-election-bid/",
+      "sponsor": "Tom Kean Jr. campaign",
+      "sponsor_type": "candidate",
+      "state": "NJ",
+      "text": "“(Kean Sr.) You watch your children grow and wonder who will they become. I couldn’t be prouder of my son Tom. He cares about people. That’s why he worked to protect Medicare and Medicaid for every New Jersey senior, child, disabled person. He’s never going to stop fighting, advocating, serving those in need. That’s what drives him. Makes him a leader we can all be proud of. I’m Tom Kean. (Kean Jr.) And I’m Tom Kean, Jr., and I approve this message.”",
+      "title": "Former Gov. Tom Kean narrates a new TV ad for his son’s re-election bid"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Official NRCC release at https://www.nrcc.org/2026/09/03/new-ad-radical-cait-conley-wants-taxpayers-to-fund-chemical-castrations-on-kids/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
       "date_basis": "release_date",
@@ -22373,6 +22685,92 @@
       "state": "",
       "text": "Chemical castration drugs\nUsed to sterilize repeat sex offenders\nAnd now?\nSame chemical. Different patient.\nChildren may suffer this brutal procedure\nCait Conley is so radical, she would force taxpayers to pay for injecting kids with chemical castration drugs\nThat’s right, Cait Conley took thousands from extreme groups pushing transgender sex changes for kids\nThe consequences — irreversible\nThe cost — outrageous\nIt’s dangerous. It’s wrong\nAnd it’s Cait Conley’s agenda",
       "title": "NEW AD: Radical Cait Conley Wants Taxpayers to Fund Chemical Castrations on Kids"
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "New Jersey Globe explicitly attributes Accountable to Tom Kean Jr.'s NJ-07 campaign and provides its original-video association and complete marked script. Exact Republican 2026 FEC identity H0NJ07261, principal committee C00703058, supplies federal identity. The reported advertiser is the campaign, not testimonial speaker Christina or the news publisher; the sole legal payer is not independently inspected. Only the seventh paragraph is the marked script. The space in '( Kean)' follows the existing literal HTML extractor and is retained; press quotations, reporter caveats and later discussion of a separate ad are excluded. September 4 is the report date, not verified first paid delivery. The full rendered-content hash includes the generated iframe ID; changes require renewed acquisition review. Claims and semantic portrayals are not newly verified or coded.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6NJ07201",
+          "district": "07",
+          "name": "BENNETT, REBECCA",
+          "office": "H",
+          "party": "DEM",
+          "state": "NJ"
+        },
+        {
+          "candidate_id": "H0NJ07261",
+          "district": "07",
+          "name": "KEAN, TOM",
+          "office": "H",
+          "party": "REP",
+          "state": "NJ"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "kean-globe-168191-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/Du6hQXpiMoI?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&"
+      ],
+      "message_id": "ba032a420ba65687dc0ee551f664ebd80c7590609a2e82f6ef6554526d81df40",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-09-04",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_publisher_reports_marked_ad_script"
+      ],
+      "race": "NJ-07",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H0NJ07261"
+          ],
+          "kind": "publisher_transcript",
+          "release_evidence": {
+            "attribution_basis": "New Jersey Globe explicitly attributes Accountable to Tom Kean Jr.'s NJ-07 campaign and provides its original-video association and complete marked script. Exact Republican 2026 FEC identity H0NJ07261, principal committee C00703058, supplies federal identity. The reported advertiser is the campaign, not testimonial speaker Christina or the news publisher; the sole legal payer is not independently inspected. Only the seventh paragraph is the marked script. The space in '( Kean)' follows the existing literal HTML extractor and is retained; press quotations, reporter caveats and later discussion of a separate ad are excluded. September 4 is the report date, not verified first paid delivery. The full rendered-content hash includes the generated iframe ID; changes require renewed acquisition review. Claims and semantic portrayals are not newly verified or coded.",
+            "candidate_id": "H0NJ07261",
+            "completeness": "marked_script",
+            "content_sha256": "a8f8370191eb8b73455fa5d09bbeb69916c6e8f0ce7cef5ea4dd46282c47de9c",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/Du6hQXpiMoI?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&",
+            "passages": [
+              "( Kean) I’m Tom Kean Jr., and I approve this message. (Christina) My daughter needs twenty-four-hour care. Yet, for years, the insurance company sent us denial after denial. This is life or death, but we are just a number to them. So, when Rebecca Bennett was working with healthcare companies that were denying care to patients and overbilling taxpayers, I have a real problem with that. We need to hold Rebecca Bennett accountable, not elect her to Congress.”"
+            ],
+            "phase": "general",
+            "published": "2026-09-04",
+            "record_id": "168191",
+            "release_title": "Kean launches his first negative ad, attacks Bennett over healthcare ties",
+            "required_context": [
+              "Rep. Tom Kean, Jr. (R-Westfield) has begun airing his first negative TV ad",
+              "The ad, “Accountable,” features a Bernardsville woman, Christina"
+            ],
+            "retrieval_url": "https://newjerseyglobe.com/wp-json/wp/v2/posts/168191",
+            "script_selector": "p:nth-of-type(7)",
+            "source": "kean-globe",
+            "source_url": "https://newjerseyglobe.com/congress/kean-accountable/"
+          },
+          "text": "( Kean) I’m Tom Kean Jr., and I approve this message. (Christina) My daughter needs twenty-four-hour care. Yet, for years, the insurance company sent us denial after denial. This is life or death, but we are just a number to them. So, when Rebecca Bennett was working with healthcare companies that were denying care to patients and overbilling taxpayers, I have a real problem with that. We need to hold Rebecca Bennett accountable, not elect her to Congress.”"
+        }
+      ],
+      "source": "kean-globe",
+      "source_hash": "a8f8370191eb8b73455fa5d09bbeb69916c6e8f0ce7cef5ea4dd46282c47de9c",
+      "source_record_id": "168191",
+      "source_url": "https://newjerseyglobe.com/congress/kean-accountable/",
+      "sponsor": "Tom Kean Jr. campaign",
+      "sponsor_type": "candidate",
+      "state": "NJ",
+      "text": "( Kean) I’m Tom Kean Jr., and I approve this message. (Christina) My daughter needs twenty-four-hour care. Yet, for years, the insurance company sent us denial after denial. This is life or death, but we are just a number to them. So, when Rebecca Bennett was working with healthcare companies that were denying care to patients and overbilling taxpayers, I have a real problem with that. We need to hold Rebecca Bennett accountable, not elect her to Congress.”",
+      "title": "Kean launches his first negative ad, attacks Bennett over healthcare ties"
     },
     {
       "alignment": "D",
@@ -32374,6 +32772,92 @@
       "title": "Flint Releases New Ad Highlighting his Commitment to Public Safety, and Forstag’s Record of Lobbying for Sanctuary Cities"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "New Jersey Globe identifies Profits Over Patients as Tom Kean Jr.'s NJ-07 re-election ad, with a matching original-video association and complete marked script in the sixth paragraph. Exact Republican 2026 FEC identity H0NJ07261, principal committee C00703058, verifies the federal candidate, not the ad's allegations. Candidate approval and publisher context establish the reported campaign advertiser; the sole legal payer is not independently inspected. News Anchor, Narrator and Kean labels, the publisher's wording 'sexual assaulting', and all punctuation remain literal. Surrounding reporter assessments and campaign statements are excluded. October 8 is the report date, not verified first paid delivery. The full rendered-content hash includes the generated iframe ID; changes require renewed review. This adds neither factual endorsement nor semantic portrayal labels.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6NJ07201",
+          "district": "07",
+          "name": "BENNETT, REBECCA",
+          "office": "H",
+          "party": "DEM",
+          "state": "NJ"
+        },
+        {
+          "candidate_id": "H0NJ07261",
+          "district": "07",
+          "name": "KEAN, TOM",
+          "office": "H",
+          "party": "REP",
+          "state": "NJ"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "kean-globe-169867-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/koTBSr5sEw0?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&"
+      ],
+      "message_id": "339d2b8bb61c8040af68ef13765ad3dbdb742038baaff12e76719017bd75b6bb",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-10-08",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_publisher_reports_marked_ad_script"
+      ],
+      "race": "NJ-07",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H0NJ07261"
+          ],
+          "kind": "publisher_transcript",
+          "release_evidence": {
+            "attribution_basis": "New Jersey Globe identifies Profits Over Patients as Tom Kean Jr.'s NJ-07 re-election ad, with a matching original-video association and complete marked script in the sixth paragraph. Exact Republican 2026 FEC identity H0NJ07261, principal committee C00703058, verifies the federal candidate, not the ad's allegations. Candidate approval and publisher context establish the reported campaign advertiser; the sole legal payer is not independently inspected. News Anchor, Narrator and Kean labels, the publisher's wording 'sexual assaulting', and all punctuation remain literal. Surrounding reporter assessments and campaign statements are excluded. October 8 is the report date, not verified first paid delivery. The full rendered-content hash includes the generated iframe ID; changes require renewed review. This adds neither factual endorsement nor semantic portrayal labels.",
+            "candidate_id": "H0NJ07261",
+            "completeness": "marked_script",
+            "content_sha256": "8344f947d5816c3ed2400b4d3130a7a0202f15c07b0b9d7d578edd676e4495c6",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/koTBSr5sEw0?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&",
+            "passages": [
+              "“(News Anchor) A former pediatrician is sentenced today for sexual assaulting 31 children. (Narrator) Abuse. (News Anchor) Prioritizing profits at the expense of patient care. (Narrator) Greed. Liberal Rebecca Bennett brags about partnering with the same company putting profits over patients. Bennett became a millionaire while patients were maimed, sexually abused, and even killed because Rebecca Bennett is no middle-class moderate. She’s a greedy liberal millionaire who doesn’t care about you. (Kean) I’m Tom Kean Jr., and I approve this message.”"
+            ],
+            "phase": "general",
+            "published": "2026-10-08",
+            "record_id": "169867",
+            "release_title": "Kean launches blistering new TV ad attacking Bennett’s healthcare career",
+            "required_context": [
+              "Rep. Tom Kean Jr. (R-Westfield) launched a blistering new television ad Thursday",
+              "The ad, titled “Profits Over Patients,”"
+            ],
+            "retrieval_url": "https://newjerseyglobe.com/wp-json/wp/v2/posts/169867",
+            "script_selector": "p:nth-of-type(6)",
+            "source": "kean-globe",
+            "source_url": "https://newjerseyglobe.com/congress/kean-launches-blistering-new-tv-ad-attacking-bennetts-healthcare-career/"
+          },
+          "text": "“(News Anchor) A former pediatrician is sentenced today for sexual assaulting 31 children. (Narrator) Abuse. (News Anchor) Prioritizing profits at the expense of patient care. (Narrator) Greed. Liberal Rebecca Bennett brags about partnering with the same company putting profits over patients. Bennett became a millionaire while patients were maimed, sexually abused, and even killed because Rebecca Bennett is no middle-class moderate. She’s a greedy liberal millionaire who doesn’t care about you. (Kean) I’m Tom Kean Jr., and I approve this message.”"
+        }
+      ],
+      "source": "kean-globe",
+      "source_hash": "8344f947d5816c3ed2400b4d3130a7a0202f15c07b0b9d7d578edd676e4495c6",
+      "source_record_id": "169867",
+      "source_url": "https://newjerseyglobe.com/congress/kean-launches-blistering-new-tv-ad-attacking-bennetts-healthcare-career/",
+      "sponsor": "Tom Kean Jr. campaign",
+      "sponsor_type": "candidate",
+      "state": "NJ",
+      "text": "“(News Anchor) A former pediatrician is sentenced today for sexual assaulting 31 children. (Narrator) Abuse. (News Anchor) Prioritizing profits at the expense of patient care. (Narrator) Greed. Liberal Rebecca Bennett brags about partnering with the same company putting profits over patients. Bennett became a millionaire while patients were maimed, sexually abused, and even killed because Rebecca Bennett is no middle-class moderate. She’s a greedy liberal millionaire who doesn’t care about you. (Kean) I’m Tom Kean Jr., and I approve this message.”",
+      "title": "Kean launches blistering new TV ad attacking Bennett’s healthcare career"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official Jon Ossoff for Senate release at https://electjon.com/president-barack-obama-encourages-georgians-to-vote-for-jon-ossoff-in-new-ad/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
@@ -36542,6 +37026,92 @@
       "title": "DCCC Releases New TV Ad in AL-02: “Footsteps”"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "New Jersey Globe identifies Conversation as a Tom Kean Jr. NJ-07 campaign TV ad and supplies a matching original-video association and one complete marked script in the third paragraph. Exact Republican 2026 FEC identity H0NJ07261, principal committee C00703058, establishes federal identity. Alignment follows the reported campaign advertiser, not a speaker describing himself as a Democrat; the sole legal payer has not been independently inspected. All three speaker labels and publisher punctuation are retained. Subsequent church, financial-disclosure and healthcare reporting is not ad text. October 20 is the report date, not verified first paid delivery. The entire rendered-content hash retains the generated iframe ID and requires renewed review if changed. No new semantic portrayal judgment or factual verification is added.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6NJ07201",
+          "district": "07",
+          "name": "BENNETT, REBECCA",
+          "office": "H",
+          "party": "DEM",
+          "state": "NJ"
+        },
+        {
+          "candidate_id": "H0NJ07261",
+          "district": "07",
+          "name": "KEAN, TOM",
+          "office": "H",
+          "party": "REP",
+          "state": "NJ"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "kean-globe-170486-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/YSvfnr2rW7Y?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&"
+      ],
+      "message_id": "816c237c8983deb2016253a3729a1bfc21dbb1e77d233f137476dcb451efde3f",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-10-20",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_publisher_reports_marked_ad_script"
+      ],
+      "race": "NJ-07",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H0NJ07261"
+          ],
+          "kind": "publisher_transcript",
+          "release_evidence": {
+            "attribution_basis": "New Jersey Globe identifies Conversation as a Tom Kean Jr. NJ-07 campaign TV ad and supplies a matching original-video association and one complete marked script in the third paragraph. Exact Republican 2026 FEC identity H0NJ07261, principal committee C00703058, establishes federal identity. Alignment follows the reported campaign advertiser, not a speaker describing himself as a Democrat; the sole legal payer has not been independently inspected. All three speaker labels and publisher punctuation are retained. Subsequent church, financial-disclosure and healthcare reporting is not ad text. October 20 is the report date, not verified first paid delivery. The entire rendered-content hash retains the generated iframe ID and requires renewed review if changed. No new semantic portrayal judgment or factual verification is added.",
+            "candidate_id": "H0NJ07261",
+            "completeness": "marked_script",
+            "content_sha256": "0dd4deb795eb8cafd41256634b7d91c35e085af816dd87d5d80223ca7fd7dcac",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/YSvfnr2rW7Y?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&",
+            "passages": [
+              "“(Woman) Have you seen this ad about Rebecca Bennett? (Man) Yeah. Did she really make millions working with health care companies that hurt patients? (Woman) Uh. Huh. One patient died. Kids were abused. (Man) That’s terrible. (Woman) Bennett even stopped going to church because she couldn’t stand sitting next to Republicans. (Man) I’m a Democrat, but come on. I have friends who aren’t. (Woman) The last thing we need right now is a greedy millionaire like Rebecca Bennett. (Kean) I’m Tom Kean Jr., and I approve this message.”"
+            ],
+            "phase": "general",
+            "published": "2026-10-20",
+            "record_id": "170486",
+            "release_title": "New Kean ad claims Bennett is a millionaire who doesn’t go to church",
+            "required_context": [
+              "A new TV ad for two-term Rep. Tom Kean, Jr. (R-Westfield)",
+              "In “Conversation,” a man and woman at a restaurant"
+            ],
+            "retrieval_url": "https://newjerseyglobe.com/wp-json/wp/v2/posts/170486",
+            "script_selector": "p:nth-of-type(3)",
+            "source": "kean-globe",
+            "source_url": "https://newjerseyglobe.com/congress/new-kean-ad-claims-bennett-is-a-millionaire-who-doesnt-go-to-church/"
+          },
+          "text": "“(Woman) Have you seen this ad about Rebecca Bennett? (Man) Yeah. Did she really make millions working with health care companies that hurt patients? (Woman) Uh. Huh. One patient died. Kids were abused. (Man) That’s terrible. (Woman) Bennett even stopped going to church because she couldn’t stand sitting next to Republicans. (Man) I’m a Democrat, but come on. I have friends who aren’t. (Woman) The last thing we need right now is a greedy millionaire like Rebecca Bennett. (Kean) I’m Tom Kean Jr., and I approve this message.”"
+        }
+      ],
+      "source": "kean-globe",
+      "source_hash": "0dd4deb795eb8cafd41256634b7d91c35e085af816dd87d5d80223ca7fd7dcac",
+      "source_record_id": "170486",
+      "source_url": "https://newjerseyglobe.com/congress/new-kean-ad-claims-bennett-is-a-millionaire-who-doesnt-go-to-church/",
+      "sponsor": "Tom Kean Jr. campaign",
+      "sponsor_type": "candidate",
+      "state": "NJ",
+      "text": "“(Woman) Have you seen this ad about Rebecca Bennett? (Man) Yeah. Did she really make millions working with health care companies that hurt patients? (Woman) Uh. Huh. One patient died. Kids were abused. (Man) That’s terrible. (Woman) Bennett even stopped going to church because she couldn’t stand sitting next to Republicans. (Man) I’m a Democrat, but come on. I have friends who aren’t. (Woman) The last thing we need right now is a greedy millionaire like Rebecca Bennett. (Kean) I’m Tom Kean Jr., and I approve this message.”",
+      "title": "New Kean ad claims Bennett is a millionaire who doesn’t go to church"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official Nancy Lacore for Congress release at https://www.nancylacore.com/media/nancy-lacore-releases-closing-ad-mayor-will-haynie; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
@@ -38486,6 +39056,84 @@
       "state": "KS",
       "text": "“A child sex abuse scandal, accusing you of protecting a predator who volunteered at your church.”\n“Here’s the truth.”\nNo, first, here’s the lie.\n“The church reported him to law enforcement and banned him from church programs.”\nAnd here’s the proof.\nHamilton, in his own words,\nNot the ones his consultant put in his teleprompter for lying TV ads.\n“Would you handle that situation differently if it happened now?”\n“Oh, absolutely, we would have called the police. We would have said, you know, stop.”\nYou think?\n“Would you have done anything differently in that situation?”\n“Absolutely, like, we should have called the police immediately, but that was not our policies.”\n“What is your message to voters who frankly worry about your judgment?”\n“These were mistakes that were made.”\nBy Adam Hamilton himself.\nThe pedophile-protecting charlatan and Chuck Schumer stooge.\nA huge mistake for Kansas, and especially our kids.\n“We would have said, you know, stop.”",
       "title": "New Ad: Adam Hamilton Lied to Cover Up Child Sex Abuse at His Church"
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "New Jersey Globe explicitly identifies the New Jersey Republican State Committee, not the NRCC or Kean campaign, as the organization launching Two-Faced to support Republican Tom Kean Jr. in NJ-07. Exact supported 2026 FEC identity H0NJ07261 is distinct from Democratic target Rebecca Bennett. The matching original-video association and fifth paragraph bind one complete marked script. The article establishes the reported advertiser, not independent inspection of the creative's sole legal payer. The subsequent state-chair quotation, FEC-complaint discussion and reporter assessments are excluded. October 21 is the report date, not verified first paid delivery. The complete rendered-content hash retains the generated iframe ID and fails closed on changes. These are literal ad allegations, not verified findings or newly coded semantic labels.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6NJ07201",
+          "district": "07",
+          "name": "BENNETT, REBECCA",
+          "office": "H",
+          "party": "DEM",
+          "state": "NJ"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "nj-gop-globe-170546-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/BdIcVgRLHZM?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&"
+      ],
+      "message_id": "a62ac82dd1fb7e1263800ca9bccc1511b9338b9d72fc1689e94f274d7f539f55",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-10-21",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_publisher_reports_marked_ad_script"
+      ],
+      "race": "NJ-07",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H0NJ07261"
+          ],
+          "kind": "publisher_transcript",
+          "release_evidence": {
+            "attribution_basis": "New Jersey Globe explicitly identifies the New Jersey Republican State Committee, not the NRCC or Kean campaign, as the organization launching Two-Faced to support Republican Tom Kean Jr. in NJ-07. Exact supported 2026 FEC identity H0NJ07261 is distinct from Democratic target Rebecca Bennett. The matching original-video association and fifth paragraph bind one complete marked script. The article establishes the reported advertiser, not independent inspection of the creative's sole legal payer. The subsequent state-chair quotation, FEC-complaint discussion and reporter assessments are excluded. October 21 is the report date, not verified first paid delivery. The complete rendered-content hash retains the generated iframe ID and fails closed on changes. These are literal ad allegations, not verified findings or newly coded semantic labels.",
+            "candidate_id": "H0NJ07261",
+            "completeness": "marked_script",
+            "content_sha256": "3538dd27e1e12147dd158a945ee1d507852acfcae5af437ce166e5a6d5a04e3f",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/BdIcVgRLHZM?enablejsapi=1&autoplay=0&cc_load_policy=0&cc_lang_pref=&iv_load_policy=1&loop=0&rel=0&fs=1&playsinline=0&autohide=2&theme=dark&color=red&controls=1&disablekb=0&",
+            "passages": [
+              "“(Narrator) Rebecca Bennett has made a fortune by denying health care to sick patients. But did you know she’s concealing the profits? Asked three times in a debate, she refused to tell us how much she’s made. Bennett has campaign donors paying for her childcare, but wants to take away child tax credit from the rest of us. Bennett even would raise taxes on Social Security, punishing seniors. Bennett talks a big game, getting big money out of politics, but her campaign’s propped up by corporate donors. Two-faced Rebecca Bennett: she can’t be trusted.”"
+            ],
+            "phase": "general",
+            "published": "2026-10-21",
+            "record_id": "170546",
+            "release_title": "New GOP ad smacks Bennett in bid to save Kean",
+            "required_context": [
+              "the New Jersey Republican State Committee has launched a digital ad",
+              "In “Two-Faced,” an announcer uses footage of Bennett"
+            ],
+            "retrieval_url": "https://newjerseyglobe.com/wp-json/wp/v2/posts/170546",
+            "script_selector": "p:nth-of-type(5)",
+            "source": "nj-gop-globe",
+            "source_url": "https://newjerseyglobe.com/congress/new-gop-ad-smacks-bennett-in-bid-to-save-kean/"
+          },
+          "text": "“(Narrator) Rebecca Bennett has made a fortune by denying health care to sick patients. But did you know she’s concealing the profits? Asked three times in a debate, she refused to tell us how much she’s made. Bennett has campaign donors paying for her childcare, but wants to take away child tax credit from the rest of us. Bennett even would raise taxes on Social Security, punishing seniors. Bennett talks a big game, getting big money out of politics, but her campaign’s propped up by corporate donors. Two-faced Rebecca Bennett: she can’t be trusted.”"
+        }
+      ],
+      "source": "nj-gop-globe",
+      "source_hash": "3538dd27e1e12147dd158a945ee1d507852acfcae5af437ce166e5a6d5a04e3f",
+      "source_record_id": "170546",
+      "source_url": "https://newjerseyglobe.com/congress/new-gop-ad-smacks-bennett-in-bid-to-save-kean/",
+      "sponsor": "New Jersey Republican State Committee",
+      "sponsor_type": "party",
+      "state": "NJ",
+      "text": "“(Narrator) Rebecca Bennett has made a fortune by denying health care to sick patients. But did you know she’s concealing the profits? Asked three times in a debate, she refused to tell us how much she’s made. Bennett has campaign donors paying for her childcare, but wants to take away child tax credit from the rest of us. Bennett even would raise taxes on Social Security, punishing seniors. Bennett talks a big game, getting big money out of politics, but her campaign’s propped up by corporate donors. Two-faced Rebecca Bennett: she can’t be trusted.”",
+      "title": "New GOP ad smacks Bennett in bid to save Kean"
     },
     {
       "alignment": "R",
@@ -43045,6 +43693,22 @@
       "posts_scanned": 1,
       "retained_ads": 1,
       "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "aan-globe",
+      "state": "partial",
+      "url": "https://newjerseyglobe.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
       "source": "acc-aptv",
       "state": "partial",
       "url": "https://aptv.org"
@@ -43263,6 +43927,22 @@
       "url": "https://www.wispolitics.com"
     },
     {
+      "ads_with_text": 1,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "hathaway-globe",
+      "state": "partial",
+      "url": "https://newjerseyglobe.com"
+    },
+    {
       "ads_with_text": 4,
       "checked": "2026-10-30",
       "excluded_posts": 26,
@@ -43334,6 +44014,22 @@
       "source": "jackson",
       "state": "partial",
       "url": "https://www.jacksonformaine.com"
+    },
+    {
+      "ads_with_text": 5,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 5
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 5,
+      "retained_ads": 5,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "kean-globe",
+      "state": "partial",
+      "url": "https://newjerseyglobe.com"
     },
     {
       "ads_with_text": 6,
@@ -43455,6 +44151,22 @@
       "source": "ngb-aptv",
       "state": "partial",
       "url": "https://aptv.org"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "nj-gop-globe",
+      "state": "partial",
+      "url": "https://newjerseyglobe.com"
     },
     {
       "ads_with_text": 69,

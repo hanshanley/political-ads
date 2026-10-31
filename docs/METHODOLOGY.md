@@ -411,6 +411,22 @@ links are associations only, not recovered transcripts or access to its catalog.
 Publisher dates remain distinct from first airing, and quoted allegations are not
 verified findings. Target party does not determine the advertiser's alignment.
 
+For individually reviewed complete news-publisher scripts, an optional
+`script_selector` restricts extraction to one explicitly marked element within
+the full hash-bound response. It must match exactly one element, and its marked
+transcript must equal the complete admitted text. This excludes surrounding
+reporting after inline `Script:` paragraphs without changing the general
+multi-paragraph transcript extractor. Missing, ambiguous or non-script matches
+fail closed; partial quotations cannot use this selector. Existing exact
+reviewed aliases are honored only for the review's specified federal candidate
+ID. The eight New Jersey Globe scripts retain publisher credit, report dates,
+original-ad associations and literal speaker labels; they do not imply
+independent closing-payer inspection, factual verification or semantic review.
+The AAN legislative thank-you advertisement retains unknown election phase,
+while Hathaway's general phase is explicitly a special general election.
+Generated player IDs remain part of the full response hash: structurally
+changed responses require renewed review even when the visible script matches.
+
 UA Vote! PAC's custom `news` API exposes scripts in its public ACF body rather than a standard
 content field. VoteVets's post API exposes no body; its public release's exact article-body
 container supplies the script instead. Both sources require an actual 2026 federal candidate

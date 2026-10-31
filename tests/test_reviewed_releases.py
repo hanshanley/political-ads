@@ -192,3 +192,80 @@ def test_reviewed_article_binds_an_explicit_visible_publication_date(date_markup
         assert ads[0]["date_basis"] == "publisher_report_date"
     else:
         assert not ads and status["state"] == "error"
+
+
+@pytest.mark.parametrize("format", ["wordpress", "html"])
+@pytest.mark.parametrize("selector", ["p.ad-script", "p.missing", "p", "p.report"])
+def test_reviewed_script_element_excludes_surrounding_news(format, selector):
+    source, candidate, review, body = release_fixture(format, "marked_script")
+    passage = review["passages"][0]
+    original = f"<p>SCRIPT:</p><p>{passage}</p>"
+    replacement = (
+        f'<p class="ad-script">Script: <em>{passage}</em></p>'
+        '<p class="report">The reporter describes the election and quotes a campaign '
+        "spokesperson after the ad script. These words are not in the ad.</p>"
+    )
+    if format == "wordpress":
+        post = json.loads(body)
+        content = post["content"]["rendered"].replace(original, replacement)
+        post["content"]["rendered"] = content
+        body = json.dumps(post).encode()
+    else:
+        content = body.decode().replace(original, replacement)
+        body = content.encode()
+    review["content_sha256"] = digest(content)
+    review["script_selector"] = selector
+
+    class Client:
+        def get(self, *args, **kwargs):
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-10-30", [candidate], [review]
+    )
+    if selector == "p.ad-script":
+        assert status["state"] == "partial" and len(ads) == 1
+        assert ads[0]["text"] == passage
+        assert "news_publisher_reports_marked_ad_script" in ads[0]["quality_flags"]
+        assert "campaign_release_reproduced_by_news_publisher" not in ads[0]["quality_flags"]
+        assert ads[0]["segments"][0]["release_evidence"]["script_selector"] == selector
+    else:
+        assert not ads and status["state"] == "error"
+
+
+def test_reviewed_script_boundary_cannot_be_applied_to_partial_quotations():
+    source, candidate, review, body = release_fixture()
+    review["script_selector"] = "p"
+
+    class Client:
+        def get(self, *args, **kwargs):
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-10-30", [candidate], [review]
+    )
+    assert not ads and status["state"] == "error"
+
+
+@pytest.mark.parametrize("with_alias", [False, True])
+def test_reviewed_release_honors_existing_exact_federal_candidate_alias(with_alias):
+    source, candidate, review, body = release_fixture()
+    canonical = candidate | {"name": "MARQUES, FREDERICK"}
+    candidates = [canonical]
+    if with_alias:
+        candidates.append(
+            candidate | {"reviewed_alias": {"basis": "Fixture exact public-name review"}}
+        )
+
+    class Client:
+        def get(self, *args, **kwargs):
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-10-30", candidates, [review]
+    )
+    if with_alias:
+        assert len(ads) == 1 and status["state"] == "partial"
+        assert ads[0]["segments"][0]["federal_scope_candidate_ids"] == [candidate["candidate_id"]]
+    else:
+        assert not ads and status["state"] == "error"
