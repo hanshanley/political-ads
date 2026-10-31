@@ -10,9 +10,80 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Colorado Hurd expansion of the October 30 snapshot
+
+The latest acquisition contains **1,872 text records**, including **1,834
+English records: 1,226 D / 569 R / 31 other / eight unresolved**.
+One new Jeff Hurd campaign record contains **28 literal words in three
+fragments**, CO-03 general, from Colorado Pols' **August 31, 2026** report.
+It remains **partial quotation**, semantically **unreviewed**, with the
+closing legal payer uninspected. The publisher's assessments are not
+accepted as factual findings or imported as ad speech.
+
+Exact saved FEC identity is **H4CO03357 / C00848333**, REP, House, CO-03.
+The existing independently documented Jeff Hurd alias is unchanged.
+The actually exposed single-post API identifies post **228003**, its
+canonical source URL, title and rendered-content SHA-256
+`a1776dd889a0e272eb9c18cc92c1203700190d5cc0e6a9447c5e3fdeccd5b00e`.
+The report identifies Hurd's 2026 reelection ad and Democratic challenger
+Dwayne Romero. Individual original **Aupn7FH4M-Y** belongs to this ad,
+not the separate 2024 ad discussed later. Ordered fragments preserve
+their comma and terminal periods; reporting, interviews, legislative
+quotations and older campaign material are excluded.
+
+The visible page labels 12:07 PM as UTC, whereas the API records
+12:07:13 local and 18:07:13 GMT. Both observations remain explicit;
+all agree on August 31. Publication is not independently verified
+first paid delivery. Only public publisher HTML and its exposed
+single-post JSON were requested, not video or caption providers.
+
+All **1,871 preceding acquired objects**, **1,833 preceding analyzed
+objects**, **32 acquisition reviews** and **17 protected canonical JSON
+inputs** remain unchanged. Exact messages are **1,204 D / 532 R**.
+English House coverage is **698 D / 191 R**: 476 D / one R Snap and
+222 D / 190 R non-Snap. These are collection counts, not national
+advertising proportions or a resolved Republican House coverage gap.
+
+```sh
+political-ads collect --source hurd-coloradopols \
+  --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+Network-forbidden isolated replay reproduces **527 written objects and
+source states** from 526 using one cached publisher response. Complete
+JSON/gzip/text-complete CSV, **1,872 Parquet rows** and eleven visually
+inspected PNG sets reconcile. Final affected Python tests pass **154
+cases**; Python/frontend lint and formatting, **17 frontend tests**,
+production build and **seven browser cases** pass. Independent auditing
+verifies **20 metric groups / ten chart rows**. Snapshot:
+`2722729192b727d6cbf22502da58cba850d3a1e2aa195892edb38f3e572b91c0`.
+Both editions stay unpublished; frozen claims inputs remain unchanged.
+
+Expanded discovery used the publisher's actually exposed collection link.
+An initial broad `ad` query was noisy; an exact `campaign ad` phrase
+returned **15 reports**, not 15 eligible ads. A September podcast and
+May's Senate/governor/Democratic ads are excluded. CLF's September
+CO-08 report has insufficient literal quotation; July's Evans messaging
+report does not supply actual ad words. Do not combine separate ads
+or count commentary and social remarks to manufacture text.
+
+A previously suggested Crank URL returned **404**. A separate verified
+October 20 Colorado Times Recorder report instead identifies **No Going
+Back PAC**, not Crank's campaign, as the sponsor of a Killin attack.
+Its 15 literal words remain unadmitted without an individual original
+association; the linked Killin response is not the attack creative.
+Exact saved identities are **Killin H6CO05324 / C00911941** and
+**Crank H6CO05142 / C00865592**. Address-related reporting is not ad text.
+Continue public publisher-linked original discovery; denied providers,
+the October 30 snapshot cutoff and publication hold stay unchanged.
+
 ## Colorado Evans expansion of the October 30 snapshot
 
-The latest acquisition contains **1,871 text records**, including **1,833
+This checkpoint contains **1,871 text records**, including **1,833
 English records: 1,226 D / 568 R / 31 other / eight unresolved**.
 One new Gabe Evans campaign record contains **46 literal words in two
 passages** from the **Boots** ad, CO-08 general. Jason Salzman's Colorado
@@ -60,7 +131,7 @@ verifies **20 metric groups / ten chart rows**. Snapshot:
 `7561ef45860d95fa0284d8c6bc433dbfc0113fea7ae31b2650850574af79fa2c`.
 Both editions remain unpublished; concurrent frozen claims work is unchanged.
 
-The next unadmitted lead is Colorado Pols' August 31 Jeff Hurd CO-03
+At this checkpoint the next unadmitted lead was Colorado Pols' August 31 Jeff Hurd CO-03
 ad report, with an individually embedded original `Aupn7FH4M-Y`, exact
 saved identity **H4CO03357 / C00848333**, and an existing reviewed alias.
 Its actually exposed single-post API corroborates the date. The visible

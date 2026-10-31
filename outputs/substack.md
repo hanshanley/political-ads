@@ -4,19 +4,19 @@ Opponents, their own candidates, and the balance of negative and positive portra
 
 **DRAFT - NOT PUBLISHED.** Prepared for Substack; images are local PNG files. No upload, scheduling or publication has occurred.
 
-Data through 2026-10-30. Snapshot `7561ef45860d95fa0284d8c6bc433dbfc0113fea7ae31b2650850574af79fa2c`.
+Data through 2026-10-30. Snapshot `2722729192b727d6cbf22502da58cba850d3a1e2aa195892edb38f3e572b91c0`.
 
 The recovered ads differ in the reputations they build and attack. Among reviewed messages describing opposing-party people, Democratic ads put more emphasis on honesty, corruption and trustworthiness (150/520 (28.8%), compared with 55/275 (20.0%) on the other side); Republican ads put more emphasis on ideology and extremism (55/275 (20.0%), compared with 22/520 (4.2%) on the other side). These are the largest observed frame gaps in each direction, not national estimates or evidence of a pure party effect.
 
 This comparison asks who an ad describes, what it says about that person, and whether it attacks an opponent or praises its own candidate. It reads descriptions in context, rather than treating an angry word or a word near a name as a portrayal.
 
-The saved collection through 2026-10-30 contains 1,833 English ad-text records: 1,226 Democratic-aligned, 568 Republican-aligned, 31 other and 8 unresolved. After exact-message deduplication, the D/R comparison contains 1,204 and 531 messages. These are recovered ad releases, previews and creatives, not all ads aired, and there is no exposure or spending weight.
+The saved collection through 2026-10-30 contains 1,834 English ad-text records: 1,226 Democratic-aligned, 569 Republican-aligned, 31 other and 8 unresolved. After exact-message deduplication, the D/R comparison contains 1,204 and 532 messages. These are recovered ad releases, previews and creatives, not all ads aired, and there is no exposure or spending weight.
 
 ## First, what has been reviewed?
 
 Democratic-aligned messages: 1,197/1,204 (99.4%) reviewed; 2 uncertain, 4 unreviewed and 1 stale. Only reviewed messages supply counted descriptions. The whole-ad table retains all messages in its denominator; person-scope tone rates require an eligible description. Missing evidence is not neutral language.
 
-Republican-aligned messages: 458/531 (86.3%) reviewed; 1 uncertain, 72 unreviewed and 0 stale. Only reviewed messages supply counted descriptions. The whole-ad table retains all messages in its denominator; person-scope tone rates require an eligible description. Missing evidence is not neutral language.
+Republican-aligned messages: 458/532 (86.1%) reviewed; 1 uncertain, 73 unreviewed and 0 stale. Only reviewed messages supply counted descriptions. The whole-ad table retains all messages in its denominator; person-scope tone rates require an eligible description. Missing evidence is not neutral language.
 
 These are AI-assisted full-text contextual labels, not independently validated human judgments. Exact passages, target anchors and input hashes are retained. A reported allegation is a portrayal, not this project's finding that it is true.
 
@@ -32,7 +32,7 @@ How this is calculated: first select one record per advertiser-alignment/message
 
 Democratic ads: own-side praise only: 478/1,204 (39.7%); mixed: own praise and opponent criticism: 105/1,204 (8.7%); opponent criticism only: 413/1,204 (34.3%); neither signal: 201/1,204 (16.7%); uncertain or missing review: 7/1,204 (0.6%). These mutually exclusive categories account for every unique message. This same-ad contrast measure is different from mixed positive/negative descriptions within one target scope below.
 
-Republican ads: own-side praise only: 126/531 (23.7%); mixed: own praise and opponent criticism: 76/531 (14.3%); opponent criticism only: 220/531 (41.4%); neither signal: 36/531 (6.8%); uncertain or missing review: 73/531 (13.7%). These mutually exclusive categories account for every unique message. This same-ad contrast measure is different from mixed positive/negative descriptions within one target scope below.
+Republican ads: own-side praise only: 126/532 (23.7%); mixed: own praise and opponent criticism: 76/532 (14.3%); opponent criticism only: 220/532 (41.4%); neither signal: 36/532 (6.8%); uncertain or missing review: 74/532 (13.9%). These mutually exclusive categories account for every unique message. This same-ad contrast measure is different from mixed positive/negative descriptions within one target scope below.
 
 ![Own-side praise, opponent criticism or both within the same ad; shares of all unique messages.](figures/ad-strategy.png)
 
@@ -147,7 +147,7 @@ For Democratic ads, the whole-ad shares change after exclusion: own-side praise 
 
 For Democratic ads describing opposing-party people, any-negative portrayals change from 516/520 (99.2%) to 513/517 (99.2%) after that exclusion. Differences can still reflect races, phases, extraction formats and repeated changed-target templates, not a pure party effect.
 
-For Republican ads, the whole-ad shares change after exclusion: own-side praise only from 126/531 (23.7%) to 117/373 (31.4%); mixed: own praise and opponent criticism from 76/531 (14.3%) to 76/373 (20.4%); opponent criticism only from 220/531 (41.4%) to 97/373 (26.0%). Each denominator includes all unique messages remaining in that collection.
+For Republican ads, the whole-ad shares change after exclusion: own-side praise only from 126/532 (23.7%) to 117/374 (31.3%); mixed: own praise and opponent criticism from 76/532 (14.3%) to 76/374 (20.3%); opponent criticism only from 220/532 (41.4%) to 97/374 (25.9%). Each denominator includes all unique messages remaining in that collection.
 
 For Republican ads describing opposing-party people, any-negative portrayals change from 274/275 (99.6%) to 154/155 (99.4%) after that exclusion. Differences can still reflect races, phases, extraction formats and repeated changed-target templates, not a pure party effect.
 

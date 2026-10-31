@@ -22620,6 +22620,96 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Credit: Colorado Pols, August 31, 2026. The original publisher's actually exposed public single-post API identifies post 228003, its exact source URL, title and rendered content. The report explicitly identifies Republican Congressman Jeff Hurd's first advertisement of his 2026 reelection campaign and Democratic challenger Dwayne Romero. Exact saved FEC H4CO03357 / C00848333 identifies HURD, JEFFREY, REP, House, CO-03; the existing independently documented Jeff Hurd alias remains unchanged. The first individually embedded original Aupn7FH4M-Y is the new 2026 creative, not the separately discussed 2024 advertisement. Three literal source-ordered fragments total 28 words; preserve the first fragment's comma and both terminal periods. The publisher's hostile commentary, policy assessments, Durango Herald interview, CPR legislative reporting, lawmakers' separate quotations and old campaign material are excluded. Campaign advertiser attribution is publisher-reported, not independently inspected closing-payer evidence. The visible primary page labels August 31 at 12:07 PM as UTC, while the single-post API records 12:07:13 local and 18:07:13 GMT; both observations are retained without silently equating timestamps, and both resolve to August 31. Publication does not establish first paid delivery. Exact rendered-content hash, title/date, federal identity, campaign/contest context, individual original association and ordered literal passages are bound. Only public publisher HTML and its actually exposed single-post JSON were requested; no video, caption service, denied page or licensed catalog was retrieved. This remains partial quotation and semantically unreviewed.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H4CO03357",
+          "district": "03",
+          "name": "HURD, JEFF",
+          "office": "H",
+          "party": "REP",
+          "state": "CO"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "hurd-coloradopols-228003-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/Aupn7FH4M-Y?si=PZJslsC83NjtwGbl"
+      ],
+      "message_id": "6dd68c6d23d0b1e81b09ad58f79fa078e7e71f96063098d945a883fe66e334b5",
+      "observed": "2026-10-31",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-08-31",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "CO-03",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H4CO03357"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Credit: Colorado Pols, August 31, 2026. The original publisher's actually exposed public single-post API identifies post 228003, its exact source URL, title and rendered content. The report explicitly identifies Republican Congressman Jeff Hurd's first advertisement of his 2026 reelection campaign and Democratic challenger Dwayne Romero. Exact saved FEC H4CO03357 / C00848333 identifies HURD, JEFFREY, REP, House, CO-03; the existing independently documented Jeff Hurd alias remains unchanged. The first individually embedded original Aupn7FH4M-Y is the new 2026 creative, not the separately discussed 2024 advertisement. Three literal source-ordered fragments total 28 words; preserve the first fragment's comma and both terminal periods. The publisher's hostile commentary, policy assessments, Durango Herald interview, CPR legislative reporting, lawmakers' separate quotations and old campaign material are excluded. Campaign advertiser attribution is publisher-reported, not independently inspected closing-payer evidence. The visible primary page labels August 31 at 12:07 PM as UTC, while the single-post API records 12:07:13 local and 18:07:13 GMT; both observations are retained without silently equating timestamps, and both resolve to August 31. Publication does not establish first paid delivery. Exact rendered-content hash, title/date, federal identity, campaign/contest context, individual original association and ordered literal passages are bound. Only public publisher HTML and its actually exposed single-post JSON were requested; no video, caption service, denied page or licensed catalog was retrieved. This remains partial quotation and semantically unreviewed.",
+            "candidate_id": "H4CO03357",
+            "completeness": "partial_quotation",
+            "content_sha256": "a1776dd889a0e272eb9c18cc92c1203700190d5cc0e6a9447c5e3fdeccd5b00e",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/Aupn7FH4M-Y?si=PZJslsC83NjtwGbl",
+            "passages": [
+              "doing the right thing in Washington,",
+              "I took on insurance and drug companies to cut prescription drug prices.",
+              "backed a ban on members of Congress from trading stocks."
+            ],
+            "phase": "general",
+            "published": "2026-08-31",
+            "record_id": "228003",
+            "release_title": "Jeff Hurd’s First 2026 Ad is Utter Nonsense",
+            "required_context": [
+              "first ad of his 2026 re-election campaign",
+              "Democratic challenger Dwayne Romero",
+              "After opening the ad by claiming",
+              "Hurd says he"
+            ],
+            "retrieval_url": "https://www.coloradopols.com/wp-json/wp/v2/posts/228003",
+            "source": "hurd-coloradopols",
+            "source_url": "https://www.coloradopols.com/diary/228003/jeff-hurds-first-2026-ad-is-utter-nonsense"
+          },
+          "text": "doing the right thing in Washington,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "I took on insurance and drug companies to cut prescription drug prices."
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "backed a ban on members of Congress from trading stocks."
+        }
+      ],
+      "source": "hurd-coloradopols",
+      "source_hash": "a1776dd889a0e272eb9c18cc92c1203700190d5cc0e6a9447c5e3fdeccd5b00e",
+      "source_record_id": "228003",
+      "source_url": "https://www.coloradopols.com/diary/228003/jeff-hurds-first-2026-ad-is-utter-nonsense",
+      "sponsor": "Jeff Hurd campaign (reported advertiser; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "CO",
+      "text": "doing the right thing in Washington,\nI took on insurance and drug companies to cut prescription drug prices.\nbacked a ban on members of Congress from trading stocks.",
+      "title": "Jeff Hurd’s First 2026 Ad is Utter Nonsense"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Credit: The North State Journal, A.P. Dillon. The September 1 report explicitly identifies Republican Laurie Buckhout's Show Up television ad against Democratic incumbent Don Davis and embeds the matching original. Exact 2026 FEC identity H4NC01137, principal committee C00853499, establishes the campaign's NC-01 House scope and Republican advertiser alignment, not the Democratic target's party or the news publisher's alignment. Two literal ad quotations remain in publisher order, including the first quotation's trailing comma. They form one partial ad, not two creatives or a complete recovered script. Reporter voting-record analysis, quoted campaign statements about Kalshi, and ordinary campaign remarks are excluded. This report date is not independently verified first release or paid delivery; the creative's sole legal closing payer has not been inspected. The entire rendered-content hash, post ID, article title/date, advertiser context and original-video association remain bound. This is acquisition review, not semantic portrayal coding or verification of ad claims.",
       "candidate_mentions": [
         {
@@ -45840,6 +45930,22 @@
       "source": "holdtheline-metroweekly",
       "state": "partial",
       "url": "https://www.metroweekly.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "hurd-coloradopols",
+      "state": "partial",
+      "url": "https://www.coloradopols.com"
     },
     {
       "ads_with_text": 12,

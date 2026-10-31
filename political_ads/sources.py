@@ -127,6 +127,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "hurd-coloradopols",
+        "https://www.coloradopols.com",
+        "Jeff Hurd campaign (reported advertiser; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="CO-03",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "evans-coloradotimes",
         "https://coloradotimesrecorder.com",
         "Gabe Evans campaign (reported advertiser; payer unverified)",
