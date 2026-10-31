@@ -1767,7 +1767,7 @@
       "all_unique_messages": 1204,
       "categories_overlap": true,
       "denominator": "normalized_unique_messages",
-      "normalized_unique_messages": 28,
+      "normalized_unique_messages": 31,
       "side_tone": {
         "not_partisan": {
           "negative": {
@@ -1784,10 +1784,13 @@
               "dccc-668751-0",
               "dccc-668789-0",
               "cooper-952-0",
+              "dccc-669328-0",
+              "dccc-669384-0",
+              "dccc-669396-0",
               "cooper-997-0"
             ],
-            "count": 13,
-            "share": 0.4642857142857143
+            "count": 16,
+            "share": 0.5161290322580645
           },
           "neutral": {
             "ad_ids": [
@@ -1801,23 +1804,25 @@
               "dccc-668664-0"
             ],
             "count": 8,
-            "share": 0.2857142857142857
+            "share": 0.25806451612903225
           },
           "positive": {
             "ad_ids": [
               "cooper-483-0",
               "dccc-667867-0",
-              "dccc-668664-0"
+              "dccc-668664-0",
+              "dccc-669328-0",
+              "dccc-669396-0"
             ],
-            "count": 3,
-            "share": 0.10714285714285714
+            "count": 5,
+            "share": 0.16129032258064516
           },
           "uncertain": {
             "ad_ids": [
               "dccc-668789-0"
             ],
             "count": 1,
-            "share": 0.03571428571428571
+            "share": 0.03225806451612903
           }
         },
         "other_party": {
@@ -1856,19 +1861,21 @@
               "dccc-668664-0",
               "dccc-668740-0",
               "dccc-668789-0",
-              "cooper-944-0"
+              "cooper-944-0",
+              "dccc-669384-0"
             ],
-            "count": 12,
-            "share": 0.42857142857142855
+            "count": 13,
+            "share": 0.41935483870967744
           },
           "neutral": {
             "ad_ids": [
               "cooper-589-0",
               "cooper-877-0",
-              "dccc-668423-0"
+              "dccc-668423-0",
+              "dccc-669384-0"
             ],
-            "count": 3,
-            "share": 0.10714285714285714
+            "count": 4,
+            "share": 0.12903225806451613
           },
           "positive": {
             "ad_ids": [],
@@ -1887,7 +1894,7 @@
               "cooper-445-0"
             ],
             "count": 1,
-            "share": 0.03571428571428571
+            "share": 0.03225806451612903
           },
           "neutral": {
             "ad_ids": [
@@ -1908,10 +1915,13 @@
               "cooper-944-0",
               "cooper-952-0",
               "dccc-669046-0",
+              "dccc-669328-0",
+              "dccc-669384-0",
+              "dccc-669396-0",
               "cooper-997-0"
             ],
-            "count": 18,
-            "share": 0.6428571428571429
+            "count": 21,
+            "share": 0.6774193548387096
           },
           "positive": {
             "ad_ids": [
@@ -1926,10 +1936,12 @@
               "dccc-668747-0",
               "dccc-668751-0",
               "cooper-952-0",
-              "dccc-669046-0"
+              "dccc-669046-0",
+              "dccc-669328-0",
+              "dccc-669396-0"
             ],
-            "count": 12,
-            "share": 0.42857142857142855
+            "count": 14,
+            "share": 0.45161290322580644
           },
           "uncertain": {
             "ad_ids": [],
@@ -1955,10 +1967,12 @@
               "dccc-668751-0",
               "cooper-944-0",
               "cooper-952-0",
+              "dccc-669328-0",
+              "dccc-669384-0",
               "cooper-997-0"
             ],
-            "count": 16,
-            "share": 0.5714285714285714
+            "count": 18,
+            "share": 0.5806451612903226
           },
           "neutral": {
             "ad_ids": [
@@ -1980,10 +1994,13 @@
               "dccc-668751-0",
               "cooper-944-0",
               "cooper-952-0",
+              "dccc-669328-0",
+              "dccc-669384-0",
+              "dccc-669396-0",
               "cooper-997-0"
             ],
-            "count": 19,
-            "share": 0.6785714285714286
+            "count": 22,
+            "share": 0.7096774193548387
           },
           "positive": {
             "ad_ids": [
@@ -1996,10 +2013,12 @@
               "dccc-668492-0",
               "dccc-668664-0",
               "dccc-668747-0",
-              "cooper-944-0"
+              "cooper-944-0",
+              "dccc-669328-0",
+              "dccc-669396-0"
             ],
-            "count": 10,
-            "share": 0.35714285714285715
+            "count": 12,
+            "share": 0.3870967741935484
           },
           "uncertain": {
             "ad_ids": [],
@@ -2214,17 +2233,17 @@
   },
   "ads": 1792,
   "ads_by_status": {
-    "normalized": 45,
-    "not_run": 1703,
-    "validation_failed": 44
+    "normalized": 48,
+    "not_run": 1695,
+    "validation_failed": 49
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 46,
-    "not_run": 1920,
-    "validation_failed": 50
+    "normalized": 49,
+    "not_run": 1912,
+    "validation_failed": 55
   },
-  "claims": 388,
+  "claims": 419,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -2375,6 +2394,18 @@
         },
         {
           "claim_id": "dccc-669024-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669384-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-003",
           "target_index": 0
         }
       ],
@@ -2527,6 +2558,14 @@
         },
         {
           "claim_id": "dccc-669024-0-claims-001-010",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-004",
           "target_index": 0
         }
       ],
@@ -2823,6 +2862,22 @@
         {
           "claim_id": "dccc-668789-0-claims-001-009",
           "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669384-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669384-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669384-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669384-0-claims-001-007",
+          "target_index": 0
         }
       ],
       "neutral": [
@@ -2853,6 +2908,10 @@
         {
           "claim_id": "dccc-668423-0-claims-001-005",
           "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669384-0-claims-001-002",
+          "target_index": 1
         }
       ],
       "positive": [],
@@ -3084,6 +3143,38 @@
         },
         {
           "claim_id": "dccc-669046-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-009",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669384-0-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-012",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-014",
           "target_index": 0
         }
       ],
@@ -3374,6 +3465,46 @@
         },
         {
           "claim_id": "dccc-669046-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-009",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-010",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-011",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-013",
           "target_index": 0
         }
       ],
@@ -3761,6 +3892,18 @@
         {
           "claim_id": "dccc-669046-0-claims-001-007",
           "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-006",
+          "target_index": 1
+        },
+        {
+          "claim_id": "dccc-669384-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669384-0-claims-001-007",
+          "target_index": 2
         }
       ],
       "neutral": [
@@ -4079,6 +4222,34 @@
         {
           "claim_id": "dccc-669024-0-claims-001-005",
           "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-003",
+          "target_index": 1
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-006",
+          "target_index": 2
+        },
+        {
+          "claim_id": "dccc-669384-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669384-0-claims-001-004",
+          "target_index": 1
+        },
+        {
+          "claim_id": "dccc-669384-0-claims-001-007",
+          "target_index": 1
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-002",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -4281,11 +4452,23 @@
         {
           "claim_id": "dccc-669046-0-claims-001-006",
           "target_index": 0
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-002",
+          "target_index": 1
+        },
+        {
+          "claim_id": "dccc-669328-0-claims-001-007",
+          "target_index": 1
+        },
+        {
+          "claim_id": "dccc-669396-0-claims-001-013",
+          "target_index": 1
         }
       ],
       "uncertain": []
     }
   },
-  "targets": 502,
+  "targets": 543,
   "version": "local-ad-claims-4"
 }
