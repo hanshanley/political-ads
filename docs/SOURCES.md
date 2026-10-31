@@ -10,7 +10,79 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Hilleary first-ad acquisition and individual-library association
+## Calvert same-party primary quoted-ad expansion
+
+One additional Republican House record, **calvert-rawstory-2676814922-0**,
+retains **four ordered literal ad quotations / 20 tokens** from Raw Story's
+actual April 25 report. The exact title, unique primary heading, publisher
+date, required advertiser/primary context, complete HTML SHA-256, ordered
+passages and whole original association are bound in
+`data/ad-release-reviews.json`. Reproduction uses
+**`--source calvert-rawstory --offline --until 2026-10-30`**.
+Full-response SHA-256:
+`ba818644efc8c7edb93e552e389f2a2be6c9773810cb1585b845511e4c03f3a1`.
+Visible **April 25, 6:08 PM ET** agrees with published metadata
+**2026-04-25T22:08:17+00:00**; later modification is not a second ad date.
+April 25 is the publisher report date, not independently verified upload,
+first release, paid delivery or an airing interval.
+
+The four passages are reported narration, a Trump soundbite, a Young Kim
+clip and another ad accusation, **not all Calvert's own speech or verified
+facts**. The first terminal comma and original apostrophe persist. Reporter
+paraphrases, a separate campaign slogan, social-post caption, press statements
+and surrounding commentary are excluded. The whole individual original link
+is congressional reporter Andrew Solender's **X repost 2048107095753474512**,
+also exposed as a same-ID Twitter embed: not a campaign upload, independently
+inspected payer or clip-authenticity certification. No X, original-media,
+caption or monitoring-catalog request was made.
+
+Exact saved **H2CA37023 / C00257337**, **CALVERT, KEN**, REP, House,
+**CA-40**, agrees with the independently cached official principal committee
+**KEN CALVERT FOR CONGRESS COMMITTEE**, P / H / REP, and campaign footer.
+Current CA-40 candidacy is distinct from incumbent CA-41 representation.
+The report explicitly establishes a Republican primary against **Republican
+Young Kim**; this is not a Democratic-opponent attack. No alias, roster,
+parser or language-policy change is needed. The partial text is English
+under the unchanged detector and remains **semantically unreviewed**.
+Advertiser attribution is publisher-reported; closing legal payer,
+authorization, clip authenticity and paid placement remain uninspected.
+
+Verified snapshot:
+`ba4245878c8fa52a1b888811ead5d25ad893e51dbcedc55ed17a6edab602581d`.
+Totals: **1,891 acquired / 1,852 English**, **1,226 D / 587 R / 31 other /
+eight unresolved**; exact English messages **1,204 D / 550 R**.
+English House: **698 D / 209 R**, including **222 D / 208 R non-Snap**
+and unchanged **476 D / one R Snap**. All **1,890 preceding acquired /
+1,851 analyzed objects, 44 previous release reviews, seventeen protected
+files and the complete old alias ledger** persist unchanged. Native
+partitions, saved semantic labels, frozen claims and media backlog are intact.
+
+**183 affected Python tests**, Python lint/format, **17 frontend tests**,
+frontend lint/typecheck/build and **seven browser cases** pass. Complete
+analysis/browser/production JSON, gzip/CSV, every identity/text/hash/alignment
+row in **1,891-row Parquet** and **eleven visually inspected PNG sets**
+reconcile. Socket-forbidden isolated **single-response replay** reproduces
+all **539 written objects and source states** from 538 using only the actual
+cached HTML. Independent auditing verifies **20 metric groups / ten chart
+rows**. Updated whole-ad denominators do not imply newly reviewed semantics.
+Discovery is incomplete; the House gap and national prevalence remain unknown.
+
+Further California discovery exposes Calvert's **October 21 radio** original
+**LbCrtZndsAg** through the public blog's explicit listen link and one
+non-followed 302 redirect. It is **not acquired**: no YouTube/caption/media
+request, and announcement statements are not radio words. The media page's
+nine Vimeo embeds lack a verified 2026 association. Young Kim's October 6
+release exposes **ScwJTPzzGds / EQ99ybmtijU** without literal scripts;
+her two April 14 scripts are already acquired. KVCR's October 9 Calvert
+interview is not advertising. Alaska Current's September 2 Begich report
+contains no recovered ad quotations, and Texas Tribune's February 18
+Crenshaw/Toth report supplies only two literal attack-label words plus
+interview/social remarks, not a usable script. GVWire's actually requested
+October 9 Valadao report returns **403**, so that provider is paused without
+alternate retrieval. Further individual publisher/campaign discovery continues.
+All existing provider pauses, schedule #1 and the publication hold persist.
+
+## Previous Hilleary first-ad acquisition and individual-library association
 
 One additional Republican House acquisition, **Van Hilleary's first
 TN-06 primary ad**, retains **three ordered literal quotations / 16
@@ -84,6 +156,9 @@ verifies **20 metric groups / ten chart rows**. This acquisition does
 not establish national ad prevalence or resolve the House coverage gap.
 All provider pauses and the publication hold persist; schedule #1 remains
 active while actionable acquisition continues.
+Hilleary commit **37a90e96c05e046e98658b495a7347dc2ffb22e3** has successful
+exact-head CI **41206754631**. The original watcher was read once, and the
+exact SHA and every job step were independently confirmed successful.
 
 ## Previous Huizenga quoted-ad expansion of the October 30 snapshot
 

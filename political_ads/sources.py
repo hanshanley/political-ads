@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "calvert-rawstory",
+        "https://www.rawstory.com",
+        "Ken Calvert campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="CA-40",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "hilleary-banner",
         "https://nashvillebanner.com",
         "Van Hilleary campaign (publisher-reported; payer unverified)",
