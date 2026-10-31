@@ -10,6 +10,111 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Luna Florida House quoted-ad expansion
+
+**luna-yahoo-100000059-0** retains **two literal voiceover passages /
+41 whitespace tokens** from Shauna Muckle's Tampa Bay Times report via
+Yahoo News. It is one **partial, semantically unreviewed** Republican
+House ad, titled **Lying**, not a complete transcript. Preserve the first
+comma, final period and ASCII contraction; exclude reporter summaries,
+campaign statements, convention remarks and the Democratic opponent's
+separate ad speech.
+
+Actual source:
+`https://www.yahoo.com/news/politics/articles/anna-paulina-luna-leela-gray-100000059.html`.
+Full HTML SHA-256:
+`1c67d7d0e7cec0aa216745efc1026fefd49e0365edfa94dc9769f375151a2f78`.
+The unique **h1**, **time** and explicitly attributed quotation paragraph
+bind this report. Visible **September 15, 2026, 10:00 AM UTC**, datetime
+and NewsArticle publication/modification instants agree. The visible
+**Updated** prefix is not evidence of first release or paid delivery.
+The URL suffix is a record identifier, not an invented WordPress post.
+Reproduce with **`--source luna-yahoo --offline --until 2026-10-30`**
+and the actual cached report; no parser or alias change is required.
+
+The introductory campaign-ad anchor and second iframe both bind
+individual original **JmqEIDDEMuo**. The first original,
+**4mksHvkPvkI**, explicitly belongs to **Leela Gray's separate ad**.
+The campaign-ad anchor's referring-euri query mentions Florida Politics;
+that paused provider was not requested. Ad words were independently
+inspected in this Tampa Bay Times report via Yahoo, not recovered from
+a restricted-source mirror. No YouTube, caption, media or API request
+was made.
+
+Exact saved **H0FL13158 / C00718239**, **PAULINA LUNA, ANNA**, REP,
+House, FL-13, 2026, agrees with independently cached official principal
+**ANNA PAULINA LUNA FOR CONGRESS**, P/H/REP. General phase follows the
+explicit opposing-party November congressional contest. Digital airing
+is publisher-reported; first release, paid delivery, authorization and
+creative payer are independently unverified. Allegations are recorded
+as ad speech, not verified facts. Credit **Shauna Muckle / Tampa Bay
+Times / Yahoo News**; selected unmodified speech excerpts do not imply
+a blanket article/media license or authorization to publish either edition.
+
+Final locally verified snapshot:
+`574cb3f24bd4854e8d67cef79e69d6a069a92ecdf10247a85162ade7621f890b`.
+It contains **1,901 acquired / 1,862 English** records: **1,226 D / 597 R**,
+31 other and eight unresolved. Exact English messages are **1,204 D /
+560 R**. English House coverage is **698 D / 219 R**, including
+**222 D / 218 R non-Snap** and **476 D / one R Snap**. These are
+source-collection counts, not national advertising prevalence or
+matched-race party coverage.
+
+All **227 affected Python tests**, **17 frontend tests**, **seven production
+browser cases**, lint, formatting, typecheck and builds pass. Independent
+auditing reconciles **twenty metric groups / ten chart rows**. The immutable
+pre-edit baseline at **e91c091** preserves every **1,900 old acquired /
+1,861 old analyzed object**, all **54 preceding review objects and raw
+suffix bytes**, seventeen protected inputs, every alias and the native
+backlog, including concurrent claims work. Complete JSON/gzip/CSV and
+all **1,901 Parquet rows** reconcile across analysis, browser and actual
+production **site/** output. All eleven actual PNGs were visually
+inspected and match their production copies. An isolated socket-forbidden
+**one-response 548-to-549 written replay** reproduces all objects and
+source states. Additional literal paragraph/date/original/principal
+assertions pass. No new neutral, sentiment or strategy judgment is inferred.
+
+## Broader House discovery: Arkansas, Arizona and Florida
+
+Actual French Hill reports at Punchbowl, Arkansas Advocate and Arkansas
+Times did not recover qualifying ad text. Punchbowl's public response
+exposes its first-TV-ad headline, not the article/ad speech or an
+individual original. Arkansas Advocate's actual **#dataContent** contains
+race reporting and interviews; Arkansas Times discusses transgender
+advertising without substantive Hill ad quotations or an original.
+The actual **electfrench.com** homepage exposes **nine static YouTube
+IDs**, but no per-video date or speech. Homepage publication/modification
+dates do not date the videos; nine links are not nine acquisitions.
+
+AZ Free News's actual July 21 Crane **Fight** announcement links
+individual **1U5xJJBDssM**, but explicitly introduces its long quotations
+as a **statement accompanying the release**, not ad speech. The Freedom
+Caucus Foundation's January 17 campaign release describes a sixty-second
+spot without a transcript or individual original. Its actually linked
+**/videos/** returns an empty archive message, not proof of no advertising.
+The actual **/news/** first page reaches December 2025 and exposes only
+that same January ad announcement among eleven in-window entries; other
+cards are reporting or opinion, not recovered ad scripts. KNAU's
+October 12 No Going Back/Nez report quotes reactions, not the ad.
+
+Florida's Voice's actual October 1 Singer report links **kSLSBQDA34U**,
+but supplies only **thirteen literal ad tokens**, below the substantive
+threshold; its longer Singer quotation is expressly a press statement.
+The actual **scottsingerusa.com** homepage/media pages contain biography,
+issues, interviews and news links, not recovered ad speech. The actual
+**dangreenfl.com/media/** exposes **SE-NWB7kajM**, titled **Dan Green Reel
+2026**, without an independently dated finished ad/script. Beltran's actual
+July 31 **New Ad: MAGA Mike Beltran** page links **O__KtMqqY70**, but
+contains no literal ad text. All remain unacquired leads.
+
+PR Newswire's actual January 17 Neil Khot release contains ad quotations,
+but exact **H6IL08212 / C00903922**, IL-08, is **Democratic**, not
+Republican. It is not counted as Republican recovery. No longer
+statement, campaign biography, interview, metadata-only link or wrong-party
+candidate was used to pad this expansion. Actual response hashes and
+bounded discovery artifacts are retained locally; provider pauses,
+publication hold and inclusive November 4 final scope remain unchanged.
+
 ## Barrett Michigan House quoted-ad expansion
 
 One additional Republican House record, **barrett-prospect-143174-0**,
@@ -76,6 +181,13 @@ states. Additional literal paragraph, publication instant, reporter-blockquote,
 exact candidate/principal and raw-review preservation assertions pass.
 The new message remains semantically unreviewed; no neutral or strategy
 label is inferred from its missing review.
+
+Pushed as **6aa72fd8a0aaef549fb29237736405af14fcd229**, preserving
+concurrent claims work. Exact validation run **41224476719** completed
+successfully; every job and all thirteen steps were independently verified.
+The original local watcher exited with a GitHub connection error, not a
+failed CI test. No validation rerun was needed. Hans Hanley authorship,
+sole `main` and the publication hold remain unchanged.
 
 ## Broader House discovery: Missouri, Virginia, Nebraska and California
 

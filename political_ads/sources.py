@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "luna-yahoo",
+        "https://www.yahoo.com",
+        "Anna Paulina Luna campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="FL-13",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "barrett-prospect",
         "https://prospect.org",
         "Tom Barrett campaign (publisher-reported; payer unverified)",

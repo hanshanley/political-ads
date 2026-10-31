@@ -3,6 +3,38 @@
   "scope": "Individually reviewed public ad words, not complete publisher discovery or semantic portrayal review.",
   "reviews": [
     {
+      "source": "luna-yahoo",
+      "record_id": "100000059",
+      "source_url": "https://www.yahoo.com/news/politics/articles/anna-paulina-luna-leela-gray-100000059.html",
+      "retrieval_url": "https://www.yahoo.com/news/politics/articles/anna-paulina-luna-leela-gray-100000059.html",
+      "format": "html",
+      "published": "2026-09-15",
+      "release_title": "Anna Paulina Luna, Leela Gray spar over corruption in new ads",
+      "heading_selector": "h1",
+      "publication_selector": "time",
+      "publication_date_format": "%a, %B %d, %Y at %I:%M %p UTC",
+      "candidate_id": "H0FL13158",
+      "media_url": "https://www.youtube.com/embed/JmqEIDDEMuo",
+      "content_sha256": "1c67d7d0e7cec0aa216745efc1026fefd49e0365edfa94dc9769f375151a2f78",
+      "phase": "general",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Shauna Muckle",
+        "the congressional seat held by GOP Rep. Anna Paulina Luna.",
+        "titled \"Lying\"",
+        "a voiceover says in Luna's ad",
+        "Gray, the Democrat running against Luna",
+        "Democrats are hoping to swing the \"likely Republican\" district in November."
+      ],
+      "passages": [
+        "Liberal Leela Gray is lying,",
+        "She talks tough on data centers but owns stock in the companies building them. Attacks big pharma while invested in them. Claims housing's too expensive but invests in banks pricing you out of buying a home."
+      ],
+      "publisher_credit": "Shauna Muckle, Tampa Bay Times, via Yahoo News.",
+      "reuse_basis": "Retain only these two unmodified ad-voiceover excerpts, 41 whitespace tokens total, for noncommercial comparative research with author/publisher/source credit, not the article, reporting, photographs or embedded media. No blanket license, licensed-catalog consent or host-publication authorization is asserted. No original media is redistributed.",
+      "attribution_basis": "Actual cached Yahoo HTML SHA256 1c67d7d0e7cec0aa216745efc1026fefd49e0365edfa94dc9769f375151a2f78 binds the unique h1, time and quoted paragraph. Visible Tuesday September 15, 2026 at 10:00 AM UTC, datetime 2026-09-15T10:00:00.000Z and NewsArticle datePublished/dateModified 2026-09-15T10:00:00Z agree; the visible Updated prefix is retained as an observation, not an invented first-release date. The record suffix 100000059 comes from the actual article URL, not an invented WordPress post. The uniquely matched paragraph expressly attributes both literal ordered quotations to the voiceover in Luna's ad; preserve the first comma, second period and ASCII housing's contraction. The earlier campaign-ad anchor and the second iframe independently associate the individual JmqEIDDEMuo original with Luna's Lying spot. The first original 4mksHvkPvkI is explicitly Democratic Leela Gray's separate first general-election ad and is excluded. The campaign-ad anchor's referring-euri query mentions Florida Politics; no request was made to that paused publisher, and the recovered speech comes from this independently inspected Tampa Bay Times report via Yahoo, not a restricted-source mirror. Exact saved H0FL13158/C00718239 identifies PAULINA LUNA, ANNA, REP, House, FL-13, 2026; independently cached official principal ANNA PAULINA LUNA FOR CONGRESS is P/H/REP. Existing exact-name recognition works without an alias or roster change. General phase follows the explicit opposing-party November congressional contest, not September alone. The article reports digital airing, but first release, paid delivery, campaign authorization and creative payer remain independently unverified. The ad's allegations are retained as speech, not asserted facts. Gray's separate ad speech, reporter paraphrases, campaign spokesperson statement, poll discussion, stock-disclosure reporting and Luna's convention speech are excluded. No YouTube/media/caption/API request or new semantic judgment."
+    },
+    {
       "source": "barrett-prospect",
       "record_id": "143174",
       "source_url": "https://prospect.org/2026/08/20/mi-07-tom-barrett-scrambles-to-bury-his-data-center-past/",
