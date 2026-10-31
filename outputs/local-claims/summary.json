@@ -7,14 +7,15 @@
             "google-CR08351851480902270977-9bd1fcfbfe3a",
             "google-CR12322845133157433345-3f556f020dd9",
             "google-CR11072533724695363585-6168f21bb4a6",
+            "hickenlooper-9630-0",
             "el-sayed-ac04d83be1821aa7-0",
             "dccc-668740-0",
             "dccc-669581-0",
             "dccc-669589-0",
             "dccc-669729-0"
           ],
-          "count": 8,
-          "share": 0.006644518272425249
+          "count": 9,
+          "share": 0.007475083056478406
         },
         "neither_detected": {
           "ad_ids": [
@@ -131,7 +132,6 @@
             "votevets-5530-0",
             "cooper-445-0",
             "dscc-12717-0",
-            "hickenlooper-9630-0",
             "google-CR02901047763301040129-2318d9059a4d",
             "hickenlooper-9643-0",
             "unrig-1834-0",
@@ -1210,8 +1210,8 @@
             "smp-3904-0",
             "dccc-669808-0"
           ],
-          "count": 1184,
-          "share": 0.9833887043189369
+          "count": 1183,
+          "share": 0.9825581395348837
         },
         "opponent_negative_only": {
           "ad_ids": [
@@ -1398,7 +1398,6 @@
             "nrsc-16704-0",
             "nrsc-16716-0",
             "sullivan-3902-0",
-            "hinson-668-0",
             "nrsc-16768-0",
             "nrcc-images-56c8037eed13203c817b5935",
             "nrcc-images-66cfeaa4236463d17027887a",
@@ -1453,7 +1452,6 @@
             "snap-6dc5a361f2102b909c6f447d",
             "snap-7e864e7fed43776cc2ea3ef3",
             "snap-904cb0ecbb721f3b1e1d0b4e",
-            "hinson-706-0",
             "google-CR11028699425911341057-cae675015264",
             "nrsc-16980-0",
             "nrsc-17011-0",
@@ -1735,15 +1733,17 @@
             "snap-d60d07b71c1c16da2cbdcb55",
             "snap-e9a3b27048e3b4952586b499"
           ],
-          "count": 471,
-          "share": 0.9612244897959183
+          "count": 469,
+          "share": 0.9571428571428572
         },
         "opponent_negative_only": {
           "ad_ids": [
+            "hinson-668-0",
+            "hinson-706-0",
             "google-CR11028699425911341057-cbf254e4d012"
           ],
-          "count": 1,
-          "share": 0.0020408163265306124
+          "count": 3,
+          "share": 0.006122448979591836
         },
         "own_positive_only": {
           "ad_ids": [
@@ -1770,11 +1770,12 @@
       "all_unique_messages": 1204,
       "categories_overlap": true,
       "denominator": "normalized_unique_messages",
-      "normalized_unique_messages": 77,
+      "normalized_unique_messages": 79,
       "side_tone": {
         "not_partisan": {
           "negative": {
             "ad_ids": [
+              "hickenlooper-9643-0",
               "cooper-483-0",
               "el-sayed-26b1bbab2ef09980-0",
               "google-CR04742165278043930625-1bce26e2b38f",
@@ -1798,8 +1799,8 @@
               "dccc-669591-0",
               "el-sayed-17c2f002642e20d9-0"
             ],
-            "count": 22,
-            "share": 0.2857142857142857
+            "count": 23,
+            "share": 0.2911392405063291
           },
           "neutral": {
             "ad_ids": [
@@ -1822,11 +1823,12 @@
               "dccc-669825-0"
             ],
             "count": 17,
-            "share": 0.22077922077922077
+            "share": 0.21518987341772153
           },
           "positive": {
             "ad_ids": [
               "google-CR11879751413271625729-64e058772554",
+              "hickenlooper-9643-0",
               "cooper-483-0",
               "el-sayed-26b1bbab2ef09980-0",
               "el-sayed-a629307c1187b24e-0",
@@ -1841,15 +1843,15 @@
               "dccc-669591-0",
               "el-sayed-17c2f002642e20d9-0"
             ],
-            "count": 14,
-            "share": 0.18181818181818182
+            "count": 15,
+            "share": 0.189873417721519
           },
           "uncertain": {
             "ad_ids": [
               "dccc-668789-0"
             ],
             "count": 1,
-            "share": 0.012987012987012988
+            "share": 0.012658227848101266
           }
         },
         "other_party": {
@@ -1863,7 +1865,7 @@
               "el-sayed-83b0f5c9ffd13be4-0"
             ],
             "count": 1,
-            "share": 0.012987012987012988
+            "share": 0.012658227848101266
           },
           "positive": {
             "ad_ids": [],
@@ -1884,6 +1886,7 @@
               "google-CR11072533724695363585-6168f21bb4a6",
               "dscc-12483-0",
               "google-CR06063793853951901697-8870e3bb90cb",
+              "hickenlooper-9630-0",
               "dccc-667867-0",
               "cooper-877-0",
               "el-sayed-ac04d83be1821aa7-0",
@@ -1903,8 +1906,8 @@
               "dccc-669729-0",
               "dccc-669825-0"
             ],
-            "count": 23,
-            "share": 0.2987012987012987
+            "count": 24,
+            "share": 0.3037974683544304
           },
           "neutral": {
             "ad_ids": [
@@ -1917,14 +1920,14 @@
               "dccc-669729-0"
             ],
             "count": 7,
-            "share": 0.09090909090909091
+            "share": 0.08860759493670886
           },
           "positive": {
             "ad_ids": [
               "dccc-669729-0"
             ],
             "count": 1,
-            "share": 0.012987012987012988
+            "share": 0.012658227848101266
           },
           "uncertain": {
             "ad_ids": [],
@@ -1943,7 +1946,7 @@
               "dccc-669589-0"
             ],
             "count": 6,
-            "share": 0.07792207792207792
+            "share": 0.0759493670886076
           },
           "neutral": {
             "ad_ids": [
@@ -1957,6 +1960,8 @@
               "google-CR08397042740243726337-d84236dbfa27",
               "google-CR17495478026748559361-f55a360015fc",
               "cooper-445-0",
+              "hickenlooper-9630-0",
+              "hickenlooper-9643-0",
               "el-sayed-7c690cb7f4afe702-0",
               "el-sayed-26b1bbab2ef09980-0",
               "el-sayed-83b0f5c9ffd13be4-0",
@@ -1998,8 +2003,8 @@
               "el-sayed-17c2f002642e20d9-0",
               "dccc-669825-0"
             ],
-            "count": 50,
-            "share": 0.6493506493506493
+            "count": 52,
+            "share": 0.6582278481012658
           },
           "positive": {
             "ad_ids": [
@@ -2012,6 +2017,8 @@
               "google-CR16042100470042329089-bffebe17040f",
               "google-CR10954824751469559809-410930d4ef33",
               "cooper-445-0",
+              "hickenlooper-9630-0",
+              "hickenlooper-9643-0",
               "cooper-483-0",
               "el-sayed-7c690cb7f4afe702-0",
               "el-sayed-26b1bbab2ef09980-0",
@@ -2049,8 +2056,8 @@
               "el-sayed-17c2f002642e20d9-0",
               "dccc-669729-0"
             ],
-            "count": 45,
-            "share": 0.5844155844155844
+            "count": 47,
+            "share": 0.5949367088607594
           },
           "uncertain": {
             "ad_ids": [],
@@ -2066,6 +2073,7 @@
               "google-CR16042100470042329089-bffebe17040f",
               "google-CR10954824751469559809-410930d4ef33",
               "cooper-445-0",
+              "hickenlooper-9643-0",
               "cooper-483-0",
               "el-sayed-83b0f5c9ffd13be4-0",
               "cooper-551-0",
@@ -2097,8 +2105,8 @@
               "dccc-669591-0",
               "el-sayed-17c2f002642e20d9-0"
             ],
-            "count": 35,
-            "share": 0.45454545454545453
+            "count": 36,
+            "share": 0.45569620253164556
           },
           "neutral": {
             "ad_ids": [
@@ -2137,7 +2145,7 @@
               "dccc-669591-0"
             ],
             "count": 33,
-            "share": 0.42857142857142855
+            "share": 0.4177215189873418
           },
           "positive": {
             "ad_ids": [
@@ -2147,6 +2155,7 @@
               "google-CR16188677876969635841-8030bf5bc343",
               "google-CR08397042740243726337-d84236dbfa27",
               "cooper-445-0",
+              "hickenlooper-9643-0",
               "cooper-483-0",
               "google-CR04742165278043930625-1bce26e2b38f",
               "google-CR04742165278043930625-b1775e8fdaac",
@@ -2169,8 +2178,8 @@
               "google-CR10993849133558661121-dad10d8dba1a",
               "dccc-669396-0"
             ],
-            "count": 27,
-            "share": 0.35064935064935066
+            "count": 28,
+            "share": 0.35443037974683544
           },
           "uncertain": {
             "ad_ids": [],
@@ -2188,7 +2197,7 @@
       "all_unique_messages": 490,
       "categories_overlap": true,
       "denominator": "normalized_unique_messages",
-      "normalized_unique_messages": 47,
+      "normalized_unique_messages": 51,
       "side_tone": {
         "not_partisan": {
           "negative": {
@@ -2202,7 +2211,7 @@
               "grothman-b574d494ebff6312-0"
             ],
             "count": 7,
-            "share": 0.14893617021276595
+            "share": 0.13725490196078433
           },
           "neutral": {
             "ad_ids": [
@@ -2217,18 +2226,19 @@
               "barr-1992-0"
             ],
             "count": 9,
-            "share": 0.19148936170212766
+            "share": 0.17647058823529413
           },
           "positive": {
             "ad_ids": [
               "cassidy-35e759517bdff0d8-0",
               "barr-1387-0",
               "barr-1639-0",
+              "hinson-569-0",
               "google-CR01777644984804048897-edb81730532d",
               "bresnahan-native-122240759240111841"
             ],
-            "count": 5,
-            "share": 0.10638297872340426
+            "count": 6,
+            "share": 0.11764705882352941
           },
           "uncertain": {
             "ad_ids": [],
@@ -2242,21 +2252,21 @@
               "cfg-52126-0"
             ],
             "count": 1,
-            "share": 0.02127659574468085
+            "share": 0.0196078431372549
           },
           "neutral": {
             "ad_ids": [
               "cfg-52126-0"
             ],
             "count": 1,
-            "share": 0.02127659574468085
+            "share": 0.0196078431372549
           },
           "positive": {
             "ad_ids": [
               "cfg-52126-0"
             ],
             "count": 1,
-            "share": 0.02127659574468085
+            "share": 0.0196078431372549
           },
           "uncertain": {
             "ad_ids": [],
@@ -2267,6 +2277,8 @@
         "other_side": {
           "negative": {
             "ad_ids": [
+              "hinson-668-0",
+              "hinson-706-0",
               "google-CR11028699425911341057-cbf254e4d012",
               "flint-2046-0",
               "conroy-1243-0",
@@ -2277,16 +2289,17 @@
               "flint-2131-0",
               "flint-2146-0"
             ],
-            "count": 9,
-            "share": 0.19148936170212766
+            "count": 11,
+            "share": 0.21568627450980393
           },
           "neutral": {
             "ad_ids": [
+              "hinson-706-0",
               "google-CR11028699425911341057-cbf254e4d012",
               "google-CR09386677044319879169-7af3a24af0a4"
             ],
-            "count": 2,
-            "share": 0.0425531914893617
+            "count": 3,
+            "share": 0.058823529411764705
           },
           "positive": {
             "ad_ids": [],
@@ -2298,7 +2311,7 @@
               "google-CR09386677044319879169-7af3a24af0a4"
             ],
             "count": 1,
-            "share": 0.02127659574468085
+            "share": 0.0196078431372549
           }
         },
         "same_side": {
@@ -2307,7 +2320,7 @@
               "cfg-50973-0"
             ],
             "count": 1,
-            "share": 0.02127659574468085
+            "share": 0.0196078431372549
           },
           "neutral": {
             "ad_ids": [
@@ -2345,7 +2358,7 @@
               "flint-2146-0"
             ],
             "count": 32,
-            "share": 0.6808510638297872
+            "share": 0.6274509803921569
           },
           "positive": {
             "ad_ids": [
@@ -2366,6 +2379,7 @@
               "cassidy-0fe807e0e52358a7-0",
               "google-CR02763954400077545473-474d7721b21e",
               "cassidy-107b696383099e06-0",
+              "hinson-569-0",
               "google-CR07026585265263083521-34aa236da0c3",
               "google-CR13446214745916964865-cf1275055561",
               "collins-3604-0",
@@ -2373,6 +2387,7 @@
               "cfg-51751-0",
               "google-CR02454877901938491393-d1c10306c536",
               "flint-2038-0",
+              "hinson-746-0",
               "flint-2043-0",
               "flint-2046-0",
               "conroy-1243-0",
@@ -2383,15 +2398,15 @@
               "grothman-b574d494ebff6312-0",
               "flint-2146-0"
             ],
-            "count": 33,
-            "share": 0.7021276595744681
+            "count": 35,
+            "share": 0.6862745098039216
           },
           "uncertain": {
             "ad_ids": [
               "barr-1942-0"
             ],
             "count": 1,
-            "share": 0.02127659574468085
+            "share": 0.0196078431372549
           }
         },
         "unknown": {
@@ -2400,14 +2415,16 @@
               "cassidy-35e759517bdff0d8-0",
               "barr-1387-0",
               "barr-1639-0",
+              "hinson-569-0",
               "collins-3604-0",
               "flint-2038-0",
+              "hinson-746-0",
               "bresnahan-native-122240759240111841",
               "grothman-b574d494ebff6312-0",
               "flint-2146-0"
             ],
-            "count": 8,
-            "share": 0.1702127659574468
+            "count": 10,
+            "share": 0.19607843137254902
           },
           "neutral": {
             "ad_ids": [
@@ -2418,6 +2435,7 @@
               "google-CR13446214745916964865-cf1275055561",
               "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
               "google-CR02454877901938491393-d1c10306c536",
+              "hinson-746-0",
               "bresnahan-native-122240759240111841",
               "flint-2043-0",
               "barr-1942-0",
@@ -2428,8 +2446,8 @@
               "grothman-b574d494ebff6312-0",
               "flint-2146-0"
             ],
-            "count": 16,
-            "share": 0.3404255319148936
+            "count": 17,
+            "share": 0.3333333333333333
           },
           "positive": {
             "ad_ids": [
@@ -2443,6 +2461,7 @@
               "cassidy-0fe807e0e52358a7-0",
               "barr-1713-0",
               "cassidy-107b696383099e06-0",
+              "hinson-569-0",
               "google-CR13446214745916964865-cf1275055561",
               "ciscomani-6a3d5cd6e2b9ea5d4b3ef581-0",
               "cfg-51751-0",
@@ -2454,8 +2473,8 @@
               "barr-1992-0",
               "grothman-b574d494ebff6312-0"
             ],
-            "count": 20,
-            "share": 0.425531914893617
+            "count": 21,
+            "share": 0.4117647058823529
           },
           "uncertain": {
             "ad_ids": [],
@@ -2472,17 +2491,17 @@
   },
   "ads": 1792,
   "ads_by_status": {
-    "normalized": 124,
-    "not_run": 1561,
-    "validation_failed": 107
+    "normalized": 130,
+    "not_run": 1553,
+    "validation_failed": 109
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 127,
-    "not_run": 1776,
-    "validation_failed": 113
+    "normalized": 133,
+    "not_run": 1768,
+    "validation_failed": 115
   },
-  "claims": 876,
+  "claims": 915,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -2750,6 +2769,10 @@
         {
           "claim_id": "grothman-b574d494ebff6312-0-claims-001-011",
           "target_index": 2
+        },
+        {
+          "claim_id": "hickenlooper-9643-0-claims-001-004",
+          "target_index": 0
         }
       ],
       "neutral": [
@@ -3105,6 +3128,14 @@
         },
         {
           "claim_id": "google-CR11879751413271625729-64e058772554-claims-001-003",
+          "target_index": 1
+        },
+        {
+          "claim_id": "hickenlooper-9643-0-claims-001-007",
+          "target_index": 1
+        },
+        {
+          "claim_id": "hinson-569-0-claims-001-007",
           "target_index": 1
         }
       ],
@@ -3613,6 +3644,78 @@
         {
           "claim_id": "google-CR12322845133157433345-3f556f020dd9-claims-001-002",
           "target_index": 1
+        },
+        {
+          "claim_id": "hickenlooper-9630-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hickenlooper-9630-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hickenlooper-9630-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hickenlooper-9630-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hickenlooper-9630-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hickenlooper-9630-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hickenlooper-9630-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-668-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-668-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-668-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-668-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-668-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-668-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-668-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-668-0-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-668-0-claims-001-009",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-706-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-706-0-claims-001-002",
+          "target_index": 0
         }
       ],
       "neutral": [
@@ -3698,6 +3801,10 @@
         },
         {
           "claim_id": "google-CR17995162046747901953-6e6f7fc9240e-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-706-0-claims-001-003",
           "target_index": 0
         }
       ],
@@ -4468,6 +4575,22 @@
         },
         {
           "claim_id": "google-CR17995162046747901953-6e6f7fc9240e-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hickenlooper-9630-0-claims-001-009",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hickenlooper-9643-0-claims-001-004",
+          "target_index": 1
+        },
+        {
+          "claim_id": "hickenlooper-9643-0-claims-001-005",
+          "target_index": 1
+        },
+        {
+          "claim_id": "hickenlooper-9643-0-claims-001-006",
           "target_index": 0
         }
       ],
@@ -5271,6 +5394,58 @@
         {
           "claim_id": "grothman-b574d494ebff6312-0-claims-001-011",
           "target_index": 1
+        },
+        {
+          "claim_id": "hickenlooper-9630-0-claims-001-006",
+          "target_index": 1
+        },
+        {
+          "claim_id": "hickenlooper-9630-0-claims-001-007",
+          "target_index": 1
+        },
+        {
+          "claim_id": "hickenlooper-9643-0-claims-001-001",
+          "target_index": 1
+        },
+        {
+          "claim_id": "hickenlooper-9643-0-claims-001-002",
+          "target_index": 1
+        },
+        {
+          "claim_id": "hickenlooper-9643-0-claims-001-003",
+          "target_index": 1
+        },
+        {
+          "claim_id": "hickenlooper-9643-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-569-0-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-569-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-569-0-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-569-0-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-746-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-746-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-746-0-claims-001-004",
+          "target_index": 0
         }
       ],
       "uncertain": [
@@ -5837,6 +6012,46 @@
         {
           "claim_id": "grothman-b574d494ebff6312-0-claims-001-006",
           "target_index": 0
+        },
+        {
+          "claim_id": "hickenlooper-9643-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hickenlooper-9643-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hickenlooper-9643-0-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-569-0-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-569-0-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-569-0-claims-001-005",
+          "target_index": 2
+        },
+        {
+          "claim_id": "hinson-569-0-claims-001-006",
+          "target_index": 1
+        },
+        {
+          "claim_id": "hinson-746-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-746-0-claims-001-002",
+          "target_index": 1
+        },
+        {
+          "claim_id": "hinson-746-0-claims-001-002",
+          "target_index": 2
         }
       ],
       "neutral": [
@@ -6347,6 +6562,10 @@
         {
           "claim_id": "grothman-b574d494ebff6312-0-claims-001-012",
           "target_index": 0
+        },
+        {
+          "claim_id": "hinson-746-0-claims-001-004",
+          "target_index": 1
         }
       ],
       "positive": [
@@ -6729,11 +6948,27 @@
         {
           "claim_id": "grothman-b574d494ebff6312-0-claims-001-011",
           "target_index": 0
+        },
+        {
+          "claim_id": "hickenlooper-9643-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-569-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "hinson-569-0-claims-001-004",
+          "target_index": 1
+        },
+        {
+          "claim_id": "hinson-569-0-claims-001-005",
+          "target_index": 1
         }
       ],
       "uncertain": []
     }
   },
-  "targets": 1049,
+  "targets": 1103,
   "version": "local-ad-claims-4"
 }
