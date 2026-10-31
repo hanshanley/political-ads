@@ -3,6 +3,49 @@
   "scope": "Individually reviewed public ad words, not complete publisher discovery or semantic portrayal review.",
   "reviews": [
     {
+      "source": "aff-wi7-wpr",
+      "record_id": "20260807",
+      "source_url": "https://www.wpr.org/news/attack-ad-calls-gop-house-candidate-michael-alfonso-nepo-baby",
+      "retrieval_url": "https://www.wpr.org/news/attack-ad-calls-gop-house-candidate-michael-alfonso-nepo-baby",
+      "format": "html",
+      "published": "2026-08-07",
+      "release_title": "Attack ad calls GOP House candidate Michael Alfonso ‘nepo baby’",
+      "heading_selector": "h1.wp-block-post-title",
+      "publication_selector": "time",
+      "publication_date_format": "%B %d, %Y",
+      "candidate_id": "H6WI07223",
+      "media_url": "https://platform.adimpact.com/viewer/91fbef8e-97fd-45e9-a186-4286d2cbb358",
+      "content_sha256": "d4842364999ced5ca91621d7332d24b25fb59ce1054bbfd7c4c11afd1850bde0",
+      "phase": "primary",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Michael Alfonso",
+        "American Future Fund Political Action",
+        "the narrator states",
+        "captured by tracking service AdImpact",
+        "primary"
+      ],
+      "passages": [
+        "And he got 200 grand more from lobbyists and swamp interests",
+        "Vote no on nepo baby Michael Alfonso. He’s not entitled to our congressional seat."
+      ],
+      "publisher_credit": "Rich Kremer, Wisconsin Public Radio.",
+      "reuse_basis": "Retain only the two expressly attributed narrator quotations, eleven and fourteen words, twenty-five words combined, unchanged and in source order, for noncommercial comparative research with author/publisher/source credit. Exclude all other article quotations, reporting, candidate responses, photographs, financial records and original media. Do not add terminal punctuation to the first fragment. No blanket reuse license or authorization to publish either edition is asserted.",
+      "alignment_evidence": [
+        {
+          "url": "https://americanfuturefund.com/pac/",
+          "body_sha256": "5720bc6f7b1c4d6e56e8e4714f9388354e8fe1f359dfaa610f66e453291f2b10",
+          "basis": "The actual public PAC page identifies American Future Fund Political Action as a federal political committee helping elect candidates reflecting its values, uses conservative/free-market positioning, names this exact PAC in its page payer disclosure and explicitly distinguishes it from American Future Fund. This is organization alignment, not inspection of this ad's legal payer card."
+        },
+        {
+          "url": "https://www.influencewatch.org/political-party/american-future-fund-political-action/",
+          "body_sha256": "4edb2e89900cce8f18f773776877abc5feeae803383f4a5349a03be2774e2110",
+          "basis": "The actual independent exact-PAC profile describes support for right-of-center candidates, legally separates the PAC from American Future Fund, reports Republican election activity and individually links the PAC's own page. The historical profile is corroboration, not proof of a 2026 ad expenditure, founding date or FEC party designation."
+        }
+      ],
+      "attribution_basis": "Retained WPR HTML SHA256 d4842364999ced5ca91621d7332d24b25fb59ce1054bbfd7c4c11afd1850bde0 binds a unique h1.wp-block-post-title, Rich Kremer author metadata and one time displaying August7,2026 with datetime2026-08-07T17:58:52-05:00. article:published_time2026-08-07T22:58:52+00:00 agrees. This is publisher observation, not independently verified first release, upload, airing or paid delivery. WPR expressly attributes the anti-Alfonso ad to American Future Fund Political Action and its two selected quotations to the narrator; its captured by tracking service AdImpact anchor individually links viewer91fbef8e-97fd-45e9-a186-4286d2cbb358. Preserve the eleven- and fourteen-word fragments in source order. Exact official H6WI07223/C00924902, ALFONSO,MICHAEL, REP, House, WI-07,2026 and principal P/H/REP verify the Republican target, NOT the outside-group advertiser or a supported Republican candidate. Explicit GOP-primary context supports primary phase; do not describe this as Republican-versus-Democratic general-election speech. Exact official C00449926 is AMERICAN FUTURE FUND POLITICAL ACTION, U/W, with blank party and candidate fields; R is independently corroborated organization alignment, not FEC party registration, target-party inference, publisher ideology or a disputed campaign allegation. Separate nonprofit AMERICAN FUTURE FUND/C90011677, U/I, is not substituted for this PAC. The PAC's own actual public page and independent exact-PAC research profile, hashes and limits above, support conservative/Republican alignment. WPR's ad attribution does not independently verify a sole legal payer card. The article's June2 wording and uninspected filing link do not establish this long-existing PAC's founding. No donor, expenditure, lobbyist, entitlement or nepotism allegation is adopted as a verified fact or semantic label. No WisPolitics, AdImpact, docquery.fec.gov, original media, caption, API, credential, catalog or denied-provider request is made. Retain only actual public bodies in replay storage with empty metadata, without cached response headers. A complete preceding-corpus check must find neither this individual media identity nor this normalized exact message. Partial quotation and semantically unreviewed; all preceding ad/review objects, native reviews, media backlog, aliases, rosters and protected semantic inputs remain unchanged."
+    },
+    {
       "source": "ngb-perry-breitbart",
       "record_id": "20261027",
       "source_url": "https://www.breitbart.com/politics/2026/10/27/democrat-janelle-stelsons-former-tv-station-refuses-to-air-ad-highlighting-allegation-she-exposed-herself-to-child/",

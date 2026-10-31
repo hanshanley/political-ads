@@ -10,6 +10,108 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Wisconsin WI-07 Republican-primary PAC narrator recovery
+
+The new snapshot is
+**d2a20a2f45dbdd479998915e56dd82106e17d1d77c3c5bdab85a10320c747141**:
+**1,915 acquired / 1,876 English**, alignment **D 1,226 / R 611 /
+other 31 / unknown 8**, exact messages **D 1,204 / R 574 / other 31 /
+unknown 8**. English House coverage is **D 698 / R 233 / other 19 /
+unknown 3**; non-Snap House is **D 222 / R 232**, while Snap remains
+**D 476 / R 1 / other 19 / unknown 3**. These are acquired-source
+counts, not national ad volume, spending or matched-race estimates.
+The historical recovery sections below retain their preceding snapshots.
+
+WPR's August 7 report by **Rich Kremer**, uniquely titled
+**Attack ad calls GOP House candidate Michael Alfonso 'nepo baby'**,
+explicitly attributes two quotations to the ad narrator and individually
+links AdImpact viewer **91fbef8e-97fd-45e9-a186-4286d2cbb358** through
+its tracking-service anchor. Retained public response SHA-256 is
+`d4842364999ced5ca91621d7332d24b25fb59ce1054bbfd7c4c11afd1850bde0`.
+One visible time displays August 7, 2026, with datetime
+**2026-08-07T17:58:52-05:00**; publication metadata
+**2026-08-07T22:58:52+00:00** agrees. This is the publisher's
+observation, not verified first release, upload, airing or paid delivery.
+Retain only the **eleven- and fourteen-word narrator quotations**,
+**25 literal words combined**, unchanged and in source order. The
+first fragment has no terminal punctuation; none is supplied. Ordinary
+reporting, other quotations and candidate responses are excluded.
+
+The report identifies **American Future Fund Political Action** as
+advertiser. Exact cached official **C00449926** has this name,
+designation **U**, type **W**, and **blank party and candidate fields**.
+It is not the separate **AMERICAN FUTURE FUND / C90011677**, U/I.
+The PAC's own public `/pac/` page, response SHA-256
+`5720bc6f7b1c4d6e56e8e4714f9388354e8fe1f359dfaa610f66e453291f2b10`,
+identifies the federal committee, conservative/free-market positioning,
+its own page payer and separation from the nonprofit. The independent
+InfluenceWatch exact-PAC profile, SHA-256
+`4edb2e89900cce8f18f773776877abc5feeae803383f4a5349a03be2774e2110`,
+corroborates right-of-center candidate support and Republican electoral
+activity and individually links that primary PAC page. These establish
+**organization alignment R**, not a FEC Republican-party designation,
+inspection of this creative's sole legal payer, a 2026 expenditure or
+the PAC's founding. Neither target party nor publisher ideology is
+used as advertiser-alignment evidence.
+
+Target identity is exact **H6WI07223 / C00924902**, **ALFONSO,
+MICHAEL**, REP, House, WI-07, 2026, principal P/H/REP. This verifies
+the Republican target, **not a supported candidate or the ad sponsor**.
+Explicit GOP-primary context establishes **primary**, not general,
+phase. This Republican-aligned ad targets another Republican; it is
+not presented as a Republican-versus-Democratic attack or silently
+labeled opponent-negative. Its allegations remain literal speech,
+not verified facts. New semantic judgments remain **unreviewed**,
+not neutral. The article's June 2 filing wording is not used as a
+verified founding date. No linked WisPolitics, AdImpact, docquery,
+financial record, original media, caption, API or denied-provider
+request is made.
+
+An immutable **1,914 acquired / 1,875 English / 68 release-review**
+baseline precedes acquisition. Every preceding acquired and analyzed
+object, all 68 preceding review objects and their exact review-file
+suffix bytes are preserved. All **17 protected input files** are
+byte-identical, including **33 native reviews / 353 backlog leads**,
+aliases, roster and semantic inputs. The preceding corpus contains
+neither this original-media identity nor its exact normalized message.
+Only retained public response bodies enter replay storage; newly
+written metadata is empty and no cached response headers are copied.
+Network-forbidden isolated replay uses **one WPR body** and reproduces
+the complete **563-object written corpus**, including every old record.
+The two PAC-alignment bodies remain separately hash-verified evidence.
+
+Reproduction uses the existing collector, not a special text parser:
+`.venv/bin/python -m political_ads.cli collect --source aff-wi7-wpr
+--until 2026-10-30 --offline`, followed by `parquet`, `build`, `validate`
+and `audit-strategy`, then the frontend production build. Fresh
+publisher retrieval must match the pinned body hash before the existing
+review can be used. Complete JSON/gzip/CSV exports, **1,915-row
+Parquet**, all **11 PNG sets** across research/frontend/production
+copies, report and both unpublished editions reconcile. The independent
+strategy audit verifies **20 metric groups / 10 chart rows**. Frontend
+unit tests **17**, lint/type/build and all **8 desktop/mobile browser
+tests** pass. All **437 backend tests**, backend lint/format and
+**34 mocked discovery-guard checks** pass. Whitespace checks allow
+the existing CSV writer's CRLF record endings; no actual trailing-space
+errors remain. Strategy and review-coverage PNGs were visually inspected.
+No website, Substack or host integration is published.
+
+The preceding undated Millsap research commit
+**ee58c923b988d2074f707328e9278268b520bb47**, actual concurrent parent
+**94652af43584f18a21a0813089d523ee101a8c1f**, has exact remote
+three-path/Hans-only proof and independently verified exact CI
+**41246981561**, completed/success with **all 13 successful steps**.
+Millsap remains undated in the preserved backlog; this Wisconsin
+acquisition does not assign that creative a date.
+
+Scheduled expansion continues without duplicating work. Next uncovered
+WI-07 campaign leads include **Jessi Ebben / H0WI03159 / C00736108**,
+**Paul Wassgren / H6WI07215 / C00924548** and **Kevin Hermening /
+H6WI07249 / C00932335**. Cached registration is a lead, not nomination
+or ad evidence; require individual publication, literal ad words and
+advertiser/original association before admission. Standing provider
+holds continue; both editions remain unpublished.
+
 ## Expanded House discovery and exact Pennsylvania verification
 
 Pennsylvania research commit

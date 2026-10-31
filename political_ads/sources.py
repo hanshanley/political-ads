@@ -147,6 +147,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "aff-wi7-wpr",
+        "https://www.wpr.org",
+        "American Future Fund Political Action (publisher-attributed; ad payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="WI-07",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "ngb-perry-breitbart",
         "https://www.breitbart.com",
         "No Going Back PAC (publisher-attributed; payer unverified)",
