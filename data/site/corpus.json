@@ -17374,6 +17374,98 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Actual cached full HTML SHA256 719456b0e7de5a55c55a0d296074eb15ee4d90c46827e5d68eea27b574b91fe8, body postid-141905, unique h1.fl-heading and the unique visible publication paragraph bind the individual report. Visible July22/11:51 a.m. ET agrees with article:published_time and NewsArticle datePublished 2026-07-22T15:51:54+00:00; modification 2026-07-22T18:36:21+00:00 is separate. The actual fixed date-format suffix preserves the visible Updated date and time notation, not an inferred first-release date. One uniquely matched wp-block-paragraph expressly attributes both ordered quotations to Murphy in the ad; preserve the first comma, second period and curly contractions. The introductory Not Done anchor and sole individual YouTube iframe independently bind KgRYIA88I_Y. The report previews the ad on July22 and says broadcast/cable airing will begin Thursday July23; the acquired date is the publisher's July22 report, not invented July23 first airing, upload or paid delivery. Exact saved H6FL02364/C00938860 identifies MURPHY, LUKE, REP, House, FL-02, 2026; independently cached official principal LUKE MURPHY FOR CONGRESS is P/H/REP. Principal registration and publisher attribution do not establish an inspected creative payer or authorization. Existing full-name recognition works without roster or alias changes. Primary phase follows the explicit Republican nomination/August18 primary, not July alone. Later unqualified Murphy statements, reporter summaries of priorities, fundraising and separate advertising banners are excluded; no homepage biography, press statement, title or approval disclaimer pads the 25 substantive words. No original media/caption/API request or new semantic judgment.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6FL02364",
+          "district": "02",
+          "name": "MURPHY, LUKE",
+          "office": "H",
+          "party": "REP",
+          "state": "FL"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "luke-murphy-flvoice-141905-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/KgRYIA88I_Y?si=srcrHB_IXJBdpoJD"
+      ],
+      "message_id": "9b52e66b4f8bbd40621c12b61a19183f9d476f3dcbe29d852f873c1c4346d7ef",
+      "observed": "2026-10-31",
+      "phase": "primary",
+      "placement": "campaign_release",
+      "published": "2026-07-22",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "FL-02",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6FL02364"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Actual cached full HTML SHA256 719456b0e7de5a55c55a0d296074eb15ee4d90c46827e5d68eea27b574b91fe8, body postid-141905, unique h1.fl-heading and the unique visible publication paragraph bind the individual report. Visible July22/11:51 a.m. ET agrees with article:published_time and NewsArticle datePublished 2026-07-22T15:51:54+00:00; modification 2026-07-22T18:36:21+00:00 is separate. The actual fixed date-format suffix preserves the visible Updated date and time notation, not an inferred first-release date. One uniquely matched wp-block-paragraph expressly attributes both ordered quotations to Murphy in the ad; preserve the first comma, second period and curly contractions. The introductory Not Done anchor and sole individual YouTube iframe independently bind KgRYIA88I_Y. The report previews the ad on July22 and says broadcast/cable airing will begin Thursday July23; the acquired date is the publisher's July22 report, not invented July23 first airing, upload or paid delivery. Exact saved H6FL02364/C00938860 identifies MURPHY, LUKE, REP, House, FL-02, 2026; independently cached official principal LUKE MURPHY FOR CONGRESS is P/H/REP. Principal registration and publisher attribution do not establish an inspected creative payer or authorization. Existing full-name recognition works without roster or alias changes. Primary phase follows the explicit Republican nomination/August18 primary, not July alone. Later unqualified Murphy statements, reporter summaries of priorities, fundraising and separate advertising banners are excluded; no homepage biography, press statement, title or approval disclaimer pads the 25 substantive words. No original media/caption/API request or new semantic judgment.",
+            "candidate_id": "H6FL02364",
+            "completeness": "partial_quotation",
+            "content_sha256": "719456b0e7de5a55c55a0d296074eb15ee4d90c46827e5d68eea27b574b91fe8",
+            "format": "html",
+            "heading_selector": "h1.fl-heading",
+            "media_url": "https://www.youtube.com/embed/KgRYIA88I_Y?si=srcrHB_IXJBdpoJD",
+            "passages": [
+              "In 2006, an IED in Sadr City, Baghdad took my right leg,",
+              "Forty-one surgeries later, and I’m still standing, because giving up wasn’t in me."
+            ],
+            "phase": "primary",
+            "publication_date_format": "Published %b. %d, %Y, 11:51 a.m. ET | Updated Jul. 22, 2026",
+            "publication_selector": ".uabb-infobox-text > p:-soup-contains('Published Jul. 22, 2026, 11:51 a.m. ET')",
+            "published": "2026-07-22",
+            "publisher_credit": "Kennedy Owens, Florida’s Voice.",
+            "record_id": "141905",
+            "release_title": "Luke Murphy to launch first TV ad in Florida’s 2nd Congressional District race",
+            "required_context": [
+              "Kennedy Owens",
+              "Republican congressional candidate Luke Murphy",
+              "The ad, titled “ Not Done ,”",
+              "Murphy says in the ad.",
+              "Murphy is seeking the Republican nomination in Florida’s 2nd Congressional District.",
+              "Florida’s primary election is scheduled for Aug. 18."
+            ],
+            "retrieval_url": "https://flvoicenews.com/luke-murphy-to-launch-first-tv-ad-in-floridas-2nd-congressional-district-race/",
+            "reuse_basis": "Retain only these two unmodified ad-speech excerpts, 25 whitespace tokens total, for noncommercial comparative research with author/publisher/source credit, not the article, reporting, photograph or embedded media. The actual publisher footer reserves rights; no blanket license, licensed-catalog consent or host-publication authorization is asserted. No original media is redistributed.",
+            "source": "luke-murphy-flvoice",
+            "source_url": "https://flvoicenews.com/luke-murphy-to-launch-first-tv-ad-in-floridas-2nd-congressional-district-race/"
+          },
+          "text": "In 2006, an IED in Sadr City, Baghdad took my right leg,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "Forty-one surgeries later, and I’m still standing, because giving up wasn’t in me."
+        }
+      ],
+      "source": "luke-murphy-flvoice",
+      "source_hash": "719456b0e7de5a55c55a0d296074eb15ee4d90c46827e5d68eea27b574b91fe8",
+      "source_record_id": "141905",
+      "source_url": "https://flvoicenews.com/luke-murphy-to-launch-first-tv-ad-in-floridas-2nd-congressional-district-race/",
+      "sponsor": "Luke Murphy campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "FL",
+      "text": "In 2006, an IED in Sadr City, Baghdad took my right leg,\nForty-one surgeries later, and I’m still standing, because giving up wasn’t in me.",
+      "title": "Luke Murphy to launch first TV ad in Florida’s 2nd Congressional District race"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Credit: Amy Curtis, Townhall, July 22, 2026. The report explicitly identifies a newly released NRCC paid digital advertisement targeting Democratic nominee Amish Shah in AZ-01 and names his Republican opponent Jay Feely. Exact saved FEC H4AZ01194 / C00836502, DEM, House, AZ-01, establishes the target's federal identity; advertiser alignment/type follow NRCC, R / party, not Shah's Democratic registration. The embedded individual YouTube ad occurs immediately before the paragraph explicitly quoting what the ad says. Its two literal source-ordered passages total 66 words, retaining the opening terminal comma, ASCII apostrophe and printed ellipsis. They are not independently certified as a complete script. Other Shah speeches and social clips, campaign-night commentary, the reporter's assessments, and the following NRCC spokesperson statement are excluded. July 22 is the publisher-report date and the report's asserted release day, not independently inspected first paid delivery. Exact whole decoded HTML SHA-256, unique primary-article h1, publication date, advertiser/candidate/contest context, individual original association and literal passage order remain bound. Neither YouTube, a caption provider nor any denied publisher or licensed catalog was requested. Closing payment was not independently inspected. The new message remains semantically unreviewed.",
       "candidate_mentions": [
         {
@@ -48293,6 +48385,22 @@
       "source": "letlow",
       "state": "ok",
       "url": "https://www.julialetlow.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "luke-murphy-flvoice",
+      "state": "partial",
+      "url": "https://flvoicenews.com"
     },
     {
       "ads_with_text": 1,

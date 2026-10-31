@@ -10,6 +10,124 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Luke Murphy Florida House quoted-ad expansion
+
+**luke-murphy-flvoice-141905-0** retains **two literal passages /
+25 whitespace tokens** from Kennedy Owens's Florida's Voice report.
+This is one **partial, semantically unreviewed** Republican FL-02
+primary ad, **Not Done**, not a complete transcript. Only the uniquely
+attributed ad paragraph supplies the two excerpts, **12 + 13 tokens**.
+The first comma, second period and curly contractions are preserved.
+Later unqualified statements and summaries of campaign priorities are
+not ad words and do not pad the sample.
+
+Actual source:
+`https://flvoicenews.com/luke-murphy-to-launch-first-tv-ad-in-floridas-2nd-congressional-district-race/`.
+Full HTML SHA-256:
+`719456b0e7de5a55c55a0d296074eb15ee4d90c46827e5d68eea27b574b91fe8`.
+Actual **postid-141905**, the unique **h1.fl-heading**, visible publication
+paragraph and its unique attributed quotation paragraph bind the report.
+Visible **July 22, 2026, 11:51 a.m. ET** agrees with
+**article:published_time / NewsArticle datePublished** at
+**2026-07-22T15:51:54+00:00**. Modification at **18:36:21 UTC** is separate.
+The stored date format retains the actual fixed time/Updated suffix.
+The report previews the ad on July 22 and announces broadcast/cable
+airing for **Thursday, July 23**. The acquired date is the publisher's
+**July 22 report**, not independently verified first airing, upload or
+paid delivery.
+
+The introductory **Not Done** anchor and sole individual YouTube iframe
+both identify **KgRYIA88I_Y**. No original media, caption or API was
+requested. Exact saved **H6FL02364 / C00938860**, **MURPHY, LUKE**,
+REP, House, FL-02, 2026, agrees with independently cached official
+principal **LUKE MURPHY FOR CONGRESS**, P/H/REP. Existing full-name
+recognition requires no alias or roster edit. Primary phase follows
+the explicit Republican nomination / August 18 primary, not July alone.
+Neither principal registration nor publisher attribution establishes
+an inspected creative payer or authorization. Credit **Kennedy Owens /
+Florida's Voice**; these selected speech excerpts do not establish a
+blanket article/media license or authorization to publish either edition.
+
+Reproduce collection with:
+
+```sh
+.venv/bin/python -m political_ads.cli collect --source luke-murphy-flvoice --offline --until 2026-10-30
+.venv/bin/python -m political_ads.cli parquet
+.venv/bin/python -m political_ads.cli build --offline
+.venv/bin/python -m political_ads.cli analyze --offline
+.venv/bin/python -m political_ads.cli validate --offline
+.venv/bin/python -m political_ads.cli audit-strategy --offline --output data/raw/house-luke-murphy-strategy-audit.json
+```
+
+Offline source verification requires the locally preserved, hash-bound
+actual response in **data/raw/http**, not just an online search snippet.
+Final locally verified snapshot:
+`05502a6f4e8ddc476cc5b897999ca350774cb3faad408ad2a62b0942d6e86cd7`.
+There are **1,902 acquired / 1,863 English** records: **1,226 D / 598 R**,
+31 other and eight unresolved. Exact English messages are **1,204 D /
+561 R**. English House coverage is **698 D / 220 R**, including
+**222 D / 219 R non-Snap** and **476 D / one R Snap**. These are
+source-collection counts, not national ad volume or matched-race coverage.
+All **227 affected Python tests**, **17 frontend tests**, **seven browser
+cases**, lint, formatting, typecheck and builds pass. The independent
+audit reconciles **twenty metric groups / ten chart rows**. Complete
+analysis/browser/production JSON/gzip/CSV, all **1,902 Parquet rows**
+and eleven visually inspected PNG sets reconcile. An isolated,
+socket-forbidden **one-response 549-to-550 written replay** reproduces
+all objects and source states; additional literal quotation/date/
+original/principal/raw-review-byte assertions pass.
+No collector or labeling logic changed. The immutable pre-edit baseline
+preserves **1,901 acquired / 1,862 analyzed objects**, all **55 preceding
+review objects and raw suffix bytes**, seventeen protected inputs, all
+aliases and the native backlog. Concurrent claims work and all provider /
+publication holds remain independent and protected.
+
+Expanded public-publisher metadata queries for television, radio and
+campaign spots were discovery only, not acquisitions or exhaustive
+publisher coverage. Three actual American Journal News reports were
+excluded: the October 14 healthcare report concerns **Senate ads**,
+the September 3 Flint report quotes a **radio interview**, and the May 21
+Lawler report supplies only a **ten-token quotation** from official,
+taxpayer-funded constituent advertising, not sufficient campaign-ad text.
+Their actual HTML SHA-256 values, in that order, are:
+`a5e1c02d28b6adb753c81041a560a149a4cbd50c2965859dac5ee9b1d8f5cbdc`,
+`cdba454c6f06576aaedb91dd0145a54e6ac9254f996447e2a85473cf61457eba`,
+`987aa688cb42d9d242de896e620b3504127b0e03c76bdea3c349eb7680c454d5`.
+Florida's Voice's actual May 19 Steele **Forged** announcement contains
+press statements and brief attributed descriptions, not qualifying
+literal ad speech or an individual original; HTML SHA-256:
+`26e2c0bae0b21e22e6584b440df698f954b7bc3f2aa54118e2261a124f29f8c1`.
+No restricted linked catalog was requested. Existing Crank report/frame
+exclusions below were checked rather than duplicated.
+
+Next independently inspected Florida leads remain separate from this
+acquisition. Florida's Voice's **August 4 Ben Butler / Honesty in
+Washington** report supplies two explicitly attributed substantive
+passages, **nineteen tokens**, and individual original **zsLEwiXlWFQ**;
+actual HTML SHA-256:
+`ab309fc6bb64e97adf8d95be1a108af9c9d43fa41469b6b15812f747db6ab86b`.
+Its July 20 first-ad report links **fAkoU0McJBw** but contains unqualified
+statements rather than verified ad narration; HTML SHA-256:
+`e120dd476bf2b0fa15a37ab63fe5a4a27495deb3e6610f8148eeeea6d076d193`.
+The actual campaign **/news** index binds a dated August 4 card to
+**/8-04-ben-butler-releases-new-ad--honesty-in-washington**. That individual
+release independently quotes the speech, but its browser title incorrectly
+describes fundraising, it has no h1, and it supplies no individual
+original. Do not treat the browser title as the ad title. Actual index /
+release HTML SHA-256:
+`23850f83cf2e964f8117d501a068cad53dfacd99e8ac902cb0696ca35226e905` /
+`34dcddd97f918890725b92e878064da299be0406877f7eda4323d3ce8dcec6e1`.
+Exact saved **H6FL09278 / C00951053** is **BUTLER, BENJAMIN BEN**, REP,
+House, FL-09, 2026. These leads are not yet acquired in this snapshot.
+The separate Homegrown Conservatives PAC **No Bull** page exposes a
+relative MP4 but explicitly labels itself a **design concept**, not
+affiliated with, authorized by, or paid for by a campaign/committee.
+Actual HTML SHA-256:
+`39335bdbd8fa7ce9f7e967106f6ba3a3f8e67cbe852585b76458818ea4eb4a94`.
+Its footer and August 18 call-to-action do not overcome that provenance
+limitation; no video was requested or ad admitted. Continuing acquisition
+and schedule #1 remain active.
+
 ## Luna Florida House quoted-ad expansion
 
 **luna-yahoo-100000059-0** retains **two literal voiceover passages /
@@ -73,6 +191,9 @@ inspected and match their production copies. An isolated socket-forbidden
 **one-response 548-to-549 written replay** reproduces all objects and
 source states. Additional literal paragraph/date/original/principal
 assertions pass. No new neutral, sentiment or strategy judgment is inferred.
+Research commit **c3cc121819a8abdd0ab56aa80089fbf5fafd8a3b** was pushed
+Hans-only to main. Exact CI **41231060616** completed successfully;
+all thirteen steps independently verified successful.
 
 ## Broader House discovery: Arkansas, Arizona and Florida
 

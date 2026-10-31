@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "luke-murphy-flvoice",
+        "https://flvoicenews.com",
+        "Luke Murphy campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="FL-02",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "luna-yahoo",
         "https://www.yahoo.com",
         "Anna Paulina Luna campaign (publisher-reported; payer unverified)",
