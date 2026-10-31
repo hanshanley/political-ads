@@ -10,7 +10,120 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Max Miller Ohio House quoted-ad expansion
+## Strada and Elijah Florida House quoted-ad expansion
+
+Two additional Republican House ads are acquired from actual Michelle
+Vecerina / Florida's Voice reports, **partial and semantically unreviewed**.
+**strada-flvoice-140133-0**, FL-11, retains one literal **22-token**
+quotation explicitly attributed to Strada in the advertisement. Its
+terminal comma is preserved; the title **Full of Crap** and unqualified
+campaign statements are not extra speech. Phase remains **unknown**:
+the June report does not explicitly establish a primary or general phase.
+**elijah-badbet-flvoice-146126-0**, FL-07, retains **23 tokens / two
+excerpts**, **9 + 14**: the full first quoted passage and only the first
+fourteen literal tokens of the longer second quotation. The latter ends
+at the published **state-owned bank** sentence fragment; eighteen
+remaining tokens are excluded, not silently repaired. Both are separate
+segments, not a continuous or complete transcript. Explicit Republican
+nominee, Democratic opponent Bale Dalton and November general-election
+context establish Elijah's **general** phase.
+
+Actual Strada report:
+`https://flvoicenews.com/conservative-businessman-joe-strada-drops-1m-ad-blitz-following-5m-self-fund-in-florida-congressional-race/`.
+Full HTML SHA-256:
+`5cd30b027cca223599a20acfb19be4bd6314dbc8443f44875e14bc8368fcc3d0`.
+Actual **postid-140133**, unique **h1.fl-heading**, author and visible
+**June 16, 2026, 1:59 p.m. ET** bind the report; publication metadata is
+**2026-06-16T17:59:04+00:00**, modification **17:59:05 UTC**. The actual
+**advertisement** anchor individually binds **Vimeo 1201803145** and
+retains its public privacy path/query. No Vimeo iframe is invented.
+Exact unchanged FEC **H6FL11332 / C00952713**, **STRADA, JOE**, REP,
+House, FL-11, 2026, agrees with official cached principal **JOE STRADA
+FOR CONGRESS**, P/H/REP.
+
+Actual Elijah report:
+`https://flvoicenews.com/ryan-elijah-ad-targets-bale-dalton-over-investments-in-communist-china-linked-companies/`.
+Full HTML SHA-256:
+`2fee0a17e38f4a9aa91fe534d569126a7e4389d65bcfeaed2a1b32c3026d5343`.
+Actual **postid-146126**, unique **h1.fl-heading**, author and visible
+**October 14, 2026, 11:10 a.m. ET** bind the report; publication metadata
+is **2026-10-14T15:10:17+00:00**, modification **15:10:19 UTC**.
+The actual sole non-tracking Vimeo iframe individually binds **1235784178**
+with its public **h=e6edc710e9** query unchanged. Exact unchanged FEC
+**H6FL07231 / C00948661**, **ELIJAH, RYAN**, REP, House, FL-07, 2026,
+agrees with official cached principal **RYAN ELIJAH FOR CONGRESS**, P/H/REP.
+
+Neither provider, player, media, caption nor API was requested; existing
+Vimeo and other provider holds remain. Dates are publisher observations,
+not independently verified first airing, upload or paid delivery. The
+principals verify candidate identity, not an inspected creative payer or
+authorization. Existing name recognition works without roster, alias or
+collector-logic edits. Investment allegations are advertiser speech, not
+independent findings. Credit **Michelle Vecerina / Florida's Voice**;
+no blanket article/media license or authorization to publish either edition
+is asserted.
+
+```sh
+.venv/bin/python -m political_ads.cli collect --source strada-flvoice --source elijah-badbet-flvoice --offline --until 2026-10-30
+.venv/bin/python -m political_ads.cli parquet
+.venv/bin/python -m political_ads.cli build --offline
+.venv/bin/python -m political_ads.cli analyze --offline
+.venv/bin/python -m political_ads.cli validate --offline
+.venv/bin/python -m political_ads.cli audit-strategy --offline --output data/raw/house-strada-elijah-strategy-audit.json
+```
+
+The two actual hash-bound responses are preserved in **data/raw/http**.
+Locally verified snapshot
+`50c9f3a06bc422e365034dc18a9531ac5b6eac7dfd96ebc6f2fd458065685686`
+contains **1,906 acquired / 1,867 English** records: **1,226 D / 602 R**,
+31 other and eight unresolved. Exact English messages are **1,204 D /
+565 R**. English House coverage is **698 D / 224 R**, including
+**222 D / 223 R non-Snap** and **476 D / one R Snap**. These are
+source-collection counts, not national prevalence or matched-race coverage.
+All **227 affected Python tests**, **17 frontend tests**, **seven browser
+cases**, lint, formatting, typecheck and builds pass. Complete
+analysis/browser/production JSON/gzip/CSV, all **1,906 Parquet rows** and
+eleven visually inspected PNG sets reconcile; the independent audit
+reconciles **twenty metric groups / ten chart rows**. An isolated
+socket-forbidden **two-response 552-to-554 written replay** reproduces all
+objects/source states with the original October 31 observation.
+Supplemental literal quotation/date/author/phase/Vimeo/principal/alias/
+review-byte/production assertions pass. Every preceding **1,904 acquired /
+1,865 analyzed object**, all **58 preceding review objects and raw suffix
+bytes**, the complete alias list and seventeen protected inputs remain
+unchanged. Concurrent claims work, frozen semantic judgments and every
+publication/provider hold are preserved.
+
+Expanded routes that do not yield speech remain excluded. The Hill's
+Sheahan campaign-video report returned **403** and is paused without retry
+or mirror. Flores's official news index links actual **December 22, 2025**
+and **November 14, 2025** ad PDFs to **8P_XQ3QqGcA** and **whNJZ7RlJ8k**;
+their titles and links do not supply qualifying ad quotations and are not
+counted. The actual October 26 Texas Tribune TX-34 report supplies only
+four billboard words, explicitly paid for by **Gonzalez**, not Flores.
+Its stylistic imitation of a Flores ad does not change the advertiser;
+no billboard or video link is acquired as ad text. The Republican House
+coverage gap remains unresolved, not explained away by non-Snap counts.
+
+Concrete next leads are preserved, **not yet acquired**. The actual
+**At Every Turn** report supplies one selected **18-token** quotation,
+HTML SHA-256
+`aefb05b6a62255022e2a03e4ac55551ccc64394ce9c6bc9a7d756bb610028761`,
+and individual **VkktThIa-iM** iframe with its actual start query.
+The actual sheriff-support report supplies one selected **19-token**
+Chitwood quotation, HTML SHA-256
+`8b926320d3a459fe09fee00a60e7f768b1aa6e054f5e4585f051f36a57e19314`,
+and two individually linked campaign statuses, **2107813401624023070**
+and **2107862672884834312**. Their respective actual URLs are
+`https://flvoicenews.com/gop-congressional-candidate-ryan-elijah-rolls-out-ad-campaign-targeting-grocery-costs-and-liberal-tax-policies/`
+and
+`https://flvoicenews.com/ryan-elijah-highlights-support-from-chitwood-lemma-and-ivey-2-appear-in-new-ad/`.
+Dates, paragraph attribution, phase and which status actually associates
+the selected ad passage still require review; no extra creative is inferred
+from two social links. A guessed earlier Elijah slug returned **404** and
+was not retried; discovery resumed with these actual indexed article URLs.
+
+## Previous Max Miller Ohio House quoted-ad expansion
 
 **miller-yahoo-161749271-0** retains **two noncontiguous literal excerpts /
 sixteen whitespace tokens**, **9 + 7**, from Jennifer Bendery's October 16
@@ -81,6 +194,12 @@ preserves every **1,903 preceding acquired / 1,864 analyzed object**, all
 **57 preceding review objects and raw suffix bytes**, seventeen protected
 inputs, the complete alias list and native backlog. Concurrent claims work,
 frozen semantic judgments and publication/provider holds remain protected.
+
+Committed and pushed as Hans Hanley without Copilot attribution in
+**575e7e9b396d8cf1034595e4c42d81f8c14add22**, preserving concurrent claims
+parent **57295baa3b2b19c8f1b83b89277bf33d0e0001be**. Exact CI
+**41234862080** completed successfully for that exact SHA; all thirteen
+steps passed.
 
 Further NC primary discovery remains **unacquired**. The February 15 Daily
 Haymaker Asa Buck report links **hLfHqDxPufw** but supplies no qualifying
