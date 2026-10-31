@@ -458,14 +458,14 @@
   {
     "ad_id": "dccc-668514-0",
     "block_id": "dccc-668514-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for Bryan Steil: \\\"Bryan Steil\\\" is absent from unit 3. Exact source: \\\"His stock portfolio? One of Congress’s best.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-668538-0",
     "block_id": "dccc-668538-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-668664-0",
@@ -476,8 +476,8 @@
   {
     "ad_id": "dccc-668698-0",
     "block_id": "dccc-668698-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for FITZPATRICK, BRIAN: \\\"He\\\" is absent from unit 6. Exact source: \\\"Votes like ‘em too.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-668728-0",
