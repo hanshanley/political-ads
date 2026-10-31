@@ -66,12 +66,16 @@ all **539 written objects and source states** from 538 using only the actual
 cached HTML. Independent auditing verifies **20 metric groups / ten chart
 rows**. Updated whole-ad denominators do not imply newly reviewed semantics.
 Discovery is incomplete; the House gap and national prevalence remain unknown.
+Exact-commit CI **41207998110** succeeds for
+**9a35560fa61894ce82a91e635a4a49178ab0a65e**; every job and step was
+independently verified successful after the original watcher completed.
 
 Further California discovery exposes Calvert's **October 21 radio** original
 **LbCrtZndsAg** through the public blog's explicit listen link and one
 non-followed 302 redirect. It is **not acquired**: no YouTube/caption/media
 request, and announcement statements are not radio words. The media page's
-nine Vimeo embeds lack a verified 2026 association. Young Kim's October 6
+nine Vimeo embeds were initially undated; subsequent public RSS discovery
+dates uploads, not verified production or paid delivery. Young Kim's October 6
 release exposes **ScwJTPzzGds / EQ99ybmtijU** without literal scripts;
 her two April 14 scripts are already acquired. KVCR's October 9 Calvert
 interview is not advertising. Alaska Current's September 2 Begich report
@@ -81,6 +85,57 @@ interview/social remarks, not a usable script. GVWire's actually requested
 October 9 Valadao report returns **403**, so that provider is paused without
 alternate retrieval. Further individual publisher/campaign discovery continues.
 All existing provider pauses, schedule #1 and the publication hold persist.
+
+## Further campaign discovery and explicit access limits
+
+Calvert's actual media page explicitly links the public
+**vimeo.com/calvertforcongress** gallery. Its exposed alternate RSS link,
+**/calvertforcongress/videos/rss**, returns ten individual upload records.
+The previously unseen **Young Kim Denial / 1232657872** has an October 3,
+2026 upload timestamp; nine other entries have July 30 upload timestamps.
+Gallery account creation/modification dates do not date individual videos.
+The feed supplies no original MP4 enclosures, and B-roll or endorsement
+footage is not presumed to be advertising. **No Vimeo ad text is acquired.**
+The actual individual Young Kim Denial page returns HTTP 200 but presents
+a **Turnstile/browser challenge**, not accessible video content. Vimeo,
+including player subdomains, is now paused: no challenge execution,
+token use, alternate player/config/API, captions or download requests.
+Gallery, RSS and challenged-page SHA-256 hashes respectively:
+`f5305b5fe0d79f408dd90a6bb5bcdf4acdab34a4ac51fc5dc84adec7b8385573`,
+`18e052d55189c62b852966fe98000f6e7b19238cb888eec59f5a5a67a070cbdc`,
+`5f8ceea3cac89699216b15ae381bf48dc8edaa6b9a12adf626880152a4056077`.
+
+Washington Reporter's actual October 23 Kiggans report contains ad
+quotations but no individual original link. Paige Cognetti's October 2
+campaign roundup likewise supplies no individual Republican original;
+its separate YouTube link belongs to a Democratic ad. Neither adds a
+Republican record. The roundup's actually linked September 30
+**Times-Tribune** report expressly prohibits text/data mining without
+written consent. That publisher is **permission-paused**: no admission,
+further extraction, API or alternate-copy retrieval. Its content is not
+used as canonical acquisition evidence. GVWire's previous HTTP 403 remains
+denied-paused. Four local checks, with every HTTP request forbidden,
+confirm that the discovery helper refuses GVWire, Times-Tribune, Vimeo
+and Vimeo's player subdomain before requesting.
+
+WUNC's actual **October 27** report identifies seven Republican North
+Carolina congressional incumbents buying TV ads. Its ad quotations lack
+individual original links; the seven-campaign headline is **not seven
+recovered texts**. The exact report HTML SHA-256 is
+`907d9cbd72b5774348919b66a9f46f61ae1c9afe1f7961a7a99d66213f4b2a5b`.
+Actual Brad Knott, David Rouzer and Greg Murphy campaign homepages were
+also read. Homepage biographies, issue descriptions and old news are not
+counted as 2026 ad speech. Rouzer's actually linked news archive has no
+2026 entries on the inspected page; its newest displayed item is from 2020.
+The Bradenton Times' October 30 Sydney Gruters report initially returned
+404 with an encoded comma in its path; the decoded public article returns
+200 and explicitly links **lSlxuT2ELIo**. Its quotations are opponent
+responses, not a recovered ad script. The reported payer disclaimer is
+not padded into ad copy, and the YouTube original remains unrequested
+and unacquired. No canonical ad, semantic review or analysis
+denominator changes from these checks. Discovery continues across campaigns
+and independently accessible publishers; neither inaccessible originals nor
+these bounded exclusions establish that a candidate did not advertise.
 
 ## Previous Hilleary first-ad acquisition and individual-library association
 
