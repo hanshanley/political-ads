@@ -10,7 +10,94 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## October 30: wider House recovery through public original media
+## October 30: public House mailers and independently quoted ad words
+
+The latest snapshot contains **1,844 acquired text records**, including **1,806
+English records: 1,226 D / 541 R / 31 other / eight unresolved**. Exact
+party/message counts are **1,204 D / 504 R**. English House coverage is now
+**698 D / 163 R**, five more Republican House records than the preceding
+checkpoint. All **1,839 preceding acquired objects** and saved portrayal reviews
+remain unchanged. None of these five additions has a new semantic portrayal label.
+
+| Reported or inspected payer | Candidate/race | Publisher evidence date | Recovered evidence |
+|---|---|---|---|
+| Defending Main Street Super PAC | Eric Flores, TX-34 | September 29 gallery item | One two-sided endorsement mailer; local image OCR |
+| Defending Main Street PAC | Mike Carey / Don Leonard, OH-15 | October 23 gallery item | One two-sided contrast mailer; local image OCR |
+| Defending Main Street PAC | Don Leonard, OH-15 | October 23 gallery item | One separate two-sided attack mailer; local image OCR |
+| No Going Back | Shomari Figures, AL-02 | October 29 article | Two literal passages from one reported ad; partial quotation |
+| Alabama Christian Conservatives | Rhett Marques, AL-02 | October 29 article | One literal passage from a separately reported ad; partial quotation |
+
+Defending Main Street's public [Campaign Support gallery](https://www.defendingmainstreet.com/materials)
+exposes 50 items, including three 2026 images and seven 2026 YouTube links.
+The images are actual mailers, not video thumbnails; two faces in one original
+remain **one record**. Each review binds the full gallery HTML SHA-256/title,
+public `wix-warmup-data` script, exact gallery/item ID, `createdDate`, public
+original URL and original-byte SHA-256. Secured items and video items are rejected.
+`createdDate` is a gallery-item timestamp, represented as
+`publisher_gallery_upload_date`, **not independently verified first publication,
+campaign airing or paid delivery**. Flores's creative explicitly names the
+March 3 election despite its September 29 gallery timestamp; that discrepancy is
+retained rather than treating it as a September campaign execution.
+
+The three closing disclaimers were visually inspected. Flores's says **Defending
+Main Street Super PAC**; the two Ohio mailers say **Defending Main Street PAC**.
+Neither is silently renamed Republican Main Street Partnership. Local OCR is
+retained unchanged, including small-print errors, imperfect reading order and an
+upside-down disclaimer it does not recover. A redundant OCR attempt for the
+Leonard image timed out; its already completed local extraction, bound to the
+same original-byte hash, was reused without editing recognized words.
+
+Advertiser alignment is independently bound to Defending Main Street's exact
+homepage hash and its explicit Republican-majority electoral program. The
+negative-only Leonard image therefore remains **Republican-aligned**, although
+its exact named FEC candidate `H6OH15112` is Democratic. The other exact candidate
+identities are Flores `H6TX34080` and Carey `H2OH15228`. Target affiliation is not
+advertiser affiliation.
+
+[Alabama Public Television's October 29 report](https://aptv.org/apt-news/ad-spending-tops-11m-in-alabamas-fiercest-congressional-race/)
+separately identifies the two outside groups, quotes their ads and immediately
+embeds a different public viewer for each. Only literal quoted ad words enter
+these two records, not the reporter's spending figures, policy explanations,
+campaign interviews or adjacent Democratic ads. These are **partial quotations,
+not full transcripts or verified claims**. Legal payer names follow the report;
+no original closing cards were inspected. Republican alignment follows the
+reported advertisers, including when the named target is Democrat Figures
+(`H4AL02170`), not the news publisher or target party.
+
+The article body is absent from the publisher's disclosed WordPress response,
+so collection uses the public HTML. Its full response hash, exact heading and
+uniquely matched visible publication-date selector are reviewed individually.
+Missing, ambiguous, changed or conflicting dates fail closed. Only exact
+HTTPS `platform.adimpact.com/viewer/<UUID>` links without query credentials
+are recognized as associations. **No AdImpact catalog, account, player API or
+original media was requested.** The article date is not a first-airing claim.
+
+```sh
+political-ads campaign-native --until 2026-10-30 --offline
+political-ads collect --source ngb-aptv --source acc-aptv --until 2026-10-30 --offline
+```
+
+Isolated cache-only reconstruction reproduces all 89 native objects and all 499
+written objects, including source states and attempts. Complete evidence exports,
+figures and both unpublished editions are rebuilt together. House composition is
+476 D / one R Snap and 222 D / 162 R non-Snap. This remains incomplete,
+source-dependent acquisition, not national advertising prevalence.
+
+Local validation passes all 320 Python tests, Python lint/format, frontend lint,
+17 frontend tests, the production build and seven browser tests. Independent
+auditing reconciles all 20 same-ad metric groups and ten chart rows. Complete
+JSON/gzip/CSV exports, all 1,844 Parquet identity/text/hash/alignment rows and all
+eleven PNG copies reconcile; the figures were visually inspected. All 1,801
+preceding analyzed objects remain unchanged.
+
+Conservatives for American Excellence's separately inspected public homepage and
+Winner Highlights page expose candidate links, not additional recovered ad scripts
+or original media. The Nevada reporting examples, seven Defending Main Street
+YouTube links and other publishers remain leads where actual text is not recovered.
+No paused caption provider was retried. The recurring acquisition prompt remains
+active; website/Substack publication stays on hold.
+
+## Preceding October 30: wider House recovery through public original media
 
 The snapshot contains **1,839 acquired text records**, including **1,801 English
 records: 1,226 D / 536 R / 31 other / eight unresolved**. Exact party/message

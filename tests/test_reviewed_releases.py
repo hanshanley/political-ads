@@ -157,3 +157,38 @@ def test_reviewed_article_missing_metadata_is_a_source_error_not_a_collection_cr
         Client(), source, "2026-10-30", "2026-10-30", [candidate], [review]
     )
     assert not ads and status["state"] == "error"
+
+
+@pytest.mark.parametrize(
+    "date_markup", ["single", "missing", "ambiguous", "changed", "conflicting_metadata"]
+)
+def test_reviewed_article_binds_an_explicit_visible_publication_date(date_markup):
+    source, candidate, review, body = release_fixture("html")
+    content = body.decode().replace(
+        '<meta property="article:published_time" content="2026-07-14T12:00:00">',
+        '<p class="storydate">July 14, 2026</p>',
+    )
+    if date_markup == "missing":
+        content = content.replace('class="storydate"', 'class="other"')
+    elif date_markup == "ambiguous":
+        content += '<p class="storydate">July 14, 2026</p>'
+    elif date_markup == "changed":
+        content = content.replace("July 14, 2026", "July 15, 2026")
+    elif date_markup == "conflicting_metadata":
+        content += '<meta property="article:published_time" content="2026-07-15T12:00:00">'
+    review["publication_selector"] = "p.storydate"
+    review["content_sha256"] = digest(content)
+
+    class Client:
+        def get(self, *args, **kwargs):
+            return content.encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-10-30", [candidate], [review]
+    )
+    if date_markup == "single":
+        assert len(ads) == 1
+        assert ads[0]["published"] == "2026-07-14"
+        assert ads[0]["date_basis"] == "publisher_report_date"
+    else:
+        assert not ads and status["state"] == "error"

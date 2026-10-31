@@ -22,6 +22,22 @@ def test_public_media_links_normalize_video_hosts_and_include_gallery_popup_urls
     ]
 
 
+def test_public_media_links_recognize_only_exact_public_adimpact_viewer_paths():
+    viewer = "https://platform.adimpact.com/viewer/7510c197-092a-4b98-9ac4-ad3945897342"
+    rejected = [
+        viewer.replace("platform.adimpact.com", "platform.adimpact.com.evil.example"),
+        viewer.replace("/viewer/", "/catalog/"),
+        viewer.replace("https:", "http:"),
+        viewer + "?token=not-a-public-link",
+        viewer + "/extra",
+        "https://platform.adimpact.com/viewer/not-a-uuid",
+    ]
+    assert media_links(
+        f'<iframe src="{viewer}"></iframe>'
+        + "".join(f'<iframe src="{url}"></iframe>' for url in rejected)
+    ) == [viewer]
+
+
 @pytest.mark.parametrize("party_produced", [False, True])
 def test_cassidy_party_ad_mirror_does_not_become_a_candidate_ad(party_produced):
     source = next(s for s in SOURCES if s.id == "cassidy")

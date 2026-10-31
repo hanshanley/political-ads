@@ -402,6 +402,15 @@ quoted-copy boundaries stay within paragraphs and exclude ordinary press-stateme
 When a visible Salazar release date disagrees with its CMS date, the CMS date remains the
 publication field and both dates plus a discrepancy flag remain in the evidence.
 
+Individually reviewed news quotations additionally bind the exact public HTML hash,
+heading, literal passages, reported advertiser, original-player association and exact
+2026 federal candidate. When publication metadata is absent, a reviewed CSS selector
+must identify exactly one visible English month/day/year date; any metadata date must
+agree. Missing, ambiguous or changed evidence fails closed. Public AdImpact viewer
+links are associations only, not recovered transcripts or access to its catalog.
+Publisher dates remain distinct from first airing, and quoted allegations are not
+verified findings. Target party does not determine the advertiser's alignment.
+
 UA Vote! PAC's custom `news` API exposes scripts in its public ACF body rather than a standard
 content field. VoteVets's post API exposes no body; its public release's exact article-body
 container supplies the script instead. Both sources require an actual 2026 federal candidate
@@ -438,6 +447,17 @@ Local speech and frame OCR remain unchanged, including possible name or negation
 These records use `publisher_post_date`, not an asserted first release or paid-delivery date.
 Recovered originals without a verified date remain text-complete in the media backlog and
 outside dated comparison denominators. Existing acquisitions are preserved on replay.
+
+Individually reviewed public gallery images bind the exact publisher HTML hash/title,
+gallery/item ID, item creation timestamp, unsecured image status, original URL and
+original-byte hash. A combined two-sided mailer is one record, not one per face.
+The `publisher_gallery_upload_date` field represents the gallery's `createdDate`
+proxy, not verified first publication or paid delivery; a printed election date
+can precede that timestamp and is retained explicitly. A separately hash-bound
+publisher-program review establishes advertiser alignment independently of the
+named target's FEC party. Image OCR preserves word errors, line bounds, confidence,
+reading-order uncertainty and missed disclaimers; visual payer review does not
+certify a corrected transcript.
 
 Public HTML archives backfill HMP and House Majority Forward releases beyond recent-post APIs.
 Dated campaign news cards support public HTML acquisition without requiring authenticated APIs;

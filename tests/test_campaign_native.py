@@ -1,4 +1,5 @@
 import hashlib
+import json
 from datetime import datetime, timezone
 from urllib.error import HTTPError
 from urllib.parse import urlencode
@@ -360,3 +361,153 @@ def test_public_dropbox_original_uses_only_standard_download_switch(tmp_path, re
     ad = collect_campaign_native(tmp_path, "2026-10-30", offline=True)["ads"][0]
     assert calls == [review["publisher_url"], download]
     assert ad["segments"][0]["native_campaign_evidence"]["media_url"] == original
+
+
+@pytest.fixture
+def gallery_review(tmp_path, monkeypatch, native_review):
+    native_review.pop("post_id")
+    native_review.pop("post_timestamp")
+    native_review.update(
+        publisher_url="https://publisher.example/materials",
+        post_url="https://publisher.example/materials",
+        media_url="https://static.wixstatic.com/media/original.png",
+        media_type="image",
+        sponsor="Reviewed outside organization",
+        sponsor_type="outside_group",
+        required_quotes=["Do not trust the Democratic candidate."],
+    )
+    item = {
+        "itemId": "reviewed-image",
+        "createdDate": "2026-10-23T14:19:25.000Z",
+        "isSecure": False,
+        "mediaUrl": "original.png",
+        "metaData": {"name": "original.png"},
+    }
+    data = {"appsWarmupData": {"gallery-app": {"gallery-data": {"items": [item]}}}}
+    markup = (
+        '<title>Public campaign materials</title><script id="wix-warmup-data" '
+        'type="application/json">' + json.dumps(data) + "</script>"
+    ).encode()
+    native_review["publisher_gallery"] = {
+        "title": "Public campaign materials",
+        "sha256": hashlib.sha256(markup).hexdigest(),
+        "gallery_id": "gallery-data",
+        "item_id": "reviewed-image",
+        "created": item["createdDate"],
+    }
+    alignment_body = b"<p>We support a Republican majority in Congress.</p>"
+    native_review["alignment_review"] = {
+        "alignment": "R",
+        "url": "https://publisher.example/",
+        "sha256": hashlib.sha256(alignment_body).hexdigest(),
+        "required_quotes": ["We support a Republican majority in Congress."],
+    }
+    candidates = read_json(tmp_path / "data/site/candidates.json", {})
+    candidates["candidates"][0]["party"] = "DEM"
+    write_json(tmp_path / "data/site/candidates.json", candidates)
+    payloads = {
+        native_review["publisher_url"]: markup,
+        native_review["alignment_review"]["url"]: alignment_body,
+        native_review["media_url"]: b"original",
+    }
+    calls = []
+
+    def get(self, url, **kwargs):
+        calls.append(url)
+        return payloads[url], {}
+
+    monkeypatch.setattr("political_ads.campaign_native.Client.get", get)
+    monkeypatch.setattr(
+        "political_ads.campaign_native.recognize_image",
+        lambda *args: (
+            native_review["media_sha256"],
+            {
+                "engine": "fixture",
+                "coordinate_system": "normalized",
+                "lines": [
+                    {
+                        "text": native_review["required_quotes"][0],
+                        "confidence": 0.9,
+                        "bounds": [0.1, 0.2, 0.3, 0.4],
+                    }
+                ],
+            },
+        ),
+        raising=False,
+    )
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [native_review]})
+    return native_review, payloads, calls
+
+
+def test_public_gallery_image_binds_upload_and_payer_alignment_not_target_party(
+    tmp_path, gallery_review
+):
+    review, _, calls = gallery_review
+    result = collect_campaign_native(tmp_path, "2026-10-30", offline=True)
+    ad = result["ads"][0]
+    assert ad["alignment"] == "R" and ad["race"] == "ZZ-01"
+    assert ad["sponsor"] == "Reviewed outside organization"
+    assert ad["published"] == "2026-10-23" and ad["date_basis"] == "publisher_gallery_upload_date"
+    assert ad["delivery_start"] is None
+    assert ad["text"] == "Do not trust the Democratic candidate."
+    assert ad["segments"][0]["kind"] == "image_ocr"
+    assert ad["segments"][0]["image_bounds"] == [0.1, 0.2, 0.3, 0.4]
+    assert calls == [
+        review["publisher_url"],
+        review["alignment_review"]["url"],
+        review["media_url"],
+    ]
+    assert collect_campaign_native(tmp_path, "2026-10-30", offline=True) == result
+    assert len(calls) == 3
+
+
+@pytest.mark.parametrize(
+    "change",
+    ["date", "gallery", "item", "title", "hash", "media", "alignment_hash", "alignment_quote"],
+)
+def test_gallery_image_rejects_unbound_evidence_before_original_request(
+    tmp_path, gallery_review, change
+):
+    review, _, calls = gallery_review
+    if change == "date":
+        review["publisher_gallery"]["created"] = "2026-10-24T14:19:25.000Z"
+    elif change == "gallery":
+        review["publisher_gallery"]["gallery_id"] = "different-gallery"
+    elif change == "item":
+        review["publisher_gallery"]["item_id"] = "different-image"
+    elif change == "title":
+        review["publisher_gallery"]["title"] = "Different publisher"
+    elif change == "hash":
+        review["publisher_gallery"]["sha256"] = "0" * 64
+    elif change == "media":
+        review["media_url"] = "https://static.wixstatic.com/media/unlinked.png"
+    elif change == "alignment_hash":
+        review["alignment_review"]["sha256"] = "0" * 64
+    else:
+        review["alignment_review"]["required_quotes"] = ["Not present."]
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    result = collect_campaign_native(tmp_path, "2026-10-30", offline=True)
+    assert not result["ads"]
+    assert result["attempts"][review["id"]]["state"] == "error"
+    assert review["media_url"] not in calls
+
+
+def test_gallery_upload_after_cutoff_is_not_requested(tmp_path, gallery_review):
+    _, _, calls = gallery_review
+    assert not collect_campaign_native(tmp_path, "2026-10-22", offline=True)["ads"]
+    assert calls == []
+
+
+@pytest.mark.parametrize("change", ["secure", "video"])
+def test_gallery_image_rejects_nonpublic_or_video_items(tmp_path, gallery_review, change):
+    review, payloads, calls = gallery_review
+    before = b'"isSecure": false' if change == "secure" else b'"name": "original.png"'
+    after = b'"isSecure": true' if change == "secure" else b'"type": "video"'
+    body = payloads[review["publisher_url"]].replace(before, after)
+    payloads[review["publisher_url"]] = body
+    review["publisher_gallery"]["sha256"] = hashlib.sha256(body).hexdigest()
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    result = collect_campaign_native(tmp_path, "2026-10-30", offline=True)
+    assert not result["ads"]
+    assert result["attempts"][review["id"]]["state"] == "error"
+    assert calls == [review["publisher_url"]]

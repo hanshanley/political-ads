@@ -76,14 +76,8 @@ def image_leads(posts: list[dict]) -> list[dict]:
     return list(leads.values())
 
 
-def reviewed_image_ad(lead: dict, ocr: dict, review: dict, image_hash: str, observed: str) -> dict:
-    if review.get("image_hash") != image_hash:
-        raise ValueError(f"Image changed since eligibility review: {lead['id']}")
-    if review.get("source_url") != lead["post"]["link"]:
-        raise ValueError(f"Image review belongs to a different release: {lead['id']}")
-    if review.get("state") != "approved_image_ad":
-        raise ValueError("An image must be reviewed as a standalone ad, not a video thumbnail")
-    segments = [
+def image_segments(ocr: dict, image_hash: str, image_url: str) -> list[dict]:
+    return [
         {
             "text": line["text"],
             "kind": "image_ocr",
@@ -93,13 +87,23 @@ def reviewed_image_ad(lead: dict, ocr: dict, review: dict, image_hash: str, obse
             "confidence": line["confidence"],
             "image_bounds": line["bounds"],
             "image_hash": image_hash,
-            "image_url": lead["image_url"],
+            "image_url": image_url,
             "coordinate_system": ocr["coordinate_system"],
             "extraction_engine": ocr["engine"],
         }
         for line in ocr["lines"]
         if line["text"].strip()
     ]
+
+
+def reviewed_image_ad(lead: dict, ocr: dict, review: dict, image_hash: str, observed: str) -> dict:
+    if review.get("image_hash") != image_hash:
+        raise ValueError(f"Image changed since eligibility review: {lead['id']}")
+    if review.get("source_url") != lead["post"]["link"]:
+        raise ValueError(f"Image review belongs to a different release: {lead['id']}")
+    if review.get("state") != "approved_image_ad":
+        raise ValueError("An image must be reviewed as a standalone ad, not a video thumbnail")
+    segments = image_segments(ocr, image_hash, lead["image_url"])
     post = lead["post"]
     text = "\n".join(line["text"] for line in segments)
     if not text or re.match(r"paid for by\b", text, re.I):

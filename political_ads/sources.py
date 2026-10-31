@@ -107,6 +107,26 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "ngb-aptv",
+        "https://aptv.org",
+        "No Going Back",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="AL-02",
+        discovery="reviewed_releases",
+    ),
+    Source(
+        "acc-aptv",
+        "https://aptv.org",
+        "Alabama Christian Conservatives",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="AL-02",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "slf",
         "https://senateleadershipfund.org",
         "Senate Leadership Fund",
@@ -742,6 +762,14 @@ def media_links(content: str) -> list[str]:
         if parsed.scheme in {"http", "https"} and video_host:
             urls.append(urlunsplit(parsed._replace(scheme="https")))
         elif parsed.scheme == "https" and re.search(r"\.(?:mp4|webm|mp3|wav)(?:\?|$)", value):
+            urls.append(value)
+        elif (
+            parsed.scheme == "https"
+            and parsed.hostname == "platform.adimpact.com"
+            and not parsed.query
+            and not parsed.fragment
+            and re.fullmatch(r"/viewer/[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}", parsed.path)
+        ):
             urls.append(value)
     return sorted(set(urls))
 

@@ -42493,6 +42493,86 @@
       "title": "New Ad: Ashley Hinson Represents Trump. Josh Turek Represents Change."
     },
     {
+      "alignment": "R",
+      "attribution_basis": "Alabama Public Television explicitly attributes this quoted new broadcast ad to Alabama Christian Conservatives and places the matching public viewer immediately after the quotation. Its reported support for Republican Rhett Marques and explicit GOP-spender description establish advertiser alignment; exact 2026 FEC candidate H6AL01086 is AL-02. The sole legal payer has not been independently checked against an original closing card. The article's visible October 29 date is not a verified first airing or delivery interval. This is a partial quotation, retaining the publisher's punctuation, not a full transcript, endorsement of its allegations or a new semantic portrayal judgment. No AdImpact catalog, account, player API or original media was requested.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6AL01086",
+          "district": "02",
+          "name": "MARQUES, RHETT",
+          "office": "H",
+          "party": "REP",
+          "state": "AL"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "acc-aptv-47600-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://platform.adimpact.com/viewer/41454e72-0a8f-4f07-8168-d939d5ffbef6"
+      ],
+      "message_id": "de0244eb494eab106c66c5625e62ace2f648312a2e45beeffeaf9711832568b0",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-10-29",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "AL-02",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6AL01086"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Alabama Public Television explicitly attributes this quoted new broadcast ad to Alabama Christian Conservatives and places the matching public viewer immediately after the quotation. Its reported support for Republican Rhett Marques and explicit GOP-spender description establish advertiser alignment; exact 2026 FEC candidate H6AL01086 is AL-02. The sole legal payer has not been independently checked against an original closing card. The article's visible October 29 date is not a verified first airing or delivery interval. This is a partial quotation, retaining the publisher's punctuation, not a full transcript, endorsement of its allegations or a new semantic portrayal judgment. No AdImpact catalog, account, player API or original media was requested.",
+            "candidate_id": "H6AL01086",
+            "completeness": "partial_quotation",
+            "content_sha256": "2bfccc95add6a6d4fec27c0fb6341ae897de48476b2e9e466971a6c04a278708",
+            "format": "html",
+            "media_url": "https://platform.adimpact.com/viewer/41454e72-0a8f-4f07-8168-d939d5ffbef6",
+            "passages": [
+              "Out-of-state radicals are falsely attacking Rhett Marques because they can’t stand America. The choice comes down to two things: craziness versus common sense,"
+            ],
+            "phase": "general",
+            "publication_selector": "#news-story-top > p.storydate",
+            "published": "2026-10-29",
+            "record_id": "47600",
+            "release_title": "Ad spending tops $11M in Alabama's fiercest congressional race",
+            "required_context": [
+              "Alabama Christian Conservatives, aligned with Marques",
+              "The group is the second-biggest GOP spender in the race.",
+              "the new ad from the group states"
+            ],
+            "retrieval_url": "https://aptv.org/apt-news/ad-spending-tops-11m-in-alabamas-fiercest-congressional-race/",
+            "source": "acc-aptv",
+            "source_url": "https://aptv.org/apt-news/ad-spending-tops-11m-in-alabamas-fiercest-congressional-race/"
+          },
+          "text": "Out-of-state radicals are falsely attacking Rhett Marques because they can’t stand America. The choice comes down to two things: craziness versus common sense,"
+        }
+      ],
+      "source": "acc-aptv",
+      "source_hash": "2bfccc95add6a6d4fec27c0fb6341ae897de48476b2e9e466971a6c04a278708",
+      "source_record_id": "47600",
+      "source_url": "https://aptv.org/apt-news/ad-spending-tops-11m-in-alabamas-fiercest-congressional-race/",
+      "sponsor": "Alabama Christian Conservatives",
+      "sponsor_type": "outside_group",
+      "state": "AL",
+      "text": "Out-of-state radicals are falsely attacking Rhett Marques because they can’t stand America. The choice comes down to two things: craziness versus common sense,",
+      "title": "Ad spending tops $11M in Alabama's fiercest congressional race"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official DCCC release at https://dccc.org/dccc-releases-first-tv-ad-in-fl-07-millionaire/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
@@ -42688,6 +42768,99 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Alabama Public Television's October 29 report explicitly attributes the newest 30-second anti-Figures ad to Trump-aligned No Going Back and places this public viewer immediately after its two literal ad quotations. Republican alignment follows the reported advertiser, not Democratic target Shomari Figures, exact 2026 FEC identity H4AL02170, AL-02. The sole legal payer has not been independently checked against an original closing card. The article's visible publication date is not a verified first airing or delivery interval. These are partial quotations, including the publisher's percentage notation, not a full transcript or verified factual findings. No AdImpact catalog, account, player API or original media was requested.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H4AL02170",
+          "district": "02",
+          "name": "FIGURES, SHOMARI C.",
+          "office": "H",
+          "party": "DEM",
+          "state": "AL"
+        },
+        {
+          "candidate_id": "H8CA05035",
+          "district": "11",
+          "name": "PELOSI, NANCY",
+          "office": "H",
+          "party": "DEM",
+          "state": "CA"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "ngb-aptv-47600-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://platform.adimpact.com/viewer/7510c197-092a-4b98-9ac4-ad3945897342"
+      ],
+      "message_id": "1779054b826932c246351a59eab69386d8fb8ebd0bafcd04e8b88b1bd18b9a1a",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-10-29",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "AL-02",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H4AL02170"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Alabama Public Television's October 29 report explicitly attributes the newest 30-second anti-Figures ad to Trump-aligned No Going Back and places this public viewer immediately after its two literal ad quotations. Republican alignment follows the reported advertiser, not Democratic target Shomari Figures, exact 2026 FEC identity H4AL02170, AL-02. The sole legal payer has not been independently checked against an original closing card. The article's visible publication date is not a verified first airing or delivery interval. These are partial quotations, including the publisher's percentage notation, not a full transcript or verified factual findings. No AdImpact catalog, account, player API or original media was requested.",
+            "candidate_id": "H4AL02170",
+            "completeness": "partial_quotation",
+            "content_sha256": "2bfccc95add6a6d4fec27c0fb6341ae897de48476b2e9e466971a6c04a278708",
+            "format": "html",
+            "media_url": "https://platform.adimpact.com/viewer/7510c197-092a-4b98-9ac4-ad3945897342",
+            "passages": [
+              "Here’s a number Shomari’s hiding. 95 (%),",
+              "That’s how often Shomari Figures voted with radical Democrats like Nancy Pelosi."
+            ],
+            "phase": "general",
+            "publication_selector": "#news-story-top > p.storydate",
+            "published": "2026-10-29",
+            "record_id": "47600",
+            "release_title": "Ad spending tops $11M in Alabama's fiercest congressional race",
+            "required_context": [
+              "a President Donald Trump-aligned super PAC, No Going Back",
+              "The group’s newest 30-second ad",
+              "the ad states."
+            ],
+            "retrieval_url": "https://aptv.org/apt-news/ad-spending-tops-11m-in-alabamas-fiercest-congressional-race/",
+            "source": "ngb-aptv",
+            "source_url": "https://aptv.org/apt-news/ad-spending-tops-11m-in-alabamas-fiercest-congressional-race/"
+          },
+          "text": "Here’s a number Shomari’s hiding. 95 (%),"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "That’s how often Shomari Figures voted with radical Democrats like Nancy Pelosi."
+        }
+      ],
+      "source": "ngb-aptv",
+      "source_hash": "2bfccc95add6a6d4fec27c0fb6341ae897de48476b2e9e466971a6c04a278708",
+      "source_record_id": "47600",
+      "source_url": "https://aptv.org/apt-news/ad-spending-tops-11m-in-alabamas-fiercest-congressional-race/",
+      "sponsor": "No Going Back",
+      "sponsor_type": "outside_group",
+      "state": "AL",
+      "text": "Here’s a number Shomari’s hiding. 95 (%),\nThat’s how often Shomari Figures voted with radical Democrats like Nancy Pelosi.",
+      "title": "Ad spending tops $11M in Alabama's fiercest congressional race"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Official NRSC release at https://www.nrsc.org/press-releases/new-ad-alaskans-wont-fall-for-peltolas-scheme-2026-10-29/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
       "date_basis": "release_date",
@@ -42860,6 +43033,22 @@
   ],
   "schema_version": "1",
   "sources": [
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "acc-aptv",
+      "state": "partial",
+      "url": "https://aptv.org"
+    },
     {
       "ads_with_text": 8,
       "checked": "2026-10-30",
@@ -43250,6 +43439,22 @@
       "source": "mccann",
       "state": "ok",
       "url": "https://seanmccannforcongress.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "ngb-aptv",
+      "state": "partial",
+      "url": "https://aptv.org"
     },
     {
       "ads_with_text": 69,

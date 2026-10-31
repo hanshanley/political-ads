@@ -47135,6 +47135,902 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Publisher-linked original with individually reviewed payer evidence; FEC H6TX34080, REP, principal committee C00912246. Primary publisher: https://www.defendingmainstreet.com/materials",
+      "chamber": "House",
+      "date_basis": "publisher_gallery_upload_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "dms-images-flores-e2d3ad941ba3001f",
+      "language": "en",
+      "language_basis": "Local English OCR plus seeded language detection",
+      "media_urls": [
+        "https://www.defendingmainstreet.com/materials"
+      ],
+      "message_id": "405e0a1265a885ad9ece736af6d593c4d133a67a45216c9f8022a584c3679cd9",
+      "observed": "2026-10-30",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-09-29",
+      "quality_flags": [
+        "image_ad_eligibility_reviewed",
+        "image_ocr_may_misrecognize_words",
+        "image_reading_order_unverified",
+        "publisher_gallery_upload_not_verified_first_publication_or_paid_delivery",
+        "creative_election_day_precedes_publisher_gallery_upload"
+      ],
+      "race": "TX-34",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "confidence": 0.30000001192092896,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.42794760067106696,
+            0.946577629048414,
+            0.1397379829373422,
+            0.02003338898163609
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "native_campaign_evidence": {
+            "ad_evidence": "Actual two-sided election mailpiece in the publisher's public Campaign Support gallery. The full image names Eric Flores for Congress and Texas's 34th Congressional District; the exact saved 2026 FEC identity is H6TX34080, REP, TX-34. Visually inspected upside-down postal-side disclaimer says Paid for by Defending Main Street Super PAC and not authorized by any candidate or candidate's committee. Both sides are one combined gallery original, not two ads. The creative says election day Tuesday, March 3, while its gallery item was created September 29; upload is not first publication or paid delivery.",
+            "alignment_review": {
+              "alignment": "R",
+              "required_quotes": [
+                "DMS supports dynamic candidates and incumbents in key, contested districts across the country that are crucial to ensuring a Republican Majority in Congress."
+              ],
+              "sha256": "7e9cc3a602e6bcbfeee4302de97edf2869a47a6c6a07606f03091faf153c3d59",
+              "url": "https://www.defendingmainstreet.com/"
+            },
+            "candidate_id": "H6TX34080",
+            "extraction_caveat": "Retain original automatic OCR, including misspellings, missed words, the unrecognized upside-down disclaimer and reproduced social-post text. Gallery creation timestamp dates this publisher upload, not the campaign's advertising period.",
+            "id": "dms-images-flores-e2d3ad941ba3001f",
+            "image_engine": {
+              "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+              "engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+              "image_frame_count": 1
+            },
+            "media_sha256": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+            "media_type": "image",
+            "media_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+            "post_url": "https://www.defendingmainstreet.com/materials",
+            "publisher_gallery": {
+              "created": "2026-09-29T17:07:41.000Z",
+              "gallery_id": "comp-l2tbmd431_galleryData",
+              "item_id": "5b41146d-3f25-4fc6-83d2-814be413f0d5",
+              "sha256": "cbb001ba1a2a0bb21edad68cf1f143b18c2a4051654c46fc4b0e833481a67b17",
+              "title": "Campaign Support | DMS"
+            },
+            "publisher_html_sha256": "cbb001ba1a2a0bb21edad68cf1f143b18c2a4051654c46fc4b0e833481a67b17",
+            "publisher_url": "https://www.defendingmainstreet.com/materials",
+            "quality_flags": [
+              "creative_election_day_precedes_publisher_gallery_upload"
+            ],
+            "required_quotes": [
+              "ERIC FLORES",
+              "VOTE ERIC FLORES",
+              "TUESDAY, MARCH 3RD"
+            ],
+            "reviewed": "2026-10-30",
+            "source": "dms-images",
+            "sponsor": "Defending Main Street Super PAC",
+            "sponsor_type": "outside_group",
+            "title": "DMS Eric Flores Trump-endorsement two-sided mailer",
+            "title_basis": "Descriptive label, not a verified creative title"
+          },
+          "start_seconds": null,
+          "text": "WOORSEO",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.4188989776136444,
+            0.9312305034134378,
+            0.16220204382484144,
+            0.024016455139261983
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "TRUMP",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.13537116695778792,
+            0.9148580967445743,
+            0.7248908296943231,
+            0.011686143572620988
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "AMERICA FIRST CONSERVATIVE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07860261613537121,
+            0.8664440736894825,
+            0.8340611353711791,
+            0.046744574290484064
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "ERIC FLORES",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07860261179039332,
+            0.8514190316917084,
+            0.49781659388646293,
+            0.008347245409014992
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "**It is my Great Honor to endorse America First Patriot,",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.09170308223302998,
+            0.8414023373121869,
+            0.5283842461598491,
+            0.008347245409015103
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Eric Flores. Eric has my Complete and Total Endorsement",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.09170306426491973,
+            0.8313856428491931,
+            0.44978165938864634,
+            0.01001669449081799
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "— HE WILL NEVER LET YOU DOWN!\"",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5807860275655021,
+            0.6126878130843072,
+            0.10917030567685593,
+            0.008347245409014992
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "SUPPORT",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.7161572085880639,
+            0.6110183639955481,
+            0.20087336244541487,
+            0.010016694490818101
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "ESIDENT TRUMP.",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.54148471209607,
+            0.5909849748914858,
+            0.406113537117904,
+            0.016694490818030094
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "VOTE ERIC FLORES",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5807860285714286,
+            0.5759599332935845,
+            0.3318777292576419,
+            0.016694490818030094
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "FOR CONGRESS",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.6419213938864631,
+            0.5542570950751251,
+            0.20960698689956336,
+            0.008347245409014992
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "ELECTION DAY IS",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5982532789301309,
+            0.5392320534849749,
+            0.30567685589519655,
+            0.0116861435726211
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "TUESDAY, MARCH 3RD",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 0.30000001192092896,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.2663755498544394,
+            0.527545909933222,
+            0.24017467248908292,
+            0.008347245409015103
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "sапрроят и коррово/ах Адрепsант ки",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 0.30000001192092896,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.043668121732913616,
+            0.5225375626043406,
+            0.05240174256037417,
+            0.0033388981636059967
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "PD FHO",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.21834061209606984,
+            0.43739565959933213,
+            0.554585152838428,
+            0.016694490818030094
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "VOTE TRUMP-ENDORSED",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.1222707369931379,
+            0.3923205341402337,
+            0.7510917030567685,
+            0.04173622704507507
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "ERIC FLORES",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.2620087365993449,
+            0.3706176962541736,
+            0.47598253275109165,
+            0.02170283806343909
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "FOR CONGRESS",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.6157205259985779,
+            0.3255425710907067,
+            0.1397379829373422,
+            0.008347245409014992
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Donald J. Trump O",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519706695777,
+            0.3005008347801892,
+            0.33624454148471616,
+            0.01001669449081799
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "It is my Great Honor to endorse America",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519892563195,
+            0.293823038471134,
+            0.33624450816858276,
+            0.005008347245408995
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Pirst Patot, enc Flores, who is running to",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519593158663,
+            0.2838063438230384,
+            0.34497816593886466,
+            0.008347245409014992
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "represent the wonderful people of Texas'",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519610625912,
+            0.2754590984140233,
+            0.24017467248908297,
+            0.008347245409015103
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "34th Congressional District.",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519616812229,
+            0.26377295509181964,
+            0.3100436681222708,
+            0.006677796128198188
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "A Brave U.S.Army Veteran, and former",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519710334787,
+            0.253756260489705,
+            0.3580786026200873,
+            0.010016694490818101
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Criminal Prosecutor, Eric knows the Wisdom",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519706695777,
+            0.2454090151085142,
+            0.33624454148471616,
+            0.008347245409015103
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "and Courage it takes to Ensure LAW AND",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519694323143,
+            0.23706176967863102,
+            0.3493449781659389,
+            0.008347245409015103
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "ORDER, Strongly Support our Great Heroes",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519704512371,
+            0.22871452429048422,
+            0.3231441048034934,
+            0.008347245409014992
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "in Law Enforcement, and Champion our",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519708879183,
+            0.22036727888146923,
+            0.3493449781659388,
+            0.008347245409014992
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Military and Veterans. In Congress, Eric wil",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519595342068,
+            0.2103505842515303,
+            0.3318777292576419,
+            0.010016694490818101
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "fight tirelessly to Grow our Economy, Cut",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5633188094528249,
+            0.20367278806343914,
+            0.3100436348061374,
+            0.005008347245408995
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Taxes and Mesuistons, Promke MAlt",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5633187813864627,
+            0.19365609353088498,
+            0.32751091703056767,
+            0.01001669449081799
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "IN THE U.S.A., Advance American Energy",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519595342068,
+            0.18530884799666103,
+            0.3318777292576419,
+            0.008347245409014992
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "DOMINANCE, Keep our now very Secure",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519985357942,
+            0.17863105183639405,
+            0.33624450816858287,
+            0.005008347245408995
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Border, SECURE. Stoo Morent Crime, and",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.55895196790393,
+            0.1669449080133556,
+            0.3187772925764193,
+            0.01001669449081799
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Protect our always under siege Second",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519668850071,
+            0.16026711210775058,
+            0.10917030567685593,
+            0.0066777959291843825
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Amendment.",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519597525474,
+            0.14691151911519196,
+            0.3187772925764192,
+            0.008347245409014992
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Eric Flores has my Complete and Total",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519591703059,
+            0.13689482465219815,
+            0.35371179039301315,
+            0.01001669449081799
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Endorsement to be the next Congressman",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519823785907,
+            0.1302170284544395,
+            0.3493449448498056,
+            0.005008347245409106
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "trom lexas sam congressional District",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5589519697555254,
+            0.12186978311074015,
+            0.2794759658746845,
+            0.008347245409014992
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "HE WILL NEVER LET YOU DOWN!",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.22707425588659644,
+            0.06510851438508625,
+            0.5458514950681461,
+            0.0116861435726211
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "SUPPORT PRESIDENT TRUMP.",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.17030568275109154,
+            0.055091819810795695,
+            0.3537117903930131,
+            0.010016694490818101
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "VOTE ERIC FLORES",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5240174658660844,
+            0.0550918196438509,
+            0.08296943231441045,
+            0.01001669449081799
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "FOR",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.6113537081513829,
+            0.05342237058987187,
+            0.21834061135371186,
+            0.0116861435726211
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "CONGRESS.",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.0786026284716156,
+            0.03171953267111849,
+            0.8384279475982533,
+            0.01836393989983298
+          ],
+          "image_hash": "e2d3ad941ba3001f35875c0cafb22b586f83eb3fdb4b632d8dec2541d79747ea",
+          "image_url": "https://static.wixstatic.com/media/610979_1b43f504103b4b189a07c6396e56d4b8~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "ELECTION DAY IS TUESDAY, MARCH 3RD",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "dms-images",
+      "source_hash": "0ed3a5ac32b20d2f398ae546fb9cf521aa9366740fa27b9ad2bce0d59d5bf432",
+      "source_record_id": "dms-images-flores-e2d3ad941ba3001f",
+      "source_url": "https://www.defendingmainstreet.com/materials",
+      "sponsor": "Defending Main Street Super PAC",
+      "sponsor_type": "outside_group",
+      "state": "TX",
+      "text": "WOORSEO\nTRUMP\nAMERICA FIRST CONSERVATIVE\nERIC FLORES\n**It is my Great Honor to endorse America First Patriot,\nEric Flores. Eric has my Complete and Total Endorsement\n— HE WILL NEVER LET YOU DOWN!\"\nSUPPORT\nESIDENT TRUMP.\nVOTE ERIC FLORES\nFOR CONGRESS\nELECTION DAY IS\nTUESDAY, MARCH 3RD\nsапрроят и коррово/ах Адрепsант ки\nPD FHO\nVOTE TRUMP-ENDORSED\nERIC FLORES\nFOR CONGRESS\nDonald J. Trump O\nIt is my Great Honor to endorse America\nPirst Patot, enc Flores, who is running to\nrepresent the wonderful people of Texas'\n34th Congressional District.\nA Brave U.S.Army Veteran, and former\nCriminal Prosecutor, Eric knows the Wisdom\nand Courage it takes to Ensure LAW AND\nORDER, Strongly Support our Great Heroes\nin Law Enforcement, and Champion our\nMilitary and Veterans. In Congress, Eric wil\nfight tirelessly to Grow our Economy, Cut\nTaxes and Mesuistons, Promke MAlt\nIN THE U.S.A., Advance American Energy\nDOMINANCE, Keep our now very Secure\nBorder, SECURE. Stoo Morent Crime, and\nProtect our always under siege Second\nAmendment.\nEric Flores has my Complete and Total\nEndorsement to be the next Congressman\ntrom lexas sam congressional District\nHE WILL NEVER LET YOU DOWN!\nSUPPORT PRESIDENT TRUMP.\nVOTE ERIC FLORES\nFOR\nCONGRESS.\nELECTION DAY IS TUESDAY, MARCH 3RD",
+      "title": "DMS Eric Flores Trump-endorsement two-sided mailer"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Video linked in an official Senate Leadership Fund ad release: https://senateleadershipfund.org/press-releases/new-ad-mary-peltola-sold-out-alaska/. Alignment is publisher alignment, not a separately verified payer identity.",
       "chamber": "Senate",
       "date_basis": "release_date",
@@ -64895,6 +65791,1217 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Publisher-linked original with individually reviewed payer evidence; FEC H2OH15228, REP, principal committee C00779603. Primary publisher: https://www.defendingmainstreet.com/materials",
+      "chamber": "House",
+      "date_basis": "publisher_gallery_upload_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "dms-images-carey-c8986cf1a15c1dbf",
+      "language": "en",
+      "language_basis": "Local English OCR plus seeded language detection",
+      "media_urls": [
+        "https://www.defendingmainstreet.com/materials"
+      ],
+      "message_id": "e6f57be4d4f4d76dbbbc18edcf521a85049bf7ddacdb64d33f2d49fb9d845737",
+      "observed": "2026-10-30",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-23",
+      "quality_flags": [
+        "image_ad_eligibility_reviewed",
+        "image_ocr_may_misrecognize_words",
+        "image_reading_order_unverified",
+        "publisher_gallery_upload_not_verified_first_publication_or_paid_delivery"
+      ],
+      "race": "OH-15",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.01971831044323606,
+            0.9800362975499093,
+            0.09577463714169786,
+            0.005444646098003658
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "native_campaign_evidence": {
+            "ad_evidence": "Actual combined two-sided election mailpiece in the publisher's public gallery, not a video thumbnail. It explicitly names Mike Carey and Don Leonard for Congress. Saved exact 2026 FEC identities place REP Carey H2OH15228 and DEM Leonard H6OH15112 in OH-15. The inspected front-side disclaimer names Defending Main Street PAC, not a candidate committee or RMSP. The gallery createdDate is October 23 and the creative says election day Tuesday November 3. Both faces remain one ad. Publisher alignment follows its own exact Republican-majority statement, independently of the candidates' parties.",
+            "additional_candidate_ids": [
+              "H6OH15112"
+            ],
+            "alignment_review": {
+              "alignment": "R",
+              "required_quotes": [
+                "DMS supports dynamic candidates and incumbents in key, contested districts across the country that are crucial to ensuring a Republican Majority in Congress."
+              ],
+              "sha256": "7e9cc3a602e6bcbfeee4302de97edf2869a47a6c6a07606f03091faf153c3d59",
+              "url": "https://www.defendingmainstreet.com/"
+            },
+            "candidate_id": "H2OH15228",
+            "extraction_caveat": "Preserve automatic OCR and its corrupted small-print disclaimer. The gallery upload timestamp is not verified first publication, mailing or paid delivery; no new semantic portrayal judgment is supplied.",
+            "id": "dms-images-carey-c8986cf1a15c1dbf",
+            "image_engine": {
+              "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+              "engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+              "image_frame_count": 1
+            },
+            "media_sha256": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+            "media_type": "image",
+            "media_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+            "post_url": "https://www.defendingmainstreet.com/materials",
+            "publisher_gallery": {
+              "created": "2026-10-23T14:19:25.000Z",
+              "gallery_id": "comp-l2tbmd431_galleryData",
+              "item_id": "e8303cd5-c407-4bf2-8c3a-e68e9690a0a5",
+              "sha256": "cbb001ba1a2a0bb21edad68cf1f143b18c2a4051654c46fc4b0e833481a67b17",
+              "title": "Campaign Support | DMS"
+            },
+            "publisher_html_sha256": "cbb001ba1a2a0bb21edad68cf1f143b18c2a4051654c46fc4b0e833481a67b17",
+            "publisher_url": "https://www.defendingmainstreet.com/materials",
+            "required_quotes": [
+              "Radical Congressional\ncandidate Don Leonard said:",
+              "We can trust Congressman MIKE CAREY",
+              "Re-Elect MIKE CAREY Congress"
+            ],
+            "reviewed": "2026-10-30",
+            "source": "dms-images",
+            "sponsor": "Defending Main Street PAC",
+            "sponsor_type": "outside_group",
+            "title": "DMS Mike Carey and Don Leonard Pinocchio two-sided mailer",
+            "title_basis": "Descriptive label, not a verified creative title"
+          },
+          "start_seconds": null,
+          "text": "411 New.Jerpay Avn SE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.019718311596244074,
+            0.9709618875680581,
+            0.10422535211267606,
+            0.00907441016333932
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Washington, DC 20003",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.03661972259154925,
+            0.9219600727767695,
+            0.428169014084507,
+            0.03266787658802173
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Radical Congressional",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.036619714285714304,
+            0.8965517239953331,
+            0.5633802816901409,
+            0.02722323049001818
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "candidate Don Leonard said:",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.4305598561762325,
+            0.8106066288549886,
+            0.5387738724829446,
+            0.02980866060066567
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "\"I'd lie to the people in the district",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.4305864355759428,
+            0.7804654483064573,
+            0.41785471741582303,
+            0.030966618532710433
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "in order to get their votes\"",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.7350906566410461,
+            0.5748731409836358,
+            0.20587502063160212,
+            0.02448239300514954
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "OHIO FAMILIES",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.7211267591373239,
+            0.5499092558189655,
+            0.22816901408450707,
+            0.023593466424682408
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "DESERVE BETTER.",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.6169014104225352,
+            0.5136116153660012,
+            0.11830985915492953,
+            0.010889292196007205
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Paidfir by Jelening Weain So eet PIC:. Not",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.9070422523004695,
+            0.5154264971869328,
+            0.07323943661971832,
+            0.00907441016333943
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "delendngnaircheel.con",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.03661971790744466,
+            0.4373865696266528,
+            0.8056338028169013,
+            0.034482758620689724
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "We can trust Congressman MIKE CAREY",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.036619722754303564,
+            0.4101633394636015,
+            0.7999999999999999,
+            0.025408348457350294
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "to continue fighting for Ohio families and taxpayers",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07042253098591567,
+            0.3666061708106474,
+            0.2647887323943662,
+            0.012704174228675091
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Cosponsored the Congressional",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07042253883802808,
+            0.3502722323956442,
+            0.29014084507042254,
+            0.010889292196007316
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "stock trading ban to stop corruption",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.0704225308920189,
+            0.3266787658197218,
+            0.25915492957746483,
+            0.010889292196007205
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Delivered one of the largest tax",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07042253158450713,
+            0.31034482749546277,
+            0.29014084507042254,
+            0.010889292196007316
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "cuts in American history that ended",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07042253821596232,
+            0.2940108895039323,
+            0.23661971830985917,
+            0.012704174228675091
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "taxes ontips and overtime for",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07042253739436614,
+            0.2758620690789474,
+            0.1746478873239437,
+            0.012704174228675202
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "working class families",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07042253746478867,
+            0.2558983666969147,
+            0.1802816901408451,
+            0.010889292196007205
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Ended taxes on Social",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07042253739436614,
+            0.237749546392922,
+            0.1746478873239437,
+            0.012704174228675091
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Security income with",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.0704225368450704,
+            0.22323049009074414,
+            0.16338028169014085,
+            0.010889292196007316
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "a new $6,000 credit",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07042253755868536,
+            0.19963702371445857,
+            0.14084507042253522,
+            0.010889292196007205
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "As a veteran and",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07042253383098594,
+            0.18148820321234116,
+            0.1380281690140845,
+            0.012704174228675091
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "former US Army",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.0704225330046949,
+            0.16696914691470044,
+            0.1323943661971831,
+            0.012704174228675202
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Reserve officer,",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07042253345070427,
+            0.15063520866606162,
+            0.1408450704225352,
+            0.010889292196007316
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Carey is a trusted",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07042253697183094,
+            0.1361161525181488,
+            0.1408450704225352,
+            0.00907441016333943
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "advocate for Ohio",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5154929526760564,
+            0.056261342921960056,
+            0.4056338028169014,
+            0.02177858439201441
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Re-Elect MIKE CAREY Congress",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5183098635915492,
+            0.03992740485480939,
+            0.3549295774647887,
+            0.014519056261343088
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "* ELECTION DAY is Tuesday November 3rd",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5211267655985915,
+            0.023593466492740522,
+            0.4028169014084506,
+            0.012704174228675202
+          ],
+          "image_hash": "c8986cf1a15c1dbfd9a9021e903666a02fbb885f0519db7c9c042db24e1cb61f",
+          "image_url": "https://static.wixstatic.com/media/610979_a89ac0ce45d149e094e438af61367eca~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "* EARLY IN-PERSON VOTING is Happening Now",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "dms-images",
+      "source_hash": "f86c642260294b1775b6a80f7964bf87562423bdaaefb82bf2d1a130360b7a9c",
+      "source_record_id": "dms-images-carey-c8986cf1a15c1dbf",
+      "source_url": "https://www.defendingmainstreet.com/materials",
+      "sponsor": "Defending Main Street PAC",
+      "sponsor_type": "outside_group",
+      "state": "OH",
+      "text": "411 New.Jerpay Avn SE\nWashington, DC 20003\nRadical Congressional\ncandidate Don Leonard said:\n\"I'd lie to the people in the district\nin order to get their votes\"\nOHIO FAMILIES\nDESERVE BETTER.\nPaidfir by Jelening Weain So eet PIC:. Not\ndelendngnaircheel.con\nWe can trust Congressman MIKE CAREY\nto continue fighting for Ohio families and taxpayers\nCosponsored the Congressional\nstock trading ban to stop corruption\nDelivered one of the largest tax\ncuts in American history that ended\ntaxes ontips and overtime for\nworking class families\nEnded taxes on Social\nSecurity income with\na new $6,000 credit\nAs a veteran and\nformer US Army\nReserve officer,\nCarey is a trusted\nadvocate for Ohio\nRe-Elect MIKE CAREY Congress\n* ELECTION DAY is Tuesday November 3rd\n* EARLY IN-PERSON VOTING is Happening Now",
+      "title": "DMS Mike Carey and Don Leonard Pinocchio two-sided mailer"
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "Publisher-linked original with individually reviewed payer evidence; FEC H6OH15112, DEM, principal committee C00913491. Primary publisher: https://www.defendingmainstreet.com/materials",
+      "chamber": "House",
+      "date_basis": "publisher_gallery_upload_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "dms-images-leonard-5b761bcb7f558537",
+      "language": "en",
+      "language_basis": "Local English OCR plus seeded language detection",
+      "media_urls": [
+        "https://www.defendingmainstreet.com/materials"
+      ],
+      "message_id": "9226b9e33f4b65726d8eaf80c64b980d8a5de156d19b70bf605907562d0f72b8",
+      "observed": "2026-10-30",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-23",
+      "quality_flags": [
+        "image_ad_eligibility_reviewed",
+        "image_ocr_may_misrecognize_words",
+        "image_reading_order_unverified",
+        "publisher_gallery_upload_not_verified_first_publication_or_paid_delivery"
+      ],
+      "race": "OH-15",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.03745318929773953,
+            0.9781073446976114,
+            0.13857677209116245,
+            0.007357771450516859
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "native_campaign_evidence": {
+            "ad_evidence": "Actual combined two-sided election mailpiece from the publisher's public gallery. The image explicitly names Don Leonard in Congress; exact saved 2026 FEC identity H6OH15112 is DEM, OH-15. His target party does not determine the advertiser's alignment. The inspected disclaimer names Defending Main Street PAC and denies candidate authorization; the publisher's exact Republican-majority statement independently binds alignment R. Both faces remain one ad, distinct from the separate Pinocchio execution. Claims in the creative are advertiser assertions, not verified findings.",
+            "alignment_review": {
+              "alignment": "R",
+              "required_quotes": [
+                "DMS supports dynamic candidates and incumbents in key, contested districts across the country that are crucial to ensuring a Republican Majority in Congress."
+              ],
+              "sha256": "7e9cc3a602e6bcbfeee4302de97edf2869a47a6c6a07606f03091faf153c3d59",
+              "url": "https://www.defendingmainstreet.com/"
+            },
+            "candidate_id": "H6OH15112",
+            "extraction_caveat": "Keep automatic OCR, including Leonara/congress misrecognitions and distorted small print. Gallery createdDate is not a verified first publication, mailing or delivery date; no new semantic portrayal judgment is supplied.",
+            "id": "dms-images-leonard-5b761bcb7f558537",
+            "image_engine": {
+              "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+              "engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+              "image_frame_count": 1
+            },
+            "media_sha256": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+            "media_type": "image",
+            "media_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+            "post_url": "https://www.defendingmainstreet.com/materials",
+            "publisher_gallery": {
+              "created": "2026-10-23T14:19:38.000Z",
+              "gallery_id": "comp-l2tbmd431_galleryData",
+              "item_id": "a754c718-a4d7-4ceb-8616-7a78e911f5e1",
+              "sha256": "cbb001ba1a2a0bb21edad68cf1f143b18c2a4051654c46fc4b0e833481a67b17",
+              "title": "Campaign Support | DMS"
+            },
+            "publisher_html_sha256": "cbb001ba1a2a0bb21edad68cf1f143b18c2a4051654c46fc4b0e833481a67b17",
+            "publisher_url": "https://www.defendingmainstreet.com/materials",
+            "required_quotes": [
+              "Radical Professor",
+              "We can't trust Radical Professor\nDon Leonard in Congress",
+              "Paid for by Defending Main Street PAC."
+            ],
+            "reviewed": "2026-10-30",
+            "source": "dms-images",
+            "sponsor": "Defending Main Street PAC",
+            "sponsor_type": "outside_group",
+            "title": "DMS Don Leonard Radical Professor two-sided mailer",
+            "title_basis": "Descriptive label, not a verified creative title"
+          },
+          "start_seconds": null,
+          "text": "411 New Jersay Ave SE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.03370786631714328,
+            0.9723837212261014,
+            0.14232208084886092,
+            0.004360464669890263
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Vrasnnglen, UC ZoUUs",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.16853932680873762,
+            0.8633720934499117,
+            0.6516853945098654,
+            0.03210813312207239
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Radical Professor",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.10674081857493165,
+            0.8219141534053193,
+            0.8019027709960938,
+            0.04662471706584348
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Don Leonara is trying",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.10861424747234563,
+            0.7936046516497977,
+            0.7677902444435732,
+            0.034883720053117906
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "to trick his way into",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.3279548654135607,
+            0.7549470096740797,
+            0.35834762127730097,
+            0.035407914953716646
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "congress.",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.10486891910597812,
+            0.7194767446885104,
+            0.7228464279731694,
+            0.030523255719976827
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "X Hiding an Arrest Record",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.10486890945858537,
+            0.6857344627505693,
+            0.8014981346408816,
+            0.029661016949152574
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "X Concealing His Radical Past",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.10112360112634457,
+            0.6525423729692059,
+            0.8052434433985801,
+            0.027690185665410816
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "X Said He'd Lie to Get Votes",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.1161048825315943,
+            0.513081395606959,
+            0.7640449356858747,
+            0.007398830295282655
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Paid for by Defending Main Street PAC. Not authorized by any candidate or candidate's committee. http://defendingmainstreet.com",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.07865168812111589,
+            0.45056497124443706,
+            0.8539325686266822,
+            0.027632702541890097
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "We can't trust Radical Professor",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.18224292370370768,
+            0.41690063879872985,
+            0.6394644966960824,
+            0.035044282169665264
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "Don Leonard in Congress",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.4681647968931032,
+            0.35875706215240455,
+            0.23220972771192117,
+            0.013418079096045199
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "> DON LEONARD",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5018726622400638,
+            0.3473837207792443,
+            0.16104868032636432,
+            0.011627907133371806
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "HIDING HIS",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5056179867080862,
+            0.33686440679751584,
+            0.2546816359471231,
+            0.009180790960451879
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "CRIMINAL RECORD",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5018726651401701,
+            0.32267441833253896,
+            0.2434456818295222,
+            0.011627907133371806
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "after being arrested",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5018726610481573,
+            0.3107344635802739,
+            0.20973781947671932,
+            0.012005649717514055
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "and jailed earlier",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5018726623615338,
+            0.2994186044275001,
+            0.12734081797356156,
+            0.011627907133371806
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "this year.w",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.09737828583530338,
+            0.23516949137881937,
+            0.265917590064724,
+            0.012005649717514166
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "> CONCEALING HIS",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.13108615057052872,
+            0.22528248588572963,
+            0.19475654267916712,
+            0.008729141984282207
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "RADICAL PAST",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.1235955041146019,
+            0.21045197748926137,
+            0.28089888078452896,
+            0.012005649717514055
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "including higher taxes.",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.1273408258745004,
+            0.19912790670463199,
+            0.22097377359432024,
+            0.011627907133371806
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "open borders, and",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.1235955118224947,
+            0.18895348826663172,
+            0.24719099058722058,
+            0.010199054149584552
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "socialist handouts.\"",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.4756554329605188,
+            0.1264124293334209,
+            0.23220972771192117,
+            0.010215477754840663
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "› LEONARD SAID",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5056179773814854,
+            0.1148255814323137,
+            0.15355804888871472,
+            0.00876198919479465
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "HE'D LIE TO",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5056179794251336,
+            0.10169491533724895,
+            0.20599251071902092,
+            0.010223689389094126
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "WIN VOTES and",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5056179821520017,
+            0.09011627913993603,
+            0.21348314215667052,
+            0.010174418573325683
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "confirmed it with",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.5018726524882569,
+            0.07838983049845116,
+            0.24719101843172608,
+            0.008819471644816446
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "the news media as a",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": null,
+          "extraction_engine": "Apple Vision VNRecognizeTextRequest, accurate, en-US, no language correction",
+          "image_bounds": [
+            0.501872663190203,
+            0.06540697677488383,
+            0.2022471880390696,
+            0.011627907133371918
+          ],
+          "image_hash": "5b761bcb7f5585370d624fb4c859d0de2fd9db29c1045ec886d66bec02ba1f85",
+          "image_url": "https://static.wixstatic.com/media/610979_3c71249582e9466484adffa1901d0f20~mv2.png",
+          "kind": "image_ocr",
+          "start_seconds": null,
+          "text": "\"correct quote.\"*",
+          "voice": "unreviewed"
+        }
+      ],
+      "source": "dms-images",
+      "source_hash": "5abb11eb0b0e10128da313c4f321493815c1c8f942dbb2f615f357be54b93c7b",
+      "source_record_id": "dms-images-leonard-5b761bcb7f558537",
+      "source_url": "https://www.defendingmainstreet.com/materials",
+      "sponsor": "Defending Main Street PAC",
+      "sponsor_type": "outside_group",
+      "state": "OH",
+      "text": "411 New Jersay Ave SE\nVrasnnglen, UC ZoUUs\nRadical Professor\nDon Leonara is trying\nto trick his way into\ncongress.\nX Hiding an Arrest Record\nX Concealing His Radical Past\nX Said He'd Lie to Get Votes\nPaid for by Defending Main Street PAC. Not authorized by any candidate or candidate's committee. http://defendingmainstreet.com\nWe can't trust Radical Professor\nDon Leonard in Congress\n> DON LEONARD\nHIDING HIS\nCRIMINAL RECORD\nafter being arrested\nand jailed earlier\nthis year.w\n> CONCEALING HIS\nRADICAL PAST\nincluding higher taxes.\nopen borders, and\nsocialist handouts.\"\n› LEONARD SAID\nHE'D LIE TO\nWIN VOTES and\nconfirmed it with\nthe news media as a\n\"correct quote.\"*",
+      "title": "DMS Don Leonard Radical Professor two-sided mailer"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Video linked in an official Senate Leadership Fund ad release: https://senateleadershipfund.org/press-releases/new-ad-sherrod-brown-will-tax-the-lights-out-of-ohio/. Alignment is publisher alignment, not a separately verified payer identity.",
       "chamber": "Senate",
       "date_basis": "release_date",
@@ -69101,6 +71208,15 @@
     "bresnahan-native-122245820438111841": {
       "state": "text"
     },
+    "dms-images-carey-c8986cf1a15c1dbf": {
+      "state": "text"
+    },
+    "dms-images-flores-e2d3ad941ba3001f": {
+      "state": "text"
+    },
+    "dms-images-leonard-5b761bcb7f558537": {
+      "state": "text"
+    },
     "herrera-native-9bd70329b03ece7b": {
       "state": "needs_date"
     },
@@ -69652,6 +71768,17 @@
       "state": "partial",
       "undated_videos_with_text": 0,
       "url": "https://www.republicanmainstreet.org/post/rmsp-launches-600-000-digital-ad-campaign-in-new-york-highlighting-salt-relief-efforts"
+    },
+    {
+      "ads_with_text": 3,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "last_success": "2026-10-30",
+      "scope": "Individually reviewed original campaign images, not complete discovery",
+      "source": "dms-images",
+      "state": "partial",
+      "undated_videos_with_text": 0,
+      "url": "https://www.defendingmainstreet.com/materials"
     }
   ]
 }

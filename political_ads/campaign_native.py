@@ -12,7 +12,9 @@ from bs4 import BeautifulSoup
 
 from political_ads.cli import read_json, write_json
 from political_ads.http import Client
+from political_ads.images import image_segments, recognize_image
 from political_ads.schema import END, START, Ad, digest
+from political_ads.sources import language_of
 from political_ads.video import recognize_video, video_segments
 
 
@@ -35,6 +37,8 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
     client = Client(root / "data/raw/http", offline)
     for review in reviews:
         identity, source = review["id"], review["source"]
+        gallery = review.get("publisher_gallery")
+        is_image = review.get("media_type") == "image"
         if identity in ads or (identity in leads and leads[identity].get("recovered_segments")):
             continue
         if review.get("post_timestamp"):
@@ -45,6 +49,10 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                 continue
         elif release := review.get("publisher_release"):
             published = release["published"]
+            if not START <= published <= until:
+                continue
+        elif gallery:
+            published = datetime.fromisoformat(gallery["created"]).date().isoformat()
             if not START <= published <= until:
                 continue
         else:
@@ -59,7 +67,11 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             "last_success": status.get("last_success"),
             "state": "partial",
             "discovery_complete": False,
-            "scope": "Individually reviewed original campaign videos, not complete discovery",
+            "scope": (
+                "Individually reviewed original campaign images, not complete discovery"
+                if is_image
+                else "Individually reviewed original campaign videos, not complete discovery"
+            ),
         }
         status.pop("error", None)
         try:
@@ -69,6 +81,53 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             body, _ = client.get(review["publisher_url"], retry=False)
             soup = BeautifulSoup(body, "html.parser")
             publisher_hash = hashlib.sha256(body).hexdigest()
+            alignment = {"DEM": "D", "REP": "R"}.get(candidate["party"], "other")
+            if is_image != bool(gallery):
+                raise ValueError("Reviewed images require exact public gallery upload evidence")
+            if gallery:
+                script = soup.find("script", id="wix-warmup-data")
+                if (
+                    review.get("post_id")
+                    or review.get("post_timestamp")
+                    or review.get("publisher_request")
+                    or review.get("publisher_release")
+                    or review["post_url"] != review["publisher_url"]
+                    or publisher_hash != gallery["sha256"]
+                    or soup.title is None
+                    or soup.title.get_text(" ", strip=True) != gallery["title"]
+                    or script is None
+                ):
+                    raise ValueError("Image requires the exact reviewed public gallery")
+                apps = json.loads(script.get_text())["appsWarmupData"]
+                items = [
+                    item
+                    for app in apps.values()
+                    if gallery["gallery_id"] in app
+                    for item in app[gallery["gallery_id"]]["items"]
+                    if item["itemId"] == gallery["item_id"]
+                ]
+                if (
+                    len(items) != 1
+                    or items[0]["createdDate"] != gallery["created"]
+                    or items[0].get("isSecure") is not False
+                    or items[0]["metaData"].get("type", "image") != "image"
+                    or review["media_url"]
+                    != "https://static.wixstatic.com/media/" + items[0]["mediaUrl"]
+                ):
+                    raise ValueError("Exact reviewed public image and upload timestamp are missing")
+                alignment_review = review["alignment_review"]
+                alignment_body, _ = client.get(alignment_review["url"], retry=False)
+                alignment_text = BeautifulSoup(alignment_body, "html.parser").get_text(
+                    " ", strip=True
+                )
+                if (
+                    alignment_review["alignment"] not in {"D", "R", "other", "unknown"}
+                    or hashlib.sha256(alignment_body).hexdigest() != alignment_review["sha256"]
+                    or not alignment_review["required_quotes"]
+                    or not all(q in alignment_text for q in alignment_review["required_quotes"])
+                ):
+                    raise ValueError("Publisher alignment requires exact reviewed primary evidence")
+                alignment = alignment_review["alignment"]
             if release := review.get("publisher_release"):
                 metadata = soup.select_one('meta[property="article:published_time"]')
                 if (
@@ -136,7 +195,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             else:
                 video_url = review["media_url"]
                 markup = html.unescape(body.decode("utf-8")).replace("\\/", "/")
-                if video_url not in markup:
+                if not gallery and video_url not in markup:
                     raise ValueError("Reviewed original video is not linked by the publisher")
             download_url = video_url
             parsed = urlparse(video_url)
@@ -147,14 +206,30 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             media, _ = client.get(download_url, retry=False)
             if hashlib.sha256(media).hexdigest() != review["media_sha256"]:
                 raise ValueError("Original video bytes differ from the individually reviewed ad")
-            media_hash, ocr, speech = recognize_video(root, media, offline=offline)
-            segments = video_segments(ocr, speech, media_hash)
+            if is_image:
+                media_hash, ocr = recognize_image(root / "data/media/campaign-images", media)
+                segments = image_segments(ocr, media_hash, video_url)
+                language = language_of("\n".join(segment["text"] for segment in segments))
+                engine = {
+                    "image_engine": {key: value for key, value in ocr.items() if key != "lines"}
+                }
+            else:
+                media_hash, ocr, speech = recognize_video(root, media, offline=offline)
+                segments = video_segments(ocr, speech, media_hash)
+                language = (
+                    speech["language"] if speech["language_probability"] >= 0.8 else "unknown"
+                )
+                engine = {
+                    "speech_engine": {
+                        key: value for key, value in speech.items() if key != "segments"
+                    }
+                }
             text = "\n".join(segment["text"] for segment in segments)
             if not segments or not all(quote in text for quote in review["required_quotes"]):
                 raise ValueError("Recovered text does not retain the reviewed ad evidence")
             evidence = review | {
                 "publisher_html_sha256": hashlib.sha256(body).hexdigest(),
-                "speech_engine": {key: value for key, value in speech.items() if key != "segments"},
+                **engine,
             }
             if review.get("publisher_request"):
                 evidence["publisher_homepage_sha256"] = publisher_hash
@@ -167,12 +242,19 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             ]
             if release:
                 quality[-1] = "publisher_release_date_not_verified_first_airing"
+            if is_image:
+                quality = [
+                    "image_ad_eligibility_reviewed",
+                    "image_ocr_may_misrecognize_words",
+                    "image_reading_order_unverified",
+                    "publisher_gallery_upload_not_verified_first_publication_or_paid_delivery",
+                ]
             quality.extend(review.get("quality_flags", []))
             if published is None:
                 leads[identity] = {
                     "id": identity,
                     "source": source,
-                    "alignment": {"DEM": "D", "REP": "R"}.get(candidate["party"], "other"),
+                    "alignment": alignment,
                     "state": "needs_date",
                     "video_url": video_url,
                     "releases": [
@@ -199,7 +281,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     title=review["title"],
                     sponsor=review["sponsor"],
                     sponsor_type=review.get("sponsor_type", "candidate"),
-                    alignment={"DEM": "D", "REP": "R"}.get(candidate["party"], "other"),
+                    alignment=alignment,
                     published=published,
                     observed=date.today().isoformat(),
                     text=text,
@@ -207,21 +289,29 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     source_hash=digest(
                         json.dumps({"evidence": evidence, "segments": segments}, sort_keys=True)
                     ),
-                    date_basis="publisher_release_date" if release else "publisher_post_date",
+                    date_basis=(
+                        "publisher_gallery_upload_date"
+                        if gallery
+                        else "publisher_release_date"
+                        if release
+                        else "publisher_post_date"
+                    ),
                     state=candidate["state"],
                     chamber="House" if candidate["office"] == "H" else "Senate",
                     race=f"{candidate['state']}-{int(candidate['district']):02}"
                     if candidate["office"] == "H"
                     else f"{candidate['state']}-Senate",
-                    language=speech["language"]
-                    if speech["language_probability"] >= 0.8
-                    else "unknown",
-                    language_basis="Local Whisper language detection; speech and frame OCR",
+                    language=language,
+                    language_basis=(
+                        "Local English OCR plus seeded language detection"
+                        if is_image
+                        else "Local Whisper language detection; speech and frame OCR"
+                    ),
                     media_urls=[review["post_url"]],
                     attribution_basis=(
                         (
                             "Publisher-linked original with individually reviewed payer evidence; "
-                            if release
+                            if release or gallery
                             else (
                                 "Campaign-linked original with candidate approval "
                                 "and payer evidence; "

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+from datetime import datetime
 from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup
@@ -35,9 +36,23 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         soup = BeautifulSoup(content, "html.parser")
         publication = soup.find("meta", property="article:published_time")
         heading = soup.find("h1")
-        if publication is None or heading is None:
+        if heading is None:
             raise ValueError("Reviewed article publication metadata or heading is missing")
-        published = publication["content"][:10]
+        if review.get("publication_selector"):
+            dates = soup.select(review["publication_selector"])
+            if len(dates) != 1:
+                raise ValueError("Reviewed visible publication date must match exactly one element")
+            published = (
+                datetime.strptime(dates[0].get_text(" ", strip=True), "%B %d, %Y")
+                .date()
+                .isoformat()
+            )
+            if publication is not None and publication["content"][:10] != published:
+                raise ValueError("Reviewed visible and metadata publication dates disagree")
+        elif publication is not None:
+            published = publication["content"][:10]
+        else:
+            raise ValueError("Reviewed article publication metadata or heading is missing")
         title = heading.get_text(" ", strip=True)
     else:
         raise ValueError("Unsupported reviewed release format")
