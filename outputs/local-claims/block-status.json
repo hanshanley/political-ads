@@ -1251,49 +1251,49 @@
     "ad_id": "google-CR11028699425911341057-cbf254e4d012",
     "block_id": "google-CR11028699425911341057-cbf254e4d012-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR11072533724695363585-6168f21bb4a6",
     "block_id": "google-CR11072533724695363585-6168f21bb4a6-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR11098315004623978497-a02ab690e0ec",
     "block_id": "google-CR11098315004623978497-a02ab690e0ec-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "google-CR11098315004623978497-c8aa4ea27325",
     "block_id": "google-CR11098315004623978497-c8aa4ea27325-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR11799669007848570881-61a1cc78cc41",
     "block_id": "google-CR11799669007848570881-61a1cc78cc41-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR11804576059523858433-8c1305334034",
     "block_id": "google-CR11804576059523858433-8c1305334034-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR11879751413271625729-64e058772554",
     "block_id": "google-CR11879751413271625729-64e058772554-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "google-CR11879751413271625729-fbcc2ea48fcd",
     "block_id": "google-CR11879751413271625729-fbcc2ea48fcd-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for Team AOC: \\\"Team AOC\\\" is absent from unit 1. Exact source: \\\"Paid for by ALEXANDRIA OCASIO-CORTEZ FOR CONGRESS\\\\nUS House Campaign, NY-14\\\\nИЕШАШ\\\\nFOCASIO!\\\\nActBlue\\\\nsecure.actblue.com/donate/aoc\\\\nAlexandria Ocasio-Cortez - Official\\\\nAOC Campaign\\\\nAlexandria relies on grassroots donors and doesn't take\\\\na dime of corporate PAC money Help team AOC work\\\\nto grow our grassroots movement by..\\\\nDonate $25\\\\nDonate $250\\\\n>\\\\nDonate $15\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "google-CR12110621341544087553-e00fc818fe21",
