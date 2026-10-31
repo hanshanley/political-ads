@@ -10,7 +10,86 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Van Epps quoted-ad expansion of the October 30 snapshot
+## Rogers quoted-ad expansion of the October 30 snapshot
+
+One additional **FL-02 Republican primary ad** is recovered from the
+actual Rogers for Florida campaign-hosted report and its explicitly
+exposed individual WordPress post **1441**, June 24. Exactly **three
+ordered spoken-ad quotations / 41 preserved tokens** belong to the
+single **Faith** original **SEFGTsulJck**. The source's terminal commas
+before attribution and curly apostrophe are retained. Campaign spokesperson
+remarks, reporter descriptions, electoral analysis and planned-airing
+statements are not inserted into the ad. The record is **partial and
+semantically unreviewed**, not a newly classified contrast ad.
+
+The actual campaign pages and exposed individual JSON bind the canonical
+news URL, title, June 24 **14:56:20 local / 18:56:20 UTC**, exact
+rendered-content SHA-256
+`55dbfb34847cf5f09c485eb01a0e0faee4ef4e3d072a05386bc7d30036a8e2ff`,
+literal passage order, advertiser/primary context, federal identity and
+original association. Saved FEC **H6FL02331 / C00936963** identifies
+**ROGERS, AUSTIN**, REP, House, FL-02; no alias or fuzzy match is added.
+The report expressly identifies the GOP primary against Keith Gross and
+Evan Power on August 18. Rogers for Florida is the publisher-reported
+campaign advertiser; the legal payer and approval card are not independently
+inspected. June 24 is the **report date**, not verified original upload,
+first release or paid delivery. Its reported digital history since April
+and planned broadcast expansion do not establish verified airing intervals.
+The April 29 launch, June 24 broadcast announcement and quoted report
+describe **one promotion, not three recovered creatives**.
+
+This is the independently campaign-hosted text, which credits Florida
+Politics; **that paused provider was not requested**. Personalized tracking
+links, media, captions and licensed catalogs were not requested either.
+The existing reviewed-release adapter suffices without production parser
+changes. Collection uses the exact previously cached individual response:
+
+```sh
+political-ads collect --until 2026-10-30 --source rogers-florida --offline
+political-ads parquet
+political-ads build
+political-ads analyze
+political-ads validate
+political-ads audit-strategy
+```
+
+Verified totals are **1,886 acquired / 1,848 English records: 1,226 D /
+583 R / 31 other / eight unresolved**. English House coverage is **698 D /
+205 R**, comprising **222 D / 204 R non-Snap** and **476 D / one R Snap**.
+Exact observed-text messages are **1,204 D / 546 R**. All **1,885 previous
+acquired objects, 1,847 analyzed objects, 39 release reviews, seventeen
+untouched protected files and every exact alias** remain unchanged. Native
+partitions, the undated backlog, semantic reviews and frozen claims persist.
+
+All **156 affected Python tests**, Python lint/format, **17 frontend tests**,
+frontend lint/typecheck/build and **seven browser cases** pass. Complete
+analysis/browser/production JSON, gzip and CSV, all **1,886 Parquet rows**
+and **eleven visually inspected PNG sets** reconcile. A socket-forbidden
+isolated **one-response replay** reproduces all **534 written objects and
+source states** from the preceding 533-record partition. Independent
+auditing passes **20 metric groups / ten chart rows**. Snapshot:
+`6993040689254afdcfe674bb55e9cec07267b9ca94db6e04401e82bf1ffff85f`.
+The preceding Van Epps commit **0cd1d856edbd6f5e4b51e9629ad07631240bcb0a**
+has successful exact-head CI **41179143874**, independently confirmed
+including every job step.
+
+Expanded discovery now reaches **two unadmitted Bouchard MI-10 ad reports**:
+September 2 **Jump**, original **NFLAH1_lrNM**, and the actually linked
+June 29 **Border Mission** primary report, original **urPpIu3PBm8**.
+Both actual public pages expose individual post APIs; strict quotation,
+identity and source-hash reviews remain pending. The campaign homepage's
+separate undated YouTube original is not counted. OnTheIssues' actual
+2026 AdWatch index contains Senate/gubernatorial excerpts, not House ads;
+its header does not make them eligible. Hilleary's actual campaign news
+page returns HTTP 200 with 298-byte empty HTML; this is not a denial or
+evidence that he did not advertise. His existing Nashville Banner first-ad
+fragments total **16 tokens** and retain an individually linked Meta ad
+ID, but remain unadmitted pending strict association/name evidence.
+Schedule #1 is verified active every 20 minutes. Continue acquisition;
+publication/host restoration remains on hold and no national coverage
+or advertising-prevalence claim follows from these source counts.
+
+## Previous Van Epps quoted-ad expansion
 
 One additional **TN-07 Republican general-election ad** is recovered from
 The Tennessee Star's actual October 14 report and explicitly exposed

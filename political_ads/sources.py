@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "rogers-florida",
+        "https://rogersforflorida.com",
+        "Rogers for Florida (publisher-reported; ad payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="FL-02",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "vanepps-tennessee-star",
         "https://tennesseestar.com",
         "Matt Van Epps campaign (publisher-reported; payer unverified)",
