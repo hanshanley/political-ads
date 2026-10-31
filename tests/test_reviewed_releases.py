@@ -188,6 +188,39 @@ def release_fixture(format="wordpress", completeness="partial_quotation"):
     return source, candidate, review, body
 
 
+def test_reviewed_release_binds_individual_facebook_library_link_without_requesting_meta():
+    source, candidate, review, body = release_fixture()
+    original = (
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US"
+        "&id=1023109076854193&is_targeted_country=false&media_type=all&search_type=page"
+        "&sort_data%5Bmode%5D=total_impressions&sort_data%5Bdirection%5D=desc"
+        "&view_all_page_id=628266147047913"
+    )
+    post = json.loads(body)
+    post["content"]["rendered"] = post["content"]["rendered"].replace(
+        '<iframe src="https://www.youtube.com/embed/aaaaaaaaaaa"></iframe>',
+        f'<a href="{original}">First advertisement</a>',
+    )
+    review["media_url"] = original
+    review["content_sha256"] = digest(post["content"]["rendered"])
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            assert url == review["retrieval_url"]
+            return json.dumps(post).encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-10-30", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    assert ads[0]["text"] == review["passages"][0]
+    assert ads[0]["media_urls"] == [original]
+    assert ads[0]["segments"][0]["release_evidence"]["media_url"] == original
+    assert calls == [review["retrieval_url"]]
+
+
 @pytest.mark.parametrize("format", ["wordpress", "html"])
 @pytest.mark.parametrize("completeness", ["partial_quotation", "marked_script"])
 def test_reviewed_release_keeps_only_bound_ad_words_and_explicit_provenance(format, completeness):

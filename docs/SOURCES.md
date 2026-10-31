@@ -10,7 +10,82 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Huizenga quoted-ad expansion of the October 30 snapshot
+## Hilleary first-ad acquisition and individual-library association
+
+One additional Republican House acquisition, **Van Hilleary's first
+TN-06 primary ad**, retains **three ordered literal quotations / 16
+tokens** from Nashville Banner's actual July 22 report and exposed
+individual WordPress post **30952**. The whole literal publisher-linked
+Facebook Ad Library URL is retained in `data/ad-release-reviews.json`,
+including individual ad ID **1023109076854193**. The page ID alone is not
+an individual creative. The second Hilleary video, **AEwu36kmICU**, has
+insufficient available words and is not acquired or padded.
+
+**This changes acquired coverage, not English-language analysis.** The
+existing seeded language detector returns **unknown** for this short
+text. Its >=0.90 confidence policy is unchanged; there is no language
+override, rewritten text or added reporter prose. The record remains in
+the complete acquired corpus and Parquet, but not the English analysis
+or its downloads. It receives no new semantic portrayal labels.
+
+The exact title, canonical URL, individual retrieval URL, ordered
+passages, original link and advertiser/primary context are hash-bound.
+The report's July 22 local/UTC timestamps are **06:02:00 / 11:02:00**;
+rendered-content SHA-256:
+`612e6781c1f072c876c48fba78271e4e9a795b50ac9d9b724263c15ed46bf16f`.
+July 22 is the publisher report date, not independently verified upload,
+release or first paid airing. Artificial Trump/Hilleary visuals are
+publisher-reported, **not authentic Trump speech or an endorsement**;
+the report explicitly says Trump had not endorsed either candidate.
+Campaign advertiser attribution is reported, while closing legal payer,
+approval, original-media details and paid delivery remain uninspected.
+
+Saved official **H6TN06205 / C00909838** identifies **HILLEARY, WILLIAM V.**,
+REP, House, current **TN-06**. The independently cached official committee
+master links principal **VAN FOR TENNESSEE**, designation P / type H / REP,
+to that same candidate. A reviewed exact **HILLEARY, VAN** alias combines
+this current linkage with the actual official historical House biography
+**15045** and the dated publisher identity. The biography's former
+**TN-04** representation does not replace the current **TN-06** race.
+No surname-only/fuzzy matching or candidate-name repair is used. Current
+Form 2 signature evidence is not claimed: `docquery.fec.gov` remains
+paused after its 403, without an alternate filing/PDF/API/reader request.
+
+The collector now recognizes only exact HTTPS `facebook.com` or
+`www.facebook.com`, path `/ads/library/`, one 15–20-digit individual
+`id`, and whitelisted public query parameters, without fragments or
+duplicate parameters. It retains the literal link and **does not request
+Meta**. Catalog/search/page-only links, malformed IDs, spoofed hosts,
+userinfo, ports and unknown credential parameters are rejected.
+Four focused cases pass; three failed before the fix. The integration
+regression requests only the publisher evidence. Collection uses the
+single already cached publisher JSON; no original media, captions,
+licensed catalog, purchase or publication. Source discovery remains
+incomplete. Reproduction uses the pipeline below with
+**`--source hilleary-banner --offline --until 2026-10-30`**.
+
+Verified snapshot:
+`fe815d0ec3467a34140c0d9a3806efb169dbbc6ceb0f56183589fa0d1c7c8504`.
+Totals: **1,890 acquired / unchanged 1,851 English**, **1,226 D / 586 R /
+31 other / eight unresolved**; exact English messages **1,204 D / 549 R**.
+English House remains **698 D / 208 R**, including **222 D / 207 R
+non-Snap** and **476 D / one R Snap**. Every preceding **1,889 acquired /
+1,851 analyzed object, 43 release reviews, seventeen protected files
+and all old aliases** is unchanged. Native partitions, saved semantic
+reviews, frozen claims and media backlog persist.
+
+**160 affected Python tests**, Python lint/format, **17 frontend tests**,
+frontend lint/typecheck/build and **seven browser cases** pass. Complete
+analysis/browser/production JSON, gzip/CSV, **1,890 Parquet rows** including
+the excluded text, and **eleven visually inspected PNG sets** reconcile.
+Socket-forbidden isolated **one-response replay** reproduces all **538
+written objects and source states** from 537. Independent auditing
+verifies **20 metric groups / ten chart rows**. This acquisition does
+not establish national ad prevalence or resolve the House coverage gap.
+All provider pauses and the publication hold persist; schedule #1 remains
+active while actionable acquisition continues.
+
+## Previous Huizenga quoted-ad expansion of the October 30 snapshot
 
 One additional Republican House ad, **Bill Huizenga's Thrifty**, is
 recovered offline from the actual Midwesterner report and exposed
@@ -70,21 +145,13 @@ groups / ten chart rows**. New text stays in the unreviewed category;
 denominator changes are not newly reviewed portrayal findings.
 Preceding Bouchard commit **ff1aaef44bab419c6a001b57a0a270ac735ba21f**
 has successful exact-head CI **41180856622**, including every step.
+Huizenga commit **43bb145a7c8a0d707b6fa3c5b863873cee70a82e** has successful
+exact-head CI **41205836007**; its original watcher was read and every
+step independently confirmed successful.
 
-Next, a separate socket-free Hilleary evidence check independently
-confirms the cached actual Banner post **30952**, July 22 **06:02:00 /
-11:02:00 UTC**, its unchanged rendered hash, **three ordered first-ad
-passages / 16 tokens** and novel individual Facebook library
-**1023109076854193**. Exact current **H6TN06205 / C00909838**, REP, TN-06,
-principal **VAN FOR TENNESSEE**, and the actual official historical House
-**HILLEARY, Van** biography are verified independently. Historical TN-04
-representation is not current TN-06 registration. The collector still
-does not recognize this individual library association, and no alias,
-production fix or Hilleary admission has been made in this snapshot.
-Reported artificial Trump/Hilleary visuals are not a genuine Trump
-endorsement. No Meta request, second-ad padding or denied Form 2
-retrieval occurs. All provider pauses and the publication hold persist;
-schedule #1 remains active while actionable acquisition continues.
+The subsequently verified Hilleary acquisition and narrowly tested
+individual-library association support are documented above. The
+Huizenga figures in this historical section remain its own snapshot.
 
 ## Previous Bouchard primary/general quoted-ad expansion
 

@@ -137,6 +137,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "hilleary-banner",
+        "https://nashvillebanner.com",
+        "Van Hilleary campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="TN-06",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "huizenga-midwesterner",
         "https://www.themidwesterner.news",
         "Bill Huizenga campaign (publisher-reported; payer unverified)",
@@ -1088,6 +1098,29 @@ def media_links(content: str) -> list[str]:
             parsed.scheme == "https"
             and parsed.hostname in {"x.com", "www.x.com", "twitter.com", "www.twitter.com"}
             and re.fullmatch(r"/[A-Za-z0-9_]{1,15}/status/[0-9]{15,20}", parsed.path)
+        ):
+            urls.append(value)
+        elif (
+            parsed.scheme == "https"
+            and parsed.netloc in {"facebook.com", "www.facebook.com"}
+            and parsed.path == "/ads/library/"
+            and not parsed.fragment
+            and (query := parse_qs(parsed.query, keep_blank_values=True))
+            and all(len(values) == 1 for values in query.values())
+            and re.fullmatch(r"[0-9]{15,20}", query.get("id", [""])[0])
+            and set(query)
+            <= {
+                "id",
+                "active_status",
+                "ad_type",
+                "country",
+                "is_targeted_country",
+                "media_type",
+                "search_type",
+                "sort_data[mode]",
+                "sort_data[direction]",
+                "view_all_page_id",
+            }
         ):
             urls.append(value)
         elif (

@@ -100,6 +100,42 @@ def test_public_media_links_recognize_only_exact_public_adimpact_viewer_paths():
     ) == [viewer]
 
 
+@pytest.mark.parametrize(
+    "original",
+    [
+        "https://facebook.com/ads/library/?id=1023109076854193",
+        "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US"
+        "&id=1023109076854193&is_targeted_country=false&media_type=all&search_type=page"
+        "&sort_data%5Bmode%5D=total_impressions&sort_data%5Bdirection%5D=desc"
+        "&view_all_page_id=628266147047913",
+    ],
+)
+def test_public_media_links_recognize_individual_facebook_library_associations(original):
+    assert media_links(f'<a href="{original}">First advertisement</a>') == [original]
+
+
+def test_public_media_links_reject_facebook_catalogs_and_unbound_library_associations():
+    original = "https://www.facebook.com/ads/library/?id=1023109076854193"
+    rejected = [
+        original.replace("https:", "http:"),
+        original.replace("www.facebook.com", "www.facebook.com.evil.example"),
+        original.replace("www.facebook.com", "user@www.facebook.com"),
+        original.replace("www.facebook.com", "www.facebook.com:443"),
+        original.replace("/ads/library/", "/ads/"),
+        original.replace("/ads/library/", "/Campaign_Name/"),
+        original.replace("1023109076854193", "not-an-id"),
+        original.replace("1023109076854193", "123"),
+        original.replace("1023109076854193", ""),
+        "https://www.facebook.com/ads/library/?view_all_page_id=628266147047913",
+        original + "&id=1023109076854194",
+        original + "&access_token=not-a-public-link",
+        original + "#catalog",
+    ]
+    assert (
+        media_links("".join(f'<a href="{url}">Not an individual ad</a>' for url in rejected)) == []
+    )
+
+
 @pytest.mark.parametrize("party_produced", [False, True])
 def test_cassidy_party_ad_mirror_does_not_become_a_candidate_ad(party_produced):
     source = next(s for s in SOURCES if s.id == "cassidy")
