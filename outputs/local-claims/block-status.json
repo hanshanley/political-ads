@@ -675,13 +675,13 @@
     "ad_id": "dccc-669589-0",
     "block_id": "dccc-669589-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "dccc-669591-0",
     "block_id": "dccc-669591-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "dccc-669591-1",
@@ -692,8 +692,8 @@
   {
     "ad_id": "dccc-669665-0",
     "block_id": "dccc-669665-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-669669-0",
@@ -704,20 +704,20 @@
   {
     "ad_id": "dccc-669673-0",
     "block_id": "dccc-669673-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for FLIPPO, DAVID: \\\"He\\\" is absent from unit 4. Exact source: \\\"Second, he reported receiving campaign contributions from a dead woman.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-669729-0",
     "block_id": "dccc-669729-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "dccc-669808-0",
     "block_id": "dccc-669808-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for Richard Hudson: \\\"Richard Hudson\\\" is absent from unit 6. Exact source: \\\"Richard Ojeda: Who then voted to jack up your drug costs and double your health care premiums.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "dccc-669825-0",
