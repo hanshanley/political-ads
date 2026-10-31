@@ -22,6 +22,28 @@ def test_public_media_links_normalize_video_hosts_and_include_gallery_popup_urls
     ]
 
 
+@pytest.mark.parametrize("host", ["x.com", "www.x.com", "twitter.com", "www.twitter.com"])
+def test_public_media_links_recognize_individual_status_associations(host):
+    post = f"https://{host}/Campaign_Name/status/2102681607672934852?ref_src=twsrc%5Etfw"
+    assert media_links(f'<a href="{post}">Watch the ad</a>') == [post]
+
+
+def test_public_media_links_reject_profiles_feeds_and_malformed_status_associations():
+    rejected = [
+        "https://x.com/Campaign_Name",
+        "https://x.com/Campaign_Name/media",
+        "https://x.com/Campaign_Name/status/not-a-post",
+        "https://x.com/Campaign_Name/status/123",
+        "https://x.com/Campaign_Name/status/2102681607672934852/photo/1",
+        "http://x.com/Campaign_Name/status/2102681607672934852",
+        "https://x.com.evil.example/Campaign_Name/status/2102681607672934852",
+        "https://x.com/i/flow/login",
+    ]
+    assert (
+        media_links("".join(f'<a href="{url}">Not an ad association</a>' for url in rejected)) == []
+    )
+
+
 def test_public_media_links_recognize_only_exact_public_adimpact_viewer_paths():
     viewer = "https://platform.adimpact.com/viewer/7510c197-092a-4b98-9ac4-ad3945897342"
     rejected = [

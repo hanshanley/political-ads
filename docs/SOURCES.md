@@ -10,9 +10,91 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## October 30: two North Carolina Republican House ad quotations
+## Three-state expansion of the October 30 snapshot
 
-The latest acquisition contains **1,854 text records**, including **1,816
+The latest acquisition contains **1,857 text records**, including **1,819
+English records: 1,226 D / 554 R / 31 other / eight unresolved**. It adds
+three Republican House advertisements from **ME-02, AZ-06 and NV-02**,
+each explicitly retained as **partial quotations**, not a recovered full
+transcript. All **1,854 preceding acquired objects**, **1,816 preceding
+analyzed objects**, fifteen earlier acquisition reviews and saved semantic
+reviews are unchanged. The additions remain semantically **unreviewed**.
+Exact-message counts are **1,204 D / 517 R**. English House coverage is now
+**698 D / 176 R**: 476 D / one R Snap and 222 D / 175 R non-Snap. These
+are source-limited collection counts, not national advertising prevalence.
+
+| Reported advertiser | Recovered ad | Publisher / report date | Recovered words |
+|---|---|---|---|
+| Paul LePage campaign, ME-02 | Immigration | Mediaite / September 24 UTC, September 23 EDT | Two passages, 26 words |
+| Juan Ciscomani campaign, AZ-06 | Veteran testimonial | Townhall / October 16 | Three passages, 46 words |
+| David Flippo campaign, NV-02 | Benitez-Thompson criminal-release allegation | American Journal News / October 20 | Two passages, 24 words |
+
+Credit: **Kathryn Wilkens, Mediaite**; **Joe Chalfant, Townhall**; and
+**Jesse Valentine, American Journal News**. Each entry in
+`data/ad-release-reviews.json` binds the actual publisher URL/title/date,
+complete response SHA-256, exact public ad-post association, advertiser
+context, exact FEC identity and literal ordered passages. All three messages
+and their exact status associations are absent from the preceding corpus.
+Several quotations from one ad remain one record. Publisher punctuation,
+including an ellipsis in the Ciscomani passage, is not silently reconstructed.
+
+This expands association recognition, not X acquisition. HTTPS individual
+`/handle/status/<15-20-digit-ID>` links on exact X/Twitter hosts are recognized;
+profiles, feeds, deceptive hosts, malformed IDs and extra path components
+are rejected. Four previously failing host cases now pass, alongside a
+negative-case regression. No X page, caption service or disclosure catalog
+was accessed. The LePage and Ciscomani reports link campaign posts; the
+Flippo report links a **journalist's** post. That distinction remains in the
+evidence; none is represented as downloaded original media, independently
+inspected closing-payer proof or verified paid delivery.
+
+LePage's machine timestamp, **September 24 at 01:28:41 UTC**, and visible
+**September 23 evening EDT** refer to the same instant. His record uses the
+metadata's UTC date and retains the local/post dates in provenance; this is
+not a second release or an inferred first airing. Exact 2026 FEC identities
+are **H6ME02148 / C00904094** (LePage), **H2AZ02360 / C00786194**
+(Ciscomani), and **H4NV04108 / C00901710** (Flippo). Flippo's current
+district follows the roster's NV-02 field, not his historical candidate-ID
+digits. No new alias or fuzzy matching was introduced.
+
+Advertiser alignment follows the reported campaign, not the news publisher,
+opponent or testimonial speaker. In particular, Ciscomani's self-described
+Democratic testimonial speaker does not make the ad Democratic. His election
+phase remains **unknown**, because this report does not explicitly establish
+the general-election contest; October timing alone is insufficient. The
+LePage and Flippo reports explicitly identify their Democratic opponents.
+Social captions, press-conference remarks, quoted campaign statements,
+biographies, reporter commentary and fact-checking remain outside ad text.
+Acquisition does not verify the allegations or supply a semantic tone label.
+
+```sh
+political-ads collect --source lepage-mediaite --source ciscomani-townhall \
+  --source flippo-americanjournal --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+Network-forbidden isolated replay reproduces all **512 written objects and
+source states** from the preceding 509-object corpus using only the three
+exact cached responses. All **346 Python tests**, Python lint/format,
+frontend lint, **17 frontend tests**, production build and **seven browser
+cases** pass. Independent auditing verifies **20 metric groups and ten chart
+rows**. Complete analysis/browser/production JSON, gzip and CSV agree; all
+**1,857 Parquet identity/text/hash/alignment rows** and eleven visually
+inspected PNG sets reconcile. Saved portrayal reviews and every preceding
+acquisition/analyzed object remain unchanged.
+
+The public American Journal News archive's bounded 2026 Flippo query exposes
+two posts: the admitted October 20 ad report and an October 15 campaign-support
+report without recovered ad copy. The latter is not counted. Earlier search
+leads are not substituted for actual publisher evidence. Recurring acquisition
+continues, while website and both article editions remain unpublished.
+
+## Preceding October 30: two North Carolina Republican House ad quotations
+
+That acquisition contains **1,854 text records**, including **1,816
 English records: 1,226 D / 551 R / 31 other / eight unresolved**. It adds
 two distinct Laurie Buckhout campaign ads in **NC-01**, both **partial
 quotations**, not full recovered transcripts. All **1,852 preceding acquired

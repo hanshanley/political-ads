@@ -411,6 +411,28 @@ links are associations only, not recovered transcripts or access to its catalog.
 Publisher dates remain distinct from first airing, and quoted allegations are not
 verified findings. Target party does not determine the advertiser's alignment.
 
+Public X/Twitter associations must be HTTPS links on exact `x.com` or
+`twitter.com` hosts (optionally `www`) with a valid handle and an individual
+15-20-digit `/status/` ID. Profiles, media feeds, malformed IDs, extra path
+components, non-HTTPS and deceptive hosts are not ad associations. A status
+link is not a recovered transcript, proof of campaign ownership or verified
+paid delivery. Individually reviewed quotations still require the complete
+publisher-response hash, exact reported-ad context, literal ordered passages,
+date/title and federal identity; a linked post alone cannot admit ad text.
+LePage and Ciscomani reports link campaign posts; the Flippo report links a
+journalist's post, explicitly retained as such. Social captions, ordinary press
+remarks and the publishers' fact-checking are excluded. The testimonial
+speaker's Democratic registration does not change Ciscomani's Republican
+advertiser alignment. No X page, caption service or disclosure catalog is
+accessed by this association recognition.
+
+The LePage article's `2026-09-24T01:28:41+00:00` publication metadata and
+September 23 evening EDT display identify the same instant. This record uses
+the metadata's UTC calendar date, with the local date and September 23 post
+date retained in provenance. It is not a second release or a claim that the
+ad first aired September 24. This timezone distinction does not relax the
+existing agreement checks when a visible publication selector is specified.
+
 Reviewed HTML reports can specify an exact `heading_selector` when navigation
 contains other `h1` elements. The selector must match exactly one actual `h1`;
 missing, ambiguous or non-heading selections fail closed. A reviewed visible

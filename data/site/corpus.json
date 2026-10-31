@@ -26933,6 +26933,82 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Credit: Kathryn Wilkens, Mediaite. Two passages are explicitly attributed to Paul LePage's immigration advertisement, including the first quotation's publisher punctuation. They remain one partial advertisement; the X post's promotional caption, immigration-case reporting, press remarks and congressional-delegation responses are excluded. The article links the exact campaign status, not merely an account or channel. No X page, caption service or disclosure catalog was requested, and the original media was not downloaded or transcribed. Exact FEC H6ME02148, principal committee C00904094, verifies the Republican candidate's ME-02 House identity. The Republican advertiser is distinct from the news publisher. The article's UTC publication metadata is 2026-09-24T01:28:41+00:00; its displayed September 23 evening EDT date is the same instant, not evidence of a separate release. The record retains the metadata's UTC calendar date; the September 23 status date and local display remain provenance, not verified paid delivery. Publisher report date is not verified first release, and the closing legal payer was not inspected. Entire HTML hash, title/date, exact status association, advertiser context and literal order are bound. No claim verification or semantic portrayal judgment is supplied.",
+      "candidate_mentions": [],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "lepage-mediaite-immigration-20260924-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://x.com/MainePaulLePage/status/2102681607672934852?ref_src=twsrc%5Etfw"
+      ],
+      "message_id": "d448b76190b567bf3fc9456d0a8cddcb6f30dce73b0146db427cfdc9fa51535f",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-09-24",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "ME-02",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6ME02148"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Credit: Kathryn Wilkens, Mediaite. Two passages are explicitly attributed to Paul LePage's immigration advertisement, including the first quotation's publisher punctuation. They remain one partial advertisement; the X post's promotional caption, immigration-case reporting, press remarks and congressional-delegation responses are excluded. The article links the exact campaign status, not merely an account or channel. No X page, caption service or disclosure catalog was requested, and the original media was not downloaded or transcribed. Exact FEC H6ME02148, principal committee C00904094, verifies the Republican candidate's ME-02 House identity. The Republican advertiser is distinct from the news publisher. The article's UTC publication metadata is 2026-09-24T01:28:41+00:00; its displayed September 23 evening EDT date is the same instant, not evidence of a separate release. The record retains the metadata's UTC calendar date; the September 23 status date and local display remain provenance, not verified paid delivery. Publisher report date is not verified first release, and the closing legal payer was not inspected. Entire HTML hash, title/date, exact status association, advertiser context and literal order are bound. No claim verification or semantic portrayal judgment is supplied.",
+            "candidate_id": "H6ME02148",
+            "completeness": "partial_quotation",
+            "content_sha256": "5540155609ea86eaff139317517c322f7512eeac924fe7e4e8c6d824a0107fdb",
+            "format": "html",
+            "media_url": "https://x.com/MainePaulLePage/status/2102681607672934852?ref_src=twsrc%5Etfw",
+            "passages": [
+              "Immigration built our nation,",
+              "ended Maine as an illegal immigration sanctuary state, cut off welfare to illegal immigrants, and made sure taxpayer dollars went to Mainers."
+            ],
+            "phase": "general",
+            "published": "2026-09-24",
+            "record_id": "immigration-20260924",
+            "release_title": "Republican Congressional Candidate Says Relative Is Being Wrongfully Deported",
+            "required_context": [
+              "Former Maine Gov. Paul LePage (R)",
+              "The comments come as LePage campaigns for the House seat being vacated by retiring Rep. Jared Golden (D-ME). He is running against Democratic state auditor Matt Dunlap",
+              "That distinction is at the center of a campaign ad he released this week.",
+              "LePage says in the ad"
+            ],
+            "retrieval_url": "https://www.mediaite.com/media/news/republican-congressional-candidate-says-relative-is-being-wrongfully-deported/",
+            "source": "lepage-mediaite",
+            "source_url": "https://www.mediaite.com/media/news/republican-congressional-candidate-says-relative-is-being-wrongfully-deported/"
+          },
+          "text": "Immigration built our nation,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "ended Maine as an illegal immigration sanctuary state, cut off welfare to illegal immigrants, and made sure taxpayer dollars went to Mainers."
+        }
+      ],
+      "source": "lepage-mediaite",
+      "source_hash": "5540155609ea86eaff139317517c322f7512eeac924fe7e4e8c6d824a0107fdb",
+      "source_record_id": "immigration-20260924",
+      "source_url": "https://www.mediaite.com/media/news/republican-congressional-candidate-says-relative-is-being-wrongfully-deported/",
+      "sponsor": "Paul LePage campaign",
+      "sponsor_type": "candidate",
+      "state": "ME",
+      "text": "Immigration built our nation,\nended Maine as an illegal immigration sanctuary state, cut off welfare to illegal immigrants, and made sure taxpayer dollars went to Mainers.",
+      "title": "Republican Congressional Candidate Says Relative Is Being Wrongfully Deported"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Official Rogers for Senate release at https://rogersforsenate.com/news/rogers-drops-new-ads-contrasts-law-enforcement-background-with-abduls-soft-on-crime-agenda; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
       "date_basis": "release_date",
@@ -35985,6 +36061,95 @@
       "title": "NEW: Josh Turek for Iowa Releases New Ad, “Goodwill,” Highlighting How Josh’s Working-Class Upbringing Drives His Fight to Root Out Corruption In Washington"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "Credit: Joe Chalfant, Townhall, October 16. The article explicitly identifies Juan Ciscomani's new campaign advertisement and quotes its veteran testimonial in three literal, source-ordered passages. The publisher's ellipsis is retained rather than expanded into invented missing words. All passages belong to one partial ad, not three creatives. The embedded exact campaign status establishes the publicly linked ad-post association; no X page, caption API or disclosure download was accessed, and the media was not downloaded or transcribed. FEC H2AZ02360, principal committee C00786194, verifies the Republican AZ-06 House candidate. Advertiser alignment follows the campaign, not the testimonial speaker's self-described Democratic registration or the publisher. Election phase remains unknown because this report does not explicitly identify a general-election contest; October timing alone is insufficient. Reported beneficiary stories, press commentary and the X caption are excluded. October 16 is the publisher's article metadata date, not verified first release or paid delivery; the closing legal payer was not inspected. Full HTML hash, title/date, exact post, ad context and literal quotation order remain required. This is acquisition review, not semantic portrayal coding, human validation or verification of the testimonial's claims.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H2AZ02360",
+          "district": "06",
+          "name": "CISCOMANI, JUAN",
+          "office": "H",
+          "party": "REP",
+          "state": "AZ"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "ciscomani-townhall-2684833-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://x.com/JuanCiscomani/status/2110717769352151422?ref_src=twsrc%5Etfw"
+      ],
+      "message_id": "a8cb97e54ff6ada0e6244c5101276817522444cdd0055d02906d99cad4d63555",
+      "observed": "2026-10-30",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-16",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "AZ-06",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H2AZ02360"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Credit: Joe Chalfant, Townhall, October 16. The article explicitly identifies Juan Ciscomani's new campaign advertisement and quotes its veteran testimonial in three literal, source-ordered passages. The publisher's ellipsis is retained rather than expanded into invented missing words. All passages belong to one partial ad, not three creatives. The embedded exact campaign status establishes the publicly linked ad-post association; no X page, caption API or disclosure download was accessed, and the media was not downloaded or transcribed. FEC H2AZ02360, principal committee C00786194, verifies the Republican AZ-06 House candidate. Advertiser alignment follows the campaign, not the testimonial speaker's self-described Democratic registration or the publisher. Election phase remains unknown because this report does not explicitly identify a general-election contest; October timing alone is insufficient. Reported beneficiary stories, press commentary and the X caption are excluded. October 16 is the publisher's article metadata date, not verified first release or paid delivery; the closing legal payer was not inspected. Full HTML hash, title/date, exact post, ad context and literal quotation order remain required. This is acquisition review, not semantic portrayal coding, human validation or verification of the testimonial's claims.",
+            "candidate_id": "H2AZ02360",
+            "completeness": "partial_quotation",
+            "content_sha256": "2b668596ce698e3bb29ff8b334881010872f6c48eb6772b6232aa30f88c51425",
+            "format": "html",
+            "media_url": "https://x.com/JuanCiscomani/status/2110717769352151422?ref_src=twsrc%5Etfw",
+            "passages": [
+              "He definitely put me as a person over politics,",
+              "I reached out to Mr. Ciscomani, I am a registered Democrat, but I chose to reach out to him because I was at the end of my rope,",
+              "He has spoken out for me…spoken up for me."
+            ],
+            "phase": "unknown",
+            "published": "2026-10-16",
+            "record_id": "2684833",
+            "release_title": "Republican Juan Ciscomani Is Out With This New Heartfelt Ad",
+            "required_context": [
+              "Rep. Juan Ciscomani, who is running in Arizona’s Sixth District, is out with a new campaign ad",
+              "featuring an injured combat veteran Democrat",
+              "Chris, the combat veteran, said in the ad."
+            ],
+            "retrieval_url": "https://townhall.com/news/josephchalfant/2026/10/16/republican-juan-ciscomani-is-out-with-this-new-heartfelt-ad-n2684833",
+            "source": "ciscomani-townhall",
+            "source_url": "https://townhall.com/news/josephchalfant/2026/10/16/republican-juan-ciscomani-is-out-with-this-new-heartfelt-ad-n2684833"
+          },
+          "text": "He definitely put me as a person over politics,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "I reached out to Mr. Ciscomani, I am a registered Democrat, but I chose to reach out to him because I was at the end of my rope,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "He has spoken out for me…spoken up for me."
+        }
+      ],
+      "source": "ciscomani-townhall",
+      "source_hash": "2b668596ce698e3bb29ff8b334881010872f6c48eb6772b6232aa30f88c51425",
+      "source_record_id": "2684833",
+      "source_url": "https://townhall.com/news/josephchalfant/2026/10/16/republican-juan-ciscomani-is-out-with-this-new-heartfelt-ad-n2684833",
+      "sponsor": "Juan Ciscomani campaign",
+      "sponsor_type": "candidate",
+      "state": "AZ",
+      "text": "He definitely put me as a person over politics,\nI reached out to Mr. Ciscomani, I am a registered Democrat, but I chose to reach out to him because I was at the end of my rope,\nHe has spoken out for me…spoken up for me.",
+      "title": "Republican Juan Ciscomani Is Out With This New Heartfelt Ad"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official Troy Jackson for Maine release at https://www.jacksonformaine.com/news/new-ad-jackson-calls-out-collins-for-leaving-everyday-mainers-to-struggle-to-afford-home-heating; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
@@ -37196,6 +37361,90 @@
       "state": "AL",
       "text": "Congressman Figures: It’s not easy following in big footsteps.\nPublic service defines my mother’s life.\nMy dad, a civil rights lawyer.\nThey taught me about sacrifice and service.\nTo believe in and fight for the people of Alabama.\nIn Congress, I’ve fought to lower prices, restore funding to Medicaid, save our rural hospitals, and protect Social Security.\nI’m Shomari Figures and I approve this message.\nBecause you deserve a good job, higher wages, and low costs.\nThat’s what I’ll always fight for.",
       "title": "DCCC Releases New TV Ad in AL-02: “Footsteps”"
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "Credit: Jesse Valentine, American Journal News, October 20. The report explicitly attributes the advertisement to Republican David Flippo and quotes two parts of one on-camera statement by Mull. These literal passages remain one partial ad; narration gaps and any other creative are not reconstructed. The article links a journalist's exact public status showing the ad, not a verified campaign-owned upload. That publisher-linked post is the evidence association; no claim of campaign ownership, original media recovery or verified paid delivery is made, and no X request or caption-service request was issued. FEC H4NV04108, principal committee C00901710, verifies Flippo's current 2026 NV-02 House race; the district is not guessed from his historical candidate-ID digits. Republican alignment follows the named advertiser, not the Democratic opponent or the publisher's editorial stance. The article's fact-checking, policy explanation, earlier antisemitism report and quoted responses are excluded from ad text. The title's editorial assessment is not adopted as an analysis label or truth judgment. October 20 is the publisher report date, not independently established first release; the sole legal closing payer was not inspected. Exact complete HTML hash, title/date, ad context, post association and quotation order remain bound. No new semantic portrayal judgment is added.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6NV02362",
+          "district": "02",
+          "name": "BENITEZ-THOMPSON, TERESA",
+          "office": "H",
+          "party": "DEM",
+          "state": "NV"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "flippo-americanjournal-benitez-thompson-20261020-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://x.com/MiniRacker/status/2110452684725596245"
+      ],
+      "message_id": "ce31fa52c61b75a979c37455f48ca0d51ae259c9cd548b1d26eceb1552dc71ba",
+      "observed": "2026-10-30",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-10-20",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "NV-02",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H4NV04108"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Credit: Jesse Valentine, American Journal News, October 20. The report explicitly attributes the advertisement to Republican David Flippo and quotes two parts of one on-camera statement by Mull. These literal passages remain one partial ad; narration gaps and any other creative are not reconstructed. The article links a journalist's exact public status showing the ad, not a verified campaign-owned upload. That publisher-linked post is the evidence association; no claim of campaign ownership, original media recovery or verified paid delivery is made, and no X request or caption-service request was issued. FEC H4NV04108, principal committee C00901710, verifies Flippo's current 2026 NV-02 House race; the district is not guessed from his historical candidate-ID digits. Republican alignment follows the named advertiser, not the Democratic opponent or the publisher's editorial stance. The article's fact-checking, policy explanation, earlier antisemitism report and quoted responses are excluded from ad text. The title's editorial assessment is not adopted as an analysis label or truth judgment. October 20 is the publisher report date, not independently established first release; the sole legal closing payer was not inspected. Exact complete HTML hash, title/date, ad context, post association and quotation order remain bound. No new semantic portrayal judgment is added.",
+            "candidate_id": "H4NV04108",
+            "completeness": "partial_quotation",
+            "content_sha256": "c67757814f8cdab7d8c568da8cdeff8617aa9bf22fe2f4f1f3f12e4f827028e7",
+            "format": "html",
+            "media_url": "https://x.com/MiniRacker/status/2110452684725596245",
+            "passages": [
+              "When Teresa Benitez-Thompson was chief of staff at the attorney general’s office,",
+              "she supported the release of six murderers and four domestic violence felons."
+            ],
+            "phase": "general",
+            "published": "2026-10-20",
+            "record_id": "benitez-thompson-20261020",
+            "release_title": "False attack ad says Benitez-Thompson backed early release for killers",
+            "required_context": [
+              "The ad is being run by Republican candidate David Flippo.",
+              "Benitez-Thompson and Flippo are competing to represent Nevada’s 2nd District in the U.S. House of Representatives.",
+              "Mull says straight to camera"
+            ],
+            "retrieval_url": "https://americanjournalnews.com/false-attack-ad-says-benitez-thompson-backed-early-release-for-killers/",
+            "source": "flippo-americanjournal",
+            "source_url": "https://americanjournalnews.com/false-attack-ad-says-benitez-thompson-backed-early-release-for-killers/"
+          },
+          "text": "When Teresa Benitez-Thompson was chief of staff at the attorney general’s office,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "she supported the release of six murderers and four domestic violence felons."
+        }
+      ],
+      "source": "flippo-americanjournal",
+      "source_hash": "c67757814f8cdab7d8c568da8cdeff8617aa9bf22fe2f4f1f3f12e4f827028e7",
+      "source_record_id": "benitez-thompson-20261020",
+      "source_url": "https://americanjournalnews.com/false-attack-ad-says-benitez-thompson-backed-early-release-for-killers/",
+      "sponsor": "David Flippo campaign",
+      "sponsor_type": "candidate",
+      "state": "NV",
+      "text": "When Teresa Benitez-Thompson was chief of staff at the attorney general’s office,\nshe supported the release of six murderers and four domestic violence felons.",
+      "title": "False attack ad says Benitez-Thompson backed early release for killers"
     },
     {
       "alignment": "R",
@@ -43976,6 +44225,22 @@
       "url": "https://juanciscomani.com"
     },
     {
+      "ads_with_text": 1,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "ciscomani-townhall",
+      "state": "partial",
+      "url": "https://townhall.com"
+    },
+    {
       "ads_with_text": 0,
       "checked": "2026-10-30",
       "discovery_complete": true,
@@ -44115,6 +44380,22 @@
       "source": "flint",
       "state": "ok",
       "url": "https://flintformontana.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "flippo-americanjournal",
+      "state": "partial",
+      "url": "https://americanjournalnews.com"
     },
     {
       "ads_with_text": 0,
@@ -44278,6 +44559,22 @@
       "source": "lcv-vf",
       "state": "ok",
       "url": "https://www.lcvvictoryfund.org"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-30",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "lepage-mediaite",
+      "state": "partial",
+      "url": "https://www.mediaite.com"
     },
     {
       "ads_with_text": 1,

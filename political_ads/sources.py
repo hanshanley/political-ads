@@ -127,6 +127,36 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "lepage-mediaite",
+        "https://www.mediaite.com",
+        "Paul LePage campaign",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="ME-02",
+        discovery="reviewed_releases",
+    ),
+    Source(
+        "ciscomani-townhall",
+        "https://townhall.com",
+        "Juan Ciscomani campaign",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="AZ-06",
+        discovery="reviewed_releases",
+    ),
+    Source(
+        "flippo-americanjournal",
+        "https://americanjournalnews.com",
+        "David Flippo campaign",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="NV-02",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "buckhout-nsj",
         "https://nsjonline.com",
         "Laurie Buckhout campaign",
@@ -822,6 +852,12 @@ def media_links(content: str) -> list[str]:
         if parsed.scheme in {"http", "https"} and video_host:
             urls.append(urlunsplit(parsed._replace(scheme="https")))
         elif parsed.scheme == "https" and re.search(r"\.(?:mp4|webm|mp3|wav)(?:\?|$)", value):
+            urls.append(value)
+        elif (
+            parsed.scheme == "https"
+            and parsed.hostname in {"x.com", "www.x.com", "twitter.com", "www.twitter.com"}
+            and re.fullmatch(r"/[A-Za-z0-9_]{1,15}/status/[0-9]{15,20}", parsed.path)
+        ):
             urls.append(value)
         elif (
             parsed.scheme == "https"
