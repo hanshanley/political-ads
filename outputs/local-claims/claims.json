@@ -73099,5 +73099,1340 @@
     "text_hash": "7a8361a8b00e879e3e4774135f92258062906406330c865a456f56c9697f6538",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-ba37130cffd8ce63-0",
+    "alignment": "R",
+    "block_id": "nrcc-ba37130cffd8ce63-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-ba37130cffd8ce63-0-claims-001-001",
+    "claim_text": "Josh Riley is gambling with New Yorkers’ lives.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 47,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Josh Riley is gambling with New Yorkers’ lives.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/15/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-riley-for-voting-against-critical-funding/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 10,
+        "anchor_quote": "Josh Riley",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H8NY22177",
+        "kind": "person",
+        "name": "RILEY, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Josh Riley is gambling with New Yorkers’ lives.\nRiley voted to block nearly eight million dollars to keep us safe.\nCLIP (Josh Riley): “I just voted no.”\nIncluding millions for local hospitals and millions more for our fire departments.\nTell Josh Riley: Stop betraying New Yorkers.",
+    "text_hash": "61db9f9cd61f27251b995f6951eaa9acf4dd3d3fe11700617f50147b97039be7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-ba37130cffd8ce63-0",
+    "alignment": "R",
+    "block_id": "nrcc-ba37130cffd8ce63-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-ba37130cffd8ce63-0-claims-001-002",
+    "claim_text": "Riley voted to block nearly eight million dollars to keep us safe.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 114,
+        "kind": "publisher_transcript",
+        "start": 48,
+        "text": "Riley voted to block nearly eight million dollars to keep us safe.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/15/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-riley-for-voting-against-critical-funding/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 53,
+        "anchor_quote": "Riley",
+        "anchor_start": 48,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H8NY22177",
+        "kind": "person",
+        "name": "RILEY, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Josh Riley is gambling with New Yorkers’ lives.\nRiley voted to block nearly eight million dollars to keep us safe.\nCLIP (Josh Riley): “I just voted no.”\nIncluding millions for local hospitals and millions more for our fire departments.\nTell Josh Riley: Stop betraying New Yorkers.",
+    "text_hash": "61db9f9cd61f27251b995f6951eaa9acf4dd3d3fe11700617f50147b97039be7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-ba37130cffd8ce63-0",
+    "alignment": "R",
+    "block_id": "nrcc-ba37130cffd8ce63-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-ba37130cffd8ce63-0-claims-001-003",
+    "claim_text": "Josh Riley voted no.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "publisher_transcript",
+        "start": 115,
+        "text": "CLIP (Josh Riley): “I just voted no.”",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/15/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-riley-for-voting-against-critical-funding/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 118,
+        "anchor_quote": "I",
+        "anchor_start": 117,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H8NY22177",
+        "kind": "person",
+        "name": "RILEY, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Josh Riley is gambling with New Yorkers’ lives.\nRiley voted to block nearly eight million dollars to keep us safe.\nCLIP (Josh Riley): “I just voted no.”\nIncluding millions for local hospitals and millions more for our fire departments.\nTell Josh Riley: Stop betraying New Yorkers.",
+    "text_hash": "61db9f9cd61f27251b995f6951eaa9acf4dd3d3fe11700617f50147b97039be7",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-ba37130cffd8ce63-0",
+    "alignment": "R",
+    "block_id": "nrcc-ba37130cffd8ce63-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-ba37130cffd8ce63-0-claims-001-004",
+    "claim_text": "Millions were allocated for local hospitals.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 235,
+        "kind": "publisher_transcript",
+        "start": 153,
+        "text": "Including millions for local hospitals and millions more for our fire departments.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/15/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-riley-for-voting-against-critical-funding/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 191,
+        "anchor_quote": "local hospitals",
+        "anchor_start": 176,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "local hospitals",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Josh Riley is gambling with New Yorkers’ lives.\nRiley voted to block nearly eight million dollars to keep us safe.\nCLIP (Josh Riley): “I just voted no.”\nIncluding millions for local hospitals and millions more for our fire departments.\nTell Josh Riley: Stop betraying New Yorkers.",
+    "text_hash": "61db9f9cd61f27251b995f6951eaa9acf4dd3d3fe11700617f50147b97039be7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-ba37130cffd8ce63-0",
+    "alignment": "R",
+    "block_id": "nrcc-ba37130cffd8ce63-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-ba37130cffd8ce63-0-claims-001-005",
+    "claim_text": "Millions were allocated for our fire departments.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 235,
+        "kind": "publisher_transcript",
+        "start": 153,
+        "text": "Including millions for local hospitals and millions more for our fire departments.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/15/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-riley-for-voting-against-critical-funding/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 234,
+        "anchor_quote": "our fire departments",
+        "anchor_start": 214,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "our fire departments",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Josh Riley is gambling with New Yorkers’ lives.\nRiley voted to block nearly eight million dollars to keep us safe.\nCLIP (Josh Riley): “I just voted no.”\nIncluding millions for local hospitals and millions more for our fire departments.\nTell Josh Riley: Stop betraying New Yorkers.",
+    "text_hash": "61db9f9cd61f27251b995f6951eaa9acf4dd3d3fe11700617f50147b97039be7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-ba37130cffd8ce63-0",
+    "alignment": "R",
+    "block_id": "nrcc-ba37130cffd8ce63-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-ba37130cffd8ce63-0-claims-001-006",
+    "claim_text": "New Yorkers should tell Josh Riley to stop betraying them.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 280,
+        "kind": "publisher_transcript",
+        "start": 236,
+        "text": "Tell Josh Riley: Stop betraying New Yorkers.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/15/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-riley-for-voting-against-critical-funding/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 251,
+        "anchor_quote": "Josh Riley",
+        "anchor_start": 241,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H8NY22177",
+        "kind": "person",
+        "name": "RILEY, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Josh Riley is gambling with New Yorkers’ lives.\nRiley voted to block nearly eight million dollars to keep us safe.\nCLIP (Josh Riley): “I just voted no.”\nIncluding millions for local hospitals and millions more for our fire departments.\nTell Josh Riley: Stop betraying New Yorkers.",
+    "text_hash": "61db9f9cd61f27251b995f6951eaa9acf4dd3d3fe11700617f50147b97039be7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-ba37130cffd8ce63-0",
+    "alignment": "R",
+    "block_id": "nrcc-ba37130cffd8ce63-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-ba37130cffd8ce63-0-claims-001-007",
+    "claim_text": "Josh Riley is betraying New Yorkers.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 280,
+        "kind": "publisher_transcript",
+        "start": 236,
+        "text": "Tell Josh Riley: Stop betraying New Yorkers.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrcc.org/2026/01/15/%f0%9f%9a%a8new-nrcc-launches-ad-blasting-riley-for-voting-against-critical-funding/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 251,
+        "anchor_quote": "Josh Riley",
+        "anchor_start": 241,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H8NY22177",
+        "kind": "person",
+        "name": "RILEY, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Josh Riley is gambling with New Yorkers’ lives.\nRiley voted to block nearly eight million dollars to keep us safe.\nCLIP (Josh Riley): “I just voted no.”\nIncluding millions for local hospitals and millions more for our fire departments.\nTell Josh Riley: Stop betraying New Yorkers.",
+    "text_hash": "61db9f9cd61f27251b995f6951eaa9acf4dd3d3fe11700617f50147b97039be7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c3e4fe2f590d66e4-0",
+    "alignment": "R",
+    "block_id": "nrcc-c3e4fe2f590d66e4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c3e4fe2f590d66e4-0-claims-001-001",
+    "claim_text": "David Valadao delivered help for working families.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 394,
+        "kind": "publisher_transcript",
+        "start": 344,
+        "text": "David Valadao delivered help for working families.",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-tax-day-ad-blitz-highlighting-valadaos-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 357,
+        "anchor_quote": "David Valadao",
+        "anchor_start": 344,
+        "anchor_unit_id": 10,
+        "entity_id": "candidate:H2CA20094",
+        "kind": "person",
+        "name": "VALADAO, DAVID",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut David Valadao changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDavid Valadao delivered help for working families.\nThank you, Representative David Valadao.",
+    "text_hash": "410512f8481823b7a22777765b8f3590f2e13fa4b68502fdb299f115b85f0dda",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c3e4fe2f590d66e4-0",
+    "alignment": "R",
+    "block_id": "nrcc-c3e4fe2f590d66e4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c3e4fe2f590d66e4-0-claims-001-002",
+    "claim_text": "Thank you, Representative David Valadao.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 435,
+        "kind": "publisher_transcript",
+        "start": 395,
+        "text": "Thank you, Representative David Valadao.",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-tax-day-ad-blitz-highlighting-valadaos-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 434,
+        "anchor_quote": "Representative David Valadao",
+        "anchor_start": 406,
+        "anchor_unit_id": 11,
+        "entity_id": "candidate:H2CA20094",
+        "kind": "person",
+        "name": "VALADAO, DAVID",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut David Valadao changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDavid Valadao delivered help for working families.\nThank you, Representative David Valadao.",
+    "text_hash": "410512f8481823b7a22777765b8f3590f2e13fa4b68502fdb299f115b85f0dda",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c3e4fe2f590d66e4-0",
+    "alignment": "R",
+    "block_id": "nrcc-c3e4fe2f590d66e4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c3e4fe2f590d66e4-0-claims-001-003",
+    "claim_text": "Hardworking Americans power this country.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 41,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Hardworking Americans power this country.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-tax-day-ad-blitz-highlighting-valadaos-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 21,
+        "anchor_quote": "Hardworking Americans",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Americans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut David Valadao changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDavid Valadao delivered help for working families.\nThank you, Representative David Valadao.",
+    "text_hash": "410512f8481823b7a22777765b8f3590f2e13fa4b68502fdb299f115b85f0dda",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c3e4fe2f590d66e4-0",
+    "alignment": "R",
+    "block_id": "nrcc-c3e4fe2f590d66e4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c3e4fe2f590d66e4-0-claims-001-004",
+    "claim_text": "Democrats made it harder to get ahead.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 138,
+        "kind": "publisher_transcript",
+        "start": 100,
+        "text": "Democrats made it harder to get ahead.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-tax-day-ad-blitz-highlighting-valadaos-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 109,
+        "anchor_quote": "Democrats",
+        "anchor_start": 100,
+        "anchor_unit_id": 3,
+        "entity_id": "party:D",
+        "kind": "collective",
+        "name": "D",
+        "party_basis": "explicit_party_text",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut David Valadao changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDavid Valadao delivered help for working families.\nThank you, Representative David Valadao.",
+    "text_hash": "410512f8481823b7a22777765b8f3590f2e13fa4b68502fdb299f115b85f0dda",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c3e4fe2f590d66e4-0",
+    "alignment": "R",
+    "block_id": "nrcc-c3e4fe2f590d66e4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c3e4fe2f590d66e4-0-claims-001-005",
+    "claim_text": "Spiking inflation to 40-year highs.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 174,
+        "kind": "publisher_transcript",
+        "start": 139,
+        "text": "Spiking inflation to 40-year highs.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-tax-day-ad-blitz-highlighting-valadaos-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 156,
+        "anchor_quote": "inflation",
+        "anchor_start": 147,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "inflation",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut David Valadao changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDavid Valadao delivered help for working families.\nThank you, Representative David Valadao.",
+    "text_hash": "410512f8481823b7a22777765b8f3590f2e13fa4b68502fdb299f115b85f0dda",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c3e4fe2f590d66e4-0",
+    "alignment": "R",
+    "block_id": "nrcc-c3e4fe2f590d66e4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c3e4fe2f590d66e4-0-claims-001-006",
+    "claim_text": "David Valadao changed that.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 206,
+        "kind": "publisher_transcript",
+        "start": 175,
+        "text": "But David Valadao changed that.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-tax-day-ad-blitz-highlighting-valadaos-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 192,
+        "anchor_quote": "David Valadao",
+        "anchor_start": 179,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H2CA20094",
+        "kind": "person",
+        "name": "VALADAO, DAVID",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut David Valadao changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDavid Valadao delivered help for working families.\nThank you, Representative David Valadao.",
+    "text_hash": "410512f8481823b7a22777765b8f3590f2e13fa4b68502fdb299f115b85f0dda",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c3e4fe2f590d66e4-0",
+    "alignment": "R",
+    "block_id": "nrcc-c3e4fe2f590d66e4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c3e4fe2f590d66e4-0-claims-001-007",
+    "claim_text": "David Valadao voted for real tax relief that puts more money back in your pocket.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 275,
+        "kind": "publisher_transcript",
+        "start": 207,
+        "text": "Voting for real tax relief that puts more money back in your pocket:",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-tax-day-ad-blitz-highlighting-valadaos-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 213,
+        "anchor_quote": "Voting",
+        "anchor_start": 207,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H2CA20094",
+        "kind": "person",
+        "name": "VALADAO, DAVID",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut David Valadao changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDavid Valadao delivered help for working families.\nThank you, Representative David Valadao.",
+    "text_hash": "410512f8481823b7a22777765b8f3590f2e13fa4b68502fdb299f115b85f0dda",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c3e4fe2f590d66e4-0",
+    "alignment": "R",
+    "block_id": "nrcc-c3e4fe2f590d66e4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c3e4fe2f590d66e4-0-claims-001-008",
+    "claim_text": "There is no tax on tips.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 291,
+        "kind": "publisher_transcript",
+        "start": 276,
+        "text": "No tax on tips.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-tax-day-ad-blitz-highlighting-valadaos-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 290,
+        "anchor_quote": "tax on tips",
+        "anchor_start": 279,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "tax on tips",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut David Valadao changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDavid Valadao delivered help for working families.\nThank you, Representative David Valadao.",
+    "text_hash": "410512f8481823b7a22777765b8f3590f2e13fa4b68502fdb299f115b85f0dda",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c3e4fe2f590d66e4-0",
+    "alignment": "R",
+    "block_id": "nrcc-c3e4fe2f590d66e4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c3e4fe2f590d66e4-0-claims-001-009",
+    "claim_text": "There is no tax on overtime.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 311,
+        "kind": "publisher_transcript",
+        "start": 292,
+        "text": "No tax on overtime.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-tax-day-ad-blitz-highlighting-valadaos-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 310,
+        "anchor_quote": "tax on overtime",
+        "anchor_start": 295,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "tax on overtime",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut David Valadao changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDavid Valadao delivered help for working families.\nThank you, Representative David Valadao.",
+    "text_hash": "410512f8481823b7a22777765b8f3590f2e13fa4b68502fdb299f115b85f0dda",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c3e4fe2f590d66e4-0",
+    "alignment": "R",
+    "block_id": "nrcc-c3e4fe2f590d66e4-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c3e4fe2f590d66e4-0-claims-001-010",
+    "claim_text": "The Child Tax Credit was doubled.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 343,
+        "kind": "publisher_transcript",
+        "start": 312,
+        "text": "And a doubled Child Tax Credit.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-tax-day-ad-blitz-highlighting-valadaos-tax-relief/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 342,
+        "anchor_quote": "Child Tax Credit",
+        "anchor_start": 326,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Child Tax Credit",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hardworking Americans power this country.\nClocking in early, staying late, doing whatever it takes.\nDemocrats made it harder to get ahead.\nSpiking inflation to 40-year highs.\nBut David Valadao changed that.\nVoting for real tax relief that puts more money back in your pocket:\nNo tax on tips.\nNo tax on overtime.\nAnd a doubled Child Tax Credit.\nDavid Valadao delivered help for working families.\nThank you, Representative David Valadao.",
+    "text_hash": "410512f8481823b7a22777765b8f3590f2e13fa4b68502fdb299f115b85f0dda",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c6d52847d0062af3-0",
+    "alignment": "R",
+    "block_id": "nrcc-c6d52847d0062af3-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c6d52847d0062af3-0-claims-001-001",
+    "claim_text": "Republicans fought to protect your hard-earned paychecks.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 99,
+        "kind": "publisher_transcript",
+        "start": 42,
+        "text": "Republicans fought to protect your hard-earned paychecks.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-paid-ad-campaign-targeting-vicente-gonzalez-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 53,
+        "anchor_quote": "Republicans",
+        "anchor_start": 42,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Republicans",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nVicente Gonzalez voted for the largest tax hike since World War II.\nVicente Gonzalez sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nVicente Gonzalez voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "b19b7c9560f2636f1391beb2635a81c266123444ebbc0aebac089e45f6a41efa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c6d52847d0062af3-0",
+    "alignment": "R",
+    "block_id": "nrcc-c6d52847d0062af3-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c6d52847d0062af3-0-claims-001-002",
+    "claim_text": "Vicente Gonzalez voted for the largest tax hike since World War II.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 167,
+        "kind": "publisher_transcript",
+        "start": 100,
+        "text": "Vicente Gonzalez voted for the largest tax hike since World War II.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-paid-ad-campaign-targeting-vicente-gonzalez-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 116,
+        "anchor_quote": "Vicente Gonzalez",
+        "anchor_start": 100,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6TX15162",
+        "kind": "person",
+        "name": "Vicente Gonzalez",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nVicente Gonzalez voted for the largest tax hike since World War II.\nVicente Gonzalez sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nVicente Gonzalez voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "b19b7c9560f2636f1391beb2635a81c266123444ebbc0aebac089e45f6a41efa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c6d52847d0062af3-0",
+    "alignment": "R",
+    "block_id": "nrcc-c6d52847d0062af3-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c6d52847d0062af3-0-claims-001-003",
+    "claim_text": "Vicente Gonzalez sided with Bernie & AOC to vote against critical tax relief for you.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 253,
+        "kind": "publisher_transcript",
+        "start": 168,
+        "text": "Vicente Gonzalez sided with Bernie & AOC to vote against critical tax relief for you.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-paid-ad-campaign-targeting-vicente-gonzalez-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 184,
+        "anchor_quote": "Vicente Gonzalez",
+        "anchor_start": 168,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6TX15162",
+        "kind": "person",
+        "name": "Vicente Gonzalez",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nVicente Gonzalez voted for the largest tax hike since World War II.\nVicente Gonzalez sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nVicente Gonzalez voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "b19b7c9560f2636f1391beb2635a81c266123444ebbc0aebac089e45f6a41efa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c6d52847d0062af3-0",
+    "alignment": "R",
+    "block_id": "nrcc-c6d52847d0062af3-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c6d52847d0062af3-0-claims-001-004",
+    "claim_text": "Vicente Gonzalez voted for higher taxes… and voted to make your life harder.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 380,
+        "kind": "publisher_transcript",
+        "start": 304,
+        "text": "Vicente Gonzalez voted for higher taxes… and voted to make your life harder.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-paid-ad-campaign-targeting-vicente-gonzalez-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 320,
+        "anchor_quote": "Vicente Gonzalez",
+        "anchor_start": 304,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H6TX15162",
+        "kind": "person",
+        "name": "Vicente Gonzalez",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nVicente Gonzalez voted for the largest tax hike since World War II.\nVicente Gonzalez sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nVicente Gonzalez voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "b19b7c9560f2636f1391beb2635a81c266123444ebbc0aebac089e45f6a41efa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c6d52847d0062af3-0",
+    "alignment": "R",
+    "block_id": "nrcc-c6d52847d0062af3-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c6d52847d0062af3-0-claims-001-005",
+    "claim_text": "Higher costs, less freedom, and more pressure are on you.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 303,
+        "kind": "publisher_transcript",
+        "start": 254,
+        "text": "Higher costs. Less freedom. More pressure on you.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-paid-ad-campaign-targeting-vicente-gonzalez-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 302,
+        "anchor_quote": "you",
+        "anchor_start": 299,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "you",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nVicente Gonzalez voted for the largest tax hike since World War II.\nVicente Gonzalez sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nVicente Gonzalez voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "b19b7c9560f2636f1391beb2635a81c266123444ebbc0aebac089e45f6a41efa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-c6d52847d0062af3-0",
+    "alignment": "R",
+    "block_id": "nrcc-c6d52847d0062af3-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-c6d52847d0062af3-0-claims-001-006",
+    "claim_text": "Remember who made it worse.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 41,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "This Tax Day… remember who made it worse.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/15/nrcc-launches-paid-ad-campaign-targeting-vicente-gonzalez-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 26,
+        "anchor_quote": "who",
+        "anchor_start": 23,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "who",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nVicente Gonzalez voted for the largest tax hike since World War II.\nVicente Gonzalez sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nVicente Gonzalez voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "b19b7c9560f2636f1391beb2635a81c266123444ebbc0aebac089e45f6a41efa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-cba220c3370174da-0",
+    "alignment": "R",
+    "block_id": "nrcc-cba220c3370174da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-cba220c3370174da-0-claims-001-001",
+    "claim_text": "This Tax Day… remember who made it worse.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 41,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "This Tax Day… remember who made it worse.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-paid-ad-campaign-targeting-jared-moskowitz-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nJared Moskowitz voted for the largest tax hike since World War II.\nJared Moskowitz sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nJared Moskowitz voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "e2d835e31e46832ee2a8f0a38d72911fded041dadb537b34b3bdb811265f6217",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-cba220c3370174da-0",
+    "alignment": "R",
+    "block_id": "nrcc-cba220c3370174da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-cba220c3370174da-0-claims-001-002",
+    "claim_text": "Republicans fought to protect your hard-earned paychecks.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 99,
+        "kind": "publisher_transcript",
+        "start": 42,
+        "text": "Republicans fought to protect your hard-earned paychecks.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-paid-ad-campaign-targeting-jared-moskowitz-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 53,
+        "anchor_quote": "Republicans",
+        "anchor_start": 42,
+        "anchor_unit_id": 2,
+        "entity_id": "party:R",
+        "kind": "collective",
+        "name": "Republicans",
+        "party_basis": "explicit_party_text",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nJared Moskowitz voted for the largest tax hike since World War II.\nJared Moskowitz sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nJared Moskowitz voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "e2d835e31e46832ee2a8f0a38d72911fded041dadb537b34b3bdb811265f6217",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-cba220c3370174da-0",
+    "alignment": "R",
+    "block_id": "nrcc-cba220c3370174da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-cba220c3370174da-0-claims-001-003",
+    "claim_text": "Jared Moskowitz voted for the largest tax hike since World War II.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 166,
+        "kind": "publisher_transcript",
+        "start": 100,
+        "text": "Jared Moskowitz voted for the largest tax hike since World War II.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-paid-ad-campaign-targeting-jared-moskowitz-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 115,
+        "anchor_quote": "Jared Moskowitz",
+        "anchor_start": 100,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H2FL22171",
+        "kind": "person",
+        "name": "MOSKOWITZ, JARED",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nJared Moskowitz voted for the largest tax hike since World War II.\nJared Moskowitz sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nJared Moskowitz voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "e2d835e31e46832ee2a8f0a38d72911fded041dadb537b34b3bdb811265f6217",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-cba220c3370174da-0",
+    "alignment": "R",
+    "block_id": "nrcc-cba220c3370174da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-cba220c3370174da-0-claims-001-004",
+    "claim_text": "Jared Moskowitz sided with Bernie & AOC to vote against critical tax relief for you.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 251,
+        "kind": "publisher_transcript",
+        "start": 167,
+        "text": "Jared Moskowitz sided with Bernie & AOC to vote against critical tax relief for you.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-paid-ad-campaign-targeting-jared-moskowitz-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 182,
+        "anchor_quote": "Jared Moskowitz",
+        "anchor_start": 167,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H2FL22171",
+        "kind": "person",
+        "name": "MOSKOWITZ, JARED",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nJared Moskowitz voted for the largest tax hike since World War II.\nJared Moskowitz sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nJared Moskowitz voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "e2d835e31e46832ee2a8f0a38d72911fded041dadb537b34b3bdb811265f6217",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-cba220c3370174da-0",
+    "alignment": "R",
+    "block_id": "nrcc-cba220c3370174da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-cba220c3370174da-0-claims-001-005",
+    "claim_text": "Higher costs. Less freedom. More pressure on you.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 301,
+        "kind": "publisher_transcript",
+        "start": 252,
+        "text": "Higher costs. Less freedom. More pressure on you.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-paid-ad-campaign-targeting-jared-moskowitz-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nJared Moskowitz voted for the largest tax hike since World War II.\nJared Moskowitz sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nJared Moskowitz voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "e2d835e31e46832ee2a8f0a38d72911fded041dadb537b34b3bdb811265f6217",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-cba220c3370174da-0",
+    "alignment": "R",
+    "block_id": "nrcc-cba220c3370174da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-cba220c3370174da-0-claims-001-006",
+    "claim_text": "Jared Moskowitz voted for higher taxes… and voted to make your life harder.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 377,
+        "kind": "publisher_transcript",
+        "start": 302,
+        "text": "Jared Moskowitz voted for higher taxes… and voted to make your life harder.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-paid-ad-campaign-targeting-jared-moskowitz-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [
+      {
+        "anchor_end": 317,
+        "anchor_quote": "Jared Moskowitz",
+        "anchor_start": 302,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H2FL22171",
+        "kind": "person",
+        "name": "MOSKOWITZ, JARED",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nJared Moskowitz voted for the largest tax hike since World War II.\nJared Moskowitz sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nJared Moskowitz voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "e2d835e31e46832ee2a8f0a38d72911fded041dadb537b34b3bdb811265f6217",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrcc-cba220c3370174da-0",
+    "alignment": "R",
+    "block_id": "nrcc-cba220c3370174da-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrcc-cba220c3370174da-0-claims-001-007",
+    "claim_text": "This Tax Day… don’t forget.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 405,
+        "kind": "publisher_transcript",
+        "start": 378,
+        "text": "This Tax Day… don’t forget.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nrcc.org/2026/04/14/nrcc-launches-paid-ad-campaign-targeting-jared-moskowitz-for-raising-taxes-on-working-families/",
+    "sponsor": "NRCC",
+    "targets": [],
+    "text": "This Tax Day… remember who made it worse.\nRepublicans fought to protect your hard-earned paychecks.\nJared Moskowitz voted for the largest tax hike since World War II.\nJared Moskowitz sided with Bernie & AOC to vote against critical tax relief for you.\nHigher costs. Less freedom. More pressure on you.\nJared Moskowitz voted for higher taxes… and voted to make your life harder.\nThis Tax Day… don’t forget.",
+    "text_hash": "e2d835e31e46832ee2a8f0a38d72911fded041dadb537b34b3bdb811265f6217",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
