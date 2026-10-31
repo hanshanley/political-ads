@@ -147,6 +147,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "hermening-apg-print",
+        "https://marketplace.apg-wi.com",
+        "Kevin Hermening campaign (publisher-listed advertiser; legal payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="WI-07",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "alfonso-wi7-breitbart",
         "https://www.breitbart.com",
         "Michael Alfonso campaign (publisher-attributed; ad payer unverified)",

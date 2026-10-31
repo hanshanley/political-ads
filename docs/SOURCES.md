@@ -10,6 +10,106 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Wisconsin WI-07 original print-ad recovery
+
+Snapshot **b8dc2107b7d3dcbf04478e03cf56cc5c5d1b2521e1b17dde1bce1e61af6525cf**
+contains **1,919 acquired / 1,880 English** ads. Alignment is **D 1,226 /
+R 615 / other 31 / unknown 8**; exact messages are **D 1,204 / R 578 /
+other 31 / unknown 8**. English House coverage is **D 698 / R 237 /
+other 19 / unknown 3**; outside Snap it is **D 222 / R 236**.
+Snap remains **D 476 / R 1 / other 19 / unknown 3**. These source-limited
+counts are not national volume, spending or matched-race comparisons.
+
+One original Kevin Hermening newspaper display ad is now admitted,
+not merely a link or a transcription inferred from its title.
+APG Marketplace page **103908**, **Vote Kevin on August 11th**, binds
+the unique advertiser heading, visible **August 5, 2026 / Spooner
+Advocate** listing and individually linked **103899/images/103908.jpg**.
+Both public responses actually returned 200. The original is
+**1,000 x 608**; no advertiser-level image, interpolated small original,
+video, caption service or social-platform response is substituted.
+
+Only two unchanged, visually confirmed original OCR fragments are
+retained, in reading order: **5 + 12 = 17 literal words**. The second
+fragment spans three original OCR lines; the first spans one. Each
+segment carries its original URL/hash, local extraction engine,
+coordinate system, pinned OCR digest and contributing normalized line
+bounds. Logos, titles, biography, instructions and garbled OCR elsewhere
+are excluded. The readable endorsement is attributed in the creative to
+state senator Romaine Quinn; neither that attribution nor an OCR
+confidence score certifies the full transcription or campaign claims.
+
+The existing `reviewed_releases` collector now has a narrowly guarded
+APG image-evidence path. It rejects mismatched individual image IDs,
+duplicate images, wrong advertisers, changed original bytes/OCR,
+HTML-only fragments, full-script claims, changed dates and alignment
+disagreement with the exact candidate. It requires the individual
+`h2.ad_date` selector and uses **publisher_ad_listing_date** and
+**publisher_print_ad_listing**, not a first-airing or video-release label.
+The review pins decoded HTML SHA-256
+`f43a2484bc4731af879c516e42b037aea0c43cec8677d19d21596a223d3febcd`,
+original image SHA-256
+`36c548eb9863b95c22d588a883cde4a06e0baa9ebd15106545e84e5c258d00f1`,
+and normalized original OCR SHA-256
+`a639f358c40341124249ee16ff7c7d78ebf8a7d7e33ea9c0bd9efac857f4a066`.
+The ad's composite source hash is SHA-256 of decoded HTML, a newline,
+image hash, a newline and OCR hash. Preserve original HTML CRLF bytes
+when decoding; universal newline conversion would change that digest.
+Selectors, full URLs, date format, literal boundaries and caveats are
+in `data/ad-release-reviews.json`.
+
+Exact cached **H6WI07249 / C00932335**, **HERMENING, KEVIN**, REP,
+House, WI-07, 2026, principal P/H/REP, establishes candidate-campaign
+alignment. It does not establish a legal payer or Quinn's federal
+candidacy. Payer and delivery remain unverified, and phase remains
+**unknown**: the title's voting date alone is not phase certification.
+The new semantic review remains **unreviewed**, not neutral or an
+automatic positive/negative label.
+
+An immutable **1,918 acquired / 1,879 English / 72 release-review**
+baseline verifies preservation of every preceding object, all 72 review
+objects and their exact trailing file bytes, aliases and **17 protected
+inputs**. Release reviews now total **73**; native reviews remain **33**,
+and media-backlog leads remain **353**. The new normalized message and
+individual original are absent from the whole preceding corpus.
+
+Reproduce collection with `.venv/bin/political-ads collect --source
+hermening-apg-print --until 2026-10-30 --offline`, then separately
+**`parquet --offline`**, `build --offline`, `validate --offline`,
+`audit-strategy --offline`, and `cd web && npm run build`. Isolated
+replay copies only the two retained public bodies, writes empty HTTP
+metadata and copies the unchanged pinned original `.ocr.json` into
+`data/raw/http/printed-ad-images/`. It reproduces the complete
+**567-object written corpus** with network connections and OCR-engine
+execution forbidden. Thus replay needs no Apple Vision compilation;
+it does require the retained local bodies/OCR cache, which a fresh
+checkout alone does not contain. Complete JSON/gzip/CSV downloads,
+**1,919-row Parquet**, all **11 PNG sets** in all three copies and
+**20 metric groups / 10 chart rows** reconcile. Backend lint/format and
+all **447 tests** pass, including **84 reviewed-release regressions**.
+Frontend lint/type/build, **17 unit tests** and **8 desktop/mobile
+browser tests** pass. Strategy and review-coverage figures were visually
+inspected; missing judgments remain separate. Website, editions and
+host integration remain unpublished.
+
+The preceding three-ad Alfonso research commit
+**0f5321ee1e5470486075c3db6a961a0181bd0487**, actual concurrent parent
+**a6e506f0d919617a1cba4c385f15188f73c0b261**, has exact remote
+**36-path/Hans-only** proof. Original exact CI **41250586900** independently
+matches that SHA and completed successfully with **all 13 successful
+steps**; it is not a substitute for this snapshot's own validation.
+
+Expanded discovery continues. The unreadable Rice Lake original below
+remains excluded. New actual 200 responses from Tiffany print page
+**105352** and the public BadgerBrief Hermening sponsor page are
+discovery evidence only: the former needs creative/race verification,
+while the latter exposes platform references rather than literal ad
+words. No referenced held original was requested, no platform references
+were counted as acquired ads, and no campaign biography or news
+interview was substituted. Wassgren and additional candidate/publisher
+routes remain open; scheduled prompt **#1 / every 20 minutes** remains
+active.
+
 ## Wisconsin WI-07 campaign quotations and physical-print expansion
 
 Snapshot **626e04b307af1604666cdbf30e7f27cf17fe7564535d60a724ae8d9c0ea48b76**
@@ -143,10 +243,10 @@ both visibly dated August 5, 2026, but they are **not interchangeable**:
   the creative to state senator Romaine Quinn. Native local OCR and
   the untouched original are preserved. OCR also misreads some letters
   and quotation marks, so it is not a certified complete transcription.
-  The legal payer is not visible. This remains a **discovery-only lead**
-  pending image-aware individual-date/advertiser/original binding,
-  truthful OCR provenance and focused collector tests; it is not
-  forced into the unrelated video-release or Wix-upload model.
+  The legal payer is not visible. At this historical snapshot it was
+  a **discovery-only lead**; the guarded partial-image admission and
+  validation are documented above. It was not forced into the unrelated
+  video-release or Wix-upload model.
 
 Exact cached **H6WI07249 / C00932335**, **HERMENING, KEVIN**, REP,
 House, WI-07, 2026, principal P/H/REP, verifies the prospective

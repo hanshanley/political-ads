@@ -10,6 +10,7 @@ from urllib.parse import urlsplit
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
 
+from political_ads.images import image_segments, recognize_image
 from political_ads.registry import candidate_mentions, enrich
 from political_ads.schema import Ad, digest
 from political_ads.sources import Source, language_of, media_links, plain_html, transcript_blocks
@@ -143,6 +144,77 @@ def broadcast_ad_text(content: str, source: Source, review: dict) -> str:
     return text
 
 
+def printed_ad_text(client, content: str, source: Source, review: dict, identities: list[dict]):
+    evidence = review["printed_ad_text"]
+    publisher = urlsplit(review["source_url"])
+    original = urlsplit(evidence["url"])
+    page = re.fullmatch(r"/places/view/(\d+)/[a-z0-9_]+\.html", publisher.path)
+    soup = BeautifulSoup(content, "html.parser")
+    advertiser = soup.select("h1.ad_name")
+    images = soup.select(".galim > img[src]")
+    if (
+        source.url != "https://marketplace.apg-wi.com"
+        or source.sponsor_type != "candidate"
+        or source.alignment != {"DEM": "D", "REP": "R"}.get(identities[0]["party"], "other")
+        or publisher.netloc != "marketplace.apg-wi.com"
+        or publisher.query
+        or publisher.fragment
+        or page is None
+        or review["retrieval_url"] != review["source_url"]
+        or review["format"] != "html"
+        or review["completeness"] != "partial_quotation"
+        or review.get("publication_selector") != "h2.ad_date"
+        or review.get("linked_ad_text")
+        or review.get("broadcast_evidence")
+        or original.scheme != "https"
+        or original.netloc != "static.wehaacdn.com"
+        or original.query
+        or original.fragment
+        or not re.fullmatch(
+            rf"/marketplace-apg--wi-com/imgs/media-images/\d+/images/{page[1]}\.jpg",
+            original.path,
+        )
+        or review["media_url"] != evidence["url"]
+        or len(images) != 1
+        or images[0]["src"] != evidence["url"]
+        or len(advertiser) != 1
+        or not candidate_mentions(advertiser[0].get_text(" ", strip=True), identities)
+    ):
+        raise ValueError("Print ad requires its exact individual publisher, advertiser and image")
+    media, _ = client.get(evidence["url"], retry=False)
+    if sha256(media).hexdigest() != evidence["media_sha256"]:
+        raise ValueError("Original print image changed; literal text requires a new review")
+    image_hash, ocr = recognize_image(client.cache / "printed-ad-images", media)
+    lines = image_segments(ocr, image_hash, evidence["url"])
+    text = re.sub(r"\s+", " ", "\n".join(line["text"] for line in lines)).strip()
+    if image_hash != evidence["media_sha256"] or digest(text) != evidence["ocr_text_sha256"]:
+        raise ValueError("Pinned original OCR changed; literal text requires a new review")
+    offset = 0
+    line_ranges = []
+    for line in lines:
+        value = re.sub(r"\s+", " ", line["text"]).strip()
+        line_ranges.append((offset, offset + len(value), line["image_bounds"]))
+        offset += len(value) + 1
+    position = 0
+    passage_bounds = []
+    for passage in review["passages"]:
+        start = text.find(passage, position)
+        if start < 0:
+            raise ValueError("Print fragments must be literal original OCR in source order")
+        position = start + len(passage)
+        passage_bounds.append(
+            [bounds for left, right, bounds in line_ranges if left < position and right > start]
+        )
+    return text, {
+        "image_hash": image_hash,
+        "image_url": evidence["url"],
+        "extraction_engine": ocr["engine"],
+        "coordinate_system": ocr["coordinate_system"],
+        "ocr_text_sha256": digest(text),
+        "passage_bounds": passage_bounds,
+    }
+
+
 def reviewed_release(client, source: Source, review: dict, candidates: list[dict], observed: str):
     for key in ("source_url", "retrieval_url"):
         url = urlsplit(review[key])
@@ -210,9 +282,14 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
     }:
         raise ValueError("Reviewed candidate is not identified in the publisher's evidence")
     broadcast = review.get("broadcast_evidence")
-    if not broadcast and review["media_url"] not in media_links(content):
+    printed = review.get("printed_ad_text")
+    if not broadcast and not printed and review["media_url"] not in media_links(content):
         raise ValueError("Reviewed original ad link is missing")
-    if broadcast:
+    if printed:
+        passage_source, print_evidence = printed_ad_text(
+            client, content, source, review, identities
+        )
+    elif broadcast:
         passage_source = broadcast_ad_text(content, source, review)
     elif review.get("linked_ad_text"):
         passage_source = linked_ad_text(client, content, review, identities)
@@ -252,7 +329,9 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         )
         if full_script
         else (
-            "publisher_linked_source_quotes_partial_ad_copy"
+            "newspaper_display_ad_partial_image_text"
+            if printed
+            else "publisher_linked_source_quotes_partial_ad_copy"
             if review.get("linked_ad_text")
             else "news_report_quotes_partial_ad_copy"
         ),
@@ -261,12 +340,23 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         flags.append("publisher_ad_copy_completeness_unverified")
     if broadcast:
         flags.append("publisher_audio_episode_not_individual_ad_original")
+    if printed:
+        flags.extend(
+            [
+                "selected_image_words_visually_reviewed",
+                "image_ocr_not_verified_complete_transcription",
+                "ad_legal_payer_unverified",
+            ]
+        )
     segments = [
         {"text": passage, "kind": "publisher_transcript" if full_script else "publisher_ad_copy"}
         for passage in passages
     ]
     segments[0]["release_evidence"] = review
     segments[0]["federal_scope_candidate_ids"] = [candidate["candidate_id"]]
+    if printed:
+        for segment, bounds in zip(segments, print_evidence.pop("passage_bounds"), strict=True):
+            segment.update(print_evidence | {"kind": "image_ocr", "image_line_bounds": bounds})
     return enrich(
         Ad(
             id=f"{source.id}-{review['record_id']}-0",
@@ -279,10 +369,21 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
             alignment=source.alignment,
             published=published,
             observed=observed,
+            placement="publisher_print_ad_listing" if printed else "campaign_release",
             text=text,
             segments=segments,
-            source_hash=digest(content),
-            date_basis="publisher_report_date",
+            source_hash=(
+                digest(
+                    content
+                    + "\n"
+                    + print_evidence["image_hash"]
+                    + "\n"
+                    + print_evidence["ocr_text_sha256"]
+                )
+                if printed
+                else digest(content)
+            ),
+            date_basis="publisher_ad_listing_date" if printed else "publisher_report_date",
             phase=review["phase"],
             race=race,
             state=candidate["state"],

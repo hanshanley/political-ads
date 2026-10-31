@@ -12,6 +12,177 @@ from political_ads.schema import digest
 from political_ads.sources import SOURCES, collect_wordpress
 
 
+def print_fixture():
+    source = next(s for s in SOURCES if s.id == "hermening-apg-print")
+    candidate = {
+        "candidate_id": "H6WI07249",
+        "name": "HERMENING, KEVIN",
+        "party": "REP",
+        "state": "WI",
+        "office": "H",
+        "district": "07",
+        "election_year": "2026",
+    }
+    url = source.url + "/places/view/103908/kevin_hermening_for_congress.html"
+    image = (
+        "https://static.wehaacdn.com/marketplace-apg--wi-com/"
+        "imgs/media-images/103899/images/103908.jpg"
+    )
+    passages = [
+        "Congress needs leaders who listen.",
+        "Kevin Hermening will protect Wisconsin families and support working people.",
+    ]
+    body = (
+        '<h1 class="ad_name">Ads for Kevin Hermening for Congress in Wisconsin</h1>'
+        '<h2 itemprop="title">A campaign advertisement</h2>'
+        '<h2 class="ad_date">Aug 05, 2026.\n Kevin Hermening for Congress '
+        "Government Ads from Spooner Advocate</h2>"
+        f'<div class="galim"><img src="{image}"></div>'
+    ).encode()
+    media = b"\xff\xd8\xfffixture original JPEG"
+    ocr = {
+        "engine": "Fixture OCR",
+        "coordinate_system": "normalized image coordinates",
+        "lines": [
+            {"text": passages[0], "confidence": 1, "bounds": [0.1, 0.8, 0.8, 0.05]},
+            {
+                "text": "Kevin Hermening will protect",
+                "confidence": 1,
+                "bounds": [0.1, 0.6, 0.8, 0.05],
+            },
+            {
+                "text": "Wisconsin families and support working people.",
+                "confidence": 1,
+                "bounds": [0.1, 0.5, 0.8, 0.05],
+            },
+        ],
+    }
+    review = {
+        "source": source.id,
+        "record_id": "103908",
+        "source_url": url,
+        "retrieval_url": url,
+        "format": "html",
+        "published": "2026-08-05",
+        "release_title": "A campaign advertisement",
+        "heading_selector": 'h2[itemprop="title"]',
+        "publication_selector": "h2.ad_date",
+        "publication_date_format": (
+            "%b %d, %Y. Kevin Hermening for Congress Government Ads from Spooner Advocate"
+        ),
+        "candidate_id": candidate["candidate_id"],
+        "media_url": image,
+        "phase": "unknown",
+        "completeness": "partial_quotation",
+        "required_context": ["Kevin Hermening"],
+        "passages": passages,
+        "content_sha256": digest(body.decode()),
+        "printed_ad_text": {
+            "url": image,
+            "media_sha256": sha256(media).hexdigest(),
+            "ocr_text_sha256": digest(" ".join(line["text"] for line in ocr["lines"])),
+        },
+        "attribution_basis": "Publisher-listed candidate advertiser; legal payer unverified.",
+    }
+    return source, candidate, review, body, media, ocr
+
+
+def test_print_ad_binds_individual_image_and_retains_only_selected_ocr(tmp_path, monkeypatch):
+    from political_ads import reviewed_releases
+
+    source, candidate, review, body, media, ocr = print_fixture()
+    calls = []
+
+    class Client:
+        cache = tmp_path
+
+        def get(self, url, **kwargs):
+            calls.append(url)
+            assert not kwargs["retry"]
+            return (body if url == review["source_url"] else media), {}
+
+    def recognize(directory, original):
+        assert directory == tmp_path / "printed-ad-images" and original == media
+        return sha256(media).hexdigest(), ocr
+
+    monkeypatch.setattr(reviewed_releases, "recognize_image", recognize)
+    ad = reviewed_releases.reviewed_release(Client(), source, review, [candidate], "2026-10-31")
+    assert ad["text"] == "\n".join(review["passages"])
+    assert calls == [review["source_url"], review["media_url"]]
+    assert ad["date_basis"] == "publisher_ad_listing_date" and ad["phase"] == "unknown"
+    assert "ad_legal_payer_unverified" in ad["quality_flags"]
+    assert all(s["kind"] == "image_ocr" for s in ad["segments"])
+    assert ad["segments"][1]["image_line_bounds"] == [line["bounds"] for line in ocr["lines"][1:]]
+    assert ad["source_hash"] == digest(
+        body.decode()
+        + "\n"
+        + sha256(media).hexdigest()
+        + "\n"
+        + review["printed_ad_text"]["ocr_text_sha256"]
+    )
+
+
+@pytest.mark.parametrize(
+    "change",
+    [
+        "image",
+        "duplicate",
+        "advertiser",
+        "bytes",
+        "ocr",
+        "html_only",
+        "full_script",
+        "date",
+        "alignment",
+    ],
+)
+def test_print_ad_rejects_unbound_or_nonliteral_evidence(tmp_path, monkeypatch, change):
+    from dataclasses import replace
+
+    from political_ads import reviewed_releases
+
+    source, candidate, review, body, media, ocr = print_fixture()
+    if change == "image":
+        review["media_url"] = review["media_url"].replace("103908.jpg", "103909.jpg")
+        review["printed_ad_text"]["url"] = review["media_url"]
+        body = body.replace(b"103908.jpg", b"103909.jpg")
+    elif change == "duplicate":
+        body += f'<div class="galim"><img src="{review["media_url"]}"></div>'.encode()
+    elif change == "advertiser":
+        body = body.replace(b"Ads for Kevin Hermening", b"Ads for Another Candidate")
+    elif change == "bytes":
+        media += b"changed"
+    elif change == "ocr":
+        ocr["lines"][-1]["text"] = "Changed recognized words."
+    elif change == "html_only":
+        review["passages"] = [
+            "Kevin Hermening offers additional promises here that are not actually in "
+            "the original campaign image."
+        ]
+        body += f"<p>{review['passages'][0]}</p>".encode()
+    elif change == "full_script":
+        review["completeness"] = "marked_script"
+    elif change == "date":
+        body = body.replace(b"Aug 05", b"Aug 06")
+    else:
+        source = replace(source, alignment="D")
+    review["content_sha256"] = digest(body.decode())
+
+    class Client:
+        cache = tmp_path
+
+        def get(self, url, **kwargs):
+            return (body if url == review["source_url"] else media), {}
+
+    monkeypatch.setattr(
+        reviewed_releases,
+        "recognize_image",
+        lambda *args: (review["printed_ad_text"]["media_sha256"], ocr),
+    )
+    with pytest.raises(ValueError):
+        reviewed_releases.reviewed_release(Client(), source, review, [candidate], "2026-10-31")
+
+
 def broadcast_fixture():
     from political_ads.sources import Source
 
