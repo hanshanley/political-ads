@@ -76040,5 +76040,1175 @@
     "text_hash": "69fba4bdd811795158522094235742aaf404ffc8dc364cf31cb9d56a551a13d1",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "nrsc-15285-0",
+    "alignment": "R",
+    "block_id": "nrsc-15285-0-claims-002",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15285-0-claims-002-001",
+    "claim_text": "This video brings back memories of being the only teenage boy at Planned Parenthood’s March for Women’s Lives in 2004.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 1189,
+        "kind": "publisher_transcript",
+        "start": 1069,
+        "text": "“This video brings back memories of being the only teenage boy at Planned Parenthood’s March for Women’s Lives in 2004.”",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-james-talarico-reads-his-most-memorable-tweets-2026-03-11/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 1080,
+        "anchor_quote": "This video",
+        "anchor_start": 1070,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6TX00479",
+        "kind": "person",
+        "name": "TALARICO, JAMES",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Voice Over 1: “And now a dramatic reading of James Talarico’s most memorable tweets.”\nAI James Talarico: “Oh I remember this one. Radicalized white men are the greatest domestic terrorist threat in our country.”\nVoice Over 2: “White men”\nAI Talarico: “So true, so true.\n“Oh I love this one too! The Texas Capitol can be a hostile environment for our trans neighbors. Our office is the first in the history of the Capitol to add pronouns to our official business cards. It’s a small way to tell trans Texans: you are welcome here.\n“Oh this one is touching.\n“Over and over Christians used scripture to justify bullying trans kids. I told them in my faith, God is non-binary.”\nVoice Over 2: “#txlege”\nAI Talarico: “There but for the grace of God go I. As a white man, I’m susceptible to the same radicalization. Thankfully, I was exposed to diversity at a young age and explicitly taught the values of equality, inclusion, and justice. But not every young white boy is so lucky.”\nVoice Over 2: “White boy”\nAI Talarcio: “Should have been a preacher.\n“Oh and best for last!\n“This video brings back memories of being the only teenage boy at Planned Parenthood’s March for Women’s Lives in 2004.”\nVoice Over 1: “And that concludes our dramatic reading of James Talarico’s most memorable tweets.”",
+    "text_hash": "14a6276145c8ad891acde143250f8038adbb98ec9c5de6e84cde8f008db35327",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15321-0",
+    "alignment": "R",
+    "block_id": "nrsc-15321-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15321-0-claims-001-001",
+    "claim_text": "Our adversaries are lurking off Alaska’s shores.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 53,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "VO: “Our adversaries are lurking off Alaska’s shores.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-mary-peltola-and-chuck-schumer-put-alaskas-coast-guard-last-2026-03-16/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 20,
+        "anchor_quote": "adversaries",
+        "anchor_start": 9,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "adversaries",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "VO: “Our adversaries are lurking off Alaska’s shores.\nVO : “Democrats like Mary Peltola and Chuck Schumer want to leave our Coast Guard unfunded.\nVO : “Saying one thing…”\nMary Peltola : “In Alaska, the Coast Guard is so critical because we do have more coastline.”\nChuck Schumer : “We all deeply respect the work of the Coast Guard.”\nVO : “Then doing another in Washington.”\nNews Anchor : “Departments like the U.S. Coast Guard, they’re the ones who are set to go without pay.\nVO : “Tell Mary Peltola to stand up to Senate Democrats: end the shutdown and put Alaska’s Coast Guard first.”",
+    "text_hash": "a88387e54dd671e3b55fbb3ab8f5fca426cc8c293d4bf274f963acd2e38e90a4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15321-0",
+    "alignment": "R",
+    "block_id": "nrsc-15321-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15321-0-claims-001-002",
+    "claim_text": "Democrats like Mary Peltola and Chuck Schumer want to leave our Coast Guard unfunded.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 145,
+        "kind": "publisher_transcript",
+        "start": 54,
+        "text": "VO : “Democrats like Mary Peltola and Chuck Schumer want to leave our Coast Guard unfunded.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-mary-peltola-and-chuck-schumer-put-alaskas-coast-guard-last-2026-03-16/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 87,
+        "anchor_quote": "Mary Peltola",
+        "anchor_start": 75,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "Mary Peltola",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 105,
+        "anchor_quote": "Chuck Schumer",
+        "anchor_start": 92,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Chuck Schumer",
+        "kind": "person",
+        "name": "Chuck Schumer",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 135,
+        "anchor_quote": "Coast Guard",
+        "anchor_start": 124,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Coast Guard",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "VO: “Our adversaries are lurking off Alaska’s shores.\nVO : “Democrats like Mary Peltola and Chuck Schumer want to leave our Coast Guard unfunded.\nVO : “Saying one thing…”\nMary Peltola : “In Alaska, the Coast Guard is so critical because we do have more coastline.”\nChuck Schumer : “We all deeply respect the work of the Coast Guard.”\nVO : “Then doing another in Washington.”\nNews Anchor : “Departments like the U.S. Coast Guard, they’re the ones who are set to go without pay.\nVO : “Tell Mary Peltola to stand up to Senate Democrats: end the shutdown and put Alaska’s Coast Guard first.”",
+    "text_hash": "a88387e54dd671e3b55fbb3ab8f5fca426cc8c293d4bf274f963acd2e38e90a4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15321-0",
+    "alignment": "R",
+    "block_id": "nrsc-15321-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15321-0-claims-001-003",
+    "claim_text": "Mary Peltola said that in Alaska, the Coast Guard is so critical because we do have more coastline.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 264,
+        "kind": "publisher_transcript",
+        "start": 171,
+        "text": "Mary Peltola : “In Alaska, the Coast Guard is so critical because we do have more coastline.”",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-mary-peltola-and-chuck-schumer-put-alaskas-coast-guard-last-2026-03-16/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 183,
+        "anchor_quote": "Mary Peltola",
+        "anchor_start": 171,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "Mary Peltola",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 213,
+        "anchor_quote": "Coast Guard",
+        "anchor_start": 202,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Coast Guard",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "VO: “Our adversaries are lurking off Alaska’s shores.\nVO : “Democrats like Mary Peltola and Chuck Schumer want to leave our Coast Guard unfunded.\nVO : “Saying one thing…”\nMary Peltola : “In Alaska, the Coast Guard is so critical because we do have more coastline.”\nChuck Schumer : “We all deeply respect the work of the Coast Guard.”\nVO : “Then doing another in Washington.”\nNews Anchor : “Departments like the U.S. Coast Guard, they’re the ones who are set to go without pay.\nVO : “Tell Mary Peltola to stand up to Senate Democrats: end the shutdown and put Alaska’s Coast Guard first.”",
+    "text_hash": "a88387e54dd671e3b55fbb3ab8f5fca426cc8c293d4bf274f963acd2e38e90a4",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15321-0",
+    "alignment": "R",
+    "block_id": "nrsc-15321-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15321-0-claims-001-004",
+    "claim_text": "Chuck Schumer said that we all deeply respect the work of the Coast Guard.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 333,
+        "kind": "publisher_transcript",
+        "start": 265,
+        "text": "Chuck Schumer : “We all deeply respect the work of the Coast Guard.”",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-mary-peltola-and-chuck-schumer-put-alaskas-coast-guard-last-2026-03-16/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 284,
+        "anchor_quote": "We",
+        "anchor_start": 282,
+        "anchor_unit_id": 5,
+        "entity_id": "national:Chuck Schumer",
+        "kind": "person",
+        "name": "Chuck Schumer",
+        "party_basis": "national_crosswalk",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 331,
+        "anchor_quote": "Coast Guard",
+        "anchor_start": 320,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Coast Guard",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "VO: “Our adversaries are lurking off Alaska’s shores.\nVO : “Democrats like Mary Peltola and Chuck Schumer want to leave our Coast Guard unfunded.\nVO : “Saying one thing…”\nMary Peltola : “In Alaska, the Coast Guard is so critical because we do have more coastline.”\nChuck Schumer : “We all deeply respect the work of the Coast Guard.”\nVO : “Then doing another in Washington.”\nNews Anchor : “Departments like the U.S. Coast Guard, they’re the ones who are set to go without pay.\nVO : “Tell Mary Peltola to stand up to Senate Democrats: end the shutdown and put Alaska’s Coast Guard first.”",
+    "text_hash": "a88387e54dd671e3b55fbb3ab8f5fca426cc8c293d4bf274f963acd2e38e90a4",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15321-0",
+    "alignment": "R",
+    "block_id": "nrsc-15321-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15321-0-claims-001-005",
+    "claim_text": "Departments like the U.S. Coast Guard are set to go without pay.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 476,
+        "kind": "publisher_transcript",
+        "start": 375,
+        "text": "News Anchor : “Departments like the U.S. Coast Guard, they’re the ones who are set to go without pay.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-mary-peltola-and-chuck-schumer-put-alaskas-coast-guard-last-2026-03-16/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 427,
+        "anchor_quote": "U.S. Coast Guard",
+        "anchor_start": 411,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "U.S. Coast Guard",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "VO: “Our adversaries are lurking off Alaska’s shores.\nVO : “Democrats like Mary Peltola and Chuck Schumer want to leave our Coast Guard unfunded.\nVO : “Saying one thing…”\nMary Peltola : “In Alaska, the Coast Guard is so critical because we do have more coastline.”\nChuck Schumer : “We all deeply respect the work of the Coast Guard.”\nVO : “Then doing another in Washington.”\nNews Anchor : “Departments like the U.S. Coast Guard, they’re the ones who are set to go without pay.\nVO : “Tell Mary Peltola to stand up to Senate Democrats: end the shutdown and put Alaska’s Coast Guard first.”",
+    "text_hash": "a88387e54dd671e3b55fbb3ab8f5fca426cc8c293d4bf274f963acd2e38e90a4",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15321-0",
+    "alignment": "R",
+    "block_id": "nrsc-15321-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15321-0-claims-001-006",
+    "claim_text": "Tell Mary Peltola to stand up to Senate Democrats: end the shutdown and put Alaska’s Coast Guard first.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 587,
+        "kind": "publisher_transcript",
+        "start": 477,
+        "text": "VO : “Tell Mary Peltola to stand up to Senate Democrats: end the shutdown and put Alaska’s Coast Guard first.”",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-mary-peltola-and-chuck-schumer-put-alaskas-coast-guard-last-2026-03-16/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 500,
+        "anchor_quote": "Mary Peltola",
+        "anchor_start": 488,
+        "anchor_unit_id": 8,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "Mary Peltola",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 532,
+        "anchor_quote": "Senate Democrats",
+        "anchor_start": 516,
+        "anchor_unit_id": 8,
+        "entity_id": "party:D",
+        "kind": "collective",
+        "name": "Senate Democrats",
+        "party_basis": "explicit_party_text",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 579,
+        "anchor_quote": "Alaska’s Coast Guard",
+        "anchor_start": 559,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Alaska’s Coast Guard",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "VO: “Our adversaries are lurking off Alaska’s shores.\nVO : “Democrats like Mary Peltola and Chuck Schumer want to leave our Coast Guard unfunded.\nVO : “Saying one thing…”\nMary Peltola : “In Alaska, the Coast Guard is so critical because we do have more coastline.”\nChuck Schumer : “We all deeply respect the work of the Coast Guard.”\nVO : “Then doing another in Washington.”\nNews Anchor : “Departments like the U.S. Coast Guard, they’re the ones who are set to go without pay.\nVO : “Tell Mary Peltola to stand up to Senate Democrats: end the shutdown and put Alaska’s Coast Guard first.”",
+    "text_hash": "a88387e54dd671e3b55fbb3ab8f5fca426cc8c293d4bf274f963acd2e38e90a4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15567-0",
+    "alignment": "R",
+    "block_id": "nrsc-15567-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15567-0-claims-001-001",
+    "claim_text": "This was the gayest (not in the fun d*ck [bleep] sucking way) thing I’ve ever seen.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 978,
+        "kind": "publisher_transcript",
+        "start": 893,
+        "text": "“This was the gayest (not in the fun d*ck [bleep] sucking way) thing I’ve ever seen.”",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/a-dramatic-reading-of-graham-platners-reddit-comments-2026-04-14/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 961,
+        "anchor_quote": "thing",
+        "anchor_start": 956,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "thing",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “And now for a dramatic reading of Graham Platner’s Reddit comments.”\nAI Graham Platner: “Holy f*ck [bleep], how about people just take some responsibility for themselves and not get so f*cked [bleep] up they wind up having sex with someone they don’t mean to?\n“Rape is a real thing, if you’re so worried about it to buy Kevlar underwear you’d think you might not get blacked out f*cked [bleep] up around people you aren’t comfortable with.”\n“Why don’t black people tip? I work as a bartender and it always amazes me how solid this stereotype is.\n“Living in white rural America, I’m afraid to tell you they actually are.\n“I got older and became a communist.\n“Still got the guns though, I don’t trust the fascists to act politely.\n“I did used to love America, or at least the idea of it. These days I’m pretty disgusted by it all.\n“Feel free to back it up with facts, f*gs [bleep].\n“This was the gayest (not in the fun d*ck [bleep] sucking way) thing I’ve ever seen.”\nVoice Over: “This has been a dramatic reading of Graham Platner’s Reddit comments.”",
+    "text_hash": "27152544be4538d72afe95edf42b4505967dfba813724867da50dbe4c60d8905",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15567-0",
+    "alignment": "R",
+    "block_id": "nrsc-15567-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15567-0-claims-001-002",
+    "claim_text": "People should take some responsibility for themselves and not get so f*cked [bleep] up they wind up having sex with someone they don’t mean to.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 272,
+        "kind": "publisher_transcript",
+        "start": 82,
+        "text": "AI Graham Platner: “Holy f*ck [bleep], how about people just take some responsibility for themselves and not get so f*cked [bleep] up they wind up having sex with someone they don’t mean to?",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/a-dramatic-reading-of-graham-platners-reddit-comments-2026-04-14/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 137,
+        "anchor_quote": "people",
+        "anchor_start": 131,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "people",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Voice Over: “And now for a dramatic reading of Graham Platner’s Reddit comments.”\nAI Graham Platner: “Holy f*ck [bleep], how about people just take some responsibility for themselves and not get so f*cked [bleep] up they wind up having sex with someone they don’t mean to?\n“Rape is a real thing, if you’re so worried about it to buy Kevlar underwear you’d think you might not get blacked out f*cked [bleep] up around people you aren’t comfortable with.”\n“Why don’t black people tip? I work as a bartender and it always amazes me how solid this stereotype is.\n“Living in white rural America, I’m afraid to tell you they actually are.\n“I got older and became a communist.\n“Still got the guns though, I don’t trust the fascists to act politely.\n“I did used to love America, or at least the idea of it. These days I’m pretty disgusted by it all.\n“Feel free to back it up with facts, f*gs [bleep].\n“This was the gayest (not in the fun d*ck [bleep] sucking way) thing I’ve ever seen.”\nVoice Over: “This has been a dramatic reading of Graham Platner’s Reddit comments.”",
+    "text_hash": "27152544be4538d72afe95edf42b4505967dfba813724867da50dbe4c60d8905",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15567-0",
+    "alignment": "R",
+    "block_id": "nrsc-15567-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15567-0-claims-001-003",
+    "claim_text": "Rape is a real thing, if you’re so worried about it to buy Kevlar underwear you’d think you might not get blacked out f*cked [bleep] up around people you aren’t comfortable with.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 453,
+        "kind": "publisher_transcript",
+        "start": 273,
+        "text": "“Rape is a real thing, if you’re so worried about it to buy Kevlar underwear you’d think you might not get blacked out f*cked [bleep] up around people you aren’t comfortable with.”",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/a-dramatic-reading-of-graham-platners-reddit-comments-2026-04-14/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 278,
+        "anchor_quote": "Rape",
+        "anchor_start": 274,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Rape",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Voice Over: “And now for a dramatic reading of Graham Platner’s Reddit comments.”\nAI Graham Platner: “Holy f*ck [bleep], how about people just take some responsibility for themselves and not get so f*cked [bleep] up they wind up having sex with someone they don’t mean to?\n“Rape is a real thing, if you’re so worried about it to buy Kevlar underwear you’d think you might not get blacked out f*cked [bleep] up around people you aren’t comfortable with.”\n“Why don’t black people tip? I work as a bartender and it always amazes me how solid this stereotype is.\n“Living in white rural America, I’m afraid to tell you they actually are.\n“I got older and became a communist.\n“Still got the guns though, I don’t trust the fascists to act politely.\n“I did used to love America, or at least the idea of it. These days I’m pretty disgusted by it all.\n“Feel free to back it up with facts, f*gs [bleep].\n“This was the gayest (not in the fun d*ck [bleep] sucking way) thing I’ve ever seen.”\nVoice Over: “This has been a dramatic reading of Graham Platner’s Reddit comments.”",
+    "text_hash": "27152544be4538d72afe95edf42b4505967dfba813724867da50dbe4c60d8905",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15567-0",
+    "alignment": "R",
+    "block_id": "nrsc-15567-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15567-0-claims-001-004",
+    "claim_text": "Black people don’t tip.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 558,
+        "kind": "publisher_transcript",
+        "start": 454,
+        "text": "“Why don’t black people tip? I work as a bartender and it always amazes me how solid this stereotype is.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/a-dramatic-reading-of-graham-platners-reddit-comments-2026-04-14/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 477,
+        "anchor_quote": "black people",
+        "anchor_start": 465,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "black people",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “And now for a dramatic reading of Graham Platner’s Reddit comments.”\nAI Graham Platner: “Holy f*ck [bleep], how about people just take some responsibility for themselves and not get so f*cked [bleep] up they wind up having sex with someone they don’t mean to?\n“Rape is a real thing, if you’re so worried about it to buy Kevlar underwear you’d think you might not get blacked out f*cked [bleep] up around people you aren’t comfortable with.”\n“Why don’t black people tip? I work as a bartender and it always amazes me how solid this stereotype is.\n“Living in white rural America, I’m afraid to tell you they actually are.\n“I got older and became a communist.\n“Still got the guns though, I don’t trust the fascists to act politely.\n“I did used to love America, or at least the idea of it. These days I’m pretty disgusted by it all.\n“Feel free to back it up with facts, f*gs [bleep].\n“This was the gayest (not in the fun d*ck [bleep] sucking way) thing I’ve ever seen.”\nVoice Over: “This has been a dramatic reading of Graham Platner’s Reddit comments.”",
+    "text_hash": "27152544be4538d72afe95edf42b4505967dfba813724867da50dbe4c60d8905",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15567-0",
+    "alignment": "R",
+    "block_id": "nrsc-15567-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15567-0-claims-001-005",
+    "claim_text": "People in white rural America are racist.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 632,
+        "kind": "publisher_transcript",
+        "start": 559,
+        "text": "“Living in white rural America, I’m afraid to tell you they actually are.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/a-dramatic-reading-of-graham-platners-reddit-comments-2026-04-14/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 589,
+        "anchor_quote": "white rural America",
+        "anchor_start": 570,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "people in white rural America",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “And now for a dramatic reading of Graham Platner’s Reddit comments.”\nAI Graham Platner: “Holy f*ck [bleep], how about people just take some responsibility for themselves and not get so f*cked [bleep] up they wind up having sex with someone they don’t mean to?\n“Rape is a real thing, if you’re so worried about it to buy Kevlar underwear you’d think you might not get blacked out f*cked [bleep] up around people you aren’t comfortable with.”\n“Why don’t black people tip? I work as a bartender and it always amazes me how solid this stereotype is.\n“Living in white rural America, I’m afraid to tell you they actually are.\n“I got older and became a communist.\n“Still got the guns though, I don’t trust the fascists to act politely.\n“I did used to love America, or at least the idea of it. These days I’m pretty disgusted by it all.\n“Feel free to back it up with facts, f*gs [bleep].\n“This was the gayest (not in the fun d*ck [bleep] sucking way) thing I’ve ever seen.”\nVoice Over: “This has been a dramatic reading of Graham Platner’s Reddit comments.”",
+    "text_hash": "27152544be4538d72afe95edf42b4505967dfba813724867da50dbe4c60d8905",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15567-0",
+    "alignment": "R",
+    "block_id": "nrsc-15567-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15567-0-claims-001-006",
+    "claim_text": "I got older and became a communist.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 669,
+        "kind": "publisher_transcript",
+        "start": 633,
+        "text": "“I got older and became a communist.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/a-dramatic-reading-of-graham-platners-reddit-comments-2026-04-14/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 635,
+        "anchor_quote": "I",
+        "anchor_start": 634,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:S6ME00373",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Voice Over: “And now for a dramatic reading of Graham Platner’s Reddit comments.”\nAI Graham Platner: “Holy f*ck [bleep], how about people just take some responsibility for themselves and not get so f*cked [bleep] up they wind up having sex with someone they don’t mean to?\n“Rape is a real thing, if you’re so worried about it to buy Kevlar underwear you’d think you might not get blacked out f*cked [bleep] up around people you aren’t comfortable with.”\n“Why don’t black people tip? I work as a bartender and it always amazes me how solid this stereotype is.\n“Living in white rural America, I’m afraid to tell you they actually are.\n“I got older and became a communist.\n“Still got the guns though, I don’t trust the fascists to act politely.\n“I did used to love America, or at least the idea of it. These days I’m pretty disgusted by it all.\n“Feel free to back it up with facts, f*gs [bleep].\n“This was the gayest (not in the fun d*ck [bleep] sucking way) thing I’ve ever seen.”\nVoice Over: “This has been a dramatic reading of Graham Platner’s Reddit comments.”",
+    "text_hash": "27152544be4538d72afe95edf42b4505967dfba813724867da50dbe4c60d8905",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15567-0",
+    "alignment": "R",
+    "block_id": "nrsc-15567-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15567-0-claims-001-007",
+    "claim_text": "I don’t trust the fascists to act politely.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 741,
+        "kind": "publisher_transcript",
+        "start": 670,
+        "text": "“Still got the guns though, I don’t trust the fascists to act politely.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/a-dramatic-reading-of-graham-platners-reddit-comments-2026-04-14/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 724,
+        "anchor_quote": "fascists",
+        "anchor_start": 716,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "fascists",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “And now for a dramatic reading of Graham Platner’s Reddit comments.”\nAI Graham Platner: “Holy f*ck [bleep], how about people just take some responsibility for themselves and not get so f*cked [bleep] up they wind up having sex with someone they don’t mean to?\n“Rape is a real thing, if you’re so worried about it to buy Kevlar underwear you’d think you might not get blacked out f*cked [bleep] up around people you aren’t comfortable with.”\n“Why don’t black people tip? I work as a bartender and it always amazes me how solid this stereotype is.\n“Living in white rural America, I’m afraid to tell you they actually are.\n“I got older and became a communist.\n“Still got the guns though, I don’t trust the fascists to act politely.\n“I did used to love America, or at least the idea of it. These days I’m pretty disgusted by it all.\n“Feel free to back it up with facts, f*gs [bleep].\n“This was the gayest (not in the fun d*ck [bleep] sucking way) thing I’ve ever seen.”\nVoice Over: “This has been a dramatic reading of Graham Platner’s Reddit comments.”",
+    "text_hash": "27152544be4538d72afe95edf42b4505967dfba813724867da50dbe4c60d8905",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15567-0",
+    "alignment": "R",
+    "block_id": "nrsc-15567-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15567-0-claims-001-008",
+    "claim_text": "I used to love America.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 841,
+        "kind": "publisher_transcript",
+        "start": 742,
+        "text": "“I did used to love America, or at least the idea of it. These days I’m pretty disgusted by it all.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/a-dramatic-reading-of-graham-platners-reddit-comments-2026-04-14/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 744,
+        "anchor_quote": "I",
+        "anchor_start": 743,
+        "anchor_unit_id": 8,
+        "entity_id": "candidate:S6ME00373",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Voice Over: “And now for a dramatic reading of Graham Platner’s Reddit comments.”\nAI Graham Platner: “Holy f*ck [bleep], how about people just take some responsibility for themselves and not get so f*cked [bleep] up they wind up having sex with someone they don’t mean to?\n“Rape is a real thing, if you’re so worried about it to buy Kevlar underwear you’d think you might not get blacked out f*cked [bleep] up around people you aren’t comfortable with.”\n“Why don’t black people tip? I work as a bartender and it always amazes me how solid this stereotype is.\n“Living in white rural America, I’m afraid to tell you they actually are.\n“I got older and became a communist.\n“Still got the guns though, I don’t trust the fascists to act politely.\n“I did used to love America, or at least the idea of it. These days I’m pretty disgusted by it all.\n“Feel free to back it up with facts, f*gs [bleep].\n“This was the gayest (not in the fun d*ck [bleep] sucking way) thing I’ve ever seen.”\nVoice Over: “This has been a dramatic reading of Graham Platner’s Reddit comments.”",
+    "text_hash": "27152544be4538d72afe95edf42b4505967dfba813724867da50dbe4c60d8905",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15567-0",
+    "alignment": "R",
+    "block_id": "nrsc-15567-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15567-0-claims-001-009",
+    "claim_text": "I am disgusted by America these days.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 841,
+        "kind": "publisher_transcript",
+        "start": 742,
+        "text": "“I did used to love America, or at least the idea of it. These days I’m pretty disgusted by it all.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/a-dramatic-reading-of-graham-platners-reddit-comments-2026-04-14/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 769,
+        "anchor_quote": "America",
+        "anchor_start": 762,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "America",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “And now for a dramatic reading of Graham Platner’s Reddit comments.”\nAI Graham Platner: “Holy f*ck [bleep], how about people just take some responsibility for themselves and not get so f*cked [bleep] up they wind up having sex with someone they don’t mean to?\n“Rape is a real thing, if you’re so worried about it to buy Kevlar underwear you’d think you might not get blacked out f*cked [bleep] up around people you aren’t comfortable with.”\n“Why don’t black people tip? I work as a bartender and it always amazes me how solid this stereotype is.\n“Living in white rural America, I’m afraid to tell you they actually are.\n“I got older and became a communist.\n“Still got the guns though, I don’t trust the fascists to act politely.\n“I did used to love America, or at least the idea of it. These days I’m pretty disgusted by it all.\n“Feel free to back it up with facts, f*gs [bleep].\n“This was the gayest (not in the fun d*ck [bleep] sucking way) thing I’ve ever seen.”\nVoice Over: “This has been a dramatic reading of Graham Platner’s Reddit comments.”",
+    "text_hash": "27152544be4538d72afe95edf42b4505967dfba813724867da50dbe4c60d8905",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15567-0",
+    "alignment": "R",
+    "block_id": "nrsc-15567-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15567-0-claims-001-010",
+    "claim_text": "Feel free to back it up with facts, f*gs [bleep].",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 892,
+        "kind": "publisher_transcript",
+        "start": 842,
+        "text": "“Feel free to back it up with facts, f*gs [bleep].",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/a-dramatic-reading-of-graham-platners-reddit-comments-2026-04-14/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 891,
+        "anchor_quote": "f*gs [bleep]",
+        "anchor_start": 879,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "f*gs [bleep]",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over: “And now for a dramatic reading of Graham Platner’s Reddit comments.”\nAI Graham Platner: “Holy f*ck [bleep], how about people just take some responsibility for themselves and not get so f*cked [bleep] up they wind up having sex with someone they don’t mean to?\n“Rape is a real thing, if you’re so worried about it to buy Kevlar underwear you’d think you might not get blacked out f*cked [bleep] up around people you aren’t comfortable with.”\n“Why don’t black people tip? I work as a bartender and it always amazes me how solid this stereotype is.\n“Living in white rural America, I’m afraid to tell you they actually are.\n“I got older and became a communist.\n“Still got the guns though, I don’t trust the fascists to act politely.\n“I did used to love America, or at least the idea of it. These days I’m pretty disgusted by it all.\n“Feel free to back it up with facts, f*gs [bleep].\n“This was the gayest (not in the fun d*ck [bleep] sucking way) thing I’ve ever seen.”\nVoice Over: “This has been a dramatic reading of Graham Platner’s Reddit comments.”",
+    "text_hash": "27152544be4538d72afe95edf42b4505967dfba813724867da50dbe4c60d8905",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15623-0",
+    "alignment": "R",
+    "block_id": "nrsc-15623-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15623-0-claims-001-001",
+    "claim_text": "President Trump and Senate Republicans delivered real savings for hardworking families.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 101,
+        "kind": "publisher_transcript",
+        "start": 0,
+        "text": "Voice Over : “President Trump and Senate Republicans delivered real savings for hardworking families.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-campaign-democrats-want-life-to-be-more-expensive-for-working-families-2-2026-04-15/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 29,
+        "anchor_quote": "President Trump",
+        "anchor_start": 14,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "President Trump",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 52,
+        "anchor_quote": "Senate Republicans",
+        "anchor_start": 34,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Senate Republicans",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Voice Over : “President Trump and Senate Republicans delivered real savings for hardworking families.\n“But Jon Ossoff sold Georgia out, opposing tax cuts for first responders, rejecting tax savings for service workers, and denying more money for senior citizens.\n“Jon Ossoff sided with Chuck Schumer’s radical tax and spend agenda which would make life more expensive and leave families with less.\n“Georgia can’t afford Jon Ossoff’s radical policies.”",
+    "text_hash": "d69d52b3707f98cf4dbb8084dfc89630afc5143d2e48db928c43b377437e6b49",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15623-0",
+    "alignment": "R",
+    "block_id": "nrsc-15623-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15623-0-claims-001-002",
+    "claim_text": "Jon Ossoff sold Georgia out, opposing tax cuts for first responders.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 262,
+        "kind": "publisher_transcript",
+        "start": 102,
+        "text": "“But Jon Ossoff sold Georgia out, opposing tax cuts for first responders, rejecting tax savings for service workers, and denying more money for senior citizens.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-campaign-democrats-want-life-to-be-more-expensive-for-working-families-2-2026-04-15/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 117,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 107,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "Jon Ossoff",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over : “President Trump and Senate Republicans delivered real savings for hardworking families.\n“But Jon Ossoff sold Georgia out, opposing tax cuts for first responders, rejecting tax savings for service workers, and denying more money for senior citizens.\n“Jon Ossoff sided with Chuck Schumer’s radical tax and spend agenda which would make life more expensive and leave families with less.\n“Georgia can’t afford Jon Ossoff’s radical policies.”",
+    "text_hash": "d69d52b3707f98cf4dbb8084dfc89630afc5143d2e48db928c43b377437e6b49",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15623-0",
+    "alignment": "R",
+    "block_id": "nrsc-15623-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15623-0-claims-001-003",
+    "claim_text": "Jon Ossoff rejected tax savings for service workers.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 262,
+        "kind": "publisher_transcript",
+        "start": 102,
+        "text": "“But Jon Ossoff sold Georgia out, opposing tax cuts for first responders, rejecting tax savings for service workers, and denying more money for senior citizens.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-campaign-democrats-want-life-to-be-more-expensive-for-working-families-2-2026-04-15/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 117,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 107,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "Jon Ossoff",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over : “President Trump and Senate Republicans delivered real savings for hardworking families.\n“But Jon Ossoff sold Georgia out, opposing tax cuts for first responders, rejecting tax savings for service workers, and denying more money for senior citizens.\n“Jon Ossoff sided with Chuck Schumer’s radical tax and spend agenda which would make life more expensive and leave families with less.\n“Georgia can’t afford Jon Ossoff’s radical policies.”",
+    "text_hash": "d69d52b3707f98cf4dbb8084dfc89630afc5143d2e48db928c43b377437e6b49",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15623-0",
+    "alignment": "R",
+    "block_id": "nrsc-15623-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15623-0-claims-001-004",
+    "claim_text": "Jon Ossoff denied more money for senior citizens.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 262,
+        "kind": "publisher_transcript",
+        "start": 102,
+        "text": "“But Jon Ossoff sold Georgia out, opposing tax cuts for first responders, rejecting tax savings for service workers, and denying more money for senior citizens.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-campaign-democrats-want-life-to-be-more-expensive-for-working-families-2-2026-04-15/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 117,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 107,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "Jon Ossoff",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over : “President Trump and Senate Republicans delivered real savings for hardworking families.\n“But Jon Ossoff sold Georgia out, opposing tax cuts for first responders, rejecting tax savings for service workers, and denying more money for senior citizens.\n“Jon Ossoff sided with Chuck Schumer’s radical tax and spend agenda which would make life more expensive and leave families with less.\n“Georgia can’t afford Jon Ossoff’s radical policies.”",
+    "text_hash": "d69d52b3707f98cf4dbb8084dfc89630afc5143d2e48db928c43b377437e6b49",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15623-0",
+    "alignment": "R",
+    "block_id": "nrsc-15623-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15623-0-claims-001-005",
+    "claim_text": "Jon Ossoff sided with Chuck Schumer’s radical tax and spend agenda which would make life more expensive and leave families with less.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 397,
+        "kind": "publisher_transcript",
+        "start": 263,
+        "text": "“Jon Ossoff sided with Chuck Schumer’s radical tax and spend agenda which would make life more expensive and leave families with less.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-campaign-democrats-want-life-to-be-more-expensive-for-working-families-2-2026-04-15/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 274,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 264,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "Jon Ossoff",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 299,
+        "anchor_quote": "Chuck Schumer",
+        "anchor_start": 286,
+        "anchor_unit_id": 3,
+        "entity_id": "national:Chuck Schumer",
+        "kind": "person",
+        "name": "Chuck Schumer",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over : “President Trump and Senate Republicans delivered real savings for hardworking families.\n“But Jon Ossoff sold Georgia out, opposing tax cuts for first responders, rejecting tax savings for service workers, and denying more money for senior citizens.\n“Jon Ossoff sided with Chuck Schumer’s radical tax and spend agenda which would make life more expensive and leave families with less.\n“Georgia can’t afford Jon Ossoff’s radical policies.”",
+    "text_hash": "d69d52b3707f98cf4dbb8084dfc89630afc5143d2e48db928c43b377437e6b49",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "nrsc-15623-0",
+    "alignment": "R",
+    "block_id": "nrsc-15623-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "nrsc-15623-0-claims-001-006",
+    "claim_text": "Georgia can’t afford Jon Ossoff’s radical policies.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 451,
+        "kind": "publisher_transcript",
+        "start": 398,
+        "text": "“Georgia can’t afford Jon Ossoff’s radical policies.”",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.nrsc.org/press-releases/new-ad-campaign-democrats-want-life-to-be-more-expensive-for-working-families-2-2026-04-15/",
+    "sponsor": "NRSC",
+    "targets": [
+      {
+        "anchor_end": 430,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 420,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "Jon Ossoff",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Voice Over : “President Trump and Senate Republicans delivered real savings for hardworking families.\n“But Jon Ossoff sold Georgia out, opposing tax cuts for first responders, rejecting tax savings for service workers, and denying more money for senior citizens.\n“Jon Ossoff sided with Chuck Schumer’s radical tax and spend agenda which would make life more expensive and leave families with less.\n“Georgia can’t afford Jon Ossoff’s radical policies.”",
+    "text_hash": "d69d52b3707f98cf4dbb8084dfc89630afc5143d2e48db928c43b377437e6b49",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]

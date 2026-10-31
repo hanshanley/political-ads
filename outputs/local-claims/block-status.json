@@ -2834,50 +2834,50 @@
   {
     "ad_id": "nrsc-15285-0",
     "block_id": "nrsc-15285-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":11,\\\"label\\\":\\\"White men\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "nrsc-15285-0",
     "block_id": "nrsc-15285-0-claims-002",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "nrsc-15321-0",
     "block_id": "nrsc-15321-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "nrsc-15343-0",
     "block_id": "nrsc-15343-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for OSSOFF, JON: \\\"Jon Ossoff\\\" is absent from unit 4. Exact source: \\\"“While you wait, take a moment to thank Senator Ossoff for blocking funding for the Transportation Security Administration and the United States Coast Guard, putting Americans at greater risk both in the air and here at home.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "nrsc-15408-0",
     "block_id": "nrsc-15408-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim 1 fields or evidence IDs\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "nrsc-15447-0",
     "block_id": "nrsc-15447-0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for COOPER, ROY: \\\"Roy Cooper\\\" is absent from unit 2. Exact source: \\\"“It is a stain on our great state’s reputation and it’s got to be wiped out.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "nrsc-15567-0",
     "block_id": "nrsc-15567-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "nrsc-15623-0",
     "block_id": "nrsc-15623-0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "nrsc-15817-0",
