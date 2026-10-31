@@ -3,6 +3,34 @@
   "scope": "Individually reviewed public ad words, not complete publisher discovery or semantic portrayal review.",
   "reviews": [
     {
+      "source": "hatcher-nashville-banner",
+      "record_id": "35281",
+      "source_url": "https://nashvillebanner.com/2026/10/07/charlie-hatcher-tennessee-5th-district/",
+      "retrieval_url": "https://nashvillebanner.com/wp-json/wp/v2/posts/35281",
+      "format": "wordpress",
+      "content_sha256": "212ca95720aafcdfcd5a4743e9b7c01799329359c3f82255b12d7ea8d774bfec",
+      "published": "2026-10-07",
+      "release_title": "Charlie Hatcher Introduces Himself to Voters in New Campaign Ad",
+      "candidate_id": "H6TN05405",
+      "media_url": "https://www.youtube.com/embed/mkGJBbt_94c?feature=oembed",
+      "phase": "general",
+      "completeness": "marked_script",
+      "spoken_word_count": 70,
+      "publisher_speaker_label_word_count": 3,
+      "required_context": [
+        "Ad: “Hire A Farmer”",
+        "Transcript:",
+        "Charlie Hatcher, the Republican nominee in Tennessee’s 5th Congressional District",
+        "is finally up on TV with a new biographical ad",
+        "stayed out of the general election"
+      ],
+      "passages": [
+        "Charlie Hatcher: “I’m Charlie Hatcher. I approve this message.”",
+        "Narrator: “Too many in Congress do too little. It’s time to hire a farmer: Charlie Hatcher. Charlie knows hard work, from sun up to long after sundown. He’s the founder of Hatcher Family Dairy. A veterinarian, businessman and former Tennessee commissioner of agriculture. Want a congressman with the experience to get things done and the work ethic to make Tennessee proud? Hire the farmer.”"
+      ],
+      "attribution_basis": "Credit: Stephen Elliott, Nashville Banner, October 7, 2026. The actual primary h1.entry-title and time.entry-date.published agree with the exposed individual WordPress post 35281, local October 7 06:01 / GMT 11:01. Its actual iframe identifies mkGJBbt_94c, and the report marks Hire A Farmer and a complete two-paragraph Transcript ending before the reporter's Analysis section. Preserve exactly 70 spoken words plus three publisher speaker-label tokens, 73 whitespace-separated tokens total; candidate approval and narrator labels remain distinct. The complete script and original identity are absent from the preceding corpus. Exact saved FEC H6TN05405 / C00923383 identifies HATCHER, CHARLIE, REP, House, TN-05; no alias or fuzzy match is added. General-election context is explicit: Hatcher is the Republican nominee facing Democratic opponent Chaz Molder after the primary. This context supports phase/identity, not extra ad words or a new semantic judgment. The reporter's election analysis, Trump endorsement and cattle-import reporting are excluded. TV placement and the spot starting Tuesday are publisher-reported, not an independently inspected closing legal payer or verified delivery interval. The actual public HTML and exposed single-post JSON were read anonymously and cached exactly. Strict rendered hash/title/date, federal identity, campaign/general context, ordered literal script and individual original link are bound. No video, caption provider, reader audio, denied page or licensed catalog was requested. The complete marked publisher transcript remains semantically unreviewed."
+    },
+    {
       "source": "garrett-nashville-banner",
       "record_id": "30144",
       "source_url": "https://nashvillebanner.com/2026/06/29/johnny-garrett-campaign-ad-riley-gaines/",

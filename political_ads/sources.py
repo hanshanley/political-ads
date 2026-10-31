@@ -127,6 +127,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "hatcher-nashville-banner",
+        "https://nashvillebanner.com",
+        "Charlie Hatcher campaign (reported publisher; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="TN-05",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "garrett-nashville-banner",
         "https://nashvillebanner.com",
         "Johnny Garrett campaign (reported publisher; payer unverified)",

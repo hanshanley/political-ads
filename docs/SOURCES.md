@@ -10,9 +10,72 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Tennessee Hatcher expansion of the October 30 snapshot
+
+The latest acquisition contains **1,876 text records**, including **1,838
+English records: 1,226 D / 573 R / 31 other / eight unresolved**.
+Charlie Hatcher's **TN-05 general-election campaign ad**, “Hire A Farmer,”
+is recovered from Stephen Elliott's October 7 Nashville Banner report.
+The complete two-paragraph marked script preserves **70 spoken words plus
+three publisher speaker-label tokens**, 73 tokens total. Candidate approval
+and narrator labels are retained exactly; reporter analysis is excluded.
+It remains **semantically unreviewed**, not neutral or automatically
+classified as self-promotion.
+
+Actual unique `h1.entry-title` and `time.entry-date.published` selectors
+agree with exposed individual WordPress post **35281**, October 7 local
+06:01 / GMT 11:01. The original iframe is **mkGJBbt_94c**. Exact saved FEC
+**H6TN05405 / C00923383** identifies HATCHER, CHARLIE, REP, House, TN-05.
+No alias or fuzzy match is added. General-election context is explicit:
+the Republican nominee faces Democratic opponent Chaz Molder after the
+primary. TV placement and the spot starting Tuesday are publisher-reported,
+not an independently inspected closing payer or verified delivery interval.
+
+Rendered-content SHA-256:
+`212ca95720aafcdfcd5a4743e9b7c01799329359c3f82255b12d7ea8d774bfec`.
+Actual public HTML and the exposed single-post JSON were read anonymously
+and cached exactly. Title/date/hash, exact identity, campaign/general
+context, literal ordered script and individual original link are bound.
+No media, caption provider, reader audio, denied source or licensed catalog
+was requested.
+
+```sh
+political-ads collect --source hatcher-nashville-banner \
+  --until 2026-10-30 --offline
+political-ads parquet
+political-ads build
+political-ads validate
+political-ads audit-strategy
+```
+
+Exact messages are **1,204 D / 536 R**. English House coverage is **698 D /
+195 R**, including **222 D / 194 R non-Snap** and 476 D / one R Snap.
+These are source-limited collection counts, not national advertising
+prevalence or a resolved coverage gap. All **1,875 preceding acquired /
+1,837 analyzed objects, 36 acquisition reviews and 17 protected canonical
+files** remain unchanged. Complete JSON/gzip/CSV downloads, all **1,876
+Parquet rows** and **eleven visually inspected PNGs** reconcile. Isolated
+network-forbidden replay reproduces **531 written records and source
+states** from 530 using one cached response. All **161 affected Python
+tests** and Python lint/format pass. Frontend lint, **17 tests**,
+production build and **seven browser cases** pass; independent auditing
+verifies **20 metric groups / ten chart rows**. Snapshot:
+`5896409f14b327f7acbe08df81a73752b67e5a637897b5e46b45ab342bccc407`.
+
+Broader exposed-collection searches find **24 Hatcher reports / one page**
+and **six Hilleary reports / one page**. Their additional ad headlines are
+Democratic or already acquired; ordinary election reporting is not ad text.
+The broader `campaign ad` search returns **220 reports / three pages**;
+all three exposed pages are inspected. Additional ad headlines are
+state/gubernatorial campaigns, not recovered federal scripts. Related
+House-race profiles remain discovery leads until actual ad words are
+verified. An empty `NRCC` query is not proof of no ads.
+Discovery continues beyond this publisher, with schedule #1 active every
+20 minutes. Website/Substack publication and host restoration remain on hold.
+
 ## Tennessee Garrett expansion of the October 30 snapshot
 
-The latest acquisition contains **1,875 text records**, including **1,837
+This checkpoint contains **1,875 text records**, including **1,837
 English records: 1,226 D / 572 R / 31 other / eight unresolved**.
 Two distinct Johnny Garrett **TN-06 Republican-primary campaign ads**
 are recovered from Nashville Banner: the June 29 basketball-ad report
@@ -78,7 +141,10 @@ not eligible federal ads. The October 7 Charlie Hatcher **TN-05 general**
 report is a new full-script lead. Its actual primary heading, visible
 publication date and exposed single-post **35281** agree; original
 **mkGJBbt_94c** and exact FEC **H6TN05405 / C00923383** are verified.
-It remains unadmitted pending its own preservation/acquisition checkpoint.
+It was subsequently admitted through the separate Hatcher checkpoint above.
+Garrett's checkpoint is pushed as `04ec8fed117908c88f4db35c6ffc44fd3096c849`,
+verified Hans Hanley author/committer and GitHub login `hanshanley`, without
+attribution or session trailers.
 
 ## Wisconsin synthetic-creative expansion of the October 30 snapshot
 

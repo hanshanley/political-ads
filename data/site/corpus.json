@@ -32897,6 +32897,93 @@
       "title": "DCCC Releases First TV Ad in MI-07: “Barrett’s Been Bought”"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "Credit: Stephen Elliott, Nashville Banner, October 7, 2026. The actual primary h1.entry-title and time.entry-date.published agree with the exposed individual WordPress post 35281, local October 7 06:01 / GMT 11:01. Its actual iframe identifies mkGJBbt_94c, and the report marks Hire A Farmer and a complete two-paragraph Transcript ending before the reporter's Analysis section. Preserve exactly 70 spoken words plus three publisher speaker-label tokens, 73 whitespace-separated tokens total; candidate approval and narrator labels remain distinct. The complete script and original identity are absent from the preceding corpus. Exact saved FEC H6TN05405 / C00923383 identifies HATCHER, CHARLIE, REP, House, TN-05; no alias or fuzzy match is added. General-election context is explicit: Hatcher is the Republican nominee facing Democratic opponent Chaz Molder after the primary. This context supports phase/identity, not extra ad words or a new semantic judgment. The reporter's election analysis, Trump endorsement and cattle-import reporting are excluded. TV placement and the spot starting Tuesday are publisher-reported, not an independently inspected closing legal payer or verified delivery interval. The actual public HTML and exposed single-post JSON were read anonymously and cached exactly. Strict rendered hash/title/date, federal identity, campaign/general context, ordered literal script and individual original link are bound. No video, caption provider, reader audio, denied page or licensed catalog was requested. The complete marked publisher transcript remains semantically unreviewed.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6TN05405",
+          "district": "05",
+          "name": "HATCHER, CHARLIE",
+          "office": "H",
+          "party": "REP",
+          "state": "TN"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "hatcher-nashville-banner-35281-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/embed/mkGJBbt_94c?feature=oembed"
+      ],
+      "message_id": "42f56655f7bfeadba90a902c6226f4ee179b875625bc03f5c8e46f93b6a70a83",
+      "observed": "2026-10-31",
+      "phase": "general",
+      "placement": "campaign_release",
+      "published": "2026-10-07",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "campaign_release_reproduced_by_news_publisher"
+      ],
+      "race": "TN-05",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6TN05405"
+          ],
+          "kind": "publisher_transcript",
+          "release_evidence": {
+            "attribution_basis": "Credit: Stephen Elliott, Nashville Banner, October 7, 2026. The actual primary h1.entry-title and time.entry-date.published agree with the exposed individual WordPress post 35281, local October 7 06:01 / GMT 11:01. Its actual iframe identifies mkGJBbt_94c, and the report marks Hire A Farmer and a complete two-paragraph Transcript ending before the reporter's Analysis section. Preserve exactly 70 spoken words plus three publisher speaker-label tokens, 73 whitespace-separated tokens total; candidate approval and narrator labels remain distinct. The complete script and original identity are absent from the preceding corpus. Exact saved FEC H6TN05405 / C00923383 identifies HATCHER, CHARLIE, REP, House, TN-05; no alias or fuzzy match is added. General-election context is explicit: Hatcher is the Republican nominee facing Democratic opponent Chaz Molder after the primary. This context supports phase/identity, not extra ad words or a new semantic judgment. The reporter's election analysis, Trump endorsement and cattle-import reporting are excluded. TV placement and the spot starting Tuesday are publisher-reported, not an independently inspected closing legal payer or verified delivery interval. The actual public HTML and exposed single-post JSON were read anonymously and cached exactly. Strict rendered hash/title/date, federal identity, campaign/general context, ordered literal script and individual original link are bound. No video, caption provider, reader audio, denied page or licensed catalog was requested. The complete marked publisher transcript remains semantically unreviewed.",
+            "candidate_id": "H6TN05405",
+            "completeness": "marked_script",
+            "content_sha256": "212ca95720aafcdfcd5a4743e9b7c01799329359c3f82255b12d7ea8d774bfec",
+            "format": "wordpress",
+            "media_url": "https://www.youtube.com/embed/mkGJBbt_94c?feature=oembed",
+            "passages": [
+              "Charlie Hatcher: “I’m Charlie Hatcher. I approve this message.”",
+              "Narrator: “Too many in Congress do too little. It’s time to hire a farmer: Charlie Hatcher. Charlie knows hard work, from sun up to long after sundown. He’s the founder of Hatcher Family Dairy. A veterinarian, businessman and former Tennessee commissioner of agriculture. Want a congressman with the experience to get things done and the work ethic to make Tennessee proud? Hire the farmer.”"
+            ],
+            "phase": "general",
+            "published": "2026-10-07",
+            "publisher_speaker_label_word_count": 3,
+            "record_id": "35281",
+            "release_title": "Charlie Hatcher Introduces Himself to Voters in New Campaign Ad",
+            "required_context": [
+              "Ad: “Hire A Farmer”",
+              "Transcript:",
+              "Charlie Hatcher, the Republican nominee in Tennessee’s 5th Congressional District",
+              "is finally up on TV with a new biographical ad",
+              "stayed out of the general election"
+            ],
+            "retrieval_url": "https://nashvillebanner.com/wp-json/wp/v2/posts/35281",
+            "source": "hatcher-nashville-banner",
+            "source_url": "https://nashvillebanner.com/2026/10/07/charlie-hatcher-tennessee-5th-district/",
+            "spoken_word_count": 70
+          },
+          "text": "Charlie Hatcher: “I’m Charlie Hatcher. I approve this message.”"
+        },
+        {
+          "kind": "publisher_transcript",
+          "text": "Narrator: “Too many in Congress do too little. It’s time to hire a farmer: Charlie Hatcher. Charlie knows hard work, from sun up to long after sundown. He’s the founder of Hatcher Family Dairy. A veterinarian, businessman and former Tennessee commissioner of agriculture. Want a congressman with the experience to get things done and the work ethic to make Tennessee proud? Hire the farmer.”"
+        }
+      ],
+      "source": "hatcher-nashville-banner",
+      "source_hash": "212ca95720aafcdfcd5a4743e9b7c01799329359c3f82255b12d7ea8d774bfec",
+      "source_record_id": "35281",
+      "source_url": "https://nashvillebanner.com/2026/10/07/charlie-hatcher-tennessee-5th-district/",
+      "sponsor": "Charlie Hatcher campaign (reported publisher; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "TN",
+      "text": "Charlie Hatcher: “I’m Charlie Hatcher. I approve this message.”\nNarrator: “Too many in Congress do too little. It’s time to hire a farmer: Charlie Hatcher. Charlie knows hard work, from sun up to long after sundown. He’s the founder of Hatcher Family Dairy. A veterinarian, businessman and former Tennessee commissioner of agriculture. Want a congressman with the experience to get things done and the work ethic to make Tennessee proud? Hire the farmer.”",
+      "title": "Charlie Hatcher Introduces Himself to Voters in New Campaign Ad"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official LCV Victory Fund release at https://www.lcvvictoryfund.org/news/lcv-victory-fund-launch-4-million-house-ad-blitz/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
@@ -46152,6 +46239,22 @@
       "source": "grothman",
       "state": "blocked",
       "url": "https://www.wispolitics.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "hatcher-nashville-banner",
+      "state": "partial",
+      "url": "https://nashvillebanner.com"
     },
     {
       "ads_with_text": 1,
