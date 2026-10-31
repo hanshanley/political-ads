@@ -99,16 +99,86 @@ The preceding three-ad Alfonso research commit
 matches that SHA and completed successfully with **all 13 successful
 steps**; it is not a substitute for this snapshot's own validation.
 
-Expanded discovery continues. The unreadable Rice Lake original below
-remains excluded. New actual 200 responses from Tiffany print page
-**105352** and the public BadgerBrief Hermening sponsor page are
-discovery evidence only: the former needs creative/race verification,
-while the latter exposes platform references rather than literal ad
-words. No referenced held original was requested, no platform references
-were counted as acquired ads, and no campaign biography or news
-interview was substituted. Wassgren and additional candidate/publisher
-routes remain open; scheduled prompt **#1 / every 20 minutes** remains
-active.
+This print recovery was pushed as research commit
+**9b09b88636820714ed22dd2dc919672705adab41**, actual concurrent parent
+**eaad37c9711f28ebc3dc7bd810af95b60dd759ea**, with exact
+**38-path/Hans-only** remote proof. Its own CI **41252010640**
+independently matches that SHA and completed successfully with **all
+13 successful steps**. The preceding Alfonso run was not substituted
+for this verification.
+
+## Subsequent campaign and print discovery: no additional admissions
+
+These bounded checks leave the **1,919 acquired / 1,880 English /
+237 Republican English House** snapshot unchanged. Discovery responses,
+reference links and exclusions are not additional ads or semantic labels.
+
+APG Marketplace page **105352**, visibly dated **October 29, 2026 /
+Price County Review**, was followed to its actual individual original
+**105343/images/105352.jpg**. Both responses returned 200. The lossless
+rendering of the **1,000 x 2,000** original explicitly identifies
+**Tom Tiffany for Governor**, so it is **excluded from federal House
+acquisition** despite the publisher's stale Congress title and cached
+federal registration. Publisher HTML SHA-256:
+`0aebe9853f14ea44dd24949c68e6eb862e71a18fe9788eecb178a8671d65e440`;
+original SHA-256:
+`2bc8b568bf8a57ed7cc777c6792cfc940f53a08a80b1a4741348858abcf04f27`.
+No OCR was requested and no words were admitted. The earlier unreadable
+Rice Lake original remains excluded.
+
+The public BadgerBrief Hermening sponsor page returned 200 and exposed
+**69 unique platform references: 8 Google / 61 Facebook**. These are
+discovery metadata, not retrieved creatives, literal words or certified
+payer/spending evidence. **Zero referenced originals were requested**
+and **zero ad words were acquired**; no held platform was retried.
+
+Jay Feely's actual campaign homepage and exposed `/news` and
+`/media-kit` pages returned 200. They supplied campaign prose,
+campaign-reproduced coverage/interviews and an empty media-kit section,
+not a verified dated individual advertisement or literal script.
+The saved federal identity is **H6AZ05190 / AZ-01 / REP / House / 2026**.
+Homepage, news and media-kit HTML SHA-256, respectively:
+`8b6977d22396aa209e4683cd7042132fbf827632cbd33433cf7305cfbb8fb416`,
+`49a033a3f9f1eb5f1a09dec84a15c9fd49c9b2609ba08e10a8d3e3edf6a80fcd`,
+`e77f145fb94a1770c2c79827761e1e9c6b6ea4cb777b163a50203c02867eb347`.
+John McGuire's actual homepage and exposed `/media` page also returned
+200, supplying biography, news and events rather than verified ad
+words. His saved federal identity is **H0VA07133 / VA-05 / REP /
+House / 2026**. Homepage and media HTML SHA-256:
+`25c1111d6b788b6d7c00a80c1845e3add69b776b1ebfa3d78abee09e7d9465f4`,
+`5dfdec0cab69ad4ed4881d72f28dbabed1791427613f2f370221df5295d7fb43`.
+Neither campaign's slogans, biography, copyright footer, interview
+speech or tracking iframe was substituted for an advertisement.
+
+The actually exposed APG government-category pages for Price County
+Review and Spooner Advocate returned 200. Price County's response
+reported no results; Spooner's server-rendered listing identified a
+**Charly Ray state-Senate** creative, not a federal House advertisement.
+These observations do not prove absence from all publisher archives.
+The respective HTML SHA-256 values are
+`7b1e5c358d9ab1a2f297a0dc5576e7c143ba5e402304685cccc9e38aade8b852`
+and
+`387bdff94dc841e8371b24c81016a8f5b1bd03775f628bff12710027f5bc8d6c`.
+No new original was requested from those category listings.
+
+A suggested Colorado Times Recorder meat-production report URL ending
+in **82803** returned **404**, not a usable report or a permission denial.
+The publisher homepage and its actually exposed public search form
+were then checked; the `meat` and `Rutinel` searches returned 200.
+No canonical version of that suggested report or individually associated
+ad text was established, so this lead remains unresolved and uncounted.
+Homepage and the two search-response HTML SHA-256 values, respectively:
+`de586ee0dc373fd1b4b2965984313ee57d72ced1571dc6210d19f59fb0f50f69`,
+`f6f4a719c388745d7568caf7f7ff93bee99501c634a6ed865b3787e1501c5e67`,
+`751a0bda8d22bd77c4919d0db3db3db6ba192f6cc53f89f3a80853261073b343`.
+The existing Evans **81473** acquisition was not duplicated, and the
+previously inspected Crank complaint **82885** was not reclassified as
+ad narration.
+
+Broader candidate/publisher discovery, including Wassgren, remains
+active. Scheduled prompt **#1 / every 20 minutes** remains active.
+All provider pauses, literal-word thresholds, prior-evidence
+preservation and the website/editions/host-restoration hold persist.
 
 ## Wisconsin WI-07 campaign quotations and physical-print expansion
 
