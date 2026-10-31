@@ -10,6 +10,157 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Wisconsin WI-07 campaign quotations and physical-print expansion
+
+Snapshot **626e04b307af1604666cdbf30e7f27cf17fe7564535d60a724ae8d9c0ea48b76**
+contains **1,918 acquired / 1,879 English** ads. Alignment is **D 1,226 /
+R 614 / other 31 / unknown 8**; exact messages are **D 1,204 / R 577 /
+other 31 / unknown 8**. English House coverage is **D 698 / R 236 /
+other 19 / unknown 3**. Outside Snap, House coverage is **D 222 / R 235**;
+Snap remains **D 476 / R 1 / other 19 / unknown 3**. The acquisition
+gap is therefore not uniform across sources. These are source-limited
+counts, not national advertising volume, spending, campaign balance or
+matched general-election comparisons. Historical snapshots below remain
+unchanged.
+
+Three actual public campaign-ad reports returned 200, each with a
+different individually associated original video and new normalized
+message. No original video, caption service or social platform was
+requested. All use the existing `reviewed_releases` collector; two
+campaign/publisher sources cover the three individually reviewed ads.
+
+| Campaign / report | Publisher credit / observed date | Original video identity | Retained literal words | Phase |
+|---|---|---|---|---|
+| Alfonso television spot featuring Trump | Mariane Angela, Breitbart / July 18, 2026 | `Vr2MMUNRg00` | 7 + 16 = 23 | Primary |
+| Alfonso Northwoods policy/ideology spot | Amy Curtis, Townhall / August 6, 2026 | `o0UPh5CL_n0` | 9 + 11 = 20 | Unknown |
+| Alfonso employer/veteran testimonials | Amy Curtis, Townhall / July 30, 2026 | `Ccysp5KCnoY` | 14 + 8 = 22 | Primary |
+
+The Breitbart report attributes its selected speech directly to Trump
+in the spot. The first fragment retains its printed terminal comma;
+the second ends at a complete sentence within a longer quotation.
+The August 6 report's two fragments belong to the same paragraph
+expressly attributed to the ad; the second ends before the sentence
+does, with no invented punctuation or intervening words. The July 30
+report individually embeds and separately links the same testimonial
+ad before quoting employer Mike Olson and veteran Joe Rivas III.
+Only those two testimonials are selected. The distinct opening social
+endorsement, repeated short Trump endorsement, intervening testimonial,
+campaign press-release biography, unrelated state-candidate clips,
+reporting, polls and fundraising are excluded. The **65 selected
+words across three partial ads** are not complete scripts.
+
+Pinned whole decoded HTML SHA-256:
+
+- Breitbart July 18:
+  `39613cd6e4452acdebef1ad8d72867e5e483c463d6d02982b50c12f96d08036e`.
+- Townhall August 6:
+  `d2ec93354695a788912847aa12fe5c5e0b56de27c0592e2e0ebc18bc5b7a5343`.
+- Townhall July 30:
+  `18b9e0d9a2b4c95b4b8162e352c4f485449989f9388331d22cca404fa646a21f`.
+
+Each review binds the actual unique heading, author metadata, visible
+time, consistent publication metadata, literal passage boundaries
+and individually exposed original. Complete URLs, selectors, date
+formats and required attribution context are in
+`data/ad-release-reviews.json`. Dates are publisher-report observations,
+not independently verified first release, upload, airing or paid
+delivery. Exact cached official **H6WI07223 / C00924902**, **ALFONSO,
+MICHAEL**, REP, House, WI-07, 2026, principal P/H/REP, establish
+**Republican candidate-campaign alignment**, not legal payment, publisher
+ideology, an endorser's party registration or a certified nomination.
+The closing legal payer was not inspected. Explicit August 11 primary
+context supports the July reports' primary phase. The August 6
+report's timing, broad nomination language and related-story headings
+are not enough to establish that particular creative's phase;
+**unknown remains unknown**. Generic ideological criticism is not
+assigned to an invented individual federal target. All new semantic
+reviews remain **unreviewed**, not neutral or automatically
+positive/negative. No campaign allegation or testimonial becomes a
+verified factual finding.
+
+An immutable **1,915 acquired / 1,876 English / 69 release-review**
+baseline precedes admission. Preserve every preceding acquired and
+analyzed object, all 69 review objects and their exact trailing
+review-file bytes, aliases, roster and all **17 protected input files**.
+Native reviews remain **33**, and media-backlog leads remain **353**.
+Whole-preceding-corpus checks reject any already acquired normalized
+message or equivalent individual YouTube identity, including watch,
+embed and shortened URL variants. Only the three retained public
+article bodies enter isolated replay, with newly written empty metadata;
+no cached response headers are copied.
+
+Reproduction: use `.venv/bin/political-ads collect --source
+alfonso-wi7-breitbart --source alfonso-wi7-townhall --until 2026-10-30 --offline`,
+then **`parquet --offline`**, `build --offline`, `validate --offline`,
+`audit-strategy --offline`, and `cd web && npm run build`. Parquet
+generation is separate from the report build; it must not be skipped.
+The replay verifier compares the complete **566-object written corpus**
+against an isolated, network-forbidden recollection using only those
+three bodies. Complete JSON/gzip/CSV downloads, the **1,918-row
+Parquet** and all **11 PNG sets** across research/frontend/production
+copies must reconcile, not just metadata or sampled rows. The strategy
+audit covers **20 metric groups / 10 chart rows**. Frontend **17 unit
+tests**, lint/type/build and **8 desktop/mobile browser tests** pass,
+as do **34 mocked discovery-guard checks**. Rebuilt strategy and
+review-coverage figures were visually inspected; missing reviews remain
+visibly separate. Backend lint/format and all **437 regression tests**
+pass. Existing CSV CRLF endings are retained
+and checked with `cr-at-eol` whitespace handling. Neither edition nor
+the website or host integration is published.
+
+The preceding Wisconsin PAC research commit
+**3adc91a608fc21ebefd98334491daaeabd3da271** preserves actual concurrent
+parent **463712887c76af7e61898cc49d5096401e4fb79f**. Its exact remote
+**36 research paths**, Hans-only author/committer identities and absent
+attribution trailers were verified. Original exact CI **41248402476**
+completed successfully; independent saved-run checks match that exact
+SHA and require **all 13 completed/successful steps**. This does not
+stand in for the new snapshot's own local checks or exact-commit CI.
+
+Physical-print discovery is now an additional viable route. Two
+different individual Kevin Hermening display-ad pages returned 200,
+both visibly dated August 5, 2026, but they are **not interchangeable**:
+
+- Rice Lake Chronotype page **103949**, title **A Lifetime of Service**,
+  HTML SHA-256
+  `dfd99b24c38e955a1648efae59f1047a7b7c6c17054fe5b361340e6836c86ff2`,
+  individually links image **103940/images/103949.jpg**, SHA-256
+  `54fe8f2e51bd3ef242a66f67ea0a50faa8259352190d367d5334bb834c87e41f`.
+  This **323 x 196** original is too small for reliable narrative
+  transcription. Its exploratory sixfold Lanczos OCR has garbled
+  words and remains excluded; token counts and confidence scores are
+  not literal-text evidence. Interpolation is local pixel-value
+  resampling, not generative reconstruction. `window.print()` exposes
+  no larger original, and the advertiser-level Pinterest image was
+  not substituted or requested.
+- Spooner Advocate page **103908**, title **Vote Kevin on August 11th**,
+  HTML SHA-256
+  `f43a2484bc4731af879c516e42b037aea0c43cec8677d19d21596a223d3febcd`,
+  individually links **103899/images/103908.jpg**, SHA-256
+  `36c548eb9863b95c22d588a883cde4a06e0baa9ebd15106545e84e5c258d00f1`.
+  This distinct **1,000 x 608** original has been visually inspected
+  and contains readable substantive endorsement text attributed in
+  the creative to state senator Romaine Quinn. Native local OCR and
+  the untouched original are preserved. OCR also misreads some letters
+  and quotation marks, so it is not a certified complete transcription.
+  The legal payer is not visible. This remains a **discovery-only lead**
+  pending image-aware individual-date/advertiser/original binding,
+  truthful OCR provenance and focused collector tests; it is not
+  forced into the unrelated video-release or Wix-upload model.
+
+Exact cached **H6WI07249 / C00932335**, **HERMENING, KEVIN**, REP,
+House, WI-07, 2026, principal P/H/REP, verifies the prospective
+candidate advertiser, not Quinn's federal candidacy, a legal payer,
+nomination or delivery. The newspaper advertiser names and actual
+individual images are reviewed separately from campaign biography
+and title text. Neither print lead changes the acquired counts above.
+The actually linked Jessi Ebben homepage and news page also returned
+200 but did not yield verified dated ad text or an individual video;
+2025 image filenames are not assigned as ad dates. Scheduled expansion
+continues with the readable print original, Wassgren and other
+undercovered campaigns/publishers, without repeating those requests
+or any held-provider request.
+
 ## Wisconsin WI-07 Republican-primary PAC narrator recovery
 
 The new snapshot is
