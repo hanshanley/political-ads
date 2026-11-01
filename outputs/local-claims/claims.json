@@ -101004,5 +101004,401 @@
     "text_hash": "be9b51860ba7b29ef7038ea74be8d30827e7b9144d374f08114f932e0b41ce2d",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-16962276a308a47dd5752f68",
+    "alignment": "D",
+    "block_id": "snap-16962276a308a47dd5752f68-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-16962276a308a47dd5752f68-claims-001-001",
+    "claim_text": "Shomari Figures said he's proud to have shone a \"spotlight\" on the communities in Alabama's 2nd Congressional District that have not always been top of mind in the halls of the U.S. Capitol.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 377,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "ALABAMA\nDAILY NEWS\nFigures' mantra for his first year\nin office involves one question\nMº. BIXN\nWASHINGTON - After casting the last votes of his first year in office, freshman\nCongressman Shomari Figures said he's proud to have shone a \"spotlight\" on\nthe communities in Alabama's 2nd Congressional District that have not always\nbeen top of mind in the halls of the U.S. Capitol.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0c761d46415e1eeff8c1672e38ca6ad87f69557b3a71c03256a7386afc6c5d49?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 202,
+        "anchor_quote": "Shomari Figures",
+        "anchor_start": 187,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H4AL02170",
+        "kind": "person",
+        "name": "FIGURES, SHOMARI C.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "ALABAMA\nDAILY NEWS\nFigures' mantra for his first year\nin office involves one question\nMº. BIXN\nWASHINGTON - After casting the last votes of his first year in office, freshman\nCongressman Shomari Figures said he's proud to have shone a \"spotlight\" on\nthe communities in Alabama's 2nd Congressional District that have not always\nbeen top of mind in the halls of the U.S. Capitol.",
+    "text_hash": "bc2393875009dd3c1a76c9650961872ccfb2eae0979f8f3fe67c054a21ad3c42",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-16962276a308a47dd5752f68",
+    "alignment": "D",
+    "block_id": "snap-16962276a308a47dd5752f68-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-16962276a308a47dd5752f68-claims-001-002",
+    "claim_text": "Communities in Alabama's 2nd Congressional District have not always been top of mind in the halls of the U.S. Capitol.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 377,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "ALABAMA\nDAILY NEWS\nFigures' mantra for his first year\nin office involves one question\nMº. BIXN\nWASHINGTON - After casting the last votes of his first year in office, freshman\nCongressman Shomari Figures said he's proud to have shone a \"spotlight\" on\nthe communities in Alabama's 2nd Congressional District that have not always\nbeen top of mind in the halls of the U.S. Capitol.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0c761d46415e1eeff8c1672e38ca6ad87f69557b3a71c03256a7386afc6c5d49?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 305,
+        "anchor_quote": "communities in Alabama's 2nd Congressional District",
+        "anchor_start": 254,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "communities in Alabama's 2nd Congressional District",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "ALABAMA\nDAILY NEWS\nFigures' mantra for his first year\nin office involves one question\nMº. BIXN\nWASHINGTON - After casting the last votes of his first year in office, freshman\nCongressman Shomari Figures said he's proud to have shone a \"spotlight\" on\nthe communities in Alabama's 2nd Congressional District that have not always\nbeen top of mind in the halls of the U.S. Capitol.",
+    "text_hash": "bc2393875009dd3c1a76c9650961872ccfb2eae0979f8f3fe67c054a21ad3c42",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-16962276a308a47dd5752f68",
+    "alignment": "D",
+    "block_id": "snap-16962276a308a47dd5752f68-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-16962276a308a47dd5752f68-claims-001-003",
+    "claim_text": "Shomari Figures cast the last votes of his first year in office.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 377,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "ALABAMA\nDAILY NEWS\nFigures' mantra for his first year\nin office involves one question\nMº. BIXN\nWASHINGTON - After casting the last votes of his first year in office, freshman\nCongressman Shomari Figures said he's proud to have shone a \"spotlight\" on\nthe communities in Alabama's 2nd Congressional District that have not always\nbeen top of mind in the halls of the U.S. Capitol.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0c761d46415e1eeff8c1672e38ca6ad87f69557b3a71c03256a7386afc6c5d49?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 202,
+        "anchor_quote": "Shomari Figures",
+        "anchor_start": 187,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H4AL02170",
+        "kind": "person",
+        "name": "FIGURES, SHOMARI C.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "ALABAMA\nDAILY NEWS\nFigures' mantra for his first year\nin office involves one question\nMº. BIXN\nWASHINGTON - After casting the last votes of his first year in office, freshman\nCongressman Shomari Figures said he's proud to have shone a \"spotlight\" on\nthe communities in Alabama's 2nd Congressional District that have not always\nbeen top of mind in the halls of the U.S. Capitol.",
+    "text_hash": "bc2393875009dd3c1a76c9650961872ccfb2eae0979f8f3fe67c054a21ad3c42",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1698e425d3328bc9fda7d1e1",
+    "alignment": "D",
+    "block_id": "snap-1698e425d3328bc9fda7d1e1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1698e425d3328bc9fda7d1e1-claims-001-001",
+    "claim_text": "Pappas calls on Congress to take up a member stock trading ban.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 126,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "CHRIS\nPAPPAS\nEU.S.SENATE\nCHRIS\nPAPPAS\nU.S. SENATE\nThe Telegraph\n\"Pappas calls on Congress\nto take up member stock\ntrading ban\"",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/28830bdf2b548c782a50cf494dfc48376fbc490fbdcbca0f9d447ea9cef3ff00?mediaType=png",
+    "sponsor": "Chris Pappas for Senate",
+    "targets": [
+      {
+        "anchor_end": 71,
+        "anchor_quote": "Pappas",
+        "anchor_start": 65,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Pappas",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "CHRIS\nPAPPAS\nEU.S.SENATE\nCHRIS\nPAPPAS\nU.S. SENATE\nThe Telegraph\n\"Pappas calls on Congress\nto take up member stock\ntrading ban\"",
+    "text_hash": "c1cd3f7bd4f712f1f2a4c839937e56ab86e61f1a38847452b692fb48d25e49f4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1698e425d3328bc9fda7d1e1",
+    "alignment": "D",
+    "block_id": "snap-1698e425d3328bc9fda7d1e1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1698e425d3328bc9fda7d1e1-claims-001-002",
+    "claim_text": "Congress should take up a member stock trading ban.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 126,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "CHRIS\nPAPPAS\nEU.S.SENATE\nCHRIS\nPAPPAS\nU.S. SENATE\nThe Telegraph\n\"Pappas calls on Congress\nto take up member stock\ntrading ban\"",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/28830bdf2b548c782a50cf494dfc48376fbc490fbdcbca0f9d447ea9cef3ff00?mediaType=png",
+    "sponsor": "Chris Pappas for Senate",
+    "targets": [
+      {
+        "anchor_end": 89,
+        "anchor_quote": "Congress",
+        "anchor_start": 81,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Congress",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "CHRIS\nPAPPAS\nEU.S.SENATE\nCHRIS\nPAPPAS\nU.S. SENATE\nThe Telegraph\n\"Pappas calls on Congress\nto take up member stock\ntrading ban\"",
+    "text_hash": "c1cd3f7bd4f712f1f2a4c839937e56ab86e61f1a38847452b692fb48d25e49f4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-17db9d77a39f326d5e7c0ab5",
+    "alignment": "D",
+    "block_id": "snap-17db9d77a39f326d5e7c0ab5-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-17db9d77a39f326d5e7c0ab5-claims-001-001",
+    "claim_text": "Democratic Rep. Manny Rutinel takes several steps to focus more regulation on poorer, industrial-adjacent communities that have experienced high pollution",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 210,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "C\nTHE SUM & SUBSTANCE\nWhat Matters to Colorado Business\nDemocratic Rep. Manny Rutinel takes\nseveral steps to focus more regulation on\npoorer, industrial-adjacent communities\nthat have experienced high pollution",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b2e2d5cd68cb3137549540b763d775761daa50070e4222612c28c1f2eb90b5ca?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 85,
+        "anchor_quote": "Manny Rutinel",
+        "anchor_start": 72,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6CO08013",
+        "kind": "person",
+        "name": "Manny Rutinel",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 173,
+        "anchor_quote": "poorer, industrial-adjacent communities",
+        "anchor_start": 134,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "poorer, industrial-adjacent communities",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "C\nTHE SUM & SUBSTANCE\nWhat Matters to Colorado Business\nDemocratic Rep. Manny Rutinel takes\nseveral steps to focus more regulation on\npoorer, industrial-adjacent communities\nthat have experienced high pollution",
+    "text_hash": "86ca98c6dc69524ac9f2cf9da36874e9dfcac52c4420756ebb2f8bfe544ad3ab",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-17db9d77a39f326d5e7c0ab5",
+    "alignment": "D",
+    "block_id": "snap-17db9d77a39f326d5e7c0ab5-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-17db9d77a39f326d5e7c0ab5-claims-001-002",
+    "claim_text": "poorer, industrial-adjacent communities have experienced high pollution",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 210,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "C\nTHE SUM & SUBSTANCE\nWhat Matters to Colorado Business\nDemocratic Rep. Manny Rutinel takes\nseveral steps to focus more regulation on\npoorer, industrial-adjacent communities\nthat have experienced high pollution",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b2e2d5cd68cb3137549540b763d775761daa50070e4222612c28c1f2eb90b5ca?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 173,
+        "anchor_quote": "poorer, industrial-adjacent communities",
+        "anchor_start": 134,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "poorer, industrial-adjacent communities",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "C\nTHE SUM & SUBSTANCE\nWhat Matters to Colorado Business\nDemocratic Rep. Manny Rutinel takes\nseveral steps to focus more regulation on\npoorer, industrial-adjacent communities\nthat have experienced high pollution",
+    "text_hash": "86ca98c6dc69524ac9f2cf9da36874e9dfcac52c4420756ebb2f8bfe544ad3ab",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-17db9d77a39f326d5e7c0ab5",
+    "alignment": "D",
+    "block_id": "snap-17db9d77a39f326d5e7c0ab5-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-17db9d77a39f326d5e7c0ab5-claims-001-003",
+    "claim_text": "Manny Rutinel focuses more regulation on poorer, industrial-adjacent communities",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 210,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "C\nTHE SUM & SUBSTANCE\nWhat Matters to Colorado Business\nDemocratic Rep. Manny Rutinel takes\nseveral steps to focus more regulation on\npoorer, industrial-adjacent communities\nthat have experienced high pollution",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b2e2d5cd68cb3137549540b763d775761daa50070e4222612c28c1f2eb90b5ca?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 85,
+        "anchor_quote": "Manny Rutinel",
+        "anchor_start": 72,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6CO08013",
+        "kind": "person",
+        "name": "Manny Rutinel",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 173,
+        "anchor_quote": "poorer, industrial-adjacent communities",
+        "anchor_start": 134,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "poorer, industrial-adjacent communities",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "C\nTHE SUM & SUBSTANCE\nWhat Matters to Colorado Business\nDemocratic Rep. Manny Rutinel takes\nseveral steps to focus more regulation on\npoorer, industrial-adjacent communities\nthat have experienced high pollution",
+    "text_hash": "86ca98c6dc69524ac9f2cf9da36874e9dfcac52c4420756ebb2f8bfe544ad3ab",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]
