@@ -92786,5 +92786,419 @@
     "text_hash": "8172123d8ff711df7ddb7a6a75f1159194d88dd4115e27eaa195f733da065908",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3901-0",
+    "alignment": "D",
+    "block_id": "smp-3901-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3901-0-claims-001-001",
+    "claim_text": "Senator Collins got herself put on a new committee, then she used her position to rewrite federal contracting rules.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 116,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Senator Collins got herself put on a new committee, then she used her position to rewrite federal contracting rules,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-susan-collins-rewrote-the-contracting-rules-her-husbands-firm-collected-75-million/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 15,
+        "anchor_quote": "Senator Collins",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Senator Collins got herself put on a new committee, then she used her position to rewrite federal contracting rules,\nWhich benefitted her husband’s company to the tune of $75 million… Susan Collins is not working for working class people.",
+    "text_hash": "5eb5244d10e7652f7d3c4309820302ef4bfd97c3d8deed84a3da3ccb7579a19e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3901-0",
+    "alignment": "D",
+    "block_id": "smp-3901-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3901-0-claims-001-002",
+    "claim_text": "Her husband’s company benefitted to the tune of $75 million.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 238,
+        "kind": "publisher_ad_copy",
+        "start": 117,
+        "text": "Which benefitted her husband’s company to the tune of $75 million… Susan Collins is not working for working class people.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-susan-collins-rewrote-the-contracting-rules-her-husbands-firm-collected-75-million/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 155,
+        "anchor_quote": "her husband’s company",
+        "anchor_start": 134,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Senator Collins got herself put on a new committee, then she used her position to rewrite federal contracting rules,\nWhich benefitted her husband’s company to the tune of $75 million… Susan Collins is not working for working class people.",
+    "text_hash": "5eb5244d10e7652f7d3c4309820302ef4bfd97c3d8deed84a3da3ccb7579a19e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3901-0",
+    "alignment": "D",
+    "block_id": "smp-3901-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3901-0-claims-001-003",
+    "claim_text": "Susan Collins is not working for working class people.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 238,
+        "kind": "publisher_ad_copy",
+        "start": 117,
+        "text": "Which benefitted her husband’s company to the tune of $75 million… Susan Collins is not working for working class people.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-susan-collins-rewrote-the-contracting-rules-her-husbands-firm-collected-75-million/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 197,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 184,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Senator Collins got herself put on a new committee, then she used her position to rewrite federal contracting rules,\nWhich benefitted her husband’s company to the tune of $75 million… Susan Collins is not working for working class people.",
+    "text_hash": "5eb5244d10e7652f7d3c4309820302ef4bfd97c3d8deed84a3da3ccb7579a19e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3904-0",
+    "alignment": "D",
+    "block_id": "smp-3904-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3904-0-claims-001-001",
+    "claim_text": "Ashley Hinson’s been part of the war, the Medicaid cuts, and the corruption…",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 115,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "The war, the Medicaid cuts, the corruption…Ashley Hinson’s been part of it all, and she’s gotten $8 million richer,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-ashley-hinson-represents-trump-josh-turek-represents-change/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 56,
+        "anchor_quote": "Ashley Hinson",
+        "anchor_start": 43,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6IA00314",
+        "kind": "person",
+        "name": "HINSON, ASHLEY",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "The war, the Medicaid cuts, the corruption…Ashley Hinson’s been part of it all, and she’s gotten $8 million richer,\nJosh Turek’s not like anyone else in Washington. He’s not a millionaire; he cares about Iowa. We just have to try something different, and that’s Josh Turek.",
+    "text_hash": "5fdc526af3e5d6010c793a843a93deac777adb4e55e219b78c4de533b9f93b1d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3904-0",
+    "alignment": "D",
+    "block_id": "smp-3904-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3904-0-claims-001-002",
+    "claim_text": "Ashley Hinson’s gotten $8 million richer.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 115,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "The war, the Medicaid cuts, the corruption…Ashley Hinson’s been part of it all, and she’s gotten $8 million richer,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-ashley-hinson-represents-trump-josh-turek-represents-change/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 56,
+        "anchor_quote": "Ashley Hinson",
+        "anchor_start": 43,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6IA00314",
+        "kind": "person",
+        "name": "HINSON, ASHLEY",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "The war, the Medicaid cuts, the corruption…Ashley Hinson’s been part of it all, and she’s gotten $8 million richer,\nJosh Turek’s not like anyone else in Washington. He’s not a millionaire; he cares about Iowa. We just have to try something different, and that’s Josh Turek.",
+    "text_hash": "5fdc526af3e5d6010c793a843a93deac777adb4e55e219b78c4de533b9f93b1d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3904-0",
+    "alignment": "D",
+    "block_id": "smp-3904-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3904-0-claims-001-003",
+    "claim_text": "Josh Turek’s not like anyone else in Washington.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 273,
+        "kind": "publisher_ad_copy",
+        "start": 116,
+        "text": "Josh Turek’s not like anyone else in Washington. He’s not a millionaire; he cares about Iowa. We just have to try something different, and that’s Josh Turek.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-ashley-hinson-represents-trump-josh-turek-represents-change/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 126,
+        "anchor_quote": "Josh Turek",
+        "anchor_start": 116,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6IA00298",
+        "kind": "person",
+        "name": "TUREK, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "The war, the Medicaid cuts, the corruption…Ashley Hinson’s been part of it all, and she’s gotten $8 million richer,\nJosh Turek’s not like anyone else in Washington. He’s not a millionaire; he cares about Iowa. We just have to try something different, and that’s Josh Turek.",
+    "text_hash": "5fdc526af3e5d6010c793a843a93deac777adb4e55e219b78c4de533b9f93b1d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3904-0",
+    "alignment": "D",
+    "block_id": "smp-3904-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3904-0-claims-001-004",
+    "claim_text": "Josh Turek’s not a millionaire.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 273,
+        "kind": "publisher_ad_copy",
+        "start": 116,
+        "text": "Josh Turek’s not like anyone else in Washington. He’s not a millionaire; he cares about Iowa. We just have to try something different, and that’s Josh Turek.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-ashley-hinson-represents-trump-josh-turek-represents-change/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 126,
+        "anchor_quote": "Josh Turek",
+        "anchor_start": 116,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6IA00298",
+        "kind": "person",
+        "name": "TUREK, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "The war, the Medicaid cuts, the corruption…Ashley Hinson’s been part of it all, and she’s gotten $8 million richer,\nJosh Turek’s not like anyone else in Washington. He’s not a millionaire; he cares about Iowa. We just have to try something different, and that’s Josh Turek.",
+    "text_hash": "5fdc526af3e5d6010c793a843a93deac777adb4e55e219b78c4de533b9f93b1d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3904-0",
+    "alignment": "D",
+    "block_id": "smp-3904-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3904-0-claims-001-005",
+    "claim_text": "Josh Turek cares about Iowa.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 273,
+        "kind": "publisher_ad_copy",
+        "start": 116,
+        "text": "Josh Turek’s not like anyone else in Washington. He’s not a millionaire; he cares about Iowa. We just have to try something different, and that’s Josh Turek.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-ashley-hinson-represents-trump-josh-turek-represents-change/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 126,
+        "anchor_quote": "Josh Turek",
+        "anchor_start": 116,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6IA00298",
+        "kind": "person",
+        "name": "TUREK, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "The war, the Medicaid cuts, the corruption…Ashley Hinson’s been part of it all, and she’s gotten $8 million richer,\nJosh Turek’s not like anyone else in Washington. He’s not a millionaire; he cares about Iowa. We just have to try something different, and that’s Josh Turek.",
+    "text_hash": "5fdc526af3e5d6010c793a843a93deac777adb4e55e219b78c4de533b9f93b1d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3904-0",
+    "alignment": "D",
+    "block_id": "smp-3904-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3904-0-claims-001-006",
+    "claim_text": "We just have to try something different, and that’s Josh Turek.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 273,
+        "kind": "publisher_ad_copy",
+        "start": 116,
+        "text": "Josh Turek’s not like anyone else in Washington. He’s not a millionaire; he cares about Iowa. We just have to try something different, and that’s Josh Turek.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-ashley-hinson-represents-trump-josh-turek-represents-change/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 126,
+        "anchor_quote": "Josh Turek",
+        "anchor_start": 116,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6IA00298",
+        "kind": "person",
+        "name": "TUREK, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "The war, the Medicaid cuts, the corruption…Ashley Hinson’s been part of it all, and she’s gotten $8 million richer,\nJosh Turek’s not like anyone else in Washington. He’s not a millionaire; he cares about Iowa. We just have to try something different, and that’s Josh Turek.",
+    "text_hash": "5fdc526af3e5d6010c793a843a93deac777adb4e55e219b78c4de533b9f93b1d",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
