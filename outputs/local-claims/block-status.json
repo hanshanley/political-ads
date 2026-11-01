@@ -7874,26 +7874,26 @@
   {
     "ad_id": "snap-84d399fe3817176f84723108",
     "block_id": "snap-84d399fe3817176f84723108-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 7 for My union: \\\"My union\\\" is absent from unit 24. Exact source: \\\"MY UNION, MY RIGHT, MY VOTE\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-84f6e971b89e71d85d03198a",
     "block_id": "snap-84f6e971b89e71d85d03198a-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for MARY PELTOLA: \\\"MARY PELTOLA\\\" is absent from unit 3. Exact source: \\\"WORKERS SUPPORT\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-85019926bfe6be6bed050f21",
     "block_id": "snap-85019926bfe6be6bed050f21-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 10\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-8547960d005ed578c4a941e1",
     "block_id": "snap-8547960d005ed578c4a941e1-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 2: {\\\"anchor_quote\\\":\\\"them\\\",\\\"anchor_unit_id\\\":6,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"unknown\\\",\\\"name\\\":\\\"them\\\",\\\"role\\\":\\\"self_or_supported\\\",\\\"tone\\\":\\\"positive\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-856fcedc99894099d3bc7428",
@@ -7905,19 +7905,19 @@
     "ad_id": "snap-858096e7ed1e3ab7bce1512f",
     "block_id": "snap-858096e7ed1e3ab7bce1512f-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-858454af25b75ee73aed1914",
     "block_id": "snap-858454af25b75ee73aed1914-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Sherrod Brown: \\\"Sherrod Brown's\\\" is absent from unit 4. Exact source: \\\"stunned as Sherrod\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-85a868e1f3fb53bdd4675145",
     "block_id": "snap-85a868e1f3fb53bdd4675145-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-85afe9f0bf405d1c9d8e00dd",

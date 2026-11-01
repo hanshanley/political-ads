@@ -142321,5 +142321,787 @@
     "text_hash": "9628309ba282632c4c7f476e0280d7595bf2cdef79b4a2520c0fa4c194db6ea4",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-858096e7ed1e3ab7bce1512f",
+    "alignment": "D",
+    "block_id": "snap-858096e7ed1e3ab7bce1512f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-858096e7ed1e3ab7bce1512f-claims-001-001",
+    "claim_text": "Wisconsin cannot afford Tom Tiffany.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 298,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6c8234f437fb8035160d7bf138256f7434c8469f277fd6639c54e832a997a652?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "Tom Tiffany",
+        "anchor_start": 39,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "TIFFANY, TOM",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+    "text_hash": "31818cc39ccf1856ed7c95955a5d6fe34f043194fdb5938232ed9415bb491d3d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-858096e7ed1e3ab7bce1512f",
+    "alignment": "D",
+    "block_id": "snap-858096e7ed1e3ab7bce1512f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-858096e7ed1e3ab7bce1512f-claims-001-002",
+    "claim_text": "Tom Tiffany voted to cut BadgerCare.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 298,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6c8234f437fb8035160d7bf138256f7434c8469f277fd6639c54e832a997a652?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "Tom Tiffany",
+        "anchor_start": 39,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "TIFFANY, TOM",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+    "text_hash": "31818cc39ccf1856ed7c95955a5d6fe34f043194fdb5938232ed9415bb491d3d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-858096e7ed1e3ab7bce1512f",
+    "alignment": "D",
+    "block_id": "snap-858096e7ed1e3ab7bce1512f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-858096e7ed1e3ab7bce1512f-claims-001-003",
+    "claim_text": "Thousands of people could lose their healthcare.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 298,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6c8234f437fb8035160d7bf138256f7434c8469f277fd6639c54e832a997a652?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 99,
+        "anchor_quote": "Thousands Of\nPeople",
+        "anchor_start": 80,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "people",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+    "text_hash": "31818cc39ccf1856ed7c95955a5d6fe34f043194fdb5938232ed9415bb491d3d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-858096e7ed1e3ab7bce1512f",
+    "alignment": "D",
+    "block_id": "snap-858096e7ed1e3ab7bce1512f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-858096e7ed1e3ab7bce1512f-claims-001-004",
+    "claim_text": "Derek W. is the president of AFSCME Local 720.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 298,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6c8234f437fb8035160d7bf138256f7434c8469f277fd6639c54e832a997a652?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 138,
+        "anchor_quote": "DEREK W,",
+        "anchor_start": 130,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Derek W.",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+    "text_hash": "31818cc39ccf1856ed7c95955a5d6fe34f043194fdb5938232ed9415bb491d3d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-858096e7ed1e3ab7bce1512f",
+    "alignment": "D",
+    "block_id": "snap-858096e7ed1e3ab7bce1512f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-858096e7ed1e3ab7bce1512f-claims-001-005",
+    "claim_text": "AFSCME Local 720 is located in Madison.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 298,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6c8234f437fb8035160d7bf138256f7434c8469f277fd6639c54e832a997a652?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 174,
+        "anchor_quote": "AFSCME\nLOCAL 720\nMADISON",
+        "anchor_start": 150,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "AFSCME Local 720",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+    "text_hash": "31818cc39ccf1856ed7c95955a5d6fe34f043194fdb5938232ed9415bb491d3d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-858096e7ed1e3ab7bce1512f",
+    "alignment": "D",
+    "block_id": "snap-858096e7ed1e3ab7bce1512f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-858096e7ed1e3ab7bce1512f-claims-001-006",
+    "claim_text": "This ad was paid for by AFSCME PEOPLE.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 298,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6c8234f437fb8035160d7bf138256f7434c8469f277fd6639c54e832a997a652?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 213,
+        "anchor_quote": "PAID FOR BY AFSCME PEOPLE",
+        "anchor_start": 188,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFSCME PEOPLE",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+    "text_hash": "31818cc39ccf1856ed7c95955a5d6fe34f043194fdb5938232ed9415bb491d3d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-858096e7ed1e3ab7bce1512f",
+    "alignment": "D",
+    "block_id": "snap-858096e7ed1e3ab7bce1512f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-858096e7ed1e3ab7bce1512f-claims-001-007",
+    "claim_text": "This ad is not authorized by any candidate, candidate's agent, or committee.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 298,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6c8234f437fb8035160d7bf138256f7434c8469f277fd6639c54e832a997a652?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 264,
+        "anchor_quote": "ANY CANDIDATE",
+        "anchor_start": 251,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "candidate",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+    "text_hash": "31818cc39ccf1856ed7c95955a5d6fe34f043194fdb5938232ed9415bb491d3d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-858096e7ed1e3ab7bce1512f",
+    "alignment": "D",
+    "block_id": "snap-858096e7ed1e3ab7bce1512f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-858096e7ed1e3ab7bce1512f-claims-001-008",
+    "claim_text": "This ad is not authorized by any candidate's agent.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 298,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6c8234f437fb8035160d7bf138256f7434c8469f277fd6639c54e832a997a652?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 283,
+        "anchor_quote": "CANDIDATE'S AGENT",
+        "anchor_start": 266,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "candidate's agent",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+    "text_hash": "31818cc39ccf1856ed7c95955a5d6fe34f043194fdb5938232ed9415bb491d3d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-858096e7ed1e3ab7bce1512f",
+    "alignment": "D",
+    "block_id": "snap-858096e7ed1e3ab7bce1512f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-858096e7ed1e3ab7bce1512f-claims-001-009",
+    "claim_text": "This ad is not authorized by any committee.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 298,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6c8234f437fb8035160d7bf138256f7434c8469f277fd6639c54e832a997a652?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 297,
+        "anchor_quote": "OR COMMITTEE",
+        "anchor_start": 285,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "committee",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nTom Tiffany Voted To\nCut BadgerCare. Now\nThousands Of\nPeople Could Lose\nTheir Healthcare.\"\nDEREK W,\nPRESIDENT, AFSCME\nLOCAL 720\nMADISON\nVOTE NOV 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE.",
+    "text_hash": "31818cc39ccf1856ed7c95955a5d6fe34f043194fdb5938232ed9415bb491d3d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-85a868e1f3fb53bdd4675145",
+    "alignment": "D",
+    "block_id": "snap-85a868e1f3fb53bdd4675145-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-85a868e1f3fb53bdd4675145-claims-001-001",
+    "claim_text": "Everything is more expensive, and Mike Bouchard Jr.'s response, adding to the 215 million",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 89,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Everything is more expensive, and Mike Bouchard Jr.'s response, adding to the 215 million",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7d63c257f29a181c0e9c0ee212a2143e388f5f729f901986cd40718b226d1789?mediaType=mp4",
+    "sponsor": "Common Ground Coalition PAC",
+    "targets": [
+      {
+        "anchor_end": 51,
+        "anchor_quote": "Mike Bouchard Jr.",
+        "anchor_start": 34,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Mike Bouchard Jr.",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Everything is more expensive, and Mike Bouchard Jr.'s response, adding to the 215 million\nRepublicans have spent on negative television ads attacking transgender people.\nChristina Heinz has a better idea.\nShe'll work to lower prices for working families like us.\nCHERVE NOT\n58247039 Y\n247039Y\n8247039 Y\nTRANSGENDER ATTACKS\nIN REPUBLICAN\nNEGATIVE ADS\n$ 1\n0\nLIN\nNE AICAS\nPAID FOR BY COMMON GROUND COALIION PAC WWW.COMMONGROUNDCOALTON.COM\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nPAID FOR BY COMMON GROUND COALITION PAC. WWW.COMMONGROUNDCOALITION.COM.\nCHRISTINA HII\nwill work to lower prices fo\nPAID FOR BY COMMON GROUND COALTION PAC. WW.COMMONGROUNDCOALITTON COM.\nCHRISTINA HINES\nPAID FOR BY COMMON GROUND COALITION PAC. WW.COMMONGROUNDCOALTION.COM.\nNOTAUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE.\nwill work to lower prices for\nCHRISTINĄ HINES\nill work to lower prices for u\nI work to lower prices for us\nPAID FOR BY COMMON GROUND COALITION PAC. W.COMMONGROUNDCOALITION.COM.",
+    "text_hash": "9c843e4f974ccf17db88dbd1661810b66e87359893fd6027066c354687b6a03a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-85a868e1f3fb53bdd4675145",
+    "alignment": "D",
+    "block_id": "snap-85a868e1f3fb53bdd4675145-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-85a868e1f3fb53bdd4675145-claims-001-002",
+    "claim_text": "Republicans have spent on negative television ads attacking transgender people.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 169,
+        "kind": "local_asr",
+        "start": 90,
+        "text": "Republicans have spent on negative television ads attacking transgender people.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7d63c257f29a181c0e9c0ee212a2143e388f5f729f901986cd40718b226d1789?mediaType=mp4",
+    "sponsor": "Common Ground Coalition PAC",
+    "targets": [
+      {
+        "anchor_end": 101,
+        "anchor_quote": "Republicans",
+        "anchor_start": 90,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Republicans",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Everything is more expensive, and Mike Bouchard Jr.'s response, adding to the 215 million\nRepublicans have spent on negative television ads attacking transgender people.\nChristina Heinz has a better idea.\nShe'll work to lower prices for working families like us.\nCHERVE NOT\n58247039 Y\n247039Y\n8247039 Y\nTRANSGENDER ATTACKS\nIN REPUBLICAN\nNEGATIVE ADS\n$ 1\n0\nLIN\nNE AICAS\nPAID FOR BY COMMON GROUND COALIION PAC WWW.COMMONGROUNDCOALTON.COM\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nPAID FOR BY COMMON GROUND COALITION PAC. WWW.COMMONGROUNDCOALITION.COM.\nCHRISTINA HII\nwill work to lower prices fo\nPAID FOR BY COMMON GROUND COALTION PAC. WW.COMMONGROUNDCOALITTON COM.\nCHRISTINA HINES\nPAID FOR BY COMMON GROUND COALITION PAC. WW.COMMONGROUNDCOALTION.COM.\nNOTAUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE.\nwill work to lower prices for\nCHRISTINĄ HINES\nill work to lower prices for u\nI work to lower prices for us\nPAID FOR BY COMMON GROUND COALITION PAC. W.COMMONGROUNDCOALITION.COM.",
+    "text_hash": "9c843e4f974ccf17db88dbd1661810b66e87359893fd6027066c354687b6a03a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-85a868e1f3fb53bdd4675145",
+    "alignment": "D",
+    "block_id": "snap-85a868e1f3fb53bdd4675145-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-85a868e1f3fb53bdd4675145-claims-001-003",
+    "claim_text": "Christina Heinz has a better idea.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 204,
+        "kind": "local_asr",
+        "start": 170,
+        "text": "Christina Heinz has a better idea.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7d63c257f29a181c0e9c0ee212a2143e388f5f729f901986cd40718b226d1789?mediaType=mp4",
+    "sponsor": "Common Ground Coalition PAC",
+    "targets": [
+      {
+        "anchor_end": 185,
+        "anchor_quote": "Christina Heinz",
+        "anchor_start": 170,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6MI10276",
+        "kind": "person",
+        "name": "Christina Heinz",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Everything is more expensive, and Mike Bouchard Jr.'s response, adding to the 215 million\nRepublicans have spent on negative television ads attacking transgender people.\nChristina Heinz has a better idea.\nShe'll work to lower prices for working families like us.\nCHERVE NOT\n58247039 Y\n247039Y\n8247039 Y\nTRANSGENDER ATTACKS\nIN REPUBLICAN\nNEGATIVE ADS\n$ 1\n0\nLIN\nNE AICAS\nPAID FOR BY COMMON GROUND COALIION PAC WWW.COMMONGROUNDCOALTON.COM\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nPAID FOR BY COMMON GROUND COALITION PAC. WWW.COMMONGROUNDCOALITION.COM.\nCHRISTINA HII\nwill work to lower prices fo\nPAID FOR BY COMMON GROUND COALTION PAC. WW.COMMONGROUNDCOALITTON COM.\nCHRISTINA HINES\nPAID FOR BY COMMON GROUND COALITION PAC. WW.COMMONGROUNDCOALTION.COM.\nNOTAUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE.\nwill work to lower prices for\nCHRISTINĄ HINES\nill work to lower prices for u\nI work to lower prices for us\nPAID FOR BY COMMON GROUND COALITION PAC. W.COMMONGROUNDCOALITION.COM.",
+    "text_hash": "9c843e4f974ccf17db88dbd1661810b66e87359893fd6027066c354687b6a03a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-85a868e1f3fb53bdd4675145",
+    "alignment": "D",
+    "block_id": "snap-85a868e1f3fb53bdd4675145-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-85a868e1f3fb53bdd4675145-claims-001-004",
+    "claim_text": "She'll work to lower prices for working families like us.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 262,
+        "kind": "local_asr",
+        "start": 205,
+        "text": "She'll work to lower prices for working families like us.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7d63c257f29a181c0e9c0ee212a2143e388f5f729f901986cd40718b226d1789?mediaType=mp4",
+    "sponsor": "Common Ground Coalition PAC",
+    "targets": [
+      {
+        "anchor_end": 208,
+        "anchor_quote": "She",
+        "anchor_start": 205,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H6MI10276",
+        "kind": "person",
+        "name": "She",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Everything is more expensive, and Mike Bouchard Jr.'s response, adding to the 215 million\nRepublicans have spent on negative television ads attacking transgender people.\nChristina Heinz has a better idea.\nShe'll work to lower prices for working families like us.\nCHERVE NOT\n58247039 Y\n247039Y\n8247039 Y\nTRANSGENDER ATTACKS\nIN REPUBLICAN\nNEGATIVE ADS\n$ 1\n0\nLIN\nNE AICAS\nPAID FOR BY COMMON GROUND COALIION PAC WWW.COMMONGROUNDCOALTON.COM\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nPAID FOR BY COMMON GROUND COALITION PAC. WWW.COMMONGROUNDCOALITION.COM.\nCHRISTINA HII\nwill work to lower prices fo\nPAID FOR BY COMMON GROUND COALTION PAC. WW.COMMONGROUNDCOALITTON COM.\nCHRISTINA HINES\nPAID FOR BY COMMON GROUND COALITION PAC. WW.COMMONGROUNDCOALTION.COM.\nNOTAUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE.\nwill work to lower prices for\nCHRISTINĄ HINES\nill work to lower prices for u\nI work to lower prices for us\nPAID FOR BY COMMON GROUND COALITION PAC. W.COMMONGROUNDCOALITION.COM.",
+    "text_hash": "9c843e4f974ccf17db88dbd1661810b66e87359893fd6027066c354687b6a03a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-85a868e1f3fb53bdd4675145",
+    "alignment": "D",
+    "block_id": "snap-85a868e1f3fb53bdd4675145-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-85a868e1f3fb53bdd4675145-claims-001-005",
+    "claim_text": "I work to lower prices for us",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 927,
+        "kind": "video_ocr",
+        "start": 898,
+        "text": "I work to lower prices for us",
+        "unit_id": 28
+      }
+    ],
+    "evidence_ids": [
+      28
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7d63c257f29a181c0e9c0ee212a2143e388f5f729f901986cd40718b226d1789?mediaType=mp4",
+    "sponsor": "Common Ground Coalition PAC",
+    "targets": [
+      {
+        "anchor_end": 899,
+        "anchor_quote": "I",
+        "anchor_start": 898,
+        "anchor_unit_id": 28,
+        "entity_id": "candidate:H6MI10276",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Everything is more expensive, and Mike Bouchard Jr.'s response, adding to the 215 million\nRepublicans have spent on negative television ads attacking transgender people.\nChristina Heinz has a better idea.\nShe'll work to lower prices for working families like us.\nCHERVE NOT\n58247039 Y\n247039Y\n8247039 Y\nTRANSGENDER ATTACKS\nIN REPUBLICAN\nNEGATIVE ADS\n$ 1\n0\nLIN\nNE AICAS\nPAID FOR BY COMMON GROUND COALIION PAC WWW.COMMONGROUNDCOALTON.COM\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nPAID FOR BY COMMON GROUND COALITION PAC. WWW.COMMONGROUNDCOALITION.COM.\nCHRISTINA HII\nwill work to lower prices fo\nPAID FOR BY COMMON GROUND COALTION PAC. WW.COMMONGROUNDCOALITTON COM.\nCHRISTINA HINES\nPAID FOR BY COMMON GROUND COALITION PAC. WW.COMMONGROUNDCOALTION.COM.\nNOTAUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE.\nwill work to lower prices for\nCHRISTINĄ HINES\nill work to lower prices for u\nI work to lower prices for us\nPAID FOR BY COMMON GROUND COALITION PAC. W.COMMONGROUNDCOALITION.COM.",
+    "text_hash": "9c843e4f974ccf17db88dbd1661810b66e87359893fd6027066c354687b6a03a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-85a868e1f3fb53bdd4675145",
+    "alignment": "D",
+    "block_id": "snap-85a868e1f3fb53bdd4675145-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-85a868e1f3fb53bdd4675145-claims-001-006",
+    "claim_text": "will work to lower prices fo",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 608,
+        "kind": "video_ocr",
+        "start": 580,
+        "text": "will work to lower prices fo",
+        "unit_id": 20
+      }
+    ],
+    "evidence_ids": [
+      20
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7d63c257f29a181c0e9c0ee212a2143e388f5f729f901986cd40718b226d1789?mediaType=mp4",
+    "sponsor": "Common Ground Coalition PAC",
+    "targets": [
+      {
+        "anchor_end": 584,
+        "anchor_quote": "will",
+        "anchor_start": 580,
+        "anchor_unit_id": 20,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "will",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Everything is more expensive, and Mike Bouchard Jr.'s response, adding to the 215 million\nRepublicans have spent on negative television ads attacking transgender people.\nChristina Heinz has a better idea.\nShe'll work to lower prices for working families like us.\nCHERVE NOT\n58247039 Y\n247039Y\n8247039 Y\nTRANSGENDER ATTACKS\nIN REPUBLICAN\nNEGATIVE ADS\n$ 1\n0\nLIN\nNE AICAS\nPAID FOR BY COMMON GROUND COALIION PAC WWW.COMMONGROUNDCOALTON.COM\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nPAID FOR BY COMMON GROUND COALITION PAC. WWW.COMMONGROUNDCOALITION.COM.\nCHRISTINA HII\nwill work to lower prices fo\nPAID FOR BY COMMON GROUND COALTION PAC. WW.COMMONGROUNDCOALITTON COM.\nCHRISTINA HINES\nPAID FOR BY COMMON GROUND COALITION PAC. WW.COMMONGROUNDCOALTION.COM.\nNOTAUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE.\nwill work to lower prices for\nCHRISTINĄ HINES\nill work to lower prices for u\nI work to lower prices for us\nPAID FOR BY COMMON GROUND COALITION PAC. W.COMMONGROUNDCOALITION.COM.",
+    "text_hash": "9c843e4f974ccf17db88dbd1661810b66e87359893fd6027066c354687b6a03a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-85a868e1f3fb53bdd4675145",
+    "alignment": "D",
+    "block_id": "snap-85a868e1f3fb53bdd4675145-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-85a868e1f3fb53bdd4675145-claims-001-007",
+    "claim_text": "will work to lower prices for",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 850,
+        "kind": "video_ocr",
+        "start": 821,
+        "text": "will work to lower prices for",
+        "unit_id": 25
+      }
+    ],
+    "evidence_ids": [
+      25
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7d63c257f29a181c0e9c0ee212a2143e388f5f729f901986cd40718b226d1789?mediaType=mp4",
+    "sponsor": "Common Ground Coalition PAC",
+    "targets": [
+      {
+        "anchor_end": 825,
+        "anchor_quote": "will",
+        "anchor_start": 821,
+        "anchor_unit_id": 25,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "will",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Everything is more expensive, and Mike Bouchard Jr.'s response, adding to the 215 million\nRepublicans have spent on negative television ads attacking transgender people.\nChristina Heinz has a better idea.\nShe'll work to lower prices for working families like us.\nCHERVE NOT\n58247039 Y\n247039Y\n8247039 Y\nTRANSGENDER ATTACKS\nIN REPUBLICAN\nNEGATIVE ADS\n$ 1\n0\nLIN\nNE AICAS\nPAID FOR BY COMMON GROUND COALIION PAC WWW.COMMONGROUNDCOALTON.COM\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nPAID FOR BY COMMON GROUND COALITION PAC. WWW.COMMONGROUNDCOALITION.COM.\nCHRISTINA HII\nwill work to lower prices fo\nPAID FOR BY COMMON GROUND COALTION PAC. WW.COMMONGROUNDCOALITTON COM.\nCHRISTINA HINES\nPAID FOR BY COMMON GROUND COALITION PAC. WW.COMMONGROUNDCOALTION.COM.\nNOTAUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE.\nwill work to lower prices for\nCHRISTINĄ HINES\nill work to lower prices for u\nI work to lower prices for us\nPAID FOR BY COMMON GROUND COALITION PAC. W.COMMONGROUNDCOALITION.COM.",
+    "text_hash": "9c843e4f974ccf17db88dbd1661810b66e87359893fd6027066c354687b6a03a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-85a868e1f3fb53bdd4675145",
+    "alignment": "D",
+    "block_id": "snap-85a868e1f3fb53bdd4675145-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-85a868e1f3fb53bdd4675145-claims-001-008",
+    "claim_text": "ill work to lower prices for u",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 897,
+        "kind": "video_ocr",
+        "start": 867,
+        "text": "ill work to lower prices for u",
+        "unit_id": 27
+      }
+    ],
+    "evidence_ids": [
+      27
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7d63c257f29a181c0e9c0ee212a2143e388f5f729f901986cd40718b226d1789?mediaType=mp4",
+    "sponsor": "Common Ground Coalition PAC",
+    "targets": [
+      {
+        "anchor_end": 870,
+        "anchor_quote": "ill",
+        "anchor_start": 867,
+        "anchor_unit_id": 27,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "ill",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Everything is more expensive, and Mike Bouchard Jr.'s response, adding to the 215 million\nRepublicans have spent on negative television ads attacking transgender people.\nChristina Heinz has a better idea.\nShe'll work to lower prices for working families like us.\nCHERVE NOT\n58247039 Y\n247039Y\n8247039 Y\nTRANSGENDER ATTACKS\nIN REPUBLICAN\nNEGATIVE ADS\n$ 1\n0\nLIN\nNE AICAS\nPAID FOR BY COMMON GROUND COALIION PAC WWW.COMMONGROUNDCOALTON.COM\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nPAID FOR BY COMMON GROUND COALITION PAC. WWW.COMMONGROUNDCOALITION.COM.\nCHRISTINA HII\nwill work to lower prices fo\nPAID FOR BY COMMON GROUND COALTION PAC. WW.COMMONGROUNDCOALITTON COM.\nCHRISTINA HINES\nPAID FOR BY COMMON GROUND COALITION PAC. WW.COMMONGROUNDCOALTION.COM.\nNOTAUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE.\nwill work to lower prices for\nCHRISTINĄ HINES\nill work to lower prices for u\nI work to lower prices for us\nPAID FOR BY COMMON GROUND COALITION PAC. W.COMMONGROUNDCOALITION.COM.",
+    "text_hash": "9c843e4f974ccf17db88dbd1661810b66e87359893fd6027066c354687b6a03a",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
