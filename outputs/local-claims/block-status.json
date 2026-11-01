@@ -6434,20 +6434,20 @@
   {
     "ad_id": "snap-5898422fb147b2e88cf29c89",
     "block_id": "snap-5898422fb147b2e88cf29c89-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for Friends of Sherrod Brown: \\\"Friends of Sherrod Brown\\\" is absent from unit 1. Exact source: \\\"SHERROD\\\\nBROWN\\\\nWILL FIGHT TO\\\\n- End the war\\\\n- Lower prices\\\\n- Make data\\\\ncenters pay\\\\nSHERROD\\\\nBR\\\\nWN\\\\nOHIO\\\\nPAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWN\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-58ee43d55c3e0ec020cc94bf",
     "block_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-590f12f1a78d5cd53d312413",
     "block_id": "snap-590f12f1a78d5cd53d312413-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim 1 fields or evidence IDs\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5989b1cf02f6bed5df4f8af3",
@@ -6458,14 +6458,14 @@
   {
     "ad_id": "snap-59aa3fa9c3fbb5521d35d64b",
     "block_id": "snap-59aa3fa9c3fbb5521d35d64b-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":10,\\\"label\\\":\\\"MY VOTÈ\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-59aa3fa9c3fbb5521d35d64b",
     "block_id": "snap-59aa3fa9c3fbb5521d35d64b-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for billionaires: \\\"billionaires\\\" is absent from unit 4. Exact source: \\\"AGAINST BILLIONAIRES!\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-59af1d321d75727cec9b126a",
@@ -6476,8 +6476,8 @@
   {
     "ad_id": "snap-5a0f9b6e739df6faa1ea862d",
     "block_id": "snap-5a0f9b6e739df6faa1ea862d-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim 4 fields or evidence IDs\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5a1447e949f7efd018798943",

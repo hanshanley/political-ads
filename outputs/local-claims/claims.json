@@ -125233,5 +125233,304 @@
     "text_hash": "1423679ce750d657ac484245e17dcb15aa9c50d70f15f9d3f3bb77cabb8d5559",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-58ee43d55c3e0ec020cc94bf",
+    "alignment": "R",
+    "block_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001-001",
+    "claim_text": "Every vote counts.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 108,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Every vote counts. Keeping our Republican Senate majority could come down to just a few votes in your state.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e37ccf7460e8c11e572eeb987339b441adf0a0efbedcc842eb3763a565ff0059?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [],
+    "text": "Every vote counts. Keeping our Republican Senate majority could come down to just a few votes in your state.\nMake sure you plan to vote Tuesday, November 3rd. Don't wait or count on somebody else to show up.\nPresident Trump is counting on you.\n15202\nPaid for by SLF PAC.\nNot authorized by any Candidate\nor Candidate's Committee.\nwww.senateleadershipfund.org.",
+    "text_hash": "586fdbed59a4c5fd1d5e38327b6aa7749b44d529e3e2703c664d50ba6fa4853d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-58ee43d55c3e0ec020cc94bf",
+    "alignment": "R",
+    "block_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001-002",
+    "claim_text": "Keeping our Republican Senate majority could come down to just a few votes in your state.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 108,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Every vote counts. Keeping our Republican Senate majority could come down to just a few votes in your state.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e37ccf7460e8c11e572eeb987339b441adf0a0efbedcc842eb3763a565ff0059?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 57,
+        "anchor_quote": "Republican Senate majority",
+        "anchor_start": 31,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Republican Senate majority",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Every vote counts. Keeping our Republican Senate majority could come down to just a few votes in your state.\nMake sure you plan to vote Tuesday, November 3rd. Don't wait or count on somebody else to show up.\nPresident Trump is counting on you.\n15202\nPaid for by SLF PAC.\nNot authorized by any Candidate\nor Candidate's Committee.\nwww.senateleadershipfund.org.",
+    "text_hash": "586fdbed59a4c5fd1d5e38327b6aa7749b44d529e3e2703c664d50ba6fa4853d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-58ee43d55c3e0ec020cc94bf",
+    "alignment": "R",
+    "block_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001-003",
+    "claim_text": "Make sure you plan to vote Tuesday, November 3rd.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 207,
+        "kind": "local_asr",
+        "start": 109,
+        "text": "Make sure you plan to vote Tuesday, November 3rd. Don't wait or count on somebody else to show up.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e37ccf7460e8c11e572eeb987339b441adf0a0efbedcc842eb3763a565ff0059?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [],
+    "text": "Every vote counts. Keeping our Republican Senate majority could come down to just a few votes in your state.\nMake sure you plan to vote Tuesday, November 3rd. Don't wait or count on somebody else to show up.\nPresident Trump is counting on you.\n15202\nPaid for by SLF PAC.\nNot authorized by any Candidate\nor Candidate's Committee.\nwww.senateleadershipfund.org.",
+    "text_hash": "586fdbed59a4c5fd1d5e38327b6aa7749b44d529e3e2703c664d50ba6fa4853d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-58ee43d55c3e0ec020cc94bf",
+    "alignment": "R",
+    "block_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001-004",
+    "claim_text": "President Trump is counting on you.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 243,
+        "kind": "local_asr",
+        "start": 208,
+        "text": "President Trump is counting on you.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e37ccf7460e8c11e572eeb987339b441adf0a0efbedcc842eb3763a565ff0059?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 223,
+        "anchor_quote": "President Trump",
+        "anchor_start": 208,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "President Trump",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Every vote counts. Keeping our Republican Senate majority could come down to just a few votes in your state.\nMake sure you plan to vote Tuesday, November 3rd. Don't wait or count on somebody else to show up.\nPresident Trump is counting on you.\n15202\nPaid for by SLF PAC.\nNot authorized by any Candidate\nor Candidate's Committee.\nwww.senateleadershipfund.org.",
+    "text_hash": "586fdbed59a4c5fd1d5e38327b6aa7749b44d529e3e2703c664d50ba6fa4853d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-58ee43d55c3e0ec020cc94bf",
+    "alignment": "R",
+    "block_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001-005",
+    "claim_text": "This communication is paid for by SLF PAC.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 270,
+        "kind": "video_ocr",
+        "start": 250,
+        "text": "Paid for by SLF PAC.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e37ccf7460e8c11e572eeb987339b441adf0a0efbedcc842eb3763a565ff0059?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 269,
+        "anchor_quote": "SLF PAC",
+        "anchor_start": 262,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "SLF PAC",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Every vote counts. Keeping our Republican Senate majority could come down to just a few votes in your state.\nMake sure you plan to vote Tuesday, November 3rd. Don't wait or count on somebody else to show up.\nPresident Trump is counting on you.\n15202\nPaid for by SLF PAC.\nNot authorized by any Candidate\nor Candidate's Committee.\nwww.senateleadershipfund.org.",
+    "text_hash": "586fdbed59a4c5fd1d5e38327b6aa7749b44d529e3e2703c664d50ba6fa4853d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-58ee43d55c3e0ec020cc94bf",
+    "alignment": "R",
+    "block_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001-006",
+    "claim_text": "This communication is not authorized by any Candidate or Candidate's Committee.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 302,
+        "kind": "video_ocr",
+        "start": 271,
+        "text": "Not authorized by any Candidate",
+        "unit_id": 6
+      },
+      {
+        "end": 328,
+        "kind": "video_ocr",
+        "start": 303,
+        "text": "or Candidate's Committee.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      6,
+      7
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e37ccf7460e8c11e572eeb987339b441adf0a0efbedcc842eb3763a565ff0059?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 302,
+        "anchor_quote": "any Candidate",
+        "anchor_start": 289,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "any Candidate",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 327,
+        "anchor_quote": "Candidate's Committee",
+        "anchor_start": 306,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Candidate's Committee",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Every vote counts. Keeping our Republican Senate majority could come down to just a few votes in your state.\nMake sure you plan to vote Tuesday, November 3rd. Don't wait or count on somebody else to show up.\nPresident Trump is counting on you.\n15202\nPaid for by SLF PAC.\nNot authorized by any Candidate\nor Candidate's Committee.\nwww.senateleadershipfund.org.",
+    "text_hash": "586fdbed59a4c5fd1d5e38327b6aa7749b44d529e3e2703c664d50ba6fa4853d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-58ee43d55c3e0ec020cc94bf",
+    "alignment": "R",
+    "block_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-58ee43d55c3e0ec020cc94bf-claims-001-007",
+    "claim_text": "Don't wait or count on somebody else to show up.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 207,
+        "kind": "local_asr",
+        "start": 109,
+        "text": "Make sure you plan to vote Tuesday, November 3rd. Don't wait or count on somebody else to show up.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e37ccf7460e8c11e572eeb987339b441adf0a0efbedcc842eb3763a565ff0059?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [],
+    "text": "Every vote counts. Keeping our Republican Senate majority could come down to just a few votes in your state.\nMake sure you plan to vote Tuesday, November 3rd. Don't wait or count on somebody else to show up.\nPresident Trump is counting on you.\n15202\nPaid for by SLF PAC.\nNot authorized by any Candidate\nor Candidate's Committee.\nwww.senateleadershipfund.org.",
+    "text_hash": "586fdbed59a4c5fd1d5e38327b6aa7749b44d529e3e2703c664d50ba6fa4853d",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
