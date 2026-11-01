@@ -95541,5 +95541,925 @@
     "text_hash": "86f3cbbdc4f77f69421085c7ce8e3d41006d90f58eb451c9a421acdc81fed11b",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-081aec849a83dbc7820a7fa6",
+    "alignment": "D",
+    "block_id": "snap-081aec849a83dbc7820a7fa6-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-081aec849a83dbc7820a7fa6-claims-001-001",
+    "claim_text": "GOP Rep. Nick LaLota took $40,000 from Epstein associates",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 158,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "AMERICAN\nJournal News\nGOP Rep. Nick LaLota took\n$40,000 from Epstein associates\nThe New York congressman and Epstein appear\nto have several shared associates.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bb2b94db1f6f666c4eb8cf6420a129980a1f5e74929613a3b5791f80209ef939?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 42,
+        "anchor_quote": "Nick LaLota",
+        "anchor_start": 31,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2NY01190",
+        "kind": "person",
+        "name": "LaLota, Nick",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "AMERICAN\nJournal News\nGOP Rep. Nick LaLota took\n$40,000 from Epstein associates\nThe New York congressman and Epstein appear\nto have several shared associates.",
+    "text_hash": "d4b7ef81720940e80f679e3479155c8b617558a855b4dc6fdfbf9594673e030f",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-081aec849a83dbc7820a7fa6",
+    "alignment": "D",
+    "block_id": "snap-081aec849a83dbc7820a7fa6-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-081aec849a83dbc7820a7fa6-claims-001-002",
+    "claim_text": "Epstein and LaLota appear to have several shared associates",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 158,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "AMERICAN\nJournal News\nGOP Rep. Nick LaLota took\n$40,000 from Epstein associates\nThe New York congressman and Epstein appear\nto have several shared associates.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bb2b94db1f6f666c4eb8cf6420a129980a1f5e74929613a3b5791f80209ef939?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 42,
+        "anchor_quote": "LaLota",
+        "anchor_start": 36,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2NY01190",
+        "kind": "person",
+        "name": "LaLota, Nick",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 68,
+        "anchor_quote": "Epstein",
+        "anchor_start": 61,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Epstein",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "AMERICAN\nJournal News\nGOP Rep. Nick LaLota took\n$40,000 from Epstein associates\nThe New York congressman and Epstein appear\nto have several shared associates.",
+    "text_hash": "d4b7ef81720940e80f679e3479155c8b617558a855b4dc6fdfbf9594673e030f",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-081aec849a83dbc7820a7fa6",
+    "alignment": "D",
+    "block_id": "snap-081aec849a83dbc7820a7fa6-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-081aec849a83dbc7820a7fa6-claims-001-003",
+    "claim_text": "Nick LaLota is a GOP Rep.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 158,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "AMERICAN\nJournal News\nGOP Rep. Nick LaLota took\n$40,000 from Epstein associates\nThe New York congressman and Epstein appear\nto have several shared associates.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bb2b94db1f6f666c4eb8cf6420a129980a1f5e74929613a3b5791f80209ef939?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 42,
+        "anchor_quote": "Nick LaLota",
+        "anchor_start": 31,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2NY01190",
+        "kind": "person",
+        "name": "LaLota, Nick",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "AMERICAN\nJournal News\nGOP Rep. Nick LaLota took\n$40,000 from Epstein associates\nThe New York congressman and Epstein appear\nto have several shared associates.",
+    "text_hash": "d4b7ef81720940e80f679e3479155c8b617558a855b4dc6fdfbf9594673e030f",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-08481b07b876a374572086ef",
+    "alignment": "D",
+    "block_id": "snap-08481b07b876a374572086ef-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-08481b07b876a374572086ef-claims-001-001",
+    "claim_text": "Chris Papis is focusing on what matters, building more apartments and homes here, and stopping private equity from buying up New Hampshire.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 78,
+        "kind": "local_asr",
+        "start": 38,
+        "text": "Chris Papis is focusing on what matters,",
+        "unit_id": 2
+      },
+      {
+        "end": 119,
+        "kind": "local_asr",
+        "start": 79,
+        "text": "building more apartments and homes here,",
+        "unit_id": 3
+      },
+      {
+        "end": 177,
+        "kind": "local_asr",
+        "start": 120,
+        "text": "and stopping private equity from buying up New Hampshire.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      2,
+      3,
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e9939fe56ebf11cc207fd359b235f89d5b16d5acc09d456b9ca4d4dbb068cf00?mediaType=mp4",
+    "sponsor": "Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 49,
+        "anchor_quote": "Chris Papis",
+        "anchor_start": 38,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H8NH01210",
+        "kind": "person",
+        "name": "PAPPAS, CHRIS",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "I'm telling everyone who will listen.\nChris Papis is focusing on what matters,\nbuilding more apartments and homes here,\nand stopping private equity from buying up New Hampshire.\nTell Chris Papis to keep fighting\nto make it affordable to live a New Hampshire.\nBeoca S.\nCHE\nCHRIS PAPPAS\nHOUSING\nAccelerating Home Building Act\nSTA\nSTANDING UP TO\n21st Century ROAD to Housing Act\nFESTANDING ÚP TO\nPAID FOR BY MAJORITY FORWARD.\nTO MAKE HOUSING\n603-935-6710",
+    "text_hash": "994f86b9fc9e106bdda3afe86d655f061e309ea3f72d51e609c30e56345b3c69",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-08481b07b876a374572086ef",
+    "alignment": "D",
+    "block_id": "snap-08481b07b876a374572086ef-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-08481b07b876a374572086ef-claims-001-002",
+    "claim_text": "Tell Chris Papis to keep fighting to make it affordable to live in New Hampshire.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 211,
+        "kind": "local_asr",
+        "start": 178,
+        "text": "Tell Chris Papis to keep fighting",
+        "unit_id": 5
+      },
+      {
+        "end": 258,
+        "kind": "local_asr",
+        "start": 212,
+        "text": "to make it affordable to live a New Hampshire.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      5,
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e9939fe56ebf11cc207fd359b235f89d5b16d5acc09d456b9ca4d4dbb068cf00?mediaType=mp4",
+    "sponsor": "Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 194,
+        "anchor_quote": "Chris Papis",
+        "anchor_start": 183,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:H8NH01210",
+        "kind": "person",
+        "name": "PAPPAS, CHRIS",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "I'm telling everyone who will listen.\nChris Papis is focusing on what matters,\nbuilding more apartments and homes here,\nand stopping private equity from buying up New Hampshire.\nTell Chris Papis to keep fighting\nto make it affordable to live a New Hampshire.\nBeoca S.\nCHE\nCHRIS PAPPAS\nHOUSING\nAccelerating Home Building Act\nSTA\nSTANDING UP TO\n21st Century ROAD to Housing Act\nFESTANDING ÚP TO\nPAID FOR BY MAJORITY FORWARD.\nTO MAKE HOUSING\n603-935-6710",
+    "text_hash": "994f86b9fc9e106bdda3afe86d655f061e309ea3f72d51e609c30e56345b3c69",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-08481b07b876a374572086ef",
+    "alignment": "D",
+    "block_id": "snap-08481b07b876a374572086ef-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-08481b07b876a374572086ef-claims-001-003",
+    "claim_text": "I'm telling everyone who will listen.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 37,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "I'm telling everyone who will listen.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e9939fe56ebf11cc207fd359b235f89d5b16d5acc09d456b9ca4d4dbb068cf00?mediaType=mp4",
+    "sponsor": "Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 1,
+        "anchor_quote": "I",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I'm telling everyone who will listen.\nChris Papis is focusing on what matters,\nbuilding more apartments and homes here,\nand stopping private equity from buying up New Hampshire.\nTell Chris Papis to keep fighting\nto make it affordable to live a New Hampshire.\nBeoca S.\nCHE\nCHRIS PAPPAS\nHOUSING\nAccelerating Home Building Act\nSTA\nSTANDING UP TO\n21st Century ROAD to Housing Act\nFESTANDING ÚP TO\nPAID FOR BY MAJORITY FORWARD.\nTO MAKE HOUSING\n603-935-6710",
+    "text_hash": "994f86b9fc9e106bdda3afe86d655f061e309ea3f72d51e609c30e56345b3c69",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-08481b07b876a374572086ef",
+    "alignment": "D",
+    "block_id": "snap-08481b07b876a374572086ef-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-08481b07b876a374572086ef-claims-001-004",
+    "claim_text": "Majority Forward paid for this communication.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 422,
+        "kind": "video_ocr",
+        "start": 393,
+        "text": "PAID FOR BY MAJORITY FORWARD.",
+        "unit_id": 16
+      }
+    ],
+    "evidence_ids": [
+      16
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e9939fe56ebf11cc207fd359b235f89d5b16d5acc09d456b9ca4d4dbb068cf00?mediaType=mp4",
+    "sponsor": "Majority Forward",
+    "targets": [
+      {
+        "anchor_end": 421,
+        "anchor_quote": "MAJORITY FORWARD",
+        "anchor_start": 405,
+        "anchor_unit_id": 16,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Majority Forward",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "I'm telling everyone who will listen.\nChris Papis is focusing on what matters,\nbuilding more apartments and homes here,\nand stopping private equity from buying up New Hampshire.\nTell Chris Papis to keep fighting\nto make it affordable to live a New Hampshire.\nBeoca S.\nCHE\nCHRIS PAPPAS\nHOUSING\nAccelerating Home Building Act\nSTA\nSTANDING UP TO\n21st Century ROAD to Housing Act\nFESTANDING ÚP TO\nPAID FOR BY MAJORITY FORWARD.\nTO MAKE HOUSING\n603-935-6710",
+    "text_hash": "994f86b9fc9e106bdda3afe86d655f061e309ea3f72d51e609c30e56345b3c69",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0869ec4789fab86e50119b3d",
+    "alignment": "R",
+    "block_id": "snap-0869ec4789fab86e50119b3d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0869ec4789fab86e50119b3d-claims-001-001",
+    "claim_text": "Center Sullivan really leads the way on behalf of veterans in the state",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 292,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Center Sullivan really leads the way on behalf of veterans in the state pay raises for the active duty community and bringing about better health care for the veterans are real community join me and calling center Sullivan thanking him for all the work that he has done across state of Alaska",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5a8271ae45eb95577a6bc35f384606e97f410bdfd4257d8935c69835e6ba534a?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 15,
+        "anchor_quote": "Center Sullivan",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Center Sullivan",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state pay raises for the active duty community and bringing about better health care for the veterans are real community join me and calling center Sullivan thanking him for all the work that he has done across state of Alaska\nRINES\nILS.ARMY\nbetter healthcare\nrural community\nCall and Tell\nSenator\nSenator Sullivan\nTo Keep Supporting Alaska's Veterans\nPAIDFOR BY ONE NATONL DEVATOWAMERCA ORB\n(907) 271-5915\nPAID FOR BY OHEIATONL ONENATOYAMERCA.ORG\nPAID FOR BY ONE NATONL ONELATOVA MERICA ORG\nacross the\nPAIDFOR BY ONE NATON. DNEIATONAMERCA. ORG\nPAIDFOR BYONE NATON, OKENATOWAMERICA. ORG.\nPADFOR BYONE MATONL OVEVATOVAMERICA DRG-",
+    "text_hash": "22d0c43d6eb6e15544cd15846425bc89ee860fe713e0869cf422c9dd35cce6fe",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0869ec4789fab86e50119b3d",
+    "alignment": "R",
+    "block_id": "snap-0869ec4789fab86e50119b3d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0869ec4789fab86e50119b3d-claims-001-002",
+    "claim_text": "pay raises for the active duty community are real",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 292,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Center Sullivan really leads the way on behalf of veterans in the state pay raises for the active duty community and bringing about better health care for the veterans are real community join me and calling center Sullivan thanking him for all the work that he has done across state of Alaska",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5a8271ae45eb95577a6bc35f384606e97f410bdfd4257d8935c69835e6ba534a?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 82,
+        "anchor_quote": "pay raises",
+        "anchor_start": 72,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "pay raises",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state pay raises for the active duty community and bringing about better health care for the veterans are real community join me and calling center Sullivan thanking him for all the work that he has done across state of Alaska\nRINES\nILS.ARMY\nbetter healthcare\nrural community\nCall and Tell\nSenator\nSenator Sullivan\nTo Keep Supporting Alaska's Veterans\nPAIDFOR BY ONE NATONL DEVATOWAMERCA ORB\n(907) 271-5915\nPAID FOR BY OHEIATONL ONENATOYAMERCA.ORG\nPAID FOR BY ONE NATONL ONELATOVA MERICA ORG\nacross the\nPAIDFOR BY ONE NATON. DNEIATONAMERCA. ORG\nPAIDFOR BYONE NATON, OKENATOWAMERICA. ORG.\nPADFOR BYONE MATONL OVEVATOVAMERICA DRG-",
+    "text_hash": "22d0c43d6eb6e15544cd15846425bc89ee860fe713e0869cf422c9dd35cce6fe",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0869ec4789fab86e50119b3d",
+    "alignment": "R",
+    "block_id": "snap-0869ec4789fab86e50119b3d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0869ec4789fab86e50119b3d-claims-001-003",
+    "claim_text": "bringing about better health care for the veterans is real",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 292,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Center Sullivan really leads the way on behalf of veterans in the state pay raises for the active duty community and bringing about better health care for the veterans are real community join me and calling center Sullivan thanking him for all the work that he has done across state of Alaska",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5a8271ae45eb95577a6bc35f384606e97f410bdfd4257d8935c69835e6ba534a?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 150,
+        "anchor_quote": "better health care",
+        "anchor_start": 132,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "better health care",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state pay raises for the active duty community and bringing about better health care for the veterans are real community join me and calling center Sullivan thanking him for all the work that he has done across state of Alaska\nRINES\nILS.ARMY\nbetter healthcare\nrural community\nCall and Tell\nSenator\nSenator Sullivan\nTo Keep Supporting Alaska's Veterans\nPAIDFOR BY ONE NATONL DEVATOWAMERCA ORB\n(907) 271-5915\nPAID FOR BY OHEIATONL ONENATOYAMERCA.ORG\nPAID FOR BY ONE NATONL ONELATOVA MERICA ORG\nacross the\nPAIDFOR BY ONE NATON. DNEIATONAMERCA. ORG\nPAIDFOR BYONE NATON, OKENATOWAMERICA. ORG.\nPADFOR BYONE MATONL OVEVATOVAMERICA DRG-",
+    "text_hash": "22d0c43d6eb6e15544cd15846425bc89ee860fe713e0869cf422c9dd35cce6fe",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0869ec4789fab86e50119b3d",
+    "alignment": "R",
+    "block_id": "snap-0869ec4789fab86e50119b3d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0869ec4789fab86e50119b3d-claims-001-004",
+    "claim_text": "join me and call Center Sullivan thanking him for all the work that he has done across the state of Alaska",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 292,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Center Sullivan really leads the way on behalf of veterans in the state pay raises for the active duty community and bringing about better health care for the veterans are real community join me and calling center Sullivan thanking him for all the work that he has done across state of Alaska",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5a8271ae45eb95577a6bc35f384606e97f410bdfd4257d8935c69835e6ba534a?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 15,
+        "anchor_quote": "Center Sullivan",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Center Sullivan",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state pay raises for the active duty community and bringing about better health care for the veterans are real community join me and calling center Sullivan thanking him for all the work that he has done across state of Alaska\nRINES\nILS.ARMY\nbetter healthcare\nrural community\nCall and Tell\nSenator\nSenator Sullivan\nTo Keep Supporting Alaska's Veterans\nPAIDFOR BY ONE NATONL DEVATOWAMERCA ORB\n(907) 271-5915\nPAID FOR BY OHEIATONL ONENATOYAMERCA.ORG\nPAID FOR BY ONE NATONL ONELATOVA MERICA ORG\nacross the\nPAIDFOR BY ONE NATON. DNEIATONAMERCA. ORG\nPAIDFOR BYONE NATON, OKENATOWAMERICA. ORG.\nPADFOR BYONE MATONL OVEVATOVAMERICA DRG-",
+    "text_hash": "22d0c43d6eb6e15544cd15846425bc89ee860fe713e0869cf422c9dd35cce6fe",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0869ec4789fab86e50119b3d",
+    "alignment": "R",
+    "block_id": "snap-0869ec4789fab86e50119b3d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0869ec4789fab86e50119b3d-claims-001-005",
+    "claim_text": "Center Sullivan leads the way on behalf of veterans in the state",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 292,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Center Sullivan really leads the way on behalf of veterans in the state pay raises for the active duty community and bringing about better health care for the veterans are real community join me and calling center Sullivan thanking him for all the work that he has done across state of Alaska",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5a8271ae45eb95577a6bc35f384606e97f410bdfd4257d8935c69835e6ba534a?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 15,
+        "anchor_quote": "Center Sullivan",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Center Sullivan",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state pay raises for the active duty community and bringing about better health care for the veterans are real community join me and calling center Sullivan thanking him for all the work that he has done across state of Alaska\nRINES\nILS.ARMY\nbetter healthcare\nrural community\nCall and Tell\nSenator\nSenator Sullivan\nTo Keep Supporting Alaska's Veterans\nPAIDFOR BY ONE NATONL DEVATOWAMERCA ORB\n(907) 271-5915\nPAID FOR BY OHEIATONL ONENATOYAMERCA.ORG\nPAID FOR BY ONE NATONL ONELATOVA MERICA ORG\nacross the\nPAIDFOR BY ONE NATON. DNEIATONAMERCA. ORG\nPAIDFOR BYONE NATON, OKENATOWAMERICA. ORG.\nPADFOR BYONE MATONL OVEVATOVAMERICA DRG-",
+    "text_hash": "22d0c43d6eb6e15544cd15846425bc89ee860fe713e0869cf422c9dd35cce6fe",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0869ec4789fab86e50119b3d",
+    "alignment": "R",
+    "block_id": "snap-0869ec4789fab86e50119b3d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0869ec4789fab86e50119b3d-claims-001-006",
+    "claim_text": "better health care for the veterans is real",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 292,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Center Sullivan really leads the way on behalf of veterans in the state pay raises for the active duty community and bringing about better health care for the veterans are real community join me and calling center Sullivan thanking him for all the work that he has done across state of Alaska",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5a8271ae45eb95577a6bc35f384606e97f410bdfd4257d8935c69835e6ba534a?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 150,
+        "anchor_quote": "better health care",
+        "anchor_start": 132,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "better health care",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state pay raises for the active duty community and bringing about better health care for the veterans are real community join me and calling center Sullivan thanking him for all the work that he has done across state of Alaska\nRINES\nILS.ARMY\nbetter healthcare\nrural community\nCall and Tell\nSenator\nSenator Sullivan\nTo Keep Supporting Alaska's Veterans\nPAIDFOR BY ONE NATONL DEVATOWAMERCA ORB\n(907) 271-5915\nPAID FOR BY OHEIATONL ONENATOYAMERCA.ORG\nPAID FOR BY ONE NATONL ONELATOVA MERICA ORG\nacross the\nPAIDFOR BY ONE NATON. DNEIATONAMERCA. ORG\nPAIDFOR BYONE NATON, OKENATOWAMERICA. ORG.\nPADFOR BYONE MATONL OVEVATOVAMERICA DRG-",
+    "text_hash": "22d0c43d6eb6e15544cd15846425bc89ee860fe713e0869cf422c9dd35cce6fe",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-08c4d19e367ebef91dbeb54d",
+    "alignment": "D",
+    "block_id": "snap-08c4d19e367ebef91dbeb54d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-08c4d19e367ebef91dbeb54d-claims-001-001",
+    "claim_text": "Sean McCann has spent his career fighting to cut cost for working families.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 80,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Kalamazoo. Why is rent eating half my paycheck? Sean McCann has spent his career",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b5ae9028f17ee18c6183fe555a63a4dc4d6107b14b347fded79ae33aba424a05?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 59,
+        "anchor_quote": "Sean McCann",
+        "anchor_start": 48,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6MI04204",
+        "kind": "person",
+        "name": "MCCANN, SEAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Kalamazoo. Why is rent eating half my paycheck? Sean McCann has spent his career\nfighting to cut cost for working families. And he's taking on the big companies in Washington.\nOur Senate race came down to 19,000 votes in 2024. Students decide this. Vote, Sean McCann,\nand fine November 3rd.\nfighting to cut costs\nпр\nPaid for by For Michigan Action Fund, PO Box 64,\nAllen Park, MI 48101, 4mich.org and not authorized\nby any candidate or candidate committee.\nby November 3rd.",
+    "text_hash": "58c54a5dbf1608a4b19283fa99b296f4371211fea86b82f7cc2e22d5300a75eb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-08c4d19e367ebef91dbeb54d",
+    "alignment": "D",
+    "block_id": "snap-08c4d19e367ebef91dbeb54d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-08c4d19e367ebef91dbeb54d-claims-001-002",
+    "claim_text": "He's taking on the big companies in Washington.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 175,
+        "kind": "local_asr",
+        "start": 81,
+        "text": "fighting to cut cost for working families. And he's taking on the big companies in Washington.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b5ae9028f17ee18c6183fe555a63a4dc4d6107b14b347fded79ae33aba424a05?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 130,
+        "anchor_quote": "he",
+        "anchor_start": 128,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6MI04204",
+        "kind": "person",
+        "name": "MCCANN, SEAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Kalamazoo. Why is rent eating half my paycheck? Sean McCann has spent his career\nfighting to cut cost for working families. And he's taking on the big companies in Washington.\nOur Senate race came down to 19,000 votes in 2024. Students decide this. Vote, Sean McCann,\nand fine November 3rd.\nfighting to cut costs\nпр\nPaid for by For Michigan Action Fund, PO Box 64,\nAllen Park, MI 48101, 4mich.org and not authorized\nby any candidate or candidate committee.\nby November 3rd.",
+    "text_hash": "58c54a5dbf1608a4b19283fa99b296f4371211fea86b82f7cc2e22d5300a75eb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-08c4d19e367ebef91dbeb54d",
+    "alignment": "D",
+    "block_id": "snap-08c4d19e367ebef91dbeb54d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-08c4d19e367ebef91dbeb54d-claims-001-003",
+    "claim_text": "Our Senate race came down to 19,000 votes in 2024.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 267,
+        "kind": "local_asr",
+        "start": 176,
+        "text": "Our Senate race came down to 19,000 votes in 2024. Students decide this. Vote, Sean McCann,",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b5ae9028f17ee18c6183fe555a63a4dc4d6107b14b347fded79ae33aba424a05?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 191,
+        "anchor_quote": "Our Senate race",
+        "anchor_start": 176,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Kalamazoo. Why is rent eating half my paycheck? Sean McCann has spent his career\nfighting to cut cost for working families. And he's taking on the big companies in Washington.\nOur Senate race came down to 19,000 votes in 2024. Students decide this. Vote, Sean McCann,\nand fine November 3rd.\nfighting to cut costs\nпр\nPaid for by For Michigan Action Fund, PO Box 64,\nAllen Park, MI 48101, 4mich.org and not authorized\nby any candidate or candidate committee.\nby November 3rd.",
+    "text_hash": "58c54a5dbf1608a4b19283fa99b296f4371211fea86b82f7cc2e22d5300a75eb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-08c4d19e367ebef91dbeb54d",
+    "alignment": "D",
+    "block_id": "snap-08c4d19e367ebef91dbeb54d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-08c4d19e367ebef91dbeb54d-claims-001-004",
+    "claim_text": "Students decide this.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 267,
+        "kind": "local_asr",
+        "start": 176,
+        "text": "Our Senate race came down to 19,000 votes in 2024. Students decide this. Vote, Sean McCann,",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b5ae9028f17ee18c6183fe555a63a4dc4d6107b14b347fded79ae33aba424a05?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 235,
+        "anchor_quote": "Students",
+        "anchor_start": 227,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Students",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Kalamazoo. Why is rent eating half my paycheck? Sean McCann has spent his career\nfighting to cut cost for working families. And he's taking on the big companies in Washington.\nOur Senate race came down to 19,000 votes in 2024. Students decide this. Vote, Sean McCann,\nand fine November 3rd.\nfighting to cut costs\nпр\nPaid for by For Michigan Action Fund, PO Box 64,\nAllen Park, MI 48101, 4mich.org and not authorized\nby any candidate or candidate committee.\nby November 3rd.",
+    "text_hash": "58c54a5dbf1608a4b19283fa99b296f4371211fea86b82f7cc2e22d5300a75eb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-08c4d19e367ebef91dbeb54d",
+    "alignment": "D",
+    "block_id": "snap-08c4d19e367ebef91dbeb54d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-08c4d19e367ebef91dbeb54d-claims-001-005",
+    "claim_text": "Vote Sean McCann by November 3rd.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 267,
+        "kind": "local_asr",
+        "start": 176,
+        "text": "Our Senate race came down to 19,000 votes in 2024. Students decide this. Vote, Sean McCann,",
+        "unit_id": 3
+      },
+      {
+        "end": 290,
+        "kind": "local_asr",
+        "start": 268,
+        "text": "and fine November 3rd.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      3,
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b5ae9028f17ee18c6183fe555a63a4dc4d6107b14b347fded79ae33aba424a05?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 266,
+        "anchor_quote": "Sean McCann",
+        "anchor_start": 255,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6MI04204",
+        "kind": "person",
+        "name": "MCCANN, SEAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Kalamazoo. Why is rent eating half my paycheck? Sean McCann has spent his career\nfighting to cut cost for working families. And he's taking on the big companies in Washington.\nOur Senate race came down to 19,000 votes in 2024. Students decide this. Vote, Sean McCann,\nand fine November 3rd.\nfighting to cut costs\nпр\nPaid for by For Michigan Action Fund, PO Box 64,\nAllen Park, MI 48101, 4mich.org and not authorized\nby any candidate or candidate committee.\nby November 3rd.",
+    "text_hash": "58c54a5dbf1608a4b19283fa99b296f4371211fea86b82f7cc2e22d5300a75eb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-08c4d19e367ebef91dbeb54d",
+    "alignment": "D",
+    "block_id": "snap-08c4d19e367ebef91dbeb54d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-08c4d19e367ebef91dbeb54d-claims-001-006",
+    "claim_text": "This is paid for by For Michigan Action Fund.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 364,
+        "kind": "video_ocr",
+        "start": 316,
+        "text": "Paid for by For Michigan Action Fund, PO Box 64,",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b5ae9028f17ee18c6183fe555a63a4dc4d6107b14b347fded79ae33aba424a05?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 352,
+        "anchor_quote": "For Michigan Action Fund",
+        "anchor_start": 328,
+        "anchor_unit_id": 7,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "For Michigan Action Fund",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Kalamazoo. Why is rent eating half my paycheck? Sean McCann has spent his career\nfighting to cut cost for working families. And he's taking on the big companies in Washington.\nOur Senate race came down to 19,000 votes in 2024. Students decide this. Vote, Sean McCann,\nand fine November 3rd.\nfighting to cut costs\nпр\nPaid for by For Michigan Action Fund, PO Box 64,\nAllen Park, MI 48101, 4mich.org and not authorized\nby any candidate or candidate committee.\nby November 3rd.",
+    "text_hash": "58c54a5dbf1608a4b19283fa99b296f4371211fea86b82f7cc2e22d5300a75eb",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
