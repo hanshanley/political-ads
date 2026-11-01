@@ -553,6 +553,22 @@ named target's FEC party. Image OCR preserves word errors, line bounds, confiden
 reading-order uncertainty and missed disclaimers; visual payer review does not
 certify a corrected transcript.
 
+Individually reviewed campaign-hosted WordPress MP4 attachments use
+`publisher_attachment_upload_date`, not the homepage creation date or an asserted
+first release, publication or paid delivery. The native collector binds the exact
+HTML hash/title, actual video/source element and HTML-exposed public page JSON link.
+The page's pinned metadata must identify that homepage and explicitly link its own
+attachment collection. Only a single complete public collection page of at most ten
+items is accepted; no catalog pagination, authentication or guessed API discovery
+is performed. Its pinned bytes must identify exactly one selected attachment with
+the exact parent, MP4 MIME, original URL, filename, UTC `date_gmt`, byte size and
+page backlink. The original's byte hash and size are checked before existing local
+speech/OCR extraction. Changed or unlinked evidence fails closed; uploads beyond
+the cutoff are not requested. Local creation dates, filenames and invalid container
+epochs are not substituted for this UTC upload proxy. Visual eligibility/payer
+review still does not certify or repair ASR/OCR, infer election phase or add semantic
+labels.
+
 Public HTML archives backfill HMP and House Majority Forward releases beyond recent-post APIs.
 Dated campaign news cards support public HTML acquisition without requiring authenticated APIs;
 article titles are checked to reject homepage fallbacks. Squarespace news/media collections follow

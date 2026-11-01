@@ -837,6 +837,177 @@ def test_direct_release_outside_cutoff_is_not_requested(tmp_path, release_review
     assert calls == []
 
 
+@pytest.fixture
+def attachment_review(tmp_path, native_review, monkeypatch):
+    native_review.pop("post_id")
+    native_review.pop("post_timestamp")
+    native_review.update(
+        post_url=native_review["publisher_url"],
+        media_url="https://campaign.example/ad.mp4",
+    )
+    attachment = {
+        "publisher_title": "Campaign",
+        "page_id": 14,
+        "page_api_url": "https://campaign.example/wp-json/wp/v2/pages/14",
+        "attachment_id": 38,
+        "attachment_api_url": "https://campaign.example/wp-json/wp/v2/media?parent=14",
+        "uploaded": "2026-05-19T00:22:22",
+        "filename": "ad.mp4",
+        "filesize": len(b"original"),
+    }
+    markup = (
+        "<title>Campaign</title>"
+        '<meta property="article:published_time" content="2026-05-16T11:37:12Z">'
+        f'<link rel="alternate" type="application/json" href="{attachment["page_api_url"]}">'
+        f'<video><source src="{native_review["media_url"]}" type="video/mp4"></video>'
+    ).encode()
+    page = {
+        "id": 14,
+        "type": "page",
+        "status": "publish",
+        "link": native_review["publisher_url"],
+        "_links": {"wp:attachment": [{"href": attachment["attachment_api_url"]}]},
+    }
+    media = {
+        "id": 38,
+        "post": 14,
+        "type": "attachment",
+        "status": "inherit",
+        "media_type": "file",
+        "mime_type": "video/mp4",
+        "source_url": native_review["media_url"],
+        "date": "2026-05-18T20:22:22",
+        "date_gmt": attachment["uploaded"],
+        "filesize": len(b"original"),
+        "media_details": {"filesize": len(b"original")},
+        "_links": {"wp:attached-to": [{"href": attachment["page_api_url"], "id": 14}]},
+    }
+    payloads = {
+        native_review["publisher_url"]: markup,
+        attachment["page_api_url"]: json.dumps(page).encode(),
+        attachment["attachment_api_url"]: json.dumps([media]).encode(),
+        native_review["media_url"]: b"original",
+    }
+    for field, url in (
+        ("publisher_sha256", native_review["publisher_url"]),
+        ("page_sha256", attachment["page_api_url"]),
+        ("attachment_sha256", attachment["attachment_api_url"]),
+    ):
+        attachment[field] = hashlib.sha256(payloads[url]).hexdigest()
+    native_review["publisher_attachment"] = attachment
+    calls = []
+
+    def get(self, url, **kwargs):
+        calls.append(url)
+        return payloads[url], {"X-WP-Total": "1", "X-WP-TotalPages": "1"}
+
+    monkeypatch.setattr("political_ads.campaign_native.Client.get", get)
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [native_review]})
+    return native_review, payloads, calls
+
+
+def test_attachment_binds_original_and_utc_upload_not_homepage_date(tmp_path, attachment_review):
+    review, _, calls = attachment_review
+    result = collect_campaign_native(tmp_path, "2026-10-30", offline=True)
+    ad = result["ads"][0]
+    assert ad["published"] == "2026-05-19"
+    assert ad["date_basis"] == "publisher_attachment_upload_date"
+    assert ad["delivery_start"] is None and ad["delivery_end"] is None
+    assert ad["phase"] == "unknown" and ad["text"] == "I approve this message."
+    assert (
+        "publisher_attachment_upload_not_verified_first_release_or_paid_delivery"
+        in (ad["quality_flags"])
+    )
+    assert (
+        ad["segments"][0]["native_campaign_evidence"]["publisher_attachment"]
+        == (review["publisher_attachment"])
+    )
+    assert calls == [
+        review["publisher_url"],
+        review["publisher_attachment"]["page_api_url"],
+        review["publisher_attachment"]["attachment_api_url"],
+        review["media_url"],
+    ]
+    assert collect_campaign_native(tmp_path, "2026-10-30", offline=True) == result
+    assert len(calls) == 4
+
+
+def test_attachment_upload_outside_cutoff_is_not_requested(tmp_path, attachment_review):
+    _, _, calls = attachment_review
+    assert not collect_campaign_native(tmp_path, "2026-05-18", offline=True)["ads"]
+    assert calls == []
+
+
+@pytest.mark.parametrize(
+    "change",
+    [
+        "homepage_hash",
+        "unlinked_page",
+        "page_hash",
+        "page_parent",
+        "unlinked_attachments",
+        "attachment_hash",
+        "attachment_parent",
+        "upload",
+        "mime",
+        "source",
+        "backlink",
+        "unbounded_collection",
+        "file_size",
+    ],
+)
+def test_attachment_rejects_changed_or_unbound_metadata_before_original(
+    tmp_path, attachment_review, change
+):
+    review, payloads, calls = attachment_review
+    attachment = review["publisher_attachment"]
+    if change in {"homepage_hash", "page_hash", "attachment_hash"}:
+        field = (
+            "publisher_sha256" if change == "homepage_hash" else change.replace("hash", "sha256")
+        )
+        attachment[field] = "0" * 64
+    elif change == "unlinked_page":
+        payloads[review["publisher_url"]] = payloads[review["publisher_url"]].replace(
+            attachment["page_api_url"].encode(), b"https://campaign.example/unrelated"
+        )
+        attachment["publisher_sha256"] = hashlib.sha256(
+            payloads[review["publisher_url"]]
+        ).hexdigest()
+    elif change in {"page_parent", "unlinked_attachments"}:
+        page = json.loads(payloads[attachment["page_api_url"]])
+        if change == "page_parent":
+            page["link"] = "https://campaign.example/unrelated"
+        else:
+            page["_links"]["wp:attachment"] = []
+        payloads[attachment["page_api_url"]] = json.dumps(page).encode()
+        attachment["page_sha256"] = hashlib.sha256(payloads[attachment["page_api_url"]]).hexdigest()
+    elif change == "file_size":
+        payloads[review["media_url"]] = b"original" * 2
+        review["media_sha256"] = hashlib.sha256(payloads[review["media_url"]]).hexdigest()
+    else:
+        media = json.loads(payloads[attachment["attachment_api_url"]])[0]
+        if change == "attachment_parent":
+            media["post"] = 99
+        elif change == "upload":
+            media["date_gmt"] = "2026-05-16T11:37:12"
+        elif change == "mime":
+            media["mime_type"] = "image/png"
+        elif change == "source":
+            media["source_url"] = "https://campaign.example/another.mp4"
+        elif change == "backlink":
+            media["_links"]["wp:attached-to"] = []
+        payloads[attachment["attachment_api_url"]] = json.dumps(
+            [media] * (11 if change == "unbounded_collection" else 1)
+        ).encode()
+        attachment["attachment_sha256"] = hashlib.sha256(
+            payloads[attachment["attachment_api_url"]]
+        ).hexdigest()
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    assert not collect_campaign_native(tmp_path, "2026-10-30", offline=True)["ads"]
+    if change != "file_size":
+        assert review["media_url"] not in calls
+
+
 def test_public_dropbox_original_uses_only_standard_download_switch(tmp_path, release_review):
     review, payloads, calls = release_review
     original = "https://www.dropbox.com/scl/fi/public/ad.mp4?rlkey=public-share&dl=0"

@@ -10,6 +10,103 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Steele campaign original and public attachment-upload evidence
+
+The actual **30.08-second** campaign-hosted original,
+`https://www.kevinsteeleforcongress.com/wp-content/uploads/2026/05/cd14-Steele-forged30-cpg.mp4`,
+contains **11,658,875 bytes**, SHA-256
+`646f487a5b6782ba01c998a909af3a57060f6a731fd57832c840f0b8d2bc401d`.
+Eight original frames were visually inspected, including the full-resolution
+closing frame at **29.029 seconds**: **Paid for by Kevin Steele for Congress**.
+Exact independently retained official **H6FL14229 / C00950766 /
+KEVIN STEELE FOR CONGRESS / P / H / REP** establishes the **FL-14**
+candidate and principal committee. This is one finished advertisement,
+not homepage issue copy, endorsements or ordinary footage.
+
+The actual homepage HTML is pinned to
+`4bfe6dd987062fa15db3719d8a5cd673cae40bcba1f80f7fd27e8106606a2bfe`.
+Its video/source element links that MP4 and its public JSON alternate links
+`https://www.kevinsteeleforcongress.com/wp-json/wp/v2/pages/14`.
+That page's metadata, SHA-256
+`dcba68b2fe28616466d2bf5fd6e2b2b0d1e8820eae7b2ff24ec777b4de641aa7`,
+explicitly links its own attachment collection:
+`https://www.kevinsteeleforcongress.com/wp-json/wp/v2/media?parent=14`.
+The collection has exactly **five attachments / one page**, pinned to
+`11035f2b0f64338fc5fbf13ff59258e569936f3d0a898d149187d761bc7fad18`.
+Only **attachment 38** matches the exact original URL, filename, parent,
+MP4 MIME, byte size and page backlink. Its **date_gmt is
+2026-05-19T12:22:22**, corroborated by the original HTTP
+**Last-Modified: May 19, 2026, 12:22:22 GMT**.
+
+The record uses **May 19 / `publisher_attachment_upload_date`**.
+This is an honest upload proxy, not verified first publication, release
+or paid delivery. Homepage creation **May 16**, later page modifications,
+the upload-directory name and the negative QuickTime
+`created_timestamp=-2082844800` do not establish creative creation.
+The separate endorsements page explicitly identifies the first ad and
+links an f.io share; its actual 302 redirect was not followed because the
+independently exposed campaign MP4 provides the original. No Frame.io
+authentication, service API, catalog pagination or paid service was used.
+
+The existing cached local extraction is retained unchanged:
+**34 segments / 115 whitespace tokens**, comprising **seven ASR and
+27 frame-OCR segments**. English language probability is
+**0.9899259805679321**. ASR errors such as **I've proved this message**
+and **Steele's slash taxes**, along with noisy OCR and partial transition
+fragments, are not silently repaired or discarded. Visual payer review
+does not certify a complete transcript. Phase remains **unknown** and
+semantic portrayal remains **unreviewed**; the new record is not neutral
+by default. No blanket license to redistribute the publisher's site or
+original media is asserted.
+
+The new bounded native path fails closed on changed hashes or unlinked
+page/attachment/original evidence, mismatched parent/upload/MIME/size/
+backlink, or a collection beyond one complete page of ten items. It does
+not substitute a page date and skips out-of-cutoff uploads before any
+request. Two regression cases failed before implementation; all
+**94 native acquisition tests** now pass. Actual admission used only
+already cached responses and extraction, with sockets forbidden.
+Every preceding **1,924 acquired / 1,885 analyzed object** is unchanged;
+the immutable baseline was frozen before code or canonical edits.
+All **36 previous native reviews / 75 release reviews**, old review
+bytes, aliases, undated backlog and **15 untouched protected inputs**
+are preserved. Isolated socket-forbidden replay reproduces all **100
+native objects and states** using exactly **four cached responses**
+and the existing original-hash-bound local extraction.
+
+Final snapshot
+**258157cf02d9a00b8c48c3a3cb273176bf63d86c08dd605279d35fcf6059d6c4**
+contains **1,925 acquired / 1,886 English**, **D 1,226 / R 621 /
+other 31 / unknown 8**, and exact English **D 1,204 / R 584** messages.
+English House coverage is **D 698 / R 243**, including non-Snap
+**D 222 / R 242**; preceding Democratic and Snap evidence is unchanged.
+All complete JSON/gzip/CSV exports, **1,925 Parquet rows** and all
+**eleven visually inspected PNG sets** reconcile across analysis,
+browser and production outputs. Validation passes **177 affected
+Python tests**, Python/frontend lint, Python formatting, **17 frontend
+unit tests / eight browser cases**, typechecking and both builds.
+The independent strategy audit verifies all **20 metric groups / ten
+chart rows**. No new semantic decisions, paid-delivery claims or
+website/Substack publication were added.
+
+**Expanded independent campaign discovery:** Smith's actual March 16
+ABCNews4 report exposes an individual Facebook shared-video link and
+ad quotations, but does not establish that the referenced creative was
+released in 2026. It remains uncounted; no Meta request or share-link
+parser relaxation was made. Pelbath and McCown homepage probes failed
+at transport, not with usable empty archives. FlVoice's existing access
+pause was retained. Discovery records are not additional ads.
+
+**Millsap date follow-up:** the already cached campaign homepage explicitly
+links public page 7 metadata. That page's actual attachment link and the
+first collection response's actual HTTP `rel="next"` link were followed,
+without guessed pagination or an original re-download. The two responses
+contain **13 page-local images / no matching Millsap Intro video**.
+Homepage creation **March 3** does not date that MP4. The previously
+recovered finished original remains unchanged in the undated backlog,
+outside dated counts; absence from this particular attachment collection
+does not establish campaign-wide absence.
+
 ## Kentucky campaign primary-ad quotations
 
 Snapshot **a55f52acbb5b8e5832b7df72731a2e1a519de757b0ff599f56ab078b1918dff5**

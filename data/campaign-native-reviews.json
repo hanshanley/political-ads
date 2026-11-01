@@ -1,6 +1,48 @@
 {
   "reviews": [
     {
+      "id": "steele-native-forged-646f487a5b6782ba",
+      "source": "steele-campaign",
+      "media_type": "video",
+      "publisher_url": "https://www.kevinsteeleforcongress.com/",
+      "post_url": "https://www.kevinsteeleforcongress.com/",
+      "media_url": "https://www.kevinsteeleforcongress.com/wp-content/uploads/2026/05/cd14-Steele-forged30-cpg.mp4",
+      "media_sha256": "646f487a5b6782ba01c998a909af3a57060f6a731fd57832c840f0b8d2bc401d",
+      "title": "Steele Forged 30-second campaign ad",
+      "title_basis": "Descriptive label from the actual original filename and visually inspected finished advertisement",
+      "sponsor": "Kevin Steele for Congress",
+      "sponsor_type": "candidate",
+      "candidate_id": "H6FL14229",
+      "required_quotes": [
+        "I'm Kevin Steele and I've proved this message.",
+        "Socialists, radicals, open border extremists,",
+        "PAID FOR BY KEVINSTEELE FOR CONGRESS"
+      ],
+      "reviewed": "2026-10-31",
+      "ad_evidence": "Actual 30.08-second finished campaign advertisement, not landing-page policy copy or B-roll. Eight original frames were visually inspected; the 29.029-second closing frame names KEVIN STEELE FOR CONGRESS and states PAID FOR BY KEVIN STEELE FOR CONGRESS. Exact independently retained official H6FL14229 / C00950766 identifies STEELE, KEVIN, REP, House, FL-14, 2026, with principal KEVIN STEELE FOR CONGRESS, P/H/REP. The campaign's separate endorsements page explicitly identifies its first ad, but its f.io redirect is not followed and contributes no speech. Eligibility and payer review do not certify the transcript or semantic labels. Phase and paid delivery remain unverified.",
+      "quality_flags": [
+        "finished_ad_and_closing_payer_visually_reviewed",
+        "speech_approval_and_tense_errors_preserved",
+        "frame_ocr_motion_fragments_and_noise_preserved"
+      ],
+      "extraction_caveat": "Retain all 34 original segments / 115 whitespace tokens: seven actual local ASR segments and 27 frame-OCR segments. ASR includes I've proved this message, they won't bend and Steele's slash taxes; noisy OCR includes KEUL, SOCINISTS and partial transition/payer fragments. No words are repaired or silently omitted, and no complete manually verified script or new semantic judgment is claimed.",
+      "publisher_attachment": {
+        "publisher_title": "Kevin Steele for Congress",
+        "publisher_sha256": "4bfe6dd987062fa15db3719d8a5cd673cae40bcba1f80f7fd27e8106606a2bfe",
+        "page_id": 14,
+        "page_api_url": "https://www.kevinsteeleforcongress.com/wp-json/wp/v2/pages/14",
+        "page_sha256": "dcba68b2fe28616466d2bf5fd6e2b2b0d1e8820eae7b2ff24ec777b4de641aa7",
+        "attachment_id": 38,
+        "attachment_api_url": "https://www.kevinsteeleforcongress.com/wp-json/wp/v2/media?parent=14",
+        "attachment_sha256": "11035f2b0f64338fc5fbf13ff59258e569936f3d0a898d149187d761bc7fad18",
+        "uploaded": "2026-05-19T12:22:22",
+        "filename": "cd14-Steele-forged30-cpg.mp4",
+        "filesize": 11658875,
+        "last_modified": "Tue, 19 May 2026 12:22:22 GMT",
+        "date_uncertainty": "The exact public attachment's date_gmt supplies the May 19 upload proxy, corroborated by the original HTTP Last-Modified at the same UTC instant. Homepage creation May 16, later page modifications, the upload-directory name and the bogus negative QuickTime created_timestamp do not date this ad. First release, first publication, paid delivery and phase are not established."
+      }
+    },
+    {
       "id": "millsap-native-intro-0b12f80de0f5ffc0",
       "source": "millsap-campaign",
       "publisher_url": "https://ryanmillsapforcongress.com/",

@@ -25,6 +25,117 @@ from political_ads.sources import language_of
 from political_ads.video import recognize_video, video_segments
 
 
+def _attachment_metadata(
+    client: Client, soup: BeautifulSoup, review: dict, publisher_hash: str
+) -> None:
+    attachment = review["publisher_attachment"]
+    origin = urlparse(review["publisher_url"])
+    page_url = urlparse(attachment["page_api_url"])
+    collection_url = urlparse(attachment["attachment_api_url"])
+    media_url = urlparse(review["media_url"])
+    datetime.strptime(attachment["uploaded"], "%Y-%m-%dT%H:%M:%S")
+    if (
+        any(
+            review.get(key)
+            for key in (
+                "post_id",
+                "post_timestamp",
+                "publisher_request",
+                "publisher_release",
+                "publisher_gallery",
+                "publisher_archive",
+                "publisher_pdf",
+            )
+        )
+        or review.get("media_type", "video") != "video"
+        or review["post_url"] != review["publisher_url"]
+        or publisher_hash != attachment["publisher_sha256"]
+        or soup.title is None
+        or soup.title.get_text(" ", strip=True) != attachment["publisher_title"]
+        or origin.scheme != "https"
+        or origin.username
+        or origin.password
+        or any(
+            url.scheme != "https" or url.netloc != origin.netloc or url.fragment
+            for url in (page_url, collection_url, media_url)
+        )
+        or type(attachment["page_id"]) is not int
+        or type(attachment["attachment_id"]) is not int
+        or attachment["page_id"] <= 0
+        or attachment["attachment_id"] <= 0
+        or page_url.path != f"/wp-json/wp/v2/pages/{attachment['page_id']}"
+        or page_url.query
+        or collection_url.path != "/wp-json/wp/v2/media"
+        or collection_url.query != f"parent={attachment['page_id']}"
+        or media_url.path.rsplit("/", 1)[-1] != attachment["filename"]
+        or not attachment["filename"].endswith(".mp4")
+        or type(attachment["filesize"]) is not int
+        or not 0 < attachment["filesize"] <= 64 * 1024 * 1024
+        or len(
+            soup.find_all(
+                "link",
+                attrs={
+                    "rel": "alternate",
+                    "type": "application/json",
+                    "href": attachment["page_api_url"],
+                },
+            )
+        )
+        != 1
+        or not any(
+            tag.get("src") == review["media_url"] and tag.get("type") in (None, "video/mp4")
+            for tag in soup.select("video[src], video source[src]")
+        )
+    ):
+        raise ValueError("Attachment requires exact public campaign page and original links")
+    body, _ = client.get(attachment["page_api_url"], retry=False)
+    if hashlib.sha256(body).hexdigest() != attachment["page_sha256"]:
+        raise ValueError("Reviewed campaign page metadata changed")
+    page = json.loads(body)
+    if (
+        type(page["id"]) is not int
+        or page["id"] != attachment["page_id"]
+        or page["type"] != "page"
+        or page["status"] != "publish"
+        or page["link"] != review["publisher_url"]
+        or [link["href"] for link in page["_links"]["wp:attachment"]]
+        != [attachment["attachment_api_url"]]
+    ):
+        raise ValueError("Campaign page must link its exact public attachment collection")
+    body, headers = client.get(attachment["attachment_api_url"], retry=False)
+    if hashlib.sha256(body).hexdigest() != attachment["attachment_sha256"]:
+        raise ValueError("Reviewed campaign attachment metadata changed")
+    items = json.loads(body)
+    headers = {key.lower(): value for key, value in headers.items()}
+    if (
+        not isinstance(items, list)
+        or not 1 <= len(items) <= 10
+        or not all(isinstance(item, dict) for item in items)
+        or headers.get("x-wp-totalpages") != "1"
+        or headers.get("x-wp-total") != str(len(items))
+    ):
+        raise ValueError("Attachment metadata requires one bounded complete public page")
+    matches = [item for item in items if item.get("id") == attachment["attachment_id"]]
+    if len(matches) != 1:
+        raise ValueError("Attachment metadata must identify exactly one reviewed original")
+    item = matches[0]
+    if (
+        type(item["id"]) is not int
+        or item["post"] != attachment["page_id"]
+        or item["type"] != "attachment"
+        or item["status"] != "inherit"
+        or item["media_type"] != "file"
+        or item["mime_type"] != "video/mp4"
+        or item["source_url"] != review["media_url"]
+        or item["date_gmt"] != attachment["uploaded"]
+        or item["filesize"] != attachment["filesize"]
+        or item["media_details"]["filesize"] != attachment["filesize"]
+        or [(link["href"], link["id"]) for link in item["_links"]["wp:attached-to"]]
+        != [(attachment["page_api_url"], attachment["page_id"])]
+    ):
+        raise ValueError("Original must retain exact parent, upload time, MIME, size and backlink")
+
+
 def _print_payer(client: Client, candidate: dict, review: dict) -> None:
     printed = review["publisher_pdf"]
     joint = printed.get("joint_fundraising_payer")
@@ -163,6 +274,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
         gallery = review.get("publisher_gallery")
         archive = review.get("publisher_archive")
         printed = review.get("publisher_pdf")
+        attachment = review.get("publisher_attachment")
         is_image = review.get("media_type") == "image"
         is_pdf = review.get("media_type") == "pdf"
         if identity in ads or (identity in leads and leads[identity].get("recovered_segments")):
@@ -187,6 +299,10 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                 continue
         elif printed:
             published = printed["created"][:10]
+            if not START <= published <= until:
+                continue
+        elif attachment:
+            published = str(attachment.get("uploaded", ""))[:10]
             if not START <= published <= until:
                 continue
         else:
@@ -338,6 +454,8 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     raise ValueError(
                         "Original requires the exact reviewed release title, hash and date"
                     )
+            if attachment:
+                _attachment_metadata(client, soup, review, publisher_hash)
             if request := review.get("publisher_request"):
                 ajax_url = (
                     urlparse(review["publisher_url"])
@@ -407,6 +525,8 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                 media, _ = client.get(download_url, retry=False)
             if hashlib.sha256(media).hexdigest() != review["media_sha256"]:
                 raise ValueError("Original video bytes differ from the individually reviewed ad")
+            if attachment and len(media) != attachment["filesize"]:
+                raise ValueError("Original byte size differs from the reviewed attachment")
             if is_pdf:
                 reader = PdfReader(BytesIO(media))
                 pages = [page.extract_text() or "" for page in reader.pages]
@@ -489,6 +609,10 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             ]
             if release:
                 quality[-1] = "publisher_release_date_not_verified_first_airing"
+            if attachment:
+                quality[-1] = (
+                    "publisher_attachment_upload_not_verified_first_release_or_paid_delivery"
+                )
             if is_image:
                 quality = [
                     "image_ad_eligibility_reviewed",
@@ -567,6 +691,8 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     date_basis=(
                         "publisher_pdf_creation_date"
                         if printed
+                        else "publisher_attachment_upload_date"
+                        if attachment
                         else "publisher_gallery_upload_date"
                         if gallery
                         else "publisher_archive_modification_date"
@@ -595,7 +721,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     attribution_basis=(
                         (
                             "Publisher-linked original with individually reviewed payer evidence; "
-                            if release or gallery or archive or printed
+                            if release or gallery or archive or printed or attachment
                             else (
                                 "Campaign-linked original with candidate approval "
                                 "and payer evidence; "
