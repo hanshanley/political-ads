@@ -3602,50 +3602,50 @@
   {
     "ad_id": "snap-0139e8893582465bfce4b933",
     "block_id": "snap-0139e8893582465bfce4b933-claims-003",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0139e8893582465bfce4b933",
     "block_id": "snap-0139e8893582465bfce4b933-claims-004",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 2\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-01bef7da57f0fbc5b32c5816",
     "block_id": "snap-01bef7da57f0fbc5b32c5816-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for SULLIVAN, DAN: \\\"Sullivan\\\" is absent from unit 3. Exact source: \\\"and even sent them millions of our tax dollars.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-01ed9474430e06b154a022ba",
     "block_id": "snap-01ed9474430e06b154a022ba-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":4,\\\"label\\\":\\\"HICKENLOOPER\\\"},{\\\"claim\\\":5,\\\"label\\\":\\\"U.S. SENATE\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-01ee0884d9b2c9b757759f50",
     "block_id": "snap-01ee0884d9b2c9b757759f50-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for gas prices: \\\"gas prices\\\" is absent from unit 1. Exact source: \\\"Never ending war, skyrocketing gas and grocery prices, attacks on UA jobs.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0215b9d3c50bc5e46c9053c9",
     "block_id": "snap-0215b9d3c50bc5e46c9053c9-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-0215b9d3c50bc5e46c9053c9",
     "block_id": "snap-0215b9d3c50bc5e46c9053c9-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-02c594d7b9baa5ea73e0624b",
     "block_id": "snap-02c594d7b9baa5ea73e0624b-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for COLLINS, SUSAN M.: \\\"Susan Collins\\\" is absent from unit 22. Exact source: \\\"castin\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0315aef1cf9b222254f815f9",
