@@ -105808,5 +105808,235 @@
     "text_hash": "3fde4baa8b4c76db35fdc2068dbcbac787d29d769e6fba6329c0eed7a1031b47",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-23da93d40be42d05639a1fc0",
+    "alignment": "D",
+    "block_id": "snap-23da93d40be42d05639a1fc0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-23da93d40be42d05639a1fc0-claims-001-001",
+    "claim_text": "Sherrod Brown will fight back against billionaires",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nSHERROD BROWN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a9b2b3f37e41cd493eb44d32ce08cddf6771e1754ace3c9cb04ad5cae7002e89?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 75,
+        "anchor_quote": "SHERROD BROWN",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "BROWN, SHERROD",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nSHERROD BROWN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "081b0b9b4ab8a46a9523083213fe46b43e55c0bad072d97e38b6cc8c107b2ad7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-23da93d40be42d05639a1fc0",
+    "alignment": "D",
+    "block_id": "snap-23da93d40be42d05639a1fc0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-23da93d40be42d05639a1fc0-claims-001-002",
+    "claim_text": "This communication was paid for by the AFL-CIO",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nSHERROD BROWN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a9b2b3f37e41cd493eb44d32ce08cddf6771e1754ace3c9cb04ad5cae7002e89?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nSHERROD BROWN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "081b0b9b4ab8a46a9523083213fe46b43e55c0bad072d97e38b6cc8c107b2ad7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-23da93d40be42d05639a1fc0",
+    "alignment": "D",
+    "block_id": "snap-23da93d40be42d05639a1fc0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-23da93d40be42d05639a1fc0-claims-001-003",
+    "claim_text": "It is your right to vote for Sherrod Brown",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nSHERROD BROWN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a9b2b3f37e41cd493eb44d32ce08cddf6771e1754ace3c9cb04ad5cae7002e89?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 75,
+        "anchor_quote": "SHERROD BROWN",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "Sherrod Brown",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nSHERROD BROWN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "081b0b9b4ab8a46a9523083213fe46b43e55c0bad072d97e38b6cc8c107b2ad7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-23da93d40be42d05639a1fc0",
+    "alignment": "D",
+    "block_id": "snap-23da93d40be42d05639a1fc0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-23da93d40be42d05639a1fc0-claims-001-004",
+    "claim_text": "You have a union and a right to vote",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nSHERROD BROWN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a9b2b3f37e41cd493eb44d32ce08cddf6771e1754ace3c9cb04ad5cae7002e89?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 33,
+        "anchor_quote": "MY UNION",
+        "anchor_start": 25,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "You",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nSHERROD BROWN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "081b0b9b4ab8a46a9523083213fe46b43e55c0bad072d97e38b6cc8c107b2ad7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-23da93d40be42d05639a1fc0",
+    "alignment": "D",
+    "block_id": "snap-23da93d40be42d05639a1fc0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-23da93d40be42d05639a1fc0-claims-001-005",
+    "claim_text": "This is your union",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nSHERROD BROWN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a9b2b3f37e41cd493eb44d32ce08cddf6771e1754ace3c9cb04ad5cae7002e89?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 33,
+        "anchor_quote": "MY UNION",
+        "anchor_start": 25,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "You",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nSHERROD BROWN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "081b0b9b4ab8a46a9523083213fe46b43e55c0bad072d97e38b6cc8c107b2ad7",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]

@@ -4658,50 +4658,50 @@
   {
     "ad_id": "snap-2300965e3b8e48cdb0e5b2d7",
     "block_id": "snap-2300965e3b8e48cdb0e5b2d7-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Republicans: \\\"Republicans\\\" is absent from unit 2. Exact source: \\\"bepublicans talk about\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-233ca5c8344cfd1c3f61da26",
     "block_id": "snap-233ca5c8344cfd1c3f61da26-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for CANDIDATE'S COMMITTEE: \\\"CANDIDATE'S COMMITTEE\\\" is absent from unit 8. Exact source: \\\"NOT AUTHORIZED BY ANY CANDIDATE OR\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-23da93d40be42d05639a1fc0",
     "block_id": "snap-23da93d40be42d05639a1fc0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-240b8c07f282864cf962f167",
     "block_id": "snap-240b8c07f282864cf962f167-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 10 for unknown: \\\"we\\\" is absent from unit 16. Exact source: \\\"startegy mtgs with bill during last 4 days. Have been working around a clock.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-240b8c07f282864cf962f167",
     "block_id": "snap-240b8c07f282864cf962f167-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-2445de5b6d9272e74618daf1",
     "block_id": "snap-2445de5b6d9272e74618daf1-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for HAMILTON, ADAM: \\\"He\\\" is absent from unit 7. Exact source: \\\"HES'UNFIT\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-2453bc75ee007d04a4d413e7",
     "block_id": "snap-2453bc75ee007d04a4d413e7-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 7\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-2453bc75ee007d04a4d413e7",
     "block_id": "snap-2453bc75ee007d04a4d413e7-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for PELTOLA, MARY: \\\"Mary Peltola\\\" is absent from unit 4. Exact source: \\\"VOTE NO ON MARY PELTOLA\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-246b24c748bf390ae6a72994",
