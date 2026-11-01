@@ -93659,5 +93659,481 @@
     "text_hash": "56c39d25cfbf7d864cf6a3bdaeee4739de0d8728294537a60b94d8302367d745",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-046abbf4ef94bcb1967b3e6e",
+    "alignment": "D",
+    "block_id": "snap-046abbf4ef94bcb1967b3e6e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-046abbf4ef94bcb1967b3e6e-claims-001-001",
+    "claim_text": "LINDSAY JAMES will fight back against billionaires!",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nLINDSAY JAMES\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2bd0439e27f51b1f5cffec28ce43be8e0c5ab844a1bb582af67f5539d4b84bc4?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 75,
+        "anchor_quote": "LINDSAY JAMES",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6IA02211",
+        "kind": "person",
+        "name": "JAMES, LINDSAY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nLINDSAY JAMES\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "be8044db4b5fc6eac429a52984e4c8c7eac217ab90c3a0c5e44667471203ae06",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-046abbf4ef94bcb1967b3e6e",
+    "alignment": "D",
+    "block_id": "snap-046abbf4ef94bcb1967b3e6e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-046abbf4ef94bcb1967b3e6e-claims-001-002",
+    "claim_text": "It is my right to have a union.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nLINDSAY JAMES\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2bd0439e27f51b1f5cffec28ce43be8e0c5ab844a1bb582af67f5539d4b84bc4?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Union",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nLINDSAY JAMES\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "be8044db4b5fc6eac429a52984e4c8c7eac217ab90c3a0c5e44667471203ae06",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-046abbf4ef94bcb1967b3e6e",
+    "alignment": "D",
+    "block_id": "snap-046abbf4ef94bcb1967b3e6e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-046abbf4ef94bcb1967b3e6e-claims-001-003",
+    "claim_text": "The AFL-CIO paid for this ad.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nLINDSAY JAMES\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2bd0439e27f51b1f5cffec28ce43be8e0c5ab844a1bb582af67f5539d4b84bc4?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nLINDSAY JAMES\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "be8044db4b5fc6eac429a52984e4c8c7eac217ab90c3a0c5e44667471203ae06",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-047d75680849bfdbad389053",
+    "alignment": "R",
+    "block_id": "snap-047d75680849bfdbad389053-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-047d75680849bfdbad389053-claims-001-001",
+    "claim_text": "Voting early means that your ballot gets counted, verified, and locked in before election day.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 95,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Hey, Nebraska. Voting early means that your ballot gets counted, verified, and locked in before",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a8aeafca568b5263ba03c6cbacf04617a149d6c3c5e81d429f12d2ff0ce0c6ca?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [],
+    "text": "Hey, Nebraska. Voting early means that your ballot gets counted, verified, and locked in before\nelection day. It is one of the most secure ways to make sure that your voice is heard. Get out and\nvote early so Republicans keep winning big this November.\nPAID FOR BY SLF PAC\nNOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATE'S COMMITTEE.\nWWW.SENATELEADERSHIPFUND.ORG.",
+    "text_hash": "1b548db3d76708fe2d21c50280be9bb892542331f48c013bd7eeb1a29095068b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-047d75680849bfdbad389053",
+    "alignment": "R",
+    "block_id": "snap-047d75680849bfdbad389053-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-047d75680849bfdbad389053-claims-001-002",
+    "claim_text": "It is one of the most secure ways to make sure that your voice is heard.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 194,
+        "kind": "local_asr",
+        "start": 96,
+        "text": "election day. It is one of the most secure ways to make sure that your voice is heard. Get out and",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a8aeafca568b5263ba03c6cbacf04617a149d6c3c5e81d429f12d2ff0ce0c6ca?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [],
+    "text": "Hey, Nebraska. Voting early means that your ballot gets counted, verified, and locked in before\nelection day. It is one of the most secure ways to make sure that your voice is heard. Get out and\nvote early so Republicans keep winning big this November.\nPAID FOR BY SLF PAC\nNOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATE'S COMMITTEE.\nWWW.SENATELEADERSHIPFUND.ORG.",
+    "text_hash": "1b548db3d76708fe2d21c50280be9bb892542331f48c013bd7eeb1a29095068b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-047d75680849bfdbad389053",
+    "alignment": "R",
+    "block_id": "snap-047d75680849bfdbad389053-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-047d75680849bfdbad389053-claims-001-003",
+    "claim_text": "Get out and vote early so Republicans keep winning big this November.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 252,
+        "kind": "local_asr",
+        "start": 195,
+        "text": "vote early so Republicans keep winning big this November.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a8aeafca568b5263ba03c6cbacf04617a149d6c3c5e81d429f12d2ff0ce0c6ca?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 220,
+        "anchor_quote": "Republicans",
+        "anchor_start": 209,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Republicans",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Hey, Nebraska. Voting early means that your ballot gets counted, verified, and locked in before\nelection day. It is one of the most secure ways to make sure that your voice is heard. Get out and\nvote early so Republicans keep winning big this November.\nPAID FOR BY SLF PAC\nNOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATE'S COMMITTEE.\nWWW.SENATELEADERSHIPFUND.ORG.",
+    "text_hash": "1b548db3d76708fe2d21c50280be9bb892542331f48c013bd7eeb1a29095068b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-04bc8c81a19e6c977d9a2454",
+    "alignment": "D",
+    "block_id": "snap-04bc8c81a19e6c977d9a2454-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-04bc8c81a19e6c977d9a2454-claims-001-001",
+    "claim_text": "Christina Bohannan will fight back against billionaires",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 160,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nCHRISTINA BOHANNAN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/69fc3f6b9f7099e070e03777c805a1570c3eac2c43797d3759312cda473b7942?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 80,
+        "anchor_quote": "CHRISTINA BOHANNAN",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2IA02111",
+        "kind": "person",
+        "name": "BOHANNAN, CHRISTINA",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nCHRISTINA BOHANNAN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "d1db1b2715b1bfd01a3c132f579f5833f4f9b52b0b61ae327eece494dc19d3ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-04bc8c81a19e6c977d9a2454",
+    "alignment": "D",
+    "block_id": "snap-04bc8c81a19e6c977d9a2454-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-04bc8c81a19e6c977d9a2454-claims-001-002",
+    "claim_text": "This communication was paid for by the AFL-CIO",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 160,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nCHRISTINA BOHANNAN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/69fc3f6b9f7099e070e03777c805a1570c3eac2c43797d3759312cda473b7942?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nCHRISTINA BOHANNAN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "d1db1b2715b1bfd01a3c132f579f5833f4f9b52b0b61ae327eece494dc19d3ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-04bc8c81a19e6c977d9a2454",
+    "alignment": "D",
+    "block_id": "snap-04bc8c81a19e6c977d9a2454-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-04bc8c81a19e6c977d9a2454-claims-001-003",
+    "claim_text": "It is your right to vote for Christina Bohannan",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 160,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nCHRISTINA BOHANNAN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/69fc3f6b9f7099e070e03777c805a1570c3eac2c43797d3759312cda473b7942?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 80,
+        "anchor_quote": "CHRISTINA BOHANNAN",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2IA02111",
+        "kind": "person",
+        "name": "BOHANNAN, CHRISTINA",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nCHRISTINA BOHANNAN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "d1db1b2715b1bfd01a3c132f579f5833f4f9b52b0b61ae327eece494dc19d3ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-04bc8c81a19e6c977d9a2454",
+    "alignment": "D",
+    "block_id": "snap-04bc8c81a19e6c977d9a2454-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-04bc8c81a19e6c977d9a2454-claims-001-004",
+    "claim_text": "You have a union right",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 160,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nCHRISTINA BOHANNAN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/69fc3f6b9f7099e070e03777c805a1570c3eac2c43797d3759312cda473b7942?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Union",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nCHRISTINA BOHANNAN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "d1db1b2715b1bfd01a3c132f579f5833f4f9b52b0b61ae327eece494dc19d3ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-04bc8c81a19e6c977d9a2454",
+    "alignment": "D",
+    "block_id": "snap-04bc8c81a19e6c977d9a2454-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-04bc8c81a19e6c977d9a2454-claims-001-005",
+    "claim_text": "It is your right to have a union",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 160,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nCHRISTINA BOHANNAN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/69fc3f6b9f7099e070e03777c805a1570c3eac2c43797d3759312cda473b7942?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Union",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nCHRISTINA BOHANNAN\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "d1db1b2715b1bfd01a3c132f579f5833f4f9b52b0b61ae327eece494dc19d3ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
