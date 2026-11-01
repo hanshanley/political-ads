@@ -118664,7 +118664,7 @@
     "voice": "advertiser"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "normalized",
     "ad_id": "snap-515f176866465cadd252eebe",
     "alignment": "D",
     "block_id": "snap-515f176866465cadd252eebe-claims-001",
@@ -118710,7 +118710,7 @@
     "voice": "advertiser"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "normalized",
     "ad_id": "snap-515f176866465cadd252eebe",
     "alignment": "D",
     "block_id": "snap-515f176866465cadd252eebe-claims-001",
@@ -118756,7 +118756,7 @@
     "voice": "advertiser"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "normalized",
     "ad_id": "snap-515f176866465cadd252eebe",
     "alignment": "D",
     "block_id": "snap-515f176866465cadd252eebe-claims-001",
@@ -118802,7 +118802,7 @@
     "voice": "advertiser"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "normalized",
     "ad_id": "snap-515f176866465cadd252eebe",
     "alignment": "D",
     "block_id": "snap-515f176866465cadd252eebe-claims-001",
@@ -118848,7 +118848,7 @@
     "voice": "advertiser"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "normalized",
     "ad_id": "snap-515f176866465cadd252eebe",
     "alignment": "D",
     "block_id": "snap-515f176866465cadd252eebe-claims-001",
@@ -118894,7 +118894,7 @@
     "voice": "advertiser"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "normalized",
     "ad_id": "snap-515f176866465cadd252eebe",
     "alignment": "D",
     "block_id": "snap-515f176866465cadd252eebe-claims-001",
@@ -118940,7 +118940,7 @@
     "voice": "advertiser"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "normalized",
     "ad_id": "snap-515f176866465cadd252eebe",
     "alignment": "D",
     "block_id": "snap-515f176866465cadd252eebe-claims-001",
@@ -118986,7 +118986,7 @@
     "voice": "advertiser"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "normalized",
     "ad_id": "snap-515f176866465cadd252eebe",
     "alignment": "D",
     "block_id": "snap-515f176866465cadd252eebe-claims-001",
@@ -119032,7 +119032,7 @@
     "voice": "advertiser"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "normalized",
     "ad_id": "snap-515f176866465cadd252eebe",
     "alignment": "D",
     "block_id": "snap-515f176866465cadd252eebe-claims-001",
@@ -119078,7 +119078,7 @@
     "voice": "advertiser"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "normalized",
     "ad_id": "snap-515f176866465cadd252eebe",
     "alignment": "D",
     "block_id": "snap-515f176866465cadd252eebe-claims-001",
@@ -119124,7 +119124,7 @@
     "voice": "advertiser"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "normalized",
     "ad_id": "snap-515f176866465cadd252eebe",
     "alignment": "D",
     "block_id": "snap-515f176866465cadd252eebe-claims-001",
@@ -119168,5 +119168,619 @@
     "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-002",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-002-001",
+    "claim_text": "that is outrageous considering how many Alaskans have been sex crimes.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 1197,
+        "kind": "video_ocr",
+        "start": 1140,
+        "text": "lat is outrageous considering how many Alaskans have been",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 1187,
+        "anchor_quote": "Alaskans",
+        "anchor_start": 1179,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Alaskans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-002",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-002-002",
+    "claim_text": "Dan Sullivan knew",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 1298,
+        "kind": "video_ocr",
+        "start": 1281,
+        "text": "Dan Sullivan knew",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 1293,
+        "anchor_quote": "Dan Sullivan",
+        "anchor_start": 1281,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S4AK00214",
+        "kind": "person",
+        "name": "Dan Sullivan",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-002",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-002-003",
+    "claim_text": "the extent and details of the relationship have not been",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 1280,
+        "kind": "video_ocr",
+        "start": 1209,
+        "text": "onsnip, though the extent and details of the relationship have not been",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 1266,
+        "anchor_quote": "relationship",
+        "anchor_start": 1254,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "relationship",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-51f2c74194001251b5b6ff26",
+    "alignment": "R",
+    "block_id": "snap-51f2c74194001251b5b6ff26-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-51f2c74194001251b5b6ff26-claims-001-001",
+    "claim_text": "Congress badly needs ethics reform.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 35,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Congress badly needs ethics reform.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/878c4a848bd75fa7c62a2d3097fae86d05af89e176d6da26dc870edadc33f846?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 8,
+        "anchor_quote": "Congress",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Congress",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Congress badly needs ethics reform.\nCongressmen Chris Papis lied about dating an Amazon lobbyist.\nPAID FOR BY ONE NATION. WWW.ONENATIONAMERICA.ORG.\nCongressman\nCall and Tell Congressman\nCHRIS PAPPAS\nTo Support\nStronger Ethics Rules\nfor Members of Congress\n(202) 225-5456\nPAID FOR BY ONE NATION\nWWW.ONENATIONAMERICA.ORG.",
+    "text_hash": "31173dc01c84bd8940e3e6c3ea538ac9766e644989daa4af873306a0fff2d29a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-51f2c74194001251b5b6ff26",
+    "alignment": "R",
+    "block_id": "snap-51f2c74194001251b5b6ff26-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-51f2c74194001251b5b6ff26-claims-001-002",
+    "claim_text": "Chris Papis lied about dating an Amazon lobbyist.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 97,
+        "kind": "local_asr",
+        "start": 36,
+        "text": "Congressmen Chris Papis lied about dating an Amazon lobbyist.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/878c4a848bd75fa7c62a2d3097fae86d05af89e176d6da26dc870edadc33f846?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 59,
+        "anchor_quote": "Chris Papis",
+        "anchor_start": 48,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H8NH01210",
+        "kind": "person",
+        "name": "PAPPAS, CHRIS",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Congress badly needs ethics reform.\nCongressmen Chris Papis lied about dating an Amazon lobbyist.\nPAID FOR BY ONE NATION. WWW.ONENATIONAMERICA.ORG.\nCongressman\nCall and Tell Congressman\nCHRIS PAPPAS\nTo Support\nStronger Ethics Rules\nfor Members of Congress\n(202) 225-5456\nPAID FOR BY ONE NATION\nWWW.ONENATIONAMERICA.ORG.",
+    "text_hash": "31173dc01c84bd8940e3e6c3ea538ac9766e644989daa4af873306a0fff2d29a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-51f2c74194001251b5b6ff26",
+    "alignment": "R",
+    "block_id": "snap-51f2c74194001251b5b6ff26-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-51f2c74194001251b5b6ff26-claims-001-003",
+    "claim_text": "Call and Tell Congressman CHRIS PAPPAS To Support Stronger Ethics Rules for Members of Congress.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 185,
+        "kind": "video_ocr",
+        "start": 160,
+        "text": "Call and Tell Congressman",
+        "unit_id": 5
+      },
+      {
+        "end": 198,
+        "kind": "video_ocr",
+        "start": 186,
+        "text": "CHRIS PAPPAS",
+        "unit_id": 6
+      },
+      {
+        "end": 209,
+        "kind": "video_ocr",
+        "start": 199,
+        "text": "To Support",
+        "unit_id": 7
+      },
+      {
+        "end": 231,
+        "kind": "video_ocr",
+        "start": 210,
+        "text": "Stronger Ethics Rules",
+        "unit_id": 8
+      },
+      {
+        "end": 255,
+        "kind": "video_ocr",
+        "start": 232,
+        "text": "for Members of Congress",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/878c4a848bd75fa7c62a2d3097fae86d05af89e176d6da26dc870edadc33f846?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 198,
+        "anchor_quote": "CHRIS PAPPAS",
+        "anchor_start": 186,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H8NH01210",
+        "kind": "person",
+        "name": "PAPPAS, CHRIS",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 255,
+        "anchor_quote": "Members of Congress",
+        "anchor_start": 236,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Members of Congress",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Congress badly needs ethics reform.\nCongressmen Chris Papis lied about dating an Amazon lobbyist.\nPAID FOR BY ONE NATION. WWW.ONENATIONAMERICA.ORG.\nCongressman\nCall and Tell Congressman\nCHRIS PAPPAS\nTo Support\nStronger Ethics Rules\nfor Members of Congress\n(202) 225-5456\nPAID FOR BY ONE NATION\nWWW.ONENATIONAMERICA.ORG.",
+    "text_hash": "31173dc01c84bd8940e3e6c3ea538ac9766e644989daa4af873306a0fff2d29a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-51f2c74194001251b5b6ff26",
+    "alignment": "R",
+    "block_id": "snap-51f2c74194001251b5b6ff26-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-51f2c74194001251b5b6ff26-claims-001-004",
+    "claim_text": "One Nation paid for this communication.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 147,
+        "kind": "video_ocr",
+        "start": 98,
+        "text": "PAID FOR BY ONE NATION. WWW.ONENATIONAMERICA.ORG.",
+        "unit_id": 3
+      },
+      {
+        "end": 293,
+        "kind": "video_ocr",
+        "start": 271,
+        "text": "PAID FOR BY ONE NATION",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      3,
+      11
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/878c4a848bd75fa7c62a2d3097fae86d05af89e176d6da26dc870edadc33f846?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 293,
+        "anchor_quote": "ONE NATION",
+        "anchor_start": 283,
+        "anchor_unit_id": 11,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "One Nation",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Congress badly needs ethics reform.\nCongressmen Chris Papis lied about dating an Amazon lobbyist.\nPAID FOR BY ONE NATION. WWW.ONENATIONAMERICA.ORG.\nCongressman\nCall and Tell Congressman\nCHRIS PAPPAS\nTo Support\nStronger Ethics Rules\nfor Members of Congress\n(202) 225-5456\nPAID FOR BY ONE NATION\nWWW.ONENATIONAMERICA.ORG.",
+    "text_hash": "31173dc01c84bd8940e3e6c3ea538ac9766e644989daa4af873306a0fff2d29a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-51f2c74194001251b5b6ff26",
+    "alignment": "R",
+    "block_id": "snap-51f2c74194001251b5b6ff26-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-51f2c74194001251b5b6ff26-claims-001-005",
+    "claim_text": "One Nation can be reached at www.onenationamerica.org.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 147,
+        "kind": "video_ocr",
+        "start": 98,
+        "text": "PAID FOR BY ONE NATION. WWW.ONENATIONAMERICA.ORG.",
+        "unit_id": 3
+      },
+      {
+        "end": 319,
+        "kind": "video_ocr",
+        "start": 294,
+        "text": "WWW.ONENATIONAMERICA.ORG.",
+        "unit_id": 12
+      }
+    ],
+    "evidence_ids": [
+      3,
+      12
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/878c4a848bd75fa7c62a2d3097fae86d05af89e176d6da26dc870edadc33f846?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 318,
+        "anchor_quote": "ONENATIONAMERICA.ORG",
+        "anchor_start": 298,
+        "anchor_unit_id": 12,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "One Nation",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Congress badly needs ethics reform.\nCongressmen Chris Papis lied about dating an Amazon lobbyist.\nPAID FOR BY ONE NATION. WWW.ONENATIONAMERICA.ORG.\nCongressman\nCall and Tell Congressman\nCHRIS PAPPAS\nTo Support\nStronger Ethics Rules\nfor Members of Congress\n(202) 225-5456\nPAID FOR BY ONE NATION\nWWW.ONENATIONAMERICA.ORG.",
+    "text_hash": "31173dc01c84bd8940e3e6c3ea538ac9766e644989daa4af873306a0fff2d29a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-52453c6f5b29d6194ae1ad3b",
+    "alignment": "D",
+    "block_id": "snap-52453c6f5b29d6194ae1ad3b-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-52453c6f5b29d6194ae1ad3b-claims-001-001",
+    "claim_text": "Ralph Alvarado, the son of immigrants, said he is running for Congress \"to stop the invasion at our southern border once and for all.\"",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 177,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Immigrant son Alvarado\nslams \"invasion\"\nRalph Alvarado, the son of immigrants, said he is\nrunning for Congress \"to stop the invasion at our\nsouthern border once and for all.\"\nAP",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d489344d3a8c5d72a76b98ebaebf2f566e865eb558d6cfaa294e99062dbd3347?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 54,
+        "anchor_quote": "Ralph Alvarado",
+        "anchor_start": 40,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6KY06192",
+        "kind": "person",
+        "name": "ALVARADO, RALPH A",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Immigrant son Alvarado\nslams \"invasion\"\nRalph Alvarado, the son of immigrants, said he is\nrunning for Congress \"to stop the invasion at our\nsouthern border once and for all.\"\nAP",
+    "text_hash": "5dbe5ee319a72c8915a0bd89ffa31770caf8bb4a21733f106f3b2fb4778d619d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-52453c6f5b29d6194ae1ad3b",
+    "alignment": "D",
+    "block_id": "snap-52453c6f5b29d6194ae1ad3b-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-52453c6f5b29d6194ae1ad3b-claims-001-002",
+    "claim_text": "Ralph Alvarado is the son of immigrants.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 177,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Immigrant son Alvarado\nslams \"invasion\"\nRalph Alvarado, the son of immigrants, said he is\nrunning for Congress \"to stop the invasion at our\nsouthern border once and for all.\"\nAP",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d489344d3a8c5d72a76b98ebaebf2f566e865eb558d6cfaa294e99062dbd3347?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 54,
+        "anchor_quote": "Ralph Alvarado",
+        "anchor_start": 40,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6KY06192",
+        "kind": "person",
+        "name": "ALVARADO, RALPH A",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Immigrant son Alvarado\nslams \"invasion\"\nRalph Alvarado, the son of immigrants, said he is\nrunning for Congress \"to stop the invasion at our\nsouthern border once and for all.\"\nAP",
+    "text_hash": "5dbe5ee319a72c8915a0bd89ffa31770caf8bb4a21733f106f3b2fb4778d619d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-52453c6f5b29d6194ae1ad3b",
+    "alignment": "D",
+    "block_id": "snap-52453c6f5b29d6194ae1ad3b-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-52453c6f5b29d6194ae1ad3b-claims-001-003",
+    "claim_text": "Ralph Alvarado said he is running for Congress.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 177,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Immigrant son Alvarado\nslams \"invasion\"\nRalph Alvarado, the son of immigrants, said he is\nrunning for Congress \"to stop the invasion at our\nsouthern border once and for all.\"\nAP",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d489344d3a8c5d72a76b98ebaebf2f566e865eb558d6cfaa294e99062dbd3347?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 54,
+        "anchor_quote": "Ralph Alvarado",
+        "anchor_start": 40,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6KY06192",
+        "kind": "person",
+        "name": "ALVARADO, RALPH A",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Immigrant son Alvarado\nslams \"invasion\"\nRalph Alvarado, the son of immigrants, said he is\nrunning for Congress \"to stop the invasion at our\nsouthern border once and for all.\"\nAP",
+    "text_hash": "5dbe5ee319a72c8915a0bd89ffa31770caf8bb4a21733f106f3b2fb4778d619d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-52453c6f5b29d6194ae1ad3b",
+    "alignment": "D",
+    "block_id": "snap-52453c6f5b29d6194ae1ad3b-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-52453c6f5b29d6194ae1ad3b-claims-001-004",
+    "claim_text": "Ralph Alvarado said he wants to \"stop the invasion at our southern border once and for all.\"",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 177,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Immigrant son Alvarado\nslams \"invasion\"\nRalph Alvarado, the son of immigrants, said he is\nrunning for Congress \"to stop the invasion at our\nsouthern border once and for all.\"\nAP",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d489344d3a8c5d72a76b98ebaebf2f566e865eb558d6cfaa294e99062dbd3347?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 54,
+        "anchor_quote": "Ralph Alvarado",
+        "anchor_start": 40,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6KY06192",
+        "kind": "person",
+        "name": "ALVARADO, RALPH A",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Immigrant son Alvarado\nslams \"invasion\"\nRalph Alvarado, the son of immigrants, said he is\nrunning for Congress \"to stop the invasion at our\nsouthern border once and for all.\"\nAP",
+    "text_hash": "5dbe5ee319a72c8915a0bd89ffa31770caf8bb4a21733f106f3b2fb4778d619d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
   }
 ]
