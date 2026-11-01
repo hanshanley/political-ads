@@ -5330,50 +5330,50 @@
   {
     "ad_id": "snap-36f613c46f7cd1b721447c27",
     "block_id": "snap-36f613c46f7cd1b721447c27-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 2: {\\\"anchor_quote\\\":\\\"them\\\",\\\"anchor_unit_id\\\":2,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"unknown\\\",\\\"name\\\":\\\"them\\\",\\\"role\\\":\\\"unclear\\\",\\\"tone\\\":\\\"neutral\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-372ba59d8cab35946a52b238",
     "block_id": "snap-372ba59d8cab35946a52b238-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 3\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-3750a34d0633080e984c0575",
     "block_id": "snap-3750a34d0633080e984c0575-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-3750a34d0633080e984c0575",
     "block_id": "snap-3750a34d0633080e984c0575-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Advanced Wound Care and Regenerative Medicine Access and Reform Act: \\\"Advanced Wound Care and Regenerative Medicine Access and Reform Act\\\" is absent from unit 2. Exact source: \\\"This Act may be cited as the \\\\\\\"Advanced Wound Care and Regenerative\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-3750a34d0633080e984c0575",
     "block_id": "snap-3750a34d0633080e984c0575-claims-003",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 6\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-3750a34d0633080e984c0575",
     "block_id": "snap-3750a34d0633080e984c0575-claims-004",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for EVANS, GABE: \\\"he\\\" is absent from unit 6. Exact source: \\\"n't cut Medicald\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-3765492c1a74cdef2686a5a7",
     "block_id": "snap-3765492c1a74cdef2686a5a7-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for ROGERS, MIKE: \\\"Mike Rogers\\\" is absent from unit 14. Exact source: \\\"are not paying more. Did he say that? No way, Doug. If he lives in Michigan, he knows prices are high.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-3765492c1a74cdef2686a5a7",
     "block_id": "snap-3765492c1a74cdef2686a5a7-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 4\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-3796f54981c9b71a0972675a",
