@@ -12,7 +12,7 @@
       },
       {
         "kind": "paragraph",
-        "text": "The saved collection through 2026-10-30 contains 1,886 English ad-text records: 1,226 Democratic-aligned, 621 Republican-aligned, 31 other and 8 unresolved. After exact-message deduplication, the D/R comparison contains 1,204 and 584 messages. These are recovered ad releases, previews and creatives, not all ads aired, and there is no exposure or spending weight."
+        "text": "The saved collection through 2026-10-30 contains 1,887 English ad-text records: 1,226 Democratic-aligned, 622 Republican-aligned, 31 other and 8 unresolved. After exact-message deduplication, the D/R comparison contains 1,204 and 585 messages. These are recovered ad releases, previews and creatives, not all ads aired, and there is no exposure or spending weight."
       },
       {
         "kind": "heading",
@@ -24,7 +24,7 @@
       },
       {
         "kind": "paragraph",
-        "text": "Republican-aligned messages: 458/584 (78.4%) reviewed; 1 uncertain, 125 unreviewed and 0 stale. Only reviewed messages supply counted descriptions. The whole-ad table retains all messages in its denominator; person-scope tone rates require an eligible description. Missing evidence is not neutral language."
+        "text": "Republican-aligned messages: 458/585 (78.3%) reviewed; 1 uncertain, 126 unreviewed and 0 stale. Only reviewed messages supply counted descriptions. The whole-ad table retains all messages in its denominator; person-scope tone rates require an eligible description. Missing evidence is not neutral language."
       },
       {
         "kind": "paragraph",
@@ -37,8 +37,8 @@
         "kind": "figure",
         "png": "portrayal-coverage.png",
         "sha256": {
-          "csv": "b73a24d9a000cce4ac926104849ccd24591d741d37b03d0ca9d778ea3545e489",
-          "png": "b36fe607fe3e4f266d29215ad50df126a0af7b6a51e7f4d97616a0209970c7bd"
+          "csv": "ec3a2753b539ad7690b32ee76ab47ba2d21889bedb973a4aa5b02e1f59d9ffed",
+          "png": "92a442826bdfd5d3336200098214e427da7803f8607f7760b7be97743c298a96"
         },
         "title": "What has actually been reviewed?"
       },
@@ -60,7 +60,7 @@
       },
       {
         "kind": "paragraph",
-        "text": "Republican ads: own-side praise only: 126/584 (21.6%); mixed: own praise and opponent criticism: 76/584 (13.0%); opponent criticism only: 220/584 (37.7%); neither signal: 36/584 (6.2%); uncertain or missing review: 126/584 (21.6%). These mutually exclusive categories account for every unique message. This same-ad contrast measure is different from mixed positive/negative descriptions within one target scope below."
+        "text": "Republican ads: own-side praise only: 126/585 (21.5%); mixed: own praise and opponent criticism: 76/585 (13.0%); opponent criticism only: 220/585 (37.6%); neither signal: 36/585 (6.2%); uncertain or missing review: 127/585 (21.7%). These mutually exclusive categories account for every unique message. This same-ad contrast measure is different from mixed positive/negative descriptions within one target scope below."
       },
       {
         "csv": "ad-strategy.csv",
@@ -69,8 +69,8 @@
         "kind": "figure",
         "png": "ad-strategy.png",
         "sha256": {
-          "csv": "6485c1b7de493f43379aec256a555f79f307f3830779b71fc8d37dbbc763ca21",
-          "png": "e056a658f1376c95b006a0fb404955afa2cf3282b51dbab2e19a51932747424f"
+          "csv": "bfb566d423ed0c6202dfd511caf7071cff9775c940c91c22bfb3ebcf7aaecad6",
+          "png": "7813fb281ff0333979bcf914331d8ac8455d1ba96ecd5390abae8d0a100c2e3a"
         },
         "title": "Do ads praise, attack, or combine both?"
       },
@@ -105,8 +105,8 @@
         "kind": "figure",
         "png": "opponent-tone.png",
         "sha256": {
-          "csv": "7bb1d8055bea7fc7ff53ce19ff404456e481525e6f17ba0b56fe797b47ebb913",
-          "png": "2f1a1b4987963553daf99f4cf8c2948d36833b4e2ab3b57df55a4054b17fb290"
+          "csv": "7ba51ac37d8efad6b122a315f382efc84b0b5e4dab9799e1f3fe5ecda4e3425f",
+          "png": "a97120926f9bfca056b5c769296ff70245d51e29ed325fba61781fc60c6628ca"
         },
         "title": "How they describe their opponents"
       },
@@ -161,8 +161,8 @@
         "kind": "figure",
         "png": "opponent-frames.png",
         "sha256": {
-          "csv": "e85d7c19f00bc53de77ce1d3f035ad9afaed808ed3ccbb6d22b0c2cabdca2534",
-          "png": "733c9c3167356649c3fde48a4d769f00771be60e79935ca7e3fd9fd3e48463e6"
+          "csv": "76e0fdea9bdf01e2d9b258f7517ed69cf893b1d0b8d80738254fbdd653cce1c2",
+          "png": "63621391dbd04070a97b3c37e8776bbe9656abe7d0bcc693e0a12eb818fccb65"
         },
         "title": "What they say about their opponents"
       },
@@ -197,8 +197,8 @@
         "kind": "figure",
         "png": "self-tone.png",
         "sha256": {
-          "csv": "c545a0ed2416ed4862661f31dca729743c56d49ef1916587d6ba82df614a9da9",
-          "png": "50226f9aba52f77ee0cfdddfe3fa04dfd42815020ab8cea6e148715dfa48f058"
+          "csv": "64cdc087193579128d4e6f68c767755cb151cb08cf5565d277f40f825844fcc0",
+          "png": "4aa5bc6d3b7da4b2f9db502397462b0f3cbdf664defe1e143ec07ecbd3b0d752"
         },
         "title": "How they describe their own candidates"
       },
@@ -253,8 +253,8 @@
         "kind": "figure",
         "png": "self-frames.png",
         "sha256": {
-          "csv": "d1d73191370fbe710b57d69b97808557bf18b32720cf588e9816fa447a84adad",
-          "png": "29f9f17077c7ff8475f79f25bda81cccab04dd4e0cad9475b3ceb1b0b531a1ee"
+          "csv": "51925aeb1cb5429441e3af788fd58c51fc520c05ef1ea951fa881c7644448345",
+          "png": "209234038e13b756d9c8e61061f0ff06936d561468612c242686253260ce6013"
         },
         "title": "What they say about their own candidates"
       },
@@ -276,7 +276,7 @@
       },
       {
         "kind": "paragraph",
-        "text": "For Republican ads, the whole-ad shares change after exclusion: own-side praise only from 126/584 (21.6%) to 117/426 (27.5%); mixed: own praise and opponent criticism from 76/584 (13.0%) to 76/426 (17.8%); opponent criticism only from 220/584 (37.7%) to 97/426 (22.8%). Each denominator includes all unique messages remaining in that collection."
+        "text": "For Republican ads, the whole-ad shares change after exclusion: own-side praise only from 126/585 (21.5%) to 117/427 (27.4%); mixed: own praise and opponent criticism from 76/585 (13.0%) to 76/427 (17.8%); opponent criticism only from 220/585 (37.6%) to 97/427 (22.7%). Each denominator includes all unique messages remaining in that collection."
       },
       {
         "kind": "paragraph",
@@ -293,8 +293,8 @@
         "kind": "figure",
         "png": "publisher-composition.png",
         "sha256": {
-          "csv": "bfdb4c5504d38d8e315168ff3479461f6d57d77d42d3660868b14622dcb4ebf8",
-          "png": "609b9c6638676e7fa85da182e4c170c75b7397b7abffea20e8d899954eb75918"
+          "csv": "85a104fb45e0bbbc458690ab2196f7e60383300b8d1bd5fb5891c1a180ebcf5e",
+          "png": "d6ada0bb60fae93c1cdf33d18048b96fb13b19d248729a2a2d342cca93d7a12f"
         },
         "title": "Who supplies the observed ads?"
       },
@@ -313,8 +313,8 @@
         "kind": "figure",
         "png": "issue-language.png",
         "sha256": {
-          "csv": "c3c65fa158c3a8c86b2cf45e5c114a3906189d1c3fdb40c0fab2db00483ad372",
-          "png": "7f1febe16c4742b21688e384f8a567ea4555bc32a56b16856ddd4f322a301856"
+          "csv": "8200fa36a6465a308a452bb250afb2a80cfc9468fd9301b64b8afc029c14017f",
+          "png": "996be61ea3002b2aeced40d5965f332fe3df39f7f62c02b4c044d4a8ac97128f"
         },
         "title": "What issues appear in the wording?"
       },
@@ -325,8 +325,8 @@
         "kind": "figure",
         "png": "source-sensitivity.png",
         "sha256": {
-          "csv": "59ae66d006a36278101b653d905d3fb80acfd1a393613bb56d5d5ddf54624f4b",
-          "png": "d1a0756373a006bca1f89232faf68feb7aeb6dcd9b93d3d767c3effdd568a96b"
+          "csv": "5be5c3247a17fba6d6d27835b5fc0bfbc2879addfb16aa6ca7e8af8f502f1cb4",
+          "png": "25510d88392be780c168877c6e508662da541d7d45ab79678db450b82374335b"
         },
         "title": "How dependent are the issue gaps on sources?"
       },
@@ -337,8 +337,8 @@
         "kind": "figure",
         "png": "monthly-coverage.png",
         "sha256": {
-          "csv": "c018a3ad4f307ed0c3787bdb3cd0cfab42e94a9e1cfc5e9056031d88f44507f4",
-          "png": "a0d91337cf1bd4917e0c0057534eefc978941379fca2dbf0fe07201daf7b1970"
+          "csv": "75ff555ee83ad8093154225c6a436def4e2b6f1eff5574935177699ed6d14b64",
+          "png": "9a68dd091745570b8341f728dcca02d820d2927e33edafafa25b9d02cfcf7468"
         },
         "title": "Messages in the saved collection"
       },
@@ -349,8 +349,8 @@
         "kind": "figure",
         "png": "monthly-issues.png",
         "sha256": {
-          "csv": "79c3875b2cc88f9589eee300ffe879ed885b62d3d5824706e29c331a1cbbe180",
-          "png": "1711752fd1caf9f499aae35269abfebaf2e0b524ed30ba16938e865ec0177505"
+          "csv": "15b79f122baa08f44177acb259473ab0e2534b8ced074e69ce5594c3b6099bb2",
+          "png": "2d1eda57013636747e10eaf201b864231feb6a07c90ad841a4164321c1ab6135"
         },
         "title": "Issue wording over the cycle"
       },
@@ -2152,6 +2152,7 @@
         "snap-702709b3d2e6e358aea537bd",
         "snap-8c4ffe8aac03cfc488d95b51",
         "acc-aptv-47600-0",
+        "dakota-star-print-smith-0cf45653a7b79a4f-p2",
         "ngb-aptv-47600-0",
         "nrsc-17881-0",
         "snap-2dcf1494221a3ec948227a48",
@@ -2497,18 +2498,18 @@
     "publication_status": "draft_not_published",
     "record_counts": {
       "D": 1226,
-      "R": 621,
+      "R": 622,
       "other": 31,
       "unknown": 8
     },
-    "snapshot_id": "e947737c8c3b7ff276ef23512f7528e2176601f01f497dd19160d9ee46281c01",
+    "snapshot_id": "5db66dbc45699547a1182b9ce6ff894cf11d3a4461d5e25026c67f76d9ed3c0a",
     "subtitle": "Opponents, their own candidates, and the balance of negative and positive portrayals.",
     "title": "How Democrats and Republicans describe each other",
-    "total_unique_messages": 1827,
+    "total_unique_messages": 1828,
     "until": "2026-10-30",
     "version": "article-2"
   },
-  "chart_data_hash": "a0cbdb5b4a95eb536a3855f3a804c9e39dfc5d74e47445cc1b49ba1a97af36a5",
+  "chart_data_hash": "7a541f251e0abb082a6fa2434801da83314ef4b40fa017e1504eadcae67d9763",
   "comparisons": {
     "chamber": {
       "": {
@@ -4614,14 +4615,16 @@
               "ngb-perry-breitbart-20261027-0",
               "nrcc-cardinalpine-barn-dance-20261027-0",
               "acc-aptv-47600-0",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2",
               "ngb-aptv-47600-0",
               "herrera-jezebel-18261610-0",
               "mackenzie-brownwhite-138743-0"
             ],
-            "messages": 219,
+            "messages": 220,
             "publishers": [
               "ANN WAGNER FOR CONGRESS",
               "Aaron Flint for Montana",
+              "Adrian Smith for Congress",
               "Alabama Christian Conservatives",
               "Alexandra del Moral Mealer for Congress",
               "American Action Network",
@@ -4961,11 +4964,12 @@
               "ngb-perry-breitbart-20261027-0",
               "nrcc-cardinalpine-barn-dance-20261027-0",
               "acc-aptv-47600-0",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2",
               "ngb-aptv-47600-0",
               "herrera-jezebel-18261610-0",
               "mackenzie-brownwhite-138743-0"
             ],
-            "records": 243
+            "records": 244
           }
         },
         "issues": [
@@ -4986,8 +4990,8 @@
                 "google-CR08530377173859565569-5dd2a6b32f43"
               ],
               "count": 1,
-              "share": 0.0045662100456621,
-              "total": 219
+              "share": 0.004545454545454545,
+              "total": 220
             },
             "label": "Abortion & reproductive rights"
           },
@@ -5354,8 +5358,8 @@
                 "google-CR13969552834442559489-afe6a73f23b8"
               ],
               "count": 69,
-              "share": 0.3150684931506849,
-              "total": 219
+              "share": 0.31363636363636366,
+              "total": 220
             },
             "label": "Cost of living"
           },
@@ -5401,8 +5405,8 @@
                 "perry-capitalstar-70025-0"
               ],
               "count": 15,
-              "share": 0.0684931506849315,
-              "total": 219
+              "share": 0.06818181818181818,
+              "total": 220
             },
             "label": "Crime & policing"
           },
@@ -5470,8 +5474,8 @@
                 "dms-images-carey-c8986cf1a15c1dbf"
               ],
               "count": 10,
-              "share": 0.045662100456621,
-              "total": 219
+              "share": 0.045454545454545456,
+              "total": 220
             },
             "label": "Democracy & accountability"
           },
@@ -5617,8 +5621,8 @@
                 "bresnahan-native-122245613072111841"
               ],
               "count": 20,
-              "share": 0.091324200913242,
-              "total": 219
+              "share": 0.09090909090909091,
+              "total": 220
             },
             "label": "Energy & environment"
           },
@@ -5839,8 +5843,8 @@
                 "mackenzie-brownwhite-138743-0"
               ],
               "count": 18,
-              "share": 0.0821917808219178,
-              "total": 219
+              "share": 0.08181818181818182,
+              "total": 220
             },
             "label": "Healthcare"
           },
@@ -5892,11 +5896,12 @@
                 "flint-2131-0",
                 "lawler-1429-0",
                 "dms-images-leonard-5b761bcb7f558537",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2",
                 "herrera-jezebel-18261610-0"
               ],
-              "count": 28,
-              "share": 0.1278538812785388,
-              "total": 219
+              "count": 29,
+              "share": 0.1318181818181818,
+              "total": 220
             },
             "label": "Immigration"
           },
@@ -6113,11 +6118,12 @@
                 "mealer-archive-pushcard-fc57428c8c86585f",
                 "mealer-archive-results-b0b65cc582704337",
                 "mealer-archive-shewins-f4365cea0dff558f",
-                "bresnahan-native-122244548030111841"
+                "bresnahan-native-122244548030111841",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 35,
-              "share": 0.1598173515981735,
-              "total": 219
+              "count": 36,
+              "share": 0.16363636363636364,
+              "total": 220
             },
             "label": "Jobs & the economy"
           },
@@ -6400,11 +6406,12 @@
                 "bresnahan-native-122245613072111841",
                 "dms-images-carey-c8986cf1a15c1dbf",
                 "dms-images-leonard-5b761bcb7f558537",
-                "google-CR13969552834442559489-afe6a73f23b8"
+                "google-CR13969552834442559489-afe6a73f23b8",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 90,
-              "share": 0.410958904109589,
-              "total": 219
+              "count": 91,
+              "share": 0.41363636363636364,
+              "total": 220
             },
             "label": "Taxes & spending"
           },
@@ -6532,8 +6539,8 @@
                 "grothman-b574d494ebff6312-0"
               ],
               "count": 53,
-              "share": 0.2420091324200913,
-              "total": 219
+              "share": 0.2409090909090909,
+              "total": 220
             },
             "label": "War & foreign policy"
           }
@@ -6571,8 +6578,8 @@
                 "rogers-florida-1441-0"
               ],
               "count": 2,
-              "share": 0.0091324200913242,
-              "total": 219
+              "share": 0.00909090909090909,
+              "total": 220
             },
             "label": "Competence & record"
           },
@@ -6612,8 +6619,8 @@
                 "ngb-aptv-47600-0"
               ],
               "count": 20,
-              "share": 0.091324200913242,
-              "total": 219
+              "share": 0.09090909090909091,
+              "total": 220
             },
             "label": "Extreme / radical"
           },
@@ -6636,8 +6643,8 @@
                 "millermeeks-iowagop-10964-0"
               ],
               "count": 2,
-              "share": 0.0091324200913242,
-              "total": 219
+              "share": 0.00909090909090909,
+              "total": 220
             },
             "label": "Out of touch"
           },
@@ -6677,8 +6684,8 @@
                 "nrcc-491fde0bead29243-0"
               ],
               "count": 4,
-              "share": 0.0182648401826484,
-              "total": 219
+              "share": 0.01818181818181818,
+              "total": 220
             },
             "label": "Safety & threat"
           },
@@ -6866,8 +6873,8 @@
                 "flint-2146-0"
               ],
               "count": 17,
-              "share": 0.0776255707762557,
-              "total": 219
+              "share": 0.07727272727272727,
+              "total": 220
             },
             "label": "Special interests"
           },
@@ -6941,8 +6948,8 @@
                 "dms-images-carey-c8986cf1a15c1dbf"
               ],
               "count": 12,
-              "share": 0.0547945205479452,
-              "total": 219
+              "share": 0.05454545454545454,
+              "total": 220
             },
             "label": "Trust & integrity"
           }
@@ -18268,6 +18275,7 @@
               "snap-702709b3d2e6e358aea537bd",
               "snap-8c4ffe8aac03cfc488d95b51",
               "acc-aptv-47600-0",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2",
               "ngb-aptv-47600-0",
               "nrsc-17881-0",
               "snap-2dcf1494221a3ec948227a48",
@@ -18280,9 +18288,10 @@
               "herrera-jezebel-18261610-0",
               "mackenzie-brownwhite-138743-0"
             ],
-            "messages": 168,
+            "messages": 169,
             "publishers": [
               "Aaron Flint for Montana",
+              "Adrian Smith for Congress",
               "Alabama Christian Conservatives",
               "Alexandra del Moral Mealer for Congress",
               "Andy Barr for Senate",
@@ -18483,6 +18492,7 @@
               "snap-702709b3d2e6e358aea537bd",
               "snap-8c4ffe8aac03cfc488d95b51",
               "acc-aptv-47600-0",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2",
               "ngb-aptv-47600-0",
               "nrsc-17881-0",
               "snap-2dcf1494221a3ec948227a48",
@@ -18495,7 +18505,7 @@
               "herrera-jezebel-18261610-0",
               "mackenzie-brownwhite-138743-0"
             ],
-            "records": 171
+            "records": 172
           }
         },
         "issues": [
@@ -18514,7 +18524,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 168
+              "total": 169
             },
             "label": "Abortion & reproductive rights"
           },
@@ -18810,8 +18820,8 @@
                 "rogers-6ae0ac2f4af67c5c39abe46b-0"
               ],
               "count": 19,
-              "share": 0.1130952380952381,
-              "total": 168
+              "share": 0.11242603550295859,
+              "total": 169
             },
             "label": "Cost of living"
           },
@@ -18859,8 +18869,8 @@
                 "snap-8e14ae6417ccc0b2d99f116e"
               ],
               "count": 18,
-              "share": 0.10714285714285714,
-              "total": 168
+              "share": 0.10650887573964497,
+              "total": 169
             },
             "label": "Crime & policing"
           },
@@ -18939,8 +18949,8 @@
                 "dms-images-carey-c8986cf1a15c1dbf"
               ],
               "count": 9,
-              "share": 0.05357142857142857,
-              "total": 168
+              "share": 0.05325443786982249,
+              "total": 169
             },
             "label": "Democracy & accountability"
           },
@@ -19074,8 +19084,8 @@
                 "rogers-6ae0ac2f4af67c5c39abe46b-0"
               ],
               "count": 17,
-              "share": 0.10119047619047619,
-              "total": 168
+              "share": 0.10059171597633136,
+              "total": 169
             },
             "label": "Energy & environment"
           },
@@ -19308,8 +19318,8 @@
                 "mackenzie-brownwhite-138743-0"
               ],
               "count": 18,
-              "share": 0.10714285714285714,
-              "total": 168
+              "share": 0.10650887573964497,
+              "total": 169
             },
             "label": "Healthcare"
           },
@@ -19364,11 +19374,12 @@
                 "snap-c4129a46bacee6e2de9b6e9c",
                 "dms-images-leonard-5b761bcb7f558537",
                 "snap-8c4ffe8aac03cfc488d95b51",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2",
                 "herrera-jezebel-18261610-0"
               ],
-              "count": 29,
-              "share": 0.17261904761904762,
-              "total": 168
+              "count": 30,
+              "share": 0.17751479289940827,
+              "total": 169
             },
             "label": "Immigration"
           },
@@ -19599,11 +19610,12 @@
                 "rogers-6acd08220f7cad7d1a84f0a5-0",
                 "bresnahan-native-122244548030111841",
                 "slf-media-1360-7leONV43yaE",
-                "slf-media-1390-KtoSfGJVa-E"
+                "slf-media-1390-KtoSfGJVa-E",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 12,
-              "share": 0.07142857142857142,
-              "total": 168
+              "count": 13,
+              "share": 0.07692307692307693,
+              "total": 169
             },
             "label": "Jobs & the economy"
           },
@@ -19819,11 +19831,12 @@
                 "slf-media-1396-hDRwr_wUKC0",
                 "google-CR13969552834442559489-afe6a73f23b8",
                 "rogers-6ae0ac2f4af67c5c39abe46b-0",
-                "snap-40f88e4dd45c781bb4649736"
+                "snap-40f88e4dd45c781bb4649736",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 46,
-              "share": 0.27380952380952384,
-              "total": 168
+              "count": 47,
+              "share": 0.2781065088757396,
+              "total": 169
             },
             "label": "Taxes & spending"
           },
@@ -19922,8 +19935,8 @@
                 "grothman-b574d494ebff6312-0"
               ],
               "count": 12,
-              "share": 0.07142857142857142,
-              "total": 168
+              "share": 0.07100591715976332,
+              "total": 169
             },
             "label": "War & foreign policy"
           }
@@ -19958,8 +19971,8 @@
                 "nrsc-17586-0"
               ],
               "count": 3,
-              "share": 0.017857142857142856,
-              "total": 168
+              "share": 0.01775147928994083,
+              "total": 169
             },
             "label": "Competence & record"
           },
@@ -20000,8 +20013,8 @@
                 "snap-2dcf1494221a3ec948227a48"
               ],
               "count": 22,
-              "share": 0.13095238095238096,
-              "total": 168
+              "share": 0.1301775147928994,
+              "total": 169
             },
             "label": "Extreme / radical"
           },
@@ -20021,7 +20034,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 168
+              "total": 169
             },
             "label": "Out of touch"
           },
@@ -20046,8 +20059,8 @@
                 "snap-8c5f2b700510387ef85ea2f5"
               ],
               "count": 2,
-              "share": 0.011904761904761904,
-              "total": 168
+              "share": 0.011834319526627219,
+              "total": 169
             },
             "label": "Safety & threat"
           },
@@ -20243,8 +20256,8 @@
                 "nrsc-17816-0"
               ],
               "count": 17,
-              "share": 0.10119047619047619,
-              "total": 168
+              "share": 0.10059171597633136,
+              "total": 169
             },
             "label": "Special interests"
           },
@@ -20331,8 +20344,8 @@
                 "dms-images-carey-c8986cf1a15c1dbf"
               ],
               "count": 17,
-              "share": 0.10119047619047619,
-              "total": 168
+              "share": 0.10059171597633136,
+              "total": 169
             },
             "label": "Trust & integrity"
           }
@@ -23435,6 +23448,7 @@
             "snap-702709b3d2e6e358aea537bd",
             "snap-8c4ffe8aac03cfc488d95b51",
             "acc-aptv-47600-0",
+            "dakota-star-print-smith-0cf45653a7b79a4f-p2",
             "ngb-aptv-47600-0",
             "nrsc-17881-0",
             "snap-2dcf1494221a3ec948227a48",
@@ -23447,10 +23461,11 @@
             "herrera-jezebel-18261610-0",
             "mackenzie-brownwhite-138743-0"
           ],
-          "messages": 584,
+          "messages": 585,
           "publishers": [
             "ANN WAGNER FOR CONGRESS",
             "Aaron Flint for Montana",
+            "Adrian Smith for Congress",
             "Alabama Christian Conservatives",
             "Alabama Freedom Fund",
             "Alaskans for Dan Sullivan",
@@ -24183,6 +24198,7 @@
             "snap-702709b3d2e6e358aea537bd",
             "snap-8c4ffe8aac03cfc488d95b51",
             "acc-aptv-47600-0",
+            "dakota-star-print-smith-0cf45653a7b79a4f-p2",
             "ngb-aptv-47600-0",
             "nrsc-17881-0",
             "snap-2dcf1494221a3ec948227a48",
@@ -24195,7 +24211,7 @@
             "herrera-jezebel-18261610-0",
             "mackenzie-brownwhite-138743-0"
           ],
-          "records": 621
+          "records": 622
         }
       },
       "issues": [
@@ -24228,8 +24244,8 @@
               "nrsc-15285-0"
             ],
             "count": 2,
-            "share": 0.003424657534246575,
-            "total": 584
+            "share": 0.003418803418803419,
+            "total": 585
           },
           "label": "Abortion & reproductive rights"
         },
@@ -24831,8 +24847,8 @@
               "rogers-6ae0ac2f4af67c5c39abe46b-0"
             ],
             "count": 121,
-            "share": 0.2071917808219178,
-            "total": 584
+            "share": 0.20683760683760682,
+            "total": 585
           },
           "label": "Cost of living"
         },
@@ -24939,8 +24955,8 @@
               "snap-8e14ae6417ccc0b2d99f116e"
             ],
             "count": 65,
-            "share": 0.1113013698630137,
-            "total": 584
+            "share": 0.1111111111111111,
+            "total": 585
           },
           "label": "Crime & policing"
         },
@@ -25087,8 +25103,8 @@
               "dms-images-carey-c8986cf1a15c1dbf"
             ],
             "count": 16,
-            "share": 0.0273972602739726,
-            "total": 584
+            "share": 0.02735042735042735,
+            "total": 585
           },
           "label": "Democracy & accountability"
         },
@@ -25346,8 +25362,8 @@
               "rogers-6ae0ac2f4af67c5c39abe46b-0"
             ],
             "count": 42,
-            "share": 0.07191780821917808,
-            "total": 584
+            "share": 0.07179487179487179,
+            "total": 585
           },
           "label": "Energy & environment"
         },
@@ -25748,8 +25764,8 @@
               "mackenzie-brownwhite-138743-0"
             ],
             "count": 72,
-            "share": 0.1232876712328767,
-            "total": 584
+            "share": 0.12307692307692308,
+            "total": 585
           },
           "label": "Healthcare"
         },
@@ -25874,11 +25890,12 @@
               "snap-c4129a46bacee6e2de9b6e9c",
               "dms-images-leonard-5b761bcb7f558537",
               "snap-8c4ffe8aac03cfc488d95b51",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2",
               "herrera-jezebel-18261610-0"
             ],
-            "count": 93,
-            "share": 0.15924657534246575,
-            "total": 584
+            "count": 94,
+            "share": 0.1606837606837607,
+            "total": 585
           },
           "label": "Immigration"
         },
@@ -26180,11 +26197,12 @@
               "rogers-6acd08220f7cad7d1a84f0a5-0",
               "bresnahan-native-122244548030111841",
               "slf-media-1360-7leONV43yaE",
-              "slf-media-1390-KtoSfGJVa-E"
+              "slf-media-1390-KtoSfGJVa-E",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2"
             ],
-            "count": 54,
-            "share": 0.09246575342465753,
-            "total": 584
+            "count": 55,
+            "share": 0.09401709401709402,
+            "total": 585
           },
           "label": "Jobs & the economy"
         },
@@ -26652,11 +26670,12 @@
               "slf-media-1396-hDRwr_wUKC0",
               "google-CR13969552834442559489-afe6a73f23b8",
               "rogers-6ae0ac2f4af67c5c39abe46b-0",
-              "snap-40f88e4dd45c781bb4649736"
+              "snap-40f88e4dd45c781bb4649736",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2"
             ],
-            "count": 188,
-            "share": 0.3219178082191781,
-            "total": 584
+            "count": 189,
+            "share": 0.3230769230769231,
+            "total": 585
           },
           "label": "Taxes & spending"
         },
@@ -26875,8 +26894,8 @@
               "grothman-b574d494ebff6312-0"
             ],
             "count": 85,
-            "share": 0.14554794520547945,
-            "total": 584
+            "share": 0.1452991452991453,
+            "total": 585
           },
           "label": "War & foreign policy"
         }
@@ -26942,8 +26961,8 @@
               "nrsc-17586-0"
             ],
             "count": 15,
-            "share": 0.025684931506849314,
-            "total": 584
+            "share": 0.02564102564102564,
+            "total": 585
           },
           "label": "Competence & record"
         },
@@ -27021,8 +27040,8 @@
               "snap-2dcf1494221a3ec948227a48"
             ],
             "count": 56,
-            "share": 0.0958904109589041,
-            "total": 584
+            "share": 0.09572649572649573,
+            "total": 585
           },
           "label": "Extreme / radical"
         },
@@ -27048,8 +27067,8 @@
               "millermeeks-iowagop-10964-0"
             ],
             "count": 2,
-            "share": 0.003424657534246575,
-            "total": 584
+            "share": 0.003418803418803419,
+            "total": 585
           },
           "label": "Out of touch"
         },
@@ -27116,8 +27135,8 @@
               "snap-8c5f2b700510387ef85ea2f5"
             ],
             "count": 27,
-            "share": 0.046232876712328765,
-            "total": 584
+            "share": 0.046153846153846156,
+            "total": 585
           },
           "label": "Safety & threat"
         },
@@ -27394,8 +27413,8 @@
               "nrsc-17816-0"
             ],
             "count": 34,
-            "share": 0.05821917808219178,
-            "total": 584
+            "share": 0.05811965811965812,
+            "total": 585
           },
           "label": "Special interests"
         },
@@ -27576,8 +27595,8 @@
               "dms-images-carey-c8986cf1a15c1dbf"
             ],
             "count": 42,
-            "share": 0.07191780821917808,
-            "total": 584
+            "share": 0.07179487179487179,
+            "total": 585
           },
           "label": "Trust & integrity"
         }
@@ -27716,13 +27735,15 @@
               "ngb-perry-breitbart-20261027-0",
               "nrcc-cardinalpine-barn-dance-20261027-0",
               "acc-aptv-47600-0",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2",
               "ngb-aptv-47600-0",
               "herrera-jezebel-18261610-0",
               "mackenzie-brownwhite-138743-0"
             ],
-            "messages": 69,
+            "messages": 70,
             "publishers": [
               "Aaron Flint for Montana",
+              "Adrian Smith for Congress",
               "Alabama Christian Conservatives",
               "Alexandra del Moral Mealer for Congress",
               "American Action Network (publisher-attributed; payer unverified)",
@@ -27840,11 +27861,12 @@
               "ngb-perry-breitbart-20261027-0",
               "nrcc-cardinalpine-barn-dance-20261027-0",
               "acc-aptv-47600-0",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2",
               "ngb-aptv-47600-0",
               "herrera-jezebel-18261610-0",
               "mackenzie-brownwhite-138743-0"
             ],
-            "records": 69
+            "records": 70
           }
         },
         "issues": [
@@ -27862,7 +27884,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 69
+              "total": 70
             },
             "label": "Abortion & reproductive rights"
           },
@@ -27906,8 +27928,8 @@
                 "mealer-archive-pushcard-fc57428c8c86585f"
               ],
               "count": 12,
-              "share": 0.17391304347826086,
-              "total": 69
+              "share": 0.17142857142857143,
+              "total": 70
             },
             "label": "Cost of living"
           },
@@ -27931,8 +27953,8 @@
                 "perry-capitalstar-70025-0"
               ],
               "count": 5,
-              "share": 0.07246376811594203,
-              "total": 69
+              "share": 0.07142857142857142,
+              "total": 70
             },
             "label": "Crime & policing"
           },
@@ -27955,8 +27977,8 @@
                 "conroy-1243-0"
               ],
               "count": 2,
-              "share": 0.028985507246376812,
-              "total": 69
+              "share": 0.02857142857142857,
+              "total": 70
             },
             "label": "Democracy & accountability"
           },
@@ -27986,8 +28008,8 @@
                 "nrcc-nevada-globe-20261020-0"
               ],
               "count": 7,
-              "share": 0.10144927536231885,
-              "total": 69
+              "share": 0.1,
+              "total": 70
             },
             "label": "Energy & environment"
           },
@@ -28029,8 +28051,8 @@
                 "mackenzie-brownwhite-138743-0"
               ],
               "count": 16,
-              "share": 0.2318840579710145,
-              "total": 69
+              "share": 0.22857142857142856,
+              "total": 70
             },
             "label": "Healthcare"
           },
@@ -28055,11 +28077,12 @@
                 "salazar-1273-0",
                 "lepage-mediaite-immigration-20260924-0",
                 "flint-2131-0",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2",
                 "herrera-jezebel-18261610-0"
               ],
-              "count": 8,
-              "share": 0.11594202898550725,
-              "total": 69
+              "count": 9,
+              "share": 0.12857142857142856,
+              "total": 70
             },
             "label": "Immigration"
           },
@@ -28076,11 +28099,12 @@
                 "flint-2038-0",
                 "flint-2043-0",
                 "cunningham-americanjournal-barbershop-20261009-0",
-                "mealer-archive-pushcard-fc57428c8c86585f"
+                "mealer-archive-pushcard-fc57428c8c86585f",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 5,
-              "share": 0.07246376811594203,
-              "total": 69
+              "count": 6,
+              "share": 0.08571428571428572,
+              "total": 70
             },
             "label": "Jobs & the economy"
           },
@@ -28122,11 +28146,12 @@
                 "mealer-archive-pushcard-fc57428c8c86585f",
                 "nrcc-nevada-globe-20261020-0",
                 "flint-2146-0",
-                "nj-gop-globe-170546-0"
+                "nj-gop-globe-170546-0",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 20,
-              "share": 0.2898550724637681,
-              "total": 69
+              "count": 21,
+              "share": 0.3,
+              "total": 70
             },
             "label": "Taxes & spending"
           },
@@ -28155,8 +28180,8 @@
                 "hinson-825-0"
               ],
               "count": 6,
-              "share": 0.08695652173913043,
-              "total": 69
+              "share": 0.08571428571428572,
+              "total": 70
             },
             "label": "War & foreign policy"
           }
@@ -28176,7 +28201,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 69
+              "total": 70
             },
             "label": "Competence & record"
           },
@@ -28197,8 +28222,8 @@
                 "ngb-aptv-47600-0"
               ],
               "count": 6,
-              "share": 0.08695652173913043,
-              "total": 69
+              "share": 0.08571428571428572,
+              "total": 70
             },
             "label": "Extreme / radical"
           },
@@ -28215,7 +28240,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 69
+              "total": 70
             },
             "label": "Out of touch"
           },
@@ -28231,8 +28256,8 @@
                 "nrcc-townhall-nrcc-shah-20260722-0"
               ],
               "count": 1,
-              "share": 0.014492753623188406,
-              "total": 69
+              "share": 0.014285714285714285,
+              "total": 70
             },
             "label": "Safety & threat"
           },
@@ -28259,8 +28284,8 @@
                 "flint-2146-0"
               ],
               "count": 9,
-              "share": 0.13043478260869565,
-              "total": 69
+              "share": 0.12857142857142856,
+              "total": 70
             },
             "label": "Special interests"
           },
@@ -28285,8 +28310,8 @@
                 "hinson-823-0"
               ],
               "count": 5,
-              "share": 0.07246376811594203,
-              "total": 69
+              "share": 0.07142857142857142,
+              "total": 70
             },
             "label": "Trust & integrity"
           }
@@ -39528,10 +39553,12 @@
             "message_ad_ids": [
               "tcr-print-cahill-c1f3c82f2a6983c9-p3",
               "tcr-print-cain-18fb049803ad2c57-p5",
-              "tcr-print-dezevallos-18fb049803ad2c57-p6"
+              "tcr-print-dezevallos-18fb049803ad2c57-p6",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2"
             ],
-            "messages": 3,
+            "messages": 4,
             "publishers": [
+              "Adrian Smith for Congress",
               "Briscoe Cain for Congress",
               "Cahill Victory Fund",
               "Shelly for Congress"
@@ -39539,9 +39566,10 @@
             "record_ad_ids": [
               "tcr-print-cahill-c1f3c82f2a6983c9-p3",
               "tcr-print-cain-18fb049803ad2c57-p5",
-              "tcr-print-dezevallos-18fb049803ad2c57-p6"
+              "tcr-print-dezevallos-18fb049803ad2c57-p6",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2"
             ],
-            "records": 3
+            "records": 4
           }
         },
         "issues": [
@@ -39556,7 +39584,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 3
+              "total": 4
             },
             "label": "Abortion & reproductive rights"
           },
@@ -39571,7 +39599,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 3
+              "total": 4
             },
             "label": "Cost of living"
           },
@@ -39586,7 +39614,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 3
+              "total": 4
             },
             "label": "Crime & policing"
           },
@@ -39601,7 +39629,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 3
+              "total": 4
             },
             "label": "Democracy & accountability"
           },
@@ -39616,7 +39644,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 3
+              "total": 4
             },
             "label": "Energy & environment"
           },
@@ -39631,7 +39659,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 3
+              "total": 4
             },
             "label": "Healthcare"
           },
@@ -39645,11 +39673,12 @@
             "R": {
               "ad_ids": [
                 "tcr-print-cahill-c1f3c82f2a6983c9-p3",
-                "tcr-print-dezevallos-18fb049803ad2c57-p6"
+                "tcr-print-dezevallos-18fb049803ad2c57-p6",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 2,
-              "share": 0.6666666666666666,
-              "total": 3
+              "count": 3,
+              "share": 0.75,
+              "total": 4
             },
             "label": "Immigration"
           },
@@ -39661,10 +39690,12 @@
               "total": 0
             },
             "R": {
-              "ad_ids": [],
-              "count": 0,
-              "share": 0.0,
-              "total": 3
+              "ad_ids": [
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
+              ],
+              "count": 1,
+              "share": 0.25,
+              "total": 4
             },
             "label": "Jobs & the economy"
           },
@@ -39676,10 +39707,12 @@
               "total": 0
             },
             "R": {
-              "ad_ids": [],
-              "count": 0,
-              "share": 0.0,
-              "total": 3
+              "ad_ids": [
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
+              ],
+              "count": 1,
+              "share": 0.25,
+              "total": 4
             },
             "label": "Taxes & spending"
           },
@@ -39695,8 +39728,8 @@
                 "tcr-print-cain-18fb049803ad2c57-p5"
               ],
               "count": 1,
-              "share": 0.3333333333333333,
-              "total": 3
+              "share": 0.25,
+              "total": 4
             },
             "label": "War & foreign policy"
           }
@@ -39713,7 +39746,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 3
+              "total": 4
             },
             "label": "Competence & record"
           },
@@ -39729,8 +39762,8 @@
                 "tcr-print-dezevallos-18fb049803ad2c57-p6"
               ],
               "count": 1,
-              "share": 0.3333333333333333,
-              "total": 3
+              "share": 0.25,
+              "total": 4
             },
             "label": "Extreme / radical"
           },
@@ -39745,7 +39778,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 3
+              "total": 4
             },
             "label": "Out of touch"
           },
@@ -39760,7 +39793,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 3
+              "total": 4
             },
             "label": "Safety & threat"
           },
@@ -39775,7 +39808,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 3
+              "total": 4
             },
             "label": "Special interests"
           },
@@ -39790,7 +39823,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 3
+              "total": 4
             },
             "label": "Trust & integrity"
           }
@@ -72011,6 +72044,280 @@
           }
         ]
       },
+      "NE-03": {
+        "coverage": {
+          "D": {
+            "message_ad_ids": [],
+            "messages": 0,
+            "publishers": [],
+            "record_ad_ids": [],
+            "records": 0
+          },
+          "R": {
+            "message_ad_ids": [
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2"
+            ],
+            "messages": 1,
+            "publishers": [
+              "Adrian Smith for Congress"
+            ],
+            "record_ad_ids": [
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2"
+            ],
+            "records": 1
+          }
+        },
+        "issues": [
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Abortion & reproductive rights"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Cost of living"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Crime & policing"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Democracy & accountability"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Energy & environment"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Healthcare"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
+              ],
+              "count": 1,
+              "share": 1.0,
+              "total": 1
+            },
+            "label": "Immigration"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
+              ],
+              "count": 1,
+              "share": 1.0,
+              "total": 1
+            },
+            "label": "Jobs & the economy"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
+              ],
+              "count": 1,
+              "share": 1.0,
+              "total": 1
+            },
+            "label": "Taxes & spending"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "War & foreign policy"
+          }
+        ],
+        "portrayals": [
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Competence & record"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Extreme / radical"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Out of touch"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Safety & threat"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Special interests"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Trust & integrity"
+          }
+        ]
+      },
       "NE-Senate": {
         "coverage": {
           "D": {
@@ -97534,10 +97841,12 @@
               "mealer-archive-intro-251727c2f67db28e",
               "mealer-archive-pushcard-fc57428c8c86585f",
               "mealer-archive-results-b0b65cc582704337",
-              "mealer-archive-shewins-f4365cea0dff558f"
+              "mealer-archive-shewins-f4365cea0dff558f",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2"
             ],
-            "messages": 8,
+            "messages": 9,
             "publishers": [
+              "Adrian Smith for Congress",
               "Alexandra del Moral Mealer for Congress",
               "Briscoe Cain for Congress",
               "NRCC",
@@ -97551,9 +97860,10 @@
               "mealer-archive-intro-251727c2f67db28e",
               "mealer-archive-pushcard-fc57428c8c86585f",
               "mealer-archive-results-b0b65cc582704337",
-              "mealer-archive-shewins-f4365cea0dff558f"
+              "mealer-archive-shewins-f4365cea0dff558f",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2"
             ],
-            "records": 8
+            "records": 9
           }
         },
         "issues": [
@@ -97568,7 +97878,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 8
+              "total": 9
             },
             "label": "Abortion & reproductive rights"
           },
@@ -97588,8 +97898,8 @@
                 "mealer-archive-shewins-f4365cea0dff558f"
               ],
               "count": 5,
-              "share": 0.625,
-              "total": 8
+              "share": 0.5555555555555556,
+              "total": 9
             },
             "label": "Cost of living"
           },
@@ -97604,7 +97914,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 8
+              "total": 9
             },
             "label": "Crime & policing"
           },
@@ -97621,8 +97931,8 @@
                 "mealer-archive-results-b0b65cc582704337"
               ],
               "count": 2,
-              "share": 0.25,
-              "total": 8
+              "share": 0.2222222222222222,
+              "total": 9
             },
             "label": "Democracy & accountability"
           },
@@ -97642,8 +97952,8 @@
                 "mealer-archive-shewins-f4365cea0dff558f"
               ],
               "count": 5,
-              "share": 0.625,
-              "total": 8
+              "share": 0.5555555555555556,
+              "total": 9
             },
             "label": "Energy & environment"
           },
@@ -97658,7 +97968,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 8
+              "total": 9
             },
             "label": "Healthcare"
           },
@@ -97671,11 +97981,12 @@
             },
             "R": {
               "ad_ids": [
-                "tcr-print-dezevallos-18fb049803ad2c57-p6"
+                "tcr-print-dezevallos-18fb049803ad2c57-p6",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 1,
-              "share": 0.125,
-              "total": 8
+              "count": 2,
+              "share": 0.2222222222222222,
+              "total": 9
             },
             "label": "Immigration"
           },
@@ -97693,11 +98004,12 @@
                 "mealer-archive-intro-251727c2f67db28e",
                 "mealer-archive-pushcard-fc57428c8c86585f",
                 "mealer-archive-results-b0b65cc582704337",
-                "mealer-archive-shewins-f4365cea0dff558f"
+                "mealer-archive-shewins-f4365cea0dff558f",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 6,
-              "share": 0.75,
-              "total": 8
+              "count": 7,
+              "share": 0.7777777777777778,
+              "total": 9
             },
             "label": "Jobs & the economy"
           },
@@ -97713,11 +98025,12 @@
                 "mealer-archive-corrupt-cc1c38141537f34a",
                 "mealer-archive-intro-251727c2f67db28e",
                 "mealer-archive-pushcard-fc57428c8c86585f",
-                "mealer-archive-results-b0b65cc582704337"
+                "mealer-archive-results-b0b65cc582704337",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 4,
-              "share": 0.5,
-              "total": 8
+              "count": 5,
+              "share": 0.5555555555555556,
+              "total": 9
             },
             "label": "Taxes & spending"
           },
@@ -97735,8 +98048,8 @@
                 "mealer-archive-pushcard-fc57428c8c86585f"
               ],
               "count": 3,
-              "share": 0.375,
-              "total": 8
+              "share": 0.3333333333333333,
+              "total": 9
             },
             "label": "War & foreign policy"
           }
@@ -97753,7 +98066,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 8
+              "total": 9
             },
             "label": "Competence & record"
           },
@@ -97771,8 +98084,8 @@
                 "mealer-archive-shewins-f4365cea0dff558f"
               ],
               "count": 3,
-              "share": 0.375,
-              "total": 8
+              "share": 0.3333333333333333,
+              "total": 9
             },
             "label": "Extreme / radical"
           },
@@ -97787,7 +98100,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 8
+              "total": 9
             },
             "label": "Out of touch"
           },
@@ -97802,7 +98115,7 @@
               "ad_ids": [],
               "count": 0,
               "share": 0.0,
-              "total": 8
+              "total": 9
             },
             "label": "Safety & threat"
           },
@@ -97820,8 +98133,8 @@
                 "mealer-archive-shewins-f4365cea0dff558f"
               ],
               "count": 3,
-              "share": 0.375,
-              "total": 8
+              "share": 0.3333333333333333,
+              "total": 9
             },
             "label": "Special interests"
           },
@@ -97838,8 +98151,8 @@
                 "mealer-archive-results-b0b65cc582704337"
               ],
               "count": 2,
-              "share": 0.25,
-              "total": 8
+              "share": 0.2222222222222222,
+              "total": 9
             },
             "label": "Trust & integrity"
           }
@@ -107422,6 +107735,7 @@
               "nrsc-17816-0",
               "rogers-6ae0ac2f4af67c5c39abe46b-0",
               "acc-aptv-47600-0",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2",
               "ngb-aptv-47600-0",
               "nrsc-17881-0",
               "snap-914a11bf94d6885562dbca74",
@@ -107429,10 +107743,11 @@
               "herrera-jezebel-18261610-0",
               "mackenzie-brownwhite-138743-0"
             ],
-            "messages": 426,
+            "messages": 427,
             "publishers": [
               "ANN WAGNER FOR CONGRESS",
               "Aaron Flint for Montana",
+              "Adrian Smith for Congress",
               "Alabama Christian Conservatives",
               "Alabama Freedom Fund",
               "Alaskans for Dan Sullivan",
@@ -108003,6 +108318,7 @@
               "nrsc-17816-0",
               "rogers-6ae0ac2f4af67c5c39abe46b-0",
               "acc-aptv-47600-0",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2",
               "ngb-aptv-47600-0",
               "nrsc-17881-0",
               "snap-914a11bf94d6885562dbca74",
@@ -108010,7 +108326,7 @@
               "herrera-jezebel-18261610-0",
               "mackenzie-brownwhite-138743-0"
             ],
-            "records": 455
+            "records": 456
           }
         },
         "issues": [
@@ -108043,8 +108359,8 @@
                 "nrsc-15285-0"
               ],
               "count": 2,
-              "share": 0.004694835680751174,
-              "total": 426
+              "share": 0.00468384074941452,
+              "total": 427
             },
             "label": "Abortion & reproductive rights"
           },
@@ -108564,8 +108880,8 @@
                 "rogers-6ae0ac2f4af67c5c39abe46b-0"
               ],
               "count": 115,
-              "share": 0.2699530516431925,
-              "total": 426
+              "share": 0.2693208430913349,
+              "total": 427
             },
             "label": "Cost of living"
           },
@@ -108649,8 +108965,8 @@
                 "perry-capitalstar-70025-0"
               ],
               "count": 42,
-              "share": 0.09859154929577464,
-              "total": 426
+              "share": 0.09836065573770492,
+              "total": 427
             },
             "label": "Crime & policing"
           },
@@ -108792,8 +109108,8 @@
                 "dms-images-carey-c8986cf1a15c1dbf"
               ],
               "count": 11,
-              "share": 0.025821596244131457,
-              "total": 426
+              "share": 0.02576112412177986,
+              "total": 427
             },
             "label": "Democracy & accountability"
           },
@@ -109040,8 +109356,8 @@
                 "rogers-6ae0ac2f4af67c5c39abe46b-0"
               ],
               "count": 32,
-              "share": 0.07511737089201878,
-              "total": 426
+              "share": 0.07494145199063232,
+              "total": 427
             },
             "label": "Energy & environment"
           },
@@ -109375,8 +109691,8 @@
                 "mackenzie-brownwhite-138743-0"
               ],
               "count": 60,
-              "share": 0.14084507042253522,
-              "total": 426
+              "share": 0.1405152224824356,
+              "total": 427
             },
             "label": "Healthcare"
           },
@@ -109469,11 +109785,12 @@
                 "lawler-1429-0",
                 "barr-2062-0",
                 "dms-images-leonard-5b761bcb7f558537",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2",
                 "herrera-jezebel-18261610-0"
               ],
-              "count": 61,
-              "share": 0.1431924882629108,
-              "total": 426
+              "count": 62,
+              "share": 0.1451990632318501,
+              "total": 427
             },
             "label": "Immigration"
           },
@@ -109619,11 +109936,12 @@
                 "mealer-archive-results-b0b65cc582704337",
                 "mealer-archive-shewins-f4365cea0dff558f",
                 "rogers-6acd08220f7cad7d1a84f0a5-0",
-                "bresnahan-native-122244548030111841"
+                "bresnahan-native-122244548030111841",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 52,
-              "share": 0.12206572769953052,
-              "total": 426
+              "count": 53,
+              "share": 0.12412177985948478,
+              "total": 427
             },
             "label": "Jobs & the economy"
           },
@@ -110015,11 +110333,12 @@
                 "dms-images-carey-c8986cf1a15c1dbf",
                 "dms-images-leonard-5b761bcb7f558537",
                 "google-CR13969552834442559489-afe6a73f23b8",
-                "rogers-6ae0ac2f4af67c5c39abe46b-0"
+                "rogers-6ae0ac2f4af67c5c39abe46b-0",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 150,
-              "share": 0.352112676056338,
-              "total": 426
+              "count": 151,
+              "share": 0.35362997658079626,
+              "total": 427
             },
             "label": "Taxes & spending"
           },
@@ -110228,8 +110547,8 @@
                 "grothman-b574d494ebff6312-0"
               ],
               "count": 76,
-              "share": 0.1784037558685446,
-              "total": 426
+              "share": 0.17798594847775176,
+              "total": 427
             },
             "label": "War & foreign policy"
           }
@@ -110291,8 +110610,8 @@
                 "nrsc-17586-0"
               ],
               "count": 11,
-              "share": 0.025821596244131457,
-              "total": 426
+              "share": 0.02576112412177986,
+              "total": 427
             },
             "label": "Competence & record"
           },
@@ -110349,8 +110668,8 @@
                 "ngb-aptv-47600-0"
               ],
               "count": 35,
-              "share": 0.08215962441314555,
-              "total": 426
+              "share": 0.08196721311475409,
+              "total": 427
             },
             "label": "Extreme / radical"
           },
@@ -110376,8 +110695,8 @@
                 "millermeeks-iowagop-10964-0"
               ],
               "count": 2,
-              "share": 0.004694835680751174,
-              "total": 426
+              "share": 0.00468384074941452,
+              "total": 427
             },
             "label": "Out of touch"
           },
@@ -110440,8 +110759,8 @@
                 "rogers-6abfceafba230905e3202068-0"
               ],
               "count": 23,
-              "share": 0.0539906103286385,
-              "total": 426
+              "share": 0.053864168618266976,
+              "total": 427
             },
             "label": "Safety & threat"
           },
@@ -110586,8 +110905,8 @@
                 "nrsc-17816-0"
               ],
               "count": 25,
-              "share": 0.05868544600938967,
-              "total": 426
+              "share": 0.0585480093676815,
+              "total": 427
             },
             "label": "Special interests"
           },
@@ -110753,8 +111072,8 @@
                 "dms-images-carey-c8986cf1a15c1dbf"
               ],
               "count": 30,
-              "share": 0.07042253521126761,
-              "total": 426
+              "share": 0.0702576112412178,
+              "total": 427
             },
             "label": "Trust & integrity"
           }
@@ -114323,6 +114642,280 @@
               "count": 0,
               "share": null,
               "total": 0
+            },
+            "label": "Trust & integrity"
+          }
+        ]
+      },
+      "Adrian Smith for Congress": {
+        "coverage": {
+          "D": {
+            "message_ad_ids": [],
+            "messages": 0,
+            "publishers": [],
+            "record_ad_ids": [],
+            "records": 0
+          },
+          "R": {
+            "message_ad_ids": [
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2"
+            ],
+            "messages": 1,
+            "publishers": [
+              "Adrian Smith for Congress"
+            ],
+            "record_ad_ids": [
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2"
+            ],
+            "records": 1
+          }
+        },
+        "issues": [
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Abortion & reproductive rights"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Cost of living"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Crime & policing"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Democracy & accountability"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Energy & environment"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Healthcare"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
+              ],
+              "count": 1,
+              "share": 1.0,
+              "total": 1
+            },
+            "label": "Immigration"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
+              ],
+              "count": 1,
+              "share": 1.0,
+              "total": 1
+            },
+            "label": "Jobs & the economy"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
+              ],
+              "count": 1,
+              "share": 1.0,
+              "total": 1
+            },
+            "label": "Taxes & spending"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "War & foreign policy"
+          }
+        ],
+        "portrayals": [
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Competence & record"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Extreme / radical"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Out of touch"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Safety & threat"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
+            },
+            "label": "Special interests"
+          },
+          {
+            "D": {
+              "ad_ids": [],
+              "count": 0,
+              "share": null,
+              "total": 0
+            },
+            "R": {
+              "ad_ids": [],
+              "count": 0,
+              "share": 0.0,
+              "total": 1
             },
             "label": "Trust & integrity"
           }
@@ -173759,14 +174352,16 @@
               "bresnahan-native-122245613072111841",
               "bresnahan-native-122245820438111841",
               "rogers-6ae0ac2f4af67c5c39abe46b-0",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2",
               "snap-914a11bf94d6885562dbca74",
               "snap-9e1b24b86d56bd153e8ba6c1",
               "herrera-jezebel-18261610-0"
             ],
-            "messages": 202,
+            "messages": 203,
             "publishers": [
               "ANN WAGNER FOR CONGRESS",
               "Aaron Flint for Montana",
+              "Adrian Smith for Congress",
               "Alaskans for Dan Sullivan",
               "Alexandra del Moral Mealer for Congress",
               "Andy Barr for Senate",
@@ -174049,11 +174644,12 @@
               "bresnahan-native-122245613072111841",
               "bresnahan-native-122245820438111841",
               "rogers-6ae0ac2f4af67c5c39abe46b-0",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2",
               "snap-914a11bf94d6885562dbca74",
               "snap-9e1b24b86d56bd153e8ba6c1",
               "herrera-jezebel-18261610-0"
             ],
-            "records": 202
+            "records": 203
           }
         },
         "issues": [
@@ -174078,8 +174674,8 @@
                 "google-CR08530377173859565569-5dd2a6b32f43"
               ],
               "count": 1,
-              "share": 0.0049504950495049506,
-              "total": 202
+              "share": 0.0049261083743842365,
+              "total": 203
             },
             "label": "Abortion & reproductive rights"
           },
@@ -174224,8 +174820,8 @@
                 "rogers-6ae0ac2f4af67c5c39abe46b-0"
               ],
               "count": 41,
-              "share": 0.20297029702970298,
-              "total": 202
+              "share": 0.2019704433497537,
+              "total": 203
             },
             "label": "Cost of living"
           },
@@ -174272,8 +174868,8 @@
                 "perry-capitalstar-70025-0"
               ],
               "count": 20,
-              "share": 0.09900990099009901,
-              "total": 202
+              "share": 0.09852216748768473,
+              "total": 203
             },
             "label": "Crime & policing"
           },
@@ -174344,8 +174940,8 @@
                 "mealer-archive-results-b0b65cc582704337"
               ],
               "count": 8,
-              "share": 0.039603960396039604,
-              "total": 202
+              "share": 0.03940886699507389,
+              "total": 203
             },
             "label": "Democracy & accountability"
           },
@@ -174429,8 +175025,8 @@
                 "rogers-6ae0ac2f4af67c5c39abe46b-0"
               ],
               "count": 19,
-              "share": 0.09405940594059406,
-              "total": 202
+              "share": 0.09359605911330049,
+              "total": 203
             },
             "label": "Energy & environment"
           },
@@ -174530,8 +175126,8 @@
                 "kean-globe-170486-0"
               ],
               "count": 28,
-              "share": 0.13861386138613863,
-              "total": 202
+              "share": 0.13793103448275862,
+              "total": 203
             },
             "label": "Healthcare"
           },
@@ -174574,11 +175170,12 @@
                 "flint-2131-0",
                 "lawler-1429-0",
                 "barr-2062-0",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2",
                 "herrera-jezebel-18261610-0"
               ],
-              "count": 23,
-              "share": 0.11386138613861387,
-              "total": 202
+              "count": 24,
+              "share": 0.11822660098522167,
+              "total": 203
             },
             "label": "Immigration"
           },
@@ -174626,11 +175223,12 @@
                 "mealer-archive-pushcard-fc57428c8c86585f",
                 "mealer-archive-results-b0b65cc582704337",
                 "rogers-6acd08220f7cad7d1a84f0a5-0",
-                "bresnahan-native-122244548030111841"
+                "bresnahan-native-122244548030111841",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 20,
-              "share": 0.09900990099009901,
-              "total": 202
+              "count": 21,
+              "share": 0.10344827586206896,
+              "total": 203
             },
             "label": "Jobs & the economy"
           },
@@ -174731,11 +175329,12 @@
                 "lawler-1471-0",
                 "flint-2146-0",
                 "bresnahan-native-122245613072111841",
-                "rogers-6ae0ac2f4af67c5c39abe46b-0"
+                "rogers-6ae0ac2f4af67c5c39abe46b-0",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2"
               ],
-              "count": 39,
-              "share": 0.19306930693069307,
-              "total": 202
+              "count": 40,
+              "share": 0.19704433497536947,
+              "total": 203
             },
             "label": "Taxes & spending"
           },
@@ -174808,8 +175407,8 @@
                 "grothman-b574d494ebff6312-0"
               ],
               "count": 20,
-              "share": 0.09900990099009901,
-              "total": 202
+              "share": 0.09852216748768473,
+              "total": 203
             },
             "label": "War & foreign policy"
           }
@@ -174848,8 +175447,8 @@
                 "rogers-6a6a2d498faab207bc50772b-0"
               ],
               "count": 3,
-              "share": 0.01485148514851485,
-              "total": 202
+              "share": 0.014778325123152709,
+              "total": 203
             },
             "label": "Competence & record"
           },
@@ -174880,8 +175479,8 @@
                 "flint-2146-0"
               ],
               "count": 13,
-              "share": 0.06435643564356436,
-              "total": 202
+              "share": 0.06403940886699508,
+              "total": 203
             },
             "label": "Extreme / radical"
           },
@@ -174897,8 +175496,8 @@
                 "millermeeks-iowagop-10964-0"
               ],
               "count": 1,
-              "share": 0.0049504950495049506,
-              "total": 202
+              "share": 0.0049261083743842365,
+              "total": 203
             },
             "label": "Out of touch"
           },
@@ -174918,8 +175517,8 @@
                 "rogers-6abfceafba230905e3202068-0"
               ],
               "count": 3,
-              "share": 0.01485148514851485,
-              "total": 202
+              "share": 0.014778325123152709,
+              "total": 203
             },
             "label": "Safety & threat"
           },
@@ -174972,8 +175571,8 @@
                 "flint-2146-0"
               ],
               "count": 11,
-              "share": 0.054455445544554455,
-              "total": 202
+              "share": 0.054187192118226604,
+              "total": 203
             },
             "label": "Special interests"
           },
@@ -175046,8 +175645,8 @@
                 "marshall-f57ec8d2874d6b9c-0"
               ],
               "count": 17,
-              "share": 0.08415841584158416,
-              "total": 202
+              "share": 0.08374384236453201,
+              "total": 203
             },
             "label": "Trust & integrity"
           }
@@ -2361778,6 +2362377,172 @@
         "title": "Ad spending tops $11M in Alabama's fiercest congressional race"
       },
       {
+        "alignment": "R",
+        "attribution_basis": "Publisher-linked original with individually reviewed payer evidence; FEC H6NE03115, REP, principal committee C00412890. Primary publisher: https://zeta.creativecirclecdn.com/dcs/files/20261028-051448-c72-102926%20DC%20Star%20.pdf",
+        "candidate_mentions": [
+          {
+            "candidate_id": "H6NE03115",
+            "district": "03",
+            "name": "SMITH, ADRIAN",
+            "office": "H",
+            "party": "REP",
+            "state": "NE"
+          }
+        ],
+        "chamber": "House",
+        "date_basis": "publisher_pdf_issue_date",
+        "delivery_end": null,
+        "delivery_start": null,
+        "id": "dakota-star-print-smith-0cf45653a7b79a4f-p2",
+        "issues": [
+          {
+            "end": 13,
+            "label": "Taxes & spending",
+            "start": 8,
+            "text": "Taxes"
+          },
+          {
+            "end": 52,
+            "label": "Jobs & the economy",
+            "start": 38,
+            "text": "Small Business"
+          },
+          {
+            "end": 72,
+            "label": "Immigration",
+            "start": 66,
+            "text": "Border"
+          },
+          {
+            "end": 103,
+            "label": "Immigration",
+            "start": 92,
+            "text": "Immigration"
+          }
+        ],
+        "language": "en",
+        "language_basis": "Publisher PDF text layer plus seeded language detection",
+        "media_urls": [
+          "https://zeta.creativecirclecdn.com/dcs/files/20261028-051448-c72-102926%20DC%20Star%20.pdf#page=2"
+        ],
+        "message_id": "f9ccf42721d3ba0b7baf2ae95b8567a9809eba00fe3b13f4dcd0e88eb8832cd9",
+        "observed": "2026-10-31",
+        "phase": "general",
+        "placement": "publisher_print_ad_pdf",
+        "portrayal_markers": [],
+        "portrayal_review": {
+          "descriptions": [],
+          "reason": "Not yet context-reviewed",
+          "status": "unreviewed"
+        },
+        "published": "2026-10-29",
+        "quality_flags": [
+          "printed_ad_eligibility_and_payer_visually_reviewed",
+          "pdf_text_layer_not_verified_complete_visible_transcription",
+          "pdf_reading_order_and_repeated_design_words_unverified",
+          "rasterized_words_may_be_missing_from_text_layer",
+          "publisher_pdf_issue_date_not_verified_first_release_or_paid_delivery",
+          "selected_pdf_words_visually_reviewed",
+          "partial_ad_text_not_full_script"
+        ],
+        "race": "NE-03",
+        "release_title": "",
+        "schema_version": "1",
+        "segments": [
+          {
+            "completeness": "partial_quotation",
+            "kind": "publisher_pdf_text_layer",
+            "native_campaign_evidence": {
+              "ad_evidence": "The retained original's complete page 2 (printed 2A) and bounded lower-right creative were rendered and visually inspected. One distinct campaign-paid federal advertisement, not the adjacent mayoral interviews, municipal campaign ads, judicial-retention appeal, masthead or sample ballots. Both selected claims visibly belong to the Adrian Smith creative. Frozen official 2026 H6NE03115 is REP / House / NE-03; principal C00412890 exactly matches ADRIAN SMITH FOR CONGRESS, designation P, type H, REP and candidate ID. The actual www.dakcostar.com homepage links its October 29 issue at /stories/october-29-2026,95682, which explicitly links this exact public original PDF. Assertions remain advertiser claims; no new semantic review or national-volume inference is supplied.",
+              "candidate_id": "H6NE03115",
+              "completeness": "partial_quotation",
+              "extraction_caveat": "Retain only 15 literal words from the two selected substantive text-layer claims, in original order and punctuation. Other substantive claims, repeated design lettering, portraits, logos, endorsements, disclaimer and vote prompts are omitted. This is a partial excerpt, not a complete visible transcription or independently certified message-family label.",
+              "id": "dakota-star-print-smith-0cf45653a7b79a4f-p2",
+              "media_sha256": "0cf45653a7b79a4fe9e7301c032341ba21e5c43ff0fd8616502883eea4d61897",
+              "media_type": "pdf",
+              "media_url": "https://zeta.creativecirclecdn.com/dcs/files/20261028-051448-c72-102926%20DC%20Star%20.pdf",
+              "passages": [
+                "Cutting Taxes for Families, Seniors & Small Business",
+                "Securing the Border & Stopping Illegal Immigration"
+              ],
+              "pdf": {
+                "page_count": 14,
+                "page_text_sha256": [
+                  "189e1fc013d44f36ee8bfbb6f46c39f1ed17ebe3fc99b7410cf29c8a745b5332",
+                  "0c342c99c0087c4db9e5a973b2ce2f63fbeaa75125f8cc19673cb2b72e1ed90e",
+                  "b36a69ce47cf4012f40a2525018bca3ac82f0e42cd9d5e5059560f02a2b65956",
+                  "c3d587831fd95df1f850c3c9df7c3d078f59c011c6b28cd9e85acc715ddcb72b",
+                  "cc7bbdf53fee0f3c26bda25eb822f4f946128b44bdfa6f709045625968a335fe",
+                  "d83778b534dca1f716687ef77a36122de14d7104dccf0bedbf069e34c471f1d8",
+                  "40dc76da91be3d036555c0da4829e2f5d750e89e7113a10a498e9efcd4b8591c",
+                  "e8041208cbc1dbde9ac27e0eae2953bff3e9af14c098173ede642bfa04065a95",
+                  "1b31786e555420d716a7dc34a003a8905ef918a5ea501a4e6c3fd5b24d0b4a4c",
+                  "da1b28cbb207ea087279306b26e1543b6b39fbed2df93acc4deecc40e2ba62f1",
+                  "d7df049d6ddaa8e61923fbd6765970fef861882b103a132306c7e01fcd11cdec",
+                  "ff0d83ab2284a091e967e52f5076ab02595b46dbb3c01fca8e091ec60e314d25",
+                  "7139acc5a4bcdc1a53ba62f6c6fa024f4dd24614dab8ab76225dbaf121419045",
+                  "8a43ffb5b9be20fb5ca3c033e03aa57bb76a19aebdb8bd67fda2208b5d9deb3a"
+                ]
+              },
+              "pdf_engine": {
+                "name": "pypdf",
+                "version": "5.9.0"
+              },
+              "phase": "general",
+              "post_url": "https://zeta.creativecirclecdn.com/dcs/files/20261028-051448-c72-102926%20DC%20Star%20.pdf#page=2",
+              "publisher_pdf": {
+                "candidate_name": "SMITH, ADRIAN",
+                "candidate_quote": "Adrian Smith",
+                "cover_required_quotes": [
+                  "Thursday, October 29, 2026",
+                  "www.dakcostar.com",
+                  "Volume 115, Issue 44"
+                ],
+                "created": "2026-10-28T03:58:22-05:00",
+                "date_uncertainty": "October 29 is the literal newspaper issue date on both cover and selected ad page, corroborated by the individually linked publisher issue. October 28 is the separately retained original PDF creation timestamp, not substituted for the issue date. Neither proves the creative's first release, first airing, paid-flight dates, delivery volume or impressions.",
+                "issue_date": "2026-10-29",
+                "issue_date_quote": "October 29, 2026",
+                "page": 2,
+                "payer_quote": "PAID FOR BY ADRIAN SMITH FOR CONGRESS"
+              },
+              "publisher_pdf_sha256": "0cf45653a7b79a4fe9e7301c032341ba21e5c43ff0fd8616502883eea4d61897",
+              "publisher_url": "https://zeta.creativecirclecdn.com/dcs/files/20261028-051448-c72-102926%20DC%20Star%20.pdf",
+              "required_quotes": [
+                "Stopping Illegal Immigration"
+              ],
+              "reviewed": "2026-10-31",
+              "source": "dakota-star-print",
+              "sponsor": "Adrian Smith for Congress",
+              "sponsor_type": "candidate",
+              "title": "Adrian Smith campaign-paid Dakota County Star print ad",
+              "title_basis": "Descriptive label, not a verified creative title"
+            },
+            "original_sha256": "0cf45653a7b79a4fe9e7301c032341ba21e5c43ff0fd8616502883eea4d61897",
+            "pdf_page": 2,
+            "source_url": "https://zeta.creativecirclecdn.com/dcs/files/20261028-051448-c72-102926%20DC%20Star%20.pdf#page=2",
+            "text": "Cutting Taxes for Families, Seniors & Small Business"
+          },
+          {
+            "completeness": "partial_quotation",
+            "kind": "publisher_pdf_text_layer",
+            "original_sha256": "0cf45653a7b79a4fe9e7301c032341ba21e5c43ff0fd8616502883eea4d61897",
+            "pdf_page": 2,
+            "source_url": "https://zeta.creativecirclecdn.com/dcs/files/20261028-051448-c72-102926%20DC%20Star%20.pdf#page=2",
+            "text": "Securing the Border & Stopping Illegal Immigration"
+          }
+        ],
+        "source": "dakota-star-print",
+        "source_hash": "7198210459a0f8cc71e64c0bbc45b4040d247bb7359f1e1181133bf8d74c8c51",
+        "source_record_id": "dakota-star-print-smith-0cf45653a7b79a4f-p2",
+        "source_url": "https://zeta.creativecirclecdn.com/dcs/files/20261028-051448-c72-102926%20DC%20Star%20.pdf#page=2",
+        "sponsor": "Adrian Smith for Congress",
+        "sponsor_type": "candidate",
+        "state": "NE",
+        "text": "Cutting Taxes for Families, Seniors & Small Business\nSecuring the Border & Stopping Illegal Immigration",
+        "text_hash": "2428a8e074b229baf31047e7d91a7379cf262702decb88a32306544956151b87",
+        "title": "Adrian Smith campaign-paid Dakota County Star print ad"
+      },
+      {
         "alignment": "D",
         "attribution_basis": "Official DCCC release at https://dccc.org/dccc-releases-first-tv-ad-in-fl-07-millionaire/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
         "candidate_mentions": [
@@ -2370385,91 +2371150,91 @@
     "distinctive": {
       "D": [
         {
-          "log_odds": 5.4064,
+          "log_odds": 5.4069,
           "messages": 252,
           "other_messages": 0,
           "phrase": "union my right"
         },
         {
-          "log_odds": 4.9394,
+          "log_odds": 4.9399,
           "messages": 158,
           "other_messages": 0,
           "phrase": "pro labor"
         },
         {
-          "log_odds": 4.9267,
+          "log_odds": 4.9272,
           "messages": 156,
           "other_messages": 0,
           "phrase": "union member"
         },
         {
-          "log_odds": 4.9202,
+          "log_odds": 4.9207,
           "messages": 155,
           "other_messages": 0,
           "phrase": "endorsed candidates"
         },
         {
-          "log_odds": 4.9138,
+          "log_odds": 4.9143,
           "messages": 154,
           "other_messages": 0,
           "phrase": "labor endorsed"
         },
         {
-          "log_odds": 4.9138,
+          "log_odds": 4.9143,
           "messages": 154,
           "other_messages": 0,
           "phrase": "labor endorsed candidates"
         },
         {
-          "log_odds": 4.9073,
+          "log_odds": 4.9078,
           "messages": 153,
           "other_messages": 0,
           "phrase": "because they're"
         },
         {
-          "log_odds": 4.9073,
+          "log_odds": 4.9078,
           "messages": 153,
           "other_messages": 0,
           "phrase": "candidates need"
         },
         {
-          "log_odds": 4.9073,
+          "log_odds": 4.9078,
           "messages": 153,
           "other_messages": 0,
           "phrase": "let's fight"
         },
         {
-          "log_odds": 4.9073,
+          "log_odds": 4.9078,
           "messages": 153,
           "other_messages": 0,
           "phrase": "need to fight"
         },
         {
-          "log_odds": 4.7134,
+          "log_odds": 4.7139,
           "messages": 126,
           "other_messages": 0,
           "phrase": "right my vote"
         },
         {
-          "log_odds": 4.5316,
+          "log_odds": 4.5321,
           "messages": 105,
           "other_messages": 0,
           "phrase": "union members"
         },
         {
-          "log_odds": 4.5124,
+          "log_odds": 4.5129,
           "messages": 103,
           "other_messages": 0,
           "phrase": "because they're fighting"
         },
         {
-          "log_odds": 4.5124,
+          "log_odds": 4.5129,
           "messages": 103,
           "other_messages": 0,
           "phrase": "they're fighting"
         },
         {
-          "log_odds": 4.5027,
+          "log_odds": 4.5032,
           "messages": 102,
           "other_messages": 0,
           "phrase": "ballot box"
@@ -2370477,91 +2371242,91 @@
       ],
       "R": [
         {
-          "log_odds": 5.4184,
+          "log_odds": 5.418,
           "messages": 49,
           "other_messages": 0,
           "phrase": "higher taxes"
         },
         {
-          "log_odds": 5.289,
+          "log_odds": 5.2886,
           "messages": 43,
           "other_messages": 0,
           "phrase": "illegal immigrants"
         },
         {
-          "log_odds": 5.289,
+          "log_odds": 5.2886,
           "messages": 43,
           "other_messages": 0,
           "phrase": "tax relief"
         },
         {
-          "log_odds": 5.1134,
+          "log_odds": 5.1129,
           "messages": 36,
           "other_messages": 0,
           "phrase": "pac is responsible"
         },
         {
-          "log_odds": 5.0856,
+          "log_odds": 5.0851,
           "messages": 35,
           "other_messages": 0,
           "phrase": "committee www"
         },
         {
-          "log_odds": 5.0856,
+          "log_odds": 5.0851,
           "messages": 35,
           "other_messages": 0,
           "phrase": "slfpac org"
         },
         {
-          "log_odds": 5.0275,
+          "log_odds": 5.027,
           "messages": 33,
           "other_messages": 0,
           "phrase": "www slfpac"
         },
         {
-          "log_odds": 4.9972,
+          "log_odds": 4.9967,
           "messages": 32,
           "other_messages": 0,
           "phrase": "www slfpac org"
         },
         {
-          "log_odds": 4.9659,
+          "log_odds": 4.9654,
           "messages": 31,
           "other_messages": 0,
           "phrase": "pac not authorized"
         },
         {
-          "log_odds": 4.9659,
+          "log_odds": 4.9654,
           "messages": 31,
           "other_messages": 0,
           "phrase": "voted for higher"
         },
         {
-          "log_odds": 4.9336,
+          "log_odds": 4.9331,
           "messages": 30,
           "other_messages": 0,
           "phrase": "committee www slfpac"
         },
         {
-          "log_odds": 4.8657,
+          "log_odds": 4.8652,
           "messages": 28,
           "other_messages": 0,
           "phrase": "largest tax"
         },
         {
-          "log_odds": 4.8657,
+          "log_odds": 4.8652,
           "messages": 28,
           "other_messages": 0,
           "phrase": "make your life"
         },
         {
-          "log_odds": 4.8657,
+          "log_odds": 4.8652,
           "messages": 28,
           "other_messages": 0,
           "phrase": "senateleadershipfund org"
         },
         {
-          "log_odds": 4.8657,
+          "log_odds": 4.8652,
           "messages": 28,
           "other_messages": 0,
           "phrase": "www senateleadershipfund"
@@ -2370737,8 +2371502,8 @@
             "nrsc-15285-0"
           ],
           "count": 2,
-          "share": 0.003424657534246575,
-          "total": 584
+          "share": 0.003418803418803419,
+          "total": 585
         },
         "label": "Abortion & reproductive rights"
       },
@@ -2371340,8 +2372105,8 @@
             "rogers-6ae0ac2f4af67c5c39abe46b-0"
           ],
           "count": 121,
-          "share": 0.2071917808219178,
-          "total": 584
+          "share": 0.20683760683760682,
+          "total": 585
         },
         "label": "Cost of living"
       },
@@ -2371448,8 +2372213,8 @@
             "snap-8e14ae6417ccc0b2d99f116e"
           ],
           "count": 65,
-          "share": 0.1113013698630137,
-          "total": 584
+          "share": 0.1111111111111111,
+          "total": 585
         },
         "label": "Crime & policing"
       },
@@ -2371596,8 +2372361,8 @@
             "dms-images-carey-c8986cf1a15c1dbf"
           ],
           "count": 16,
-          "share": 0.0273972602739726,
-          "total": 584
+          "share": 0.02735042735042735,
+          "total": 585
         },
         "label": "Democracy & accountability"
       },
@@ -2371855,8 +2372620,8 @@
             "rogers-6ae0ac2f4af67c5c39abe46b-0"
           ],
           "count": 42,
-          "share": 0.07191780821917808,
-          "total": 584
+          "share": 0.07179487179487179,
+          "total": 585
         },
         "label": "Energy & environment"
       },
@@ -2372257,8 +2373022,8 @@
             "mackenzie-brownwhite-138743-0"
           ],
           "count": 72,
-          "share": 0.1232876712328767,
-          "total": 584
+          "share": 0.12307692307692308,
+          "total": 585
         },
         "label": "Healthcare"
       },
@@ -2372383,11 +2373148,12 @@
             "snap-c4129a46bacee6e2de9b6e9c",
             "dms-images-leonard-5b761bcb7f558537",
             "snap-8c4ffe8aac03cfc488d95b51",
+            "dakota-star-print-smith-0cf45653a7b79a4f-p2",
             "herrera-jezebel-18261610-0"
           ],
-          "count": 93,
-          "share": 0.15924657534246575,
-          "total": 584
+          "count": 94,
+          "share": 0.1606837606837607,
+          "total": 585
         },
         "label": "Immigration"
       },
@@ -2372689,11 +2373455,12 @@
             "rogers-6acd08220f7cad7d1a84f0a5-0",
             "bresnahan-native-122244548030111841",
             "slf-media-1360-7leONV43yaE",
-            "slf-media-1390-KtoSfGJVa-E"
+            "slf-media-1390-KtoSfGJVa-E",
+            "dakota-star-print-smith-0cf45653a7b79a4f-p2"
           ],
-          "count": 54,
-          "share": 0.09246575342465753,
-          "total": 584
+          "count": 55,
+          "share": 0.09401709401709402,
+          "total": 585
         },
         "label": "Jobs & the economy"
       },
@@ -2373161,11 +2373928,12 @@
             "slf-media-1396-hDRwr_wUKC0",
             "google-CR13969552834442559489-afe6a73f23b8",
             "rogers-6ae0ac2f4af67c5c39abe46b-0",
-            "snap-40f88e4dd45c781bb4649736"
+            "snap-40f88e4dd45c781bb4649736",
+            "dakota-star-print-smith-0cf45653a7b79a4f-p2"
           ],
-          "count": 188,
-          "share": 0.3219178082191781,
-          "total": 584
+          "count": 189,
+          "share": 0.3230769230769231,
+          "total": 585
         },
         "label": "Taxes & spending"
       },
@@ -2373384,8 +2374152,8 @@
             "grothman-b574d494ebff6312-0"
           ],
           "count": 85,
-          "share": 0.14554794520547945,
-          "total": 584
+          "share": 0.1452991452991453,
+          "total": 585
         },
         "label": "War & foreign policy"
       }
@@ -2373548,8 +2374316,8 @@
             "nrsc-17586-0"
           ],
           "count": 15,
-          "share": 0.025684931506849314,
-          "total": 584
+          "share": 0.02564102564102564,
+          "total": 585
         },
         "label": "Competence & record"
       },
@@ -2373627,8 +2374395,8 @@
             "snap-2dcf1494221a3ec948227a48"
           ],
           "count": 56,
-          "share": 0.0958904109589041,
-          "total": 584
+          "share": 0.09572649572649573,
+          "total": 585
         },
         "label": "Extreme / radical"
       },
@@ -2373654,8 +2374422,8 @@
             "millermeeks-iowagop-10964-0"
           ],
           "count": 2,
-          "share": 0.003424657534246575,
-          "total": 584
+          "share": 0.003418803418803419,
+          "total": 585
         },
         "label": "Out of touch"
       },
@@ -2373722,8 +2374490,8 @@
             "snap-8c5f2b700510387ef85ea2f5"
           ],
           "count": 27,
-          "share": 0.046232876712328765,
-          "total": 584
+          "share": 0.046153846153846156,
+          "total": 585
         },
         "label": "Safety & threat"
       },
@@ -2374000,8 +2374768,8 @@
             "nrsc-17816-0"
           ],
           "count": 34,
-          "share": 0.05821917808219178,
-          "total": 584
+          "share": 0.05811965811965812,
+          "total": 585
         },
         "label": "Special interests"
       },
@@ -2374182,14 +2374950,14 @@
             "dms-images-carey-c8986cf1a15c1dbf"
           ],
           "count": 42,
-          "share": 0.07191780821917808,
-          "total": 584
+          "share": 0.07179487179487179,
+          "total": 585
         },
         "label": "Trust & integrity"
       }
     ],
     "schema_version": "1",
-    "snapshot_id": "e947737c8c3b7ff276ef23512f7528e2176601f01f497dd19160d9ee46281c01",
+    "snapshot_id": "5db66dbc45699547a1182b9ce6ff894cf11d3a4461d5e25026c67f76d9ed3c0a",
     "sources": [
       {
         "ads_with_text": 1,
@@ -2376116,6 +2376884,17 @@
         "url": "https://rickbrattin.com/"
       },
       {
+        "ads_with_text": 1,
+        "checked": "2026-10-31",
+        "discovery_complete": false,
+        "last_success": "2026-10-31",
+        "scope": "Individually reviewed original campaign PDFs, not complete discovery",
+        "source": "dakota-star-print",
+        "state": "partial",
+        "undated_videos_with_text": 0,
+        "url": "https://zeta.creativecirclecdn.com/dcs/files/20261028-051448-c72-102926%20DC%20Star%20.pdf"
+      },
+      {
         "ads_with_text": 16,
         "checked": "2026-10-26",
         "discovery_complete": true,
@@ -2376377,7 +2377156,7 @@
       },
       {
         "D": 26,
-        "R": 19,
+        "R": 20,
         "week": "2026-10-26"
       }
     ],
@@ -2376397,8 +2377176,8 @@
         "id": "ad-strategy",
         "png": "ad-strategy.png",
         "sha256": {
-          "csv": "6485c1b7de493f43379aec256a555f79f307f3830779b71fc8d37dbbc763ca21",
-          "png": "e056a658f1376c95b006a0fb404955afa2cf3282b51dbab2e19a51932747424f"
+          "csv": "bfb566d423ed0c6202dfd511caf7071cff9775c940c91c22bfb3ebcf7aaecad6",
+          "png": "7813fb281ff0333979bcf914331d8ac8455d1ba96ecd5390abae8d0a100c2e3a"
         },
         "title": "Do ads praise, attack, or combine both?"
       },
@@ -2376408,8 +2377187,8 @@
         "id": "opponent-tone",
         "png": "opponent-tone.png",
         "sha256": {
-          "csv": "7bb1d8055bea7fc7ff53ce19ff404456e481525e6f17ba0b56fe797b47ebb913",
-          "png": "2f1a1b4987963553daf99f4cf8c2948d36833b4e2ab3b57df55a4054b17fb290"
+          "csv": "7ba51ac37d8efad6b122a315f382efc84b0b5e4dab9799e1f3fe5ecda4e3425f",
+          "png": "a97120926f9bfca056b5c769296ff70245d51e29ed325fba61781fc60c6628ca"
         },
         "title": "How they describe their opponents"
       },
@@ -2376419,8 +2377198,8 @@
         "id": "self-tone",
         "png": "self-tone.png",
         "sha256": {
-          "csv": "c545a0ed2416ed4862661f31dca729743c56d49ef1916587d6ba82df614a9da9",
-          "png": "50226f9aba52f77ee0cfdddfe3fa04dfd42815020ab8cea6e148715dfa48f058"
+          "csv": "64cdc087193579128d4e6f68c767755cb151cb08cf5565d277f40f825844fcc0",
+          "png": "4aa5bc6d3b7da4b2f9db502397462b0f3cbdf664defe1e143ec07ecbd3b0d752"
         },
         "title": "How they describe their own candidates"
       },
@@ -2376430,8 +2377209,8 @@
         "id": "opponent-frames",
         "png": "opponent-frames.png",
         "sha256": {
-          "csv": "e85d7c19f00bc53de77ce1d3f035ad9afaed808ed3ccbb6d22b0c2cabdca2534",
-          "png": "733c9c3167356649c3fde48a4d769f00771be60e79935ca7e3fd9fd3e48463e6"
+          "csv": "76e0fdea9bdf01e2d9b258f7517ed69cf893b1d0b8d80738254fbdd653cce1c2",
+          "png": "63621391dbd04070a97b3c37e8776bbe9656abe7d0bcc693e0a12eb818fccb65"
         },
         "title": "What they say about their opponents"
       },
@@ -2376441,8 +2377220,8 @@
         "id": "self-frames",
         "png": "self-frames.png",
         "sha256": {
-          "csv": "d1d73191370fbe710b57d69b97808557bf18b32720cf588e9816fa447a84adad",
-          "png": "29f9f17077c7ff8475f79f25bda81cccab04dd4e0cad9475b3ceb1b0b531a1ee"
+          "csv": "51925aeb1cb5429441e3af788fd58c51fc520c05ef1ea951fa881c7644448345",
+          "png": "209234038e13b756d9c8e61061f0ff06936d561468612c242686253260ce6013"
         },
         "title": "What they say about their own candidates"
       },
@@ -2376452,8 +2377231,8 @@
         "id": "portrayal-coverage",
         "png": "portrayal-coverage.png",
         "sha256": {
-          "csv": "b73a24d9a000cce4ac926104849ccd24591d741d37b03d0ca9d778ea3545e489",
-          "png": "b36fe607fe3e4f266d29215ad50df126a0af7b6a51e7f4d97616a0209970c7bd"
+          "csv": "ec3a2753b539ad7690b32ee76ab47ba2d21889bedb973a4aa5b02e1f59d9ffed",
+          "png": "92a442826bdfd5d3336200098214e427da7803f8607f7760b7be97743c298a96"
         },
         "title": "What has actually been reviewed?"
       },
@@ -2376463,8 +2377242,8 @@
         "id": "issue-language",
         "png": "issue-language.png",
         "sha256": {
-          "csv": "c3c65fa158c3a8c86b2cf45e5c114a3906189d1c3fdb40c0fab2db00483ad372",
-          "png": "7f1febe16c4742b21688e384f8a567ea4555bc32a56b16856ddd4f322a301856"
+          "csv": "8200fa36a6465a308a452bb250afb2a80cfc9468fd9301b64b8afc029c14017f",
+          "png": "996be61ea3002b2aeced40d5965f332fe3df39f7f62c02b4c044d4a8ac97128f"
         },
         "title": "What issues appear in the wording?"
       },
@@ -2376474,8 +2377253,8 @@
         "id": "source-sensitivity",
         "png": "source-sensitivity.png",
         "sha256": {
-          "csv": "59ae66d006a36278101b653d905d3fb80acfd1a393613bb56d5d5ddf54624f4b",
-          "png": "d1a0756373a006bca1f89232faf68feb7aeb6dcd9b93d3d767c3effdd568a96b"
+          "csv": "5be5c3247a17fba6d6d27835b5fc0bfbc2879addfb16aa6ca7e8af8f502f1cb4",
+          "png": "25510d88392be780c168877c6e508662da541d7d45ab79678db450b82374335b"
         },
         "title": "How dependent are the issue gaps on sources?"
       },
@@ -2376485,8 +2377264,8 @@
         "id": "publisher-composition",
         "png": "publisher-composition.png",
         "sha256": {
-          "csv": "bfdb4c5504d38d8e315168ff3479461f6d57d77d42d3660868b14622dcb4ebf8",
-          "png": "609b9c6638676e7fa85da182e4c170c75b7397b7abffea20e8d899954eb75918"
+          "csv": "85a104fb45e0bbbc458690ab2196f7e60383300b8d1bd5fb5891c1a180ebcf5e",
+          "png": "d6ada0bb60fae93c1cdf33d18048b96fb13b19d248729a2a2d342cca93d7a12f"
         },
         "title": "Who supplies the observed ads?"
       },
@@ -2376496,8 +2377275,8 @@
         "id": "monthly-coverage",
         "png": "monthly-coverage.png",
         "sha256": {
-          "csv": "c018a3ad4f307ed0c3787bdb3cd0cfab42e94a9e1cfc5e9056031d88f44507f4",
-          "png": "a0d91337cf1bd4917e0c0057534eefc978941379fca2dbf0fe07201daf7b1970"
+          "csv": "75ff555ee83ad8093154225c6a436def4e2b6f1eff5574935177699ed6d14b64",
+          "png": "9a68dd091745570b8341f728dcca02d820d2927e33edafafa25b9d02cfcf7468"
         },
         "title": "Messages in the saved collection"
       },
@@ -2376507,14 +2377286,14 @@
         "id": "monthly-issues",
         "png": "monthly-issues.png",
         "sha256": {
-          "csv": "79c3875b2cc88f9589eee300ffe879ed885b62d3d5824706e29c331a1cbbe180",
-          "png": "1711752fd1caf9f499aae35269abfebaf2e0b524ed30ba16938e865ec0177505"
+          "csv": "15b79f122baa08f44177acb259473ab0e2534b8ced074e69ce5594c3b6099bb2",
+          "png": "2d1eda57013636747e10eaf201b864231feb6a07c90ad841a4164321c1ab6135"
         },
         "title": "Issue wording over the cycle"
       }
     ],
     "publication_status": "local_only",
-    "snapshot_id": "e947737c8c3b7ff276ef23512f7528e2176601f01f497dd19160d9ee46281c01",
+    "snapshot_id": "5db66dbc45699547a1182b9ce6ff894cf11d3a4461d5e25026c67f76d9ed3c0a",
     "until": "2026-10-30",
     "version": "figures-3"
   },
@@ -2377852,8 +2378631,8 @@
               "rogers-6ae0ac2f4af67c5c39abe46b-0"
             ],
             "count": 76,
-            "share": 0.13013698630136986,
-            "total": 584
+            "share": 0.12991452991452992,
+            "total": 585
           },
           "neither": {
             "ad_ids": [
@@ -2377895,8 +2378674,8 @@
               "snap-09c02155efc4fb626e7b9e7d"
             ],
             "count": 36,
-            "share": 0.06164383561643835,
-            "total": 584
+            "share": 0.06153846153846154,
+            "total": 585
           },
           "not_reviewed": {
             "ad_ids": [
@@ -2378015,6 +2378794,7 @@
               "snap-702709b3d2e6e358aea537bd",
               "snap-8c4ffe8aac03cfc488d95b51",
               "acc-aptv-47600-0",
+              "dakota-star-print-smith-0cf45653a7b79a4f-p2",
               "ngb-aptv-47600-0",
               "nrsc-17881-0",
               "snap-2dcf1494221a3ec948227a48",
@@ -2378027,9 +2378807,9 @@
               "herrera-jezebel-18261610-0",
               "mackenzie-brownwhite-138743-0"
             ],
-            "count": 126,
-            "share": 0.21575342465753425,
-            "total": 584
+            "count": 127,
+            "share": 0.2170940170940171,
+            "total": 585
           },
           "opponent_negative_only": {
             "ad_ids": [
@@ -2378255,8 +2379035,8 @@
               "nrsc-17816-0"
             ],
             "count": 220,
-            "share": 0.3767123287671233,
-            "total": 584
+            "share": 0.37606837606837606,
+            "total": 585
           },
           "own_positive_only": {
             "ad_ids": [
@@ -2378388,8 +2379168,8 @@
               "bresnahan-native-122245613072111841"
             ],
             "count": 126,
-            "share": 0.21575342465753425,
-            "total": 584
+            "share": 0.2153846153846154,
+            "total": 585
           }
         }
       }
@@ -2380092,22 +2380872,22 @@
             "rogers-6ae0ac2f4af67c5c39abe46b-0"
           ],
           "count": 458,
-          "share": 0.7842465753424658,
-          "total": 584
+          "share": 0.7829059829059829,
+          "total": 585
         },
         "stale": {
           "ad_ids": [],
           "count": 0,
           "share": 0.0,
-          "total": 584
+          "total": 585
         },
         "uncertain": {
           "ad_ids": [
             "nrsc-15083-0"
           ],
           "count": 1,
-          "share": 0.0017123287671232876,
-          "total": 584
+          "share": 0.0017094017094017094,
+          "total": 585
         },
         "unreviewed": {
           "ad_ids": [
@@ -2380225,6 +2381005,7 @@
             "snap-702709b3d2e6e358aea537bd",
             "snap-8c4ffe8aac03cfc488d95b51",
             "acc-aptv-47600-0",
+            "dakota-star-print-smith-0cf45653a7b79a4f-p2",
             "ngb-aptv-47600-0",
             "nrsc-17881-0",
             "snap-2dcf1494221a3ec948227a48",
@@ -2380237,9 +2381018,9 @@
             "herrera-jezebel-18261610-0",
             "mackenzie-brownwhite-138743-0"
           ],
-          "count": 125,
-          "share": 0.21404109589041095,
-          "total": 584
+          "count": 126,
+          "share": 0.2153846153846154,
+          "total": 585
         }
       }
     },
@@ -2466579,8 +2467360,8 @@
                 "rogers-6ae0ac2f4af67c5c39abe46b-0"
               ],
               "count": 76,
-              "share": 0.1784037558685446,
-              "total": 426
+              "share": 0.17798594847775176,
+              "total": 427
             },
             "neither": {
               "ad_ids": [
@@ -2466604,8 +2467385,8 @@
                 "lawler-1429-0"
               ],
               "count": 18,
-              "share": 0.04225352112676056,
-              "total": 426
+              "share": 0.04215456674473068,
+              "total": 427
             },
             "not_reviewed": {
               "ad_ids": [
@@ -2466721,6 +2467502,7 @@
                 "ngb-perry-breitbart-20261027-0",
                 "nrcc-cardinalpine-barn-dance-20261027-0",
                 "acc-aptv-47600-0",
+                "dakota-star-print-smith-0cf45653a7b79a4f-p2",
                 "ngb-aptv-47600-0",
                 "nrsc-17881-0",
                 "snap-914a11bf94d6885562dbca74",
@@ -2466728,9 +2467510,9 @@
                 "herrera-jezebel-18261610-0",
                 "mackenzie-brownwhite-138743-0"
               ],
-              "count": 118,
-              "share": 0.27699530516431925,
-              "total": 426
+              "count": 119,
+              "share": 0.2786885245901639,
+              "total": 427
             },
             "opponent_negative_only": {
               "ad_ids": [
@@ -2466833,8 +2467615,8 @@
                 "nrsc-17816-0"
               ],
               "count": 97,
-              "share": 0.22769953051643194,
-              "total": 426
+              "share": 0.22716627634660422,
+              "total": 427
             },
             "own_positive_only": {
               "ad_ids": [
@@ -2466957,8 +2467739,8 @@
                 "bresnahan-native-122245613072111841"
               ],
               "count": 117,
-              "share": 0.2746478873239437,
-              "total": 426
+              "share": 0.27400468384074944,
+              "total": 427
             }
           }
         }

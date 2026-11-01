@@ -276,11 +276,70 @@ def test_publisher_pdf_requires_bound_page_candidate_payer_and_literal_excerpt(
     assert result["attempts"][review["id"]]["state"] == "error"
 
 
-def test_publisher_pdf_created_after_cutoff_is_not_requested(
-    tmp_path, monkeypatch, publisher_pdf_review
+@pytest.mark.parametrize(
+    "cover_date,page_date,date_quote",
+    [
+        ("October 9, 2026", "October 9, 2026", "October 9, 2026"),
+        ("", "October 9, 2026", "October 9, 2026"),
+        ("October 9, 2026", "", "October 9, 2026"),
+        ("October 9, 2026", "October 9, 2026", "October 10, 2026"),
+    ],
+)
+def test_publisher_pdf_issue_date_requires_cover_and_ad_page_calendar_evidence(
+    tmp_path, monkeypatch, publisher_pdf_review, cover_date, page_date, date_quote
 ):
     review = publisher_pdf_review
-    review["publisher_pdf"]["created"] = "2026-10-28T12:00:00+00:00"
+    review["publisher_pdf"].update(issue_date="2026-10-09", issue_date_quote=date_quote)
+    writer = PdfWriter()
+    for text in (
+        f"2026 primary voters guide. {cover_date}",
+        "Candidate Example. Paid for by Example for Congress. "
+        + " ".join(review["passages"])
+        + " "
+        + page_date,
+    ):
+        page = writer.add_blank_page(width=300, height=300)
+        page[NameObject("/Resources")] = DictionaryObject()
+        stream = DecodedStreamObject()
+        stream.set_data(f"BT 10 10 Td ({text}) Tj ET".encode())
+        page[NameObject("/Contents")] = stream
+    writer.add_metadata({"/CreationDate": "D:20261007120000Z"})
+    output = io.BytesIO()
+    writer.write(output)
+    body = output.getvalue()
+    reader = PdfReader(io.BytesIO(body))
+    review["media_sha256"] = hashlib.sha256(body).hexdigest()
+    review["pdf"]["page_text_sha256"] = [
+        hashlib.sha256(page.extract_text().encode()).hexdigest() for page in reader.pages
+    ]
+    monkeypatch.setattr(
+        "political_ads.campaign_native.Client.get", lambda self, url, **kwargs: (body, {})
+    )
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    result = collect_campaign_native(tmp_path, "2026-10-27", offline=True)
+    if not cover_date or not page_date or date_quote != "October 9, 2026":
+        assert result["ads"] == []
+        assert result["attempts"][review["id"]]["state"] == "error"
+    else:
+        ad = result["ads"][0]
+        assert ad["published"] == "2026-10-09"
+        assert ad["date_basis"] == "publisher_pdf_issue_date"
+        assert (
+            "publisher_pdf_issue_date_not_verified_first_release_or_paid_delivery"
+            in (ad["quality_flags"])
+        )
+        assert ad["delivery_start"] is None
+        assert ad["text"] == "\n".join(review["passages"])
+
+
+@pytest.mark.parametrize("date_field", ["created", "issue_date"])
+def test_publisher_pdf_dated_after_cutoff_is_not_requested(
+    tmp_path, monkeypatch, publisher_pdf_review, date_field
+):
+    review = publisher_pdf_review
+    review["publisher_pdf"][date_field] = (
+        "2026-10-28T12:00:00+00:00" if date_field == "created" else "2026-10-28"
+    )
     write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
     monkeypatch.setattr(
         "political_ads.campaign_native.Client.get",

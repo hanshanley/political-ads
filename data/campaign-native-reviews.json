@@ -1,6 +1,66 @@
 {
   "reviews": [
     {
+      "id": "dakota-star-print-smith-0cf45653a7b79a4f-p2",
+      "source": "dakota-star-print",
+      "media_type": "pdf",
+      "publisher_url": "https://zeta.creativecirclecdn.com/dcs/files/20261028-051448-c72-102926%20DC%20Star%20.pdf",
+      "post_url": "https://zeta.creativecirclecdn.com/dcs/files/20261028-051448-c72-102926%20DC%20Star%20.pdf#page=2",
+      "media_url": "https://zeta.creativecirclecdn.com/dcs/files/20261028-051448-c72-102926%20DC%20Star%20.pdf",
+      "media_sha256": "0cf45653a7b79a4fe9e7301c032341ba21e5c43ff0fd8616502883eea4d61897",
+      "title": "Adrian Smith campaign-paid Dakota County Star print ad",
+      "title_basis": "Descriptive label, not a verified creative title",
+      "sponsor": "Adrian Smith for Congress",
+      "sponsor_type": "candidate",
+      "candidate_id": "H6NE03115",
+      "phase": "general",
+      "completeness": "partial_quotation",
+      "passages": [
+        "Cutting Taxes for Families, Seniors & Small Business",
+        "Securing the Border & Stopping Illegal Immigration"
+      ],
+      "required_quotes": [
+        "Stopping Illegal Immigration"
+      ],
+      "reviewed": "2026-10-31",
+      "ad_evidence": "The retained original's complete page 2 (printed 2A) and bounded lower-right creative were rendered and visually inspected. One distinct campaign-paid federal advertisement, not the adjacent mayoral interviews, municipal campaign ads, judicial-retention appeal, masthead or sample ballots. Both selected claims visibly belong to the Adrian Smith creative. Frozen official 2026 H6NE03115 is REP / House / NE-03; principal C00412890 exactly matches ADRIAN SMITH FOR CONGRESS, designation P, type H, REP and candidate ID. The actual www.dakcostar.com homepage links its October 29 issue at /stories/october-29-2026,95682, which explicitly links this exact public original PDF. Assertions remain advertiser claims; no new semantic review or national-volume inference is supplied.",
+      "extraction_caveat": "Retain only 15 literal words from the two selected substantive text-layer claims, in original order and punctuation. Other substantive claims, repeated design lettering, portraits, logos, endorsements, disclaimer and vote prompts are omitted. This is a partial excerpt, not a complete visible transcription or independently certified message-family label.",
+      "publisher_pdf": {
+        "created": "2026-10-28T03:58:22-05:00",
+        "issue_date": "2026-10-29",
+        "issue_date_quote": "October 29, 2026",
+        "page": 2,
+        "candidate_name": "SMITH, ADRIAN",
+        "candidate_quote": "Adrian Smith",
+        "payer_quote": "PAID FOR BY ADRIAN SMITH FOR CONGRESS",
+        "cover_required_quotes": [
+          "Thursday, October 29, 2026",
+          "www.dakcostar.com",
+          "Volume 115, Issue 44"
+        ],
+        "date_uncertainty": "October 29 is the literal newspaper issue date on both cover and selected ad page, corroborated by the individually linked publisher issue. October 28 is the separately retained original PDF creation timestamp, not substituted for the issue date. Neither proves the creative's first release, first airing, paid-flight dates, delivery volume or impressions."
+      },
+      "pdf": {
+        "page_count": 14,
+        "page_text_sha256": [
+          "189e1fc013d44f36ee8bfbb6f46c39f1ed17ebe3fc99b7410cf29c8a745b5332",
+          "0c342c99c0087c4db9e5a973b2ce2f63fbeaa75125f8cc19673cb2b72e1ed90e",
+          "b36a69ce47cf4012f40a2525018bca3ac82f0e42cd9d5e5059560f02a2b65956",
+          "c3d587831fd95df1f850c3c9df7c3d078f59c011c6b28cd9e85acc715ddcb72b",
+          "cc7bbdf53fee0f3c26bda25eb822f4f946128b44bdfa6f709045625968a335fe",
+          "d83778b534dca1f716687ef77a36122de14d7104dccf0bedbf069e34c471f1d8",
+          "40dc76da91be3d036555c0da4829e2f5d750e89e7113a10a498e9efcd4b8591c",
+          "e8041208cbc1dbde9ac27e0eae2953bff3e9af14c098173ede642bfa04065a95",
+          "1b31786e555420d716a7dc34a003a8905ef918a5ea501a4e6c3fd5b24d0b4a4c",
+          "da1b28cbb207ea087279306b26e1543b6b39fbed2df93acc4deecc40e2ba62f1",
+          "d7df049d6ddaa8e61923fbd6765970fef861882b103a132306c7e01fcd11cdec",
+          "ff0d83ab2284a091e967e52f5076ab02595b46dbb3c01fca8e091ec60e314d25",
+          "7139acc5a4bcdc1a53ba62f6c6fa024f4dd24614dab8ab76225dbaf121419045",
+          "8a43ffb5b9be20fb5ca3c033e03aa57bb76a19aebdb8bd67fda2208b5d9deb3a"
+        ]
+      }
+    },
+    {
       "id": "brattin-native-intro-d3ba9b7551102b5d",
       "source": "brattin-campaign",
       "media_type": "video",

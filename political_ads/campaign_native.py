@@ -172,6 +172,13 @@ def _print_segments(
 ) -> tuple[list[dict], dict]:
     printed = review["publisher_pdf"]
     page = pages[printed["page"] - 1]
+    if printed.get("issue_date"):
+        issue_date = date.fromisoformat(printed["issue_date"])
+        date_quote = issue_date.strftime("%B %d, %Y").replace(" 0", " ")
+        if printed.get("issue_date_quote") != date_quote or not all(
+            date_quote in " ".join(layer.split()) for layer in (pages[0], page)
+        ):
+            raise ValueError("Print issue date must appear on both cover and selected ad page")
     embedded = printed.get("embedded_image")
     lines, engine = [], {}
     if embedded:
@@ -298,7 +305,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             if not START <= published <= until:
                 continue
         elif printed:
-            published = printed["created"][:10]
+            published = printed.get("issue_date") or printed["created"][:10]
             if not START <= published <= until:
                 continue
         elif attachment:
@@ -631,9 +638,12 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     "archive_modification_date_not_verified_publication_or_paid_delivery",
                 ]
                 if printed:
-                    quality[-1] = (
-                        "publisher_pdf_creation_date_not_verified_publication_or_paid_delivery"
+                    print_date_quality = (
+                        "publisher_pdf_issue_date_not_verified_first_release_or_paid_delivery"
+                        if printed.get("issue_date")
+                        else "publisher_pdf_creation_date_not_verified_publication_or_paid_delivery"
                     )
+                    quality[-1] = print_date_quality
                     quality.extend(
                         ["selected_pdf_words_visually_reviewed", "partial_ad_text_not_full_script"]
                     )
@@ -643,7 +653,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                             "selected_embedded_pdf_image_words_visually_reviewed",
                             "image_ocr_may_misrecognize_words",
                             "partial_ad_text_not_full_script",
-                            "publisher_pdf_creation_date_not_verified_publication_or_paid_delivery",
+                            print_date_quality,
                         ]
                     if printed.get("joint_fundraising_payer"):
                         quality.append("joint_fundraising_payer_not_candidate_principal_committee")
@@ -689,7 +699,9 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                         json.dumps({"evidence": evidence, "segments": segments}, sort_keys=True)
                     ),
                     date_basis=(
-                        "publisher_pdf_creation_date"
+                        "publisher_pdf_issue_date"
+                        if printed and printed.get("issue_date")
+                        else "publisher_pdf_creation_date"
                         if printed
                         else "publisher_attachment_upload_date"
                         if attachment

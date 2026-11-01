@@ -10,6 +10,65 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Adrian Smith: publisher-linked paid-print excerpt
+
+The actual public Dakota County Star October 29 issue,
+`https://zeta.creativecirclecdn.com/dcs/files/20261028-051448-c72-102926%20DC%20Star%20.pdf`,
+contains **25,549,385 bytes / 14 pages**, SHA-256
+`0cf45653a7b79a4fe9e7301c032341ba21e5c43ff0fd8616502883eea4d61897`.
+The masthead-linked publisher homepage, `https://www.dakcostar.com/`,
+SHA-256
+`dc876eb87a3820429baf9065bc2d48ab7c754a4dcae8054245807b7b557dad07`,
+actually links `/stories/october-29-2026,95682`. That issue page,
+SHA-256
+`b856231b5e7099d2a6183932179026f9f5cae09cbb14d67b80bb591e89818ce2`,
+explicitly links the same acquired original and displays October 29
+publication. Neither its filename nor a search snippet establishes the
+ad's date or text.
+
+Original **page 2, printed 2A**, and its complete lower-right creative
+were rendered and visually inspected. The ad's campaign payer independently
+matches frozen official **H6NE03115 / C00412890 / ADRIAN SMITH FOR
+CONGRESS / P / H / REP / NE-03 / 2026**. Adjacent mayoral interviews,
+municipal advertisements, judicial-retention copy, masthead and sample
+ballots are excluded. One individually bounded advertisement contributes
+only **15 literal words in two partial-quotation segments**, not the
+whole newspaper or a complete visible ad transcription. Other policy
+claims, endorsements and design copy are explicitly omitted.
+No new portrayal or message-family judgment is certified.
+
+The original PDF creation timestamp remains pinned as
+**October 28, 2026, 03:58:22 -05:00**. Its actual issue date is
+**October 29**, visibly present on both cover and selected ad page.
+The optional `publisher_pdf.issue_date` path requires the exact ISO date's
+literal calendar quotation on **both** pages after whitespace
+normalization. Original PDF hash, creation timestamp and all fourteen
+ordered page-text hashes remain independently validated. Reviews without
+an issue date retain their original creation-date behavior. The new
+`publisher_pdf_issue_date` basis is explicitly **not** a verified first
+release, first airing, paid-flight date or delivery-volume observation.
+An October 28 collection cutoff does not admit this October 29 ad merely
+because the PDF was created earlier.
+
+**Checkpoint verification:** an isolated, socket- and URL-opening-forbidden
+replay with **one cached original response** exactly reproduces the native
+partition, preserves the complete backlog and is idempotent. All preceding
+**1,925 acquired / 1,886 analyzed objects**, 38 native reviews, written
+reviews, aliases, frozen source inputs and **354 backlog leads** remain
+unchanged. Current totals are **1,926 acquired / 1,887 English analyzed /
+101 dated native ads**, with English **D 1,226 / R 622** and House
+**D 698 / R 244**, including **D 222 / R 243 outside Snap**.
+Exact-English-message denominators are **D 1,204 / R 585**; these are
+neither spending nor national advertising-volume estimates.
+Complete JSON, gzip, CSV and **1,926 Parquet rows** reconcile, as do all
+eleven regenerated figure sets and the independent strategy audit.
+Snapshot is
+**5db66dbc45699547a1182b9ce6ff894cf11d3a4461d5e25026c67f76d9ed3c0a**.
+Validation passes **500 Python / 17 frontend / eight browser tests**,
+Python/frontend lint, Python formatting, typechecking and builds.
+Both editions and production assets are refreshed **locally only**;
+website/Substack publication and host restoration remain on hold.
+
 ## Broader House discovery: Montana, Kansas and Missouri
 
 These actual-response checks have not added advertising records. Discovery
@@ -117,7 +176,7 @@ for an individual upload or release date. Actual encoding metadata
 contains **no creation_time**. The strict attachment-upload collector
 and dated comparison denominators are unchanged.
 
-**Steube / FL-17 next native lead:** the independently discovered actual
+**Steube / FL-17 recovered but undated native lead:** the independently discovered actual
 campaign homepage, `https://www.electgregsteube.com/`, returned 200,
 SHA-256
 `0e8742acb0e9426b7e59a50334641251ca5e111a6f2fb8c358588970870eb464`.
@@ -134,11 +193,81 @@ substitution, without executing scripts or guessing a media API.
 That actual resolved public master playlist returned 200, SHA-256
 `1797e749b31f6abf17a6af7ffc512ed6d6b8f000ce9ee7d5af3c4a7301ec1723`,
 with separate audio and 640 x 360 / 1920 x 1080 video renditions.
-Temporary signed rendition links are not published here; no rendition
-playlist or segment has yet been requested. Exact saved federal identity
+Temporary signed rendition links and playback-key material are not
+published here. Exact saved federal identity
 is **H8FL17053 / C00671891 / STEUBE, GREG / REP / House / FL-17 / 2026**.
-This remains an unresolved original/date lead, not recovered ad text,
-verified legal payer or another advertising count.
+
+The actual player-named audio and 1920 x 1080 rendition playlists and
+their explicitly linked assets were subsequently recovered anonymously,
+without retries, under a **64 MiB total bound**. Each rendition contains
+six contiguous byte ranges referencing one complete asset. The five
+distinct responses total **13,063,799 bytes**, including a shared,
+explicitly player-linked AES-128 playback key; no account, cookie,
+DRM-license or authentication workflow is involved. Audio playlist /
+asset SHA-256 are
+`f13213b2c97f5e9f7475b679774d3a833525620cf8a6b0b9594454bb9619e599` /
+`c57e098b9740ac62f14de497358af721cdbdd34901956c6216ba6981f34f9a6f`.
+Video playlist / asset SHA-256 are
+`f100250fbed1e3579eee5b3e6cf262e2adce08b691d3d96164a1aef4ffa68a9d` /
+`ad442f8e171e9fcd63310996dce1579653ca1c52f548aa9b791e6168f9d76314`.
+
+For reproducibility, the local recovery preserves original playlists,
+all distinct response bytes and range/IV information in the ignored
+evidence cache. It rewrites only playback URLs to local files and copies
+the existing streams with FFmpeg's **file,crypto,data** protocols and
+**ts,key** extension allowlist, with no network protocols or transcoding.
+The resulting **12,667,909-byte** MP4, SHA-256
+`1231edeb9b8045ba25a0a97a1689fb8de1806f4526a52554ba18eb7308720e10`,
+is a **local remux**, not a publisher MP4 or creation-date proof.
+PyAV inspects its **30.122833-second**, 1920 x 1080 H.264 / 48 kHz AAC
+container. Recovery and existing local OCR/Whisper-base extraction
+succeeded with URL opening and socket connections explicitly forbidden.
+
+Actual frames at **0, 3.003, 10.01, 18.018, 27.027 and 29.8298 seconds**,
+plus the full-resolution opening and closing images, were visually
+inspected. This is a finished edited campaign creative, not homepage
+biography, an interview or background-only footage. Its opening visibly
+states **PAID FOR BY GREG STEUBE FOR CONGRESS**, independently matching
+the frozen principal committee above; its closing includes **A Trusted
+Conservative** and the campaign domain. No inspected frame supplies an
+upload, release or election date.
+
+All ten raw ASR segments and original OCR remain unchanged. The combined
+38-segment extraction excludes the implausible repeated terminal ASR
+output using the **existing** `video_segments` rule: at least 20 words
+and more than 20 words/second. The entire excluded segment and reason
+remain attached to the first accepted segment; nine ASR segments and
+29 OCR segments are retained. Misrecognized surnames and motion-OCR
+noise are not silently corrected or semantically certified.
+**No dated admission or canonical HLS adapter is claimed**: individual
+release/upload evidence and a replayable canonical adapter remain
+unresolved. The recovered creative does not increase advertising counts
+or alter existing comparison denominators.
+
+**Other actual expanded checks:** Cline's September 9 first-ad report,
+`https://thebullelephant.com/ben-clines-first-campaign-ad/`, returned 200,
+SHA-256 `24a5f91117a368924557eaee23c63c5d9f15ea3caeea506ab49adbe6587d73bb`.
+It individually embeds **TFQkRsxoH_g**, but article commentary and reader
+comments are not a literal ad script. The actual campaign homepage and
+its linked News page returned 200, SHA-256
+`a85eef5965531b71e4d3b13a18c2602184a84befa9f8a9844f894d65d19b6377` /
+`18de90a551368331f7107e849b8a58d23ec16c76a8df61030210e9a7d3fc69a7`;
+the homepage exposes no native video and News lists only 2024 posts.
+No paused YouTube or protected widget route was requested.
+
+Trever Nehls's actual campaign homepage and linked `/media/` page returned
+200, SHA-256
+`b74ba1d0fa61f56a27c93881021b67352e0b49601cc93740ba1c57274713d9fe` /
+`b7f06cd07391d82abb00f35b9d8e41b22ed600d200f4ba6d271fd0922fbc6df1`.
+Frozen identity is **H6TX22283 / C00930065 / REP / House / TX-22 / 2026**.
+The markup names a muted, looping background video; its pixels and audio
+were not inspected and it is not classified as an ad from its filename.
+The twelve Media entries are labeled interviews, candidate coverage or
+endorsements; those list titles are not recovered individual ad scripts.
+The linked article bodies were not inspected. No biography or
+issue-page copy is counted. The rediscovered October 26 PBS montage
+remains excluded for the already documented identification/short-clip
+limitations; it is not a new ad or a source of national estimates here.
 
 **Brattin checkpoint verification:** all **1,925 acquired / 1,886 English
 analyzed objects**, 37 preceding native reviews, 75 written reviews,
