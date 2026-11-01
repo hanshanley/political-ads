@@ -140379,5 +140379,143 @@
     "text_hash": "8bfb9ea96c1fa7b1dcc355e222db1af752e66bd6b0015da814cdcfc3d08ce37b",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-81b899a81fd5e2c17f403932",
+    "alignment": "D",
+    "block_id": "snap-81b899a81fd5e2c17f403932-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-81b899a81fd5e2c17f403932-claims-001-001",
+    "claim_text": "Sherrod Brown will make it illegal for insurance companies to wrongly deny treatments.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 147,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Sherrod Brown will\nmake it illegal for\ninsurance companies to\nwrongly deny\ntreatments.\nSHERROD\nBRI\nWN\nFOR\nOHIO\nPAID FOR BY FRIENDS OF SHERROD BROWN",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/09f24b45840dcbec5b27af996536110fa2af9bf25dbbc2a1661df6fa081f10c7?mediaType=png",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 13,
+        "anchor_quote": "Sherrod Brown",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "Sherrod Brown",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Sherrod Brown will\nmake it illegal for\ninsurance companies to\nwrongly deny\ntreatments.\nSHERROD\nBRI\nWN\nFOR\nOHIO\nPAID FOR BY FRIENDS OF SHERROD BROWN",
+    "text_hash": "6cc80b95852c31b08d03ed3613c5e28675f424d5f7fba44cdcfbfda0673cb639",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-81b899a81fd5e2c17f403932",
+    "alignment": "D",
+    "block_id": "snap-81b899a81fd5e2c17f403932-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-81b899a81fd5e2c17f403932-claims-001-002",
+    "claim_text": "Insurance companies wrongly deny treatments.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 147,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Sherrod Brown will\nmake it illegal for\ninsurance companies to\nwrongly deny\ntreatments.\nSHERROD\nBRI\nWN\nFOR\nOHIO\nPAID FOR BY FRIENDS OF SHERROD BROWN",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/09f24b45840dcbec5b27af996536110fa2af9bf25dbbc2a1661df6fa081f10c7?mediaType=png",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 58,
+        "anchor_quote": "insurance companies",
+        "anchor_start": 39,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "insurance companies",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Sherrod Brown will\nmake it illegal for\ninsurance companies to\nwrongly deny\ntreatments.\nSHERROD\nBRI\nWN\nFOR\nOHIO\nPAID FOR BY FRIENDS OF SHERROD BROWN",
+    "text_hash": "6cc80b95852c31b08d03ed3613c5e28675f424d5f7fba44cdcfbfda0673cb639",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-81b899a81fd5e2c17f403932",
+    "alignment": "D",
+    "block_id": "snap-81b899a81fd5e2c17f403932-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-81b899a81fd5e2c17f403932-claims-001-003",
+    "claim_text": "Friends of Sherrod Brown paid for this.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 147,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Sherrod Brown will\nmake it illegal for\ninsurance companies to\nwrongly deny\ntreatments.\nSHERROD\nBRI\nWN\nFOR\nOHIO\nPAID FOR BY FRIENDS OF SHERROD BROWN",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/09f24b45840dcbec5b27af996536110fa2af9bf25dbbc2a1661df6fa081f10c7?mediaType=png",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 147,
+        "anchor_quote": "FRIENDS OF SHERROD BROWN",
+        "anchor_start": 123,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Friends of Sherrod Brown",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Sherrod Brown will\nmake it illegal for\ninsurance companies to\nwrongly deny\ntreatments.\nSHERROD\nBRI\nWN\nFOR\nOHIO\nPAID FOR BY FRIENDS OF SHERROD BROWN",
+    "text_hash": "6cc80b95852c31b08d03ed3613c5e28675f424d5f7fba44cdcfbfda0673cb639",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
