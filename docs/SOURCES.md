@@ -62,7 +62,7 @@ exact-size checks are retained. Focused regressions cover the actual
 98,203,315-byte case, the ceiling and rejection above it before an original
 request.
 
-**Preservation and replay:** immutable baseline is actual parent
+**Preservation and replay:** immutable baseline was captured at
 **f7c1090837041a54133515b596b6735f281af778**, including concurrent claims
 commits. Every preceding **1,926 acquired / 1,887 analyzed object**,
 39 native reviews, written reviews, aliases and frozen inputs remains
@@ -87,6 +87,11 @@ Frontend lint, typechecking and build, **17 frontend tests** and
 source associations, report rendering and mobile layout.
 Both editions and production assets are refreshed **locally only**.
 Website/Substack publication and host restoration remain on hold.
+Research commit **bf88c490c5cc4c48f977e81b09fb42fbcf520e12** and
+its exact CI run **41271752657** are verified completed successfully.
+The baseline above is not that commit's actual parent:
+concurrent claims commits advanced main to
+**565fbfd456daa935ee900e9b8dd10eb0018b6c04** before publication.
 
 ## Further actual-source discovery, without inflated ad counts
 
@@ -164,11 +169,172 @@ The separate hypothesized Dave Joyce campaign-homepage request failed
 with a TLS handshake error; no response body, ad text or date was
 acquired, and TLS verification was not disabled.
 
+**Jack / GA-03 and Gill / TX-26:** actual campaign-homepage hashes are
+`f4a431474f43a157e579dd16c470536f27edf7a6d874525d78d8295e874d09e8`
+and
+`3abd15b6252c2ca20fe64790cc0c7c8230791a64f3f0ffbd7edde30cf3305ac2`.
+Jack's one individual YouTube embed remains undated and unfetched under
+the existing provider hold. Gill's Facebook page widget does not identify
+an individual advertisement. Gill's actual Press Releases link resolves
+to `/press-release`, **24,857 bytes**, SHA-256
+`d357d813fd4c4dd5dee924553f405026a225b06a33a6af4aff89e2c742bbcdee`.
+It lists candidacy/fundraising announcement copy, not recovered ad words.
+The linked email-letter body was not fetched; its filename is not
+independent date proof. Neither homepage issues, biography, endorsement
+copy nor campaign announcements are relabeled advertisements.
+
+**Edwards / NC-11:** actual campaign homepage SHA-256
+`365337c514588768d84ba5ad1fa655452228c335986d8341ba1ed09ed1c3fb6c`
+contains a withdrawal statement and image sources, not recovered
+advertising speech or a native ad video. Frozen Chuck Edwards/NC-11 is
+distinct from Travis Edwards/TX-05. A current withdrawal statement does
+not invalidate any independently dated prior in-scope campaign ad;
+none is recovered from this inspected homepage. The separate hypothesized
+Mike Bost homepage request failed with a TLS EOF; no body was acquired
+and verification was not disabled.
+
+**Haggard / IN-04:** the requested `https://craighaggard.com/`
+actually redirects to `https://www.haggardforcongress.com/`.
+The actual homepage, Media Assets and Press archive hashes are,
+respectively,
+`62c5e27b4e6a6325fd2b997e1f24cdd768146c39745d6752d2e30d8f3b884025`,
+`d9611d84b42716315db37321688e675a2b45fc2bb06ff6077e432cc81981f568`
+and
+`17aea21966e6e27a052b1dd314c3533e1fdfb59249e29ac04565472aa03970f3`.
+The media page identifies a 63-second Announcement Event and 30-second
+Announcement Teaser, each with a January 7, 2026 VideoObject upload
+timestamp corroborated by public widget metadata. These are upload
+proxies, not verified paid delivery. The widget explicitly marks the
+videos public, not member-only, and downloadable. Its relative clip
+paths do not independently bind an absolute original-media URL.
+The exact teaser playback link supplied by its public VideoObject
+was requested once without account authorization or URL rewriting and
+returned **HTTP 401**. That playback route is paused; no token refresh,
+guessed media endpoint or original recovery followed.
+
+Two expressly linked preview JPEGs were acquired and visually inspected.
+They show scenery and a pilot portrait, not recovered substantive ad
+words or payer proof. They are not independently timed original closing
+frames. Actual dimensions are **3440 x 1340**, whereas the retained
+metadata reports **2560 x 1440**; that discrepancy is preserved.
+No preview, title, metadata or link is counted as acquired ad speech.
+The press archive's August 2025 candidacy announcement is outside the
+actual January 1, 2026 corpus start; listed article bodies were not
+fetched. The separate hypothesized Jim Baird campaign-domain request
+failed DNS resolution, without an acquired response body. That failure
+does not establish that Baird lacks campaign ads or an alternative site.
+
 The preceding Smith research commit
 **97d049903b2e8f65e2dd56f385ac2dec3b978d88** and exact CI
 **41270299413** are independently verified successful. These additional
 source exclusions do not resolve the remaining Republican House
 collection gap or imply that every campaign release has been found.
+
+### Additional November 1 discovery
+
+Actual **Stauber / MN-08**, **Shreve / IN-06** and **Ezell / MS-04**
+homepage hashes are, respectively,
+`7811c93a77ef02d9ddc96e94964920a02c43a0dc81f7409ceba33e86883e02c7`,
+`e24ba333193552988c67fe5fb9e35e8aa5bb8632492665628b6c304bec5cce04`
+and
+`b97e7ed01efcc8a73dacb7122c265b1d190e302210ce4ee4ac6590fc7af57375`.
+Stauber identifies Vimeo **1156900212**, not requested under the provider
+hold. Shreve's inspected homepage identifies no native video. Ezell's
+homepage supplies a looping, muted background MP4 link, without a bound
+release date or recovered ad words; that original was not downloaded.
+Their policy text, social posts and interview excerpts are not scripts.
+
+The actual September 10 Las Vegas Sun O'Donnell editorial, SHA-256
+`2db5106affaebe1ce2a88045cfa4391f1f01756579f8338f7d62b4c7d27b302e`,
+discusses **Tune**, already represented by the August 5 acquisition.
+No duplicate is added, and its relative release description does not
+overwrite the preceding source date. The actual October 8 Patch/NH
+Journal Lily Tang Williams report, SHA-256
+`be0f90448807793015fe4b51359f0a08854fe3f9647ab3b99d8a975e0d7192e4`,
+identifies the existing **Complaints Department / w_TIgHDYai0** original.
+Its longer quotations are expressly campaign/announcement statements,
+not attributed ad speech; the short quoted ending is not padded into a
+script. Neither report changes acquired or analyzed counts.
+
+The Freedom Caucus Foundation's actual news archive, January 17 ad
+release and linked video archive are pinned, respectively, to
+`e29c95cd0f0a77013ddf97d61694cd27586434ac51240443caddc669761e9573`,
+`883fb93d707119fd2ec7b31d2318a58ecb08c182b1bfa66f366a8f6bac76850e`
+and
+`f160792bc439d5ddf42bf6fdc9a31658d2294cf7c3acd28baaed98fa2af5d23e`.
+The release describes a sixty-second Eli Crane spot and planned later
+spots. It does not reproduce a script or bind an individual original.
+The acquired video archive displays an empty result, not an inspected
+census of the group's advertising. Descriptions, planned spots and the
+group's own nonprofit-status assertion are not independently certified
+ad text, deliveries or legal status.
+
+The retained Club for Growth homepage, SHA-256
+`d6a645c84418acc3c069cbf59af4a852ddaa394b9f4a155b40476156c4e853a4`,
+exposes a political-ad inventory. Its actually linked terms, SHA-256
+`2fb2dc9931606ee37314c957cb0c2693bb1c586d892de076c2b34ff4b3c19015`,
+restrict downloading to personal use and prohibit online redistribution
+without permission. That catalog and covered provider routes are
+permission-paused; no further ad-gallery, media or API extraction follows.
+Titles are not counted as acquired words.
+
+The actual public **The Republican / Hendricks County** homepage and
+its explicitly linked free election-guide page have hashes
+`4d41898bcaf3eeab16c45417a96a163c4af8ac14ebc91da6e8700ee4d3335f6c`
+and
+`ea7d3ca392ea1e531c8e2147876ccad5c936276324ff92c1b41057237d6cdaf7`.
+The subscriber e-edition login route was not requested. The separately
+offered public PDF was recovered completely using its exact HEAD size:
+**4,820,309 bytes / 24 pages**, SHA-256
+`45c742c6def543fea36a5043927953e687cd942682468225200acf9554fb124c`.
+Ordered text-layer page hashes are retained. Page A-4 lists Jim Baird
+with **no response received**, not a recovered campaign advertisement.
+Candidate interviews and voting instructions are not relabeled ads.
+The printed **Fall 2026**, PDF creation/modification timestamps and
+storage-path timestamp do not establish an exact ad publication date.
+No whole-guide visual ad census is claimed.
+
+Additionally inspected campaign homepage hashes for **Kingston / GA-01**,
+**Beltran / FL-14**, **Flippo / NV-02** and **Bonck / TX-38** are
+`02ed9f312439f87f4d45e09e1dd4109333ea2f7f3d899bd5be323f4020570c08`,
+`90128f9c93bb2e9e2f65b55d38792024ef6d78d5a528d49be1adbd0a0d007fd1`,
+`dd03e1b0a35af3ba88e02044ee3c7b230a52648060c1c4968013d0013755264d`
+and
+`1e763eb382a59f82d20c2606017c395f7dfc3a74f6e74f8f2619216474874aa4`.
+Kingston's press-footage Drive link is not an identified advertisement
+and remains unrequested under the provider hold. No original ad is
+identified on the inspected Bonck homepage. Flippo's actual news archive
+is pinned to
+`cd9d6b521c54b86e018361e7becc47e9f4284629bd93899bf4bcd551fbfc91c0`;
+its listed endorsements are not scripts, and his earlier first-ad
+quotation remains represented without duplication.
+
+Beltran's actual linked archive identifies **Commonsense Congressman**
+(October 19, post 659), **Healthcare** (October 9, post 597), **Hope**
+(October 1, post 564) and **MAGA Mike Beltran** (July 31, post 224).
+The four actual page hashes are, in that order,
+`ede83297a31e83f29a787e443c8b3795fe62254312c87c549217e9fae4cafff2`,
+`49f13f65f0533273b04eb60259bab95efaa49846d443cf6db48017ed792d9440`,
+`ba06e73f789761b162a209c2885abda41d1eb5a3d2675ab29006ed8d809ed492`
+and
+`3222eae4d351b1b2a2c668adb77a51c915b3fd3aa28d4e0b133993a566f44753`.
+Each binds an individual YouTube embed but supplies no script. The
+originals remain unrequested, not acquired words or four counted ads.
+
+The actual August 14 FOX 13 Beltran mailer report, SHA-256
+`926a7c0a4defd37d575d27f68a202cc454088806c13d8e3ce0f2a153f406f9c6`,
+describes a Conservative Solutions for America attack in the Republican
+primary. Its two expressly linked files named `mike-beltran-ad-1.jpg`
+and `mike-beltran-ad-2.jpg` were recovered and visually inspected.
+Their hashes are
+`fd493b8a6e1aefa782f374a6884d5efa16871694536eb263c397bbd414234eee`
+and
+`abc089ad17483f7992a4be1e8e8d156088877fff36ec89d47e7a147c87694759`.
+They actually show an interview and polling-place signs, not the
+reported mailer. Filenames are not creative proof. Interview remarks,
+polling signs and three quoted sign words are not padded into an ad.
+Discovery continues; all snapshot counts and semantic reviews above
+remain unchanged by these checks.
 
 ## Adrian Smith: publisher-linked paid-print excerpt
 
