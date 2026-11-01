@@ -140517,5 +140517,691 @@
     "text_hash": "6cc80b95852c31b08d03ed3613c5e28675f424d5f7fba44cdcfbfda0673cb639",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-82439ab208816f9a7e467b72",
+    "alignment": "D",
+    "block_id": "snap-82439ab208816f9a7e467b72-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-82439ab208816f9a7e467b72-claims-001-001",
+    "claim_text": "If you go to MSU, Elon Musk is buying your election.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 52,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "If you go to MSU, Elon Musk is buying your election.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d411d059e4fbb25f706ce4944d65c4835b65ba2b73af5d7a98162a20f8cff6df?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 27,
+        "anchor_quote": "Elon Musk",
+        "anchor_start": 18,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Elon Musk",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "If you go to MSU, Elon Musk is buying your election.\nI'm not even joking.\nHe spent $200,000 to stop Will Lawrence from winning.\nAnd it's all because he wants to ban data centers\nand get money out of politics.\nIf you hate Elon Musk as much as I do,\nvote Lawrence on November 3rd to stop it.\nElon is BUYING your election!\nVS\nHMUSK HAS SPENT\nS222K\nTO STOP LAWRENCE\nMUSK HAS SPENT\n$222K\nBIGMOUPY\nДМІCH ORG\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org\nand not authorized by any candidate or candidate committee.\n4MICH.ORG\nAVOTE\nNVOTE\nMOTE",
+    "text_hash": "406cf2d16e15596593932dea19189ea30cee8e0cba94b0a9a7859ce4c7c126bf",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-82439ab208816f9a7e467b72",
+    "alignment": "D",
+    "block_id": "snap-82439ab208816f9a7e467b72-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-82439ab208816f9a7e467b72-claims-001-002",
+    "claim_text": "I'm not even joking.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 73,
+        "kind": "local_asr",
+        "start": 53,
+        "text": "I'm not even joking.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d411d059e4fbb25f706ce4944d65c4835b65ba2b73af5d7a98162a20f8cff6df?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 54,
+        "anchor_quote": "I",
+        "anchor_start": 53,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "If you go to MSU, Elon Musk is buying your election.\nI'm not even joking.\nHe spent $200,000 to stop Will Lawrence from winning.\nAnd it's all because he wants to ban data centers\nand get money out of politics.\nIf you hate Elon Musk as much as I do,\nvote Lawrence on November 3rd to stop it.\nElon is BUYING your election!\nVS\nHMUSK HAS SPENT\nS222K\nTO STOP LAWRENCE\nMUSK HAS SPENT\n$222K\nBIGMOUPY\nДМІCH ORG\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org\nand not authorized by any candidate or candidate committee.\n4MICH.ORG\nAVOTE\nNVOTE\nMOTE",
+    "text_hash": "406cf2d16e15596593932dea19189ea30cee8e0cba94b0a9a7859ce4c7c126bf",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-82439ab208816f9a7e467b72",
+    "alignment": "D",
+    "block_id": "snap-82439ab208816f9a7e467b72-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-82439ab208816f9a7e467b72-claims-001-003",
+    "claim_text": "He spent $200,000 to stop Will Lawrence from winning.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 127,
+        "kind": "local_asr",
+        "start": 74,
+        "text": "He spent $200,000 to stop Will Lawrence from winning.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d411d059e4fbb25f706ce4944d65c4835b65ba2b73af5d7a98162a20f8cff6df?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 76,
+        "anchor_quote": "He",
+        "anchor_start": 74,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "He",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 113,
+        "anchor_quote": "Will Lawrence",
+        "anchor_start": 100,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6MI07298",
+        "kind": "person",
+        "name": "Will Lawrence",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "If you go to MSU, Elon Musk is buying your election.\nI'm not even joking.\nHe spent $200,000 to stop Will Lawrence from winning.\nAnd it's all because he wants to ban data centers\nand get money out of politics.\nIf you hate Elon Musk as much as I do,\nvote Lawrence on November 3rd to stop it.\nElon is BUYING your election!\nVS\nHMUSK HAS SPENT\nS222K\nTO STOP LAWRENCE\nMUSK HAS SPENT\n$222K\nBIGMOUPY\nДМІCH ORG\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org\nand not authorized by any candidate or candidate committee.\n4MICH.ORG\nAVOTE\nNVOTE\nMOTE",
+    "text_hash": "406cf2d16e15596593932dea19189ea30cee8e0cba94b0a9a7859ce4c7c126bf",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-82439ab208816f9a7e467b72",
+    "alignment": "D",
+    "block_id": "snap-82439ab208816f9a7e467b72-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-82439ab208816f9a7e467b72-claims-001-004",
+    "claim_text": "And it's all because he wants to ban data centers and get money out of politics.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 177,
+        "kind": "local_asr",
+        "start": 128,
+        "text": "And it's all because he wants to ban data centers",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d411d059e4fbb25f706ce4944d65c4835b65ba2b73af5d7a98162a20f8cff6df?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 151,
+        "anchor_quote": "he",
+        "anchor_start": 149,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "he",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "If you go to MSU, Elon Musk is buying your election.\nI'm not even joking.\nHe spent $200,000 to stop Will Lawrence from winning.\nAnd it's all because he wants to ban data centers\nand get money out of politics.\nIf you hate Elon Musk as much as I do,\nvote Lawrence on November 3rd to stop it.\nElon is BUYING your election!\nVS\nHMUSK HAS SPENT\nS222K\nTO STOP LAWRENCE\nMUSK HAS SPENT\n$222K\nBIGMOUPY\nДМІCH ORG\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org\nand not authorized by any candidate or candidate committee.\n4MICH.ORG\nAVOTE\nNVOTE\nMOTE",
+    "text_hash": "406cf2d16e15596593932dea19189ea30cee8e0cba94b0a9a7859ce4c7c126bf",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-82439ab208816f9a7e467b72",
+    "alignment": "D",
+    "block_id": "snap-82439ab208816f9a7e467b72-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-82439ab208816f9a7e467b72-claims-001-005",
+    "claim_text": "If you hate Elon Musk as much as I do, vote Lawrence on November 3rd to stop it.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 247,
+        "kind": "local_asr",
+        "start": 209,
+        "text": "If you hate Elon Musk as much as I do,",
+        "unit_id": 6
+      },
+      {
+        "end": 289,
+        "kind": "local_asr",
+        "start": 248,
+        "text": "vote Lawrence on November 3rd to stop it.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      6,
+      7
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d411d059e4fbb25f706ce4944d65c4835b65ba2b73af5d7a98162a20f8cff6df?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 230,
+        "anchor_quote": "Elon Musk",
+        "anchor_start": 221,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Elon Musk",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 210,
+        "anchor_quote": "I",
+        "anchor_start": 209,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 261,
+        "anchor_quote": "Lawrence",
+        "anchor_start": 253,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:H6MI07298",
+        "kind": "person",
+        "name": "Lawrence",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "If you go to MSU, Elon Musk is buying your election.\nI'm not even joking.\nHe spent $200,000 to stop Will Lawrence from winning.\nAnd it's all because he wants to ban data centers\nand get money out of politics.\nIf you hate Elon Musk as much as I do,\nvote Lawrence on November 3rd to stop it.\nElon is BUYING your election!\nVS\nHMUSK HAS SPENT\nS222K\nTO STOP LAWRENCE\nMUSK HAS SPENT\n$222K\nBIGMOUPY\nДМІCH ORG\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org\nand not authorized by any candidate or candidate committee.\n4MICH.ORG\nAVOTE\nNVOTE\nMOTE",
+    "text_hash": "406cf2d16e15596593932dea19189ea30cee8e0cba94b0a9a7859ce4c7c126bf",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-82439ab208816f9a7e467b72",
+    "alignment": "D",
+    "block_id": "snap-82439ab208816f9a7e467b72-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-82439ab208816f9a7e467b72-claims-001-006",
+    "claim_text": "Elon is BUYING your election!",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 319,
+        "kind": "video_ocr",
+        "start": 290,
+        "text": "Elon is BUYING your election!",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d411d059e4fbb25f706ce4944d65c4835b65ba2b73af5d7a98162a20f8cff6df?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 294,
+        "anchor_quote": "Elon",
+        "anchor_start": 290,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Elon",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "If you go to MSU, Elon Musk is buying your election.\nI'm not even joking.\nHe spent $200,000 to stop Will Lawrence from winning.\nAnd it's all because he wants to ban data centers\nand get money out of politics.\nIf you hate Elon Musk as much as I do,\nvote Lawrence on November 3rd to stop it.\nElon is BUYING your election!\nVS\nHMUSK HAS SPENT\nS222K\nTO STOP LAWRENCE\nMUSK HAS SPENT\n$222K\nBIGMOUPY\nДМІCH ORG\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org\nand not authorized by any candidate or candidate committee.\n4MICH.ORG\nAVOTE\nNVOTE\nMOTE",
+    "text_hash": "406cf2d16e15596593932dea19189ea30cee8e0cba94b0a9a7859ce4c7c126bf",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-82439ab208816f9a7e467b72",
+    "alignment": "D",
+    "block_id": "snap-82439ab208816f9a7e467b72-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-82439ab208816f9a7e467b72-claims-001-007",
+    "claim_text": "HMUSK HAS SPENT $222K TO STOP LAWRENCE",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 338,
+        "kind": "video_ocr",
+        "start": 323,
+        "text": "HMUSK HAS SPENT",
+        "unit_id": 10
+      },
+      {
+        "end": 344,
+        "kind": "video_ocr",
+        "start": 339,
+        "text": "S222K",
+        "unit_id": 11
+      },
+      {
+        "end": 361,
+        "kind": "video_ocr",
+        "start": 345,
+        "text": "TO STOP LAWRENCE",
+        "unit_id": 12
+      }
+    ],
+    "evidence_ids": [
+      10,
+      11,
+      12
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d411d059e4fbb25f706ce4944d65c4835b65ba2b73af5d7a98162a20f8cff6df?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 328,
+        "anchor_quote": "HMUSK",
+        "anchor_start": 323,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "HMUSK",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 361,
+        "anchor_quote": "LAWRENCE",
+        "anchor_start": 353,
+        "anchor_unit_id": 12,
+        "entity_id": "candidate:H6MI07298",
+        "kind": "person",
+        "name": "LAWRENCE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "If you go to MSU, Elon Musk is buying your election.\nI'm not even joking.\nHe spent $200,000 to stop Will Lawrence from winning.\nAnd it's all because he wants to ban data centers\nand get money out of politics.\nIf you hate Elon Musk as much as I do,\nvote Lawrence on November 3rd to stop it.\nElon is BUYING your election!\nVS\nHMUSK HAS SPENT\nS222K\nTO STOP LAWRENCE\nMUSK HAS SPENT\n$222K\nBIGMOUPY\nДМІCH ORG\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org\nand not authorized by any candidate or candidate committee.\n4MICH.ORG\nAVOTE\nNVOTE\nMOTE",
+    "text_hash": "406cf2d16e15596593932dea19189ea30cee8e0cba94b0a9a7859ce4c7c126bf",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-82439ab208816f9a7e467b72",
+    "alignment": "D",
+    "block_id": "snap-82439ab208816f9a7e467b72-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-82439ab208816f9a7e467b72-claims-001-008",
+    "claim_text": "MUSK HAS SPENT $222K",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 376,
+        "kind": "video_ocr",
+        "start": 362,
+        "text": "MUSK HAS SPENT",
+        "unit_id": 13
+      },
+      {
+        "end": 382,
+        "kind": "video_ocr",
+        "start": 377,
+        "text": "$222K",
+        "unit_id": 14
+      }
+    ],
+    "evidence_ids": [
+      13,
+      14
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d411d059e4fbb25f706ce4944d65c4835b65ba2b73af5d7a98162a20f8cff6df?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 366,
+        "anchor_quote": "MUSK",
+        "anchor_start": 362,
+        "anchor_unit_id": 13,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "MUSK",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "If you go to MSU, Elon Musk is buying your election.\nI'm not even joking.\nHe spent $200,000 to stop Will Lawrence from winning.\nAnd it's all because he wants to ban data centers\nand get money out of politics.\nIf you hate Elon Musk as much as I do,\nvote Lawrence on November 3rd to stop it.\nElon is BUYING your election!\nVS\nHMUSK HAS SPENT\nS222K\nTO STOP LAWRENCE\nMUSK HAS SPENT\n$222K\nBIGMOUPY\nДМІCH ORG\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org\nand not authorized by any candidate or candidate committee.\n4MICH.ORG\nAVOTE\nNVOTE\nMOTE",
+    "text_hash": "406cf2d16e15596593932dea19189ea30cee8e0cba94b0a9a7859ce4c7c126bf",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-82439ab208816f9a7e467b72",
+    "alignment": "D",
+    "block_id": "snap-82439ab208816f9a7e467b72-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-82439ab208816f9a7e467b72-claims-001-009",
+    "claim_text": "Paid for by For Michigan Action Fund",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 482,
+        "kind": "video_ocr",
+        "start": 402,
+        "text": "Paid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org",
+        "unit_id": 17
+      }
+    ],
+    "evidence_ids": [
+      17
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d411d059e4fbb25f706ce4944d65c4835b65ba2b73af5d7a98162a20f8cff6df?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 438,
+        "anchor_quote": "For Michigan Action Fund",
+        "anchor_start": 414,
+        "anchor_unit_id": 17,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "For Michigan Action Fund",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "If you go to MSU, Elon Musk is buying your election.\nI'm not even joking.\nHe spent $200,000 to stop Will Lawrence from winning.\nAnd it's all because he wants to ban data centers\nand get money out of politics.\nIf you hate Elon Musk as much as I do,\nvote Lawrence on November 3rd to stop it.\nElon is BUYING your election!\nVS\nHMUSK HAS SPENT\nS222K\nTO STOP LAWRENCE\nMUSK HAS SPENT\n$222K\nBIGMOUPY\nДМІCH ORG\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org\nand not authorized by any candidate or candidate committee.\n4MICH.ORG\nAVOTE\nNVOTE\nMOTE",
+    "text_hash": "406cf2d16e15596593932dea19189ea30cee8e0cba94b0a9a7859ce4c7c126bf",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-82439ab208816f9a7e467b72",
+    "alignment": "D",
+    "block_id": "snap-82439ab208816f9a7e467b72-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-82439ab208816f9a7e467b72-claims-001-010",
+    "claim_text": "and not authorized by any candidate or candidate committee.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 542,
+        "kind": "video_ocr",
+        "start": 483,
+        "text": "and not authorized by any candidate or candidate committee.",
+        "unit_id": 18
+      }
+    ],
+    "evidence_ids": [
+      18
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d411d059e4fbb25f706ce4944d65c4835b65ba2b73af5d7a98162a20f8cff6df?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 541,
+        "anchor_quote": "any candidate or candidate committee",
+        "anchor_start": 505,
+        "anchor_unit_id": 18,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "any candidate or candidate committee",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "If you go to MSU, Elon Musk is buying your election.\nI'm not even joking.\nHe spent $200,000 to stop Will Lawrence from winning.\nAnd it's all because he wants to ban data centers\nand get money out of politics.\nIf you hate Elon Musk as much as I do,\nvote Lawrence on November 3rd to stop it.\nElon is BUYING your election!\nVS\nHMUSK HAS SPENT\nS222K\nTO STOP LAWRENCE\nMUSK HAS SPENT\n$222K\nBIGMOUPY\nДМІCH ORG\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org\nand not authorized by any candidate or candidate committee.\n4MICH.ORG\nAVOTE\nNVOTE\nMOTE",
+    "text_hash": "406cf2d16e15596593932dea19189ea30cee8e0cba94b0a9a7859ce4c7c126bf",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-8262d0fb686a6f8895f7f59e",
+    "alignment": "D",
+    "block_id": "snap-8262d0fb686a6f8895f7f59e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-8262d0fb686a6f8895f7f59e-claims-001-001",
+    "claim_text": "Randy Villegas aims to uplift the Valley",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 171,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Sol\nKERN SOL NEWS\n\"Building healthier communities, one story at a time.\"\nFROM FIRST-GEN\nSTUDENT TO\nCONGRESSIONAL\nCANDIDATE:\nRANDY VILLEGAS AIMS\nTO UPLIFT THE VALLEY\nPUBLIC",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e5f112a9ffa57742530c3797d1c33acc75cfd94c56e545d95011879fa54392c1?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 143,
+        "anchor_quote": "RANDY VILLEGAS AIMS",
+        "anchor_start": 124,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6CA22190",
+        "kind": "person",
+        "name": "VILLEGAS, RANDY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Sol\nKERN SOL NEWS\n\"Building healthier communities, one story at a time.\"\nFROM FIRST-GEN\nSTUDENT TO\nCONGRESSIONAL\nCANDIDATE:\nRANDY VILLEGAS AIMS\nTO UPLIFT THE VALLEY\nPUBLIC",
+    "text_hash": "df416a337ada631fb45946147a50890c018b55be0a0129069066a2f8154a0216",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-8262d0fb686a6f8895f7f59e",
+    "alignment": "D",
+    "block_id": "snap-8262d0fb686a6f8895f7f59e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-8262d0fb686a6f8895f7f59e-claims-001-002",
+    "claim_text": "KERN SOL NEWS aims to build healthier communities, one story at a time",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 171,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Sol\nKERN SOL NEWS\n\"Building healthier communities, one story at a time.\"\nFROM FIRST-GEN\nSTUDENT TO\nCONGRESSIONAL\nCANDIDATE:\nRANDY VILLEGAS AIMS\nTO UPLIFT THE VALLEY\nPUBLIC",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e5f112a9ffa57742530c3797d1c33acc75cfd94c56e545d95011879fa54392c1?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 17,
+        "anchor_quote": "KERN SOL NEWS",
+        "anchor_start": 4,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "KERN SOL NEWS",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Sol\nKERN SOL NEWS\n\"Building healthier communities, one story at a time.\"\nFROM FIRST-GEN\nSTUDENT TO\nCONGRESSIONAL\nCANDIDATE:\nRANDY VILLEGAS AIMS\nTO UPLIFT THE VALLEY\nPUBLIC",
+    "text_hash": "df416a337ada631fb45946147a50890c018b55be0a0129069066a2f8154a0216",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-82bd0e0e49a82611ab6a606d",
+    "alignment": "D",
+    "block_id": "snap-82bd0e0e49a82611ab6a606d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-82bd0e0e49a82611ab6a606d-claims-001-001",
+    "claim_text": "Lawrence will win a congressional seat",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 69,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "CityPULSE\nHow will Lawrence\nwin a congressional\nseat?\nFOOD\nRIVE\nFiORA",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2312a1cbc73e4746f9a91b18d4fd6e63cd6be3bd64483a9646f73768a82f1b2d?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 27,
+        "anchor_quote": "Lawrence",
+        "anchor_start": 19,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6MI07298",
+        "kind": "person",
+        "name": "LAWRENCE, WILL",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "CityPULSE\nHow will Lawrence\nwin a congressional\nseat?\nFOOD\nRIVE\nFiORA",
+    "text_hash": "a0bfad064927c7fde7f1ced844625b08ece01036a015386ad4a6865d16e0dc1b",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]
