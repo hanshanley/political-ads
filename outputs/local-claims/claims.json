@@ -106040,7 +106040,7 @@
     "voice": "advertiser"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "validation_failed",
     "ad_id": "snap-268e6dfdbc6be7d94dcea62d",
     "alignment": "D",
     "block_id": "snap-268e6dfdbc6be7d94dcea62d-claims-001",
@@ -106086,7 +106086,7 @@
     "voice": "unclear"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "validation_failed",
     "ad_id": "snap-268e6dfdbc6be7d94dcea62d",
     "alignment": "D",
     "block_id": "snap-268e6dfdbc6be7d94dcea62d-claims-001",
@@ -106132,7 +106132,7 @@
     "voice": "unclear"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "validation_failed",
     "ad_id": "snap-268e6dfdbc6be7d94dcea62d",
     "alignment": "D",
     "block_id": "snap-268e6dfdbc6be7d94dcea62d-claims-001",
@@ -106192,7 +106192,7 @@
     "voice": "unclear"
   },
   {
-    "ad_claim_status": "not_run",
+    "ad_claim_status": "validation_failed",
     "ad_id": "snap-268e6dfdbc6be7d94dcea62d",
     "alignment": "D",
     "block_id": "snap-268e6dfdbc6be7d94dcea62d-claims-001",
@@ -106250,5 +106250,327 @@
     "text_hash": "a23da448c2ead46289b7f7f3df5240e989dc4d5ef1387448d4f3f55739240cc4",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-26c3dfd76eefc1abf568fc3f",
+    "alignment": "D",
+    "block_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001-001",
+    "claim_text": "National Nurses United endorses Peggy Flanagan for U.S. Senate in Minnesota",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 578,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/afbbfa19680161ab0927883d4ec3f70293a3dba5eeef9df89a57e148c6590cdd?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 71,
+        "anchor_quote": "Peggy Flanagan",
+        "anchor_start": 57,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6MN00440",
+        "kind": "person",
+        "name": "Peggy Flanagan",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+    "text_hash": "1ad890341071946d96315c475fc2fdc206a5639f31b16c429bae13435e9ad40e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-26c3dfd76eefc1abf568fc3f",
+    "alignment": "D",
+    "block_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001-002",
+    "claim_text": "As the lieutenant governor of Minnesota, she addressed inequities in health care",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 578,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/afbbfa19680161ab0927883d4ec3f70293a3dba5eeef9df89a57e148c6590cdd?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 410,
+        "anchor_quote": "she",
+        "anchor_start": 407,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6MN00440",
+        "kind": "person",
+        "name": "Peggy Flanagan",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+    "text_hash": "1ad890341071946d96315c475fc2fdc206a5639f31b16c429bae13435e9ad40e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-26c3dfd76eefc1abf568fc3f",
+    "alignment": "D",
+    "block_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001-003",
+    "claim_text": "she advanced programs to boost health outcomes for children",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 578,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/afbbfa19680161ab0927883d4ec3f70293a3dba5eeef9df89a57e148c6590cdd?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 410,
+        "anchor_quote": "she",
+        "anchor_start": 407,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6MN00440",
+        "kind": "person",
+        "name": "Peggy Flanagan",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+    "text_hash": "1ad890341071946d96315c475fc2fdc206a5639f31b16c429bae13435e9ad40e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-26c3dfd76eefc1abf568fc3f",
+    "alignment": "D",
+    "block_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001-004",
+    "claim_text": "she advanced programs to boost health outcomes for working families",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 578,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/afbbfa19680161ab0927883d4ec3f70293a3dba5eeef9df89a57e148c6590cdd?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 410,
+        "anchor_quote": "she",
+        "anchor_start": 407,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6MN00440",
+        "kind": "person",
+        "name": "Peggy Flanagan",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+    "text_hash": "1ad890341071946d96315c475fc2fdc206a5639f31b16c429bae13435e9ad40e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-26c3dfd76eefc1abf568fc3f",
+    "alignment": "D",
+    "block_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001-005",
+    "claim_text": "she advanced programs to boost health outcomes for indigenous communities",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 578,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/afbbfa19680161ab0927883d4ec3f70293a3dba5eeef9df89a57e148c6590cdd?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 410,
+        "anchor_quote": "she",
+        "anchor_start": 407,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6MN00440",
+        "kind": "person",
+        "name": "Peggy Flanagan",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+    "text_hash": "1ad890341071946d96315c475fc2fdc206a5639f31b16c429bae13435e9ad40e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-26c3dfd76eefc1abf568fc3f",
+    "alignment": "D",
+    "block_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001-006",
+    "claim_text": "she advanced programs to boost health outcomes for communities of color",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 578,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/afbbfa19680161ab0927883d4ec3f70293a3dba5eeef9df89a57e148c6590cdd?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 410,
+        "anchor_quote": "she",
+        "anchor_start": 407,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6MN00440",
+        "kind": "person",
+        "name": "Peggy Flanagan",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+    "text_hash": "1ad890341071946d96315c475fc2fdc206a5639f31b16c429bae13435e9ad40e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-26c3dfd76eefc1abf568fc3f",
+    "alignment": "D",
+    "block_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-26c3dfd76eefc1abf568fc3f-claims-001-007",
+    "claim_text": "National Nurses United is the largest union of registered nurses in the United States with more than 225,000 members",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 578,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/afbbfa19680161ab0927883d4ec3f70293a3dba5eeef9df89a57e148c6590cdd?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 47,
+        "anchor_quote": "National Nurses United",
+        "anchor_start": 25,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "National Nurses United",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "National\nN\nNurses\nUnited\nNational Nurses United\nendorses Peggy Flanagan\nfor Minnesota\nNATIONAL NURSES UNITED\nPROUDLY ENDORSES\nPEGGY FLANAGAN\nNational\nNurses\nUnited\nNational Nurses United (NNU), the largest union of registered nurses in\nthe United States with more than 225,000 members, today announced its\nendorsement of Peggy Flanagan for U.S. Senate in Minnesota. As the\nlieutenant governor of Minnesota, she addressed inequities in health care\nby advancing programs to boost health outcomes for children, working\nfamilies, and indigenous communities and communities of color.",
+    "text_hash": "1ad890341071946d96315c475fc2fdc206a5639f31b16c429bae13435e9ad40e",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
