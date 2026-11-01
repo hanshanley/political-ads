@@ -983,24 +983,37 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
     flags = [
         "individually_reviewed_public_ad_text",
         "publisher_date_not_verified_first_release_or_paid_delivery",
-        (
-            "news_publisher_reports_marked_ad_script"
-            if review.get("script_selector")
-            else "campaign_release_reproduced_by_news_publisher"
-        )
-        if full_script
+        "campaign_publishes_marked_ad_script"
+        if full_script and source.id == "huizenga-power"
         else (
-            "newspaper_display_ad_partial_image_text"
-            if printed
-            else "publisher_caption_partial_ad_copy"
-            if captions
-            else "publisher_linked_source_quotes_partial_ad_copy"
-            if review.get("linked_ad_text")
-            else "campaign_release_quotes_partial_ad_copy"
-            if source.id in {"lawler-tell-her-no", "cordell-bless-their-hearts"}
-            else "news_report_quotes_partial_ad_copy"
+            (
+                "news_publisher_reports_marked_ad_script"
+                if review.get("script_selector")
+                else "campaign_release_reproduced_by_news_publisher"
+            )
+            if full_script
+            else (
+                "newspaper_display_ad_partial_image_text"
+                if printed
+                else "publisher_caption_partial_ad_copy"
+                if captions
+                else "publisher_linked_source_quotes_partial_ad_copy"
+                if review.get("linked_ad_text")
+                else "campaign_release_quotes_partial_ad_copy"
+                if source.id in {"lawler-tell-her-no", "cordell-bless-their-hearts"}
+                else "news_report_quotes_partial_ad_copy"
+            )
         ),
     ]
+    if full_script and source.id == "huizenga-power":
+        flags.extend(
+            [
+                "campaign_script_not_verified_against_original_media",
+                "original_ad_media_unverified",
+                "ad_legal_payer_unverified",
+                "script_approval_not_verified_against_original_media",
+            ]
+        )
     if not full_script:
         flags.append("publisher_ad_copy_completeness_unverified")
     if broadcast:

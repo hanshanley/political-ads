@@ -147,6 +147,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "huizenga-power",
+        "https://huizengaformichigan.com",
+        "Huizenga for Congress (campaign-published script; creative payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="MI-04",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "hermening-apg-print",
         "https://marketplace.apg-wi.com",
         "Kevin Hermening campaign (publisher-listed advertiser; legal payer unverified)",

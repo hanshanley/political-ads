@@ -10,6 +10,85 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## November 1 Huizenga campaign-published Power script
+
+The first-party release
+`https://huizengaformichigan.com/news/huizenga-releases-new-tv-ad-power/`
+provides a complete, explicitly marked script. Retain it as
+**`huizenga-power-176-0`**: nine source-ordered paragraphs and **76
+whitespace tokens**, including speaker labels and standalone dashes.
+This is published script evidence, not independently transcribed or
+verified audio. The preceding Calvin Moore press statement, introductory
+reporting, invitation to watch, thumbnail and website footer are excluded.
+Curly apostrophes, en dashes, ellipsis and the missing period in the
+Midwest line remain unchanged.
+
+Full retained HTML SHA-256 is
+`cd2f6361187310a41fa0c53ac05d5733203a2ce3efa4b724aab9403258ec9356`;
+selected script SHA-256 is
+`426692428e8c8be7d7d83a2a99404cc3980f16ac8b46c000df1a172aa9a002a7`.
+The unique `h1`, selected visible **September 17, 2026** and
+`article:published_time` **2026-09-17T17:54:47+00:00** agree.
+The unique `div.x-the-content.entry-content` supplies exactly one
+`transcript_blocks` result after `Script:`. The full-script review must
+equal that complete result; omission or contamination fails closed.
+No parser or minimum-word threshold change was necessary.
+
+Exact retained **H0MI02094 / C00459297 / REP / House / MI-04 / 2026**
+matches the existing Bill Huizenga alias. Independently cached official
+committee-master bytes bind principal **HUIZENGA FOR CONGRESS, P/H/REP**
+to that candidate. No candidate, alias or identity review changed.
+The campaign's two actual links identify **VZ4-lo8iDjQ**; neither this
+association nor distinctive narration occurs in the preceding 1,955
+acquired objects. Prior Thrifty and ABA-caption records are preserved,
+not replaced or counted again.
+
+The source is explicitly tagged as a **campaign-published marked
+script**, not a news-publisher quotation. Original media, creative legal
+payer and the script's approval line remain unverified; no YouTube,
+player, caption, media or API request was made. Publication is not proof
+of first release, airing or paid delivery. Phase stays **unknown**:
+the release does not explicitly establish it. Allegations remain ad
+speech, not verified facts; semantic portrayal and strategy stay unreviewed.
+Inspected linked terms explicitly cover SMS programs, not website collection.
+The separately inspected linked privacy policy (HTML SHA-256
+`1d2d130dc60f8d21652cd3714ccc7e564809de3d691c43490da981cb53f7eae7`)
+describes visitor-data handling and adds no identified script-collection restriction.
+
+The rebuilt snapshot is
+`a9271b289a79573e35fca9640be69e3322dba52b2681c6555dec9c75e4f505e2`:
+**1,956 acquired / 1,917 English**, English **R652 / D1226**,
+English House **R274 / D698**, and non-Snap English House **R273 / D222**.
+These are collection counts, not national advertising proportions.
+All preceding records and saved semantic reviews are preserved.
+Complete downloads, eleven figures and both unpublished editions are rebuilt;
+the October 30 saved cutoff, November 4 final scope and publication hold remain.
+Validation passes **522 affected Python / 17 frontend / nine browser tests**,
+lint, formatting, both builds and the independent 20-group/ten-row strategy
+audit. All eleven actual figures were visually inspected. Complete JSON/gzip/CSV,
+1,956 Parquet rows and three copies of every PNG reconcile. An isolated,
+network- and recognition-forbidden one-response replay reproduces the
+**594-to-595 written-record** addition while preserving preceding objects,
+source states, review bytes, aliases and protected files.
+
+Selected acquisition uses
+`python -m political_ads.cli collect --offline --until 2026-10-30 --source huizenga-power`.
+It requires the retained hash-bound HTML/header response in `data/raw/http`;
+raw responses are not distributed. A changed live response requires renewed
+review, not replacing the expected hash blindly. Rebuild and metric replay
+use committed corpus and review inputs and do not require that raw response.
+
+Further actual campaign discovery is not additional acquisition. All four
+explicitly linked news pages expose **36 May–October 2026 news cards**.
+The September 1 Gravel/Certain announcement
+`https://huizengaformichigan.com/news/huizenga-launches-two-new-tv-ads-gravel-and-certain/`
+has HTML SHA-256
+`8e151e6f422550dba7d161343df3ba72db024206a172e1eda6c63622c143a196`
+and original links **wEN_bewAl50 / dOc2Wx30Rx4**, but supplies descriptions
+and a separate Calvin Moore statement, not literal ad speech. Neither
+creative is admitted or requested from the paused media provider. The
+bounded archive does not prove that all campaign advertisements are present.
+
 ## November 1 bounded discovery: exclusions, not additional ads
 
 The Iowa GOP release

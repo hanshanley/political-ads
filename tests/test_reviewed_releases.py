@@ -14,6 +14,81 @@ from political_ads.schema import digest
 from political_ads.sources import SOURCES, collect_wordpress
 
 
+@pytest.mark.parametrize("omit_script_line", [False, True])
+def test_campaign_marked_script_excludes_press_statement_and_keeps_media_unverified(
+    omit_script_line,
+):
+    from political_ads.reviewed_releases import reviewed_release
+
+    source = next(s for s in SOURCES if s.id == "huizenga-power")
+    url = source.url + "/news/huizenga-releases-new-tv-ad-power/"
+    original = "https://youtu.be/VZ4-lo8iDjQ"
+    passages = [
+        "Bill: I am Bill Huizenga and I approve this message.",
+        "VO: Michigan families deserve affordable energy and accountable public leadership.",
+        "Working for Michigan families every day.",
+    ]
+    content = (
+        "<h1>Huizenga releases new TV ad</h1><p id='date'>September 17, 2026</p>"
+        "<div class='entry-content'><p>Calvin Moore said this separate press statement "
+        "must not become ad speech.</p><p><strong>Script:</strong></p>"
+        + "".join(f"<p>{line}</p>" for line in passages)
+        + f"<p><a href='{original}'>Watch</a></p></div>"
+    )
+    review = {
+        "source": source.id,
+        "record_id": "176",
+        "source_url": url,
+        "retrieval_url": url,
+        "format": "html",
+        "content_sha256": digest(content),
+        "published": "2026-09-17",
+        "release_title": "Huizenga releases new TV ad",
+        "heading_selector": "h1",
+        "publication_selector": "#date",
+        "candidate_id": "H0MI02094",
+        "media_url": original,
+        "phase": "unknown",
+        "completeness": "marked_script",
+        "script_selector": "div.entry-content",
+        "required_context": ["Script:"],
+        "passages": passages[:-1] if omit_script_line else passages,
+        "attribution_basis": "Fixture campaign script, not independently verified media.",
+    }
+    candidate = {
+        "candidate_id": "H0MI02094",
+        "name": "HUIZENGA, WILLIAM P",
+        "reviewed_alias": {"full_name": "Bill Huizenga"},
+        "party": "REP",
+        "state": "MI",
+        "office": "H",
+        "district": "04",
+        "election_year": "2026",
+    }
+
+    class Client:
+        def get(self, requested, **kwargs):
+            assert requested == url, "Never request the original media provider"
+            return content.encode(), {}
+
+    if omit_script_line:
+        with pytest.raises(ValueError, match="Complete script must equal"):
+            reviewed_release(Client(), source, review, [candidate], "2026-11-01")
+        return
+    ad = reviewed_release(Client(), source, review, [candidate], "2026-11-01")
+    assert ad["text"] == "\n".join(passages)
+    assert ad["race"] == "MI-04" and ad["phase"] == "unknown"
+    assert "Calvin Moore" not in ad["text"]
+    assert "news_publisher_reports_marked_ad_script" not in ad["quality_flags"]
+    assert {
+        "campaign_publishes_marked_ad_script",
+        "campaign_script_not_verified_against_original_media",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified",
+        "script_approval_not_verified_against_original_media",
+    } <= set(ad["quality_flags"])
+
+
 @pytest.mark.parametrize("missing_original", [False, True])
 def test_cordell_campaign_excerpt_retains_primary_and_unverified_media(missing_original):
     from political_ads.reviewed_releases import reviewed_release
