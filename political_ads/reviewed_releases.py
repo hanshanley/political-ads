@@ -450,6 +450,7 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             "lisonbee-sltrib",
             "gray-csd",
             "friess-primary-tax",
+            "alamo-toth-cruz-mediaite",
             "lawler-tell-her-no",
             "pps-house-washingtonreporter",
         }
@@ -511,6 +512,14 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             != review["published"]
         ):
             raise ValueError("Campaign visible and immediate-release publication dates must agree")
+    if source.id == "alamo-toth-cruz-mediaite":
+        if review["candidate_id"] != "H6TX08175":
+            raise ValueError("Alamo endorsement requires the reviewed Toth House beneficiary")
+        publications = BeautifulSoup(content, "html.parser").select(
+            'meta[property="article:published_time"]'
+        )
+        if len(publications) != 1 or publications[0].get("content", "")[:10] != review["published"]:
+            raise ValueError("Alamo report requires a unique matching publication date")
     if source.id == "pps-house-washingtonreporter" and review["candidate_id"] != "H2FL04211":
         raise ValueError("Reporter quotation requires the reviewed Bean speaker identity")
     evidence = review["reported_ad_text"]
@@ -556,6 +565,11 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         pattern = r"“([^”]+)” says the ad\."
     elif source.id == "friess-primary-tax":
         pattern = r"“([^”]+)” Friess says in the ad\. “([^”]+)”"
+    elif source.id == "alamo-toth-cruz-mediaite":
+        pattern = (
+            r"“([^”]+? Congress\.) [^”]+” said Cruz in the spot, "
+            r"which was put on by the Alamo Freedom Fighters PAC\."
+        )
     match = re.fullmatch(pattern, paragraph)
     if not match:
         raise ValueError("Publisher must explicitly attribute the selected quotations to the ad")

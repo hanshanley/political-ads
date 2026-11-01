@@ -2355,6 +2355,92 @@
       "title": "NEW DIGITAL AD: Dan Sullivan Delivers"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "The original report explicitly identifies the quoted speech as Cruz in the spot, which was put on by the Alamo Freedom Fighters PAC. Exact frozen beneficiary H6TX08175 / TOTH, STEVE / REP / H / TX02 / 2026 / C00911669 is identified in the ad words and report. Cruz is the speaker, not the federal election beneficiary: this is one Republican House endorsement creative, not a Senate ad. The independently cached official committee master identifies C00924951 / ALAMO FREEDOM FIGHTERS PAC / U / O; its party field is blank. Republican alignment follows the explicit endorsement of a Republican House candidate, not an invented official PAC party code. Registered PAC identity is independent corroboration, not verification of the original creative's legal payer. Contextual primary rival is exact H8TX02166 / CRENSHAW, DANIEL / REP / H / TX02 / 2026 / C00660795; this is intraparty primary advertising, not a Democratic attack. Unique h1 and unique article:published_time2026-02-26T19:52:06+00:00 bind publication, together with full HTML, paragraph and selected-text hashes. Select only the first regex capture ending at the first Congress sentence; unchanged 15-word floor and 25-word ceiling. The full pre-edit1948-record corpus contains no matching quotation or Alamo advertiser record. Existing toth-tribune-20260126-0 is a different campaign immigration creative and remains unchanged. No alias, original X request, transcription or fabricated speech. Date is report date; original, legal payer, first airing, duration, delivery, complete script, claims and semantic strategy remain unverified/unreviewed; phase unknown and media URLs empty.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6TX08175",
+          "district": "02",
+          "name": "TOTH, STEVE",
+          "office": "H",
+          "party": "REP",
+          "state": "TX"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "alamo-toth-cruz-mediaite-20260226-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "a38b4dee5c5db5c490f3c8ade0a44339475a3928b24e5c47fcfecf64bed54fd0",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-02-26",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified"
+      ],
+      "race": "TX-02",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6TX08175"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The original report explicitly identifies the quoted speech as Cruz in the spot, which was put on by the Alamo Freedom Fighters PAC. Exact frozen beneficiary H6TX08175 / TOTH, STEVE / REP / H / TX02 / 2026 / C00911669 is identified in the ad words and report. Cruz is the speaker, not the federal election beneficiary: this is one Republican House endorsement creative, not a Senate ad. The independently cached official committee master identifies C00924951 / ALAMO FREEDOM FIGHTERS PAC / U / O; its party field is blank. Republican alignment follows the explicit endorsement of a Republican House candidate, not an invented official PAC party code. Registered PAC identity is independent corroboration, not verification of the original creative's legal payer. Contextual primary rival is exact H8TX02166 / CRENSHAW, DANIEL / REP / H / TX02 / 2026 / C00660795; this is intraparty primary advertising, not a Democratic attack. Unique h1 and unique article:published_time2026-02-26T19:52:06+00:00 bind publication, together with full HTML, paragraph and selected-text hashes. Select only the first regex capture ending at the first Congress sentence; unchanged 15-word floor and 25-word ceiling. The full pre-edit1948-record corpus contains no matching quotation or Alamo advertiser record. Existing toth-tribune-20260126-0 is a different campaign immigration creative and remains unchanged. No alias, original X request, transcription or fabricated speech. Date is report date; original, legal payer, first airing, duration, delivery, complete script, claims and semantic strategy remain unverified/unreviewed; phase unknown and media URLs empty.",
+            "candidate_id": "H6TX08175",
+            "completeness": "partial_quotation",
+            "content_sha256": "12cfbe75f5c26d7639d95215aadfc8a8e63c718dd2374805264edc5fb40e1304",
+            "format": "html",
+            "heading_selector": "h1",
+            "media_url": null,
+            "passages": [
+              "You deserve an unwavering fighter, a Republican who walks the walk. That’s why I’m proud to endorse Steve Toth for Congress."
+            ],
+            "phase": "unknown",
+            "published": "2026-02-26",
+            "publisher_credit": "Mediaite; Isaac Schorr; February 26, 2026 original Alamo Freedom Fighters PAC/Ted Cruz/Steve Toth campaign-ad report.",
+            "record_id": "20260226",
+            "release_title": "‘You Deserve an Unwavering Fighter’: Ted Cruz Appears in Campaign Ad for Dan Crenshaw Primary Challenger",
+            "reported_ad_text": {
+              "paragraph_selector": "p:-soup-contains(\"said Cruz in the spot, which was put on by the Alamo Freedom Fighters PAC.\")",
+              "paragraph_sha256": "f078800dfdaede3986d6a5f9d53c95b941b130178062622afb7e903544c90c5d"
+            },
+            "required_context": [
+              "Senator Ted Cruz (R-TX) has not only endorsed Texas state representative",
+              "Steve Toth’s (R) campaign to unseat Rep. Dan Crenshaw (R-TX)",
+              "said Cruz in the spot, which was put on by the Alamo Freedom Fighters PAC."
+            ],
+            "retrieval_url": "https://www.mediaite.com/media/news/you-deserve-an-unwavering-fighter-ted-cruz-appears-in-campaign-ad-for-dan-crenshaw-primary-challenger/",
+            "reuse_basis": "Retain only the 21 unchanged words in the first two complete sentences explicitly attributed to Cruz speaking in the PAC ad. This is a partial quotation, not the full creative. Exclude remaining endorsement speech, historical Tucker Carlson criticism, publisher commentary and unrelated interviews. Full cached HTML and original media remain undistributed; no blanket reuse license or edition-publication authorization is asserted.",
+            "source": "alamo-toth-cruz-mediaite",
+            "source_url": "https://www.mediaite.com/media/news/you-deserve-an-unwavering-fighter-ted-cruz-appears-in-campaign-ad-for-dan-crenshaw-primary-challenger/"
+          },
+          "text": "You deserve an unwavering fighter, a Republican who walks the walk. That’s why I’m proud to endorse Steve Toth for Congress."
+        }
+      ],
+      "source": "alamo-toth-cruz-mediaite",
+      "source_hash": "12cfbe75f5c26d7639d95215aadfc8a8e63c718dd2374805264edc5fb40e1304",
+      "source_record_id": "20260226",
+      "source_url": "https://www.mediaite.com/media/news/you-deserve-an-unwavering-fighter-ted-cruz-appears-in-campaign-ad-for-dan-crenshaw-primary-challenger/",
+      "sponsor": "Alamo Freedom Fighters PAC (publisher-reported; payer unverified)",
+      "sponsor_type": "outside_group",
+      "state": "TX",
+      "text": "You deserve an unwavering fighter, a Republican who walks the walk. That’s why I’m proud to endorse Steve Toth for Congress.",
+      "title": "‘You Deserve an Unwavering Fighter’: Ted Cruz Appears in Campaign Ad for Dan Crenshaw Primary Challenger"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official Unrig Our Economy release at https://unrigoureconomy.com/news/new-ad-preschool-director-describes-how-tariffs-are-raising-costs-for-small-businesses/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
@@ -51523,6 +51609,22 @@
       "source": "aff-wi7-wpr",
       "state": "partial",
       "url": "https://www.wpr.org"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "alamo-toth-cruz-mediaite",
+      "state": "partial",
+      "url": "https://www.mediaite.com"
     },
     {
       "ads_with_text": 1,

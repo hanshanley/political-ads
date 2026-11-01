@@ -483,6 +483,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "alamo-toth-cruz-mediaite",
+        "https://www.mediaite.com",
+        "Alamo Freedom Fighters PAC (publisher-reported; payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="TX-02",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "lawler-tell-her-no",
         "https://www.lawlerforcongress.com",
         "Mike Lawler campaign (campaign-reported; payer unverified)",

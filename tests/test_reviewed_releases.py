@@ -2027,6 +2027,149 @@ def test_friess_release_rejects_unbound_or_excessive_evidence(failure):
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_alamo_toth_fixture():
+    source, candidate, review, _, commentary = unlinked_lisonbee_fixture()
+    source = replace(
+        source,
+        id="alamo-toth-cruz-mediaite",
+        url="https://www.mediaite.com",
+        sponsor="Alamo Freedom Fighters PAC (publisher-reported; payer unverified)",
+        sponsor_type="outside_group",
+        fixed_race="TX-02",
+    )
+    candidate.update(
+        candidate_id="H6TX08175",
+        name="TOTH, STEVE",
+        state="TX",
+        district="02",
+        principal_committee="C00911669",
+    )
+    selected = (
+        "These selected ad words describe a reliable Republican fighter with a strong "
+        "record, supporting freedom and endorsing Steve Toth for Congress."
+    )
+    neighboring = "This remaining ad speech is not part of the selected quotation."
+    paragraph = (
+        f"“{selected} {neighboring}” said Cruz in the spot, "
+        "which was put on by the Alamo Freedom Fighters PAC."
+    )
+    content = (
+        '<meta property="article:published_time" content="2026-02-26T19:52:06+00:00">'
+        "<h1>Alamo Toth endorsement ad</h1><section>"
+        "<p>Senator Ted Cruz endorsed Steve Toth's House campaign in a new ad.</p>"
+        f'<p class="quoted">{paragraph}</p><p>"{commentary}" he said.</p></section>'
+    )
+    url = source.url + "/alamo-toth-endorsement-ad/"
+    review.update(
+        source=source.id,
+        record_id="20260226",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-02-26",
+        release_title="Alamo Toth endorsement ad",
+        heading_selector="h1",
+        candidate_id=candidate["candidate_id"],
+        required_context=["Senator Ted Cruz", "Steve Toth's House campaign", "new ad"],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": "section > p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+    )
+    review.pop("publication_selector")
+    review.pop("publication_date_format")
+    return source, candidate, review, content.encode(), neighboring, commentary
+
+
+def test_alamo_report_acquires_only_endorsement_words_for_house_beneficiary():
+    source, candidate, review, body, neighboring, commentary = unlinked_alamo_toth_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == review["passages"][0] and len(ad["text"].split()) == 21
+    assert neighboring not in ad["text"] and commentary not in ad["text"]
+    assert ad["alignment"] == "R" and ad["race"] == "TX-02"
+    assert ad["sponsor_type"] == "outside_group" and ad["media_urls"] == []
+    assert ad["segments"][0]["federal_scope_candidate_ids"] == ["H6TX08175"]
+    assert ad["published"] == "2026-02-26" and ad["phase"] == "unknown"
+    assert ad["date_basis"] == "publisher_report_date"
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(ad["quality_flags"])
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "failure",
+    [
+        "candidate",
+        "interview",
+        "wrong_pac",
+        "wrong_speaker",
+        "too_long",
+        "neighboring",
+        "duplicate",
+        "metadata_date",
+        "metadata_duplicate",
+        "paragraph_hash",
+    ],
+)
+def test_alamo_report_rejects_unbound_speaker_advertiser_or_words(failure):
+    from bs4 import BeautifulSoup
+
+    source, candidate, review, body, neighboring, _ = unlinked_alamo_toth_fixture()
+    content = body.decode()
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H6TX00999"
+    elif failure == "interview":
+        content = content.replace("said Cruz in the spot", "said Cruz in an interview")
+    elif failure == "wrong_pac":
+        content = content.replace("Alamo Freedom Fighters PAC", "A Different PAC")
+    elif failure == "wrong_speaker":
+        content = content.replace("said Cruz in the spot", "said Toth in the spot")
+    elif failure == "too_long":
+        original = review["passages"][0]
+        review["passages"][0] = (
+            "These additional words exceed the existing quotation ceiling. " + original
+        )
+        content = content.replace(original, review["passages"][0])
+    elif failure == "neighboring":
+        review["passages"].append(neighboring)
+    elif failure == "duplicate":
+        content += str(BeautifulSoup(content, "html.parser").select("p.quoted")[0])
+        review["reported_ad_text"]["paragraph_selector"] = "p.quoted"
+    elif failure == "metadata_date":
+        content = content.replace("2026-02-26T", "2026-02-27T")
+    elif failure == "metadata_duplicate":
+        content += str(
+            BeautifulSoup(content, "html.parser").select('meta[property="article:published_time"]')[
+                0
+            ]
+        )
+    paragraph = BeautifulSoup(content, "html.parser").select("p.quoted")[0]
+    review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
+    if failure == "paragraph_hash":
+        review["reported_ad_text"]["paragraph_sha256"] = "0" * 64
+    review["content_sha256"] = digest(content)
+
+    class Client:
+        def get(self, url, **kwargs):
+            return content.encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 def unlinked_lawler_fixture():
     source, candidate, review, _, _, _ = unlinked_kiggans_fixture()
     source = next(s for s in SOURCES if s.id == "lawler-tell-her-no")

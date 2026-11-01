@@ -10,6 +10,87 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Alamo: a House endorsement spoken by a senator
+
+Mediaite's actual February 26, 2026 report
+`https://www.mediaite.com/media/news/you-deserve-an-unwavering-fighter-ted-cruz-appears-in-campaign-ad-for-dan-crenshaw-primary-challenger/`
+explicitly attributes its quotation to **Ted Cruz in an Alamo Freedom
+Fighters PAC spot endorsing Steve Toth for Congress**. Acquire only
+the first two complete sentences, **21 unchanged words**. This is a
+**partial quotation**, not the full creative. Do not acquire the
+remaining endorsement, historical Tucker Carlson criticism, interviews
+or publisher commentary. The 15-word floor and 25-word ceiling remain.
+
+Exact federal beneficiary is **H6TX08175 / TOTH, STEVE / REP /
+TX-02 / C00911669**. Cruz is the speaker, **not a Senate election
+beneficiary**. The cached official committee master identifies
+**C00924951 / ALAMO FREEDOM FIGHTERS PAC / U / O**, with a **blank
+party field**. Republican alignment follows the explicit endorsement
+of the Republican House candidate, not an invented official PAC party
+code. Registered PAC identity is independently corroborated; the
+actual creative's advertiser is publisher-reported and its legal
+payer remains unverified. Contextual primary rival is **H8TX02166 /
+CRENSHAW, DANIEL / REP / TX-02 / C00660795**. This is intraparty
+primary advertising, not a Democratic attack. No alias was added.
+
+HTML SHA-256 is
+`12cfbe75f5c26d7639d95215aadfc8a8e63c718dd2374805264edc5fb40e1304`.
+Require a unique actual `h1` and exactly one
+`meta[property="article:published_time"]` with
+`2026-02-26T19:52:06+00:00`. Date is the publisher report date,
+not verified first airing. The unique paragraph selector is
+`p:-soup-contains("said Cruz in the spot, which was put on by the Alamo Freedom Fighters PAC.")`.
+Paragraph SHA-256 is
+`f078800dfdaede3986d6a5f9d53c95b941b130178062622afb7e903544c90c5d`;
+selected-text SHA-256 is
+`0c9769683a220030eac8dfe95e9aea766959935513c39dfb2464d79a08b8ca71`.
+The source-specific attribution grammar returns only its first capture,
+ending at the first complete Congress sentence. Exact discovery body
+and metadata were copied into absent canonical cache files; no old
+response was overwritten. The linked X original was not requested.
+Media URLs are empty; original association, legal payer, duration,
+delivery, complete script, claims and first airing are unverified.
+Ordinary detector identified English; phase unknown; new semantic
+strategy **unreviewed**.
+
+Reproduce with
+`.venv/bin/political-ads collect --source alamo-toth-cruz-mediaite --until 2026-10-30 --offline`,
+then explicit `parquet`, `build`, `validate`, `audit-strategy` and
+frontend checks from `web`. The positive regression failed before
+support. Eleven focused cases cover correct House/PAC/speaker scope
+and reject wrong beneficiary, interview attribution, wrong PAC/speaker,
+excessive or neighboring text, duplicate paragraphs/publication
+metadata, mismatching publication date and changed paragraph hashes.
+All **314 reviewed-release tests passed**. Stable full Python validation
+passed **743 tests**; both Ruff checks, frontend lint/build, **17 unit
+tests / 9 final-snapshot browser tests** passed.
+
+Snapshot
+`6b18cf83e72f348e6eb0ebfbd4c3e36dfd3066295b8914a3710babc954cd05d4`
+contains **1,949 acquired / 1,910 English**, including **R645 / D1,226**
+English records and **R267 / D698** English House records. House outside
+Snapchat is **R266 / D222**. There are **588 written records / 94 release
+reviews / 43 native reviews / 38 unchanged aliases**.
+All **1,948 prior acquired / 1,909 prior analyzed objects**, old reviews,
+18 protected hashes and eight prior canonical response hashes remain
+unchanged. The pre-edit whole corpus had no Alamo advertiser or matching
+quotation; `toth-tribune-20260126-0` is a distinct immigration creative,
+not this endorsement. Complete JSON/gzip/CSV copies, typed Parquet
+text/segments, eleven chart sets in three copies and isolated
+network/recognition/subprocess-forbidden replay passed. Independent
+strategy audit verified **20 metric groups / 10 chart rows**.
+Discovery now has **169 receipts / 159 exact cached bodies /
+10 unchanged no-body receipts**, with **14 separately reviewed
+admissions**. Newly surfaced Salazar immigration and Ciscomani veteran
+ads are already acquired and are not counted again. Republican House
+coverage remains incomplete. The actual Washington State Standard
+October 14 Braun report contains debate/interview remarks, not
+recoverable Republican ad speech. The actual October 2 Townhall
+Alfonso family-ad report contains a novel 22-word quotation, separately
+pinned as an **unadmitted follow-on lead**, not included in these counts.
+Saved cutoff is October 30; final scope
+November 4 inclusive. Website, host and edition publications remain held.
+
 ## Friess: a primary-campaign TV-ad quotation
 
 The actual July 6, 2026 Friess for Wyoming release

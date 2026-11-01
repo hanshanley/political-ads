@@ -2802,6 +2802,36 @@
       "publisher_credit": "Friess for Wyoming campaign; July 6, 2026 TV-ad release for Too Much.",
       "reuse_basis": "Retain only the 19 unchanged words in the first explicitly attributed ad quotation for comparative noncommercial research. Do not join the separate longer quote, closing approval statement, release paraphrase or biography. Full cached HTML and original media remain undistributed; no blanket license or edition-publication authorization is asserted.",
       "attribution_basis": "The primary campaign release explicitly identifies Steve Friess as the Republican candidate for Wyoming's at-large House seat and announces the third statewide TV spot, Too Much. Pin the unique actual h1, unique visible time date, independently matching For Immediate Release date block and exact HTML/paragraph hashes. Retain only the first regex capture of the two separately attributed quotations, with unchanged 15-word floor and 25-word ceiling. Exact frozen candidate H6WY01165 / FRIESS, STEPHEN / REP / H / WY00 / 2026 / C00945980; the public Steve Friess name requires an independently reviewed exact-name alias, not surname/fuzzy matching or roster rewriting. No Friess provenance or literal quotation was present anywhere in the immutable 1947-record pre-edit combined corpus. Campaign advertiser and TV delivery are campaign-reported; legal payer, original media, first airing, duration, complete creative and underlying claims remain unverified. Date is campaign release date, not first-airing verification. Phase unknown, media URLs empty, semantic strategy unreviewed."
+    },
+    {
+      "source": "alamo-toth-cruz-mediaite",
+      "record_id": "20260226",
+      "source_url": "https://www.mediaite.com/media/news/you-deserve-an-unwavering-fighter-ted-cruz-appears-in-campaign-ad-for-dan-crenshaw-primary-challenger/",
+      "retrieval_url": "https://www.mediaite.com/media/news/you-deserve-an-unwavering-fighter-ted-cruz-appears-in-campaign-ad-for-dan-crenshaw-primary-challenger/",
+      "format": "html",
+      "content_sha256": "12cfbe75f5c26d7639d95215aadfc8a8e63c718dd2374805264edc5fb40e1304",
+      "published": "2026-02-26",
+      "release_title": "‘You Deserve an Unwavering Fighter’: Ted Cruz Appears in Campaign Ad for Dan Crenshaw Primary Challenger",
+      "heading_selector": "h1",
+      "candidate_id": "H6TX08175",
+      "media_url": null,
+      "phase": "unknown",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Senator Ted Cruz (R-TX) has not only endorsed Texas state representative",
+        "Steve Toth’s (R) campaign to unseat Rep. Dan Crenshaw (R-TX)",
+        "said Cruz in the spot, which was put on by the Alamo Freedom Fighters PAC."
+      ],
+      "passages": [
+        "You deserve an unwavering fighter, a Republican who walks the walk. That’s why I’m proud to endorse Steve Toth for Congress."
+      ],
+      "reported_ad_text": {
+        "paragraph_selector": "p:-soup-contains(\"said Cruz in the spot, which was put on by the Alamo Freedom Fighters PAC.\")",
+        "paragraph_sha256": "f078800dfdaede3986d6a5f9d53c95b941b130178062622afb7e903544c90c5d"
+      },
+      "publisher_credit": "Mediaite; Isaac Schorr; February 26, 2026 original Alamo Freedom Fighters PAC/Ted Cruz/Steve Toth campaign-ad report.",
+      "reuse_basis": "Retain only the 21 unchanged words in the first two complete sentences explicitly attributed to Cruz speaking in the PAC ad. This is a partial quotation, not the full creative. Exclude remaining endorsement speech, historical Tucker Carlson criticism, publisher commentary and unrelated interviews. Full cached HTML and original media remain undistributed; no blanket reuse license or edition-publication authorization is asserted.",
+      "attribution_basis": "The original report explicitly identifies the quoted speech as Cruz in the spot, which was put on by the Alamo Freedom Fighters PAC. Exact frozen beneficiary H6TX08175 / TOTH, STEVE / REP / H / TX02 / 2026 / C00911669 is identified in the ad words and report. Cruz is the speaker, not the federal election beneficiary: this is one Republican House endorsement creative, not a Senate ad. The independently cached official committee master identifies C00924951 / ALAMO FREEDOM FIGHTERS PAC / U / O; its party field is blank. Republican alignment follows the explicit endorsement of a Republican House candidate, not an invented official PAC party code. Registered PAC identity is independent corroboration, not verification of the original creative's legal payer. Contextual primary rival is exact H8TX02166 / CRENSHAW, DANIEL / REP / H / TX02 / 2026 / C00660795; this is intraparty primary advertising, not a Democratic attack. Unique h1 and unique article:published_time2026-02-26T19:52:06+00:00 bind publication, together with full HTML, paragraph and selected-text hashes. Select only the first regex capture ending at the first Congress sentence; unchanged 15-word floor and 25-word ceiling. The full pre-edit1948-record corpus contains no matching quotation or Alamo advertiser record. Existing toth-tribune-20260126-0 is a different campaign immigration creative and remains unchanged. No alias, original X request, transcription or fabricated speech. Date is report date; original, legal payer, first airing, duration, delivery, complete script, claims and semantic strategy remain unverified/unreviewed; phase unknown and media URLs empty."
     }
   ]
 }
