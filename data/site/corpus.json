@@ -23991,6 +23991,137 @@
       "title": "Mitchell Drops New Ad “Bulldozer”"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "The actual individually dated August 26, 2026 ABA release and its agreeing RSS date identify a new ABA / Michigan Bankers Association ad supporting Rep. Bill Huizenga. Do not substitute August 27, a catalog year or runtime metadata. Its exact new-ad hyperlink directly identifies the public ABA voter-education index; no wrapper or video provider is requested. The pinned index's unique 8b4f7a9057914065abfecdf9d0f592d7 card and matching modal identify 8vBOgzOmwTY and the identical English subtitle/caption VTT URL. A bounded public request recovered the actual 950-byte publisher caption asset, SHA256 597043ee2a97066823b0e788698c6e4263b6647ff6bade763fab2bc68e086a4d. Selected cues 1-3 cover 00:00:00.390 through 00:00:06.300, yielding a literal 16-word sentence after excluding the Narrator annotation. Frozen H0MI02094, HUIZENGA, WILLIAM P, REP, House, MI-04, 2026, principal C00459297 establishes federal identity; the already reviewed HUIZENGA, BILL alias, supported by the official House homepage, bridges the publisher's public name without appending or changing any alias. Republican alignment describes this supported beneficiary, not either banking association's organization-wide politics. These are publisher captions, not independently heard original audio. Joint-ad attribution does not establish the legal payer or FEC committee. No original video bytes, full script, visual disclaimer inspection, verified duration, paid delivery or first airing is claimed. The individual release supplies publisher_report_date; phase and new semantic judgment remain unknown/unreviewed. Existing Wagner objects and all other records, reviews, aliases and protected evidence remain unchanged.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H0MI02094",
+          "district": "04",
+          "name": "HUIZENGA, BILL",
+          "office": "H",
+          "party": "REP",
+          "state": "MI"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "aba-huizenga-captions-20260826-8vBOgzOmwTY-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/watch?v=8vBOgzOmwTY"
+      ],
+      "message_id": "cdaf9e1c830b4a2308eb9c9390947a261bdcd0e91cc5d02a2953826a6273f84c",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "publisher_linked_caption_excerpt",
+      "published": "2026-08-26",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "publisher_caption_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "publisher_captions_not_independently_verified_against_audio",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified"
+      ],
+      "race": "MI-04",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "caption_cue": {
+            "cue_id": 1,
+            "end": "00:00:01.800",
+            "file_sha256": "597043ee2a97066823b0e788698c6e4263b6647ff6bade763fab2bc68e086a4d",
+            "start": "00:00:00.390",
+            "url": "https://www.aba.com/-/media/aba/video-transcripts/delivering-for-michigan-families--rep-bill-huizenga-rmi04.vtt?rev=f74cd2fb6b4b4b68ba705f1d98fd4681"
+          },
+          "federal_scope_candidate_ids": [
+            "H0MI02094"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The actual individually dated August 26, 2026 ABA release and its agreeing RSS date identify a new ABA / Michigan Bankers Association ad supporting Rep. Bill Huizenga. Do not substitute August 27, a catalog year or runtime metadata. Its exact new-ad hyperlink directly identifies the public ABA voter-education index; no wrapper or video provider is requested. The pinned index's unique 8b4f7a9057914065abfecdf9d0f592d7 card and matching modal identify 8vBOgzOmwTY and the identical English subtitle/caption VTT URL. A bounded public request recovered the actual 950-byte publisher caption asset, SHA256 597043ee2a97066823b0e788698c6e4263b6647ff6bade763fab2bc68e086a4d. Selected cues 1-3 cover 00:00:00.390 through 00:00:06.300, yielding a literal 16-word sentence after excluding the Narrator annotation. Frozen H0MI02094, HUIZENGA, WILLIAM P, REP, House, MI-04, 2026, principal C00459297 establishes federal identity; the already reviewed HUIZENGA, BILL alias, supported by the official House homepage, bridges the publisher's public name without appending or changing any alias. Republican alignment describes this supported beneficiary, not either banking association's organization-wide politics. These are publisher captions, not independently heard original audio. Joint-ad attribution does not establish the legal payer or FEC committee. No original video bytes, full script, visual disclaimer inspection, verified duration, paid delivery or first airing is claimed. The individual release supplies publisher_report_date; phase and new semantic judgment remain unknown/unreviewed. Existing Wagner objects and all other records, reviews, aliases and protected evidence remain unchanged.",
+            "candidate_id": "H0MI02094",
+            "completeness": "partial_quotation",
+            "content_sha256": "23bd2a85c34fc0987a228b079e4308caedf345b3547ddba498dda9515eca5ca3",
+            "format": "html",
+            "heading_selector": "h1",
+            "media_url": "https://www.youtube.com/watch?v=8vBOgzOmwTY",
+            "passages": [
+              "Congressman Bill Huizenga",
+              "knows Michigan families deserve an economy",
+              "that works as hard as they do."
+            ],
+            "phase": "unknown",
+            "publication_selector": "li.byline__inline:-soup-contains(\"August 26, 2026\")",
+            "published": "2026-08-26",
+            "publisher_captions": {
+              "ad_title": "\"Delivering for Michigan Families\" - Rep. Bill Huizenga (R-MI-04)",
+              "card_selector": "div.video[data-vid-modal-trigger=\"8b4f7a9057914065abfecdf9d0f592d7\"]",
+              "cue_ids": [
+                1,
+                2,
+                3
+              ],
+              "file_sha256": "597043ee2a97066823b0e788698c6e4263b6647ff6bade763fab2bc68e086a4d",
+              "index_sha256": "3f692c0501cfd02a9b94e8cc5749fda889050b75ec7bec05a394c92e1616b6f4",
+              "index_url": "https://www.aba.com/advocacy/political-engagement/voter-education/voter-education-ads",
+              "release_link_sha256": "ef3d1f2ef887d033f40ab21753158a3ee9205c14e9daec46eed147707a6a2267",
+              "url": "https://www.aba.com/-/media/aba/video-transcripts/delivering-for-michigan-families--rep-bill-huizenga-rmi04.vtt?rev=f74cd2fb6b4b4b68ba705f1d98fd4681"
+            },
+            "publisher_credit": "American Bankers Association and Michigan Bankers Association; August 26, 2026 release and publisher-hosted caption track for Delivering for Michigan Families - Rep. Bill Huizenga (R-MI-04).",
+            "record_id": "20260826-8vBOgzOmwTY",
+            "release_title": "ABA, Michigan Bankers Association Release New Ad Urging Rep. Bill Huizenga to Keep Fighting for Michigan Families",
+            "required_context": [
+              "Michigan Bankers Association",
+              "Rep. Bill Huizenga",
+              "Click here to see the ad."
+            ],
+            "retrieval_url": "https://www.aba.com/about-us/press-room/press-releases/michigan-rep-bill-huizenga-voter-education-ad",
+            "reuse_basis": "Retain only the first three complete caption cues, totaling 16 whitespace tokens and one sentence, for noncommercial comparative research with publisher/source credit. Exclude the remainder of the caption file, other advertisements, executive quotations, release prose, images and original video. Preserve literal wording, punctuation and cue times; the Narrator voice annotation is syntax, not an additional word. Full caption bytes remain in the ignored evidence cache. Complete downloads preserve the complete selected excerpt and provenance, not a full original script. No blanket reuse license, video redistribution or edition-publication authorization is asserted.",
+            "source": "aba-huizenga-captions",
+            "source_url": "https://www.aba.com/about-us/press-room/press-releases/michigan-rep-bill-huizenga-voter-education-ad"
+          },
+          "text": "Congressman Bill Huizenga"
+        },
+        {
+          "caption_cue": {
+            "cue_id": 2,
+            "end": "00:00:04.320",
+            "file_sha256": "597043ee2a97066823b0e788698c6e4263b6647ff6bade763fab2bc68e086a4d",
+            "start": "00:00:01.800",
+            "url": "https://www.aba.com/-/media/aba/video-transcripts/delivering-for-michigan-families--rep-bill-huizenga-rmi04.vtt?rev=f74cd2fb6b4b4b68ba705f1d98fd4681"
+          },
+          "kind": "publisher_ad_copy",
+          "text": "knows Michigan families deserve an economy"
+        },
+        {
+          "caption_cue": {
+            "cue_id": 3,
+            "end": "00:00:06.300",
+            "file_sha256": "597043ee2a97066823b0e788698c6e4263b6647ff6bade763fab2bc68e086a4d",
+            "start": "00:00:04.320",
+            "url": "https://www.aba.com/-/media/aba/video-transcripts/delivering-for-michigan-families--rep-bill-huizenga-rmi04.vtt?rev=f74cd2fb6b4b4b68ba705f1d98fd4681"
+          },
+          "kind": "publisher_ad_copy",
+          "text": "that works as hard as they do."
+        }
+      ],
+      "source": "aba-huizenga-captions",
+      "source_hash": "8b6fab7935be9d8f80f392e3e01ba143d35cfcc2c4cb8855cb16c4c6a5270976",
+      "source_record_id": "20260826-8vBOgzOmwTY",
+      "source_url": "https://www.aba.com/about-us/press-room/press-releases/michigan-rep-bill-huizenga-voter-education-ad",
+      "sponsor": "American Bankers Association / Michigan Bankers Association (publisher-attributed; ad payer unverified)",
+      "sponsor_type": "outside_group",
+      "state": "MI",
+      "text": "Congressman Bill Huizenga\nknows Michigan families deserve an economy\nthat works as hard as they do.",
+      "title": "ABA, Michigan Bankers Association Release New Ad Urging Rep. Bill Huizenga to Keep Fighting for Michigan Families"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official DCCC release at https://dccc.org/new-dccc-launches-digital-ad-campaign-targeting-aanhpi-voters-in-nj-07/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
@@ -45398,6 +45529,150 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "The actual individually dated October 23, 2026 ABA release, with agreeing RSS date, identifies a new ABA / Texas Bankers Association ad supporting Rep. Monica De La Cruz. Its exact new-ad hyperlink directly identifies the public ABA voter-education index; no wrapper or video provider is requested. The pinned index's unique 61d3c32cec8c46f090dead117a6b263f card and matching modal identify nDfvmZ6GETI and the identical English subtitle/caption VTT URL. A bounded public request recovered the actual 812-byte publisher caption asset, SHA256 ff30f2bfd4c8cfc82f019bed53eaf8e2958b233c6c57e1199aef6569121b3f00. Selected cues 1-4 cover 00:00:00.060 through 00:00:08.550. The first three cues total only 14 words after removal of the Narrator annotation; retaining four complete cues yields a literal 21-word sentence above the unchanged 15-word floor without counting syntax or padding with reporter prose. Frozen H0TX15124, DE LA CRUZ, MONICA, REP, House, TX-15, 2026, principal C00765719 establishes the named beneficiary without an alias change. Republican alignment describes this supported beneficiary, not either banking association's organization-wide politics. These are publisher captions, not independently heard original audio. Joint-ad attribution does not establish the legal payer or FEC committee. No original video bytes, full script, visual disclaimer inspection, verified duration, paid delivery or first airing is claimed. The individual release supplies publisher_report_date; phase and new semantic judgment remain unknown/unreviewed. Existing Wagner objects and all other records, reviews, aliases and protected evidence remain unchanged.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H0TX15124",
+          "district": "15",
+          "name": "DE LA CRUZ, MONICA",
+          "office": "H",
+          "party": "REP",
+          "state": "TX"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "aba-delacruz-captions-20261023-nDfvmZ6GETI-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://www.youtube.com/watch?v=nDfvmZ6GETI"
+      ],
+      "message_id": "b5447e5c70d92f3d8ddf861f5f1d62485de208283a9ae85520261cc4ea07fd89",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "publisher_linked_caption_excerpt",
+      "published": "2026-10-23",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "publisher_caption_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "publisher_captions_not_independently_verified_against_audio",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified"
+      ],
+      "race": "TX-15",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "caption_cue": {
+            "cue_id": 1,
+            "end": "00:00:01.620",
+            "file_sha256": "ff30f2bfd4c8cfc82f019bed53eaf8e2958b233c6c57e1199aef6569121b3f00",
+            "start": "00:00:00.060",
+            "url": "https://www.aba.com/-/media/aba/video-transcripts/supporting-texas-small-businesses--rep-monica-de-la-cruz-rtx15.vtt?rev=b0a45728c3424ccb815a8baabbd4812d"
+          },
+          "federal_scope_candidate_ids": [
+            "H0TX15124"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The actual individually dated October 23, 2026 ABA release, with agreeing RSS date, identifies a new ABA / Texas Bankers Association ad supporting Rep. Monica De La Cruz. Its exact new-ad hyperlink directly identifies the public ABA voter-education index; no wrapper or video provider is requested. The pinned index's unique 61d3c32cec8c46f090dead117a6b263f card and matching modal identify nDfvmZ6GETI and the identical English subtitle/caption VTT URL. A bounded public request recovered the actual 812-byte publisher caption asset, SHA256 ff30f2bfd4c8cfc82f019bed53eaf8e2958b233c6c57e1199aef6569121b3f00. Selected cues 1-4 cover 00:00:00.060 through 00:00:08.550. The first three cues total only 14 words after removal of the Narrator annotation; retaining four complete cues yields a literal 21-word sentence above the unchanged 15-word floor without counting syntax or padding with reporter prose. Frozen H0TX15124, DE LA CRUZ, MONICA, REP, House, TX-15, 2026, principal C00765719 establishes the named beneficiary without an alias change. Republican alignment describes this supported beneficiary, not either banking association's organization-wide politics. These are publisher captions, not independently heard original audio. Joint-ad attribution does not establish the legal payer or FEC committee. No original video bytes, full script, visual disclaimer inspection, verified duration, paid delivery or first airing is claimed. The individual release supplies publisher_report_date; phase and new semantic judgment remain unknown/unreviewed. Existing Wagner objects and all other records, reviews, aliases and protected evidence remain unchanged.",
+            "candidate_id": "H0TX15124",
+            "completeness": "partial_quotation",
+            "content_sha256": "ac7be3af96b4295758d70264a955829bd8c0e209de5ea9c9319f77719ea95126",
+            "format": "html",
+            "heading_selector": "h1",
+            "media_url": "https://www.youtube.com/watch?v=nDfvmZ6GETI",
+            "passages": [
+              "As a small business owner,",
+              "Congresswoman Monica De La Cruz",
+              "understands that small businesses",
+              "are the lifeblood of South Texas's economy."
+            ],
+            "phase": "unknown",
+            "publication_selector": "li.byline__inline:-soup-contains(\"October 23, 2026\")",
+            "published": "2026-10-23",
+            "publisher_captions": {
+              "ad_title": "Supporting Texas Small Businesses - Rep. Monica De La Cruz (R-TX)",
+              "card_selector": "div.video[data-vid-modal-trigger=\"61d3c32cec8c46f090dead117a6b263f\"]",
+              "cue_ids": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "file_sha256": "ff30f2bfd4c8cfc82f019bed53eaf8e2958b233c6c57e1199aef6569121b3f00",
+              "index_sha256": "3f692c0501cfd02a9b94e8cc5749fda889050b75ec7bec05a394c92e1616b6f4",
+              "index_url": "https://www.aba.com/advocacy/political-engagement/voter-education/voter-education-ads",
+              "release_link_sha256": "ef3d1f2ef887d033f40ab21753158a3ee9205c14e9daec46eed147707a6a2267",
+              "url": "https://www.aba.com/-/media/aba/video-transcripts/supporting-texas-small-businesses--rep-monica-de-la-cruz-rtx15.vtt?rev=b0a45728c3424ccb815a8baabbd4812d"
+            },
+            "publisher_credit": "American Bankers Association and Texas Bankers Association; October 23, 2026 release and publisher-hosted caption track for Supporting Texas Small Businesses - Rep. Monica De La Cruz (R-TX).",
+            "record_id": "20261023-nDfvmZ6GETI",
+            "release_title": "ABA, Texas Bankers Association Release New Ad Urging Rep. Monica De La Cruz to Keep Fighting for Small Businesses",
+            "required_context": [
+              "Texas Bankers Association",
+              "Rep. Monica De La Cruz",
+              "Click here to see the ad."
+            ],
+            "retrieval_url": "https://www.aba.com/about-us/press-room/press-releases/texas-voter-education-ad-rep-monica-de-la-cruz",
+            "reuse_basis": "Retain only the first four complete caption cues, totaling 21 whitespace tokens and one sentence, for noncommercial comparative research with publisher/source credit. Exclude the remainder of the caption file, other advertisements, executive quotations, release prose, images and original video. Preserve literal wording, punctuation and cue times; the Narrator voice annotation is syntax, not an additional word. Full caption bytes remain in the ignored evidence cache. Complete downloads preserve the complete selected excerpt and provenance, not a full original script. No blanket reuse license, video redistribution or edition-publication authorization is asserted.",
+            "source": "aba-delacruz-captions",
+            "source_url": "https://www.aba.com/about-us/press-room/press-releases/texas-voter-education-ad-rep-monica-de-la-cruz"
+          },
+          "text": "As a small business owner,"
+        },
+        {
+          "caption_cue": {
+            "cue_id": 2,
+            "end": "00:00:03.660",
+            "file_sha256": "ff30f2bfd4c8cfc82f019bed53eaf8e2958b233c6c57e1199aef6569121b3f00",
+            "start": "00:00:01.620",
+            "url": "https://www.aba.com/-/media/aba/video-transcripts/supporting-texas-small-businesses--rep-monica-de-la-cruz-rtx15.vtt?rev=b0a45728c3424ccb815a8baabbd4812d"
+          },
+          "kind": "publisher_ad_copy",
+          "text": "Congresswoman Monica De La Cruz"
+        },
+        {
+          "caption_cue": {
+            "cue_id": 3,
+            "end": "00:00:05.580",
+            "file_sha256": "ff30f2bfd4c8cfc82f019bed53eaf8e2958b233c6c57e1199aef6569121b3f00",
+            "start": "00:00:03.660",
+            "url": "https://www.aba.com/-/media/aba/video-transcripts/supporting-texas-small-businesses--rep-monica-de-la-cruz-rtx15.vtt?rev=b0a45728c3424ccb815a8baabbd4812d"
+          },
+          "kind": "publisher_ad_copy",
+          "text": "understands that small businesses"
+        },
+        {
+          "caption_cue": {
+            "cue_id": 4,
+            "end": "00:00:08.550",
+            "file_sha256": "ff30f2bfd4c8cfc82f019bed53eaf8e2958b233c6c57e1199aef6569121b3f00",
+            "start": "00:00:05.580",
+            "url": "https://www.aba.com/-/media/aba/video-transcripts/supporting-texas-small-businesses--rep-monica-de-la-cruz-rtx15.vtt?rev=b0a45728c3424ccb815a8baabbd4812d"
+          },
+          "kind": "publisher_ad_copy",
+          "text": "are the lifeblood of South Texas's economy."
+        }
+      ],
+      "source": "aba-delacruz-captions",
+      "source_hash": "02789a091a9706c4b6391ff595d8a4a1d6e7d20dd9b2f6865bde6dbfd0a165c8",
+      "source_record_id": "20261023-nDfvmZ6GETI",
+      "source_url": "https://www.aba.com/about-us/press-room/press-releases/texas-voter-education-ad-rep-monica-de-la-cruz",
+      "sponsor": "American Bankers Association / Texas Bankers Association (publisher-attributed; ad payer unverified)",
+      "sponsor_type": "outside_group",
+      "state": "TX",
+      "text": "As a small business owner,\nCongresswoman Monica De La Cruz\nunderstands that small businesses\nare the lifeblood of South Texas's economy.",
+      "title": "ABA, Texas Bankers Association Release New Ad Urging Rep. Monica De La Cruz to Keep Fighting for Small Businesses"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "The actual October 23, 2026 ABA release identifies a newly released ad by ABA and Missouri Bankers Association applauding Rep. Ann Wagner. Its reviewed new-ad hyperlink locally encodes the exact ABA voter-education index through Outlook/Proofpoint wrappers. Only the link hash and independently public destination are retained in the review; tracking wrappers are neither requested nor published. The pinned index identifies the individual Wagner card and matching modal 05cbd393c7494770beeef844e1d6457e, associates original YouTube ID HamagNqLjgM, and explicitly publishes the same English subtitle/caption VTT URL in that modal's track elements. A bounded anonymous request recovered the actual 969-byte publisher VTT, SHA256 9de4ad09eb43af247fc1d6481d55816b25237b4258653ad10df7615979117700; selected cues 1-3 run from 00:00:00.180 through 00:00:07.740. These are publisher captions, not independently heard audio or verified video duration. No request to the held YouTube original or security-wrapper providers was made, and no original video bytes, full script or visual payer inspection is claimed. Exact frozen H2MO02102, WAGNER, ANN L., REP, House, MO-02, principal C00495846 binds the named beneficiary without a new alias. Republican alignment applies to this ad's supported beneficiary, not organization-wide party affiliation of either banking association; the release's joint-ad attribution is not an independently verified legal disclaimer or committee identity. The individual release date, not the catalog year or runtime metadata, supplies publisher_report_date; first release/airing/paid delivery and phase remain unverified. New semantic judgment remains unreviewed. The unrelated St. Louis Magazine campaign-ad quotations total only 14 words and are excluded below the unchanged 15-word floor; they are not combined with this separate ABA creative.",
       "candidate_mentions": [
         {
@@ -49971,6 +50246,38 @@
       "source": "aan-iowa-nunn",
       "state": "partial",
       "url": "https://iowacapitaldispatch.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "aba-delacruz-captions",
+      "state": "partial",
+      "url": "https://www.aba.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "aba-huizenga-captions",
+      "state": "partial",
+      "url": "https://www.aba.com"
     },
     {
       "ads_with_text": 1,

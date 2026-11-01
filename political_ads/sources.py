@@ -168,6 +168,28 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "aba-delacruz-captions",
+        "https://www.aba.com",
+        "American Bankers Association / Texas Bankers Association "
+        "(publisher-attributed; ad payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="TX-15",
+        discovery="reviewed_releases",
+    ),
+    Source(
+        "aba-huizenga-captions",
+        "https://www.aba.com",
+        "American Bankers Association / Michigan Bankers Association "
+        "(publisher-attributed; ad payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="MI-04",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "aba-wagner-captions",
         "https://www.aba.com",
         "American Bankers Association / Missouri Bankers Association "

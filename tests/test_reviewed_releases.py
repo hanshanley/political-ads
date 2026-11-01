@@ -14,6 +14,7 @@ from political_ads.schema import digest
 from political_ads.sources import SOURCES, collect_wordpress
 
 
+@pytest.mark.parametrize("sponsor", ["wagner", "delacruz", "huizenga"])
 @pytest.mark.parametrize(
     ("failure", "message"),
     [
@@ -36,31 +37,74 @@ from political_ads.sources import SOURCES, collect_wordpress
         ("long_excerpt", "stay bounded"),
         ("missing_caption_candidate", "identify the candidate"),
         ("unsupported_source", "Unsupported publisher caption"),
+        ("candidate_mismatch", "Unsupported publisher caption"),
+        ("race_mismatch", "registered race"),
         ("party_mismatch", "Unsupported publisher caption"),
         ("complete_script", "Unsupported publisher caption"),
     ],
 )
-def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(failure, message):
+def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(
+    sponsor, failure, message
+):
     from political_ads.reviewed_releases import reviewed_release
 
-    source = next(s for s in SOURCES if s.id == "aba-wagner-captions")
+    source = next(s for s in SOURCES if s.id == f"aba-{sponsor}-captions")
     if failure == "unsupported_source":
         source = replace(source, id="unsupported-caption-publisher")
+    candidate_id, formal_name, public_name, release_path, caption_name, original_id = {
+        "wagner": (
+            "H2MO02102",
+            "WAGNER, ANN L.",
+            "Ann Wagner",
+            "missouri-voter-education-ad-rep-ann-wagner",
+            "expanding-opportunities-for-missourians--rep-ann-wagner-rmo02",
+            "HamagNqLjgM",
+        ),
+        "delacruz": (
+            "H0TX15124",
+            "DE LA CRUZ, MONICA",
+            "Monica De La Cruz",
+            "texas-voter-education-ad-rep-monica-de-la-cruz",
+            "supporting-texas-small-businesses--rep-monica-de-la-cruz-rtx15",
+            "nDfvmZ6GETI",
+        ),
+        "huizenga": (
+            "H0MI02094",
+            "HUIZENGA, WILLIAM P",
+            "Bill Huizenga",
+            "michigan-rep-bill-huizenga-voter-education-ad",
+            "delivering-for-michigan-families--rep-bill-huizenga-rmi04",
+            "8vBOgzOmwTY",
+        ),
+    }[sponsor]
+    state, district = source.fixed_race.split("-")
     candidate = {
-        "candidate_id": "H2MO02102",
-        "name": "WAGNER, ANN L.",
+        "candidate_id": candidate_id,
+        "name": formal_name,
         "party": "REP",
-        "state": "MO",
+        "state": state,
         "office": "H",
-        "district": "02",
+        "district": district,
         "election_year": "2026",
     }
     if failure == "party_mismatch":
         candidate["party"] = "DEM"
+    elif failure == "candidate_mismatch":
+        candidate["candidate_id"] = "H9MO02999"
+    elif failure == "race_mismatch":
+        candidate["district"] = "99"
+    candidates = [candidate]
+    if sponsor == "huizenga":
+        alias = {
+            "candidate_id": candidate_id,
+            "name": "HUIZENGA, BILL",
+            "evidence_url": "https://huizenga.house.gov/",
+            "basis": "Fixture reviewed public full name.",
+        }
+        candidates.append(candidate | {"name": alias["name"], "reviewed_alias": alias})
     index_url = source.url + "/advocacy/political-engagement/voter-education/voter-education-ads"
     caption_url = (
-        source.url + "/-/media/aba/video-transcripts/"
-        "expanding-opportunities-for-missourians--rep-ann-wagner-rmo02.vtt?rev=" + "a" * 32
+        source.url + "/-/media/aba/video-transcripts/" + caption_name + ".vtt?rev=" + "a" * 32
     )
     destination = (
         "https-3A__www.aba.com_advocacy_political-2Dengagement_"
@@ -70,20 +114,23 @@ def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(fa
         destination = "https-3A__www.example.test_unrelated"
     protected = "https://urldefense.proofpoint.com/v2/url?" + urlencode({"u": destination})
     link = "https://nam12.safelinks.protection.outlook.com/?" + urlencode({"url": protected})
+    if sponsor != "wagner" and failure != "wrong_destination":
+        link = index_url
     anchor = "" if failure == "missing_link" else f'<a href="{link}">new ad</a>'
     content = (
         "<h1>Fixture new ad announcement</h1>"
         '<li class="byline__inline">October 23, 2026</li>'
-        f"<p>Congresswoman Ann Wagner is the beneficiary of the {anchor}.</p>"
+        f"<p>{public_name} is the beneficiary of the {anchor}.</p>"
     )
     card = (
-        '<div class="video" data-vid-modal-trigger="fixture"><h3>Fixture Ann Wagner ad</h3></div>'
+        '<div class="video" data-vid-modal-trigger="fixture">'
+        f"<h3>Fixture {public_name} ad</h3></div>"
     )
     if failure == "missing_card":
         card = ""
     elif failure == "duplicate_card":
         card *= 2
-    video_id = "OtherVid123" if failure == "wrong_video" else "HamagNqLjgM"
+    video_id = "OtherVid123" if failure == "wrong_video" else original_id
     track = caption_url + "wrong" if failure == "wrong_track" else caption_url
     modal = (
         '<div class="video-modal" data-vid-modal="fixture">'
@@ -97,16 +144,17 @@ def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(fa
     index = (card + modal).encode()
     passages = [
         "Families deserve lower costs and better local opportunities.",
-        "That's why Congresswoman Ann Wagner",
+        f"That's why Representative {public_name}",
         "is supporting local investment and small businesses.",
         "An excluded fourth cue describes proposals outside this bounded excerpt.",
     ]
     if failure == "missing_caption_candidate":
         passages[1] = "That's why our local representative"
+    voice = "<v ->" if sponsor == "wagner" else "<v Narrator>"
     vtt = (
         "\ufeffWEBVTT\n\n"
         + "".join(
-            f"{number}\n00:00:0{number - 1}.000 --> 00:00:0{number}.000\n<v ->{passage}\n"
+            f"{number}\n00:00:0{number - 1}.000 --> 00:00:0{number}.000\n{voice}{passage}\n"
             for number, passage in enumerate(passages, 1)
         )
     ).encode()
@@ -115,7 +163,7 @@ def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(fa
     elif failure == "duplicate_vtt_id":
         vtt = vtt.replace(b"\n3\n", b"\n2\n")
     elif failure == "unexpected_markup":
-        vtt = vtt.replace(b"<v ->", b"<script>")
+        vtt = vtt.replace(voice.encode(), b"<script>")
     cue_ids = [1, 2, 3]
     if failure == "duplicate_selected_id":
         cue_ids = [1, 2, 2]
@@ -128,18 +176,17 @@ def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(fa
         selected[0] += " Invented words."
     review = {
         "source": source.id,
-        "source_url": source.url + "/about-us/press-room/press-releases/"
-        "missouri-voter-education-ad-rep-ann-wagner",
+        "source_url": source.url + "/about-us/press-room/press-releases/" + release_path,
         "record_id": "fixture",
         "format": "html",
         "published": "2026-10-23",
         "release_title": "Fixture new ad announcement",
         "publication_selector": "li.byline__inline",
         "candidate_id": candidate["candidate_id"],
-        "media_url": "https://www.youtube.com/watch?v=HamagNqLjgM",
+        "media_url": "https://www.youtube.com/watch?v=" + original_id,
         "phase": "unknown",
         "completeness": "marked_script" if failure == "complete_script" else "partial_quotation",
-        "required_context": ["Congresswoman Ann Wagner"],
+        "required_context": [public_name],
         "passages": selected,
         "content_sha256": digest(content),
         "publisher_captions": {
@@ -147,7 +194,7 @@ def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(fa
             "index_sha256": sha256(index).hexdigest(),
             "release_link_sha256": digest(link),
             "card_selector": 'div.video[data-vid-modal-trigger="fixture"]',
-            "ad_title": "Fixture Ann Wagner ad",
+            "ad_title": f"Fixture {public_name} ad",
             "url": caption_url,
             "file_sha256": sha256(vtt).hexdigest(),
             "cue_ids": cue_ids,
@@ -170,9 +217,9 @@ def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(fa
 
     if failure:
         with pytest.raises(ValueError, match=message):
-            reviewed_release(Client(), source, review, [candidate], "2026-11-01")
+            reviewed_release(Client(), source, review, candidates, "2026-11-01")
     else:
-        ad = reviewed_release(Client(), source, review, [candidate], "2026-11-01")
+        ad = reviewed_release(Client(), source, review, candidates, "2026-11-01")
         assert calls == [review["source_url"], index_url, caption_url]
         assert ad["text"] == "\n".join(selected)
         assert [s["caption_cue"]["cue_id"] for s in ad["segments"]] == [1, 2, 3]

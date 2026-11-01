@@ -92,19 +92,35 @@ def publisher_caption_text(
     client, content: str, source: Source, review: dict, identities: list[dict]
 ):
     evidence = review["publisher_captions"]
+    candidate_id, release_path, caption_name = {
+        "aba-wagner-captions": (
+            "H2MO02102",
+            "missouri-voter-education-ad-rep-ann-wagner",
+            "expanding-opportunities-for-missourians--rep-ann-wagner-rmo02",
+        ),
+        "aba-delacruz-captions": (
+            "H0TX15124",
+            "texas-voter-education-ad-rep-monica-de-la-cruz",
+            "supporting-texas-small-businesses--rep-monica-de-la-cruz-rtx15",
+        ),
+        "aba-huizenga-captions": (
+            "H0MI02094",
+            "michigan-rep-bill-huizenga-voter-education-ad",
+            "delivering-for-michigan-families--rep-bill-huizenga-rmi04",
+        ),
+    }.get(source.id, ("", "", ""))
     index_url = (
         "https://www.aba.com/advocacy/political-engagement/voter-education/voter-education-ads"
     )
     caption_url = urlsplit(evidence["url"])
     if (
-        source.id != "aba-wagner-captions"
+        not candidate_id
         or source.sponsor_type != "outside_group"
         or source.alignment != "R"
-        or review["candidate_id"] != "H2MO02102"
+        or review["candidate_id"] != candidate_id
         or identities[0]["party"] != "REP"
         or review["source_url"]
-        != "https://www.aba.com/about-us/press-room/press-releases/"
-        "missouri-voter-education-ad-rep-ann-wagner"
+        != "https://www.aba.com/about-us/press-room/press-releases/" + release_path
         or review["retrieval_url"] != review["source_url"]
         or review["format"] != "html"
         or review["completeness"] != "partial_quotation"
@@ -120,9 +136,7 @@ def publisher_caption_text(
         or evidence["index_url"] != index_url
         or caption_url.scheme != "https"
         or caption_url.netloc != "www.aba.com"
-        or caption_url.path
-        != "/-/media/aba/video-transcripts/"
-        "expanding-opportunities-for-missourians--rep-ann-wagner-rmo02.vtt"
+        or caption_url.path != "/-/media/aba/video-transcripts/" + caption_name + ".vtt"
         or caption_url.fragment
         or not re.fullmatch(r"rev=[a-f0-9]{32}", caption_url.query)
     ):
@@ -134,22 +148,23 @@ def publisher_caption_text(
     ]
     if len(links) != 1 or digest(links[0]) != evidence["release_link_sha256"]:
         raise ValueError("Publisher's reviewed new-ad link is missing or changed")
-    # Inspect the public wrapper locally; never request its tracking URL.
-    wrapper = urlsplit(links[0])
-    protected = urlsplit(parse_qs(wrapper.query).get("url", [""])[0])
-    if (
-        wrapper.scheme != "https"
-        or wrapper.netloc != "nam12.safelinks.protection.outlook.com"
-        or protected.scheme != "https"
-        or protected.netloc != "urldefense.proofpoint.com"
-        or protected.path != "/v2/url"
-        or parse_qs(protected.query).get("u")
-        != [
-            "https-3A__www.aba.com_advocacy_political-2Dengagement_"
-            "voter-2Deducation_voter-2Deducation-2Dads"
-        ]
-    ):
-        raise ValueError("Publisher's protected link must identify the exact public ad index")
+    if links[0] != index_url:
+        # Inspect the public wrapper locally; never request its tracking URL.
+        wrapper = urlsplit(links[0])
+        protected = urlsplit(parse_qs(wrapper.query).get("url", [""])[0])
+        if (
+            wrapper.scheme != "https"
+            or wrapper.netloc != "nam12.safelinks.protection.outlook.com"
+            or protected.scheme != "https"
+            or protected.netloc != "urldefense.proofpoint.com"
+            or protected.path != "/v2/url"
+            or parse_qs(protected.query).get("u")
+            != [
+                "https-3A__www.aba.com_advocacy_political-2Dengagement_"
+                "voter-2Deducation_voter-2Deducation-2Dads"
+            ]
+        ):
+            raise ValueError("Publisher's protected link must identify the exact public ad index")
     body, _ = client.get(index_url, refresh=True, retry=False)
     if sha256(body).hexdigest() != evidence["index_sha256"]:
         raise ValueError("Publisher ad index changed; captions require a new review")
@@ -188,8 +203,10 @@ def publisher_caption_text(
     for index, match in enumerate(matches):
         stop = matches[index + 1].start() if index + 1 < len(matches) else len(vtt)
         payload = vtt[match.end() : stop].strip()
-        if payload.startswith("<v ->"):
-            payload = payload.removeprefix("<v ->").removesuffix("</v>")
+        for marker in ("<v ->", "<v Narrator>"):
+            if payload.startswith(marker):
+                payload = payload.removeprefix(marker).removesuffix("</v>")
+                break
         start, end = match[2], match[3]
         seconds = [
             int(time[:2]) * 3600 + int(time[3:5]) * 60 + float(time[6:]) for time in (start, end)

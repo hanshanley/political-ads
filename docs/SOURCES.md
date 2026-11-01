@@ -10,6 +10,86 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## De La Cruz and Huizenga: two additional publisher-caption excerpts
+
+Recover two distinct ABA outside-group advertisements, not campaign biographies,
+executive quotations or catalog metadata. The individual release dates are
+**October 23, 2026** for Monica De La Cruz and **August 26, 2026** for Bill
+Huizenga; visible dates and the publisher RSS agree. Neither a catalog year,
+caption filename nor August 27 supplies the date.
+
+| Source | Frozen federal identity | Original association | Retained cues | Words | Caption interval |
+|---|---|---|---|---|---|
+| `aba-delacruz-captions` | `H0TX15124 / C00765719 / REP / TX-15` | `nDfvmZ6GETI` | 1-4 | 21 | `00:00:00.060-00:00:08.550` |
+| `aba-huizenga-captions` | `H0MI02094 / C00459297 / REP / MI-04` | `8vBOgzOmwTY` | 1-3 | 16 | `00:00:00.390-00:00:06.300` |
+
+Each release's reviewed `new ad` hyperlink directly equals the exact public
+ABA voter-education index. Bind the release heading/date/content hash, link
+hash, shared index hash, unique individual card/title/modal, original video ID,
+English caption association and actual VTT file hash before retaining any words.
+The review ledger records all exact URLs, SHA-256 values and literal passages.
+The recovered caption assets are **812 / 950 bytes**, respectively.
+The explicit collector allowlist now contains only Wagner, De La Cruz and
+Huizenga's exact source/candidate/release/caption paths. Generic House/race
+guards remain mandatory; this is not unrestricted publisher transcription.
+
+The actual new tracks use `<v Narrator>`; remove this voice annotation as
+caption syntax, just as Wagner's `<v ->` is removed. Never count the narrator
+label as an ad word. De La Cruz's first three actual cues contain only
+**14 words**; four complete cues form a **21-word sentence** above the unchanged
+15-word acquisition floor. Huizenga's three cues form a **16-word sentence**.
+Reject all unexpected markup, changed bytes, malformed or overlapping times,
+unordered/repeated cue IDs and nonliteral or over-25-word excerpts. Do not
+repair text, include the rest of either script or mix separate creatives.
+
+Huizenga's unchanged **HUIZENGA, BILL** reviewed alias bridges frozen
+**HUIZENGA, WILLIAM P**; the alias ledger stays at **37 objects**. De La Cruz
+needs no new alias. **R** is the supported beneficiary's alignment, not either
+banking association's organization-wide affiliation. Joint-ad publisher
+attribution is not a verified legal disclaimer. These are partial publisher
+captions, not independently heard audio; payer, first airing/paid delivery,
+phase and new semantic judgments remain unverified. Complete downloads retain
+all selected words, segments, cue times and provenance, not merely metadata.
+No held video provider was requested and no original video is redistributed.
+
+Reproduce with `.venv/bin/political-ads collect --source aba-delacruz-captions
+--source aba-huizenga-captions --until 2026-10-30 --offline`, followed by
+`parquet --offline`, `build --offline`, `validate --offline` and
+`audit-strategy --offline`. Offline acquisition requires the exact publisher
+release/index/VTT bodies in the ignored HTTP cache; a fresh checkout alone
+does not contain these assets. Tests use local synthetic fixtures to exercise
+all three allowed sources, direct/wrapped links, voice syntax and negative
+identity/race/hash/card/cue cases without relying on the live publisher.
+
+Verified snapshot
+`b86dc6efc2ca2481e1b8faf1ce19eca519c7a5882f3afa36212d37be5bc0edc3`
+contains **1,933 acquired / 1,894 English records**, **R 629 / D 1,226**,
+and **R 251 / D 698 House records**. House outside frozen Snap IDs is
+**R 250 / D 222**. All **573 prior written / 1,931 combined / 1,892 English
+objects**, **79 acquisition reviews**, **37 aliases** and **18 protected
+files** are preserved, including Wagner's complete serialized object;
+only two reviews and two ads are appended. There are now **575 written
+records / 81 acquisition reviews**. Full-corpus text and original-media
+associations were checked for duplicates, not just a source-local subset.
+
+Two isolated three-resource replays, with network connections and media
+execution forbidden, reproduce both entire objects using the existing alias.
+After browser fixtures restore the actual dataset, both complete JSON/gzip/CSV
+copies, all **1,933 Parquet text/segment records** and all **11 PNG sets in
+three copies** pass preservation/parity checks, including typed cue times.
+Backend lint/format and **174 focused tests**, frontend lint/type/build,
+**17 unit tests / 9 browser tests** pass. The strategy audit reconciles
+**20 groups / 10 chart rows**, with **592 R / 1,204 D unique messages**;
+the two new excerpts remain semantically unreviewed, not automatically
+praise-only. Website, host restoration and both edition publications
+remain on hold. Nunn and Ciscomani caption associations remain discovery
+leads, not acquired ads; the broader Republican House coverage gap persists.
+
+The preceding Wagner commit
+`515b51e59fd45506ed552ed66c69612cde686503` passed its exact
+**Validate evidence and dashboard** run **41280878748**; terminal success and
+the matching head were verified, not borrowed from a later claims commit.
+
 ## Wagner: bounded words from publisher-hosted captions
 
 The individual **October 23, 2026** American Bankers Association release,
