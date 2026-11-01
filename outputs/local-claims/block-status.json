@@ -5282,50 +5282,50 @@
   {
     "ad_id": "snap-35d2348378887edc3ee7f326",
     "block_id": "snap-35d2348378887edc3ee7f326-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 12\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-35d2348378887edc3ee7f326",
     "block_id": "snap-35d2348378887edc3ee7f326-claims-002",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-3619e341fb80d61059858e9f",
     "block_id": "snap-3619e341fb80d61059858e9f-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 4\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-364a215490eec332fcef9e7c",
     "block_id": "snap-364a215490eec332fcef9e7c-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 7\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-365c3836d3a32dc592338e90",
     "block_id": "snap-365c3836d3a32dc592338e90-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-3681cb2e192a6e1c5c9d1c2c",
     "block_id": "snap-3681cb2e192a6e1c5c9d1c2c-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for Georgia families: \\\"Georgia families\\\" is absent from unit 4. Exact source: \\\"on Georgia fl\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-36b169a18f8b643620751341",
     "block_id": "snap-36b169a18f8b643620751341-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 9 for Jon Ossoff: \\\"Jon Ossoff\\\" is absent from unit 13. Exact source: \\\"PAID FOR BY JON OSSOFFFOR SENATE APPROVED BY JON OSSOFF\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-36ea0bf2f3d6a59bb23dc0db",
     "block_id": "snap-36ea0bf2f3d6a59bb23dc0db-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-36f613c46f7cd1b721447c27",
