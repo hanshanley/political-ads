@@ -180,6 +180,101 @@ active. Scheduled prompt **#1 / every 20 minutes** remains active.
 All provider pauses, literal-word thresholds, prior-evidence
 preservation and the website/editions/host-restoration hold persist.
 
+## Expanded publisher searches and fresh outside-group archives
+
+These additional checks still admit **zero new ads**. The **1,919
+acquired / 1,880 English / 237 Republican English House** snapshot,
+73 release reviews and all existing semantic-review states are unchanged.
+Neither additional source links nor reported advertising expenditure
+are recovered words.
+
+WPR's actual Wassgren search led to its **April 21, 2026** withdrawal
+report. Its quotations are a campaign statement, not ad narration.
+Cached federal registration does not establish a current nomination;
+withdrawal does not rule out a genuine earlier, in-window advertisement.
+The report's public HTML SHA-256 is
+`cd84bc8b9f589f739c17e979d3666ce66df3c88d7bfe5fd42a65eaf3439d2c43`.
+WPR's **October 20** Van Orden/Musk-group report supplies spending,
+social-post and interview material, not additional ad scripts. Its
+HTML SHA-256 is
+`5a289ca51df031da8fb773820143ae9b2639df9ae83fec58cbe3caac5a807ea1`.
+The previously acquired fictional Cooke quotation remains one creative,
+not authentic Cooke speech or a new WPR acquisition.
+
+WCBU's **March 17, 2026** primary report identifies Dillan Vancil as
+the Republican IL-17 nominee against Democrat Eric Sorensen. The report's
+linked Facebook permalink rendered only press-release metadata; the
+actual campaign homepage supplies biography, not a dated ad script.
+The primary-report and homepage HTML SHA-256 values are, respectively,
+`87b87f275aa4bfb52394d5b56a7e1837fe60fe7f359a564111897b0c82292c2f`
+and
+`3624a70dc1b0021aa32e3edba219f3b1d7ec64926c467dfdc133df4d4b256bbf`.
+WGLT's August 12, 2025 interview is not advertisement text. WCBU's
+multiword search returned overly broad results, not a scoped inventory.
+
+New PinkNews and linked ABC reports returned 200, but their quoted
+advertisements concern Senate races and do not supply qualifying House
+words. ABC identifies its copy as AP reporting; no further alternate-copy
+route was pursued. Their spending and airing aggregates are not this corpus's
+creative counts. NPR's **October 29** competitive-House map and linked
+**October 25** Arkansas report also returned 200: they are useful
+race-discovery leads, not recovered ad narration. The Arkansas coverage
+does not reverse the earlier French Hill exclusions. OPB's October 15
+WA-03 page is identified as republished Washington State Standard
+reporting; its substantive quotations are debate/interview speech,
+not a new Republican ad. No held original or caption route was followed.
+
+IA Fact Check exposed two previously uncounted Mitchell leads:
+**September 16, Liberal Lindsay**, and **October 7, BS**. The actual
+Iowa Standard report links the individual video, but introduces
+its long quotation and voting list as release material, not ad speech.
+Iowa Media Wire report also supplies a release statement rather than
+a script. The indexed Washington Reporter veteran-ad URL returned 404;
+the publisher homepage and its exposed `s=Mitchell` search returned
+200 but did not establish a replacement ad-report URL. The campaign's
+exposed `/news` returned 404. Its homepage includes biography and
+unrelated template text; neither is admitted. IA Fact Check's judgments
+are not imported as this project's semantic labels, and its short quoted
+excerpt is not padded with a headline or unverified transcript.
+
+The HTTP client normally reuses a retained body unless refresh is
+requested. Current WFW/WFW AF homepages, exposed press pages 1-4 and
+the Gruters release were therefore fetched into the separate
+**`data/raw/http/house-discovery-2026-10-31/`** cache. Existing replay
+bodies were not overwritten. WFW's visible latest advocacy release
+remains July 30; WFW AF's first press page reaches September 17. These
+bounded inventories do not establish absence from every group channel.
+Page 4's Honeycutt, Mealer and Pridemore coverage points to already
+acquired scripts, while its victory/fundraising releases supply no new
+creative text. Its exposed page-5 link remains a discovery frontier.
+Newly surfaced NRCC Tax Day scripts were checked against the existing
+written corpus rather than counted again.
+
+WFW AF's actual **July 29, 2026 / post 13529** release announces a
+Sydney Gruters **FL-16 direct-mail** campaign ahead of the August 18
+primary. Its quoted endorsement is a release statement, not mailer
+wording. The view link is a recipient-tagged list-management redirect
+and was not requested. The expressly exposed first-party post response
+has **featured_media 0**; its expressly linked attachment list returns
+an empty array. No mailer original or words were acquired. Release HTML
+and post-response SHA-256 values are
+`352baa786f1754f359e5d828e19b0801560c51c6d75d364b0252d999de6233fe`
+and
+`95bc575643a5aad666f8ef1554d53eb6102ec62f426f1981dfc8104f07d36f0e`.
+The physical creative remains an unresolved acquisition lead, not an
+admission based on nomination, expenditure or a link.
+
+**Search-provider boundaries:** Yahoo Search's verification redirect
+loop and DuckDuckGo HTML's human-image challenge remain paused; no
+challenge or alternate route was attempted. This does not place a new
+hold on separately accessible Yahoo article subdomains. Brave initially
+provided useful discovery links, but a subsequent actual search returned
+**HTTP 429**, so Brave Search is now paused too. Empty or irrelevant
+search results, stale indexed URLs and provider failures are not evidence
+that campaigns ran no advertisements. Continue with unheld first-party
+publisher archives and independent public originals; do not retry these
+search endpoints or reinterpret release statements as ad words.
+
 ## Wisconsin WI-07 campaign quotations and physical-print expansion
 
 Snapshot **626e04b307af1604666cdbf30e7f27cf17fe7564535d60a724ae8d9c0ea48b76**
