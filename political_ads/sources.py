@@ -453,6 +453,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "lisonbee-sltrib",
+        "https://www.sltrib.com",
+        "Karianne Lisonbee campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="UT-02",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "lawler-tell-her-no",
         "https://www.lawlerforcongress.com",
         "Mike Lawler campaign (campaign-reported; payer unverified)",

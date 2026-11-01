@@ -10,6 +10,78 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Lisonbee: a Utah intraparty ad quotation
+
+The Salt Lake Tribune's June 15, 2026 report
+`https://www.sltrib.com/news/politics/2026/06/15/outright-defamation-blake-moore/`
+explicitly distinguishes a social-post caption from speech in Lisonbee's
+ad. Acquire only the **22 unchanged words in its two adjacent ad
+quotations**, not the caption, candidate press response, interview or
+publisher legal analysis. This is a **partial quotation**, not a complete
+script. The existing 15-word floor and 25-word ceiling are unchanged.
+
+Candidate is exact frozen **H6UT02523 / LISONBEE, KARIANNE / REP /
+UT-02 / C00943035**; no nickname alias was added. Contextual opponent is
+**H0UT01205 / MOORE, BLAKE / REP / UT-02 / C00738872**.
+This is **intraparty Republican primary advertising**, not evidence of an
+attack on Democrats. Advertiser is the publisher-reported candidate
+campaign, not an independently verified legal payer. The ordinary
+detector identified English; phase remains unknown and the new
+whole-creative semantic strategy remains **unreviewed**.
+
+Exact HTML SHA-256 is
+`80cd2bef203c3ee18dbecd308facad4df5b84680e519a0ac667401996260cf59`.
+The review binds unique `h1.headline`, actual visible
+`span.article-byline-author` date and matching
+`meta[itemprop="datePublished"]` metadata, not a date inferred from the
+URL. Its selector matches exactly one paragraph in the article body,
+SHA-256
+`f705fea220eccf2efd5604a97097d23cd10a71cd3f4c67237fc8880c6856bc61`.
+Retained text SHA-256 is
+`b1bbdeeff4cd997a8c0d3f0794257183943ebc115854a8237e8671e404976ca4`.
+Source and retrieval hosts agree; exact discovery bytes were copied into
+an absent canonical cache without replacing frozen responses.
+The date is the **report date**, not verified first airing. Original
+audio/video, legal payer, delivery, duration, full script and underlying
+allegations remain unverified; media URLs are empty.
+
+Reproduce with the exact retained cache:
+`.venv/bin/political-ads collect --source lisonbee-sltrib --until 2026-10-30 --offline`,
+then `parquet`, `build`, `validate`, `audit-strategy` and the existing
+frontend build/tests. Full publisher HTML and original media remain
+undistributed. The new positive regression failed before collector
+support; nine focused cases verify admission and reject wrong identity,
+interview attribution, excessive quotation length, press responses,
+duplicate paragraphs, inconsistent dates and changed paragraph hashes.
+
+Snapshot
+`7c0f9b1df791718fe4f10a3971a2615722cb32585a6a857b884668f28f08157c`
+contains **1,946 acquired / 1,907 English**, including **R642 / D1,226**
+English records and **R264 / D698** English House records. House outside
+Snapchat is **R263 / D222**. There are **585 written records / 91 release
+reviews / 43 native reviews / 38 aliases**. All **1,945 prior acquired
+and 1,906 prior analyzed objects**, old reviews/aliases, 18 protected
+hashes and the original CNBC cache/metadata hashes remain unchanged.
+Complete JSON/gzip/CSV copies, typed Parquet text/segments, eleven
+PNG/CSV chart sets and an isolated replay forbidding network,
+recognition and subprocesses passed. Whole Ruff and **709 Python tests**,
+frontend lint/build, **17 unit tests / 9 browser tests**, evidence
+validation and the independent same-ad strategy audit passed.
+
+Fresh Ohio, Washington, Colorado and Utah discovery preserves
+non-ad and duplicate exclusions. The Denver Gazette's longer NGB
+data-center quotation identifies existing `ngb-colsun-502218-0`;
+absence of a full-literal match to a shorter old excerpt did **not**
+establish a new creative. Carey’s explicitly linked archive exceeded
+the existing 4 MiB bound; no partial body, larger request or range retry.
+Moore's primary homepage exposes two native video configurations,
+whose actual published player binds two master playlists. The first
+audio playlist is encrypted; conservative recovery stopped before
+key/segment requests, with video-specific dates still unresolved.
+Neither configuration nor playlist is counted as acquired ad text.
+Saved cutoff remains **October 30** and final inclusive scope
+**November 4**. Website, host and edition publication remain held.
+
 ## NRCC: one Alaska ad's selected ending
 
 CNBC's April 14, 2026 report

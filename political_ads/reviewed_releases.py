@@ -447,6 +447,7 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             "merrin-washingtonreporter",
             "kiggans-washingtonreporter",
             "begich-nrcc-cnbc",
+            "lisonbee-sltrib",
             "lawler-tell-her-no",
             "pps-house-washingtonreporter",
         }
@@ -470,6 +471,14 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         raise ValueError("Campaign quotation requires the reviewed Lawler candidate identity")
     if source.id == "begich-nrcc-cnbc" and review["candidate_id"] != "H2AK01083":
         raise ValueError("CNBC quotation requires the reviewed Begich candidate identity")
+    if source.id == "lisonbee-sltrib":
+        if review["candidate_id"] != "H6UT02523":
+            raise ValueError("Tribune quotation requires the reviewed Lisonbee candidate identity")
+        publications = BeautifulSoup(content, "html.parser").select(
+            'meta[itemprop="datePublished"]'
+        )
+        if len(publications) != 1 or publications[0].get("content", "")[:10] != review["published"]:
+            raise ValueError("Tribune visible and metadata publication dates must agree")
     if source.id == "pps-house-washingtonreporter" and review["candidate_id"] != "H2FL04211":
         raise ValueError("Reporter quotation requires the reviewed Bean speaker identity")
     evidence = review["reported_ad_text"]
@@ -509,6 +518,8 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             r"The ad also includes footage of Rep\. Lloyd Smucker [^“”]+“([^”]+)” "
             r"The Washington Reporter previously covered that hearing\."
         )
+    elif source.id == "lisonbee-sltrib":
+        pattern = r"“([^”]+)” she says in the ad\. “([^”]+)”"
     match = re.fullmatch(pattern, paragraph)
     if not match:
         raise ValueError("Publisher must explicitly attribute the selected quotations to the ad")

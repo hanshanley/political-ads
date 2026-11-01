@@ -2698,6 +2698,40 @@
       "publisher_credit": "CNBC; April 14, 2026 report on the NRCC House tax-ad campaign.",
       "reuse_basis": "Retain only the 18 unchanged ending words of the longer voiceover quotation, including the terminal comma, credited for comparative noncommercial research. This is a selected ending, not the whole quoted passage or complete creative. Exclude preceding ad lines, NRCC spokesman press statements, publisher analysis and other campaigns. Full cached HTML and original media remain undistributed; no blanket license or edition-publication authorization is asserted.",
       "attribution_basis": "CNBC explicitly describes an NRCC digital-ad campaign and attributes this quoted voiceover to its Nick Begich creative for Alaska's at-large House seat. Acquire one Alaska creative, not fourteen records for the campaign's district placements. Exact frozen contextual candidate H2AK01083 / BEGICH, NICHOLAS III / REP / H / AK00 / 2026 / C00792341 and the existing Nick Begich alias remain unchanged. The reported advertiser is the National Republican Congressional Committee, a party source, not Begich's principal committee or an independently verified legal payer. The unique h1.ArticleHeader-headline and article:published_time 2026-04-14T11:00:01+0000 are pinned to the original canonical HTML SHA256 411bff43fceb26f2252d03f9f69e5947e49bdc165ed361933670e7f7e65554be. A newer public discovery response has SHA256 73cf176e843570f44c6ef5ea4d73002d96b03b15a133e0f808305f200d6b959b but reproduces the identical heading, date and uniquely hash-bound paragraph d6fb1d75921892ba2c871fbfbd4f07da3b7b461d4d52e4d7d77f0ebe8b064053. Neither response was overwritten. The selected ending's text SHA256 is 11c0f3bf8c6ebc6c3e9cb5881c409dad1cfefa1ebd8ccf2646e506ba2fdca8dc. The narrow collector selects only the ending explicitly inside the voiceover quotation, retains the 15-word floor and 25-word ceiling, and rejects preceding lines and press statements. No request was made to the paused NRCC provider or original media. Independent audio, legal payer, first airing, delivery, duration, completeness, underlying tax claims and semantic strategy remain unverified; phase is unknown and media URLs are empty."
+    },
+    {
+      "source": "lisonbee-sltrib",
+      "record_id": "20260615",
+      "source_url": "https://www.sltrib.com/news/politics/2026/06/15/outright-defamation-blake-moore/",
+      "retrieval_url": "https://www.sltrib.com/news/politics/2026/06/15/outright-defamation-blake-moore/",
+      "format": "html",
+      "content_sha256": "80cd2bef203c3ee18dbecd308facad4df5b84680e519a0ac667401996260cf59",
+      "published": "2026-06-15",
+      "release_title": "Karianne Lisonbee, without evidence, accuses Blake Moore of ‘insider trading’ before deleting X post",
+      "heading_selector": "h1.headline",
+      "publication_selector": "span.article-byline-author",
+      "publication_date_format": "| %B %d, %Y, %H:%M a.m.",
+      "candidate_id": "H6UT02523",
+      "media_url": null,
+      "phase": "unknown",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Karianne Lisonbee",
+        "Running against Moore in Utah’s newly-drawn 2nd Congressional District",
+        "In the ad itself, Lisonbee talks about growing up in a trailer",
+        "she says in the ad."
+      ],
+      "passages": [
+        "Now Congress supports endless spending of our tax dollars while they make millions insider trading,",
+        "It’s time for Congress to restore trust."
+      ],
+      "reported_ad_text": {
+        "paragraph_selector": ".article-body-container > p:-soup-contains(\"she says in the ad\")",
+        "paragraph_sha256": "f705fea220eccf2efd5604a97097d23cd10a71cd3f4c67237fc8880c6856bc61"
+      },
+      "publisher_credit": "The Salt Lake Tribune; Addy Baird; June 15, 2026 report on the Utah 2nd Congressional District Republican primary.",
+      "reuse_basis": "Retain only the 22 unchanged words in two adjacent explicitly attributed ad quotations, credited for comparative noncommercial research. This is a partial quotation, not the full creative. Exclude the separate social-post caption, candidate press responses, interview statements and publisher legal analysis. Full cached HTML and original media remain undistributed; no blanket license or edition-publication authorization is asserted.",
+      "attribution_basis": "The Tribune explicitly distinguishes Lisonbee's social-post caption from words in the ad itself, then attributes the uniquely hash-bound paragraph to her speech in the ad. Pin the unique h1.headline, actual visible span.article-byline-author date and matching itemprop=datePublished metadata to the exact saved HTML SHA256. Acquire one creative, not separate counts for its original and reposted social captions; no Lisonbee creative or matching quotation existed in the pre-edit corpus. Exact frozen candidate H6UT02523 / LISONBEE, KARIANNE / REP / H / UT02 / 2026 / C00943035; no alias added. Contextual target Moore is exact H0UT01205 / MOORE, BLAKE / REP / H / UT02 / 2026 / C00738872. This is an intraparty Republican primary ad, not evidence of an attack on Democrats. The candidate-campaign advertiser is publisher-reported, not an independently verified legal payer. The publication date is the report date, not verified first airing. The narrow collector requires the exact Lisonbee identity, agreeing visible/metadata dates and explicit ad attribution, retains the 15-word floor and 25-word ceiling, and rejects press comments, duplicate paragraphs and changed hashes. Original audio/video, payer, delivery, first airing, duration, complete script, underlying allegations and semantic strategy remain unverified; phase is unknown and media URLs are empty."
     }
   ]
 }

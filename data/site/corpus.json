@@ -14103,6 +14103,108 @@
       "title": "ABA, Arizona Bankers Association Release New Ad Urging Rep. Juan Ciscomani to Continue Supporting Policies that Drive Economic Growth"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "The Tribune explicitly distinguishes Lisonbee's social-post caption from words in the ad itself, then attributes the uniquely hash-bound paragraph to her speech in the ad. Pin the unique h1.headline, actual visible span.article-byline-author date and matching itemprop=datePublished metadata to the exact saved HTML SHA256. Acquire one creative, not separate counts for its original and reposted social captions; no Lisonbee creative or matching quotation existed in the pre-edit corpus. Exact frozen candidate H6UT02523 / LISONBEE, KARIANNE / REP / H / UT02 / 2026 / C00943035; no alias added. Contextual target Moore is exact H0UT01205 / MOORE, BLAKE / REP / H / UT02 / 2026 / C00738872. This is an intraparty Republican primary ad, not evidence of an attack on Democrats. The candidate-campaign advertiser is publisher-reported, not an independently verified legal payer. The publication date is the report date, not verified first airing. The narrow collector requires the exact Lisonbee identity, agreeing visible/metadata dates and explicit ad attribution, retains the 15-word floor and 25-word ceiling, and rejects press comments, duplicate paragraphs and changed hashes. Original audio/video, payer, delivery, first airing, duration, complete script, underlying allegations and semantic strategy remain unverified; phase is unknown and media URLs are empty.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H0UT01205",
+          "district": "02",
+          "name": "MOORE, BLAKE",
+          "office": "H",
+          "party": "REP",
+          "state": "UT"
+        },
+        {
+          "candidate_id": "H6UT02523",
+          "district": "02",
+          "name": "LISONBEE, KARIANNE",
+          "office": "H",
+          "party": "REP",
+          "state": "UT"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "lisonbee-sltrib-20260615-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "08ac10a2decf8fd276e40ebaaf060cda22e8c08a4d7de33323c461f83c39eeb9",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-06-15",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified"
+      ],
+      "race": "UT-02",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6UT02523"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The Tribune explicitly distinguishes Lisonbee's social-post caption from words in the ad itself, then attributes the uniquely hash-bound paragraph to her speech in the ad. Pin the unique h1.headline, actual visible span.article-byline-author date and matching itemprop=datePublished metadata to the exact saved HTML SHA256. Acquire one creative, not separate counts for its original and reposted social captions; no Lisonbee creative or matching quotation existed in the pre-edit corpus. Exact frozen candidate H6UT02523 / LISONBEE, KARIANNE / REP / H / UT02 / 2026 / C00943035; no alias added. Contextual target Moore is exact H0UT01205 / MOORE, BLAKE / REP / H / UT02 / 2026 / C00738872. This is an intraparty Republican primary ad, not evidence of an attack on Democrats. The candidate-campaign advertiser is publisher-reported, not an independently verified legal payer. The publication date is the report date, not verified first airing. The narrow collector requires the exact Lisonbee identity, agreeing visible/metadata dates and explicit ad attribution, retains the 15-word floor and 25-word ceiling, and rejects press comments, duplicate paragraphs and changed hashes. Original audio/video, payer, delivery, first airing, duration, complete script, underlying allegations and semantic strategy remain unverified; phase is unknown and media URLs are empty.",
+            "candidate_id": "H6UT02523",
+            "completeness": "partial_quotation",
+            "content_sha256": "80cd2bef203c3ee18dbecd308facad4df5b84680e519a0ac667401996260cf59",
+            "format": "html",
+            "heading_selector": "h1.headline",
+            "media_url": null,
+            "passages": [
+              "Now Congress supports endless spending of our tax dollars while they make millions insider trading,",
+              "It’s time for Congress to restore trust."
+            ],
+            "phase": "unknown",
+            "publication_date_format": "| %B %d, %Y, %H:%M a.m.",
+            "publication_selector": "span.article-byline-author",
+            "published": "2026-06-15",
+            "publisher_credit": "The Salt Lake Tribune; Addy Baird; June 15, 2026 report on the Utah 2nd Congressional District Republican primary.",
+            "record_id": "20260615",
+            "release_title": "Karianne Lisonbee, without evidence, accuses Blake Moore of ‘insider trading’ before deleting X post",
+            "reported_ad_text": {
+              "paragraph_selector": ".article-body-container > p:-soup-contains(\"she says in the ad\")",
+              "paragraph_sha256": "f705fea220eccf2efd5604a97097d23cd10a71cd3f4c67237fc8880c6856bc61"
+            },
+            "required_context": [
+              "Karianne Lisonbee",
+              "Running against Moore in Utah’s newly-drawn 2nd Congressional District",
+              "In the ad itself, Lisonbee talks about growing up in a trailer",
+              "she says in the ad."
+            ],
+            "retrieval_url": "https://www.sltrib.com/news/politics/2026/06/15/outright-defamation-blake-moore/",
+            "reuse_basis": "Retain only the 22 unchanged words in two adjacent explicitly attributed ad quotations, credited for comparative noncommercial research. This is a partial quotation, not the full creative. Exclude the separate social-post caption, candidate press responses, interview statements and publisher legal analysis. Full cached HTML and original media remain undistributed; no blanket license or edition-publication authorization is asserted.",
+            "source": "lisonbee-sltrib",
+            "source_url": "https://www.sltrib.com/news/politics/2026/06/15/outright-defamation-blake-moore/"
+          },
+          "text": "Now Congress supports endless spending of our tax dollars while they make millions insider trading,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "It’s time for Congress to restore trust."
+        }
+      ],
+      "source": "lisonbee-sltrib",
+      "source_hash": "80cd2bef203c3ee18dbecd308facad4df5b84680e519a0ac667401996260cf59",
+      "source_record_id": "20260615",
+      "source_url": "https://www.sltrib.com/news/politics/2026/06/15/outright-defamation-blake-moore/",
+      "sponsor": "Karianne Lisonbee campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "UT",
+      "text": "Now Congress supports endless spending of our tax dollars while they make millions insider trading,\nIt’s time for Congress to restore trust.",
+      "title": "Karianne Lisonbee, without evidence, accuses Blake Moore of ‘insider trading’ before deleting X post"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official DSCC release at https://www.dscc.org/article/dscc-releases-new-digital-ad-on-mike-collins-too-extreme/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
@@ -52210,6 +52312,22 @@
       "source": "letlow",
       "state": "ok",
       "url": "https://www.julialetlow.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "lisonbee-sltrib",
+      "state": "partial",
+      "url": "https://www.sltrib.com"
     },
     {
       "ads_with_text": 1,

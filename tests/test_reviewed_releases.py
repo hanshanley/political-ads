@@ -1622,6 +1622,140 @@ def test_begich_nrcc_report_rejects_unbound_identity_or_unselected_words(failure
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_lisonbee_fixture():
+    source, candidate, review, _, _, _ = unlinked_kiggans_fixture()
+    source = replace(
+        source,
+        id="lisonbee-sltrib",
+        url="https://www.sltrib.com",
+        sponsor="Karianne Lisonbee campaign (publisher-reported; payer unverified)",
+        fixed_race="UT-02",
+    )
+    candidate.update(
+        candidate_id="H6UT02523",
+        name="LISONBEE, KARIANNE",
+        state="UT",
+        district="02",
+    )
+    candidate.pop("reviewed_alias", None)
+    selected = [
+        "This first selected ad quotation contains fifteen substantive words about restoring "
+        "public trust in Congress.",
+        "This second sentence finishes the quoted ad.",
+    ]
+    paragraph = f"“{selected[0]}” she says in the ad. “{selected[1]}”"
+    commentary = "Separate candidate press response, not words from the ad."
+    content = (
+        '<meta itemprop="datePublished" content="2026-06-15T17:00:16.889Z">'
+        "<h1 class='headline'>Lisonbee ad report</h1>"
+        '<span class="article-byline-author">| June 15, 2026, 11:00 a.m.</span>'
+        '<div class="article-body-container">'
+        "<p>Karianne Lisonbee shared her campaign ad for Congress. "
+        "In the ad itself, Lisonbee describes her background.</p>"
+        f'<p class="quoted">{paragraph}</p><p>"{commentary}" she said.</p></div>'
+    )
+    url = source.url + "/news/politics/2026/06/15/lisonbee-ad-report/"
+    review.update(
+        source=source.id,
+        record_id="20260615",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-06-15",
+        release_title="Lisonbee ad report",
+        heading_selector="h1.headline",
+        publication_selector="span.article-byline-author",
+        publication_date_format="| %B %d, %Y, %H:%M a.m.",
+        candidate_id=candidate["candidate_id"],
+        required_context=["Karianne Lisonbee", "In the ad itself, Lisonbee"],
+        passages=selected,
+        reported_ad_text={
+            "paragraph_selector": ".article-body-container > p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+    )
+    return source, candidate, review, content.encode(), commentary
+
+
+def test_lisonbee_report_acquires_only_explicit_ad_words_with_bound_dates():
+    source, candidate, review, body, commentary = unlinked_lisonbee_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == "\n".join(review["passages"])
+    assert len(ad["text"].split()) == 22 and commentary not in ad["text"]
+    assert ad["alignment"] == "R" and ad["race"] == "UT-02"
+    assert ad["sponsor_type"] == "candidate" and ad["media_urls"] == []
+    assert ad["published"] == "2026-06-15" and ad["phase"] == "unknown"
+    assert ad["date_basis"] == "publisher_report_date"
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(
+        ad["quality_flags"]
+    )
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "failure",
+    [
+        "candidate",
+        "interview",
+        "too_long",
+        "commentary",
+        "duplicate",
+        "metadata_date",
+        "visible_date",
+        "paragraph_hash",
+    ],
+)
+def test_lisonbee_report_rejects_unbound_or_non_ad_evidence(failure):
+    from bs4 import BeautifulSoup
+
+    source, candidate, review, body, commentary = unlinked_lisonbee_fixture()
+    content = body.decode()
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H6UT02999"
+    elif failure == "interview":
+        content = content.replace("she says in the ad", "she says in an interview")
+    elif failure == "too_long":
+        original = review["passages"][1]
+        review["passages"][1] += " These extra words exceed the quotation ceiling."
+        content = content.replace(original, review["passages"][1])
+    elif failure == "commentary":
+        review["passages"].append(commentary)
+    elif failure == "duplicate":
+        content += str(BeautifulSoup(content, "html.parser").select("p.quoted")[0])
+        review["reported_ad_text"]["paragraph_selector"] = "p.quoted"
+    elif failure == "metadata_date":
+        content = content.replace("2026-06-15T17", "2026-06-16T17")
+    elif failure == "visible_date":
+        content = content.replace("June 15, 2026", "June 16, 2026")
+    paragraph = BeautifulSoup(content, "html.parser").select("p.quoted")[0]
+    review["reported_ad_text"]["paragraph_sha256"] = digest(
+        paragraph.get_text(" ", strip=True)
+    )
+    if failure == "paragraph_hash":
+        review["reported_ad_text"]["paragraph_sha256"] = "0" * 64
+    review["content_sha256"] = digest(content)
+
+    class Client:
+        def get(self, url, **kwargs):
+            return content.encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 def unlinked_lawler_fixture():
     source, candidate, review, _, _, _ = unlinked_kiggans_fixture()
     source = next(s for s in SOURCES if s.id == "lawler-tell-her-no")
