@@ -4598,8 +4598,8 @@
   {
     "ad_id": "snap-20ac8f70a4cbab024a9aaf05",
     "block_id": "snap-20ac8f70a4cbab024a9aaf05-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for I: \\\"My vote\\\" is absent from unit 1. Exact source: \\\"MY VOTE\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-213f3721089d551555435067",
