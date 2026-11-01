@@ -6002,50 +6002,50 @@
   {
     "ad_id": "snap-4d9448fbad6f1e3bae41e0a0",
     "block_id": "snap-4d9448fbad6f1e3bae41e0a0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 7 for union: \\\"union\\\" is absent from unit 28. Exact source: \\\"MY UNION, MY RIGHT, MY VOTE\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4e03a387372068d4b7253d60",
     "block_id": "snap-4e03a387372068d4b7253d60-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for JON OSSOFF: \\\"JON OSSOFF\\\" is absent from unit 9. Exact source: \\\"MAGA'S #1 TARGET\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4e1f5ba71e0b2318d355a707",
     "block_id": "snap-4e1f5ba71e0b2318d355a707-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 9: {\\\"anchor_quote\\\":\\\"JANELLE STELSON\\\",\\\"anchor_unit_id\\\":34,\\\"entity_id\\\":\\\"candidate:H4PA10104\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"STELSON, JANELLE\\\",\\\"role\\\":\\\"unclear\\\",\\\"tone\\\":\\\"positive\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4e29e84bdd6611deb414b4cd",
     "block_id": "snap-4e29e84bdd6611deb414b4cd-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-4e56c9f6b516bc75068ebcf2",
     "block_id": "snap-4e56c9f6b516bc75068ebcf2-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 11 for WEALTH: \\\"WEALTH\\\" is absent from unit 12. Exact source: \\\"KEEP\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4e56c9f6b516bc75068ebcf2",
     "block_id": "snap-4e56c9f6b516bc75068ebcf2-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 5\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4e662b53ded2bdf3639f5f93",
     "block_id": "snap-4e662b53ded2bdf3639f5f93-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 6: {\\\"anchor_quote\\\":\\\"Labor-endorsed candidates\\\",\\\"anchor_unit_id\\\":35,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"collective\\\",\\\"name\\\":\\\"Labor-endorsed candidates\\\",\\\"role\\\":\\\"unclear\\\",\\\"tone\\\":\\\"neutral\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4e662b53ded2bdf3639f5f93",
     "block_id": "snap-4e662b53ded2bdf3639f5f93-claims-002",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-4e8954a464895ea030a90fd6",

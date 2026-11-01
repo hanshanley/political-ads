@@ -117569,5 +117569,390 @@
     "text_hash": "739b2b91e4abf518d3e69df2f2f190e94110d07a77caed75e2f866e0e475226a",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-4e29e84bdd6611deb414b4cd",
+    "alignment": "R",
+    "block_id": "snap-4e29e84bdd6611deb414b4cd-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4e29e84bdd6611deb414b4cd-claims-001-001",
+    "claim_text": "Dan Sullivan is fighting for Alaska.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "DAN SULLIVAN\nFIGHTING for ALASKA\nPUTTING MORE\nMONEY in\nYOUR POCKET\nVOTE for\nDAN SULLIVAN\non\nAUGUST 18TH\nPaid for by Alaskans for Dan Sullivan",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/19a708532301ed159e65c0743fa1bc2decc45860b4e5561ae5adf258f072149e?mediaType=png",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [
+      {
+        "anchor_end": 12,
+        "anchor_quote": "DAN SULLIVAN",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4AK00214",
+        "kind": "person",
+        "name": "SULLIVAN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "DAN SULLIVAN\nFIGHTING for ALASKA\nPUTTING MORE\nMONEY in\nYOUR POCKET\nVOTE for\nDAN SULLIVAN\non\nAUGUST 18TH\nPaid for by Alaskans for Dan Sullivan",
+    "text_hash": "1c909cd59a3ce73e2337ccbb659c11ddcf0114fd49dd46eff79780fec7e467e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-4e29e84bdd6611deb414b4cd",
+    "alignment": "R",
+    "block_id": "snap-4e29e84bdd6611deb414b4cd-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4e29e84bdd6611deb414b4cd-claims-001-002",
+    "claim_text": "Dan Sullivan is putting more money in your pocket.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "DAN SULLIVAN\nFIGHTING for ALASKA\nPUTTING MORE\nMONEY in\nYOUR POCKET\nVOTE for\nDAN SULLIVAN\non\nAUGUST 18TH\nPaid for by Alaskans for Dan Sullivan",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/19a708532301ed159e65c0743fa1bc2decc45860b4e5561ae5adf258f072149e?mediaType=png",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [
+      {
+        "anchor_end": 12,
+        "anchor_quote": "DAN SULLIVAN",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4AK00214",
+        "kind": "person",
+        "name": "SULLIVAN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "DAN SULLIVAN\nFIGHTING for ALASKA\nPUTTING MORE\nMONEY in\nYOUR POCKET\nVOTE for\nDAN SULLIVAN\non\nAUGUST 18TH\nPaid for by Alaskans for Dan Sullivan",
+    "text_hash": "1c909cd59a3ce73e2337ccbb659c11ddcf0114fd49dd46eff79780fec7e467e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-4e29e84bdd6611deb414b4cd",
+    "alignment": "R",
+    "block_id": "snap-4e29e84bdd6611deb414b4cd-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4e29e84bdd6611deb414b4cd-claims-001-003",
+    "claim_text": "You should vote for Dan Sullivan on August 18th.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "DAN SULLIVAN\nFIGHTING for ALASKA\nPUTTING MORE\nMONEY in\nYOUR POCKET\nVOTE for\nDAN SULLIVAN\non\nAUGUST 18TH\nPaid for by Alaskans for Dan Sullivan",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/19a708532301ed159e65c0743fa1bc2decc45860b4e5561ae5adf258f072149e?mediaType=png",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [
+      {
+        "anchor_end": 12,
+        "anchor_quote": "DAN SULLIVAN",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4AK00214",
+        "kind": "person",
+        "name": "SULLIVAN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "DAN SULLIVAN\nFIGHTING for ALASKA\nPUTTING MORE\nMONEY in\nYOUR POCKET\nVOTE for\nDAN SULLIVAN\non\nAUGUST 18TH\nPaid for by Alaskans for Dan Sullivan",
+    "text_hash": "1c909cd59a3ce73e2337ccbb659c11ddcf0114fd49dd46eff79780fec7e467e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-4e29e84bdd6611deb414b4cd",
+    "alignment": "R",
+    "block_id": "snap-4e29e84bdd6611deb414b4cd-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4e29e84bdd6611deb414b4cd-claims-001-004",
+    "claim_text": "This was paid for by Alaskans for Dan Sullivan.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "DAN SULLIVAN\nFIGHTING for ALASKA\nPUTTING MORE\nMONEY in\nYOUR POCKET\nVOTE for\nDAN SULLIVAN\non\nAUGUST 18TH\nPaid for by Alaskans for Dan Sullivan",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/19a708532301ed159e65c0743fa1bc2decc45860b4e5561ae5adf258f072149e?mediaType=png",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [
+      {
+        "anchor_end": 141,
+        "anchor_quote": "Alaskans for Dan Sullivan",
+        "anchor_start": 116,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Alaskans for Dan Sullivan",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "DAN SULLIVAN\nFIGHTING for ALASKA\nPUTTING MORE\nMONEY in\nYOUR POCKET\nVOTE for\nDAN SULLIVAN\non\nAUGUST 18TH\nPaid for by Alaskans for Dan Sullivan",
+    "text_hash": "1c909cd59a3ce73e2337ccbb659c11ddcf0114fd49dd46eff79780fec7e467e4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-4e662b53ded2bdf3639f5f93",
+    "alignment": "D",
+    "block_id": "snap-4e662b53ded2bdf3639f5f93-claims-002",
+    "block_status": "normalized",
+    "claim_id": "snap-4e662b53ded2bdf3639f5f93-claims-002-001",
+    "claim_text": "You should vote for Manny Rutinel.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 1093,
+        "kind": "video_ocr",
+        "start": 1085,
+        "text": "VOTE FOR",
+        "unit_id": 1
+      },
+      {
+        "end": 1107,
+        "kind": "video_ocr",
+        "start": 1094,
+        "text": "MANNY RUTINEL",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      1,
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/94d97a968b1047fa7235e1eb301de0234f438663f2d673a1323c3cbb771734a5?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 1107,
+        "anchor_quote": "MANNY RUTINEL",
+        "anchor_start": 1094,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6CO08013",
+        "kind": "person",
+        "name": "RUTINEL, MANNY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "We are getting squeezed for every last cent billionaires continue to line their pockets.\nI think it's sick. Labor endorse candidates need a fight for them because they're fine for us.\nLet's change this before it's too late.\nGENEFITS - GOOD HEALTHCARE »\nGOOD HEALTHCARE • ASECURE RETIREMENT M\nnion\nGOOD MEALTHCARE • AS\nCOOD HEALTHCARE • A SECURE RETIREMENT •\nSECURE RETREMENT - NETTER DENEPTS •\nCOOD HEALTH\nGEDTING\nSQUHEZED\nNEFITS • GOC\ncoWe are getting squeezed\nALTHCARE\nOD HEALTHCARE • ASECURE RETIREM\nSECURE R\n• BETTER BENEFITS\nHEIDI\nUNION MEMBER\nBENGFITS • GOOD HEALTHCARE »\nSTTER\nCOOD HEALTHCARE • ASECURE RETIREMENT\nCTOKMKKT - BETTER BENEFITS.\nCOOD HEALT\nBENERTS • GOOD HEALTHCARE • A6\nGOOD HEALTHCARE • ASECURE RETIREMENT\nEECURE RITIMEMY • IMCTTER BENEFITS\nGENIFITS • GOODHEALTHCARE •\nITTER\nEECURE RETSEMEHT • BETTER DENEFITE\nILIONAIR\nFTS . COOD HEALTHCARE\nPAULINE\nLabor-endorsed candidates,\nLET'S FIGHT FOR\nPRO-LABOR\nwe need to fight for them\nbecause they'tre fighting for us.\nPAID FOR BY THE AFL-CIO\nED\n1S AT THE\nBALLOT\nI'S BETTER\nIN A\nUnion\nMY UNION, MY RIGHT\nMY VOTE\nAFL-CIO\nVOTE FOR\nMANNY RUTINEL\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nSN'S BETTER",
+    "text_hash": "0c305c1d932e7e8b9d3d41c2d674bed0d314b8b123ca67fc8d64d9a54965569e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-4e662b53ded2bdf3639f5f93",
+    "alignment": "D",
+    "block_id": "snap-4e662b53ded2bdf3639f5f93-claims-002",
+    "block_status": "normalized",
+    "claim_id": "snap-4e662b53ded2bdf3639f5f93-claims-002-002",
+    "claim_text": "Voting for Manny Rutinel is to fight back against billionaires.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 1107,
+        "kind": "video_ocr",
+        "start": 1094,
+        "text": "MANNY RUTINEL",
+        "unit_id": 2
+      },
+      {
+        "end": 1121,
+        "kind": "video_ocr",
+        "start": 1108,
+        "text": "TO FIGHT BACK",
+        "unit_id": 3
+      },
+      {
+        "end": 1143,
+        "kind": "video_ocr",
+        "start": 1122,
+        "text": "AGAINST BILLIONAIRES!",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      2,
+      3,
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/94d97a968b1047fa7235e1eb301de0234f438663f2d673a1323c3cbb771734a5?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 1107,
+        "anchor_quote": "MANNY RUTINEL",
+        "anchor_start": 1094,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6CO08013",
+        "kind": "person",
+        "name": "RUTINEL, MANNY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "We are getting squeezed for every last cent billionaires continue to line their pockets.\nI think it's sick. Labor endorse candidates need a fight for them because they're fine for us.\nLet's change this before it's too late.\nGENEFITS - GOOD HEALTHCARE »\nGOOD HEALTHCARE • ASECURE RETIREMENT M\nnion\nGOOD MEALTHCARE • AS\nCOOD HEALTHCARE • A SECURE RETIREMENT •\nSECURE RETREMENT - NETTER DENEPTS •\nCOOD HEALTH\nGEDTING\nSQUHEZED\nNEFITS • GOC\ncoWe are getting squeezed\nALTHCARE\nOD HEALTHCARE • ASECURE RETIREM\nSECURE R\n• BETTER BENEFITS\nHEIDI\nUNION MEMBER\nBENGFITS • GOOD HEALTHCARE »\nSTTER\nCOOD HEALTHCARE • ASECURE RETIREMENT\nCTOKMKKT - BETTER BENEFITS.\nCOOD HEALT\nBENERTS • GOOD HEALTHCARE • A6\nGOOD HEALTHCARE • ASECURE RETIREMENT\nEECURE RITIMEMY • IMCTTER BENEFITS\nGENIFITS • GOODHEALTHCARE •\nITTER\nEECURE RETSEMEHT • BETTER DENEFITE\nILIONAIR\nFTS . COOD HEALTHCARE\nPAULINE\nLabor-endorsed candidates,\nLET'S FIGHT FOR\nPRO-LABOR\nwe need to fight for them\nbecause they'tre fighting for us.\nPAID FOR BY THE AFL-CIO\nED\n1S AT THE\nBALLOT\nI'S BETTER\nIN A\nUnion\nMY UNION, MY RIGHT\nMY VOTE\nAFL-CIO\nVOTE FOR\nMANNY RUTINEL\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nSN'S BETTER",
+    "text_hash": "0c305c1d932e7e8b9d3d41c2d674bed0d314b8b123ca67fc8d64d9a54965569e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-4e662b53ded2bdf3639f5f93",
+    "alignment": "D",
+    "block_id": "snap-4e662b53ded2bdf3639f5f93-claims-002",
+    "block_status": "normalized",
+    "claim_id": "snap-4e662b53ded2bdf3639f5f93-claims-002-003",
+    "claim_text": "Manny Rutinel is better.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 1107,
+        "kind": "video_ocr",
+        "start": 1094,
+        "text": "MANNY RUTINEL",
+        "unit_id": 2
+      },
+      {
+        "end": 1155,
+        "kind": "video_ocr",
+        "start": 1144,
+        "text": "SN'S BETTER",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      2,
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/94d97a968b1047fa7235e1eb301de0234f438663f2d673a1323c3cbb771734a5?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 1107,
+        "anchor_quote": "MANNY RUTINEL",
+        "anchor_start": 1094,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H6CO08013",
+        "kind": "person",
+        "name": "RUTINEL, MANNY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "We are getting squeezed for every last cent billionaires continue to line their pockets.\nI think it's sick. Labor endorse candidates need a fight for them because they're fine for us.\nLet's change this before it's too late.\nGENEFITS - GOOD HEALTHCARE »\nGOOD HEALTHCARE • ASECURE RETIREMENT M\nnion\nGOOD MEALTHCARE • AS\nCOOD HEALTHCARE • A SECURE RETIREMENT •\nSECURE RETREMENT - NETTER DENEPTS •\nCOOD HEALTH\nGEDTING\nSQUHEZED\nNEFITS • GOC\ncoWe are getting squeezed\nALTHCARE\nOD HEALTHCARE • ASECURE RETIREM\nSECURE R\n• BETTER BENEFITS\nHEIDI\nUNION MEMBER\nBENGFITS • GOOD HEALTHCARE »\nSTTER\nCOOD HEALTHCARE • ASECURE RETIREMENT\nCTOKMKKT - BETTER BENEFITS.\nCOOD HEALT\nBENERTS • GOOD HEALTHCARE • A6\nGOOD HEALTHCARE • ASECURE RETIREMENT\nEECURE RITIMEMY • IMCTTER BENEFITS\nGENIFITS • GOODHEALTHCARE •\nITTER\nEECURE RETSEMEHT • BETTER DENEFITE\nILIONAIR\nFTS . COOD HEALTHCARE\nPAULINE\nLabor-endorsed candidates,\nLET'S FIGHT FOR\nPRO-LABOR\nwe need to fight for them\nbecause they'tre fighting for us.\nPAID FOR BY THE AFL-CIO\nED\n1S AT THE\nBALLOT\nI'S BETTER\nIN A\nUnion\nMY UNION, MY RIGHT\nMY VOTE\nAFL-CIO\nVOTE FOR\nMANNY RUTINEL\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nSN'S BETTER",
+    "text_hash": "0c305c1d932e7e8b9d3d41c2d674bed0d314b8b123ca67fc8d64d9a54965569e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-4e662b53ded2bdf3639f5f93",
+    "alignment": "D",
+    "block_id": "snap-4e662b53ded2bdf3639f5f93-claims-002",
+    "block_status": "normalized",
+    "claim_id": "snap-4e662b53ded2bdf3639f5f93-claims-002-004",
+    "claim_text": "It is necessary to vote.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 1093,
+        "kind": "video_ocr",
+        "start": 1085,
+        "text": "VOTE FOR",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/94d97a968b1047fa7235e1eb301de0234f438663f2d673a1323c3cbb771734a5?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "We are getting squeezed for every last cent billionaires continue to line their pockets.\nI think it's sick. Labor endorse candidates need a fight for them because they're fine for us.\nLet's change this before it's too late.\nGENEFITS - GOOD HEALTHCARE »\nGOOD HEALTHCARE • ASECURE RETIREMENT M\nnion\nGOOD MEALTHCARE • AS\nCOOD HEALTHCARE • A SECURE RETIREMENT •\nSECURE RETREMENT - NETTER DENEPTS •\nCOOD HEALTH\nGEDTING\nSQUHEZED\nNEFITS • GOC\ncoWe are getting squeezed\nALTHCARE\nOD HEALTHCARE • ASECURE RETIREM\nSECURE R\n• BETTER BENEFITS\nHEIDI\nUNION MEMBER\nBENGFITS • GOOD HEALTHCARE »\nSTTER\nCOOD HEALTHCARE • ASECURE RETIREMENT\nCTOKMKKT - BETTER BENEFITS.\nCOOD HEALT\nBENERTS • GOOD HEALTHCARE • A6\nGOOD HEALTHCARE • ASECURE RETIREMENT\nEECURE RITIMEMY • IMCTTER BENEFITS\nGENIFITS • GOODHEALTHCARE •\nITTER\nEECURE RETSEMEHT • BETTER DENEFITE\nILIONAIR\nFTS . COOD HEALTHCARE\nPAULINE\nLabor-endorsed candidates,\nLET'S FIGHT FOR\nPRO-LABOR\nwe need to fight for them\nbecause they'tre fighting for us.\nPAID FOR BY THE AFL-CIO\nED\n1S AT THE\nBALLOT\nI'S BETTER\nIN A\nUnion\nMY UNION, MY RIGHT\nMY VOTE\nAFL-CIO\nVOTE FOR\nMANNY RUTINEL\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nSN'S BETTER",
+    "text_hash": "0c305c1d932e7e8b9d3d41c2d674bed0d314b8b123ca67fc8d64d9a54965569e",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
