@@ -143471,5 +143471,189 @@
     "text_hash": "198bac27550fbfe908b0fddd18ed88fe9af9d4eea71b894984681fe95bad8153",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-88ea644594de831930983d40",
+    "alignment": "D",
+    "block_id": "snap-88ea644594de831930983d40-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-88ea644594de831930983d40-claims-001-001",
+    "claim_text": "Ralph Alvarado left Kentucky after voters rejected his statewide bid in 2019.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 193,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Alvarado hopes for comeback\nAfter voters rejected his statewide bid in 2019,\nRalph Alvarado left Kentucky. He's now back and\nrunning for KY's 6th Congressional District.\nLEXINGTON\nHERALD&LEADER",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2a9d46fd029d6aa141c690e0ff6967caf42380ad3a69fdb38ac8b5c1b02348f5?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 91,
+        "anchor_quote": "Ralph Alvarado",
+        "anchor_start": 77,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6KY06192",
+        "kind": "person",
+        "name": "Ralph Alvarado",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Alvarado hopes for comeback\nAfter voters rejected his statewide bid in 2019,\nRalph Alvarado left Kentucky. He's now back and\nrunning for KY's 6th Congressional District.\nLEXINGTON\nHERALD&LEADER",
+    "text_hash": "32de04070f4554e19e5202215ddfa5e9e053be816712908c45a06287a9076472",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-88ea644594de831930983d40",
+    "alignment": "D",
+    "block_id": "snap-88ea644594de831930983d40-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-88ea644594de831930983d40-claims-001-002",
+    "claim_text": "Ralph Alvarado is now back and running for KY's 6th Congressional District.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 193,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Alvarado hopes for comeback\nAfter voters rejected his statewide bid in 2019,\nRalph Alvarado left Kentucky. He's now back and\nrunning for KY's 6th Congressional District.\nLEXINGTON\nHERALD&LEADER",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2a9d46fd029d6aa141c690e0ff6967caf42380ad3a69fdb38ac8b5c1b02348f5?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 91,
+        "anchor_quote": "Ralph Alvarado",
+        "anchor_start": 77,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6KY06192",
+        "kind": "person",
+        "name": "Ralph Alvarado",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Alvarado hopes for comeback\nAfter voters rejected his statewide bid in 2019,\nRalph Alvarado left Kentucky. He's now back and\nrunning for KY's 6th Congressional District.\nLEXINGTON\nHERALD&LEADER",
+    "text_hash": "32de04070f4554e19e5202215ddfa5e9e053be816712908c45a06287a9076472",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-88ea644594de831930983d40",
+    "alignment": "D",
+    "block_id": "snap-88ea644594de831930983d40-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-88ea644594de831930983d40-claims-001-003",
+    "claim_text": "Alvarado hopes for a comeback.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 193,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Alvarado hopes for comeback\nAfter voters rejected his statewide bid in 2019,\nRalph Alvarado left Kentucky. He's now back and\nrunning for KY's 6th Congressional District.\nLEXINGTON\nHERALD&LEADER",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2a9d46fd029d6aa141c690e0ff6967caf42380ad3a69fdb38ac8b5c1b02348f5?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 8,
+        "anchor_quote": "Alvarado",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6KY06192",
+        "kind": "person",
+        "name": "Alvarado",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Alvarado hopes for comeback\nAfter voters rejected his statewide bid in 2019,\nRalph Alvarado left Kentucky. He's now back and\nrunning for KY's 6th Congressional District.\nLEXINGTON\nHERALD&LEADER",
+    "text_hash": "32de04070f4554e19e5202215ddfa5e9e053be816712908c45a06287a9076472",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-88ea644594de831930983d40",
+    "alignment": "D",
+    "block_id": "snap-88ea644594de831930983d40-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-88ea644594de831930983d40-claims-001-004",
+    "claim_text": "Voters rejected Ralph Alvarado's statewide bid in 2019.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 193,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Alvarado hopes for comeback\nAfter voters rejected his statewide bid in 2019,\nRalph Alvarado left Kentucky. He's now back and\nrunning for KY's 6th Congressional District.\nLEXINGTON\nHERALD&LEADER",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2a9d46fd029d6aa141c690e0ff6967caf42380ad3a69fdb38ac8b5c1b02348f5?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 91,
+        "anchor_quote": "Ralph Alvarado",
+        "anchor_start": 77,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6KY06192",
+        "kind": "person",
+        "name": "Ralph Alvarado",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Alvarado hopes for comeback\nAfter voters rejected his statewide bid in 2019,\nRalph Alvarado left Kentucky. He's now back and\nrunning for KY's 6th Congressional District.\nLEXINGTON\nHERALD&LEADER",
+    "text_hash": "32de04070f4554e19e5202215ddfa5e9e053be816712908c45a06287a9076472",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]
