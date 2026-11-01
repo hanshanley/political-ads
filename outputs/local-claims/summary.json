@@ -2617,7 +2617,7 @@
       "all_unique_messages": 490,
       "categories_overlap": true,
       "denominator": "normalized_unique_messages",
-      "normalized_unique_messages": 141,
+      "normalized_unique_messages": 142,
       "side_tone": {
         "not_partisan": {
           "negative": {
@@ -2655,10 +2655,11 @@
               "slf-media-1238-gOYskxsk4yk",
               "lawler-1429-0",
               "hinson-825-0",
+              "snap-6d666d327bec70117f5d7ede",
               "grothman-b574d494ebff6312-0"
             ],
-            "count": 34,
-            "share": 0.24113475177304963
+            "count": 35,
+            "share": 0.24647887323943662
           },
           "neutral": {
             "ad_ids": [
@@ -2686,11 +2687,12 @@
               "lawler-1429-0",
               "rogers-6acd08220f7cad7d1a84f0a5-0",
               "hinson-825-0",
+              "snap-6d666d327bec70117f5d7ede",
               "barr-1992-0",
               "marshall-f57ec8d2874d6b9c-0"
             ],
-            "count": 26,
-            "share": 0.18439716312056736
+            "count": 27,
+            "share": 0.19014084507042253
           },
           "positive": {
             "ad_ids": [
@@ -2720,7 +2722,7 @@
               "rogers-6acd08220f7cad7d1a84f0a5-0"
             ],
             "count": 24,
-            "share": 0.1702127659574468
+            "share": 0.16901408450704225
           },
           "uncertain": {
             "ad_ids": [],
@@ -2735,14 +2737,14 @@
               "cfg-52126-0"
             ],
             "count": 2,
-            "share": 0.014184397163120567
+            "share": 0.014084507042253521
           },
           "neutral": {
             "ad_ids": [
               "cfg-52126-0"
             ],
             "count": 1,
-            "share": 0.0070921985815602835
+            "share": 0.007042253521126761
           },
           "positive": {
             "ad_ids": [
@@ -2750,7 +2752,7 @@
               "cfg-52126-0"
             ],
             "count": 2,
-            "share": 0.014184397163120567
+            "share": 0.014084507042253521
           },
           "uncertain": {
             "ad_ids": [],
@@ -2830,7 +2832,7 @@
               "snap-5ec7d8759caf10d0a011684d"
             ],
             "count": 67,
-            "share": 0.475177304964539
+            "share": 0.47183098591549294
           },
           "neutral": {
             "ad_ids": [
@@ -2854,7 +2856,7 @@
               "marshall-f57ec8d2874d6b9c-0"
             ],
             "count": 18,
-            "share": 0.1276595744680851
+            "share": 0.1267605633802817
           },
           "positive": {
             "ad_ids": [
@@ -2865,14 +2867,14 @@
               "nrsc-17881-0"
             ],
             "count": 5,
-            "share": 0.03546099290780142
+            "share": 0.035211267605633804
           },
           "uncertain": {
             "ad_ids": [
               "google-CR09386677044319879169-7af3a24af0a4"
             ],
             "count": 1,
-            "share": 0.0070921985815602835
+            "share": 0.007042253521126761
           }
         },
         "same_side": {
@@ -2881,7 +2883,7 @@
               "cfg-50973-0"
             ],
             "count": 1,
-            "share": 0.0070921985815602835
+            "share": 0.007042253521126761
           },
           "neutral": {
             "ad_ids": [
@@ -2941,7 +2943,7 @@
               "snap-5ec7d8759caf10d0a011684d"
             ],
             "count": 54,
-            "share": 0.3829787234042553
+            "share": 0.38028169014084506
           },
           "positive": {
             "ad_ids": [
@@ -3019,14 +3021,14 @@
               "flint-2146-0"
             ],
             "count": 72,
-            "share": 0.5106382978723404
+            "share": 0.5070422535211268
           },
           "uncertain": {
             "ad_ids": [
               "barr-1942-0"
             ],
             "count": 1,
-            "share": 0.0070921985815602835
+            "share": 0.007042253521126761
           }
         },
         "unknown": {
@@ -3075,7 +3077,7 @@
               "flint-2146-0"
             ],
             "count": 41,
-            "share": 0.2907801418439716
+            "share": 0.2887323943661972
           },
           "neutral": {
             "ad_ids": [
@@ -3121,7 +3123,7 @@
               "snap-58ee43d55c3e0ec020cc94bf"
             ],
             "count": 40,
-            "share": 0.28368794326241137
+            "share": 0.28169014084507044
           },
           "positive": {
             "ad_ids": [
@@ -3171,13 +3173,14 @@
               "snap-2ede2d62c8ce0c3781c97d29",
               "slf-media-1238-gOYskxsk4yk",
               "lawler-1429-0",
+              "snap-6d666d327bec70117f5d7ede",
               "barr-1992-0",
               "grothman-b574d494ebff6312-0",
               "snap-047d75680849bfdbad389053",
               "snap-58ee43d55c3e0ec020cc94bf"
             ],
-            "count": 50,
-            "share": 0.3546099290780142
+            "count": 51,
+            "share": 0.3591549295774648
           },
           "uncertain": {
             "ad_ids": [],
@@ -3194,17 +3197,17 @@
   },
   "ads": 1792,
   "ads_by_status": {
-    "normalized": 377,
-    "not_run": 732,
-    "validation_failed": 683
+    "normalized": 378,
+    "not_run": 725,
+    "validation_failed": 689
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 408,
-    "not_run": 840,
-    "validation_failed": 768
+    "normalized": 409,
+    "not_run": 832,
+    "validation_failed": 775
   },
-  "claims": 2690,
+  "claims": 2694,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -4132,6 +4135,10 @@
         {
           "claim_id": "snap-5fde3e1b5e6d862e42c840a3-claims-001-005",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-6d666d327bec70117f5d7ede-claims-001-003",
+          "target_index": 0
         }
       ],
       "neutral": [
@@ -4841,6 +4848,14 @@
         },
         {
           "claim_id": "snap-6a7490a4aa741a77123e1649-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-6d666d327bec70117f5d7ede-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-6d666d327bec70117f5d7ede-claims-001-004",
           "target_index": 0
         }
       ],
@@ -15447,11 +15462,15 @@
         {
           "claim_id": "snap-6c471fc5fda4d9352e90d08c-claims-001-005",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-6d666d327bec70117f5d7ede-claims-001-001",
+          "target_index": 0
         }
       ],
       "uncertain": []
     }
   },
-  "targets": 3048,
+  "targets": 3052,
   "version": "local-ad-claims-4"
 }

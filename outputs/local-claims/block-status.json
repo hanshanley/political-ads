@@ -7058,50 +7058,50 @@
   {
     "ad_id": "snap-6cec069da9ad156a013cefa0",
     "block_id": "snap-6cec069da9ad156a013cefa0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for someone: \\\"someone\\\" is absent from unit 12. Exact source: \\\"voted to block\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6d666d327bec70117f5d7ede",
     "block_id": "snap-6d666d327bec70117f5d7ede-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-6db5d37d7b2b61e9ea369e66",
     "block_id": "snap-6db5d37d7b2b61e9ea369e66-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":9,\\\"label\\\":\\\"DDAN EINCTAN\\\"},{\\\"claim\\\":10,\\\"label\\\":\\\"BRAD FINSTAD\\\"},{\\\"claim\\\":11,\\\"label\\\":\\\"CONGRESSMAN\\\"},{\\\"claim\\\":12,\\\"label\\\":\\\"TRUJEUT\\\"},{\\\"claim\\\":13,\\\"label\\\":\\\"LOCAL 630\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6dc5a361f2102b909c6f447d",
     "block_id": "snap-6dc5a361f2102b909c6f447d-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":7,\\\"label\\\":\\\"ERICA.ORG\\\"},{\\\"claim\\\":8,\\\"label\\\":\\\"HCA.ORG\\\"},{\\\"claim\\\":9,\\\"label\\\":\\\"AMERCAORG\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6df552bef3e6c5c1f13d0f59",
     "block_id": "snap-6df552bef3e6c5c1f13d0f59-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for Abdul El-Sayed: \\\"Abdul El-Sayed\\\" is absent from unit 2. Exact source: \\\"called reducing the prison population essential.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6df552bef3e6c5c1f13d0f59",
     "block_id": "snap-6df552bef3e6c5c1f13d0f59-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6e3f632de581f6592512fce0",
     "block_id": "snap-6e3f632de581f6592512fce0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for Alaska: \\\"Alaska\\\" is absent from unit 5. Exact source: \\\"DELIVERS FOR ALASKA\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6e85da59a8ad539cd4bf56a6",
     "block_id": "snap-6e85da59a8ad539cd4bf56a6-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 9\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6e951a66985de393e4c748a2",
