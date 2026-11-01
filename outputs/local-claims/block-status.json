@@ -6050,50 +6050,50 @@
   {
     "ad_id": "snap-4e8954a464895ea030a90fd6",
     "block_id": "snap-4e8954a464895ea030a90fd6-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":8,\\\"label\\\":\\\"My vote.\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4ed5868cf105e209488ab10b",
     "block_id": "snap-4ed5868cf105e209488ab10b-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for any candidate: \\\"any candidate\\\" is absent from unit 4. Exact source: \\\"PAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4ef27ab76c6807fc89857bfc",
     "block_id": "snap-4ef27ab76c6807fc89857bfc-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Sherrod Brown: \\\"Sherrod Brown\\\" is absent from unit 1. Exact source: \\\"FACT\\\\nCHECK\\\\nWOMAN ACCUSING SHERROD BROWN\\\\nOF FORCING TRANSGENDER SURGERIES\\\\nISN'T FROM OHIO, DIDN'T HAVE\\\\nPROCEDURE AS MINOR\\\\nNEWS 5\\\\nlabc\\\\n, CLEVELAND\\\\nPAID FOR BY FRIENDS OF SHERROD BROWN\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4f2787aad4f75530a54f6355",
     "block_id": "snap-4f2787aad4f75530a54f6355-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 7: {\\\"anchor_quote\\\":\\\"REBECCA COOKE\\\",\\\"anchor_unit_id\\\":33,\\\"entity_id\\\":\\\"candidate:H4WI03169\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"REBECCA COOKE\\\",\\\"role\\\":\\\"self_or_supported\\\",\\\"tone\\\":\\\"positive\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4f89f608e65472d2c3134d27",
     "block_id": "snap-4f89f608e65472d2c3134d27-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for 2025 State of Ohio Rail Plan: \\\"2025 State of Ohio Rail Plan\\\" is absent from unit 1. Exact source: \\\"cleveland.com\\\\nAkron-Canton rail stop\\\\nomitted from Ohio's 2025 rail\\\\nplan, Rep. Sykes protests\\\\nwelcollle\\\\nCoachclass\\\\nWASHINGTON - Frustrated that a 2025 State of Ohio Rail\\\\nPlan draft released last month didn't include a passenger\\\\nrail stop in the Akron-Canton area, U.S. Rep. Emilia Sykes\\\\nwants a redo.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4f8f61334a2000ef092cab99",
     "block_id": "snap-4f8f61334a2000ef092cab99-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-4fb8ef71b797a1f06c0e9c29",
     "block_id": "snap-4fb8ef71b797a1f06c0e9c29-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 7\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-504aa5d3a2784097d4ce1484",
     "block_id": "snap-504aa5d3a2784097d4ce1484-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-50b9297ec0a469b84e02cb02",
