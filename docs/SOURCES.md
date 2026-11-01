@@ -10,6 +10,72 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## November 1 Kentucky, Tennessee and SEAL PAC follow-up
+
+These follow-up reports add **no acquired records**. The Kentucky URLs
+were probes without saved independent search corroboration; the later
+Burchett and SEAL PAC reports were independently search-discovered.
+The January 21 Spectrum News Kentucky report
+`https://spectrumnews1.com/ky/louisville/news/2026/01/21/gallrein-massie-primary-`
+was already acquired for both Massie and Gallrein. The new retained HTML
+SHA-256 is `de219872fd688f61a4aefeb18c9228633c523ee6c5a19e8e462ae7d8e1aeafcb`;
+the individual X status links and literal passages match the existing
+reviews, so the changed page is not a new creative. The actual linked
+`https://www.spectrum.com/policies/residential-terms.html` returned
+**HTTP403**. That policy host is denied-paused; further Spectrum News
+discovery is permission-unresolved paused. The inaccessible policy is
+not treated as an established prohibition, and prior records/reviews
+remain unchanged. No policy alternate, X, caption or media was requested.
+
+A probe of the Courier Journal January 21 Gallrein first-ad URL
+`https://www.courier-journal.com/story/news/politics/2026/01/21/thomas-massie-primary-challenger-ed-gallrein-first-tv-ad/88283710007/`
+returned **HTTP402**. Its publisher is denied-paused. No article body was
+recovered, no alternate/syndicated copy was requested, and search snippets
+were not admitted.
+
+The June 3 Burchett report
+`https://2paragraphs.com/2026/06/tim-burchetts-donkey-ad-triggers-maga-donors-i-will-never-send-another-penny/`
+has HTML SHA-256
+`52b52e29718c25deb39a9ab50d1b1198fc88fa46c2743e1cf407246c6517e770`.
+Its long quotation is explicitly donation-page copy; its embedded
+May 21 X text is a post caption, not verified video speech. Neither is
+substituted for the advertised video's words. The actual linked
+`/terms-of-use/`, HTML SHA-256
+`88471b0d7b80ac71e643399ed2e8407a18cea66c1e6fb953f879f491634d3989`,
+explicitly restricts scraping, aggregation, reformatting and copying
+portions to a server. Its separate user-submission Creative Commons
+provision does not establish a license for publisher articles. The provider
+is permission-unresolved paused; no further article, API or original
+request followed.
+
+The October 24 SEAL PAC report
+`https://www.breitbart.com/midterm-election/2026/10/24/exclusive-rep-ryan-zinke-s-seal-pac-releases-fierce-ad-comparing-socialist-communist-dictators-liberal-democrats/`
+has HTML SHA-256
+`1024d96561d923c3c230e83b43dfcbbb74bd8a16af42ab15c44248255494c455`.
+Its two explicitly attributed ad fragments total **14 whitespace tokens**,
+below the unchanged minimum. The longer quotations are Zinke/Boyle
+interview remarks, not ad speech. The body and iframe associate the ad
+with `K3_MLHLU174`; the SoundCloud item is the separate interview.
+Reported rotations of six candidates do not establish six recovered
+variants. No media or caption request was made.
+
+The independently search-discovered primary `https://sealpac.org/`
+has HTML SHA-256
+`3cbff13bacb23064649e7f3f8269740af254c420d6e082e00d95115036e661dd`.
+Its actual video source exposes `/wp-content/uploads/2026/10/Bad-Ideas-Card-1.mp4`.
+That filename is not established release-date evidence or proof that the
+original matches the reported creative. Before requesting it, the actual
+linked `/terms/` (HTML SHA-256
+`40b4f97950c0c2c63eb6d7d14f9485bfd386338f7d4afb0c6dc2288f06cb7291`)
+and `/privacy/` (HTML SHA-256
+`e25508dfd732919ee8c54e53b546d278d480fa0c5b9cc6cc1ce8d57ab3f2dc64`)
+were read completely. The terms explicitly cover the website, not merely
+SMS, and restrict data mining and downloading except as expressly permitted.
+No applicable permission or exception is established: the provider is
+permission-unresolved paused. No MP4, library, news, API or alternate-copy
+request followed; the generic homepage payer footer is not an inspected
+creative payer card.
+
 ## November 1 California, Wisconsin, Georgia and campaign-song discovery limits
 
 These checks add **no acquired records**. The initial Gallagher and Ebben
@@ -41,12 +107,14 @@ and exposes a letter to the editor and two op-eds, not ad scripts or
 individual ad media. The linked `/privacy-policy` has HTML SHA-256
 `4229a575bbd1c241b1eed9f63c76d4fe0ccac3bbaa65b6a677d010298c54b955`;
 the complete page describes visitor-data handling and SMS terms, without
-an identified ad-collection permission or prohibition. A later independent
-search exposed WisPolitics' August 4 Ebben ad report, but **WisPolitics was
-already denied-paused**. The probe made no request; neither search snippets
+an identified ad-collection permission or prohibition. A probe targeted
+WisPolitics' August 4 Ebben ad-report URL, whose independent search-discovery
+provenance is not established by saved results. **WisPolitics was already
+denied-paused**. The probe made no request; neither search snippets
 nor the State Affairs version were used as recovered ad text.
 
-The independently search-discovered `https://richmccormick.us/` has
+The successfully probed `https://richmccormick.us/`, whose independent
+search-discovery provenance is not established by saved results, has
 HTML SHA-256
 `01fcd92fc0f62ffa9fb76ab8a9168dafba97fbed58397bc18608b4d9f4b66d32`.
 Its news item is reelection-qualification reporting; the seven video
@@ -60,8 +128,9 @@ site content; its scope is not limited to SMS. The provider is
 **permission-unresolved paused**. No press-kit, video or alternate-route
 request followed.
 
-The independently search-discovered
-`https://www.ontheissues.org/2026_AdWatch.htm` has HTML SHA-256
+The successfully probed `https://www.ontheissues.org/2026_AdWatch.htm`,
+whose independent search-discovery provenance is not established by saved
+results, has HTML SHA-256
 `2bce68667b0a0e219f98ed05e025f754bce9811956cc873a03185a62f1910d61`.
 Its actual heading and candidate list cover gubernatorial and Senate
 campaigns, not House advertising; quotations include editorial summaries,
