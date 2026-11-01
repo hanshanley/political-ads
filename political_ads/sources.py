@@ -168,6 +168,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "wittman-yahoo-verify",
+        "https://www.yahoo.com",
+        "Rob Wittman campaign (publisher-attributed; ad payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="VA-01",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "alfonso-wi7-breitbart",
         "https://www.breitbart.com",
         "Michael Alfonso campaign (publisher-attributed; ad payer unverified)",

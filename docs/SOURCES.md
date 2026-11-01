@@ -10,6 +10,80 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Wittman: bounded quotations from a publisher-linked advertisement
+
+The actual **September 24, 2026** Yahoo-syndicated **13NEWSNOW / Dana Smith**
+report, `https://www.yahoo.com/news/politics/articles/verify-ad-praises-rep-rob-214139646.html`,
+explicitly attributes two quotations to Wittman speaking in an ad.
+Retain only **23 whitespace tokens**: the first quotation and a literal
+prefix of the second, with unchanged trailing commas and source order.
+Exclude remaining quoted words, reporter narration and legislative
+fact-checking. This is **partial ad copy**, not a full script, a recovered
+video or semantic certification.
+
+The unique `h1`, `time[datetime]` and exact visible UTC-date format
+`%a, %B %d, %Y at %I:%M %p %Z` bind the report to September 24;
+the element's datetime and NewsArticle publication date agree.
+Full HTML SHA-256 is
+`4c9613cf0452451e3264abd1f207eb1db17407f59cdaca8c369d71bf828d3bb4`.
+The individually linked original is
+`https://spotcheck.tgna.tegna.com/extreme_reach/Short_Form/RWTV090326H.mp4`.
+Its host did not resolve during one bounded anonymous request: **no
+original bytes, hash, duration, transcript or visual payer proof exists**.
+Do not infer September 3 from its filename or substitute the report's
+separate two-minute video. The report date is not first airing or delivery.
+
+Frozen **H8VA01147 / C00441014 / WITTMAN, ROBERT J. MR. / REP /
+House / VA-01 / 2026** supplies exact federal identity. The official
+House homepage, `https://wittman.house.gov/`, identifies **Congressman
+Rob Wittman / Representing Virginia's 1st District**; its cached HTTP200
+HTML SHA-256 is
+`f0b0f84f9150d0ca57ad92198f9821431f90fcd703ca4a35abde54bec623ea98`.
+Append one candidate-specific **WITTMAN, ROB** alias; do not rewrite the
+roster, old aliases or the two existing VA-01 Google records.
+The reporter's payer attribution remains distinct from inspected legal
+payment/authorization. Phase stays **unknown**, rather than inferred
+from September. New portrayal judgments remain **unreviewed**.
+
+Reproduce with `.venv/bin/political-ads collect --source
+wittman-yahoo-verify --until 2026-10-30 --offline`, followed by
+`parquet --offline`, `build --offline`, `validate --offline` and
+`audit-strategy --offline`. Retained ignored report bytes and the exact
+reviewed alias are required; a fresh checkout alone lacks those bytes.
+Use the existing linked reviewed-release path, not the source-specific
+unlinked Knott exception. Complete exports retain both selected passages
+and their full acquisition evidence. All editions remain unpublished.
+
+Final snapshot
+`a41eaace60a88200176d55c945584d65386553e865e5891d034aa2bafeb486d2`
+has **1,930 acquired / 1,891 English records**, including **626 Republican
+and 1,226 Democratic English records** and **248 Republican / 698
+Democratic House records**. Every prior **571 written, 1,929 combined and
+1,890 English ad object**, **77 acquisition reviews**, **36 alias objects**
+and **17 unchanged protected inputs** is preserved. The two ledgers
+intentionally append one review and one alias; their previous entries
+remain exactly unchanged.
+
+An isolated complete-object replay forbids network and media execution
+and rejects the formal-name-only candidate without its reviewed alias.
+Both complete JSON/gzip/CSV copies, **1,930-row Parquet** and all **11 PNG
+sets across three copies** were checked. CSV retains its existing
+spreadsheet-formula escaping; Parquet adds optional schema nulls and
+types dates, UUIDs and offset timestamps, checked against their original
+values/UTC instants rather than falsely requiring identical JSON types.
+JSON and CSV retain literal evidence and original timestamp formatting.
+Backend lint/format and **105 focused tests**, frontend lint/type/build,
+**17 unit tests** and **9 browser tests** passed. Strategy audit reconciles
+**20 metric groups / 10 chart rows**; new ad copy is not automatically
+assigned a positive-only label.
+
+The additional September 16 WGAL Perry ad-watch report was inspected
+through all 35 actual body paragraphs. Only **seven literal ad words**
+were explicitly attributed to its audio, below the 15-word acquisition
+floor; the onscreen assertion is paraphrase. Longer quotations are a
+Stelson interview or a Perry campaign response, not ad copy. No individually
+associated original appears in its body. It remains unadmitted.
+
 ## Barron County Republican Party: federal excerpt from an original mixed-office print ad
 
 APG Wisconsin Marketplace's individual listing
@@ -46,6 +120,11 @@ each selected segment retains its contributing original line bounds,
 image URL/hash, extraction engine and coordinate system.
 Completeness stays explicitly partial, with mixed-office and
 nonfederal-exclusion flags; acquisition review is not semantic certification.
+
+Research commit `eb67f952209a49864d3cef12d40f228bcb89db5b` has verified
+Hans-only authorship and 38 research paths; its exact-head validation
+run **41278381283 completed successfully**. Concurrent claims work and
+the publication hold were preserved.
 
 The county-party exception is limited to this exact source, individual
 listing, advertiser and frozen federal identity. It requires the unique

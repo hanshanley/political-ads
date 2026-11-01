@@ -12,6 +12,86 @@ from political_ads.schema import digest
 from political_ads.sources import SOURCES, collect_wordpress
 
 
+@pytest.mark.parametrize("failure", [None, "missing_original", "date_mismatch", "missing_alias"])
+def test_linked_partial_ad_with_reviewed_name_and_visible_utc_date(failure):
+    from political_ads.reviewed_releases import reviewed_release
+
+    source = next(s for s in SOURCES if s.id == "wittman-yahoo-verify")
+    candidate = {
+        "candidate_id": "H8VA01147",
+        "name": "WITTMAN, ROBERT J. MR.",
+        "party": "REP",
+        "state": "VA",
+        "office": "H",
+        "district": "01",
+        "election_year": "2026",
+    }
+    alias = {
+        "candidate_id": candidate["candidate_id"],
+        "name": "WITTMAN, ROB",
+        "evidence_url": "https://wittman.house.gov/",
+        "basis": "Fixture reviewed public full name and district.",
+    }
+    candidates = [candidate]
+    if failure != "missing_alias":
+        candidates.append(candidate | {"name": alias["name"], "reviewed_alias": alias})
+    original = "https://media.example.test/individual-ad.mp4"
+    timestamp = "2026-09-25T21:41:39Z" if failure == "date_mismatch" else "2026-09-24T21:41:39Z"
+    link = "" if failure == "missing_original" else f'<a href="{original}">The original ad</a>'
+    passages = [
+        "I listen to working families and support local small businesses.",
+        "We can lower costs and improve opportunities for everyone.",
+    ]
+    body = (
+        "<h1>Fixture ad report</h1>"
+        f'<time datetime="{timestamp}">Thu, September 24, 2026 at 9:41 PM UTC</time>'
+        "<p>Congressman Rob Wittman released an ad.</p>"
+        f'<p>"{passages[0]}" Wittman says in the ad. "{passages[1]}"</p>' + link
+    ).encode()
+    review = {
+        "source": source.id,
+        "record_id": "fixture",
+        "source_url": source.url + "/fixture",
+        "retrieval_url": source.url + "/fixture",
+        "format": "html",
+        "content_sha256": digest(body.decode()),
+        "published": "2026-09-24",
+        "release_title": "Fixture ad report",
+        "heading_selector": "h1",
+        "publication_selector": "time[datetime]",
+        "publication_date_format": "%a, %B %d, %Y at %I:%M %p %Z",
+        "candidate_id": candidate["candidate_id"],
+        "media_url": original,
+        "phase": "unknown",
+        "completeness": "partial_quotation",
+        "required_context": ["Congressman Rob Wittman", "Wittman says in the ad."],
+        "passages": passages,
+        "attribution_basis": "Fixture publisher attribution, not independently verified payer.",
+    }
+
+    class Client:
+        def get(self, url, **kwargs):
+            assert url == review["retrieval_url"]
+            return body, {}
+
+    if failure:
+        message = {
+            "missing_original": "original ad link is missing",
+            "date_mismatch": "visible and datetime publication dates disagree",
+            "missing_alias": "candidate is not identified",
+        }[failure]
+        with pytest.raises(ValueError, match=message):
+            reviewed_release(Client(), source, review, candidates, "2026-11-01")
+    else:
+        ad = reviewed_release(Client(), source, review, candidates, "2026-11-01")
+        assert ad["text"] == "\n".join(passages)
+        assert ad["published"] == "2026-09-24"
+        assert ad["date_basis"] == "publisher_report_date"
+        assert ad["phase"] == "unknown"
+        assert ad["media_urls"] == [original]
+        assert "publisher_ad_copy_completeness_unverified" in ad["quality_flags"]
+
+
 def print_fixture():
     source = next(s for s in SOURCES if s.id == "hermening-apg-print")
     candidate = {
