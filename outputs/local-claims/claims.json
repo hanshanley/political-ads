@@ -118432,5 +118432,741 @@
     "text_hash": "439785e00055dc7b9cacd08441a4f0ac46b306e5d312b11b0fd06d7d83471832",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-513faf5a517c1066a6a6e3d0",
+    "alignment": "D",
+    "block_id": "snap-513faf5a517c1066a6a6e3d0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-513faf5a517c1066a6a6e3d0-claims-001-001",
+    "claim_text": "PIA DANDIYA will fight back against billionaires",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 153,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nPIA DANDIYA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7e158aa532cd0014f68c0004345b43a12c361127155ad7980c0c1c974962547f?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 73,
+        "anchor_quote": "PIA DANDIYA",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6FL21059",
+        "kind": "person",
+        "name": "DANDIYA, PIA",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nPIA DANDIYA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "5758f3edc62d7035b1de3ea80ff3a5be8fffcb8348a9a5d1b9fd3f66e6ff49ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-513faf5a517c1066a6a6e3d0",
+    "alignment": "D",
+    "block_id": "snap-513faf5a517c1066a6a6e3d0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-513faf5a517c1066a6a6e3d0-claims-001-002",
+    "claim_text": "This communication was paid for by the AFL-CIO",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 153,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nPIA DANDIYA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7e158aa532cd0014f68c0004345b43a12c361127155ad7980c0c1c974962547f?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nPIA DANDIYA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "5758f3edc62d7035b1de3ea80ff3a5be8fffcb8348a9a5d1b9fd3f66e6ff49ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-513faf5a517c1066a6a6e3d0",
+    "alignment": "D",
+    "block_id": "snap-513faf5a517c1066a6a6e3d0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-513faf5a517c1066a6a6e3d0-claims-001-003",
+    "claim_text": "It is your right to vote for PIA DANDIYA",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 153,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nPIA DANDIYA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7e158aa532cd0014f68c0004345b43a12c361127155ad7980c0c1c974962547f?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 73,
+        "anchor_quote": "PIA DANDIYA",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6FL21059",
+        "kind": "person",
+        "name": "DANDIYA, PIA",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nPIA DANDIYA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "5758f3edc62d7035b1de3ea80ff3a5be8fffcb8348a9a5d1b9fd3f66e6ff49ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-513faf5a517c1066a6a6e3d0",
+    "alignment": "D",
+    "block_id": "snap-513faf5a517c1066a6a6e3d0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-513faf5a517c1066a6a6e3d0-claims-001-004",
+    "claim_text": "You have a right to your union",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 153,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nPIA DANDIYA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7e158aa532cd0014f68c0004345b43a12c361127155ad7980c0c1c974962547f?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Union",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nPIA DANDIYA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "5758f3edc62d7035b1de3ea80ff3a5be8fffcb8348a9a5d1b9fd3f66e6ff49ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-513faf5a517c1066a6a6e3d0",
+    "alignment": "D",
+    "block_id": "snap-513faf5a517c1066a6a6e3d0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-513faf5a517c1066a6a6e3d0-claims-001-005",
+    "claim_text": "It is your right to have a union",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 153,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nPIA DANDIYA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7e158aa532cd0014f68c0004345b43a12c361127155ad7980c0c1c974962547f?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Union",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nPIA DANDIYA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "5758f3edc62d7035b1de3ea80ff3a5be8fffcb8348a9a5d1b9fd3f66e6ff49ed",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-001-001",
+    "claim_text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 159,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 12,
+        "anchor_quote": "Dan Sullivan",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4AK00214",
+        "kind": "person",
+        "name": "SULLIVAN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-001-002",
+    "claim_text": "Dan Sullivan protected his donors and his friends.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 210,
+        "kind": "local_asr",
+        "start": 160,
+        "text": "Dan Sullivan protected his donors and his friends.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 172,
+        "anchor_quote": "Dan Sullivan",
+        "anchor_start": 160,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S4AK00214",
+        "kind": "person",
+        "name": "SULLIVAN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-001-003",
+    "claim_text": "Republican congressional leaders have put up a meaningless motion for a committee of theirs to \"investigate\" the Epstein case.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 883,
+        "kind": "video_ocr",
+        "start": 808,
+        "text": "To give cover to themselves, Republican congressional leaders have put up a",
+        "unit_id": 17
+      }
+    ],
+    "evidence_ids": [
+      17
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 869,
+        "anchor_quote": "Republican congressional leaders",
+        "anchor_start": 837,
+        "anchor_unit_id": 17,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Republican congressional leaders",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-001-004",
+    "claim_text": "Congress, at the behest of Donald Trump, instead is hiding the files.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 440,
+        "kind": "video_ocr",
+        "start": 372,
+        "text": "Congress, at the behest of Donald Trump, instead is hiding the files",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 411,
+        "anchor_quote": "Donald Trump",
+        "anchor_start": 399,
+        "anchor_unit_id": 9,
+        "entity_id": "national:Donald Trump",
+        "kind": "person",
+        "name": "Donald Trump",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-001-005",
+    "claim_text": "If there isn't incriminating evidence, it is difficult to understand why Trump is going to such extreme lengths to hide the Epstein files.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 756,
+        "kind": "video_ocr",
+        "start": 669,
+        "text": "If there isn't incriminating evidence, it is difficult to understand why Trump is going",
+        "unit_id": 15
+      }
+    ],
+    "evidence_ids": [
+      15
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 747,
+        "anchor_quote": "Trump",
+        "anchor_start": 742,
+        "anchor_unit_id": 15,
+        "entity_id": "national:Donald Trump",
+        "kind": "person",
+        "name": "Donald Trump",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-001-006",
+    "claim_text": "Dan Sullivan voted to keep details of Epstein's crimes a secret.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 1127,
+        "kind": "video_ocr",
+        "start": 1067,
+        "text": "M...Sullivan...,...voted to keep details of Epstein's crimes",
+        "unit_id": 21
+      }
+    ],
+    "evidence_ids": [
+      21
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 1079,
+        "anchor_quote": "Sullivan",
+        "anchor_start": 1071,
+        "anchor_unit_id": 21,
+        "entity_id": "candidate:S4AK00214",
+        "kind": "person",
+        "name": "SULLIVAN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-001-007",
+    "claim_text": "Dan Sullivan voted to keep",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 474,
+        "kind": "video_ocr",
+        "start": 441,
+        "text": "M...Sullivan..., ...voted to keep",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 453,
+        "anchor_quote": "Sullivan",
+        "anchor_start": 445,
+        "anchor_unit_id": 10,
+        "entity_id": "candidate:S4AK00214",
+        "kind": "person",
+        "name": "SULLIVAN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-001-008",
+    "claim_text": "Dan Sullivan took thousands in cash from Epstein Associates.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 159,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 12,
+        "anchor_quote": "Dan Sullivan",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4AK00214",
+        "kind": "person",
+        "name": "SULLIVAN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-001-009",
+    "claim_text": "It is outrageous considering how many Alaskans have been victimized by sex crimes.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 547,
+        "kind": "video_ocr",
+        "start": 475,
+        "text": "a secret, and that is outrageous considering how many Alaskans have been",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 537,
+        "anchor_quote": "Alaskans",
+        "anchor_start": 529,
+        "anchor_unit_id": 11,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Alaskans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-001-010",
+    "claim_text": "Most Alaskans are familiar with the background of the Epstein case.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 649,
+        "kind": "video_ocr",
+        "start": 574,
+        "text": "By now, most Alaskans are familiar with the background of the Epstein case.",
+        "unit_id": 13
+      }
+    ],
+    "evidence_ids": [
+      13
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 595,
+        "anchor_quote": "Alaskans",
+        "anchor_start": 587,
+        "anchor_unit_id": 13,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Alaskans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "not_run",
+    "ad_id": "snap-515f176866465cadd252eebe",
+    "alignment": "D",
+    "block_id": "snap-515f176866465cadd252eebe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-515f176866465cadd252eebe-claims-001-011",
+    "claim_text": "The Epstein files exist.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 1066,
+        "kind": "video_ocr",
+        "start": 1046,
+        "text": "Epstein files exist.",
+        "unit_id": 20
+      }
+    ],
+    "evidence_ids": [
+      20
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a08ca770505811a1a8ec41ebd235e4fc7c80ab4a2b3c0cea2a582bddf56803df?mediaType=mp4",
+    "sponsor": "North Star",
+    "targets": [
+      {
+        "anchor_end": 1059,
+        "anchor_quote": "Epstein files",
+        "anchor_start": 1046,
+        "anchor_unit_id": 20,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Epstein files",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Dan Sullivan took thousands in cash from Epstein Associates and voted to keep the files hidden from the public even after he knew 14-year-old girls were raped.\nDan Sullivan protected his donors and his friends.\nnearly $10,000\nThe Alaska Current - Aug. 10, 2026\nANCHORAGE DAILY NEWS\nBy Anchorage Daily News\nPublished: September 27, 2025\nurge Congress to release the tiles.\nCongress, at the behest of Donald Trump, instead is hiding the files\nM...Sullivan..., ...voted to keep\na secret, and that is outrageous considering how many Alaskans have been\nvictimized by sex crimes.\nBy now, most Alaskans are familiar with the background of the Epstein case.\nfully established.\nIf there isn't incriminating evidence, it is difficult to understand why Trump is going\nto such extreme lengths to hide the Epstein files.\nTo give cover to themselves, Republican congressional leaders have put up a\nmeaningless motion for a committee of theirs to \"investigate\" the Epstein case. As\nvictims of Epstein have stated, this is insulting and meaningless, because the\nEpstein files exist.\nM...Sullivan...,...voted to keep details of Epstein's crimes\na secret...\nlat is outrageous considering how many Alaskans have been\nex crimes.\nonsnip, though the extent and details of the relationship have not been\nDan Sullivan knew\nPAID FOR BY NORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE\nPAID FOR BYNORTH STAR, ALASKANORTHSTAR.COM, AND NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE",
+    "text_hash": "2477d5310b1d2ea2b33304ebe5094232813dec68e7fe18e0e37d3b506895f8f0",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]

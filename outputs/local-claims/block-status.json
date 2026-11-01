@@ -6098,14 +6098,14 @@
   {
     "ad_id": "snap-50b9297ec0a469b84e02cb02",
     "block_id": "snap-50b9297ec0a469b84e02cb02-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for WHATLEY, MICHAEL: \\\"Michael Wattley\\\" is absent from unit 4. Exact source: \\\"should never be in the Senate.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-50bd0ef92141ca90bd87a27c",
     "block_id": "snap-50bd0ef92141ca90bd87a27c-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 7: {\\\"anchor_quote\\\":\\\"UNION MEMBERS\\\",\\\"anchor_unit_id\\\":15,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"collective\\\",\\\"name\\\":\\\"Union members\\\",\\\"role\\\":\\\"unclear\\\",\\\"tone\\\":\\\"neutral\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-50cf8d8527fef02c6e111aeb",
@@ -6122,26 +6122,26 @@
   {
     "ad_id": "snap-5101cf1970e8f653d60988c1",
     "block_id": "snap-5101cf1970e8f653d60988c1-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for candidates: \\\"candidates\\\" is absent from unit 8. Exact source: \\\"to make life more affordable.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-511789e9942b7a689d8b976e",
     "block_id": "snap-511789e9942b7a689d8b976e-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 9 for wages: \\\"wages\\\" is absent from unit 33. Exact source: \\\"AND RAISE WAGES.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-513faf5a517c1066a6a6e3d0",
     "block_id": "snap-513faf5a517c1066a6a6e3d0-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-515f176866465cadd252eebe",
     "block_id": "snap-515f176866465cadd252eebe-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-515f176866465cadd252eebe",
