@@ -961,7 +961,7 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
             else "publisher_linked_source_quotes_partial_ad_copy"
             if review.get("linked_ad_text")
             else "campaign_release_quotes_partial_ad_copy"
-            if source.id == "lawler-tell-her-no"
+            if source.id in {"lawler-tell-her-no", "cordell-bless-their-hearts"}
             else "news_report_quotes_partial_ad_copy"
         ),
     ]
@@ -973,6 +973,14 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         flags.extend(["original_ad_media_unverified", "ad_legal_payer_unverified"])
     if source.id == "lincoln-npr":
         flags.append("publisher_rush_transcript_not_verified_against_audio")
+    if source.id == "cordell-bless-their-hearts":
+        flags.extend(
+            [
+                "original_ad_media_unverified",
+                "ad_legal_payer_unverified",
+                "selected_excerpt_of_longer_campaign_ad_quotation",
+            ]
+        )
     if source.id == "lawler-tell-her-no":
         flags.append("opponent_interview_clip_used_in_ad")
     if source.id == "begich-nrcc-cnbc":

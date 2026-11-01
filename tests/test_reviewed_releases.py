@@ -14,6 +14,80 @@ from political_ads.schema import digest
 from political_ads.sources import SOURCES, collect_wordpress
 
 
+@pytest.mark.parametrize("missing_original", [False, True])
+def test_cordell_campaign_excerpt_retains_primary_and_unverified_media(missing_original):
+    from political_ads.reviewed_releases import reviewed_release
+
+    source = next(s for s in SOURCES if s.id == "cordell-bless-their-hearts")
+    url = source.url + "/blesstheirhearts"
+    original = "https://player.vimeo.com/video/1181561361"
+    passages = [
+        "Bless their hearts, but I ain’t running for a title.",
+        "The good-old-boys had their turn. It’s time for a conservative outsider.",
+    ]
+    content = (
+        "<h2>Campaign first-ad release</h2><p id='date'>APRIL 15, 2026</p>"
+        "<p>Misti Cordell launched her first television advertisement.</p>"
+        "<p>In the ad, Cordell delivers a pointed message:</p>"
+        f"<blockquote>{passages[0]}</blockquote>"
+        "<blockquote>Other ad words.</blockquote>"
+        f"<blockquote>{passages[1]}</blockquote>"
+        "<p>A separate campaign press statement.</p>"
+        + ("" if missing_original else f"<iframe src='{original}'></iframe>")
+    )
+    review = {
+        "source": source.id,
+        "record_id": "20260415",
+        "source_url": url,
+        "retrieval_url": url,
+        "format": "html",
+        "content_sha256": digest(content),
+        "published": "2026-04-15",
+        "release_title": "Campaign first-ad release",
+        "heading_selector": "h2",
+        "publication_selector": "#date",
+        "candidate_id": "H6LA05200",
+        "media_url": original,
+        "phase": "primary",
+        "completeness": "partial_quotation",
+        "required_context": ["In the ad, Cordell delivers a pointed message:"],
+        "passages": passages,
+        "attribution_basis": "Fixture campaign quotation, not independent media inspection.",
+    }
+    candidate = {
+        "candidate_id": "H6LA05200",
+        "name": "CORDELL, MISTI SMITH",
+        "party": "REP",
+        "state": "LA",
+        "office": "H",
+        "district": "05",
+        "election_year": "2026",
+    }
+
+    class Client:
+        def get(self, requested, **kwargs):
+            assert requested == url, "The paused media provider must never be requested"
+            return content.encode(), {}
+
+    if missing_original:
+        with pytest.raises(ValueError, match="original ad link is missing"):
+            reviewed_release(Client(), source, review, [candidate], "2026-11-01")
+        return
+    ad = reviewed_release(Client(), source, review, [candidate], "2026-11-01")
+    assert ad["text"] == "\n".join(passages)
+    assert ad["phase"] == "primary" and ad["race"] == "LA-05"
+    assert ad["placement"] == "campaign_release"
+    assert ad["media_urls"] == [original]
+    assert {
+        "campaign_release_quotes_partial_ad_copy",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified",
+        "selected_excerpt_of_longer_campaign_ad_quotation",
+    } <= set(ad["quality_flags"])
+    assert "news_report_quotes_partial_ad_copy" not in ad["quality_flags"]
+    assert "A separate campaign press statement." not in ad["text"]
+
+
 @pytest.mark.parametrize("sponsor", ["wagner", "delacruz", "huizenga", "nunn", "ciscomani"])
 @pytest.mark.parametrize(
     ("failure", "message"),

@@ -593,6 +593,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "cordell-bless-their-hearts",
+        "https://www.cordellforcongress.com",
+        "Cordell for Congress (campaign-reported; ad payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="LA-05",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "perry-capitalstar",
         "https://penncapital-star.com",
         "Patriots for Perry (publisher-reported; payer unverified)",

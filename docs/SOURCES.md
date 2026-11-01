@@ -10,6 +10,108 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Cordell: April 15 first-party television-ad quotation
+
+The actual campaign release
+`https://www.cordellforcongress.com/blesstheirhearts`
+explicitly introduces speech from **Bless Their Hearts**. Retain only
+**21 unchanged words** from the second and fourth lines of that quotation,
+in their original order with a newline. This is a **partial, nonconsecutive
+excerpt**, not the full quotation or a complete transcript. Exclude the
+opening, longer policy list, separate campaign press statement and website
+footer. The release's sole iframe associates the named ad with
+`https://player.vimeo.com/video/1181561361`; no Vimeo/player, media,
+caption or API request was made. A link association is not independent
+inspection of the creative or its legal payer.
+
+Exact frozen identity is **H6LA05200 / CORDELL, MISTI SMITH / REP /
+House / LA-05 / 2026 / C00936625**. The existing first/last-name matcher
+recognizes Misti Cordell; no alias or roster change is needed. The retained
+official committee master independently links **CORDELL FOR CONGRESS**,
+principal designation P, House type H and REP, to this exact candidate.
+The campaign homepage identifies the same candidate and committee footer;
+that footer does not establish this ad's payer or authorization.
+The release explicitly says she is running in the **Republican primary**
+for the open seat. Unnamed career-politician references do not establish
+a Democratic target; strategy remains **semantically unreviewed**.
+
+HTML SHA-256 is
+`104025a4ae7e95a1d8c91dc4d0e655578918638167a3dc088e95dfbeae128fe2`;
+selected-text SHA-256 is
+`f8ddf1e6572c78070bc4e0134df779f797bf6daa6d9078d244f2d476bbc108b8`.
+Require one matching `h2` and the unique visible date selected by
+`[id="1415508554"] > p.text-align-center:not(.size-18)`.
+**APRIL 15, 2026** agrees with the page's **2026.04.15 - First Ad**
+label. This is the reported campaign release date, not independently
+verified first airing or paid delivery. Changed content, date, heading,
+identity, missing original association or nonliteral/reordered passages
+fail closed under the existing individually reviewed release collector.
+Explicit quality flags distinguish campaign copy from news reporting and
+retain unverified original media, legal payer and excerpt completeness.
+
+`data/raw/house-cordell-baseline.json` was frozen at concurrent claims
+commit `9cfcfc0`, before all source/review/canonical changes: **1,953
+acquired / 1,914 analyzed objects / 98 release reviews**, all aliases,
+protected inputs and preceding canonical response hashes. Only the
+hash-verified release body and headers were copied to the replay cache.
+Selected offline collection adds `cordell-bless-their-hearts-20260415-0`
+and preserves all **592 preceding written objects** exactly.
+
+Reproduce with the retained exact release body and headers:
+
+```sh
+.venv/bin/python -m political_ads.cli collect --source cordell-bless-their-hearts --until 2026-10-30 --offline
+.venv/bin/python -m political_ads.cli parquet --offline
+.venv/bin/python -m political_ads.cli build --offline
+.venv/bin/python -m political_ads.cli analyze --offline
+.venv/bin/python -m political_ads.cli validate --offline
+.venv/bin/python -m political_ads.cli audit-strategy --offline
+```
+
+Final verification passes **809 Python tests / 17 frontend unit tests /
+nine browser cases**, Python/frontend lint, Python format checks, both
+builds, publication validation and the independent **20-metric-group /
+ten-chart-row** audit. All eleven actual PNGs were visually inspected.
+Complete JSON/gzip/CSV exports, all **1,954 enriched Parquet rows** and
+eleven figure sets in three copies agree. Isolated one-response replay
+forbids HTTP, recognition and media subprocesses and reproduces all
+**593 written objects and source states** from the preceding 592.
+All **1,953 preceding acquired / 1,914 analyzed objects / 98 release
+reviews**, their original review-byte prefix, 43 native reviews, 38
+aliases, 18 protected input hashes and 16 preceding response hashes
+remain unchanged. Local proof is retained at
+`data/raw/house-cordell-preservation-replay.json`.
+
+Snapshot
+`1229a2de12a3cbbdaabbbacd53fb7a066fe8c3643c003a6b17d47a3703e9ecc9`
+contains **1,954 acquired / 1,915 English records**, **650 R / 1,226 D**
+English records and **613 R / 1,204 D** exact observed-text messages.
+English House coverage is **272 R / 698 D**, or **271 R / 222 D**
+outside Snap; the saved October 30 eligibility cutoff is unchanged.
+These are source-collection counts, not national party ad volume.
+The addition remains semantically unreviewed and does not change saved
+portrayal decisions.
+
+Further discovery is not acquisition: Cordell's actual News index contains
+the recovered first-ad release plus endorsements, pledges and candidacy
+reporting. Honeycutt's actual campaign homepage has an undated YouTube
+embed; its News index contains editorials and endorsements rather than
+recovered ad speech. Preserve its literal **Thursday, October 15, 2025**
+card date instead of silently correcting it to 2026. The explicitly linked
+public Dropbox media gallery returned HTTP 200, but its visible body is
+a JavaScript shell. This is not a denial or evidence of an empty gallery;
+original inventory and ad text remain unresolved. No gallery API or
+original media was requested.
+
+The previously inspected October 23 Kiggans report was cache-reused,
+not a fresh source or ad; its individual-original gap remains unresolved.
+WFW's Cordell endorsement contains endorsement statements and biography,
+not ad speech. These follow-ups remain separate from the unchanged
+215-reference discovery manifest below and do not inflate its admission
+counts. The preceding documentation commit `f58ae57` passed exact CI
+**41319667603**, independently verified with all **13 successful steps**.
+Website, host restoration and both edition publication holds remain intact.
+
 ## Lincoln: October 21 NPR gas-tax campaign soundbite
 
 The actual NPR transcript published by TPR at
