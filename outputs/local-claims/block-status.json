@@ -7251,49 +7251,49 @@
     "ad_id": "snap-72e1708ed7637289a1b2ec59",
     "block_id": "snap-72e1708ed7637289a1b2ec59-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-732332b8f973de89b91105aa",
     "block_id": "snap-732332b8f973de89b91105aa-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-7330faf10f830da41ca749ac",
     "block_id": "snap-7330faf10f830da41ca749ac-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 7: {\\\"anchor_quote\\\":\\\"Pappas Admits He Lied\\\",\\\"anchor_unit_id\\\":4,\\\"entity_id\\\":\\\"candidate:H8NH01210\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"PAPPAS, CHRIS\\\",\\\"role\\\":\\\"opponent\\\",\\\"tone\\\":\\\"negative\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7396890d040860a9b291d901",
     "block_id": "snap-7396890d040860a9b291d901-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for working families: \\\"working families\\\" is absent from unit 1. Exact source: \\\"Taxes & Spending\\\\nH.R. 1 - the White House's \\\\\\\"BIG\\\\\\\" budget bill\\\\nextended tax cuts for the super-wealthy. I will\\\\nvote to repeal billionaires' tax cuts so that\\\\neveryone pays their fair share - and working\\\\nfamilies get to keep more of their hard-earned\\\\nmoney.\\\\nDoug Chapin\\\\nUS House, MN-06 • Democrat\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-73ab22d463b735c8ea849135",
     "block_id": "snap-73ab22d463b735c8ea849135-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 3: {\\\"anchor_quote\\\":\\\"Jake Johnson\\\",\\\"anchor_unit_id\\\":6,\\\"entity_id\\\":\\\"candidate:H6MN01190\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"Jake Johnson\\\",\\\"role\\\":\\\"unclear\\\",\\\"tone\\\":\\\"negative\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-73ad0af07845bd485eab03fc",
     "block_id": "snap-73ad0af07845bd485eab03fc-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 7 for WORKERS: \\\"WORKERS\\\" is absent from unit 50. Exact source: \\\"VOTE WITH\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-73c077d4f40e6894e1ba1683",
     "block_id": "snap-73c077d4f40e6894e1ba1683-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-73c077d4f40e6894e1ba1683",
     "block_id": "snap-73c077d4f40e6894e1ba1683-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-73c077d4f40e6894e1ba1683",

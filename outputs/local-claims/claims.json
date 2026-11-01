@@ -132570,5 +132570,204 @@
     "text_hash": "d5e30cd6b7355a8e1a6c4c0986717ed3b3a3c562f934a866bfe482321d2aa02a",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-72e1708ed7637289a1b2ec59",
+    "alignment": "D",
+    "block_id": "snap-72e1708ed7637289a1b2ec59-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-72e1708ed7637289a1b2ec59-claims-001-001",
+    "claim_text": "Whitmer endorses state Sen. Sean McCann in 4th Congressional District race",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 117,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Michigan Advance →\nPART OF STATES NEWSROOM\nWhitmer endorses state\nSen. Sean McCann in 4th\nCongressional District race",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e6fd62759cc81047125a9a3e44b203ea523bcc979af7c57fab126a6099789fdd?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "Whitmer",
+        "anchor_start": 43,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "WHITMER",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 82,
+        "anchor_quote": "Sean McCann",
+        "anchor_start": 71,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6MI04204",
+        "kind": "person",
+        "name": "MCCANN, SEAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Michigan Advance →\nPART OF STATES NEWSROOM\nWhitmer endorses state\nSen. Sean McCann in 4th\nCongressional District race",
+    "text_hash": "a76491a46913bf5aef6c04866293d0fda60d0d037c06fee0907b71cddbb5bbdb",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-732332b8f973de89b91105aa",
+    "alignment": "R",
+    "block_id": "snap-732332b8f973de89b91105aa-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-732332b8f973de89b91105aa-claims-001-001",
+    "claim_text": "While raising your taxes, Troy Jackson failed to pay his own taxes for years.",
+    "claim_types": [
+      "factual_assertion",
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 77,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "While raising your taxes, Troy Jackson failed to pay his own taxes for years.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a60b9727f1f9c847c33f7cf678a5b307fc02b57654e4a5ee9becce0968701a14?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 38,
+        "anchor_quote": "Troy Jackson",
+        "anchor_start": 26,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "While raising your taxes, Troy Jackson failed to pay his own taxes for years.\n+ CHRONI\nTX 21,2126\nson raises t\nson raises tax\nPAID FOR BY SIF PAC. NOT AUTHORZED BY ANY CANDIDATE OR CANDIDATES COMMITE. WIW.SIPACORG\nPAID FOR BY SLF PAG. NOT AUTHORIZEO BY ANY GANDIDATE OR CANDIDATES COMMITTE WWWSLFPAGORG\nPAID FOR BY SIF PAG. NOT AUTHORZED BY ANY CANDIDATE OR CANDIDATES COMMITE: WIWW.SIPACORG\nPAID FOR BY SIE PAG. NOT AUTHORZED BY ANY GANDIDATE OR GANDIDATES COMMITTE. WWW.SIEPAD.ORG",
+    "text_hash": "0920b3da56850227d3e047352b79c5bb9cee3dcfc72039a223f7ba821f130596",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-732332b8f973de89b91105aa",
+    "alignment": "R",
+    "block_id": "snap-732332b8f973de89b91105aa-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-732332b8f973de89b91105aa-claims-001-002",
+    "claim_text": "Troy Jackson failed to pay his own taxes for years.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 77,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "While raising your taxes, Troy Jackson failed to pay his own taxes for years.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a60b9727f1f9c847c33f7cf678a5b307fc02b57654e4a5ee9becce0968701a14?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 38,
+        "anchor_quote": "Troy Jackson",
+        "anchor_start": 26,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "While raising your taxes, Troy Jackson failed to pay his own taxes for years.\n+ CHRONI\nTX 21,2126\nson raises t\nson raises tax\nPAID FOR BY SIF PAC. NOT AUTHORZED BY ANY CANDIDATE OR CANDIDATES COMMITE. WIW.SIPACORG\nPAID FOR BY SLF PAG. NOT AUTHORIZEO BY ANY GANDIDATE OR CANDIDATES COMMITTE WWWSLFPAGORG\nPAID FOR BY SIF PAG. NOT AUTHORZED BY ANY CANDIDATE OR CANDIDATES COMMITE: WIWW.SIPACORG\nPAID FOR BY SIE PAG. NOT AUTHORZED BY ANY GANDIDATE OR GANDIDATES COMMITTE. WWW.SIEPAD.ORG",
+    "text_hash": "0920b3da56850227d3e047352b79c5bb9cee3dcfc72039a223f7ba821f130596",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-732332b8f973de89b91105aa",
+    "alignment": "R",
+    "block_id": "snap-732332b8f973de89b91105aa-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-732332b8f973de89b91105aa-claims-001-003",
+    "claim_text": "Troy Jackson was raising your taxes.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 77,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "While raising your taxes, Troy Jackson failed to pay his own taxes for years.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a60b9727f1f9c847c33f7cf678a5b307fc02b57654e4a5ee9becce0968701a14?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 38,
+        "anchor_quote": "Troy Jackson",
+        "anchor_start": 26,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "While raising your taxes, Troy Jackson failed to pay his own taxes for years.\n+ CHRONI\nTX 21,2126\nson raises t\nson raises tax\nPAID FOR BY SIF PAC. NOT AUTHORZED BY ANY CANDIDATE OR CANDIDATES COMMITE. WIW.SIPACORG\nPAID FOR BY SLF PAG. NOT AUTHORIZEO BY ANY GANDIDATE OR CANDIDATES COMMITTE WWWSLFPAGORG\nPAID FOR BY SIF PAG. NOT AUTHORZED BY ANY CANDIDATE OR CANDIDATES COMMITE: WIWW.SIPACORG\nPAID FOR BY SIE PAG. NOT AUTHORZED BY ANY GANDIDATE OR GANDIDATES COMMITTE. WWW.SIEPAD.ORG",
+    "text_hash": "0920b3da56850227d3e047352b79c5bb9cee3dcfc72039a223f7ba821f130596",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
