@@ -127779,5 +127779,705 @@
     "text_hash": "c1a917118b22aeea86f68340c3b3312217c3af2021a9a7a3319ac0017c38bc87",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6269ed1d8751e8aa74cac529",
+    "alignment": "D",
+    "block_id": "snap-6269ed1d8751e8aa74cac529-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6269ed1d8751e8aa74cac529-claims-001-001",
+    "claim_text": "Both for candidates that will fight to make life more important.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 64,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Both for candidates that will fight to make life more important.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/07293703d64805dad4a9fc9bf1d1d28cc00e3ba3403bbca8d5f1f21e8959312f?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 19,
+        "anchor_quote": "candidates",
+        "anchor_start": 9,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "candidates",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Both for candidates that will fight to make life more important.\nVote for candidates\nVOTE FOR\nPAULINE\nUNION MEMBER\nPAID FOR BY THE AFL-CIO\nAFFORDABLE.\nto make life more affordable.\nUnic\nMY UNION, MY RIGH\nAFL-C\nainion\nMY UNION, MY RIGHT, MY VOTE\nVICENTE\nGONZALEZ\nLOWER COSTS\nAND RAISE WAGES.\nBetterlnAUnion.org\nUnion\nAFL-CIO",
+    "text_hash": "e44c3d0aba5604e88eab2346a61cc8ee94bef35d6e73206cfd20c4ac763fb19e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6269ed1d8751e8aa74cac529",
+    "alignment": "D",
+    "block_id": "snap-6269ed1d8751e8aa74cac529-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6269ed1d8751e8aa74cac529-claims-001-002",
+    "claim_text": "Vote for candidates to make life more affordable.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 84,
+        "kind": "video_ocr",
+        "start": 65,
+        "text": "Vote for candidates",
+        "unit_id": 2
+      },
+      {
+        "end": 180,
+        "kind": "video_ocr",
+        "start": 151,
+        "text": "to make life more affordable.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      2,
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/07293703d64805dad4a9fc9bf1d1d28cc00e3ba3403bbca8d5f1f21e8959312f?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 84,
+        "anchor_quote": "candidates",
+        "anchor_start": 74,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "candidates",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Both for candidates that will fight to make life more important.\nVote for candidates\nVOTE FOR\nPAULINE\nUNION MEMBER\nPAID FOR BY THE AFL-CIO\nAFFORDABLE.\nto make life more affordable.\nUnic\nMY UNION, MY RIGH\nAFL-C\nainion\nMY UNION, MY RIGHT, MY VOTE\nVICENTE\nGONZALEZ\nLOWER COSTS\nAND RAISE WAGES.\nBetterlnAUnion.org\nUnion\nAFL-CIO",
+    "text_hash": "e44c3d0aba5604e88eab2346a61cc8ee94bef35d6e73206cfd20c4ac763fb19e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6269ed1d8751e8aa74cac529",
+    "alignment": "D",
+    "block_id": "snap-6269ed1d8751e8aa74cac529-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6269ed1d8751e8aa74cac529-claims-001-003",
+    "claim_text": "Pauline is a union member.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 101,
+        "kind": "video_ocr",
+        "start": 94,
+        "text": "PAULINE",
+        "unit_id": 4
+      },
+      {
+        "end": 114,
+        "kind": "video_ocr",
+        "start": 102,
+        "text": "UNION MEMBER",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      4,
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/07293703d64805dad4a9fc9bf1d1d28cc00e3ba3403bbca8d5f1f21e8959312f?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 101,
+        "anchor_quote": "PAULINE",
+        "anchor_start": 94,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Pauline",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Both for candidates that will fight to make life more important.\nVote for candidates\nVOTE FOR\nPAULINE\nUNION MEMBER\nPAID FOR BY THE AFL-CIO\nAFFORDABLE.\nto make life more affordable.\nUnic\nMY UNION, MY RIGH\nAFL-C\nainion\nMY UNION, MY RIGHT, MY VOTE\nVICENTE\nGONZALEZ\nLOWER COSTS\nAND RAISE WAGES.\nBetterlnAUnion.org\nUnion\nAFL-CIO",
+    "text_hash": "e44c3d0aba5604e88eab2346a61cc8ee94bef35d6e73206cfd20c4ac763fb19e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6269ed1d8751e8aa74cac529",
+    "alignment": "D",
+    "block_id": "snap-6269ed1d8751e8aa74cac529-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6269ed1d8751e8aa74cac529-claims-001-004",
+    "claim_text": "This was paid for by the AFL-CIO.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 138,
+        "kind": "video_ocr",
+        "start": 115,
+        "text": "PAID FOR BY THE AFL-CIO",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/07293703d64805dad4a9fc9bf1d1d28cc00e3ba3403bbca8d5f1f21e8959312f?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 138,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 131,
+        "anchor_unit_id": 6,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Both for candidates that will fight to make life more important.\nVote for candidates\nVOTE FOR\nPAULINE\nUNION MEMBER\nPAID FOR BY THE AFL-CIO\nAFFORDABLE.\nto make life more affordable.\nUnic\nMY UNION, MY RIGH\nAFL-C\nainion\nMY UNION, MY RIGHT, MY VOTE\nVICENTE\nGONZALEZ\nLOWER COSTS\nAND RAISE WAGES.\nBetterlnAUnion.org\nUnion\nAFL-CIO",
+    "text_hash": "e44c3d0aba5604e88eab2346a61cc8ee94bef35d6e73206cfd20c4ac763fb19e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6269ed1d8751e8aa74cac529",
+    "alignment": "D",
+    "block_id": "snap-6269ed1d8751e8aa74cac529-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6269ed1d8751e8aa74cac529-claims-001-005",
+    "claim_text": "Vicente Gonzalez will lower costs and raise wages.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 252,
+        "kind": "video_ocr",
+        "start": 245,
+        "text": "VICENTE",
+        "unit_id": 14
+      },
+      {
+        "end": 261,
+        "kind": "video_ocr",
+        "start": 253,
+        "text": "GONZALEZ",
+        "unit_id": 15
+      },
+      {
+        "end": 273,
+        "kind": "video_ocr",
+        "start": 262,
+        "text": "LOWER COSTS",
+        "unit_id": 16
+      },
+      {
+        "end": 290,
+        "kind": "video_ocr",
+        "start": 274,
+        "text": "AND RAISE WAGES.",
+        "unit_id": 17
+      }
+    ],
+    "evidence_ids": [
+      14,
+      15,
+      16,
+      17
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/07293703d64805dad4a9fc9bf1d1d28cc00e3ba3403bbca8d5f1f21e8959312f?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 252,
+        "anchor_quote": "VICENTE",
+        "anchor_start": 245,
+        "anchor_unit_id": 14,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Vicente Gonzalez",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Both for candidates that will fight to make life more important.\nVote for candidates\nVOTE FOR\nPAULINE\nUNION MEMBER\nPAID FOR BY THE AFL-CIO\nAFFORDABLE.\nto make life more affordable.\nUnic\nMY UNION, MY RIGH\nAFL-C\nainion\nMY UNION, MY RIGHT, MY VOTE\nVICENTE\nGONZALEZ\nLOWER COSTS\nAND RAISE WAGES.\nBetterlnAUnion.org\nUnion\nAFL-CIO",
+    "text_hash": "e44c3d0aba5604e88eab2346a61cc8ee94bef35d6e73206cfd20c4ac763fb19e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6269ed1d8751e8aa74cac529",
+    "alignment": "D",
+    "block_id": "snap-6269ed1d8751e8aa74cac529-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6269ed1d8751e8aa74cac529-claims-001-006",
+    "claim_text": "My union is my right, my vote.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 203,
+        "kind": "video_ocr",
+        "start": 186,
+        "text": "MY UNION, MY RIGH",
+        "unit_id": 10
+      },
+      {
+        "end": 244,
+        "kind": "video_ocr",
+        "start": 217,
+        "text": "MY UNION, MY RIGHT, MY VOTE",
+        "unit_id": 13
+      }
+    ],
+    "evidence_ids": [
+      10,
+      13
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/07293703d64805dad4a9fc9bf1d1d28cc00e3ba3403bbca8d5f1f21e8959312f?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 194,
+        "anchor_quote": "MY UNION",
+        "anchor_start": 186,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Both for candidates that will fight to make life more important.\nVote for candidates\nVOTE FOR\nPAULINE\nUNION MEMBER\nPAID FOR BY THE AFL-CIO\nAFFORDABLE.\nto make life more affordable.\nUnic\nMY UNION, MY RIGH\nAFL-C\nainion\nMY UNION, MY RIGHT, MY VOTE\nVICENTE\nGONZALEZ\nLOWER COSTS\nAND RAISE WAGES.\nBetterlnAUnion.org\nUnion\nAFL-CIO",
+    "text_hash": "e44c3d0aba5604e88eab2346a61cc8ee94bef35d6e73206cfd20c4ac763fb19e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6269ed1d8751e8aa74cac529",
+    "alignment": "D",
+    "block_id": "snap-6269ed1d8751e8aa74cac529-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6269ed1d8751e8aa74cac529-claims-001-007",
+    "claim_text": "The AFL-CIO exists.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 209,
+        "kind": "video_ocr",
+        "start": 204,
+        "text": "AFL-C",
+        "unit_id": 11
+      },
+      {
+        "end": 323,
+        "kind": "video_ocr",
+        "start": 316,
+        "text": "AFL-CIO",
+        "unit_id": 20
+      }
+    ],
+    "evidence_ids": [
+      11,
+      20
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/07293703d64805dad4a9fc9bf1d1d28cc00e3ba3403bbca8d5f1f21e8959312f?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 209,
+        "anchor_quote": "AFL-C",
+        "anchor_start": 204,
+        "anchor_unit_id": 11,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Both for candidates that will fight to make life more important.\nVote for candidates\nVOTE FOR\nPAULINE\nUNION MEMBER\nPAID FOR BY THE AFL-CIO\nAFFORDABLE.\nto make life more affordable.\nUnic\nMY UNION, MY RIGH\nAFL-C\nainion\nMY UNION, MY RIGHT, MY VOTE\nVICENTE\nGONZALEZ\nLOWER COSTS\nAND RAISE WAGES.\nBetterlnAUnion.org\nUnion\nAFL-CIO",
+    "text_hash": "e44c3d0aba5604e88eab2346a61cc8ee94bef35d6e73206cfd20c4ac763fb19e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6269ed1d8751e8aa74cac529",
+    "alignment": "D",
+    "block_id": "snap-6269ed1d8751e8aa74cac529-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6269ed1d8751e8aa74cac529-claims-001-008",
+    "claim_text": "It is a union.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 315,
+        "kind": "video_ocr",
+        "start": 310,
+        "text": "Union",
+        "unit_id": 19
+      }
+    ],
+    "evidence_ids": [
+      19
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/07293703d64805dad4a9fc9bf1d1d28cc00e3ba3403bbca8d5f1f21e8959312f?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 315,
+        "anchor_quote": "Union",
+        "anchor_start": 310,
+        "anchor_unit_id": 19,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Both for candidates that will fight to make life more important.\nVote for candidates\nVOTE FOR\nPAULINE\nUNION MEMBER\nPAID FOR BY THE AFL-CIO\nAFFORDABLE.\nto make life more affordable.\nUnic\nMY UNION, MY RIGH\nAFL-C\nainion\nMY UNION, MY RIGHT, MY VOTE\nVICENTE\nGONZALEZ\nLOWER COSTS\nAND RAISE WAGES.\nBetterlnAUnion.org\nUnion\nAFL-CIO",
+    "text_hash": "e44c3d0aba5604e88eab2346a61cc8ee94bef35d6e73206cfd20c4ac763fb19e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6269ed1d8751e8aa74cac529",
+    "alignment": "D",
+    "block_id": "snap-6269ed1d8751e8aa74cac529-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6269ed1d8751e8aa74cac529-claims-001-009",
+    "claim_text": "My union is my right.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 203,
+        "kind": "video_ocr",
+        "start": 186,
+        "text": "MY UNION, MY RIGH",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/07293703d64805dad4a9fc9bf1d1d28cc00e3ba3403bbca8d5f1f21e8959312f?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 194,
+        "anchor_quote": "MY UNION",
+        "anchor_start": 186,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Both for candidates that will fight to make life more important.\nVote for candidates\nVOTE FOR\nPAULINE\nUNION MEMBER\nPAID FOR BY THE AFL-CIO\nAFFORDABLE.\nto make life more affordable.\nUnic\nMY UNION, MY RIGH\nAFL-C\nainion\nMY UNION, MY RIGHT, MY VOTE\nVICENTE\nGONZALEZ\nLOWER COSTS\nAND RAISE WAGES.\nBetterlnAUnion.org\nUnion\nAFL-CIO",
+    "text_hash": "e44c3d0aba5604e88eab2346a61cc8ee94bef35d6e73206cfd20c4ac763fb19e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6269ed1d8751e8aa74cac529",
+    "alignment": "D",
+    "block_id": "snap-6269ed1d8751e8aa74cac529-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6269ed1d8751e8aa74cac529-claims-001-010",
+    "claim_text": "ainion exists.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 216,
+        "kind": "video_ocr",
+        "start": 210,
+        "text": "ainion",
+        "unit_id": 12
+      }
+    ],
+    "evidence_ids": [
+      12
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/07293703d64805dad4a9fc9bf1d1d28cc00e3ba3403bbca8d5f1f21e8959312f?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 216,
+        "anchor_quote": "ainion",
+        "anchor_start": 210,
+        "anchor_unit_id": 12,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "ainion",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Both for candidates that will fight to make life more important.\nVote for candidates\nVOTE FOR\nPAULINE\nUNION MEMBER\nPAID FOR BY THE AFL-CIO\nAFFORDABLE.\nto make life more affordable.\nUnic\nMY UNION, MY RIGH\nAFL-C\nainion\nMY UNION, MY RIGHT, MY VOTE\nVICENTE\nGONZALEZ\nLOWER COSTS\nAND RAISE WAGES.\nBetterlnAUnion.org\nUnion\nAFL-CIO",
+    "text_hash": "e44c3d0aba5604e88eab2346a61cc8ee94bef35d6e73206cfd20c4ac763fb19e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6301b19d8bfef7284ebc72bf",
+    "alignment": "D",
+    "block_id": "snap-6301b19d8bfef7284ebc72bf-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6301b19d8bfef7284ebc72bf-claims-001-001",
+    "claim_text": "Rep. Susie Lee touts $18 million in federal funds for Southern Nevada public safety.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 146,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "3&NEWS\nRep. Susie Lee touts $18\nmillion in federal funds\nfor Southern Nevada\npublic safety\nSUSIE LEE\nI'm Here to Help\n-SUSIE LEE\nI'm Here lo Help,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4f49e506f037bf9979f8f532c70e688c0027bba8f13a225d094bba7a7a6b0b1f?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 21,
+        "anchor_quote": "Susie Lee",
+        "anchor_start": 12,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6NV04020",
+        "kind": "person",
+        "name": "LEE, SUSIE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "3&NEWS\nRep. Susie Lee touts $18\nmillion in federal funds\nfor Southern Nevada\npublic safety\nSUSIE LEE\nI'm Here to Help\n-SUSIE LEE\nI'm Here lo Help,",
+    "text_hash": "8b6ada4d2e05a2de365d9dfdc2a7a1d5633121fc2d774e3a9f1c7e62c14df40d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6301b19d8bfef7284ebc72bf",
+    "alignment": "D",
+    "block_id": "snap-6301b19d8bfef7284ebc72bf-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6301b19d8bfef7284ebc72bf-claims-001-002",
+    "claim_text": "I'm Here to Help",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 146,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "3&NEWS\nRep. Susie Lee touts $18\nmillion in federal funds\nfor Southern Nevada\npublic safety\nSUSIE LEE\nI'm Here to Help\n-SUSIE LEE\nI'm Here lo Help,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4f49e506f037bf9979f8f532c70e688c0027bba8f13a225d094bba7a7a6b0b1f?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 95,
+        "anchor_quote": "I",
+        "anchor_start": 94,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6NV04020",
+        "kind": "person",
+        "name": "LEE, SUSIE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "3&NEWS\nRep. Susie Lee touts $18\nmillion in federal funds\nfor Southern Nevada\npublic safety\nSUSIE LEE\nI'm Here to Help\n-SUSIE LEE\nI'm Here lo Help,",
+    "text_hash": "8b6ada4d2e05a2de365d9dfdc2a7a1d5633121fc2d774e3a9f1c7e62c14df40d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6301b19d8bfef7284ebc72bf",
+    "alignment": "D",
+    "block_id": "snap-6301b19d8bfef7284ebc72bf-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6301b19d8bfef7284ebc72bf-claims-001-003",
+    "claim_text": "I'm Here lo Help",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 146,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "3&NEWS\nRep. Susie Lee touts $18\nmillion in federal funds\nfor Southern Nevada\npublic safety\nSUSIE LEE\nI'm Here to Help\n-SUSIE LEE\nI'm Here lo Help,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4f49e506f037bf9979f8f532c70e688c0027bba8f13a225d094bba7a7a6b0b1f?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 95,
+        "anchor_quote": "I",
+        "anchor_start": 94,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6NV04020",
+        "kind": "person",
+        "name": "LEE, SUSIE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "3&NEWS\nRep. Susie Lee touts $18\nmillion in federal funds\nfor Southern Nevada\npublic safety\nSUSIE LEE\nI'm Here to Help\n-SUSIE LEE\nI'm Here lo Help,",
+    "text_hash": "8b6ada4d2e05a2de365d9dfdc2a7a1d5633121fc2d774e3a9f1c7e62c14df40d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6301b19d8bfef7284ebc72bf",
+    "alignment": "D",
+    "block_id": "snap-6301b19d8bfef7284ebc72bf-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6301b19d8bfef7284ebc72bf-claims-001-004",
+    "claim_text": "Susie Lee is here to help.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 146,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "3&NEWS\nRep. Susie Lee touts $18\nmillion in federal funds\nfor Southern Nevada\npublic safety\nSUSIE LEE\nI'm Here to Help\n-SUSIE LEE\nI'm Here lo Help,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4f49e506f037bf9979f8f532c70e688c0027bba8f13a225d094bba7a7a6b0b1f?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 95,
+        "anchor_quote": "I",
+        "anchor_start": 94,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6NV04020",
+        "kind": "person",
+        "name": "LEE, SUSIE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "3&NEWS\nRep. Susie Lee touts $18\nmillion in federal funds\nfor Southern Nevada\npublic safety\nSUSIE LEE\nI'm Here to Help\n-SUSIE LEE\nI'm Here lo Help,",
+    "text_hash": "8b6ada4d2e05a2de365d9dfdc2a7a1d5633121fc2d774e3a9f1c7e62c14df40d",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
   }
 ]
