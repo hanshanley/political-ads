@@ -24721,6 +24721,100 @@
       "title": "Kean launches new TV ad targeting health insurance companies"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "The public report explicitly attributes the reviewed paragraph's quotations to Merrin in the ad. The collector admits only the second quotation, not the reporter introduction or neighboring quotation, and retains the 15-word substantive floor and 25-word ceiling. Frozen H4OH09169 / MERRIN, DEREK / REP / House / OH-09 / 2026 establishes the federal beneficiary, not nomination or legal payment. Full decoded HTML SHA256 7e14d59fe77234eb4c55e5c326409255677dd266603e07950332af5b111c824c pins the unique heading and article publication timestamp 2026-08-26T21:06:08+00:00; paragraph SHA256 8c2ec80b285c762e9c9a8afa2e9ef544d12d3ffed466c07b121ecfc1bfbaccff pins the literal attribution grammar and source order. No individual original association, independently heard audio, complete script, duration, visual payer, first airing, paid delivery or semantic strategy judgment is verified. Reported campaign/NRCC coordination is not an independently verified payer or fabricated committee alias. Phase remains unknown; quoted promises and reporter praise are not certified factual findings. No held media provider, credentials, proxy, prior records/reviews/aliases or frozen claims input is changed.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H2OH09031",
+          "district": "09",
+          "name": "KAPTUR, MARCY HON. M.C.",
+          "office": "H",
+          "party": "DEM",
+          "state": "OH"
+        },
+        {
+          "candidate_id": "H4OH09169",
+          "district": "09",
+          "name": "MERRIN, DEREK",
+          "office": "H",
+          "party": "REP",
+          "state": "OH"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "merrin-washingtonreporter-20260826-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "9980bc5b2eaccfc47582cffe84b2f83231d6c90580eb57779d6ec3ac01f95e1e",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-08-26",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified"
+      ],
+      "race": "OH-09",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H4OH09169"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The public report explicitly attributes the reviewed paragraph's quotations to Merrin in the ad. The collector admits only the second quotation, not the reporter introduction or neighboring quotation, and retains the 15-word substantive floor and 25-word ceiling. Frozen H4OH09169 / MERRIN, DEREK / REP / House / OH-09 / 2026 establishes the federal beneficiary, not nomination or legal payment. Full decoded HTML SHA256 7e14d59fe77234eb4c55e5c326409255677dd266603e07950332af5b111c824c pins the unique heading and article publication timestamp 2026-08-26T21:06:08+00:00; paragraph SHA256 8c2ec80b285c762e9c9a8afa2e9ef544d12d3ffed466c07b121ecfc1bfbaccff pins the literal attribution grammar and source order. No individual original association, independently heard audio, complete script, duration, visual payer, first airing, paid delivery or semantic strategy judgment is verified. Reported campaign/NRCC coordination is not an independently verified payer or fabricated committee alias. Phase remains unknown; quoted promises and reporter praise are not certified factual findings. No held media provider, credentials, proxy, prior records/reviews/aliases or frozen claims input is changed.",
+            "candidate_id": "H4OH09169",
+            "completeness": "partial_quotation",
+            "content_sha256": "7e14d59fe77234eb4c55e5c326409255677dd266603e07950332af5b111c824c",
+            "format": "html",
+            "heading_selector": "h1",
+            "media_url": null,
+            "passages": [
+              "I’m running for Congress because, unlike Kaptur, I’ll take on Big Pharma to lower drug prices."
+            ],
+            "phase": "unknown",
+            "published": "2026-08-26",
+            "publisher_credit": "Washington Reporter / Matthew Foldi; EXCLUSIVE: Derek Merrin airs first ad against Rep. Marcy Kaptur, August 26, 2026.",
+            "record_id": "20260826",
+            "release_title": "EXCLUSIVE: Derek Merrin airs first ad against Rep. Marcy Kaptur",
+            "reported_ad_text": {
+              "paragraph_selector": "article p:-soup-contains(\"he adds in the ad.\")",
+              "paragraph_sha256": "8c2ec80b285c762e9c9a8afa2e9ef544d12d3ffed466c07b121ecfc1bfbaccff"
+            },
+            "required_context": [
+              "Republican Derek Merrin",
+              "first television ad of the general election",
+              "he adds in the ad."
+            ],
+            "retrieval_url": "https://washingtonreporter.news/exclusive-derek-merrin-airs-first-ad-against-rep-marcy-kaptur/",
+            "reuse_basis": "Only the second complete quotation from the unique hash-bound paragraph: 16 unchanged whitespace words, credited for comparative noncommercial research. Exclude the reporter introduction, first quotation, other paragraphs and embedded media. Partial quotation, not a full transcript; cached source HTML remains undistributed. No blanket reuse license, original-media redistribution or edition-publication authorization is asserted.",
+            "source": "merrin-washingtonreporter",
+            "source_url": "https://washingtonreporter.news/exclusive-derek-merrin-airs-first-ad-against-rep-marcy-kaptur/"
+          },
+          "text": "I’m running for Congress because, unlike Kaptur, I’ll take on Big Pharma to lower drug prices."
+        }
+      ],
+      "source": "merrin-washingtonreporter",
+      "source_hash": "7e14d59fe77234eb4c55e5c326409255677dd266603e07950332af5b111c824c",
+      "source_record_id": "20260826",
+      "source_url": "https://washingtonreporter.news/exclusive-derek-merrin-airs-first-ad-against-rep-marcy-kaptur/",
+      "sponsor": "Derek Merrin campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "OH",
+      "text": "I’m running for Congress because, unlike Kaptur, I’ll take on Big Pharma to lower drug prices.",
+      "title": "EXCLUSIVE: Derek Merrin airs first ad against Rep. Marcy Kaptur"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official Abdul for U.S. Senate release at https://abdulforsenate.com/2026/08/new-ad-canon-michigan-kid-abdul-el-sayed-fights-to-rebuild-the-american-dream/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
@@ -51825,6 +51919,22 @@
       "source": "mccann",
       "state": "ok",
       "url": "https://seanmccannforcongress.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "merrin-washingtonreporter",
+      "state": "partial",
+      "url": "https://washingtonreporter.news"
     },
     {
       "ads_with_text": 1,

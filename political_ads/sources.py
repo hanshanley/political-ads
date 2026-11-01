@@ -423,6 +423,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "merrin-washingtonreporter",
+        "https://washingtonreporter.news",
+        "Derek Merrin campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="OH-09",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "luke-murphy-flvoice",
         "https://flvoicenews.com",
         "Luke Murphy campaign (publisher-reported; payer unverified)",

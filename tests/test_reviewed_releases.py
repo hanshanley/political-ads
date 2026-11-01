@@ -1299,6 +1299,109 @@ def test_deboer_report_rejects_wrong_candidate_non_ad_speech_and_unselected_word
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_merrin_fixture():
+    source, candidate, review, _, _ = unlinked_deboer_fixture()
+    source = next(s for s in SOURCES if s.id == "merrin-washingtonreporter")
+    candidate.update(candidate_id="H4OH09169", name="MERRIN, DEREK", state="OH", district="09")
+    first = (
+        "The first unselected quotation contains enough words to meet the substantive floor "
+        "but must remain outside the acquired passage."
+    )
+    selected = (
+        "This selected statement contains enough literal words to satisfy the minimum "
+        "without including either neighboring quotation or reporter commentary."
+    )
+    introduction = (
+        "Merrin discusses the purpose of the advertisement with the reporter while "
+        "describing the campaign and its upcoming television schedule."
+    )
+    paragraph = f"{introduction} “{first}” he adds in the ad. “{selected}”"
+    content = (
+        '<meta property="article:published_time" content="2026-08-26T21:06:08+00:00">'
+        "<h1>Merrin ad report</h1><article><p>Derek Merrin has a new campaign advertisement.</p>"
+        f'<p class="quoted">{paragraph}</p></article>'
+    )
+    url = source.url + "/merrin-ad-report/"
+    review.update(
+        source=source.id,
+        record_id="20260826",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-08-26",
+        release_title="Merrin ad report",
+        candidate_id=candidate["candidate_id"],
+        required_context=["Derek Merrin"],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": "article > p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+    )
+    return source, candidate, review, content.encode(), first, introduction
+
+
+def test_merrin_report_excludes_journalist_introduction_and_neighboring_quotation():
+    source, candidate, review, body, first, introduction = unlinked_merrin_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == review["passages"][0]
+    assert first not in ad["text"] and introduction not in ad["text"]
+    assert ad["alignment"] == "R" and ad["race"] == "OH-09"
+    assert ad["sponsor_type"] == "candidate" and ad["media_urls"] == []
+    assert ad["phase"] == "unknown" and ad["date_basis"] == "publisher_report_date"
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(ad["quality_flags"])
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "failure", ["candidate", "statement", "too_long", "unselected", "journalism"]
+)
+def test_merrin_report_rejects_wrong_identity_or_unselected_non_ad_text(failure):
+    source, candidate, review, body, first, introduction = unlinked_merrin_fixture()
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H4OH09999"
+    elif failure == "unselected":
+        review["passages"] = [first]
+    elif failure == "journalism":
+        review["passages"] = [introduction]
+    else:
+        content = body.decode()
+        if failure == "statement":
+            content = content.replace("he adds in the ad.", "he adds in an interview.")
+        else:
+            original = review["passages"][0]
+            review["passages"][0] += (
+                " Additional words push this selected quotation beyond the permitted limit."
+            )
+            content = content.replace(original, review["passages"][0])
+        from bs4 import BeautifulSoup
+
+        paragraph = BeautifulSoup(content, "html.parser").select("article > p.quoted")[0]
+        review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
+        review["content_sha256"] = digest(content)
+        body = content.encode()
+
+    class Client:
+        def get(self, url, **kwargs):
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 @pytest.mark.parametrize("format", ["wordpress", "html"])
 @pytest.mark.parametrize("completeness", ["partial_quotation", "marked_script"])
 def test_reviewed_release_keeps_only_bound_ad_words_and_explicit_provenance(format, completeness):

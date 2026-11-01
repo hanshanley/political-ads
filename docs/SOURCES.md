@@ -10,6 +10,56 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Derek Merrin: independently reported original-ad words
+
+The August 26 public Washington Reporter article
+`https://washingtonreporter.news/exclusive-derek-merrin-airs-first-ad-against-rep-marcy-kaptur/`
+explicitly attributes quotations to Merrin's first TV ad. Acquire only
+the **second complete quotation in the uniquely reviewed paragraph:
+16 unchanged words**. Its preceding reporter introduction, neighboring
+13-word quotation, other paragraphs and embedded media are not acquired.
+This is a credited `partial_quotation`, not a full script or audio verified
+against an original. Original association, legal payer, duration, first
+airing and delivery remain unverified; no new semantic judgment is added.
+
+Frozen **H4OH09169 / MERRIN, DEREK / REP / House / OH-09 / 2026**
+establishes the federal beneficiary, not nomination or payment.
+Decoded HTML SHA-256
+`7e14d59fe77234eb4c55e5c326409255677dd266603e07950332af5b111c824c`
+pins the exact heading and `article:published_time=2026-08-26T21:06:08+00:00`.
+Paragraph SHA-256
+`8c2ec80b285c762e9c9a8afa2e9ef544d12d3ffed466c07b121ecfc1bfbaccff`
+pins source order and explicit attribution. The narrow registered source
+requires the exact candidate, one paragraph, two quotations and ad-specific
+attribution; it returns only the second quotation. Reporter words and the
+first quotation are excluded even if a review tries to select them.
+The 15-word floor and 25-word ceiling remain unchanged. Six focused
+regressions cover the retained excerpt and incorrect identity, interview
+attribution, excessive length, neighboring words and reporter prose.
+
+Replay with `collect --source merrin-washingtonreporter --until
+2026-10-30 --offline`, then `parquet --offline`, `build --offline`,
+`validate --offline` and `audit-strategy --offline`. Reacquisition needs
+the undistributed exact response cache; committed inputs rebuild complete
+research downloads without that cache. No media or held-provider request
+was made, and no original media or full article is redistributed.
+
+`merrin-washingtonreporter-20260826-0` adds the first acquired quotation
+attributed to the Merrin campaign. **OH-09 already had four NRCC records;
+this is not a newly covered race.** The selected text is absent from all
+other acquired records. Snapshot
+`409b3c4d86cdd7b6708fef6d83059a71fe11a8b9e9edec13e563351a9237a8fb`
+has **1,941 acquired / 1,902 English**, **R 637 / D 1,226 English**,
+**R 259 / D 698 English House**, **R 258 / D 222 House outside Snapchat**,
+and **580 written / 86 release reviews / 43 native reviews**.
+All **662 Python tests**, whole lint/owned formatting, frontend lint/build,
+**17 unit / 9 browser tests**, complete export/Parquet/eleven-chart parity,
+isolated offline replay and fresh-baseline preservation passed.
+All prior records, native/release reviews, aliases and protected inputs
+remain unchanged. Phase is unknown; promises and reporter praise are not
+fact-checked findings. Saved October 30 and final inclusive November 4
+remain distinct; website, host and editions remain held.
+
 ## Victoria Spartz: third independent native original
 
 The October 2 release
