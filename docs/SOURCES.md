@@ -10,6 +10,92 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Friess: a primary-campaign TV-ad quotation
+
+The actual July 6, 2026 Friess for Wyoming release
+`https://friessforwy.com/friess-launches-new-tv-ad-keep-your-money-in-your-pocket/`
+announces the third statewide TV spot, **Too Much**, and explicitly
+attributes two separate quotations to the ad. Acquire only the first
+**19 unchanged words**, not the longer neighboring quotation, closing
+approval statement, release paraphrase or biography. This is a
+**partial quotation**, not a full script; the 15-word floor and
+25-word ceiling remain unchanged.
+
+Exact frozen federal identity is **H6WY01165 / FRIESS, STEPHEN /
+REP / WY-00 / C00945980**. The unchanged cached official committee
+master binds **FRIESS FOR WYOMING** to that candidate; ZIP SHA-256 is
+`6249342f373dee195dc638a307c88c45da14cec2e760e4ff212035cdde76df60`.
+The primary release names Steve Friess and its footer identifies
+Friess for Wyoming. The exact Steve/Stephen public-name bridge is
+scoped solely to this reviewed release, candidate and principal
+committee. **No global alias or frozen roster is changed.**
+Candidate advertiser and TV delivery are campaign-reported, not
+independently verified legal payer or first-airing evidence. The
+ordinary detector identified English; phase is unknown and the
+new whole-creative semantic strategy remains **unreviewed**.
+
+HTML SHA-256 is
+`146daac3f89bfb9b874b73c27ed789832420b8ef91e4231909a85cb64dd4e871`.
+Require a unique actual `h1.elementor-heading-title`, unique `time`
+with visible July 6 date, and an independently agreeing
+`.elementor-element-55bb28c` block containing
+**For Immediate Release: July 6, 2026**. The block has two separate
+paragraphs; do not assume its label paragraph contains the date.
+The unique ad paragraph selector is
+`div.elementor-element-5fd6abb p:-soup-contains("Friess says in the ad")`;
+paragraph SHA-256 is
+`927e7d334b504ebd61f4849e154633941719b05c2911715c1b303b63989df0fd`.
+Selected-text SHA-256 is
+`dd63b9bcd47a976e4f5d1720096fa4eb3ca44c6dabf7b2f2831744aea204bd8f`.
+Return only the first capture of the explicit two-quotation attribution.
+Both canonical response files equal the retained discovery bytes;
+no earlier response is overwritten. Date is campaign release date,
+not verified first airing. Original media, payer, complete creative,
+duration, delivery and underlying claims remain unverified.
+
+Reproduce with
+`.venv/bin/political-ads collect --source friess-primary-tax --until 2026-10-30 --offline`,
+then explicit `parquet`, `build`, `validate`, `audit-strategy` and
+frontend checks from `web`. Twelve focused regressions cover admission,
+wrong candidate/committee/public name, interview attribution,
+excessive or neighboring text, duplicate paragraphs/date blocks,
+inconsistent visible/release dates and changed paragraph hashes.
+The positive test failed before support; **303 release tests passed**.
+Full validation logs and the earlier failed in-flight run are retained,
+not overwritten or represented as successful.
+The stable final run passed **732 Python tests**; both whole Ruff
+checks, frontend lint/build and **17 unit tests** also passed.
+
+Snapshot
+`e0ae48c39d32a1e9aa5287d8c6bdca36031ede12380371bf3b732860c21e5f7f`
+contains **1,948 acquired / 1,909 English**, including **R644 / D1,226**
+English records and **R266 / D698** English House records. House outside
+Snapchat is **R265 / D222**. There are **587 written records / 93 release
+reviews / 43 native reviews / 38 unchanged global aliases**.
+All **1,947 prior acquired / 1,908 prior analyzed objects**, old reviews,
+all 18 protected hashes and six prior CNBC/Tribune/Gray canonical
+response hashes are unchanged. Complete JSON/gzip/CSV copies, typed
+Parquet text/segments, eleven chart sets in three copies and isolated
+replay forbidding network, recognition and subprocesses passed.
+The independent strategy audit verified **20 metric groups / 10 chart
+rows** against this exact snapshot; final browser checks passed
+**all 9 tests**, including complete downloads.
+
+Discovery reconciles **167 receipts / 157 exact cached bodies /
+10 unchanged no-body receipts / 13 separately reviewed admissions**.
+Five newly inspected Conroy receipts match the existing complete
+`conroy-1261-0` and `conroy-1243-0` scripts, original IDs and source
+URLs; they are **duplicates, not new ads**. The Friess News archive
+links the same Too Much release, not another creative. Adequate reading
+of the February 18 Tribune Crenshaw/Toth report excludes its interviews,
+accessibility audio, short fragments and spending totals. Expanded
+search found an actual February 26 Mediaite Alamo Freedom Fighters
+PAC/Ted Cruz endorsement-ad report: a distinct, pinned **unadmitted
+follow-on lead**, not a Senate ad or the previously acquired January 26
+Toth immigration creative. Held original-video providers were not
+requested. Saved cutoff remains October 30; final scope November 4
+inclusive. Website, host and both edition publications remain held.
+
 ## Gray: a Wyoming intraparty ad quotation
 
 Cowboy State Daily's August 14, 2026 report

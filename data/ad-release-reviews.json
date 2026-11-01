@@ -2765,6 +2765,43 @@
       "publisher_credit": "Cowboy State Daily; Clair McFarland; August 14, 2026 original Wyoming primary attack-ad report.",
       "reuse_basis": "Retain only the 20 unchanged words in one explicitly attributed ad quotation, credited for comparative noncommercial research. This is a partial quotation, not the complete creative. Do not add the separate six-word Trump clip, interview responses, spokesman statements, short slogans or reporter analysis. Full cached HTML and original media remain undistributed; no blanket reuse license or edition-publication authorization is asserted.",
       "attribution_basis": "The original report names Citizens for Chuck Gray as the candidate committee responsible for an ad attacking Kevin Christensen and identifies the video supplied to the publisher. Its uniquely hash-bound paragraph explicitly says the ad, not an interview. Pin the unique actual h1, visible August 14 date and the matching unique NewsArticle JSON-LD datePublished/headline to the exact retained HTML SHA256; no date inferred from the URL. Exact frozen candidate H6WY00217 / GRAY, CHUCK / REP / H / WY00 / 2026 / C00932244. Contextual target H6WY01140 / CHRISTENSEN, KEVIN / REP / H / WY00 / 2026 / C00941427. This is an intraparty Republican House primary ad, not evidence of an attack on Democrats. No new alias is required. Candidate-campaign advertiser is publisher-reported; legal payer, original media, duration, delivery, first airing, complete creative and allegation truth remain unverified. Date is publisher report date; phase unknown; media URLs empty; new whole-creative semantic strategy remains unreviewed. Retain the unchanged 15-word floor and 25-word ceiling. The narrow collector requires Gray's exact identity and consistent unique date/heading metadata, rejects interviews, responses, excessive quotes, duplicate evidence and changed hashes, and does not retrieve unrelated media or any held provider."
+    },
+    {
+      "source": "friess-primary-tax",
+      "record_id": "20260706",
+      "source_url": "https://friessforwy.com/friess-launches-new-tv-ad-keep-your-money-in-your-pocket/",
+      "retrieval_url": "https://friessforwy.com/friess-launches-new-tv-ad-keep-your-money-in-your-pocket/",
+      "format": "html",
+      "content_sha256": "146daac3f89bfb9b874b73c27ed789832420b8ef91e4231909a85cb64dd4e871",
+      "published": "2026-07-06",
+      "release_title": "Friess Launches New TV Ad: Keep Your Money in Your Pocket”",
+      "heading_selector": "h1.elementor-heading-title",
+      "publication_selector": "time",
+      "publication_date_format": "%B %d, %Y",
+      "candidate_id": "H6WY01165",
+      "candidate_public_name": {
+        "full_name": "Steve Friess",
+        "basis": "The unchanged exact saved 2026 FEC candidate H6WY01165 is FRIESS, STEPHEN, REP, House, WY-00, principal C00945980. The independently cached official 2026 committee master directly binds FRIESS FOR WYOMING, C00945980, designation P/type H/REP, to that candidate; ZIP SHA256 6249342f373dee195dc638a307c88c45da14cec2e760e4ff212035cdde76df60. The primary July 6 campaign TV-ad release identifies Steve Friess as the Republican candidate for Wyoming's at-large House seat and its footer says Paid for by Friess for Wyoming; exact HTML SHA256 146daac3f89bfb9b874b73c27ed789832420b8ef91e4231909a85cb64dd4e871. This source-local exact public-name bridge applies only to this reviewed candidate, committee and release. It is not a global Stephen-to-Steve inference, surname/fuzzy matching, roster rewrite, text repair or modification of the protected global alias file. The generic footer supports identity, not independently verified legal payer of the inspected creative."
+      },
+      "media_url": null,
+      "phase": "unknown",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Steve Friess, Wyoming businessman, conservative activist, and Republican candidate for Wyoming’s at-large U.S. House seat",
+        "today launched his third statewide television ad.",
+        "The spot, titled “Too Much,” runs on broadcast and cable across Wyoming.",
+        "Friess says in the ad."
+      ],
+      "passages": [
+        "People ask me, ‘Why does everything cost so much?’ It’s simple. Politicians tax too much and spend too much,"
+      ],
+      "reported_ad_text": {
+        "paragraph_selector": "div.elementor-element-5fd6abb p:-soup-contains(\"Friess says in the ad\")",
+        "paragraph_sha256": "927e7d334b504ebd61f4849e154633941719b05c2911715c1b303b63989df0fd"
+      },
+      "publisher_credit": "Friess for Wyoming campaign; July 6, 2026 TV-ad release for Too Much.",
+      "reuse_basis": "Retain only the 19 unchanged words in the first explicitly attributed ad quotation for comparative noncommercial research. Do not join the separate longer quote, closing approval statement, release paraphrase or biography. Full cached HTML and original media remain undistributed; no blanket license or edition-publication authorization is asserted.",
+      "attribution_basis": "The primary campaign release explicitly identifies Steve Friess as the Republican candidate for Wyoming's at-large House seat and announces the third statewide TV spot, Too Much. Pin the unique actual h1, unique visible time date, independently matching For Immediate Release date block and exact HTML/paragraph hashes. Retain only the first regex capture of the two separately attributed quotations, with unchanged 15-word floor and 25-word ceiling. Exact frozen candidate H6WY01165 / FRIESS, STEPHEN / REP / H / WY00 / 2026 / C00945980; the public Steve Friess name requires an independently reviewed exact-name alias, not surname/fuzzy matching or roster rewriting. No Friess provenance or literal quotation was present anywhere in the immutable 1947-record pre-edit combined corpus. Campaign advertiser and TV delivery are campaign-reported; legal payer, original media, first airing, duration, complete creative and underlying claims remain unverified. Date is campaign release date, not first-airing verification. Phase unknown, media URLs empty, semantic strategy unreviewed."
     }
   ]
 }

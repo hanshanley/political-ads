@@ -1886,6 +1886,147 @@ def test_gray_report_rejects_unbound_or_non_ad_evidence(failure):
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_friess_fixture():
+    source, candidate, review, _, commentary = unlinked_lisonbee_fixture()
+    source = replace(
+        source,
+        id="friess-primary-tax",
+        url="https://friessforwy.com",
+        sponsor="Steve Friess campaign (campaign-reported; payer unverified)",
+        fixed_race="WY-00",
+    )
+    candidate.update(
+        candidate_id="H6WY01165",
+        name="FRIESS, STEPHEN",
+        state="WY",
+        district="00",
+        principal_committee="C00945980",
+    )
+    selected = (
+        "This selected ad quotation explains high prices by criticizing excessive "
+        "taxation and spending in this federal election contest today."
+    )
+    neighboring = "This separate, longer ad quotation must not be acquired alongside the first."
+    paragraph = f"“{selected}” Friess says in the ad. “{neighboring}”"
+    content = (
+        "<h1>Friess tax ad release</h1><time>July 6, 2026</time>"
+        '<div class="elementor-element-55bb28c">'
+        "<p><strong>For Immediate Release:</strong></p><p>July 6, 2026</p></div>"
+        "<section><p>Steve Friess launched his third statewide television ad.</p>"
+        f'<p class="quoted">{paragraph}</p><p>"{commentary}" he said.</p></section>'
+    )
+    url = source.url + "/friess-tax-ad/"
+    review.update(
+        source=source.id,
+        record_id="20260706",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-07-06",
+        release_title="Friess tax ad release",
+        heading_selector="h1",
+        publication_selector="time",
+        publication_date_format="%B %d, %Y",
+        candidate_id=candidate["candidate_id"],
+        candidate_public_name={
+            "full_name": "Steve Friess",
+            "basis": "Independently bound exact current candidate and principal committee.",
+        },
+        required_context=["Steve Friess", "third statewide television ad"],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": "section > p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+    )
+    return source, candidate, review, content.encode(), neighboring, commentary
+
+
+def test_friess_release_acquires_only_first_ad_quote_with_bound_release_date():
+    source, candidate, review, body, neighboring, commentary = unlinked_friess_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == review["passages"][0] and len(ad["text"].split()) == 19
+    assert neighboring not in ad["text"] and commentary not in ad["text"]
+    assert ad["alignment"] == "R" and ad["race"] == "WY-00"
+    assert ad["published"] == "2026-07-06" and ad["phase"] == "unknown"
+    assert ad["media_urls"] == [] and ad["date_basis"] == "publisher_report_date"
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(ad["quality_flags"])
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "failure",
+    [
+        "candidate",
+        "committee",
+        "public_name",
+        "interview",
+        "too_long",
+        "neighboring",
+        "duplicate",
+        "release_date",
+        "release_duplicate",
+        "visible_date",
+        "paragraph_hash",
+    ],
+)
+def test_friess_release_rejects_unbound_or_excessive_evidence(failure):
+    from bs4 import BeautifulSoup
+
+    source, candidate, review, body, neighboring, _ = unlinked_friess_fixture()
+    content = body.decode()
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H6WY00999"
+    elif failure == "committee":
+        candidate["principal_committee"] = "C00999999"
+    elif failure == "public_name":
+        review["candidate_public_name"]["full_name"] = "Foster Friess"
+    elif failure == "interview":
+        content = content.replace("Friess says in the ad", "Friess says in an interview")
+    elif failure == "too_long":
+        original = review["passages"][0]
+        review["passages"][0] += " These additional words exceed the existing quotation ceiling."
+        content = content.replace(original, review["passages"][0])
+    elif failure == "neighboring":
+        review["passages"].append(neighboring)
+    elif failure == "duplicate":
+        content += str(BeautifulSoup(content, "html.parser").select("p.quoted")[0])
+        review["reported_ad_text"]["paragraph_selector"] = "p.quoted"
+    elif failure == "release_date":
+        content = content.replace("<p>July 6, 2026</p>", "<p>July 7, 2026</p>")
+    elif failure == "release_duplicate":
+        content += str(
+            BeautifulSoup(content, "html.parser").select(".elementor-element-55bb28c")[0]
+        )
+    elif failure == "visible_date":
+        content = content.replace("<time>July 6, 2026</time>", "<time>July 7, 2026</time>")
+    paragraph = BeautifulSoup(content, "html.parser").select("p.quoted")[0]
+    review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
+    if failure == "paragraph_hash":
+        review["reported_ad_text"]["paragraph_sha256"] = "0" * 64
+    review["content_sha256"] = digest(content)
+
+    class Client:
+        def get(self, url, **kwargs):
+            return content.encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 def unlinked_lawler_fixture():
     source, candidate, review, _, _, _ = unlinked_kiggans_fixture()
     source = next(s for s in SOURCES if s.id == "lawler-tell-her-no")

@@ -449,6 +449,7 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             "begich-nrcc-cnbc",
             "lisonbee-sltrib",
             "gray-csd",
+            "friess-primary-tax",
             "lawler-tell-her-no",
             "pps-house-washingtonreporter",
         }
@@ -496,6 +497,20 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             or " ".join(publications[0].get("headline", "").split()) != review["release_title"]
         ):
             raise ValueError("CSD visible and article metadata publication evidence must agree")
+    if source.id == "friess-primary-tax":
+        if review["candidate_id"] != "H6WY01165":
+            raise ValueError("Campaign quotation requires the reviewed Friess candidate identity")
+        publications = BeautifulSoup(content, "html.parser").select(".elementor-element-55bb28c")
+        if (
+            len(publications) != 1
+            or datetime.strptime(
+                publications[0].get_text(" ", strip=True), "For Immediate Release: %B %d, %Y"
+            )
+            .date()
+            .isoformat()
+            != review["published"]
+        ):
+            raise ValueError("Campaign visible and immediate-release publication dates must agree")
     if source.id == "pps-house-washingtonreporter" and review["candidate_id"] != "H2FL04211":
         raise ValueError("Reporter quotation requires the reviewed Bean speaker identity")
     evidence = review["reported_ad_text"]
@@ -539,11 +554,15 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         pattern = r"“([^”]+)” she says in the ad\. “([^”]+)”"
     elif source.id == "gray-csd":
         pattern = r"“([^”]+)” says the ad\."
+    elif source.id == "friess-primary-tax":
+        pattern = r"“([^”]+)” Friess says in the ad\. “([^”]+)”"
     match = re.fullmatch(pattern, paragraph)
     if not match:
         raise ValueError("Publisher must explicitly attribute the selected quotations to the ad")
     text = (
-        match[2]
+        match[1]
+        if source.id == "friess-primary-tax"
+        else match[2]
         if source.id in {"deboer-washingtonreporter", "merrin-washingtonreporter"}
         else "\n".join(match.groups())
     )
@@ -644,6 +663,17 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
     visible = re.sub(r"\s+", " ", plain_html(content)).strip()
     if not all(context in visible for context in review["required_context"]):
         raise ValueError("Explicit advertiser/ad quotation context is missing")
+    if source.id == "friess-primary-tax":
+        if (
+            candidate["candidate_id"] != "H6WY01165"
+            or candidate["name"] != "FRIESS, STEPHEN"
+            or candidate["principal_committee"] != "C00945980"
+            or review.get("candidate_public_name", {}).get("full_name") != "Steve Friess"
+        ):
+            raise ValueError(
+                "Friess public name requires the exact reviewed candidate and committee"
+            )
+        identities = [candidate | {"reviewed_alias": review["candidate_public_name"]}]
     if candidate["candidate_id"] not in {
         row["candidate_id"] for row in candidate_mentions(visible, identities)
     } and not (source.id == "barron-gop-apg-print" and review.get("printed_ad_text")):

@@ -15817,6 +15817,90 @@
       "title": "New NRSC Ads Blast Democrats for Putting Illegals Over Working Families"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "The primary campaign release explicitly identifies Steve Friess as the Republican candidate for Wyoming's at-large House seat and announces the third statewide TV spot, Too Much. Pin the unique actual h1, unique visible time date, independently matching For Immediate Release date block and exact HTML/paragraph hashes. Retain only the first regex capture of the two separately attributed quotations, with unchanged 15-word floor and 25-word ceiling. Exact frozen candidate H6WY01165 / FRIESS, STEPHEN / REP / H / WY00 / 2026 / C00945980; the public Steve Friess name requires an independently reviewed exact-name alias, not surname/fuzzy matching or roster rewriting. No Friess provenance or literal quotation was present anywhere in the immutable 1947-record pre-edit combined corpus. Campaign advertiser and TV delivery are campaign-reported; legal payer, original media, first airing, duration, complete creative and underlying claims remain unverified. Date is campaign release date, not first-airing verification. Phase unknown, media URLs empty, semantic strategy unreviewed.",
+      "candidate_mentions": [],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "friess-primary-tax-20260706-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "4a3e30d6b1f41db4d509451f25bdf8af0766524454167ff35fd9cbc4bcedb855",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-07-06",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified"
+      ],
+      "race": "WY-00",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6WY01165"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The primary campaign release explicitly identifies Steve Friess as the Republican candidate for Wyoming's at-large House seat and announces the third statewide TV spot, Too Much. Pin the unique actual h1, unique visible time date, independently matching For Immediate Release date block and exact HTML/paragraph hashes. Retain only the first regex capture of the two separately attributed quotations, with unchanged 15-word floor and 25-word ceiling. Exact frozen candidate H6WY01165 / FRIESS, STEPHEN / REP / H / WY00 / 2026 / C00945980; the public Steve Friess name requires an independently reviewed exact-name alias, not surname/fuzzy matching or roster rewriting. No Friess provenance or literal quotation was present anywhere in the immutable 1947-record pre-edit combined corpus. Campaign advertiser and TV delivery are campaign-reported; legal payer, original media, first airing, duration, complete creative and underlying claims remain unverified. Date is campaign release date, not first-airing verification. Phase unknown, media URLs empty, semantic strategy unreviewed.",
+            "candidate_id": "H6WY01165",
+            "candidate_public_name": {
+              "basis": "The unchanged exact saved 2026 FEC candidate H6WY01165 is FRIESS, STEPHEN, REP, House, WY-00, principal C00945980. The independently cached official 2026 committee master directly binds FRIESS FOR WYOMING, C00945980, designation P/type H/REP, to that candidate; ZIP SHA256 6249342f373dee195dc638a307c88c45da14cec2e760e4ff212035cdde76df60. The primary July 6 campaign TV-ad release identifies Steve Friess as the Republican candidate for Wyoming's at-large House seat and its footer says Paid for by Friess for Wyoming; exact HTML SHA256 146daac3f89bfb9b874b73c27ed789832420b8ef91e4231909a85cb64dd4e871. This source-local exact public-name bridge applies only to this reviewed candidate, committee and release. It is not a global Stephen-to-Steve inference, surname/fuzzy matching, roster rewrite, text repair or modification of the protected global alias file. The generic footer supports identity, not independently verified legal payer of the inspected creative.",
+              "full_name": "Steve Friess"
+            },
+            "completeness": "partial_quotation",
+            "content_sha256": "146daac3f89bfb9b874b73c27ed789832420b8ef91e4231909a85cb64dd4e871",
+            "format": "html",
+            "heading_selector": "h1.elementor-heading-title",
+            "media_url": null,
+            "passages": [
+              "People ask me, ‘Why does everything cost so much?’ It’s simple. Politicians tax too much and spend too much,"
+            ],
+            "phase": "unknown",
+            "publication_date_format": "%B %d, %Y",
+            "publication_selector": "time",
+            "published": "2026-07-06",
+            "publisher_credit": "Friess for Wyoming campaign; July 6, 2026 TV-ad release for Too Much.",
+            "record_id": "20260706",
+            "release_title": "Friess Launches New TV Ad: Keep Your Money in Your Pocket”",
+            "reported_ad_text": {
+              "paragraph_selector": "div.elementor-element-5fd6abb p:-soup-contains(\"Friess says in the ad\")",
+              "paragraph_sha256": "927e7d334b504ebd61f4849e154633941719b05c2911715c1b303b63989df0fd"
+            },
+            "required_context": [
+              "Steve Friess, Wyoming businessman, conservative activist, and Republican candidate for Wyoming’s at-large U.S. House seat",
+              "today launched his third statewide television ad.",
+              "The spot, titled “Too Much,” runs on broadcast and cable across Wyoming.",
+              "Friess says in the ad."
+            ],
+            "retrieval_url": "https://friessforwy.com/friess-launches-new-tv-ad-keep-your-money-in-your-pocket/",
+            "reuse_basis": "Retain only the 19 unchanged words in the first explicitly attributed ad quotation for comparative noncommercial research. Do not join the separate longer quote, closing approval statement, release paraphrase or biography. Full cached HTML and original media remain undistributed; no blanket license or edition-publication authorization is asserted.",
+            "source": "friess-primary-tax",
+            "source_url": "https://friessforwy.com/friess-launches-new-tv-ad-keep-your-money-in-your-pocket/"
+          },
+          "text": "People ask me, ‘Why does everything cost so much?’ It’s simple. Politicians tax too much and spend too much,"
+        }
+      ],
+      "source": "friess-primary-tax",
+      "source_hash": "146daac3f89bfb9b874b73c27ed789832420b8ef91e4231909a85cb64dd4e871",
+      "source_record_id": "20260706",
+      "source_url": "https://friessforwy.com/friess-launches-new-tv-ad-keep-your-money-in-your-pocket/",
+      "sponsor": "Steve Friess campaign (campaign-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "WY",
+      "text": "People ask me, ‘Why does everything cost so much?’ It’s simple. Politicians tax too much and spend too much,",
+      "title": "Friess Launches New TV Ad: Keep Your Money in Your Pocket”"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official LCV Victory Fund release at https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-new-4-million-early-house-program/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
@@ -52006,6 +52090,22 @@
       "source": "flippo-americanjournal",
       "state": "partial",
       "url": "https://americanjournalnews.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "friess-primary-tax",
+      "state": "partial",
+      "url": "https://friessforwy.com"
     },
     {
       "ads_with_text": 1,
