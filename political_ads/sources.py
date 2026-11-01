@@ -503,6 +503,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "alfonso-clark-townhall",
+        "https://townhall.com",
+        "Michael Alfonso campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="WI-07",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "lawler-tell-her-no",
         "https://www.lawlerforcongress.com",
         "Mike Lawler campaign (campaign-reported; payer unverified)",

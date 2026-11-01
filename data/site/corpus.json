@@ -42858,6 +42858,88 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "The report explicitly introduces a new digital ad released by Michael Alfonso, Fred Clark's Republican opponent, and attributes the selected Fonda quotations to footage featured in that ad. Republican alignment describes the publisher-reported campaign advertiser and House beneficiary, not the speaker's party or Alfonso's endorsement of the selected words. Exact frozen2026 federal identity H6WI07223 / ALFONSO, MICHAEL / REP / H / WI07 / C00924902; no alias added. Unique h1, visible time October20,2026 8:00 AM, datetime2026-10-20T08:00:08-04:00 and unique article:published_time2026-10-20T08:00:08 bind publication. Full HTML, paragraph and selected-text hashes bind literal text. Require one article iframe linked to exact original SgHSXNOOAoE; original was not requested because the provider remains paused. It differs from all four older Alfonso originals: Vr2MMUNRg00, Ccysp5KCnoY, o0UPh5CL_n0 and xsoG4kWSiNM. The selected text and original ID are absent from the full pre-edit1950-record combined corpus; novelty also uses the distinct Clark/Fonda/NEA creative context, not a missing exact substring alone. Only the two climate-quotation regex captures are selected; the15word floor and25word ceiling remain. Advertiser is publisher-reported; legal payer, original media speech, first airing, duration, delivery, full script and claims remain unverified. Report date is not first-airing date. Phase unknown; semantic strategy unreviewed; media URLs empty, with discovered original separately retained.",
+      "candidate_mentions": [],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "alfonso-clark-townhall-20261020-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "cfceaf19b1b9946bd1678479a4b58d6c54986976a9951f168cde0cbd09e940e8",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-10-20",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified"
+      ],
+      "race": "WI-07",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6WI07223"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The report explicitly introduces a new digital ad released by Michael Alfonso, Fred Clark's Republican opponent, and attributes the selected Fonda quotations to footage featured in that ad. Republican alignment describes the publisher-reported campaign advertiser and House beneficiary, not the speaker's party or Alfonso's endorsement of the selected words. Exact frozen2026 federal identity H6WI07223 / ALFONSO, MICHAEL / REP / H / WI07 / C00924902; no alias added. Unique h1, visible time October20,2026 8:00 AM, datetime2026-10-20T08:00:08-04:00 and unique article:published_time2026-10-20T08:00:08 bind publication. Full HTML, paragraph and selected-text hashes bind literal text. Require one article iframe linked to exact original SgHSXNOOAoE; original was not requested because the provider remains paused. It differs from all four older Alfonso originals: Vr2MMUNRg00, Ccysp5KCnoY, o0UPh5CL_n0 and xsoG4kWSiNM. The selected text and original ID are absent from the full pre-edit1950-record combined corpus; novelty also uses the distinct Clark/Fonda/NEA creative context, not a missing exact substring alone. Only the two climate-quotation regex captures are selected; the15word floor and25word ceiling remain. Advertiser is publisher-reported; legal payer, original media speech, first airing, duration, delivery, full script and claims remain unverified. Report date is not first-airing date. Phase unknown; semantic strategy unreviewed; media URLs empty, with discovered original separately retained.",
+            "candidate_id": "H6WI07223",
+            "completeness": "partial_quotation",
+            "content_sha256": "c3e66fd931e200397bbbfb37f9008453a550cd4cc1866659677bbd18c383534e",
+            "discovered_original_url": "https://www.youtube.com/embed/SgHSXNOOAoE?si=H4SUhrwcQ8STX0PU",
+            "format": "html",
+            "heading_selector": "h1",
+            "media_url": null,
+            "passages": [
+              "put our bodies on the line\nthere'd be no climate crisis if it wasn't for racism."
+            ],
+            "phase": "unknown",
+            "publication_date_format": "%B %d, %Y %I:%M %p",
+            "publication_selector": "time",
+            "published": "2026-10-20",
+            "publisher_credit": "Townhall; Amy Curtis; October 20, 2026 original Michael Alfonso digital-ad report.",
+            "record_id": "20261020",
+            "release_title": "Alfonso Campaign Releases New Digital Ad Ripping Fred Clark for Taking Money From Jane Fonda, NEA",
+            "reported_ad_text": {
+              "paragraph_selector": "p:-soup-contains(\"Additionally, the ad features some of the craziest things Fonda has said\")",
+              "paragraph_sha256": "350bb709d5add81d11efbb64164eacb857b198abfb769a4a79babb516d690ac7"
+            },
+            "required_context": [
+              "Clark's Republican opponent",
+              "Michael Alfonso",
+              "released a new digital ad",
+              "Additionally, the ad features some of the craziest things Fonda has said",
+              "to fight climate change, and that"
+            ],
+            "retrieval_url": "https://townhall.com/news/amy-curtis/2026/10/20/alfonso-ad-n2684960",
+            "reuse_basis": "Retain only two explicitly in-ad Fonda climate quotations, 16 unchanged words in original order separated by a newline. These are non-contiguous partial quotations of reused footage, not an uninterrupted sentence, Alfonso's own speech or the complete creative. Exclude the paragraph's other quotations, reporter characterizations, NEA bookends and separate after-ad candidate press statement. The bookends alone total12 words and remain below the unchanged15word floor. Full cached publisher HTML and original media remain undistributed; no blanket reuse license or edition-publication authorization is asserted.",
+            "source": "alfonso-clark-townhall",
+            "source_url": "https://townhall.com/news/amy-curtis/2026/10/20/alfonso-ad-n2684960"
+          },
+          "text": "put our bodies on the line\nthere'd be no climate crisis if it wasn't for racism."
+        }
+      ],
+      "source": "alfonso-clark-townhall",
+      "source_hash": "c3e66fd931e200397bbbfb37f9008453a550cd4cc1866659677bbd18c383534e",
+      "source_record_id": "20261020",
+      "source_url": "https://townhall.com/news/amy-curtis/2026/10/20/alfonso-ad-n2684960",
+      "sponsor": "Michael Alfonso campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "WI",
+      "text": "put our bodies on the line\nthere'd be no climate crisis if it wasn't for racism.",
+      "title": "Alfonso Campaign Releases New Digital Ad Ripping Fred Clark for Taking Money From Jane Fonda, NEA"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Official Andy Barr for Senate release at https://barrforsenate.com/press-release/new-barr-ad-take-charles-bookers-word-for-it-hes-too-liberal-and-too-extreme-for-kentucky/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
       "date_basis": "release_date",
@@ -51716,6 +51798,22 @@
       "source": "alamo-toth-cruz-mediaite",
       "state": "partial",
       "url": "https://www.mediaite.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "alfonso-clark-townhall",
+      "state": "partial",
+      "url": "https://townhall.com"
     },
     {
       "ads_with_text": 1,

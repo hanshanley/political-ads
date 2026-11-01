@@ -452,6 +452,7 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             "friess-primary-tax",
             "alamo-toth-cruz-mediaite",
             "alfonso-family-townhall",
+            "alfonso-clark-townhall",
             "lawler-tell-her-no",
             "pps-house-washingtonreporter",
         }
@@ -536,6 +537,21 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             or frames[0]["src"] != original
         ):
             raise ValueError("Alfonso report requires its unique reviewed original-player link")
+    if source.id == "alfonso-clark-townhall":
+        if review["candidate_id"] != "H6WI07223":
+            raise ValueError("Clark ad requires the reviewed Alfonso House candidate")
+        soup = BeautifulSoup(content, "html.parser")
+        publications = soup.select('meta[property="article:published_time"]')
+        if len(publications) != 1 or publications[0].get("content", "")[:10] != review["published"]:
+            raise ValueError("Alfonso report requires a unique matching publication date")
+        original = "https://www.youtube.com/embed/SgHSXNOOAoE?si=H4SUhrwcQ8STX0PU"
+        frames = soup.select("article iframe[src]")
+        if (
+            review.get("discovered_original_url") != original
+            or len(frames) != 1
+            or frames[0]["src"] != original
+        ):
+            raise ValueError("Alfonso report requires its unique reviewed original-player link")
     if source.id == "pps-house-washingtonreporter" and review["candidate_id"] != "H2FL04211":
         raise ValueError("Reporter quotation requires the reviewed Bean speaker identity")
     evidence = review["reported_ad_text"]
@@ -588,6 +604,15 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         )
     elif source.id == "alfonso-family-townhall":
         pattern = r'"([^"]+)" he continues\. "[^"]+"'
+    elif source.id == "alfonso-clark-townhall":
+        pattern = (
+            r"Additionally, the ad features some of the craziest things Fonda has said, "
+            r'including suggesting that liberals should "[^"]+" their political opponents '
+            r'if marches and protests don\'t work, that we have to "([^"]+)" '
+            r'to fight climate change, and that "([^"]+)" '
+            r"She also called for an end to all new fossil fuel development "
+            r'and wants to cut emissions in half "[^"]+"'
+        )
     match = re.fullmatch(pattern, paragraph)
     if not match:
         raise ValueError("Publisher must explicitly attribute the selected quotations to the ad")

@@ -2332,6 +2332,193 @@ def test_alfonso_family_report_rejects_unbound_or_neighboring_words(failure):
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_alfonso_clark_fixture():
+    source, candidate, review, _, _, commentary = unlinked_alamo_toth_fixture()
+    source = replace(
+        source,
+        id="alfonso-clark-townhall",
+        url="https://townhall.com",
+        sponsor="Michael Alfonso campaign (publisher-reported; payer unverified)",
+        sponsor_type="candidate",
+        fixed_race="WI-07",
+    )
+    candidate.update(
+        candidate_id="H6WI07223",
+        name="ALFONSO, MICHAEL",
+        state="WI",
+        district="07",
+        principal_committee="C00924902",
+    )
+    candidate.pop("reviewed_alias", None)
+    selected = (
+        "these separate climate words were spoken\n"
+        "these other quoted words explicitly discuss climate and racial injustice."
+    )
+    opening = "excluded opening quotation"
+    closing = "excluded closing quotation."
+    first, second = selected.split("\n")
+    paragraph = (
+        "Additionally, the ad features some of the craziest things Fonda has said, "
+        f'including suggesting that liberals should "{opening}" their political opponents '
+        f'if marches and protests don\'t work, that we have to "{first}" '
+        f'to fight climate change, and that "{second}" '
+        "She also called for an end to all new fossil fuel development "
+        f'and wants to cut emissions in half "{closing}"'
+    )
+    original = "https://www.youtube.com/embed/SgHSXNOOAoE?si=H4SUhrwcQ8STX0PU"
+    content = (
+        '<meta property="article:published_time" content="2026-10-20T08:00:08">'
+        "<article><h1>Michael Alfonso Clark ad</h1>"
+        '<time datetime="2026-10-20T08:00:08-04:00">'
+        "October 20, 2026 8:00 AM</time><section>"
+        "<p>Clark's Republican opponent, Michael Alfonso, released a new digital ad.</p>"
+        f'<iframe src="{original}"></iframe>'
+        f'<p class="quoted">{paragraph}</p><p>"{commentary}" said Michael Alfonso.</p>'
+        "</section></article>"
+    )
+    url = source.url + "/alfonso-clark-ad/"
+    review.update(
+        source=source.id,
+        record_id="20261020",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-10-20",
+        release_title="Michael Alfonso Clark ad",
+        heading_selector="h1",
+        publication_selector="time",
+        publication_date_format="%B %d, %Y %I:%M %p",
+        candidate_id=candidate["candidate_id"],
+        discovered_original_url=original,
+        required_context=[
+            "Clark's Republican opponent, Michael Alfonso",
+            "released a new digital ad",
+            "the ad features some of the craziest things Fonda has said",
+        ],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": "p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+    )
+    return source, candidate, review, content.encode(), opening, closing, commentary
+
+
+def test_alfonso_clark_report_acquires_only_two_in_ad_footage_quotations():
+    source, candidate, review, body, opening, closing, commentary = unlinked_alfonso_clark_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == review["passages"][0] and len(ad["text"].split()) == 16
+    assert all(excluded not in ad["text"] for excluded in (opening, closing, commentary))
+    assert ad["alignment"] == "R" and ad["race"] == "WI-07"
+    assert ad["sponsor_type"] == "candidate" and ad["media_urls"] == []
+    assert ad["segments"][0]["federal_scope_candidate_ids"] == ["H6WI07223"]
+    assert ad["published"] == "2026-10-20" and ad["phase"] == "unknown"
+    assert ad["date_basis"] == "publisher_report_date"
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(ad["quality_flags"])
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "failure",
+    [
+        "candidate",
+        "interview",
+        "wrong_speaker",
+        "attribution",
+        "too_long",
+        "too_short",
+        "opening_quote",
+        "closing_quote",
+        "press_statement",
+        "duplicate",
+        "metadata_date",
+        "metadata_duplicate",
+        "original_missing",
+        "original_swap",
+        "original_duplicate",
+        "paragraph_hash",
+    ],
+)
+def test_alfonso_clark_report_rejects_unbound_or_neighboring_words(failure):
+    from bs4 import BeautifulSoup
+
+    source, candidate, review, body, opening, closing, commentary = unlinked_alfonso_clark_fixture()
+    content = body.decode()
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H6WI00999"
+    elif failure == "interview":
+        content = content.replace("released a new digital ad", "gave an interview")
+    elif failure == "wrong_speaker":
+        content = content.replace("Fonda has said", "Alfonso has said")
+    elif failure == "attribution":
+        content = content.replace(
+            "Additionally, the ad features", "Additionally, the interview features"
+        )
+    elif failure in {"too_long", "too_short"}:
+        original = review["passages"][0]
+        review["passages"][0] = (
+            "These additional selected words exceed the quotation ceiling by several words.\n"
+            + original
+            if failure == "too_long"
+            else "short quoted words\nother short words"
+        )
+        old_first, old_second = original.split("\n")
+        new_first, new_second = review["passages"][0].rsplit("\n", 1)
+        content = content.replace(old_first, new_first).replace(old_second, new_second)
+    elif failure in {"opening_quote", "closing_quote", "press_statement"}:
+        review["passages"].append(
+            opening
+            if failure == "opening_quote"
+            else closing
+            if failure == "closing_quote"
+            else commentary
+        )
+    elif failure == "duplicate":
+        content += str(BeautifulSoup(content, "html.parser").select("p.quoted")[0])
+    elif failure == "metadata_date":
+        content = content.replace('content="2026-10-20T', 'content="2026-10-21T')
+    elif failure == "metadata_duplicate":
+        content += str(
+            BeautifulSoup(content, "html.parser").select('meta[property="article:published_time"]')[
+                0
+            ]
+        )
+    elif failure == "original_missing":
+        content = content.replace(
+            str(BeautifulSoup(content, "html.parser").select("article iframe[src]")[0]), ""
+        )
+    elif failure == "original_swap":
+        content = content.replace(review["discovered_original_url"], "https://example.org/other")
+    elif failure == "original_duplicate":
+        frame = BeautifulSoup(content, "html.parser").select("article iframe[src]")[0]
+        content = content.replace("</article>", str(frame) + "</article>")
+    paragraph = BeautifulSoup(content, "html.parser").select("p.quoted")[0]
+    review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
+    if failure == "paragraph_hash":
+        review["reported_ad_text"]["paragraph_sha256"] = "0" * 64
+    review["content_sha256"] = digest(content)
+
+    class Client:
+        def get(self, url, **kwargs):
+            return content.encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 def unlinked_lawler_fixture():
     source, candidate, review, _, _, _ = unlinked_kiggans_fixture()
     source = next(s for s in SOURCES if s.id == "lawler-tell-her-no")
