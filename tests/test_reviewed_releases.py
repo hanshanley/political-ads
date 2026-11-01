@@ -1402,6 +1402,111 @@ def test_merrin_report_rejects_wrong_identity_or_unselected_non_ad_text(failure)
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_kiggans_fixture():
+    source, candidate, review, _, _, _ = unlinked_merrin_fixture()
+    source = next(s for s in SOURCES if s.id == "kiggans-washingtonreporter")
+    candidate.update(
+        candidate_id="H2VA02064",
+        name="KIGGANS, JENNIFER",
+        state="VA",
+        district="02",
+        reviewed_alias={"full_name": "Jen Kiggans"},
+    )
+    selected = (
+        "This news clip contains enough literal words for substantive analysis "
+        "without including either the neighboring quotation or publisher commentary."
+    )
+    neighbor = "An unselected opponent quotation."
+    journalism = "The report discusses a separate opponent quotation"
+    paragraph = f"“{selected}” a local news anchor says during the ad. {journalism} “{neighbor}”"
+    content = (
+        '<meta property="article:published_time" content="2026-10-23T19:16:02+00:00">'
+        "<h1>Kiggans ad report</h1><article><p>Jen Kiggans has a new campaign advertisement.</p>"
+        f'<p class="quoted">{paragraph}</p></article>'
+    )
+    url = source.url + "/kiggans-ad-report/"
+    review.update(
+        source=source.id,
+        record_id="20261023",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-10-23",
+        release_title="Kiggans ad report",
+        candidate_id=candidate["candidate_id"],
+        required_context=["Jen Kiggans"],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": "article > p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+    )
+    return source, candidate, review, content.encode(), neighbor, journalism
+
+
+def test_kiggans_report_keeps_only_news_clip_explicitly_used_in_ad():
+    source, candidate, review, body, neighbor, journalism = unlinked_kiggans_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == review["passages"][0]
+    assert neighbor not in ad["text"] and journalism not in ad["text"]
+    assert ad["alignment"] == "R" and ad["race"] == "VA-02"
+    assert ad["sponsor_type"] == "candidate" and ad["media_urls"] == []
+    assert ad["phase"] == "unknown" and ad["date_basis"] == "publisher_report_date"
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(ad["quality_flags"])
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "failure", ["candidate", "alias", "interview", "too_long", "neighbor", "journalism"]
+)
+def test_kiggans_report_rejects_unbound_identity_or_non_ad_quotations(failure):
+    source, candidate, review, body, neighbor, journalism = unlinked_kiggans_fixture()
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H2VA02999"
+    elif failure == "alias":
+        candidate.pop("reviewed_alias")
+    elif failure == "neighbor":
+        review["passages"].append(neighbor)
+    elif failure == "journalism":
+        review["passages"].append(journalism)
+    else:
+        content = body.decode()
+        if failure == "interview":
+            content = content.replace("during the ad.", "during an interview.")
+        else:
+            original = review["passages"][0]
+            review["passages"][0] += (
+                " Additional words push this quotation beyond the permitted limit."
+            )
+            content = content.replace(original, review["passages"][0])
+        from bs4 import BeautifulSoup
+
+        paragraph = BeautifulSoup(content, "html.parser").select("article > p.quoted")[0]
+        review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
+        review["content_sha256"] = digest(content)
+        body = content.encode()
+
+    class Client:
+        def get(self, url, **kwargs):
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 @pytest.mark.parametrize("format", ["wordpress", "html"])
 @pytest.mark.parametrize("completeness", ["partial_quotation", "marked_script"])
 def test_reviewed_release_keeps_only_bound_ad_words_and_explicit_provenance(format, completeness):

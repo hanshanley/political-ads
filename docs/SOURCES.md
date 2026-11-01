@@ -10,6 +10,72 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Jen Kiggans: independently reported news clip used in an ad
+
+The October 23 Washington Reporter article
+`https://washingtonreporter.news/exclusive-washington-reporter-fact-check-cited-in-tossup-races-ad/`
+explicitly attributes a news-anchor quotation to Kiggans's ad. Acquire
+only that **first complete quotation: 24 unchanged words**, including
+its original terminal comma. Exclude the neighboring opponent quotation,
+reporter fact-check judgments, campaign interview and all other paragraphs.
+This is `partial_quotation`, not a complete transcript or independently
+heard audio. Original association, legal payer, first airing and delivery
+remain unverified; the quoted claim is not a certified factual finding.
+
+Frozen **H2VA02064 / KIGGANS, JENNIFER / REP / House / VA-02 / 2026 /
+C00776120** establishes the federal beneficiary. One exact reviewed
+**Jen Kiggans** alias is appended, not inferred from a surname or a general
+nickname rule. Her actual official House homepage
+`https://kiggans.house.gov/` identifies that full name and Virginia's
+Second District; HTML SHA-256
+`149688a85aa19aaf696f009972a61d4663ccf45a8e14fb802c11f359fb4a8c3f`.
+All 37 prior alias objects and the frozen FEC roster remain unchanged.
+
+Preserved exact-URL report HTML SHA-256
+`0bf71ca8e401aa833e3b2973568d452f6e3b554d3999118b9c4c04c203cb8668`
+pins the heading and `article:published_time=2026-10-23T19:16:02+00:00`.
+A fresh discovery response has different surrounding markup but the same
+heading, date and selected paragraph; **the earlier body is not overwritten**.
+Paragraph SHA-256
+`40b65bb6846b434ce4ddf928faedb0e7da0c46c64b56316abe527402057e891c`
+pins one uniquely selected paragraph and explicit anchor-during-ad attribution.
+The source-specific grammar returns only the first quotation, retains
+the 15-word floor and 25-word ceiling, and rejects neighboring words,
+interview wording, an unsupported candidate or an unreviewed nickname.
+Seven focused regressions cover these boundaries.
+
+Replay with `collect --source kiggans-washingtonreporter --until
+2026-10-30 --offline`, then `parquet --offline`, `build --offline`,
+`validate --offline` and `audit-strategy --offline`. Reacquisition requires
+the undistributed exact response cache; committed acquired inputs rebuild
+complete research downloads without it. No original media, full article,
+held-provider request or new semantic review is included.
+
+`kiggans-washingtonreporter-20261023-0` is the first acquired quotation
+attributed to this campaign. The existing April 14 NRCC Tax Day creative
+is separate and remains unchanged, including its unresolved race.
+Snapshot
+`c9341c67d2f9d6250b3d2d0e3eaa8db80df6b28777ec8924a2bdc34cee9d81f2`
+has **1,942 acquired / 1,903 English**, **R 638 / D 1,226 English**,
+**R 260 / D 698 English House**, **R 259 / D 222 House outside Snapchat**,
+and **581 written / 87 release reviews / 43 native reviews / 38 aliases**.
+All **669 Python tests**, whole Python lint/owned formatting, frontend
+lint/build, **17 unit / 9 browser tests**, complete JSON/gzip/CSV/Parquet
+and eleven-chart parity, isolated network/recognition-forbidden replay
+and fresh-baseline prior-object preservation passed. All prior ad objects,
+release/native reviews and 17 other protected file hashes remain unchanged.
+Saved October 30 and final inclusive November 4 remain distinct;
+website, host and editions remain held.
+
+Cammack's actual linked Gator Nation page is discovery-only: its quoted
+release statement is not explicitly ad speech and its individual page
+does not establish an in-scope publication date. Gosar's two retrieved
+2026 public posts concern legislation, not ads; the bounded advertised
+DesJarlais and Scalise 2026 post collections are empty. None is counted
+as an advertisement or evidence that those campaigns have no ads.
+Continue independent campaign/publisher discovery; the coverage gap
+is not resolved.
+
 ## Derek Merrin: independently reported original-ad words
 
 The August 26 public Washington Reporter article

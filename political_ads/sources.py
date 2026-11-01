@@ -433,6 +433,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "kiggans-washingtonreporter",
+        "https://washingtonreporter.news",
+        "Jen Kiggans campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="VA-02",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "luke-murphy-flvoice",
         "https://flvoicenews.com",
         "Luke Murphy campaign (publisher-reported; payer unverified)",

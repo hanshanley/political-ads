@@ -445,6 +445,7 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             "finstad-kstp",
             "deboer-washingtonreporter",
             "merrin-washingtonreporter",
+            "kiggans-washingtonreporter",
         }
         or review["format"] != "html"
         or review["media_url"] is not None
@@ -460,6 +461,8 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         raise ValueError("Reporter quotation requires the reviewed DeBoer candidate identity")
     if source.id == "merrin-washingtonreporter" and review["candidate_id"] != "H4OH09169":
         raise ValueError("Reporter quotation requires the reviewed Merrin candidate identity")
+    if source.id == "kiggans-washingtonreporter" and review["candidate_id"] != "H2VA02064":
+        raise ValueError("Reporter quotation requires the reviewed Kiggans candidate identity")
     evidence = review["reported_ad_text"]
     paragraphs = BeautifulSoup(content, "html.parser").select(evidence["paragraph_selector"])
     if len(paragraphs) != 1 or paragraphs[0].name != "p":
@@ -476,6 +479,8 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         pattern = r"“([^”]+)” the narrator says in the ad\. “([^”]+)”"
     elif source.id == "merrin-washingtonreporter":
         pattern = r"Merrin [^“”]+\. “([^”]+)” he adds in the ad\. “([^”]+)”"
+    elif source.id == "kiggans-washingtonreporter":
+        pattern = r"“([^”]+)” a local news anchor says during the ad\. [^“”]+“[^”]+”"
     match = re.fullmatch(pattern, paragraph)
     if not match:
         raise ValueError("Publisher must explicitly attribute the selected quotations to the ad")
