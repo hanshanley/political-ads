@@ -20,6 +20,12 @@ certificate remains local at `data/raw/house-chamber-lawler-b7471ec-ci.json`;
 its `headSha`, workflow, jobs and steps were checked, rather than inferring
 remote success from local tests.
 
+The subsequent documentation-only commit
+`5743b1f3a8e131c2a356b10ec514ea553ed40aff` is also certified by exact CI
+`41342555097`: completed/success, validate job `124955454689`, all
+13 steps successful, completed November 1 at `19:45:11Z`. Its generated
+local certificate is `data/raw/house-expanded-exclusions-5743b1f-ci.json`.
+
 Subsequent discovery adds **no acquired records**. Timmons' homepage has
 issue prose and an undated endorsement embed, not a dated ad script.
 Its actual linked privacy policy concerns privacy, cookies, security and
@@ -61,6 +67,68 @@ and paused; Florida Politics and YouTube remain denied. No viewer,
 denied report, original, captions or alternate route bypassed these holds.
 The saved corpus totals and research snapshot below remain unchanged;
 the Republican House coverage gap and publication hold remain unresolved.
+
+**Further candidate and publisher expansion:** Wied's actual linked release
+archive supplies "Common Sense" and "Problem Solver" ads dated October
+2024, not 2026. No old creative was admitted or original requested.
+His linked privacy policy was read completely; it covers privacy and
+SMS terms, not a blanket ad-content reuse license. Jackley's cached
+homepage, actual linked terms and news archive were inspected. The
+terms cover informational use, donations and messaging; the listed
+2026 releases concern endorsements and an election-night event, not
+ad scripts. The undated, looping homepage video was not requested.
+
+The Daily Kos Evans piece is community commentary about ad claims, not
+a literal script with creative-level attribution. The July 31 Nunn /
+Washington Reporter item concerns a planned ad buy: its quotations are
+campaign-manager and candidate comments, not recovered ad words.
+WHYY's October 15 Fitzpatrick article quotes a Patch post, not the
+advertisement citing that post. Its actual linked campaign ad landing
+page supplies website claims, a payer footer and a YouTube association,
+not a labeled transcript. Tracking parameters were not sent, and neither
+the original nor captions were requested. None of those statements was
+recast as a script.
+
+The August 21 Nebraska Examiner report provides only a twelve-word
+Harding ad fragment, below the unchanged fifteen-word floor. Longer
+quotations are campaign-event statements. The actual linked October
+29 follow-up likewise quotes press conferences and stump speeches,
+not ads. The publisher's actual linked republishing guidelines and AI
+policy were read: the former requires attribution, preserves story
+links and limits reuse; the latter describes its own editorial use of
+AI. Neither was treated as an original-media license or permission to
+publish the held research editions. No social original was fetched.
+
+| Additional excluded receipt under `data/raw/` | Body SHA-256 | Bytes |
+| --- | --- | ---: |
+| `house-evans-dailykos-hypocrisy-20261101-discovery.json` | `2b5458da146ec30f673d7664831f934309331941e1bb0c1d5467a51d0a5544f3` | 269231 |
+| `house-wied-primary-home-20261101-discovery.json` | `b7cd9b504fa9eb5a135c69b291e1811bc13ff2d364229009aba3cca5c8a374a0` | 105456 |
+| `house-wied-linked-policy-20261101-discovery.json` | `99470427080f64367ca6887cb28ea23cda5110a605470dbe7333be614489d920` | 115587 |
+| `house-wied-linked-releases-20261101-discovery.json` | `effb89394658b9f8eb18531e6c5c609c7b8d3194cc57c7b5a08891f993d8e090` | 105923 |
+| `house-jackley-primary-home-20261101-discovery.json` | `c32889006cb19fbfbbbb43bbfdc6557baca85a5fb7e2d7a88912163f14ed3ea5` | 47249 |
+| `house-jackley-linked-terms-20261101-discovery.json` | `ed6207c8413eaf0b99522fb28a50a16af6b638775a0944219ce94960d9ce0403` | 22867 |
+| `house-jackley-linked-news-20261101-discovery.json` | `6d59a329d6eb2575d98929a082f5cea240aaec3d6cf0867dbcc4ab81f20490b6` | 36551 |
+| `house-fitzpatrick-whyy-campaign-ads-20261101-discovery.json` | `1f2b5e00ddf12fba7b241321cd74cb70f031a1e4cedac1842396575069418bff` | 103557 |
+| `house-fitzpatrick-linked-ad-home-20261101-discovery.json` | `9ae98a3a51008355cca18a124a0dcbbd2e0a39a643dd51d95cf115cf42c8513c` | 8513 |
+| `house-harding-nebraskaexaminer-extreme-20261101-discovery.json` | `538c59d65ef4901007d2dfdc5bfb0e03d7ac26f718321e20d3805ca589a3d0aa` | 232779 |
+| `house-harding-nebraskaexaminer-guidelines-20261101-discovery.json` | `e3412d10f04570faf1550cd4530e3585d00fe3ee5e81151fdd3a9b7d2395b1df` | 185547 |
+| `house-harding-nebraskaexaminer-ai-policy-20261101-discovery.json` | `aab9744d6b7b7cf8592728ca9f705844386eac376159756eca4099757bad5f0b` | 185485 |
+| `house-harding-nebraskaexaminer-final-pitches-20261101-discovery.json` | `426f1be93bf31f9dbafb6f79772ca884f7ed97be42eef92e4d9ab8301f290142` | 227389 |
+| `house-nunn-washingtonreporter-buy-20261101-discovery.json` | `0310714dc542b765fdfa4e1c5612e4d2d3274ce932b98ee07918811c7ae1dd1c` | 83605 |
+| `house-salazar-dailykos-trump-ad-20261101-discovery.json` | `bbe942ac649c39708eb33da1a5cb079ea659a7bbf03a10e95c7e851491d08593` | 240658 |
+
+These additional retained bodies also passed independent receipt
+SHA-256 and byte-length checks. The separate CPR fact-check receipt
+`house-colorado-cpr-factcheck-20261101-discovery.json` records HTTP403
+with no retained response; `cpr.org` was immediately paused before
+further requests or cached extraction. The Kiggans / 13NewsNow receipt
+`house-kiggans-tegna-verify-20261101-discovery.json` records an inherited
+`denied_paused` guard outcome with no request. Neither has a body hash
+to certify. No alternate or syndicated route bypassed either provider.
+The independently discovered September 17 Salazar / Daily Kos report
+is the same creative already retained in `salazar-1273-0`, not a new
+ad. Its longer reported passage was not appended as a second creative
+or used to overwrite the existing source-bound record.
 
 ## November 1 Chamber House quotation and duplicate checks
 
