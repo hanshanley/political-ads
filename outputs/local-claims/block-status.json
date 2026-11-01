@@ -7490,50 +7490,50 @@
   {
     "ad_id": "snap-7a93b2d6687f4c86a6ff17cb",
     "block_id": "snap-7a93b2d6687f4c86a6ff17cb-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 15 for TIME TO SHOW UP: \\\"TIME TO SHOW UP\\\" is absent from unit 31. Exact source: \\\"TIME TO\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7a93b2d6687f4c86a6ff17cb",
     "block_id": "snap-7a93b2d6687f4c86a6ff17cb-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for I: \\\"My VOTE\\\" is absent from unit 1. Exact source: \\\"MY VOTE\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7aa10ff7e40827a93d6b7a2a",
     "block_id": "snap-7aa10ff7e40827a93d6b7a2a-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-7b0a6abdb3cab1d4f75a0620",
     "block_id": "snap-7b0a6abdb3cab1d4f75a0620-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-7b10a6ec19cc8d4c4a2c19c2",
     "block_id": "snap-7b10a6ec19cc8d4c4a2c19c2-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7b10a6ec19cc8d4c4a2c19c2",
     "block_id": "snap-7b10a6ec19cc8d4c4a2c19c2-claims-002",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-7b42137960780e26a6e01911",
     "block_id": "snap-7b42137960780e26a6e01911-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for you: \\\"your plan\\\" is absent from unit 1. Exact source: \\\"OUR VOTE IS OUR VOICE\\\\nVOTE FOR\\\\nROY COOPER\\\\nBY 11/3\\\\nMAKE YOUR PLAN\\\\nIWillVote.com/NC\\\\nPAID FOR BYDSCC. AUTHORIZED BY COOPER FOR NORTH CAROLINA.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7b853734fc76a46a60b3e846",
     "block_id": "snap-7b853734fc76a46a60b3e846-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for Donald Trump: \\\"Trump\\\" is absent from unit 14. Exact source: \\\"then endorsed Hope Scheppelman — who will\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7b853734fc76a46a60b3e846",
