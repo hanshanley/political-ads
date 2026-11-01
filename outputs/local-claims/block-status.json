@@ -6770,50 +6770,50 @@
   {
     "ad_id": "snap-63c7d7a7418d1ef09d070f06",
     "block_id": "snap-63c7d7a7418d1ef09d070f06-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 5\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-63eaa694c544d63763653c04",
     "block_id": "snap-63eaa694c544d63763653c04-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-643a1b0bd001754676c36daa",
     "block_id": "snap-643a1b0bd001754676c36daa-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-6447958bb74ee65413199d2f",
     "block_id": "snap-6447958bb74ee65413199d2f-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 3\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-645aa9c40fcb009b7a68a2dd",
     "block_id": "snap-645aa9c40fcb009b7a68a2dd-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for billionaires: \\\"billionaires\\\" is absent from unit 1. Exact source: \\\"TRUMP CUT OUR HEALTHCARE\\\\nAND GAVE\\\\nTAX BREAKS TO BILLIONAIRES.\\\\nAND THAT'S JUST ONE BILL.\\\\nWE'RE FIGHTING BACK.\\\\nPRE FIGHTING BA\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6493b040d9da504494fc9cce",
     "block_id": "snap-6493b040d9da504494fc9cce-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 1: {\\\"anchor_quote\\\":\\\"Abdul El-Sayed's\\\",\\\"anchor_unit_id\\\":7,\\\"entity_id\\\":\\\"candidate:S6MI00418\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"EL-SAYED, ABDUL\\\",\\\"role\\\":\\\"opponent\\\",\\\"tone\\\":\\\"negative\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-64d6da23b6259c3f2a5bcdeb",
     "block_id": "snap-64d6da23b6259c3f2a5bcdeb-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 3: {\\\"anchor_quote\\\":\\\"JOHN HICKENLOOPER\\\",\\\"anchor_unit_id\\\":1,\\\"entity_id\\\":\\\"candidate:S0CO00575\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"HICKENLOOPER, JOHN W.\\\",\\\"role\\\":\\\"self_or_supported\\\",\\\"tone\\\":\\\"positive\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-64f69e2718585bf877fe5323",
     "block_id": "snap-64f69e2718585bf877fe5323-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 5\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-65398fd4971f0e8957359092",
