@@ -4514,50 +4514,50 @@
   {
     "ad_id": "snap-1df1139f28101f13e633c56b",
     "block_id": "snap-1df1139f28101f13e633c56b-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for You: \\\"You\\\" is absent from unit 3. Exact source: \\\"so that you can afford housing, groceries, and to pay your electric bills.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1df4de390884d9db87de2575",
     "block_id": "snap-1df4de390884d9db87de2575-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-1e24ee0fef1839ba1df06b27",
     "block_id": "snap-1e24ee0fef1839ba1df06b27-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-1e4566ab6b6846ef02ee5d27",
     "block_id": "snap-1e4566ab6b6846ef02ee5d27-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for Union members: \\\"Union members\\\" is absent from unit 17. Exact source: \\\"MAKE YOUR PLAN TO VOTE.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1e746ec7807d8bfea4ecf0f3",
     "block_id": "snap-1e746ec7807d8bfea4ecf0f3-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-1e9b94a42cc238e7d0067451",
     "block_id": "snap-1e9b94a42cc238e7d0067451-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for CHAPIN, DOUG: \\\"Doug Chapin\\\" is absent from unit 1. Exact source: \\\"CHAPIN BRINGS LEGAL\\\\nEXPERTISE\\\\nDOUG CHAPIN IS AN ACCOMPLISHED\\\\nELECTION LAWYER WHO WORKED\\\\nFOR BOTH THE US SENATE AND THE\\\\nPEW CENTER.\\\\n*\\\\nElection Law Program\\\\nProviding Election Law Resources to the Judiciary\\\\nProfessor Doug\\\\nChapin\\\\nDirector of the Program for Excellence in\\\\nElection Administration University of Minnesota\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1ea3c907fa6081804dfc0dc4",
     "block_id": "snap-1ea3c907fa6081804dfc0dc4-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 1: {\\\"anchor_quote\\\":\\\"TRUMP'S BILL\\\",\\\"anchor_unit_id\\\":1,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"Trump\\\",\\\"role\\\":\\\"opponent\\\",\\\"tone\\\":\\\"negative\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1ef5058684ef21598a47b864",
     "block_id": "snap-1ef5058684ef21598a47b864-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 12\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1ef5058684ef21598a47b864",

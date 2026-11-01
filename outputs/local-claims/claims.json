@@ -104275,5 +104275,387 @@
     "text_hash": "a70948a0ff3bed2cf8b41f3860d9cdcc3899741f1209afe35a220f6df5e1aa7e",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1df4de390884d9db87de2575",
+    "alignment": "D",
+    "block_id": "snap-1df4de390884d9db87de2575-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1df4de390884d9db87de2575-claims-001-001",
+    "claim_text": "Zack Mullock launches NJ-2 campaign",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 108,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "NEW\nJERSEY\nGLOBE\nZack Mullock launches NJ-2\ncampaign, with some top\nSouth Jersey Dems already\nbehind him\n11:",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/522570068d0d59faa59bdf8962fc91b0e8703e9653055993d2bdb836d600882f?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 29,
+        "anchor_quote": "Zack Mullock",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6NJ02251",
+        "kind": "person",
+        "name": "MULLOCK, ZACK",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "NEW\nJERSEY\nGLOBE\nZack Mullock launches NJ-2\ncampaign, with some top\nSouth Jersey Dems already\nbehind him\n11:",
+    "text_hash": "ed7f72186109c1590b6fe2bcb2d0af756ff77510e970ec55995ed2f2ff942709",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1df4de390884d9db87de2575",
+    "alignment": "D",
+    "block_id": "snap-1df4de390884d9db87de2575-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1df4de390884d9db87de2575-claims-001-002",
+    "claim_text": "Some top South Jersey Dems are already behind him",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 108,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "NEW\nJERSEY\nGLOBE\nZack Mullock launches NJ-2\ncampaign, with some top\nSouth Jersey Dems already\nbehind him\n11:",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/522570068d0d59faa59bdf8962fc91b0e8703e9653055993d2bdb836d600882f?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 85,
+        "anchor_quote": "South Jersey Dems",
+        "anchor_start": 68,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "South Jersey Dems",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 104,
+        "anchor_quote": "him",
+        "anchor_start": 101,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6NJ02251",
+        "kind": "person",
+        "name": "MULLOCK, ZACK",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "NEW\nJERSEY\nGLOBE\nZack Mullock launches NJ-2\ncampaign, with some top\nSouth Jersey Dems already\nbehind him\n11:",
+    "text_hash": "ed7f72186109c1590b6fe2bcb2d0af756ff77510e970ec55995ed2f2ff942709",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1e24ee0fef1839ba1df06b27",
+    "alignment": "D",
+    "block_id": "snap-1e24ee0fef1839ba1df06b27-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1e24ee0fef1839ba1df06b27-claims-001-001",
+    "claim_text": "Affordability has emerged as an issue in the 2026 midterms.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 211,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b6f5ab18d4b9ee7e89bb03a21801820d564c60b56afac6fb99a3826010f0d2a4?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 133,
+        "anchor_quote": "Affordability",
+        "anchor_start": 120,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Affordability",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+    "text_hash": "50e72bc836ef51cf1b000c97d281038145eb8bbe705d8762d63cd7ad2aad2cec",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1e24ee0fef1839ba1df06b27",
+    "alignment": "D",
+    "block_id": "snap-1e24ee0fef1839ba1df06b27-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1e24ee0fef1839ba1df06b27-claims-001-002",
+    "claim_text": "Immigration has emerged as an issue in the 2026 midterms.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 211,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b6f5ab18d4b9ee7e89bb03a21801820d564c60b56afac6fb99a3826010f0d2a4?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 146,
+        "anchor_quote": "immigration",
+        "anchor_start": 135,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Immigration",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+    "text_hash": "50e72bc836ef51cf1b000c97d281038145eb8bbe705d8762d63cd7ad2aad2cec",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1e24ee0fef1839ba1df06b27",
+    "alignment": "D",
+    "block_id": "snap-1e24ee0fef1839ba1df06b27-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1e24ee0fef1839ba1df06b27-claims-001-003",
+    "claim_text": "The war in Iran has emerged as an issue in the 2026 midterms.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 211,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b6f5ab18d4b9ee7e89bb03a21801820d564c60b56afac6fb99a3826010f0d2a4?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 166,
+        "anchor_quote": "war in Iran",
+        "anchor_start": 155,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "war in Iran",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+    "text_hash": "50e72bc836ef51cf1b000c97d281038145eb8bbe705d8762d63cd7ad2aad2cec",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1e24ee0fef1839ba1df06b27",
+    "alignment": "D",
+    "block_id": "snap-1e24ee0fef1839ba1df06b27-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1e24ee0fef1839ba1df06b27-claims-001-004",
+    "claim_text": "Jon Ossoff is a Georgia U.S. Senate candidate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 211,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b6f5ab18d4b9ee7e89bb03a21801820d564c60b56afac6fb99a3826010f0d2a4?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 57,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 47,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+    "text_hash": "50e72bc836ef51cf1b000c97d281038145eb8bbe705d8762d63cd7ad2aad2cec",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1e746ec7807d8bfea4ecf0f3",
+    "alignment": "D",
+    "block_id": "snap-1e746ec7807d8bfea4ecf0f3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1e746ec7807d8bfea4ecf0f3-claims-001-001",
+    "claim_text": "The AFL-CIO recommends Sherrod Brown for U.S. Senate.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 142,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETIEP\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIEAUUMIOMS\nYOUR UNION\nRECOMMENDS\nSHERROD BROWN\nFOR U.S.SENATE\nDAID\nFOR BY THE AFL-CIC",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4b98a45f97cf5d4f61e4ebee48fee89880b43ce8cb4c9d907724cc9d22650484?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 103,
+        "anchor_quote": "SHERROD BROWN",
+        "anchor_start": 90,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "SHERROD BROWN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETIEP\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIEAUUMIOMS\nYOUR UNION\nRECOMMENDS\nSHERROD BROWN\nFOR U.S.SENATE\nDAID\nFOR BY THE AFL-CIC",
+    "text_hash": "2055b8165b43c6b55cac3192811c5b9406ced6e9094a5aade4713fad296c2d8f",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1e746ec7807d8bfea4ecf0f3",
+    "alignment": "D",
+    "block_id": "snap-1e746ec7807d8bfea4ecf0f3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1e746ec7807d8bfea4ecf0f3-claims-001-002",
+    "claim_text": "The AFL-CIO is a union.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 142,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETIEP\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIEAUUMIOMS\nYOUR UNION\nRECOMMENDS\nSHERROD BROWN\nFOR U.S.SENATE\nDAID\nFOR BY THE AFL-CIC",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4b98a45f97cf5d4f61e4ebee48fee89880b43ce8cb4c9d907724cc9d22650484?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 52,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 45,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETIEP\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIEAUUMIOMS\nYOUR UNION\nRECOMMENDS\nSHERROD BROWN\nFOR U.S.SENATE\nDAID\nFOR BY THE AFL-CIC",
+    "text_hash": "2055b8165b43c6b55cac3192811c5b9406ced6e9094a5aade4713fad296c2d8f",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
