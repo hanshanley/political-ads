@@ -144911,5 +144911,171 @@
     "text_hash": "1f4141e0fc5730447b4cb37d92b5f7c85521d5e61d417bd81c449f51646bd590",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-92738c87406941c11868ca5e",
+    "alignment": "D",
+    "block_id": "snap-92738c87406941c11868ca5e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-92738c87406941c11868ca5e-claims-001-001",
+    "claim_text": "Senate candidate Michele Tafoya tells voters to skip Starbucks amid rising gas prices.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 223,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Bring Me The News.\nSenate candidate Michele Tafoya\ntells voters to skip Starbucks\namid rising gas prices\nTafoya says Minnesotans should \"try to be\npatriots\" about the war in Iran and \"maybe\ntake one less trip to Starbucks.\"",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/22d51d3fa0ae614536ac27eee680efbf569f883e75c6cfa4e99a690de75cd2a3?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "Michele Tafoya",
+        "anchor_start": 36,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6MN00556",
+        "kind": "person",
+        "name": "Michele Tafoya",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Bring Me The News.\nSenate candidate Michele Tafoya\ntells voters to skip Starbucks\namid rising gas prices\nTafoya says Minnesotans should \"try to be\npatriots\" about the war in Iran and \"maybe\ntake one less trip to Starbucks.\"",
+    "text_hash": "bdc7683e2166a6a7d3dc8cc7143811dfa32a84ca3a5cdf290fc9d0dbbe3b6e4e",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-92738c87406941c11868ca5e",
+    "alignment": "D",
+    "block_id": "snap-92738c87406941c11868ca5e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-92738c87406941c11868ca5e-claims-001-002",
+    "claim_text": "Tafoya says Minnesotans should \"try to be patriots\" about the war in Iran.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 223,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Bring Me The News.\nSenate candidate Michele Tafoya\ntells voters to skip Starbucks\namid rising gas prices\nTafoya says Minnesotans should \"try to be\npatriots\" about the war in Iran and \"maybe\ntake one less trip to Starbucks.\"",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/22d51d3fa0ae614536ac27eee680efbf569f883e75c6cfa4e99a690de75cd2a3?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "Tafoya",
+        "anchor_start": 44,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6MN00556",
+        "kind": "person",
+        "name": "Tafoya",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 128,
+        "anchor_quote": "Minnesotans",
+        "anchor_start": 117,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Minnesotans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Bring Me The News.\nSenate candidate Michele Tafoya\ntells voters to skip Starbucks\namid rising gas prices\nTafoya says Minnesotans should \"try to be\npatriots\" about the war in Iran and \"maybe\ntake one less trip to Starbucks.\"",
+    "text_hash": "bdc7683e2166a6a7d3dc8cc7143811dfa32a84ca3a5cdf290fc9d0dbbe3b6e4e",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-92738c87406941c11868ca5e",
+    "alignment": "D",
+    "block_id": "snap-92738c87406941c11868ca5e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-92738c87406941c11868ca5e-claims-001-003",
+    "claim_text": "Tafoya says Minnesotans should \"maybe take one less trip to Starbucks\".",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 223,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Bring Me The News.\nSenate candidate Michele Tafoya\ntells voters to skip Starbucks\namid rising gas prices\nTafoya says Minnesotans should \"try to be\npatriots\" about the war in Iran and \"maybe\ntake one less trip to Starbucks.\"",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/22d51d3fa0ae614536ac27eee680efbf569f883e75c6cfa4e99a690de75cd2a3?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "Tafoya",
+        "anchor_start": 44,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6MN00556",
+        "kind": "person",
+        "name": "Tafoya",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 128,
+        "anchor_quote": "Minnesotans",
+        "anchor_start": 117,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Minnesotans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Bring Me The News.\nSenate candidate Michele Tafoya\ntells voters to skip Starbucks\namid rising gas prices\nTafoya says Minnesotans should \"try to be\npatriots\" about the war in Iran and \"maybe\ntake one less trip to Starbucks.\"",
+    "text_hash": "bdc7683e2166a6a7d3dc8cc7143811dfa32a84ca3a5cdf290fc9d0dbbe3b6e4e",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]

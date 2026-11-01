@@ -8354,50 +8354,50 @@
   {
     "ad_id": "snap-916782bcb7be0d406d09bd65",
     "block_id": "snap-916782bcb7be0d406d09bd65-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for any candidate: \\\"any candidate\\\" is absent from unit 6. Exact source: \\\"NOT AUTHORIZED BY ANY CANDIDATE OR\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-9167fc0c21056265743c884b",
     "block_id": "snap-9167fc0c21056265743c884b-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-9187de119286a097474ca75c",
     "block_id": "snap-9187de119286a097474ca75c-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Nick LaLota: \\\"NICK LALOTA\\\" is absent from unit 1. Exact source: \\\"LA\\\\nNICK\\\\nLALOTA\\\\nFIGHTS FOR US:\\\\n• PROJECT LABOR AGREEMENTS\\\\n• PREVAILING WAGE REQUIREMENTS\\\\n• MADE IN USA\\\\nLEARN MORE\\\\nPAID FOR BY THE UNITED ASSOCIATION OF PLUMBERS AND PIPEFITTERS (UA.ORG)\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-923cd5956241198edd46b8bf",
     "block_id": "snap-923cd5956241198edd46b8bf-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 7 for unknown candidate: \\\"any candidate\\\" is absent from unit 1. Exact source: \\\"Raised in the Central Valley.\\\\nEducated in the Central Valley.\\\\nFighting for the Central Valley.\\\\nRANDY\\\\nVILLEGAS.\\\\nONE OF US.\\\\nRANDY VILLEGAS\\\\nCANDIDATE FOR CONGRESS\\\\nCHECK YOUR VOTING LOCATION\\\\nPAID FOR BY MAREMOTO ACTION, INC. (+1 708-576-1836).\\\\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-925e57d27e6dd3e9566d9edb",
     "block_id": "snap-925e57d27e6dd3e9566d9edb-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 2: {\\\"anchor_quote\\\":\\\"them\\\",\\\"anchor_unit_id\\\":6,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"unknown\\\",\\\"name\\\":\\\"them\\\",\\\"role\\\":\\\"self_or_supported\\\",\\\"tone\\\":\\\"positive\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-92738c87406941c11868ca5e",
     "block_id": "snap-92738c87406941c11868ca5e-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-9289ff115701c16867d84395",
     "block_id": "snap-9289ff115701c16867d84395-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 15\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-9289ff115701c16867d84395",
     "block_id": "snap-9289ff115701c16867d84395-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 4\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-92df80152e90ec22f560cbd1",
