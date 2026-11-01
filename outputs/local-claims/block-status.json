@@ -7922,50 +7922,50 @@
   {
     "ad_id": "snap-85afe9f0bf405d1c9d8e00dd",
     "block_id": "snap-85afe9f0bf405d1c9d8e00dd-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 16 for VOTE: \\\"VOTE\\\" is absent from unit 38. Exact source: \\\"VOT\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-85afe9f0bf405d1c9d8e00dd",
     "block_id": "snap-85afe9f0bf405d1c9d8e00dd-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 2\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-85f70704588c9312d5ab9392",
     "block_id": "snap-85f70704588c9312d5ab9392-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":29,\\\"label\\\":\\\"AFL-CIO\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-87091a872757e4230e3afcbc",
     "block_id": "snap-87091a872757e4230e3afcbc-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 2: {\\\"anchor_quote\\\":\\\"them\\\",\\\"anchor_unit_id\\\":2,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"unknown\\\",\\\"name\\\":\\\"them\\\",\\\"role\\\":\\\"unclear\\\",\\\"tone\\\":\\\"neutral\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-871af7321aea693e0e07a2e8",
     "block_id": "snap-871af7321aea693e0e07a2e8-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-8731a00326d6abdc8024c02f",
     "block_id": "snap-8731a00326d6abdc8024c02f-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 2: {\\\"anchor_quote\\\":\\\"Ashley Henson\\\",\\\"anchor_unit_id\\\":3,\\\"entity_id\\\":\\\"candidate:S6IA00314\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"Ashley Henson\\\",\\\"role\\\":\\\"opponent\\\",\\\"tone\\\":\\\"negative\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-8785acb42dd228ef456b9e73",
     "block_id": "snap-8785acb42dd228ef456b9e73-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-87fd10a2d8fc7854006bbee7",
     "block_id": "snap-87fd10a2d8fc7854006bbee7-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-880560f4411cda71262e77e9",
