@@ -103158,5 +103158,596 @@
     "text_hash": "9576995de060fc04967b606c2f900076f1f3f5f072320ca4402e2a7dc4069442",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1a2254dddbbd8636d27d7782",
+    "alignment": "R",
+    "block_id": "snap-1a2254dddbbd8636d27d7782-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1a2254dddbbd8636d27d7782-claims-001-001",
+    "claim_text": "Dan Sullivan is a U.S. Senate candidate.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 9,
+        "kind": "video_ocr",
+        "start": 0,
+        "text": "•Sullivan",
+        "unit_id": 1
+      },
+      {
+        "end": 23,
+        "kind": "video_ocr",
+        "start": 10,
+        "text": "• U.S. SENATE",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      1,
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4fde991448710045699a22e08a81a0845084a28ff9173435c314d946eaaec3b8?mediaType=mp4",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [
+      {
+        "anchor_end": 9,
+        "anchor_quote": "Sullivan",
+        "anchor_start": 1,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4AK00214",
+        "kind": "person",
+        "name": "SULLIVAN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "•Sullivan\n• U.S. SENATE\nPaid for by Alaskans for Dan Sullivan\nThe Golden Heart City\nDeserves a Leader Who\nShows U\nShows Up for Them!\nVote for Republican\nDan Sullivan\non November 3rd",
+    "text_hash": "24593c538ba13acc1d172f8720f28cd731f9b06d703e9abccad80a3cb308eea0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1a2254dddbbd8636d27d7782",
+    "alignment": "R",
+    "block_id": "snap-1a2254dddbbd8636d27d7782-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1a2254dddbbd8636d27d7782-claims-001-002",
+    "claim_text": "This ad was paid for by Alaskans for Dan Sullivan.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 61,
+        "kind": "video_ocr",
+        "start": 24,
+        "text": "Paid for by Alaskans for Dan Sullivan",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4fde991448710045699a22e08a81a0845084a28ff9173435c314d946eaaec3b8?mediaType=mp4",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [
+      {
+        "anchor_end": 61,
+        "anchor_quote": "Alaskans for Dan Sullivan",
+        "anchor_start": 36,
+        "anchor_unit_id": 3,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Alaskans for Dan Sullivan",
+        "party_basis": "publisher_alignment",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "•Sullivan\n• U.S. SENATE\nPaid for by Alaskans for Dan Sullivan\nThe Golden Heart City\nDeserves a Leader Who\nShows U\nShows Up for Them!\nVote for Republican\nDan Sullivan\non November 3rd",
+    "text_hash": "24593c538ba13acc1d172f8720f28cd731f9b06d703e9abccad80a3cb308eea0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1a2254dddbbd8636d27d7782",
+    "alignment": "R",
+    "block_id": "snap-1a2254dddbbd8636d27d7782-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1a2254dddbbd8636d27d7782-claims-001-003",
+    "claim_text": "The Golden Heart City deserves a leader who shows up for them.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 83,
+        "kind": "video_ocr",
+        "start": 62,
+        "text": "The Golden Heart City",
+        "unit_id": 4
+      },
+      {
+        "end": 105,
+        "kind": "video_ocr",
+        "start": 84,
+        "text": "Deserves a Leader Who",
+        "unit_id": 5
+      },
+      {
+        "end": 113,
+        "kind": "video_ocr",
+        "start": 106,
+        "text": "Shows U",
+        "unit_id": 6
+      },
+      {
+        "end": 132,
+        "kind": "video_ocr",
+        "start": 114,
+        "text": "Shows Up for Them!",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4fde991448710045699a22e08a81a0845084a28ff9173435c314d946eaaec3b8?mediaType=mp4",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [
+      {
+        "anchor_end": 83,
+        "anchor_quote": "The Golden Heart City",
+        "anchor_start": 62,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "The Golden Heart City",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "•Sullivan\n• U.S. SENATE\nPaid for by Alaskans for Dan Sullivan\nThe Golden Heart City\nDeserves a Leader Who\nShows U\nShows Up for Them!\nVote for Republican\nDan Sullivan\non November 3rd",
+    "text_hash": "24593c538ba13acc1d172f8720f28cd731f9b06d703e9abccad80a3cb308eea0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1a2254dddbbd8636d27d7782",
+    "alignment": "R",
+    "block_id": "snap-1a2254dddbbd8636d27d7782-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1a2254dddbbd8636d27d7782-claims-001-004",
+    "claim_text": "Vote for Republican Dan Sullivan.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "video_ocr",
+        "start": 133,
+        "text": "Vote for Republican",
+        "unit_id": 8
+      },
+      {
+        "end": 165,
+        "kind": "video_ocr",
+        "start": 153,
+        "text": "Dan Sullivan",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      8,
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4fde991448710045699a22e08a81a0845084a28ff9173435c314d946eaaec3b8?mediaType=mp4",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [
+      {
+        "anchor_end": 165,
+        "anchor_quote": "Dan Sullivan",
+        "anchor_start": 153,
+        "anchor_unit_id": 9,
+        "entity_id": "candidate:S4AK00214",
+        "kind": "person",
+        "name": "SULLIVAN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 152,
+        "anchor_quote": "Republican",
+        "anchor_start": 142,
+        "anchor_unit_id": 8,
+        "entity_id": "party:R",
+        "kind": "collective",
+        "name": "R",
+        "party_basis": "explicit_party_text",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "•Sullivan\n• U.S. SENATE\nPaid for by Alaskans for Dan Sullivan\nThe Golden Heart City\nDeserves a Leader Who\nShows U\nShows Up for Them!\nVote for Republican\nDan Sullivan\non November 3rd",
+    "text_hash": "24593c538ba13acc1d172f8720f28cd731f9b06d703e9abccad80a3cb308eea0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1a2254dddbbd8636d27d7782",
+    "alignment": "R",
+    "block_id": "snap-1a2254dddbbd8636d27d7782-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1a2254dddbbd8636d27d7782-claims-001-005",
+    "claim_text": "The election will be on November 3rd.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 181,
+        "kind": "video_ocr",
+        "start": 166,
+        "text": "on November 3rd",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4fde991448710045699a22e08a81a0845084a28ff9173435c314d946eaaec3b8?mediaType=mp4",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [],
+    "text": "•Sullivan\n• U.S. SENATE\nPaid for by Alaskans for Dan Sullivan\nThe Golden Heart City\nDeserves a Leader Who\nShows U\nShows Up for Them!\nVote for Republican\nDan Sullivan\non November 3rd",
+    "text_hash": "24593c538ba13acc1d172f8720f28cd731f9b06d703e9abccad80a3cb308eea0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1a5389c5105018af08d472f4",
+    "alignment": "D",
+    "block_id": "snap-1a5389c5105018af08d472f4-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1a5389c5105018af08d472f4-claims-001-001",
+    "claim_text": "Sen. Ossoff cosponsored a bipartisan bill to stop insurance companies from delaying needed medical care.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 145,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "THE PULSE OF THE COMMUNITY\n*****\nTHE CITIZEN\nSen. Ossoff Cosponsors Bipartisan Bill\nto Stop Insurance Companies from\nDelaying Needed Medical Care",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9935d3c9f6aad3de015e097bac84a4a9319670ac0094a29dd4543165082a94a9?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 56,
+        "anchor_quote": "Sen. Ossoff",
+        "anchor_start": 45,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Sen. Ossoff",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "THE PULSE OF THE COMMUNITY\n*****\nTHE CITIZEN\nSen. Ossoff Cosponsors Bipartisan Bill\nto Stop Insurance Companies from\nDelaying Needed Medical Care",
+    "text_hash": "8681c21791d579d1754a19c868948fffdb38fb3e97c3d0fa02eb3b967228482e",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1a5389c5105018af08d472f4",
+    "alignment": "D",
+    "block_id": "snap-1a5389c5105018af08d472f4-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1a5389c5105018af08d472f4-claims-001-002",
+    "claim_text": "Insurance companies delay needed medical care.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 145,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "THE PULSE OF THE COMMUNITY\n*****\nTHE CITIZEN\nSen. Ossoff Cosponsors Bipartisan Bill\nto Stop Insurance Companies from\nDelaying Needed Medical Care",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9935d3c9f6aad3de015e097bac84a4a9319670ac0094a29dd4543165082a94a9?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 111,
+        "anchor_quote": "Insurance Companies",
+        "anchor_start": 92,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "insurance companies",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "THE PULSE OF THE COMMUNITY\n*****\nTHE CITIZEN\nSen. Ossoff Cosponsors Bipartisan Bill\nto Stop Insurance Companies from\nDelaying Needed Medical Care",
+    "text_hash": "8681c21791d579d1754a19c868948fffdb38fb3e97c3d0fa02eb3b967228482e",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1ad37a81bc788f4e5cec3445",
+    "alignment": "R",
+    "block_id": "snap-1ad37a81bc788f4e5cec3445-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1ad37a81bc788f4e5cec3445-claims-001-001",
+    "claim_text": "Mary Peltola sold out Alaska",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 182,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Mary Peltola\nSOLD OUT ALASKA\nShe and Her Lower 48 Liberal Buddies\nAre NOT Looking Out for Alaska\nВе\nWary\nofMary\nVote NO on PELTOLA Aug. 18th\n=Tm\nPaid for by Alaskans for Dan Sullivan",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0690817963f387a4b9e48564039a905f1f2e56aff60cb89efab6ab4f2cd9a01a?mediaType=png",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [
+      {
+        "anchor_end": 12,
+        "anchor_quote": "Mary Peltola",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "PELTOLA, MARY",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mary Peltola\nSOLD OUT ALASKA\nShe and Her Lower 48 Liberal Buddies\nAre NOT Looking Out for Alaska\nВе\nWary\nofMary\nVote NO on PELTOLA Aug. 18th\n=Tm\nPaid for by Alaskans for Dan Sullivan",
+    "text_hash": "0ec5e1bb393f33c91f3e85176f8cebe3ada67de075e63b2ecfbe3c2abbb18466",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1ad37a81bc788f4e5cec3445",
+    "alignment": "R",
+    "block_id": "snap-1ad37a81bc788f4e5cec3445-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1ad37a81bc788f4e5cec3445-claims-001-002",
+    "claim_text": "She and Her Lower 48 Liberal Buddies are NOT looking out for Alaska",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 182,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Mary Peltola\nSOLD OUT ALASKA\nShe and Her Lower 48 Liberal Buddies\nAre NOT Looking Out for Alaska\nВе\nWary\nofMary\nVote NO on PELTOLA Aug. 18th\n=Tm\nPaid for by Alaskans for Dan Sullivan",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0690817963f387a4b9e48564039a905f1f2e56aff60cb89efab6ab4f2cd9a01a?mediaType=png",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [
+      {
+        "anchor_end": 32,
+        "anchor_quote": "She",
+        "anchor_start": 29,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "PELTOLA, MARY",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mary Peltola\nSOLD OUT ALASKA\nShe and Her Lower 48 Liberal Buddies\nAre NOT Looking Out for Alaska\nВе\nWary\nofMary\nVote NO on PELTOLA Aug. 18th\n=Tm\nPaid for by Alaskans for Dan Sullivan",
+    "text_hash": "0ec5e1bb393f33c91f3e85176f8cebe3ada67de075e63b2ecfbe3c2abbb18466",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1ad37a81bc788f4e5cec3445",
+    "alignment": "R",
+    "block_id": "snap-1ad37a81bc788f4e5cec3445-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1ad37a81bc788f4e5cec3445-claims-001-003",
+    "claim_text": "Her Lower 48 Liberal Buddies are NOT looking out for Alaska",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 182,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Mary Peltola\nSOLD OUT ALASKA\nShe and Her Lower 48 Liberal Buddies\nAre NOT Looking Out for Alaska\nВе\nWary\nofMary\nVote NO on PELTOLA Aug. 18th\n=Tm\nPaid for by Alaskans for Dan Sullivan",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0690817963f387a4b9e48564039a905f1f2e56aff60cb89efab6ab4f2cd9a01a?mediaType=png",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [
+      {
+        "anchor_end": 65,
+        "anchor_quote": "Her Lower 48 Liberal Buddies",
+        "anchor_start": 37,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mary Peltola\nSOLD OUT ALASKA\nShe and Her Lower 48 Liberal Buddies\nAre NOT Looking Out for Alaska\nВе\nWary\nofMary\nVote NO on PELTOLA Aug. 18th\n=Tm\nPaid for by Alaskans for Dan Sullivan",
+    "text_hash": "0ec5e1bb393f33c91f3e85176f8cebe3ada67de075e63b2ecfbe3c2abbb18466",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1ad37a81bc788f4e5cec3445",
+    "alignment": "R",
+    "block_id": "snap-1ad37a81bc788f4e5cec3445-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1ad37a81bc788f4e5cec3445-claims-001-004",
+    "claim_text": "Vote NO on PELTOLA Aug. 18th",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 182,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Mary Peltola\nSOLD OUT ALASKA\nShe and Her Lower 48 Liberal Buddies\nAre NOT Looking Out for Alaska\nВе\nWary\nofMary\nVote NO on PELTOLA Aug. 18th\n=Tm\nPaid for by Alaskans for Dan Sullivan",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0690817963f387a4b9e48564039a905f1f2e56aff60cb89efab6ab4f2cd9a01a?mediaType=png",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [
+      {
+        "anchor_end": 130,
+        "anchor_quote": "PELTOLA",
+        "anchor_start": 123,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "PELTOLA, MARY",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mary Peltola\nSOLD OUT ALASKA\nShe and Her Lower 48 Liberal Buddies\nAre NOT Looking Out for Alaska\nВе\nWary\nofMary\nVote NO on PELTOLA Aug. 18th\n=Tm\nPaid for by Alaskans for Dan Sullivan",
+    "text_hash": "0ec5e1bb393f33c91f3e85176f8cebe3ada67de075e63b2ecfbe3c2abbb18466",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1ad37a81bc788f4e5cec3445",
+    "alignment": "R",
+    "block_id": "snap-1ad37a81bc788f4e5cec3445-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1ad37a81bc788f4e5cec3445-claims-001-005",
+    "claim_text": "Alaskans for Dan Sullivan paid for this",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 182,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Mary Peltola\nSOLD OUT ALASKA\nShe and Her Lower 48 Liberal Buddies\nAre NOT Looking Out for Alaska\nВе\nWary\nofMary\nVote NO on PELTOLA Aug. 18th\n=Tm\nPaid for by Alaskans for Dan Sullivan",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0690817963f387a4b9e48564039a905f1f2e56aff60cb89efab6ab4f2cd9a01a?mediaType=png",
+    "sponsor": "Alaskans for Dan Sullivan",
+    "targets": [
+      {
+        "anchor_end": 182,
+        "anchor_quote": "Alaskans for Dan Sullivan",
+        "anchor_start": 157,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Alaskans for Dan Sullivan",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Mary Peltola\nSOLD OUT ALASKA\nShe and Her Lower 48 Liberal Buddies\nAre NOT Looking Out for Alaska\nВе\nWary\nofMary\nVote NO on PELTOLA Aug. 18th\n=Tm\nPaid for by Alaskans for Dan Sullivan",
+    "text_hash": "0ec5e1bb393f33c91f3e85176f8cebe3ada67de075e63b2ecfbe3c2abbb18466",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]

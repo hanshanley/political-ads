@@ -4419,13 +4419,13 @@
     "ad_id": "snap-1a2254dddbbd8636d27d7782",
     "block_id": "snap-1a2254dddbbd8636d27d7782-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-1a5389c5105018af08d472f4",
     "block_id": "snap-1a5389c5105018af08d472f4-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-1ab09cd18e95dc92f6aefd7b",
@@ -4443,7 +4443,7 @@
     "ad_id": "snap-1ad37a81bc788f4e5cec3445",
     "block_id": "snap-1ad37a81bc788f4e5cec3445-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-1b2354684e1f6f4dded3b90e",
@@ -4460,8 +4460,8 @@
   {
     "ad_id": "snap-1b6501b50e107b595d756efb",
     "block_id": "snap-1b6501b50e107b595d756efb-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 9\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1b80dd049973bc0fad50e5c2",
