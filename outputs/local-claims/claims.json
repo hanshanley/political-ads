@@ -93200,5 +93200,157 @@
     "text_hash": "5fdc526af3e5d6010c793a843a93deac777adb4e55e219b78c4de533b9f93b1d",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-00858dcb9784d27b9a094296",
+    "alignment": "D",
+    "block_id": "snap-00858dcb9784d27b9a094296-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-00858dcb9784d27b9a094296-claims-001-001",
+    "claim_text": "David Valadao voted for Medi-Cal cuts.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 99,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "CAL\nMATTERS\nCalifornia Rep. David Valadao\nvoted for Medi-Cal cuts. Will\nvoters hold it against him?",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a8a1b3e3e898770ae7cdca8cf11a3708971444191cd535a634fddb966ad8f86e?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 41,
+        "anchor_quote": "David Valadao",
+        "anchor_start": 28,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2CA20094",
+        "kind": "person",
+        "name": "VALADAO, DAVID",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "CAL\nMATTERS\nCalifornia Rep. David Valadao\nvoted for Medi-Cal cuts. Will\nvoters hold it against him?",
+    "text_hash": "9ec7457965a190ab8e46f15622505059c03035263d038506635155a114f54348",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-00858dcb9784d27b9a094296",
+    "alignment": "D",
+    "block_id": "snap-00858dcb9784d27b9a094296-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-00858dcb9784d27b9a094296-claims-001-002",
+    "claim_text": "Voters will hold it against him.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 99,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "CAL\nMATTERS\nCalifornia Rep. David Valadao\nvoted for Medi-Cal cuts. Will\nvoters hold it against him?",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a8a1b3e3e898770ae7cdca8cf11a3708971444191cd535a634fddb966ad8f86e?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 78,
+        "anchor_quote": "voters",
+        "anchor_start": 72,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Voters",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "CAL\nMATTERS\nCalifornia Rep. David Valadao\nvoted for Medi-Cal cuts. Will\nvoters hold it against him?",
+    "text_hash": "9ec7457965a190ab8e46f15622505059c03035263d038506635155a114f54348",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-00858dcb9784d27b9a094296",
+    "alignment": "D",
+    "block_id": "snap-00858dcb9784d27b9a094296-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-00858dcb9784d27b9a094296-claims-001-003",
+    "claim_text": "Voters will hold him accountable.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 99,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "CAL\nMATTERS\nCalifornia Rep. David Valadao\nvoted for Medi-Cal cuts. Will\nvoters hold it against him?",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a8a1b3e3e898770ae7cdca8cf11a3708971444191cd535a634fddb966ad8f86e?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 78,
+        "anchor_quote": "voters",
+        "anchor_start": 72,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Voters",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 98,
+        "anchor_quote": "him",
+        "anchor_start": 95,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2CA20094",
+        "kind": "person",
+        "name": "him",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "CAL\nMATTERS\nCalifornia Rep. David Valadao\nvoted for Medi-Cal cuts. Will\nvoters hold it against him?",
+    "text_hash": "9ec7457965a190ab8e46f15622505059c03035263d038506635155a114f54348",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
