@@ -70,7 +70,7 @@ def _attachment_metadata(
         or media_url.path.rsplit("/", 1)[-1] != attachment["filename"]
         or not attachment["filename"].endswith(".mp4")
         or type(attachment["filesize"]) is not int
-        or not 0 < attachment["filesize"] <= 64 * 1024 * 1024
+        or not 0 < attachment["filesize"] <= 128 * 1024 * 1024
         or len(
             soup.find_all(
                 "link",

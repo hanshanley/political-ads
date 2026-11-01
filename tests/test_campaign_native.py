@@ -7,11 +7,13 @@ from urllib.error import HTTPError
 from urllib.parse import urlencode
 
 import pytest
+from bs4 import BeautifulSoup
 from pypdf import PdfReader, PdfWriter
 from pypdf.generic import DecodedStreamObject, DictionaryObject, NameObject
 
-from political_ads.campaign_native import collect_campaign_native
+from political_ads.campaign_native import _attachment_metadata, collect_campaign_native
 from political_ads.cli import read_json, write_json
+from political_ads.http import Client
 
 
 @pytest.fixture
@@ -995,6 +997,29 @@ def test_attachment_upload_outside_cutoff_is_not_requested(tmp_path, attachment_
     _, _, calls = attachment_review
     assert not collect_campaign_native(tmp_path, "2026-05-18", offline=True)["ads"]
     assert calls == []
+
+
+@pytest.mark.parametrize("size", [98203315, 128 * 1024 * 1024, 128 * 1024 * 1024 + 1])
+def test_attachment_size_remains_bounded_before_original(tmp_path, attachment_review, size):
+    review, payloads, calls = attachment_review
+    attachment = review["publisher_attachment"]
+    attachment["filesize"] = size
+    media = json.loads(payloads[attachment["attachment_api_url"]])[0]
+    media["filesize"] = media["media_details"]["filesize"] = size
+    payloads[attachment["attachment_api_url"]] = json.dumps([media]).encode()
+    attachment["attachment_sha256"] = hashlib.sha256(
+        payloads[attachment["attachment_api_url"]]
+    ).hexdigest()
+    client = Client(tmp_path / "cache", offline=True)
+    soup = BeautifulSoup(payloads[review["publisher_url"]], "html.parser")
+    if size <= 128 * 1024 * 1024:
+        _attachment_metadata(client, soup, review, attachment["publisher_sha256"])
+        assert calls == [attachment["page_api_url"], attachment["attachment_api_url"]]
+    else:
+        with pytest.raises(ValueError, match="exact public campaign page"):
+            _attachment_metadata(client, soup, review, attachment["publisher_sha256"])
+        assert calls == []
+    assert review["media_url"] not in calls
 
 
 @pytest.mark.parametrize(

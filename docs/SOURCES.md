@@ -1,6 +1,6 @@
 # Free-source capabilities
 
-Verified October 31, 2026; collection cutoff October 30. Live acquisition status accompanies each snapshot.
+Verified November 1, 2026; collection cutoff October 30. Live acquisition status accompanies each snapshot.
 This is a source-limited collection of releases and native platform creatives, not a census.
 
 **Publication withdrawn:** the page, report, data downloads, preview, interactive-analysis card
@@ -9,6 +9,166 @@ daily automatic evidence refresh updates this research repository only. Research
 may be pushed without updating the website; publication and host restoration still require
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
+
+## Carey Coleman: campaign-linked Ohio House original
+
+The actual `https://careycoleman.com/` homepage, SHA-256
+`73a9a59c0332e631891b5701aacd2c0d491bd433ef2bbd3b0aa884dc62e31f56`,
+explicitly embeds
+`https://careycoleman.com/wp-content/uploads/2026/10/Sykes-Tells-The-Truth-FIN-1.mp4`.
+The complete original contains **98,203,315 bytes / 105.64 seconds**,
+SHA-256
+`300aee0fab1598f0ad5a40d9cfe4dd7ded07a428d338f77fdb76cea3610e0e2c`.
+Seven original frames were rendered and visually inspected, including
+the early campaign-paid disclaimer and the 103.64-second closing card.
+That card explicitly identifies **Carey Coleman for Congress** as payer.
+Frozen official **H6OH13307 / C00933432 / CAREY COLEMAN FOR CONGRESS /
+P / H / REP / OH-13 / 2026** independently matches that identity.
+Neither Calvin Coleman/IL-02 nor Mike Carey/OH-15 is substituted.
+
+This is an edited campaign attack advertisement, not homepage policy
+copy or an independent interview. It incorporates an opponent-ad clip,
+Coleman's own narration and attributed headline images. Those components
+are not separately counted Democratic ads or independent verification
+of the advertiser's allegations. Preserve **all 205 automatic segments /
+807 whitespace tokens**, including ASR's Kerry Coleman, Emilio Sykes,
+Amelia Sikes, uncertain SNAP wording, repeated headline OCR and transition
+noise. No names, negation or other words are silently repaired. Full
+automatic extraction is not a complete manually certified script or a
+new semantic review.
+
+The homepage actually links public WordPress **page 18** at
+`https://careycoleman.com/wp-json/wp/v2/pages/18`, SHA-256
+`a7fd079ef31a3b06cc7859c69b0567cba370e24af6d877bed3c31bbd299cfe0e`.
+That page explicitly links its attachment collection,
+`https://careycoleman.com/wp-json/wp/v2/media?parent=18`, SHA-256
+`92775d313466f9444040bd711ab3a6e3bd0ab2addd42a2ad5cbdf57303ebca4b`.
+Both pagination headers establish one complete page of **seven entries**.
+Exact **attachment 292** pins this original URL, video/mp4 MIME type,
+matching file sizes, and its page-18 backlink. Its `date_gmt` is
+**October 13, 2026, 21:44:15 UTC**, corroborated by the original
+Last-Modified at that same instant. That attachment upload date supplies
+`publisher_attachment_upload_date`, not verified first release, first
+airing or paid delivery. The October 7 encoding timestamp, January 19
+homepage creation, later page modification and upload-directory month
+are not substituted. Phase and delivery dates remain unknown.
+
+The first discovery GET stopped when the original exceeded its explicit
+64 MiB bound and did not store a partial original. Exact public attachment
+metadata and a HEAD response established the full byte size before one
+complete bounded recovery. The attachment metadata ceiling is now
+**128 MiB**; all existing parent, date, hash, pagination, URL, MIME and
+exact-size checks are retained. Focused regressions cover the actual
+98,203,315-byte case, the ceiling and rejection above it before an original
+request.
+
+**Preservation and replay:** immutable baseline is actual parent
+**f7c1090837041a54133515b596b6735f281af778**, including concurrent claims
+commits. Every preceding **1,926 acquired / 1,887 analyzed object**,
+39 native reviews, written reviews, aliases and frozen inputs remains
+unchanged. Exactly one native review/ad/source/attempt is added.
+An isolated socket- and URL-opening-forbidden replay uses only four
+cached source responses and the pinned original's cached ASR/OCR. It
+exactly reproduces the native partition and is idempotent. An October 12
+cutoff issues zero requests; the **354-lead** backlog is unchanged.
+
+Checkpoint totals are **1,927 acquired / 1,888 English analyzed /
+102 dated native ads**, English **D 1,226 / R 623**, House
+**D 698 / R 245**, and House outside Snap **D 222 / R 244**.
+These source-dependent counts are not national volume or spending
+estimates. Complete JSON/gzip/CSV downloads, all **1,927 Parquet rows**,
+eleven figure sets and the independent strategy audit reconcile.
+Snapshot is
+**45a842d6c04e2e609827d8b448d659ac3c3f29216b32334408cb3a331b67df2a**.
+All **503 Python tests**, including **102 native-collector tests**, pass;
+Python lint and formatting pass.
+Frontend lint, typechecking and build, **17 frontend tests** and
+**eight browser tests** also pass, including complete downloads,
+source associations, report rendering and mobile layout.
+Both editions and production assets are refreshed **locally only**.
+Website/Substack publication and host restoration remain on hold.
+
+## Further actual-source discovery, without inflated ad counts
+
+**Laurens Sun / Iowa:** the actual October 28 PDF contains
+**15,960,212 bytes / twelve pages**, SHA-256
+`ce093dead4406f979f604db39e4b6e6f3b8a222e51221254963886c4c665394b`.
+Its page-6 Feenstra text-layer match concerns the gubernatorial primary,
+not identified federal House ad speech. Page-text hashes are retained,
+but no whole-issue visual census or assertion that the issue lacks ads
+is made.
+
+**Fedorchak / ND-00:** the actual homepage is pinned to
+`2abb8c03b98e75a95c6a6988b01bab99e4ef669df09ab10449863e45de8e1d42`;
+its actually linked `/news/` archive to
+`4220b771d0ad1eb5b973b934e9d53f8ae12ebe689bec95b13c6f5ed1aac3c969`.
+The homepage identifies individual YouTube HNvqGprpDZA, but the original
+was not fetched or dated. News lists events, fundraising, endorsements
+and older coverage, not recovered ad words. Listed article bodies were
+not all inspected.
+
+**McGowan / IA-04:** actual homepage and linked `/media` hashes are
+`f272ea9b275ea0499659ae7460b1684f45a8e5a39341915d480972cf91f26f73`
+and
+`0c704bb1eb51edfb9aaa354deb404086100ad3f8a5043284097c2e7523316a86`.
+The Media page lists interviews, debates, coverage, endorsements and
+campaign PDFs; no individual original ad video is identified. Those
+listed bodies and PDFs were not downloaded or relabeled ad scripts.
+
+**Mike Carey / OH-15:** actual homepage and linked `/news` hashes are
+`2651e90813b5b8d3bfb91adc77380606bb187188b3d154d90aab0083f5d9ca28`
+and
+`9c2b45a80733ae93bbb6ef73d0b446fbffbeb2a75cba7fbb3c0834a475ec09e8`.
+The homepage's Every Little Bit/A8EIdstH-Hc embed remains unfetched and
+undated; the archive exposes 2022 coverage, not a 2026 ad release.
+The actually acquired October 30 WOSU spending report is pinned to
+`bbb264511da9f38f228cc6a336f5f6aedf8e671a2ca7a54470216dcdfdc769d9`.
+Its financial reporting and campaign responses are not identified
+literal advertising speech.
+
+**Finstad / MN-01:** actual homepage SHA-256
+`df1e1e0141603556277c693456552f7d85d84a162ce4ffedfdd456f4aaf0107b`
+links Jake Johnson Claims vs Reality directly to
+`https://finstadforcongress.com/wp-content/uploads/2026/10/MN01-Jake-Johnson-Claims-vs-Reality-100226.pdf`.
+The actual original contains **606,209 bytes / five pages**, SHA-256
+`2ea7ef65c7687a672039bd9818ce26a59c16c1eb1a5c235a38bc14d59d76c947`.
+This is opposition talking points with sources, not a recovered
+Republican ad script. Ordered page hashes and all hyperlink annotations
+are retained; no PDF repair is performed. The expressly attributed
+Johnson radio/campaign-ad quotations are Democratic, and another linked
+video is expressly an interview. None of those annotation targets was
+requested or counted as Republican speech. Existing KSTP/FOX9 identity
+gaps and the Bring Me The News denial pause remain in force.
+
+**Fuller / GA-14:** actual campaign homepage
+`https://clayfullerforgeorgia.com/` contains **350,627 bytes**, SHA-256
+`d28af57576083dbe4c0894e78a9e6a63625f0e289033542f16eeebb66ad51db7`.
+Returned title and frozen **H0GA14030 / C00931709 / FULLER, CLAY /
+REP / House / GA-14 / 2026** support the candidate association.
+The retained homepage supplies biography and priorities, not recovered
+ad words or a native media URL. Its form-logic iframe is not an ad.
+No campaign biography is admitted as advertising.
+
+**Balderson / OH-12:** actual campaign homepage
+`https://baldersonforcongress.com/` is pinned to
+`5822a0d494b2e6ac0ef0ea0957e6abcd62bcbd0ebcb3d65c0a811e8519e33693`.
+Its actual Images & Video link resolves to `/images-videos`,
+**17,135 bytes**, SHA-256
+`26df7a885b1d6f77ecf00ba32252e037d28d23a150483ad89bc62292d18b6409`.
+The gallery identifies three individual Vimeo embeds and one YouTube
+embed but does not itself provide recovered speech or individual release
+dates. No embed was requested: existing Vimeo/YouTube provider holds
+remain in force. Neither embed IDs, homepage biography nor a tracking
+iframe is counted as an ad or used to invent an upload year.
+The separate hypothesized Dave Joyce campaign-homepage request failed
+with a TLS handshake error; no response body, ad text or date was
+acquired, and TLS verification was not disabled.
+
+The preceding Smith research commit
+**97d049903b2e8f65e2dd56f385ac2dec3b978d88** and exact CI
+**41270299413** are independently verified successful. These additional
+source exclusions do not resolve the remaining Republican House
+collection gap or imply that every campaign release has been found.
 
 ## Adrian Smith: publisher-linked paid-print excerpt
 

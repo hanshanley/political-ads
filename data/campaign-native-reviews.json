@@ -1,6 +1,49 @@
 {
   "reviews": [
     {
+      "id": "coleman-native-sykes-300aee0fab1598f0",
+      "source": "coleman-campaign",
+      "media_type": "video",
+      "publisher_url": "https://careycoleman.com/",
+      "post_url": "https://careycoleman.com/",
+      "media_url": "https://careycoleman.com/wp-content/uploads/2026/10/Sykes-Tells-The-Truth-FIN-1.mp4",
+      "media_sha256": "300aee0fab1598f0ad5a40d9cfe4dd7ded07a428d338f77fdb76cea3610e0e2c",
+      "title": "Coleman Sykes Tells the Truth campaign advertisement",
+      "title_basis": "Descriptive label from the individually linked original filename and visually inspected advertisement, not a separately verified creative title",
+      "sponsor": "Carey Coleman for Congress",
+      "sponsor_type": "candidate",
+      "candidate_id": "H6OH13307",
+      "required_quotes": [
+        "Hello again, I'm Kerry Coleman running",
+        "at career politician, Democrat Emilio Sykes.",
+        "PAID FOR BY CAREY COLEMAN FOR"
+      ],
+      "reviewed": "2026-10-31",
+      "ad_evidence": "Actual 105.64-second edited campaign advertisement, not homepage policy text, an independent interview or generic B-roll. Seven original frames at 0, 5, 26.41, 52.82, 79.23, 103.64 and 105.44 seconds were rendered and visually inspected. The 5-second frame displays a campaign-paid disclaimer; the 103.64-second closing card identifies Carey Coleman for Congress and states PAID FOR BY CAREY COLEMAN FOR CONGRESS. Frozen official H6OH13307 / C00933432 identifies COLEMAN, CAREY, REP, House, OH-13, 2026; retained principal CAREY COLEMAN FOR CONGRESS is P/H/REP and matches the candidate ID exactly. Calvin Coleman/IL-02 and Mike Carey/OH-15 are different candidates and supply no identity evidence. The advertisement incorporates an opponent-ad excerpt and attributed headline images within Coleman's narrated attack; these are not separate Democratic advertisements or independently verified opponent statements. Claims remain advertiser portrayals, not verified allegations. Eligibility and payer inspection do not certify transcription, semantic labels, first airing or paid delivery.",
+      "quality_flags": [
+        "finished_ad_and_campaign_payer_visually_reviewed",
+        "quoted_opponent_clip_not_separate_democratic_ad",
+        "speech_candidate_names_and_attack_claim_errors_preserved",
+        "frame_ocr_repeated_headlines_and_transition_noise_preserved"
+      ],
+      "extraction_caveat": "Preserve all 205 original extracted segments and 807 whitespace tokens from local ASR and frame OCR. Speech includes Kerry Coleman, Emilio Sykes, Amelia Sikes, at career politician, each check and uncertain SNAP wording; no candidate names, negation, punctuation or other words are silently repaired. OCR includes repeated headline/disclaimer fragments and motion noise. This is full automatic extraction of the original, not a complete manually certified script or a new semantic review.",
+      "publisher_attachment": {
+        "publisher_title": "Home - Carey Coleman",
+        "publisher_sha256": "73a9a59c0332e631891b5701aacd2c0d491bd433ef2bbd3b0aa884dc62e31f56",
+        "page_id": 18,
+        "page_api_url": "https://careycoleman.com/wp-json/wp/v2/pages/18",
+        "page_sha256": "a7fd079ef31a3b06cc7859c69b0567cba370e24af6d877bed3c31bbd299cfe0e",
+        "attachment_id": 292,
+        "attachment_api_url": "https://careycoleman.com/wp-json/wp/v2/media?parent=18",
+        "attachment_sha256": "92775d313466f9444040bd711ab3a6e3bd0ab2addd42a2ad5cbdf57303ebca4b",
+        "uploaded": "2026-10-13T21:44:15",
+        "filename": "Sykes-Tells-The-Truth-FIN-1.mp4",
+        "filesize": 98203315,
+        "last_modified": "Tue, 13 Oct 2026 21:44:15 GMT",
+        "date_uncertainty": "The exact public attachment's date_gmt supplies the October 13 UTC upload proxy. Homepage HTML links public page 18, whose exact attachment collection contains seven entries on one complete page. Attachment 292 pins this original URL, MIME type, matching 98203315-byte sizes and an exact page-18 backlink. Original HEAD and complete GET agree on size and Last-Modified. Encoding creation_time October 7, homepage creation January 19, later page modification and the upload-directory month do not replace the independently bound attachment date. First release, first airing, paid-flight dates and phase remain unverified."
+      }
+    },
+    {
       "id": "dakota-star-print-smith-0cf45653a7b79a4f-p2",
       "source": "dakota-star-print",
       "media_type": "pdf",
