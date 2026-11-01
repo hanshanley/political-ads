@@ -129544,5 +129544,97 @@
     "text_hash": "eda1011ff7d5e2985c612969e5b4702c6fba67590a45b20f1c8d7a55feb32f59",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-67666891b849043b13be2dfc",
+    "alignment": "R",
+    "block_id": "snap-67666891b849043b13be2dfc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-67666891b849043b13be2dfc-claims-001-001",
+    "claim_text": "Senator Collins secured $3.6 million to help end veteran homelessness.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 69,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "SENATOR COLLINS\nSECURED\n$3.6 MILLION\nTO HELP\nEND VETERAN HOMELESSNESS",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8978013647fb1821b67b8812104a57e54133fa7340cfdd05a5254e592678955e?mediaType=png",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 15,
+        "anchor_quote": "SENATOR COLLINS",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Senator Collins",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "SENATOR COLLINS\nSECURED\n$3.6 MILLION\nTO HELP\nEND VETERAN HOMELESSNESS",
+    "text_hash": "4f442c2b8011d588fc55e3798cd3bc84fc93443a67599563b16024695a54363b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-67666891b849043b13be2dfc",
+    "alignment": "R",
+    "block_id": "snap-67666891b849043b13be2dfc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-67666891b849043b13be2dfc-claims-001-002",
+    "claim_text": "$3.6 million was secured to help end veteran homelessness.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 69,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "SENATOR COLLINS\nSECURED\n$3.6 MILLION\nTO HELP\nEND VETERAN HOMELESSNESS",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8978013647fb1821b67b8812104a57e54133fa7340cfdd05a5254e592678955e?mediaType=png",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 69,
+        "anchor_quote": "HOMELESSNESS",
+        "anchor_start": 57,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "veteran homelessness",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "SENATOR COLLINS\nSECURED\n$3.6 MILLION\nTO HELP\nEND VETERAN HOMELESSNESS",
+    "text_hash": "4f442c2b8011d588fc55e3798cd3bc84fc93443a67599563b16024695a54363b",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
