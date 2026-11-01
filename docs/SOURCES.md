@@ -10,6 +10,58 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## November 1 expanded discovery exclusions and Chamber CI certification
+
+The Chamber Lawler acquisition commit
+`b7471ecd4f3c3fee21dbcd61cecb1e17af91e96c` is certified by exact CI
+`41341465789`: completed/success, validate job `124952186328`, all
+13 steps successful, completed November 1 at `19:34:28Z`. The generated
+certificate remains local at `data/raw/house-chamber-lawler-b7471ec-ci.json`;
+its `headSha`, workflow, jobs and steps were checked, rather than inferring
+remote success from local tests.
+
+Subsequent discovery adds **no acquired records**. Timmons' homepage has
+issue prose and an undated endorsement embed, not a dated ad script.
+Its actual linked privacy policy concerns privacy, cookies, security and
+messaging; it does not establish a blanket content-reuse license. Its
+actual linked news archive's newest dated item is March 8, 2024, outside
+the 2026 collection. Schmidt's cached homepage supplies biography and
+endorsements, not a dated ad script; neither its linked privacy page nor
+its endorsement embed was requested after that exclusion.
+
+The independently discovered March 2 Battalion profile names Chris
+Gober's "Boots" ad and embeds his January 22 promotional post. The post
+is not established as a literal spoken-ad transcript. The remaining
+quotations are explicitly interview or emailed statements, not ad words.
+The review ledger has no Gober record, but novelty of a campaign or URL
+does not make this an eligible creative. No social original, shortened
+media link, caption or API was requested; no post or interview quotation
+was imported as ad text.
+
+| Excluded discovery receipt under `data/raw/` | Body SHA-256 | Bytes |
+| --- | --- | ---: |
+| `house-timmons-primary-home-20261101-discovery.json` | `0ac48f678ab2e8780f26f2e4c0cf912bb5cce4ab6a140374b498416d1dc0ff47` | 75166 |
+| `house-timmons-linked-policy-20261101-discovery.json` | `d09fc258f97bb7833cb17d4804b150ac3f4065216f827bff1dd2666741e79b70` | 72706 |
+| `house-timmons-linked-news-20261101-discovery.json` | `c24ac29ab8cf0500aaff86bfd94f717d2ccca84a2cd74c0f7b3e23d13da53b3e` | 89022 |
+| `house-schmidt-primary-home-20261101-discovery.json` | `8c9400c8bf3a857dc87fc08b015bbf635996082db8e4bcc81a40f0766ab03dd5` | 71719 |
+| `house-gober-battalion-boots-20261101-discovery.json` | `9bc778190c2e938da99048815489c3f9b9d4e227d171cbfcb71d36c0352ff1fa` | 250583 |
+
+Each retained body was independently checked against its receipt's
+SHA-256 and byte length. Receipts record exact URLs and cache directories;
+full publisher bodies remain ignored local evidence, not distributed
+fixtures or acquired ads.
+
+Expanded searches also resurfaced the already-reviewed October 27 WUNC
+report, all three Elijah / Florida's Voice reports and the October 30
+Herrera / Jezebel report. The existing Knott passage, Elijah records and
+Herrera record were not acquired again. Rouzer's six-word slogan remains
+below the unchanged fifteen-word floor, and other named races supply no
+new literal ad words. AdImpact's public viewer remains permission-unresolved
+and paused; Florida Politics and YouTube remain denied. No viewer,
+denied report, original, captions or alternate route bypassed these holds.
+The saved corpus totals and research snapshot below remain unchanged;
+the Republican House coverage gap and publication hold remain unresolved.
+
 ## November 1 Chamber House quotation and duplicate checks
 
 One newly admitted record, `chamber-lawler-examiner-4778222-0`, retains
