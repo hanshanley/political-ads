@@ -79976,6 +79976,249 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Publisher-linked original with individually reviewed payer evidence; FEC H0IN05326, REP, principal committee C00737767. Primary publisher: https://www.spartzforcongress.com/news/spartz-daughters-2026/",
+      "chamber": "House",
+      "date_basis": "publisher_release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "spartz-native-daughters-20261018",
+      "language": "en",
+      "language_basis": "Local Whisper language detection; selected speech excerpt",
+      "media_urls": [
+        "https://www.spartzforcongress.com/news/spartz-daughters-2026/"
+      ],
+      "message_id": "7f60629aa7207b9d71a7a5ede7dd16c7cd3019fbe4fc6f025df0c5815fd075af",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-18",
+      "quality_flags": [
+        "local_speech_excerpt_not_manually_verified",
+        "automatic_speech_may_misrecognize_names_or_negation",
+        "publisher_release_date_not_verified_first_airing",
+        "partial_ad_text_not_full_script",
+        "frame_text_and_unselected_speech_excluded",
+        "payer_frame_visually_reviewed",
+        "allegations_not_fact_checked",
+        "semantic_portrayal_unreviewed",
+        "unselected_garbled_asr_sentence_excluded"
+      ],
+      "race": "IN-05",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "avg_logprob": -0.27312124958475126,
+          "completeness": "partial_quotation",
+          "end_seconds": 20.94,
+          "excluded_low_confidence_ocr_observations": [],
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "74a80901dbdcfd64e5d0ad642539b13e3c16eba185f7004036f8a1e56387724f",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "native_campaign_evidence": {
+            "ad_evidence": "The independent dated campaign release literally embeds this original, distinct from the October 30 original by URL and complete media hash. Its visible archive date and article publication metadata agree. Closing frame 30.5 seconds was locally rendered and visually inspected: its federal campaign payer and candidate approval agree with frozen H0IN05326 / REP / House / IN-05 / 2026 and principal committee C00737767. Neither the inaccessible IndyStar report nor a copy of it supplies these words. Publication does not establish first airing, delivery or nomination.",
+            "candidate_id": "H0IN05326",
+            "completeness": "partial_quotation",
+            "extraction_caveat": "Exactly 15 unchanged recognized words from two complete consecutive speech segments, 18.82-23.78 seconds of the 31.935-second original. The combined passage is one complete allegation, not a full script or a manually certified transcript. Cached offline faster-whisper base recognition garbles a separate central sentence and candidate names; those passages, the sarcastic opening and all remaining speech and frame words are excluded rather than repaired. The anonymous they and radical puppet references receive no invented opponent identity or new semantic judgment. The full creative's strategy and factual truth are not inferred from this excerpt. Original media remains local-only.",
+            "id": "spartz-native-daughters-20261018",
+            "media_sha256": "74a80901dbdcfd64e5d0ad642539b13e3c16eba185f7004036f8a1e56387724f",
+            "media_type": "video",
+            "media_url": "https://www.spartzforcongress.com/wp-content/uploads/spartz-daughters-2026.mp4",
+            "phase": "unknown",
+            "post_url": "https://www.spartzforcongress.com/news/spartz-daughters-2026/",
+            "publisher_html_sha256": "2ceb81828bd1a25ea41df0781a994e193472ffe601129016a2760fc6842a0b86",
+            "publisher_release": {
+              "published": "2026-10-18",
+              "published_timestamp": "2026-10-18T11:29:44-04:00",
+              "sha256": "2ceb81828bd1a25ea41df0781a994e193472ffe601129016a2760fc6842a0b86",
+              "title": "Spartz Daughters 2026 - Victoria Spartz for Congress"
+            },
+            "publisher_url": "https://www.spartzforcongress.com/news/spartz-daughters-2026/",
+            "quality_flags": [
+              "payer_frame_visually_reviewed",
+              "allegations_not_fact_checked",
+              "semantic_portrayal_unreviewed",
+              "unselected_garbled_asr_sentence_excluded"
+            ],
+            "required_quotes": [
+              "Now they're striking back with lies,",
+              "trying to buy this election for the radical puppet."
+            ],
+            "reviewed": "2026-11-01",
+            "source": "spartz-native",
+            "speech_engine": {
+              "engine": "faster-whisper 1.2.1",
+              "has_audio": true,
+              "language": "en",
+              "language_probability": 0.9951257109642029,
+              "model": "Systran/faster-whisper-base",
+              "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+              "settings": {
+                "beam_size": 5,
+                "condition_on_previous_text": false,
+                "temperature": 0,
+                "vad_filter": true,
+                "word_timestamps": true
+              },
+              "word_alignment_error": null
+            },
+            "speech_excerpt": {
+              "end_seconds": 23.78,
+              "speech_sha256": "d7ebfc4f776c031c3d7ff7e3e1a32143ceeadbcba32ed0f6bb82024bcb0a2e4b",
+              "start_seconds": 18.82,
+              "text_sha256": "425acf3fa1bb47a2e2b147bcee727602110be35e1ca552091712fa3d3e0a4e67"
+            },
+            "sponsor": "Victoria Spartz for Congress",
+            "sponsor_type": "candidate",
+            "title": "Spartz campaign ad: Spartz Daughters 2026",
+            "title_basis": "Campaign release heading; not a verified creative title"
+          },
+          "no_speech_probability": 0.024079233407974243,
+          "speech_detection": {
+            "has_audio": true,
+            "language": "en",
+            "language_probability": 0.9951257109642029,
+            "settings": {
+              "beam_size": 5,
+              "condition_on_previous_text": false,
+              "temperature": 0,
+              "vad_filter": true,
+              "word_timestamps": true
+            },
+            "word_alignment_error": null
+          },
+          "speech_duplicate_ocr_observations": [],
+          "start_seconds": 18.82,
+          "text": "Now they're striking back with lies,",
+          "video_sampling": {
+            "duration_seconds": 31.935,
+            "sample_interval_seconds": 1
+          },
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 19.12,
+              "probability": 0.9953885078430176,
+              "start_seconds": 18.82,
+              "text": " Now"
+            },
+            {
+              "end_seconds": 19.52,
+              "probability": 0.7496764957904816,
+              "start_seconds": 19.12,
+              "text": " they're"
+            },
+            {
+              "end_seconds": 19.94,
+              "probability": 0.987250030040741,
+              "start_seconds": 19.52,
+              "text": " striking"
+            },
+            {
+              "end_seconds": 20.26,
+              "probability": 0.9980864524841309,
+              "start_seconds": 19.94,
+              "text": " back"
+            },
+            {
+              "end_seconds": 20.56,
+              "probability": 0.9920831918716431,
+              "start_seconds": 20.26,
+              "text": " with"
+            },
+            {
+              "end_seconds": 20.94,
+              "probability": 0.9951781034469604,
+              "start_seconds": 20.56,
+              "text": " lies,"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.27312124958475126,
+          "completeness": "partial_quotation",
+          "end_seconds": 23.78,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "74a80901dbdcfd64e5d0ad642539b13e3c16eba185f7004036f8a1e56387724f",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.024079233407974243,
+          "start_seconds": 21.1,
+          "text": "trying to buy this election for the radical puppet.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 21.44,
+              "probability": 0.998309850692749,
+              "start_seconds": 21.1,
+              "text": " trying"
+            },
+            {
+              "end_seconds": 21.66,
+              "probability": 0.9997144341468811,
+              "start_seconds": 21.44,
+              "text": " to"
+            },
+            {
+              "end_seconds": 21.88,
+              "probability": 0.9935467839241028,
+              "start_seconds": 21.66,
+              "text": " buy"
+            },
+            {
+              "end_seconds": 22.14,
+              "probability": 0.9132444858551025,
+              "start_seconds": 21.88,
+              "text": " this"
+            },
+            {
+              "end_seconds": 22.54,
+              "probability": 0.9634098410606384,
+              "start_seconds": 22.14,
+              "text": " election"
+            },
+            {
+              "end_seconds": 22.78,
+              "probability": 0.9966469407081604,
+              "start_seconds": 22.54,
+              "text": " for"
+            },
+            {
+              "end_seconds": 22.9,
+              "probability": 0.9009721279144287,
+              "start_seconds": 22.78,
+              "text": " the"
+            },
+            {
+              "end_seconds": 23.34,
+              "probability": 0.9698489904403687,
+              "start_seconds": 22.9,
+              "text": " radical"
+            },
+            {
+              "end_seconds": 23.78,
+              "probability": 0.942910373210907,
+              "start_seconds": 23.34,
+              "text": " puppet."
+            }
+          ]
+        }
+      ],
+      "source": "spartz-native",
+      "source_hash": "f33817b1be774210e3527f22ff83c3bc74e1fe7e0253b241152f9a8d15dd2592",
+      "source_record_id": "spartz-native-daughters-20261018",
+      "source_url": "https://www.spartzforcongress.com/news/spartz-daughters-2026/",
+      "sponsor": "Victoria Spartz for Congress",
+      "sponsor_type": "candidate",
+      "state": "IN",
+      "text": "Now they're striking back with lies,\ntrying to buy this election for the radical puppet.",
+      "title": "Spartz campaign ad: Spartz Daughters 2026"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Video linked in an official Senate Leadership Fund ad release: https://senateleadershipfund.org/press-releases/new-ads-troy-jackson-protected-pedophiles/. Alignment is publisher alignment, not a separately verified payer identity.",
       "chamber": "Senate",
       "date_basis": "release_date",
@@ -93444,6 +93687,9 @@
       "state": "ok",
       "video": "https://www.youtube.com/watch?v=J1Ym3GUrfkQ"
     },
+    "spartz-native-daughters-20261018": {
+      "state": "text"
+    },
     "spartz-native-follow-money-20261030": {
       "state": "text"
     },
@@ -93644,7 +93890,7 @@
       "url": "https://careycoleman.com/"
     },
     {
-      "ads_with_text": 1,
+      "ads_with_text": 2,
       "checked": "2026-11-01",
       "discovery_complete": false,
       "last_success": "2026-11-01",
@@ -93652,7 +93898,7 @@
       "source": "spartz-native",
       "state": "partial",
       "undated_videos_with_text": 0,
-      "url": "https://www.spartzforcongress.com/news/follow-the-money/"
+      "url": "https://www.spartzforcongress.com/news/spartz-daughters-2026/"
     }
   ]
 }

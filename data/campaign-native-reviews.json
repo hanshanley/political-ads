@@ -1340,6 +1340,47 @@
         "allegations_not_fact_checked",
         "semantic_portrayal_unreviewed"
       ]
+    },
+    {
+      "id": "spartz-native-daughters-20261018",
+      "source": "spartz-native",
+      "publisher_url": "https://www.spartzforcongress.com/news/spartz-daughters-2026/",
+      "post_url": "https://www.spartzforcongress.com/news/spartz-daughters-2026/",
+      "media_url": "https://www.spartzforcongress.com/wp-content/uploads/spartz-daughters-2026.mp4",
+      "media_type": "video",
+      "media_sha256": "74a80901dbdcfd64e5d0ad642539b13e3c16eba185f7004036f8a1e56387724f",
+      "candidate_id": "H0IN05326",
+      "title": "Spartz campaign ad: Spartz Daughters 2026",
+      "title_basis": "Campaign release heading; not a verified creative title",
+      "sponsor": "Victoria Spartz for Congress",
+      "sponsor_type": "candidate",
+      "phase": "unknown",
+      "completeness": "partial_quotation",
+      "required_quotes": [
+        "Now they're striking back with lies,",
+        "trying to buy this election for the radical puppet."
+      ],
+      "speech_excerpt": {
+        "start_seconds": 18.82,
+        "end_seconds": 23.78,
+        "speech_sha256": "d7ebfc4f776c031c3d7ff7e3e1a32143ceeadbcba32ed0f6bb82024bcb0a2e4b",
+        "text_sha256": "425acf3fa1bb47a2e2b147bcee727602110be35e1ca552091712fa3d3e0a4e67"
+      },
+      "publisher_release": {
+        "published": "2026-10-18",
+        "published_timestamp": "2026-10-18T11:29:44-04:00",
+        "title": "Spartz Daughters 2026 - Victoria Spartz for Congress",
+        "sha256": "2ceb81828bd1a25ea41df0781a994e193472ffe601129016a2760fc6842a0b86"
+      },
+      "reviewed": "2026-11-01",
+      "ad_evidence": "The independent dated campaign release literally embeds this original, distinct from the October 30 original by URL and complete media hash. Its visible archive date and article publication metadata agree. Closing frame 30.5 seconds was locally rendered and visually inspected: its federal campaign payer and candidate approval agree with frozen H0IN05326 / REP / House / IN-05 / 2026 and principal committee C00737767. Neither the inaccessible IndyStar report nor a copy of it supplies these words. Publication does not establish first airing, delivery or nomination.",
+      "extraction_caveat": "Exactly 15 unchanged recognized words from two complete consecutive speech segments, 18.82-23.78 seconds of the 31.935-second original. The combined passage is one complete allegation, not a full script or a manually certified transcript. Cached offline faster-whisper base recognition garbles a separate central sentence and candidate names; those passages, the sarcastic opening and all remaining speech and frame words are excluded rather than repaired. The anonymous they and radical puppet references receive no invented opponent identity or new semantic judgment. The full creative's strategy and factual truth are not inferred from this excerpt. Original media remains local-only.",
+      "quality_flags": [
+        "payer_frame_visually_reviewed",
+        "allegations_not_fact_checked",
+        "semantic_portrayal_unreviewed",
+        "unselected_garbled_asr_sentence_excluded"
+      ]
     }
   ]
 }

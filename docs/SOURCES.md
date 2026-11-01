@@ -10,6 +10,51 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Victoria Spartz: second independent native original
+
+The October 18 release
+`https://www.spartzforcongress.com/news/spartz-daughters-2026/`
+literally embeds a distinct campaign original. Publisher HTML SHA-256
+`2ceb81828bd1a25ea41df0781a994e193472ffe601129016a2760fc6842a0b86`
+pins the exact title and `article:published_time=2026-10-18T11:29:44-04:00`,
+agreeing with the campaign archive. Original MP4 SHA-256
+`74a80901dbdcfd64e5d0ad642539b13e3c16eba185f7004036f8a1e56387724f`
+binds **8,921,480 bytes / 31.935 seconds**, not the October 30 creative.
+Closing frame **30.5 seconds** was visually inspected: its campaign payer
+and candidate approval agree with frozen **H0IN05326 / C00737767 / REP / IN-05 / 2026**.
+
+Acquire only **15 unchanged recognized words**, one complete allegation
+across two consecutive speech segments at **18.82-23.78 seconds**.
+The opening name and a central sentence are garbled in the recognizer's
+output; neither is repaired or admitted. The sarcastic opening, remaining
+speech, closing approval and frame text are excluded. Anonymous target
+references are not assigned an invented opponent identity. This is
+`partial_quotation`, not a full script, a factual finding or a new semantic
+strategy judgment; phase and semantic review remain unknown/unreviewed.
+
+The same offline base-model revision and bounded-excerpt checks described
+below apply. Sorted-JSON speech SHA-256
+`d7ebfc4f776c031c3d7ff7e3e1a32143ceeadbcba32ed0f6bb82024bcb0a2e4b`
+and newline-joined selected-text SHA-256
+`425acf3fa1bb47a2e2b147bcee727602110be35e1ca552091712fa3d3e0a4e67`
+bind the exact review. Use `campaign-native --until 2026-10-30 --offline`,
+then `parquet --offline`, `build --offline`, `validate --offline`
+and `audit-strategy --offline`. Exact original/release responses and
+recognition artifacts are needed for reacquisition, but committed inputs
+rebuild complete research downloads without those undistributed raw caches.
+Original media remains local-only; first airing and paid delivery are unverified.
+
+`spartz-native-daughters-20261018` is absent from all prior acquired text.
+Snapshot
+`1e645382a907bac144daa75ff72205e7a2ab3b64c194dbbbc8184cef00e74ccb`
+has **1,939 acquired / 1,900 English**, **R 635 / D 1,226 English**,
+**R 257 / D 698 English House**, **R 256 / D 222 House outside Snapchat**,
+and **579 written / 85 release reviews / 42 native reviews**.
+All prior records/reviews/aliases and complete text/segment/provenance
+exports are preserved. The separate October 2 original remains an
+unadmitted discovery lead. Saved October 30 and final inclusive November 4
+cutoffs remain distinct; website, host and edition publication remain held.
+
 ## Victoria Spartz: bounded native TV-ad speech
 
 The October 30 campaign release
