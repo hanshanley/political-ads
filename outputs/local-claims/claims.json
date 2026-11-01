@@ -129636,5 +129636,189 @@
     "text_hash": "4f442c2b8011d588fc55e3798cd3bc84fc93443a67599563b16024695a54363b",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6a7490a4aa741a77123e1649",
+    "alignment": "D",
+    "block_id": "snap-6a7490a4aa741a77123e1649-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6a7490a4aa741a77123e1649-claims-001-001",
+    "claim_text": "Bob Brooks will fight back against billionaires",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nBOB BROOKS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bceb0e42d58f83396858fb0f3f2e9ffc3783864dd29735bdbd4a9f7aa60fda50?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 72,
+        "anchor_quote": "BOB BROOKS",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6PA07188",
+        "kind": "person",
+        "name": "BROOKS, BOB",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nBOB BROOKS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "4e43f381cd81696a7e467de9a8309b0ea4f6dc9fad699056ebe809a5415a4f76",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6a7490a4aa741a77123e1649",
+    "alignment": "D",
+    "block_id": "snap-6a7490a4aa741a77123e1649-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6a7490a4aa741a77123e1649-claims-001-002",
+    "claim_text": "The AFL-CIO paid for this communication",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nBOB BROOKS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bceb0e42d58f83396858fb0f3f2e9ffc3783864dd29735bdbd4a9f7aa60fda50?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nBOB BROOKS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "4e43f381cd81696a7e467de9a8309b0ea4f6dc9fad699056ebe809a5415a4f76",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6a7490a4aa741a77123e1649",
+    "alignment": "D",
+    "block_id": "snap-6a7490a4aa741a77123e1649-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6a7490a4aa741a77123e1649-claims-001-003",
+    "claim_text": "It is better to vote for Bob Brooks",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nBOB BROOKS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bceb0e42d58f83396858fb0f3f2e9ffc3783864dd29735bdbd4a9f7aa60fda50?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 72,
+        "anchor_quote": "BOB BROOKS",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6PA07188",
+        "kind": "person",
+        "name": "BROOKS, BOB",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nBOB BROOKS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "4e43f381cd81696a7e467de9a8309b0ea4f6dc9fad699056ebe809a5415a4f76",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6a7490a4aa741a77123e1649",
+    "alignment": "D",
+    "block_id": "snap-6a7490a4aa741a77123e1649-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6a7490a4aa741a77123e1649-claims-001-004",
+    "claim_text": "Voting is a right",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nBOB BROOKS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bceb0e42d58f83396858fb0f3f2e9ffc3783864dd29735bdbd4a9f7aa60fda50?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 43,
+        "anchor_quote": "MY RIGHT",
+        "anchor_start": 35,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "voting",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nBOB BROOKS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "4e43f381cd81696a7e467de9a8309b0ea4f6dc9fad699056ebe809a5415a4f76",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]

@@ -6962,50 +6962,50 @@
   {
     "ad_id": "snap-6a143d89c9f698978a066a6f",
     "block_id": "snap-6a143d89c9f698978a066a6f-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 1: {\\\"anchor_quote\\\":\\\"Rutinel\\\",\\\"anchor_unit_id\\\":12,\\\"entity_id\\\":\\\"candidate:H6CO08013\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"Rutinel\\\",\\\"role\\\":\\\"self_or_supported\\\",\\\"tone\\\":\\\"positive\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6a28b3a49e691e5f1f461fcc",
     "block_id": "snap-6a28b3a49e691e5f1f461fcc-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 17 for working class: \\\"working class\\\" is absent from unit 3. Exact source: \\\"Honestly, I hope pro-labor candidates sweep the state of the aisle, they understand the\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6a44dc64c1c3eb4a3a614498",
     "block_id": "snap-6a44dc64c1c3eb4a3a614498-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 16 for VOTE: \\\"VOTE\\\" is absent from unit 42. Exact source: \\\"V\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6a44dc64c1c3eb4a3a614498",
     "block_id": "snap-6a44dc64c1c3eb4a3a614498-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 2\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6a7490a4aa741a77123e1649",
     "block_id": "snap-6a7490a4aa741a77123e1649-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-6ac2e34216ef00e7a25aadb9",
     "block_id": "snap-6ac2e34216ef00e7a25aadb9-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for USA TODAY: \\\"USA TODAY\\\" is absent from unit 1. Exact source: \\\"USA\\\\nTODAY\\\\nWhy Eileen Laubacher\\\\nis running for\\\\nColorado's 4th District\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6acfd3b590ae365c73531226",
     "block_id": "snap-6acfd3b590ae365c73531226-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for HUIZENGA, BILL: \\\"Bill Huizenga\\\" is absent from unit 1. Exact source: \\\"Congressman Bill Housenga has been in Washington for about 15 years and financial disclosures\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6acfd3b590ae365c73531226",
     "block_id": "snap-6acfd3b590ae365c73531226-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Bill Huizenga: \\\"Huizenga\\\" is absent from unit 10. Exact source: \\\"Financial disclosure forms from 2011 and 2025 revea\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6acfd3b590ae365c73531226",
