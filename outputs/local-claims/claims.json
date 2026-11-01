@@ -113699,5 +113699,346 @@
     "text_hash": "3b7c4f68cbf2b65ad0aeab57f627c47223a64328fd151e025db3ba0f2113c77a",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3df5e7368af2abcae6fe7e44",
+    "alignment": "D",
+    "block_id": "snap-3df5e7368af2abcae6fe7e44-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3df5e7368af2abcae6fe7e44-claims-001-001",
+    "claim_text": "Vote for Mary Paltola and not Dan Sullivan, because he's not looking out for us, he's only looking out for himself.",
+    "claim_types": [
+      "characterization",
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 115,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Vote for Mary Paltola and not Dan Sullivan, because he's not looking out for us, he's only looking out for himself.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a3de21c68f61faca039f868e9ec4d236d2de0ebeedbe2182c7ec6a9b3f8c3b58?mediaType=mp4",
+    "sponsor": "Midnight Sun PAC",
+    "targets": [
+      {
+        "anchor_end": 21,
+        "anchor_quote": "Mary Paltola",
+        "anchor_start": 9,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "PELTOLA, MARY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Vote for Mary Paltola and not Dan Sullivan, because he's not looking out for us, he's only looking out for himself.\nMary Paltola is going to fight for our fists and protect our way of life.\nShe knows what we experienced because she lived it herself.\nAUCHA\nKOTZEBUE, AK\nVOTE FOR MARY PELTOLA\n$300,000\nFROM CORPORATE TRAWLERS\nT$300,000\nMARY PELTOLA\nBAN FACTORY TRAWLERS\nPAID FOR BY MIDNIGHTSUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMTTEE\nMary is\nPAID FOR BY MIDNIGHT SUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nMary is one of us.\nMidnight Sun PAC",
+    "text_hash": "97b316ca781327a62d1715f1e2445dfebb3180e898fc07a1b3dbc89e546fd048",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3df5e7368af2abcae6fe7e44",
+    "alignment": "D",
+    "block_id": "snap-3df5e7368af2abcae6fe7e44-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3df5e7368af2abcae6fe7e44-claims-001-002",
+    "claim_text": "Mary Paltola is going to fight for our fists and protect our way of life.",
+    "claim_types": [
+      "prediction",
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 189,
+        "kind": "local_asr",
+        "start": 116,
+        "text": "Mary Paltola is going to fight for our fists and protect our way of life.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a3de21c68f61faca039f868e9ec4d236d2de0ebeedbe2182c7ec6a9b3f8c3b58?mediaType=mp4",
+    "sponsor": "Midnight Sun PAC",
+    "targets": [
+      {
+        "anchor_end": 128,
+        "anchor_quote": "Mary Paltola",
+        "anchor_start": 116,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "PELTOLA, MARY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Vote for Mary Paltola and not Dan Sullivan, because he's not looking out for us, he's only looking out for himself.\nMary Paltola is going to fight for our fists and protect our way of life.\nShe knows what we experienced because she lived it herself.\nAUCHA\nKOTZEBUE, AK\nVOTE FOR MARY PELTOLA\n$300,000\nFROM CORPORATE TRAWLERS\nT$300,000\nMARY PELTOLA\nBAN FACTORY TRAWLERS\nPAID FOR BY MIDNIGHTSUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMTTEE\nMary is\nPAID FOR BY MIDNIGHT SUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nMary is one of us.\nMidnight Sun PAC",
+    "text_hash": "97b316ca781327a62d1715f1e2445dfebb3180e898fc07a1b3dbc89e546fd048",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3df5e7368af2abcae6fe7e44",
+    "alignment": "D",
+    "block_id": "snap-3df5e7368af2abcae6fe7e44-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3df5e7368af2abcae6fe7e44-claims-001-003",
+    "claim_text": "She knows what we experienced because she lived it herself.",
+    "claim_types": [
+      "factual_assertion",
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 249,
+        "kind": "local_asr",
+        "start": 190,
+        "text": "She knows what we experienced because she lived it herself.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a3de21c68f61faca039f868e9ec4d236d2de0ebeedbe2182c7ec6a9b3f8c3b58?mediaType=mp4",
+    "sponsor": "Midnight Sun PAC",
+    "targets": [
+      {
+        "anchor_end": 193,
+        "anchor_quote": "She",
+        "anchor_start": 190,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "PELTOLA, MARY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Vote for Mary Paltola and not Dan Sullivan, because he's not looking out for us, he's only looking out for himself.\nMary Paltola is going to fight for our fists and protect our way of life.\nShe knows what we experienced because she lived it herself.\nAUCHA\nKOTZEBUE, AK\nVOTE FOR MARY PELTOLA\n$300,000\nFROM CORPORATE TRAWLERS\nT$300,000\nMARY PELTOLA\nBAN FACTORY TRAWLERS\nPAID FOR BY MIDNIGHTSUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMTTEE\nMary is\nPAID FOR BY MIDNIGHT SUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nMary is one of us.\nMidnight Sun PAC",
+    "text_hash": "97b316ca781327a62d1715f1e2445dfebb3180e898fc07a1b3dbc89e546fd048",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3df5e7368af2abcae6fe7e44",
+    "alignment": "D",
+    "block_id": "snap-3df5e7368af2abcae6fe7e44-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3df5e7368af2abcae6fe7e44-claims-001-004",
+    "claim_text": "Mary is one of us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 606,
+        "kind": "video_ocr",
+        "start": 588,
+        "text": "Mary is one of us.",
+        "unit_id": 17
+      }
+    ],
+    "evidence_ids": [
+      17
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a3de21c68f61faca039f868e9ec4d236d2de0ebeedbe2182c7ec6a9b3f8c3b58?mediaType=mp4",
+    "sponsor": "Midnight Sun PAC",
+    "targets": [
+      {
+        "anchor_end": 592,
+        "anchor_quote": "Mary",
+        "anchor_start": 588,
+        "anchor_unit_id": 17,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "PELTOLA, MARY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Vote for Mary Paltola and not Dan Sullivan, because he's not looking out for us, he's only looking out for himself.\nMary Paltola is going to fight for our fists and protect our way of life.\nShe knows what we experienced because she lived it herself.\nAUCHA\nKOTZEBUE, AK\nVOTE FOR MARY PELTOLA\n$300,000\nFROM CORPORATE TRAWLERS\nT$300,000\nMARY PELTOLA\nBAN FACTORY TRAWLERS\nPAID FOR BY MIDNIGHTSUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMTTEE\nMary is\nPAID FOR BY MIDNIGHT SUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nMary is one of us.\nMidnight Sun PAC",
+    "text_hash": "97b316ca781327a62d1715f1e2445dfebb3180e898fc07a1b3dbc89e546fd048",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3df5e7368af2abcae6fe7e44",
+    "alignment": "D",
+    "block_id": "snap-3df5e7368af2abcae6fe7e44-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3df5e7368af2abcae6fe7e44-claims-001-005",
+    "claim_text": "BAN FACTORY TRAWLERS",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 367,
+        "kind": "video_ocr",
+        "start": 347,
+        "text": "BAN FACTORY TRAWLERS",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a3de21c68f61faca039f868e9ec4d236d2de0ebeedbe2182c7ec6a9b3f8c3b58?mediaType=mp4",
+    "sponsor": "Midnight Sun PAC",
+    "targets": [
+      {
+        "anchor_end": 367,
+        "anchor_quote": "FACTORY TRAWLERS",
+        "anchor_start": 351,
+        "anchor_unit_id": 11,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "FACTORY TRAWLERS",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Vote for Mary Paltola and not Dan Sullivan, because he's not looking out for us, he's only looking out for himself.\nMary Paltola is going to fight for our fists and protect our way of life.\nShe knows what we experienced because she lived it herself.\nAUCHA\nKOTZEBUE, AK\nVOTE FOR MARY PELTOLA\n$300,000\nFROM CORPORATE TRAWLERS\nT$300,000\nMARY PELTOLA\nBAN FACTORY TRAWLERS\nPAID FOR BY MIDNIGHTSUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMTTEE\nMary is\nPAID FOR BY MIDNIGHT SUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nMary is one of us.\nMidnight Sun PAC",
+    "text_hash": "97b316ca781327a62d1715f1e2445dfebb3180e898fc07a1b3dbc89e546fd048",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3df5e7368af2abcae6fe7e44",
+    "alignment": "D",
+    "block_id": "snap-3df5e7368af2abcae6fe7e44-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3df5e7368af2abcae6fe7e44-claims-001-006",
+    "claim_text": "Midnight Sun PAC paid for this communication.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 416,
+        "kind": "video_ocr",
+        "start": 368,
+        "text": "PAID FOR BY MIDNIGHTSUN PAC. MIDNIGHTSUNPAC.COM.",
+        "unit_id": 12
+      },
+      {
+        "end": 529,
+        "kind": "video_ocr",
+        "start": 480,
+        "text": "PAID FOR BY MIDNIGHT SUN PAC. MIDNIGHTSUNPAC.COM.",
+        "unit_id": 15
+      }
+    ],
+    "evidence_ids": [
+      12,
+      15
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a3de21c68f61faca039f868e9ec4d236d2de0ebeedbe2182c7ec6a9b3f8c3b58?mediaType=mp4",
+    "sponsor": "Midnight Sun PAC",
+    "targets": [
+      {
+        "anchor_end": 395,
+        "anchor_quote": "MIDNIGHTSUN PAC",
+        "anchor_start": 380,
+        "anchor_unit_id": 12,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Midnight Sun PAC",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Vote for Mary Paltola and not Dan Sullivan, because he's not looking out for us, he's only looking out for himself.\nMary Paltola is going to fight for our fists and protect our way of life.\nShe knows what we experienced because she lived it herself.\nAUCHA\nKOTZEBUE, AK\nVOTE FOR MARY PELTOLA\n$300,000\nFROM CORPORATE TRAWLERS\nT$300,000\nMARY PELTOLA\nBAN FACTORY TRAWLERS\nPAID FOR BY MIDNIGHTSUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMTTEE\nMary is\nPAID FOR BY MIDNIGHT SUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nMary is one of us.\nMidnight Sun PAC",
+    "text_hash": "97b316ca781327a62d1715f1e2445dfebb3180e898fc07a1b3dbc89e546fd048",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3df5e7368af2abcae6fe7e44",
+    "alignment": "D",
+    "block_id": "snap-3df5e7368af2abcae6fe7e44-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3df5e7368af2abcae6fe7e44-claims-001-007",
+    "claim_text": "This communication was not authorized by any candidate or candidates committee.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 471,
+        "kind": "video_ocr",
+        "start": 417,
+        "text": "NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMTTEE",
+        "unit_id": 13
+      },
+      {
+        "end": 587,
+        "kind": "video_ocr",
+        "start": 530,
+        "text": "NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.",
+        "unit_id": 16
+      }
+    ],
+    "evidence_ids": [
+      13,
+      16
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a3de21c68f61faca039f868e9ec4d236d2de0ebeedbe2182c7ec6a9b3f8c3b58?mediaType=mp4",
+    "sponsor": "Midnight Sun PAC",
+    "targets": [
+      {
+        "anchor_end": 471,
+        "anchor_quote": "ANY CANDIDATE OR CANDIDATES COMMTTEE",
+        "anchor_start": 435,
+        "anchor_unit_id": 13,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "any candidate or candidates committee",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Vote for Mary Paltola and not Dan Sullivan, because he's not looking out for us, he's only looking out for himself.\nMary Paltola is going to fight for our fists and protect our way of life.\nShe knows what we experienced because she lived it herself.\nAUCHA\nKOTZEBUE, AK\nVOTE FOR MARY PELTOLA\n$300,000\nFROM CORPORATE TRAWLERS\nT$300,000\nMARY PELTOLA\nBAN FACTORY TRAWLERS\nPAID FOR BY MIDNIGHTSUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMTTEE\nMary is\nPAID FOR BY MIDNIGHT SUN PAC. MIDNIGHTSUNPAC.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nMary is one of us.\nMidnight Sun PAC",
+    "text_hash": "97b316ca781327a62d1715f1e2445dfebb3180e898fc07a1b3dbc89e546fd048",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
