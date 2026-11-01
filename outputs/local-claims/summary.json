@@ -2380,7 +2380,7 @@
       "all_unique_messages": 490,
       "categories_overlap": true,
       "denominator": "normalized_unique_messages",
-      "normalized_unique_messages": 116,
+      "normalized_unique_messages": 117,
       "side_tone": {
         "not_partisan": {
           "negative": {
@@ -2418,7 +2418,7 @@
               "grothman-b574d494ebff6312-0"
             ],
             "count": 31,
-            "share": 0.2672413793103448
+            "share": 0.26495726495726496
           },
           "neutral": {
             "ad_ids": [
@@ -2445,7 +2445,7 @@
               "marshall-f57ec8d2874d6b9c-0"
             ],
             "count": 21,
-            "share": 0.1810344827586207
+            "share": 0.1794871794871795
           },
           "positive": {
             "ad_ids": [
@@ -2473,7 +2473,7 @@
               "rogers-6acd08220f7cad7d1a84f0a5-0"
             ],
             "count": 22,
-            "share": 0.1896551724137931
+            "share": 0.18803418803418803
           },
           "uncertain": {
             "ad_ids": [],
@@ -2488,14 +2488,14 @@
               "cfg-52126-0"
             ],
             "count": 2,
-            "share": 0.017241379310344827
+            "share": 0.017094017094017096
           },
           "neutral": {
             "ad_ids": [
               "cfg-52126-0"
             ],
             "count": 1,
-            "share": 0.008620689655172414
+            "share": 0.008547008547008548
           },
           "positive": {
             "ad_ids": [
@@ -2503,7 +2503,7 @@
               "cfg-52126-0"
             ],
             "count": 2,
-            "share": 0.017241379310344827
+            "share": 0.017094017094017096
           },
           "uncertain": {
             "ad_ids": [],
@@ -2572,7 +2572,7 @@
               "marshall-f57ec8d2874d6b9c-0"
             ],
             "count": 56,
-            "share": 0.4827586206896552
+            "share": 0.47863247863247865
           },
           "neutral": {
             "ad_ids": [
@@ -2594,7 +2594,7 @@
               "marshall-f57ec8d2874d6b9c-0"
             ],
             "count": 16,
-            "share": 0.13793103448275862
+            "share": 0.13675213675213677
           },
           "positive": {
             "ad_ids": [
@@ -2605,14 +2605,14 @@
               "nrsc-17881-0"
             ],
             "count": 5,
-            "share": 0.04310344827586207
+            "share": 0.042735042735042736
           },
           "uncertain": {
             "ad_ids": [
               "google-CR09386677044319879169-7af3a24af0a4"
             ],
             "count": 1,
-            "share": 0.008620689655172414
+            "share": 0.008547008547008548
           }
         },
         "same_side": {
@@ -2621,7 +2621,7 @@
               "cfg-50973-0"
             ],
             "count": 1,
-            "share": 0.008620689655172414
+            "share": 0.008547008547008548
           },
           "neutral": {
             "ad_ids": [
@@ -2673,7 +2673,7 @@
               "flint-2146-0"
             ],
             "count": 46,
-            "share": 0.39655172413793105
+            "share": 0.39316239316239315
           },
           "positive": {
             "ad_ids": [
@@ -2748,14 +2748,14 @@
               "flint-2146-0"
             ],
             "count": 69,
-            "share": 0.5948275862068966
+            "share": 0.5897435897435898
           },
           "uncertain": {
             "ad_ids": [
               "barr-1942-0"
             ],
             "count": 1,
-            "share": 0.008620689655172414
+            "share": 0.008547008547008548
           }
         },
         "unknown": {
@@ -2790,6 +2790,7 @@
               "bresnahan-native-122240759240111841",
               "rogers-6aa7f33fea4d3119417eb632-0",
               "hinson-768-0",
+              "salazar-1273-0",
               "lawler-1379-0",
               "rogers-6abfceafba230905e3202068-0",
               "lawler-1429-0",
@@ -2799,8 +2800,8 @@
               "grothman-b574d494ebff6312-0",
               "flint-2146-0"
             ],
-            "count": 37,
-            "share": 0.31896551724137934
+            "count": 38,
+            "share": 0.3247863247863248
           },
           "neutral": {
             "ad_ids": [
@@ -2827,6 +2828,7 @@
               "barr-1942-0",
               "hinson-768-0",
               "flint-2046-0",
+              "salazar-1273-0",
               "conroy-1243-0",
               "flint-2059-0",
               "lawler-1379-0",
@@ -2838,8 +2840,8 @@
               "grothman-b574d494ebff6312-0",
               "flint-2146-0"
             ],
-            "count": 33,
-            "share": 0.28448275862068967
+            "count": 34,
+            "share": 0.2905982905982906
           },
           "positive": {
             "ad_ids": [
@@ -2886,7 +2888,7 @@
               "grothman-b574d494ebff6312-0"
             ],
             "count": 41,
-            "share": 0.35344827586206895
+            "share": 0.3504273504273504
           },
           "uncertain": {
             "ad_ids": [],
@@ -2903,17 +2905,17 @@
   },
   "ads": 1792,
   "ads_by_status": {
-    "normalized": 244,
-    "not_run": 1262,
-    "validation_failed": 286
+    "normalized": 245,
+    "not_run": 1254,
+    "validation_failed": 293
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 249,
-    "not_run": 1472,
-    "validation_failed": 295
+    "normalized": 250,
+    "not_run": 1464,
+    "validation_failed": 302
   },
-  "claims": 1815,
+  "claims": 1817,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -10472,6 +10474,14 @@
         {
           "claim_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001-005",
           "target_index": 0
+        },
+        {
+          "claim_id": "salazar-1273-0-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "salazar-1273-0-claims-001-002",
+          "target_index": 0
         }
       ],
       "neutral": [
@@ -11338,6 +11348,10 @@
         {
           "claim_id": "rogers-6acd08220f7cad7d1a84f0a5-0-claims-001-003",
           "target_index": 0
+        },
+        {
+          "claim_id": "salazar-1273-0-claims-001-002",
+          "target_index": 1
         }
       ],
       "positive": [
@@ -11957,6 +11971,6 @@
       "uncertain": []
     }
   },
-  "targets": 2247,
+  "targets": 2250,
   "version": "local-ad-claims-4"
 }

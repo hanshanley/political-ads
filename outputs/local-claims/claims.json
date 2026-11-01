@@ -89602,5 +89602,111 @@
     "text_hash": "cf3a5b84cda52b412673c765b5876823afab3e5916d93b5be0f824b573ab4416",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "salazar-1273-0",
+    "alignment": "R",
+    "block_id": "salazar-1273-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "salazar-1273-0-claims-001-001",
+    "claim_text": "some of your immigration enforcement efforts have gone too far",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 78,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Mr. President, some of your immigration enforcement efforts have gone too far,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://mariaelvirasalazar.com/immigration_ad_2026/",
+    "sponsor": "Salazar for Congress",
+    "targets": [
+      {
+        "anchor_end": 59,
+        "anchor_quote": "your immigration enforcement efforts",
+        "anchor_start": 23,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "President Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mr. President, some of your immigration enforcement efforts have gone too far,\nThe same Hispanics who helped you get to the White House in 2024 feel betrayed today.",
+    "text_hash": "f2daa6017285322b35633a00db77b9daa00949db7fb83047e674c42c140c7875",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "salazar-1273-0",
+    "alignment": "R",
+    "block_id": "salazar-1273-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "salazar-1273-0-claims-001-002",
+    "claim_text": "The same Hispanics who helped you get to the White House in 2024 feel betrayed today.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 164,
+        "kind": "publisher_ad_copy",
+        "start": 79,
+        "text": "The same Hispanics who helped you get to the White House in 2024 feel betrayed today.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://mariaelvirasalazar.com/immigration_ad_2026/",
+    "sponsor": "Salazar for Congress",
+    "targets": [
+      {
+        "anchor_end": 97,
+        "anchor_quote": "The same Hispanics",
+        "anchor_start": 79,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Hispanics",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 112,
+        "anchor_quote": "you",
+        "anchor_start": 109,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "President Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Mr. President, some of your immigration enforcement efforts have gone too far,\nThe same Hispanics who helped you get to the White House in 2024 feel betrayed today.",
+    "text_hash": "f2daa6017285322b35633a00db77b9daa00949db7fb83047e674c42c140c7875",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
