@@ -29718,6 +29718,86 @@
       "title": "Max Miller ad misrepresents Poindexter’s positions on taxes, health care"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "The actual report explicitly introduces an ad from the Perry campaign, labels its healthcare and tax audio quotations Ad:, and then expressly introduces a separate Stelson digital ad before the third labelled quotation. Capture only the first two of exactly three reviewed list items, not the Democratic quotation, on-screen text or reporter/interview speech. Frozen H2PA04135/PERRY,SCOTT/REP/H/PA10/2026/C00510164; no alias. Unique desktop h1 and visible Updated September16 date agree with a unique article:published_time and NewsArticle datePublished2026-09-16T22:24:00Z; exact NewsArticle headline and URL match. Full HTML, ordered three-block and selected-text hashes pinned. The first two quotations total16 words and are individually absent from all1951 baseline records. They concern a candidate-campaign healthcare/tax creative, not the older NRCC Tax Day positive spot, CLF hospital attack or separate October candidate/PAC allegations. The4:34 publisher report video is not a campaign original: do not request it, transcribe reporter speech or assign its URL as ad media. Advertiser is publisher-reported; C00510164 verifies candidate identity, not this creative's legal payer. Report date is not verified first airing; original media, full script, duration, delivery, claims and phase remain unverified. Semantic strategy unreviewed; unchanged15word floor/25word ceiling; media URLs empty.",
+      "candidate_mentions": [],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "perry-wgal-73761953-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "06afe48ae5a95508cf2a932b445ec36dbab9a1d3b492df996ec2396ba7f3b265",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-09-16",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified"
+      ],
+      "race": "PA-10",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H2PA04135"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The actual report explicitly introduces an ad from the Perry campaign, labels its healthcare and tax audio quotations Ad:, and then expressly introduces a separate Stelson digital ad before the third labelled quotation. Capture only the first two of exactly three reviewed list items, not the Democratic quotation, on-screen text or reporter/interview speech. Frozen H2PA04135/PERRY,SCOTT/REP/H/PA10/2026/C00510164; no alias. Unique desktop h1 and visible Updated September16 date agree with a unique article:published_time and NewsArticle datePublished2026-09-16T22:24:00Z; exact NewsArticle headline and URL match. Full HTML, ordered three-block and selected-text hashes pinned. The first two quotations total16 words and are individually absent from all1951 baseline records. They concern a candidate-campaign healthcare/tax creative, not the older NRCC Tax Day positive spot, CLF hospital attack or separate October candidate/PAC allegations. The4:34 publisher report video is not a campaign original: do not request it, transcribe reporter speech or assign its URL as ad media. Advertiser is publisher-reported; C00510164 verifies candidate identity, not this creative's legal payer. Report date is not verified first airing; original media, full script, duration, delivery, claims and phase remain unverified. Semantic strategy unreviewed; unchanged15word floor/25word ceiling; media URLs empty.",
+            "candidate_id": "H2PA04135",
+            "completeness": "partial_quotation",
+            "content_sha256": "0c28fcf8328b7a8fb88df9f21a3a594a50e11dcc7f40fd471a92ae2a97466d18",
+            "format": "html",
+            "heading_selector": "#desktop-headline-title",
+            "media_url": null,
+            "passages": [
+              "Stelson supports a government takeover of health care.\nAnd opposes tax cuts on tips and overtime."
+            ],
+            "phase": "unknown",
+            "publication_date_format": "Updated: %I:%M %p EDT %b %d, %Y",
+            "publication_selector": "div.css-1cm6ir6 > div.css-1wendxn > span",
+            "published": "2026-09-16",
+            "publisher_credit": "WGAL; Matt Barcaro; September 16, 2026 original ad-watch report. Review uses the retained canonical response, SHA-256 0c28fcf8328b7a8fb88df9f21a3a594a50e11dcc7f40fd471a92ae2a97466d18; fresh discovery response ed8b11961784031c5c6e4f1780cc4d97bbcacab753725c2e795af96a75fe1cc2 independently agrees on headline, visible and machine publication dates, attribution context and all three labelled ad quotations. Neither cached response was overwritten.",
+            "record_id": "73761953",
+            "release_title": "WGAL Ad Watch | Perry ad makes claims about Stelson's stance on healthcare, taxes",
+            "reported_ad_text": {
+              "paragraph_selector": "li:-soup-contains(\"Ad:\")",
+              "paragraph_sha256": "9a8dac75b4356f4d5f8f4eb741193a22ef7bf7ea73fe906c0265ec583569efb5"
+            },
+            "required_context": [
+              "Congressman Scott Perry and Janelle Stelson",
+              "Now, he’s looking into one from the Perry campaign.",
+              "The first claim is about health care and Stelson’s position on it.",
+              "This month, Stelson released a digital campaign ad supporting the tax cuts."
+            ],
+            "retrieval_url": "https://www.wgal.com/article/pa-midterms-perry-stelson-ad-taxes-health-care/73761953",
+            "reuse_basis": "Only16 unchanged words in two non-contiguous Republican campaign audio quotations, in source order separated by one newline. Partial quotations, not a full script. Exclude separate Democratic ad quotation, on-screen wording, interviews, campaign responses, reporter verdicts and repeated excerpts. Full publisher HTML and report video remain undistributed; no blanket reuse license or publication approval.",
+            "source": "perry-wgal",
+            "source_url": "https://www.wgal.com/article/pa-midterms-perry-stelson-ad-taxes-health-care/73761953"
+          },
+          "text": "Stelson supports a government takeover of health care.\nAnd opposes tax cuts on tips and overtime."
+        }
+      ],
+      "source": "perry-wgal",
+      "source_hash": "0c28fcf8328b7a8fb88df9f21a3a594a50e11dcc7f40fd471a92ae2a97466d18",
+      "source_record_id": "73761953",
+      "source_url": "https://www.wgal.com/article/pa-midterms-perry-stelson-ad-taxes-health-care/73761953",
+      "sponsor": "Scott Perry campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "PA",
+      "text": "Stelson supports a government takeover of health care.\nAnd opposes tax cuts on tips and overtime.",
+      "title": "WGAL Ad Watch | Perry ad makes claims about Stelson's stance on healthcare, taxes"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official Sarah Trone Garriott for Congress release at https://sarahforiowa.com/zach-nunn-weak-on-china/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
@@ -53278,6 +53358,22 @@
       "source": "perry-capitalstar",
       "state": "partial",
       "url": "https://penncapital-star.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "perry-wgal",
+      "state": "partial",
+      "url": "https://www.wgal.com"
     },
     {
       "ads_with_text": 1,

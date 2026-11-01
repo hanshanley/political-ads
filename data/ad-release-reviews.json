@@ -2902,6 +2902,39 @@
       "publisher_credit": "Townhall; Amy Curtis; October 20, 2026 original Michael Alfonso digital-ad report.",
       "reuse_basis": "Retain only two explicitly in-ad Fonda climate quotations, 16 unchanged words in original order separated by a newline. These are non-contiguous partial quotations of reused footage, not an uninterrupted sentence, Alfonso's own speech or the complete creative. Exclude the paragraph's other quotations, reporter characterizations, NEA bookends and separate after-ad candidate press statement. The bookends alone total12 words and remain below the unchanged15word floor. Full cached publisher HTML and original media remain undistributed; no blanket reuse license or edition-publication authorization is asserted.",
       "attribution_basis": "The report explicitly introduces a new digital ad released by Michael Alfonso, Fred Clark's Republican opponent, and attributes the selected Fonda quotations to footage featured in that ad. Republican alignment describes the publisher-reported campaign advertiser and House beneficiary, not the speaker's party or Alfonso's endorsement of the selected words. Exact frozen2026 federal identity H6WI07223 / ALFONSO, MICHAEL / REP / H / WI07 / C00924902; no alias added. Unique h1, visible time October20,2026 8:00 AM, datetime2026-10-20T08:00:08-04:00 and unique article:published_time2026-10-20T08:00:08 bind publication. Full HTML, paragraph and selected-text hashes bind literal text. Require one article iframe linked to exact original SgHSXNOOAoE; original was not requested because the provider remains paused. It differs from all four older Alfonso originals: Vr2MMUNRg00, Ccysp5KCnoY, o0UPh5CL_n0 and xsoG4kWSiNM. The selected text and original ID are absent from the full pre-edit1950-record combined corpus; novelty also uses the distinct Clark/Fonda/NEA creative context, not a missing exact substring alone. Only the two climate-quotation regex captures are selected; the15word floor and25word ceiling remain. Advertiser is publisher-reported; legal payer, original media speech, first airing, duration, delivery, full script and claims remain unverified. Report date is not first-airing date. Phase unknown; semantic strategy unreviewed; media URLs empty, with discovered original separately retained."
+    },
+    {
+      "source": "perry-wgal",
+      "record_id": "73761953",
+      "source_url": "https://www.wgal.com/article/pa-midterms-perry-stelson-ad-taxes-health-care/73761953",
+      "retrieval_url": "https://www.wgal.com/article/pa-midterms-perry-stelson-ad-taxes-health-care/73761953",
+      "format": "html",
+      "content_sha256": "0c28fcf8328b7a8fb88df9f21a3a594a50e11dcc7f40fd471a92ae2a97466d18",
+      "published": "2026-09-16",
+      "release_title": "WGAL Ad Watch | Perry ad makes claims about Stelson's stance on healthcare, taxes",
+      "heading_selector": "#desktop-headline-title",
+      "publication_selector": "div.css-1cm6ir6 > div.css-1wendxn > span",
+      "publication_date_format": "Updated: %I:%M %p EDT %b %d, %Y",
+      "candidate_id": "H2PA04135",
+      "media_url": null,
+      "phase": "unknown",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Congressman Scott Perry and Janelle Stelson",
+        "Now, he\u2019s looking into one from the Perry campaign.",
+        "The first claim is about health care and Stelson\u2019s position on it.",
+        "This month, Stelson released a digital campaign ad supporting the tax cuts."
+      ],
+      "passages": [
+        "Stelson supports a government takeover of health care.\nAnd opposes tax cuts on tips and overtime."
+      ],
+      "reported_ad_text": {
+        "paragraph_selector": "li:-soup-contains(\"Ad:\")",
+        "paragraph_sha256": "9a8dac75b4356f4d5f8f4eb741193a22ef7bf7ea73fe906c0265ec583569efb5"
+      },
+      "publisher_credit": "WGAL; Matt Barcaro; September 16, 2026 original ad-watch report. Review uses the retained canonical response, SHA-256 0c28fcf8328b7a8fb88df9f21a3a594a50e11dcc7f40fd471a92ae2a97466d18; fresh discovery response ed8b11961784031c5c6e4f1780cc4d97bbcacab753725c2e795af96a75fe1cc2 independently agrees on headline, visible and machine publication dates, attribution context and all three labelled ad quotations. Neither cached response was overwritten.",
+      "reuse_basis": "Only16 unchanged words in two non-contiguous Republican campaign audio quotations, in source order separated by one newline. Partial quotations, not a full script. Exclude separate Democratic ad quotation, on-screen wording, interviews, campaign responses, reporter verdicts and repeated excerpts. Full publisher HTML and report video remain undistributed; no blanket reuse license or publication approval.",
+      "attribution_basis": "The actual report explicitly introduces an ad from the Perry campaign, labels its healthcare and tax audio quotations Ad:, and then expressly introduces a separate Stelson digital ad before the third labelled quotation. Capture only the first two of exactly three reviewed list items, not the Democratic quotation, on-screen text or reporter/interview speech. Frozen H2PA04135/PERRY,SCOTT/REP/H/PA10/2026/C00510164; no alias. Unique desktop h1 and visible Updated September16 date agree with a unique article:published_time and NewsArticle datePublished2026-09-16T22:24:00Z; exact NewsArticle headline and URL match. Full HTML, ordered three-block and selected-text hashes pinned. The first two quotations total16 words and are individually absent from all1951 baseline records. They concern a candidate-campaign healthcare/tax creative, not the older NRCC Tax Day positive spot, CLF hospital attack or separate October candidate/PAC allegations. The4:34 publisher report video is not a campaign original: do not request it, transcribe reporter speech or assign its URL as ad media. Advertiser is publisher-reported; C00510164 verifies candidate identity, not this creative's legal payer. Report date is not verified first airing; original media, full script, duration, delivery, claims and phase remain unverified. Semantic strategy unreviewed; unchanged15word floor/25word ceiling; media URLs empty."
     }
   ]
 }

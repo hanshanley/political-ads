@@ -2519,6 +2519,228 @@ def test_alfonso_clark_report_rejects_unbound_or_neighboring_words(failure):
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_perry_wgal_fixture():
+    from bs4 import BeautifulSoup
+
+    source, candidate, review, _, _, _ = unlinked_kiggans_fixture()
+    source = replace(
+        source,
+        id="perry-wgal",
+        url="https://www.wgal.com",
+        sponsor="Scott Perry campaign (publisher-reported; payer unverified)",
+        sponsor_type="candidate",
+        fixed_race="PA-10",
+    )
+    candidate.update(
+        candidate_id="H2PA04135",
+        name="PERRY, SCOTT",
+        state="PA",
+        district="10",
+        principal_committee="C00510164",
+    )
+    candidate.pop("reviewed_alias", None)
+    first = "These eight selected words are Republican ad speech."
+    second = "These other eight words are separate Republican speech."
+    excluded = (
+        "These twenty separate words belong to a different Democratic advertisement "
+        "and must never be counted within this Republican campaign record."
+    )
+    title = "WGAL Ad Watch | Perry campaign healthcare and tax claims"
+    url = source.url + "/article/pa-midterms-perry-stelson-ad-taxes-health-care/73761953"
+    published = "2026-09-16T22:24:00Z"
+    article = {
+        "@type": "NewsArticle",
+        "headline": title,
+        "url": url,
+        "datePublished": published,
+    }
+    blocks = (
+        f'<li><strong>Ad:</strong> "{first}"</li>'
+        f"<li><strong>Ad:</strong> \u201c{second}\u201d</li>"
+        f"<li><strong>Ad:</strong> \u201c{excluded}\u201d</li>"
+    )
+    content = (
+        f'<meta property="article:published_time" content="{published}">'
+        f'<script type="application/ld+json">{json.dumps(article)}</script>'
+        f'<h1 id="desktop-headline-title">{title}</h1>'
+        f'<h1 id="mobile-headline-title">{title}</h1>'
+        '<div class="css-1cm6ir6"><div class="css-1wendxn">'
+        "<span>Updated: 6:24 PM EDT Sep 16, 2026</span></div></div>"
+        "<p>Congressman Scott Perry and Janelle Stelson. "
+        "Now, he\u2019s looking into one from the Perry campaign.</p>"
+        "<p>The first claim is about health care and Stelson\u2019s position on it.</p>"
+        f"<ul>{blocks}</ul><p>This month, Stelson released a digital campaign ad "
+        "supporting the tax cuts.</p>"
+        "<p>Separate reporter verdict and interview speech must remain excluded.</p>"
+    )
+    selected = first + "\n" + second
+    review.update(
+        source=source.id,
+        record_id="73761953",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-09-16",
+        release_title=title,
+        heading_selector="#desktop-headline-title",
+        publication_selector="div.css-1cm6ir6 > div.css-1wendxn > span",
+        publication_date_format="Updated: %I:%M %p EDT %b %d, %Y",
+        candidate_id=candidate["candidate_id"],
+        required_context=[
+            "Congressman Scott Perry and Janelle Stelson",
+            "Now, he\u2019s looking into one from the Perry campaign.",
+            "The first claim is about health care and Stelson\u2019s position on it.",
+            "This month, Stelson released a digital campaign ad supporting the tax cuts.",
+        ],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": 'li:-soup-contains("Ad:")',
+            "paragraph_sha256": digest(
+                "\n".join(
+                    node.get_text(" ", strip=True)
+                    for node in BeautifulSoup(content, "html.parser").select(
+                        'li:-soup-contains("Ad:")'
+                    )
+                )
+            ),
+        },
+    )
+    return source, candidate, review, content.encode(), excluded
+
+
+def test_perry_wgal_acquires_only_the_two_republican_audio_quotations():
+    source, candidate, review, body, excluded = unlinked_perry_wgal_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == review["passages"][0] and len(ad["text"].split()) == 16
+    assert excluded not in ad["text"]
+    assert ad["alignment"] == "R" and ad["race"] == "PA-10"
+    assert ad["sponsor_type"] == "candidate" and ad["media_urls"] == []
+    assert ad["published"] == "2026-09-16" and ad["phase"] == "unknown"
+    assert ad["segments"][0]["federal_scope_candidate_ids"] == ["H2PA04135"]
+    assert ad["date_basis"] == "publisher_report_date"
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(ad["quality_flags"])
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "failure",
+    [
+        "candidate",
+        "interview_context",
+        "first_label",
+        "second_label",
+        "wrong_element",
+        "missing",
+        "duplicate",
+        "reordered",
+        "democratic_quote",
+        "reporter_words",
+        "too_long",
+        "too_short",
+        "metadata_date",
+        "metadata_duplicate",
+        "article_date",
+        "article_url",
+        "article_headline",
+        "article_duplicate",
+        "visible_date",
+        "block_hash",
+    ],
+)
+def test_perry_wgal_rejects_unbound_or_neighboring_speech(failure):
+    from bs4 import BeautifulSoup
+
+    source, candidate, review, body, excluded = unlinked_perry_wgal_fixture()
+    soup = BeautifulSoup(body, "html.parser")
+    items = soup.select('li:-soup-contains("Ad:")')
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H2PA00999"
+    elif failure == "interview_context":
+        paragraph = soup.find("p")
+        paragraph.string = paragraph.get_text().replace("Perry campaign", "Perry interview")
+    elif failure in {"first_label", "second_label"}:
+        items[0 if failure == "first_label" else 1].strong.string = "On-screen text:"
+    elif failure == "wrong_element":
+        items[0].name = "p"
+    elif failure == "missing":
+        items[1].decompose()
+    elif failure == "duplicate":
+        soup.ul.append(BeautifulSoup(str(items[0]), "html.parser").li)
+    elif failure == "reordered":
+        soup.ul.insert(0, items[2].extract())
+    elif failure in {"democratic_quote", "reporter_words"}:
+        review["passages"].append(
+            excluded if failure == "democratic_quote" else "Separate reporter verdict"
+        )
+    elif failure in {"too_long", "too_short"}:
+        first, second = review["passages"][0].split("\n")
+        selected = (
+            (
+                "These eleven additional selected words push the combined "
+                "quotations beyond twenty-five. "
+            )
+            + first
+            + "\n"
+            + second
+            if failure == "too_long"
+            else "short words\nother words"
+        )
+        new_first, new_second = selected.split("\n")
+        items[0].contents[-1].replace_with(f' "{new_first}"')
+        items[1].contents[-1].replace_with(f" \u201c{new_second}\u201d")
+        review["passages"] = [selected]
+    elif failure in {"metadata_date", "metadata_duplicate"}:
+        meta = soup.select_one('meta[property="article:published_time"]')
+        if failure == "metadata_date":
+            meta["content"] = "2026-09-17T22:24:00Z"
+        else:
+            soup.append(BeautifulSoup(str(meta), "html.parser").meta)
+    elif failure.startswith("article_"):
+        node = soup.find("script", type="application/ld+json")
+        article = json.loads(node.get_text())
+        if failure == "article_date":
+            article["datePublished"] = "2026-09-17T22:24:00Z"
+        elif failure == "article_url":
+            article["url"] = "https://www.wgal.com/article/other/123"
+        elif failure == "article_headline":
+            article["headline"] = "Different ad story"
+        else:
+            soup.append(BeautifulSoup(str(node), "html.parser").script)
+        node.string = json.dumps(article)
+    elif failure == "visible_date":
+        soup.select_one(review["publication_selector"]).string = "Updated: 6:24 PM EDT Sep 17, 2026"
+    content = str(soup)
+    review["content_sha256"] = digest(content)
+    review["reported_ad_text"]["paragraph_sha256"] = digest(
+        "\n".join(
+            node.get_text(" ", strip=True)
+            for node in soup.select(review["reported_ad_text"]["paragraph_selector"])
+        )
+    )
+    if failure == "block_hash":
+        review["reported_ad_text"]["paragraph_sha256"] = "0" * 64
+
+    class Client:
+        def get(self, url, **kwargs):
+            return content.encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 def unlinked_lawler_fixture():
     source, candidate, review, _, _, _ = unlinked_kiggans_fixture()
     source = next(s for s in SOURCES if s.id == "lawler-tell-her-no")

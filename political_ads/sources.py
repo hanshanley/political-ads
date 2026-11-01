@@ -573,6 +573,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "perry-wgal",
+        "https://www.wgal.com",
+        "Scott Perry campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="PA-10",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "perry-capitalstar",
         "https://penncapital-star.com",
         "Patriots for Perry (publisher-reported; payer unverified)",

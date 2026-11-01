@@ -10,6 +10,93 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Perry: September 16 healthcare and tax ad quotations
+
+The actual September 16, 2026 WGAL Ad Watch report
+`https://www.wgal.com/article/pa-midterms-perry-stelson-ad-taxes-health-care/73761953`
+explicitly introduces an ad from the Perry campaign. Retain **16 unchanged
+words from its first two `Ad:`-labelled list items**, in source order with
+one newline. These are non-contiguous audio quotations, not a full script.
+The third labelled item belongs to a separately introduced **Democratic
+Stelson digital ad** and is excluded. Also exclude on-screen text, interviews,
+campaign responses, repeated excerpts and the reporter's accuracy judgments.
+The publisher's 4:34 report video is **not a campaign original**; it was not
+requested, transcribed or assigned as ad media.
+
+Exact frozen beneficiary is **H2PA04135 / PERRY, SCOTT / REP / House /
+PA-10 / 2026 / C00510164**; no alias was added. Advertiser is
+publisher-reported. The principal committee verifies candidate identity,
+not this creative's legal payer. Require unique `#desktop-headline-title`
+matching the report title and visible
+**Updated: 6:24 PM EDT Sep 16, 2026**, selected with
+`div.css-1cm6ir6 > div.css-1wendxn > span`.
+Unique `article:published_time` and top-level `NewsArticle.datePublished`
+agree at **2026-09-16T22:24:00Z**; the article URL and headline must also
+match. Report publication is not verified first airing or paid delivery.
+
+Retained canonical HTML SHA-256 is
+`0c28fcf8328b7a8fb88df9f21a3a594a50e11dcc7f40fd471a92ae2a97466d18`.
+Fresh discovery HTML SHA-256 is
+`ed8b11961784031c5c6e4f1780cc4d97bbcacab753725c2e795af96a75fe1cc2`.
+The two full-page responses differ, but independently agree on the exact
+headline, visible and machine dates, attribution context and all three
+labelled quotations. **Neither response was overwritten.** The acquisition
+review pins the actual retained canonical hash; the original fresh-response
+draft and separate comparison receipt remain as operational provenance.
+The initial seed correctly refused an existing cache. Its shell then
+incorrectly continued to collection, which rejected the mismatched hash and
+admitted no record. The repaired sequence stops on failed preflight and
+asserts actual admission before rebuilding.
+
+Require exactly three `li:-soup-contains("Ad:")` matches.
+Their ordered newline-joined SHA-256 is
+`9a8dac75b4356f4d5f8f4eb741193a22ef7bf7ea73fe906c0265ec583569efb5`;
+selected-text SHA-256 is
+`26abbfe914795393be7122158f5dcb86606c955fc34f9abbdf14a3cef540a25f`.
+The source-local grammar fullmatches all three blocks and captures only the
+first two. Other reviewed-report sources retain their one-paragraph rule.
+The **15-word floor / 25-word ceiling** are unchanged. Both quotations were
+absent from all **1,951 pre-edit combined records**. Context differs from
+the existing NRCC Tax Day promotion, CLF hospital attack and October
+candidate/PAC allegations; an absent exact substring alone is not creative
+certification. The separate WITF October report duplicates
+`perry-capitalstar-70025-0` and is not another acquisition.
+
+Reproduce with
+`.venv/bin/political-ads collect --source perry-wgal --until 2026-10-30 --offline`,
+then explicit `parquet`, `build`, `validate` and `audit-strategy`.
+Assert **`perry-wgal-73761953-0`**, exact text/date, empty media URLs
+and source state **partial / one ad with text**; shell exit status alone
+does not establish acquisition. Twenty-one regressions cover
+candidate/context, list labels/tags/count/order, Democratic and reporter
+speech, quotation length, dates, metadata and evidence hashes.
+The positive acquisition case failed before support was added.
+All **367 reviewed-release tests / 796 full Python tests**, both Ruff
+checks, frontend lint/typecheck/build, **17 unit / 9 browser tests** passed.
+Complete JSON/gzip/CSV copies, typed Parquet text/segments and eleven
+visually inspected chart sets in three copies reconcile. Isolated replay
+reproduces all 591 written records and source states with network,
+recognition and subprocess access forbidden. All **1,951 prior acquired /
+1,912 prior analyzed objects**, old release/native reviews and aliases,
+18 protected file hashes and 14 prior canonical-response hashes remain
+unchanged, as do both WGAL response versions. The independent strategy
+audit passes **20 metric groups / 10 chart rows**.
+
+Snapshot
+`8247b17714494af8953e33243c968c47675b5d9e5a7205752e6e3e34100a5540`
+contains **1,952 acquired / 1,913 English**, including **R648 / D1,226**
+English and **R270 / D698** English House records. House outside
+Snapchat is **R269 / D222**. Written records total **591**, with
+**97 release reviews / 43 native reviews / 38 unchanged aliases**.
+Original campaign media, full script, legal payer, first airing, duration,
+delivery, claim truth and phase remain unverified. New semantic strategy
+remains **unreviewed**, not automatically labelled as an attack.
+Discovery verifies **188 receipts / 178 exact bodies / 10 unchanged
+no-body receipts / 17 separately reviewed admissions**.
+Republican House coverage remains incomplete. Saved cutoff is October 30;
+final scope November 4 inclusive. Website, host and edition publications
+remain held.
+
 ## Alfonso: October 20 digital ad and reused Fonda footage
 
 The actual October 20, 2026 Townhall report

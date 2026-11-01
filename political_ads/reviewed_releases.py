@@ -453,6 +453,7 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             "alamo-toth-cruz-mediaite",
             "alfonso-family-townhall",
             "alfonso-clark-townhall",
+            "perry-wgal",
             "lawler-tell-her-no",
             "pps-house-washingtonreporter",
         }
@@ -552,13 +553,38 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             or frames[0]["src"] != original
         ):
             raise ValueError("Alfonso report requires its unique reviewed original-player link")
+    if source.id == "perry-wgal":
+        if review["candidate_id"] != "H2PA04135":
+            raise ValueError("WGAL quotation requires the reviewed Perry House candidate")
+        soup = BeautifulSoup(content, "html.parser")
+        publications = soup.select('meta[property="article:published_time"]')
+        articles = [
+            article
+            for node in soup.select('script[type="application/ld+json"]')
+            for article in [json.loads(node.get_text())]
+            if isinstance(article, dict) and article.get("@type") == "NewsArticle"
+        ]
+        if (
+            len(publications) != 1
+            or publications[0].get("content", "")[:10] != review["published"]
+            or len(articles) != 1
+            or articles[0].get("datePublished") != publications[0].get("content")
+            or articles[0].get("headline") != review["release_title"]
+            or articles[0].get("url") != review["source_url"]
+        ):
+            raise ValueError("WGAL visible and unique article publication evidence must agree")
     if source.id == "pps-house-washingtonreporter" and review["candidate_id"] != "H2FL04211":
         raise ValueError("Reporter quotation requires the reviewed Bean speaker identity")
     evidence = review["reported_ad_text"]
     paragraphs = BeautifulSoup(content, "html.parser").select(evidence["paragraph_selector"])
-    if len(paragraphs) != 1 or paragraphs[0].name != "p":
-        raise ValueError("Reviewed ad quotation must match exactly one paragraph")
-    paragraph = paragraphs[0].get_text(" ", strip=True)
+    if source.id == "perry-wgal":
+        if len(paragraphs) != 3 or any(node.name != "li" for node in paragraphs):
+            raise ValueError("WGAL report requires exactly three reviewed ad-labelled list items")
+        paragraph = "\n".join(node.get_text(" ", strip=True) for node in paragraphs)
+    else:
+        if len(paragraphs) != 1 or paragraphs[0].name != "p":
+            raise ValueError("Reviewed ad quotation must match exactly one paragraph")
+        paragraph = paragraphs[0].get_text(" ", strip=True)
     if digest(paragraph) != evidence["paragraph_sha256"]:
         raise ValueError("Reviewed ad quotation paragraph changed")
     pattern = (
@@ -613,6 +639,8 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             r"She also called for an end to all new fossil fuel development "
             r'and wants to cut emissions in half "[^"]+"'
         )
+    elif source.id == "perry-wgal":
+        pattern = r'Ad: "([^"]+)"\nAd: “([^”]+)”\nAd: “[^”]+”'
     match = re.fullmatch(pattern, paragraph)
     if not match:
         raise ValueError("Publisher must explicitly attribute the selected quotations to the ad")
