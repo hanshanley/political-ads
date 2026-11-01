@@ -123002,5 +123002,895 @@
     "text_hash": "9628309ba282632c4c7f476e0280d7595bf2cdef79b4a2520c0fa4c194db6ea4",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-56185ce30b213c437dbf0489",
+    "alignment": "D",
+    "block_id": "snap-56185ce30b213c437dbf0489-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-56185ce30b213c437dbf0489-claims-001-001",
+    "claim_text": "Jon Ossoff is applying for the U.S. Senate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 104,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PAID FOR BY JON OSSOFF FOR SENATE\nGET PAID TO\nTALK TO YOUR\nFRIENDS???\nOssoff\nAPPLY NOW\nSSOF!\nU.S. SENATE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8552e6b74636777b5448ff3df4c29c56a3f952eee3600cc09d771bafa15ae779?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 76,
+        "anchor_quote": "Ossoff",
+        "anchor_start": 70,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "PAID FOR BY JON OSSOFF FOR SENATE\nGET PAID TO\nTALK TO YOUR\nFRIENDS???\nOssoff\nAPPLY NOW\nSSOF!\nU.S. SENATE",
+    "text_hash": "df97fb80dbf69fe6ed1a80f677803842e90e31d348754c8afb6c6fa5491b29e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-56185ce30b213c437dbf0489",
+    "alignment": "D",
+    "block_id": "snap-56185ce30b213c437dbf0489-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-56185ce30b213c437dbf0489-claims-001-002",
+    "claim_text": "It is possible to get paid to talk to your friends.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 104,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PAID FOR BY JON OSSOFF FOR SENATE\nGET PAID TO\nTALK TO YOUR\nFRIENDS???\nOssoff\nAPPLY NOW\nSSOF!\nU.S. SENATE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8552e6b74636777b5448ff3df4c29c56a3f952eee3600cc09d771bafa15ae779?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 69,
+        "anchor_quote": "GET PAID TO\nTALK TO YOUR\nFRIENDS???",
+        "anchor_start": 34,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "PAID FOR BY JON OSSOFF FOR SENATE\nGET PAID TO\nTALK TO YOUR\nFRIENDS???\nOssoff\nAPPLY NOW\nSSOF!\nU.S. SENATE",
+    "text_hash": "df97fb80dbf69fe6ed1a80f677803842e90e31d348754c8afb6c6fa5491b29e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-56185ce30b213c437dbf0489",
+    "alignment": "D",
+    "block_id": "snap-56185ce30b213c437dbf0489-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-56185ce30b213c437dbf0489-claims-001-003",
+    "claim_text": "This advertisement is paid for by Jon Ossoff for Senate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 104,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PAID FOR BY JON OSSOFF FOR SENATE\nGET PAID TO\nTALK TO YOUR\nFRIENDS???\nOssoff\nAPPLY NOW\nSSOF!\nU.S. SENATE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8552e6b74636777b5448ff3df4c29c56a3f952eee3600cc09d771bafa15ae779?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 33,
+        "anchor_quote": "PAID FOR BY JON OSSOFF FOR SENATE",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Jon Ossoff for Senate",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "PAID FOR BY JON OSSOFF FOR SENATE\nGET PAID TO\nTALK TO YOUR\nFRIENDS???\nOssoff\nAPPLY NOW\nSSOF!\nU.S. SENATE",
+    "text_hash": "df97fb80dbf69fe6ed1a80f677803842e90e31d348754c8afb6c6fa5491b29e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-56185ce30b213c437dbf0489",
+    "alignment": "D",
+    "block_id": "snap-56185ce30b213c437dbf0489-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-56185ce30b213c437dbf0489-claims-001-004",
+    "claim_text": "Jon Ossoff is applying to the U.S. Senate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 104,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PAID FOR BY JON OSSOFF FOR SENATE\nGET PAID TO\nTALK TO YOUR\nFRIENDS???\nOssoff\nAPPLY NOW\nSSOF!\nU.S. SENATE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8552e6b74636777b5448ff3df4c29c56a3f952eee3600cc09d771bafa15ae779?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 76,
+        "anchor_quote": "Ossoff",
+        "anchor_start": 70,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "PAID FOR BY JON OSSOFF FOR SENATE\nGET PAID TO\nTALK TO YOUR\nFRIENDS???\nOssoff\nAPPLY NOW\nSSOF!\nU.S. SENATE",
+    "text_hash": "df97fb80dbf69fe6ed1a80f677803842e90e31d348754c8afb6c6fa5491b29e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-56185ce30b213c437dbf0489",
+    "alignment": "D",
+    "block_id": "snap-56185ce30b213c437dbf0489-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-56185ce30b213c437dbf0489-claims-001-005",
+    "claim_text": "You can apply now.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 104,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PAID FOR BY JON OSSOFF FOR SENATE\nGET PAID TO\nTALK TO YOUR\nFRIENDS???\nOssoff\nAPPLY NOW\nSSOF!\nU.S. SENATE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8552e6b74636777b5448ff3df4c29c56a3f952eee3600cc09d771bafa15ae779?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 86,
+        "anchor_quote": "APPLY NOW",
+        "anchor_start": 77,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "PAID FOR BY JON OSSOFF FOR SENATE\nGET PAID TO\nTALK TO YOUR\nFRIENDS???\nOssoff\nAPPLY NOW\nSSOF!\nU.S. SENATE",
+    "text_hash": "df97fb80dbf69fe6ed1a80f677803842e90e31d348754c8afb6c6fa5491b29e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-56185ce30b213c437dbf0489",
+    "alignment": "D",
+    "block_id": "snap-56185ce30b213c437dbf0489-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-56185ce30b213c437dbf0489-claims-001-006",
+    "claim_text": "SSOF is associated with the U.S. Senate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 104,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PAID FOR BY JON OSSOFF FOR SENATE\nGET PAID TO\nTALK TO YOUR\nFRIENDS???\nOssoff\nAPPLY NOW\nSSOF!\nU.S. SENATE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8552e6b74636777b5448ff3df4c29c56a3f952eee3600cc09d771bafa15ae779?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 92,
+        "anchor_quote": "SSOF!",
+        "anchor_start": 87,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "SSOF",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "PAID FOR BY JON OSSOFF FOR SENATE\nGET PAID TO\nTALK TO YOUR\nFRIENDS???\nOssoff\nAPPLY NOW\nSSOF!\nU.S. SENATE",
+    "text_hash": "df97fb80dbf69fe6ed1a80f677803842e90e31d348754c8afb6c6fa5491b29e0",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-561e3496a1dee98fa76cd2c4",
+    "alignment": "D",
+    "block_id": "snap-561e3496a1dee98fa76cd2c4-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-561e3496a1dee98fa76cd2c4-claims-001-001",
+    "claim_text": "Ken Paxton got rich in office",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 150,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PAID FOR BYTEXAS FOREVER.\nTEXAS4EVER.ORG NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nKEN PAXTON\nGot rich\nin office\nLeft\nUS\nwith\nthe bill",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/415cfbd743877af2d503437da1739638d5cf5b0d5dc8da8fa1d7d391ff8ad30c?mediaType=png",
+    "sponsor": "Texas Forever",
+    "targets": [
+      {
+        "anchor_end": 109,
+        "anchor_quote": "KEN PAXTON",
+        "anchor_start": 99,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6TX00388",
+        "kind": "person",
+        "name": "PAXTON, KEN",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "PAID FOR BYTEXAS FOREVER.\nTEXAS4EVER.ORG NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nKEN PAXTON\nGot rich\nin office\nLeft\nUS\nwith\nthe bill",
+    "text_hash": "97305ab9629ce92834df19fca35b22907c2429a3396f0b1585f6174c6e1b88a4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-561e3496a1dee98fa76cd2c4",
+    "alignment": "D",
+    "block_id": "snap-561e3496a1dee98fa76cd2c4-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-561e3496a1dee98fa76cd2c4-claims-001-002",
+    "claim_text": "Ken Paxton left US with the bill",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 150,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PAID FOR BYTEXAS FOREVER.\nTEXAS4EVER.ORG NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nKEN PAXTON\nGot rich\nin office\nLeft\nUS\nwith\nthe bill",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/415cfbd743877af2d503437da1739638d5cf5b0d5dc8da8fa1d7d391ff8ad30c?mediaType=png",
+    "sponsor": "Texas Forever",
+    "targets": [
+      {
+        "anchor_end": 109,
+        "anchor_quote": "KEN PAXTON",
+        "anchor_start": 99,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6TX00388",
+        "kind": "person",
+        "name": "PAXTON, KEN",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "PAID FOR BYTEXAS FOREVER.\nTEXAS4EVER.ORG NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nKEN PAXTON\nGot rich\nin office\nLeft\nUS\nwith\nthe bill",
+    "text_hash": "97305ab9629ce92834df19fca35b22907c2429a3396f0b1585f6174c6e1b88a4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-561e3496a1dee98fa76cd2c4",
+    "alignment": "D",
+    "block_id": "snap-561e3496a1dee98fa76cd2c4-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-561e3496a1dee98fa76cd2c4-claims-001-003",
+    "claim_text": "This communication was paid for by Texas Forever",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 150,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PAID FOR BYTEXAS FOREVER.\nTEXAS4EVER.ORG NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nKEN PAXTON\nGot rich\nin office\nLeft\nUS\nwith\nthe bill",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/415cfbd743877af2d503437da1739638d5cf5b0d5dc8da8fa1d7d391ff8ad30c?mediaType=png",
+    "sponsor": "Texas Forever",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "TEXAS FOREVER",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Texas Forever",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "PAID FOR BYTEXAS FOREVER.\nTEXAS4EVER.ORG NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nKEN PAXTON\nGot rich\nin office\nLeft\nUS\nwith\nthe bill",
+    "text_hash": "97305ab9629ce92834df19fca35b22907c2429a3396f0b1585f6174c6e1b88a4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-561e3496a1dee98fa76cd2c4",
+    "alignment": "D",
+    "block_id": "snap-561e3496a1dee98fa76cd2c4-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-561e3496a1dee98fa76cd2c4-claims-001-004",
+    "claim_text": "This communication was not authorized by any candidate or candidate's committee",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 150,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PAID FOR BYTEXAS FOREVER.\nTEXAS4EVER.ORG NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nKEN PAXTON\nGot rich\nin office\nLeft\nUS\nwith\nthe bill",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/415cfbd743877af2d503437da1739638d5cf5b0d5dc8da8fa1d7d391ff8ad30c?mediaType=png",
+    "sponsor": "Texas Forever",
+    "targets": [
+      {
+        "anchor_end": 72,
+        "anchor_quote": "ANY CANDIDATE",
+        "anchor_start": 59,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "any candidate",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 97,
+        "anchor_quote": "CANDIDATE'S COMMITTEE",
+        "anchor_start": 76,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "any candidate's committee",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "PAID FOR BYTEXAS FOREVER.\nTEXAS4EVER.ORG NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nKEN PAXTON\nGot rich\nin office\nLeft\nUS\nwith\nthe bill",
+    "text_hash": "97305ab9629ce92834df19fca35b22907c2429a3396f0b1585f6174c6e1b88a4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-561e3496a1dee98fa76cd2c4",
+    "alignment": "D",
+    "block_id": "snap-561e3496a1dee98fa76cd2c4-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-561e3496a1dee98fa76cd2c4-claims-001-005",
+    "claim_text": "Texas4ever.org was not authorized by any candidate or candidate's committee",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 150,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PAID FOR BYTEXAS FOREVER.\nTEXAS4EVER.ORG NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nKEN PAXTON\nGot rich\nin office\nLeft\nUS\nwith\nthe bill",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/415cfbd743877af2d503437da1739638d5cf5b0d5dc8da8fa1d7d391ff8ad30c?mediaType=png",
+    "sponsor": "Texas Forever",
+    "targets": [
+      {
+        "anchor_end": 40,
+        "anchor_quote": "TEXAS4EVER.ORG",
+        "anchor_start": 26,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Texas4ever.org",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 72,
+        "anchor_quote": "ANY CANDIDATE",
+        "anchor_start": 59,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "any candidate",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 97,
+        "anchor_quote": "CANDIDATE'S COMMITTEE",
+        "anchor_start": 76,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "any candidate's committee",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "PAID FOR BYTEXAS FOREVER.\nTEXAS4EVER.ORG NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nKEN PAXTON\nGot rich\nin office\nLeft\nUS\nwith\nthe bill",
+    "text_hash": "97305ab9629ce92834df19fca35b22907c2429a3396f0b1585f6174c6e1b88a4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5628ad6d79065bb99bb1c2b0",
+    "alignment": "D",
+    "block_id": "snap-5628ad6d79065bb99bb1c2b0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5628ad6d79065bb99bb1c2b0-claims-001-001",
+    "claim_text": "Trump's tariffs make equipment, fertilizer, and seeds more expensive",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 109,
+        "kind": "video_ocr",
+        "start": 89,
+        "text": "Trump's tariffs that",
+        "unit_id": 10
+      },
+      {
+        "end": 125,
+        "kind": "video_ocr",
+        "start": 110,
+        "text": "make equipment,",
+        "unit_id": 11
+      },
+      {
+        "end": 141,
+        "kind": "video_ocr",
+        "start": 126,
+        "text": "fertilizer, and",
+        "unit_id": 12
+      },
+      {
+        "end": 152,
+        "kind": "video_ocr",
+        "start": 142,
+        "text": "seeds more",
+        "unit_id": 13
+      },
+      {
+        "end": 162,
+        "kind": "video_ocr",
+        "start": 153,
+        "text": "expensive",
+        "unit_id": 14
+      }
+    ],
+    "evidence_ids": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b5ae240281ec3f096910b95c3228c253dd283b589256c4130e8f3de9e88e4bee?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 104,
+        "anchor_quote": "Trump's tariffs",
+        "anchor_start": 89,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Work\nhard\nFARMERS\nWork hard\nto keep us fed.\nto keep us fedl.\nGabe\nTr\nGabe Evans supports\nTrump's tariffs that\nmake equipment,\nfertilizer, and\nseeds more\nexpensive\nEx\nExport markets\nare closing their doors\nto Colorado crops\nand margins are\nshrinking even mo.\nWORKING\nAMERICA\nAFL-CIO\nshrinking even more.\nSource: Colorado Times Recorder\nPaid for by Working America.\nNot authorized by any candidate or committee.",
+    "text_hash": "1f1af8fea3f473c85c19318f6e1188350697864adc1950bd305c28c945731b7c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5628ad6d79065bb99bb1c2b0",
+    "alignment": "D",
+    "block_id": "snap-5628ad6d79065bb99bb1c2b0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5628ad6d79065bb99bb1c2b0-claims-001-002",
+    "claim_text": "Export markets are closing their doors to Colorado crops",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 180,
+        "kind": "video_ocr",
+        "start": 166,
+        "text": "Export markets",
+        "unit_id": 16
+      },
+      {
+        "end": 204,
+        "kind": "video_ocr",
+        "start": 181,
+        "text": "are closing their doors",
+        "unit_id": 17
+      },
+      {
+        "end": 222,
+        "kind": "video_ocr",
+        "start": 205,
+        "text": "to Colorado crops",
+        "unit_id": 18
+      }
+    ],
+    "evidence_ids": [
+      16,
+      17,
+      18
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b5ae240281ec3f096910b95c3228c253dd283b589256c4130e8f3de9e88e4bee?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 222,
+        "anchor_quote": "Colorado crops",
+        "anchor_start": 208,
+        "anchor_unit_id": 18,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Colorado crops",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Work\nhard\nFARMERS\nWork hard\nto keep us fed.\nto keep us fedl.\nGabe\nTr\nGabe Evans supports\nTrump's tariffs that\nmake equipment,\nfertilizer, and\nseeds more\nexpensive\nEx\nExport markets\nare closing their doors\nto Colorado crops\nand margins are\nshrinking even mo.\nWORKING\nAMERICA\nAFL-CIO\nshrinking even more.\nSource: Colorado Times Recorder\nPaid for by Working America.\nNot authorized by any candidate or committee.",
+    "text_hash": "1f1af8fea3f473c85c19318f6e1188350697864adc1950bd305c28c945731b7c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5628ad6d79065bb99bb1c2b0",
+    "alignment": "D",
+    "block_id": "snap-5628ad6d79065bb99bb1c2b0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5628ad6d79065bb99bb1c2b0-claims-001-003",
+    "claim_text": "margins are shrinking even more",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 238,
+        "kind": "video_ocr",
+        "start": 223,
+        "text": "and margins are",
+        "unit_id": 19
+      },
+      {
+        "end": 257,
+        "kind": "video_ocr",
+        "start": 239,
+        "text": "shrinking even mo.",
+        "unit_id": 20
+      },
+      {
+        "end": 302,
+        "kind": "video_ocr",
+        "start": 282,
+        "text": "shrinking even more.",
+        "unit_id": 24
+      }
+    ],
+    "evidence_ids": [
+      19,
+      20,
+      24
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b5ae240281ec3f096910b95c3228c253dd283b589256c4130e8f3de9e88e4bee?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 234,
+        "anchor_quote": "margins",
+        "anchor_start": 227,
+        "anchor_unit_id": 19,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "margins",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Work\nhard\nFARMERS\nWork hard\nto keep us fed.\nto keep us fedl.\nGabe\nTr\nGabe Evans supports\nTrump's tariffs that\nmake equipment,\nfertilizer, and\nseeds more\nexpensive\nEx\nExport markets\nare closing their doors\nto Colorado crops\nand margins are\nshrinking even mo.\nWORKING\nAMERICA\nAFL-CIO\nshrinking even more.\nSource: Colorado Times Recorder\nPaid for by Working America.\nNot authorized by any candidate or committee.",
+    "text_hash": "1f1af8fea3f473c85c19318f6e1188350697864adc1950bd305c28c945731b7c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5628ad6d79065bb99bb1c2b0",
+    "alignment": "D",
+    "block_id": "snap-5628ad6d79065bb99bb1c2b0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5628ad6d79065bb99bb1c2b0-claims-001-004",
+    "claim_text": "Gabe Evans supports",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 65,
+        "kind": "video_ocr",
+        "start": 61,
+        "text": "Gabe",
+        "unit_id": 7
+      },
+      {
+        "end": 68,
+        "kind": "video_ocr",
+        "start": 66,
+        "text": "Tr",
+        "unit_id": 8
+      },
+      {
+        "end": 88,
+        "kind": "video_ocr",
+        "start": 69,
+        "text": "Gabe Evans supports",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      7,
+      8,
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b5ae240281ec3f096910b95c3228c253dd283b589256c4130e8f3de9e88e4bee?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 79,
+        "anchor_quote": "Gabe Evans",
+        "anchor_start": 69,
+        "anchor_unit_id": 9,
+        "entity_id": "candidate:H4CO08034",
+        "kind": "person",
+        "name": "Gabe Evans",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Work\nhard\nFARMERS\nWork hard\nto keep us fed.\nto keep us fedl.\nGabe\nTr\nGabe Evans supports\nTrump's tariffs that\nmake equipment,\nfertilizer, and\nseeds more\nexpensive\nEx\nExport markets\nare closing their doors\nto Colorado crops\nand margins are\nshrinking even mo.\nWORKING\nAMERICA\nAFL-CIO\nshrinking even more.\nSource: Colorado Times Recorder\nPaid for by Working America.\nNot authorized by any candidate or committee.",
+    "text_hash": "1f1af8fea3f473c85c19318f6e1188350697864adc1950bd305c28c945731b7c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5628ad6d79065bb99bb1c2b0",
+    "alignment": "D",
+    "block_id": "snap-5628ad6d79065bb99bb1c2b0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5628ad6d79065bb99bb1c2b0-claims-001-005",
+    "claim_text": "Farmers work hard to keep us fed",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 9,
+        "kind": "video_ocr",
+        "start": 5,
+        "text": "hard",
+        "unit_id": 2
+      },
+      {
+        "end": 17,
+        "kind": "video_ocr",
+        "start": 10,
+        "text": "FARMERS",
+        "unit_id": 3
+      },
+      {
+        "end": 27,
+        "kind": "video_ocr",
+        "start": 18,
+        "text": "Work hard",
+        "unit_id": 4
+      },
+      {
+        "end": 43,
+        "kind": "video_ocr",
+        "start": 28,
+        "text": "to keep us fed.",
+        "unit_id": 5
+      },
+      {
+        "end": 60,
+        "kind": "video_ocr",
+        "start": 44,
+        "text": "to keep us fedl.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b5ae240281ec3f096910b95c3228c253dd283b589256c4130e8f3de9e88e4bee?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 17,
+        "anchor_quote": "FARMERS",
+        "anchor_start": 10,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Farmers",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Work\nhard\nFARMERS\nWork hard\nto keep us fed.\nto keep us fedl.\nGabe\nTr\nGabe Evans supports\nTrump's tariffs that\nmake equipment,\nfertilizer, and\nseeds more\nexpensive\nEx\nExport markets\nare closing their doors\nto Colorado crops\nand margins are\nshrinking even mo.\nWORKING\nAMERICA\nAFL-CIO\nshrinking even more.\nSource: Colorado Times Recorder\nPaid for by Working America.\nNot authorized by any candidate or committee.",
+    "text_hash": "1f1af8fea3f473c85c19318f6e1188350697864adc1950bd305c28c945731b7c",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]
