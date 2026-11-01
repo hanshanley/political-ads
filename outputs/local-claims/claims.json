@@ -143655,5 +143655,143 @@
     "text_hash": "32de04070f4554e19e5202215ddfa5e9e053be816712908c45a06287a9076472",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-8ac5efd7bd8884486a127945",
+    "alignment": "D",
+    "block_id": "snap-8ac5efd7bd8884486a127945-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-8ac5efd7bd8884486a127945-claims-001-001",
+    "claim_text": "Jon Husted protected predators instead of survivors like Bri, Cincinnati",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "\"Jon Husted\nprotected_predators\ninstead of survivors\nlike me\"\n-Bri, Cincinnati\nLEARN MORE-\nHUSTEDFACTS.COM\nPAIDFORBY FRIENDS OF SHERROD BROWN",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bf91e976f6ac423fc634893ca1b1f8639646a330b4e5e384dbf5180af06fbaae?mediaType=png",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 11,
+        "anchor_quote": "Jon Husted",
+        "anchor_start": 1,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6OH00304",
+        "kind": "person",
+        "name": "HUSTED, JON",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "\"Jon Husted\nprotected_predators\ninstead of survivors\nlike me\"\n-Bri, Cincinnati\nLEARN MORE-\nHUSTEDFACTS.COM\nPAIDFORBY FRIENDS OF SHERROD BROWN",
+    "text_hash": "c6acf6dd5497f140b8c016d757ca34e59b33957a2911c8cab13edf6490b7e947",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-8ac5efd7bd8884486a127945",
+    "alignment": "D",
+    "block_id": "snap-8ac5efd7bd8884486a127945-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-8ac5efd7bd8884486a127945-claims-001-002",
+    "claim_text": "Bri, Cincinnati, is a survivor",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "\"Jon Husted\nprotected_predators\ninstead of survivors\nlike me\"\n-Bri, Cincinnati\nLEARN MORE-\nHUSTEDFACTS.COM\nPAIDFORBY FRIENDS OF SHERROD BROWN",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bf91e976f6ac423fc634893ca1b1f8639646a330b4e5e384dbf5180af06fbaae?mediaType=png",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 78,
+        "anchor_quote": "Bri, Cincinnati",
+        "anchor_start": 63,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Bri, Cincinnati",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "\"Jon Husted\nprotected_predators\ninstead of survivors\nlike me\"\n-Bri, Cincinnati\nLEARN MORE-\nHUSTEDFACTS.COM\nPAIDFORBY FRIENDS OF SHERROD BROWN",
+    "text_hash": "c6acf6dd5497f140b8c016d757ca34e59b33957a2911c8cab13edf6490b7e947",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-8ac5efd7bd8884486a127945",
+    "alignment": "D",
+    "block_id": "snap-8ac5efd7bd8884486a127945-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-8ac5efd7bd8884486a127945-claims-001-003",
+    "claim_text": "This ad was paid for by Friends of Sherrod Brown",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "\"Jon Husted\nprotected_predators\ninstead of survivors\nlike me\"\n-Bri, Cincinnati\nLEARN MORE-\nHUSTEDFACTS.COM\nPAIDFORBY FRIENDS OF SHERROD BROWN",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bf91e976f6ac423fc634893ca1b1f8639646a330b4e5e384dbf5180af06fbaae?mediaType=png",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 141,
+        "anchor_quote": "FRIENDS OF SHERROD BROWN",
+        "anchor_start": 117,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Friends of Sherrod Brown",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "\"Jon Husted\nprotected_predators\ninstead of survivors\nlike me\"\n-Bri, Cincinnati\nLEARN MORE-\nHUSTEDFACTS.COM\nPAIDFORBY FRIENDS OF SHERROD BROWN",
+    "text_hash": "c6acf6dd5497f140b8c016d757ca34e59b33957a2911c8cab13edf6490b7e947",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
