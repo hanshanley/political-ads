@@ -4466,50 +4466,50 @@
   {
     "ad_id": "snap-1b80dd049973bc0fad50e5c2",
     "block_id": "snap-1b80dd049973bc0fad50e5c2-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1bc44e0c7ecb1764188076a9",
     "block_id": "snap-1bc44e0c7ecb1764188076a9-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 7 for any candidate committee: \\\"any candidate committee\\\" is absent from unit 28. Exact source: \\\"and not authorized by any candidate or candidate committee.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1bfa7231608bd94164bbe882",
     "block_id": "snap-1bfa7231608bd94164bbe882-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-1bfa7231608bd94164bbe882",
     "block_id": "snap-1bfa7231608bd94164bbe882-claims-002",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-1c4c27ef6620298004d65d48",
     "block_id": "snap-1c4c27ef6620298004d65d48-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 10 for SHERROD BROWN: \\\"SHERROD BROWN\\\" is absent from unit 27. Exact source: \\\"PAID FORBY AFSC\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1ceffbbee4ed23b396a831a0",
     "block_id": "snap-1ceffbbee4ed23b396a831a0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1d570c5119251d7f22ee61c7",
     "block_id": "snap-1d570c5119251d7f22ee61c7-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 4\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1d5ba96686da2e912515430c",
     "block_id": "snap-1d5ba96686da2e912515430c-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for President Trump: \\\"President Trump\\\" is absent from unit 4. Exact source: \\\"The left has been overtaken by radical socialist intent on destroying our country and undoing\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1df1139f28101f13e633c56b",
