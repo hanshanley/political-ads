@@ -451,6 +451,7 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             "gray-csd",
             "friess-primary-tax",
             "alamo-toth-cruz-mediaite",
+            "alfonso-family-townhall",
             "lawler-tell-her-no",
             "pps-house-washingtonreporter",
         }
@@ -520,6 +521,21 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         )
         if len(publications) != 1 or publications[0].get("content", "")[:10] != review["published"]:
             raise ValueError("Alamo report requires a unique matching publication date")
+    if source.id == "alfonso-family-townhall":
+        if review["candidate_id"] != "H6WI07223":
+            raise ValueError("Family ad requires the reviewed Alfonso House candidate")
+        soup = BeautifulSoup(content, "html.parser")
+        publications = soup.select('meta[property="article:published_time"]')
+        if len(publications) != 1 or publications[0].get("content", "")[:10] != review["published"]:
+            raise ValueError("Alfonso report requires a unique matching publication date")
+        original = "https://www.youtube.com/embed/xsoG4kWSiNM?si=BTusC6o4-8Fgfhs1"
+        frames = soup.select("article iframe[src]")
+        if (
+            review.get("discovered_original_url") != original
+            or len(frames) != 1
+            or frames[0]["src"] != original
+        ):
+            raise ValueError("Alfonso report requires its unique reviewed original-player link")
     if source.id == "pps-house-washingtonreporter" and review["candidate_id"] != "H2FL04211":
         raise ValueError("Reporter quotation requires the reviewed Bean speaker identity")
     evidence = review["reported_ad_text"]
@@ -570,6 +586,8 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             r"“([^”]+? Congress\.) [^”]+” said Cruz in the spot, "
             r"which was put on by the Alamo Freedom Fighters PAC\."
         )
+    elif source.id == "alfonso-family-townhall":
+        pattern = r'"([^"]+)" he continues\. "[^"]+"'
     match = re.fullmatch(pattern, paragraph)
     if not match:
         raise ValueError("Publisher must explicitly attribute the selected quotations to the ad")

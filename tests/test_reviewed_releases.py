@@ -2170,6 +2170,168 @@ def test_alamo_report_rejects_unbound_speaker_advertiser_or_words(failure):
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_alfonso_family_fixture():
+    source, candidate, review, _, _, commentary = unlinked_alamo_toth_fixture()
+    source = replace(
+        source,
+        id="alfonso-family-townhall",
+        url="https://townhall.com",
+        sponsor="Michael Alfonso campaign (publisher-reported; payer unverified)",
+        sponsor_type="candidate",
+        fixed_race="WI-07",
+    )
+    candidate.update(
+        candidate_id="H6WI07223",
+        name="ALFONSO, MICHAEL",
+        state="WI",
+        district="07",
+        principal_committee="C00924902",
+    )
+    candidate.pop("reviewed_alias", None)
+    selected = (
+        "These selected campaign ad words promise lower costs and secure borders, "
+        "protecting freedom and the American dream for every working Wisconsin family."
+    )
+    approval = (
+        "This approval message clearly identifies Michael Alfonso and is not part "
+        "of the selected quoted ad speech."
+    )
+    paragraph = f'"{selected}" he continues. "{approval}"'
+    original = "https://www.youtube.com/embed/xsoG4kWSiNM?si=BTusC6o4-8Fgfhs1"
+    content = (
+        '<meta property="article:published_time" content="2026-10-02T08:00:00">'
+        "<article><h1>Michael Alfonso family ad</h1>"
+        '<time datetime="2026-10-02T08:00:00-04:00">'
+        "October 02, 2026 8:00 AM</time><section>"
+        "<p>Michael Alfonso has released a new ad for Wisconsin's 7th District.</p>"
+        '<p>"These opening ad words are outside the selection," Alfonso says.</p>'
+        f'<iframe src="{original}"></iframe>'
+        f'<p class="quoted">{paragraph}</p><p>"{commentary}" he said.</p></section></article>'
+    )
+    url = source.url + "/alfonso-family-ad/"
+    review.update(
+        source=source.id,
+        record_id="20261002",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-10-02",
+        release_title="Michael Alfonso family ad",
+        heading_selector="h1",
+        publication_selector="time",
+        publication_date_format="%B %d, %Y %I:%M %p",
+        candidate_id=candidate["candidate_id"],
+        discovered_original_url=original,
+        required_context=["Michael Alfonso has released a new ad", "Alfonso says."],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": "p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+    )
+    return source, candidate, review, content.encode(), approval, commentary
+
+
+def test_alfonso_family_report_acquires_only_first_ad_quotation():
+    source, candidate, review, body, approval, commentary = unlinked_alfonso_family_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == review["passages"][0] and len(ad["text"].split()) == 22
+    assert approval not in ad["text"] and commentary not in ad["text"]
+    assert ad["alignment"] == "R" and ad["race"] == "WI-07"
+    assert ad["sponsor_type"] == "candidate" and ad["media_urls"] == []
+    assert ad["segments"][0]["federal_scope_candidate_ids"] == ["H6WI07223"]
+    assert ad["published"] == "2026-10-02" and ad["phase"] == "unknown"
+    assert ad["date_basis"] == "publisher_report_date"
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(ad["quality_flags"])
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "failure",
+    [
+        "candidate",
+        "interview",
+        "wrong_speaker",
+        "attribution",
+        "too_long",
+        "approval",
+        "press_statement",
+        "duplicate",
+        "metadata_date",
+        "metadata_duplicate",
+        "original_missing",
+        "original_swap",
+        "original_duplicate",
+        "paragraph_hash",
+    ],
+)
+def test_alfonso_family_report_rejects_unbound_or_neighboring_words(failure):
+    from bs4 import BeautifulSoup
+
+    source, candidate, review, body, approval, commentary = unlinked_alfonso_family_fixture()
+    content = body.decode()
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H6WI00999"
+    elif failure == "interview":
+        content = content.replace("has released a new ad", "gave an interview")
+    elif failure == "wrong_speaker":
+        content = content.replace("Alfonso says.", "Clark says.")
+    elif failure == "attribution":
+        content = content.replace("he continues.", "he told a reporter.")
+    elif failure == "too_long":
+        original = review["passages"][0]
+        review["passages"][0] = "These additional words exceed the quotation ceiling. " + original
+        content = content.replace(original, review["passages"][0])
+    elif failure == "approval":
+        review["passages"].append(approval)
+    elif failure == "press_statement":
+        review["passages"].append(commentary)
+    elif failure == "duplicate":
+        content += str(BeautifulSoup(content, "html.parser").select("p.quoted")[0])
+    elif failure == "metadata_date":
+        content = content.replace('content="2026-10-02T', 'content="2026-10-03T')
+    elif failure == "metadata_duplicate":
+        content += str(
+            BeautifulSoup(content, "html.parser").select('meta[property="article:published_time"]')[
+                0
+            ]
+        )
+    elif failure == "original_missing":
+        content = content.replace(
+            str(BeautifulSoup(content, "html.parser").select("article iframe[src]")[0]), ""
+        )
+    elif failure == "original_swap":
+        content = content.replace(review["discovered_original_url"], "https://example.org/other")
+    elif failure == "original_duplicate":
+        frame = BeautifulSoup(content, "html.parser").select("article iframe[src]")[0]
+        content = content.replace("</article>", str(frame) + "</article>")
+    paragraph = BeautifulSoup(content, "html.parser").select("p.quoted")[0]
+    review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
+    if failure == "paragraph_hash":
+        review["reported_ad_text"]["paragraph_sha256"] = "0" * 64
+    review["content_sha256"] = digest(content)
+
+    class Client:
+        def get(self, url, **kwargs):
+            return content.encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 def unlinked_lawler_fixture():
     source, candidate, review, _, _, _ = unlinked_kiggans_fixture()
     source = next(s for s in SOURCES if s.id == "lawler-tell-her-no")

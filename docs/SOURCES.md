@@ -10,6 +10,91 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Alfonso: a distinct October family creative
+
+The actual October 2, 2026 Townhall report
+`https://townhall.com/news/amy-curtis/2026/10/02/alfonso-ad-n2683952`
+identifies a new Michael Alfonso campaign ad for Wisconsin's 7th
+Congressional District. Its preceding quotation names Alfonso as
+speaker; the middle paragraph continues that ad speech and then
+separately quotes an approval line. Acquire only the **22 unchanged
+words in the first quotation of that middle paragraph**, not preceding
+speech, approval, the separate after-ad candidate press statement or
+reporter attacks on Clark. This is a **partial quotation**, not a full
+script; the 15-word floor and 25-word ceiling remain.
+
+Exact frozen federal identity is **H6WI07223 / ALFONSO, MICHAEL /
+REP / House / WI-07 / 2026 / C00924902**. No alias was added.
+Advertiser is publisher-reported; the actual creative's legal payer
+remains unverified. Require exactly one article player linked to
+`https://www.youtube.com/embed/xsoG4kWSiNM?si=BTusC6o4-8Fgfhs1`.
+This URL was actually discovered in the report, but the original was
+**not requested or verified**. Media URLs remain empty for this
+reported-text route; its discovered original is separately retained.
+Missing, swapped or duplicated players are rejected.
+
+The new original ID **xsoG4kWSiNM** and selected text occur in no
+pre-edit combined record. The older July 18 Trump endorsement
+**Vr2MMUNRg00**, July 30 construction-crew testimonial **Ccysp5KCnoY**
+and August 6 socialism attack **o0UPh5CL_n0** are different creatives.
+Novelty uses both whole-corpus text/original-ID checks and creative
+context, not a missing exact-substring match alone.
+
+HTML SHA-256 is
+`15aa7c0a4ef0defd9a6a1c00be02b5ed7bb009b4a2ca8b9f69ec2ba75711a15e`.
+Require a unique `h1`, visible `time` **October 02, 2026 8:00 AM**,
+matching `datetime="2026-10-02T08:00:00-04:00"` and unique
+`article:published_time` **2026-10-02T08:00:00**. Date is publisher
+report date, not verified first airing. The unique selected paragraph
+has SHA-256
+`22b898e656e836fd90864a5346ebbc2b4af458625bc757fddfca09213aa86f66`;
+selected-text SHA-256 is
+`9de3d5ee9c2f84d451435e8d55aa7f46277534cedeaaa83f11dbf38a2d12f5de`.
+The source-specific grammar captures only the first quotation before
+the continued-speech attribution and excludes the following approval.
+Full source, paragraph and text hashes retain literal source order.
+Exact discovery bytes seeded absent canonical cache files; no prior
+response was overwritten. Phase unknown; new semantic strategy
+**unreviewed**. First airing, duration, delivery, complete script,
+claims and original-media speech remain unverified.
+
+Reproduce with
+`.venv/bin/political-ads collect --source alfonso-family-townhall --until 2026-10-30 --offline`,
+then explicit `parquet`, `build`, `validate`, `audit-strategy` and
+frontend checks from `web`. The positive regression failed before
+support. Fifteen focused cases cover correct acquisition and reject
+wrong candidate/speaker, interview attribution, altered continued
+speech, excessive quotation, neighboring approval/press speech,
+duplicate paragraphs/publication metadata, mismatching metadata date,
+changed paragraph hashes and missing/swapped/duplicate original links.
+All **329 reviewed-release tests passed**. Stable full Python validation
+passed **758 tests**; both Ruff checks, frontend lint/build, **17 unit
+tests / 9 final-snapshot browser tests** passed.
+
+Snapshot
+`8541e79e03ea80d2607547126090ab253c2c61b03075c7fbddd791dfa79a6704`
+contains **1,950 acquired / 1,911 English**, including **R646 / D1,226**
+English records and **R268 / D698** English House records. House outside
+Snapchat is **R267 / D222**. There are **589 written records / 95 release
+reviews / 43 native reviews / 38 unchanged aliases**.
+All **1,949 prior acquired / 1,910 prior analyzed objects**, old reviews,
+18 protected hashes and ten prior canonical response hashes remain
+unchanged. Complete JSON/gzip/CSV copies, typed Parquet text/segments,
+eleven chart sets in three copies and isolated
+network/recognition/subprocess-forbidden replay passed. Independent
+strategy audit verified **20 metric groups / 10 chart rows**.
+Discovery has **172 receipts / 162 exact cached bodies / 10 unchanged
+no-body receipts**, with **15 separately reviewed admissions**.
+Fedorchak's actual campaign homepage, News archive and anonymous
+published-post response were inspected. The bounded 2026 response
+contains two published records, corroborated by `X-WP-Total=2` and
+`X-WP-TotalPages=1`: an event and a fundraising update, not ad scripts.
+Undated homepage quotations, biography, older endorsements and its
+unrequested player are not additional ads.
+Republican House coverage remains incomplete; discovery links are not
+ads. Saved cutoff is October 30; final scope November 4 inclusive.
+Website, host and edition publications remain held.
+
 ## Alamo: a House endorsement spoken by a senator
 
 Mediaite's actual February 26, 2026 report
