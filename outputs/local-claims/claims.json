@@ -131608,5 +131608,967 @@
     "text_hash": "b0590b59bc1084d92f7aba26b84226ebf4965e1bdf72dba3ed9fd3b37b899aeb",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-70e7dd66fa32c981be9b7988",
+    "alignment": "D",
+    "block_id": "snap-70e7dd66fa32c981be9b7988-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-70e7dd66fa32c981be9b7988-claims-001-001",
+    "claim_text": "James Talarico will fight back against billionaires",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 156,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJAMES TALARICO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/46ebca0eb48e6ae48a5de613b4f401d128911aa9d238d312293093a52192e51c?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 76,
+        "anchor_quote": "JAMES TALARICO",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6TX00479",
+        "kind": "person",
+        "name": "TALARICO, JAMES",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJAMES TALARICO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "276699a6389851fae13c7f2965139ecaa92c43f488f21606584374eda0e850ea",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-70e7dd66fa32c981be9b7988",
+    "alignment": "D",
+    "block_id": "snap-70e7dd66fa32c981be9b7988-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-70e7dd66fa32c981be9b7988-claims-001-002",
+    "claim_text": "This ad was paid for by the AFL-CIO",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 156,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJAMES TALARICO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/46ebca0eb48e6ae48a5de613b4f401d128911aa9d238d312293093a52192e51c?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJAMES TALARICO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "276699a6389851fae13c7f2965139ecaa92c43f488f21606584374eda0e850ea",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-70e7dd66fa32c981be9b7988",
+    "alignment": "D",
+    "block_id": "snap-70e7dd66fa32c981be9b7988-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-70e7dd66fa32c981be9b7988-claims-001-003",
+    "claim_text": "It is your right to vote for James Talarico",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 156,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJAMES TALARICO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/46ebca0eb48e6ae48a5de613b4f401d128911aa9d238d312293093a52192e51c?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 76,
+        "anchor_quote": "JAMES TALARICO",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6TX00479",
+        "kind": "person",
+        "name": "TALARICO, JAMES",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJAMES TALARICO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "276699a6389851fae13c7f2965139ecaa92c43f488f21606584374eda0e850ea",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-70e7dd66fa32c981be9b7988",
+    "alignment": "D",
+    "block_id": "snap-70e7dd66fa32c981be9b7988-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-70e7dd66fa32c981be9b7988-claims-001-004",
+    "claim_text": "You have a right to your union",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 156,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJAMES TALARICO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/46ebca0eb48e6ae48a5de613b4f401d128911aa9d238d312293093a52192e51c?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Union",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJAMES TALARICO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "276699a6389851fae13c7f2965139ecaa92c43f488f21606584374eda0e850ea",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-70e7dd66fa32c981be9b7988",
+    "alignment": "D",
+    "block_id": "snap-70e7dd66fa32c981be9b7988-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-70e7dd66fa32c981be9b7988-claims-001-005",
+    "claim_text": "It is your right to have a union",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 156,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJAMES TALARICO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/46ebca0eb48e6ae48a5de613b4f401d128911aa9d238d312293093a52192e51c?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Union",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJAMES TALARICO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "276699a6389851fae13c7f2965139ecaa92c43f488f21606584374eda0e850ea",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-71c82e98eaba9b991ecd76da",
+    "alignment": "D",
+    "block_id": "snap-71c82e98eaba9b991ecd76da-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-71c82e98eaba9b991ecd76da-claims-001-001",
+    "claim_text": "Joanna Mendoza will fight back against billionaires",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 156,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJOANNA MENDOZA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/df595c446484d5dea0c3b70aea25cbc76aea8d7fecc42fed19a7e31504e4aca4?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 76,
+        "anchor_quote": "JOANNA MENDOZA",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6AZ06099",
+        "kind": "person",
+        "name": "MENDOZA, JOANNA",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJOANNA MENDOZA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "ff29e0c7e12180285c3e1dcfd6f4134f3924a68eab810fc98e7d5301ea392904",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-71c82e98eaba9b991ecd76da",
+    "alignment": "D",
+    "block_id": "snap-71c82e98eaba9b991ecd76da-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-71c82e98eaba9b991ecd76da-claims-001-002",
+    "claim_text": "Having a union is a right",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 156,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJOANNA MENDOZA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/df595c446484d5dea0c3b70aea25cbc76aea8d7fecc42fed19a7e31504e4aca4?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 33,
+        "anchor_quote": "MY UNION",
+        "anchor_start": 25,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJOANNA MENDOZA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "ff29e0c7e12180285c3e1dcfd6f4134f3924a68eab810fc98e7d5301ea392904",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-71c82e98eaba9b991ecd76da",
+    "alignment": "D",
+    "block_id": "snap-71c82e98eaba9b991ecd76da-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-71c82e98eaba9b991ecd76da-claims-001-003",
+    "claim_text": "This communication was paid for by the AFL-CIO",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 156,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJOANNA MENDOZA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/df595c446484d5dea0c3b70aea25cbc76aea8d7fecc42fed19a7e31504e4aca4?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJOANNA MENDOZA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "ff29e0c7e12180285c3e1dcfd6f4134f3924a68eab810fc98e7d5301ea392904",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-71c82e98eaba9b991ecd76da",
+    "alignment": "D",
+    "block_id": "snap-71c82e98eaba9b991ecd76da-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-71c82e98eaba9b991ecd76da-claims-001-004",
+    "claim_text": "It is a right to have a union",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 156,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJOANNA MENDOZA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/df595c446484d5dea0c3b70aea25cbc76aea8d7fecc42fed19a7e31504e4aca4?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Union",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nJOANNA MENDOZA\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "ff29e0c7e12180285c3e1dcfd6f4134f3924a68eab810fc98e7d5301ea392904",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-72071eacd915d696e90558fb",
+    "alignment": "other",
+    "block_id": "snap-72071eacd915d696e90558fb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-72071eacd915d696e90558fb-claims-001-001",
+    "claim_text": "The UA's own Dan Osborne is running for Senate to shake things up.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 107,
+        "kind": "local_asr",
+        "start": 41,
+        "text": "The UA's own Dan Osborne is running for Senate to shake things up.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/194e282c40972c74db6747f76b3dd494a3ca1b6f3fcc7ca145574e78033880f2?mediaType=mp4",
+    "sponsor": "United Association",
+    "targets": [
+      {
+        "anchor_end": 65,
+        "anchor_quote": "Dan Osborne",
+        "anchor_start": 54,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "OSBORN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "other",
+        "tone": "positive"
+      }
+    ],
+    "text": "I ran, inflation, and a whole lot of BS.\nThe UA's own Dan Osborne is running for Senate to shake things up.\nThere's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.\nDan will fight for change.\nWe got to make things more affordable, secure the border, and take on the corruption in Washington.\nUA workers need better wages and benefits.\nIf you want to fix Washington, send in the mechanic.\nDan Osborne for Senate.\nIRAN\nAWHOLE\nLOTOFBS\nATCD\nDAN OSBORN -*\nJA\nLA.\nASEIM\nOSBORN\nLOWER\nCOSTS\nIA\nCLEAN UP\nBETTER WAGES ANU\nPAID FOR BY THE UNITED ASSOCIATION OF UNNON PLU\nPERITTERS (UA.ORG)\nU\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFITERS (UA.ORG)\nUAGETINVOLVED.ORG\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFTTERS (UA.ORG)\nPAID FOR BY THE UNITED ASSOCIATION OF UNIOW PLUMBERS AND PIPEFTTERS (UA.ORG)",
+    "text_hash": "d5e30cd6b7355a8e1a6c4c0986717ed3b3a3c562f934a866bfe482321d2aa02a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-72071eacd915d696e90558fb",
+    "alignment": "other",
+    "block_id": "snap-72071eacd915d696e90558fb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-72071eacd915d696e90558fb-claims-001-002",
+    "claim_text": "There are a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 205,
+        "kind": "local_asr",
+        "start": 108,
+        "text": "There's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/194e282c40972c74db6747f76b3dd494a3ca1b6f3fcc7ca145574e78033880f2?mediaType=mp4",
+    "sponsor": "United Association",
+    "targets": [
+      {
+        "anchor_end": 167,
+        "anchor_quote": "Pete Ricketts",
+        "anchor_start": 154,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6NE00129",
+        "kind": "person",
+        "name": "RICKETTS, PETE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 134,
+        "anchor_quote": "rich guys",
+        "anchor_start": 125,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "rich guys",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I ran, inflation, and a whole lot of BS.\nThe UA's own Dan Osborne is running for Senate to shake things up.\nThere's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.\nDan will fight for change.\nWe got to make things more affordable, secure the border, and take on the corruption in Washington.\nUA workers need better wages and benefits.\nIf you want to fix Washington, send in the mechanic.\nDan Osborne for Senate.\nIRAN\nAWHOLE\nLOTOFBS\nATCD\nDAN OSBORN -*\nJA\nLA.\nASEIM\nOSBORN\nLOWER\nCOSTS\nIA\nCLEAN UP\nBETTER WAGES ANU\nPAID FOR BY THE UNITED ASSOCIATION OF UNNON PLU\nPERITTERS (UA.ORG)\nU\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFITERS (UA.ORG)\nUAGETINVOLVED.ORG\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFTTERS (UA.ORG)\nPAID FOR BY THE UNITED ASSOCIATION OF UNIOW PLUMBERS AND PIPEFTTERS (UA.ORG)",
+    "text_hash": "d5e30cd6b7355a8e1a6c4c0986717ed3b3a3c562f934a866bfe482321d2aa02a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-72071eacd915d696e90558fb",
+    "alignment": "other",
+    "block_id": "snap-72071eacd915d696e90558fb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-72071eacd915d696e90558fb-claims-001-003",
+    "claim_text": "Dan will fight for change.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 232,
+        "kind": "local_asr",
+        "start": 206,
+        "text": "Dan will fight for change.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/194e282c40972c74db6747f76b3dd494a3ca1b6f3fcc7ca145574e78033880f2?mediaType=mp4",
+    "sponsor": "United Association",
+    "targets": [
+      {
+        "anchor_end": 209,
+        "anchor_quote": "Dan",
+        "anchor_start": 206,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "OSBORN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "other",
+        "tone": "positive"
+      }
+    ],
+    "text": "I ran, inflation, and a whole lot of BS.\nThe UA's own Dan Osborne is running for Senate to shake things up.\nThere's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.\nDan will fight for change.\nWe got to make things more affordable, secure the border, and take on the corruption in Washington.\nUA workers need better wages and benefits.\nIf you want to fix Washington, send in the mechanic.\nDan Osborne for Senate.\nIRAN\nAWHOLE\nLOTOFBS\nATCD\nDAN OSBORN -*\nJA\nLA.\nASEIM\nOSBORN\nLOWER\nCOSTS\nIA\nCLEAN UP\nBETTER WAGES ANU\nPAID FOR BY THE UNITED ASSOCIATION OF UNNON PLU\nPERITTERS (UA.ORG)\nU\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFITERS (UA.ORG)\nUAGETINVOLVED.ORG\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFTTERS (UA.ORG)\nPAID FOR BY THE UNITED ASSOCIATION OF UNIOW PLUMBERS AND PIPEFTTERS (UA.ORG)",
+    "text_hash": "d5e30cd6b7355a8e1a6c4c0986717ed3b3a3c562f934a866bfe482321d2aa02a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-72071eacd915d696e90558fb",
+    "alignment": "other",
+    "block_id": "snap-72071eacd915d696e90558fb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-72071eacd915d696e90558fb-claims-001-004",
+    "claim_text": "We got to make things more affordable, secure the border, and take on the corruption in Washington.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 332,
+        "kind": "local_asr",
+        "start": 233,
+        "text": "We got to make things more affordable, secure the border, and take on the corruption in Washington.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/194e282c40972c74db6747f76b3dd494a3ca1b6f3fcc7ca145574e78033880f2?mediaType=mp4",
+    "sponsor": "United Association",
+    "targets": [
+      {
+        "anchor_end": 270,
+        "anchor_quote": "make things more affordable",
+        "anchor_start": 243,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 289,
+        "anchor_quote": "secure the border",
+        "anchor_start": 272,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 331,
+        "anchor_quote": "take on the corruption in Washington",
+        "anchor_start": 295,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I ran, inflation, and a whole lot of BS.\nThe UA's own Dan Osborne is running for Senate to shake things up.\nThere's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.\nDan will fight for change.\nWe got to make things more affordable, secure the border, and take on the corruption in Washington.\nUA workers need better wages and benefits.\nIf you want to fix Washington, send in the mechanic.\nDan Osborne for Senate.\nIRAN\nAWHOLE\nLOTOFBS\nATCD\nDAN OSBORN -*\nJA\nLA.\nASEIM\nOSBORN\nLOWER\nCOSTS\nIA\nCLEAN UP\nBETTER WAGES ANU\nPAID FOR BY THE UNITED ASSOCIATION OF UNNON PLU\nPERITTERS (UA.ORG)\nU\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFITERS (UA.ORG)\nUAGETINVOLVED.ORG\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFTTERS (UA.ORG)\nPAID FOR BY THE UNITED ASSOCIATION OF UNIOW PLUMBERS AND PIPEFTTERS (UA.ORG)",
+    "text_hash": "d5e30cd6b7355a8e1a6c4c0986717ed3b3a3c562f934a866bfe482321d2aa02a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-72071eacd915d696e90558fb",
+    "alignment": "other",
+    "block_id": "snap-72071eacd915d696e90558fb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-72071eacd915d696e90558fb-claims-001-005",
+    "claim_text": "UA workers need better wages and benefits.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 375,
+        "kind": "local_asr",
+        "start": 333,
+        "text": "UA workers need better wages and benefits.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/194e282c40972c74db6747f76b3dd494a3ca1b6f3fcc7ca145574e78033880f2?mediaType=mp4",
+    "sponsor": "United Association",
+    "targets": [
+      {
+        "anchor_end": 343,
+        "anchor_quote": "UA workers",
+        "anchor_start": 333,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "UA workers",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "I ran, inflation, and a whole lot of BS.\nThe UA's own Dan Osborne is running for Senate to shake things up.\nThere's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.\nDan will fight for change.\nWe got to make things more affordable, secure the border, and take on the corruption in Washington.\nUA workers need better wages and benefits.\nIf you want to fix Washington, send in the mechanic.\nDan Osborne for Senate.\nIRAN\nAWHOLE\nLOTOFBS\nATCD\nDAN OSBORN -*\nJA\nLA.\nASEIM\nOSBORN\nLOWER\nCOSTS\nIA\nCLEAN UP\nBETTER WAGES ANU\nPAID FOR BY THE UNITED ASSOCIATION OF UNNON PLU\nPERITTERS (UA.ORG)\nU\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFITERS (UA.ORG)\nUAGETINVOLVED.ORG\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFTTERS (UA.ORG)\nPAID FOR BY THE UNITED ASSOCIATION OF UNIOW PLUMBERS AND PIPEFTTERS (UA.ORG)",
+    "text_hash": "d5e30cd6b7355a8e1a6c4c0986717ed3b3a3c562f934a866bfe482321d2aa02a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-72071eacd915d696e90558fb",
+    "alignment": "other",
+    "block_id": "snap-72071eacd915d696e90558fb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-72071eacd915d696e90558fb-claims-001-006",
+    "claim_text": "If you want to fix Washington, send in the mechanic.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 428,
+        "kind": "local_asr",
+        "start": 376,
+        "text": "If you want to fix Washington, send in the mechanic.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/194e282c40972c74db6747f76b3dd494a3ca1b6f3fcc7ca145574e78033880f2?mediaType=mp4",
+    "sponsor": "United Association",
+    "targets": [
+      {
+        "anchor_end": 405,
+        "anchor_quote": "Washington",
+        "anchor_start": 395,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Washington",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I ran, inflation, and a whole lot of BS.\nThe UA's own Dan Osborne is running for Senate to shake things up.\nThere's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.\nDan will fight for change.\nWe got to make things more affordable, secure the border, and take on the corruption in Washington.\nUA workers need better wages and benefits.\nIf you want to fix Washington, send in the mechanic.\nDan Osborne for Senate.\nIRAN\nAWHOLE\nLOTOFBS\nATCD\nDAN OSBORN -*\nJA\nLA.\nASEIM\nOSBORN\nLOWER\nCOSTS\nIA\nCLEAN UP\nBETTER WAGES ANU\nPAID FOR BY THE UNITED ASSOCIATION OF UNNON PLU\nPERITTERS (UA.ORG)\nU\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFITERS (UA.ORG)\nUAGETINVOLVED.ORG\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFTTERS (UA.ORG)\nPAID FOR BY THE UNITED ASSOCIATION OF UNIOW PLUMBERS AND PIPEFTTERS (UA.ORG)",
+    "text_hash": "d5e30cd6b7355a8e1a6c4c0986717ed3b3a3c562f934a866bfe482321d2aa02a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-72071eacd915d696e90558fb",
+    "alignment": "other",
+    "block_id": "snap-72071eacd915d696e90558fb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-72071eacd915d696e90558fb-claims-001-007",
+    "claim_text": "Dan Osborne for Senate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 452,
+        "kind": "local_asr",
+        "start": 429,
+        "text": "Dan Osborne for Senate.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/194e282c40972c74db6747f76b3dd494a3ca1b6f3fcc7ca145574e78033880f2?mediaType=mp4",
+    "sponsor": "United Association",
+    "targets": [
+      {
+        "anchor_end": 440,
+        "anchor_quote": "Dan Osborne",
+        "anchor_start": 429,
+        "anchor_unit_id": 8,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "OSBORN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "other",
+        "tone": "positive"
+      }
+    ],
+    "text": "I ran, inflation, and a whole lot of BS.\nThe UA's own Dan Osborne is running for Senate to shake things up.\nThere's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.\nDan will fight for change.\nWe got to make things more affordable, secure the border, and take on the corruption in Washington.\nUA workers need better wages and benefits.\nIf you want to fix Washington, send in the mechanic.\nDan Osborne for Senate.\nIRAN\nAWHOLE\nLOTOFBS\nATCD\nDAN OSBORN -*\nJA\nLA.\nASEIM\nOSBORN\nLOWER\nCOSTS\nIA\nCLEAN UP\nBETTER WAGES ANU\nPAID FOR BY THE UNITED ASSOCIATION OF UNNON PLU\nPERITTERS (UA.ORG)\nU\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFITERS (UA.ORG)\nUAGETINVOLVED.ORG\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFTTERS (UA.ORG)\nPAID FOR BY THE UNITED ASSOCIATION OF UNIOW PLUMBERS AND PIPEFTTERS (UA.ORG)",
+    "text_hash": "d5e30cd6b7355a8e1a6c4c0986717ed3b3a3c562f934a866bfe482321d2aa02a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-72071eacd915d696e90558fb",
+    "alignment": "other",
+    "block_id": "snap-72071eacd915d696e90558fb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-72071eacd915d696e90558fb-claims-001-008",
+    "claim_text": "I ran, inflation, and a whole lot of BS.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 40,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "I ran, inflation, and a whole lot of BS.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/194e282c40972c74db6747f76b3dd494a3ca1b6f3fcc7ca145574e78033880f2?mediaType=mp4",
+    "sponsor": "United Association",
+    "targets": [
+      {
+        "anchor_end": 1,
+        "anchor_quote": "I",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "I",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "other",
+        "tone": "negative"
+      }
+    ],
+    "text": "I ran, inflation, and a whole lot of BS.\nThe UA's own Dan Osborne is running for Senate to shake things up.\nThere's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.\nDan will fight for change.\nWe got to make things more affordable, secure the border, and take on the corruption in Washington.\nUA workers need better wages and benefits.\nIf you want to fix Washington, send in the mechanic.\nDan Osborne for Senate.\nIRAN\nAWHOLE\nLOTOFBS\nATCD\nDAN OSBORN -*\nJA\nLA.\nASEIM\nOSBORN\nLOWER\nCOSTS\nIA\nCLEAN UP\nBETTER WAGES ANU\nPAID FOR BY THE UNITED ASSOCIATION OF UNNON PLU\nPERITTERS (UA.ORG)\nU\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFITERS (UA.ORG)\nUAGETINVOLVED.ORG\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFTTERS (UA.ORG)\nPAID FOR BY THE UNITED ASSOCIATION OF UNIOW PLUMBERS AND PIPEFTTERS (UA.ORG)",
+    "text_hash": "d5e30cd6b7355a8e1a6c4c0986717ed3b3a3c562f934a866bfe482321d2aa02a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-72071eacd915d696e90558fb",
+    "alignment": "other",
+    "block_id": "snap-72071eacd915d696e90558fb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-72071eacd915d696e90558fb-claims-001-009",
+    "claim_text": "There's a lot of rich guys in Washington like Pete Ricketts",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 205,
+        "kind": "local_asr",
+        "start": 108,
+        "text": "There's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/194e282c40972c74db6747f76b3dd494a3ca1b6f3fcc7ca145574e78033880f2?mediaType=mp4",
+    "sponsor": "United Association",
+    "targets": [
+      {
+        "anchor_end": 167,
+        "anchor_quote": "Pete Ricketts",
+        "anchor_start": 154,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6NE00129",
+        "kind": "person",
+        "name": "RICKETTS, PETE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "I ran, inflation, and a whole lot of BS.\nThe UA's own Dan Osborne is running for Senate to shake things up.\nThere's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.\nDan will fight for change.\nWe got to make things more affordable, secure the border, and take on the corruption in Washington.\nUA workers need better wages and benefits.\nIf you want to fix Washington, send in the mechanic.\nDan Osborne for Senate.\nIRAN\nAWHOLE\nLOTOFBS\nATCD\nDAN OSBORN -*\nJA\nLA.\nASEIM\nOSBORN\nLOWER\nCOSTS\nIA\nCLEAN UP\nBETTER WAGES ANU\nPAID FOR BY THE UNITED ASSOCIATION OF UNNON PLU\nPERITTERS (UA.ORG)\nU\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFITERS (UA.ORG)\nUAGETINVOLVED.ORG\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFTTERS (UA.ORG)\nPAID FOR BY THE UNITED ASSOCIATION OF UNIOW PLUMBERS AND PIPEFTTERS (UA.ORG)",
+    "text_hash": "d5e30cd6b7355a8e1a6c4c0986717ed3b3a3c562f934a866bfe482321d2aa02a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-72071eacd915d696e90558fb",
+    "alignment": "other",
+    "block_id": "snap-72071eacd915d696e90558fb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-72071eacd915d696e90558fb-claims-001-010",
+    "claim_text": "There's a lot of rich guys in Washington",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 205,
+        "kind": "local_asr",
+        "start": 108,
+        "text": "There's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/194e282c40972c74db6747f76b3dd494a3ca1b6f3fcc7ca145574e78033880f2?mediaType=mp4",
+    "sponsor": "United Association",
+    "targets": [
+      {
+        "anchor_end": 148,
+        "anchor_quote": "Washington",
+        "anchor_start": 138,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Washington",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I ran, inflation, and a whole lot of BS.\nThe UA's own Dan Osborne is running for Senate to shake things up.\nThere's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.\nDan will fight for change.\nWe got to make things more affordable, secure the border, and take on the corruption in Washington.\nUA workers need better wages and benefits.\nIf you want to fix Washington, send in the mechanic.\nDan Osborne for Senate.\nIRAN\nAWHOLE\nLOTOFBS\nATCD\nDAN OSBORN -*\nJA\nLA.\nASEIM\nOSBORN\nLOWER\nCOSTS\nIA\nCLEAN UP\nBETTER WAGES ANU\nPAID FOR BY THE UNITED ASSOCIATION OF UNNON PLU\nPERITTERS (UA.ORG)\nU\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFITERS (UA.ORG)\nUAGETINVOLVED.ORG\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFTTERS (UA.ORG)\nPAID FOR BY THE UNITED ASSOCIATION OF UNIOW PLUMBERS AND PIPEFTTERS (UA.ORG)",
+    "text_hash": "d5e30cd6b7355a8e1a6c4c0986717ed3b3a3c562f934a866bfe482321d2aa02a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-72071eacd915d696e90558fb",
+    "alignment": "other",
+    "block_id": "snap-72071eacd915d696e90558fb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-72071eacd915d696e90558fb-claims-001-011",
+    "claim_text": "There's a lot of rich guys",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 205,
+        "kind": "local_asr",
+        "start": 108,
+        "text": "There's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/194e282c40972c74db6747f76b3dd494a3ca1b6f3fcc7ca145574e78033880f2?mediaType=mp4",
+    "sponsor": "United Association",
+    "targets": [
+      {
+        "anchor_end": 134,
+        "anchor_quote": "rich guys",
+        "anchor_start": 125,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "rich guys",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "I ran, inflation, and a whole lot of BS.\nThe UA's own Dan Osborne is running for Senate to shake things up.\nThere's a lot of rich guys in Washington like Pete Ricketts, but not a lot with hands like these.\nDan will fight for change.\nWe got to make things more affordable, secure the border, and take on the corruption in Washington.\nUA workers need better wages and benefits.\nIf you want to fix Washington, send in the mechanic.\nDan Osborne for Senate.\nIRAN\nAWHOLE\nLOTOFBS\nATCD\nDAN OSBORN -*\nJA\nLA.\nASEIM\nOSBORN\nLOWER\nCOSTS\nIA\nCLEAN UP\nBETTER WAGES ANU\nPAID FOR BY THE UNITED ASSOCIATION OF UNNON PLU\nPERITTERS (UA.ORG)\nU\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFITERS (UA.ORG)\nUAGETINVOLVED.ORG\nPAID FOR BY THE UNITED ASSOCIATION OF UNION PLUMBERS AND PIPEFTTERS (UA.ORG)\nPAID FOR BY THE UNITED ASSOCIATION OF UNIOW PLUMBERS AND PIPEFTTERS (UA.ORG)",
+    "text_hash": "d5e30cd6b7355a8e1a6c4c0986717ed3b3a3c562f934a866bfe482321d2aa02a",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]

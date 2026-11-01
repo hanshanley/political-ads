@@ -7203,49 +7203,49 @@
     "ad_id": "snap-70e7dd66fa32c981be9b7988",
     "block_id": "snap-70e7dd66fa32c981be9b7988-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-710f22cd634222dec8f05a7f",
     "block_id": "snap-710f22cd634222dec8f05a7f-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for EL-SAYED, ABDUL: \\\"Abdul El-Sayed\\\" is absent from unit 3. Exact source: \\\"Senate candidate Abdul EI-S\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-71c82e98eaba9b991ecd76da",
     "block_id": "snap-71c82e98eaba9b991ecd76da-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-71e6e8c1d4e29d05a142f34a",
     "block_id": "snap-71e6e8c1d4e29d05a142f34a-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 7 for Husted: \\\"Husted\\\" is absent from unit 26. Exact source: \\\"Husten accentet a weхneт\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-71e6e8c1d4e29d05a142f34a",
     "block_id": "snap-71e6e8c1d4e29d05a142f34a-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-71e6e8c1d4e29d05a142f34a",
     "block_id": "snap-71e6e8c1d4e29d05a142f34a-claims-003",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-72071eacd915d696e90558fb",
     "block_id": "snap-72071eacd915d696e90558fb-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-7243afc41dbf2d8aa0ad2b9b",
     "block_id": "snap-7243afc41dbf2d8aa0ad2b9b-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 9\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-72e1708ed7637289a1b2ec59",
