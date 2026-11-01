@@ -3125,16 +3125,16 @@
   "ads": 1792,
   "ads_by_status": {
     "normalized": 340,
-    "not_run": 888,
-    "validation_failed": 564
+    "not_run": 883,
+    "validation_failed": 569
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 361,
-    "not_run": 1032,
-    "validation_failed": 623
+    "normalized": 363,
+    "not_run": 1024,
+    "validation_failed": 629
   },
-  "claims": 2386,
+  "claims": 2392,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -4034,6 +4034,10 @@
         {
           "claim_id": "snap-44781b3744bd43ef7da77e61-claims-001-004",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-4adaf3155484b3c5aad88393-claims-002-002",
+          "target_index": 0
         }
       ],
       "neutral": [
@@ -4659,6 +4663,14 @@
         },
         {
           "claim_id": "snap-48135235fe50a45be1d9cf9e-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-49c7637dd14a908f2b82e8ba-claims-002-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-4adaf3155484b3c5aad88393-claims-002-003",
           "target_index": 0
         }
       ],
@@ -9097,6 +9109,14 @@
         {
           "claim_id": "snap-48135235fe50a45be1d9cf9e-claims-001-002",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-49c7637dd14a908f2b82e8ba-claims-002-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-49c7637dd14a908f2b82e8ba-claims-002-003",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -10858,6 +10878,10 @@
         },
         {
           "claim_id": "snap-46fb72293663ddd92020d3e9-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-4adaf3155484b3c5aad88393-claims-002-001",
           "target_index": 0
         }
       ],
@@ -14474,6 +14498,6 @@
       "uncertain": []
     }
   },
-  "targets": 2821,
+  "targets": 2827,
   "version": "local-ad-claims-4"
 }
