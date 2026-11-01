@@ -3650,14 +3650,14 @@
   {
     "ad_id": "snap-0315aef1cf9b222254f815f9",
     "block_id": "snap-0315aef1cf9b222254f815f9-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 2\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-043bd65264ad33139f874fc5",
     "block_id": "snap-043bd65264ad33139f874fc5-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":11,\\\"label\\\":\\\"MY VOTE\\\"},{\\\"claim\\\":13,\\\"label\\\":\\\"PRO-LABOR\\\"},{\\\"claim\\\":14,\\\"label\\\":\\\"N'SBETTER\\\"},{\\\"claim\\\":15,\\\"label\\\":\\\"N'S BETTER\\\"},{\\\"claim\\\":22,\\\"label\\\":\\\"JAMES TALARICO\\\"},{\\\"claim\\\":24,\\\"label\\\":\\\"AFL-CIO\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-046abbf4ef94bcb1967b3e6e",
@@ -3674,8 +3674,8 @@
   {
     "ad_id": "snap-049352e5aa78612f38f3ed3a",
     "block_id": "snap-049352e5aa78612f38f3ed3a-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for Ohio: \\\"OHIO\\\" is absent from unit 2. Exact source: \\\"\\\\\\\"THE LARGEST\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-04bc8c81a19e6c977d9a2454",
@@ -3686,14 +3686,14 @@
   {
     "ad_id": "snap-050256f2422a74ce988df6f1",
     "block_id": "snap-050256f2422a74ce988df6f1-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 10 for BROWN, SHERROD: \\\"Sherrod Brown\\\" is absent from unit 1. Exact source: \\\"Defend Ohio. Stand up for the UA and always fight for labor.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-05b627b667d7309b0edd7dc2",
     "block_id": "snap-05b627b667d7309b0edd7dc2-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for Mike Rogers: \\\"Mike Rogers\\\" is absent from unit 3. Exact source: \\\"This bro really expect us to believe that, go to foremish.org slash vote to get Florida\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-061bf4b6f9c372bfa2582488",
