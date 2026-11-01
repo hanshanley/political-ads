@@ -443,6 +443,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "begich-nrcc-cnbc",
+        "https://www.cnbc.com",
+        "National Republican Congressional Committee (publisher-reported; payer unverified)",
+        "R",
+        "party",
+        "House",
+        fixed_race="AK-00",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "lawler-tell-her-no",
         "https://www.lawlerforcongress.com",
         "Mike Lawler campaign (campaign-reported; payer unverified)",

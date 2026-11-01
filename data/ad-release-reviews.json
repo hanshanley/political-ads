@@ -2668,6 +2668,36 @@
       "publisher_credit": "Lawler for Congress campaign; Tell Her No release, October 12, 2026.",
       "reuse_basis": "Retain only 19 unchanged whitespace words from the one hash-bound quotation, including its terminal comma, credited for comparative noncommercial research. Exclude the ad title, narrator paraphrases, other interview quotations not explicitly attributed to this creative, publisher claims and campaign-manager press statements. Full cached HTML and original media remain undistributed; no complete script, blanket license or edition-publication authorization is asserted.",
       "attribution_basis": "The actual campaign release explicitly identifies this Cait Conley interview quotation as played in the newly launched Tell Her No ad. The advertiser is Republican Mike Lawler, exact frozen H2NY17162 / LAWLER, MICHAEL VINCENT / REP / H / NY17 / 2026 / C00815415, with the existing reviewed Mike Lawler alias unchanged. The quoted speaker is Democratic opponent Cait Conley, frozen H6NY17171 / CONLEY, CAIT / DEM / H / NY17 / 2026 / C00900431, not Lawler narration. The interview took place last November relative to the 2026 release; it is not a newly conducted 2026 interview. The unique h2.text-center release heading and small.date visible October 12, 2026 date are bound to HTML SHA256 83be67b93c5451e3c1d07f39c104b2dbe7fdaddfef9d3853cb86349cc3cb799f. Paragraph SHA256 b5bd1b20b6e534971cd03579a2b3dc9f4ed2a081b7621960a2dc5df2ddb9822e binds the selected quotation and explicit footage-in-ad association. Text SHA256 0577e368618a51e7de55411a847ce7d9c870997fd032cbd4baabc317ee9d7134 binds the unchanged excerpt. The public post advertises a tracked Watch link, which was not requested or treated as verified original media; media URLs remain empty. No independent audio, legal payer, first airing, delivery, duration, completeness, underlying political claim or semantic strategy judgment is certified. Phase remains unknown. This distinct creative is admitted through a separate guarded source without recollecting or modifying any of the six existing Lawler records."
+    },
+    {
+      "source": "begich-nrcc-cnbc",
+      "record_id": "20260414",
+      "source_url": "https://www.cnbc.com/2026/04/14/nrcc-touts-tax-cuts-in-new-2026-election-messaging-ad.html",
+      "retrieval_url": "https://www.cnbc.com/2026/04/14/nrcc-touts-tax-cuts-in-new-2026-election-messaging-ad.html",
+      "format": "html",
+      "content_sha256": "411bff43fceb26f2252d03f9f69e5947e49bdc165ed361933670e7f7e65554be",
+      "published": "2026-04-14",
+      "release_title": "House Republican campaign arm touts tax cuts in new 2026 election ad",
+      "heading_selector": "h1.ArticleHeader-headline",
+      "candidate_id": "H2AK01083",
+      "media_url": null,
+      "phase": "unknown",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "National Republican Congressional Committee",
+        "Nick Begich",
+        "says the voiceover in the ad for Begich, who is seeking a second term as Alaska's at-large representative."
+      ],
+      "passages": [
+        "But Nick Begich changed that. Voting for real tax relief that puts more money back in your pocket,"
+      ],
+      "reported_ad_text": {
+        "paragraph_selector": ".ArticleBody-articleBody p:-soup-contains(\"says the voiceover in the ad for Begich\")",
+        "paragraph_sha256": "d6fb1d75921892ba2c871fbfbd4f07da3b7b461d4d52e4d7d77f0ebe8b064053"
+      },
+      "publisher_credit": "CNBC; April 14, 2026 report on the NRCC House tax-ad campaign.",
+      "reuse_basis": "Retain only the 18 unchanged ending words of the longer voiceover quotation, including the terminal comma, credited for comparative noncommercial research. This is a selected ending, not the whole quoted passage or complete creative. Exclude preceding ad lines, NRCC spokesman press statements, publisher analysis and other campaigns. Full cached HTML and original media remain undistributed; no blanket license or edition-publication authorization is asserted.",
+      "attribution_basis": "CNBC explicitly describes an NRCC digital-ad campaign and attributes this quoted voiceover to its Nick Begich creative for Alaska's at-large House seat. Acquire one Alaska creative, not fourteen records for the campaign's district placements. Exact frozen contextual candidate H2AK01083 / BEGICH, NICHOLAS III / REP / H / AK00 / 2026 / C00792341 and the existing Nick Begich alias remain unchanged. The reported advertiser is the National Republican Congressional Committee, a party source, not Begich's principal committee or an independently verified legal payer. The unique h1.ArticleHeader-headline and article:published_time 2026-04-14T11:00:01+0000 are pinned to the original canonical HTML SHA256 411bff43fceb26f2252d03f9f69e5947e49bdc165ed361933670e7f7e65554be. A newer public discovery response has SHA256 73cf176e843570f44c6ef5ea4d73002d96b03b15a133e0f808305f200d6b959b but reproduces the identical heading, date and uniquely hash-bound paragraph d6fb1d75921892ba2c871fbfbd4f07da3b7b461d4d52e4d7d77f0ebe8b064053. Neither response was overwritten. The selected ending's text SHA256 is 11c0f3bf8c6ebc6c3e9cb5881c409dad1cfefa1ebd8ccf2646e506ba2fdca8dc. The narrow collector selects only the ending explicitly inside the voiceover quotation, retains the 15-word floor and 25-word ceiling, and rejects preceding lines and press statements. No request was made to the paused NRCC provider or original media. Independent audio, legal payer, first airing, delivery, duration, completeness, underlying tax claims and semantic strategy remain unverified; phase is unknown and media URLs are empty."
     }
   ]
 }

@@ -6077,6 +6077,93 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "CNBC explicitly describes an NRCC digital-ad campaign and attributes this quoted voiceover to its Nick Begich creative for Alaska's at-large House seat. Acquire one Alaska creative, not fourteen records for the campaign's district placements. Exact frozen contextual candidate H2AK01083 / BEGICH, NICHOLAS III / REP / H / AK00 / 2026 / C00792341 and the existing Nick Begich alias remain unchanged. The reported advertiser is the National Republican Congressional Committee, a party source, not Begich's principal committee or an independently verified legal payer. The unique h1.ArticleHeader-headline and article:published_time 2026-04-14T11:00:01+0000 are pinned to the original canonical HTML SHA256 411bff43fceb26f2252d03f9f69e5947e49bdc165ed361933670e7f7e65554be. A newer public discovery response has SHA256 73cf176e843570f44c6ef5ea4d73002d96b03b15a133e0f808305f200d6b959b but reproduces the identical heading, date and uniquely hash-bound paragraph d6fb1d75921892ba2c871fbfbd4f07da3b7b461d4d52e4d7d77f0ebe8b064053. Neither response was overwritten. The selected ending's text SHA256 is 11c0f3bf8c6ebc6c3e9cb5881c409dad1cfefa1ebd8ccf2646e506ba2fdca8dc. The narrow collector selects only the ending explicitly inside the voiceover quotation, retains the 15-word floor and 25-word ceiling, and rejects preceding lines and press statements. No request was made to the paused NRCC provider or original media. Independent audio, legal payer, first airing, delivery, duration, completeness, underlying tax claims and semantic strategy remain unverified; phase is unknown and media URLs are empty.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H2AK01083",
+          "district": "00",
+          "name": "BEGICH, NICK",
+          "office": "H",
+          "party": "REP",
+          "state": "AK"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "begich-nrcc-cnbc-20260414-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "9439a903199984adff9b71334d39f863679ea4bdea345c337ce45549d10e2893",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-04-14",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified",
+        "selected_ending_of_longer_ad_quotation"
+      ],
+      "race": "AK-00",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H2AK01083"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "CNBC explicitly describes an NRCC digital-ad campaign and attributes this quoted voiceover to its Nick Begich creative for Alaska's at-large House seat. Acquire one Alaska creative, not fourteen records for the campaign's district placements. Exact frozen contextual candidate H2AK01083 / BEGICH, NICHOLAS III / REP / H / AK00 / 2026 / C00792341 and the existing Nick Begich alias remain unchanged. The reported advertiser is the National Republican Congressional Committee, a party source, not Begich's principal committee or an independently verified legal payer. The unique h1.ArticleHeader-headline and article:published_time 2026-04-14T11:00:01+0000 are pinned to the original canonical HTML SHA256 411bff43fceb26f2252d03f9f69e5947e49bdc165ed361933670e7f7e65554be. A newer public discovery response has SHA256 73cf176e843570f44c6ef5ea4d73002d96b03b15a133e0f808305f200d6b959b but reproduces the identical heading, date and uniquely hash-bound paragraph d6fb1d75921892ba2c871fbfbd4f07da3b7b461d4d52e4d7d77f0ebe8b064053. Neither response was overwritten. The selected ending's text SHA256 is 11c0f3bf8c6ebc6c3e9cb5881c409dad1cfefa1ebd8ccf2646e506ba2fdca8dc. The narrow collector selects only the ending explicitly inside the voiceover quotation, retains the 15-word floor and 25-word ceiling, and rejects preceding lines and press statements. No request was made to the paused NRCC provider or original media. Independent audio, legal payer, first airing, delivery, duration, completeness, underlying tax claims and semantic strategy remain unverified; phase is unknown and media URLs are empty.",
+            "candidate_id": "H2AK01083",
+            "completeness": "partial_quotation",
+            "content_sha256": "411bff43fceb26f2252d03f9f69e5947e49bdc165ed361933670e7f7e65554be",
+            "format": "html",
+            "heading_selector": "h1.ArticleHeader-headline",
+            "media_url": null,
+            "passages": [
+              "But Nick Begich changed that. Voting for real tax relief that puts more money back in your pocket,"
+            ],
+            "phase": "unknown",
+            "published": "2026-04-14",
+            "publisher_credit": "CNBC; April 14, 2026 report on the NRCC House tax-ad campaign.",
+            "record_id": "20260414",
+            "release_title": "House Republican campaign arm touts tax cuts in new 2026 election ad",
+            "reported_ad_text": {
+              "paragraph_selector": ".ArticleBody-articleBody p:-soup-contains(\"says the voiceover in the ad for Begich\")",
+              "paragraph_sha256": "d6fb1d75921892ba2c871fbfbd4f07da3b7b461d4d52e4d7d77f0ebe8b064053"
+            },
+            "required_context": [
+              "National Republican Congressional Committee",
+              "Nick Begich",
+              "says the voiceover in the ad for Begich, who is seeking a second term as Alaska's at-large representative."
+            ],
+            "retrieval_url": "https://www.cnbc.com/2026/04/14/nrcc-touts-tax-cuts-in-new-2026-election-messaging-ad.html",
+            "reuse_basis": "Retain only the 18 unchanged ending words of the longer voiceover quotation, including the terminal comma, credited for comparative noncommercial research. This is a selected ending, not the whole quoted passage or complete creative. Exclude preceding ad lines, NRCC spokesman press statements, publisher analysis and other campaigns. Full cached HTML and original media remain undistributed; no blanket license or edition-publication authorization is asserted.",
+            "source": "begich-nrcc-cnbc",
+            "source_url": "https://www.cnbc.com/2026/04/14/nrcc-touts-tax-cuts-in-new-2026-election-messaging-ad.html"
+          },
+          "text": "But Nick Begich changed that. Voting for real tax relief that puts more money back in your pocket,"
+        }
+      ],
+      "source": "begich-nrcc-cnbc",
+      "source_hash": "411bff43fceb26f2252d03f9f69e5947e49bdc165ed361933670e7f7e65554be",
+      "source_record_id": "20260414",
+      "source_url": "https://www.cnbc.com/2026/04/14/nrcc-touts-tax-cuts-in-new-2026-election-messaging-ad.html",
+      "sponsor": "National Republican Congressional Committee (publisher-reported; payer unverified)",
+      "sponsor_type": "party",
+      "state": "AK",
+      "text": "But Nick Begich changed that. Voting for real tax relief that puts more money back in your pocket,",
+      "title": "House Republican campaign arm touts tax cuts in new 2026 election ad"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Official NRCC release at https://www.nrcc.org/2026/04/14/nrcc-launches-tax-day-ad-blitz-highlighting-juan-ciscomanis-tax-relief/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
       "date_basis": "release_date",
@@ -51264,6 +51351,22 @@
       "source": "barron-gop-apg-print",
       "state": "partial",
       "url": "https://marketplace.apg-wi.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "begich-nrcc-cnbc",
+      "state": "partial",
+      "url": "https://www.cnbc.com"
     },
     {
       "ads_with_text": 2,

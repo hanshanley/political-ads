@@ -1507,6 +1507,121 @@ def test_kiggans_report_rejects_unbound_identity_or_non_ad_quotations(failure):
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_begich_nrcc_fixture():
+    source, candidate, review, _, _, _ = unlinked_kiggans_fixture()
+    source = next(s for s in SOURCES if s.id == "begich-nrcc-cnbc")
+    candidate.update(
+        candidate_id="H2AK01083",
+        name="BEGICH, NICHOLAS III",
+        state="AK",
+        district="00",
+        reviewed_alias={"full_name": "Nick Begich"},
+    )
+    selected = (
+        "But Nick Begich changed that. This selected ending has enough words "
+        "to qualify without acquiring the preceding creative lines,"
+    )
+    introduction = "The unselected creative introduction."
+    paragraph = (
+        f'"{introduction} {selected}" says the voiceover in the ad for Begich, '
+        "who is seeking a second term as Alaska's at-large representative."
+    )
+    commentary = "Separate NRCC spokesman press commentary."
+    content = (
+        '<meta property="article:published_time" content="2026-04-14T11:00:01+0000">'
+        "<h1>Begich ad report</h1><article>"
+        "<p>National Republican Congressional Committee advertising features Nick Begich.</p>"
+        f'<p class="quoted">{paragraph}</p><p>"{commentary}" the spokesman said.</p></article>'
+    )
+    url = source.url + "/2026/04/14/begich-ad-report.html"
+    review.update(
+        source=source.id,
+        record_id="20260414",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-04-14",
+        release_title="Begich ad report",
+        candidate_id=candidate["candidate_id"],
+        required_context=["Nick Begich", "National Republican Congressional Committee"],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": "article > p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+    )
+    return source, candidate, review, content.encode(), introduction, commentary
+
+
+def test_begich_nrcc_report_keeps_only_selected_ending_of_one_alaska_ad():
+    source, candidate, review, body, introduction, commentary = unlinked_begich_nrcc_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == review["passages"][0] and ad["text"].endswith(",")
+    assert introduction not in ad["text"] and commentary not in ad["text"]
+    assert ad["alignment"] == "R" and ad["race"] == "AK-00"
+    assert ad["sponsor_type"] == "party" and ad["media_urls"] == []
+    assert ad["phase"] == "unknown" and ad["date_basis"] == "publisher_report_date"
+    assert {
+        "selected_ending_of_longer_ad_quotation",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified",
+    } <= set(ad["quality_flags"])
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "failure",
+    ["candidate", "alias", "interview", "too_long", "introduction", "commentary", "duplicate"],
+)
+def test_begich_nrcc_report_rejects_unbound_identity_or_unselected_words(failure):
+    source, candidate, review, body, introduction, commentary = unlinked_begich_nrcc_fixture()
+    content = body.decode()
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H2AK01999"
+    elif failure == "alias":
+        candidate.pop("reviewed_alias")
+    elif failure == "interview":
+        content = content.replace("the voiceover in the ad", "the speaker in the interview")
+    elif failure == "too_long":
+        original = review["passages"][0]
+        review["passages"][0] += " These added words exceed the permitted quotation limit."
+        content = content.replace(original, review["passages"][0])
+    elif failure == "introduction":
+        review["passages"].insert(0, introduction)
+    elif failure == "commentary":
+        review["passages"].append(commentary)
+    elif failure == "duplicate":
+        from bs4 import BeautifulSoup
+
+        content += str(BeautifulSoup(content, "html.parser").select("article > p.quoted")[0])
+        review["reported_ad_text"]["paragraph_selector"] = "p.quoted"
+    from bs4 import BeautifulSoup
+
+    paragraph = BeautifulSoup(content, "html.parser").select("p.quoted")[0]
+    review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
+    review["content_sha256"] = digest(content)
+
+    class Client:
+        def get(self, url, **kwargs):
+            return content.encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 def unlinked_lawler_fixture():
     source, candidate, review, _, _, _ = unlinked_kiggans_fixture()
     source = next(s for s in SOURCES if s.id == "lawler-tell-her-no")

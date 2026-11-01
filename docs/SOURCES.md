@@ -10,6 +10,75 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## NRCC: one Alaska ad's selected ending
+
+CNBC's April 14, 2026 report
+`https://www.cnbc.com/2026/04/14/nrcc-touts-tax-cuts-in-new-2026-election-messaging-ad.html`
+explicitly attributes a quoted voiceover to an NRCC ad for Nick Begich.
+Acquire only its **18 unchanged ending words**, including the terminal
+comma: a selected ending of a longer quotation, not that entire passage
+or a complete script. Preceding creative lines, spokesman press statements
+and publisher analysis are excluded. The new guard requires the ending
+inside the quotation explicitly attributed to the Begich ad; the existing
+15-word floor and 25-word ceiling remain unchanged.
+
+This is **one Alaska creative**, not fourteen records for the broader
+campaign's district placements. Contextual candidate is the exact frozen
+**H2AK01083 / BEGICH, NICHOLAS III / REP / AK-00 / C00792341**.
+The existing Nick Begich alias is unchanged. Advertiser is the reported
+NRCC **party** source, not Begich's principal committee or an independently
+verified legal payer. Earlier creative lines are omitted, so no whole-ad
+positive-only or mixed strategy is established; the record remains
+**semantically unreviewed**. The ordinary detector identified English.
+
+The original canonical HTML SHA-256 is
+`411bff43fceb26f2252d03f9f69e5947e49bdc165ed361933670e7f7e65554be`.
+A newer discovery response has SHA-256
+`73cf176e843570f44c6ef5ea4d73002d96b03b15a133e0f808305f200d6b959b`.
+Both have the same unique `h1.ArticleHeader-headline`, publication
+`2026-04-14T11:00:01+0000`, and voiceover paragraph SHA-256
+`d6fb1d75921892ba2c871fbfbd4f07da3b7b461d4d52e4d7d77f0ebe8b064053`.
+**Neither saved response nor the original cache metadata was overwritten.**
+The review binds the original canonical response and text SHA-256
+`11c0f3bf8c6ebc6c3e9cb5881c409dad1cfefa1ebd8ccf2646e506ba2fdca8dc`.
+The selector matches exactly one paragraph within the actual article body.
+The paused NRCC provider and original media were not requested. Original
+audio, first airing, delivery, duration, completeness and tax claims remain
+unverified; phase is unknown and media URLs are empty.
+
+Reproduce with the pinned canonical response:
+`.venv/bin/political-ads collect --source begich-nrcc-cnbc --until 2026-10-30 --offline`,
+then `parquet`, `build`, `validate`, `audit-strategy` and the existing
+frontend build/tests. Collection replay requires the exact retained cache;
+full publisher HTML is not redistributed. Analysis and complete-download
+validation use the committed literal corpus and frozen annotations.
+The isolated replay forbids network, recognition and subprocesses.
+
+Snapshot
+`da2324dba0680f4606cf1be1be98996a40553c852a9003a1fbbb35167a1167c1`
+contains **1,945 acquired / 1,906 English**, including **R641 / D1,226**
+English records and **R263 / D698** English House records.
+House outside Snapchat is **R262 / D222**. There are **584 written
+records / 90 release reviews / 43 native reviews / 38 aliases**.
+The immutable baseline protects all **1,944 prior acquired and 1,905
+prior analyzed objects**, old reviews/aliases, 18 protected file hashes
+and the pre-existing CNBC response/metadata hashes. Full JSON, gzip and
+CSV copies, typed Parquet text/segments and all eleven PNG/CSV chart sets
+passed parity without truncation. Whole Ruff and **700 Python tests**,
+frontend lint/build, **17 unit tests / 9 browser tests**, and the isolated
+replay all passed. Saved cutoff remains October 30; final
+inclusive scope remains November 4. Website, host and edition publication
+remain held.
+
+Expanded discovery receipts verify **127 references / 118 exact bodies /
+9 preserved no-body receipts**. Actual Lawler archive pages 2-6 reach
+January 2026 and then explicitly 2025; page 7 was not requested.
+Remaining entries are already acquired ads, endorsements, polling,
+debates, campaign statements or unrelated ad mentions. The original WITF
+Perry report duplicates the acquired Capital-Star syndication, and the
+WUNC report duplicates the acquired Knott quotation. Those routes add
+no new records.
+
 ## Lawler: opponent interview clip explicitly played in an ad
 
 The October 12, 2026 campaign release for **Tell Her No** explicitly

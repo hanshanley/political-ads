@@ -446,6 +446,7 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             "deboer-washingtonreporter",
             "merrin-washingtonreporter",
             "kiggans-washingtonreporter",
+            "begich-nrcc-cnbc",
             "lawler-tell-her-no",
             "pps-house-washingtonreporter",
         }
@@ -467,6 +468,8 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         raise ValueError("Reporter quotation requires the reviewed Kiggans candidate identity")
     if source.id == "lawler-tell-her-no" and review["candidate_id"] != "H2NY17162":
         raise ValueError("Campaign quotation requires the reviewed Lawler candidate identity")
+    if source.id == "begich-nrcc-cnbc" and review["candidate_id"] != "H2AK01083":
+        raise ValueError("CNBC quotation requires the reviewed Begich candidate identity")
     if source.id == "pps-house-washingtonreporter" and review["candidate_id"] != "H2FL04211":
         raise ValueError("Reporter quotation requires the reviewed Bean speaker identity")
     evidence = review["reported_ad_text"]
@@ -494,6 +497,12 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             r"platforms\. “([^”]+)” Conley told an interviewer last November, and the ad "
             r"lets that sit for a second before it plays what she’s been telling Democratic "
             r"audiences ever since\."
+        )
+    elif source.id == "begich-nrcc-cnbc":
+        pattern = (
+            r'"[^"]+\. (But Nick Begich changed that\. [^"]+)" says the voiceover '
+            r"in the ad for Begich, who is seeking a second term as Alaska's "
+            r"at-large representative\."
         )
     elif source.id == "pps-house-washingtonreporter":
         pattern = (
@@ -710,6 +719,8 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         flags.extend(["original_ad_media_unverified", "ad_legal_payer_unverified"])
     if source.id == "lawler-tell-her-no":
         flags.append("opponent_interview_clip_used_in_ad")
+    if source.id == "begich-nrcc-cnbc":
+        flags.append("selected_ending_of_longer_ad_quotation")
     if multi_race:
         flags.extend(
             [
