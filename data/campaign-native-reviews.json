@@ -1,6 +1,47 @@
 {
   "reviews": [
     {
+      "id": "brattin-native-intro-d3ba9b7551102b5d",
+      "source": "brattin-campaign",
+      "media_type": "video",
+      "publisher_url": "https://rickbrattin.com/",
+      "post_url": "https://rickbrattin.com/",
+      "media_url": "https://rickbrattin.com/wp-content/uploads/2026/02/20260224_CREATIVE-DIRECT_BRATTIN-v5.mp4",
+      "media_sha256": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+      "title": "Brattin introductory campaign video",
+      "title_basis": "Descriptive label from the visually inspected campaign-hosted original; not an asserted official title or release date",
+      "sponsor": "Rick Brattin for Congress",
+      "sponsor_type": "candidate",
+      "candidate_id": "H2MO04199",
+      "required_quotes": [
+        "President Trump needs patriots in Congress.",
+        "RICK BRATTIN",
+        "CANDIDATE FOR U.S. CONGRESS"
+      ],
+      "reviewed": "2026-10-31",
+      "ad_evidence": "Actual 60.693-second edited campaign promotional original with narration, campaign graphics and an introductory/closing candidate card, not homepage issue text, an interview or B-roll. Eight original frames at 0, 10, 20, 30, 40, 50, 59 and 60.5 seconds were visually inspected, including the full-resolution final frame. The candidate card explicitly identifies Rick Brattin for Congress. Exact independently retained official H2MO04199 / C00939710 identifies BRATTIN, RICHARD, REP, House, MO-05, 2026, with principal RICK BRATTIN FOR CONGRESS, P/H/REP; the official committee bridges Rick and Richard without an alias change. Campaign publisher attribution is not a verified legal payer: the inspected closing card has no paid-for disclaimer or candidate approval statement. Retain only as an undated recovered lead, not an admitted dated advertisement, paid placement or semantic review.",
+      "date_uncertainty": "The homepage explicitly links this original and public page 22 metadata, but its explicitly linked parent attachment collection is empty. Page creation February 18, the February 24-looking filename, the February upload directory and the original HTTP Last-Modified February 27 at 15:17:48 GMT do not establish first upload, release, publication or paid delivery. Actual original encoding metadata has no creation_time. No date proxy is substituted; remain outside dated analysis until independently bound evidence is established.",
+      "date_evidence": {
+        "publisher_html_sha256": "4422ed32483ded994ef7dc6c199d7d5e676ae3437c484ae40c44e8649d5d1711",
+        "page_api_url": "https://rickbrattin.com/wp-json/wp/v2/pages/22",
+        "page_sha256": "145b8fc86286bba592776a3da7bb6841369e25e3bef6fd38286e29aace27976a",
+        "attachment_api_url": "https://rickbrattin.com/wp-json/wp/v2/media?parent=22",
+        "attachment_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "attachment_count": 0,
+        "original_bytes": 28495919,
+        "original_last_modified": "Fri, 27 Feb 2026 15:17:48 GMT",
+        "encoding_creation_time": null
+      },
+      "quality_flags": [
+        "campaign_promotional_original_visually_reviewed",
+        "campaign_publisher_not_verified_legal_payer",
+        "closing_payer_and_candidate_approval_unestablished",
+        "automatic_candidate_name_and_other_word_errors_preserved",
+        "frame_ocr_motion_fragments_and_noise_preserved"
+      ],
+      "extraction_caveat": "Preserve all 43 extracted segments unchanged: 20 local ASR segments and 23 frame-OCR segments. ASR includes Bratton, Breton, spyingless Republicans, moment accounts and free-state dinner; these are not corrected or treated as reviewed semantic evidence. OCR includes TES OF-AMER, IINILD, truncated motion text and overlapping claims. The extraction is not a certified complete or corrected script."
+    },
+    {
       "id": "steele-native-forged-646f487a5b6782ba",
       "source": "steele-campaign",
       "media_type": "video",

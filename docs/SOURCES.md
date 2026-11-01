@@ -10,6 +10,155 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Broader House discovery: Montana, Kansas and Missouri
+
+These actual-response checks have not added advertising records. Discovery
+metadata, campaign issue copy, interviews and newsletters remain distinct
+from recovered ad speech. Existing texts, saved reviews and the October 30
+eligibility cutoff are unchanged.
+
+**Downing / MT-02:** the actual campaign homepage returned 200, SHA-256
+`e324eb2cb668402af6aecfbf1aa90901368de9fb6ea3a4d3e0836a4298bae435`,
+but supplied biography, issues and photographs, not dated advertising text.
+The actual April 7 Daily Montanan report,
+`https://dailymontanan.com/2026/04/07/who-does-troy-downing-work-for/`,
+is pinned to
+`83cd21a4feaa3b0a3d4c962944af6aa8f49c933a070f3b009ca8b6dea17d24b6`.
+Its explicitly linked original **Downing-mailer.jpeg** contains
+**135,906 bytes / 777 x 422 pixels**, SHA-256
+`180189a0de40a8df455e271b7e5d81367d48c293933199edf3c7272d4fca8448`.
+Visual inspection establishes an **official-business constituent mailer
+paid with House official funds**, not a campaign-committee advertisement.
+The source's campaign characterization and separate interview/social
+remarks do not override that actual payer evidence. No OCR, campaign
+review or ad admission was added.
+
+**Estes / KS-04:** the actual campaign homepage returned 200, SHA-256
+`c2185f18f2426a246e007f30f6d7e8abd0a6275e879bb487911c679f42554c0b`.
+Its actual **/blog** link returned 200, SHA-256
+`76cf979a8d7d301c4bd3c353cdb35dbc24541327cc5abe60f33a7443403c6e3e`,
+with twelve **Ron's Reads** newsletters dated August 2 through October 25.
+These are news/issue/fundraising copy, not twelve recovered advertisements.
+The archive's actual **/media-gallery** link also returned 200, SHA-256
+`7bb693d2a56f9f3abee1be59057f349074482ce41f746ed52c7de6a55d0c218f`.
+Its video is explicitly named **web-b-roll**, with photographs and a
+channel link, not a recovered finished ad. The original was not downloaded.
+The actual October 27 Punchbowl report,
+`https://punchbowl.news/article/vault/estes-tariff-pushback/`,
+is pinned to
+`7f255141f5fd9afcfdc5e24d1cb44d7ec58d682758a170b8417de03d2134cbc0`
+and explicitly renders only a **Premium+ preview**. It does not supply a
+complete ad script or individual-original association. The exposed article
+API was not requested; Punchbowl and its subdomains are preview-paused.
+No login, AdImpact viewer or alternate full-copy route was used.
+
+**Alford / MO-04 and Burlison / MO-07:** both actual campaign homepages
+returned 200, pinned respectively to
+`57a2fe330ae0efbe359b7b4895742c8170cafd047a8b809b4768fb0645066b36`
+and `eb9da1a18bcb758879c0aeef0e81037c97f1bb8a191233e949acf02d947d3e8b`.
+Alford's undated announcement **4G-cltHTwI4** and August 2023 update,
+and Burlison's issue/record copy and channel link, do not establish
+eligible 2026 ad words.
+
+**MO-05 primary expansion:** the actual July 21 Missouri Independent
+report,
+`https://missouriindependent.com/2026/07/21/uncertain-congressional-map-hangs-over-missouris-crowded-5th-district-gop-primary/`,
+returned 200, SHA-256
+`b012daa414adbe9da743f7746776cb7e731a117bbecb63b22998b570f6677a03`.
+Its unique **#dataContent** contains genuine quoted outside-group ad
+speech, but no corresponding individual original was established.
+Interview quotations and stump-speech remarks are excluded. Exact saved
+Republican federal identities are **H2MO04199 / C00939710 / Richard
+Brattin** and **H6MO05312 / C00940593 / Taylor Burks**. These are primary
+discovery leads, not recovered variants or new name aliases.
+The independently discovered Jeremy Teigen commentary homepage returned
+200, SHA-256
+`3baf1302829a7d93019dd5a8c85fdf00c289d41562a0c2920af7fbe25f106082`,
+and identifies a July 22 Burks commercial, with short literal ad quotations
+and a campaign-homepage link rather than an individual original. Following
+that actual **burksforcongress.com** link returned **403**. The campaign
+host and its subdomains are now denied-paused; no alternate page, API or
+media retrieval was attempted.
+
+**Brattin / MO-05 recovered but undated:** the actual campaign homepage
+returned 200, SHA-256
+`4422ed32483ded994ef7dc6c199d7d5e676ae3437c484ae40c44e8649d5d1711`,
+and directly links
+`https://rickbrattin.com/wp-content/uploads/2026/02/20260224_CREATIVE-DIRECT_BRATTIN-v5.mp4`.
+One successful HEAD established an original of **28,495,919 bytes**,
+below the existing 64 MiB acquisition bound. The actual downloaded MP4,
+SHA-256
+`d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39`,
+is **60.693 seconds / 1920 x 1080**. Eight actual frames, including the
+full-resolution final frame at **60.5 seconds**, establish an edited
+campaign promotional original with Rick Brattin for Congress cards.
+The inspected closing card **does not establish a paid-for disclaimer,
+candidate approval or legal payer**. Exact cached official
+**H2MO04199 / C00939710 / RICK BRATTIN FOR CONGRESS / P / H / REP**
+bridges the registered Richard name to Rick, without changing aliases.
+
+Existing local speech/frame OCR recovered **43 unchanged segments**;
+candidate-name errors, other questionable speech and motion-text fragments
+remain visible and uncorrected. This is **one needs-date lead in the
+complete-text media backlog**, not a dated admission, manually certified
+script, paid-delivery observation or new semantic judgment.
+The actual HTML-exposed page metadata at
+`https://rickbrattin.com/wp-json/wp/v2/pages/22`, SHA-256
+`145b8fc86286bba592776a3da7bb6841369e25e3bef6fd38286e29aace27976a`,
+explicitly links
+`https://rickbrattin.com/wp-json/wp/v2/media?parent=22`.
+That actual parent collection is empty, SHA-256
+`4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945`,
+with total **zero attachments / zero pages**. No guessed global media
+query, attachment ID or pagination was requested. Homepage creation
+**February 18**, the February-looking filename/path and original HTTP
+**Last-Modified February 27, 2026, 15:17:48 GMT** are not substituted
+for an individual upload or release date. Actual encoding metadata
+contains **no creation_time**. The strict attachment-upload collector
+and dated comparison denominators are unchanged.
+
+**Steube / FL-17 next native lead:** the independently discovered actual
+campaign homepage, `https://www.electgregsteube.com/`, returned 200,
+SHA-256
+`0e8742acb0e9426b7e59a50334641251ca5e111a6f2fb8c358588970870eb464`.
+Its issue/biography copy and attributed homepage statement are **not
+assumed to be ad speech**. The actual **data-config-video** object identifies
+one native video, **29.996633 seconds**, with asset
+**1cfa43ca-9536-46f9-8816-3125c38db874** and public rendition template.
+No upload/release date is stated in that object; its opaque ID is not a
+date proxy. The campaign's actually linked public player source returned
+200, SHA-256
+`e8175a88195a2399c88263139ea937f12fb2b4b6c604797b595188d246e61e1e`.
+Inert source inspection establishes its exact **playlist.m3u8** template
+substitution, without executing scripts or guessing a media API.
+That actual resolved public master playlist returned 200, SHA-256
+`1797e749b31f6abf17a6af7ffc512ed6d6b8f000ce9ee7d5af3c4a7301ec1723`,
+with separate audio and 640 x 360 / 1920 x 1080 video renditions.
+Temporary signed rendition links are not published here; no rendition
+playlist or segment has yet been requested. Exact saved federal identity
+is **H8FL17053 / C00671891 / STEUBE, GREG / REP / House / FL-17 / 2026**.
+This remains an unresolved original/date lead, not recovered ad text,
+verified legal payer or another advertising count.
+
+**Brattin checkpoint verification:** all **1,925 acquired / 1,886 English
+analyzed objects**, 37 preceding native reviews, 75 written reviews,
+100 dated native ads and 353 preceding backlog leads are preserved.
+An isolated **socket-forbidden, two-response replay** reproduces the
+native partition and complete backlog exactly and is idempotent.
+Complete analysis/browser/production JSON, gzip, CSV and **1,925 Parquet
+rows** reconcile with the independent strategy audit. All eleven
+chart-data sets are unchanged except their snapshot-ID fields; all plot
+pixels are identical outside the precisely bounded snapshot-footer line.
+The unchanged figure generator refreshes that footer to snapshot
+**e947737c8c3b7ff276ef23512f7528e2176601f01f497dd19160d9ee46281c01**.
+Validation passes **141 affected Python / 17 frontend unit / eight browser
+tests**, Python/frontend lint, Python formatting, typechecking and builds.
+RFC 4180 CSV carriage-return line endings are retained, not treated as
+new trailing spaces. **Zero dated ads were added**: English House remains
+**D 698 / R 243**, including **D 222 / R 242 outside Snap**. The recovered
+Brattin words are available in the complete-text backlog without changing
+comparison denominators or authorizing edition/website publication.
+
 ## Steele campaign original and public attachment-upload evidence
 
 The actual **30.08-second** campaign-hosted original,

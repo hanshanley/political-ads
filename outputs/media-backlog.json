@@ -15189,6 +15189,2801 @@
       "source": "millsap-campaign",
       "state": "needs_date",
       "video_url": "https://ryanmillsapforcongress.com/wp-content/uploads/2026/03/Millsap-Intro.mp4"
+    },
+    {
+      "alignment": "R",
+      "date_basis": "release_and_delivery_dates_unverified",
+      "date_uncertainty": "The homepage explicitly links this original and public page 22 metadata, but its explicitly linked parent attachment collection is empty. Page creation February 18, the February 24-looking filename, the February upload directory and the original HTTP Last-Modified February 27 at 15:17:48 GMT do not establish first upload, release, publication or paid delivery. Actual original encoding metadata has no creation_time. No date proxy is substituted; remain outside dated analysis until independently bound evidence is established.",
+      "id": "brattin-native-intro-d3ba9b7551102b5d",
+      "native_evidence": {
+        "ad_evidence": "Actual 60.693-second edited campaign promotional original with narration, campaign graphics and an introductory/closing candidate card, not homepage issue text, an interview or B-roll. Eight original frames at 0, 10, 20, 30, 40, 50, 59 and 60.5 seconds were visually inspected, including the full-resolution final frame. The candidate card explicitly identifies Rick Brattin for Congress. Exact independently retained official H2MO04199 / C00939710 identifies BRATTIN, RICHARD, REP, House, MO-05, 2026, with principal RICK BRATTIN FOR CONGRESS, P/H/REP; the official committee bridges Rick and Richard without an alias change. Campaign publisher attribution is not a verified legal payer: the inspected closing card has no paid-for disclaimer or candidate approval statement. Retain only as an undated recovered lead, not an admitted dated advertisement, paid placement or semantic review.",
+        "candidate_id": "H2MO04199",
+        "date_evidence": {
+          "attachment_api_url": "https://rickbrattin.com/wp-json/wp/v2/media?parent=22",
+          "attachment_count": 0,
+          "attachment_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "encoding_creation_time": null,
+          "original_bytes": 28495919,
+          "original_last_modified": "Fri, 27 Feb 2026 15:17:48 GMT",
+          "page_api_url": "https://rickbrattin.com/wp-json/wp/v2/pages/22",
+          "page_sha256": "145b8fc86286bba592776a3da7bb6841369e25e3bef6fd38286e29aace27976a",
+          "publisher_html_sha256": "4422ed32483ded994ef7dc6c199d7d5e676ae3437c484ae40c44e8649d5d1711"
+        },
+        "date_uncertainty": "The homepage explicitly links this original and public page 22 metadata, but its explicitly linked parent attachment collection is empty. Page creation February 18, the February 24-looking filename, the February upload directory and the original HTTP Last-Modified February 27 at 15:17:48 GMT do not establish first upload, release, publication or paid delivery. Actual original encoding metadata has no creation_time. No date proxy is substituted; remain outside dated analysis until independently bound evidence is established.",
+        "extraction_caveat": "Preserve all 43 extracted segments unchanged: 20 local ASR segments and 23 frame-OCR segments. ASR includes Bratton, Breton, spyingless Republicans, moment accounts and free-state dinner; these are not corrected or treated as reviewed semantic evidence. OCR includes TES OF-AMER, IINILD, truncated motion text and overlapping claims. The extraction is not a certified complete or corrected script.",
+        "id": "brattin-native-intro-d3ba9b7551102b5d",
+        "media_sha256": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+        "media_type": "video",
+        "media_url": "https://rickbrattin.com/wp-content/uploads/2026/02/20260224_CREATIVE-DIRECT_BRATTIN-v5.mp4",
+        "post_url": "https://rickbrattin.com/",
+        "publisher_html_sha256": "4422ed32483ded994ef7dc6c199d7d5e676ae3437c484ae40c44e8649d5d1711",
+        "publisher_url": "https://rickbrattin.com/",
+        "quality_flags": [
+          "campaign_promotional_original_visually_reviewed",
+          "campaign_publisher_not_verified_legal_payer",
+          "closing_payer_and_candidate_approval_unestablished",
+          "automatic_candidate_name_and_other_word_errors_preserved",
+          "frame_ocr_motion_fragments_and_noise_preserved"
+        ],
+        "required_quotes": [
+          "President Trump needs patriots in Congress.",
+          "RICK BRATTIN",
+          "CANDIDATE FOR U.S. CONGRESS"
+        ],
+        "reviewed": "2026-10-31",
+        "source": "brattin-campaign",
+        "speech_engine": {
+          "engine": "faster-whisper 1.2.1",
+          "has_audio": true,
+          "language": "en",
+          "language_probability": 0.9958956241607666,
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "settings": {
+            "beam_size": 5,
+            "condition_on_previous_text": false,
+            "temperature": 0,
+            "vad_filter": true,
+            "word_timestamps": true
+          },
+          "word_alignment_error": null
+        },
+        "sponsor": "Rick Brattin for Congress",
+        "sponsor_type": "candidate",
+        "title": "Brattin introductory campaign video",
+        "title_basis": "Descriptive label from the visually inspected campaign-hosted original; not an asserted official title or release date"
+      },
+      "quality_flags": [
+        "local_speech_and_frame_ocr_not_manually_verified",
+        "automatic_speech_may_misrecognize_names_or_negation",
+        "release_and_delivery_dates_unverified",
+        "campaign_promotional_original_visually_reviewed",
+        "campaign_publisher_not_verified_legal_payer",
+        "closing_payer_and_candidate_approval_unestablished",
+        "automatic_candidate_name_and_other_word_errors_preserved",
+        "frame_ocr_motion_fragments_and_noise_preserved"
+      ],
+      "recovered_segments": [
+        {
+          "avg_logprob": -0.21600187771906287,
+          "end_seconds": 3.51,
+          "excluded_low_confidence_ocr_observations": [
+            {
+              "bounds": [
+                0.3531976727993928,
+                0.20413436665552165,
+                0.11337209542592364,
+                0.06201550519024879
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 34.993291666666664,
+              "text": "ВICURI"
+            },
+            {
+              "bounds": [
+                0.3313953491103073,
+                0.5116279069502234,
+                0.018895347913106264,
+                0.01808785509180133
+              ],
+              "confidence": 0.30000001192092896,
+              "seconds": 42.959583333333335,
+              "text": "DO N"
+            }
+          ],
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.1043398529291153,
+          "speech_detection": {
+            "has_audio": true,
+            "language": "en",
+            "language_probability": 0.9958956241607666,
+            "settings": {
+              "beam_size": 5,
+              "condition_on_previous_text": false,
+              "temperature": 0,
+              "vad_filter": true,
+              "word_timestamps": true
+            },
+            "word_alignment_error": null
+          },
+          "speech_duplicate_ocr_observations": [
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.11337208962922798,
+                    0.16279069823706704,
+                    0.29360466003417973,
+                    0.09560723481354882
+                  ],
+                  "confidence": 1,
+                  "seconds": 8.967291666666666,
+                  "text": "MARINE VETERAN"
+                },
+                {
+                  "bounds": [
+                    0.12126980607908529,
+                    0.16271066188787953,
+                    0.29806159337361654,
+                    0.11642771120424622
+                  ],
+                  "confidence": 1,
+                  "seconds": 9.968291666666667,
+                  "text": "MARINE VETERAN"
+                }
+              ],
+              "text": "MARINE VETERAN"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.10901162957036217,
+                    0.37984496193574635,
+                    0.0930232524871826,
+                    0.09560723481354882
+                  ],
+                  "confidence": 1,
+                  "seconds": 20.979291666666665,
+                  "text": "RICK"
+                },
+                {
+                  "bounds": [
+                    0.08720930065624621,
+                    0.6175710597955932,
+                    0.07703488667805988,
+                    0.051679586481164996
+                  ],
+                  "confidence": 1,
+                  "seconds": 56.97358333333333,
+                  "text": "Rick"
+                },
+                {
+                  "bounds": [
+                    0.08720930065624621,
+                    0.6175710597955932,
+                    0.07703488667805988,
+                    0.051679586481164996
+                  ],
+                  "confidence": 1,
+                  "seconds": 57.974583333333335,
+                  "text": "Rick"
+                },
+                {
+                  "bounds": [
+                    0.08720930065624621,
+                    0.6175710597955932,
+                    0.07703488667805988,
+                    0.051679586481164996
+                  ],
+                  "confidence": 1,
+                  "seconds": 58.97558333333333,
+                  "text": "Rick"
+                },
+                {
+                  "bounds": [
+                    0.08720930065624621,
+                    0.6175710597955932,
+                    0.07703488667805988,
+                    0.051679586481164996
+                  ],
+                  "confidence": 1,
+                  "seconds": 59.97658333333333,
+                  "text": "Rick"
+                },
+                {
+                  "bounds": [
+                    0.08720930065624621,
+                    0.6175710597955932,
+                    0.07703488667805988,
+                    0.051679586481164996
+                  ],
+                  "confidence": 1,
+                  "seconds": 60.60220833333333,
+                  "text": "Rick"
+                }
+              ],
+              "text": "RICK"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.045058138734187646,
+                    0.3023255820995452,
+                    0.3968023300170898,
+                    0.05693367675498684
+                  ],
+                  "confidence": 1,
+                  "seconds": 21.980291666666666,
+                  "text": "DEFENDED AMERICA IN THE MARINES"
+                },
+                {
+                  "bounds": [
+                    0.04069766678295998,
+                    0.30232558184976044,
+                    0.40552326838175456,
+                    0.05693367675498684
+                  ],
+                  "confidence": 1,
+                  "seconds": 22.981291666666667,
+                  "text": "DEFENDED AMERICA IN THE MARINES"
+                },
+                {
+                  "bounds": [
+                    0.03633721408194604,
+                    0.29974160342072875,
+                    0.41569766998291013,
+                    0.059517655549226056
+                  ],
+                  "confidence": 1,
+                  "seconds": 23.982291666666665,
+                  "text": "DEFENDED AMERICA IN THE MARINES"
+                }
+              ],
+              "text": "DEFENDED AMERICA IN THE MARINES"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.5581395363092774,
+                    0.17571059613897388,
+                    0.10029069582621264,
+                    0.06718345924660007
+                  ],
+                  "confidence": 1,
+                  "seconds": 30.989291666666666,
+                  "text": "TRUMP"
+                }
+              ],
+              "text": "TRUMP"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.16860464426300842,
+                    0.21666666520038802,
+                    0.46075582504272455,
+                    0.13518518518518519
+                  ],
+                  "confidence": 1,
+                  "seconds": 44.96158333333333,
+                  "text": "SMALL BUSINESS"
+                }
+              ],
+              "text": "SMALL BUSINESS"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.6424418575882347,
+                    0.14728681934574128,
+                    0.18895349502563474,
+                    0.1214470333523221
+                  ],
+                  "confidence": 1,
+                  "seconds": 44.96158333333333,
+                  "text": "OWNER"
+                }
+              ],
+              "text": "OWNER"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.18313955144813518,
+                    0.21666666467304518,
+                    0.6380813598632812,
+                    0.13240740740740742
+                  ],
+                  "confidence": 1,
+                  "seconds": 45.962583333333335,
+                  "text": "SMALL BUSINESS OWNER"
+                }
+              ],
+              "text": "SMALL BUSINESS OWNER"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.08284883924450538,
+                    0.40826873267480035,
+                    0.26017441749572756,
+                    0.06976744333902996
+                  ],
+                  "confidence": 1,
+                  "seconds": 56.97358333333333,
+                  "text": "CONGRESS"
+                },
+                {
+                  "bounds": [
+                    0.08284883894637508,
+                    0.41343669426676344,
+                    0.26017441749572756,
+                    0.06718345924660019
+                  ],
+                  "confidence": 1,
+                  "seconds": 57.974583333333335,
+                  "text": "CONGRESS"
+                },
+                {
+                  "bounds": [
+                    0.08284883894637508,
+                    0.41343669426676344,
+                    0.26017441749572756,
+                    0.06718345924660019
+                  ],
+                  "confidence": 1,
+                  "seconds": 58.97558333333333,
+                  "text": "CONGRESS"
+                },
+                {
+                  "bounds": [
+                    0.08284883924450538,
+                    0.4108527142706556,
+                    0.26017441749572756,
+                    0.07493539739538124
+                  ],
+                  "confidence": 1,
+                  "seconds": 59.97658333333333,
+                  "text": "CONGRESS"
+                },
+                {
+                  "bounds": [
+                    0.08284883909915658,
+                    0.4134366933693687,
+                    0.26017441749572756,
+                    0.07235142036720554
+                  ],
+                  "confidence": 1,
+                  "seconds": 60.60220833333333,
+                  "text": "CONGRESS"
+                }
+              ],
+              "text": "CONGRESS"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.2041666648809524,
+                    0.17037037005291,
+                    0.25,
+                    0.0888888888888889
+                  ],
+                  "confidence": 1,
+                  "seconds": 57.974583333333335,
+                  "text": "CONSERVATIVE"
+                }
+              ],
+              "text": "CONSERVATIVE"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.20416666383928572,
+                    0.17037037005291,
+                    0.39583333333333326,
+                    0.0888888888888889
+                  ],
+                  "confidence": 1,
+                  "seconds": 58.97558333333333,
+                  "text": "CONSERVATIVE FIGHTER"
+                }
+              ],
+              "text": "CONSERVATIVE FIGHTER"
+            },
+            {
+              "observations": [
+                {
+                  "bounds": [
+                    0.20416666276785717,
+                    0.17037037005291,
+                    0.5458333333333332,
+                    0.0888888888888889
+                  ],
+                  "confidence": 1,
+                  "seconds": 59.97658333333333,
+                  "text": "CONSERVATIVE FIGHTER WINNER"
+                },
+                {
+                  "bounds": [
+                    0.20416666276785717,
+                    0.17037037005291,
+                    0.5458333333333332,
+                    0.0888888888888889
+                  ],
+                  "confidence": 1,
+                  "seconds": 60.60220833333333,
+                  "text": "CONSERVATIVE FIGHTER WINNER"
+                }
+              ],
+              "text": "CONSERVATIVE FIGHTER WINNER"
+            }
+          ],
+          "start_seconds": 1.07,
+          "text": "President Trump needs patriots in Congress.",
+          "video_sampling": {
+            "duration_seconds": 60.69166666666667,
+            "sample_interval_seconds": 1
+          },
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 1.69,
+              "probability": 0.8182095885276794,
+              "start_seconds": 1.07,
+              "text": " President"
+            },
+            {
+              "end_seconds": 2.05,
+              "probability": 0.9956810474395752,
+              "start_seconds": 1.69,
+              "text": " Trump"
+            },
+            {
+              "end_seconds": 2.35,
+              "probability": 0.6668511629104614,
+              "start_seconds": 2.05,
+              "text": " needs"
+            },
+            {
+              "end_seconds": 2.95,
+              "probability": 0.8936322331428528,
+              "start_seconds": 2.35,
+              "text": " patriots"
+            },
+            {
+              "end_seconds": 3.07,
+              "probability": 0.9945241212844849,
+              "start_seconds": 2.95,
+              "text": " in"
+            },
+            {
+              "end_seconds": 3.51,
+              "probability": 0.9693869948387146,
+              "start_seconds": 3.07,
+              "text": " Congress."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.21600187771906287,
+          "end_seconds": 6.71,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.1043398529291153,
+          "start_seconds": 4.13,
+          "text": "Missouri has one, and he's answering the call.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 4.61,
+              "probability": 0.9356819987297058,
+              "start_seconds": 4.13,
+              "text": " Missouri"
+            },
+            {
+              "end_seconds": 4.97,
+              "probability": 0.9986070990562439,
+              "start_seconds": 4.61,
+              "text": " has"
+            },
+            {
+              "end_seconds": 5.25,
+              "probability": 0.9106667637825012,
+              "start_seconds": 4.97,
+              "text": " one,"
+            },
+            {
+              "end_seconds": 5.73,
+              "probability": 0.9877254366874695,
+              "start_seconds": 5.55,
+              "text": " and"
+            },
+            {
+              "end_seconds": 5.95,
+              "probability": 0.9765477478504181,
+              "start_seconds": 5.73,
+              "text": " he's"
+            },
+            {
+              "end_seconds": 6.29,
+              "probability": 0.9959849119186401,
+              "start_seconds": 5.95,
+              "text": " answering"
+            },
+            {
+              "end_seconds": 6.47,
+              "probability": 0.9969289898872375,
+              "start_seconds": 6.29,
+              "text": " the"
+            },
+            {
+              "end_seconds": 6.71,
+              "probability": 0.9944479465484619,
+              "start_seconds": 6.47,
+              "text": " call."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.21600187771906287,
+          "end_seconds": 10.17,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.1043398529291153,
+          "start_seconds": 7.65,
+          "text": "Rick Bratton served our country as the United States Marine.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 7.79,
+              "probability": 0.9350175261497498,
+              "start_seconds": 7.65,
+              "text": " Rick"
+            },
+            {
+              "end_seconds": 8.19,
+              "probability": 0.8530018925666809,
+              "start_seconds": 7.79,
+              "text": " Bratton"
+            },
+            {
+              "end_seconds": 8.47,
+              "probability": 0.9789735674858093,
+              "start_seconds": 8.19,
+              "text": " served"
+            },
+            {
+              "end_seconds": 8.65,
+              "probability": 0.996650755405426,
+              "start_seconds": 8.47,
+              "text": " our"
+            },
+            {
+              "end_seconds": 9.01,
+              "probability": 0.9973440766334534,
+              "start_seconds": 8.65,
+              "text": " country"
+            },
+            {
+              "end_seconds": 9.19,
+              "probability": 0.9502729773521423,
+              "start_seconds": 9.01,
+              "text": " as"
+            },
+            {
+              "end_seconds": 9.27,
+              "probability": 0.40294259786605835,
+              "start_seconds": 9.19,
+              "text": " the"
+            },
+            {
+              "end_seconds": 9.51,
+              "probability": 0.9894009232521057,
+              "start_seconds": 9.27,
+              "text": " United"
+            },
+            {
+              "end_seconds": 9.87,
+              "probability": 0.9992221593856812,
+              "start_seconds": 9.51,
+              "text": " States"
+            },
+            {
+              "end_seconds": 10.17,
+              "probability": 0.9731403589248657,
+              "start_seconds": 9.87,
+              "text": " Marine."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.21600187771906287,
+          "end_seconds": 12.63,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.1043398529291153,
+          "start_seconds": 10.77,
+          "text": "Now he's ready to take the fight to Washington",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 10.97,
+              "probability": 0.9921145439147949,
+              "start_seconds": 10.77,
+              "text": " Now"
+            },
+            {
+              "end_seconds": 11.23,
+              "probability": 0.9123397767543793,
+              "start_seconds": 10.97,
+              "text": " he's"
+            },
+            {
+              "end_seconds": 11.37,
+              "probability": 0.9995036125183105,
+              "start_seconds": 11.23,
+              "text": " ready"
+            },
+            {
+              "end_seconds": 11.51,
+              "probability": 0.9982964396476746,
+              "start_seconds": 11.37,
+              "text": " to"
+            },
+            {
+              "end_seconds": 11.69,
+              "probability": 0.9979865550994873,
+              "start_seconds": 11.51,
+              "text": " take"
+            },
+            {
+              "end_seconds": 11.85,
+              "probability": 0.9966374635696411,
+              "start_seconds": 11.69,
+              "text": " the"
+            },
+            {
+              "end_seconds": 12.07,
+              "probability": 0.9926639795303345,
+              "start_seconds": 11.85,
+              "text": " fight"
+            },
+            {
+              "end_seconds": 12.25,
+              "probability": 0.9953017234802246,
+              "start_seconds": 12.07,
+              "text": " to"
+            },
+            {
+              "end_seconds": 12.63,
+              "probability": 0.9994562268257141,
+              "start_seconds": 12.25,
+              "text": " Washington"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.21600187771906287,
+          "end_seconds": 15.43,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.1043398529291153,
+          "start_seconds": 12.63,
+          "text": "against the radical liberals trying to stop President Trump",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 13.07,
+              "probability": 0.9926841855049133,
+              "start_seconds": 12.63,
+              "text": " against"
+            },
+            {
+              "end_seconds": 13.19,
+              "probability": 0.9794924259185791,
+              "start_seconds": 13.07,
+              "text": " the"
+            },
+            {
+              "end_seconds": 13.45,
+              "probability": 0.9798040390014648,
+              "start_seconds": 13.19,
+              "text": " radical"
+            },
+            {
+              "end_seconds": 13.85,
+              "probability": 0.9624379277229309,
+              "start_seconds": 13.45,
+              "text": " liberals"
+            },
+            {
+              "end_seconds": 14.23,
+              "probability": 0.9608682990074158,
+              "start_seconds": 13.85,
+              "text": " trying"
+            },
+            {
+              "end_seconds": 14.37,
+              "probability": 0.9994807839393616,
+              "start_seconds": 14.23,
+              "text": " to"
+            },
+            {
+              "end_seconds": 14.65,
+              "probability": 0.9978548884391785,
+              "start_seconds": 14.37,
+              "text": " stop"
+            },
+            {
+              "end_seconds": 15.11,
+              "probability": 0.990753173828125,
+              "start_seconds": 14.65,
+              "text": " President"
+            },
+            {
+              "end_seconds": 15.43,
+              "probability": 0.9992668032646179,
+              "start_seconds": 15.11,
+              "text": " Trump"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.21600187771906287,
+          "end_seconds": 18.57,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.1043398529291153,
+          "start_seconds": 15.43,
+          "text": "and the spyingless Republicans who call themselves conservatives",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 15.93,
+              "probability": 0.7591679096221924,
+              "start_seconds": 15.43,
+              "text": " and"
+            },
+            {
+              "end_seconds": 16.07,
+              "probability": 0.677579402923584,
+              "start_seconds": 15.93,
+              "text": " the"
+            },
+            {
+              "end_seconds": 16.59,
+              "probability": 0.6570714513460795,
+              "start_seconds": 16.07,
+              "text": " spyingless"
+            },
+            {
+              "end_seconds": 17.11,
+              "probability": 0.8836100101470947,
+              "start_seconds": 16.59,
+              "text": " Republicans"
+            },
+            {
+              "end_seconds": 17.33,
+              "probability": 0.9824309945106506,
+              "start_seconds": 17.11,
+              "text": " who"
+            },
+            {
+              "end_seconds": 17.51,
+              "probability": 0.6935480833053589,
+              "start_seconds": 17.33,
+              "text": " call"
+            },
+            {
+              "end_seconds": 17.83,
+              "probability": 0.9867717623710632,
+              "start_seconds": 17.51,
+              "text": " themselves"
+            },
+            {
+              "end_seconds": 18.57,
+              "probability": 0.9352964162826538,
+              "start_seconds": 17.83,
+              "text": " conservatives"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.21600187771906287,
+          "end_seconds": 20.23,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.1043398529291153,
+          "start_seconds": 18.57,
+          "text": "then caved the moment accounts.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 19.01,
+              "probability": 0.2739979922771454,
+              "start_seconds": 18.57,
+              "text": " then"
+            },
+            {
+              "end_seconds": 19.43,
+              "probability": 0.6555856466293335,
+              "start_seconds": 19.01,
+              "text": " caved"
+            },
+            {
+              "end_seconds": 19.59,
+              "probability": 0.9902637004852295,
+              "start_seconds": 19.43,
+              "text": " the"
+            },
+            {
+              "end_seconds": 19.83,
+              "probability": 0.9723207950592041,
+              "start_seconds": 19.59,
+              "text": " moment"
+            },
+            {
+              "end_seconds": 20.23,
+              "probability": 0.8576643466949463,
+              "start_seconds": 19.83,
+              "text": " accounts."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.21600187771906287,
+          "end_seconds": 22.71,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.1043398529291153,
+          "start_seconds": 20.93,
+          "text": "Bratton defended America in the Marines.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 21.29,
+              "probability": 0.9827529986699423,
+              "start_seconds": 20.93,
+              "text": " Bratton"
+            },
+            {
+              "end_seconds": 21.69,
+              "probability": 0.9827452301979065,
+              "start_seconds": 21.29,
+              "text": " defended"
+            },
+            {
+              "end_seconds": 22.15,
+              "probability": 0.9985538125038147,
+              "start_seconds": 21.69,
+              "text": " America"
+            },
+            {
+              "end_seconds": 22.37,
+              "probability": 0.35064658522605896,
+              "start_seconds": 22.15,
+              "text": " in"
+            },
+            {
+              "end_seconds": 22.45,
+              "probability": 0.9979548454284668,
+              "start_seconds": 22.37,
+              "text": " the"
+            },
+            {
+              "end_seconds": 22.71,
+              "probability": 0.9889079928398132,
+              "start_seconds": 22.45,
+              "text": " Marines."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.21600187771906287,
+          "end_seconds": 26.31,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.1043398529291153,
+          "start_seconds": 23.47,
+          "text": "He stood strong from Missouri families in Jefferson City",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 23.65,
+              "probability": 0.9947733283042908,
+              "start_seconds": 23.47,
+              "text": " He"
+            },
+            {
+              "end_seconds": 23.91,
+              "probability": 0.9957568049430847,
+              "start_seconds": 23.65,
+              "text": " stood"
+            },
+            {
+              "end_seconds": 24.27,
+              "probability": 0.9985318183898926,
+              "start_seconds": 23.91,
+              "text": " strong"
+            },
+            {
+              "end_seconds": 24.51,
+              "probability": 0.8171508312225342,
+              "start_seconds": 24.27,
+              "text": " from"
+            },
+            {
+              "end_seconds": 24.81,
+              "probability": 0.9564465284347534,
+              "start_seconds": 24.51,
+              "text": " Missouri"
+            },
+            {
+              "end_seconds": 25.37,
+              "probability": 0.976486086845398,
+              "start_seconds": 24.81,
+              "text": " families"
+            },
+            {
+              "end_seconds": 25.57,
+              "probability": 0.9857796430587769,
+              "start_seconds": 25.37,
+              "text": " in"
+            },
+            {
+              "end_seconds": 25.83,
+              "probability": 0.9989601373672485,
+              "start_seconds": 25.57,
+              "text": " Jefferson"
+            },
+            {
+              "end_seconds": 26.31,
+              "probability": 0.9581323862075806,
+              "start_seconds": 25.83,
+              "text": " City"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.21600187771906287,
+          "end_seconds": 29.37,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.1043398529291153,
+          "start_seconds": 26.65,
+          "text": "and he'll deliver victories for Americans in Washington.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 26.95,
+              "probability": 0.21733078360557556,
+              "start_seconds": 26.65,
+              "text": " and"
+            },
+            {
+              "end_seconds": 27.15,
+              "probability": 0.9582594633102417,
+              "start_seconds": 26.95,
+              "text": " he'll"
+            },
+            {
+              "end_seconds": 27.51,
+              "probability": 0.9889870285987854,
+              "start_seconds": 27.15,
+              "text": " deliver"
+            },
+            {
+              "end_seconds": 27.91,
+              "probability": 0.9878911972045898,
+              "start_seconds": 27.51,
+              "text": " victories"
+            },
+            {
+              "end_seconds": 28.19,
+              "probability": 0.9965325593948364,
+              "start_seconds": 27.91,
+              "text": " for"
+            },
+            {
+              "end_seconds": 28.65,
+              "probability": 0.9902430176734924,
+              "start_seconds": 28.19,
+              "text": " Americans"
+            },
+            {
+              "end_seconds": 28.87,
+              "probability": 0.9910575151443481,
+              "start_seconds": 28.65,
+              "text": " in"
+            },
+            {
+              "end_seconds": 29.37,
+              "probability": 0.9998531341552734,
+              "start_seconds": 28.87,
+              "text": " Washington."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.16764449742105272,
+          "end_seconds": 32.05,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.4312131702899933,
+          "start_seconds": 29.37,
+          "text": "He'll proudly fight alongside President Trump",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 29.99,
+              "probability": 0.7461690902709961,
+              "start_seconds": 29.37,
+              "text": " He'll"
+            },
+            {
+              "end_seconds": 30.43,
+              "probability": 0.9786351323127747,
+              "start_seconds": 29.99,
+              "text": " proudly"
+            },
+            {
+              "end_seconds": 30.71,
+              "probability": 0.9974820017814636,
+              "start_seconds": 30.43,
+              "text": " fight"
+            },
+            {
+              "end_seconds": 31.21,
+              "probability": 0.997401237487793,
+              "start_seconds": 30.71,
+              "text": " alongside"
+            },
+            {
+              "end_seconds": 31.75,
+              "probability": 0.9292266964912415,
+              "start_seconds": 31.21,
+              "text": " President"
+            },
+            {
+              "end_seconds": 32.05,
+              "probability": 0.9950259327888489,
+              "start_seconds": 31.75,
+              "text": " Trump"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.16764449742105272,
+          "end_seconds": 34.67,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.4312131702899933,
+          "start_seconds": 32.05,
+          "text": "to put American families and workers first,",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 32.59,
+              "probability": 0.7395113706588745,
+              "start_seconds": 32.05,
+              "text": " to"
+            },
+            {
+              "end_seconds": 32.77,
+              "probability": 0.9986867308616638,
+              "start_seconds": 32.59,
+              "text": " put"
+            },
+            {
+              "end_seconds": 33.11,
+              "probability": 0.963986337184906,
+              "start_seconds": 32.77,
+              "text": " American"
+            },
+            {
+              "end_seconds": 33.61,
+              "probability": 0.9912780523300171,
+              "start_seconds": 33.11,
+              "text": " families"
+            },
+            {
+              "end_seconds": 33.83,
+              "probability": 0.9917009472846985,
+              "start_seconds": 33.61,
+              "text": " and"
+            },
+            {
+              "end_seconds": 34.11,
+              "probability": 0.9912093877792358,
+              "start_seconds": 33.83,
+              "text": " workers"
+            },
+            {
+              "end_seconds": 34.67,
+              "probability": 0.9829545617103577,
+              "start_seconds": 34.11,
+              "text": " first,"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.16764449742105272,
+          "end_seconds": 37.39,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.4312131702899933,
+          "start_seconds": 34.99,
+          "text": "secure our elections and close our borders,",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 35.41,
+              "probability": 0.9891267418861389,
+              "start_seconds": 34.99,
+              "text": " secure"
+            },
+            {
+              "end_seconds": 35.73,
+              "probability": 0.9963022470474243,
+              "start_seconds": 35.41,
+              "text": " our"
+            },
+            {
+              "end_seconds": 36.09,
+              "probability": 0.9936949610710144,
+              "start_seconds": 35.73,
+              "text": " elections"
+            },
+            {
+              "end_seconds": 36.45,
+              "probability": 0.5797594785690308,
+              "start_seconds": 36.09,
+              "text": " and"
+            },
+            {
+              "end_seconds": 36.73,
+              "probability": 0.9949337840080261,
+              "start_seconds": 36.45,
+              "text": " close"
+            },
+            {
+              "end_seconds": 36.99,
+              "probability": 0.9960383176803589,
+              "start_seconds": 36.73,
+              "text": " our"
+            },
+            {
+              "end_seconds": 37.39,
+              "probability": 0.9985505938529968,
+              "start_seconds": 36.99,
+              "text": " borders,"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.16764449742105272,
+          "end_seconds": 40.09,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.4312131702899933,
+          "start_seconds": 37.89,
+          "text": "protect our children from the lunatic lefties,",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 38.13,
+              "probability": 0.9746624827384949,
+              "start_seconds": 37.89,
+              "text": " protect"
+            },
+            {
+              "end_seconds": 38.37,
+              "probability": 0.99887615442276,
+              "start_seconds": 38.13,
+              "text": " our"
+            },
+            {
+              "end_seconds": 38.75,
+              "probability": 0.9898920059204102,
+              "start_seconds": 38.37,
+              "text": " children"
+            },
+            {
+              "end_seconds": 38.97,
+              "probability": 0.9976688027381897,
+              "start_seconds": 38.75,
+              "text": " from"
+            },
+            {
+              "end_seconds": 39.11,
+              "probability": 0.9895249605178833,
+              "start_seconds": 38.97,
+              "text": " the"
+            },
+            {
+              "end_seconds": 39.49,
+              "probability": 0.9843648374080658,
+              "start_seconds": 39.11,
+              "text": " lunatic"
+            },
+            {
+              "end_seconds": 40.09,
+              "probability": 0.9481255114078522,
+              "start_seconds": 39.49,
+              "text": " lefties,"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.16764449742105272,
+          "end_seconds": 42.93,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.4312131702899933,
+          "start_seconds": 40.47,
+          "text": "and keep Communist China from buying Missouri's land.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 40.51,
+              "probability": 0.9754500389099121,
+              "start_seconds": 40.47,
+              "text": " and"
+            },
+            {
+              "end_seconds": 40.75,
+              "probability": 0.9983144998550415,
+              "start_seconds": 40.51,
+              "text": " keep"
+            },
+            {
+              "end_seconds": 41.25,
+              "probability": 0.6747749447822571,
+              "start_seconds": 40.75,
+              "text": " Communist"
+            },
+            {
+              "end_seconds": 41.69,
+              "probability": 0.9930117726325989,
+              "start_seconds": 41.25,
+              "text": " China"
+            },
+            {
+              "end_seconds": 41.89,
+              "probability": 0.9782087802886963,
+              "start_seconds": 41.69,
+              "text": " from"
+            },
+            {
+              "end_seconds": 42.21,
+              "probability": 0.99031001329422,
+              "start_seconds": 41.89,
+              "text": " buying"
+            },
+            {
+              "end_seconds": 42.75,
+              "probability": 0.898539811372757,
+              "start_seconds": 42.21,
+              "text": " Missouri's"
+            },
+            {
+              "end_seconds": 42.93,
+              "probability": 0.9972237348556519,
+              "start_seconds": 42.75,
+              "text": " land."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.16764449742105272,
+          "end_seconds": 45.77,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.4312131702899933,
+          "start_seconds": 43.57,
+          "text": "Marine veteran, small business owner,",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 43.81,
+              "probability": 0.9172596335411072,
+              "start_seconds": 43.57,
+              "text": " Marine"
+            },
+            {
+              "end_seconds": 44.21,
+              "probability": 0.7369129061698914,
+              "start_seconds": 43.81,
+              "text": " veteran,"
+            },
+            {
+              "end_seconds": 45.03,
+              "probability": 0.9400623440742493,
+              "start_seconds": 44.73,
+              "text": " small"
+            },
+            {
+              "end_seconds": 45.43,
+              "probability": 0.98138028383255,
+              "start_seconds": 45.03,
+              "text": " business"
+            },
+            {
+              "end_seconds": 45.77,
+              "probability": 0.9951795339584351,
+              "start_seconds": 45.43,
+              "text": " owner,"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.16764449742105272,
+          "end_seconds": 48.27,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.4312131702899933,
+          "start_seconds": 46.31,
+          "text": "husband, father, and grandfather.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 46.65,
+              "probability": 0.8194990158081055,
+              "start_seconds": 46.31,
+              "text": " husband,"
+            },
+            {
+              "end_seconds": 47.39,
+              "probability": 0.9968854784965515,
+              "start_seconds": 46.99,
+              "text": " father,"
+            },
+            {
+              "end_seconds": 47.79,
+              "probability": 0.9910517334938049,
+              "start_seconds": 47.73,
+              "text": " and"
+            },
+            {
+              "end_seconds": 48.27,
+              "probability": 0.9817055463790894,
+              "start_seconds": 47.79,
+              "text": " grandfather."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.16764449742105272,
+          "end_seconds": 51.83,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.4312131702899933,
+          "start_seconds": 48.99,
+          "text": "Rick Bratton isn't a politician looking for a free-state dinner.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 49.17,
+              "probability": 0.9001349806785583,
+              "start_seconds": 48.99,
+              "text": " Rick"
+            },
+            {
+              "end_seconds": 49.57,
+              "probability": 0.7318384846051534,
+              "start_seconds": 49.17,
+              "text": " Bratton"
+            },
+            {
+              "end_seconds": 49.89,
+              "probability": 0.8422382175922394,
+              "start_seconds": 49.57,
+              "text": " isn't"
+            },
+            {
+              "end_seconds": 49.97,
+              "probability": 0.9979501366615295,
+              "start_seconds": 49.89,
+              "text": " a"
+            },
+            {
+              "end_seconds": 50.43,
+              "probability": 0.9992926120758057,
+              "start_seconds": 49.97,
+              "text": " politician"
+            },
+            {
+              "end_seconds": 50.75,
+              "probability": 0.9901241660118103,
+              "start_seconds": 50.43,
+              "text": " looking"
+            },
+            {
+              "end_seconds": 50.97,
+              "probability": 0.9989892840385437,
+              "start_seconds": 50.75,
+              "text": " for"
+            },
+            {
+              "end_seconds": 51.09,
+              "probability": 0.9978431463241577,
+              "start_seconds": 50.97,
+              "text": " a"
+            },
+            {
+              "end_seconds": 51.27,
+              "probability": 0.7510825991630554,
+              "start_seconds": 51.09,
+              "text": " free"
+            },
+            {
+              "end_seconds": 51.49,
+              "probability": 0.5274999886751175,
+              "start_seconds": 51.27,
+              "text": "-state"
+            },
+            {
+              "end_seconds": 51.83,
+              "probability": 0.9954068660736084,
+              "start_seconds": 51.49,
+              "text": " dinner."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.16764449742105272,
+          "end_seconds": 55.91,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.4312131702899933,
+          "start_seconds": 52.29,
+          "text": "He's a battle-tested conservative fighting for his family and yours.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 52.45,
+              "probability": 0.9901631474494934,
+              "start_seconds": 52.29,
+              "text": " He's"
+            },
+            {
+              "end_seconds": 52.51,
+              "probability": 0.9965893030166626,
+              "start_seconds": 52.45,
+              "text": " a"
+            },
+            {
+              "end_seconds": 52.83,
+              "probability": 0.9689818620681763,
+              "start_seconds": 52.51,
+              "text": " battle"
+            },
+            {
+              "end_seconds": 53.21,
+              "probability": 0.958625872929891,
+              "start_seconds": 52.83,
+              "text": "-tested"
+            },
+            {
+              "end_seconds": 53.75,
+              "probability": 0.8092703819274902,
+              "start_seconds": 53.21,
+              "text": " conservative"
+            },
+            {
+              "end_seconds": 54.17,
+              "probability": 0.9841328859329224,
+              "start_seconds": 53.75,
+              "text": " fighting"
+            },
+            {
+              "end_seconds": 54.39,
+              "probability": 0.9989726543426514,
+              "start_seconds": 54.17,
+              "text": " for"
+            },
+            {
+              "end_seconds": 54.57,
+              "probability": 0.9938011765480042,
+              "start_seconds": 54.39,
+              "text": " his"
+            },
+            {
+              "end_seconds": 54.99,
+              "probability": 0.9991194605827332,
+              "start_seconds": 54.57,
+              "text": " family"
+            },
+            {
+              "end_seconds": 55.55,
+              "probability": 0.6144925951957703,
+              "start_seconds": 54.99,
+              "text": " and"
+            },
+            {
+              "end_seconds": 55.91,
+              "probability": 0.9846295714378357,
+              "start_seconds": 55.55,
+              "text": " yours."
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.5818827585740523,
+          "end_seconds": 59.93,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.5002161264419556,
+          "start_seconds": 55.91,
+          "text": "Rick Breton, conservative fighter winner.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 56.77,
+              "probability": 0.6631025671958923,
+              "start_seconds": 55.91,
+              "text": " Rick"
+            },
+            {
+              "end_seconds": 57.39,
+              "probability": 0.5575909912586212,
+              "start_seconds": 56.77,
+              "text": " Breton,"
+            },
+            {
+              "end_seconds": 58.21,
+              "probability": 0.348896324634552,
+              "start_seconds": 57.67,
+              "text": " conservative"
+            },
+            {
+              "end_seconds": 59.09,
+              "probability": 0.7945834994316101,
+              "start_seconds": 58.21,
+              "text": " fighter"
+            },
+            {
+              "end_seconds": 59.93,
+              "probability": 0.8847023844718933,
+              "start_seconds": 59.09,
+              "text": " winner."
+            }
+          ]
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 2.961291666666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.5916666641145834,
+                0.7925925918518519,
+                0.2041666666666666,
+                0.07407407407407396
+              ],
+              "confidence": 1,
+              "seconds": 2.961291666666667,
+              "text": "TES OF-AMER"
+            }
+          ],
+          "image_bounds": [
+            0.5916666641145834,
+            0.7925925918518519,
+            0.2041666666666666,
+            0.07407407407407396
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 2.961291666666667,
+          "text": "TES OF-AMER",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 7.966291666666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.05473890362081602,
+                0.34161124270610144,
+                0.42873258590698243,
+                0.1379997889200847
+              ],
+              "confidence": 1,
+              "seconds": 7.966291666666667,
+              "text": "CANDIDATE FOR U.S. CONGRESS"
+            },
+            {
+              "bounds": [
+                0.05442952775195285,
+                0.3448733648432637,
+                0.4278840065002441,
+                0.13473180135091145
+              ],
+              "confidence": 1,
+              "seconds": 8.967291666666666,
+              "text": "CANDIDATE FOR U.S. CONGRESS"
+            },
+            {
+              "bounds": [
+                0.051475310912123005,
+                0.34686049777609806,
+                0.43486197789510095,
+                0.14155399181224682
+              ],
+              "confidence": 1,
+              "seconds": 9.968291666666667,
+              "text": "CANDIDATE FOR U.S. CONGRESS"
+            }
+          ],
+          "image_bounds": [
+            0.05473890362081602,
+            0.34161124270610144,
+            0.42873258590698243,
+            0.1379997889200847
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 7.966291666666667,
+          "text": "CANDIDATE FOR U.S. CONGRESS",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 7.966291666666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.09666065098427895,
+                0.2476422840576653,
+                0.3492725372314453,
+                0.16036412980821402
+              ],
+              "confidence": 1,
+              "seconds": 7.966291666666667,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.09274233911242853,
+                0.24011316664722093,
+                0.3496627489725749,
+                0.16646937617549196
+              ],
+              "confidence": 1,
+              "seconds": 8.967291666666666,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.0893932150813179,
+                0.24229068934300957,
+                0.34525146484375,
+                0.16003621419270841
+              ],
+              "confidence": 1,
+              "seconds": 9.968291666666667,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.35747525666166635,
+                0.27835176015912266,
+                0.260340181986491,
+                0.09704324934217656
+              ],
+              "confidence": 1,
+              "seconds": 13.972291666666667,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.3590116293395878,
+                0.27870370541634704,
+                0.2601744174957275,
+                0.09629629629629632
+              ],
+              "confidence": 1,
+              "seconds": 14.973291666666666,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.10699006242428961,
+                0.37463080752116396,
+                0.26421755154927573,
+                0.10603554337112986
+              ],
+              "confidence": 1,
+              "seconds": 21.980291666666666,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.10744015734155435,
+                0.3762519528791127,
+                0.26331736246744797,
+                0.10020927499841759
+              ],
+              "confidence": 1,
+              "seconds": 22.981291666666667,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.10750969275817303,
+                0.3768468160580605,
+                0.26463177998860676,
+                0.09901954862806528
+              ],
+              "confidence": 1,
+              "seconds": 23.982291666666665,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.10605336355712829,
+                0.37681997555980695,
+                0.26609094937642414,
+                0.09907322636357063
+              ],
+              "confidence": 1,
+              "seconds": 24.983291666666666,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.10601976228555353,
+                0.3765290315383578,
+                0.2661581516265869,
+                0.09965511957804363
+              ],
+              "confidence": 1,
+              "seconds": 25.984291666666667,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.1061046556346828,
+                0.37685185349007855,
+                0.2659883658091227,
+                0.09860034165558995
+              ],
+              "confidence": 1,
+              "seconds": 26.985291666666665,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.10603723851402945,
+                0.37668049892605604,
+                0.2661231994628906,
+                0.0993521796332465
+              ],
+              "confidence": 1,
+              "seconds": 27.986291666666666,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.10603076942330383,
+                0.3766244334730696,
+                0.2661361376444499,
+                0.09946431054009341
+              ],
+              "confidence": 1,
+              "seconds": 28.987291666666668,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.36010764756527514,
+                0.2991139853558821,
+                0.27106377283732097,
+                0.10461440616183804
+              ],
+              "confidence": 1,
+              "seconds": 30.989291666666666,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.358801431176108,
+                0.30044224914514017,
+                0.2736762046813966,
+                0.10195788277520068
+              ],
+              "confidence": 1,
+              "seconds": 31.990291666666668,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.3631242245866053,
+                0.30022743693866505,
+                0.2650306224822997,
+                0.10497148301866321
+              ],
+              "confidence": 1,
+              "seconds": 32.99129166666667,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.3616356434663447,
+                0.29984284715879894,
+                0.26655429204305015,
+                0.10315668671219436
+              ],
+              "confidence": 1,
+              "seconds": 33.99229166666667,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.36165052399878,
+                0.2999896776955606,
+                0.2650710423787435,
+                0.10286302213315601
+              ],
+              "confidence": 1,
+              "seconds": 34.993291666666664,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.3631000027741344,
+                0.3024842121496335,
+                0.2636255741119385,
+                0.10045793321397578
+              ],
+              "confidence": 1,
+              "seconds": 35.99429166666667,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.3631651547575517,
+                0.30307618598092534,
+                0.26349527041117343,
+                0.09927398893568251
+              ],
+              "confidence": 1,
+              "seconds": 36.99529166666667,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.3601267908450135,
+                0.299325132700334,
+                0.2681185086568197,
+                0.10419211211027923
+              ],
+              "confidence": 1,
+              "seconds": 37.996291666666664,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.3600626370184545,
+                0.29871445970813904,
+                0.26970030466715494,
+                0.10541345808241098
+              ],
+              "confidence": 1,
+              "seconds": 38.99729166666667,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.360262081090913,
+                0.3005272533401967,
+                0.2707549095153809,
+                0.10178787443372939
+              ],
+              "confidence": 1,
+              "seconds": 39.99829166666667,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.3616819078311648,
+                0.3002689665201108,
+                0.26500827471415206,
+                0.1023044444896557
+              ],
+              "confidence": 1,
+              "seconds": 40.999291666666664,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.36313088557846257,
+                0.3001817070168239,
+                0.2635638078053792,
+                0.09989498632925531
+              ],
+              "confidence": 1,
+              "seconds": 41.95858333333333,
+              "text": "RICK BRATTIN"
+            },
+            {
+              "bounds": [
+                0.3617338619215825,
+                0.3007276867348878,
+                0.2649043718973796,
+                0.1013870027330187
+              ],
+              "confidence": 1,
+              "seconds": 42.959583333333335,
+              "text": "RICK BRATTIN"
+            }
+          ],
+          "image_bounds": [
+            0.09666065098427895,
+            0.2476422840576653,
+            0.3492725372314453,
+            0.16036412980821402
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 7.966291666666667,
+          "text": "RICK BRATTIN",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 13.972291666666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.28924418606615787,
+                0.20370370349439426,
+                0.3895348866780599,
+                0.06761412443938075
+              ],
+              "confidence": 1,
+              "seconds": 13.972291666666667,
+              "text": "WILL STOP RADICAL LIBERALS"
+            },
+            {
+              "bounds": [
+                0.2892441827973337,
+                0.20370370328117104,
+                0.38953488667805986,
+                0.06761412443938075
+              ],
+              "confidence": 1,
+              "seconds": 14.973291666666666,
+              "text": "WILL STOP RADICAL LIBERALS"
+            }
+          ],
+          "image_bounds": [
+            0.28924418606615787,
+            0.20370370349439426,
+            0.3895348866780599,
+            0.06761412443938075
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 13.972291666666667,
+          "text": "WILL STOP RADICAL LIBERALS",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 20.979291666666665,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                -1.1107806526429917e-10,
+                0.18604651360667412,
+                0.11627906958262126,
+                0.06718345924660007
+              ],
+              "confidence": 1,
+              "seconds": 20.979291666666665,
+              "text": "IINILD"
+            }
+          ],
+          "image_bounds": [
+            -1.1107806526429917e-10,
+            0.18604651360667412,
+            0.11627906958262126,
+            0.06718345924660007
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 20.979291666666665,
+          "text": "IINILD",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 24.983291666666666,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.06249999715277784,
+                0.2962962959876543,
+                0.3416666666666667,
+                0.06666666666666676
+              ],
+              "confidence": 1,
+              "seconds": 24.983291666666666,
+              "text": "FOUGHT FOR MISSOURI FAMILIES"
+            },
+            {
+              "bounds": [
+                0.058333331145833375,
+                0.2962962959722223,
+                0.35,
+                0.06666666666666665
+              ],
+              "confidence": 1,
+              "seconds": 25.984291666666667,
+              "text": "FOUGHT FOR MISSOURI FAMILIES"
+            }
+          ],
+          "image_bounds": [
+            0.06249999715277784,
+            0.2962962959876543,
+            0.3416666666666667,
+            0.06666666666666676
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 24.983291666666666,
+          "text": "FOUGHT FOR MISSOURI FAMILIES",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 26.985291666666665,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.010174417607554347,
+                0.17571059602130168,
+                0.07703488667805991,
+                0.07493539739538124
+              ],
+              "confidence": 1,
+              "seconds": 26.985291666666665,
+              "text": "WILL"
+            },
+            {
+              "bounds": [
+                0.28197674313545323,
+                0.2196382422265517,
+                0.07703488667805991,
+                0.06976744333902996
+              ],
+              "confidence": 1,
+              "seconds": 34.993291666666664,
+              "text": "WILL"
+            }
+          ],
+          "image_bounds": [
+            0.010174417607554347,
+            0.17571059602130168,
+            0.07703488667805991,
+            0.07493539739538124
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 26.985291666666665,
+          "text": "WILL",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 27.986291666666666,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.07412790445761779,
+                0.3023255823496287,
+                0.3212209383646647,
+                0.06459948221842449
+              ],
+              "confidence": 1,
+              "seconds": 27.986291666666666,
+              "text": "WILL WIN IN WASHINGTON"
+            },
+            {
+              "bounds": [
+                0.06976745099768825,
+                0.302325580888941,
+                0.3299418449401855,
+                0.0620155051902489
+              ],
+              "confidence": 1,
+              "seconds": 28.987291666666668,
+              "text": "WILL WIN IN WASHINGTON"
+            }
+          ],
+          "image_bounds": [
+            0.07412790445761779,
+            0.3023255823496287,
+            0.3212209383646647,
+            0.06459948221842449
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 27.986291666666666,
+          "text": "WILL WIN IN WASHINGTON",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 30.989291666666666,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.32115652325989874,
+                0.22150567903654772,
+                0.23414044380187993,
+                0.06861654917399085
+              ],
+              "confidence": 1,
+              "seconds": 30.989291666666666,
+              "text": "WILL FIGHT WITH"
+            }
+          ],
+          "image_bounds": [
+            0.32115652325989874,
+            0.22150567903654772,
+            0.23414044380187993,
+            0.06861654917399085
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 30.989291666666666,
+          "text": "WILL FIGHT WITH",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 31.990291666666668,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.3212209293874984,
+                0.22222222373587308,
+                0.340116278330485,
+                0.06759259259259265
+              ],
+              "confidence": 1,
+              "seconds": 31.990291666666668,
+              "text": "WILL FIGHT WITH TRUMP"
+            }
+          ],
+          "image_bounds": [
+            0.3212209293874984,
+            0.22222222373587308,
+            0.340116278330485,
+            0.06759259259259265
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 31.990291666666668,
+          "text": "WILL FIGHT WITH TRUMP",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 32.99129166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.1482558081893093,
+                0.22222222075284148,
+                0.4665697733561198,
+                0.06759259259259265
+              ],
+              "confidence": 1,
+              "seconds": 32.99129166666667,
+              "text": "WILL PUT AMERICAN FAMILIES AND"
+            }
+          ],
+          "image_bounds": [
+            0.1482558081893093,
+            0.22222222075284148,
+            0.4665697733561198,
+            0.06759259259259265
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 32.99129166666667,
+          "text": "WILL PUT AMERICAN FAMILIES AND",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 33.99229166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.13662790134267008,
+                0.22222222054436136,
+                0.7122093200683594,
+                0.06759259259259254
+              ],
+              "confidence": 1,
+              "seconds": 33.99229166666667,
+              "text": "WILL PUT AMERICAN FAMILIES AND WORKERS FIRST"
+            }
+          ],
+          "image_bounds": [
+            0.13662790134267008,
+            0.22222222054436136,
+            0.7122093200683594,
+            0.06759259259259254
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 33.99229166666667,
+          "text": "WILL PUT AMERICAN FAMILIES AND WORKERS FIRST",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 35.99429166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.2994186043481263,
+                0.22222222373587308,
+                0.3953488349914551,
+                0.06759259259259265
+              ],
+              "confidence": 1,
+              "seconds": 35.99429166666667,
+              "text": "WILL SECURE OUR ELECTIONS"
+            }
+          ],
+          "image_bounds": [
+            0.2994186043481263,
+            0.22222222373587308,
+            0.3953488349914551,
+            0.06759259259259265
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 35.99429166666667,
+          "text": "WILL SECURE OUR ELECTIONS",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 36.99529166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.38808139603564534,
+                0.5297157626198084,
+                0.031976743539174346,
+                0.023255812680279764
+              ],
+              "confidence": 1,
+              "seconds": 36.99529166666667,
+              "text": "BORDER"
+            }
+          ],
+          "image_bounds": [
+            0.38808139603564534,
+            0.5297157626198084,
+            0.031976743539174346,
+            0.023255812680279764
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 36.99529166666667,
+          "text": "BORDER",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 36.99529166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.4578488385113123,
+                0.5245478040905714,
+                0.037790695826212584,
+                0.020671833886040658
+              ],
+              "confidence": 1,
+              "seconds": 36.99529166666667,
+              "text": "PATROL"
+            }
+          ],
+          "image_bounds": [
+            0.4578488385113123,
+            0.5245478040905714,
+            0.037790695826212584,
+            0.020671833886040658
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 36.99529166666667,
+          "text": "PATROL",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 36.99529166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.313953498163173,
+                0.19351851742489723,
+                0.36482556660970056,
+                0.09629629629629632
+              ],
+              "confidence": 1,
+              "seconds": 36.99529166666667,
+              "text": "WILL CLOSE OUR BORDERS"
+            }
+          ],
+          "image_bounds": [
+            0.313953498163173,
+            0.19351851742489723,
+            0.36482556660970056,
+            0.09629629629629632
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 36.99529166666667,
+          "text": "WILL CLOSE OUR BORDERS",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 37.996291666666664,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.3125000015833333,
+                0.20740740651851852,
+                0.16666666666666663,
+                0.0888888888888889
+              ],
+              "confidence": 1,
+              "seconds": 37.996291666666664,
+              "text": "WILL CLOSE"
+            }
+          ],
+          "image_bounds": [
+            0.3125000015833333,
+            0.20740740651851852,
+            0.16666666666666663,
+            0.0888888888888889
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 37.996291666666664,
+          "text": "WILL CLOSE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 38.99729166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.2848837214257365,
+                0.22222222047208218,
+                0.417151165008545,
+                0.06759259259259265
+              ],
+              "confidence": 1,
+              "seconds": 38.99729166666667,
+              "text": "WILL KEEP OUR CHILDREN SAFE"
+            }
+          ],
+          "image_bounds": [
+            0.2848837214257365,
+            0.22222222047208218,
+            0.417151165008545,
+            0.06759259259259265
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 38.99729166666667,
+          "text": "WILL KEEP OUR CHILDREN SAFE",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 39.99829166666667,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.27761628305360303,
+                0.2222222204621439,
+                0.3531976699829102,
+                0.06759259259259254
+              ],
+              "confidence": 1,
+              "seconds": 39.99829166666667,
+              "text": "WILL KEEP OUR CHILDREN"
+            }
+          ],
+          "image_bounds": [
+            0.27761628305360303,
+            0.2222222204621439,
+            0.3531976699829102,
+            0.06759259259259254
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 39.99829166666667,
+          "text": "WILL KEEP OUR CHILDREN",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 40.999291666666664,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.20639535658557845,
+                0.22222222382815804,
+                0.5712209065755209,
+                0.06759259259259265
+              ],
+              "confidence": 1,
+              "seconds": 40.999291666666664,
+              "text": "STOP CHINA FROM BUYING MISSOURI LAND"
+            },
+            {
+              "bounds": [
+                0.1976744385570909,
+                0.2222222204621439,
+                0.5901162465413412,
+                0.06759259259259254
+              ],
+              "confidence": 1,
+              "seconds": 41.95858333333333,
+              "text": "STOP CHINA FROM BUYING MISSOURI LAND"
+            },
+            {
+              "bounds": [
+                0.18749998656841135,
+                0.22222222374581158,
+                0.6090116500854492,
+                0.06759259259259254
+              ],
+              "confidence": 1,
+              "seconds": 42.959583333333335,
+              "text": "STOP CHINA FROM BUYING MISSOURI LAND"
+            }
+          ],
+          "image_bounds": [
+            0.20639535658557845,
+            0.22222222382815804,
+            0.5712209065755209,
+            0.06759259259259265
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 40.999291666666664,
+          "text": "STOP CHINA FROM BUYING MISSOURI LAND",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 46.96358333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.3356116714907028,
+                0.21587549495284175,
+                0.3316836357116699,
+                0.1315565038610388
+              ],
+              "confidence": 1,
+              "seconds": 46.96358333333333,
+              "text": "FAMILY MAN"
+            },
+            {
+              "bounds": [
+                0.3356537116498854,
+                0.21623797738833928,
+                0.33159955342610675,
+                0.13341551886664504
+              ],
+              "confidence": 1,
+              "seconds": 47.96458333333333,
+              "text": "FAMILY MAN"
+            }
+          ],
+          "image_bounds": [
+            0.3356116714907028,
+            0.21587549495284175,
+            0.3316836357116699,
+            0.1315565038610388
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 46.96358333333333,
+          "text": "FAMILY MAN",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 56.97358333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.08389608382037557,
+                0.5162508281348966,
+                0.2580799261728923,
+                0.11478516613995582
+              ],
+              "confidence": 1,
+              "seconds": 56.97358333333333,
+              "text": "Brattin"
+            },
+            {
+              "bounds": [
+                0.08390905379098938,
+                0.51635356358398,
+                0.258053986231486,
+                0.11457969524242251
+              ],
+              "confidence": 1,
+              "seconds": 57.974583333333335,
+              "text": "Brattin"
+            },
+            {
+              "bounds": [
+                0.08391150155505134,
+                0.5163729267047897,
+                0.25804909070332843,
+                0.11454096900092237
+              ],
+              "confidence": 1,
+              "seconds": 58.97558333333333,
+              "text": "Brattin"
+            },
+            {
+              "bounds": [
+                0.08392435231637657,
+                0.5164744011844951,
+                0.2580233891805013,
+                0.11433802004213689
+              ],
+              "confidence": 1,
+              "seconds": 59.97658333333333,
+              "text": "Brattin"
+            },
+            {
+              "bounds": [
+                0.08395197708221887,
+                0.5166920084714064,
+                0.2579681396484375,
+                0.11390280546965426
+              ],
+              "confidence": 1,
+              "seconds": 60.60220833333333,
+              "text": "Brattin"
+            }
+          ],
+          "image_bounds": [
+            0.08389608382037557,
+            0.5162508281348966,
+            0.2580799261728923,
+            0.11478516613995582
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 56.97358333333333,
+          "text": "Brattin",
+          "voice": "unreviewed"
+        },
+        {
+          "confidence": 1,
+          "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+          "end_seconds": 56.97358333333333,
+          "extraction_engine": "Apple Vision accurate en-US, no language correction; AVFoundation frames",
+          "frame_observations": [
+            {
+              "bounds": [
+                0.09156977552694859,
+                0.4857881143673999,
+                0.24418603579203288,
+                0.04392764833238383
+              ],
+              "confidence": 1,
+              "seconds": 56.97358333333333,
+              "text": "U.S. Marine Veteran"
+            },
+            {
+              "bounds": [
+                0.08996236951675662,
+                0.48289133988694743,
+                0.2460673173268636,
+                0.049997661731861265
+              ],
+              "confidence": 1,
+              "seconds": 57.974583333333335,
+              "text": "U.S. Marine Veteran"
+            },
+            {
+              "bounds": [
+                0.09011628137723943,
+                0.4857881141759749,
+                0.2441860357920329,
+                0.041343667772081205
+              ],
+              "confidence": 1,
+              "seconds": 58.97558333333333,
+              "text": "U.S. Marine Veteran"
+            },
+            {
+              "bounds": [
+                0.09156977092460211,
+                0.48320413562300335,
+                0.24273255666097004,
+                0.041795864811649985
+              ],
+              "confidence": 1,
+              "seconds": 59.97658333333333,
+              "text": "U.S. Marine Veteran"
+            },
+            {
+              "bounds": [
+                0.08996817191168945,
+                0.4829408531779119,
+                0.24455677668253584,
+                0.04703649238303853
+              ],
+              "confidence": 1,
+              "seconds": 60.60220833333333,
+              "text": "U.S. Marine Veteran"
+            }
+          ],
+          "image_bounds": [
+            0.09156977552694859,
+            0.4857881143673999,
+            0.24418603579203288,
+            0.04392764833238383
+          ],
+          "kind": "video_ocr",
+          "media_hash": "d3ba9b7551102b5dc91d48b6fb3b3d30824871a281033150476ac66a5b51ce39",
+          "start_seconds": 56.97358333333333,
+          "text": "U.S. Marine Veteran",
+          "voice": "unreviewed"
+        }
+      ],
+      "recovered_text": "President Trump needs patriots in Congress.\nMissouri has one, and he's answering the call.\nRick Bratton served our country as the United States Marine.\nNow he's ready to take the fight to Washington\nagainst the radical liberals trying to stop President Trump\nand the spyingless Republicans who call themselves conservatives\nthen caved the moment accounts.\nBratton defended America in the Marines.\nHe stood strong from Missouri families in Jefferson City\nand he'll deliver victories for Americans in Washington.\nHe'll proudly fight alongside President Trump\nto put American families and workers first,\nsecure our elections and close our borders,\nprotect our children from the lunatic lefties,\nand keep Communist China from buying Missouri's land.\nMarine veteran, small business owner,\nhusband, father, and grandfather.\nRick Bratton isn't a politician looking for a free-state dinner.\nHe's a battle-tested conservative fighting for his family and yours.\nRick Breton, conservative fighter winner.\nTES OF-AMER\nCANDIDATE FOR U.S. CONGRESS\nRICK BRATTIN\nWILL STOP RADICAL LIBERALS\nIINILD\nFOUGHT FOR MISSOURI FAMILIES\nWILL\nWILL WIN IN WASHINGTON\nWILL FIGHT WITH\nWILL FIGHT WITH TRUMP\nWILL PUT AMERICAN FAMILIES AND\nWILL PUT AMERICAN FAMILIES AND WORKERS FIRST\nWILL SECURE OUR ELECTIONS\nBORDER\nPATROL\nWILL CLOSE OUR BORDERS\nWILL CLOSE\nWILL KEEP OUR CHILDREN SAFE\nWILL KEEP OUR CHILDREN\nSTOP CHINA FROM BUYING MISSOURI LAND\nFAMILY MAN\nBrattin\nU.S. Marine Veteran",
+      "releases": [
+        {
+          "published": null,
+          "title": "Brattin introductory campaign video",
+          "url": "https://rickbrattin.com/"
+        }
+      ],
+      "source": "brattin-campaign",
+      "state": "needs_date",
+      "video_url": "https://rickbrattin.com/wp-content/uploads/2026/02/20260224_CREATIVE-DIRECT_BRATTIN-v5.mp4"
     }
   ],
   "scope": "Discovery backlog, not analyzed ads or verified paid placements",
