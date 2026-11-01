@@ -137107,5 +137107,695 @@
     "text_hash": "6fb02f0ab95054fb5d2acb7634c9dca0da5a51d722a0ea613d645fb4acfd3bdb",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7d8f1ee0f9c52bcef5a9a50e",
+    "alignment": "D",
+    "block_id": "snap-7d8f1ee0f9c52bcef5a9a50e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7d8f1ee0f9c52bcef5a9a50e-claims-001-001",
+    "claim_text": "Jon Ossoff is defending his seat.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 147,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "HELP JON\nDEFEND HIS\nSEAT AND\nDELIVER THE\nSENATE\nMAJORITY\nONCE AGAIN.\nELECTJON.coM\n=Ossoff\nU.S. SENATE\nSUPPORT JON\nPAID FOR BY JON OSSOFF FOR SENATE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8a80ef17e1716bf9c81cbb7fddf2e94ea16bc20e03173aebefa3cbe2555cbe8a?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 8,
+        "anchor_quote": "JON",
+        "anchor_start": 5,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "JON OSSOFF",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "HELP JON\nDEFEND HIS\nSEAT AND\nDELIVER THE\nSENATE\nMAJORITY\nONCE AGAIN.\nELECTJON.coM\n=Ossoff\nU.S. SENATE\nSUPPORT JON\nPAID FOR BY JON OSSOFF FOR SENATE",
+    "text_hash": "7604d9c675d8c8fbcfcddf69585ac81833be2abd8721655e9abc9e0ab9005efb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7d8f1ee0f9c52bcef5a9a50e",
+    "alignment": "D",
+    "block_id": "snap-7d8f1ee0f9c52bcef5a9a50e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7d8f1ee0f9c52bcef5a9a50e-claims-001-002",
+    "claim_text": "Jon Ossoff will deliver the Senate majority once again.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 147,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "HELP JON\nDEFEND HIS\nSEAT AND\nDELIVER THE\nSENATE\nMAJORITY\nONCE AGAIN.\nELECTJON.coM\n=Ossoff\nU.S. SENATE\nSUPPORT JON\nPAID FOR BY JON OSSOFF FOR SENATE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8a80ef17e1716bf9c81cbb7fddf2e94ea16bc20e03173aebefa3cbe2555cbe8a?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 8,
+        "anchor_quote": "JON",
+        "anchor_start": 5,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "JON OSSOFF",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "HELP JON\nDEFEND HIS\nSEAT AND\nDELIVER THE\nSENATE\nMAJORITY\nONCE AGAIN.\nELECTJON.coM\n=Ossoff\nU.S. SENATE\nSUPPORT JON\nPAID FOR BY JON OSSOFF FOR SENATE",
+    "text_hash": "7604d9c675d8c8fbcfcddf69585ac81833be2abd8721655e9abc9e0ab9005efb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7d8f1ee0f9c52bcef5a9a50e",
+    "alignment": "D",
+    "block_id": "snap-7d8f1ee0f9c52bcef5a9a50e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7d8f1ee0f9c52bcef5a9a50e-claims-001-003",
+    "claim_text": "Jon Ossoff for Senate paid for this.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 147,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "HELP JON\nDEFEND HIS\nSEAT AND\nDELIVER THE\nSENATE\nMAJORITY\nONCE AGAIN.\nELECTJON.coM\n=Ossoff\nU.S. SENATE\nSUPPORT JON\nPAID FOR BY JON OSSOFF FOR SENATE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8a80ef17e1716bf9c81cbb7fddf2e94ea16bc20e03173aebefa3cbe2555cbe8a?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 147,
+        "anchor_quote": "JON OSSOFF FOR SENATE",
+        "anchor_start": 126,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Jon Ossoff for Senate",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "HELP JON\nDEFEND HIS\nSEAT AND\nDELIVER THE\nSENATE\nMAJORITY\nONCE AGAIN.\nELECTJON.coM\n=Ossoff\nU.S. SENATE\nSUPPORT JON\nPAID FOR BY JON OSSOFF FOR SENATE",
+    "text_hash": "7604d9c675d8c8fbcfcddf69585ac81833be2abd8721655e9abc9e0ab9005efb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7d8f1ee0f9c52bcef5a9a50e",
+    "alignment": "D",
+    "block_id": "snap-7d8f1ee0f9c52bcef5a9a50e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7d8f1ee0f9c52bcef5a9a50e-claims-001-004",
+    "claim_text": "Help Jon Ossoff defend his seat and deliver the Senate majority once again.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 147,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "HELP JON\nDEFEND HIS\nSEAT AND\nDELIVER THE\nSENATE\nMAJORITY\nONCE AGAIN.\nELECTJON.coM\n=Ossoff\nU.S. SENATE\nSUPPORT JON\nPAID FOR BY JON OSSOFF FOR SENATE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8a80ef17e1716bf9c81cbb7fddf2e94ea16bc20e03173aebefa3cbe2555cbe8a?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 8,
+        "anchor_quote": "JON",
+        "anchor_start": 5,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "JON OSSOFF",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "HELP JON\nDEFEND HIS\nSEAT AND\nDELIVER THE\nSENATE\nMAJORITY\nONCE AGAIN.\nELECTJON.coM\n=Ossoff\nU.S. SENATE\nSUPPORT JON\nPAID FOR BY JON OSSOFF FOR SENATE",
+    "text_hash": "7604d9c675d8c8fbcfcddf69585ac81833be2abd8721655e9abc9e0ab9005efb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e139c782c73e95e5b0d4435",
+    "alignment": "D",
+    "block_id": "snap-7e139c782c73e95e5b0d4435-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e139c782c73e95e5b0d4435-claims-001-001",
+    "claim_text": "Rep. Don Davis is introducing a bill to help rural healthcare and support reopening of Martin General Hospital.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 232,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6295125247ea07123c225a8e2768ebab7c3da5e69a2dbfa781c31badda8c0f00?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 31,
+        "anchor_quote": "Rep. Don Davis",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2NC02287",
+        "kind": "person",
+        "name": "DAVIS, DON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+    "text_hash": "493f19bfd02f15acb7ab190a7ea46221f9ec821370aca80ae47b088769d42e56",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e139c782c73e95e5b0d4435",
+    "alignment": "D",
+    "block_id": "snap-7e139c782c73e95e5b0d4435-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e139c782c73e95e5b0d4435-claims-001-002",
+    "claim_text": "Don Davis introduced a rural healthcare bill.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 232,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6295125247ea07123c225a8e2768ebab7c3da5e69a2dbfa781c31badda8c0f00?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 31,
+        "anchor_quote": "Don Davis",
+        "anchor_start": 22,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2NC02287",
+        "kind": "person",
+        "name": "DAVIS, DON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+    "text_hash": "493f19bfd02f15acb7ab190a7ea46221f9ec821370aca80ae47b088769d42e56",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e139c782c73e95e5b0d4435",
+    "alignment": "D",
+    "block_id": "snap-7e139c782c73e95e5b0d4435-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e139c782c73e95e5b0d4435-claims-001-003",
+    "claim_text": "The bill introduced by Don Davis is to help rural healthcare.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 232,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6295125247ea07123c225a8e2768ebab7c3da5e69a2dbfa781c31badda8c0f00?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 31,
+        "anchor_quote": "Don Davis",
+        "anchor_start": 22,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2NC02287",
+        "kind": "person",
+        "name": "DAVIS, DON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+    "text_hash": "493f19bfd02f15acb7ab190a7ea46221f9ec821370aca80ae47b088769d42e56",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e139c782c73e95e5b0d4435",
+    "alignment": "D",
+    "block_id": "snap-7e139c782c73e95e5b0d4435-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e139c782c73e95e5b0d4435-claims-001-004",
+    "claim_text": "The bill introduced by Don Davis is to support reopening of Martin General Hospital.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 232,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6295125247ea07123c225a8e2768ebab7c3da5e69a2dbfa781c31badda8c0f00?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 31,
+        "anchor_quote": "Don Davis",
+        "anchor_start": 22,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2NC02287",
+        "kind": "person",
+        "name": "DAVIS, DON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+    "text_hash": "493f19bfd02f15acb7ab190a7ea46221f9ec821370aca80ae47b088769d42e56",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e139c782c73e95e5b0d4435",
+    "alignment": "D",
+    "block_id": "snap-7e139c782c73e95e5b0d4435-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e139c782c73e95e5b0d4435-claims-001-005",
+    "claim_text": "Martin General Hospital is being supported for reopening.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 232,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6295125247ea07123c225a8e2768ebab7c3da5e69a2dbfa781c31badda8c0f00?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 122,
+        "anchor_quote": "Martin General Hospital",
+        "anchor_start": 99,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Martin General Hospital",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+    "text_hash": "493f19bfd02f15acb7ab190a7ea46221f9ec821370aca80ae47b088769d42e56",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e139c782c73e95e5b0d4435",
+    "alignment": "D",
+    "block_id": "snap-7e139c782c73e95e5b0d4435-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e139c782c73e95e5b0d4435-claims-001-006",
+    "claim_text": "There is breaking news authority regarding Don Davis introducing a rural healthcare bill.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 232,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6295125247ea07123c225a8e2768ebab7c3da5e69a2dbfa781c31badda8c0f00?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 164,
+        "anchor_quote": "DON DAVIS",
+        "anchor_start": 155,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "DON DAVIS",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+    "text_hash": "493f19bfd02f15acb7ab190a7ea46221f9ec821370aca80ae47b088769d42e56",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e139c782c73e95e5b0d4435",
+    "alignment": "D",
+    "block_id": "snap-7e139c782c73e95e5b0d4435-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e139c782c73e95e5b0d4435-claims-001-007",
+    "claim_text": "Martin County is experiencing breaking news authority.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 232,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6295125247ea07123c225a8e2768ebab7c3da5e69a2dbfa781c31badda8c0f00?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 211,
+        "anchor_quote": "MARTIN COUNTY",
+        "anchor_start": 198,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Martin County",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+    "text_hash": "493f19bfd02f15acb7ab190a7ea46221f9ec821370aca80ae47b088769d42e56",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e139c782c73e95e5b0d4435",
+    "alignment": "D",
+    "block_id": "snap-7e139c782c73e95e5b0d4435-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e139c782c73e95e5b0d4435-claims-001-008",
+    "claim_text": "The temperature is 90°.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 232,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6295125247ea07123c225a8e2768ebab7c3da5e69a2dbfa781c31badda8c0f00?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 227,
+        "anchor_quote": "90°",
+        "anchor_start": 224,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "temperature",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+    "text_hash": "493f19bfd02f15acb7ab190a7ea46221f9ec821370aca80ae47b088769d42e56",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e139c782c73e95e5b0d4435",
+    "alignment": "D",
+    "block_id": "snap-7e139c782c73e95e5b0d4435-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e139c782c73e95e5b0d4435-claims-001-009",
+    "claim_text": "The time is 6:01.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 232,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6295125247ea07123c225a8e2768ebab7c3da5e69a2dbfa781c31badda8c0f00?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 232,
+        "anchor_quote": "6:01",
+        "anchor_start": 228,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "time",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+    "text_hash": "493f19bfd02f15acb7ab190a7ea46221f9ec821370aca80ae47b088769d42e56",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e139c782c73e95e5b0d4435",
+    "alignment": "D",
+    "block_id": "snap-7e139c782c73e95e5b0d4435-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e139c782c73e95e5b0d4435-claims-001-010",
+    "claim_text": "WITN is a FIRST ALERT source.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 232,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6295125247ea07123c225a8e2768ebab7c3da5e69a2dbfa781c31badda8c0f00?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 4,
+        "anchor_quote": "WITN",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "WITN",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+    "text_hash": "493f19bfd02f15acb7ab190a7ea46221f9ec821370aca80ae47b088769d42e56",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e139c782c73e95e5b0d4435",
+    "alignment": "D",
+    "block_id": "snap-7e139c782c73e95e5b0d4435-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e139c782c73e95e5b0d4435-claims-001-011",
+    "claim_text": "FIRST ALERT is a source.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 232,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6295125247ea07123c225a8e2768ebab7c3da5e69a2dbfa781c31badda8c0f00?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "FIRST ALERT",
+        "anchor_start": 5,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "FIRST ALERT",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WITN\nFIRST ALERT\nRep. Don Davis\nintroducing bill to help\nrural healthcare and\nsupport reopening of\nMartin General Hospital\nTE HOUS\nBREAKING NEWS AUTHORITY\nDON DAVIS INTRODUCES RURAL HEALTHCARE BILL\nMARTIN COUNTY\nFIRST ALERT\n90°\n6:01",
+    "text_hash": "493f19bfd02f15acb7ab190a7ea46221f9ec821370aca80ae47b088769d42e56",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
