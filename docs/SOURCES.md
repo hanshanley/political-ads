@@ -157,6 +157,60 @@ after the holds. These inspections added no ad or semantic judgment.
 | `house-tim-moore-primary-home-20261101-discovery.json` | `b5c1dad235d99f7810961f820a11d9b9c09682f8381a20609e11eada06d0ff85` | 87777 |
 | `house-tim-moore-linked-terms-20261101-discovery.json` | `c459176283461acfdc859004a676c55844b3b1b4bebc94d5d37018335fe280b8` | 71744 |
 
+**PBS and Alabama expansion:** the August 30 PBS / PolitiFact issue-ad
+report concerns Senate and gubernatorial campaigns, not Republican House
+scripts. The October 2 PBS spending segment contains correspondent,
+researcher and monitoring-provider interviews rather than literal ad
+speech. Neither report supplied an eligible House record; no player,
+original, captions or monitoring-provider route was requested.
+Jerry Carl's independently discovered campaign homepage supplies ordinary
+biographical copy, not a dated creative. Its actual linked policy was
+read completely. The linked news archive lists two 2026 feature/poll
+headlines before reaching October 2025 endorsements; no script-bearing
+release was established and no older pagination or media was requested.
+
+**Florida primary lead remains unacquired:** the saved federal roster
+identifies Bilzerian as `H6FL06415` / `C00946582`, REP / House / FL-06,
+and Fine as `H6FL06258` / `C00893271`, also REP / House / FL-06.
+Neither candidate has an existing written acquisition or release review.
+The independently retrieved August 16 Jewish Insider report quotes
+fragments of the challenger's AI-generated primary attack, but exposes
+no individual original or repost association. The independently retrieved
+August 17 Deseret report supplies an individual opponent-repost link but
+only three directly quoted ad words; its longer quotations are responses
+and condemnations, not ad speech. These reports were not merged into an
+invented source-bound script, and neither original was requested.
+
+The separately retrieved Floridian report was inspected before its actual
+linked terms. Those terms require express permission for reposting and
+reuse, while referring to external fair-use guidelines; no applicable
+permission or exception is established. `floridianpress.com` and its
+subdomains were immediately marked `permission_unresolved_paused` in the
+local guard. No subsequent article/API/original/caption request or cached
+extraction occurred, and its excerpts were not admitted or transferred
+to another publisher's record. Three root/subdomain/cached-route checks
+passed with network, cache retrieval and HTML extraction forbidden.
+
+| Additional receipt under `data/raw/` | Body SHA-256 | Bytes |
+| --- | --- | ---: |
+| `house-pbs-issue-ads-20261101-discovery.json` | `91902cadfc53c69a44f9e02b32d9aa49fa7c847e06d626992eb03a1f8c9a4821` | 270780 |
+| `house-pbs-spending-transcript-20261101-discovery.json` | `12c64349f1a2503b88c7ffa910f12197543818e98424cf49be86f33f8af3966e` | 281965 |
+| `house-carl-home-20261101-discovery.json` | `b2ea5d2d10b47bafd3f9b1105f5b92d77066525fb2aa3aaa5d185e270f5da9c1` | 79798 |
+| `house-carl-privacy-20261101-discovery.json` | `22fcc3f686f9a0f7ebbeb2a1cd881dc85d0142fe4e9e43c7963c3d6b18c43b35` | 84037 |
+| `house-carl-news-20261101-discovery.json` | `bc97d25b51a16006187aa1333ccfe8e5e2088d26cd014de43392bf2e19cbecef` | 45031 |
+| `house-bilzerian-jewishinsider-20261101-discovery.json` | `7f367c956ebb515b5b2bf5b19d9d9c873d9bf8abd6c051e00c32a565dfe9c880` | 311105 |
+| `house-bilzerian-floridian-20261101-discovery.json` | `5881b9cebb229f5081db2e11e085d70c3eb9d050947e26a7177676b1d37dad39` | 312253 |
+| `house-floridian-terms-20261101-discovery.json` | `631add48e37a329b8169733882486be0e173b7305235444febb25afb0a6c049f` | 222860 |
+| `house-bilzerian-deseret-20261101-discovery.json` | `9cdc9fe42be0f2a529c2acfd23fcb42485ebff63867613c0d4d03d929e1d9cff` | 187950 |
+
+Each body passed independent SHA-256 and byte-length verification before
+any applicable hold; subsequent held-source checks inspect receipt
+metadata only. No ad, semantic judgment or generated edition changed.
+The preceding North Carolina documentation commit `643fb0c` passed exact
+CI `41344628588`, validate job `124961707426`, all thirteen steps successful,
+completed November 1 at `20:10:22Z`. Discovery remains incomplete;
+these exclusions do not establish a national collection ceiling.
+
 ## November 1 Chamber House quotation and duplicate checks
 
 One newly admitted record, `chamber-lawler-examiner-4778222-0`, retains
