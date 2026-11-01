@@ -5714,50 +5714,50 @@
   {
     "ad_id": "snap-436a97a0fddb4c24b569c223",
     "block_id": "snap-436a97a0fddb4c24b569c223-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-43de1808f205ec73bb7d8634",
     "block_id": "snap-43de1808f205ec73bb7d8634-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for HICKENLOOPER, JOHN W.: \\\"brewpub owner\\\" is absent from unit 3. Exact source: \\\"AND BREWPUB OWNER\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-43e0b4902b655d2cc8cdcbdd",
     "block_id": "snap-43e0b4902b655d2cc8cdcbdd-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim 1 fields or evidence IDs\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-44781b3744bd43ef7da77e61",
     "block_id": "snap-44781b3744bd43ef7da77e61-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-44781b3744bd43ef7da77e61",
     "block_id": "snap-44781b3744bd43ef7da77e61-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 2\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-44ac084332d02564547bfb2f",
     "block_id": "snap-44ac084332d02564547bfb2f-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 16 for VOTE: \\\"VOTE\\\" is absent from unit 38. Exact source: \\\"VOT\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-44ac084332d02564547bfb2f",
     "block_id": "snap-44ac084332d02564547bfb2f-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 7\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-44d0ef508d679afe00f20e49",
     "block_id": "snap-44d0ef508d679afe00f20e49-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 1: {\\\"anchor_quote\\\":\\\"SENATOR JON HUSTED\\\",\\\"anchor_unit_id\\\":10,\\\"entity_id\\\":\\\"candidate:S6OH00304\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"Jon Husted\\\",\\\"role\\\":\\\"self_or_supported\\\",\\\"tone\\\":\\\"positive\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-44d3cf5b5c5e1d6e033534ee",

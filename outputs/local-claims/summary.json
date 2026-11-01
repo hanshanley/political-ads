@@ -3114,16 +3114,16 @@
   "ads": 1792,
   "ads_by_status": {
     "normalized": 336,
-    "not_run": 913,
-    "validation_failed": 543
+    "not_run": 907,
+    "validation_failed": 549
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 356,
-    "not_run": 1064,
-    "validation_failed": 596
+    "normalized": 357,
+    "not_run": 1056,
+    "validation_failed": 603
   },
-  "claims": 2363,
+  "claims": 2372,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -4014,6 +4014,14 @@
         },
         {
           "claim_id": "snap-3df5e7368af2abcae6fe7e44-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-44781b3744bd43ef7da77e61-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-44781b3744bd43ef7da77e61-claims-001-004",
           "target_index": 0
         }
       ],
@@ -9050,6 +9058,10 @@
         {
           "claim_id": "snap-42bf3f31c3a8474b08e4566a-claims-002-004",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-44781b3744bd43ef7da77e61-claims-001-009",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -12382,6 +12394,10 @@
         {
           "claim_id": "snap-3e8570f2c4cd75d9011e3332-claims-001-002",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-44781b3744bd43ef7da77e61-claims-001-001",
+          "target_index": 0
         }
       ],
       "neutral": [
@@ -14366,11 +14382,31 @@
         {
           "claim_id": "snap-42bf3f31c3a8474b08e4566a-claims-002-006",
           "target_index": 1
+        },
+        {
+          "claim_id": "snap-44781b3744bd43ef7da77e61-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-44781b3744bd43ef7da77e61-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-44781b3744bd43ef7da77e61-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-44781b3744bd43ef7da77e61-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-44781b3744bd43ef7da77e61-claims-001-008",
+          "target_index": 0
         }
       ],
       "uncertain": []
     }
   },
-  "targets": 2798,
+  "targets": 2807,
   "version": "local-ad-claims-4"
 }
