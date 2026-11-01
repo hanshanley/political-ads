@@ -1752,6 +1752,140 @@ def test_lisonbee_report_rejects_unbound_or_non_ad_evidence(failure):
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_gray_fixture():
+    source, candidate, review, _, commentary = unlinked_lisonbee_fixture()
+    source = replace(
+        source,
+        id="gray-csd",
+        url="https://cowboystatedaily.com",
+        sponsor="Chuck Gray campaign (publisher-reported; payer unverified)",
+        fixed_race="WY-00",
+    )
+    candidate.update(candidate_id="H6WY00217", name="GRAY, CHUCK", state="WY", district="00")
+    selected = (
+        "This selected ad quotation criticizes a rival candidate and describes support "
+        "for conservative policies in this federal primary election contest."
+    )
+    paragraph = f"“{selected}” says the ad."
+    metadata = {
+        "@type": "NewsArticle",
+        "headline": "Gray ad report",
+        "datePublished": "2026-08-14T17:17:00-06:00",
+    }
+    content = (
+        f'<script type="application/ld+json">{json.dumps(metadata)}</script>'
+        "<h1>Gray ad report</h1><span class='published'>August 14, 2026</span>"
+        "<section><p>Citizens for Chuck Gray ran an attack ad in the House primary.</p>"
+        f'<p class="quoted">{paragraph}</p><p>"{commentary}" he said.</p></section>'
+    )
+    url = source.url + "/2026/08/14/gray-ad-report/"
+    review.update(
+        source=source.id,
+        record_id="20260814",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-08-14",
+        release_title="Gray ad report",
+        heading_selector="h1",
+        publication_selector="span.published",
+        publication_date_format="%B %d, %Y",
+        candidate_id=candidate["candidate_id"],
+        required_context=["Citizens for Chuck Gray", "ran an attack ad"],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": "section > p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+    )
+    return source, candidate, review, content.encode(), commentary
+
+
+def test_gray_report_acquires_only_explicit_ad_words_with_bound_dates():
+    source, candidate, review, body, commentary = unlinked_gray_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == review["passages"][0]
+    assert len(ad["text"].split()) == 20 and commentary not in ad["text"]
+    assert ad["alignment"] == "R" and ad["race"] == "WY-00"
+    assert ad["sponsor_type"] == "candidate" and ad["media_urls"] == []
+    assert ad["published"] == "2026-08-14" and ad["phase"] == "unknown"
+    assert ad["date_basis"] == "publisher_report_date"
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(ad["quality_flags"])
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "failure",
+    [
+        "candidate",
+        "interview",
+        "too_long",
+        "commentary",
+        "duplicate",
+        "metadata_date",
+        "metadata_headline",
+        "metadata_duplicate",
+        "visible_date",
+        "paragraph_hash",
+    ],
+)
+def test_gray_report_rejects_unbound_or_non_ad_evidence(failure):
+    from bs4 import BeautifulSoup
+
+    source, candidate, review, body, commentary = unlinked_gray_fixture()
+    content = body.decode()
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H6WY00999"
+    elif failure == "interview":
+        content = content.replace("says the ad", "says in an interview")
+    elif failure == "too_long":
+        original = review["passages"][0]
+        review["passages"][0] += " These additional words exceed the quotation ceiling."
+        content = content.replace(original, review["passages"][0])
+    elif failure == "commentary":
+        review["passages"].append(commentary)
+    elif failure == "duplicate":
+        content += str(BeautifulSoup(content, "html.parser").select("p.quoted")[0])
+        review["reported_ad_text"]["paragraph_selector"] = "p.quoted"
+    elif failure in {"metadata_date", "metadata_headline", "metadata_duplicate"}:
+        soup = BeautifulSoup(content, "html.parser")
+        script = soup.select('script[type="application/ld+json"]')[0]
+        metadata = json.loads(script.string)
+        if failure == "metadata_date":
+            metadata["datePublished"] = "2026-08-15T17:17:00-06:00"
+        elif failure == "metadata_headline":
+            metadata["headline"] = "A different report"
+        script.string = json.dumps(metadata)
+        content = str(soup) + (str(script) if failure == "metadata_duplicate" else "")
+    elif failure == "visible_date":
+        content = content.replace("August 14, 2026", "August 15, 2026")
+    paragraph = BeautifulSoup(content, "html.parser").select("p.quoted")[0]
+    review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
+    if failure == "paragraph_hash":
+        review["reported_ad_text"]["paragraph_sha256"] = "0" * 64
+    review["content_sha256"] = digest(content)
+
+    class Client:
+        def get(self, url, **kwargs):
+            return content.encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 def unlinked_lawler_fixture():
     source, candidate, review, _, _, _ = unlinked_kiggans_fixture()
     source = next(s for s in SOURCES if s.id == "lawler-tell-her-no")

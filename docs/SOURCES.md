@@ -10,6 +10,78 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Gray: a Wyoming intraparty ad quotation
+
+Cowboy State Daily's August 14, 2026 report
+`https://cowboystatedaily.com/2026/08/14/false-exaggerated-and-cherry-picked-attack-ads-fly-in-wyoming/`
+explicitly attributes one quotation to a Chuck Gray campaign ad.
+Acquire only its **20 unchanged words**, not interviews, spokesman
+responses, other PAC slogans or the separate Trump clip. This is a
+**partial quotation**, not a full script. The existing 15-word floor
+and 25-word ceiling are unchanged.
+
+Candidate is exact frozen **H6WY00217 / GRAY, CHUCK / REP /
+WY-00 / C00932244**. Contextual opponent is **H6WY01140 /
+CHRISTENSEN, KEVIN / REP / WY-00 / C00941427**. This is
+**intraparty Republican primary advertising**, not evidence of an
+attack on Democrats. The publisher identifies the candidate committee
+as running the ad; legal payer is not independently verified.
+The ordinary detector identified English, no alias was added, phase
+remains unknown and the new semantic strategy remains **unreviewed**.
+
+Exact HTML SHA-256 is
+`982f114aa83f1fc642033a8813e689b7d31e2efc0cfa2439619c830f9509fc5a`.
+The review binds a unique `h1`, actual visible August 14 date at
+`span._1ydpsnb1:-soup-contains("August 14, 2026")`, and exactly one
+matching JSON-LD `NewsArticle` with matching normalized headline and
+`datePublished="2026-08-14T17:17:00-06:00"`. No date is inferred from
+the URL. The unique paragraph selector is
+`section._1sy4yg80 > p:-soup-contains("says the ad")`.
+Paragraph SHA-256 is
+`059e18114dcaa40438c418315ba44a2ca3a420dec1fa96078c18cf50757e2374`;
+selected-text SHA-256 is
+`8ac89c99760dc52058c53a54b1c9c104d625e272ac79beda9662ec1389acab4a`.
+Exact discovery bytes were copied into an absent canonical cache.
+The date is the **publisher report date**, not verified first airing.
+Original media, delivery, duration, complete creative, payer and
+allegation truth remain unverified; media URLs are empty.
+
+Reproduce from the exact retained cache with
+`.venv/bin/political-ads collect --source gray-csd --until 2026-10-30 --offline`,
+then explicit `parquet`, `build`, `validate`, `audit-strategy` and the
+existing frontend checks from `web`. Original publisher HTML and media
+remain undistributed. The new positive regression failed before support;
+eleven focused cases cover admission and reject wrong identity,
+interview attribution, excessive text, appended commentary, duplicate
+paragraphs, inconsistent metadata dates/headlines, duplicate
+`NewsArticle` entries, changed visible dates and paragraph hashes.
+
+Snapshot
+`ff06a28857498a681b64b5f3feab905252a3e5a17ca3b3a173905b6687511c63`
+contains **1,947 acquired / 1,908 English**, including **R643 / D1,226**
+English records and **R265 / D698** English House records. House outside
+Snapchat is **R264 / D222**. There are **586 written records / 92 release
+reviews / 43 native reviews / 38 aliases**. All **1,946 prior acquired
+and 1,907 prior analyzed objects**, old reviews/aliases and 18 protected
+hashes remain unchanged. CNBC's original response hashes and Tribune's
+body hash/retained metadata clone equality passed. Complete JSON/gzip/CSV
+copies, typed Parquet text/segments, eleven PNG/CSV chart sets and isolated
+replay forbidding network, recognition and subprocesses passed.
+Both whole Ruff checks, **720 Python tests**, frontend lint/build,
+**17 unit tests / 9 browser tests**, evidence validation and the
+independent strategy audit (**20 metric groups / 10 chart rows**) passed.
+
+Expanded Wyoming discovery follows actual campaign navigation rather
+than treating generic biographies or candidacy announcements as ads.
+Gray's public application exposes a Media route and linked videos;
+held video providers were not requested. Biteman's actual News page
+contains policy and candidacy statements, not acquired ad speech.
+A separate dated Friess campaign ad release is a follow-on lead,
+not an admission in this snapshot. The Utah Deseret report's candidate
+statements and article text-to-speech are also excluded. Saved cutoff
+remains **October 30** and final inclusive scope **November 4**.
+Website, host and edition publication remain held.
+
 ## Lisonbee: a Utah intraparty ad quotation
 
 The Salt Lake Tribune's June 15, 2026 report

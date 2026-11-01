@@ -22903,6 +22903,86 @@
       "title": "GOP group launches nearly $1 million ad campaign in two N.J. House districts"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "The original report names Citizens for Chuck Gray as the candidate committee responsible for an ad attacking Kevin Christensen and identifies the video supplied to the publisher. Its uniquely hash-bound paragraph explicitly says the ad, not an interview. Pin the unique actual h1, visible August 14 date and the matching unique NewsArticle JSON-LD datePublished/headline to the exact retained HTML SHA256; no date inferred from the URL. Exact frozen candidate H6WY00217 / GRAY, CHUCK / REP / H / WY00 / 2026 / C00932244. Contextual target H6WY01140 / CHRISTENSEN, KEVIN / REP / H / WY00 / 2026 / C00941427. This is an intraparty Republican House primary ad, not evidence of an attack on Democrats. No new alias is required. Candidate-campaign advertiser is publisher-reported; legal payer, original media, duration, delivery, first airing, complete creative and allegation truth remain unverified. Date is publisher report date; phase unknown; media URLs empty; new whole-creative semantic strategy remains unreviewed. Retain the unchanged 15-word floor and 25-word ceiling. The narrow collector requires Gray's exact identity and consistent unique date/heading metadata, rejects interviews, responses, excessive quotes, duplicate evidence and changed hashes, and does not retrieve unrelated media or any held provider.",
+      "candidate_mentions": [],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "gray-csd-20260814-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "4643722c95ceaacf825ed1fa06e84ac10ffdbc7c4edbb590a0bcb94555fc2cf9",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-08-14",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified"
+      ],
+      "race": "WY-00",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6WY00217"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The original report names Citizens for Chuck Gray as the candidate committee responsible for an ad attacking Kevin Christensen and identifies the video supplied to the publisher. Its uniquely hash-bound paragraph explicitly says the ad, not an interview. Pin the unique actual h1, visible August 14 date and the matching unique NewsArticle JSON-LD datePublished/headline to the exact retained HTML SHA256; no date inferred from the URL. Exact frozen candidate H6WY00217 / GRAY, CHUCK / REP / H / WY00 / 2026 / C00932244. Contextual target H6WY01140 / CHRISTENSEN, KEVIN / REP / H / WY00 / 2026 / C00941427. This is an intraparty Republican House primary ad, not evidence of an attack on Democrats. No new alias is required. Candidate-campaign advertiser is publisher-reported; legal payer, original media, duration, delivery, first airing, complete creative and allegation truth remain unverified. Date is publisher report date; phase unknown; media URLs empty; new whole-creative semantic strategy remains unreviewed. Retain the unchanged 15-word floor and 25-word ceiling. The narrow collector requires Gray's exact identity and consistent unique date/heading metadata, rejects interviews, responses, excessive quotes, duplicate evidence and changed hashes, and does not retrieve unrelated media or any held provider.",
+            "candidate_id": "H6WY00217",
+            "completeness": "partial_quotation",
+            "content_sha256": "982f114aa83f1fc642033a8813e689b7d31e2efc0cfa2439619c830f9509fc5a",
+            "format": "html",
+            "heading_selector": "h1",
+            "media_url": null,
+            "passages": [
+              "Christensen trashed President Trump, and Christensen stands against conservatives, siding with RINOs like Liz Cheney, trying to squash Trump’s agenda,"
+            ],
+            "phase": "unknown",
+            "publication_date_format": "%B %d, %Y",
+            "publication_selector": "span._1ydpsnb1:-soup-contains(\"August 14, 2026\")",
+            "published": "2026-08-14",
+            "publisher_credit": "Cowboy State Daily; Clair McFarland; August 14, 2026 original Wyoming primary attack-ad report.",
+            "record_id": "20260814",
+            "release_title": "False, Exaggerated, And Cherry-Picked Attack Ads Fly In Wyoming",
+            "reported_ad_text": {
+              "paragraph_selector": "section._1sy4yg80 > p:-soup-contains(\"says the ad\")",
+              "paragraph_sha256": "059e18114dcaa40438c418315ba44a2ca3a420dec1fa96078c18cf50757e2374"
+            },
+            "required_context": [
+              "Citizens for Chuck Gray, which is a candidate committee directly linked to Gray, ran an attack ad",
+              "Now Gray appears to be attacking another of his opponents, Kevin Christensen, directly.",
+              "according to a video of the ad Christensen sent Friday to Cowboy State Daily.",
+              "says the ad."
+            ],
+            "retrieval_url": "https://cowboystatedaily.com/2026/08/14/false-exaggerated-and-cherry-picked-attack-ads-fly-in-wyoming/",
+            "reuse_basis": "Retain only the 20 unchanged words in one explicitly attributed ad quotation, credited for comparative noncommercial research. This is a partial quotation, not the complete creative. Do not add the separate six-word Trump clip, interview responses, spokesman statements, short slogans or reporter analysis. Full cached HTML and original media remain undistributed; no blanket reuse license or edition-publication authorization is asserted.",
+            "source": "gray-csd",
+            "source_url": "https://cowboystatedaily.com/2026/08/14/false-exaggerated-and-cherry-picked-attack-ads-fly-in-wyoming/"
+          },
+          "text": "Christensen trashed President Trump, and Christensen stands against conservatives, siding with RINOs like Liz Cheney, trying to squash Trump’s agenda,"
+        }
+      ],
+      "source": "gray-csd",
+      "source_hash": "982f114aa83f1fc642033a8813e689b7d31e2efc0cfa2439619c830f9509fc5a",
+      "source_record_id": "20260814",
+      "source_url": "https://cowboystatedaily.com/2026/08/14/false-exaggerated-and-cherry-picked-attack-ads-fly-in-wyoming/",
+      "sponsor": "Chuck Gray campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "WY",
+      "text": "Christensen trashed President Trump, and Christensen stands against conservatives, siding with RINOs like Liz Cheney, trying to squash Trump’s agenda,",
+      "title": "False, Exaggerated, And Cherry-Picked Attack Ads Fly In Wyoming"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official LCV Victory Fund release at https://www.lcvvictoryfund.org/news/lcv-victory-fund-launches-new-550k-ad-buy-in-nh-01/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "House",
@@ -51958,6 +52038,22 @@
       "source": "garrett-nashville-banner",
       "state": "partial",
       "url": "https://nashvillebanner.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "gray-csd",
+      "state": "partial",
+      "url": "https://cowboystatedaily.com"
     },
     {
       "ads_with_text": 0,

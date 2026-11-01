@@ -2732,6 +2732,39 @@
       "publisher_credit": "The Salt Lake Tribune; Addy Baird; June 15, 2026 report on the Utah 2nd Congressional District Republican primary.",
       "reuse_basis": "Retain only the 22 unchanged words in two adjacent explicitly attributed ad quotations, credited for comparative noncommercial research. This is a partial quotation, not the full creative. Exclude the separate social-post caption, candidate press responses, interview statements and publisher legal analysis. Full cached HTML and original media remain undistributed; no blanket license or edition-publication authorization is asserted.",
       "attribution_basis": "The Tribune explicitly distinguishes Lisonbee's social-post caption from words in the ad itself, then attributes the uniquely hash-bound paragraph to her speech in the ad. Pin the unique h1.headline, actual visible span.article-byline-author date and matching itemprop=datePublished metadata to the exact saved HTML SHA256. Acquire one creative, not separate counts for its original and reposted social captions; no Lisonbee creative or matching quotation existed in the pre-edit corpus. Exact frozen candidate H6UT02523 / LISONBEE, KARIANNE / REP / H / UT02 / 2026 / C00943035; no alias added. Contextual target Moore is exact H0UT01205 / MOORE, BLAKE / REP / H / UT02 / 2026 / C00738872. This is an intraparty Republican primary ad, not evidence of an attack on Democrats. The candidate-campaign advertiser is publisher-reported, not an independently verified legal payer. The publication date is the report date, not verified first airing. The narrow collector requires the exact Lisonbee identity, agreeing visible/metadata dates and explicit ad attribution, retains the 15-word floor and 25-word ceiling, and rejects press comments, duplicate paragraphs and changed hashes. Original audio/video, payer, delivery, first airing, duration, complete script, underlying allegations and semantic strategy remain unverified; phase is unknown and media URLs are empty."
+    },
+    {
+      "source": "gray-csd",
+      "record_id": "20260814",
+      "source_url": "https://cowboystatedaily.com/2026/08/14/false-exaggerated-and-cherry-picked-attack-ads-fly-in-wyoming/",
+      "retrieval_url": "https://cowboystatedaily.com/2026/08/14/false-exaggerated-and-cherry-picked-attack-ads-fly-in-wyoming/",
+      "format": "html",
+      "content_sha256": "982f114aa83f1fc642033a8813e689b7d31e2efc0cfa2439619c830f9509fc5a",
+      "published": "2026-08-14",
+      "release_title": "False, Exaggerated, And Cherry-Picked Attack Ads Fly In Wyoming",
+      "heading_selector": "h1",
+      "publication_selector": "span._1ydpsnb1:-soup-contains(\"August 14, 2026\")",
+      "publication_date_format": "%B %d, %Y",
+      "candidate_id": "H6WY00217",
+      "media_url": null,
+      "phase": "unknown",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Citizens for Chuck Gray, which is a candidate committee directly linked to Gray, ran an attack ad",
+        "Now Gray appears to be attacking another of his opponents, Kevin Christensen, directly.",
+        "according to a video of the ad Christensen sent Friday to Cowboy State Daily.",
+        "says the ad."
+      ],
+      "passages": [
+        "Christensen trashed President Trump, and Christensen stands against conservatives, siding with RINOs like Liz Cheney, trying to squash Trump’s agenda,"
+      ],
+      "reported_ad_text": {
+        "paragraph_selector": "section._1sy4yg80 > p:-soup-contains(\"says the ad\")",
+        "paragraph_sha256": "059e18114dcaa40438c418315ba44a2ca3a420dec1fa96078c18cf50757e2374"
+      },
+      "publisher_credit": "Cowboy State Daily; Clair McFarland; August 14, 2026 original Wyoming primary attack-ad report.",
+      "reuse_basis": "Retain only the 20 unchanged words in one explicitly attributed ad quotation, credited for comparative noncommercial research. This is a partial quotation, not the complete creative. Do not add the separate six-word Trump clip, interview responses, spokesman statements, short slogans or reporter analysis. Full cached HTML and original media remain undistributed; no blanket reuse license or edition-publication authorization is asserted.",
+      "attribution_basis": "The original report names Citizens for Chuck Gray as the candidate committee responsible for an ad attacking Kevin Christensen and identifies the video supplied to the publisher. Its uniquely hash-bound paragraph explicitly says the ad, not an interview. Pin the unique actual h1, visible August 14 date and the matching unique NewsArticle JSON-LD datePublished/headline to the exact retained HTML SHA256; no date inferred from the URL. Exact frozen candidate H6WY00217 / GRAY, CHUCK / REP / H / WY00 / 2026 / C00932244. Contextual target H6WY01140 / CHRISTENSEN, KEVIN / REP / H / WY00 / 2026 / C00941427. This is an intraparty Republican House primary ad, not evidence of an attack on Democrats. No new alias is required. Candidate-campaign advertiser is publisher-reported; legal payer, original media, duration, delivery, first airing, complete creative and allegation truth remain unverified. Date is publisher report date; phase unknown; media URLs empty; new whole-creative semantic strategy remains unreviewed. Retain the unchanged 15-word floor and 25-word ceiling. The narrow collector requires Gray's exact identity and consistent unique date/heading metadata, rejects interviews, responses, excessive quotes, duplicate evidence and changed hashes, and does not retrieve unrelated media or any held provider."
     }
   ]
 }

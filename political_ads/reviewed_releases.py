@@ -448,6 +448,7 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             "kiggans-washingtonreporter",
             "begich-nrcc-cnbc",
             "lisonbee-sltrib",
+            "gray-csd",
             "lawler-tell-her-no",
             "pps-house-washingtonreporter",
         }
@@ -479,6 +480,22 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         )
         if len(publications) != 1 or publications[0].get("content", "")[:10] != review["published"]:
             raise ValueError("Tribune visible and metadata publication dates must agree")
+    if source.id == "gray-csd":
+        if review["candidate_id"] != "H6WY00217":
+            raise ValueError("CSD quotation requires the reviewed Gray candidate identity")
+        publications = []
+        for node in BeautifulSoup(content, "html.parser").select(
+            'script[type="application/ld+json"]'
+        ):
+            article = json.loads(node.get_text())
+            if isinstance(article, dict) and article.get("@type") == "NewsArticle":
+                publications.append(article)
+        if (
+            len(publications) != 1
+            or publications[0].get("datePublished", "")[:10] != review["published"]
+            or " ".join(publications[0].get("headline", "").split()) != review["release_title"]
+        ):
+            raise ValueError("CSD visible and article metadata publication evidence must agree")
     if source.id == "pps-house-washingtonreporter" and review["candidate_id"] != "H2FL04211":
         raise ValueError("Reporter quotation requires the reviewed Bean speaker identity")
     evidence = review["reported_ad_text"]
@@ -520,6 +537,8 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         )
     elif source.id == "lisonbee-sltrib":
         pattern = r"“([^”]+)” she says in the ad\. “([^”]+)”"
+    elif source.id == "gray-csd":
+        pattern = r"“([^”]+)” says the ad\."
     match = re.fullmatch(pattern, paragraph)
     if not match:
         raise ValueError("Publisher must explicitly attribute the selected quotations to the ad")

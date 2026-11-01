@@ -463,6 +463,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "gray-csd",
+        "https://cowboystatedaily.com",
+        "Chuck Gray campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="WY-00",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "lawler-tell-her-no",
         "https://www.lawlerforcongress.com",
         "Mike Lawler campaign (campaign-reported; payer unverified)",
