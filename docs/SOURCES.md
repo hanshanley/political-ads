@@ -100,13 +100,19 @@ objects, **97 release reviews and their original byte prefix**, **43 native
 reviews / 38 aliases**, **18 protected input hashes** and **16 preceding
 canonical response hashes** remain unchanged. The immutable baseline and
 `data/raw/house-lincoln-npr-preservation-replay.json` retain these checks.
-This is local verification, not a claim of exact-commit CI certification
-or website publication.
+Research-only commit `8fc7ff285235de0d91589914792a479744c822a6` then passed
+exact CI **41318453298**, independently confirmed completed/success with
+all **13 successful steps**. The original watcher saved certification in
+the preservation proof. All 38 research paths were independently identical
+beneath concurrent claims commit `2a1dcd3` before this documentation update.
+No website, host or edition publication occurred.
 
-The broader discovery manifest now verifies **206 referenced receipts /
-196 exact cached bodies / 10 unchanged no-body receipts**, preserving
-all preceding 188 references and 17 separately reviewed admissions.
-Lincoln is the eighteenth separate admission; every discovery receipt
+The broader discovery manifest now verifies **215 referenced receipts /
+204 hash-bound body receipts / 11 no-body receipts**, preserving
+all preceding 206 references and eighteen separately reviewed admissions.
+The ten preceding no-body receipts are unchanged; the eleventh records an
+existing publisher pause without a new request, not a fresh HTTP denial.
+Lincoln remains the eighteenth separate admission; every discovery receipt
 still has `counted_as_ad=false`. The five-campaign batch remains a separate
 zero-admission artifact. Houchin has biography/forms rather than ad copy;
 Moolenaar's announcement and inspected News archive supply statements, not
@@ -126,9 +132,43 @@ without qualifying dates or words; its inspected terms govern SMS programs,
 not blanket media reuse. No YouTube, caption, Vimeo/player or original-media
 request was made. Meuser's actual homepage presents October 25/18/11 weekend
 updates with expressly identified radio/television interviews, not ad speech.
-Its explicitly linked News archive remains an unrequested discovery lead.
+Its explicitly linked News archive was subsequently inspected as described below.
 These six responses add **zero ads**; biography, issue copy, interview
 quotations and undated video links are not acquisitions.
+
+Nine further receipts preserve the preceding 206-reference manifest and
+all eighteen admissions. They comprise six new HTTP 200 responses, two
+cache-only inspections and one existing-pause record; body-receipt counts
+are not counts of distinct sources, new requests or ads. Meuser's actual
+News pages one and two expose twenty June 14-October 25 weekend-update
+cards with interviews, constituent work, legislative commentary and
+campaign-trail remarks, not marked ad speech. The actual page-three link
+remains unrequested; this does not establish archive exhaustion. Bice's
+exact cached homepage has forms and campaign introduction, not ad text.
+The Smith SC-01 primary-report lead was not requested under the existing
+Ballotpedia AWS-challenge pause; no snippet, alternate route or challenge
+bypass supplied ad words.
+
+The actual September 25 Washington Reporter Honeycutt/WFW AF report at
+`https://washingtonreporter.news/exclusive-jenny-costa-honeycutt-gets-almost-1-million-in-support-from-winning-for-women-action-fund-in-home-stretch/`
+attributes narrator and closing quotations to a general-election ad,
+separately from the president's press statement. It exposes no corresponding
+individual creative; article photography and share widgets do not fill
+that gap. The actual WFW AF homepage and linked Press first page have no
+matching September 25 original/script; visible latest releases are
+September 17 endorsements and September 3 investment reporting. Older
+Entries links remain unexplored, not evidence of exhausted discovery.
+The report remains unadmitted. Frozen Honeycutt identity is
+**H6SC01334 / HONEYCUTT, JENNY COSTA / REP / SC-01 / C00927004**.
+
+Teixeira's actual campaign homepage exposes `UncnJkCXnLA` without an
+individual 2026 ad date or script. Its cache-reused News first page has
+ten August 31-November 6, **2025** cards, primarily interviews and ordinary
+campaign remarks, not verified 2026 ad evidence. Frozen identity is
+**H6TX21301 / TEIXEIRA, MARK CHARLES / REP / TX-21 / C00917658**.
+No YouTube, Dailymotion, caption or original-media request was made.
+All nine follow-up receipts have `counted_as_ad=false`; they add **zero
+ads**, and all earlier texts, reviews and aliases remain unchanged.
 
 ## Perry: September 16 healthcare and tax ad quotations
 
