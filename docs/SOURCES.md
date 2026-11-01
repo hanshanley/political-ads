@@ -26,6 +26,12 @@ The subsequent documentation-only commit
 13 steps successful, completed November 1 at `19:45:11Z`. Its generated
 local certificate is `data/raw/house-expanded-exclusions-5743b1f-ci.json`.
 
+The further discovery checkpoint
+`2afda937444e33648cd193a19470d674fcd4feaf` is certified by exact CI
+`41343600396`: completed/success, validate job `124958606418`, all
+13 steps successful, completed November 1 at `19:59:35Z`. Its generated
+local certificate is `data/raw/house-further-expansion-2afda93-ci.json`.
+
 Subsequent discovery adds **no acquired records**. Timmons' homepage has
 issue prose and an undated endorsement embed, not a dated ad script.
 Its actual linked privacy policy concerns privacy, cookies, security and
@@ -129,6 +135,27 @@ The independently discovered September 17 Salazar / Daily Kos report
 is the same creative already retained in `salazar-1273-0`, not a new
 ad. Its longer reported passage was not appended as a second creative
 or used to overwrite the existing source-bound record.
+
+**North Carolina follow-up paused:** independently located McDowell and
+Tim Moore campaign homepages provide biography, policy prose and
+endorsements, not dated ad scripts. Their actual linked terms were
+retained, hash-checked and read completely. McDowell's October 28 terms
+require prior written permission to reproduce, distribute or use site
+text, graphics or videos. Moore's terms prohibit copying site content
+without permission and reproducing, summarizing or distributing
+recordings; temporary personal viewing is not a demonstrated research
+reuse license. Both providers were immediately marked
+`permission_unresolved_paused` in the local discovery guard.
+No news/press archive, API, original, captions or alternate copy was
+requested after inspection, and no cached campaign material was extracted
+after the holds. These inspections added no ad or semantic judgment.
+
+| North Carolina receipt under `data/raw/` | Body SHA-256 | Bytes |
+| --- | --- | ---: |
+| `house-mcdowell-primary-home-20261101-discovery.json` | `048fb3cc4fc4833240ea87830b276a22f37226f87df302f854ad9293c366fd14` | 330539 |
+| `house-mcdowell-linked-terms-20261101-discovery.json` | `6f44788b58a6c85ecae96ae52c6dc61f460789c5ef46a0aecee85de7c398300d` | 145561 |
+| `house-tim-moore-primary-home-20261101-discovery.json` | `b5c1dad235d99f7810961f820a11d9b9c09682f8381a20609e11eada06d0ff85` | 87777 |
+| `house-tim-moore-linked-terms-20261101-discovery.json` | `c459176283461acfdc859004a676c55844b3b1b4bebc94d5d37018335fe280b8` | 71744 |
 
 ## November 1 Chamber House quotation and duplicate checks
 
