@@ -10,6 +10,125 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## November 1 California, Wisconsin, Georgia and campaign-song discovery limits
+
+These checks add **no acquired records**. The initial Gallagher and Ebben
+campaign URLs were successful probes; their independent search-discovery
+provenance is not established by saved results. Follow-up policy/news links
+were read from their actual retained pages, not guessed APIs.
+
+`https://electjamesgallagher.com/news/` has HTML SHA-256
+`1dffcea2b5ff095150e581b42240861a9f91c4628c63a68a551218b04c91e8de`.
+Its three visible cards concern a forum, an endorsement and debates, not
+recovered ad speech. The sole video is stock rice-field background footage,
+not an ad. The actual linked privacy policy has HTML SHA-256
+`c82f5c371e2da826e932c6ba2e3c4f46c7efc23d37c3c665e9ad3c2be1ee8614`
+and exposes separate `/terms-and-conditions/` (HTML SHA-256
+`65b8433e7ed65bbfbc73c4f1760116ce07cdef39b8f2528532a0998c36d62367`).
+Unlike SMS-only terms, these explicitly govern website content and restrict
+use to personal, noncommercial purposes, with prior authorization required
+for redistribution except as permitted by law. An applicable reuse exception
+is not established: the provider is **permission-unresolved paused**, not
+declared categorically unlawful. No archive pagination, API or original was
+requested. Five mocked checks forbid both network requests and cached
+extraction across the exact domain, `www` and subdomains.
+
+`https://www.ebbenforwisconsin.com/` has HTML SHA-256
+`01945bf9dadee650fe33fef3006199ffa0b1a5420702cfeb7be8c5c1abaef64f`.
+Its actual `/news` link has HTML SHA-256
+`49b745306ee7256fd0589d19dd35b2b4ed1b77983feff0b2977d49b32f333736`
+and exposes a letter to the editor and two op-eds, not ad scripts or
+individual ad media. The linked `/privacy-policy` has HTML SHA-256
+`4229a575bbd1c241b1eed9f63c76d4fe0ccac3bbaa65b6a677d010298c54b955`;
+the complete page describes visitor-data handling and SMS terms, without
+an identified ad-collection permission or prohibition. A later independent
+search exposed WisPolitics' August 4 Ebben ad report, but **WisPolitics was
+already denied-paused**. The probe made no request; neither search snippets
+nor the State Affairs version were used as recovered ad text.
+
+The independently search-discovered `https://richmccormick.us/` has
+HTML SHA-256
+`01fcd92fc0f62ffa9fb76ab8a9168dafba97fbed58397bc18608b4d9f4b66d32`.
+Its news item is reelection-qualification reporting; the seven video
+elements are undated website/background illustrations, not established
+ad creatives. The actual linked `/privacy.html` has HTML SHA-256
+`1d1648f66c5d5f32e518b4450a59184a3dbb8913426af41a21823de343f9a6da`.
+The separately linked `/terms.html` has HTML SHA-256
+`f4d8703443db0dc90e60dd42f523b9d80936f5a7e5e4dab62b540e2ce5b78089`
+and explicitly prohibits automated website access and copying/distributing
+site content; its scope is not limited to SMS. The provider is
+**permission-unresolved paused**. No press-kit, video or alternate-route
+request followed.
+
+The independently search-discovered
+`https://www.ontheissues.org/2026_AdWatch.htm` has HTML SHA-256
+`2bce68667b0a0e219f98ed05e025f754bce9811956cc873a03185a62f1910d61`.
+Its actual heading and candidate list cover gubernatorial and Senate
+campaigns, not House advertising; quotations include editorial summaries,
+not interchangeable literal ad speech. The footer requires permission
+for reprinting, so the provider is **permission-unresolved paused**.
+No catalog import or additional candidate/issue request was made.
+
+The already exposed Huizenga campaign link
+`https://huizengaformichigan.com/news/huizenga-releases-birthday-song-for-tax-man-sean-mccann/`
+has HTML SHA-256
+`fdc768d136ad141187978ec38cda869918f7eb8846051aae06f2db6f43b4f2b7`.
+Its unique body contains marked song lyrics, but no individual original
+link or embedded media; the introduction announces a campaign song rather
+than establishing an advertising creative. Publication September 21
+(`2026-09-21T17:57:14+00:00`) and modification September 22 remain distinct.
+No lyrics were admitted, no media/API request followed, and campaign
+spokesman remarks are not treated as ad speech.
+
+## November 1 Indiana and New York discovery limits
+
+These checks add **no acquired records**. The initial Messmer, Yahoo,
+Punchbowl and FingerLakes URLs were speculative probes, not verified
+search-discovered links. Retained responses establish the successful
+pages, but the saved search outputs do not establish independent search
+corroboration. Do not infer provenance from a probe's name.
+
+The Messmer campaign homepage `https://www.markmessmer.com/`
+(HTML SHA-256
+`b29681210c464daa4e0393bd2f5bb1dcc391955f78b8f43f61a9589c7eabd140`)
+supplies biography, issue copy, forms and a YouTube channel link, not a
+dated ad script. The Yahoo report
+`https://www.yahoo.com/news/politics/articles/records-indiana-congressman-used-taxpayer-140716472.html`
+(HTML SHA-256
+`24a869c7553fe487d24f9e2a45eeb156cbd7cb84a2a3f2bcda7a5a4ba61b98ea`)
+does quote a commercial, but reports official House funds and a franking
+purchase order, not candidate-committee campaign funding. Keep it outside
+this campaign-ad acquisition rather than silently changing payer scope.
+Its sole individual YouTube association explicitly belongs to a **2024**
+spot, not the reported 2026 commercial. No FCC, media or linked manual
+request was made; this is not an independent legal-compliance judgment.
+
+The FingerLakes report
+`https://www.fingerlakes1.com/2026/09/22/tenney-launches-first-ny-24-campaign-ad-featuring-upstate-voices/`
+(HTML SHA-256
+`4f09a65d09ad105d71524d86336e2439d45f8a31eab577dfb88063d4fa6de9d4`)
+announces **Us** but provides paraphrase and campaign statements, not
+literal ad quotations, a full script or an individual ad association.
+Actual `.entry-content` has no ad media. The retained
+campaign homepage `https://claudiaforcongress.com/` has HTML SHA-256
+`b60c9254b9a5e3f94026e7d7040184c02399f5f31fabd67ad3b722e17c3ed70a`.
+Its actual Media/News link, `/press-releases/`, has HTML SHA-256
+`7dac9a6fc811d168d5b25de9f2805969d3bbf8d88606281b33db3966d68a6603`
+and shows six **October-November 2020** cards on the inspected first page.
+The homepage's two video embeds are not independently dated by its 2026
+copyright footer. No older pagination, video, caption or guessed API
+request was made. Neither result proves the campaign did not advertise.
+
+Punchbowl remains **premium-preview paused**: the Lawler discovery probe
+made no request. Do not retrieve the full story through another route.
+The successfully probed Yahoo roundup, whose independent search-discovery
+provenance is not established,
+`https://www.yahoo.com/news/politics/articles/worst-attack-ads-midterms-ranked-165953678.html`
+(October 28 publication; HTML SHA-256
+`938b01f9f15d8651b682005d5c3582f41ba2e4fbfa394b85f0f6120df3574e98`)
+contains five state/Senate examples, not Republican House acquisitions.
+No linked monitoring report or original media was requested.
+
 ## November 1 Huizenga campaign-published Power script
 
 The first-party release
@@ -70,6 +189,10 @@ audit. All eleven actual figures were visually inspected. Complete JSON/gzip/CSV
 network- and recognition-forbidden one-response replay reproduces the
 **594-to-595 written-record** addition while preserving preceding objects,
 source states, review bytes, aliases and protected files.
+Exact-commit CI **41334867971** for
+**0545ce70d8a25cdbf62fa1aaf592b770ce45696b** completed successfully;
+the original watcher was read and GitHub independently confirmed the
+exact SHA, successful job and all thirteen successful steps.
 
 Selected acquisition uses
 `python -m political_ads.cli collect --offline --until 2026-10-30 --source huizenga-power`.
