@@ -4178,50 +4178,50 @@
   {
     "ad_id": "snap-1491e5dac06283f9abd1d70b",
     "block_id": "snap-1491e5dac06283f9abd1d70b-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 3\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-14a0b537d9682082a7d324f4",
     "block_id": "snap-14a0b537d9682082a7d324f4-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 6\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-14f48848a62c9af16b370e7a",
     "block_id": "snap-14f48848a62c9af16b370e7a-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for vote: \\\"your voice\\\" is absent from unit 6. Exact source: \\\"It's one of the most secure ways\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-14f48848a62c9af16b370e7a",
     "block_id": "snap-14f48848a62c9af16b370e7a-claims-002",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-15144b4b5336961b7238a35d",
     "block_id": "snap-15144b4b5336961b7238a35d-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 7 for they: \\\"they're fighting for us\\\" is absent from unit 8. Exact source: \\\"because they'tre fighting for us.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1519f8f4f13b62a51b2aed56",
     "block_id": "snap-1519f8f4f13b62a51b2aed56-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-151d3ee7269f8f196c19ba1b",
     "block_id": "snap-151d3ee7269f8f196c19ba1b-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for any candidate committee: \\\"any candidate committee\\\" is absent from unit 36. Exact source: \\\"and not authorized by any candidate or candidate committee.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-152e6332870142b5ad2d9e7d",
     "block_id": "snap-152e6332870142b5ad2d9e7d-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for Central Jersey district: \\\"Central Jersey district\\\" is absent from unit 1. Exact source: \\\"NEW\\\\nJERSEY\\\\nGLOBE\\\\nRebecca Bennett, ex-Navy\\\\nhelicopter pilot, will run\\\\nagainst Kean in NJ-7\\\\n2026 campaign for competitive Central\\\\nJersey district has officially begun\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-15e7fc48d661128a65e8ba3e",
