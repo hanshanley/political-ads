@@ -7107,31 +7107,31 @@
     "ad_id": "snap-6e951a66985de393e4c748a2",
     "block_id": "snap-6e951a66985de393e4c748a2-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-6ed45259f6ba3a1075b0a694",
     "block_id": "snap-6ed45259f6ba3a1075b0a694-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":5,\\\"label\\\":\\\"Labor-endorsed candidates\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6ed45259f6ba3a1075b0a694",
     "block_id": "snap-6ed45259f6ba3a1075b0a694-claims-002",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-6f10b0c978401f23c3ab52e2",
     "block_id": "snap-6f10b0c978401f23c3ab52e2-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-6f3daebf3fed74e0ca94d20d",
     "block_id": "snap-6f3daebf3fed74e0ca94d20d-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6f60565b057c1adf080aad38",

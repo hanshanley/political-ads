@@ -130465,5 +130465,586 @@
     "text_hash": "19db19f29ed8bd3391074a399e3e83ce7b4aca908673deddbd3c39073c3e06be",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6e951a66985de393e4c748a2",
+    "alignment": "D",
+    "block_id": "snap-6e951a66985de393e4c748a2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6e951a66985de393e4c748a2-claims-001-001",
+    "claim_text": "Families pay the price.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 167,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Families pay the price.\nGabe Evans voted to cut Medicaid funding.\nNow hospitals are closing while half the state is\nconsidered a healthcare desert.\nOCBS NEWS\nNOTICE\nOF",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2b4371d377c6b6b0ccddb14673df7e6311ace76456a6bb71e0e990a1f0812ad8?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 8,
+        "anchor_quote": "Families",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Families",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Families pay the price.\nGabe Evans voted to cut Medicaid funding.\nNow hospitals are closing while half the state is\nconsidered a healthcare desert.\nOCBS NEWS\nNOTICE\nOF",
+    "text_hash": "94ce4bb300169e08cc62146be60a2740d860957a3f22e12da63f33a8abf52300",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6e951a66985de393e4c748a2",
+    "alignment": "D",
+    "block_id": "snap-6e951a66985de393e4c748a2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6e951a66985de393e4c748a2-claims-001-002",
+    "claim_text": "Gabe Evans voted to cut Medicaid funding.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 167,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Families pay the price.\nGabe Evans voted to cut Medicaid funding.\nNow hospitals are closing while half the state is\nconsidered a healthcare desert.\nOCBS NEWS\nNOTICE\nOF",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2b4371d377c6b6b0ccddb14673df7e6311ace76456a6bb71e0e990a1f0812ad8?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 34,
+        "anchor_quote": "Gabe Evans",
+        "anchor_start": 24,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H4CO08034",
+        "kind": "person",
+        "name": "EVANS, GABE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 64,
+        "anchor_quote": "Medicaid funding",
+        "anchor_start": 48,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Medicaid funding",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Families pay the price.\nGabe Evans voted to cut Medicaid funding.\nNow hospitals are closing while half the state is\nconsidered a healthcare desert.\nOCBS NEWS\nNOTICE\nOF",
+    "text_hash": "94ce4bb300169e08cc62146be60a2740d860957a3f22e12da63f33a8abf52300",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6e951a66985de393e4c748a2",
+    "alignment": "D",
+    "block_id": "snap-6e951a66985de393e4c748a2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6e951a66985de393e4c748a2-claims-001-003",
+    "claim_text": "Now hospitals are closing while half the state is considered a healthcare desert.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 167,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Families pay the price.\nGabe Evans voted to cut Medicaid funding.\nNow hospitals are closing while half the state is\nconsidered a healthcare desert.\nOCBS NEWS\nNOTICE\nOF",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2b4371d377c6b6b0ccddb14673df7e6311ace76456a6bb71e0e990a1f0812ad8?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 79,
+        "anchor_quote": "hospitals",
+        "anchor_start": 70,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "hospitals",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 112,
+        "anchor_quote": "the state",
+        "anchor_start": 103,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "the state",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Families pay the price.\nGabe Evans voted to cut Medicaid funding.\nNow hospitals are closing while half the state is\nconsidered a healthcare desert.\nOCBS NEWS\nNOTICE\nOF",
+    "text_hash": "94ce4bb300169e08cc62146be60a2740d860957a3f22e12da63f33a8abf52300",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6e951a66985de393e4c748a2",
+    "alignment": "D",
+    "block_id": "snap-6e951a66985de393e4c748a2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6e951a66985de393e4c748a2-claims-001-004",
+    "claim_text": "Half the state is considered a healthcare desert.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 167,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Families pay the price.\nGabe Evans voted to cut Medicaid funding.\nNow hospitals are closing while half the state is\nconsidered a healthcare desert.\nOCBS NEWS\nNOTICE\nOF",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2b4371d377c6b6b0ccddb14673df7e6311ace76456a6bb71e0e990a1f0812ad8?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 112,
+        "anchor_quote": "the state",
+        "anchor_start": 103,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "the state",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 146,
+        "anchor_quote": "healthcare desert",
+        "anchor_start": 129,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "healthcare desert",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Families pay the price.\nGabe Evans voted to cut Medicaid funding.\nNow hospitals are closing while half the state is\nconsidered a healthcare desert.\nOCBS NEWS\nNOTICE\nOF",
+    "text_hash": "94ce4bb300169e08cc62146be60a2740d860957a3f22e12da63f33a8abf52300",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-6ed45259f6ba3a1075b0a694",
+    "alignment": "D",
+    "block_id": "snap-6ed45259f6ba3a1075b0a694-claims-002",
+    "block_status": "normalized",
+    "claim_id": "snap-6ed45259f6ba3a1075b0a694-claims-002-001",
+    "claim_text": "You should vote for Marcy Kaptur to fight back against billionaires.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 1093,
+        "kind": "video_ocr",
+        "start": 1085,
+        "text": "VOTE FOR",
+        "unit_id": 1
+      },
+      {
+        "end": 1106,
+        "kind": "video_ocr",
+        "start": 1094,
+        "text": "MARCY KAPTUR",
+        "unit_id": 2
+      },
+      {
+        "end": 1120,
+        "kind": "video_ocr",
+        "start": 1107,
+        "text": "TO FIGHT BACK",
+        "unit_id": 3
+      },
+      {
+        "end": 1142,
+        "kind": "video_ocr",
+        "start": 1121,
+        "text": "AGAINST BILLIONAIRES!",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c9ca8071bc5d8f67b07ae4ea3a772957cf98165c67186395d3a5193883591af6?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 1106,
+        "anchor_quote": "MARCY KAPTUR",
+        "anchor_start": 1094,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H2OH09031",
+        "kind": "person",
+        "name": "KAPTUR, MARCY HON. M.C.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "We are getting squeezed for every last cent billionaires continue to line their pockets.\nI think it's sick. Labor endorse candidates need a fight for them because they're fine for us.\nLet's change this before it's too late.\nGENEFITS - GOOD HEALTHCARE »\nGOOD HEALTHCARE • ASECURE RETIREMENT M\nnion\nGOOD MEALTHCARE • AS\nCOOD HEALTHCARE • A SECURE RETIREMENT •\nSECURE RETREMENT - NETTER DENEPTS •\nCOOD HEALTH\nGEDTING\nSQUHEZED\nNEFITS • GOC\ncoWe are getting squeezed\nALTHCARE\nOD HEALTHCARE • ASECURE RETIREM\nSECURE R\n• BETTER BENEFITS\nHEIDI\nUNION MEMBER\nBENGFITS • GOOD HEALTHCARE »\nSTTER\nCOOD HEALTHCARE • ASECURE RETIREMENT\nCTOKMKKT - BETTER BENEFITS.\nCOOD HEALT\nBENERTS • GOOD HEALTHCARE • A6\nGOOD HEALTHCARE • ASECURE RETIREMENT\nEECURE RITIMEMY • IMCTTER BENEFITS\nGENIFITS • GOODHEALTHCARE •\nITTER\nEECURE RETSEMEHT • BETTER DENEFITE\nILIONAIR\nFTS . COOD HEALTHCARE\nPAULINE\nLabor-endorsed candidates,\nLET'S FIGHT FOR\nPRO-LABOR\nwe need to fight for them\nbecause they'tre fighting for us.\nPAID FOR BY THE AFL-CIO\nED\nIS AT THE\nBALLOT\nI'S BETTER\nIN A\nUnion\nMY UNION, MY RIGHT\nMY VOTE\nAFL-CIO\nVOTE FOR\nMARCY KAPTUR\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nSN'S BETTER",
+    "text_hash": "f0e4bd44863d25a6d75ca97b6cd2867c2c06f723e5e1179c59f4ed8b5187b126",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-6ed45259f6ba3a1075b0a694",
+    "alignment": "D",
+    "block_id": "snap-6ed45259f6ba3a1075b0a694-claims-002",
+    "block_status": "normalized",
+    "claim_id": "snap-6ed45259f6ba3a1075b0a694-claims-002-002",
+    "claim_text": "Something is better.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 1154,
+        "kind": "video_ocr",
+        "start": 1143,
+        "text": "SN'S BETTER",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c9ca8071bc5d8f67b07ae4ea3a772957cf98165c67186395d3a5193883591af6?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "We are getting squeezed for every last cent billionaires continue to line their pockets.\nI think it's sick. Labor endorse candidates need a fight for them because they're fine for us.\nLet's change this before it's too late.\nGENEFITS - GOOD HEALTHCARE »\nGOOD HEALTHCARE • ASECURE RETIREMENT M\nnion\nGOOD MEALTHCARE • AS\nCOOD HEALTHCARE • A SECURE RETIREMENT •\nSECURE RETREMENT - NETTER DENEPTS •\nCOOD HEALTH\nGEDTING\nSQUHEZED\nNEFITS • GOC\ncoWe are getting squeezed\nALTHCARE\nOD HEALTHCARE • ASECURE RETIREM\nSECURE R\n• BETTER BENEFITS\nHEIDI\nUNION MEMBER\nBENGFITS • GOOD HEALTHCARE »\nSTTER\nCOOD HEALTHCARE • ASECURE RETIREMENT\nCTOKMKKT - BETTER BENEFITS.\nCOOD HEALT\nBENERTS • GOOD HEALTHCARE • A6\nGOOD HEALTHCARE • ASECURE RETIREMENT\nEECURE RITIMEMY • IMCTTER BENEFITS\nGENIFITS • GOODHEALTHCARE •\nITTER\nEECURE RETSEMEHT • BETTER DENEFITE\nILIONAIR\nFTS . COOD HEALTHCARE\nPAULINE\nLabor-endorsed candidates,\nLET'S FIGHT FOR\nPRO-LABOR\nwe need to fight for them\nbecause they'tre fighting for us.\nPAID FOR BY THE AFL-CIO\nED\nIS AT THE\nBALLOT\nI'S BETTER\nIN A\nUnion\nMY UNION, MY RIGHT\nMY VOTE\nAFL-CIO\nVOTE FOR\nMARCY KAPTUR\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nSN'S BETTER",
+    "text_hash": "f0e4bd44863d25a6d75ca97b6cd2867c2c06f723e5e1179c59f4ed8b5187b126",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6f10b0c978401f23c3ab52e2",
+    "alignment": "D",
+    "block_id": "snap-6f10b0c978401f23c3ab52e2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6f10b0c978401f23c3ab52e2-claims-001-001",
+    "claim_text": "Senator Houston brought data centers to Ohio",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 73,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Senator Houston brought data centers to Ohio all we got was higher bills.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/55be47ed563086ca1f2fda606f431d55291dd186acee772056cc11ffa0a2cebc?mediaType=mp4",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 15,
+        "anchor_quote": "Senator Houston",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Houston",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Senator Houston brought data centers to Ohio all we got was higher bills.\nSEN. HUSTED\nBROUGHT 226\n(PAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWNI\nRAL\nPAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWN\nRAISED\nOUR BILLS\nLANDSTAR",
+    "text_hash": "ba9e5cbb407bbf7fcc70d238d2e9ffd37c1cca0f684e3264b2dcae276acd1545",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6f10b0c978401f23c3ab52e2",
+    "alignment": "D",
+    "block_id": "snap-6f10b0c978401f23c3ab52e2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6f10b0c978401f23c3ab52e2-claims-001-002",
+    "claim_text": "we got higher bills",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 73,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Senator Houston brought data centers to Ohio all we got was higher bills.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/55be47ed563086ca1f2fda606f431d55291dd186acee772056cc11ffa0a2cebc?mediaType=mp4",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 51,
+        "anchor_quote": "we",
+        "anchor_start": 49,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "we",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Senator Houston brought data centers to Ohio all we got was higher bills.\nSEN. HUSTED\nBROUGHT 226\n(PAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWNI\nRAL\nPAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWN\nRAISED\nOUR BILLS\nLANDSTAR",
+    "text_hash": "ba9e5cbb407bbf7fcc70d238d2e9ffd37c1cca0f684e3264b2dcae276acd1545",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6f10b0c978401f23c3ab52e2",
+    "alignment": "D",
+    "block_id": "snap-6f10b0c978401f23c3ab52e2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6f10b0c978401f23c3ab52e2-claims-001-003",
+    "claim_text": "Senator Husted is associated with the number 226",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 85,
+        "kind": "video_ocr",
+        "start": 74,
+        "text": "SEN. HUSTED",
+        "unit_id": 2
+      },
+      {
+        "end": 97,
+        "kind": "video_ocr",
+        "start": 86,
+        "text": "BROUGHT 226",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      2,
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/55be47ed563086ca1f2fda606f431d55291dd186acee772056cc11ffa0a2cebc?mediaType=mp4",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 85,
+        "anchor_quote": "SEN. HUSTED",
+        "anchor_start": 74,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Husted",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Senator Houston brought data centers to Ohio all we got was higher bills.\nSEN. HUSTED\nBROUGHT 226\n(PAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWNI\nRAL\nPAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWN\nRAISED\nOUR BILLS\nLANDSTAR",
+    "text_hash": "ba9e5cbb407bbf7fcc70d238d2e9ffd37c1cca0f684e3264b2dcae276acd1545",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6f10b0c978401f23c3ab52e2",
+    "alignment": "D",
+    "block_id": "snap-6f10b0c978401f23c3ab52e2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6f10b0c978401f23c3ab52e2-claims-001-004",
+    "claim_text": "this communication was authorized by Friends of Sherrod Brown",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 156,
+        "kind": "video_ocr",
+        "start": 98,
+        "text": "(PAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWNI",
+        "unit_id": 4
+      },
+      {
+        "end": 217,
+        "kind": "video_ocr",
+        "start": 161,
+        "text": "PAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWN",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      4,
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/55be47ed563086ca1f2fda606f431d55291dd186acee772056cc11ffa0a2cebc?mediaType=mp4",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 155,
+        "anchor_quote": "FRIENDS OF SHERROD BROWN",
+        "anchor_start": 131,
+        "anchor_unit_id": 4,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Friends of Sherrod Brown",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Senator Houston brought data centers to Ohio all we got was higher bills.\nSEN. HUSTED\nBROUGHT 226\n(PAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWNI\nRAL\nPAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWN\nRAISED\nOUR BILLS\nLANDSTAR",
+    "text_hash": "ba9e5cbb407bbf7fcc70d238d2e9ffd37c1cca0f684e3264b2dcae276acd1545",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6f10b0c978401f23c3ab52e2",
+    "alignment": "D",
+    "block_id": "snap-6f10b0c978401f23c3ab52e2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6f10b0c978401f23c3ab52e2-claims-001-005",
+    "claim_text": "this communication was paid for by DSCC",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 156,
+        "kind": "video_ocr",
+        "start": 98,
+        "text": "(PAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWNI",
+        "unit_id": 4
+      },
+      {
+        "end": 217,
+        "kind": "video_ocr",
+        "start": 161,
+        "text": "PAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWN",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      4,
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/55be47ed563086ca1f2fda606f431d55291dd186acee772056cc11ffa0a2cebc?mediaType=mp4",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 115,
+        "anchor_quote": "DSCC",
+        "anchor_start": 111,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "DSCC",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Senator Houston brought data centers to Ohio all we got was higher bills.\nSEN. HUSTED\nBROUGHT 226\n(PAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWNI\nRAL\nPAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWN\nRAISED\nOUR BILLS\nLANDSTAR",
+    "text_hash": "ba9e5cbb407bbf7fcc70d238d2e9ffd37c1cca0f684e3264b2dcae276acd1545",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]
