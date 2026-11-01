@@ -943,6 +943,28 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         passage_source = broadcast_ad_text(content, source, review)
     elif review.get("linked_ad_text"):
         passage_source = linked_ad_text(client, content, review, identities)
+    elif source.id == "chamber-lawler-examiner":
+        if (
+            review["candidate_id"] != "H2NY17162"
+            or source.sponsor_type != "outside_group"
+            or source.alignment != "R"
+            or review["format"] != "html"
+            or review["completeness"] != "partial_quotation"
+            or review["phase"] != "unknown"
+        ):
+            raise ValueError("Chamber issue ad requires the reviewed Lawler identity and scope")
+        paragraphs = BeautifulSoup(content, "html.parser").select(
+            'p.wp-block-paragraph:-soup-contains("the voiceover says.")'
+        )
+        paragraph = paragraphs[0].get_text(" ", strip=True) if len(paragraphs) == 1 else ""
+        if digest(paragraph) != review["quoted_ad_paragraph_sha256"]:
+            raise ValueError("Chamber's attributed ad quotation must match one reviewed paragraph")
+        quotation = re.fullmatch(
+            r"“[^”]+” the voiceover says\. “(Thank Mike Lawler [^”]+)”", paragraph
+        )
+        if not quotation:
+            raise ValueError("Chamber quotation must be explicitly attributed to the ad voiceover")
+        passage_source = quotation[1]
     else:
         passage_source = visible
     passages = review["passages"]
@@ -1032,6 +1054,15 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         )
     if source.id == "lawler-tell-her-no":
         flags.append("opponent_interview_clip_used_in_ad")
+    if source.id == "chamber-lawler-examiner":
+        flags.extend(
+            [
+                "original_ad_media_unverified",
+                "ad_legal_payer_unverified",
+                "publisher_reports_ai_generated_ad",
+                "selected_ending_of_longer_ad_quotation",
+            ]
+        )
     if source.id == "begich-nrcc-cnbc":
         flags.append("selected_ending_of_longer_ad_quotation")
     if multi_race:

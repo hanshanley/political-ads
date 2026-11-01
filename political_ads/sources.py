@@ -523,6 +523,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "chamber-lawler-examiner",
+        "https://www.washingtonexaminer.com",
+        "U.S. Chamber of Commerce (publisher-reported issue ad; legal payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="NY-17",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "lawler-tell-her-no",
         "https://www.lawlerforcongress.com",
         "Mike Lawler campaign (campaign-reported; payer unverified)",

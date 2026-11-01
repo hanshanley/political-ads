@@ -14,6 +14,82 @@ from political_ads.schema import digest
 from political_ads.sources import SOURCES, collect_wordpress
 
 
+@pytest.mark.parametrize("failure", [None, "speaker", "commentary", "original"])
+def test_chamber_issue_ad_keeps_only_attributed_lawler_ending(failure):
+    from political_ads.reviewed_releases import reviewed_release
+
+    source = next(s for s in SOURCES if s.id == "chamber-lawler-examiner")
+    url = source.url + "/news/campaigns/congressional/4778222/chamber-house-ads/"
+    original = "https://www.youtube.com/watch?v=VUzUhtTvBiU"
+    ending = "Thank Mike Lawler for getting us unstuck, and tell him to keep us moving forward."
+    paragraph = f"“Another part of the ad,” the voiceover says. “{ending}”"
+    if failure == "speaker":
+        paragraph = paragraph.replace("the voiceover says.", "the Chamber spokesman says.")
+    commentary = "A separate organizational spokesman statement should not become ad speech."
+    content = (
+        '<meta property="article:published_time" content="2026-10-23T22:12:08+00:00">'
+        '<h1 class="news-title">Chamber House ad</h1>'
+        "<p>The Chamber issue ad supports Congressman Mike Lawler.</p>"
+        f'<p class="wp-block-paragraph">{paragraph}</p><p>{commentary}</p>'
+        f'<a href="{original if failure != "original" else "https://example.org/other"}">ad</a>'
+    )
+    review = {
+        "source": source.id,
+        "record_id": "4778222",
+        "source_url": url,
+        "retrieval_url": url,
+        "format": "html",
+        "content_sha256": digest(content),
+        "published": "2026-10-23",
+        "release_title": "Chamber House ad",
+        "heading_selector": "h1.news-title",
+        "candidate_id": "H2NY17162",
+        "media_url": original,
+        "phase": "unknown",
+        "completeness": "partial_quotation",
+        "quoted_ad_paragraph_sha256": digest(paragraph),
+        "required_context": ["The Chamber issue ad supports Congressman Mike Lawler."],
+        "passages": [ending, commentary] if failure == "commentary" else [ending],
+        "attribution_basis": "Fixture publisher attribution, not independent media review.",
+    }
+    candidate = {
+        "candidate_id": "H2NY17162",
+        "name": "LAWLER, MIKE",
+        "party": "REP",
+        "state": "NY",
+        "office": "H",
+        "district": "17",
+        "election_year": "2026",
+    }
+
+    class Client:
+        def get(self, requested, **kwargs):
+            assert requested == url, "Never request original media or a tracked link"
+            return content.encode(), {}
+
+    if failure:
+        expected = {
+            "speaker": "must match one reviewed paragraph",
+            "commentary": "passages must be literal",
+            "original": "original ad link is missing",
+        }[failure]
+        with pytest.raises(ValueError, match=expected):
+            reviewed_release(Client(), source, review, [candidate], "2026-11-01")
+        return
+    ad = reviewed_release(Client(), source, review, [candidate], "2026-11-01")
+    assert ad["text"] == ending and commentary not in ad["text"]
+    assert ad["alignment"] == "R" and ad["sponsor_type"] == "outside_group"
+    assert ad["race"] == "NY-17" and ad["phase"] == "unknown"
+    assert ad["media_urls"] == [original]
+    assert {
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified",
+        "publisher_reports_ai_generated_ad",
+    } <= set(ad["quality_flags"])
+
+
 @pytest.mark.parametrize("omit_script_line", [False, True])
 def test_campaign_marked_script_excludes_press_statement_and_keeps_media_unverified(
     omit_script_line,

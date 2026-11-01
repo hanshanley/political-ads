@@ -10,6 +10,146 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## November 1 Chamber House quotation and duplicate checks
+
+One newly admitted record, `chamber-lawler-examiner-4778222-0`, retains
+**only fifteen words** from the explicitly attributed closing voiceover
+of the Chamber's Lawler issue ad. The October 23 Washington Examiner
+report names eight Republican House recipients, but seven named districts
+are **not seven recovered variants**. No common template was copied or
+candidate name substituted to create additional records.
+
+The review binds the unique `h1.news-title`, publication metadata
+`2026-10-23T22:12:08+00:00`, the actual linked original
+`VUzUhtTvBiU`, and one attributed paragraph with SHA-256
+`b53b87e0c6eced45b4ce1236c249e1ef8a3436d83d4fa310a7c249b252bd6fab`.
+Only that paragraph's second quotation is eligible; the first quotation,
+reporter paraphrases, Neil Bradley interview statements and neighboring
+material are excluded. The unchanged fifteen-word text hashes to
+`6438abae065c33e64157cf2c3e44004ce1bd63b646d7a36d3e0fabb1d77a0ba0`.
+Source credit is Hailey Bullis / Washington Examiner, with the full
+article title and exact public URL in `data/ad-release-reviews.json`.
+
+The exact saved federal identity is
+`H2NY17162 / LAWLER, MICHAEL VINCENT / REP / H / NY-17 / 2026 /
+C00815415`. The existing Mike Lawler alias remains unchanged.
+Alignment describes this reported Chamber program's support for a
+Republican incumbent, **not** blanket party alignment of the Chamber or
+news publisher. The report attributes payment and AI production to the
+Chamber; both remain publisher reports, not independently inspected
+creative facts. The original is a link association, not recovered media:
+no YouTube, player, tracking, caption or API request occurred.
+Completeness is `partial_quotation`, phase is `unknown`, and new semantic
+strategy judgments remain unreviewed. A thank-and-contact appeal does not
+establish a general-election campaign phase. October 23 is the report
+date, not certified first airing, delivery or upload.
+
+The actual linked Examiner `/terms` request redirected to `/terms/` and
+returned a public navigation shell without operative terms, a heading
+or policy embed. That is an inspection limit, **not** permission.
+Admission retains a brief credited ad quotation for noncommercial
+comparative research, not the news article, common template or interview.
+No blanket license, original-media redistribution or edition-publication
+authorization is asserted; the publication hold remains in effect.
+
+The article already had an older canonical cached response. Its heading,
+publication, original link and quotation-paragraph hash match the newer
+discovery response, but full-page hashes differ. The review deliberately
+binds the **existing canonical body**; neither its body nor headers was
+replaced. The separate discovery receipt remains separate evidence.
+Full cached pages, receipts and the preservation baseline are local
+ignored artifacts, not clone-distributed replay fixtures.
+
+| Retained evidence | Body SHA-256 | Bytes |
+| --- | --- | ---: |
+| Existing canonical Chamber report, `data/raw/http/07c76d920153a2b44c821eaf1d91c2aebad59c1d3b49e24032f5e9d5884e80b5.body` | `e40b82a53a6dd0c504eb2664b9b0de97653061ad0614d087749290208cf660bb` | 136878 |
+| `house-chamber-examiner-eight-races-20261101-discovery.json` | `55917f6c2ac1b10dc8da617845e4a0920d3c53b82c00df474eac241b5e3b2d17` | 136824 |
+| `house-examiner-linked-terms-20261101-discovery.json` | `41e6e334c631035c91fe17164a755359e24b8e3bf350153200a17479cd3adfd0` | 91774 |
+| `house-lawler-next-news-20261101-discovery.json` | `168b170719b925a9f0353076c2b2e4490ca7e568b08e8b646981b7cb3ab43faf` | 53332 |
+| `house-lawler-linked-terms-20261101-discovery.json` | `84fe74733bbe006c63e6c6eb805b3742c59cd7512e7c5bdbcaaae2384c9f8f62` | 32891 |
+| `house-lawler-virginia-release-20261101-discovery.json` | `2ca6fe0e9b9eecc19f68a12af06743f121ea076aa1d0d0f487baec9408bc3ff7` | 39428 |
+| `house-pbs-personal-ads-20261101-discovery.json` | `151fed1770be03dc5f34be897e05f91e68a951fe43d0d8cc2d81705bd6c5e768` | 287588 |
+| `house-wfw-mckinney-release-20261101-discovery.json` | `910171069a8dcdc4b5317317133c62a8b6f8b698a2ce50fb549135cbd170da83` | 164982 |
+| `house-fry-primary-home-20261101-discovery.json` | `b266f6b0d49ced5db0f3593b7d4316aea7e382dd084bcb0fa8966f629c408f16` | 99127 |
+
+Receipt basenames above resolve under `data/raw/`; verify their recorded
+cache directories, byte lengths and SHA-256 with the offline body method
+below. None of these receipts is itself an acquired ad.
+
+**Duplicates and exclusions:** the complete pre-admission 1,956-object
+corpus check found all four Lawler "Virginia" quotations and original
+`SK0Tz0VFwY8` already in `lawler-1471-0`. The new HTML response was not
+substituted for its old WordPress evidence or counted again. The linked
+1,325-character Lawler terms concern mobile messaging only and were read
+completely. WFW's McKinney July 29 release is already `wfw-af-13533-0`;
+its new observation reused a cached response, and no original was fetched.
+The PBS October 26 personal-attack-ad transcript has only a brief Lawler
+approval, unbound narrator fragments and Senate/nonfederal examples;
+Ashley Hinson's appearance is explicitly as a senatorial candidate.
+The article was new as a URL, not a substantive new House creative.
+No PBS policy, media or caption follow-up was requested after exclusion.
+
+**Expanded discovery and inherited holds:** the Chamber's actual newsroom
+probe was stopped before any request or extraction by the existing
+`permission_unresolved_paused` hold. Its receipt is a no-response outcome,
+not acquired evidence. No alternate Chamber route or cached extraction
+bypassed that hold. The independently reported Examiner quotation does
+not authorize collection or redistribution of the Chamber's own material.
+
+Fry's actual campaign homepage was separately retained and inspected.
+Its House-branded footer and issue statements are not themselves an ad
+script; the `WATCH` link associates `rytIjcUtoW0` without an ad date or
+literal script. No original, player or captions were requested. Neither
+the site's branding nor a saved House identity establishes a 2026 House
+creative; separately discovered Senate activity also requires explicit
+creative-level scope checks. This lead adds no record, and its linked
+privacy policy was not requested after the undated/scriptless exclusion.
+
+**Preservation and replay:** a pre-edit baseline at
+`da3e217f5259bb2335267cfc5ddbaeb7989db6e1` froze every acquired/analyzed
+object, all 101 preceding release reviews, aliases and protected-file
+hashes. An isolated temporary repository with only one cached article,
+the exact roster/aliases/reviews and old written corpus replayed with
+`urlopen` forbidden. It preserved all 595 old written objects and added
+only this record. Canonical offline admission then preserved all
+1,956 acquired and 1,917 analyzed objects exactly, all preceding reviews,
+all aliases and protected inputs. Canonical article/header hashes remained
+unchanged. Focused committed regressions reject an unbound speaker,
+spokesman commentary and a missing original link.
+
+With the locally retained matching cache, the supported collector command
+is `political-ads --offline collect --source chamber-lawler-examiner
+--until 2026-10-30`, followed by `political-ads build` and
+`political-ads validate`. A clone alone does not contain the full HTTP
+page; committed synthetic guard tests validate behavior, not historical
+page reproduction. Changed current HTML requires a new literal-evidence
+review rather than a silently updated hash.
+
+The resulting snapshot is
+`ec751972fa22e9822e5a593b0e6b629e8963e1b76b589d0cfab73bba1bb2f516`:
+1,957 acquired, 1,918 English analyzed, 596 written and 102 release
+reviews; English D1,226/R653, English House D698/R275, and non-Snap
+English House D222/R274. This does **not** resolve the coverage gap.
+The other seven Chamber variants and independently discovered uncovered
+incumbent campaigns remain discovery leads, not acquired text.
+
+Local verification passed all 824 Python tests, repository Ruff lint and
+format checks, dashboard lint, 17 dashboard tests, the production build
+and all nine browser regressions. The supported build/validate pair
+verified all 1,918 text-complete exports, figure and article parity and
+both held editions. The independent strategy audit retained this exact
+new message as `not_reviewed`, with no descriptions or inferred praise/
+criticism decisions. Whitespace checks accept the existing CSV writer's
+standard CRLF record terminators; no CSV contents or line endings were
+changed to suppress those checks. No deployment or host restoration
+occurred.
+
+The preceding research-only commit
+`16dac30c58663dbd4ae96a405d13b0260edb422e` is certified by exact CI
+`41339588707`: completed/success, validate job `124946558468`, all
+13 steps successful, completed November 1 at `19:10:16Z`.
+Concurrent claims checkpoint `da3e217` was preserved.
+
 ## November 1 Texas, Nebraska, California and ABA follow-up
 
 These checks add **no acquired records**. Discovery receipts and cached
