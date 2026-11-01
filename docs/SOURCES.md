@@ -10,6 +10,71 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## November 1 bounded discovery: exclusions, not additional ads
+
+The Iowa GOP release
+`https://iowagop.org/nunn-drops-first-general-election-ad-the-work/`
+publishes a complete **153-word** script for Nunn's **The Work**. Its
+unique `h2.wp-block-post-title`, visible June 10, 2026 date in
+`.entry-content h4`, and one `.entry-content figure.wp-block-table`
+identify the marked script. HTML SHA-256 is
+`fac0077e373f4a12e764dd1f7432e9ee241428851c0cba314d6366be9daadfd1`;
+parsed-script SHA-256 is
+`ea5990f48dd79cd6caa58562cc3a70684f6120fc1b9bc79ecf4dba00261c7dbe`.
+Compare the actual narration, not just video URLs: this is the creative
+already retained as **`rmsp-native-nunn-01e89be71e19902d`**. Its earlier
+review inspected the Iowans for Zach Nunn payer and candidate approval.
+The cleaner script and different published video ID are corroboration,
+not another ad. Preserve the existing native transcript, OCR/ASR caveats,
+publication metadata and review; do not replace its text or count the
+script separately. The prospective acquisition freezer rejected the
+duplicate before writing a baseline. A separate Miller-Meeks quotation
+contains only **six words** and fails the unchanged **15-word** minimum.
+
+Kansas Reflector's actual public ad-search form exposed May 25 and
+October 9 reports, and the May report linked Washburn's public archive:
+`https://www.washburn.edu/reference/cks/politics/ads.html`.
+The initial local certificate-validation failure was not a publisher
+denial. One curl request to the same HTTPS URL with normal certificate
+verification returned HTTP200; no insecure TLS option, downgrade or
+alternate host was used. Retained index SHA-256 is
+`0d388cc4a4ccf381ac0367e7275675cc624109cae31e29485648adacc1a33cbe`.
+Its current federal House section identifies **two Schmidt, three Estes
+and one outside-group creative against Katy Tyndell**. All six expose
+YouTube links, not acquired scripts or direct MP4/MP3/VTT/SRT originals.
+YouTube remains paused; these are uncounted leads. Distinguish federal
+House from the index's state House and historical contests, including
+Schmidt's 2022 gubernatorial race. Estes's actual linked media gallery
+exposes a file explicitly named **web-b-roll**, not an ad; no B-roll
+download or ad count was made. A public Turner campaign email likewise
+announces an ad without explicitly reproducing its speech; its removed
+links were not reconstructed.
+
+Walberg's homepage returned HTTP200, but its actually linked policy
+returned **HTTP403**. The provider is paused; its news archive, video and
+alternate routes were not subsequently requested. WWBT's October 28
+Wittman/Taylor fact-check report returned HTTP200 and contains reporter
+paraphrases rather than a substantive literal ad quotation. Its player
+publicly declares a news-package MP4 and caption file. The exact caption
+file returned HTTP200, but the subsequently inspected, actually linked
+`https://www.12onyourside.com/terms-of-service/` expressly prohibits
+automated/AI collection without prior written consent. **Exclude this
+lead and pause the station and its exposed media/caption routes.** No
+MP4, additional caption, player API or alternate-copy request followed
+that restriction, and no WWBT speech entered the corpus or release
+reviews. Terms-page SHA-256 is
+`fbcbf78de0a0c55274777b6cec6a477656eda16cfc0613235d8ae3d8934233b8`.
+The reporter's interview quotation is not ad speech.
+
+Ignored discovery receipts retain request status, hashes and the reason
+each lead remains uncounted. These findings add **zero ads**: the certified
+Honeycutt snapshot below, **594 written records / 100 release reviews**,
+all earlier objects and the research-only publication hold remain
+unchanged. No new semantic judgment, source registration, canonical
+cache promotion or acquisition-baseline file is claimed. Continue
+independent Republican House discovery rather than treating these
+exclusions as an exhausted search.
+
 ## Honeycutt: September 25 outside-group ad quotation
 
 The retained Washington Reporter report expressly attributes a quotation
