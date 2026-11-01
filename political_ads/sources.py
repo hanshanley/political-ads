@@ -413,6 +413,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "deboer-washingtonreporter",
+        "https://washingtonreporter.news",
+        "West Michigan for Common Sense (publisher-reported; payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="MI-03",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "luke-murphy-flvoice",
         "https://flvoicenews.com",
         "Luke Murphy campaign (publisher-reported; payer unverified)",

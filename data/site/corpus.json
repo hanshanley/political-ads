@@ -23742,6 +23742,92 @@
       "title": "MI-07: Tom Barrett Scrambles to Bury His Data Center Past"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "The actual public Washington Reporter article attributes the two quotations in the reviewed paragraph to the narrator in a West Michigan for Common Sense ad supporting Republican Terri DeBoer. Only the second quotation is selected. Exact frozen H6MI03198, DEBOER, TERRI, REP, House, MI-03, 2026, principal C00941823 establishes the federal beneficiary; Republican alignment is support-specific, not an inferred organization-wide affiliation. Decoded HTML SHA256 7fe5fd918ab692b465d891a612cb9f03f8e517a25a4ff555b42bb22dbbc83f7b pins the unique heading and article:published_time 2026-08-21T14:50:25+00:00, agreeing with visible August 21 and structured NewsArticle.datePublished. Modification at 15:31:38 is not a separate release. Paragraph SHA256 0556266752fac97e86837b41632611905f53bab5b18ca9308ffaa5845607b4f0 pins the exact two-quotation narrator-attribution grammar; the narrow collector admits only its second quotation, retains the unchanged 15-word substantive floor and 25-word ceiling, and rejects spokesperson words or an unsupported candidate. No individual original ad association, independently heard audio, full transcript, duration, visual payer inspection, first airing or paid delivery is verified. The reported outside-group name and spending are not an independently verified legal payer or FEC committee identity; no committee alias is fabricated. Publisher praise and ad claims are not fact-checked findings. Phase and semantic judgment remain unknown/unreviewed. The separately recovered September 9 campaign Trust release is not this outside-group creative, and its promotional quotation is not acquired. Corpus-wide exact selected-text checks found no existing copy. No held media provider, credentials, source proxy, previous corpus/review/alias or frozen claims input is changed.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6MI03198",
+          "district": "03",
+          "name": "DEBOER, TERRI",
+          "office": "H",
+          "party": "REP",
+          "state": "MI"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "deboer-washingtonreporter-20260821-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "d01d4a2475608218b14433ba297d14b43fbc5a2945fbadf42d3e2e2226a9461f",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-08-21",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified"
+      ],
+      "race": "MI-03",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6MI03198"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The actual public Washington Reporter article attributes the two quotations in the reviewed paragraph to the narrator in a West Michigan for Common Sense ad supporting Republican Terri DeBoer. Only the second quotation is selected. Exact frozen H6MI03198, DEBOER, TERRI, REP, House, MI-03, 2026, principal C00941823 establishes the federal beneficiary; Republican alignment is support-specific, not an inferred organization-wide affiliation. Decoded HTML SHA256 7fe5fd918ab692b465d891a612cb9f03f8e517a25a4ff555b42bb22dbbc83f7b pins the unique heading and article:published_time 2026-08-21T14:50:25+00:00, agreeing with visible August 21 and structured NewsArticle.datePublished. Modification at 15:31:38 is not a separate release. Paragraph SHA256 0556266752fac97e86837b41632611905f53bab5b18ca9308ffaa5845607b4f0 pins the exact two-quotation narrator-attribution grammar; the narrow collector admits only its second quotation, retains the unchanged 15-word substantive floor and 25-word ceiling, and rejects spokesperson words or an unsupported candidate. No individual original ad association, independently heard audio, full transcript, duration, visual payer inspection, first airing or paid delivery is verified. The reported outside-group name and spending are not an independently verified legal payer or FEC committee identity; no committee alias is fabricated. Publisher praise and ad claims are not fact-checked findings. Phase and semantic judgment remain unknown/unreviewed. The separately recovered September 9 campaign Trust release is not this outside-group creative, and its promotional quotation is not acquired. Corpus-wide exact selected-text checks found no existing copy. No held media provider, credentials, source proxy, previous corpus/review/alias or frozen claims input is changed.",
+            "candidate_id": "H6MI03198",
+            "completeness": "partial_quotation",
+            "content_sha256": "7fe5fd918ab692b465d891a612cb9f03f8e517a25a4ff555b42bb22dbbc83f7b",
+            "format": "html",
+            "heading_selector": "h1",
+            "media_url": null,
+            "passages": [
+              "Now she’s ready to serve our community in Congress, standing up for West Michigan values of family, hard work, and community."
+            ],
+            "phase": "unknown",
+            "published": "2026-08-21",
+            "publisher_credit": "Washington Reporter / Matthew Foldi; EXCLUSIVE: Terri DeBoer gets $200,000 in air support in pivotal Michigan House race, August 21, 2026.",
+            "record_id": "20260821",
+            "release_title": "EXCLUSIVE: Terri DeBoer gets $200,000 in air support in pivotal Michigan House race",
+            "reported_ad_text": {
+              "paragraph_selector": "article p:-soup-contains(\"the narrator says in the ad.\")",
+              "paragraph_sha256": "0556266752fac97e86837b41632611905f53bab5b18ca9308ffaa5845607b4f0"
+            },
+            "required_context": [
+              "West Michigan for Common Sense is airing an ad",
+              "supporting Republican meteorologist Terri DeBoer",
+              "the narrator says in the ad."
+            ],
+            "retrieval_url": "https://washingtonreporter.news/exclusive-terri-deboer-gets-200000-in-air-support-in-pivotal-michigan-house-race/",
+            "reuse_basis": "Retain only the second complete narrator quotation from the unique hash-bound paragraph: 21 whitespace words, unchanged, with publisher credit for comparative noncommercial research. Exclude the first quotation, closing quotation, reporter commentary, spokesperson interview, promotional campaign statements, images and unavailable embedded media. The result is a partial quotation, not a full transcript. Cached full source HTML is not redistributed. No blanket reuse license, media redistribution or edition-publication authorization is asserted.",
+            "source": "deboer-washingtonreporter",
+            "source_url": "https://washingtonreporter.news/exclusive-terri-deboer-gets-200000-in-air-support-in-pivotal-michigan-house-race/"
+          },
+          "text": "Now she’s ready to serve our community in Congress, standing up for West Michigan values of family, hard work, and community."
+        }
+      ],
+      "source": "deboer-washingtonreporter",
+      "source_hash": "7fe5fd918ab692b465d891a612cb9f03f8e517a25a4ff555b42bb22dbbc83f7b",
+      "source_record_id": "20260821",
+      "source_url": "https://washingtonreporter.news/exclusive-terri-deboer-gets-200000-in-air-support-in-pivotal-michigan-house-race/",
+      "sponsor": "West Michigan for Common Sense (publisher-reported; payer unverified)",
+      "sponsor_type": "outside_group",
+      "state": "MI",
+      "text": "Now she’s ready to serve our community in Congress, standing up for West Michigan values of family, hard work, and community.",
+      "title": "EXCLUSIVE: Terri DeBoer gets $200,000 in air support in pivotal Michigan House race"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official Jon Ossoff for Senate release at https://electjon.com/new-ossoff-tv-ad-exposed-the-truth/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
@@ -51092,6 +51178,22 @@
       "source": "dccc",
       "state": "ok",
       "url": "https://dccc.org"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "deboer-washingtonreporter",
+      "state": "partial",
+      "url": "https://washingtonreporter.news"
     },
     {
       "ads_with_text": 1,

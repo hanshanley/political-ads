@@ -2499,6 +2499,36 @@
       "publisher_credit": "KSTP / Tom Hauser; Questions raised about possible ‘deepfake’ image in First District TV ad, October 7, 2026. Structured metadata credits Cory Knudsen; the visible article byline credits Tom Hauser KSTP.",
       "reuse_basis": "Retain only the two explicitly attributed ad quotations, eight and ten whitespace tokens, eighteen combined, unchanged and in source order, for noncommercial comparative research with publisher/source credit. Preserve the first quotation's trailing comma and the second quotation's period and curly apostrophe. Exclude reporter prose, campaign-spokesperson statements, legislative quotations, photographs and the station's news video. This is partial quotation, not a complete ad transcript or article reproduction. No blanket reuse license, original-media redistribution or edition-publication authorization is asserted.",
       "attribution_basis": "The actual public KSTP report expressly attributes these two adjacent quotations to a TV ad from Republican First District Congressman Brad Finstad, identifying Jake Johnson as his Democratic opponent. Exact frozen 2026 FEC H2MN01223, FINSTAD, BRAD, REP, House, MN-01, principal C00807743 establishes the advertiser's federal identity and Republican alignment, not legal payment or authorization. Full decoded HTML SHA256 61a3923c802c3b44ed4a724717ed4a7556a409788bea782907b4894bb372dc6d binds the unique h1.fuel-title-heading and article:published_time 2026-10-07T23:10:40+00:00; the NewsArticle datePublished agrees. October 8 modification is retained as source context, not another release. Publication does not verify first airing or paid delivery, and October alone does not establish general-election phase. The unique reviewed storyContent paragraph has SHA256 fac7ded01f8f4fff27aa618263fc978a28fcbba958cc0448866500d2d6b485ae and exactly two quotations separated by the ad says. No individual original ad link is established; media_urls remains empty. The station's news video, campaign and legislator responses, and reporter descriptions of disputed imagery are not acquired ad speech. Bankrolling and endorsement remain attributed ad claims, not independently verified factual findings; no conclusion about AI use or legal compliance is certified. The narrow KSTP quotation path requires this exact candidate and literal attribution grammar, with substantive-text, source-order, paragraph/hash and 25-word guards. No media, caption or held-provider request, target alias, semantic judgment or protected claims input is added or replaced."
+    },
+    {
+      "source": "deboer-washingtonreporter",
+      "record_id": "20260821",
+      "source_url": "https://washingtonreporter.news/exclusive-terri-deboer-gets-200000-in-air-support-in-pivotal-michigan-house-race/",
+      "retrieval_url": "https://washingtonreporter.news/exclusive-terri-deboer-gets-200000-in-air-support-in-pivotal-michigan-house-race/",
+      "format": "html",
+      "content_sha256": "7fe5fd918ab692b465d891a612cb9f03f8e517a25a4ff555b42bb22dbbc83f7b",
+      "published": "2026-08-21",
+      "release_title": "EXCLUSIVE: Terri DeBoer gets $200,000 in air support in pivotal Michigan House race",
+      "heading_selector": "h1",
+      "candidate_id": "H6MI03198",
+      "media_url": null,
+      "phase": "unknown",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "West Michigan for Common Sense is airing an ad",
+        "supporting Republican meteorologist Terri DeBoer",
+        "the narrator says in the ad."
+      ],
+      "passages": [
+        "Now she’s ready to serve our community in Congress, standing up for West Michigan values of family, hard work, and community."
+      ],
+      "reported_ad_text": {
+        "paragraph_selector": "article p:-soup-contains(\"the narrator says in the ad.\")",
+        "paragraph_sha256": "0556266752fac97e86837b41632611905f53bab5b18ca9308ffaa5845607b4f0"
+      },
+      "publisher_credit": "Washington Reporter / Matthew Foldi; EXCLUSIVE: Terri DeBoer gets $200,000 in air support in pivotal Michigan House race, August 21, 2026.",
+      "reuse_basis": "Retain only the second complete narrator quotation from the unique hash-bound paragraph: 21 whitespace words, unchanged, with publisher credit for comparative noncommercial research. Exclude the first quotation, closing quotation, reporter commentary, spokesperson interview, promotional campaign statements, images and unavailable embedded media. The result is a partial quotation, not a full transcript. Cached full source HTML is not redistributed. No blanket reuse license, media redistribution or edition-publication authorization is asserted.",
+      "attribution_basis": "The actual public Washington Reporter article attributes the two quotations in the reviewed paragraph to the narrator in a West Michigan for Common Sense ad supporting Republican Terri DeBoer. Only the second quotation is selected. Exact frozen H6MI03198, DEBOER, TERRI, REP, House, MI-03, 2026, principal C00941823 establishes the federal beneficiary; Republican alignment is support-specific, not an inferred organization-wide affiliation. Decoded HTML SHA256 7fe5fd918ab692b465d891a612cb9f03f8e517a25a4ff555b42bb22dbbc83f7b pins the unique heading and article:published_time 2026-08-21T14:50:25+00:00, agreeing with visible August 21 and structured NewsArticle.datePublished. Modification at 15:31:38 is not a separate release. Paragraph SHA256 0556266752fac97e86837b41632611905f53bab5b18ca9308ffaa5845607b4f0 pins the exact two-quotation narrator-attribution grammar; the narrow collector admits only its second quotation, retains the unchanged 15-word substantive floor and 25-word ceiling, and rejects spokesperson words or an unsupported candidate. No individual original ad association, independently heard audio, full transcript, duration, visual payer inspection, first airing or paid delivery is verified. The reported outside-group name and spending are not an independently verified legal payer or FEC committee identity; no committee alias is fabricated. Publisher praise and ad claims are not fact-checked findings. Phase and semantic judgment remain unknown/unreviewed. The separately recovered September 9 campaign Trust release is not this outside-group creative, and its promotional quotation is not acquired. Corpus-wide exact selected-text checks found no existing copy. No held media provider, credentials, source proxy, previous corpus/review/alias or frozen claims input is changed."
     }
   ]
 }

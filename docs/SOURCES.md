@@ -10,6 +10,50 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Terri DeBoer: bounded outside-group ad quotation
+
+The August 21, 2026 Washington Reporter article at
+`https://washingtonreporter.news/exclusive-terri-deboer-gets-200000-in-air-support-in-pivotal-michigan-house-race/`
+explicitly attributes a narrator paragraph to a West Michigan for Common
+Sense ad supporting DeBoer. Acquire only its **second complete quotation,
+21 words**, about serving West Michigan. Exclude the first quotation,
+closing quotation, reporter commentary, spokesperson interview and the
+separate September 9 campaign "Trust" release's promotional statements.
+Broad metadata matches in existing Michigan ads are not proof that those
+ads belong to DeBoer; the selected sentence is absent from all acquired text.
+
+HTML SHA-256
+`7fe5fd918ab692b465d891a612cb9f03f8e517a25a4ff555b42bb22dbbc83f7b`
+pins the unique heading and
+`article:published_time=2026-08-21T14:50:25+00:00`, agreeing with the
+visible date and structured publication metadata. Modification is not
+another release. Paragraph SHA-256
+`0556266752fac97e86837b41632611905f53bab5b18ca9308ffaa5845607b4f0`
+pins the literal **the narrator says in the ad.** two-quotation grammar.
+The source-specific collector requires **H6MI03198**, frozen
+**DEBOER, TERRI / C00941823 / REP / House / MI-03 / 2026**, and permits
+only the second quotation. Other unlinked-source grammars, unique
+selectors, exact hashes, ordered passages, the 15-word substantive floor
+and 25-word ceiling remain enforced.
+
+The result is `partial_quotation`, not a full script. Original media and
+legal payer remain unverified; `media_urls` is empty. The reported group
+is not assigned an invented FEC committee, and Republican alignment is
+beneficiary-specific. Publication is not verified first airing or paid
+delivery; phase and semantic judgment remain unknown/unreviewed.
+
+Reproduce with `.venv/bin/political-ads collect --source
+deboer-washingtonreporter --until 2026-10-30 --offline`, then
+`parquet --offline`, `build --offline`, `validate --offline` and
+`audit-strategy --offline`. Exact cached HTML is required and is not
+included in a fresh checkout. Complete downloads preserve selected words,
+segments and provenance. Snapshot
+`682f9c5b1ce68aef2171ba14fd4c668cfefa3d2bb54724c8fe20945e58724fdd`
+has **1,937 acquired / 1,898 English**, **R 633 / D 1,226 English**,
+**R 255 / D 698 English House**, **579 written / 85 acquisition reviews**.
+All prior objects and reviews remain preserved. Research refresh does not
+resolve the coverage gap or authorize website, host or edition publication.
+
 ## Brad Finstad: bounded KSTP ad quotation
 
 The October 7, 2026 KSTP report at
@@ -46,7 +90,7 @@ Reproduce with `.venv/bin/political-ads collect --source finstad-kstp
 `validate --offline` and `audit-strategy --offline`. Offline replay needs
 the exact cached HTML, which is not included in a fresh checkout.
 Complete downloads retain every selected word, segment and review.
-The rebuilt snapshot is
+The Finstad batch snapshot was
 `e48645ef0f5f6514e2b9e12d4700b14e0728fb7240fedcebc3e03820cf138307`:
 **1,936 acquired / 1,897 English**, **R 632 / D 1,226 English**,
 **R 254 / D 698 English House**, **578 written / 84 acquisition reviews**.

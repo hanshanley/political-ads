@@ -439,7 +439,7 @@ def printed_ad_text(client, content: str, source: Source, review: dict, identiti
 
 def reported_ad_text(content: str, source: Source, review: dict) -> str:
     if (
-        source.id not in {"knott-wunc", "finstad-kstp"}
+        source.id not in {"knott-wunc", "finstad-kstp", "deboer-washingtonreporter"}
         or review["format"] != "html"
         or review["media_url"] is not None
         or review["completeness"] != "partial_quotation"
@@ -450,6 +450,8 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         raise ValueError("Unsupported unlinked publisher quotation evidence")
     if source.id == "finstad-kstp" and review["candidate_id"] != "H2MN01223":
         raise ValueError("KSTP quotation requires the reviewed Finstad candidate identity")
+    if source.id == "deboer-washingtonreporter" and review["candidate_id"] != "H6MI03198":
+        raise ValueError("Reporter quotation requires the reviewed DeBoer candidate identity")
     evidence = review["reported_ad_text"]
     paragraphs = BeautifulSoup(content, "html.parser").select(evidence["paragraph_selector"])
     if len(paragraphs) != 1 or paragraphs[0].name != "p":
@@ -462,10 +464,12 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         if source.id == "knott-wunc"
         else r"“([^”]+)” the ad says\. “([^”]+)”"
     )
+    if source.id == "deboer-washingtonreporter":
+        pattern = r"“([^”]+)” the narrator says in the ad\. “([^”]+)”"
     match = re.fullmatch(pattern, paragraph)
     if not match:
         raise ValueError("Publisher must explicitly attribute the selected quotations to the ad")
-    text = "\n".join(match.groups())
+    text = match[2] if source.id == "deboer-washingtonreporter" else "\n".join(match.groups())
     if len(text.split()) > 25:
         raise ValueError("Unlinked publisher quotations must remain within the 25-word limit")
     return text

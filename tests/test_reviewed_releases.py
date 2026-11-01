@@ -1201,6 +1201,104 @@ def test_finstad_report_rejects_wrong_identity_non_ad_speech_and_unsupported_med
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_deboer_fixture():
+    source, candidate, review, body = unlinked_finstad_fixture()
+    source = next(s for s in SOURCES if s.id == "deboer-washingtonreporter")
+    candidate.update(candidate_id="H6MI03198", name="DEBOER, TERRI", state="MI", district="03")
+    first = (
+        "Neighbors have known this local broadcaster for years, and the narrator recalls "
+        "her service to the community."
+    )
+    selected = (
+        "Now she’s ready to serve our community in Congress, standing up for West Michigan "
+        "values of family, hard work, and community."
+    )
+    paragraph = f"“{first}” the narrator says in the ad. “{selected}”"
+    content = (
+        '<meta property="article:published_time" content="2026-08-21T14:50:25+00:00">'
+        "<h1>DeBoer outside-group ad report</h1><article>"
+        "<p>West Michigan for Common Sense supports Terri DeBoer.</p>"
+        f'<p class="quoted">{paragraph}</p><p>A spokesman praises the candidate.</p></article>'
+    )
+    url = source.url + "/deboer-outside-group-ad-report/"
+    review.update(
+        source=source.id,
+        record_id="20260821",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-08-21",
+        release_title="DeBoer outside-group ad report",
+        candidate_id=candidate["candidate_id"],
+        required_context=["Terri DeBoer", "West Michigan for Common Sense"],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": "article > p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+    )
+    review.pop("heading_selector")
+    return source, candidate, review, content.encode(), first
+
+
+def test_deboer_report_retains_only_selected_narrator_sentence_and_outside_group_provenance():
+    source, candidate, review, body, first = unlinked_deboer_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            assert url == review["retrieval_url"]
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == review["passages"][0] and first not in ad["text"]
+    assert ad["sponsor_type"] == "outside_group" and ad["race"] == "MI-03"
+    assert ad["alignment"] == "R" and ad["media_urls"] == [] and ad["phase"] == "unknown"
+    assert ad["date_basis"] == "publisher_report_date"
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(ad["quality_flags"])
+    assert ad["segments"][0]["release_evidence"] == review
+    assert "portrayal_review" not in ad and calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize("failure", ["candidate", "statement", "too_long", "unselected"])
+def test_deboer_report_rejects_wrong_candidate_non_ad_speech_and_unselected_words(failure):
+    source, candidate, review, body, first = unlinked_deboer_fixture()
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H6MI03999"
+    elif failure == "unselected":
+        review["passages"] = [first]
+    else:
+        content = body.decode()
+        if failure == "statement":
+            content = content.replace("the narrator says in the ad.", "a spokesman says.")
+        else:
+            original = review["passages"][0]
+            review["passages"][0] += (
+                " Additional words push the quotation beyond its permitted limit."
+            )
+            content = content.replace(original, review["passages"][0])
+        from bs4 import BeautifulSoup
+
+        paragraph = BeautifulSoup(content, "html.parser").select("article > p.quoted")[0]
+        review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
+        review["content_sha256"] = digest(content)
+        body = content.encode()
+
+    class Client:
+        def get(self, url, **kwargs):
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 @pytest.mark.parametrize("format", ["wordpress", "html"])
 @pytest.mark.parametrize("completeness", ["partial_quotation", "marked_script"])
 def test_reviewed_release_keeps_only_bound_ad_words_and_explicit_provenance(format, completeness):
