@@ -141203,5 +141203,1123 @@
     "text_hash": "a0bfad064927c7fde7f1ced844625b08ece01036a015386ad4a6865d16e0dc1b",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-83ffb4089d20748aef94875e",
+    "alignment": "D",
+    "block_id": "snap-83ffb4089d20748aef94875e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-83ffb4089d20748aef94875e-claims-001-001",
+    "claim_text": "Rebecca Bennett will fight back against billionaires",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 157,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nREBECCA BENNETT\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/08d940041f145a71f0f68d4adc70b0794c70e65498700969e6041990bcb81d04?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 77,
+        "anchor_quote": "REBECCA BENNETT",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6NJ07201",
+        "kind": "person",
+        "name": "BENNETT, REBECCA",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nREBECCA BENNETT\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "ed0169d38de72f6f960d71795af587d1844163dbb6fae9e00235e6c2e272dd5a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-83ffb4089d20748aef94875e",
+    "alignment": "D",
+    "block_id": "snap-83ffb4089d20748aef94875e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-83ffb4089d20748aef94875e-claims-001-002",
+    "claim_text": "This communication was paid for by the AFL-CIO",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 157,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nREBECCA BENNETT\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/08d940041f145a71f0f68d4adc70b0794c70e65498700969e6041990bcb81d04?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nREBECCA BENNETT\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "ed0169d38de72f6f960d71795af587d1844163dbb6fae9e00235e6c2e272dd5a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-83ffb4089d20748aef94875e",
+    "alignment": "D",
+    "block_id": "snap-83ffb4089d20748aef94875e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-83ffb4089d20748aef94875e-claims-001-003",
+    "claim_text": "It is your right to vote for Rebecca Bennett",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 157,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nREBECCA BENNETT\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/08d940041f145a71f0f68d4adc70b0794c70e65498700969e6041990bcb81d04?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 77,
+        "anchor_quote": "REBECCA BENNETT",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6NJ07201",
+        "kind": "person",
+        "name": "BENNETT, REBECCA",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nREBECCA BENNETT\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "ed0169d38de72f6f960d71795af587d1844163dbb6fae9e00235e6c2e272dd5a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-83ffb4089d20748aef94875e",
+    "alignment": "D",
+    "block_id": "snap-83ffb4089d20748aef94875e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-83ffb4089d20748aef94875e-claims-001-004",
+    "claim_text": "It is your right to have a union",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 157,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nREBECCA BENNETT\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/08d940041f145a71f0f68d4adc70b0794c70e65498700969e6041990bcb81d04?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Union",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nREBECCA BENNETT\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "ed0169d38de72f6f960d71795af587d1844163dbb6fae9e00235e6c2e272dd5a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-83ffb4089d20748aef94875e",
+    "alignment": "D",
+    "block_id": "snap-83ffb4089d20748aef94875e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-83ffb4089d20748aef94875e-claims-001-005",
+    "claim_text": "You have the right to vote",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 157,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nREBECCA BENNETT\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/08d940041f145a71f0f68d4adc70b0794c70e65498700969e6041990bcb81d04?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 52,
+        "anchor_quote": "MY VOTE",
+        "anchor_start": 45,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "you",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nREBECCA BENNETT\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "ed0169d38de72f6f960d71795af587d1844163dbb6fae9e00235e6c2e272dd5a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84985df467c46869bdf91c23",
+    "alignment": "D",
+    "block_id": "snap-84985df467c46869bdf91c23-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84985df467c46869bdf91c23-claims-001-001",
+    "claim_text": "Affordability has emerged as an issue in the 2026 midterms.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 211,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5ecff134599eab85dde3b4ff31bf6e8181e99c644567d6a978bc3a53a1c83d76?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 133,
+        "anchor_quote": "Affordability",
+        "anchor_start": 120,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Affordability",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+    "text_hash": "50e72bc836ef51cf1b000c97d281038145eb8bbe705d8762d63cd7ad2aad2cec",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84985df467c46869bdf91c23",
+    "alignment": "D",
+    "block_id": "snap-84985df467c46869bdf91c23-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84985df467c46869bdf91c23-claims-001-002",
+    "claim_text": "Immigration has emerged as an issue in the 2026 midterms.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 211,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5ecff134599eab85dde3b4ff31bf6e8181e99c644567d6a978bc3a53a1c83d76?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 146,
+        "anchor_quote": "immigration",
+        "anchor_start": 135,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Immigration",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+    "text_hash": "50e72bc836ef51cf1b000c97d281038145eb8bbe705d8762d63cd7ad2aad2cec",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84985df467c46869bdf91c23",
+    "alignment": "D",
+    "block_id": "snap-84985df467c46869bdf91c23-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84985df467c46869bdf91c23-claims-001-003",
+    "claim_text": "The war in Iran has emerged as an issue in the 2026 midterms.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 211,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5ecff134599eab85dde3b4ff31bf6e8181e99c644567d6a978bc3a53a1c83d76?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 166,
+        "anchor_quote": "war in Iran",
+        "anchor_start": 155,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "war in Iran",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+    "text_hash": "50e72bc836ef51cf1b000c97d281038145eb8bbe705d8762d63cd7ad2aad2cec",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84985df467c46869bdf91c23",
+    "alignment": "D",
+    "block_id": "snap-84985df467c46869bdf91c23-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84985df467c46869bdf91c23-claims-001-004",
+    "claim_text": "Jon Ossoff is a Georgia U.S. Senate candidate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 211,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5ecff134599eab85dde3b4ff31bf6e8181e99c644567d6a978bc3a53a1c83d76?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 57,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 47,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+    "text_hash": "50e72bc836ef51cf1b000c97d281038145eb8bbe705d8762d63cd7ad2aad2cec",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84bd8d3a5e687335e4d8b44d",
+    "alignment": "D",
+    "block_id": "snap-84bd8d3a5e687335e4d8b44d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84bd8d3a5e687335e4d8b44d-claims-001-001",
+    "claim_text": "Gabe Evans talked about lower costs",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 91,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "AMERICAN\nJournal News\nGabe Evans talked about\nlower costs, then voted\nagainst ACA subsidies",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c29e0f07780032ca4389ca62d9405c6f366f0733d46581e38cb687f167807fb5?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 32,
+        "anchor_quote": "Gabe Evans",
+        "anchor_start": 22,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H4CO08034",
+        "kind": "person",
+        "name": "EVANS, GABE",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "AMERICAN\nJournal News\nGabe Evans talked about\nlower costs, then voted\nagainst ACA subsidies",
+    "text_hash": "ac7baf9da8cba194716432229f0505203072fb5ae570858b0d4a9106c7d74343",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84bd8d3a5e687335e4d8b44d",
+    "alignment": "D",
+    "block_id": "snap-84bd8d3a5e687335e4d8b44d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84bd8d3a5e687335e4d8b44d-claims-001-002",
+    "claim_text": "Gabe Evans voted against ACA subsidies",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 91,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "AMERICAN\nJournal News\nGabe Evans talked about\nlower costs, then voted\nagainst ACA subsidies",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c29e0f07780032ca4389ca62d9405c6f366f0733d46581e38cb687f167807fb5?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 32,
+        "anchor_quote": "Gabe Evans",
+        "anchor_start": 22,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H4CO08034",
+        "kind": "person",
+        "name": "EVANS, GABE",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 91,
+        "anchor_quote": "ACA subsidies",
+        "anchor_start": 78,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "ACA subsidies",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "AMERICAN\nJournal News\nGabe Evans talked about\nlower costs, then voted\nagainst ACA subsidies",
+    "text_hash": "ac7baf9da8cba194716432229f0505203072fb5ae570858b0d4a9106c7d74343",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84bd8d3a5e687335e4d8b44d",
+    "alignment": "D",
+    "block_id": "snap-84bd8d3a5e687335e4d8b44d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84bd8d3a5e687335e4d8b44d-claims-001-003",
+    "claim_text": "Gabe Evans talked about lower costs, then voted against ACA subsidies",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 91,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "AMERICAN\nJournal News\nGabe Evans talked about\nlower costs, then voted\nagainst ACA subsidies",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c29e0f07780032ca4389ca62d9405c6f366f0733d46581e38cb687f167807fb5?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 32,
+        "anchor_quote": "Gabe Evans",
+        "anchor_start": 22,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H4CO08034",
+        "kind": "person",
+        "name": "EVANS, GABE",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "uncertain"
+      }
+    ],
+    "text": "AMERICAN\nJournal News\nGabe Evans talked about\nlower costs, then voted\nagainst ACA subsidies",
+    "text_hash": "ac7baf9da8cba194716432229f0505203072fb5ae570858b0d4a9106c7d74343",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84c4ff38d8ec5a8dd3431cde",
+    "alignment": "R",
+    "block_id": "snap-84c4ff38d8ec5a8dd3431cde-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84c4ff38d8ec5a8dd3431cde-claims-001-001",
+    "claim_text": "Dan Osborne does view support Amnesty.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 48,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "View support Amnesty, Democrat Dan Osborne does.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/756cbfd80ff4dc1179e5e4842a55f5256db2a7d8765f4ac7af324b64eda48f20?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 42,
+        "anchor_quote": "Dan Osborne",
+        "anchor_start": 31,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "OSBORN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_party",
+        "target_party": "other",
+        "tone": "negative"
+      }
+    ],
+    "text": "View support Amnesty, Democrat Dan Osborne does.\nThere definitely needs to be a clear path to citizenship.\nDO YOU\nPAID FOR BYSLF PAC. NOTAUTHORIZED BYANY CANDIDATE\nOR CANDIDATES COMMITE WWSLEPACORG\nOR CANDIDATES COMMITEE. WWWW.SLFPAC.ORG\nDAN OSBORN\nPAID FOR BYSLF PAC. NOTAUTHORIZED BYANY CANDIDAT\nOR CANDIDATES COMMITE WWWSLEPACORG\nTO GITIZENSHIP\nDAN OSBORN, 4/29/24\nPAIDFOR BYSLF PAC NOTAUTHORZED BY ANY CANDIDATE\nOR CANDIDATES COMMITEE WWWSLEPACORG\nDEMOGRAT",
+    "text_hash": "8549ffd8ad4980a3cdc4ee9ca482586bbc9cc31f70d2a5a27c4d4de09df62b8b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84c4ff38d8ec5a8dd3431cde",
+    "alignment": "R",
+    "block_id": "snap-84c4ff38d8ec5a8dd3431cde-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84c4ff38d8ec5a8dd3431cde-claims-001-002",
+    "claim_text": "There definitely needs to be a clear path to citizenship.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 106,
+        "kind": "local_asr",
+        "start": 49,
+        "text": "There definitely needs to be a clear path to citizenship.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/756cbfd80ff4dc1179e5e4842a55f5256db2a7d8765f4ac7af324b64eda48f20?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 105,
+        "anchor_quote": "citizenship",
+        "anchor_start": 94,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "citizenship",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "View support Amnesty, Democrat Dan Osborne does.\nThere definitely needs to be a clear path to citizenship.\nDO YOU\nPAID FOR BYSLF PAC. NOTAUTHORIZED BYANY CANDIDATE\nOR CANDIDATES COMMITE WWSLEPACORG\nOR CANDIDATES COMMITEE. WWWW.SLFPAC.ORG\nDAN OSBORN\nPAID FOR BYSLF PAC. NOTAUTHORIZED BYANY CANDIDAT\nOR CANDIDATES COMMITE WWWSLEPACORG\nTO GITIZENSHIP\nDAN OSBORN, 4/29/24\nPAIDFOR BYSLF PAC NOTAUTHORZED BY ANY CANDIDATE\nOR CANDIDATES COMMITEE WWWSLEPACORG\nDEMOGRAT",
+    "text_hash": "8549ffd8ad4980a3cdc4ee9ca482586bbc9cc31f70d2a5a27c4d4de09df62b8b",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84c4ff38d8ec5a8dd3431cde",
+    "alignment": "R",
+    "block_id": "snap-84c4ff38d8ec5a8dd3431cde-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84c4ff38d8ec5a8dd3431cde-claims-001-003",
+    "claim_text": "Dan Osborne is a Democrat.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 460,
+        "kind": "video_ocr",
+        "start": 452,
+        "text": "DEMOGRAT",
+        "unit_id": 14
+      }
+    ],
+    "evidence_ids": [
+      14
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/756cbfd80ff4dc1179e5e4842a55f5256db2a7d8765f4ac7af324b64eda48f20?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 460,
+        "anchor_quote": "DEMOGRAT",
+        "anchor_start": 452,
+        "anchor_unit_id": 14,
+        "entity_id": "candidate:S4NE00207",
+        "kind": "person",
+        "name": "OSBORN, DAN",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_party",
+        "target_party": "other",
+        "tone": "negative"
+      }
+    ],
+    "text": "View support Amnesty, Democrat Dan Osborne does.\nThere definitely needs to be a clear path to citizenship.\nDO YOU\nPAID FOR BYSLF PAC. NOTAUTHORIZED BYANY CANDIDATE\nOR CANDIDATES COMMITE WWSLEPACORG\nOR CANDIDATES COMMITEE. WWWW.SLFPAC.ORG\nDAN OSBORN\nPAID FOR BYSLF PAC. NOTAUTHORIZED BYANY CANDIDAT\nOR CANDIDATES COMMITE WWWSLEPACORG\nTO GITIZENSHIP\nDAN OSBORN, 4/29/24\nPAIDFOR BYSLF PAC NOTAUTHORZED BY ANY CANDIDATE\nOR CANDIDATES COMMITEE WWWSLEPACORG\nDEMOGRAT",
+    "text_hash": "8549ffd8ad4980a3cdc4ee9ca482586bbc9cc31f70d2a5a27c4d4de09df62b8b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84cbcd0b16064257503e24f7",
+    "alignment": "D",
+    "block_id": "snap-84cbcd0b16064257503e24f7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84cbcd0b16064257503e24f7-claims-001-001",
+    "claim_text": "Congressman Max Miller has signaled that he will stay in the race for re-election to his 7th District Congressional seat.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 427,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/03d688d81231d73ee7fd5888f57c837700db570f23023dbe08b84dfe42d608de?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 182,
+        "anchor_quote": "Congressman Max Miller",
+        "anchor_start": 160,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2OH16051",
+        "kind": "person",
+        "name": "MILLER, MAX",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+    "text_hash": "9628309ba282632c4c7f476e0280d7595bf2cdef79b4a2520c0fa4c194db6ea4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84cbcd0b16064257503e24f7",
+    "alignment": "D",
+    "block_id": "snap-84cbcd0b16064257503e24f7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84cbcd0b16064257503e24f7-claims-001-002",
+    "claim_text": "Max Miller faces a hurdle that, going into the race, seemed like anything but an obstacle: winning re-election in November.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 427,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/03d688d81231d73ee7fd5888f57c837700db570f23023dbe08b84dfe42d608de?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 70,
+        "anchor_quote": "Max Miller",
+        "anchor_start": 60,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2OH16051",
+        "kind": "person",
+        "name": "MILLER, MAX",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+    "text_hash": "9628309ba282632c4c7f476e0280d7595bf2cdef79b4a2520c0fa4c194db6ea4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84cbcd0b16064257503e24f7",
+    "alignment": "D",
+    "block_id": "snap-84cbcd0b16064257503e24f7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84cbcd0b16064257503e24f7-claims-001-003",
+    "claim_text": "A Democrat ironworker is challenging Rep. Max Miller.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 427,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/03d688d81231d73ee7fd5888f57c837700db570f23023dbe08b84dfe42d608de?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 70,
+        "anchor_quote": "Max Miller",
+        "anchor_start": 60,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2OH16051",
+        "kind": "person",
+        "name": "MILLER, MAX",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+    "text_hash": "9628309ba282632c4c7f476e0280d7595bf2cdef79b4a2520c0fa4c194db6ea4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84cbcd0b16064257503e24f7",
+    "alignment": "D",
+    "block_id": "snap-84cbcd0b16064257503e24f7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84cbcd0b16064257503e24f7-claims-001-004",
+    "claim_text": "The goal of the challenge is to win back blue-collar voters in the 7th District.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 427,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/03d688d81231d73ee7fd5888f57c837700db570f23023dbe08b84dfe42d608de?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 109,
+        "anchor_quote": "blue-collar voters",
+        "anchor_start": 91,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "blue-collar voters",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+    "text_hash": "9628309ba282632c4c7f476e0280d7595bf2cdef79b4a2520c0fa4c194db6ea4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84cbcd0b16064257503e24f7",
+    "alignment": "D",
+    "block_id": "snap-84cbcd0b16064257503e24f7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84cbcd0b16064257503e24f7-claims-001-005",
+    "claim_text": "Winning re-election in November is a hurdle for Max Miller.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 427,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/03d688d81231d73ee7fd5888f57c837700db570f23023dbe08b84dfe42d608de?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 70,
+        "anchor_quote": "Max Miller",
+        "anchor_start": 60,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2OH16051",
+        "kind": "person",
+        "name": "MILLER, MAX",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+    "text_hash": "9628309ba282632c4c7f476e0280d7595bf2cdef79b4a2520c0fa4c194db6ea4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84cbcd0b16064257503e24f7",
+    "alignment": "D",
+    "block_id": "snap-84cbcd0b16064257503e24f7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84cbcd0b16064257503e24f7-claims-001-006",
+    "claim_text": "Max Miller is a Congressman.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 427,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/03d688d81231d73ee7fd5888f57c837700db570f23023dbe08b84dfe42d608de?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 182,
+        "anchor_quote": "Congressman Max Miller",
+        "anchor_start": 160,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2OH16051",
+        "kind": "person",
+        "name": "MILLER, MAX",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+    "text_hash": "9628309ba282632c4c7f476e0280d7595bf2cdef79b4a2520c0fa4c194db6ea4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84cbcd0b16064257503e24f7",
+    "alignment": "D",
+    "block_id": "snap-84cbcd0b16064257503e24f7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84cbcd0b16064257503e24f7-claims-001-007",
+    "claim_text": "Max Miller represents the 7th District.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 427,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/03d688d81231d73ee7fd5888f57c837700db570f23023dbe08b84dfe42d608de?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 70,
+        "anchor_quote": "Max Miller",
+        "anchor_start": 60,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2OH16051",
+        "kind": "person",
+        "name": "MILLER, MAX",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+    "text_hash": "9628309ba282632c4c7f476e0280d7595bf2cdef79b4a2520c0fa4c194db6ea4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84cbcd0b16064257503e24f7",
+    "alignment": "D",
+    "block_id": "snap-84cbcd0b16064257503e24f7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84cbcd0b16064257503e24f7-claims-001-008",
+    "claim_text": "If Congressman Max Miller chooses to stay in the race for re-election, he faces a hurdle.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 427,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/03d688d81231d73ee7fd5888f57c837700db570f23023dbe08b84dfe42d608de?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 70,
+        "anchor_quote": "Max Miller",
+        "anchor_start": 60,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2OH16051",
+        "kind": "person",
+        "name": "MILLER, MAX",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+    "text_hash": "9628309ba282632c4c7f476e0280d7595bf2cdef79b4a2520c0fa4c194db6ea4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-84cbcd0b16064257503e24f7",
+    "alignment": "D",
+    "block_id": "snap-84cbcd0b16064257503e24f7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-84cbcd0b16064257503e24f7-claims-001-009",
+    "claim_text": "Max Miller is a Republican.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 427,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/03d688d81231d73ee7fd5888f57c837700db570f23023dbe08b84dfe42d608de?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 70,
+        "anchor_quote": "Max Miller",
+        "anchor_start": 60,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2OH16051",
+        "kind": "person",
+        "name": "MILLER, MAX",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "5.\nNEWS 5\nabc CLEVELAND\nDemocrat ironworker challenges\nRep. Max Miller, aiming to win back\nblue-collar voters in the 7th District\nWORLDRS\nBROOK PARK, Ohio - If Congressman Max Miller chooses to stay in the\nrace for re-election to his 7th District Congressional seat, which he has\nsignaled at every turn he will, he faces a hurdle that, going into the race,\nseemed like anything but an obstacle: winning re-election in November.",
+    "text_hash": "9628309ba282632c4c7f476e0280d7595bf2cdef79b4a2520c0fa4c194db6ea4",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]
