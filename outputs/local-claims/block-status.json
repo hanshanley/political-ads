@@ -4226,50 +4226,50 @@
   {
     "ad_id": "snap-15e7fc48d661128a65e8ba3e",
     "block_id": "snap-15e7fc48d661128a65e8ba3e-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 5: {\\\"anchor_quote\\\":\\\"Brown\\\",\\\"anchor_unit_id\\\":20,\\\"entity_id\\\":\\\"candidate:S6OH00163\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"Sherrod Brown\\\",\\\"role\\\":\\\"self_or_supported\\\",\\\"tone\\\":\\\"neutral\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-15e7fc48d661128a65e8ba3e",
     "block_id": "snap-15e7fc48d661128a65e8ba3e-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Sherrod Brown: \\\"Sherrod's policy\\\" is absent from unit 9. Exact source: \\\"is a $600 billion bailout.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-15f6e95a281fd2385a6c005d",
     "block_id": "snap-15f6e95a281fd2385a6c005d-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for Josh Turric: \\\"Josh Turric\\\" is absent from unit 7. Exact source: \\\"And no one will push harder for change.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-16001b83462288d5d3ab8e85",
     "block_id": "snap-16001b83462288d5d3ab8e85-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":9,\\\"label\\\":\\\"AFL-CIO\\\"},{\\\"claim\\\":10,\\\"label\\\":\\\"Union\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-16119017c50fe406c87ce22d",
     "block_id": "snap-16119017c50fe406c87ce22d-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-16119017c50fe406c87ce22d",
     "block_id": "snap-16119017c50fe406c87ce22d-claims-002",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-163925161def36206d97963e",
     "block_id": "snap-163925161def36206d97963e-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 7 for you: \\\"your\\\" is absent from unit 35. Exact source: \\\"MAKE YOUR PLAN TO VOTE.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-16866478c7011cf4f62c9168",
     "block_id": "snap-16866478c7011cf4f62c9168-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-16962276a308a47dd5752f68",
