@@ -133237,5 +133237,1017 @@
     "text_hash": "0f97e97f442c21701a8d75d55cea08e2126a61c3e03235cba04f44743bd917b2",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7644d5c7fd07257c28d3b3f8",
+    "alignment": "D",
+    "block_id": "snap-7644d5c7fd07257c28d3b3f8-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7644d5c7fd07257c28d3b3f8-claims-001-001",
+    "claim_text": "It created thousands of local jobs.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 116,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "It created thousands of local jobs.\nSherrod Brown helped pass the CHIPS Act that\nbrought semiconductor jobs to Ohio.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/f8a0dcd4d0436c6637cd12591e6733be603e27878e73dcab144b290587d78d24?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 2,
+        "anchor_quote": "It",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "It",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "It created thousands of local jobs.\nSherrod Brown helped pass the CHIPS Act that\nbrought semiconductor jobs to Ohio.",
+    "text_hash": "f3a599cd9124ca3bac3fca1b91c67876fb4bbde7c0415dffa6c360f87e010517",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7644d5c7fd07257c28d3b3f8",
+    "alignment": "D",
+    "block_id": "snap-7644d5c7fd07257c28d3b3f8-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7644d5c7fd07257c28d3b3f8-claims-001-002",
+    "claim_text": "Sherrod Brown helped pass the CHIPS Act.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 116,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "It created thousands of local jobs.\nSherrod Brown helped pass the CHIPS Act that\nbrought semiconductor jobs to Ohio.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/f8a0dcd4d0436c6637cd12591e6733be603e27878e73dcab144b290587d78d24?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 49,
+        "anchor_quote": "Sherrod Brown",
+        "anchor_start": 36,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "Sherrod Brown",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "It created thousands of local jobs.\nSherrod Brown helped pass the CHIPS Act that\nbrought semiconductor jobs to Ohio.",
+    "text_hash": "f3a599cd9124ca3bac3fca1b91c67876fb4bbde7c0415dffa6c360f87e010517",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7644d5c7fd07257c28d3b3f8",
+    "alignment": "D",
+    "block_id": "snap-7644d5c7fd07257c28d3b3f8-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7644d5c7fd07257c28d3b3f8-claims-001-003",
+    "claim_text": "The CHIPS Act brought semiconductor jobs to Ohio.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 116,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "It created thousands of local jobs.\nSherrod Brown helped pass the CHIPS Act that\nbrought semiconductor jobs to Ohio.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/f8a0dcd4d0436c6637cd12591e6733be603e27878e73dcab144b290587d78d24?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 75,
+        "anchor_quote": "CHIPS Act",
+        "anchor_start": 66,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "CHIPS Act",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "It created thousands of local jobs.\nSherrod Brown helped pass the CHIPS Act that\nbrought semiconductor jobs to Ohio.",
+    "text_hash": "f3a599cd9124ca3bac3fca1b91c67876fb4bbde7c0415dffa6c360f87e010517",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-767fe14508d8d4e7549198ca",
+    "alignment": "D",
+    "block_id": "snap-767fe14508d8d4e7549198ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-767fe14508d8d4e7549198ca-claims-001-001",
+    "claim_text": "Affordability has emerged as an issue in the 2026 midterms.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 211,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c9adec693d10ddbfd70fc2aa0340182e2d55c600225ee9f773dc5b440cc35fe0?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 133,
+        "anchor_quote": "Affordability",
+        "anchor_start": 120,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Affordability",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+    "text_hash": "50e72bc836ef51cf1b000c97d281038145eb8bbe705d8762d63cd7ad2aad2cec",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-767fe14508d8d4e7549198ca",
+    "alignment": "D",
+    "block_id": "snap-767fe14508d8d4e7549198ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-767fe14508d8d4e7549198ca-claims-001-002",
+    "claim_text": "Immigration has emerged as an issue in the 2026 midterms.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 211,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c9adec693d10ddbfd70fc2aa0340182e2d55c600225ee9f773dc5b440cc35fe0?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 146,
+        "anchor_quote": "immigration",
+        "anchor_start": 135,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Immigration",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+    "text_hash": "50e72bc836ef51cf1b000c97d281038145eb8bbe705d8762d63cd7ad2aad2cec",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-767fe14508d8d4e7549198ca",
+    "alignment": "D",
+    "block_id": "snap-767fe14508d8d4e7549198ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-767fe14508d8d4e7549198ca-claims-001-003",
+    "claim_text": "The war in Iran has emerged as an issue in the 2026 midterms.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 211,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c9adec693d10ddbfd70fc2aa0340182e2d55c600225ee9f773dc5b440cc35fe0?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 166,
+        "anchor_quote": "war in Iran",
+        "anchor_start": 155,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "war in Iran",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+    "text_hash": "50e72bc836ef51cf1b000c97d281038145eb8bbe705d8762d63cd7ad2aad2cec",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-767fe14508d8d4e7549198ca",
+    "alignment": "D",
+    "block_id": "snap-767fe14508d8d4e7549198ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-767fe14508d8d4e7549198ca-claims-001-004",
+    "claim_text": "Jon Ossoff is a Georgia U.S. Senate candidate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 211,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c9adec693d10ddbfd70fc2aa0340182e2d55c600225ee9f773dc5b440cc35fe0?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 57,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 47,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "The Atlanta Journal-Constitution\nGEORGIA VOTES\nJon Ossoff: Where the Georgia U.S. Senate\ncandidate stands on the issues\nAffordability, immigration and the war in Iran have emerged as issues in the 2026 midterms.",
+    "text_hash": "50e72bc836ef51cf1b000c97d281038145eb8bbe705d8762d63cd7ad2aad2cec",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-76cbe7505d4ea815ab63f4ca",
+    "alignment": "D",
+    "block_id": "snap-76cbe7505d4ea815ab63f4ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-76cbe7505d4ea815ab63f4ca-claims-001-001",
+    "claim_text": "Abdul al-Sahedit takes zero corporate money, like literally zero.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 65,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Abdul al-Sahedit takes zero corporate money, like literally zero.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/23193a6ac839653d72f634a6ca93c38d5e636f9603208d87944316ed18720585?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Abdul al-Sahedit",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "Abdul al-Sahedit",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Abdul al-Sahedit takes zero corporate money, like literally zero.\nSo the only people he owes are Ups.\nMichigan's last center race was decided by just 19,000 votes.\nThat's less than half the student body at Michigan State.\nVote Abdul for Senate by November 3.\nABDUL EL-SAYED\nCHPPENS\nCHIPPERA\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org and not authorized by\nany candidate or candidate committee.\n3RD",
+    "text_hash": "696468eadb30cd0dce05f13b2bfb7026cb7ca6863a54f53df8dc4a3c7ff1c759",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-76cbe7505d4ea815ab63f4ca",
+    "alignment": "D",
+    "block_id": "snap-76cbe7505d4ea815ab63f4ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-76cbe7505d4ea815ab63f4ca-claims-001-002",
+    "claim_text": "The only people he owes are Ups.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 101,
+        "kind": "local_asr",
+        "start": 66,
+        "text": "So the only people he owes are Ups.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/23193a6ac839653d72f634a6ca93c38d5e636f9603208d87944316ed18720585?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 72,
+        "anchor_quote": "he",
+        "anchor_start": 70,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "Abdul al-Sahedit",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Abdul al-Sahedit takes zero corporate money, like literally zero.\nSo the only people he owes are Ups.\nMichigan's last center race was decided by just 19,000 votes.\nThat's less than half the student body at Michigan State.\nVote Abdul for Senate by November 3.\nABDUL EL-SAYED\nCHPPENS\nCHIPPERA\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org and not authorized by\nany candidate or candidate committee.\n3RD",
+    "text_hash": "696468eadb30cd0dce05f13b2bfb7026cb7ca6863a54f53df8dc4a3c7ff1c759",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-76cbe7505d4ea815ab63f4ca",
+    "alignment": "D",
+    "block_id": "snap-76cbe7505d4ea815ab63f4ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-76cbe7505d4ea815ab63f4ca-claims-001-003",
+    "claim_text": "Michigan's last center race was decided by just 19,000 votes.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 163,
+        "kind": "local_asr",
+        "start": 102,
+        "text": "Michigan's last center race was decided by just 19,000 votes.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/23193a6ac839653d72f634a6ca93c38d5e636f9603208d87944316ed18720585?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 129,
+        "anchor_quote": "Michigan's last center race",
+        "anchor_start": 102,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Michigan's last center race",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Abdul al-Sahedit takes zero corporate money, like literally zero.\nSo the only people he owes are Ups.\nMichigan's last center race was decided by just 19,000 votes.\nThat's less than half the student body at Michigan State.\nVote Abdul for Senate by November 3.\nABDUL EL-SAYED\nCHPPENS\nCHIPPERA\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org and not authorized by\nany candidate or candidate committee.\n3RD",
+    "text_hash": "696468eadb30cd0dce05f13b2bfb7026cb7ca6863a54f53df8dc4a3c7ff1c759",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-76cbe7505d4ea815ab63f4ca",
+    "alignment": "D",
+    "block_id": "snap-76cbe7505d4ea815ab63f4ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-76cbe7505d4ea815ab63f4ca-claims-001-004",
+    "claim_text": "That's less than half the student body at Michigan State.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 221,
+        "kind": "local_asr",
+        "start": 164,
+        "text": "That's less than half the student body at Michigan State.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/23193a6ac839653d72f634a6ca93c38d5e636f9603208d87944316ed18720585?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 220,
+        "anchor_quote": "student body at Michigan State",
+        "anchor_start": 190,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "student body at Michigan State",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Abdul al-Sahedit takes zero corporate money, like literally zero.\nSo the only people he owes are Ups.\nMichigan's last center race was decided by just 19,000 votes.\nThat's less than half the student body at Michigan State.\nVote Abdul for Senate by November 3.\nABDUL EL-SAYED\nCHPPENS\nCHIPPERA\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org and not authorized by\nany candidate or candidate committee.\n3RD",
+    "text_hash": "696468eadb30cd0dce05f13b2bfb7026cb7ca6863a54f53df8dc4a3c7ff1c759",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-76cbe7505d4ea815ab63f4ca",
+    "alignment": "D",
+    "block_id": "snap-76cbe7505d4ea815ab63f4ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-76cbe7505d4ea815ab63f4ca-claims-001-005",
+    "claim_text": "Vote Abdul for Senate by November 3.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 258,
+        "kind": "local_asr",
+        "start": 222,
+        "text": "Vote Abdul for Senate by November 3.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/23193a6ac839653d72f634a6ca93c38d5e636f9603208d87944316ed18720585?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 232,
+        "anchor_quote": "Abdul",
+        "anchor_start": 227,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "Abdul",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Abdul al-Sahedit takes zero corporate money, like literally zero.\nSo the only people he owes are Ups.\nMichigan's last center race was decided by just 19,000 votes.\nThat's less than half the student body at Michigan State.\nVote Abdul for Senate by November 3.\nABDUL EL-SAYED\nCHPPENS\nCHIPPERA\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org and not authorized by\nany candidate or candidate committee.\n3RD",
+    "text_hash": "696468eadb30cd0dce05f13b2bfb7026cb7ca6863a54f53df8dc4a3c7ff1c759",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-76cbe7505d4ea815ab63f4ca",
+    "alignment": "D",
+    "block_id": "snap-76cbe7505d4ea815ab63f4ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-76cbe7505d4ea815ab63f4ca-claims-001-006",
+    "claim_text": "This communication is not authorized by any candidate or candidate committee.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 431,
+        "kind": "video_ocr",
+        "start": 394,
+        "text": "any candidate or candidate committee.",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/23193a6ac839653d72f634a6ca93c38d5e636f9603208d87944316ed18720585?mediaType=mp4",
+    "sponsor": "For Michigan Action Fund",
+    "targets": [
+      {
+        "anchor_end": 430,
+        "anchor_quote": "any candidate or candidate committee",
+        "anchor_start": 394,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "any candidate or candidate committee",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Abdul al-Sahedit takes zero corporate money, like literally zero.\nSo the only people he owes are Ups.\nMichigan's last center race was decided by just 19,000 votes.\nThat's less than half the student body at Michigan State.\nVote Abdul for Senate by November 3.\nABDUL EL-SAYED\nCHPPENS\nCHIPPERA\nPaid for by For Michigan Action Fund, PO Box 64, Allen Park, MI 48101, 4mich.org and not authorized by\nany candidate or candidate committee.\n3RD",
+    "text_hash": "696468eadb30cd0dce05f13b2bfb7026cb7ca6863a54f53df8dc4a3c7ff1c759",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7726adb02fc9e002d6e13f9d",
+    "alignment": "R",
+    "block_id": "snap-7726adb02fc9e002d6e13f9d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7726adb02fc9e002d6e13f9d-claims-001-001",
+    "claim_text": "Troy Jackson co-sponsored a bill sending millions of taxpayer dollars to his son's lobbying client that's Troy Jackson",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 118,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Troy Jackson co-sponsored a bill sending millions of taxpayer dollars to his son's lobbying client that's Troy Jackson",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/119605f71a74a194a21370c3387f399791845700ce5bf9cbd06dbefbca9d6bf5?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 12,
+        "anchor_quote": "Troy Jackson",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Troy Jackson co-sponsored a bill sending millions of taxpayer dollars to his son's lobbying client that's Troy Jackson\nDAUGHTRY\nDUSON\nTIPPING\nVITELLI\nPRESIDENT\nVITELL\nLIBBY\nORD\nPAD FOR BYSIFPAGNOI\nWWSEPACORE\nMFORD\nRE\nPADFOR BYSL\nISEPAGORG\nPAN FOR BYSIFPAU.NUT\nISEPACORG",
+    "text_hash": "f628d386eba721d6851b2c6d6f2409639bdcb03dfe69e56e075906d87157ff76",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7726adb02fc9e002d6e13f9d",
+    "alignment": "R",
+    "block_id": "snap-7726adb02fc9e002d6e13f9d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7726adb02fc9e002d6e13f9d-claims-001-002",
+    "claim_text": "Troy Jackson co-sponsored a bill sending millions of taxpayer dollars to his son's lobbying client",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 118,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Troy Jackson co-sponsored a bill sending millions of taxpayer dollars to his son's lobbying client that's Troy Jackson",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/119605f71a74a194a21370c3387f399791845700ce5bf9cbd06dbefbca9d6bf5?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 12,
+        "anchor_quote": "Troy Jackson",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Troy Jackson co-sponsored a bill sending millions of taxpayer dollars to his son's lobbying client that's Troy Jackson\nDAUGHTRY\nDUSON\nTIPPING\nVITELLI\nPRESIDENT\nVITELL\nLIBBY\nORD\nPAD FOR BYSIFPAGNOI\nWWSEPACORE\nMFORD\nRE\nPADFOR BYSL\nISEPAGORG\nPAN FOR BYSIFPAU.NUT\nISEPACORG",
+    "text_hash": "f628d386eba721d6851b2c6d6f2409639bdcb03dfe69e56e075906d87157ff76",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-776c1300a15bd628488853ca",
+    "alignment": "D",
+    "block_id": "snap-776c1300a15bd628488853ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-776c1300a15bd628488853ca-claims-001-001",
+    "claim_text": "DEFEND VOTING RIGHTS",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 136,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a51903835f5bad7340342c4775a5634a05ca5da94167f3c590ab72e2978519c6?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 20,
+        "anchor_quote": "VOTING RIGHTS",
+        "anchor_start": 7,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "voting rights",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+    "text_hash": "73ad19d1767d7d2d4bdb4f2d35ba6aaad202fb50d702ee64c83783af0e822aaa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-776c1300a15bd628488853ca",
+    "alignment": "D",
+    "block_id": "snap-776c1300a15bd628488853ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-776c1300a15bd628488853ca-claims-001-002",
+    "claim_text": "VOTE JON OSSOFF",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 136,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a51903835f5bad7340342c4775a5634a05ca5da94167f3c590ab72e2978519c6?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 41,
+        "anchor_quote": "JON OSSOFF",
+        "anchor_start": 31,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+    "text_hash": "73ad19d1767d7d2d4bdb4f2d35ba6aaad202fb50d702ee64c83783af0e822aaa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-776c1300a15bd628488853ca",
+    "alignment": "D",
+    "block_id": "snap-776c1300a15bd628488853ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-776c1300a15bd628488853ca-claims-001-003",
+    "claim_text": "VOTE",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 136,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a51903835f5bad7340342c4775a5634a05ca5da94167f3c590ab72e2978519c6?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 25,
+        "anchor_quote": "VOTE",
+        "anchor_start": 21,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "voting",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+    "text_hash": "73ad19d1767d7d2d4bdb4f2d35ba6aaad202fb50d702ee64c83783af0e822aaa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-776c1300a15bd628488853ca",
+    "alignment": "D",
+    "block_id": "snap-776c1300a15bd628488853ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-776c1300a15bd628488853ca-claims-001-004",
+    "claim_text": "ELECT JON OSSOFF",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 136,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a51903835f5bad7340342c4775a5634a05ca5da94167f3c590ab72e2978519c6?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 41,
+        "anchor_quote": "JON OSSOFF",
+        "anchor_start": 31,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+    "text_hash": "73ad19d1767d7d2d4bdb4f2d35ba6aaad202fb50d702ee64c83783af0e822aaa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-776c1300a15bd628488853ca",
+    "alignment": "D",
+    "block_id": "snap-776c1300a15bd628488853ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-776c1300a15bd628488853ca-claims-001-005",
+    "claim_text": "This ad was paid for by Jon Ossoff for Senate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 136,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a51903835f5bad7340342c4775a5634a05ca5da94167f3c590ab72e2978519c6?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 112,
+        "anchor_quote": "JON OSSOFF FOR SENATE",
+        "anchor_start": 91,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Jon Ossoff for Senate",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+    "text_hash": "73ad19d1767d7d2d4bdb4f2d35ba6aaad202fb50d702ee64c83783af0e822aaa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-776c1300a15bd628488853ca",
+    "alignment": "D",
+    "block_id": "snap-776c1300a15bd628488853ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-776c1300a15bd628488853ca-claims-001-006",
+    "claim_text": "Jon Ossoff approved this ad.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 136,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a51903835f5bad7340342c4775a5634a05ca5da94167f3c590ab72e2978519c6?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 41,
+        "anchor_quote": "JON OSSOFF",
+        "anchor_start": 31,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+    "text_hash": "73ad19d1767d7d2d4bdb4f2d35ba6aaad202fb50d702ee64c83783af0e822aaa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-776c1300a15bd628488853ca",
+    "alignment": "D",
+    "block_id": "snap-776c1300a15bd628488853ca-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-776c1300a15bd628488853ca-claims-001-007",
+    "claim_text": "Vote by Nov. 3rd",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 136,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/a51903835f5bad7340342c4775a5634a05ca5da94167f3c590ab72e2978519c6?mediaType=png",
+    "sponsor": "Jon Ossoff for Senate",
+    "targets": [
+      {
+        "anchor_end": 53,
+        "anchor_quote": "NOV. 3RD",
+        "anchor_start": 45,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Nov. 3rd",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "DEFEND VOTING RIGHTS\nVOTE\nVOTE JON OSSOFF\nBY NOV. 3RD\nELECTJOR соя\nLLY\nFOR\nOUR\nPAID FOR BY JON OSSOFF FOR SENATE. APPROVED BY JON OSSOFF",
+    "text_hash": "73ad19d1767d7d2d4bdb4f2d35ba6aaad202fb50d702ee64c83783af0e822aaa",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
