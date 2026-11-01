@@ -116284,5 +116284,327 @@
     "text_hash": "db77a65f14d7b9e51cdb61cfcd0e593e436c96890c4162dd4287d102c3bebcc6",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-46fb72293663ddd92020d3e9",
+    "alignment": "D",
+    "block_id": "snap-46fb72293663ddd92020d3e9-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-46fb72293663ddd92020d3e9-claims-001-001",
+    "claim_text": "The AFL-CIO recommends Mary Peltola for U.S. Senate.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 142,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETIEP\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIEAUUMIOMS\nYOUR UNION\nRECOMMENDS\nMARY PELTOLA\nFOR U.S. SENATE\nDAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fc02378bf6f4919a8b951daca14799ba7b931c59e23f011fe5291223c5375275?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 102,
+        "anchor_quote": "MARY PELTOLA",
+        "anchor_start": 90,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "Mary Peltola",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETIEP\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIEAUUMIOMS\nYOUR UNION\nRECOMMENDS\nMARY PELTOLA\nFOR U.S. SENATE\nDAID\nFOR BY THE AFL-CIO",
+    "text_hash": "5607243fad21c320b67031a684c99c22d1460f8a283953f4c24228d2a6343a3b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-48135235fe50a45be1d9cf9e",
+    "alignment": "D",
+    "block_id": "snap-48135235fe50a45be1d9cf9e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-48135235fe50a45be1d9cf9e-claims-001-001",
+    "claim_text": "Tom Tiffany paid no state income taxes five years running.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 195,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WHAT HAS TOM TIFFANY DONE?\nPAID NO STATE INCOME TAXES\nFIVE YEARS RUNNING?\nyOU\nBETCHAL\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG.\nNOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4bfc264f7d5565dc8a74532c1f8214925f4649dad04c1aa634521a1a86fa3189?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 20,
+        "anchor_quote": "TOM TIFFANY",
+        "anchor_start": 9,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "TIFFANY, TOM",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "WHAT HAS TOM TIFFANY DONE?\nPAID NO STATE INCOME TAXES\nFIVE YEARS RUNNING?\nyOU\nBETCHAL\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG.\nNOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE",
+    "text_hash": "f10476145d21ac96bb7e2c32a7f8034f9d96e657ccdbc4e52f14cac512ff1c60",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-48135235fe50a45be1d9cf9e",
+    "alignment": "D",
+    "block_id": "snap-48135235fe50a45be1d9cf9e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-48135235fe50a45be1d9cf9e-claims-001-002",
+    "claim_text": "This ad was paid for by AFSCME PEOPLE.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 195,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WHAT HAS TOM TIFFANY DONE?\nPAID NO STATE INCOME TAXES\nFIVE YEARS RUNNING?\nyOU\nBETCHAL\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG.\nNOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4bfc264f7d5565dc8a74532c1f8214925f4649dad04c1aa634521a1a86fa3189?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 111,
+        "anchor_quote": "AFSCME PEOPLE",
+        "anchor_start": 98,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFSCME PEOPLE",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WHAT HAS TOM TIFFANY DONE?\nPAID NO STATE INCOME TAXES\nFIVE YEARS RUNNING?\nyOU\nBETCHAL\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG.\nNOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE",
+    "text_hash": "f10476145d21ac96bb7e2c32a7f8034f9d96e657ccdbc4e52f14cac512ff1c60",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-48135235fe50a45be1d9cf9e",
+    "alignment": "D",
+    "block_id": "snap-48135235fe50a45be1d9cf9e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-48135235fe50a45be1d9cf9e-claims-001-003",
+    "claim_text": "This ad was not authorized by any candidate, candidate's agent, or committee.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 195,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WHAT HAS TOM TIFFANY DONE?\nPAID NO STATE INCOME TAXES\nFIVE YEARS RUNNING?\nyOU\nBETCHAL\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG.\nNOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4bfc264f7d5565dc8a74532c1f8214925f4649dad04c1aa634521a1a86fa3189?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 162,
+        "anchor_quote": "ANY CANDIDATE",
+        "anchor_start": 149,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "any candidate",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WHAT HAS TOM TIFFANY DONE?\nPAID NO STATE INCOME TAXES\nFIVE YEARS RUNNING?\nyOU\nBETCHAL\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG.\nNOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE",
+    "text_hash": "f10476145d21ac96bb7e2c32a7f8034f9d96e657ccdbc4e52f14cac512ff1c60",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-48135235fe50a45be1d9cf9e",
+    "alignment": "D",
+    "block_id": "snap-48135235fe50a45be1d9cf9e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-48135235fe50a45be1d9cf9e-claims-001-004",
+    "claim_text": "This ad was not authorized by any candidate's agent.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 195,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WHAT HAS TOM TIFFANY DONE?\nPAID NO STATE INCOME TAXES\nFIVE YEARS RUNNING?\nyOU\nBETCHAL\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG.\nNOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4bfc264f7d5565dc8a74532c1f8214925f4649dad04c1aa634521a1a86fa3189?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 181,
+        "anchor_quote": "CANDIDATE'S AGENT",
+        "anchor_start": 164,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "any candidate's agent",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WHAT HAS TOM TIFFANY DONE?\nPAID NO STATE INCOME TAXES\nFIVE YEARS RUNNING?\nyOU\nBETCHAL\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG.\nNOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE",
+    "text_hash": "f10476145d21ac96bb7e2c32a7f8034f9d96e657ccdbc4e52f14cac512ff1c60",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-48135235fe50a45be1d9cf9e",
+    "alignment": "D",
+    "block_id": "snap-48135235fe50a45be1d9cf9e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-48135235fe50a45be1d9cf9e-claims-001-005",
+    "claim_text": "This ad was not authorized by any committee.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 195,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WHAT HAS TOM TIFFANY DONE?\nPAID NO STATE INCOME TAXES\nFIVE YEARS RUNNING?\nyOU\nBETCHAL\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG.\nNOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4bfc264f7d5565dc8a74532c1f8214925f4649dad04c1aa634521a1a86fa3189?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 195,
+        "anchor_quote": "COMMITTEE",
+        "anchor_start": 186,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "any committee",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WHAT HAS TOM TIFFANY DONE?\nPAID NO STATE INCOME TAXES\nFIVE YEARS RUNNING?\nyOU\nBETCHAL\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG.\nNOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE",
+    "text_hash": "f10476145d21ac96bb7e2c32a7f8034f9d96e657ccdbc4e52f14cac512ff1c60",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-48135235fe50a45be1d9cf9e",
+    "alignment": "D",
+    "block_id": "snap-48135235fe50a45be1d9cf9e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-48135235fe50a45be1d9cf9e-claims-001-006",
+    "claim_text": "The ad was paid for by AFSCMEPEOPLE.ORG.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 195,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WHAT HAS TOM TIFFANY DONE?\nPAID NO STATE INCOME TAXES\nFIVE YEARS RUNNING?\nyOU\nBETCHAL\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG.\nNOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4bfc264f7d5565dc8a74532c1f8214925f4649dad04c1aa634521a1a86fa3189?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 129,
+        "anchor_quote": "AFSCMEPEOPLE.ORG",
+        "anchor_start": 113,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "AFSCMEPEOPLE.ORG",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WHAT HAS TOM TIFFANY DONE?\nPAID NO STATE INCOME TAXES\nFIVE YEARS RUNNING?\nyOU\nBETCHAL\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLE.ORG.\nNOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OR COMMITTEE",
+    "text_hash": "f10476145d21ac96bb7e2c32a7f8034f9d96e657ccdbc4e52f14cac512ff1c60",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
