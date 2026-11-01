@@ -4328,8 +4328,8 @@
   {
     "ad_id": "snap-1819ccb282a6fe4f7582654b",
     "block_id": "snap-1819ccb282a6fe4f7582654b-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1819ccb282a6fe4f7582654b",
@@ -4340,8 +4340,8 @@
   {
     "ad_id": "snap-184be4664bd0b37b709d2c5c",
     "block_id": "snap-184be4664bd0b37b709d2c5c-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 9: {\\\"anchor_quote\\\":\\\"Seniors\\\",\\\"anchor_unit_id\\\":5,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"collective\\\",\\\"name\\\":\\\"seniors\\\",\\\"role\\\":\\\"unclear\\\",\\\"tone\\\":\\\"neutral\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-18a0e0199df6f320562a41a9",
