@@ -1507,6 +1507,168 @@ def test_kiggans_report_rejects_unbound_identity_or_non_ad_quotations(failure):
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_pps_house_fixture():
+    source, _, review, _, _, _ = unlinked_kiggans_fixture()
+    source = next(s for s in SOURCES if s.id == "pps-house-washingtonreporter")
+    candidates = [
+        {
+            "candidate_id": candidate_id,
+            "name": name,
+            "state": state,
+            "district": district,
+            "office": "H",
+            "party": "REP",
+            "election_year": "2026",
+        }
+        for candidate_id, name, state, district in [
+            ("H2FL04211", "BEAN, AARON P.", "FL", "04"),
+            ("H4MO08162", "SMITH, JASON T", "MO", "08"),
+            ("H6PA16320", "SMUCKER, LLOYD K.", "PA", "11"),
+            ("H8OK01157", "HERN, KEVIN", "OK", "01"),
+        ]
+    ]
+    selected = (
+        "This selected footage contains enough literal words to meet the minimum "
+        "without acquiring neighboring quotations or publisher commentary."
+    )
+    introduction = "The ad also includes footage of Rep. Lloyd Smucker and Rep. Aaron Bean saying:"
+    paragraph = (
+        f"{introduction} “{selected}” The Washington Reporter previously covered that hearing."
+    )
+    original = "https://x.com/Policy_Solution/status/2059962673865920660?s=20"
+    content = (
+        '<meta property="article:published_time" content="2026-05-28T16:51:25+00:00">'
+        "<h1>House issue-ad report</h1><article>"
+        "<p>Jason Smith and Kevin Hern appear with House Republicans in the issue ad.</p>"
+        f'<p class="quoted">{paragraph}</p><a href="{original}">new ad</a></article>'
+    )
+    url = source.url + "/house-issue-ad-report/"
+    review.update(
+        source=source.id,
+        record_id="20260528",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-05-28",
+        release_title="House issue-ad report",
+        candidate_id="H2FL04211",
+        candidate_ids=sorted(c["candidate_id"] for c in candidates),
+        scope_role="current_house_office_not_election_candidacy",
+        discovered_original_url=original,
+        reviewed_language={
+            "language": "en",
+            "text_sha256": digest(selected),
+            "basis": "Individually reviewed literal English ad quotation.",
+        },
+        required_context=["House Republicans"],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": "article > p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+    )
+    return source, candidates, review, content.encode(), introduction
+
+
+def test_pps_house_report_keeps_one_multi_race_ad_without_requesting_original():
+    source, candidates, review, body, introduction = unlinked_pps_house_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", candidates, [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == review["passages"][0] and introduction not in ad["text"]
+    assert ad["alignment"] == "R" and ad["sponsor_type"] == "outside_group"
+    assert ad["race"] == "Multi-race" and ad["state"] == "" and ad["chamber"] == "House"
+    assert ad["segments"][0]["federal_scope_candidate_ids"] == review["candidate_ids"]
+    assert ad["media_urls"] == [] and ad["phase"] == "unknown"
+    assert ad["language"] == "en" and ad["language_basis"] == review["reviewed_language"]["basis"]
+    assert {"multi_race_house_issue_ad", "original_ad_media_unverified"} <= set(ad["quality_flags"])
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "failure",
+    [
+        "missing_scope",
+        "missing_candidate",
+        "senate",
+        "district",
+        "party",
+        "speaker",
+        "role",
+        "missing_name",
+        "missing_link",
+        "hearing_only",
+        "too_long",
+        "journalism",
+        "language",
+        "language_hash",
+    ],
+)
+def test_pps_house_report_rejects_unverified_scope_or_non_ad_text(failure):
+    source, candidates, review, body, introduction = unlinked_pps_house_fixture()
+    if failure == "missing_scope":
+        review["candidate_ids"].pop()
+    elif failure == "missing_candidate":
+        candidates.pop()
+    elif failure == "senate":
+        candidates[-1].update(candidate_id="S6OK04247", office="S", district="00")
+        review["candidate_ids"][-1] = "S6OK04247"
+    elif failure == "district":
+        candidates[-1]["district"] = "02"
+    elif failure == "party":
+        candidates[-1]["party"] = "DEM"
+    elif failure == "speaker":
+        review["candidate_id"] = "H8OK01157"
+    elif failure == "role":
+        review["scope_role"] = "all_are_house_election_candidates"
+    elif failure == "journalism":
+        review["passages"] = [introduction]
+    elif failure == "language":
+        review["reviewed_language"]["language"] = "de"
+    elif failure == "language_hash":
+        review["reviewed_language"]["text_sha256"] = digest("unselected words")
+    else:
+        content = body.decode()
+        if failure == "missing_name":
+            content = content.replace("Kevin Hern", "a committee member")
+        elif failure == "missing_link":
+            content = content.replace(review["discovered_original_url"], "https://example.org/")
+        elif failure == "hearing_only":
+            content = content.replace(
+                "The ad also includes footage", "The hearing includes footage"
+            )
+        else:
+            original = review["passages"][0]
+            review["passages"][0] += (
+                " Additional words make this selected quotation exceed the permitted limit."
+            )
+            content = content.replace(original, review["passages"][0])
+        from bs4 import BeautifulSoup
+
+        paragraph = BeautifulSoup(content, "html.parser").select("article > p.quoted")[0]
+        review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
+        review["content_sha256"] = digest(content)
+        body = content.encode()
+
+    class Client:
+        def get(self, url, **kwargs):
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", candidates, [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 @pytest.mark.parametrize("format", ["wordpress", "html"])
 @pytest.mark.parametrize("completeness", ["partial_quotation", "marked_script"])
 def test_reviewed_release_keeps_only_bound_ad_words_and_explicit_provenance(format, completeness):

@@ -443,6 +443,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "pps-house-washingtonreporter",
+        "https://washingtonreporter.news",
+        "Public Policy Solutions (publisher-reported; payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="Multi-race",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "luke-murphy-flvoice",
         "https://flvoicenews.com",
         "Luke Murphy campaign (publisher-reported; payer unverified)",

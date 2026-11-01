@@ -446,6 +446,7 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             "deboer-washingtonreporter",
             "merrin-washingtonreporter",
             "kiggans-washingtonreporter",
+            "pps-house-washingtonreporter",
         }
         or review["format"] != "html"
         or review["media_url"] is not None
@@ -463,6 +464,8 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         raise ValueError("Reporter quotation requires the reviewed Merrin candidate identity")
     if source.id == "kiggans-washingtonreporter" and review["candidate_id"] != "H2VA02064":
         raise ValueError("Reporter quotation requires the reviewed Kiggans candidate identity")
+    if source.id == "pps-house-washingtonreporter" and review["candidate_id"] != "H2FL04211":
+        raise ValueError("Reporter quotation requires the reviewed Bean speaker identity")
     evidence = review["reported_ad_text"]
     paragraphs = BeautifulSoup(content, "html.parser").select(evidence["paragraph_selector"])
     if len(paragraphs) != 1 or paragraphs[0].name != "p":
@@ -481,6 +484,11 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         pattern = r"Merrin [^“”]+\. “([^”]+)” he adds in the ad\. “([^”]+)”"
     elif source.id == "kiggans-washingtonreporter":
         pattern = r"“([^”]+)” a local news anchor says during the ad\. [^“”]+“[^”]+”"
+    elif source.id == "pps-house-washingtonreporter":
+        pattern = (
+            r"The ad also includes footage of Rep\. Lloyd Smucker [^“”]+“([^”]+)” "
+            r"The Washington Reporter previously covered that hearing\."
+        )
     match = re.fullmatch(pattern, paragraph)
     if not match:
         raise ValueError("Publisher must explicitly attribute the selected quotations to the ad")
@@ -499,11 +507,41 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         url = urlsplit(review[key])
         if url.scheme != "https" or url.hostname != urlsplit(source.url).hostname:
             raise ValueError("Reviewed release must remain on its registered public publisher")
-    identities = [c for c in candidates if c["candidate_id"] == review["candidate_id"]]
-    candidate = next(iter(identities), None)
+    scope_ids = [review["candidate_id"]]
+    multi_race = source.id == "pps-house-washingtonreporter"
+    if multi_race:
+        expected_scope = {
+            "H2FL04211": "FL-04",
+            "H4MO08162": "MO-08",
+            "H6PA16320": "PA-11",
+            "H8OK01157": "OK-01",
+        }
+        if (
+            review.get("candidate_ids") != sorted(expected_scope)
+            or review["candidate_id"] != "H2FL04211"
+            or source.fixed_race != "Multi-race"
+            or source.sponsor_type != "outside_group"
+            or source.alignment != "R"
+            or review.get("scope_role") != "current_house_office_not_election_candidacy"
+        ):
+            raise ValueError("Unsupported multi-race House issue-ad scope")
+        scope_ids = review["candidate_ids"]
+    elif review.get("candidate_ids"):
+        raise ValueError("Multiple federal identities require a supported multi-race source")
+    identities = [c for c in candidates if c["candidate_id"] in scope_ids]
+    candidate = next((c for c in identities if c["candidate_id"] == review["candidate_id"]), None)
     if not candidate or candidate["office"] != "H" or candidate["election_year"] != "2026":
         raise ValueError("Reviewed release requires an exact 2026 federal House candidate")
-    race = f"{candidate['state']}-{int(candidate['district']):02}"
+    if multi_race and (
+        {c["candidate_id"]: f"{c['state']}-{int(c['district']):02}" for c in identities}
+        != expected_scope
+        or any(
+            c["office"] != "H" or c["election_year"] != "2026" or c["party"] != "REP"
+            for c in identities
+        )
+    ):
+        raise ValueError("Multi-race issue ad requires all reviewed Republican House offices")
+    race = "Multi-race" if multi_race else f"{candidate['state']}-{int(candidate['district']):02}"
     if race != source.fixed_race:
         raise ValueError("Reviewed federal candidate does not match the registered race")
     body, _ = client.get(review["retrieval_url"], refresh=True, retry=False)
@@ -560,6 +598,15 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         row["candidate_id"] for row in candidate_mentions(visible, identities)
     } and not (source.id == "barron-gop-apg-print" and review.get("printed_ad_text")):
         raise ValueError("Reviewed candidate is not identified in the publisher's evidence")
+    if multi_race and set(scope_ids) != {
+        row["candidate_id"] for row in candidate_mentions(visible, identities)
+    }:
+        raise ValueError("Multi-race issue ad must explicitly identify all reviewed House members")
+    if multi_race:
+        original = "https://x.com/Policy_Solution/status/2059962673865920660?s=20"
+        links = {a.get("href") for a in BeautifulSoup(content, "html.parser").select("a[href]")}
+        if review.get("discovered_original_url") != original or original not in links:
+            raise ValueError("Reviewed issue-ad report must retain its actual original-post link")
     broadcast = review.get("broadcast_evidence")
     printed = review.get("printed_ad_text")
     reported = review.get("reported_ad_text")
@@ -599,6 +646,17 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         position = match + len(passage)
     full_script = review["completeness"] == "marked_script"
     text = "\n".join(passages)
+    language_review = review.get("reviewed_language")
+    if multi_race:
+        if (
+            not language_review
+            or language_review.get("language") != "en"
+            or language_review.get("text_sha256") != digest(text)
+            or not language_review.get("basis")
+        ):
+            raise ValueError("Reviewed issue-ad language must bind the exact English quotation")
+    elif language_review:
+        raise ValueError("Unsupported reviewed release language override")
     if review.get("script_selector") and not full_script:
         raise ValueError("Reviewed script boundary requires an explicitly marked full script")
     if full_script:
@@ -637,6 +695,14 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         flags.append("publisher_audio_episode_not_individual_ad_original")
     if reported:
         flags.extend(["original_ad_media_unverified", "ad_legal_payer_unverified"])
+    if multi_race:
+        flags.extend(
+            [
+                "multi_race_house_issue_ad",
+                "current_house_office_not_election_candidacy",
+                "one_creative_not_one_record_per_highlighted_member",
+            ]
+        )
     if captions:
         flags.extend(
             [
@@ -666,7 +732,7 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         for passage in passages
     ]
     segments[0]["release_evidence"] = review
-    segments[0]["federal_scope_candidate_ids"] = [candidate["candidate_id"]]
+    segments[0]["federal_scope_candidate_ids"] = scope_ids
     if captions:
         for segment, cue in zip(segments, caption_cues, strict=True):
             segment["caption_cue"] = {
@@ -720,10 +786,14 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
             date_basis="publisher_ad_listing_date" if printed else "publisher_report_date",
             phase=review["phase"],
             race=race,
-            state=candidate["state"],
+            state="" if multi_race else candidate["state"],
             chamber="House",
-            language=language_of(text),
-            language_basis="langdetect seeded model; >=0.90 probability, otherwise unknown",
+            language="en" if multi_race else language_of(text),
+            language_basis=(
+                language_review["basis"]
+                if multi_race
+                else "langdetect seeded model; >=0.90 probability, otherwise unknown"
+            ),
             media_urls=[] if reported else [review["media_url"]],
             attribution_basis=review["attribution_basis"],
             quality_flags=flags,

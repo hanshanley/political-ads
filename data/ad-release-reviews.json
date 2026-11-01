@@ -2590,6 +2590,52 @@
       "publisher_credit": "Washington Reporter / Washington Reporter Editors; EXCLUSIVE: Washington Reporter fact check cited in tossup race’s ad, October 23, 2026.",
       "reuse_basis": "Retain only the first complete quotation in the unique hash-bound paragraph: 24 unchanged whitespace words attributed to a news anchor during the ad, credited for comparative noncommercial research. Exclude the neighboring quotation, reporter characterizations, campaign interview, all other paragraphs and unavailable media. This is partial publisher-reported ad copy, not a full transcript. Cached full HTML remains undistributed. No blanket reuse license, media redistribution or edition-publication authorization is asserted.",
       "attribution_basis": "The actual public report identifies Rep. Jen Kiggans (R., Va.), Virginia’s 2nd District and her campaign’s ad, and explicitly attributes the selected quotation to a local news anchor during that ad. The quoted news clip is admitted because it is reported as used in the creative, not because an ordinary interview is an ad. Frozen H2VA02064 / KIGGANS, JENNIFER / REP / House / VA-02 / 2026 / principal C00776120 and the independently reviewed official-House full-name alias establish the federal beneficiary, not legal payment or nomination. Preserved exact-URL decoded HTML SHA256 0bf71ca8e401aa833e3b2973568d452f6e3b554d3999118b9c4c04c203cb8668 pins the unique heading and article publication timestamp 2026-10-23T19:16:02+00:00. The independently recovered discovery HTML has different surrounding markup but the same heading, date and reviewed paragraph; the prior body is not overwritten. Paragraph SHA256 40b65bb6846b434ce4ddf928faedb0e7da0c46c64b56316abe527402057e891c pins the explicit anchor-during-ad attribution and neighboring quotation boundary. The collector admits only the first quotation, retains the 15-word substantive floor and 25-word ceiling, and excludes the publisher’s fact-check judgments and neighboring opponent words. No individual original association, independently heard audio, full transcript, duration, visual payer, first airing or paid delivery is verified. Quoted claims and publisher fact-check assertions are not certified factual findings. Phase and semantic judgment remain unknown/unreviewed. Corpus-wide literal checks found no existing selected passage; the existing April14 NRCC Tax Day creative is separate from this October report. No held provider, credentials, proxy, prior corpus/review/alias object or frozen claims input is changed."
+    },
+    {
+      "source": "pps-house-washingtonreporter",
+      "record_id": "20260528",
+      "source_url": "https://washingtonreporter.news/exclusive-hedge-funds-with-hospital-beds-ad-campaign-highlights-house-republicans-fighting-to-take-on-fraud-waste-and-abuse-in-the-tax-exempt-hospital-system/",
+      "retrieval_url": "https://washingtonreporter.news/exclusive-hedge-funds-with-hospital-beds-ad-campaign-highlights-house-republicans-fighting-to-take-on-fraud-waste-and-abuse-in-the-tax-exempt-hospital-system/",
+      "format": "html",
+      "content_sha256": "8ead6ab015e99e4b9510b5d24e91f03b8a8dbc73a50ce39483eb503ac16a4dcd",
+      "published": "2026-05-28",
+      "release_title": "EXCLUSIVE: “Hedge funds with hospital beds”: Ad campaign highlights House Republicans fighting to take on fraud, waste, and abuse in the tax-exempt hospital system",
+      "heading_selector": "h1",
+      "candidate_id": "H2FL04211",
+      "candidate_ids": [
+        "H2FL04211",
+        "H4MO08162",
+        "H6PA16320",
+        "H8OK01157"
+      ],
+      "scope_role": "current_house_office_not_election_candidacy",
+      "media_url": null,
+      "discovered_original_url": "https://x.com/Policy_Solution/status/2059962673865920660?s=20",
+      "phase": "unknown",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Public Policy Solutions",
+        "House Ways and Means Committee Republicans",
+        "Rep. Jason Smith (R., Mo.)",
+        "Rep. Kevin Hern (R., Okla.)",
+        "The ad also includes footage of Rep. Lloyd Smucker (R., Pa.)",
+        "Rep. Aaron Bean (R., Fla.)"
+      ],
+      "passages": [
+        "you said give us tax exempt status, give us rural designation what did you do? Less charity care and you raised your prices."
+      ],
+      "reported_ad_text": {
+        "paragraph_selector": "article p:-soup-contains(\"The ad also includes footage of Rep. Lloyd Smucker\")",
+        "paragraph_sha256": "3fa0470a1d201b55c244b3794951d50d1987bc28587dc51b218c70799e3e49a5"
+      },
+      "reviewed_language": {
+        "language": "en",
+        "text_sha256": "792c8be780641cb3c10951df13ee95b8acb4bf345ac171e1b041a61af3f3949d",
+        "basis": "Individually reviewed unchanged English quotation from the hash-bound publisher paragraph; not automatic language detection or a strategy certification."
+      },
+      "publisher_credit": "Washington Reporter / Matthew Foldi; House Republicans hospital-system ad report, May 28, 2026.",
+      "reuse_basis": "Retain only the one complete Aaron Bean quotation from the uniquely hash-bound paragraph: 23 unchanged whitespace words, credited for comparative noncommercial research. Exclude every other quotation, publisher allegations, hearing summaries, interviews and unavailable media. This is partial publisher-reported ad copy, not a full script. Full cached HTML and original media remain undistributed; no blanket reuse license or edition-publication authorization is asserted.",
+      "attribution_basis": "The actual public report identifies Public Policy Solutions highlighting House Ways and Means Committee Republicans in a new ad and explicitly describes the selected Bean quotation as footage included in that creative. One multi-race issue-ad record is acquired, not four candidate ads or an FL04-only creative. Exact frozen current-House identities H2FL04211 / BEAN, AARON P. / REP / FL04 / C00816983; H4MO08162 / SMITH, JASON T / REP / MO08 / C00541862; H6PA16320 / SMUCKER, LLOYD K. / REP / PA11 / C00599464; and H8OK01157 / HERN, KEVIN / REP / OK01 / C00636092 bind the four explicitly named Republican House offices in the 2026 roster. These are contextual House offices, not certification that all four are running House campaigns; Hern's separately registered Senate candidacy S6OK04247 is not substituted. Alignment is specific to this reported ad highlighting House Republicans, not an inferred organization-wide affiliation or independently verified payer. Decoded HTML SHA256 8ead6ab015e99e4b9510b5d24e91f03b8a8dbc73a50ce39483eb503ac16a4dcd pins the unique heading and publication timestamp 2026-05-28T16:51:25+00:00. Paragraph SHA256 3fa0470a1d201b55c244b3794951d50d1987bc28587dc51b218c70799e3e49a5 pins the one literal quotation and explicit footage-in-ad context. The actual linked X post is retained as discovery-only and was not requested; media URLs remain empty and original association remains unverified. The source-specific collector requires exactly these four House offices and all full names, preserves one multi-race record with empty state, and keeps the 15-word floor and 25-word ceiling. No independent audio, complete creative, legal payer, delivery, first airing, duration, hospital wrongdoing, electoral endorsement or semantic strategy judgment is certified. Phase is unknown, and all prior records, reviews, aliases, cached bodies and frozen claims inputs remain unchanged."
     }
   ]
 }

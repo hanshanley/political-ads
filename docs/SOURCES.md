@@ -10,6 +10,71 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Public Policy Solutions: one multi-race House issue ad
+
+The May 28 Washington Reporter article
+`https://washingtonreporter.news/exclusive-hedge-funds-with-hospital-beds-ad-campaign-highlights-house-republicans-fighting-to-take-on-fraud-waste-and-abuse-in-the-tax-exempt-hospital-system/`
+explicitly attributes **23 unchanged words** to Aaron Bean hearing footage
+used in a Public Policy Solutions ad highlighting House Republicans.
+Acquire that one quotation, not hearing summaries, neighboring quotations,
+reporter allegations or interviews. The actual linked X post is recorded
+as discovery-only and was not requested; original association, audio,
+legal payer, first airing, delivery and completeness remain unverified.
+
+This is **one `Multi-race` issue-ad record**, not four creatives or an
+FL-04-only campaign ad. State remains empty. Exact frozen current-House
+scope comprises **H2FL04211 / FL-04 (Bean), H4MO08162 / MO-08 (Smith),
+H6PA16320 / PA-11 (Smucker), H8OK01157 / OK-01 (Hern)**, all Republican
+House identities in the 2026 roster and explicitly named in the report.
+These are contextual House offices, not certification of House-election
+candidacies. In particular, Hern's separately registered Senate identity
+**S6OK04247** is not substituted. Republican alignment is specific to this
+reported ad highlighting House Republicans, not an organization-wide
+affiliation inferred from policy positions or an independently verified payer.
+
+HTML SHA-256
+`8ead6ab015e99e4b9510b5d24e91f03b8a8dbc73a50ce39483eb503ac16a4dcd`
+pins the unique heading and publication `2026-05-28T16:51:25+00:00`.
+Paragraph SHA-256
+`3fa0470a1d201b55c244b3794951d50d1987bc28587dc51b218c70799e3e49a5`
+pins the one quotation and explicit footage-in-ad attribution.
+Text SHA-256
+`792c8be780641cb3c10951df13ee95b8acb4bf345ac171e1b041a61af3f3949d`
+binds an individually reviewed English-language decision for this short
+excerpt, whose automatic detector was uncertain. No global language
+threshold, prior language label, alias or strategy judgment is changed.
+
+The source-specific collector requires exactly the four reviewed House
+offices, their full names, the actual original-post link, one paragraph,
+literal attribution and hash-bound English review. Unsupported multi-race
+reviews are rejected; existing single-race collectors retain their guards.
+The 15-word floor and 25-word ceiling remain unchanged. Fifteen focused
+regressions cover the single retained record and missing/incorrect scope,
+Senate substitution, party, district, speaker, role, names, original link,
+hearing-only attribution, excessive text, reporter prose and language review.
+
+Replay with `collect --source pps-house-washingtonreporter --until
+2026-10-30 --offline`, followed by `parquet --offline`, `build --offline`,
+`validate --offline` and `audit-strategy --offline`. Reacquisition needs
+the undistributed exact response cache; committed acquired inputs rebuild
+complete research outputs without that cache. No full article or original
+media is redistributed.
+
+`pps-house-washingtonreporter-20260528-0` contributes one record.
+Snapshot
+`6e2a959c20430bc7895f4e52c1d802ed44558ad4db69de14cd35f90aa905e312`
+has **1,943 acquired / 1,904 English**, **R 639 / D 1,226 English**,
+**R 261 / D 698 English House**, **R 260 / D 222 House outside Snapchat**,
+and **582 written / 88 release reviews / 43 native reviews / 38 aliases**.
+All **684 Python tests**, Python lint/owned formatting, frontend lint/build,
+**17 unit / 9 browser tests**, complete JSON/gzip/CSV/enriched-Parquet and
+eleven-chart parity, and isolated network/recognition-forbidden replay passed.
+All 1,942 prior acquired and 1,903 prior analyzed record objects, prior
+release/native reviews, 38 aliases and 18 protected file hashes remain exact.
+Saved October 30 and final inclusive November 4 remain distinct;
+website, host and editions remain held. This is still source-limited
+coverage, not a census or a resolved Republican House coverage gap.
+
 ## Jen Kiggans: independently reported news clip used in an ad
 
 The October 23 Washington Reporter article
