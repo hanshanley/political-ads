@@ -113176,5 +113176,528 @@
     "text_hash": "2dc5b7525f2a3b811146414e29f147e94c079f3590a8d01dd141b93b41c5c351",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-39a735b126ceb8e16cfee5b2",
+    "alignment": "D",
+    "block_id": "snap-39a735b126ceb8e16cfee5b2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-39a735b126ceb8e16cfee5b2-claims-001-001",
+    "claim_text": "Taking on Wall Street to lower housing costs",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 146,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "SENATOR\nJOHN HICKENLOOPER:\nTaking on Wall Street to\nlower housing costs\n→ Protecting public lands\nfrom Trump\nPAID FOR BY HICKENLOOPER FOR COLORADO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/f54bde792c9a80bcaac97bb54e966005b8ce3f86545141b14192efb3c282078f?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 26,
+        "anchor_quote": "JOHN HICKENLOOPER:",
+        "anchor_start": 8,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S0CO00575",
+        "kind": "person",
+        "name": "HICKENLOOPER, JOHN W.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "SENATOR\nJOHN HICKENLOOPER:\nTaking on Wall Street to\nlower housing costs\n→ Protecting public lands\nfrom Trump\nPAID FOR BY HICKENLOOPER FOR COLORADO",
+    "text_hash": "450ade14ab089bad22d4fcf1222c1d0c739658723c45d00f4b1e13957cfa670e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-39a735b126ceb8e16cfee5b2",
+    "alignment": "D",
+    "block_id": "snap-39a735b126ceb8e16cfee5b2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-39a735b126ceb8e16cfee5b2-claims-001-002",
+    "claim_text": "Protecting public lands from Trump",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 146,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "SENATOR\nJOHN HICKENLOOPER:\nTaking on Wall Street to\nlower housing costs\n→ Protecting public lands\nfrom Trump\nPAID FOR BY HICKENLOOPER FOR COLORADO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/f54bde792c9a80bcaac97bb54e966005b8ce3f86545141b14192efb3c282078f?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 26,
+        "anchor_quote": "JOHN HICKENLOOPER:",
+        "anchor_start": 8,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S0CO00575",
+        "kind": "person",
+        "name": "HICKENLOOPER, JOHN W.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 108,
+        "anchor_quote": "Trump",
+        "anchor_start": 103,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "SENATOR\nJOHN HICKENLOOPER:\nTaking on Wall Street to\nlower housing costs\n→ Protecting public lands\nfrom Trump\nPAID FOR BY HICKENLOOPER FOR COLORADO",
+    "text_hash": "450ade14ab089bad22d4fcf1222c1d0c739658723c45d00f4b1e13957cfa670e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-39a735b126ceb8e16cfee5b2",
+    "alignment": "D",
+    "block_id": "snap-39a735b126ceb8e16cfee5b2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-39a735b126ceb8e16cfee5b2-claims-001-003",
+    "claim_text": "This was paid for by Hickenlooper for Colorado",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 146,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "SENATOR\nJOHN HICKENLOOPER:\nTaking on Wall Street to\nlower housing costs\n→ Protecting public lands\nfrom Trump\nPAID FOR BY HICKENLOOPER FOR COLORADO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/f54bde792c9a80bcaac97bb54e966005b8ce3f86545141b14192efb3c282078f?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 146,
+        "anchor_quote": "HICKENLOOPER FOR COLORADO",
+        "anchor_start": 121,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Hickenlooper for Colorado",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "SENATOR\nJOHN HICKENLOOPER:\nTaking on Wall Street to\nlower housing costs\n→ Protecting public lands\nfrom Trump\nPAID FOR BY HICKENLOOPER FOR COLORADO",
+    "text_hash": "450ade14ab089bad22d4fcf1222c1d0c739658723c45d00f4b1e13957cfa670e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3b113a657ead438ac3c91cfa",
+    "alignment": "D",
+    "block_id": "snap-3b113a657ead438ac3c91cfa-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3b113a657ead438ac3c91cfa-claims-001-001",
+    "claim_text": "Over 50,000 Mainers got help paying premiums from tax credits that ran out.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 28,
+        "kind": "video_ocr",
+        "start": 0,
+        "text": "Over 50,000 Mainers got help",
+        "unit_id": 1
+      },
+      {
+        "end": 53,
+        "kind": "video_ocr",
+        "start": 29,
+        "text": "paying premiums from tax",
+        "unit_id": 2
+      },
+      {
+        "end": 74,
+        "kind": "video_ocr",
+        "start": 54,
+        "text": "credits that ran out",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      1,
+      2,
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/3d822b0d026a5c369b14d29c2762c54362fe34b73a6fc576a4e5a7dd0f6d807b?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 19,
+        "anchor_quote": "Mainers",
+        "anchor_start": 12,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Mainers",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Over 50,000 Mainers got help\npaying premiums from tax\ncredits that ran out\nEach figure = 500 people\nD• Do Do Do Do Do Do DoDe\n3• D• Do Do Do Do Do Do De\nD• DO DO DO DO DODODODe\nDo Don\nDo Do DoDoD\nSusan Collins voted for a funding\ndeal that left those tax credits\nout.\nMaine Department of Health and Human Services, 2025.\nSources: Maine DHHS; Maine Public; U.S. Senate Roll Call 618\n(2025)\nPaid for by Working America.\nNot authorized by any candidate or committee.",
+    "text_hash": "1013abd9de2857aa673e95e671928b9d76279fe99658a5f35b12199f3d1f80bd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3b113a657ead438ac3c91cfa",
+    "alignment": "D",
+    "block_id": "snap-3b113a657ead438ac3c91cfa-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3b113a657ead438ac3c91cfa-claims-001-002",
+    "claim_text": "Susan Collins voted for a funding deal that left those tax credits out.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 229,
+        "kind": "video_ocr",
+        "start": 196,
+        "text": "Susan Collins voted for a funding",
+        "unit_id": 10
+      },
+      {
+        "end": 262,
+        "kind": "video_ocr",
+        "start": 230,
+        "text": "deal that left those tax credits",
+        "unit_id": 11
+      },
+      {
+        "end": 267,
+        "kind": "video_ocr",
+        "start": 263,
+        "text": "out.",
+        "unit_id": 12
+      }
+    ],
+    "evidence_ids": [
+      10,
+      11,
+      12
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/3d822b0d026a5c369b14d29c2762c54362fe34b73a6fc576a4e5a7dd0f6d807b?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 209,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 196,
+        "anchor_unit_id": 10,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "Susan Collins",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Over 50,000 Mainers got help\npaying premiums from tax\ncredits that ran out\nEach figure = 500 people\nD• Do Do Do Do Do Do DoDe\n3• D• Do Do Do Do Do Do De\nD• DO DO DO DO DODODODe\nDo Don\nDo Do DoDoD\nSusan Collins voted for a funding\ndeal that left those tax credits\nout.\nMaine Department of Health and Human Services, 2025.\nSources: Maine DHHS; Maine Public; U.S. Senate Roll Call 618\n(2025)\nPaid for by Working America.\nNot authorized by any candidate or committee.",
+    "text_hash": "1013abd9de2857aa673e95e671928b9d76279fe99658a5f35b12199f3d1f80bd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3b113a657ead438ac3c91cfa",
+    "alignment": "D",
+    "block_id": "snap-3b113a657ead438ac3c91cfa-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3b113a657ead438ac3c91cfa-claims-001-003",
+    "claim_text": "Each figure = 500 people",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 99,
+        "kind": "video_ocr",
+        "start": 75,
+        "text": "Each figure = 500 people",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/3d822b0d026a5c369b14d29c2762c54362fe34b73a6fc576a4e5a7dd0f6d807b?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [],
+    "text": "Over 50,000 Mainers got help\npaying premiums from tax\ncredits that ran out\nEach figure = 500 people\nD• Do Do Do Do Do Do DoDe\n3• D• Do Do Do Do Do Do De\nD• DO DO DO DO DODODODe\nDo Don\nDo Do DoDoD\nSusan Collins voted for a funding\ndeal that left those tax credits\nout.\nMaine Department of Health and Human Services, 2025.\nSources: Maine DHHS; Maine Public; U.S. Senate Roll Call 618\n(2025)\nPaid for by Working America.\nNot authorized by any candidate or committee.",
+    "text_hash": "1013abd9de2857aa673e95e671928b9d76279fe99658a5f35b12199f3d1f80bd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3b9cb5bca098ba020c0c1dfb",
+    "alignment": "D",
+    "block_id": "snap-3b9cb5bca098ba020c0c1dfb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3b9cb5bca098ba020c0c1dfb-claims-001-001",
+    "claim_text": "Hickenlooper is running for U.S. Senate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 12,
+        "kind": "video_ocr",
+        "start": 0,
+        "text": "HICKENLOOPER",
+        "unit_id": 1
+      },
+      {
+        "end": 24,
+        "kind": "video_ocr",
+        "start": 13,
+        "text": "U.S. SENATE",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      1,
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/97fefb3df5f82094b5e2b6662fa24429a6bab2c002fecd65daf1ee9565974112?mediaType=mp4",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 12,
+        "anchor_quote": "HICKENLOOPER",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Hickenlooper",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "HICKENLOOPER\nU.S. SENATE\nTHE STAKES ARE\nTOO HIGH TO\nSLOW DOWN.\nPAID FOR BY HICKENLOOPER FOR COLORADO\nLET'S KEEP\nFIGHTING",
+    "text_hash": "3b7c4f68cbf2b65ad0aeab57f627c47223a64328fd151e025db3ba0f2113c77a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3b9cb5bca098ba020c0c1dfb",
+    "alignment": "D",
+    "block_id": "snap-3b9cb5bca098ba020c0c1dfb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3b9cb5bca098ba020c0c1dfb-claims-001-002",
+    "claim_text": "The stakes are too high to slow down.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 39,
+        "kind": "video_ocr",
+        "start": 25,
+        "text": "THE STAKES ARE",
+        "unit_id": 3
+      },
+      {
+        "end": 51,
+        "kind": "video_ocr",
+        "start": 40,
+        "text": "TOO HIGH TO",
+        "unit_id": 4
+      },
+      {
+        "end": 62,
+        "kind": "video_ocr",
+        "start": 52,
+        "text": "SLOW DOWN.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      3,
+      4,
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/97fefb3df5f82094b5e2b6662fa24429a6bab2c002fecd65daf1ee9565974112?mediaType=mp4",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 35,
+        "anchor_quote": "THE STAKES",
+        "anchor_start": 25,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "stakes",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "HICKENLOOPER\nU.S. SENATE\nTHE STAKES ARE\nTOO HIGH TO\nSLOW DOWN.\nPAID FOR BY HICKENLOOPER FOR COLORADO\nLET'S KEEP\nFIGHTING",
+    "text_hash": "3b7c4f68cbf2b65ad0aeab57f627c47223a64328fd151e025db3ba0f2113c77a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3b9cb5bca098ba020c0c1dfb",
+    "alignment": "D",
+    "block_id": "snap-3b9cb5bca098ba020c0c1dfb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3b9cb5bca098ba020c0c1dfb-claims-001-003",
+    "claim_text": "This ad is paid for by Hickenlooper for Colorado.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 100,
+        "kind": "video_ocr",
+        "start": 63,
+        "text": "PAID FOR BY HICKENLOOPER FOR COLORADO",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/97fefb3df5f82094b5e2b6662fa24429a6bab2c002fecd65daf1ee9565974112?mediaType=mp4",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 100,
+        "anchor_quote": "HICKENLOOPER FOR COLORADO",
+        "anchor_start": 75,
+        "anchor_unit_id": 6,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Hickenlooper for Colorado",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "HICKENLOOPER\nU.S. SENATE\nTHE STAKES ARE\nTOO HIGH TO\nSLOW DOWN.\nPAID FOR BY HICKENLOOPER FOR COLORADO\nLET'S KEEP\nFIGHTING",
+    "text_hash": "3b7c4f68cbf2b65ad0aeab57f627c47223a64328fd151e025db3ba0f2113c77a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-3b9cb5bca098ba020c0c1dfb",
+    "alignment": "D",
+    "block_id": "snap-3b9cb5bca098ba020c0c1dfb-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-3b9cb5bca098ba020c0c1dfb-claims-001-004",
+    "claim_text": "We should keep fighting.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 111,
+        "kind": "video_ocr",
+        "start": 101,
+        "text": "LET'S KEEP",
+        "unit_id": 7
+      },
+      {
+        "end": 120,
+        "kind": "video_ocr",
+        "start": 112,
+        "text": "FIGHTING",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      7,
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/97fefb3df5f82094b5e2b6662fa24429a6bab2c002fecd65daf1ee9565974112?mediaType=mp4",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 111,
+        "anchor_quote": "LET'S KEEP",
+        "anchor_start": 101,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "we",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "HICKENLOOPER\nU.S. SENATE\nTHE STAKES ARE\nTOO HIGH TO\nSLOW DOWN.\nPAID FOR BY HICKENLOOPER FOR COLORADO\nLET'S KEEP\nFIGHTING",
+    "text_hash": "3b7c4f68cbf2b65ad0aeab57f627c47223a64328fd151e025db3ba0f2113c77a",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
