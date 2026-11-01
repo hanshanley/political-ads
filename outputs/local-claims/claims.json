@@ -127549,5 +127549,235 @@
     "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6126a2c9ab8a0142b397da26",
+    "alignment": "D",
+    "block_id": "snap-6126a2c9ab8a0142b397da26-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6126a2c9ab8a0142b397da26-claims-001-001",
+    "claim_text": "Rebecca Bennett will fight to lower costs and raise wages.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 176,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIGA'E UNIONI\nREBECCA\nBENNETT\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c0f32fed90b92d5320c78ffbe26b2ee57ec7a768d464b9ada0fb7571ab3bd3f3?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 91,
+        "anchor_quote": "REBECCA\nBENNETT",
+        "anchor_start": 76,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Rebecca Bennett",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIGA'E UNIONI\nREBECCA\nBENNETT\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+    "text_hash": "c1a917118b22aeea86f68340c3b3312217c3af2021a9a7a3319ac0017c38bc87",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6126a2c9ab8a0142b397da26",
+    "alignment": "D",
+    "block_id": "snap-6126a2c9ab8a0142b397da26-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6126a2c9ab8a0142b397da26-claims-001-002",
+    "claim_text": "This was paid for by the AFL-CIO.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 176,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIGA'E UNIONI\nREBECCA\nBENNETT\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c0f32fed90b92d5320c78ffbe26b2ee57ec7a768d464b9ada0fb7571ab3bd3f3?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 58,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 51,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIGA'E UNIONI\nREBECCA\nBENNETT\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+    "text_hash": "c1a917118b22aeea86f68340c3b3312217c3af2021a9a7a3319ac0017c38bc87",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6126a2c9ab8a0142b397da26",
+    "alignment": "D",
+    "block_id": "snap-6126a2c9ab8a0142b397da26-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6126a2c9ab8a0142b397da26-claims-001-003",
+    "claim_text": "It is better in a union.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 176,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIGA'E UNIONI\nREBECCA\nBENNETT\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c0f32fed90b92d5320c78ffbe26b2ee57ec7a768d464b9ada0fb7571ab3bd3f3?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 22,
+        "anchor_quote": "Union",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIGA'E UNIONI\nREBECCA\nBENNETT\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+    "text_hash": "c1a917118b22aeea86f68340c3b3312217c3af2021a9a7a3319ac0017c38bc87",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6126a2c9ab8a0142b397da26",
+    "alignment": "D",
+    "block_id": "snap-6126a2c9ab8a0142b397da26-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6126a2c9ab8a0142b397da26-claims-001-004",
+    "claim_text": "My union is my right and my vote.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 176,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIGA'E UNIONI\nREBECCA\nBENNETT\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c0f32fed90b92d5320c78ffbe26b2ee57ec7a768d464b9ada0fb7571ab3bd3f3?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 22,
+        "anchor_quote": "Union",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIGA'E UNIONI\nREBECCA\nBENNETT\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+    "text_hash": "c1a917118b22aeea86f68340c3b3312217c3af2021a9a7a3319ac0017c38bc87",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-6126a2c9ab8a0142b397da26",
+    "alignment": "D",
+    "block_id": "snap-6126a2c9ab8a0142b397da26-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-6126a2c9ab8a0142b397da26-claims-001-005",
+    "claim_text": "America's union is better.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 176,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIGA'E UNIONI\nREBECCA\nBENNETT\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c0f32fed90b92d5320c78ffbe26b2ee57ec7a768d464b9ada0fb7571ab3bd3f3?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 75,
+        "anchor_quote": "UNIONI",
+        "anchor_start": 69,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERIGA'E UNIONI\nREBECCA\nBENNETT\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+    "text_hash": "c1a917118b22aeea86f68340c3b3312217c3af2021a9a7a3319ac0017c38bc87",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]

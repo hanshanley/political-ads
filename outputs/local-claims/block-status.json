@@ -6626,50 +6626,50 @@
   {
     "ad_id": "snap-60a2e115055c4316af14744a",
     "block_id": "snap-60a2e115055c4316af14744a-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":11,\\\"label\\\":\\\"AFL-CIO\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-60a2e115055c4316af14744a",
     "block_id": "snap-60a2e115055c4316af14744a-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for unknown: \\\"your plan to vote\\\" is absent from unit 4. Exact source: \\\"MAKE YOUR PLAN TO VOTE.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6124d5ca26b45ea88da47cec",
     "block_id": "snap-6124d5ca26b45ea88da47cec-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for candidates: \\\"candidates\\\" is absent from unit 43. Exact source: \\\"to make life more affordable.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6126a2c9ab8a0142b397da26",
     "block_id": "snap-6126a2c9ab8a0142b397da26-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-61528bc29a9885fbb58c4709",
     "block_id": "snap-61528bc29a9885fbb58c4709-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for they: \\\"they\\\" is absent from unit 4. Exact source: \\\"towards electing candidates that are going to focus on our issues. Labor and forced candidates\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-61528bc29a9885fbb58c4709",
     "block_id": "snap-61528bc29a9885fbb58c4709-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim 1 fields or evidence IDs\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-615cdab4a7e247740403b064",
     "block_id": "snap-615cdab4a7e247740403b064-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for bill: \\\"the Bill\\\" is absent from unit 1. Exact source: \\\"Valadao flips on Medicaid vote\\\\nRep. David Valadao reversed earlier promises\\\\nand voted in favor of major cuts to Medicaid.\\\\nCritics said he \\\\\\\"folded like a lawn chair.\\\\\\\"\\\\nTHE PORTERVILLE\\\\nSkecorner\\\\nAfter stating he would not vote for the Republicans\\\\ndomestic policy megabill if the version of the bill\\\\npassed in the Senate didn't come more into line\\\\nwith the Big, Beautiful Bill that was passed by the\\\\nHouse of Representatives in May when it came to\\\\nMedicaid, Republican Representative David Valadao\\\\nback tracked on that statement and voted for the\\\\nbill on Thursday.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-61e22aad26fd754b8c7d7240",
     "block_id": "snap-61e22aad26fd754b8c7d7240-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 3\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-61e7cfbee6fd7a456ba61787",
