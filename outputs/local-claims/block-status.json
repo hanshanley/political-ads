@@ -7826,8 +7826,8 @@
   {
     "ad_id": "snap-83f43dbae523e61b278d0a2b",
     "block_id": "snap-83f43dbae523e61b278d0a2b-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 3: {\\\"anchor_quote\\\":\\\"them\\\",\\\"anchor_unit_id\\\":8,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"unknown\\\",\\\"name\\\":\\\"them\\\",\\\"role\\\":\\\"unclear\\\",\\\"tone\\\":\\\"neutral\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-83ffb4089d20748aef94875e",
@@ -7838,8 +7838,8 @@
   {
     "ad_id": "snap-8474e1216e7f8e20159f4ccb",
     "block_id": "snap-8474e1216e7f8e20159f4ccb-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for affordable housing shortages: \\\"affordable housing shortages\\\" is absent from unit 1. Exact source: \\\"Bridge\\\\nMICHIGAN\\\\nMike Rogers vs. Abdul El-Sayed:\\\\n7issues defining Michigan's US\\\\nSenate race\\\\nAs voters consider who should fill Michigan's open US Senate seat, there\\\\nare several big policy issues for candidates to address: What is the future of\\\\nhealth care? What to do about high costs of living and affordable housing\\\\nshortages? Should the rules around money in politics be changed?\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-84985df467c46869bdf91c23",
@@ -7850,8 +7850,8 @@
   {
     "ad_id": "snap-84b96149002616aacfc014a6",
     "block_id": "snap-84b96149002616aacfc014a6-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 9\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-84bd8d3a5e687335e4d8b44d",
