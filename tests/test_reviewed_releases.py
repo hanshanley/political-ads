@@ -14,7 +14,7 @@ from political_ads.schema import digest
 from political_ads.sources import SOURCES, collect_wordpress
 
 
-@pytest.mark.parametrize("sponsor", ["wagner", "delacruz", "huizenga"])
+@pytest.mark.parametrize("sponsor", ["wagner", "delacruz", "huizenga", "nunn", "ciscomani"])
 @pytest.mark.parametrize(
     ("failure", "message"),
     [
@@ -76,6 +76,22 @@ def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(
             "delivering-for-michigan-families--rep-bill-huizenga-rmi04",
             "8vBOgzOmwTY",
         ),
+        "nunn": (
+            "H2IA03119",
+            "NUNN, ZACH",
+            "Zach Nunn",
+            "",
+            "fighting-for-a-more-affordable-iowa--rep-zach-nunn-ria03",
+            "lgeYp1Br2aY",
+        ),
+        "ciscomani": (
+            "H2AZ02360",
+            "CISCOMANI, JUAN",
+            "Juan Ciscomani",
+            "arizona-voter-ad-rep-juan-ciscomani",
+            "supporting-families-and-small-businesses--rep-juan-ciscomani-raz06",
+            "W3nV6yHm2VI",
+        ),
     }[sponsor]
     state, district = source.fixed_race.split("-")
     candidate = {
@@ -102,9 +118,11 @@ def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(
             "basis": "Fixture reviewed public full name.",
         }
         candidates.append(candidate | {"name": alias["name"], "reviewed_alias": alias})
-    index_url = source.url + "/advocacy/political-engagement/voter-education/voter-education-ads"
+    index_url = (
+        "https://www.aba.com/advocacy/political-engagement/voter-education/voter-education-ads"
+    )
     caption_url = (
-        source.url + "/-/media/aba/video-transcripts/" + caption_name + ".vtt?rev=" + "a" * 32
+        "https://www.aba.com/-/media/aba/video-transcripts/" + caption_name + ".vtt?rev=" + "a" * 32
     )
     destination = (
         "https-3A__www.aba.com_advocacy_political-2Dengagement_"
@@ -116,12 +134,27 @@ def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(
     link = "https://nam12.safelinks.protection.outlook.com/?" + urlencode({"url": protected})
     if sponsor != "wagner" and failure != "wrong_destination":
         link = index_url
-    anchor = "" if failure == "missing_link" else f'<a href="{link}">new ad</a>'
+    label = (
+        "released new ads"
+        if sponsor == "nunn"
+        else "Click here to see the ad."
+        if sponsor == "ciscomani"
+        else "new ad"
+    )
+    anchor = "" if failure == "missing_link" else f'<a href="{link}">{label}</a>'
     content = (
         "<h1>Fixture new ad announcement</h1>"
         '<li class="byline__inline">October 23, 2026</li>'
         f"<p>{public_name} is the beneficiary of the {anchor}.</p>"
     )
+    if sponsor == "nunn":
+        embed_id = "OtherVid123" if failure == "wrong_primary_original" else original_id
+        content += (
+            f'<iframe title="Fixture {public_name} ad" '
+            f'src="https://www.youtube.com/embed/{embed_id}?feature=oembed"></iframe>'
+            '<iframe title="Another candidate ad" '
+            'src="https://www.youtube.com/embed/Another1234?feature=oembed"></iframe>'
+        )
     card = (
         '<div class="video" data-vid-modal-trigger="fixture">'
         f"<h3>Fixture {public_name} ad</h3></div>"
@@ -151,10 +184,12 @@ def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(
     if failure == "missing_caption_candidate":
         passages[1] = "That's why our local representative"
     voice = "<v ->" if sponsor == "wagner" else "<v Narrator>"
+    voice_end = "</v>" if sponsor in {"nunn", "ciscomani"} else ""
     vtt = (
         "\ufeffWEBVTT\n\n"
         + "".join(
-            f"{number}\n00:00:0{number - 1}.000 --> 00:00:0{number}.000\n{voice}{passage}\n"
+            f"{number}\n00:00:0{number - 1}.000 --> 00:00:0{number}.000\n"
+            f"{voice}{passage}{voice_end}\n"
             for number, passage in enumerate(passages, 1)
         )
     ).encode()
@@ -176,7 +211,12 @@ def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(
         selected[0] += " Invented words."
     review = {
         "source": source.id,
-        "source_url": source.url + "/about-us/press-room/press-releases/" + release_path,
+        "source_url": (
+            source.url + "/2026/08/"
+            "aba-iba-release-ads-urging-hinson-nunn-to-keep-fighting-for-iowa-families/"
+            if sponsor == "nunn"
+            else source.url + "/about-us/press-room/press-releases/" + release_path
+        ),
         "record_id": "fixture",
         "format": "html",
         "published": "2026-10-23",
@@ -231,6 +271,12 @@ def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(
         assert ad["date_basis"] == "publisher_report_date"
         assert "original_ad_media_unverified" in ad["quality_flags"]
         assert "publisher_captions_not_independently_verified_against_audio" in ad["quality_flags"]
+
+
+def test_nunn_publisher_captions_reject_another_embedded_original():
+    test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(
+        "nunn", "wrong_primary_original", "embedded original"
+    )
 
 
 @pytest.mark.parametrize("failure", [None, "missing_original", "date_mismatch", "missing_alias"])

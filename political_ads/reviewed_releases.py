@@ -92,23 +92,43 @@ def publisher_caption_text(
     client, content: str, source: Source, review: dict, identities: list[dict]
 ):
     evidence = review["publisher_captions"]
-    candidate_id, release_path, caption_name = {
+    candidate_id, release_url, caption_name, link_label = {
         "aba-wagner-captions": (
             "H2MO02102",
+            "https://www.aba.com/about-us/press-room/press-releases/"
             "missouri-voter-education-ad-rep-ann-wagner",
             "expanding-opportunities-for-missourians--rep-ann-wagner-rmo02",
+            "new ad",
         ),
         "aba-delacruz-captions": (
             "H0TX15124",
+            "https://www.aba.com/about-us/press-room/press-releases/"
             "texas-voter-education-ad-rep-monica-de-la-cruz",
             "supporting-texas-small-businesses--rep-monica-de-la-cruz-rtx15",
+            "new ad",
         ),
         "aba-huizenga-captions": (
             "H0MI02094",
+            "https://www.aba.com/about-us/press-room/press-releases/"
             "michigan-rep-bill-huizenga-voter-education-ad",
             "delivering-for-michigan-families--rep-bill-huizenga-rmi04",
+            "new ad",
         ),
-    }.get(source.id, ("", "", ""))
+        "aba-nunn-captions": (
+            "H2IA03119",
+            "https://bankingjournal.aba.com/2026/08/"
+            "aba-iba-release-ads-urging-hinson-nunn-to-keep-fighting-for-iowa-families/",
+            "fighting-for-a-more-affordable-iowa--rep-zach-nunn-ria03",
+            "released new ads",
+        ),
+        "aba-ciscomani-captions": (
+            "H2AZ02360",
+            "https://www.aba.com/about-us/press-room/press-releases/"
+            "arizona-voter-ad-rep-juan-ciscomani",
+            "supporting-families-and-small-businesses--rep-juan-ciscomani-raz06",
+            "Click here to see the ad.",
+        ),
+    }.get(source.id, ("", "", "", ""))
     index_url = (
         "https://www.aba.com/advocacy/political-engagement/voter-education/voter-education-ads"
     )
@@ -119,8 +139,7 @@ def publisher_caption_text(
         or source.alignment != "R"
         or review["candidate_id"] != candidate_id
         or identities[0]["party"] != "REP"
-        or review["source_url"]
-        != "https://www.aba.com/about-us/press-room/press-releases/" + release_path
+        or review["source_url"] != release_url
         or review["retrieval_url"] != review["source_url"]
         or review["format"] != "html"
         or review["completeness"] != "partial_quotation"
@@ -141,13 +160,26 @@ def publisher_caption_text(
         or not re.fullmatch(r"rev=[a-f0-9]{32}", caption_url.query)
     ):
         raise ValueError("Unsupported publisher caption evidence")
+    release_soup = BeautifulSoup(content, "html.parser")
     links = [
         a["href"]
-        for a in BeautifulSoup(content, "html.parser").select("a[href]")
-        if a.get_text(" ", strip=True) == "new ad"
+        for a in release_soup.select("a[href]")
+        if a.get_text(" ", strip=True) == link_label
     ]
     if len(links) != 1 or digest(links[0]) != evidence["release_link_sha256"]:
         raise ValueError("Publisher's reviewed new-ad link is missing or changed")
+    if source.id == "aba-nunn-captions":
+        originals = [
+            node
+            for node in release_soup.select("iframe[src]")
+            if node.get("title") == evidence["ad_title"]
+        ]
+        video_id = parse_qs(urlsplit(review["media_url"]).query).get("v", [""])[0]
+        if (
+            len(originals) != 1
+            or originals[0]["src"] != f"https://www.youtube.com/embed/{video_id}?feature=oembed"
+        ):
+            raise ValueError("Publisher's embedded original must identify the reviewed Nunn ad")
     if links[0] != index_url:
         # Inspect the public wrapper locally; never request its tracking URL.
         wrapper = urlsplit(links[0])

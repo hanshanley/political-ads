@@ -168,6 +168,28 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "aba-nunn-captions",
+        "https://bankingjournal.aba.com",
+        "American Bankers Association / Iowa Bankers Association "
+        "(publisher-attributed; ad payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="IA-03",
+        discovery="reviewed_releases",
+    ),
+    Source(
+        "aba-ciscomani-captions",
+        "https://www.aba.com",
+        "American Bankers Association / Arizona Bankers Association "
+        "(publisher-attributed; ad payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="AZ-06",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "aba-delacruz-captions",
         "https://www.aba.com",
         "American Bankers Association / Texas Bankers Association "

@@ -10,6 +10,88 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Nunn and Ciscomani: individually linked publisher-caption excerpts
+
+Recover two additional Republican House outside-group ad excerpts, not
+reporter paraphrases, executive statements or bare video links.
+The individual publisher dates are **August 24, 2026** for Zach Nunn
+and **June 12, 2026** for Juan Ciscomani. The review ledger binds the
+actual release/report heading, unique visible date, content SHA-256,
+exact link label and destination, index/card/modal/title, original ID
+and English caption URL/hash before any words are admitted.
+
+| Source | Frozen federal identity | Original association | Retained cues | Words | Caption interval |
+|---|---|---|---|---|---|
+| `aba-nunn-captions` | `H2IA03119 / C00784389 / REP / IA-03` | `lgeYp1Br2aY` | 3-5 | 18 | `00:00:03.540-00:00:11.790` |
+| `aba-ciscomani-captions` | `H2AZ02360 / C00786194 / REP / AZ-06` | `W3nV6yHm2VI` | 1-4 | 21 | `00:00:00.150-00:00:09.000` |
+
+Nunn's actual ABA Banking Journal report separately embeds Nunn and Hinson.
+Require the unique iframe with Nunn's exact reviewed card title to identify
+the same original as the index; reject another original even if the
+remaining caption evidence matches. Do not request either iframe provider
+or import Hinson's words. The report's `released new ads` link directly
+identifies the ABA index. Its generic date selector matches **17** dates
+across the page, so use the individually reviewed August 24 date selector,
+which matches exactly once. Visible and metadata publication dates agree;
+the displayed UTC and Eastern timestamps denote the same instant.
+
+Ciscomani's actual release uses `Click here to see the ad.`, not `new ad`.
+The earlier guessed release paths returned 404 and remain failed discovery,
+not evidence. Exact source-specific link labels are allowlisted alongside
+the five candidate/release/caption identities; existing Wagner, De La Cruz
+and Huizenga checks remain intact. Both new frozen names match without
+adding aliases. Generic House/2026/race guards remain required.
+
+Nunn's three selected cues form two complete sentences. Ciscomani's first
+three actual cues contain **14 words**; retain four complete cues totaling
+**21 words**, comprising one sentence and the unchanged literal prefix of
+the next. Do not add sentence-ending punctuation or claim a complete
+second sentence. Strip only supported voice syntax, including an optional
+closing `</v>`, without counting narrator labels. Caption assets contain
+**953 / 942 bytes**, respectively; full scripts stay in the ignored cache.
+Complete downloads retain every selected word, segment, cue time and
+provenance. Effectiveness and legislative statements are advertiser claims,
+not independently verified findings. Beneficiary **R** does not establish
+organization-wide bank-association partisanship. Legal payer, independently
+heard audio, first airing, paid delivery, phase and new semantic judgments
+remain unverified; website and edition publication remain on hold.
+
+Reproduce with `.venv/bin/political-ads collect --source aba-nunn-captions
+--source aba-ciscomani-captions --until 2026-10-30 --offline`, followed by
+`parquet --offline`, `build --offline`, `validate --offline` and
+`audit-strategy --offline`. Offline replay requires the exact three cached
+publisher resources per source; a fresh checkout does not include them.
+Run `.venv/bin/pytest -q tests/test_reviewed_releases.py tests/test_registry.py`
+for the five-source fixture matrix and wrong-Nunn-original regression.
+
+Verified snapshot
+`d579418af564a45dd94a04ba053a12fe0823c4e764ab888b6934ca448f2cfbfa`
+contains **1,935 acquired / 1,896 English records**, **R 631 / D 1,226**,
+and **R 253 / D 698 House records**. House outside frozen Snap IDs is
+**R 252 / D 222**. All **575 prior written / 1,933 combined / 1,894 English
+objects**, **81 acquisition reviews**, **37 aliases** and **18 protected
+files** remain unchanged; only two reviews and two ads are appended.
+There are now **577 written records / 83 acquisition reviews**.
+Full-corpus original associations and literal text checks found no duplicates.
+
+Two isolated three-resource replays forbid network connections and media
+execution and reproduce both complete serialized objects. After browser
+fixtures restore the actual dataset, both complete JSON/gzip/CSV copies,
+all **1,935 Parquet text/segment records** and all **11 PNG sets in three
+copies** pass preservation/parity checks, including typed cue times.
+Backend lint/format and **221 focused Python tests**, frontend
+lint/type/build, **17 unit tests / 9 browser tests** pass.
+The strategy audit reconciles **20 groups / 10 chart rows**, with
+**594 R / 1,204 D unique messages**. The two new excerpts remain
+semantically unreviewed rather than automatically becoming praise-only.
+The broader Republican House coverage gap remains unresolved, and the
+existing 20-minute acquisition schedule remains active.
+
+The preceding De La Cruz/Huizenga commit
+`835fed77ec28bf280c7b69eef36ffb231078a51c` passed its exact
+**Validate evidence and dashboard** run **41281775899**. Terminal success
+and the matching head were verified, not borrowed from a claims commit.
+
 ## De La Cruz and Huizenga: two additional publisher-caption excerpts
 
 Recover two distinct ABA outside-group advertisements, not campaign biographies,
@@ -29,8 +111,9 @@ hash, shared index hash, unique individual card/title/modal, original video ID,
 English caption association and actual VTT file hash before retaining any words.
 The review ledger records all exact URLs, SHA-256 values and literal passages.
 The recovered caption assets are **812 / 950 bytes**, respectively.
-The explicit collector allowlist now contains only Wagner, De La Cruz and
-Huizenga's exact source/candidate/release/caption paths. Generic House/race
+At this admission, the explicit collector allowlist contained only Wagner,
+De La Cruz and Huizenga's exact source/candidate/release/caption paths.
+Generic House/race
 guards remain mandatory; this is not unrestricted publisher transcription.
 
 The actual new tracks use `<v Narrator>`; remove this voice annotation as
@@ -82,8 +165,9 @@ Backend lint/format and **174 focused tests**, frontend lint/type/build,
 **20 groups / 10 chart rows**, with **592 R / 1,204 D unique messages**;
 the two new excerpts remain semantically unreviewed, not automatically
 praise-only. Website, host restoration and both edition publications
-remain on hold. Nunn and Ciscomani caption associations remain discovery
-leads, not acquired ads; the broader Republican House coverage gap persists.
+remain on hold. Nunn and Ciscomani were discovery-only at this checkpoint;
+their subsequent admissions are documented above. The broader Republican
+House coverage gap persists.
 
 The preceding Wagner commit
 `515b51e59fd45506ed552ed66c69612cde686503` passed its exact
