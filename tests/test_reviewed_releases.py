@@ -523,6 +523,119 @@ def test_reviewed_release_binds_individual_facebook_library_link_without_request
     assert calls == [review["retrieval_url"]]
 
 
+def unlinked_knott_fixture():
+    source = next(s for s in SOURCES if s.id == "knott-wunc")
+    candidate = {
+        "candidate_id": "H4NC13116",
+        "name": "KNOTT, BRAD",
+        "party": "REP",
+        "state": "NC",
+        "office": "H",
+        "district": "13",
+        "election_year": "2026",
+    }
+    passages = [
+        "Our families deserve leaders who listen to their concerns.",
+        "I will work for our community and protect its future.",
+    ]
+    paragraph = f'"{passages[0]}" Knott says in the ad. "{passages[1]}"'
+    content = (
+        '<meta property="article:published_time" content="2026-10-27T15:54:09.967">'
+        '<h1>Republican House campaign advertising</h1><div class="ArtP-articleBody">'
+        "<p>Brad Knott is buying television advertisements.</p>"
+        f"<p>{paragraph}</p><p>A professor discusses advertising strategy.</p></div>"
+    )
+    url = source.url + "/politics/2026-10-27/republican-house-advertising"
+    review = {
+        "source": source.id,
+        "record_id": "knott-20261027",
+        "source_url": url,
+        "retrieval_url": url,
+        "format": "html",
+        "published": "2026-10-27",
+        "release_title": "Republican House campaign advertising",
+        "candidate_id": candidate["candidate_id"],
+        "media_url": None,
+        "phase": "unknown",
+        "completeness": "partial_quotation",
+        "required_context": ["Brad Knott", "Knott says in the ad."],
+        "passages": passages,
+        "content_sha256": digest(content),
+        "reported_ad_text": {
+            "paragraph_selector": '.ArtP-articleBody > p:-soup-contains("Knott says in the ad.")',
+            "paragraph_sha256": digest(paragraph),
+        },
+        "attribution_basis": (
+            "Publisher quotes ad words; original media and legal payer unverified."
+        ),
+    }
+    return source, candidate, review, content.encode()
+
+
+def test_unlinked_publisher_quotation_keeps_only_ad_words_and_discloses_missing_original():
+    source, candidate, review, body = unlinked_knott_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            assert url == review["retrieval_url"]
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert len(ads) == 1 and status["state"] == "partial"
+    ad = ads[0]
+    assert ad["text"] == "\n".join(review["passages"])
+    assert ad["media_urls"] == []
+    assert ad["placement"] == "publisher_reported_ad_copy"
+    assert ad["segments"][0]["release_evidence"] == review
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(ad["quality_flags"])
+    assert ad["date_basis"] == "publisher_report_date" and ad["delivery_start"] is None
+    assert "portrayal_review" not in ad
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize("failure", ["missing", "ambiguous", "journalism", "statement", "too_long"])
+def test_unlinked_publisher_quotation_rejects_unbound_or_non_ad_words(failure):
+    source, candidate, review, body = unlinked_knott_fixture()
+    if failure == "missing":
+        review["reported_ad_text"]["paragraph_selector"] = ".missing"
+    elif failure == "ambiguous":
+        review["reported_ad_text"]["paragraph_selector"] = ".ArtP-articleBody > p"
+    elif failure == "journalism":
+        review["passages"].append("Knott says in the ad.")
+    else:
+        content = body.decode()
+        if failure == "statement":
+            content = content.replace("Knott says in the ad.", "Knott says in an interview.")
+            review["required_context"] = ["Brad Knott"]
+            review["reported_ad_text"]["paragraph_selector"] = ".ArtP-articleBody > p:nth-child(2)"
+        else:
+            content = content.replace(
+                review["passages"][0],
+                review["passages"][0] + " Another seven words make this excerpt excessive.",
+            )
+        from bs4 import BeautifulSoup
+
+        paragraph = BeautifulSoup(content, "html.parser").select(
+            review["reported_ad_text"]["paragraph_selector"]
+        )[0].get_text(" ", strip=True)
+        review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph)
+        review["content_sha256"] = digest(content)
+        body = content.encode()
+
+    class Client:
+        def get(self, url, **kwargs):
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 @pytest.mark.parametrize("format", ["wordpress", "html"])
 @pytest.mark.parametrize("completeness", ["partial_quotation", "marked_script"])
 def test_reviewed_release_keeps_only_bound_ad_words_and_explicit_provenance(format, completeness):

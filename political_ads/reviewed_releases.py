@@ -215,6 +215,33 @@ def printed_ad_text(client, content: str, source: Source, review: dict, identiti
     }
 
 
+def reported_ad_text(content: str, source: Source, review: dict) -> str:
+    if (
+        source.id != "knott-wunc"
+        or review["format"] != "html"
+        or review["media_url"] is not None
+        or review["completeness"] != "partial_quotation"
+        or any(
+            review.get(key) for key in ("broadcast_evidence", "printed_ad_text", "linked_ad_text")
+        )
+    ):
+        raise ValueError("Unsupported unlinked publisher quotation evidence")
+    evidence = review["reported_ad_text"]
+    paragraphs = BeautifulSoup(content, "html.parser").select(evidence["paragraph_selector"])
+    if len(paragraphs) != 1 or paragraphs[0].name != "p":
+        raise ValueError("Reviewed ad quotation must match exactly one paragraph")
+    paragraph = paragraphs[0].get_text(" ", strip=True)
+    if digest(paragraph) != evidence["paragraph_sha256"]:
+        raise ValueError("Reviewed ad quotation paragraph changed")
+    match = re.fullmatch(r'"([^"]+)" Knott says in the ad\. "([^"]+)"', paragraph)
+    if not match:
+        raise ValueError("Publisher must explicitly attribute the selected quotations to the ad")
+    text = "\n".join(match.groups())
+    if len(text.split()) > 25:
+        raise ValueError("Unlinked publisher quotations must remain within the 25-word limit")
+    return text
+
+
 def reviewed_release(client, source: Source, review: dict, candidates: list[dict], observed: str):
     for key in ("source_url", "retrieval_url"):
         url = urlsplit(review[key])
@@ -283,9 +310,17 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         raise ValueError("Reviewed candidate is not identified in the publisher's evidence")
     broadcast = review.get("broadcast_evidence")
     printed = review.get("printed_ad_text")
-    if not broadcast and not printed and review["media_url"] not in media_links(content):
+    reported = review.get("reported_ad_text")
+    if (
+        not broadcast
+        and not printed
+        and not reported
+        and review["media_url"] not in media_links(content)
+    ):
         raise ValueError("Reviewed original ad link is missing")
-    if printed:
+    if reported:
+        passage_source = reported_ad_text(content, source, review)
+    elif printed:
         passage_source, print_evidence = printed_ad_text(
             client, content, source, review, identities
         )
@@ -340,6 +375,8 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         flags.append("publisher_ad_copy_completeness_unverified")
     if broadcast:
         flags.append("publisher_audio_episode_not_individual_ad_original")
+    if reported:
+        flags.extend(["original_ad_media_unverified", "ad_legal_payer_unverified"])
     if printed:
         flags.extend(
             [
@@ -369,7 +406,13 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
             alignment=source.alignment,
             published=published,
             observed=observed,
-            placement="publisher_print_ad_listing" if printed else "campaign_release",
+            placement=(
+                "publisher_print_ad_listing"
+                if printed
+                else "publisher_reported_ad_copy"
+                if reported
+                else "campaign_release"
+            ),
             text=text,
             segments=segments,
             source_hash=(
@@ -390,7 +433,7 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
             chamber="House",
             language=language_of(text),
             language_basis="langdetect seeded model; >=0.90 probability, otherwise unknown",
-            media_urls=[review["media_url"]],
+            media_urls=[] if reported else [review["media_url"]],
             attribution_basis=review["attribution_basis"],
             quality_flags=flags,
         ).to_dict(),

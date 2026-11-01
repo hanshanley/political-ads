@@ -61,6 +61,38 @@ test("broadcast excerpts link their transcript and export the episode associatio
   expect(ad.portrayal_review.status).toBe("unreviewed");
 });
 
+test("unlinked ad quotations show their report and export literal evidence without claiming an original", async ({ page }) => {
+  const errors: string[] = [];
+  page.on("pageerror", error => errors.push(error.message));
+  await page.goto("./");
+  const dataset = await (await page.request.get("./data/dataset.json")).json();
+  const ad = dataset.ads.find((item: { id: string }) => item.id === "knott-wunc-20261027-0");
+  expect(ad).toBeDefined();
+  await page.getByLabel("Search the ad text", { exact: true }).fill(ad.segments[0].text);
+  const card = page.locator(".ad-card").filter({
+    has: page.getByRole("link", { name: "Read source report" }),
+  });
+  await expect(card).toHaveCount(1);
+  await expect(card.getByRole("link", { name: "Read source report" }))
+    .toHaveAttribute("href", ad.source_url);
+  await expect(card.getByRole("link", { name: "Read original release" })).toHaveCount(0);
+  await card.getByRole("button", { name: "Read all available text", exact: true }).click();
+  await expect(card.locator(".provenance")).toContainText("original ad media unverified");
+  await expect(card.locator(".provenance")).toContainText("ad legal payer unverified");
+  await expect(card.locator(".transcript")).toContainText(ad.segments[1].text);
+  const pendingDownload = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Download JSON" }).click();
+  const download = await pendingDownload;
+  const stream = await download.createReadStream();
+  const chunks: Buffer[] = [];
+  for await (const chunk of stream) chunks.push(chunk);
+  const exported = JSON.parse(Buffer.concat(chunks).toString());
+  expect(exported.ads).toEqual([ad]);
+  expect(ad.media_urls).toEqual([]);
+  expect(ad.portrayal_review.status).toBe("unreviewed");
+  expect(errors).toEqual([]);
+});
+
 test("same-ad strategy and person scopes reconcile with Python and preserve literal context", async ({ page }) => {
   await page.goto("./");
   const evidence = await (await page.request.get("./figures/portrayal-evidence.json")).json();

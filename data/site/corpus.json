@@ -47634,6 +47634,97 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "The actual public WUNC report expressly attributes both quoted passages to Knott saying them in an ad. Full decoded HTML SHA256 010466b671048555d693689afe76c1a8b949e316d12b07493c7f2b38487c5dca binds the unique ArtP headline and article:published_time 2026-10-27T15:54:09.967; the visible October 27, 2026, 11:54 AM EDT label agrees on the calendar date. No timezone is invented for the offset-less meta value, and neither timestamp establishes first airing or paid delivery. The unique ArtP ad paragraph has SHA256 f22b429bc7d90f1c5abecbbe282a6c1404854edb6f04e5a4698d21f8decc016c and exactly two quotations separated by Knott says in the ad. The source has no individual original-video association: its only media link is the WUNC YouTube channel, not this creative, and no provider, audio, caption or catalog request is made. A narrow source-specific quotation path retains only the two quoted passages, leaves media_urls empty and flags original media and legal payer unverified. Exact frozen 2026 FEC H4NC13116, KNOTT, BRAD, REP, House, NC-13, principal C00855361 establishes candidate identity and Republican alignment, not creative payment or authorization. The report concerns reelection against the named general-election opponent; general phase does not follow October alone. Residency and swamp language remain attributed ad words, not independently verified factual findings. This is literal acquisition review, not semantic portrayal certification; new judgments remain unreviewed. No old record, candidate alias, semantic review or protected claims input is replaced.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6NC13228",
+          "district": "13",
+          "name": "BARRINGER, PAUL",
+          "office": "H",
+          "party": "DEM",
+          "state": "NC"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "knott-wunc-20261027-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "d82aab62aaae4f9abcfe8aec80813a69648c8f6a1c8cab84aa4a9be4e140a6df",
+      "observed": "2026-11-01",
+      "phase": "general",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-10-27",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified"
+      ],
+      "race": "NC-13",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H4NC13116"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The actual public WUNC report expressly attributes both quoted passages to Knott saying them in an ad. Full decoded HTML SHA256 010466b671048555d693689afe76c1a8b949e316d12b07493c7f2b38487c5dca binds the unique ArtP headline and article:published_time 2026-10-27T15:54:09.967; the visible October 27, 2026, 11:54 AM EDT label agrees on the calendar date. No timezone is invented for the offset-less meta value, and neither timestamp establishes first airing or paid delivery. The unique ArtP ad paragraph has SHA256 f22b429bc7d90f1c5abecbbe282a6c1404854edb6f04e5a4698d21f8decc016c and exactly two quotations separated by Knott says in the ad. The source has no individual original-video association: its only media link is the WUNC YouTube channel, not this creative, and no provider, audio, caption or catalog request is made. A narrow source-specific quotation path retains only the two quoted passages, leaves media_urls empty and flags original media and legal payer unverified. Exact frozen 2026 FEC H4NC13116, KNOTT, BRAD, REP, House, NC-13, principal C00855361 establishes candidate identity and Republican alignment, not creative payment or authorization. The report concerns reelection against the named general-election opponent; general phase does not follow October alone. Residency and swamp language remain attributed ad words, not independently verified factual findings. This is literal acquisition review, not semantic portrayal certification; new judgments remain unreviewed. No old record, candidate alias, semantic review or protected claims input is replaced.",
+            "candidate_id": "H4NC13116",
+            "completeness": "partial_quotation",
+            "content_sha256": "010466b671048555d693689afe76c1a8b949e316d12b07493c7f2b38487c5dca",
+            "format": "html",
+            "heading_selector": "h1.ArtP-headline",
+            "media_url": null,
+            "passages": [
+              "Chevy Chase, Maryland: For some, it's the D.C. swamp,",
+              "For my opponent, Paul Barringer, it's his home for almost 20 years."
+            ],
+            "phase": "general",
+            "published": "2026-10-27",
+            "publisher_credit": "WUNC News; Colin Campbell, NC Republican Congressmen buy TV ads in deep-red districts as election looms, October 27, 2026.",
+            "record_id": "20261027",
+            "release_title": "NC Republican Congressmen buy TV ads in deep-red districts as election looms",
+            "reported_ad_text": {
+              "paragraph_selector": ".ArtP-articleBody > p:-soup-contains(\"Knott says in the ad.\")",
+              "paragraph_sha256": "f22b429bc7d90f1c5abecbbe282a6c1404854edb6f04e5a4698d21f8decc016c"
+            },
+            "required_context": [
+              "Republican Congressman Brad Knott",
+              "Knott says in the ad.",
+              "For my opponent, Paul Barringer"
+            ],
+            "retrieval_url": "https://www.wunc.org/politics/2026-10-27/nc-republican-congressmen-buy-tv-ads-in-deep-red-districts-as-election-looms",
+            "reuse_basis": "Retain only these two explicitly attributed ad quotations, nine and twelve whitespace tokens, twenty-one combined, unchanged and in source order, for noncommercial comparative research with author/publisher/source credit. Preserve the first quotation's trailing comma and second quotation's period. Exclude reporter prose, the six-word Rouzer slogan, other candidates, commentary, photographs, audio, and media. This is partial quotation, not a complete ad transcript or article reproduction. No blanket reuse license, original-media redistribution or authorization to publish either edition is asserted.",
+            "source": "knott-wunc",
+            "source_url": "https://www.wunc.org/politics/2026-10-27/nc-republican-congressmen-buy-tv-ads-in-deep-red-districts-as-election-looms"
+          },
+          "text": "Chevy Chase, Maryland: For some, it's the D.C. swamp,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "For my opponent, Paul Barringer, it's his home for almost 20 years."
+        }
+      ],
+      "source": "knott-wunc",
+      "source_hash": "010466b671048555d693689afe76c1a8b949e316d12b07493c7f2b38487c5dca",
+      "source_record_id": "20261027",
+      "source_url": "https://www.wunc.org/politics/2026-10-27/nc-republican-congressmen-buy-tv-ads-in-deep-red-districts-as-election-looms",
+      "sponsor": "Brad Knott campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "NC",
+      "text": "Chevy Chase, Maryland: For some, it's the D.C. swamp,\nFor my opponent, Paul Barringer, it's his home for almost 20 years.",
+      "title": "NC Republican Congressmen buy TV ads in deep-red districts as election looms"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "The original public Breitbart response, SHA256 dcf535ddda8a3098fdf2d6c781a4e4d4d78a4576be7d3cdd7ad312df13f7e09c, binds one h1, author meta Jasmyn Jordan, and one time displaying 27 Oct2026 with datetime2026-10-27T17:27:37Z. article:published_time2026-10-27T17:27:37+00:00 agrees. This is the publisher observation, not independently verified first airing, release, upload or paid delivery. The opening report attributes this ad to a No Going Back PAC spokesman and identifies its anti-Stelson PA-10 contest against Republican Scott Perry. One paragraph expressly attributes its two quotations to the advertisement's narrator and individually links AdImpact viewer79f0089f-c4b8-4c29-9888-d78cbe91ab13 through the says anchor. Retain only its second eighteen-word quotation. The article explicitly calls the previously reported Perry campaign advertisement separate; this new PAC record is not assigned to Perry's candidate committee or conflated with the preceding perry-capitalstar original2wYgN0-t36M. Source alignment R/outside_group follows the identified PAC ad and Republican House contest, not the Democratic target's party or the publisher's ideology. No Going Back PAC is publisher attribution, not an independently inspected sole legal payer. Exact official H2PA04135/C00510164, PERRY,SCOTT, REP, House, PA-10,2026 agrees with PATRIOTS FOR PERRY, P/H/REP; that principal verifies the supported candidate's identity, NOT this PAC ad's payer. Explicit Democrat-versus-Republican final-election context supports general phase, not October alone. A complete preceding-corpus check must exclude this individual original and normalized quotation before acquisition. The ad's allegation is literal speech, not a verified factual finding or a semantic judgment. Neither the cited affidavit nor police records are inspected; no identifying information about neighbors, children or addresses is added. Other ad quotations, campaign denials, reporter judgments and the separate Perry campaign ad are excluded. Only the retained publisher HTML body is copied to replay storage with empty metadata and no cached response headers. No AdImpact viewer, API, account, catalog, media, caption, credential or denied-provider request is made. Partial quotation and semantically unreviewed; preceding objects/reviews, aliases, rosters and protected semantic inputs remain unchanged.",
       "candidate_mentions": [
         {
@@ -50206,6 +50297,22 @@
       "source": "kean-globe",
       "state": "partial",
       "url": "https://newjerseyglobe.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "knott-wunc",
+      "state": "partial",
+      "url": "https://www.wunc.org"
     },
     {
       "ads_with_text": 6,

@@ -317,6 +317,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "knott-wunc",
+        "https://www.wunc.org",
+        "Brad Knott campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="NC-13",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "luke-murphy-flvoice",
         "https://flvoicenews.com",
         "Luke Murphy campaign (publisher-reported; payer unverified)",

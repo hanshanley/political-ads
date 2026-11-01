@@ -139,7 +139,8 @@ function AdCard({ ad, selected, examples }: {
     <a className="source-link" href={ad.source_url} target="_blank" rel="noopener noreferrer">
       {ad.delivery_start ? "View original creative" :
         ad.quality_flags.includes("publisher_audio_episode_not_individual_ad_original") ?
-          "Read broadcast transcript" : "Read original release"} <span aria-hidden="true">↗</span></a>
+          "Read broadcast transcript" : ad.placement === "publisher_reported_ad_copy" ?
+            "Read source report" : "Read original release"} <span aria-hidden="true">↗</span></a>
   </article>;
 }
 

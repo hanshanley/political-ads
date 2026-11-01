@@ -10,6 +10,57 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Brad Knott: bounded WUNC ad quotation without an original-media link
+
+The actual October 27 WUNC report is retained at
+`https://www.wunc.org/politics/2026-10-27/nc-republican-congressmen-buy-tv-ads-in-deep-red-districts-as-election-looms`,
+with decoded HTML SHA-256
+`010466b671048555d693689afe76c1a8b949e316d12b07493c7f2b38487c5dca`.
+Its unique `h1.ArtP-headline`, Colin Campbell byline, offset-less
+`article:published_time=2026-10-27T15:54:09.967` and visible October 27,
+2026, 11:54 AM EDT label bind the report and agree on its calendar date.
+Neither label establishes the ad's first release or paid delivery.
+
+The unique `.ArtP-articleBody` paragraph containing **Knott says in the ad.**
+has SHA-256
+`f22b429bc7d90f1c5abecbbe282a6c1404854edb6f04e5a4698d21f8decc016c`.
+It explicitly attributes two quotations, **nine and twelve words**, to
+Knott's ad. Only those **21 literal words** are retained, in original order
+with unchanged punctuation. The intervening reporter attribution is not
+ad text. Reporting, academic commentary, the six-word Rouzer slogan and
+the other candidates' spending descriptions are excluded.
+
+The source supplies **no individual original-media association**. Its
+WUNC YouTube-channel link is not an ad original; `media_urls` therefore
+remains empty. `reported_ad_text` in `data/ad-release-reviews.json` and
+the narrowly scoped `knott-wunc` path in `political_ads/reviewed_releases.py`
+require the exact source/paragraph hashes, one paragraph and the literal
+two-quotation ad-attribution structure. This exception does not relax the
+original-link requirement for other reviewed sources. It rejects interview
+statements, reporting as ad words, ambiguous selectors, over-25-word
+quotations and unsupported complete-script or original-media claims.
+The placement is `publisher_reported_ad_copy`, with explicit
+`original_ad_media_unverified` and `ad_legal_payer_unverified` flags.
+No provider, original video, caption, audio or catalog is requested.
+
+Exact frozen **H4NC13116 / C00855361**, **KNOTT, BRAD**, REP, House,
+**NC-13**, 2026, establishes candidate identity and Republican alignment,
+not this creative's payment or authorization. The report identifies his
+reelection opponent, supporting general-election phase; October alone
+does not. The residency and evaluative language remain attributed ad
+words, not independent factual findings or a certified Democratic-target
+portrayal. New semantic judgments remain unreviewed.
+
+One new text record, `knott-wunc-20261027-0`, is added. All **569** previous
+text-source ad records and **75** previous literal-acquisition reviews
+remain unchanged, as do **17** protected candidate, semantic-review,
+platform, alignment and backlog files checked against the pre-change
+baseline. The saved October 30 cutoff and final November 4 inclusive
+scope remain distinct. Complete exports, figures and both **unpublished**
+editions are rebuilt; no website, host or Substack publication is authorized.
+Partial quotations remain incomplete evidence, not a census of these
+seven incumbents' creatives or nationally representative party output.
+
 ## Carey Coleman: campaign-linked Ohio House original
 
 The actual `https://careycoleman.com/` homepage, SHA-256
@@ -335,6 +386,66 @@ reported mailer. Filenames are not creative proof. Interview remarks,
 polling signs and three quoted sign words are not padded into an ad.
 Discovery continues; all snapshot counts and semantic reviews above
 remain unchanged by these checks.
+
+### Follow-up: actual FOX 13 mailer imagery and additional quotation leads
+
+The previously inspected FOX 13 JPGs remain excluded. Subsequent inspection
+of the actual article markup recovered its expressly supplied public
+report MP4; the actual video page
+`https://www.fox13news.com/video/fmc-z43egxg71yk6mtcu`, SHA-256
+`212a6efad35fa07802443558943dc2bfd1f2d324675718cef92b5704db7e0061`,
+independently binds that same original. Anonymous bounded HEAD/GET verified
+**115,321,406 bytes**, **178.01 seconds**, **1280 x 720**, SHA-256
+`e68daeb976a027256c479446a303c901745e213303f8cdbe672f5d2d142d2fe3`.
+Exact original-resolution frames at **52, 57, 92 and 137 seconds** genuinely
+show mailer fronts, a payer panel and back-side words. The 42- and
+46-second frames are journalism/interview footage, not ad text. No
+whole-report ASR/OCR is promoted into a campaign script.
+
+The printed Conservative Solutions for America site timed out on one
+bounded anonymous request; it was not retried. The frozen FEC committee
+master, SHA-256
+`6249342f373dee195dc638a307c88c45da14cec2e760e4ff212035cdde76df60`,
+does contain exact **C00950717**, **CONSERVATIVE SOLUTIONS FOR AMERICA**,
+designation U, type O, with **blank party and candidate fields**.
+Registration, its name and the Republican target do not prove Republican
+alignment. The actual August 12 FloridianPress report, SHA-256
+`306ba17e3c63e0aea3453ce169c86d5abe49d6525d52adfa6042a7b21a941718`,
+attributes funding allegations to Beltran, not independently established
+facts. Payer alignment, the relationship of the two fronts to the back
+and bounded visual-only news-video support remain unresolved. **No
+Beltran mailer is added or counted.**
+
+The actual September 17 Salazar first-party release,
+`https://mariaelvirasalazar.com/immigration_ad_2026/`, SHA-256
+`dc8a5c4ba761b8b5708cba2ae96c5ac4d3ec334c14529a0e2df643fa4c7fa121`,
+explicitly labels English **pu6vDq23W1E** and Spanish **kJvTgNoeREc**.
+Sorted media-link order is not language association. Its
+`article:published_time=2026-09-17T15:03:41+00:00` agrees with the release.
+This ad is **already represented by `salazar-1273-0`** and is not added
+again. Exact **H8FL27185 / C00714261**, REP, House, FL-27, identifies
+Maria Elvira Salazar, not the Alaska candidate with the same surname.
+Florida Phoenix's actual September 17 report, SHA-256
+`21d226ff5e0a6f18f3fa9374310bf3cd1bd18dc21d59c476696371abbd642e30`,
+independently embeds the English original. Its variant wording is not
+merged or silently repaired. Mediaite's actual report, SHA-256
+`5021eaaf46788ca8245d9cdd2401bdd2beac3ef66b50c2bff2d7e33bdb930ed6`,
+links journalist reshares, not a newly admitted advertiser original.
+Criticism of Republican Trump is not forced into Democratic-opponent
+criticism.
+
+The actual July 21 AZ Free News **Crane / Fight** report, SHA-256
+`1f1a70235e3f43e4bb7cf7dddd523872de146d40d85cb98b8f5a8f61a20a295c`,
+binds a reported July 17 debut and original **1U5xJJBDssM**.
+Exact **H2AZ01354 / C00784934**, REP, House, AZ-02, identifies Crane.
+Its longer quotations are explicitly accompanying release statements,
+not attributed ad speech, and are excluded. No denied-provider original
+is requested and no Crane ad is added.
+
+The preceding documentation-only publication
+`f3abd938c11f881f95b3267ebdbc7dee9ad68c76` was independently verified by
+exact successful CI **41273619188**. That result does not certify this
+subsequent Knott admission or substitute for its new local checks.
 
 ## Adrian Smith: publisher-linked paid-print excerpt
 
