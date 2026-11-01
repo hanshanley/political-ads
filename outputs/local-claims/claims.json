@@ -110728,5 +110728,1394 @@
     "text_hash": "29692da1ae682fc7e5bdfdc297f8c773d2c351dd801b2d8f842b7b011215da47",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-348ed7fca9672b175866d5cc",
+    "alignment": "R",
+    "block_id": "snap-348ed7fca9672b175866d5cc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-348ed7fca9672b175866d5cc-claims-001-001",
+    "claim_text": "Center Sullivan really leads the way on behalf of veterans in the state.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 72,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Center Sullivan really leads the way on behalf of veterans in the state.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4774be1077bd3293272306d530f8565aa8f6b2b94a71d28049ad4f1a846d81dc?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 15,
+        "anchor_quote": "Center Sullivan",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Center Sullivan",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state.\nJoin me in thanking him for all the work that he has done.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATONL ONEVATOVAMERCA ORG\nEAIDFOR BY ONENATONL ONENATONA MERCA ORD\n(PADFOR BY ONE NATONL ONENATONAMERICA ORE\nPAIDFOA BYONEWATON ONENATOVANERICA ORG\nPAIDFOR BYONE NATONL DENATONANERCA DRG\nPAIDFOR BYONE NATONL ONENATONANERCA DRG",
+    "text_hash": "6acbef9908c77ef6ecb52273d83c75e8c8d0828b1b3dcce345cbd993607c9b80",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-348ed7fca9672b175866d5cc",
+    "alignment": "R",
+    "block_id": "snap-348ed7fca9672b175866d5cc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-348ed7fca9672b175866d5cc-claims-001-002",
+    "claim_text": "Join me in thanking him for all the work that he has done.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 131,
+        "kind": "local_asr",
+        "start": 73,
+        "text": "Join me in thanking him for all the work that he has done.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4774be1077bd3293272306d530f8565aa8f6b2b94a71d28049ad4f1a846d81dc?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 96,
+        "anchor_quote": "him",
+        "anchor_start": 93,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Center Sullivan",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state.\nJoin me in thanking him for all the work that he has done.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATONL ONEVATOVAMERCA ORG\nEAIDFOR BY ONENATONL ONENATONA MERCA ORD\n(PADFOR BY ONE NATONL ONENATONAMERICA ORE\nPAIDFOA BYONEWATON ONENATOVANERICA ORG\nPAIDFOR BYONE NATONL DENATONANERCA DRG\nPAIDFOR BYONE NATONL ONENATONANERCA DRG",
+    "text_hash": "6acbef9908c77ef6ecb52273d83c75e8c8d0828b1b3dcce345cbd993607c9b80",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-348ed7fca9672b175866d5cc",
+    "alignment": "R",
+    "block_id": "snap-348ed7fca9672b175866d5cc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-348ed7fca9672b175866d5cc-claims-001-003",
+    "claim_text": "Call and Tell Senator Sullivan to Keep Supporting Alaska's Veterans",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 162,
+        "kind": "video_ocr",
+        "start": 132,
+        "text": "Call and Tell Senator Sullivan",
+        "unit_id": 3
+      },
+      {
+        "end": 199,
+        "kind": "video_ocr",
+        "start": 163,
+        "text": "To Keep Supporting Alaska's Veterans",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      3,
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4774be1077bd3293272306d530f8565aa8f6b2b94a71d28049ad4f1a846d81dc?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 162,
+        "anchor_quote": "Senator Sullivan",
+        "anchor_start": 146,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Senator Sullivan",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 199,
+        "anchor_quote": "Alaska's Veterans",
+        "anchor_start": 182,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Alaska's Veterans",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state.\nJoin me in thanking him for all the work that he has done.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATONL ONEVATOVAMERCA ORG\nEAIDFOR BY ONENATONL ONENATONA MERCA ORD\n(PADFOR BY ONE NATONL ONENATONAMERICA ORE\nPAIDFOA BYONEWATON ONENATOVANERICA ORG\nPAIDFOR BYONE NATONL DENATONANERCA DRG\nPAIDFOR BYONE NATONL ONENATONANERCA DRG",
+    "text_hash": "6acbef9908c77ef6ecb52273d83c75e8c8d0828b1b3dcce345cbd993607c9b80",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-348ed7fca9672b175866d5cc",
+    "alignment": "R",
+    "block_id": "snap-348ed7fca9672b175866d5cc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-348ed7fca9672b175866d5cc-claims-001-004",
+    "claim_text": "(907) 271-5915",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 214,
+        "kind": "video_ocr",
+        "start": 200,
+        "text": "(907) 271-5915",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4774be1077bd3293272306d530f8565aa8f6b2b94a71d28049ad4f1a846d81dc?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state.\nJoin me in thanking him for all the work that he has done.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATONL ONEVATOVAMERCA ORG\nEAIDFOR BY ONENATONL ONENATONA MERCA ORD\n(PADFOR BY ONE NATONL ONENATONAMERICA ORE\nPAIDFOA BYONEWATON ONENATOVANERICA ORG\nPAIDFOR BYONE NATONL DENATONANERCA DRG\nPAIDFOR BYONE NATONL ONENATONANERCA DRG",
+    "text_hash": "6acbef9908c77ef6ecb52273d83c75e8c8d0828b1b3dcce345cbd993607c9b80",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-348ed7fca9672b175866d5cc",
+    "alignment": "R",
+    "block_id": "snap-348ed7fca9672b175866d5cc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-348ed7fca9672b175866d5cc-claims-001-005",
+    "claim_text": "PAIDFOR BYONE NATONL ONEVATOVAMERCA ORG",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 254,
+        "kind": "video_ocr",
+        "start": 215,
+        "text": "PAIDFOR BY ONENATONL ONEVATOVAMERCA ORG",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4774be1077bd3293272306d530f8565aa8f6b2b94a71d28049ad4f1a846d81dc?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state.\nJoin me in thanking him for all the work that he has done.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATONL ONEVATOVAMERCA ORG\nEAIDFOR BY ONENATONL ONENATONA MERCA ORD\n(PADFOR BY ONE NATONL ONENATONAMERICA ORE\nPAIDFOA BYONEWATON ONENATOVANERICA ORG\nPAIDFOR BYONE NATONL DENATONANERCA DRG\nPAIDFOR BYONE NATONL ONENATONANERCA DRG",
+    "text_hash": "6acbef9908c77ef6ecb52273d83c75e8c8d0828b1b3dcce345cbd993607c9b80",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-348ed7fca9672b175866d5cc",
+    "alignment": "R",
+    "block_id": "snap-348ed7fca9672b175866d5cc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-348ed7fca9672b175866d5cc-claims-001-006",
+    "claim_text": "EAIDFOR BY ONENATONL ONENATONA MERCA ORD",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 295,
+        "kind": "video_ocr",
+        "start": 255,
+        "text": "EAIDFOR BY ONENATONL ONENATONA MERCA ORD",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4774be1077bd3293272306d530f8565aa8f6b2b94a71d28049ad4f1a846d81dc?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state.\nJoin me in thanking him for all the work that he has done.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATONL ONEVATOVAMERCA ORG\nEAIDFOR BY ONENATONL ONENATONA MERCA ORD\n(PADFOR BY ONE NATONL ONENATONAMERICA ORE\nPAIDFOA BYONEWATON ONENATOVANERICA ORG\nPAIDFOR BYONE NATONL DENATONANERCA DRG\nPAIDFOR BYONE NATONL ONENATONANERCA DRG",
+    "text_hash": "6acbef9908c77ef6ecb52273d83c75e8c8d0828b1b3dcce345cbd993607c9b80",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-348ed7fca9672b175866d5cc",
+    "alignment": "R",
+    "block_id": "snap-348ed7fca9672b175866d5cc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-348ed7fca9672b175866d5cc-claims-001-007",
+    "claim_text": "(PADFOR BY ONE NATONL ONENATONAMERICA ORE",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 337,
+        "kind": "video_ocr",
+        "start": 296,
+        "text": "(PADFOR BY ONE NATONL ONENATONAMERICA ORE",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4774be1077bd3293272306d530f8565aa8f6b2b94a71d28049ad4f1a846d81dc?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state.\nJoin me in thanking him for all the work that he has done.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATONL ONEVATOVAMERCA ORG\nEAIDFOR BY ONENATONL ONENATONA MERCA ORD\n(PADFOR BY ONE NATONL ONENATONAMERICA ORE\nPAIDFOA BYONEWATON ONENATOVANERICA ORG\nPAIDFOR BYONE NATONL DENATONANERCA DRG\nPAIDFOR BYONE NATONL ONENATONANERCA DRG",
+    "text_hash": "6acbef9908c77ef6ecb52273d83c75e8c8d0828b1b3dcce345cbd993607c9b80",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-348ed7fca9672b175866d5cc",
+    "alignment": "R",
+    "block_id": "snap-348ed7fca9672b175866d5cc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-348ed7fca9672b175866d5cc-claims-001-008",
+    "claim_text": "PAIDFOA BYONEWATON ONENATOVANERICA ORG",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 376,
+        "kind": "video_ocr",
+        "start": 338,
+        "text": "PAIDFOA BYONEWATON ONENATOVANERICA ORG",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4774be1077bd3293272306d530f8565aa8f6b2b94a71d28049ad4f1a846d81dc?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state.\nJoin me in thanking him for all the work that he has done.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATONL ONEVATOVAMERCA ORG\nEAIDFOR BY ONENATONL ONENATONA MERCA ORD\n(PADFOR BY ONE NATONL ONENATONAMERICA ORE\nPAIDFOA BYONEWATON ONENATOVANERICA ORG\nPAIDFOR BYONE NATONL DENATONANERCA DRG\nPAIDFOR BYONE NATONL ONENATONANERCA DRG",
+    "text_hash": "6acbef9908c77ef6ecb52273d83c75e8c8d0828b1b3dcce345cbd993607c9b80",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-348ed7fca9672b175866d5cc",
+    "alignment": "R",
+    "block_id": "snap-348ed7fca9672b175866d5cc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-348ed7fca9672b175866d5cc-claims-001-009",
+    "claim_text": "PAIDFOR BYONE NATONL DENATONANERCA DRG",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 415,
+        "kind": "video_ocr",
+        "start": 377,
+        "text": "PAIDFOR BYONE NATONL DENATONANERCA DRG",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4774be1077bd3293272306d530f8565aa8f6b2b94a71d28049ad4f1a846d81dc?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state.\nJoin me in thanking him for all the work that he has done.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATONL ONEVATOVAMERCA ORG\nEAIDFOR BY ONENATONL ONENATONA MERCA ORD\n(PADFOR BY ONE NATONL ONENATONAMERICA ORE\nPAIDFOA BYONEWATON ONENATOVANERICA ORG\nPAIDFOR BYONE NATONL DENATONANERCA DRG\nPAIDFOR BYONE NATONL ONENATONANERCA DRG",
+    "text_hash": "6acbef9908c77ef6ecb52273d83c75e8c8d0828b1b3dcce345cbd993607c9b80",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-348ed7fca9672b175866d5cc",
+    "alignment": "R",
+    "block_id": "snap-348ed7fca9672b175866d5cc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-348ed7fca9672b175866d5cc-claims-001-010",
+    "claim_text": "PAIDFOR BYONE NATONL ONENATONANERCA DRG",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 455,
+        "kind": "video_ocr",
+        "start": 416,
+        "text": "PAIDFOR BYONE NATONL ONENATONANERCA DRG",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4774be1077bd3293272306d530f8565aa8f6b2b94a71d28049ad4f1a846d81dc?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [],
+    "text": "Center Sullivan really leads the way on behalf of veterans in the state.\nJoin me in thanking him for all the work that he has done.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATONL ONEVATOVAMERCA ORG\nEAIDFOR BY ONENATONL ONENATONA MERCA ORD\n(PADFOR BY ONE NATONL ONENATONAMERICA ORE\nPAIDFOA BYONEWATON ONENATOVANERICA ORG\nPAIDFOR BYONE NATONL DENATONANERCA DRG\nPAIDFOR BYONE NATONL ONENATONANERCA DRG",
+    "text_hash": "6acbef9908c77ef6ecb52273d83c75e8c8d0828b1b3dcce345cbd993607c9b80",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34ad3cded0515afb2835012a",
+    "alignment": "D",
+    "block_id": "snap-34ad3cded0515afb2835012a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34ad3cded0515afb2835012a-claims-001-001",
+    "claim_text": "We can defeat the political and literal machines.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 192,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "HUMANS\nMACHINES\nTOGETHER, WE CAN DEFEAT THE\nPOLITICAL AND LITERAL MACHINES\nEARLY VOTING\nJUNE 13 - 21\nELECTION DAY\nJUNE 23\nSAVE THE DREAM.\nDEFEAT THE MACHINES.\nDEMOCRAT ALEX BORES\nFOR CONGRESS.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7cd4cc01c8a9f024facbb1c8474d742de9b31cb28745ef9cd92acfb30c561554?mediaType=png",
+    "sponsor": "Dream NYC",
+    "targets": [
+      {
+        "anchor_end": 39,
+        "anchor_quote": "WE CAN DEFEAT",
+        "anchor_start": 26,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "we",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "HUMANS\nMACHINES\nTOGETHER, WE CAN DEFEAT THE\nPOLITICAL AND LITERAL MACHINES\nEARLY VOTING\nJUNE 13 - 21\nELECTION DAY\nJUNE 23\nSAVE THE DREAM.\nDEFEAT THE MACHINES.\nDEMOCRAT ALEX BORES\nFOR CONGRESS.",
+    "text_hash": "d86bdfc2b8721f8bcb410917746ea794814e921e437416e69155b7e337b72fc4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34ad3cded0515afb2835012a",
+    "alignment": "D",
+    "block_id": "snap-34ad3cded0515afb2835012a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34ad3cded0515afb2835012a-claims-001-002",
+    "claim_text": "Alex Bores is a Democrat for Congress.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 192,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "HUMANS\nMACHINES\nTOGETHER, WE CAN DEFEAT THE\nPOLITICAL AND LITERAL MACHINES\nEARLY VOTING\nJUNE 13 - 21\nELECTION DAY\nJUNE 23\nSAVE THE DREAM.\nDEFEAT THE MACHINES.\nDEMOCRAT ALEX BORES\nFOR CONGRESS.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7cd4cc01c8a9f024facbb1c8474d742de9b31cb28745ef9cd92acfb30c561554?mediaType=png",
+    "sponsor": "Dream NYC",
+    "targets": [
+      {
+        "anchor_end": 178,
+        "anchor_quote": "ALEX BORES",
+        "anchor_start": 168,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6NY12214",
+        "kind": "person",
+        "name": "BORES, ALEX",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "HUMANS\nMACHINES\nTOGETHER, WE CAN DEFEAT THE\nPOLITICAL AND LITERAL MACHINES\nEARLY VOTING\nJUNE 13 - 21\nELECTION DAY\nJUNE 23\nSAVE THE DREAM.\nDEFEAT THE MACHINES.\nDEMOCRAT ALEX BORES\nFOR CONGRESS.",
+    "text_hash": "d86bdfc2b8721f8bcb410917746ea794814e921e437416e69155b7e337b72fc4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34ad3cded0515afb2835012a",
+    "alignment": "D",
+    "block_id": "snap-34ad3cded0515afb2835012a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34ad3cded0515afb2835012a-claims-001-003",
+    "claim_text": "We can save the dream.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 192,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "HUMANS\nMACHINES\nTOGETHER, WE CAN DEFEAT THE\nPOLITICAL AND LITERAL MACHINES\nEARLY VOTING\nJUNE 13 - 21\nELECTION DAY\nJUNE 23\nSAVE THE DREAM.\nDEFEAT THE MACHINES.\nDEMOCRAT ALEX BORES\nFOR CONGRESS.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7cd4cc01c8a9f024facbb1c8474d742de9b31cb28745ef9cd92acfb30c561554?mediaType=png",
+    "sponsor": "Dream NYC",
+    "targets": [
+      {
+        "anchor_end": 32,
+        "anchor_quote": "WE CAN",
+        "anchor_start": 26,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "we",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "HUMANS\nMACHINES\nTOGETHER, WE CAN DEFEAT THE\nPOLITICAL AND LITERAL MACHINES\nEARLY VOTING\nJUNE 13 - 21\nELECTION DAY\nJUNE 23\nSAVE THE DREAM.\nDEFEAT THE MACHINES.\nDEMOCRAT ALEX BORES\nFOR CONGRESS.",
+    "text_hash": "d86bdfc2b8721f8bcb410917746ea794814e921e437416e69155b7e337b72fc4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34ad3cded0515afb2835012a",
+    "alignment": "D",
+    "block_id": "snap-34ad3cded0515afb2835012a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34ad3cded0515afb2835012a-claims-001-004",
+    "claim_text": "We can defeat the machines.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 192,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "HUMANS\nMACHINES\nTOGETHER, WE CAN DEFEAT THE\nPOLITICAL AND LITERAL MACHINES\nEARLY VOTING\nJUNE 13 - 21\nELECTION DAY\nJUNE 23\nSAVE THE DREAM.\nDEFEAT THE MACHINES.\nDEMOCRAT ALEX BORES\nFOR CONGRESS.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7cd4cc01c8a9f024facbb1c8474d742de9b31cb28745ef9cd92acfb30c561554?mediaType=png",
+    "sponsor": "Dream NYC",
+    "targets": [
+      {
+        "anchor_end": 39,
+        "anchor_quote": "WE CAN DEFEAT",
+        "anchor_start": 26,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "we",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "HUMANS\nMACHINES\nTOGETHER, WE CAN DEFEAT THE\nPOLITICAL AND LITERAL MACHINES\nEARLY VOTING\nJUNE 13 - 21\nELECTION DAY\nJUNE 23\nSAVE THE DREAM.\nDEFEAT THE MACHINES.\nDEMOCRAT ALEX BORES\nFOR CONGRESS.",
+    "text_hash": "d86bdfc2b8721f8bcb410917746ea794814e921e437416e69155b7e337b72fc4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-001",
+    "claim_text": "Having your name in the Epstein files should be an automatic disqualification from public office.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 97,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Having your name in the Epstein files should be an automatic disqualification from public office,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 37,
+        "anchor_quote": "your name in the Epstein files",
+        "anchor_start": 7,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "person with name in Epstein files",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-002",
+    "claim_text": "Johnson Nunu was caught lying that he was named in the Epstein files.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 158,
+        "kind": "local_asr",
+        "start": 98,
+        "text": "and Johnson Nunu was caught lying that he was named in them.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 114,
+        "anchor_quote": "Johnson Nunu",
+        "anchor_start": 102,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Johnson Nunu",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-003",
+    "claim_text": "Johnson Nunu is running for senate in New Hampshire.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 241,
+        "kind": "local_asr",
+        "start": 159,
+        "text": "Johnson Nunu is running for senate in New Hampshire, and his name is in the files.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 171,
+        "anchor_quote": "Johnson Nunu",
+        "anchor_start": 159,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Johnson Nunu",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-004",
+    "claim_text": "Jeffrey Epstein wrote that he had good stories.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 298,
+        "kind": "local_asr",
+        "start": 242,
+        "text": "In fact, Jeffrey Epstein wrote that he had good stories.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 266,
+        "anchor_quote": "Jeffrey Epstein",
+        "anchor_start": 251,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Jeffrey Epstein",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-005",
+    "claim_text": "I simply cannot vote for a guy who lies to our faces like this.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 362,
+        "kind": "local_asr",
+        "start": 299,
+        "text": "I simply cannot vote for a guy who lies to our faces like this,",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 338,
+        "anchor_quote": "a guy who lies",
+        "anchor_start": 324,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "guy who lies",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-006",
+    "claim_text": "This is especially about his relationship with Jeffrey Epstein.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 418,
+        "kind": "local_asr",
+        "start": 363,
+        "text": "especially about his relationship with Jeffrey Epstein.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 417,
+        "anchor_quote": "his relationship with Jeffrey Epstein",
+        "anchor_start": 380,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "guy who lies",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-007",
+    "claim_text": "New Hampshire is better than this.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 453,
+        "kind": "local_asr",
+        "start": 419,
+        "text": "New Hampshire is better than this.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 432,
+        "anchor_quote": "New Hampshire",
+        "anchor_start": 419,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "New Hampshire",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-008",
+    "claim_text": "We have no patience for anyone associated with Epstein to represent our state.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 532,
+        "kind": "local_asr",
+        "start": 454,
+        "text": "We have no patience for anyone associated with Epstein to represent our state.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 508,
+        "anchor_quote": "anyone associated with Epstein",
+        "anchor_start": 478,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "anyone associated with Epstein",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-009",
+    "claim_text": "If Johnson Nunu is lying about this,",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 573,
+        "kind": "local_asr",
+        "start": 533,
+        "text": "And if Johnson Nunu is lying about this,",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 552,
+        "anchor_quote": "Johnson Nunu",
+        "anchor_start": 540,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Johnson Nunu",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-010",
+    "claim_text": "What else is he lying about?",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 602,
+        "kind": "local_asr",
+        "start": 574,
+        "text": "What else is he lying about?",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 589,
+        "anchor_quote": "he",
+        "anchor_start": 587,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "he",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-011",
+    "claim_text": "John Sununu was caught lying that he was named in the Epstein files.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 158,
+        "kind": "local_asr",
+        "start": 98,
+        "text": "and Johnson Nunu was caught lying that he was named in them.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 114,
+        "anchor_quote": "Johnson Nunu",
+        "anchor_start": 102,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6NH00208",
+        "kind": "person",
+        "name": "John Sununu",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-012",
+    "claim_text": "John Sununu is running for senate in New Hampshire.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 241,
+        "kind": "local_asr",
+        "start": 159,
+        "text": "Johnson Nunu is running for senate in New Hampshire, and his name is in the files.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 171,
+        "anchor_quote": "Johnson Nunu",
+        "anchor_start": 159,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6NH00208",
+        "kind": "person",
+        "name": "John Sununu",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-013",
+    "claim_text": "If John Sununu is lying about this,",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 573,
+        "kind": "local_asr",
+        "start": 533,
+        "text": "And if Johnson Nunu is lying about this,",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 552,
+        "anchor_quote": "Johnson Nunu",
+        "anchor_start": 540,
+        "anchor_unit_id": 9,
+        "entity_id": "candidate:S6NH00208",
+        "kind": "person",
+        "name": "John Sununu",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-014",
+    "claim_text": "And John Sununu was",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 645,
+        "kind": "video_ocr",
+        "start": 626,
+        "text": "And John Sununu was",
+        "unit_id": 15
+      }
+    ],
+    "evidence_ids": [
+      15
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 641,
+        "anchor_quote": "John Sununu",
+        "anchor_start": 630,
+        "anchor_unit_id": 15,
+        "entity_id": "candidate:S6NH00208",
+        "kind": "person",
+        "name": "John Sununu",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-015",
+    "claim_text": "And if John Sununu",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 908,
+        "kind": "video_ocr",
+        "start": 890,
+        "text": "And if John Sununu",
+        "unit_id": 39
+      }
+    ],
+    "evidence_ids": [
+      39
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 908,
+        "anchor_quote": "John Sununu",
+        "anchor_start": 897,
+        "anchor_unit_id": 39,
+        "entity_id": "candidate:S6NH00208",
+        "kind": "person",
+        "name": "John Sununu",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-016",
+    "claim_text": "was lying about this,",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 930,
+        "kind": "video_ocr",
+        "start": 909,
+        "text": "was lying about this,",
+        "unit_id": 40
+      }
+    ],
+    "evidence_ids": [
+      40
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 929,
+        "anchor_quote": "this",
+        "anchor_start": 925,
+        "anchor_unit_id": 40,
+        "entity_id": "candidate:S6NH00208",
+        "kind": "person",
+        "name": "John Sununu",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-017",
+    "claim_text": "John Sununu is running for",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 704,
+        "kind": "video_ocr",
+        "start": 678,
+        "text": "John Sununu is running for",
+        "unit_id": 22
+      }
+    ],
+    "evidence_ids": [
+      22
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 689,
+        "anchor_quote": "John Sununu",
+        "anchor_start": 678,
+        "anchor_unit_id": 22,
+        "entity_id": "candidate:S6NH00208",
+        "kind": "person",
+        "name": "John Sununu",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-34cad6f8b665225076492b34",
+    "alignment": "D",
+    "block_id": "snap-34cad6f8b665225076492b34-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-34cad6f8b665225076492b34-claims-001-018",
+    "claim_text": "And if Johnson Nunu is lying about this",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 573,
+        "kind": "local_asr",
+        "start": 533,
+        "text": "And if Johnson Nunu is lying about this,",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/efb2520f475020c24154399ecd41ddfbc133192c3ac6f76bcf12d0a6025e8951?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 552,
+        "anchor_quote": "Johnson Nunu",
+        "anchor_start": 540,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Johnson Nunu",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Having your name in the Epstein files should be an automatic disqualification from public office,\nand Johnson Nunu was caught lying that he was named in them.\nJohnson Nunu is running for senate in New Hampshire, and his name is in the files.\nIn fact, Jeffrey Epstein wrote that he had good stories.\nI simply cannot vote for a guy who lies to our faces like this,\nespecially about his relationship with Jeffrey Epstein.\nNew Hampshire is better than this.\nWe have no patience for anyone associated with Epstein to represent our state.\nAnd if Johnson Nunu is lying about this,\nWhat else is he lying about?\nбаs\nBremen\nNEWHAM\n,баз\nAnd John Sununu was\nбas\nBrem\nNEWHAN\nBreu\nNEW M\nBrew\nJohn Sununu is running for\nб00\nNEW H\nBreun\nNEW HA\nNEWHAMDOI\nBreme\nбад\nNEWHA\nNEW HAMD\nBre\nNEWHAMD\nNEW HAN\nNEWNA\nPAID FOR BY WINSENATE, WINSENATE.ORG,\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITEE.\nBremes\nAnd if John Sununu\nwas lying about this,\nBrems\n,50g\nBrewe",
+    "text_hash": "44fc078661071ba07658d2fd75554668308f39ad5c3e60c6ab198cedcf1c1f2b",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]

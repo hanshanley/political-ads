@@ -5235,49 +5235,49 @@
     "ad_id": "snap-348ed7fca9672b175866d5cc",
     "block_id": "snap-348ed7fca9672b175866d5cc-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-34ad3cded0515afb2835012a",
     "block_id": "snap-34ad3cded0515afb2835012a-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-34b9f99e42b35458cd8d4f16",
     "block_id": "snap-34b9f99e42b35458cd8d4f16-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for Donald Trump: \\\"Donald Trump\\\" is absent from unit 1. Exact source: \\\"\\\\\\\"Sen. Jon Husted's\\\\nmade gas & utilities\\\\nmore expensive.\\\\nI voted for/Donald\\\\nTrump, but I can't\\\\nsupport Husted.\\\\\\\"\\\\nBrandon, Pataskala\\\\nPAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWN\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-34cad6f8b665225076492b34",
     "block_id": "snap-34cad6f8b665225076492b34-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-34de7e41da0cc6fde4a8476f",
     "block_id": "snap-34de7e41da0cc6fde4a8476f-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 5\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-350a0d9df25218a843977e25",
     "block_id": "snap-350a0d9df25218a843977e25-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 3\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-352a3215b891fc851d91d657",
     "block_id": "snap-352a3215b891fc851d91d657-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for Iowa Legislature: \\\"Iowa Legislature\\\" is absent from unit 9. Exact source: \\\"lowa Legislature votes, including skipping\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-35ab04b779a86383059ce3be",
     "block_id": "snap-35ab04b779a86383059ce3be-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 6\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-35d2348378887edc3ee7f326",
