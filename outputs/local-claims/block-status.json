@@ -6387,49 +6387,49 @@
     "ad_id": "snap-576786f1a5b9d29a723ccd1a",
     "block_id": "snap-576786f1a5b9d29a723ccd1a-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-576786f1a5b9d29a723ccd1a",
     "block_id": "snap-576786f1a5b9d29a723ccd1a-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 2: {\\\"anchor_quote\\\":\\\"TERESA BENITEZ-THOMPSON\\\",\\\"anchor_unit_id\\\":7,\\\"entity_id\\\":\\\"candidate:H6NV02362\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"BENITEZ-THOMPSON, TERESA\\\",\\\"role\\\":\\\"self_or_supported\\\",\\\"tone\\\":\\\"positive\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-57f62d0d800cb800a65cf9d6",
     "block_id": "snap-57f62d0d800cb800a65cf9d6-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-581422ce35dccc85c488e7d1",
     "block_id": "snap-581422ce35dccc85c488e7d1-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for he: \\\"he\\\" is absent from unit 7. Exact source: \\\"as a recovery, I struggle sometimes\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5843fb6cabfbbba35b44bac5",
     "block_id": "snap-5843fb6cabfbbba35b44bac5-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 10 for Gas prices: \\\"Gas prices\\\" is absent from unit 5. Exact source: \\\"A rent has gone up, healthcare is not affordable, rent is not affordable, gas prices are high, nothing is affordable in Maine.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5843fb6cabfbbba35b44bac5",
     "block_id": "snap-5843fb6cabfbbba35b44bac5-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for COLLINS, SUSAN M.: \\\"Susan Collins\\\" is absent from unit 15. Exact source: \\\"Soas Caler spperts the varis iean,\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5843fb6cabfbbba35b44bac5",
     "block_id": "snap-5843fb6cabfbbba35b44bac5-claims-003",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for Susan Collins: \\\"Susan Collins\\\" is absent from unit 43. Exact source: \\\"Tell Susan\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5844585f3ca2d0c524df6e8d",
     "block_id": "snap-5844585f3ca2d0c524df6e8d-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Bobby Pulido: \\\"Bobby Pulido\\\" is absent from unit 1. Exact source: \\\"N'S BETIER\\\\n-IN A\\\\nUnion\\\\nMY UNION, MY RIGHT, MY VOTE\\\\nAFL-CIO\\\\nAMERICA'D UNIONI\\\\nBOBBY\\\\nPULIDO\\\\nWILL FIGHT TO LOWER COSTS\\\\nAND RAISE WAGES.\\\\nVOTE WITH WORKERS\\\\nPAID FOR BY THE AFL-CIO\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5898422fb147b2e88cf29c89",
