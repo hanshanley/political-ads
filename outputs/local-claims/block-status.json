@@ -7538,50 +7538,50 @@
   {
     "ad_id": "snap-7b853734fc76a46a60b3e846",
     "block_id": "snap-7b853734fc76a46a60b3e846-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for Working America: \\\"Working AMERICA\\\" is absent from unit 13. Exact source: \\\"AFL-CIO\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7bf23241d42ebc98a28be374",
     "block_id": "snap-7bf23241d42ebc98a28be374-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7bf23241d42ebc98a28be374",
     "block_id": "snap-7bf23241d42ebc98a28be374-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 2: {\\\"anchor_quote\\\":\\\"State Planning for\\\",\\\"anchor_unit_id\\\":16,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"policy\\\",\\\"name\\\":\\\"State Planning for Reliability and Affordability Act\\\",\\\"role\\\":\\\"unclear\\\",\\\"tone\\\":\\\"positive\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7bf839f19b3aa53ef1e69c23",
     "block_id": "snap-7bf839f19b3aa53ef1e69c23-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 6: {\\\"anchor_quote\\\":\\\"UNION MEMBER\\\",\\\"anchor_unit_id\\\":11,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"collective\\\",\\\"name\\\":\\\"UNION MEMBER\\\",\\\"role\\\":\\\"opponent\\\",\\\"tone\\\":\\\"negative\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7cbe119acfe72e07b43b303a",
     "block_id": "snap-7cbe119acfe72e07b43b303a-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-7cd27a533d1583c73e6b8907",
     "block_id": "snap-7cd27a533d1583c73e6b8907-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-7cda780e064a13bf35b38edf",
     "block_id": "snap-7cda780e064a13bf35b38edf-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for war in Iran: \\\"war in Iran\\\" is absent from unit 4. Exact source: \\\"and raising prices at the pump.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7d2590461008b259a6392a7f",
     "block_id": "snap-7d2590461008b259a6392a7f-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for federal immigration authorities: \\\"federal immigration authorities\\\" is absent from unit 1. Exact source: \\\"KRWG\\\\nPUBLIC MEDIA\\\\n©PBS npr\\\\nCongressman Gabe Vasquez to\\\\nreintroduce legislation aimed at\\\\nbringing oversight to federal\\\\nimmigration authorities\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7d8f1ee0f9c52bcef5a9a50e",
