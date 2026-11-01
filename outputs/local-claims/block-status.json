@@ -6110,14 +6110,14 @@
   {
     "ad_id": "snap-50cf8d8527fef02c6e111aeb",
     "block_id": "snap-50cf8d8527fef02c6e111aeb-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-50d19fa338136f91c2198d37",
     "block_id": "snap-50d19fa338136f91c2198d37-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 6\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5101cf1970e8f653d60988c1",
