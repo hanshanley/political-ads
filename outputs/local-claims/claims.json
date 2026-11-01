@@ -107580,5 +107580,1036 @@
     "text_hash": "d4a52fad857d8dd2425c25b26470021b8b6a0a8f75d1962b05d21be61b57c888",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2d3eb3bfd40656f210f7920c",
+    "alignment": "D",
+    "block_id": "snap-2d3eb3bfd40656f210f7920c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2d3eb3bfd40656f210f7920c-claims-001-001",
+    "claim_text": "Abduals are on our side, that's why AFSCENY members support him for senate.",
+    "claim_types": [
+      "characterization",
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 71,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Abduals on our side, that's why AFSCENY members support him for senate.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/18759d71ea4d9740db5c398f81a96645f0abea0868497ed9457fca4191819f42?mediaType=mp4",
+    "sponsor": "AFSCME",
+    "targets": [
+      {
+        "anchor_end": 7,
+        "anchor_quote": "Abduals",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Abduals",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Abduals on our side, that's why AFSCENY members support him for senate.\nABDUL EL-SAYED IS\nPAID FORBY AFSCME\nAbdul's on our side.\nThat's why AFSCME members\nAFSCME\nVOTE\nABDUL EL-SAYED\nFORU.S. SENATE",
+    "text_hash": "a195c1431040b2ae633d7fe4f4756bc62d81b82fd71ef67f57faa43eaa993d5d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2d3eb3bfd40656f210f7920c",
+    "alignment": "D",
+    "block_id": "snap-2d3eb3bfd40656f210f7920c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2d3eb3bfd40656f210f7920c-claims-001-002",
+    "claim_text": "Abdul's on our side.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 128,
+        "kind": "video_ocr",
+        "start": 108,
+        "text": "Abdul's on our side.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/18759d71ea4d9740db5c398f81a96645f0abea0868497ed9457fca4191819f42?mediaType=mp4",
+    "sponsor": "AFSCME",
+    "targets": [
+      {
+        "anchor_end": 113,
+        "anchor_quote": "Abdul",
+        "anchor_start": 108,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "Abdul",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Abduals on our side, that's why AFSCENY members support him for senate.\nABDUL EL-SAYED IS\nPAID FORBY AFSCME\nAbdul's on our side.\nThat's why AFSCME members\nAFSCME\nVOTE\nABDUL EL-SAYED\nFORU.S. SENATE",
+    "text_hash": "a195c1431040b2ae633d7fe4f4756bc62d81b82fd71ef67f57faa43eaa993d5d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2d3eb3bfd40656f210f7920c",
+    "alignment": "D",
+    "block_id": "snap-2d3eb3bfd40656f210f7920c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2d3eb3bfd40656f210f7920c-claims-001-003",
+    "claim_text": "AFSCME members support him for senate.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 71,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Abduals on our side, that's why AFSCENY members support him for senate.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/18759d71ea4d9740db5c398f81a96645f0abea0868497ed9457fca4191819f42?mediaType=mp4",
+    "sponsor": "AFSCME",
+    "targets": [
+      {
+        "anchor_end": 47,
+        "anchor_quote": "AFSCENY members",
+        "anchor_start": 32,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFSCME members",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Abduals on our side, that's why AFSCENY members support him for senate.\nABDUL EL-SAYED IS\nPAID FORBY AFSCME\nAbdul's on our side.\nThat's why AFSCME members\nAFSCME\nVOTE\nABDUL EL-SAYED\nFORU.S. SENATE",
+    "text_hash": "a195c1431040b2ae633d7fe4f4756bc62d81b82fd71ef67f57faa43eaa993d5d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2d3eb3bfd40656f210f7920c",
+    "alignment": "D",
+    "block_id": "snap-2d3eb3bfd40656f210f7920c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2d3eb3bfd40656f210f7920c-claims-001-004",
+    "claim_text": "AFSCME members support him.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 71,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Abduals on our side, that's why AFSCENY members support him for senate.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/18759d71ea4d9740db5c398f81a96645f0abea0868497ed9457fca4191819f42?mediaType=mp4",
+    "sponsor": "AFSCME",
+    "targets": [
+      {
+        "anchor_end": 47,
+        "anchor_quote": "AFSCENY members",
+        "anchor_start": 32,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFSCME members",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Abduals on our side, that's why AFSCENY members support him for senate.\nABDUL EL-SAYED IS\nPAID FORBY AFSCME\nAbdul's on our side.\nThat's why AFSCME members\nAFSCME\nVOTE\nABDUL EL-SAYED\nFORU.S. SENATE",
+    "text_hash": "a195c1431040b2ae633d7fe4f4756bc62d81b82fd71ef67f57faa43eaa993d5d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2d3eb3bfd40656f210f7920c",
+    "alignment": "D",
+    "block_id": "snap-2d3eb3bfd40656f210f7920c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2d3eb3bfd40656f210f7920c-claims-001-005",
+    "claim_text": "ABDUL EL-SAYED IS",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 89,
+        "kind": "video_ocr",
+        "start": 72,
+        "text": "ABDUL EL-SAYED IS",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/18759d71ea4d9740db5c398f81a96645f0abea0868497ed9457fca4191819f42?mediaType=mp4",
+    "sponsor": "AFSCME",
+    "targets": [
+      {
+        "anchor_end": 86,
+        "anchor_quote": "ABDUL EL-SAYED",
+        "anchor_start": 72,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "ABDUL EL-SAYED",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Abduals on our side, that's why AFSCENY members support him for senate.\nABDUL EL-SAYED IS\nPAID FORBY AFSCME\nAbdul's on our side.\nThat's why AFSCME members\nAFSCME\nVOTE\nABDUL EL-SAYED\nFORU.S. SENATE",
+    "text_hash": "a195c1431040b2ae633d7fe4f4756bc62d81b82fd71ef67f57faa43eaa993d5d",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2d3eb3bfd40656f210f7920c",
+    "alignment": "D",
+    "block_id": "snap-2d3eb3bfd40656f210f7920c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2d3eb3bfd40656f210f7920c-claims-001-006",
+    "claim_text": "AFSCME paid for this.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 107,
+        "kind": "video_ocr",
+        "start": 90,
+        "text": "PAID FORBY AFSCME",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/18759d71ea4d9740db5c398f81a96645f0abea0868497ed9457fca4191819f42?mediaType=mp4",
+    "sponsor": "AFSCME",
+    "targets": [
+      {
+        "anchor_end": 107,
+        "anchor_quote": "AFSCME",
+        "anchor_start": 101,
+        "anchor_unit_id": 3,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFSCME",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Abduals on our side, that's why AFSCENY members support him for senate.\nABDUL EL-SAYED IS\nPAID FORBY AFSCME\nAbdul's on our side.\nThat's why AFSCME members\nAFSCME\nVOTE\nABDUL EL-SAYED\nFORU.S. SENATE",
+    "text_hash": "a195c1431040b2ae633d7fe4f4756bc62d81b82fd71ef67f57faa43eaa993d5d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2d3eb3bfd40656f210f7920c",
+    "alignment": "D",
+    "block_id": "snap-2d3eb3bfd40656f210f7920c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2d3eb3bfd40656f210f7920c-claims-001-007",
+    "claim_text": "VOTE ABDUL EL-SAYED FOR U.S. SENATE",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 166,
+        "kind": "video_ocr",
+        "start": 162,
+        "text": "VOTE",
+        "unit_id": 7
+      },
+      {
+        "end": 181,
+        "kind": "video_ocr",
+        "start": 167,
+        "text": "ABDUL EL-SAYED",
+        "unit_id": 8
+      },
+      {
+        "end": 196,
+        "kind": "video_ocr",
+        "start": 182,
+        "text": "FORU.S. SENATE",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      7,
+      8,
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/18759d71ea4d9740db5c398f81a96645f0abea0868497ed9457fca4191819f42?mediaType=mp4",
+    "sponsor": "AFSCME",
+    "targets": [
+      {
+        "anchor_end": 181,
+        "anchor_quote": "ABDUL EL-SAYED",
+        "anchor_start": 167,
+        "anchor_unit_id": 8,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "ABDUL EL-SAYED",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Abduals on our side, that's why AFSCENY members support him for senate.\nABDUL EL-SAYED IS\nPAID FORBY AFSCME\nAbdul's on our side.\nThat's why AFSCME members\nAFSCME\nVOTE\nABDUL EL-SAYED\nFORU.S. SENATE",
+    "text_hash": "a195c1431040b2ae633d7fe4f4756bc62d81b82fd71ef67f57faa43eaa993d5d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2d3eb3bfd40656f210f7920c",
+    "alignment": "D",
+    "block_id": "snap-2d3eb3bfd40656f210f7920c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2d3eb3bfd40656f210f7920c-claims-001-008",
+    "claim_text": "AFSCME is a collective.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 161,
+        "kind": "video_ocr",
+        "start": 155,
+        "text": "AFSCME",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/18759d71ea4d9740db5c398f81a96645f0abea0868497ed9457fca4191819f42?mediaType=mp4",
+    "sponsor": "AFSCME",
+    "targets": [
+      {
+        "anchor_end": 161,
+        "anchor_quote": "AFSCME",
+        "anchor_start": 155,
+        "anchor_unit_id": 6,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFSCME",
+        "party_basis": "publisher_alignment",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Abduals on our side, that's why AFSCENY members support him for senate.\nABDUL EL-SAYED IS\nPAID FORBY AFSCME\nAbdul's on our side.\nThat's why AFSCME members\nAFSCME\nVOTE\nABDUL EL-SAYED\nFORU.S. SENATE",
+    "text_hash": "a195c1431040b2ae633d7fe4f4756bc62d81b82fd71ef67f57faa43eaa993d5d",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2de2c2fdcc4ef7be5a9a03f8",
+    "alignment": "D",
+    "block_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001-001",
+    "claim_text": "It absolutely is the most important election of a lifetime.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 59,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "It absolutely is the most important election of a lifetime.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/179944a89655615aafb039367690c42a4ce30a441cb635eba112a75bfe6f449d?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNION, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nJOSH TUREK\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHT,",
+    "text_hash": "c65213c936507313a1c2ebc4c9c6d63db0f0a400a803986d71a699687da9066c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2de2c2fdcc4ef7be5a9a03f8",
+    "alignment": "D",
+    "block_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001-002",
+    "claim_text": "Labor and doors candidates need to fight for them because they're fighting for us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 142,
+        "kind": "local_asr",
+        "start": 60,
+        "text": "Labor and doors candidates need to fight for them because they're fighting for us.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/179944a89655615aafb039367690c42a4ce30a441cb635eba112a75bfe6f449d?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNION, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nJOSH TUREK\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHT,",
+    "text_hash": "c65213c936507313a1c2ebc4c9c6d63db0f0a400a803986d71a699687da9066c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2de2c2fdcc4ef7be5a9a03f8",
+    "alignment": "D",
+    "block_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001-003",
+    "claim_text": "If we do not get out here and vote for people who support us, we are going to lose everything.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 237,
+        "kind": "local_asr",
+        "start": 143,
+        "text": "If we do not get out here and vote for people who support us, we are going to lose everything.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/179944a89655615aafb039367690c42a4ce30a441cb635eba112a75bfe6f449d?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNION, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nJOSH TUREK\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHT,",
+    "text_hash": "c65213c936507313a1c2ebc4c9c6d63db0f0a400a803986d71a699687da9066c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2de2c2fdcc4ef7be5a9a03f8",
+    "alignment": "D",
+    "block_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001-004",
+    "claim_text": "We have to fight for our union rights and that starts at the ballot box.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 310,
+        "kind": "local_asr",
+        "start": 238,
+        "text": "We have to fight for our union rights and that starts at the ballot box.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/179944a89655615aafb039367690c42a4ce30a441cb635eba112a75bfe6f449d?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNION, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nJOSH TUREK\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHT,",
+    "text_hash": "c65213c936507313a1c2ebc4c9c6d63db0f0a400a803986d71a699687da9066c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2de2c2fdcc4ef7be5a9a03f8",
+    "alignment": "D",
+    "block_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001-005",
+    "claim_text": "Labor-endorsed candidates -",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 366,
+        "kind": "video_ocr",
+        "start": 339,
+        "text": "Labor-endorsed candidates -",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/179944a89655615aafb039367690c42a4ce30a441cb635eba112a75bfe6f449d?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNION, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nJOSH TUREK\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHT,",
+    "text_hash": "c65213c936507313a1c2ebc4c9c6d63db0f0a400a803986d71a699687da9066c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2de2c2fdcc4ef7be5a9a03f8",
+    "alignment": "D",
+    "block_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001-006",
+    "claim_text": "We need to fight for them,",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 419,
+        "kind": "video_ocr",
+        "start": 393,
+        "text": "We need to fight for them,",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/179944a89655615aafb039367690c42a4ce30a441cb635eba112a75bfe6f449d?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNION, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nJOSH TUREK\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHT,",
+    "text_hash": "c65213c936507313a1c2ebc4c9c6d63db0f0a400a803986d71a699687da9066c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2de2c2fdcc4ef7be5a9a03f8",
+    "alignment": "D",
+    "block_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001-007",
+    "claim_text": "PAID FOR BY THE AFL-CIO",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 562,
+        "kind": "video_ocr",
+        "start": 539,
+        "text": "PAID FOR BY THE AFL-CIO",
+        "unit_id": 26
+      }
+    ],
+    "evidence_ids": [
+      26
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/179944a89655615aafb039367690c42a4ce30a441cb635eba112a75bfe6f449d?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 562,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 555,
+        "anchor_unit_id": 26,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNION, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nJOSH TUREK\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHT,",
+    "text_hash": "c65213c936507313a1c2ebc4c9c6d63db0f0a400a803986d71a699687da9066c",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2de2c2fdcc4ef7be5a9a03f8",
+    "alignment": "D",
+    "block_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2de2c2fdcc4ef7be5a9a03f8-claims-001-008",
+    "claim_text": "JOSH TUREK",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 642,
+        "kind": "video_ocr",
+        "start": 632,
+        "text": "JOSH TUREK",
+        "unit_id": 33
+      }
+    ],
+    "evidence_ids": [
+      33
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/179944a89655615aafb039367690c42a4ce30a441cb635eba112a75bfe6f449d?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 642,
+        "anchor_quote": "JOSH TUREK",
+        "anchor_start": 632,
+        "anchor_unit_id": 33,
+        "entity_id": "candidate:S6IA00298",
+        "kind": "person",
+        "name": "TUREK, JOSH",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNION, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nJOSH TUREK\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHT,",
+    "text_hash": "c65213c936507313a1c2ebc4c9c6d63db0f0a400a803986d71a699687da9066c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2e2817d93173524bdcb9e98e",
+    "alignment": "D",
+    "block_id": "snap-2e2817d93173524bdcb9e98e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2e2817d93173524bdcb9e98e-claims-001-001",
+    "claim_text": "Husted received $16K from Epstein's co-conspirator",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 153,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "‹HUSTED:\n$1I6K FROM\nEPSTEIN'S\nCO-CONSPIRATOR\nVOTED TO\nBLOCKTHE\nEPSTEIN\nHusted Is The Worst Of\nWTOL, 2/26/26\nThe Worst\nPAID FORBY FRIENDS OF SHERROD BROWN",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/58ac47f390fd59393eb36f19758621773307f9ffd58ea8da212a2d591afc8ad3?mediaType=png",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 77,
+        "anchor_quote": "Husted",
+        "anchor_start": 71,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Husted",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "‹HUSTED:\n$1I6K FROM\nEPSTEIN'S\nCO-CONSPIRATOR\nVOTED TO\nBLOCKTHE\nEPSTEIN\nHusted Is The Worst Of\nWTOL, 2/26/26\nThe Worst\nPAID FORBY FRIENDS OF SHERROD BROWN",
+    "text_hash": "478d4b30311dbb9886f53a8bd9ae6af5a9e021d17e980dbd914c738bd811b85e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2e2817d93173524bdcb9e98e",
+    "alignment": "D",
+    "block_id": "snap-2e2817d93173524bdcb9e98e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2e2817d93173524bdcb9e98e-claims-001-002",
+    "claim_text": "Husted voted to block the Epstein investigation",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 153,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "‹HUSTED:\n$1I6K FROM\nEPSTEIN'S\nCO-CONSPIRATOR\nVOTED TO\nBLOCKTHE\nEPSTEIN\nHusted Is The Worst Of\nWTOL, 2/26/26\nThe Worst\nPAID FORBY FRIENDS OF SHERROD BROWN",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/58ac47f390fd59393eb36f19758621773307f9ffd58ea8da212a2d591afc8ad3?mediaType=png",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 77,
+        "anchor_quote": "Husted",
+        "anchor_start": 71,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Husted",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "‹HUSTED:\n$1I6K FROM\nEPSTEIN'S\nCO-CONSPIRATOR\nVOTED TO\nBLOCKTHE\nEPSTEIN\nHusted Is The Worst Of\nWTOL, 2/26/26\nThe Worst\nPAID FORBY FRIENDS OF SHERROD BROWN",
+    "text_hash": "478d4b30311dbb9886f53a8bd9ae6af5a9e021d17e980dbd914c738bd811b85e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2e2817d93173524bdcb9e98e",
+    "alignment": "D",
+    "block_id": "snap-2e2817d93173524bdcb9e98e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2e2817d93173524bdcb9e98e-claims-001-003",
+    "claim_text": "Husted is the worst",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 153,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "‹HUSTED:\n$1I6K FROM\nEPSTEIN'S\nCO-CONSPIRATOR\nVOTED TO\nBLOCKTHE\nEPSTEIN\nHusted Is The Worst Of\nWTOL, 2/26/26\nThe Worst\nPAID FORBY FRIENDS OF SHERROD BROWN",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/58ac47f390fd59393eb36f19758621773307f9ffd58ea8da212a2d591afc8ad3?mediaType=png",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 77,
+        "anchor_quote": "Husted",
+        "anchor_start": 71,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Husted",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "‹HUSTED:\n$1I6K FROM\nEPSTEIN'S\nCO-CONSPIRATOR\nVOTED TO\nBLOCKTHE\nEPSTEIN\nHusted Is The Worst Of\nWTOL, 2/26/26\nThe Worst\nPAID FORBY FRIENDS OF SHERROD BROWN",
+    "text_hash": "478d4b30311dbb9886f53a8bd9ae6af5a9e021d17e980dbd914c738bd811b85e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2e2817d93173524bdcb9e98e",
+    "alignment": "D",
+    "block_id": "snap-2e2817d93173524bdcb9e98e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2e2817d93173524bdcb9e98e-claims-001-004",
+    "claim_text": "This ad was paid for by Friends of Sherrod Brown",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 153,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "‹HUSTED:\n$1I6K FROM\nEPSTEIN'S\nCO-CONSPIRATOR\nVOTED TO\nBLOCKTHE\nEPSTEIN\nHusted Is The Worst Of\nWTOL, 2/26/26\nThe Worst\nPAID FORBY FRIENDS OF SHERROD BROWN",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/58ac47f390fd59393eb36f19758621773307f9ffd58ea8da212a2d591afc8ad3?mediaType=png",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 153,
+        "anchor_quote": "FRIENDS OF SHERROD BROWN",
+        "anchor_start": 129,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Friends of Sherrod Brown",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "‹HUSTED:\n$1I6K FROM\nEPSTEIN'S\nCO-CONSPIRATOR\nVOTED TO\nBLOCKTHE\nEPSTEIN\nHusted Is The Worst Of\nWTOL, 2/26/26\nThe Worst\nPAID FORBY FRIENDS OF SHERROD BROWN",
+    "text_hash": "478d4b30311dbb9886f53a8bd9ae6af5a9e021d17e980dbd914c738bd811b85e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2e67e2bdd450192db319af6d",
+    "alignment": "D",
+    "block_id": "snap-2e67e2bdd450192db319af6d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2e67e2bdd450192db319af6d-claims-001-001",
+    "claim_text": "John Hickenlooper is fighting to end Trump's war.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 62,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "JOHN\nHICKENLOOPER:\nFIGHTING TO\nEND TRUMP'S WAR\nAND LOWER COSTS",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/f0a256af6c30c26e513b4acc6794b63da542a3664a4f95e9211f26663e6a7d23?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 18,
+        "anchor_quote": "JOHN\nHICKENLOOPER:",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "John Hickenlooper",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "JOHN\nHICKENLOOPER:\nFIGHTING TO\nEND TRUMP'S WAR\nAND LOWER COSTS",
+    "text_hash": "82f3229985400c40283f9f4cf8b386c623a325a27cbed1555b8bf7bd1cc314cb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2e67e2bdd450192db319af6d",
+    "alignment": "D",
+    "block_id": "snap-2e67e2bdd450192db319af6d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2e67e2bdd450192db319af6d-claims-001-002",
+    "claim_text": "John Hickenlooper is fighting to lower costs.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 62,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "JOHN\nHICKENLOOPER:\nFIGHTING TO\nEND TRUMP'S WAR\nAND LOWER COSTS",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/f0a256af6c30c26e513b4acc6794b63da542a3664a4f95e9211f26663e6a7d23?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 18,
+        "anchor_quote": "JOHN\nHICKENLOOPER:",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "John Hickenlooper",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "JOHN\nHICKENLOOPER:\nFIGHTING TO\nEND TRUMP'S WAR\nAND LOWER COSTS",
+    "text_hash": "82f3229985400c40283f9f4cf8b386c623a325a27cbed1555b8bf7bd1cc314cb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2e67e2bdd450192db319af6d",
+    "alignment": "D",
+    "block_id": "snap-2e67e2bdd450192db319af6d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2e67e2bdd450192db319af6d-claims-001-003",
+    "claim_text": "Trump's war exists.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 62,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "JOHN\nHICKENLOOPER:\nFIGHTING TO\nEND TRUMP'S WAR\nAND LOWER COSTS",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/f0a256af6c30c26e513b4acc6794b63da542a3664a4f95e9211f26663e6a7d23?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 42,
+        "anchor_quote": "TRUMP'S",
+        "anchor_start": 35,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "JOHN\nHICKENLOOPER:\nFIGHTING TO\nEND TRUMP'S WAR\nAND LOWER COSTS",
+    "text_hash": "82f3229985400c40283f9f4cf8b386c623a325a27cbed1555b8bf7bd1cc314cb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2e67e2bdd450192db319af6d",
+    "alignment": "D",
+    "block_id": "snap-2e67e2bdd450192db319af6d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2e67e2bdd450192db319af6d-claims-001-004",
+    "claim_text": "John Hickenlooper is fighting.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 62,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "JOHN\nHICKENLOOPER:\nFIGHTING TO\nEND TRUMP'S WAR\nAND LOWER COSTS",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/f0a256af6c30c26e513b4acc6794b63da542a3664a4f95e9211f26663e6a7d23?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 18,
+        "anchor_quote": "JOHN\nHICKENLOOPER:",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "John Hickenlooper",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "JOHN\nHICKENLOOPER:\nFIGHTING TO\nEND TRUMP'S WAR\nAND LOWER COSTS",
+    "text_hash": "82f3229985400c40283f9f4cf8b386c623a325a27cbed1555b8bf7bd1cc314cb",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
