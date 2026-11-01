@@ -1052,6 +1052,68 @@
           "35b69cf0ab63b291f4d8064aa08114e3a3b6f7e9db02dbc36caff7ed41647e50"
         ]
       }
+    },
+    {
+      "id": "tcr-print-cahill-c1f3c82f2a6983c9-p3",
+      "source": "tcr-bexar-print",
+      "media_type": "pdf",
+      "publisher_url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Bexar-WEB.pdf",
+      "post_url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Bexar-WEB.pdf#page=3",
+      "media_url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Bexar-WEB.pdf",
+      "media_sha256": "c1f3c82f2a6983c9ea8b486871e1712521c9113f6645d943155ba27929b241cd",
+      "title": "Cahill Victory Fund campaign-authorized TX-21 primary print ad",
+      "title_basis": "Descriptive label, not a verified creative title",
+      "sponsor": "Cahill Victory Fund",
+      "sponsor_type": "outside_group",
+      "candidate_id": "H6TX21350",
+      "phase": "primary",
+      "completeness": "partial_quotation",
+      "passages": [
+        "BAN SHARIA LAW NATIONWIDE",
+        "STOP ISLAMIZATION IN AMERICA",
+        "END ALL WELFARE TO IMMIGRANTS",
+        "PROSECUTE IMMIGRATION FRAUD"
+      ],
+      "required_quotes": ["BAN SHARIA LAW NATIONWIDE", "PROSECUTE IMMIGRATION FRAUD"],
+      "reviewed": "2026-10-31",
+      "ad_evidence": "The complete Bexar page 3 was rendered and visually inspected; its lower federal creative is the exact unmasked embedded /Im13 image, separately inspected at 1140 x 731. The upper state agriculture creative is excluded. The original identifies Jason Cahill and U.S. Congress. Its visible joint-fund payer and authorization match cached official candidate H6TX21350 / REP / TX-21, principal C00921247 / CAHILL FOR CONGRESS / P / H / REP and actual payer C00921684 / CAHILL VICTORY FUND / J / N. The payer's FEC party and candidate fields are blank; Republican alignment derives from the exact candidate and explicit campaign authorization, not invented FEC payer affiliation. The principal committee is not substituted for the actual payer. No new semantic portrayal judgment is supplied.",
+      "extraction_caveat": "16 substantive literal words from four consecutive policy bullets, visually checked against the full embedded original. Apple Vision misreads the star icons as letters or digits; the selected exact OCR substrings omit those graphic-prefix artifacts without rewriting any substantive word. Other policy bullets, headline, biography, identity, disclaimer and learning prompt are omitted. This is a partial quotation, not a full visible transcription.",
+      "publisher_pdf": {
+        "created": "2026-02-10T12:24:14-06:00",
+        "page": 3,
+        "candidate_name": "CAHILL, JASON",
+        "candidate_quote": "Jason Cahill",
+        "payer_quote": "PAIDFORBY CAHILL VICTORY FUND,A JOINT FUNDRAISING COMMITTEE",
+        "authorization_quote": "AUTHORIZED BY AND COMPOSED OF CAHILL FOR CONGRESS AND SERVICE HONOR FAMILY PAC",
+        "joint_fundraising_payer": {
+          "committee_id": "C00921684",
+          "fec_master_sha256": "6249342f373dee195dc638a307c88c45da14cec2e760e4ff212035cdde76df60"
+        },
+        "embedded_image": {
+          "object_path": "/Im13",
+          "name": "Im13.jpg",
+          "sha256": "bd720c7ed5b04e55d165b0e8017ed1126918c34ba08c158a8b02d9f03c8b999d",
+          "stream_sha256": "2be085f1bf4774cbdc374add53ca21740cead32689448f8db9a935a17c0f034e",
+          "ocr_text_sha256": "e2d9d8e8944b31fac8b18482fd4fa1fc8306606eb35a8a6b12bd1d53fda2fe86",
+          "ocr_sha256": "fc77ebe9f6cbd3c6db2ddfa238c4b7922f86790fdda778c57904a50f1c92c5ed",
+          "whole_creative_visually_reviewed": true
+        },
+        "cover_required_quotes": ["OFFICIAL REPUBLICAN PRIMARY VOTERS’ GUIDE", "2026", "BEXAR COUNTY EDITION"],
+        "date_uncertainty": "February 10 is the original PDF creation date, not verified publication, first release or paid delivery. The cover independently establishes the 2026 Republican primary, February 17-27 early voting and March 3 election. Neither the upload path nor election date supplies a publication date. No delivery dates are inferred."
+      },
+      "pdf": {
+        "page_count": 8,
+        "page_text_sha256": [
+          "daa4a5e09c97b199347c429b57cad15a047b6f82469eb199be0f3b8a09face84",
+          "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+          "ed2bb6f6233d191ba43c0df26a1c6633e2dbc8a8e4eee71051667c408239afab",
+          "03e48207e29a94200f3be9035c46fd1dab0097335d6816ec2dd5f4dd33fe8eb4",
+          "547269c99150c742197046f58d892f5f3af1fa4848654d98d82982f03e8fcc12",
+          "36be07bd4b80e0534e3984f3ea883c13c01fd21c2d805bf374c1e9f56fb9d1b6",
+          "10159baf262b43a92d95db59dae1f72c645127301661e0a3ce4e38b295a97c58",
+          "6aa57bbfea23c49382f97a8c0ab4702339db6ef9c801a0cb83748e636824d651"
+        ]
+      }
     }
   ]
 }

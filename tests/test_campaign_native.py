@@ -290,6 +290,217 @@ def test_publisher_pdf_created_after_cutoff_is_not_requested(
 
 
 @pytest.fixture
+def embedded_pdf_review(tmp_path, monkeypatch, publisher_pdf_review):
+    from PIL import Image
+    from pypdf.generic import EncodedStreamObject, NumberObject
+
+    from political_ads.campaign_native import Client
+    from political_ads.registry import COMMITTEE_FIELDS
+    from political_ads.schema import digest
+
+    review = publisher_pdf_review
+    body, _ = Client(tmp_path / "data/raw/http", offline=True).get(review["publisher_url"])
+    writer = PdfWriter(PdfReader(io.BytesIO(body)))
+    stream = DecodedStreamObject()
+    stream.set_data(b"")
+    writer.pages[1][NameObject("/Contents")] = stream
+    jpeg = io.BytesIO()
+    Image.new("RGB", (32, 32), "white").save(jpeg, format="JPEG")
+    image = EncodedStreamObject()
+    image._data = jpeg.getvalue()
+    image.update(
+        {
+            NameObject("/Type"): NameObject("/XObject"),
+            NameObject("/Subtype"): NameObject("/Image"),
+            NameObject("/Width"): NumberObject(32),
+            NameObject("/Height"): NumberObject(32),
+            NameObject("/ColorSpace"): NameObject("/DeviceRGB"),
+            NameObject("/BitsPerComponent"): NumberObject(8),
+            NameObject("/Filter"): NameObject("/DCTDecode"),
+        }
+    )
+    writer.pages[1]["/Resources"][NameObject("/XObject")] = DictionaryObject(
+        {NameObject("/Im1"): writer._add_object(image)}
+    )
+    output = io.BytesIO()
+    writer.write(output)
+    body = output.getvalue()
+    reader = PdfReader(io.BytesIO(body))
+    extracted = reader.pages[1].images["/Im1"]
+    passages = [
+        "We will protect families and deliver results.",
+        "We will keep our communities safe and fight for affordable health care.",
+    ]
+    payer = "PAID FOR BY Example Victory Fund, A JOINT FUNDRAISING COMMITTEE"
+    authorization = "AUTHORIZED BY AND COMPOSED OF EXAMPLE FOR CONGRESS AND ANOTHER PAC"
+    texts = ["Candidate Example", payer, authorization] + [f"X {p}" for p in passages]
+    ocr = {
+        "engine": "Fixture OCR",
+        "coordinate_system": "normalized x,y,width,height; origin at image bottom-left",
+        "image_frame_count": 1,
+        "lines": [
+            {"text": text, "confidence": 1, "bounds": [0.1, 0.9 - i * 0.1, 0.8, 0.05]}
+            for i, text in enumerate(texts)
+        ],
+    }
+    candidate = read_json(tmp_path / "data/site/candidates.json", {})["candidates"][0]
+    rows = [
+        {
+            "committee_id": "C00999999",
+            "name": "EXAMPLE VICTORY FUND",
+            "designation": "J",
+            "type": "N",
+        },
+        {
+            "committee_id": candidate["principal_committee"],
+            "name": "EXAMPLE FOR CONGRESS",
+            "designation": "P",
+            "type": "H",
+            "party": candidate["party"],
+            "candidate_id": candidate["candidate_id"],
+        },
+    ]
+    master = io.BytesIO()
+    with zipfile.ZipFile(master, "w") as archive:
+        archive.writestr(
+            "cm.txt",
+            "\n".join("|".join(row.get(field, "") for field in COMMITTEE_FIELDS) for row in rows),
+        )
+    master_body = master.getvalue()
+    review.update(
+        sponsor="Example Victory Fund",
+        sponsor_type="outside_group",
+        passages=passages,
+        required_quotes=passages,
+        media_sha256=hashlib.sha256(body).hexdigest(),
+    )
+    review["pdf"]["page_text_sha256"] = [
+        hashlib.sha256((page.extract_text() or "").encode()).hexdigest() for page in reader.pages
+    ]
+    review["publisher_pdf"].update(
+        payer_quote=payer,
+        authorization_quote=authorization,
+        joint_fundraising_payer={
+            "committee_id": rows[0]["committee_id"],
+            "fec_master_sha256": hashlib.sha256(master_body).hexdigest(),
+        },
+        embedded_image={
+            "object_path": "/Im1",
+            "name": extracted.name,
+            "sha256": hashlib.sha256(extracted.data).hexdigest(),
+            "stream_sha256": hashlib.sha256(image._data).hexdigest(),
+            "ocr_text_sha256": digest(" ".join(texts)),
+            "ocr_sha256": digest(json.dumps(ocr, sort_keys=True)),
+            "whole_creative_visually_reviewed": True,
+        },
+    )
+    monkeypatch.setattr(
+        "political_ads.campaign_native.Client.get",
+        lambda self, url, **kwargs: (master_body if url.endswith("/cm26.zip") else body, {}),
+    )
+    monkeypatch.setattr(
+        "political_ads.campaign_native.recognize_image",
+        lambda directory, data: (hashlib.sha256(data).hexdigest(), ocr),
+    )
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    return review
+
+
+def test_embedded_pdf_preserves_actual_joint_fund_payer_and_literal_line_bounds(
+    tmp_path, embedded_pdf_review
+):
+    review = embedded_pdf_review
+    result = collect_campaign_native(tmp_path, "2026-10-27", offline=True)
+    ad = result["ads"][0]
+    assert ad["sponsor"] == "Example Victory Fund" and ad["sponsor_type"] == "outside_group"
+    assert ad["text"] == "\n".join(review["passages"])
+    assert all(segment["kind"] == "image_ocr" for segment in ad["segments"])
+    assert all(len(segment["image_line_bounds"]) == 1 for segment in ad["segments"])
+    assert ad["segments"][0]["image_object_path"] == "/Im1"
+    assert (
+        ad["segments"][0]["ocr_text_sha256"]
+        == review["publisher_pdf"]["embedded_image"]["ocr_text_sha256"]
+    )
+    assert "not payer identity" in ad["attribution_basis"]
+    assert "joint_fundraising_payer_not_candidate_principal_committee" in ad["quality_flags"]
+    assert "text_layer" not in ad["language_basis"]
+    assert ad["published"] == "2026-10-07" and ad["delivery_start"] is None
+    assert collect_campaign_native(tmp_path, "2026-10-27", offline=True) == result
+
+
+@pytest.mark.parametrize(
+    "change",
+    [
+        "page",
+        "object_path",
+        "name",
+        "sha256",
+        "stream_sha256",
+        "ocr_text_sha256",
+        "ocr_sha256",
+        "ocr_bounds",
+        "ocr_engine",
+        "whole_creative_visually_reviewed",
+        "committee_id",
+        "fec_master_sha256",
+        "authorization",
+        "sponsor_type",
+        "payer",
+        "literal",
+        "order",
+        "short",
+    ],
+)
+def test_embedded_pdf_rejects_unbound_image_ocr_and_joint_fund_authorization(
+    tmp_path, embedded_pdf_review, change
+):
+    review = embedded_pdf_review
+    printed = review["publisher_pdf"]
+    if change == "page":
+        printed["page"] = 1
+        review["post_url"] = review["publisher_url"] + "#page=1"
+    elif change in printed["embedded_image"]:
+        printed["embedded_image"][change] = (
+            False if change == "whole_creative_visually_reviewed" else "changed"
+        )
+    elif change in printed["joint_fundraising_payer"]:
+        printed["joint_fundraising_payer"][change] = "changed"
+    elif change in {"ocr_bounds", "ocr_engine"}:
+        from political_ads.campaign_native import recognize_image
+
+        _, ocr = recognize_image(tmp_path, b"fixture")
+        if change == "ocr_bounds":
+            ocr["lines"][3]["bounds"] = [0, 0, 1, 1]
+        else:
+            ocr["engine"] = "Changed OCR engine"
+    elif change == "authorization":
+        printed["authorization_quote"] = "AUTHORIZED BY ANOTHER CANDIDATE"
+    elif change == "sponsor_type":
+        review["sponsor_type"] = "candidate"
+    elif change == "payer":
+        printed["payer_quote"] = "Example Victory Fund"
+    elif change == "literal":
+        review["passages"][0] = review["passages"][0].replace("protect", "harm")
+    elif change == "order":
+        review["passages"].reverse()
+    else:
+        review["passages"] = [review["passages"][0]]
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    result = collect_campaign_native(tmp_path, "2026-10-27", offline=True)
+    assert result["ads"] == []
+    assert result["attempts"][review["id"]]["state"] == "error"
+
+
+def test_print_outside_group_without_joint_fund_authorization_is_not_admitted(
+    tmp_path, publisher_pdf_review
+):
+    review = publisher_pdf_review
+    review["sponsor_type"] = "outside_group"
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    assert collect_campaign_native(tmp_path, "2026-10-27", offline=True)["ads"] == []
+
+
+@pytest.fixture
 def native_review(tmp_path, monkeypatch):
     review = {
         "id": "example-native-123",

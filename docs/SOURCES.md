@@ -10,7 +10,96 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
-## Texas primary-guide print recovery and additional archives
+## Texas raster-only House print recovery
+
+Snapshot **5fe74d1a32a2b2f9956e987dd6840d2b2bfb7182a9bfff682b8bb029b0170f80**
+contains **1,922 acquired / 1,883 English** ads. Alignment is **D 1,226 /
+R 618 / other 31 / unknown 8**; exact English messages are **D 1,204 /
+R 581 / other 31 / unknown 8**. English House coverage is **D 698 /
+R 240 / other 19 / unknown 3**; outside Snap it is **D 222 / R 239**.
+Snap counts are unchanged. These are source-limited text/creative counts,
+not national ad volume, spending, paid delivery or matched-party estimates.
+
+The publisher's actual Bexar primary-guide PDF,
+`https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Bexar-WEB.pdf`,
+has SHA-256
+`c1f3c82f2a6983c9ea8b486871e1712521c9113f6645d943155ba27929b241cd`.
+Complete page 3 and its unmasked embedded **/Im13** JPEG were visually
+inspected. This is a genuine Jason Cahill federal paid creative whose
+words are absent from the PDF text layer, not a portrait, background
+image or publisher endorsement. Four consecutive substantive policy
+bullets supply **16 selected literal words**. OCR's misread star-icon
+prefixes are excluded; substantive wording is not repaired. This is
+one partial excerpt, not a complete transcription.
+
+Exact candidate **H6TX21350 / REP / TX-21** links to principal
+**C00921247 / CAHILL FOR CONGRESS / P / H / REP**. The actual visible
+payer is **C00921684 / CAHILL VICTORY FUND / J / N**, a registered
+joint fundraising committee with blank party and candidate fields.
+The creative expressly authorizes Cahill for Congress and names
+Service Honor Family PAC. Candidate/principal evidence supports the
+Republican electoral alignment; it does not invent a party field on
+the joint fund or substitute the principal for the actual payer.
+The cached official 2026 committee master is pinned to SHA-256
+`6249342f373dee195dc638a307c88c45da14cec2e760e4ff212035cdde76df60`.
+
+The collector pins the original PDF, every ordered page text hash,
+the selected embedded object and raw stream, extracted JPEG, normalized
+OCR text, and full OCR JSON including coordinates and engine. The raw
+stream SHA-256 is
+`2be085f1bf4774cbdc374add53ca21740cead32689448f8db9a935a17c0f034e`;
+the extracted JPEG SHA-256 is
+`bd720c7ed5b04e55d165b0e8017ed1126918c34ba08c158a8b02d9f03c8b999d`;
+the complete OCR JSON SHA-256 is
+`fc77ebe9f6cbd3c6db2ddfa238c4b7922f86790fdda778c57904a50f1c92c5ed`.
+The PDF creation timestamp is **February 10, 2026, 12:24:14 -06:00**,
+recorded as `publisher_pdf_creation_date`, not publication or delivery.
+Cover primary context and literal campaign authorization remain required.
+Unbound raster images, masked objects, changed coordinates/engine/text,
+unregistered payers and missing authorization fail closed.
+
+All **1,921 preceding acquired / 1,882 preceding English** objects
+remain identical. Fifteen protected input hashes are unchanged;
+the other two ledgers preserve every preceding review/media object.
+The old 35 native reviews are retained, now **36**; **73** release
+reviews, **353** backlog leads and semantic annotations are unchanged.
+The new excerpt remains **semantically unreviewed**. Isolated replay
+forbids both network connections and OCR execution and reproduces
+the saved admission using two original response bodies and pinned OCR.
+Complete JSON/gzip/CSV, **1,922 Parquet rows** and all **11 PNG sets**
+reconcile; the same-ad audit passes 20 groups and 10 chart rows.
+Backend lint/format and **480 tests**, frontend lint/**17 tests**/build
+pass. Seven browser cases passed during the mirror rebuild; the eighth
+read truncated JSON while that copy was active. After confirming stable
+full-download parity, the focused eighth case passed. No product change
+was made for that concurrent-read failure.
+
+**Expanded original inspection:** four additional exposed guides were
+retained and all **28 pages** rendered, not just searched as text.
+Jefferson/Liberty page 6 repeats the admitted Harris Cain creative,
+so it adds no record. Bexar also contains Senate material; Fort Bend
+contains editorial/state material and a Senate ad, not another House
+ad. The HCRP general guide's ballot names are not substantive ad copy.
+Harris page 4's appointment/endorsement-heavy Steinmann federal creative
+is separate from Scott Bowen's state ad: their words are not combined
+or padded to reach eligibility. The publisher's exposed October 6
+issue page has no PDF; its two original images are editorial judicial
+and crime-report illustrations, not ads. Cleveland.com's actually
+requested NRCC/Kaptur report returned **HTTP 403**: the provider is
+paused, with no retry or alternate-copy retrieval.
+
+The preceding two-print-ad commit
+**e2b83c7ef5fa6c47cdba2cd713f8c525e0e46e83** passed exact CI
+**41257783230**, including all job steps. Acquisition remains active.
+No website deployment, edition publication or host restoration occurred;
+the saved October 30 cutoff and all provider holds remain unchanged.
+Retained raw caches provide local replay, not a claim of redistributable
+original-media archives or fresh network availability.
+The targeted offline NRCC check lacked cached script-feed page 11 and
+records an error with **69 retained ads**, not a fresh successful scan
+or zero acquisitions in that source's preserved partition.
+
+## Earlier Texas primary-guide print recovery and additional archives
 
 Snapshot **22af186c464d926b05e687fa513bc2517885308d4ccf74b6a1b54a8f26163f54**
 contains **1,921 acquired / 1,882 English** ads. Alignment is **D 1,226 /

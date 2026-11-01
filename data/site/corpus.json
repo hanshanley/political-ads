@@ -50336,18 +50336,16 @@
       "url": "https://newjerseyglobe.com"
     },
     {
-      "ads_with_text": 69,
-      "checked": "2026-10-30",
-      "discovery_complete": true,
-      "excluded_posts": 30,
-      "languages": {
-        "en": 69
-      },
+      "ads_with_text": 0,
+      "checked": "2026-10-31",
+      "error": "FileNotFoundError: No cached response for https://www.nrcc.org/?s=script&feed=rss2&year=2026&paged=11",
+      "excluded_posts": 0,
       "last_success": "2026-10-30",
-      "posts_scanned": 97,
+      "posts_scanned": 0,
+      "retained_ads": 69,
       "scope": "Official ad-release text; not all paid placements",
       "source": "nrcc",
-      "state": "ok",
+      "state": "error",
       "url": "https://www.nrcc.org"
     },
     {

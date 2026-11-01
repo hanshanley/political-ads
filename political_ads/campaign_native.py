@@ -19,9 +19,126 @@ from political_ads.archives import archive_member
 from political_ads.cli import read_json, write_json
 from political_ads.http import Client
 from political_ads.images import image_segments, recognize_image
+from political_ads.registry import fec_table
 from political_ads.schema import END, START, Ad, digest
 from political_ads.sources import language_of
 from political_ads.video import recognize_video, video_segments
+
+
+def _print_payer(client: Client, candidate: dict, review: dict) -> None:
+    printed = review["publisher_pdf"]
+    joint = printed.get("joint_fundraising_payer")
+    if not joint:
+        if review.get("sponsor_type", "candidate") != "candidate":
+            raise ValueError("Non-candidate print payers require exact authorization evidence")
+        return
+    master = Client(client.cache, offline=True)
+    body, _ = master.get("https://www.fec.gov/files/bulk-downloads/2026/cm26.zip", retry=False)
+    if hashlib.sha256(body).hexdigest() != joint["fec_master_sha256"]:
+        raise ValueError("Reviewed FEC committee master changed")
+    committees = {row["committee_id"]: row for row in fec_table(master, "cm")}
+    payer = committees[joint["committee_id"]]
+    principal = committees[candidate["principal_committee"]]
+    authorization = " ".join(printed["authorization_quote"].split()).casefold()
+    if (
+        review.get("sponsor_type") != "outside_group"
+        or payer["designation"] != "J"
+        or payer["type"] != "N"
+        or payer["name"].casefold() != review["sponsor"].casefold()
+        or principal["designation"] != "P"
+        or principal["type"] != candidate["office"]
+        or principal["candidate_id"] != candidate["candidate_id"]
+        or principal["party"] != candidate["party"]
+        or not "".join(printed["payer_quote"].split()).casefold().startswith("paidforby")
+        or "joint fundraising committee" not in " ".join(printed["payer_quote"].split()).casefold()
+        or f"authorized by and composed of {principal['name'].casefold()}" not in authorization
+    ):
+        raise ValueError("Joint-fund payer requires exact FEC identity and campaign authorization")
+
+
+def _print_segments(
+    root: Path, reader: PdfReader, pages: list[str], review: dict, media_hash: str
+) -> tuple[list[dict], dict]:
+    printed = review["publisher_pdf"]
+    page = pages[printed["page"] - 1]
+    embedded = printed.get("embedded_image")
+    lines, engine = [], {}
+    if embedded:
+        if (
+            not isinstance(embedded["object_path"], str)
+            or not embedded["object_path"].startswith("/")
+            or embedded.get("whole_creative_visually_reviewed") is not True
+        ):
+            raise ValueError("Raster print requires an exact reviewed whole-creative image")
+        image = reader.pages[printed["page"] - 1].images[embedded["object_path"]]
+        stream = image.indirect_reference.get_object()
+        if (
+            image.name != embedded["name"]
+            or "/SMask" in stream
+            or "/Mask" in stream
+            or hashlib.sha256(stream._data).hexdigest() != embedded["stream_sha256"]
+            or hashlib.sha256(image.data).hexdigest() != embedded["sha256"]
+        ):
+            raise ValueError("Original page-local unmasked image bytes changed")
+        image_hash, ocr = recognize_image(root / "data/raw/http/publisher-pdf-images", image.data)
+        lines = image_segments(ocr, image_hash, review["post_url"])
+        page = " ".join("\n".join(line["text"] for line in lines).split())
+        if (
+            ocr.get("image_frame_count") != 1
+            or digest(page) != embedded["ocr_text_sha256"]
+            or digest(json.dumps(ocr, sort_keys=True)) != embedded["ocr_sha256"]
+        ):
+            raise ValueError("Pinned whole-creative OCR changed; a new review is required")
+        engine = {"pdf_image_engine": {k: v for k, v in ocr.items() if k != "lines"}}
+    normalized = " ".join(page.split()).casefold()
+    quotes = [printed["payer_quote"], printed["candidate_quote"]]
+    if printed.get("joint_fundraising_payer"):
+        quotes.append(printed["authorization_quote"])
+    passages = review["passages"]
+    if (
+        not printed["cover_required_quotes"]
+        or not all(q in pages[0] for q in printed["cover_required_quotes"])
+        or not all(q and " ".join(q.split()).casefold() in normalized for q in quotes)
+        or not passages
+        or not all(p.strip() and p in page for p in passages)
+        or not 15 <= len(" ".join(passages).split()) <= 25
+    ):
+        raise ValueError("Selected print words require page-local paid-ad evidence")
+    ranges, offset = [], 0
+    for line in lines:
+        value = " ".join(line["text"].split())
+        ranges.append((offset, offset + len(value), line["image_bounds"]))
+        offset += len(value) + 1
+    segments, position = [], 0
+    for passage in passages:
+        segment = {
+            "text": passage,
+            "kind": "publisher_pdf_text_layer",
+            "pdf_page": printed["page"],
+            "original_sha256": media_hash,
+            "source_url": review["post_url"],
+            "completeness": "partial_quotation",
+        }
+        if embedded:
+            start = page.find(passage, position)
+            if start < 0:
+                raise ValueError("Raster print fragments must retain original OCR source order")
+            position = start + len(passage)
+            segment.update(
+                kind="image_ocr",
+                image_hash=embedded["sha256"],
+                image_object_path=embedded["object_path"],
+                ocr_text_sha256=embedded["ocr_text_sha256"],
+                ocr_sha256=embedded["ocr_sha256"],
+                image_line_bounds=[
+                    bounds for left, right, bounds in ranges if left < position and right > start
+                ],
+                extraction_engine=ocr["engine"],
+                coordinate_system=ocr["coordinate_system"],
+                voice="unreviewed",
+            )
+        segments.append(segment)
+    return segments, engine
 
 
 def collect_campaign_native(root: Path, until: str, offline: bool = False) -> dict:
@@ -132,11 +249,11 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     or printed["candidate_quote"].casefold() != candidate_quote.casefold()
                     or " ".join(review["sponsor"].split()).casefold()
                     not in " ".join(printed["payer_quote"].split()).casefold()
-                    or review.get("sponsor_type", "candidate") != "candidate"
                     or not printed["date_uncertainty"]
                     or review.get("completeness") != "partial_quotation"
                 ):
                     raise ValueError("Print ad requires exact original, page, candidate and date")
+                _print_payer(client, candidate, review)
             if archive:
                 if (
                     gallery
@@ -306,35 +423,12 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                         "PDF creation metadata or complete ordered text layers changed"
                     )
                 media_hash = review["media_sha256"]
+                engine = {"pdf_engine": {"name": "pypdf", "version": pdf_version}}
                 if printed:
-                    page = pages[printed["page"] - 1]
-                    normalized = " ".join(page.split()).casefold()
-                    passages = review["passages"]
-                    if (
-                        not printed["cover_required_quotes"]
-                        or not all(q in pages[0] for q in printed["cover_required_quotes"])
-                        or not printed["payer_quote"]
-                        or not printed["candidate_quote"]
-                        or not all(
-                            " ".join(q.split()).casefold() in normalized
-                            for q in (printed["payer_quote"], printed["candidate_quote"])
-                        )
-                        or not passages
-                        or not all(p.strip() and p in page for p in passages)
-                        or not 15 <= len(" ".join(passages).split()) <= 25
-                    ):
-                        raise ValueError("Selected print words require page-local paid-ad evidence")
-                    segments = [
-                        {
-                            "text": passage,
-                            "kind": "publisher_pdf_text_layer",
-                            "pdf_page": printed["page"],
-                            "original_sha256": media_hash,
-                            "source_url": review["post_url"],
-                            "completeness": "partial_quotation",
-                        }
-                        for passage in passages
-                    ]
+                    segments, image_engine = _print_segments(
+                        root, reader, pages, review, media_hash
+                    )
+                    engine.update(image_engine)
                 else:
                     segments = [
                         {
@@ -348,7 +442,6 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                         if page.strip()
                     ]
                 language = language_of("\n".join(segment["text"] for segment in segments))
-                engine = {"pdf_engine": {"name": "pypdf", "version": pdf_version}}
             elif is_image:
                 media_hash, ocr = recognize_image(root / "data/media/campaign-images", media)
                 segments = image_segments(ocr, media_hash, video_url)
@@ -420,6 +513,16 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     quality.extend(
                         ["selected_pdf_words_visually_reviewed", "partial_ad_text_not_full_script"]
                     )
+                    if printed.get("embedded_image"):
+                        quality = [
+                            "printed_ad_eligibility_and_payer_visually_reviewed",
+                            "selected_embedded_pdf_image_words_visually_reviewed",
+                            "image_ocr_may_misrecognize_words",
+                            "partial_ad_text_not_full_script",
+                            "publisher_pdf_creation_date_not_verified_publication_or_paid_delivery",
+                        ]
+                    if printed.get("joint_fundraising_payer"):
+                        quality.append("joint_fundraising_payer_not_candidate_principal_committee")
             quality.extend(review.get("quality_flags", []))
             if published is None:
                 leads[identity] = {
@@ -480,7 +583,9 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     else f"{candidate['state']}-Senate",
                     language=language,
                     language_basis=(
-                        "Publisher PDF text layer plus seeded language detection"
+                        "Local embedded-image OCR plus seeded language detection"
+                        if printed and printed.get("embedded_image")
+                        else "Publisher PDF text layer plus seeded language detection"
                         if is_pdf
                         else "Local English OCR plus seeded language detection"
                         if is_image
@@ -498,7 +603,14 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                         )
                         + f"FEC {candidate['candidate_id']}, {candidate['party']}, principal "
                         f"committee {candidate['principal_committee']}. "
-                        f"Primary publisher: {review['publisher_url']}"
+                        + (
+                            f"Actual payer {printed['joint_fundraising_payer']['committee_id']}, "
+                            "registered joint fundraising committee; candidate principal "
+                            "committee establishes authorization, not payer identity. "
+                            if printed and printed.get("joint_fundraising_payer")
+                            else ""
+                        )
+                        + f"Primary publisher: {review['publisher_url']}"
                     ),
                     quality_flags=quality,
                 ).to_dict()
