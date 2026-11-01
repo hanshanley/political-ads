@@ -6338,20 +6338,20 @@
   {
     "ad_id": "snap-563503cff1d28e1eb1d0c974",
     "block_id": "snap-563503cff1d28e1eb1d0c974-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for any candidate: \\\"any candidate\\\" is absent from unit 10. Exact source: \\\"NOT AUTHORIZED BY ANY CANDIDATE\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-56398caac19714edcfd507fb",
     "block_id": "snap-56398caac19714edcfd507fb-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Sarah Trone Garriott: \\\"SARAH TRONE GARRIOTT\\\" is absent from unit 1. Exact source: \\\"E'SBETIEP\\\\n- IN A\\\\nUnion\\\\nMY UNION, MY RIGHT, MY VOTE\\\\nAFL-CIO\\\\nAMERIBAE UNIBNI\\\\nSARAH\\\\nTRONE\\\\nGARRIOTT\\\\nWILL FIGHT TO LOWER COSTS\\\\nAND RAISE WAGES.\\\\nVOTE WITH WORKERS\\\\nPAID FOR BY THE AFL-CIO\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5655ec794d1b9786102050ec",
     "block_id": "snap-5655ec794d1b9786102050ec-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 7 for union: \\\"union\\\" is absent from unit 17. Exact source: \\\"MY UNION, MY RIGHT\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-566961708b44736df606c608",
@@ -6363,13 +6363,13 @@
     "ad_id": "snap-566961708b44736df606c608",
     "block_id": "snap-566961708b44736df606c608-claims-002",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-572c52f80c1c9e6ac9b9aa9b",
     "block_id": "snap-572c52f80c1c9e6ac9b9aa9b-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for trawlers: \\\"trawlers\\\" is absent from unit 1. Exact source: \\\"Been fishing on this river for over 30 years, but big out-of-state\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-573b790798197b5e28c7f394",
@@ -6381,7 +6381,7 @@
     "ad_id": "snap-573b790798197b5e28c7f394",
     "block_id": "snap-573b790798197b5e28c7f394-claims-002",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-576786f1a5b9d29a723ccd1a",

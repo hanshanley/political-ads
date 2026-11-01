@@ -3158,16 +3158,16 @@
   "ads": 1792,
   "ads_by_status": {
     "normalized": 356,
-    "not_run": 827,
-    "validation_failed": 609
+    "not_run": 823,
+    "validation_failed": 613
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 384,
-    "not_run": 960,
-    "validation_failed": 672
+    "normalized": 386,
+    "not_run": 954,
+    "validation_failed": 676
   },
-  "claims": 2548,
+  "claims": 2553,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -9394,6 +9394,14 @@
         {
           "claim_id": "snap-561e3496a1dee98fa76cd2c4-claims-001-003",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-566961708b44736df606c608-claims-002-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-566961708b44736df606c608-claims-002-002",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -11215,6 +11223,10 @@
         },
         {
           "claim_id": "snap-54f9736edeb84d9adbbfa3b3-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-566961708b44736df606c608-claims-002-004",
           "target_index": 0
         }
       ],
@@ -13984,6 +13996,14 @@
         {
           "claim_id": "snap-561e3496a1dee98fa76cd2c4-claims-001-005",
           "target_index": 2
+        },
+        {
+          "claim_id": "snap-566961708b44736df606c608-claims-002-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-566961708b44736df606c608-claims-002-005",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -14946,11 +14966,15 @@
         {
           "claim_id": "snap-5628ad6d79065bb99bb1c2b0-claims-001-005",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-566961708b44736df606c608-claims-002-004",
+          "target_index": 1
         }
       ],
       "uncertain": []
     }
   },
-  "targets": 2932,
+  "targets": 2938,
   "version": "local-ad-claims-4"
 }
