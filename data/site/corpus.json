@@ -867,6 +867,175 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "The actual HTTP200 Spectrum News Kentucky article separately reports Gallrein's first ad and individually links its ad anchor to EdGallrein/status/2014003237251146029?s=20, not the Massie original. Both literal quotations occur in one unique paragraph separated by the ad states attribution. They are ad words, not the separate Lance Trover statement or Massie interview. Whole decoded HTML SHA2565b0b8f62a8ed685a3115ffdba2069dfe7bbe00167a8b6b05687a62dbcd1f7b32 binds the unique h1.article-headline and classic-visible publication span. Visible January21,2026 8:20PM EST agrees with NewsArticle publication/modification2026-01-21T20:20:00.000-05:00, Erin Kelly author and actual mainEntityOfPage; January22 UTC is retained as a timezone distinction, not a different first-release claim. Exact official H6KY04171/C00923995, GALLREIN,ED, REP, House, KY-04,2026 and independently cached principal GALLREIN FOR CONGRESS,P/H/REP establish the candidate advertiser's Republican alignment. The article expressly describes the Republican House primary against Republican Massie; do not invent a Democratic target. Trump is quoted ad endorsement context, not the legal payer. Candidate-committee payment, approval, original upload and paid delivery are unverified; publisher news video is not the ad original. Existing recognition and individual X-link support require no alias/parser change. Use the retained report only; no X/media/caption/API/catalog/credential request. Advertised biography/endorsement claims are not independently verified. Acquisition eligibility and literal review are separate from semantic judging, which remains unreviewed. Require distinct normalized text and individual status identity and preserve all preceding evidence.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6KY04171",
+          "district": "04",
+          "name": "GALLREIN, ED",
+          "office": "H",
+          "party": "REP",
+          "state": "KY"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "gallrein-spectrum-20260121-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://x.com/EdGallrein/status/2014003237251146029?s=20"
+      ],
+      "message_id": "9e37cf0fe53bf8a1dcc8ea392240e5f00e80e2e70640bfe5e44b00b6bf45becb",
+      "observed": "2026-10-31",
+      "phase": "primary",
+      "placement": "campaign_release",
+      "published": "2026-01-21",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "KY-04",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6KY04171"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The actual HTTP200 Spectrum News Kentucky article separately reports Gallrein's first ad and individually links its ad anchor to EdGallrein/status/2014003237251146029?s=20, not the Massie original. Both literal quotations occur in one unique paragraph separated by the ad states attribution. They are ad words, not the separate Lance Trover statement or Massie interview. Whole decoded HTML SHA2565b0b8f62a8ed685a3115ffdba2069dfe7bbe00167a8b6b05687a62dbcd1f7b32 binds the unique h1.article-headline and classic-visible publication span. Visible January21,2026 8:20PM EST agrees with NewsArticle publication/modification2026-01-21T20:20:00.000-05:00, Erin Kelly author and actual mainEntityOfPage; January22 UTC is retained as a timezone distinction, not a different first-release claim. Exact official H6KY04171/C00923995, GALLREIN,ED, REP, House, KY-04,2026 and independently cached principal GALLREIN FOR CONGRESS,P/H/REP establish the candidate advertiser's Republican alignment. The article expressly describes the Republican House primary against Republican Massie; do not invent a Democratic target. Trump is quoted ad endorsement context, not the legal payer. Candidate-committee payment, approval, original upload and paid delivery are unverified; publisher news video is not the ad original. Existing recognition and individual X-link support require no alias/parser change. Use the retained report only; no X/media/caption/API/catalog/credential request. Advertised biography/endorsement claims are not independently verified. Acquisition eligibility and literal review are separate from semantic judging, which remains unreviewed. Require distinct normalized text and individual status identity and preserve all preceding evidence.",
+            "candidate_id": "H6KY04171",
+            "completeness": "partial_quotation",
+            "content_sha256": "5b0b8f62a8ed685a3115ffdba2069dfe7bbe00167a8b6b05687a62dbcd1f7b32",
+            "format": "html",
+            "heading_selector": "h1.article-headline",
+            "media_url": "https://x.com/EdGallrein/status/2014003237251146029?s=20",
+            "passages": [
+              "President Trump knows who to trust: Navy SEAL, Army Ranger and fifth-generation Kentucky farmer, Captain Ed Gallrein,",
+              "A true America First patriot."
+            ],
+            "phase": "primary",
+            "publication_date_format": "PUBLISHED %I:%M %p EST %b. %d, %Y",
+            "publication_selector": "span.classic-visible.article-date-publish",
+            "published": "2026-01-21",
+            "publisher_credit": "Spectrum News Kentucky; Erin Kelly, Heated Kentucky primary for Congress takes sharp right turn, January 21, 2026.",
+            "record_id": "20260121",
+            "release_title": "Heated Kentucky primary for Congress takes sharp right turn",
+            "required_context": [
+              "Meanwhile, Gallrein has launched his first ad",
+              "touting his endorsement by President Donald Trump.",
+              "the ad states."
+            ],
+            "retrieval_url": "https://spectrumnews1.com/ky/louisville/news/2026/01/21/gallrein-massie-primary-",
+            "reuse_basis": "Retain only the two explicitly quoted ad passages, seventeen and five words, twenty-two combined, unchanged and in original source order. Preserve the comma before the publisher's attribution and final period; do not add titles, reporting, endorsement context, disclaimers or the Gallrein spokesperson statement. This is selected partial quotation for comparative research with publisher credit, not a complete ad transcript or article reproduction. Publisher rights are reserved; no blanket redistribution license, original-media redistribution or edition-publication authorization is asserted.",
+            "source": "gallrein-spectrum",
+            "source_url": "https://spectrumnews1.com/ky/louisville/news/2026/01/21/gallrein-massie-primary-"
+          },
+          "text": "President Trump knows who to trust: Navy SEAL, Army Ranger and fifth-generation Kentucky farmer, Captain Ed Gallrein,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "A true America First patriot."
+        }
+      ],
+      "source": "gallrein-spectrum",
+      "source_hash": "5b0b8f62a8ed685a3115ffdba2069dfe7bbe00167a8b6b05687a62dbcd1f7b32",
+      "source_record_id": "20260121",
+      "source_url": "https://spectrumnews1.com/ky/louisville/news/2026/01/21/gallrein-massie-primary-",
+      "sponsor": "Ed Gallrein campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "KY",
+      "text": "President Trump knows who to trust: Navy SEAL, Army Ranger and fifth-generation Kentucky farmer, Captain Ed Gallrein,\nA true America First patriot.",
+      "title": "Heated Kentucky primary for Congress takes sharp right turn"
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "The actual HTTP200 Spectrum News Kentucky article explicitly reports Massie's first attack ad and individually links its attack ad anchor to MassieforKY/status/2013929702210298071?s=20. Both selected passages occur in one unique paragraph closed with the ad said, not in the separate Massie interview or Gallrein spokesperson statement. Full decoded HTML SHA2565b0b8f62a8ed685a3115ffdba2069dfe7bbe00167a8b6b05687a62dbcd1f7b32 binds the actual report, unique h1.article-headline, unique classic-visible publication span and individual link. The visible January21,2026 8:20PM EST label agrees with NewsArticle publication/modification2026-01-21T20:20:00.000-05:00; its January22 UTC instant is not a different release date. Author Erin Kelly and mainEntityOfPage independently agree. Exact current official H2KY04121/C00509729, MASSIE,THOMAS H., REP, House, KY-04,2026 and independently cached principal THOMAS MASSIE FOR CONGRESS,P/H/REP bind the Republican candidate advertiser. The report explicitly concerns a House Republican primary and names Republican Gallrein as challenger; no Democratic target or general phase is invented. Candidate-committee payment, authorization, original upload and paid delivery remain unverified; the news video is not the ad original. Allegations remain attributed ad words, not verified facts. Existing candidate recognition and individual X-link support suffice without aliases or parser changes. Use only the retained public report cache; do not request X, media, captions, LinkedIn, a catalog or credentials. Eligibility/literal attribution is not semantic portrayal review; new judgments remain unreviewed. Require a new exact text identity and individual status identity, preserving every previous ad/review and protected input.",
+      "candidate_mentions": [],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "massie-spectrum-20260121-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [
+        "https://x.com/MassieforKY/status/2013929702210298071?s=20"
+      ],
+      "message_id": "e511d4bb346f1cb1ad7f2c7ac4130b6cac33b42db2c6b98f0d17741b4cdd1596",
+      "observed": "2026-10-31",
+      "phase": "primary",
+      "placement": "campaign_release",
+      "published": "2026-01-21",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified"
+      ],
+      "race": "KY-04",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H2KY04121"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The actual HTTP200 Spectrum News Kentucky article explicitly reports Massie's first attack ad and individually links its attack ad anchor to MassieforKY/status/2013929702210298071?s=20. Both selected passages occur in one unique paragraph closed with the ad said, not in the separate Massie interview or Gallrein spokesperson statement. Full decoded HTML SHA2565b0b8f62a8ed685a3115ffdba2069dfe7bbe00167a8b6b05687a62dbcd1f7b32 binds the actual report, unique h1.article-headline, unique classic-visible publication span and individual link. The visible January21,2026 8:20PM EST label agrees with NewsArticle publication/modification2026-01-21T20:20:00.000-05:00; its January22 UTC instant is not a different release date. Author Erin Kelly and mainEntityOfPage independently agree. Exact current official H2KY04121/C00509729, MASSIE,THOMAS H., REP, House, KY-04,2026 and independently cached principal THOMAS MASSIE FOR CONGRESS,P/H/REP bind the Republican candidate advertiser. The report explicitly concerns a House Republican primary and names Republican Gallrein as challenger; no Democratic target or general phase is invented. Candidate-committee payment, authorization, original upload and paid delivery remain unverified; the news video is not the ad original. Allegations remain attributed ad words, not verified facts. Existing candidate recognition and individual X-link support suffice without aliases or parser changes. Use only the retained public report cache; do not request X, media, captions, LinkedIn, a catalog or credentials. Eligibility/literal attribution is not semantic portrayal review; new judgments remain unreviewed. Require a new exact text identity and individual status identity, preserving every previous ad/review and protected input.",
+            "candidate_id": "H2KY04121",
+            "completeness": "partial_quotation",
+            "content_sha256": "5b0b8f62a8ed685a3115ffdba2069dfe7bbe00167a8b6b05687a62dbcd1f7b32",
+            "format": "html",
+            "heading_selector": "h1.article-headline",
+            "media_url": "https://x.com/MassieforKY/status/2013929702210298071?s=20",
+            "passages": [
+              "a chair and executive coach for a company that trains implementing woke DEI programs,",
+              "Woke Eddie Gallrein. He’ll fight for they/them, but never us,"
+            ],
+            "phase": "primary",
+            "publication_date_format": "PUBLISHED %I:%M %p EST %b. %d, %Y",
+            "publication_selector": "span.classic-visible.article-date-publish",
+            "published": "2026-01-21",
+            "publisher_credit": "Spectrum News Kentucky; Erin Kelly, Heated Kentucky primary for Congress takes sharp right turn, January 21, 2026.",
+            "record_id": "20260121",
+            "release_title": "Heated Kentucky primary for Congress takes sharp right turn",
+            "required_context": [
+              "Massie released his first attack ad of the campaign on Wednesday.",
+              "It repeatedly paints Republican challenger Ed Gallrein as",
+              "the ad said."
+            ],
+            "retrieval_url": "https://spectrumnews1.com/ky/louisville/news/2026/01/21/gallrein-massie-primary-",
+            "reuse_basis": "Retain only two literal fragments, fourteen and ten words, twenty-four combined, expressly attributed to this individual campaign ad in the public report. Preserve their order, curly apostrophe and terminal commas. Exclude reporter prose, spokesperson statements, interviews and intervening omitted ad words; do not reconstruct the publisher's ellipsis. This is selected partial quotation for comparative research with source credit, not a full transcript or article reproduction. Publisher rights are reserved; no blanket redistribution license, original-media redistribution or edition-publication authorization is asserted.",
+            "source": "massie-spectrum",
+            "source_url": "https://spectrumnews1.com/ky/louisville/news/2026/01/21/gallrein-massie-primary-"
+          },
+          "text": "a chair and executive coach for a company that trains implementing woke DEI programs,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "Woke Eddie Gallrein. He’ll fight for they/them, but never us,"
+        }
+      ],
+      "source": "massie-spectrum",
+      "source_hash": "5b0b8f62a8ed685a3115ffdba2069dfe7bbe00167a8b6b05687a62dbcd1f7b32",
+      "source_record_id": "20260121",
+      "source_url": "https://spectrumnews1.com/ky/louisville/news/2026/01/21/gallrein-massie-primary-",
+      "sponsor": "Thomas Massie campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "KY",
+      "text": "a chair and executive coach for a company that trains implementing woke DEI programs,\nWoke Eddie Gallrein. He’ll fight for they/them, but never us,",
+      "title": "Heated Kentucky primary for Congress takes sharp right turn"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Official NRSC release at https://www.nrsc.org/press-releases/john-sununu-new-hampshire-first-2026-01-22/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
       "date_basis": "release_date",
@@ -49776,6 +49945,22 @@
       "url": "https://americanjournalnews.com"
     },
     {
+      "ads_with_text": 1,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "gallrein-spectrum",
+      "state": "partial",
+      "url": "https://spectrumnews1.com"
+    },
+    {
       "ads_with_text": 2,
       "checked": "2026-10-31",
       "discovery_complete": false,
@@ -50176,6 +50361,22 @@
       "source": "marshall",
       "state": "partial",
       "url": "https://www.kansansformarshall.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "massie-spectrum",
+      "state": "partial",
+      "url": "https://spectrumnews1.com"
     },
     {
       "ads_with_text": 4,

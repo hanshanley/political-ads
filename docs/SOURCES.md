@@ -10,6 +10,102 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Kentucky campaign primary-ad quotations
+
+Snapshot **a55f52acbb5b8e5832b7df72731a2e1a519de757b0ff599f56ab078b1918dff5**
+contains **1,924 acquired / 1,885 English** records. English alignment is
+**D 1,226 / R 620 / other 31 / unknown 8**; exact English messages are
+**D 1,204 / R 583 / other 31 / unknown 8**. English House coverage is
+**D 698 / R 242 / other 19 / unknown 3**, including non-Snap House
+**D 222 / R 241**. Snap and all previous Democratic evidence are unchanged.
+These remain source-limited observations, not national party advertising
+volume or representative strategy estimates.
+
+Erin Kelly's actual Spectrum News Kentucky report,
+`https://spectrumnews1.com/ky/louisville/news/2026/01/21/gallrein-massie-primary-`,
+explicitly quotes two separate campaign ads. Its full decoded HTML is
+pinned to SHA-256
+`5b0b8f62a8ed685a3115ffdba2069dfe7bbe00167a8b6b05687a62dbcd1f7b32`.
+The reviewed `h1.article-headline` and
+`span.classic-visible.article-date-publish` each match exactly one element.
+The latter reads **January 21, 2026, 8:20 PM EST** and is parsed using
+`PUBLISHED %I:%M %p EST %b. %d, %Y`. The article's NewsArticle author,
+mainEntityOfPage and publication/modification
+`2026-01-21T20:20:00.000-05:00` independently agree. The corresponding
+January 22 UTC instant is not silently substituted for the local report
+date, a verified original-upload date or first paid delivery.
+
+**Thomas Massie:** two ordered fragments from one uniquely identified
+ad-speech paragraph supply **24 literal words**, preserving the curly
+apostrophe and terminal commas. Omitted intervening ad words and the
+publisher's ellipsis are not reconstructed. The actual `attack ad` anchor
+links **MassieforKY/status/2013929702210298071?s=20**. Exact official
+**H2KY04121 / C00509729 / THOMAS MASSIE FOR CONGRESS / P / H / REP**
+binds the advertiser to **KY-04**.
+
+**Ed Gallrein:** two explicitly attributed quotations in another unique
+paragraph supply **22 literal words**, preserving the attribution comma
+and final period. Its separate `ad` anchor links
+**EdGallrein/status/2014003237251146029?s=20**. Exact official
+**H6KY04171 / C00923995 / GALLREIN FOR CONGRESS / P / H / REP** binds
+this advertiser to **KY-04**. Both principals were independently checked
+in the retained official 2026 committee master, SHA-256
+`6249342f373dee195dc638a307c88c45da14cec2e760e4ff212035cdde76df60`.
+
+The article explicitly describes a Republican House primary; both
+candidates are Republican, not an invented Democratic opponent.
+Spokesperson statements, interviews, reporter prose and linked 2025
+stories are excluded. The news video is not either ad original.
+Committee payment, approval, original upload and paid delivery remain
+unverified. Selected claims are attributed speech, not verified facts.
+Each ad has a new exact-text identity and individual status identity.
+Both records are **partial quotations and semantically unreviewed**.
+Publisher rights are reserved; selected credited ad fragments do not
+assert a blanket license to redistribute the article or original media.
+Existing exact-name and individual-link support suffices: no aliases,
+parser changes, X/media/caption/API/catalog requests or dependencies were
+added. The acquisition ledger retains every byte of its preceding
+73-review suffix. The immutable pre-edit baseline preserves all
+1,922 acquired and 1,883 analyzed objects unchanged.
+
+Final verification passes **215 affected Python / 17 frontend unit /
+eight browser tests**, Python/frontend lint, Python formatting,
+typechecking and both builds. Complete JSON/gzip/CSV, all **1,924 Parquet
+rows** and eleven visually inspected PNG copies reconcile. All
+**1,922 prior acquired / 1,883 analyzed objects**, 73 preceding review
+objects and their original raw bytes, seventeen protected inputs and
+all aliases are unchanged. An isolated **socket-forbidden, one-response
+replay** reproduces all **569 written objects/states** from the preceding
+567, including the October 31 observation and unchanged October 30
+eligibility. The independent strategy audit reconciles **20 metric
+groups / ten chart rows**. Research-only refresh and the saved October 30 /
+final November 4 inclusive cutoffs remain distinct. No edition publication
+or website/host restoration is authorized.
+
+**Completed broader print inspections:** the earlier exposed TCR
+August/July/May issue material contains editorial reporting/endorsements,
+not recovered paid House scripts. April's two original images are judicial
+fundraising and a state-representative event, not federal House ad text.
+All **12 pages** of the additionally retained Hamilton County (one),
+Riverside County (nine) and Bexar general (two) guides were individually
+rendered and visually inspected. Slate/office lists, endorsements and
+generic voting slogans supply no qualifying substantive House passage.
+No ad was admitted from these guides, and their PDF retrievals do not
+independently verify that a publisher page exposed those original links.
+PDF metadata is not publication/delivery evidence. Riverside's later
+non-retryable robots denial is a persistent provider pause, not an empty
+archive or permission to use a different retrieval route.
+
+**South Carolina discovery remains uncounted:** the previously retained
+June 11 Ballotpedia News report explicitly quotes McCown and Pelbath
+campaign ads, but neither quotation has an individual-original link.
+Following its actual `Learn More` link returned a zero-byte response
+whose retained headers explicitly identify **AWS WAF `challenge`**.
+This is an access challenge, not an empty primary archive. Ballotpedia
+is paused without retries, alternate pages/APIs or challenge bypass;
+independently sourced campaign evidence remains a separate discovery
+route. No metadata, search snippet or unassociated quotation is admitted.
+
 ## Texas raster-only House print recovery
 
 Snapshot **5fe74d1a32a2b2f9956e987dd6840d2b2bfb7182a9bfff682b8bb029b0170f80**
@@ -90,7 +186,10 @@ paused, with no retry or alternate-copy retrieval.
 
 The preceding two-print-ad commit
 **e2b83c7ef5fa6c47cdba2cd713f8c525e0e46e83** passed exact CI
-**41257783230**, including all job steps. Acquisition remains active.
+**41257783230**, including all job steps. The Cahill acquisition commit
+**5395a7224e5d869cb99d53384185cace17a43cb8** also passed exact CI
+**41262685388**; its SHA and all thirteen successful job steps were
+independently verified. Acquisition remains active.
 No website deployment, edition publication or host restoration occurred;
 the saved October 30 cutoff and all provider holds remain unchanged.
 Retained raw caches provide local replay, not a claim of redistributable
