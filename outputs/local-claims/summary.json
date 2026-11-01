@@ -3299,16 +3299,16 @@
   "ads": 1792,
   "ads_by_status": {
     "normalized": 432,
-    "not_run": 556,
-    "validation_failed": 804
+    "not_run": 549,
+    "validation_failed": 811
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 467,
-    "not_run": 632,
-    "validation_failed": 917
+    "normalized": 468,
+    "not_run": 624,
+    "validation_failed": 924
   },
-  "claims": 3004,
+  "claims": 3005,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -5169,6 +5169,10 @@
         },
         {
           "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-016",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-9113f7a979f2da85fc4df8be-claims-002-001",
           "target_index": 0
         }
       ],
@@ -16804,6 +16808,6 @@
       "uncertain": []
     }
   },
-  "targets": 3360,
+  "targets": 3361,
   "version": "local-ad-claims-4"
 }
