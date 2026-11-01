@@ -157,6 +157,17 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "barron-gop-apg-print",
+        "https://marketplace.apg-wi.com",
+        "Barron County Republican Party "
+        "(printed authorization; legal committee identity unverified)",
+        "R",
+        "party",
+        "House",
+        fixed_race="WI-07",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "alfonso-wi7-breitbart",
         "https://www.breitbart.com",
         "Michael Alfonso campaign (publisher-attributed; ad payer unverified)",

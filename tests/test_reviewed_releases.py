@@ -183,6 +183,114 @@ def test_print_ad_rejects_unbound_or_nonliteral_evidence(tmp_path, monkeypatch, 
         reviewed_releases.reviewed_release(Client(), source, review, [candidate], "2026-10-31")
 
 
+def county_party_print_fixture():
+    source, candidate, review, _, media, _ = print_fixture()
+    source = next(s for s in SOURCES if s.id == "barron-gop-apg-print")
+    candidate = candidate | {"candidate_id": "H6WI07223", "name": "ALFONSO, MICHAEL"}
+    url = source.url + "/places/view/105270/barron_county_republican_party.html"
+    image = (
+        "https://static.wehaacdn.com/marketplace-apg--wi-com/"
+        "imgs/media-images/105261/images/105270.jpg"
+    )
+    passages = [
+        "STRONG LEADERSHIP. SAFE COMMUNITIES. COMMON SENSE SOLUTIONS.",
+        "U.S. CONGRESS",
+        "Michael Alfonso (R)",
+        "7th Congressional District",
+        "PAID FOR AND AUTHORIZED BY THE BARRON COUNTY REPUBLICAN PARTY",
+    ]
+    body = (
+        '<h1 class="ad_name">Ads for Barron County Republican Party in Rice Lake, WI</h1>'
+        '<h2 itemprop="title">A campaign advertisement</h2>'
+        '<h2 class="ad_date">Oct 28, 2026. Barron County Republican Party '
+        "Government Ads from Rice Lake Chronotype</h2>"
+        f'<div class="galim"><img src="{image}"></div>'
+    ).encode()
+    ocr = {
+        "engine": "Fixture OCR",
+        "coordinate_system": "normalized image coordinates",
+        "lines": [
+            {"text": passages[0], "confidence": 1, "bounds": [0.1, 0.8, 0.8, 0.05]},
+            {"text": passages[1], "confidence": 1, "bounds": [0.43, 0.57, 0.2, 0.02]},
+            {"text": "STATEWIDE OFFICES", "confidence": 1, "bounds": [0.1, 0.57, 0.2, 0.02]},
+            {"text": passages[2], "confidence": 1, "bounds": [0.46, 0.53, 0.2, 0.02]},
+            {"text": "Tom Tiffany (R)", "confidence": 1, "bounds": [0.1, 0.53, 0.2, 0.02]},
+            {"text": passages[3], "confidence": 1, "bounds": [0.46, 0.51, 0.2, 0.02]},
+            {"text": passages[4], "confidence": 1, "bounds": [0.1, 0.1, 0.8, 0.02]},
+        ],
+    }
+    review = review | {
+        "source": source.id,
+        "record_id": "105270",
+        "source_url": url,
+        "retrieval_url": url,
+        "published": "2026-10-28",
+        "publication_date_format": (
+            "%b %d, %Y. Barron County Republican Party Government Ads from Rice Lake Chronotype"
+        ),
+        "candidate_id": candidate["candidate_id"],
+        "media_url": image,
+        "required_context": ["Barron County Republican Party"],
+        "passages": passages,
+        "content_sha256": digest(body.decode()),
+        "printed_ad_text": {
+            "url": image,
+            "media_sha256": sha256(media).hexdigest(),
+            "ocr_text_sha256": digest(" ".join(line["text"] for line in ocr["lines"])),
+        },
+    }
+    return source, candidate, review, body, media, ocr
+
+
+@pytest.mark.parametrize(
+    "change",
+    [None, "source", "candidate", "office", "column", "selected_scope", "authorization"],
+)
+def test_county_party_print_requires_original_selected_house_column(tmp_path, monkeypatch, change):
+    from dataclasses import replace
+
+    from political_ads import reviewed_releases
+
+    source, candidate, review, body, media, ocr = county_party_print_fixture()
+    if change == "source":
+        source = replace(source, id="another-party-print")
+    elif change == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H6WI07249"
+    elif change == "office":
+        ocr["lines"][1]["text"] = "STATE SENATE"
+    elif change == "column":
+        ocr["lines"][3]["bounds"][0] = 0.1
+    elif change == "selected_scope":
+        review["passages"].remove("Michael Alfonso (R)")
+    elif change == "authorization":
+        ocr["lines"][-1]["text"] = "An unrelated organization's authorization."
+    review["printed_ad_text"]["ocr_text_sha256"] = digest(
+        " ".join(line["text"] for line in ocr["lines"])
+    )
+
+    class Client:
+        cache = tmp_path
+
+        def get(self, url, **kwargs):
+            return (body if url == review["source_url"] else media), {}
+
+    monkeypatch.setattr(
+        reviewed_releases,
+        "recognize_image",
+        lambda *args: (review["printed_ad_text"]["media_sha256"], ocr),
+    )
+    if change:
+        with pytest.raises(ValueError):
+            reviewed_releases.reviewed_release(Client(), source, review, [candidate], "2026-11-01")
+    else:
+        ad = reviewed_releases.reviewed_release(Client(), source, review, [candidate], "2026-11-01")
+        assert ad["text"] == "\n".join(review["passages"])
+        assert "Tom Tiffany" not in ad["text"] and "STATEWIDE" not in ad["text"]
+        assert ad["sponsor_type"] == "party"
+        assert "mixed_federal_nonfederal_print_ad" in ad["quality_flags"]
+        assert ad["segments"][0]["federal_scope_candidate_ids"] == ["H6WI07223"]
+
+
 def broadcast_fixture():
     from political_ads.sources import Source
 

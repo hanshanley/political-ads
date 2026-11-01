@@ -152,9 +152,19 @@ def printed_ad_text(client, content: str, source: Source, review: dict, identiti
     soup = BeautifulSoup(content, "html.parser")
     advertiser = soup.select("h1.ad_name")
     images = soup.select(".galim > img[src]")
+    county_party = (
+        source.id == "barron-gop-apg-print"
+        and source.sponsor_type == "party"
+        and source.fixed_race == "WI-07"
+        and identities[0]["candidate_id"] == "H6WI07223"
+        and publisher.path == "/places/view/105270/barron_county_republican_party.html"
+        and len(advertiser) == 1
+        and advertiser[0].get_text(" ", strip=True)
+        == "Ads for Barron County Republican Party in Rice Lake, WI"
+    )
     if (
         source.url != "https://marketplace.apg-wi.com"
-        or source.sponsor_type != "candidate"
+        or (source.sponsor_type != "candidate" and not county_party)
         or source.alignment != {"DEM": "D", "REP": "R"}.get(identities[0]["party"], "other")
         or publisher.netloc != "marketplace.apg-wi.com"
         or publisher.query
@@ -178,7 +188,10 @@ def printed_ad_text(client, content: str, source: Source, review: dict, identiti
         or len(images) != 1
         or images[0]["src"] != evidence["url"]
         or len(advertiser) != 1
-        or not candidate_mentions(advertiser[0].get_text(" ", strip=True), identities)
+        or (
+            not county_party
+            and not candidate_mentions(advertiser[0].get_text(" ", strip=True), identities)
+        )
     ):
         raise ValueError("Print ad requires its exact individual publisher, advertiser and image")
     media, _ = client.get(evidence["url"], retry=False)
@@ -189,6 +202,24 @@ def printed_ad_text(client, content: str, source: Source, review: dict, identiti
     text = re.sub(r"\s+", " ", "\n".join(line["text"] for line in lines)).strip()
     if image_hash != evidence["media_sha256"] or digest(text) != evidence["ocr_text_sha256"]:
         raise ValueError("Pinned original OCR changed; literal text requires a new review")
+    if county_party:
+        labels = ["U.S. CONGRESS", "Michael Alfonso (R)", "7th Congressional District"]
+        authorization = "PAID FOR AND AUTHORIZED BY THE BARRON COUNTY REPUBLICAN PARTY"
+        scope_lines = [[line for line in lines if line["text"] == label] for label in labels]
+        if (
+            any(len(matches) != 1 for matches in scope_lines)
+            or not all(label in review["passages"] for label in labels + [authorization])
+            or authorization not in text
+        ):
+            raise ValueError(
+                "County-party print excerpt requires original federal endorsement and authorization"
+            )
+        bounds = [matches[0]["image_bounds"] for matches in scope_lines]
+        if not (
+            all(0.4 <= x and x + width <= 0.7 for x, _, width, _ in bounds)
+            and bounds[0][1] > bounds[1][1] > bounds[2][1]
+        ):
+            raise ValueError("Reviewed House identity must remain in the original Congress column")
     offset = 0
     line_ranges = []
     for line in lines:
@@ -306,7 +337,7 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         raise ValueError("Explicit advertiser/ad quotation context is missing")
     if candidate["candidate_id"] not in {
         row["candidate_id"] for row in candidate_mentions(visible, identities)
-    }:
+    } and not (source.id == "barron-gop-apg-print" and review.get("printed_ad_text")):
         raise ValueError("Reviewed candidate is not identified in the publisher's evidence")
     broadcast = review.get("broadcast_evidence")
     printed = review.get("printed_ad_text")
@@ -385,6 +416,14 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
                 "ad_legal_payer_unverified",
             ]
         )
+        if source.id == "barron-gop-apg-print":
+            flags.extend(
+                [
+                    "mixed_federal_nonfederal_print_ad",
+                    "nonfederal_slate_and_ballot_text_excluded",
+                    "printed_party_authorization_visually_reviewed",
+                ]
+            )
     segments = [
         {"text": passage, "kind": "publisher_transcript" if full_script else "publisher_ad_copy"}
         for passage in passages

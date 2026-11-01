@@ -10,6 +10,112 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Barron County Republican Party: federal excerpt from an original mixed-office print ad
+
+APG Wisconsin Marketplace's individual listing
+`https://marketplace.apg-wi.com/places/view/105270/barron_county_republican_party.html`
+supplies **October 28, 2026 / Rice Lake Chronotype**, a unique advertiser
+heading and the title **Protect Our Values and Way of Life.** Decoded
+HTML SHA-256 is
+`4249c1475ec186c84be85f98d17cb4b6396aa2b189092c0a5de652899ed2df18`.
+Its single original image is
+`https://static.wehaacdn.com/marketplace-apg--wi-com/imgs/media-images/105261/images/105270.jpg`,
+**542,499 bytes**, SHA-256
+`99595d7373c17f5a5b7a850098eefb57d7cf62ba65562df268189a6ee2c36cb4`.
+Both actual public responses returned 200. Local Apple Vision OCR
+and visual inspection bind the selected words to that complete original.
+
+The print is a **mixed-office voter-guide advertisement**, not an
+Alfonso-paid or exclusively House advertisement. Its Congress column
+explicitly endorses **Michael Alfonso (R), 7th Congressional District**.
+Frozen **H6WI07223 / C00924902 / ALFONSO, MICHAEL / REP / House /
+WI-07 / 2026** establishes federal identity, not nomination or payment.
+The printed county-party payment/authorization was visually verified;
+no legal committee identity or FEC committee ID is invented.
+November 3 turnout and the recommended Republican ballot slate support
+general-election phase, not verified delivery.
+
+Only **33 whitespace tokens** of unchanged shared Republican messaging,
+the federal endorsement and authorization enter analytical text.
+Exclude every state/county candidate and office, the constitutional
+amendment recommendations, and erroneous logo OCR. Original casing,
+punctuation and recognized stars remain unchanged. The full original
+OCR is pinned by normalized SHA-256
+`c477331cb6ca54da5c4c32cbf07fbfadb5aa8e56220ebc6cb7402877883ae21b`;
+each selected segment retains its contributing original line bounds,
+image URL/hash, extraction engine and coordinate system.
+Completeness stays explicitly partial, with mixed-office and
+nonfederal-exclusion flags; acquisition review is not semantic certification.
+
+The county-party exception is limited to this exact source, individual
+listing, advertiser and frozen federal identity. It requires the unique
+Congress heading, Alfonso name and district, vertically ordered within
+the original Congress column, all present in selected analytical text,
+plus the original party authorization. An ordinary party name, HTML-only
+candidate mention, state-office column or generic turnout is insufficient.
+Existing candidate-print guards remain intact.
+
+Reproduce with `.venv/bin/political-ads collect --source
+barron-gop-apg-print --until 2026-10-30 --offline`, then `parquet --offline`,
+`build --offline`, `validate --offline` and `audit-strategy --offline`.
+Replay requires the two retained public bodies and pinned `.ocr.json`
+under `data/raw/http/printed-ad-images/`; a fresh checkout alone does
+not contain those ignored acquisition caches. Isolated replay forbids
+network connections and OCR-engine execution and reproduces the complete
+new ad object, not merely its text.
+
+This adds `barron-gop-apg-print-105270-0`: **1,929 acquired / 1,890
+English**, **D 1,226 / R 625 / other 31 / unknown 8**. English House
+coverage is **D 698 / R 247 / other 19 / unknown 3**; outside Snap,
+**D 222 / R 246**. All **570** prior text records, **1,928** combined
+records, **1,889** English analysis records, **76** literal-acquisition
+reviews and **18** protected inputs, including the actual candidate-alias
+file, remain unchanged. Text records now total **571**, release reviews
+**77**. New semantic decisions remain unreviewed. Counts are source-limited,
+not national volume or matched-race comparisons. Complete exports,
+figures and both editions remain research-only and unpublished.
+
+Snapshot **a1709f3c7c4aae62ee8b2c817b4588ce70293201b5b3cca21e4cb351a07bd886**
+passes backend lint/format and **516 tests**, including **97** reviewed-release
+regressions, frontend lint/type/build, **17** unit tests and **9** browser tests.
+Complete **1,890-record English** JSON/gzip/CSV copies and **1,929-row Parquet**
+retain the selected text and evidence; all **11 PNG sets** agree across the
+three generated copies. Strategy audit reconciles **20 metric groups / 10 chart
+rows**. Strategy and review-coverage figures were visually checked; the new
+semantic review remains missing rather than being labeled positive automatically.
+
+## Further public discovery: exclusions and unresolved originals
+
+The Baumgartner/Conroy Yahoo report supplies only a nine-word Republican
+mailer quotation, below the substantive-text threshold, and no individual
+original association. Its actual publication metadata is **October 31,
+2026 UTC**, despite an October 30 dateline; it is not backdated to the
+saved October 30 cutoff. The Deseret Moore/Lisonbee report supplies
+eight-word ad fragments; embedded post captions and campaign statements
+are not certified spoken scripts. Both candidates are frozen **UT-02**,
+not a district inferred from ID digits. The Washington State Standard
+Braun/Perez report links a **Democratic** original; Braun's debate responses
+are not Republican ad speech.
+
+Actual Braun and Baumgartner homepages and linked news archives were
+acquired. They expose opposition-ad response links, ordinary campaign
+reporting and a YouTube channel, not newly recovered Republican ad text.
+These links remain discovery leads, not complete campaign coverage.
+The Chamber's eight-House-ad announcement supplies public beneficiary
+metadata, but protected voiceover/original-link material is excluded.
+Seek independently public originals; do not count eight scripts from
+an announcement or use protected sections as a fallback.
+
+CNBC's April 14 NRCC/Begich report is public in its own matching article
+metadata (`premium: false`); generic metered-preview CSS alone is not
+paywall evidence. Nevertheless, its exact original **MTsIFHGkucg** is
+already represented by existing NRCC release records. No duplicate ad,
+source, review or nickname alias is added. The existing reviewed Nick
+Begich alias, rather than approximate name matching, resolves the frozen
+Nicholas III identity. The newly syndicated LePage lead is also already
+represented. Neither these exclusions nor cached discovery responses
+increase acquired counts.
+
 ## Brad Knott: bounded WUNC ad quotation without an original-media link
 
 The actual October 27 WUNC report is retained at
@@ -60,6 +166,11 @@ scope remain distinct. Complete exports, figures and both **unpublished**
 editions are rebuilt; no website, host or Substack publication is authorized.
 Partial quotations remain incomplete evidence, not a census of these
 seven incumbents' creatives or nationally representative party output.
+
+The formatter-only correction **d5aa65b690d1ac51fc4e0af20c44b91e57e11160**
+has independently verified exact-head CI **41275483159**, completed
+successfully. The earlier acquisition head's failed formatter check is
+not substituted for this terminal verification.
 
 ## Carey Coleman: campaign-linked Ohio House original
 
