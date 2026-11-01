@@ -98252,5 +98252,419 @@
     "text_hash": "852e4b204c40c6171b31d4dc91176bbdf79fc503ff64114b8687fa3b4a66e363",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0fd33f8a05119336bd478dd3",
+    "alignment": "R",
+    "block_id": "snap-0fd33f8a05119336bd478dd3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0fd33f8a05119336bd478dd3-claims-001-001",
+    "claim_text": "Senator Sullivan, as a veteran, goes above and beyond the call of duty, supporting every veteran's organization.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 112,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Senator Sullivan, as a veteran, goes above and beyond the call of duty, supporting every veteran's organization.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9f24f36a5d1dbc0c51822771c150d3d27746121136a9bcb4e9ededd16b6337e7?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Senator Sullivan",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Senator Sullivan",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Senator Sullivan, as a veteran, goes above and beyond the call of duty, supporting every veteran's organization.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATON ONENATOWANERICA DRG\nPAIDFOR BYONENATON, ONENATOWANERICA DRG\nPAIDFOR BYONENATOIN ONEMAMONA MERICA ORB.\nPADFOR BYONENATON ONENATONAMERCA DRB\nPADFOR BY OVENATON: DEVATONANERCA. OAG\nPAIDFOR BY OKENATONE DIENATONAMERCA DAB",
+    "text_hash": "c2a3eec893366e8b6b94ead5c59645a130add26807f9a40149ffa0f8bba56af4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0fd33f8a05119336bd478dd3",
+    "alignment": "R",
+    "block_id": "snap-0fd33f8a05119336bd478dd3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0fd33f8a05119336bd478dd3-claims-001-002",
+    "claim_text": "Call and Tell Senator Sullivan",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 143,
+        "kind": "video_ocr",
+        "start": 113,
+        "text": "Call and Tell Senator Sullivan",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9f24f36a5d1dbc0c51822771c150d3d27746121136a9bcb4e9ededd16b6337e7?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 143,
+        "anchor_quote": "Senator Sullivan",
+        "anchor_start": 127,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Senator Sullivan",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Senator Sullivan, as a veteran, goes above and beyond the call of duty, supporting every veteran's organization.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATON ONENATOWANERICA DRG\nPAIDFOR BYONENATON, ONENATOWANERICA DRG\nPAIDFOR BYONENATOIN ONEMAMONA MERICA ORB.\nPADFOR BYONENATON ONENATONAMERCA DRB\nPADFOR BY OVENATON: DEVATONANERCA. OAG\nPAIDFOR BY OKENATONE DIENATONAMERCA DAB",
+    "text_hash": "c2a3eec893366e8b6b94ead5c59645a130add26807f9a40149ffa0f8bba56af4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0fd33f8a05119336bd478dd3",
+    "alignment": "R",
+    "block_id": "snap-0fd33f8a05119336bd478dd3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0fd33f8a05119336bd478dd3-claims-001-003",
+    "claim_text": "To Keep Supporting Alaska's Veterans",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 180,
+        "kind": "video_ocr",
+        "start": 144,
+        "text": "To Keep Supporting Alaska's Veterans",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9f24f36a5d1dbc0c51822771c150d3d27746121136a9bcb4e9ededd16b6337e7?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 180,
+        "anchor_quote": "Alaska's Veterans",
+        "anchor_start": 163,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Alaska's Veterans",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Senator Sullivan, as a veteran, goes above and beyond the call of duty, supporting every veteran's organization.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATON ONENATOWANERICA DRG\nPAIDFOR BYONENATON, ONENATOWANERICA DRG\nPAIDFOR BYONENATOIN ONEMAMONA MERICA ORB.\nPADFOR BYONENATON ONENATONAMERCA DRB\nPADFOR BY OVENATON: DEVATONANERCA. OAG\nPAIDFOR BY OKENATONE DIENATONAMERCA DAB",
+    "text_hash": "c2a3eec893366e8b6b94ead5c59645a130add26807f9a40149ffa0f8bba56af4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0fd33f8a05119336bd478dd3",
+    "alignment": "R",
+    "block_id": "snap-0fd33f8a05119336bd478dd3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0fd33f8a05119336bd478dd3-claims-001-004",
+    "claim_text": "PAIDFOR BY OKENATONE DIENATONAMERCA DAB",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 433,
+        "kind": "video_ocr",
+        "start": 394,
+        "text": "PAIDFOR BY OKENATONE DIENATONAMERCA DAB",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9f24f36a5d1dbc0c51822771c150d3d27746121136a9bcb4e9ededd16b6337e7?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 433,
+        "anchor_quote": "OKENATONE DIENATONAMERCA DAB",
+        "anchor_start": 405,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "OKENATONE DIENATONAMERCA DAB",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Senator Sullivan, as a veteran, goes above and beyond the call of duty, supporting every veteran's organization.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATON ONENATOWANERICA DRG\nPAIDFOR BYONENATON, ONENATOWANERICA DRG\nPAIDFOR BYONENATOIN ONEMAMONA MERICA ORB.\nPADFOR BYONENATON ONENATONAMERCA DRB\nPADFOR BY OVENATON: DEVATONANERCA. OAG\nPAIDFOR BY OKENATONE DIENATONAMERCA DAB",
+    "text_hash": "c2a3eec893366e8b6b94ead5c59645a130add26807f9a40149ffa0f8bba56af4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0fd33f8a05119336bd478dd3",
+    "alignment": "R",
+    "block_id": "snap-0fd33f8a05119336bd478dd3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0fd33f8a05119336bd478dd3-claims-001-005",
+    "claim_text": "PAIDFOR BY ONENATON ONENATOWANERICA DRG",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 235,
+        "kind": "video_ocr",
+        "start": 196,
+        "text": "PAIDFOR BY ONENATON ONENATOWANERICA DRG",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9f24f36a5d1dbc0c51822771c150d3d27746121136a9bcb4e9ededd16b6337e7?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 235,
+        "anchor_quote": "ONENATON ONENATOWANERICA DRG",
+        "anchor_start": 207,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "ONENATON ONENATOWANERICA DRG",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Senator Sullivan, as a veteran, goes above and beyond the call of duty, supporting every veteran's organization.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATON ONENATOWANERICA DRG\nPAIDFOR BYONENATON, ONENATOWANERICA DRG\nPAIDFOR BYONENATOIN ONEMAMONA MERICA ORB.\nPADFOR BYONENATON ONENATONAMERCA DRB\nPADFOR BY OVENATON: DEVATONANERCA. OAG\nPAIDFOR BY OKENATONE DIENATONAMERCA DAB",
+    "text_hash": "c2a3eec893366e8b6b94ead5c59645a130add26807f9a40149ffa0f8bba56af4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0fd33f8a05119336bd478dd3",
+    "alignment": "R",
+    "block_id": "snap-0fd33f8a05119336bd478dd3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0fd33f8a05119336bd478dd3-claims-001-006",
+    "claim_text": "PAIDFOR BYONENATON, ONENATOWANERICA DRG",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 275,
+        "kind": "video_ocr",
+        "start": 236,
+        "text": "PAIDFOR BYONENATON, ONENATOWANERICA DRG",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9f24f36a5d1dbc0c51822771c150d3d27746121136a9bcb4e9ededd16b6337e7?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 275,
+        "anchor_quote": "ONENATON, ONENATOWANERICA DRG",
+        "anchor_start": 246,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "ONENATON, ONENATOWANERICA DRG",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Senator Sullivan, as a veteran, goes above and beyond the call of duty, supporting every veteran's organization.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATON ONENATOWANERICA DRG\nPAIDFOR BYONENATON, ONENATOWANERICA DRG\nPAIDFOR BYONENATOIN ONEMAMONA MERICA ORB.\nPADFOR BYONENATON ONENATONAMERCA DRB\nPADFOR BY OVENATON: DEVATONANERCA. OAG\nPAIDFOR BY OKENATONE DIENATONAMERCA DAB",
+    "text_hash": "c2a3eec893366e8b6b94ead5c59645a130add26807f9a40149ffa0f8bba56af4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0fd33f8a05119336bd478dd3",
+    "alignment": "R",
+    "block_id": "snap-0fd33f8a05119336bd478dd3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0fd33f8a05119336bd478dd3-claims-001-007",
+    "claim_text": "PAIDFOR BYONENATOIN ONEMAMONA MERICA ORB.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 317,
+        "kind": "video_ocr",
+        "start": 276,
+        "text": "PAIDFOR BYONENATOIN ONEMAMONA MERICA ORB.",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9f24f36a5d1dbc0c51822771c150d3d27746121136a9bcb4e9ededd16b6337e7?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 316,
+        "anchor_quote": "ONENATOIN ONEMAMONA MERICA ORB",
+        "anchor_start": 286,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "ONENATOIN ONEMAMONA MERICA ORB",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Senator Sullivan, as a veteran, goes above and beyond the call of duty, supporting every veteran's organization.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATON ONENATOWANERICA DRG\nPAIDFOR BYONENATON, ONENATOWANERICA DRG\nPAIDFOR BYONENATOIN ONEMAMONA MERICA ORB.\nPADFOR BYONENATON ONENATONAMERCA DRB\nPADFOR BY OVENATON: DEVATONANERCA. OAG\nPAIDFOR BY OKENATONE DIENATONAMERCA DAB",
+    "text_hash": "c2a3eec893366e8b6b94ead5c59645a130add26807f9a40149ffa0f8bba56af4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0fd33f8a05119336bd478dd3",
+    "alignment": "R",
+    "block_id": "snap-0fd33f8a05119336bd478dd3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0fd33f8a05119336bd478dd3-claims-001-008",
+    "claim_text": "PADFOR BYONENATON ONENATONAMERCA DRB",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 354,
+        "kind": "video_ocr",
+        "start": 318,
+        "text": "PADFOR BYONENATON ONENATONAMERCA DRB",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9f24f36a5d1dbc0c51822771c150d3d27746121136a9bcb4e9ededd16b6337e7?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 354,
+        "anchor_quote": "ONENATON ONENATONAMERCA DRB",
+        "anchor_start": 327,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "ONENATON ONENATONAMERCA DRB",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Senator Sullivan, as a veteran, goes above and beyond the call of duty, supporting every veteran's organization.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATON ONENATOWANERICA DRG\nPAIDFOR BYONENATON, ONENATOWANERICA DRG\nPAIDFOR BYONENATOIN ONEMAMONA MERICA ORB.\nPADFOR BYONENATON ONENATONAMERCA DRB\nPADFOR BY OVENATON: DEVATONANERCA. OAG\nPAIDFOR BY OKENATONE DIENATONAMERCA DAB",
+    "text_hash": "c2a3eec893366e8b6b94ead5c59645a130add26807f9a40149ffa0f8bba56af4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0fd33f8a05119336bd478dd3",
+    "alignment": "R",
+    "block_id": "snap-0fd33f8a05119336bd478dd3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0fd33f8a05119336bd478dd3-claims-001-009",
+    "claim_text": "PADFOR BY OVENATON: DEVATONANERCA. OAG",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 393,
+        "kind": "video_ocr",
+        "start": 355,
+        "text": "PADFOR BY OVENATON: DEVATONANERCA. OAG",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9f24f36a5d1dbc0c51822771c150d3d27746121136a9bcb4e9ededd16b6337e7?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 393,
+        "anchor_quote": "OVENATON: DEVATONANERCA. OAG",
+        "anchor_start": 365,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "OVENATON: DEVATONANERCA. OAG",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Senator Sullivan, as a veteran, goes above and beyond the call of duty, supporting every veteran's organization.\nCall and Tell Senator Sullivan\nTo Keep Supporting Alaska's Veterans\n(907) 271-5915\nPAIDFOR BY ONENATON ONENATOWANERICA DRG\nPAIDFOR BYONENATON, ONENATOWANERICA DRG\nPAIDFOR BYONENATOIN ONEMAMONA MERICA ORB.\nPADFOR BYONENATON ONENATONAMERCA DRB\nPADFOR BY OVENATON: DEVATONANERCA. OAG\nPAIDFOR BY OKENATONE DIENATONAMERCA DAB",
+    "text_hash": "c2a3eec893366e8b6b94ead5c59645a130add26807f9a40149ffa0f8bba56af4",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]

@@ -3987,49 +3987,49 @@
     "ad_id": "snap-0fd33f8a05119336bd478dd3",
     "block_id": "snap-0fd33f8a05119336bd478dd3-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-0ffb1c3ed1c4392097241119",
     "block_id": "snap-0ffb1c3ed1c4392097241119-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":5,\\\"label\\\":\\\"MICHIGANDER\\\"},{\\\"claim\\\":6,\\\"label\\\":\\\"NEWS\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1002f6ab583650104b9aa525",
     "block_id": "snap-1002f6ab583650104b9aa525-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for you: \\\"you\\\" is absent from unit 3. Exact source: \\\"and then go to Washington and take 51,000 people off the health insurance rolls\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1002f6ab583650104b9aa525",
     "block_id": "snap-1002f6ab583650104b9aa525-claims-002",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-107e0b6d8cd835b08e69e661",
     "block_id": "snap-107e0b6d8cd835b08e69e661-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-107e0b6d8cd835b08e69e661",
     "block_id": "snap-107e0b6d8cd835b08e69e661-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for My union: \\\"My union\\\" is absent from unit 8. Exact source: \\\"MY UNTON, MY RIGHT,\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-10829030ee6022cee809f3df",
     "block_id": "snap-10829030ee6022cee809f3df-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 6\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-10829030ee6022cee809f3df",
     "block_id": "snap-10829030ee6022cee809f3df-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for EVANS, GABE: \\\"Evans\\\" is absent from unit 10. Exact source: \\\"Inancial Protection\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-10b90cad90d3d6f9863e257e",
