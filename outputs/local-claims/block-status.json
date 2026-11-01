@@ -8259,49 +8259,49 @@
     "ad_id": "snap-8fb668ed61d2e495a62fb588",
     "block_id": "snap-8fb668ed61d2e495a62fb588-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-8fbca74cada0f422c2a557d9",
     "block_id": "snap-8fbca74cada0f422c2a557d9-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 4\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-8fd8fb0f10dce81bc80d44b6",
     "block_id": "snap-8fd8fb0f10dce81bc80d44b6-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 4: {\\\"anchor_quote\\\":\\\"small businesses\\\",\\\"anchor_unit_id\\\":37,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"collective\\\",\\\"name\\\":\\\"small businesses\\\",\\\"role\\\":\\\"self_or_supported\\\",\\\"tone\\\":\\\"neutral\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-9003e3d69ed837563b611c49",
     "block_id": "snap-9003e3d69ed837563b611c49-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for PAXTON, KEN: \\\"Ken Paxton\\\" is absent from unit 7. Exact source: \\\"And his latest disclosure puts his net worth up to $27 million.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-902264aab091e5ebe6f8e684",
     "block_id": "snap-902264aab091e5ebe6f8e684-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for Friends of Sherrod Brown: \\\"Friends of Sherrod Brown\\\" is absent from unit 5. Exact source: \\\"PAID FOR BY DSCC. AUTHORIZED BY FRIENDS OF SHERROD BROWN\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-903eb1a2b31ffa793e433163",
     "block_id": "snap-903eb1a2b31ffa793e433163-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Nurses: \\\"Nurses\\\" is absent from unit 2. Exact source: \\\"Nürses are the\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
     "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-904f8b91386cb5218d5ca3de",
     "block_id": "snap-904f8b91386cb5218d5ca3de-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 3\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-9050ed10cbeec85e5a75887d",

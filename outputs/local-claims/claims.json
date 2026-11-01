@@ -144023,5 +144023,847 @@
     "text_hash": "df416a337ada631fb45946147a50890c018b55be0a0129069066a2f8154a0216",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-8fb668ed61d2e495a62fb588",
+    "alignment": "D",
+    "block_id": "snap-8fb668ed61d2e495a62fb588-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-8fb668ed61d2e495a62fb588-claims-001-001",
+    "claim_text": "Millionaire Mike Rogers says voters blaming Trump for high prices are 'nuts'",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 217,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "- DETROIT\nMETROTIMES\nMillionaire Mike Rogers says\nvoters blaming Trump for\nhigh prices are 'nuts'\nThe Trump-backed candidate continues to\ndismiss affordability concerns of residents.\nfarm fresk\napple\nstarking\n39\nDALUE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/ac4e5f0e2ce6f81f6a230b6465770dd0765ace89977d292686469d1ec7811176?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 44,
+        "anchor_quote": "Mike Rogers",
+        "anchor_start": 33,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "- DETROIT\nMETROTIMES\nMillionaire Mike Rogers says\nvoters blaming Trump for\nhigh prices are 'nuts'\nThe Trump-backed candidate continues to\ndismiss affordability concerns of residents.\nfarm fresk\napple\nstarking\n39\nDALUE",
+    "text_hash": "bf95c0733bdba1b83dc7bbf637df08436a18fd856573dba7bda216d558b127bc",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-8fb668ed61d2e495a62fb588",
+    "alignment": "D",
+    "block_id": "snap-8fb668ed61d2e495a62fb588-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-8fb668ed61d2e495a62fb588-claims-001-002",
+    "claim_text": "The Trump-backed candidate continues to dismiss affordability concerns of residents.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 217,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "- DETROIT\nMETROTIMES\nMillionaire Mike Rogers says\nvoters blaming Trump for\nhigh prices are 'nuts'\nThe Trump-backed candidate continues to\ndismiss affordability concerns of residents.\nfarm fresk\napple\nstarking\n39\nDALUE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/ac4e5f0e2ce6f81f6a230b6465770dd0765ace89977d292686469d1ec7811176?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 124,
+        "anchor_quote": "Trump-backed candidate",
+        "anchor_start": 102,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "- DETROIT\nMETROTIMES\nMillionaire Mike Rogers says\nvoters blaming Trump for\nhigh prices are 'nuts'\nThe Trump-backed candidate continues to\ndismiss affordability concerns of residents.\nfarm fresk\napple\nstarking\n39\nDALUE",
+    "text_hash": "bf95c0733bdba1b83dc7bbf637df08436a18fd856573dba7bda216d558b127bc",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-001",
+    "claim_text": "Troy Jackson did something.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 30,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Look at what Troy Jackson did.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 25,
+        "anchor_quote": "Troy Jackson",
+        "anchor_start": 13,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-002",
+    "claim_text": "Special interests paid his son and Troy Jackson changed his positions.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 95,
+        "kind": "local_asr",
+        "start": 31,
+        "text": "Special interest paid his son and Jackson changed his positions.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 72,
+        "anchor_quote": "Jackson",
+        "anchor_start": 65,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-003",
+    "claim_text": "Special interests exist.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 173,
+        "kind": "video_ocr",
+        "start": 156,
+        "text": "SPECIAL INTERESTS",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 173,
+        "anchor_quote": "SPECIAL INTERESTS",
+        "anchor_start": 156,
+        "anchor_unit_id": 9,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "SPECIAL INTERESTS",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-004",
+    "claim_text": "PAD FOR BY SIFPAU.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 192,
+        "kind": "video_ocr",
+        "start": 174,
+        "text": "PAD FOR BY SIFPAU.",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 191,
+        "anchor_quote": "SIFPAU",
+        "anchor_start": 185,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "SIFPAU",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-005",
+    "claim_text": "OR GANDDATES EOM.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 209,
+        "kind": "video_ocr",
+        "start": 193,
+        "text": "OR GANDDATES EOM",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 205,
+        "anchor_quote": "GANDDATES",
+        "anchor_start": 196,
+        "anchor_unit_id": 11,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "GANDDATES",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-006",
+    "claim_text": "PAD FOR BY SIFPAG.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 228,
+        "kind": "video_ocr",
+        "start": 210,
+        "text": "PAD FOR BY SIFPAG.",
+        "unit_id": 12
+      }
+    ],
+    "evidence_ids": [
+      12
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 227,
+        "anchor_quote": "SIFPAG",
+        "anchor_start": 221,
+        "anchor_unit_id": 12,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "SIFPAG",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-007",
+    "claim_text": "PAID FOR BY SEFPAG.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 248,
+        "kind": "video_ocr",
+        "start": 229,
+        "text": "PAID FOR BY SEFPAG.",
+        "unit_id": 13
+      }
+    ],
+    "evidence_ids": [
+      13
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 247,
+        "anchor_quote": "SEFPAG",
+        "anchor_start": 241,
+        "anchor_unit_id": 13,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "SEFPAG",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-008",
+    "claim_text": "GANDIDATE OR GANDIDATES COM.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 276,
+        "kind": "video_ocr",
+        "start": 249,
+        "text": "GANDIDATE OR GANDIDATES COM",
+        "unit_id": 14
+      }
+    ],
+    "evidence_ids": [
+      14
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 258,
+        "anchor_quote": "GANDIDATE",
+        "anchor_start": 249,
+        "anchor_unit_id": 14,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "GANDIDATE",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 272,
+        "anchor_quote": "GANDIDATES",
+        "anchor_start": 262,
+        "anchor_unit_id": 14,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "GANDIDATES",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-009",
+    "claim_text": "PADFOR BY SIF PAU.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 295,
+        "kind": "video_ocr",
+        "start": 277,
+        "text": "PADFOR BY SIF PAU.",
+        "unit_id": 15
+      }
+    ],
+    "evidence_ids": [
+      15
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 294,
+        "anchor_quote": "SIF PAU",
+        "anchor_start": 287,
+        "anchor_unit_id": 15,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "SIF PAU",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-010",
+    "claim_text": "PAID FOR BY SIF PAC.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 316,
+        "kind": "video_ocr",
+        "start": 296,
+        "text": "PAID FOR BY SIF PAC.",
+        "unit_id": 16
+      }
+    ],
+    "evidence_ids": [
+      16
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 315,
+        "anchor_quote": "SIF PAC",
+        "anchor_start": 308,
+        "anchor_unit_id": 16,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "SIF PAC",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-011",
+    "claim_text": "UAVIO exists.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 101,
+        "kind": "video_ocr",
+        "start": 96,
+        "text": "UAVIO",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 101,
+        "anchor_quote": "UAVIO",
+        "anchor_start": 96,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "UAVIO",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-012",
+    "claim_text": "DESCHAMBAULT exists.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 114,
+        "kind": "video_ocr",
+        "start": 102,
+        "text": "DESCHAMBAULT",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 114,
+        "anchor_quote": "DESCHAMBAULT",
+        "anchor_start": 102,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "DESCHAMBAULT",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-013",
+    "claim_text": "DIAMOND exists.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 122,
+        "kind": "video_ocr",
+        "start": 115,
+        "text": "DIAMOND",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 122,
+        "anchor_quote": "DIAMOND",
+        "anchor_start": 115,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "DIAMOND",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-014",
+    "claim_text": "LIBBY exists.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 128,
+        "kind": "video_ocr",
+        "start": 123,
+        "text": "LIBBY",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 128,
+        "anchor_quote": "LIBBY",
+        "anchor_start": 123,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "LIBBY",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-015",
+    "claim_text": "LUCHINI exists.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 136,
+        "kind": "video_ocr",
+        "start": 129,
+        "text": "LUCHINI",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 136,
+        "anchor_quote": "LUCHINI",
+        "anchor_start": 129,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "LUCHINI",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-904cb0ecbb721f3b1e1d0b4e",
+    "alignment": "R",
+    "block_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-904cb0ecbb721f3b1e1d0b4e-claims-001-016",
+    "claim_text": "PAD FOR BY SIFPAC.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 155,
+        "kind": "video_ocr",
+        "start": 137,
+        "text": "PAD FOR BY SIFPAC.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/bdfec4c27cd7d79c286a9ec26b908d66798e9139d32c430e181a9f8a714cd343?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 154,
+        "anchor_quote": "SIFPAC",
+        "anchor_start": 148,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "SIFPAC",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Look at what Troy Jackson did.\nSpecial interest paid his son and Jackson changed his positions.\nUAVIO\nDESCHAMBAULT\nDIAMOND\nLIBBY\nLUCHINI\nPAD FOR BY SIFPAC.\nSPECIAL INTERESTS\nPAD FOR BY SIFPAU.\nOR GANDDATES EOM\nPAD FOR BY SIFPAG.\nPAID FOR BY SEFPAG.\nGANDIDATE OR GANDIDATES COM\nPADFOR BY SIF PAU.\nPAID FOR BY SIF PAC.",
+    "text_hash": "090dca0d67e909a367eb16dfd1f40da5b5ae2d02f1df4c8ed27609b805cadcfd",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]
