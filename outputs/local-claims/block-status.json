@@ -7635,49 +7635,49 @@
     "ad_id": "snap-7e5ad4920eda8d2375c878e7",
     "block_id": "snap-7e5ad4920eda8d2375c878e7-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-7e864e7fed43776cc2ea3ef3",
     "block_id": "snap-7e864e7fed43776cc2ea3ef3-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for speaker: \\\"VIETNAM VETERAN\\\" is absent from unit 1. Exact source: \\\"VIETNAM\\\\nVETERAN\\\\nTHANK SENATOR COLLINS\\\\nFOR FIGHTING TO PROVIDE\\\\nRURAL VETERANS\\\\nACCESS TO VA FACILITIES\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7eaa0e47058b46cd0144476e",
     "block_id": "snap-7eaa0e47058b46cd0144476e-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 10\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7ebf772d57f42f2d6df52018",
     "block_id": "snap-7ebf772d57f42f2d6df52018-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Dina Titus: \\\"Dina Titus\\\" is absent from unit 1. Exact source: \\\"FOX 5\\\\nKVVU-TV\\\\nGot a Minute? Rep. Dina\\\\nTitus says economy,\\\\naffordability are top\\\\nconcerns in District 1 race\\\\nGOTA\\\\nMINUTE\\\\ndee\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7ebf816637f0ceb0fbed2401",
     "block_id": "snap-7ebf816637f0ceb0fbed2401-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-7edf5b4712b0d9ce6bda2a0c",
     "block_id": "snap-7edf5b4712b0d9ce6bda2a0c-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-7fcb3a47705051fcf3dd48a7",
     "block_id": "snap-7fcb3a47705051fcf3dd48a7-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for taxpayers: \\\"FROM TAYPAYERS\\\" is absent from unit 3. Exact source: \\\"$198,647\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-7fcbdc5f5af20e2f571459f7",
     "block_id": "snap-7fcbdc5f5af20e2f571459f7-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-803ae70a4dd08f44061ed421",
