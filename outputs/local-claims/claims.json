@@ -125532,5 +125532,220 @@
     "text_hash": "586fdbed59a4c5fd1d5e38327b6aa7749b44d529e3e2703c664d50ba6fa4853d",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5989b1cf02f6bed5df4f8af3",
+    "alignment": "D",
+    "block_id": "snap-5989b1cf02f6bed5df4f8af3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5989b1cf02f6bed5df4f8af3-claims-001-001",
+    "claim_text": "a report on Congress gives Vasquez high marks",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 63,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Source NM\nReport on Congress\ngives Vasquez, Heinrich\nhigh marks",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7e68ff075678a4f3e9350f19664e11733531fafd82594706ed8a0609747a6ea0?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 42,
+        "anchor_quote": "Vasquez",
+        "anchor_start": 35,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Vasquez",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Source NM\nReport on Congress\ngives Vasquez, Heinrich\nhigh marks",
+    "text_hash": "e89160f80c4c9bc8d922e72175167d12d00edfce6da91f98c7fff7a1fb903c07",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5989b1cf02f6bed5df4f8af3",
+    "alignment": "D",
+    "block_id": "snap-5989b1cf02f6bed5df4f8af3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5989b1cf02f6bed5df4f8af3-claims-001-002",
+    "claim_text": "a report on Congress gives Heinrich high marks",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 63,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Source NM\nReport on Congress\ngives Vasquez, Heinrich\nhigh marks",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7e68ff075678a4f3e9350f19664e11733531fafd82594706ed8a0609747a6ea0?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 52,
+        "anchor_quote": "Heinrich",
+        "anchor_start": 44,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Heinrich",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Source NM\nReport on Congress\ngives Vasquez, Heinrich\nhigh marks",
+    "text_hash": "e89160f80c4c9bc8d922e72175167d12d00edfce6da91f98c7fff7a1fb903c07",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-59af1d321d75727cec9b126a",
+    "alignment": "D",
+    "block_id": "snap-59af1d321d75727cec9b126a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-59af1d321d75727cec9b126a-claims-001-001",
+    "claim_text": "WE'RE FIGHTING TO REVERSE TRUMP'S HEALTHCARE CUTS AND LOWER COSTS.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 102,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WE'RE FIGHTIN\nWE'RE FIGHTING TO\nREVERSE\nTRUMP'S\nHEALTHCARE\nCUTS\nAND\nLOWER\nCOSTS.\nТОВДУДРО\nORDWAY.CO\nCC",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b43d0f7f4b17771d7aa331ce16caaa85d6803c1d465368761ff63e2613acbea5?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 47,
+        "anchor_quote": "TRUMP'S",
+        "anchor_start": 40,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "WE'RE FIGHTIN\nWE'RE FIGHTING TO\nREVERSE\nTRUMP'S\nHEALTHCARE\nCUTS\nAND\nLOWER\nCOSTS.\nТОВДУДРО\nORDWAY.CO\nCC",
+    "text_hash": "561e8e6295cb19d20797110ce689eab94eccf61ba40be8cb56280b042e439ae9",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-59af1d321d75727cec9b126a",
+    "alignment": "D",
+    "block_id": "snap-59af1d321d75727cec9b126a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-59af1d321d75727cec9b126a-claims-001-002",
+    "claim_text": "WE'RE FIGHTING to reverse Trump's healthcare cuts.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 102,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WE'RE FIGHTIN\nWE'RE FIGHTING TO\nREVERSE\nTRUMP'S\nHEALTHCARE\nCUTS\nAND\nLOWER\nCOSTS.\nТОВДУДРО\nORDWAY.CO\nCC",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b43d0f7f4b17771d7aa331ce16caaa85d6803c1d465368761ff63e2613acbea5?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 47,
+        "anchor_quote": "TRUMP'S",
+        "anchor_start": 40,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "WE'RE FIGHTIN\nWE'RE FIGHTING TO\nREVERSE\nTRUMP'S\nHEALTHCARE\nCUTS\nAND\nLOWER\nCOSTS.\nТОВДУДРО\nORDWAY.CO\nCC",
+    "text_hash": "561e8e6295cb19d20797110ce689eab94eccf61ba40be8cb56280b042e439ae9",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-59af1d321d75727cec9b126a",
+    "alignment": "D",
+    "block_id": "snap-59af1d321d75727cec9b126a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-59af1d321d75727cec9b126a-claims-001-003",
+    "claim_text": "WE'RE FIGHTING to lower costs.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 102,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WE'RE FIGHTIN\nWE'RE FIGHTING TO\nREVERSE\nTRUMP'S\nHEALTHCARE\nCUTS\nAND\nLOWER\nCOSTS.\nТОВДУДРО\nORDWAY.CO\nCC",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/b43d0f7f4b17771d7aa331ce16caaa85d6803c1d465368761ff63e2613acbea5?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [],
+    "text": "WE'RE FIGHTIN\nWE'RE FIGHTING TO\nREVERSE\nTRUMP'S\nHEALTHCARE\nCUTS\nAND\nLOWER\nCOSTS.\nТОВДУДРО\nORDWAY.CO\nCC",
+    "text_hash": "561e8e6295cb19d20797110ce689eab94eccf61ba40be8cb56280b042e439ae9",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
