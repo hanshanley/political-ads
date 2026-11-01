@@ -10,6 +10,54 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Victoria Spartz: third independent native original
+
+The October 2 release
+`https://www.spartzforcongress.com/news/why-is-jd-ford-lying/`
+literally embeds another original. Publisher HTML SHA-256
+`edc804e7aefe7c7f58621a00299d94cd335ec26319ba5e66a772300e989a9608`
+pins its exact title and `article:published_time=2026-10-02T21:10:41-04:00`.
+The original MP4 SHA-256
+`1bfce1de872740f0737344423cb09b1052adfd57d97180e94f6fca9e7a4a1c9a`
+binds **5,847,318 bytes / 30.03 seconds**. Both its full media hash
+and normalized complete recognized speech differ from the October 18
+and October 30 originals. Closing frame **29.0 seconds** was visually
+inspected: campaign payer and candidate approval agree with frozen
+**H0IN05326 / C00737767 / REP / House / IN-05 / 2026**.
+
+Acquire only **21 unchanged words**, two whole consecutive recognized
+segments at **5.66-12.70 seconds**. This is a **fragment of an accusation
+list, not a complete sentence**. Its punctuation is retained; the opening
+misrecognizes the candidate's name and is excluded, not repaired.
+All remaining speech, approval and frame words are excluded. Neither the
+allegations nor a new opponent identity or whole-creative strategy are
+certified. Extent is `partial_quotation`; phase and semantic review
+remain unknown/unreviewed. Release is not verified first airing or delivery.
+
+Sorted-JSON full-recognition SHA-256
+`27279dd0e0d60672dea26e980f0cd2f8e9a3e1419ce963c8ed48c6bf9dd370d0`
+and newline-joined excerpt SHA-256
+`980bc979d6685215b7d2320ed1afdacb6fd9bf85d0d8f67f6937d3cfeb76f034`
+bind the same offline base-model revision and excerpt checks described below.
+Replay with `campaign-native --until 2026-10-30 --offline`, then
+`parquet --offline`, `build --offline`, `validate --offline` and
+`audit-strategy --offline`. Reacquisition needs undistributed exact raw
+responses and recognition caches; committed inputs rebuild complete
+research downloads without those caches. Original media remains local-only.
+
+`spartz-native-ford-lying-20261002` is absent from all other acquired text.
+Snapshot
+`fbc637c87b05d728276a368ae1d171ab373736196a80f2815ce0386984e1f553`
+has **1,940 acquired / 1,901 English**, **R 636 / D 1,226 English**,
+**R 258 / D 698 English House**, **R 257 / D 222 House outside Snapchat**,
+and **579 written / 85 release reviews / 43 native reviews**.
+All prior complete records, reviews, aliases, protected inputs and
+text/segment/provenance JSON, gzip, CSV and enriched Parquet exports were
+checked against a fresh baseline. Eleven PNG/CSV chart sets agree in all
+three copies; isolated offline reacquisition forbids network, model
+loading and subprocess recognition. The saved October 30 cutoff remains
+distinct from final inclusive November 4; website, host and editions remain held.
+
 ## Victoria Spartz: second independent native original
 
 The October 18 release
@@ -51,8 +99,8 @@ has **1,939 acquired / 1,900 English**, **R 635 / D 1,226 English**,
 **R 257 / D 698 English House**, **R 256 / D 222 House outside Snapchat**,
 and **579 written / 85 release reviews / 42 native reviews**.
 All prior records/reviews/aliases and complete text/segment/provenance
-exports are preserved. The separate October 2 original remains an
-unadmitted discovery lead. Saved October 30 and final inclusive November 4
+exports are preserved. The separate October 2 original was unadmitted at
+this checkpoint and is now documented above. Saved October 30 and final inclusive November 4
 cutoffs remain distinct; website, host and edition publication remain held.
 
 ## Victoria Spartz: bounded native TV-ad speech

@@ -1381,6 +1381,47 @@
         "semantic_portrayal_unreviewed",
         "unselected_garbled_asr_sentence_excluded"
       ]
+    },
+    {
+      "id": "spartz-native-ford-lying-20261002",
+      "source": "spartz-native",
+      "publisher_url": "https://www.spartzforcongress.com/news/why-is-jd-ford-lying/",
+      "post_url": "https://www.spartzforcongress.com/news/why-is-jd-ford-lying/",
+      "media_url": "https://www.spartzforcongress.com/wp-content/uploads/why-is-j.d.-ford-lying-about-victoria-spartz.mp4",
+      "media_type": "video",
+      "media_sha256": "1bfce1de872740f0737344423cb09b1052adfd57d97180e94f6fca9e7a4a1c9a",
+      "candidate_id": "H0IN05326",
+      "title": "Spartz campaign ad: Why is J.D. Ford lying about Victoria Spartz",
+      "title_basis": "Campaign release heading; not a verified creative title",
+      "sponsor": "Victoria Spartz for Congress",
+      "sponsor_type": "candidate",
+      "phase": "unknown",
+      "completeness": "partial_quotation",
+      "required_quotes": [
+        "Ford voted for sex change surgeries on children, men in girls' sports,",
+        "defunding our police, more violent criminals on the streets,"
+      ],
+      "speech_excerpt": {
+        "start_seconds": 5.66,
+        "end_seconds": 12.7,
+        "speech_sha256": "27279dd0e0d60672dea26e980f0cd2f8e9a3e1419ce963c8ed48c6bf9dd370d0",
+        "text_sha256": "980bc979d6685215b7d2320ed1afdacb6fd9bf85d0d8f67f6937d3cfeb76f034"
+      },
+      "publisher_release": {
+        "published": "2026-10-02",
+        "published_timestamp": "2026-10-02T21:10:41-04:00",
+        "title": "Why is J.D. Ford lying about Victoria Spartz",
+        "sha256": "edc804e7aefe7c7f58621a00299d94cd335ec26319ba5e66a772300e989a9608"
+      },
+      "reviewed": "2026-11-01",
+      "ad_evidence": "The independent dated campaign release literally embeds this original. Its archive date and article publication metadata agree. Complete media hashes and normalized full recognized speech distinguish it from both the October 18 and October 30 originals. Closing frame 29.0 seconds was locally rendered and visually inspected: its federal campaign payer and candidate approval agree with frozen H0IN05326 / REP / House / IN-05 / 2026 and principal committee C00737767. No inaccessible article or alternate copy supplies these words. Publication does not establish first airing, delivery or nomination.",
+      "extraction_caveat": "Exactly 21 unchanged recognized words from two whole consecutive speech segments, 5.66-12.70 seconds of the 30.03-second original. This is a fragment of an accusation list, not its complete sentence, a full script or a manually certified transcript. The original recognizer's punctuation is retained. Its opening misrecognizes Spartz as Sparks; the opening, remaining speech, closing approval and all frame text are excluded, not repaired. No new opponent identity or semantic strategy judgment is assigned. The allegations and full creative's strategy are not verified or inferred from this fragment. Original media remains local-only.",
+      "quality_flags": [
+        "payer_frame_visually_reviewed",
+        "allegations_not_fact_checked",
+        "semantic_portrayal_unreviewed",
+        "unselected_name_recognition_errors_excluded"
+      ]
     }
   ]
 }

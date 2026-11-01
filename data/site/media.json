@@ -53288,6 +53288,291 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "Publisher-linked original with individually reviewed payer evidence; FEC H0IN05326, REP, principal committee C00737767. Primary publisher: https://www.spartzforcongress.com/news/why-is-jd-ford-lying/",
+      "chamber": "House",
+      "date_basis": "publisher_release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "spartz-native-ford-lying-20261002",
+      "language": "en",
+      "language_basis": "Local Whisper language detection; selected speech excerpt",
+      "media_urls": [
+        "https://www.spartzforcongress.com/news/why-is-jd-ford-lying/"
+      ],
+      "message_id": "47a4969b86f5075e2306d84e9085a3e412afabf6f1e1278bf84f73c652ccac0b",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-02",
+      "quality_flags": [
+        "local_speech_excerpt_not_manually_verified",
+        "automatic_speech_may_misrecognize_names_or_negation",
+        "publisher_release_date_not_verified_first_airing",
+        "partial_ad_text_not_full_script",
+        "frame_text_and_unselected_speech_excluded",
+        "payer_frame_visually_reviewed",
+        "allegations_not_fact_checked",
+        "semantic_portrayal_unreviewed",
+        "unselected_name_recognition_errors_excluded"
+      ],
+      "race": "IN-05",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "avg_logprob": -0.22507264727637882,
+          "completeness": "partial_quotation",
+          "end_seconds": 9.48,
+          "excluded_low_confidence_ocr_observations": [],
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "1bfce1de872740f0737344423cb09b1052adfd57d97180e94f6fca9e7a4a1c9a",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "native_campaign_evidence": {
+            "ad_evidence": "The independent dated campaign release literally embeds this original. Its archive date and article publication metadata agree. Complete media hashes and normalized full recognized speech distinguish it from both the October 18 and October 30 originals. Closing frame 29.0 seconds was locally rendered and visually inspected: its federal campaign payer and candidate approval agree with frozen H0IN05326 / REP / House / IN-05 / 2026 and principal committee C00737767. No inaccessible article or alternate copy supplies these words. Publication does not establish first airing, delivery or nomination.",
+            "candidate_id": "H0IN05326",
+            "completeness": "partial_quotation",
+            "extraction_caveat": "Exactly 21 unchanged recognized words from two whole consecutive speech segments, 5.66-12.70 seconds of the 30.03-second original. This is a fragment of an accusation list, not its complete sentence, a full script or a manually certified transcript. The original recognizer's punctuation is retained. Its opening misrecognizes Spartz as Sparks; the opening, remaining speech, closing approval and all frame text are excluded, not repaired. No new opponent identity or semantic strategy judgment is assigned. The allegations and full creative's strategy are not verified or inferred from this fragment. Original media remains local-only.",
+            "id": "spartz-native-ford-lying-20261002",
+            "media_sha256": "1bfce1de872740f0737344423cb09b1052adfd57d97180e94f6fca9e7a4a1c9a",
+            "media_type": "video",
+            "media_url": "https://www.spartzforcongress.com/wp-content/uploads/why-is-j.d.-ford-lying-about-victoria-spartz.mp4",
+            "phase": "unknown",
+            "post_url": "https://www.spartzforcongress.com/news/why-is-jd-ford-lying/",
+            "publisher_html_sha256": "edc804e7aefe7c7f58621a00299d94cd335ec26319ba5e66a772300e989a9608",
+            "publisher_release": {
+              "published": "2026-10-02",
+              "published_timestamp": "2026-10-02T21:10:41-04:00",
+              "sha256": "edc804e7aefe7c7f58621a00299d94cd335ec26319ba5e66a772300e989a9608",
+              "title": "Why is J.D. Ford lying about Victoria Spartz"
+            },
+            "publisher_url": "https://www.spartzforcongress.com/news/why-is-jd-ford-lying/",
+            "quality_flags": [
+              "payer_frame_visually_reviewed",
+              "allegations_not_fact_checked",
+              "semantic_portrayal_unreviewed",
+              "unselected_name_recognition_errors_excluded"
+            ],
+            "required_quotes": [
+              "Ford voted for sex change surgeries on children, men in girls' sports,",
+              "defunding our police, more violent criminals on the streets,"
+            ],
+            "reviewed": "2026-11-01",
+            "source": "spartz-native",
+            "speech_engine": {
+              "engine": "faster-whisper 1.2.1",
+              "has_audio": true,
+              "language": "en",
+              "language_probability": 0.974582850933075,
+              "model": "Systran/faster-whisper-base",
+              "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+              "settings": {
+                "beam_size": 5,
+                "condition_on_previous_text": false,
+                "temperature": 0,
+                "vad_filter": true,
+                "word_timestamps": true
+              },
+              "word_alignment_error": null
+            },
+            "speech_excerpt": {
+              "end_seconds": 12.7,
+              "speech_sha256": "27279dd0e0d60672dea26e980f0cd2f8e9a3e1419ce963c8ed48c6bf9dd370d0",
+              "start_seconds": 5.66,
+              "text_sha256": "980bc979d6685215b7d2320ed1afdacb6fd9bf85d0d8f67f6937d3cfeb76f034"
+            },
+            "sponsor": "Victoria Spartz for Congress",
+            "sponsor_type": "candidate",
+            "title": "Spartz campaign ad: Why is J.D. Ford lying about Victoria Spartz",
+            "title_basis": "Campaign release heading; not a verified creative title"
+          },
+          "no_speech_probability": 0.7845895886421204,
+          "speech_detection": {
+            "has_audio": true,
+            "language": "en",
+            "language_probability": 0.974582850933075,
+            "settings": {
+              "beam_size": 5,
+              "condition_on_previous_text": false,
+              "temperature": 0,
+              "vad_filter": true,
+              "word_timestamps": true
+            },
+            "word_alignment_error": null
+          },
+          "speech_duplicate_ocr_observations": [],
+          "start_seconds": 5.66,
+          "text": "Ford voted for sex change surgeries on children, men in girls' sports,",
+          "video_decode_fallback": {
+            "derived_sha256": "11abbb2dfdb1e107c5376b84f8228e1272146e197558f345afbd5eb17df3fe55",
+            "frame_rate": "passthrough; original presentation cadence",
+            "method": "FFmpeg local H.264 conversion after native frame decode failed",
+            "original_sha256": "1bfce1de872740f0737344423cb09b1052adfd57d97180e94f6fca9e7a4a1c9a"
+          },
+          "video_sampling": {
+            "duration_seconds": 30.03,
+            "sample_interval_seconds": 1
+          },
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 5.84,
+              "probability": 0.9950965046882629,
+              "start_seconds": 5.66,
+              "text": " Ford"
+            },
+            {
+              "end_seconds": 6.16,
+              "probability": 0.9900919795036316,
+              "start_seconds": 5.84,
+              "text": " voted"
+            },
+            {
+              "end_seconds": 6.34,
+              "probability": 0.9995865225791931,
+              "start_seconds": 6.16,
+              "text": " for"
+            },
+            {
+              "end_seconds": 6.54,
+              "probability": 0.9181759357452393,
+              "start_seconds": 6.34,
+              "text": " sex"
+            },
+            {
+              "end_seconds": 6.86,
+              "probability": 0.4402011036872864,
+              "start_seconds": 6.54,
+              "text": " change"
+            },
+            {
+              "end_seconds": 7.28,
+              "probability": 0.9844592809677124,
+              "start_seconds": 6.86,
+              "text": " surgeries"
+            },
+            {
+              "end_seconds": 7.52,
+              "probability": 0.9952870607376099,
+              "start_seconds": 7.28,
+              "text": " on"
+            },
+            {
+              "end_seconds": 7.9,
+              "probability": 0.9835475087165833,
+              "start_seconds": 7.52,
+              "text": " children,"
+            },
+            {
+              "end_seconds": 8.46,
+              "probability": 0.9876371622085571,
+              "start_seconds": 8.32,
+              "text": " men"
+            },
+            {
+              "end_seconds": 8.72,
+              "probability": 0.7919571399688721,
+              "start_seconds": 8.46,
+              "text": " in"
+            },
+            {
+              "end_seconds": 8.98,
+              "probability": 0.8837841749191284,
+              "start_seconds": 8.72,
+              "text": " girls'"
+            },
+            {
+              "end_seconds": 9.48,
+              "probability": 0.9825831651687622,
+              "start_seconds": 9.34,
+              "text": " sports,"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.22507264727637882,
+          "completeness": "partial_quotation",
+          "end_seconds": 12.7,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "1bfce1de872740f0737344423cb09b1052adfd57d97180e94f6fca9e7a4a1c9a",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.7845895886421204,
+          "start_seconds": 9.82,
+          "text": "defunding our police, more violent criminals on the streets,",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 10.26,
+              "probability": 0.899968147277832,
+              "start_seconds": 9.82,
+              "text": " defunding"
+            },
+            {
+              "end_seconds": 10.42,
+              "probability": 0.9789727330207825,
+              "start_seconds": 10.26,
+              "text": " our"
+            },
+            {
+              "end_seconds": 10.76,
+              "probability": 0.9950628876686096,
+              "start_seconds": 10.42,
+              "text": " police,"
+            },
+            {
+              "end_seconds": 11.22,
+              "probability": 0.9758092761039734,
+              "start_seconds": 11.12,
+              "text": " more"
+            },
+            {
+              "end_seconds": 11.56,
+              "probability": 0.9977356195449829,
+              "start_seconds": 11.22,
+              "text": " violent"
+            },
+            {
+              "end_seconds": 11.94,
+              "probability": 0.9975022673606873,
+              "start_seconds": 11.56,
+              "text": " criminals"
+            },
+            {
+              "end_seconds": 12.28,
+              "probability": 0.9981718063354492,
+              "start_seconds": 11.94,
+              "text": " on"
+            },
+            {
+              "end_seconds": 12.4,
+              "probability": 0.9926117062568665,
+              "start_seconds": 12.28,
+              "text": " the"
+            },
+            {
+              "end_seconds": 12.7,
+              "probability": 0.9930418729782104,
+              "start_seconds": 12.4,
+              "text": " streets,"
+            }
+          ]
+        }
+      ],
+      "source": "spartz-native",
+      "source_hash": "147f4cbced4bb7ba54303af991876a4210869d48e0953286aa0deaa86b42d21f",
+      "source_record_id": "spartz-native-ford-lying-20261002",
+      "source_url": "https://www.spartzforcongress.com/news/why-is-jd-ford-lying/",
+      "sponsor": "Victoria Spartz for Congress",
+      "sponsor_type": "candidate",
+      "state": "IN",
+      "text": "Ford voted for sex change surgeries on children, men in girls' sports,\ndefunding our police, more violent criminals on the streets,",
+      "title": "Spartz campaign ad: Why is J.D. Ford lying about Victoria Spartz"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Campaign-linked original with candidate approval and payer evidence; FEC H4PA08124, REP, principal committee C00852137. Primary publisher: https://robforpa.com/",
       "chamber": "House",
       "date_basis": "publisher_post_date",
@@ -93693,6 +93978,9 @@
     "spartz-native-follow-money-20261030": {
       "state": "text"
     },
+    "spartz-native-ford-lying-20261002": {
+      "state": "text"
+    },
     "steele-native-forged-646f487a5b6782ba": {
       "state": "text"
     },
@@ -93890,7 +94178,7 @@
       "url": "https://careycoleman.com/"
     },
     {
-      "ads_with_text": 2,
+      "ads_with_text": 3,
       "checked": "2026-11-01",
       "discovery_complete": false,
       "last_success": "2026-11-01",
@@ -93898,7 +94186,7 @@
       "source": "spartz-native",
       "state": "partial",
       "undated_videos_with_text": 0,
-      "url": "https://www.spartzforcongress.com/news/spartz-daughters-2026/"
+      "url": "https://www.spartzforcongress.com/news/why-is-jd-ford-lying/"
     }
   ]
 }
