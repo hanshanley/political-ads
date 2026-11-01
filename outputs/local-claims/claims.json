@@ -143931,5 +143931,97 @@
     "text_hash": "a24e8b500544d288c604fc362f6dc1861c01e8ac2b0908d563e59d39f9ac6cbf",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-8fa96b4c10ceebcf9956ee28",
+    "alignment": "D",
+    "block_id": "snap-8fa96b4c10ceebcf9956ee28-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-8fa96b4c10ceebcf9956ee28-claims-001-001",
+    "claim_text": "Randy Villegas aims to uplift the Valley.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 171,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Sol\nKERN SOL NEWS\n\"Building healthier communities, one story at a time.\"\nFROM FIRST-GEN\nSTUDENT TO\nCONGRESSIONAL\nCANDIDATE:\nRANDY VILLEGAS AIMS\nTO UPLIFT THE VALLEY\nPUBLIC",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c05c5447a2d3494fb624900c49a3b861521a8b0d3bd470435abd308b3fb01a90?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 143,
+        "anchor_quote": "RANDY VILLEGAS AIMS",
+        "anchor_start": 124,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6CA22190",
+        "kind": "person",
+        "name": "VILLEGAS, RANDY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Sol\nKERN SOL NEWS\n\"Building healthier communities, one story at a time.\"\nFROM FIRST-GEN\nSTUDENT TO\nCONGRESSIONAL\nCANDIDATE:\nRANDY VILLEGAS AIMS\nTO UPLIFT THE VALLEY\nPUBLIC",
+    "text_hash": "df416a337ada631fb45946147a50890c018b55be0a0129069066a2f8154a0216",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-8fa96b4c10ceebcf9956ee28",
+    "alignment": "D",
+    "block_id": "snap-8fa96b4c10ceebcf9956ee28-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-8fa96b4c10ceebcf9956ee28-claims-001-002",
+    "claim_text": "KERN SOL NEWS aims to build healthier communities, one story at a time.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 171,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Sol\nKERN SOL NEWS\n\"Building healthier communities, one story at a time.\"\nFROM FIRST-GEN\nSTUDENT TO\nCONGRESSIONAL\nCANDIDATE:\nRANDY VILLEGAS AIMS\nTO UPLIFT THE VALLEY\nPUBLIC",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c05c5447a2d3494fb624900c49a3b861521a8b0d3bd470435abd308b3fb01a90?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 17,
+        "anchor_quote": "KERN SOL NEWS",
+        "anchor_start": 4,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "KERN SOL NEWS",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Sol\nKERN SOL NEWS\n\"Building healthier communities, one story at a time.\"\nFROM FIRST-GEN\nSTUDENT TO\nCONGRESSIONAL\nCANDIDATE:\nRANDY VILLEGAS AIMS\nTO UPLIFT THE VALLEY\nPUBLIC",
+    "text_hash": "df416a337ada631fb45946147a50890c018b55be0a0129069066a2f8154a0216",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]
