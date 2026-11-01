@@ -126329,5 +126329,1225 @@
     "text_hash": "24fdbe0f97b0fcfb89efe3635e87934ec0df4c7f7db8e41ac70c766aefc6c5dc",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5faaa8a00a2fe0e5a4302217",
+    "alignment": "D",
+    "block_id": "snap-5faaa8a00a2fe0e5a4302217-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5faaa8a00a2fe0e5a4302217-claims-001-001",
+    "claim_text": "GOP Rep. Mike Lawler rejects a 10% cap on credit card interest rates.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 173,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "AMERICAN\nJournal News\nGOP Rep. Mike Lawler rejects 10%\ncap on credit card interest rates\nThe cap is supported by President Donald Trump and\nDemocratic Sen. Elizabeth Warren.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/be2eec3275c13edb606e063cc2f53226b85de119a07eeb7099feec243bec5382?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 42,
+        "anchor_quote": "Mike Lawler",
+        "anchor_start": 31,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2NY17162",
+        "kind": "person",
+        "name": "LAWLER, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "AMERICAN\nJournal News\nGOP Rep. Mike Lawler rejects 10%\ncap on credit card interest rates\nThe cap is supported by President Donald Trump and\nDemocratic Sen. Elizabeth Warren.",
+    "text_hash": "247408b37a7587a3664c6191868b12053ba512587881b937e157c04bef693f33",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5faaa8a00a2fe0e5a4302217",
+    "alignment": "D",
+    "block_id": "snap-5faaa8a00a2fe0e5a4302217-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5faaa8a00a2fe0e5a4302217-claims-001-002",
+    "claim_text": "The 10% cap on credit card interest rates is supported by President Donald Trump.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 173,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "AMERICAN\nJournal News\nGOP Rep. Mike Lawler rejects 10%\ncap on credit card interest rates\nThe cap is supported by President Donald Trump and\nDemocratic Sen. Elizabeth Warren.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/be2eec3275c13edb606e063cc2f53226b85de119a07eeb7099feec243bec5382?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 135,
+        "anchor_quote": "President Donald Trump",
+        "anchor_start": 113,
+        "anchor_unit_id": 1,
+        "entity_id": "national:Donald Trump",
+        "kind": "person",
+        "name": "Donald Trump",
+        "party_basis": "national_crosswalk",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "AMERICAN\nJournal News\nGOP Rep. Mike Lawler rejects 10%\ncap on credit card interest rates\nThe cap is supported by President Donald Trump and\nDemocratic Sen. Elizabeth Warren.",
+    "text_hash": "247408b37a7587a3664c6191868b12053ba512587881b937e157c04bef693f33",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5faaa8a00a2fe0e5a4302217",
+    "alignment": "D",
+    "block_id": "snap-5faaa8a00a2fe0e5a4302217-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5faaa8a00a2fe0e5a4302217-claims-001-003",
+    "claim_text": "The 10% cap on credit card interest rates is supported by Democratic Sen. Elizabeth Warren.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 173,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "AMERICAN\nJournal News\nGOP Rep. Mike Lawler rejects 10%\ncap on credit card interest rates\nThe cap is supported by President Donald Trump and\nDemocratic Sen. Elizabeth Warren.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/be2eec3275c13edb606e063cc2f53226b85de119a07eeb7099feec243bec5382?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 172,
+        "anchor_quote": "Democratic Sen. Elizabeth Warren",
+        "anchor_start": 140,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Elizabeth Warren",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "AMERICAN\nJournal News\nGOP Rep. Mike Lawler rejects 10%\ncap on credit card interest rates\nThe cap is supported by President Donald Trump and\nDemocratic Sen. Elizabeth Warren.",
+    "text_hash": "247408b37a7587a3664c6191868b12053ba512587881b937e157c04bef693f33",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5fde3e1b5e6d862e42c840a3",
+    "alignment": "R",
+    "block_id": "snap-5fde3e1b5e6d862e42c840a3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5fde3e1b5e6d862e42c840a3-claims-001-001",
+    "claim_text": "Jon Ossoff's vote is surrounding concern.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 141,
+        "kind": "video_ocr",
+        "start": 124,
+        "text": "Jon Ossoff's vote",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/70ccab8febd50dba99b68a8eb9afe2ca8d3f5cfa9c45da2776f9accda4a89e58?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 141,
+        "anchor_quote": "Jon Ossoff's vote",
+        "anchor_start": 124,
+        "anchor_unit_id": 9,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Peach State Post\nOutrage: Georgil\nOutrage: Georgia\nworking families\nvoice l\nvoice concern\nsurrounding Senl\nsurrounding Sen.\nJon Ossoff's vote\nforl\nfor higher taxes for\novertil\novertime pay.",
+    "text_hash": "ab9ff8e70e8dc7fedbca51492857caee0d29943dab5e6aaf6f18c2b51b0d4327",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5fde3e1b5e6d862e42c840a3",
+    "alignment": "R",
+    "block_id": "snap-5fde3e1b5e6d862e42c840a3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5fde3e1b5e6d862e42c840a3-claims-001-002",
+    "claim_text": "There are higher taxes.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 167,
+        "kind": "video_ocr",
+        "start": 147,
+        "text": "for higher taxes for",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/70ccab8febd50dba99b68a8eb9afe2ca8d3f5cfa9c45da2776f9accda4a89e58?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 163,
+        "anchor_quote": "higher taxes",
+        "anchor_start": 151,
+        "anchor_unit_id": 11,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "taxes",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Peach State Post\nOutrage: Georgil\nOutrage: Georgia\nworking families\nvoice l\nvoice concern\nsurrounding Senl\nsurrounding Sen.\nJon Ossoff's vote\nforl\nfor higher taxes for\novertil\novertime pay.",
+    "text_hash": "ab9ff8e70e8dc7fedbca51492857caee0d29943dab5e6aaf6f18c2b51b0d4327",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5fde3e1b5e6d862e42c840a3",
+    "alignment": "R",
+    "block_id": "snap-5fde3e1b5e6d862e42c840a3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5fde3e1b5e6d862e42c840a3-claims-001-003",
+    "claim_text": "There is overtime pay.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 189,
+        "kind": "video_ocr",
+        "start": 176,
+        "text": "overtime pay.",
+        "unit_id": 13
+      }
+    ],
+    "evidence_ids": [
+      13
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/70ccab8febd50dba99b68a8eb9afe2ca8d3f5cfa9c45da2776f9accda4a89e58?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 188,
+        "anchor_quote": "overtime pay",
+        "anchor_start": 176,
+        "anchor_unit_id": 13,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "overtime pay",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Peach State Post\nOutrage: Georgil\nOutrage: Georgia\nworking families\nvoice l\nvoice concern\nsurrounding Senl\nsurrounding Sen.\nJon Ossoff's vote\nforl\nfor higher taxes for\novertil\novertime pay.",
+    "text_hash": "ab9ff8e70e8dc7fedbca51492857caee0d29943dab5e6aaf6f18c2b51b0d4327",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5fde3e1b5e6d862e42c840a3",
+    "alignment": "R",
+    "block_id": "snap-5fde3e1b5e6d862e42c840a3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5fde3e1b5e6d862e42c840a3-claims-001-004",
+    "claim_text": "Georgia working families are outraged.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 33,
+        "kind": "video_ocr",
+        "start": 17,
+        "text": "Outrage: Georgil",
+        "unit_id": 2
+      },
+      {
+        "end": 50,
+        "kind": "video_ocr",
+        "start": 34,
+        "text": "Outrage: Georgia",
+        "unit_id": 3
+      },
+      {
+        "end": 67,
+        "kind": "video_ocr",
+        "start": 51,
+        "text": "working families",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      2,
+      3,
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/70ccab8febd50dba99b68a8eb9afe2ca8d3f5cfa9c45da2776f9accda4a89e58?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 67,
+        "anchor_quote": "working families",
+        "anchor_start": 51,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "working families",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Peach State Post\nOutrage: Georgil\nOutrage: Georgia\nworking families\nvoice l\nvoice concern\nsurrounding Senl\nsurrounding Sen.\nJon Ossoff's vote\nforl\nfor higher taxes for\novertil\novertime pay.",
+    "text_hash": "ab9ff8e70e8dc7fedbca51492857caee0d29943dab5e6aaf6f18c2b51b0d4327",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-5fde3e1b5e6d862e42c840a3",
+    "alignment": "R",
+    "block_id": "snap-5fde3e1b5e6d862e42c840a3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-5fde3e1b5e6d862e42c840a3-claims-001-005",
+    "claim_text": "Peach State Post is an outrage.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 16,
+        "kind": "video_ocr",
+        "start": 0,
+        "text": "Peach State Post",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/70ccab8febd50dba99b68a8eb9afe2ca8d3f5cfa9c45da2776f9accda4a89e58?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Peach State Post",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Peach State Post",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Peach State Post\nOutrage: Georgil\nOutrage: Georgia\nworking families\nvoice l\nvoice concern\nsurrounding Senl\nsurrounding Sen.\nJon Ossoff's vote\nforl\nfor higher taxes for\novertil\novertime pay.",
+    "text_hash": "ab9ff8e70e8dc7fedbca51492857caee0d29943dab5e6aaf6f18c2b51b0d4327",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-001",
+    "claim_text": "It absolutely is the most important election of a lifetime.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 59,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "It absolutely is the most important election of a lifetime.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-002",
+    "claim_text": "Labor and doors candidates need to fight for them because they're fighting for us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 142,
+        "kind": "local_asr",
+        "start": 60,
+        "text": "Labor and doors candidates need to fight for them because they're fighting for us.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-003",
+    "claim_text": "If we do not get out here and vote for people who support us, we are going to lose everything.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 237,
+        "kind": "local_asr",
+        "start": 143,
+        "text": "If we do not get out here and vote for people who support us, we are going to lose everything.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-004",
+    "claim_text": "We have to fight for our union rights and that starts at the ballot box.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 310,
+        "kind": "local_asr",
+        "start": 238,
+        "text": "We have to fight for our union rights and that starts at the ballot box.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-005",
+    "claim_text": "Labor-endorsed candidates -",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 366,
+        "kind": "video_ocr",
+        "start": 339,
+        "text": "Labor-endorsed candidates -",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-006",
+    "claim_text": "We need to fight for them,",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 419,
+        "kind": "video_ocr",
+        "start": 393,
+        "text": "We need to fight for them,",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-007",
+    "claim_text": "PRO-LABOR",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 429,
+        "kind": "video_ocr",
+        "start": 420,
+        "text": "PRO-LABOR",
+        "unit_id": 12
+      }
+    ],
+    "evidence_ids": [
+      12
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-008",
+    "claim_text": "VOTE VOTE VOTE VOTE VOTE",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 454,
+        "kind": "video_ocr",
+        "start": 430,
+        "text": "VOTE VOTE VOTE VOTE VOTE",
+        "unit_id": 13
+      }
+    ],
+    "evidence_ids": [
+      13
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-009",
+    "claim_text": "VOTE VOTE",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 464,
+        "kind": "video_ocr",
+        "start": 455,
+        "text": "VOTE VOTE",
+        "unit_id": 14
+      }
+    ],
+    "evidence_ids": [
+      14
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-010",
+    "claim_text": "VOT",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 468,
+        "kind": "video_ocr",
+        "start": 465,
+        "text": "VOT",
+        "unit_id": 15
+      }
+    ],
+    "evidence_ids": [
+      15
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-011",
+    "claim_text": "VOTZ",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 473,
+        "kind": "video_ocr",
+        "start": 469,
+        "text": "VOTZ",
+        "unit_id": 16
+      }
+    ],
+    "evidence_ids": [
+      16
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-012",
+    "claim_text": "VOTL",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 478,
+        "kind": "video_ocr",
+        "start": 474,
+        "text": "VOTL",
+        "unit_id": 17
+      }
+    ],
+    "evidence_ids": [
+      17
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-013",
+    "claim_text": "VOTE VOTT VATE VOTE VOTE",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 506,
+        "kind": "video_ocr",
+        "start": 482,
+        "text": "VOTE VOTT VATE VOTE VOTE",
+        "unit_id": 19
+      }
+    ],
+    "evidence_ids": [
+      19
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-014",
+    "claim_text": "YOTE",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 511,
+        "kind": "video_ocr",
+        "start": 507,
+        "text": "YOTE",
+        "unit_id": 20
+      }
+    ],
+    "evidence_ids": [
+      20
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-015",
+    "claim_text": "DTE VOTE",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 520,
+        "kind": "video_ocr",
+        "start": 512,
+        "text": "DTE VOTE",
+        "unit_id": 21
+      }
+    ],
+    "evidence_ids": [
+      21
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-016",
+    "claim_text": "TE",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 523,
+        "kind": "video_ocr",
+        "start": 521,
+        "text": "TE",
+        "unit_id": 22
+      }
+    ],
+    "evidence_ids": [
+      22
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-017",
+    "claim_text": "VOTEd",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 529,
+        "kind": "video_ocr",
+        "start": 524,
+        "text": "VOTEd",
+        "unit_id": 23
+      }
+    ],
+    "evidence_ids": [
+      23
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-018",
+    "claim_text": "VOL",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 533,
+        "kind": "video_ocr",
+        "start": 530,
+        "text": "VOL",
+        "unit_id": 24
+      }
+    ],
+    "evidence_ids": [
+      24
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-019",
+    "claim_text": "VOTI",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 538,
+        "kind": "video_ocr",
+        "start": 534,
+        "text": "VOTI",
+        "unit_id": 25
+      }
+    ],
+    "evidence_ids": [
+      25
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-020",
+    "claim_text": "This is paid for by the AFL-CIO.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 562,
+        "kind": "video_ocr",
+        "start": 539,
+        "text": "PAID FOR BY THE AFL-CIO",
+        "unit_id": 26
+      }
+    ],
+    "evidence_ids": [
+      26
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 562,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 555,
+        "anchor_unit_id": 26,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-021",
+    "claim_text": "MYUNION, MY RICHT,",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 604,
+        "kind": "video_ocr",
+        "start": 586,
+        "text": "MYUNION, MY RICHT,",
+        "unit_id": 30
+      }
+    ],
+    "evidence_ids": [
+      30
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-022",
+    "claim_text": "MY VOTE",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 612,
+        "kind": "video_ocr",
+        "start": 605,
+        "text": "MY VOTE",
+        "unit_id": 31
+      }
+    ],
+    "evidence_ids": [
+      31
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-023",
+    "claim_text": "UNION MEMBERS FOR",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 630,
+        "kind": "video_ocr",
+        "start": 613,
+        "text": "UNION MEMBERS FOR",
+        "unit_id": 32
+      }
+    ],
+    "evidence_ids": [
+      32
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-024",
+    "claim_text": "MATT DUNLAP",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 642,
+        "kind": "video_ocr",
+        "start": 631,
+        "text": "MATT DUNLAP",
+        "unit_id": 33
+      }
+    ],
+    "evidence_ids": [
+      33
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 642,
+        "anchor_quote": "MATT DUNLAP",
+        "anchor_start": 631,
+        "anchor_unit_id": 33,
+        "entity_id": "candidate:H6ME02171",
+        "kind": "person",
+        "name": "DUNLAP, MATT",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-025",
+    "claim_text": "MAKE YOUR PLAN TO VOTE.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 666,
+        "kind": "video_ocr",
+        "start": 643,
+        "text": "MAKE YOUR PLAN TO VOTE.",
+        "unit_id": 34
+      }
+    ],
+    "evidence_ids": [
+      34
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-60810372a7e03c8bd5ff92ec",
+    "alignment": "D",
+    "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-60810372a7e03c8bd5ff92ec-claims-001-026",
+    "claim_text": "MYUNION, MY RIGHI,",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 685,
+        "kind": "video_ocr",
+        "start": 667,
+        "text": "MYUNION, MY RIGHI,",
+        "unit_id": 35
+      }
+    ],
+    "evidence_ids": [
+      35
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fff0292c83ac40a7eb621ab1c979d8fc9fdcee9e19b200b27afb3e21ffae9621?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMYUNION, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMATT DUNLAP\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHI,",
+    "text_hash": "65ffc9fdb44eda7f1b29fdbb2083dceddc75bd206c5deee9bf1e0f2cfae343b4",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]

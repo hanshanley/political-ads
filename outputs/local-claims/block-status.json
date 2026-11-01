@@ -6578,50 +6578,50 @@
   {
     "ad_id": "snap-5f00da9aa5b41a3aa1c8282a",
     "block_id": "snap-5f00da9aa5b41a3aa1c8282a-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Kathy Castor: \\\"KATHY CASTOR\\\" is absent from unit 1. Exact source: \\\"N'S BETIER\\\\n-IN A\\\\nUnion\\\\nMY UNION, MY RIGHT, MY VOTE\\\\nAFL-CIO\\\\nAMERICA'D UNIONI\\\\nKATHY\\\\nCASTOR\\\\nWILL FIGHT TO LOWER COSTS\\\\nAND RAISE WAGES.\\\\nVOTE WITH WORKERS\\\\nPAID FOR BY THE AFL-CIO\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5f70578e88e78596295cba70",
     "block_id": "snap-5f70578e88e78596295cba70-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 7: {\\\"anchor_quote\\\":\\\"Bill Huizenga\\\",\\\"anchor_unit_id\\\":13,\\\"entity_id\\\":\\\"candidate:H0MI02094\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"HUIZENGA, BILL\\\",\\\"role\\\":\\\"opponent\\\",\\\"tone\\\":\\\"negative\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5f9831a45c1104a8f2e0fefa",
     "block_id": "snap-5f9831a45c1104a8f2e0fefa-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for HUSTED, JON: \\\"Jon Husted\\\" is absent from unit 3. Exact source: \\\"SEN. JON HUSTED\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5faaa8a00a2fe0e5a4302217",
     "block_id": "snap-5faaa8a00a2fe0e5a4302217-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-5fde3e1b5e6d862e42c840a3",
     "block_id": "snap-5fde3e1b5e6d862e42c840a3-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-5ff0af05b2184c77fb3765cf",
     "block_id": "snap-5ff0af05b2184c77fb3765cf-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 7 for union: \\\"union\\\" is absent from unit 28. Exact source: \\\"MY UNION, MY RIGHT, MY VOTE\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6059a0c5e18803bcaf2bc8d5",
     "block_id": "snap-6059a0c5e18803bcaf2bc8d5-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for Jon Ossoff for Senate: \\\"Jon Ossoff for Senate\\\" is absent from unit 8. Exact source: \\\"PAID FOR BY JON OSSOFF FOR SENATE\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-60810372a7e03c8bd5ff92ec",
     "block_id": "snap-60810372a7e03c8bd5ff92ec-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-60a2e115055c4316af14744a",
