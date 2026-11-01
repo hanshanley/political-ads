@@ -96945,5 +96945,815 @@
     "text_hash": "233c07990b84c767f33eeec1f9047860442f53a8eba39f55aedd97740ea0474b",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-0ca34c1bf8eec6008b4605f0",
+    "alignment": "D",
+    "block_id": "snap-0ca34c1bf8eec6008b4605f0-claims-002",
+    "block_status": "normalized",
+    "claim_id": "snap-0ca34c1bf8eec6008b4605f0-claims-002-001",
+    "claim_text": "JoAnna Mendoza will focus",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 1351,
+        "kind": "video_ocr",
+        "start": 1326,
+        "text": "JoAnna Mendoza will focu‹",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/7687b4aa4a16b70a504ddadf6e900140c0e9c44b3ed6a89c64db49a354a8e884?mediaType=mp4",
+    "sponsor": "Common Ground Coalition PAC",
+    "targets": [
+      {
+        "anchor_end": 1340,
+        "anchor_quote": "JoAnna Mendoza",
+        "anchor_start": 1326,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:H6AZ06099",
+        "kind": "person",
+        "name": "MENDOZA, JOANNA",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Republicans like Juan Siscomani talk about trans people a lot.\n$220 million on negative ads about them in fact\nthat won't make your groceries or utilities cheaper.\nJoanna Mendoza, she'll focus on your family's bottom line.\nJuan Ciscomani\nNEWSMAX\n:16 PT\nD IN NAVAL ACADEMY THREAT\nATLANTIC HURRICANE SEASON UNUSUALLY QUIET SO I\nLIVE\nDEPARI\nbepublicans talk about\ntrans people alot.\n57.7k+\n• LIVENOW FROM FOX\nNOW\nATTORNEY GENERAL BONDI UNVEILS ACTIONS AGAINST MAINE OVER TRANSGENDER POLICY\n6:27 AМ MIB:\nATLANTA 3 TORONTO 6 F\nNJD 5\nBOSTON 4 F/OT\nTHE ASSOCL\nENN\nMS. MACE\nRepublicans Yalk about\ntrans peopleja lot.\n6:27 AM MT\nNTA 3 TORONTO 6 F\n5 BOSTON 4 F/OT\nTHE ASSOCIA\n$215 MILLION DOLLARS\non ads\nOns\nTRUE\nJUSTABOUT\nPAID FOR BY COMMON GROUND COALTION PAC. WWW.COMMONGROUNDCOALTION.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\nNOT AUTHORIZED BY ANNY CANDIDATE OR CANDIDATE'S COMMITEE.\nJoAnna Mendoza will focus\nPAID FOR BY COMMON GROUND COALTION PAC. WWW.COMMONGROUNDCOALTTON.COM.\nPAID FOR BY COMMON GROUND COALMON PAC. WWW.COMMONGROUNDCOALITON.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITEE.\nVETERAN\nPAID FOR BY COMMON GROUND COALTON PAC. WWW.COMMONGROUNDCOALITON.COM.\nPAID FOR BY COMMON GROUND COALIMION PAC. WWW.COMMONGROUNDCOALMTON.COM.\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE.\nJoAnna Mendoza will focu‹\nPAID FOR BY COMMON GROUND COALMION PAC. WWW.COMMONGROUNDCOALMTON.COM.",
+    "text_hash": "1916d24ef46f7274fd8a6bc395922c3db0aac471f9e86980bad24e806e3236b5",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0ced672869b99da65860f6d3",
+    "alignment": "D",
+    "block_id": "snap-0ced672869b99da65860f6d3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0ced672869b99da65860f6d3-claims-001-001",
+    "claim_text": "Hickenlooper is running for U.S. Senate.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 59,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PROTECTING\nPUBLIC LANDS\nFROM TRUMP\nHICKENLOOPER\nU.S. SENATE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/95aff3be073882518a2975ab8410bcc900757ebad6d719b488ead00a958712e7?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 47,
+        "anchor_quote": "HICKENLOOPER",
+        "anchor_start": 35,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Hickenlooper",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "PROTECTING\nPUBLIC LANDS\nFROM TRUMP\nHICKENLOOPER\nU.S. SENATE",
+    "text_hash": "38361e4ad21c95eee6fa1a5b81a928b078312430124900bd1e5ccb51f4d41a02",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0ced672869b99da65860f6d3",
+    "alignment": "D",
+    "block_id": "snap-0ced672869b99da65860f6d3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0ced672869b99da65860f6d3-claims-001-002",
+    "claim_text": "Hickenlooper will protect public lands from Trump.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 59,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PROTECTING\nPUBLIC LANDS\nFROM TRUMP\nHICKENLOOPER\nU.S. SENATE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/95aff3be073882518a2975ab8410bcc900757ebad6d719b488ead00a958712e7?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 47,
+        "anchor_quote": "HICKENLOOPER",
+        "anchor_start": 35,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "person",
+        "name": "Hickenlooper",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 23,
+        "anchor_quote": "PUBLIC LANDS",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Public Lands",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 34,
+        "anchor_quote": "TRUMP",
+        "anchor_start": 29,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "PROTECTING\nPUBLIC LANDS\nFROM TRUMP\nHICKENLOOPER\nU.S. SENATE",
+    "text_hash": "38361e4ad21c95eee6fa1a5b81a928b078312430124900bd1e5ccb51f4d41a02",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0ced672869b99da65860f6d3",
+    "alignment": "D",
+    "block_id": "snap-0ced672869b99da65860f6d3-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0ced672869b99da65860f6d3-claims-001-003",
+    "claim_text": "Trump poses a threat to public lands.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 59,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "PROTECTING\nPUBLIC LANDS\nFROM TRUMP\nHICKENLOOPER\nU.S. SENATE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/95aff3be073882518a2975ab8410bcc900757ebad6d719b488ead00a958712e7?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 34,
+        "anchor_quote": "TRUMP",
+        "anchor_start": 29,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 23,
+        "anchor_quote": "PUBLIC LANDS",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Public Lands",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "PROTECTING\nPUBLIC LANDS\nFROM TRUMP\nHICKENLOOPER\nU.S. SENATE",
+    "text_hash": "38361e4ad21c95eee6fa1a5b81a928b078312430124900bd1e5ccb51f4d41a02",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d0dc60717ad404d9bce1c9c",
+    "alignment": "R",
+    "block_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001-001",
+    "claim_text": "Early voting starts October 14th and runs through November 2nd.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 80,
+        "kind": "local_asr",
+        "start": 17,
+        "text": "Early voting starts October 14th and runs through November 2nd.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0da4a67712cdb219f0f64d2ced48c7536487bcc82b89109bc3c05f06cd0d4204?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [],
+    "text": "Iowa, listen up!\nEarly voting starts October 14th and runs through November 2nd.\nYou don't have to wait until Election Day to cast your ballot.\nDon't leave your future to fate.\nKnow the dates, plan ahead, and go vote early.\nLet's make America great again.\nx**\n*7",
+    "text_hash": "f64b25f588c64b5bdbfb03e1cd5dfbc0324f34725a24e045898bf1afe39bec8b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d0dc60717ad404d9bce1c9c",
+    "alignment": "R",
+    "block_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001-002",
+    "claim_text": "You don't have to wait until Election Day to cast your ballot.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 143,
+        "kind": "local_asr",
+        "start": 81,
+        "text": "You don't have to wait until Election Day to cast your ballot.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0da4a67712cdb219f0f64d2ced48c7536487bcc82b89109bc3c05f06cd0d4204?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [],
+    "text": "Iowa, listen up!\nEarly voting starts October 14th and runs through November 2nd.\nYou don't have to wait until Election Day to cast your ballot.\nDon't leave your future to fate.\nKnow the dates, plan ahead, and go vote early.\nLet's make America great again.\nx**\n*7",
+    "text_hash": "f64b25f588c64b5bdbfb03e1cd5dfbc0324f34725a24e045898bf1afe39bec8b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d0dc60717ad404d9bce1c9c",
+    "alignment": "R",
+    "block_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001-003",
+    "claim_text": "Don't leave your future to fate.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 176,
+        "kind": "local_asr",
+        "start": 144,
+        "text": "Don't leave your future to fate.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0da4a67712cdb219f0f64d2ced48c7536487bcc82b89109bc3c05f06cd0d4204?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [],
+    "text": "Iowa, listen up!\nEarly voting starts October 14th and runs through November 2nd.\nYou don't have to wait until Election Day to cast your ballot.\nDon't leave your future to fate.\nKnow the dates, plan ahead, and go vote early.\nLet's make America great again.\nx**\n*7",
+    "text_hash": "f64b25f588c64b5bdbfb03e1cd5dfbc0324f34725a24e045898bf1afe39bec8b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d0dc60717ad404d9bce1c9c",
+    "alignment": "R",
+    "block_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001-004",
+    "claim_text": "Know the dates, plan ahead, and go vote early.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 223,
+        "kind": "local_asr",
+        "start": 177,
+        "text": "Know the dates, plan ahead, and go vote early.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0da4a67712cdb219f0f64d2ced48c7536487bcc82b89109bc3c05f06cd0d4204?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [],
+    "text": "Iowa, listen up!\nEarly voting starts October 14th and runs through November 2nd.\nYou don't have to wait until Election Day to cast your ballot.\nDon't leave your future to fate.\nKnow the dates, plan ahead, and go vote early.\nLet's make America great again.\nx**\n*7",
+    "text_hash": "f64b25f588c64b5bdbfb03e1cd5dfbc0324f34725a24e045898bf1afe39bec8b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d0dc60717ad404d9bce1c9c",
+    "alignment": "R",
+    "block_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001-005",
+    "claim_text": "Let's make America great again.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 255,
+        "kind": "local_asr",
+        "start": 224,
+        "text": "Let's make America great again.",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0da4a67712cdb219f0f64d2ced48c7536487bcc82b89109bc3c05f06cd0d4204?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [],
+    "text": "Iowa, listen up!\nEarly voting starts October 14th and runs through November 2nd.\nYou don't have to wait until Election Day to cast your ballot.\nDon't leave your future to fate.\nKnow the dates, plan ahead, and go vote early.\nLet's make America great again.\nx**\n*7",
+    "text_hash": "f64b25f588c64b5bdbfb03e1cd5dfbc0324f34725a24e045898bf1afe39bec8b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d0dc60717ad404d9bce1c9c",
+    "alignment": "R",
+    "block_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001-006",
+    "claim_text": "Iowa, listen up!",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 16,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Iowa, listen up!",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0da4a67712cdb219f0f64d2ced48c7536487bcc82b89109bc3c05f06cd0d4204?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [],
+    "text": "Iowa, listen up!\nEarly voting starts October 14th and runs through November 2nd.\nYou don't have to wait until Election Day to cast your ballot.\nDon't leave your future to fate.\nKnow the dates, plan ahead, and go vote early.\nLet's make America great again.\nx**\n*7",
+    "text_hash": "f64b25f588c64b5bdbfb03e1cd5dfbc0324f34725a24e045898bf1afe39bec8b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d0dc60717ad404d9bce1c9c",
+    "alignment": "R",
+    "block_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001-007",
+    "claim_text": "x**",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 259,
+        "kind": "video_ocr",
+        "start": 256,
+        "text": "x**",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0da4a67712cdb219f0f64d2ced48c7536487bcc82b89109bc3c05f06cd0d4204?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [],
+    "text": "Iowa, listen up!\nEarly voting starts October 14th and runs through November 2nd.\nYou don't have to wait until Election Day to cast your ballot.\nDon't leave your future to fate.\nKnow the dates, plan ahead, and go vote early.\nLet's make America great again.\nx**\n*7",
+    "text_hash": "f64b25f588c64b5bdbfb03e1cd5dfbc0324f34725a24e045898bf1afe39bec8b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d0dc60717ad404d9bce1c9c",
+    "alignment": "R",
+    "block_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d0dc60717ad404d9bce1c9c-claims-001-008",
+    "claim_text": "*7",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 262,
+        "kind": "video_ocr",
+        "start": 260,
+        "text": "*7",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0da4a67712cdb219f0f64d2ced48c7536487bcc82b89109bc3c05f06cd0d4204?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [],
+    "text": "Iowa, listen up!\nEarly voting starts October 14th and runs through November 2nd.\nYou don't have to wait until Election Day to cast your ballot.\nDon't leave your future to fate.\nKnow the dates, plan ahead, and go vote early.\nLet's make America great again.\nx**\n*7",
+    "text_hash": "f64b25f588c64b5bdbfb03e1cd5dfbc0324f34725a24e045898bf1afe39bec8b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d23ae25d38b5fc0b282e2d1",
+    "alignment": "R",
+    "block_id": "snap-0d23ae25d38b5fc0b282e2d1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d23ae25d38b5fc0b282e2d1-claims-001-001",
+    "claim_text": "Senator Ossoff voted for higher taxes on overtime pay.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 54,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Senator Ossoff voted for higher taxes on overtime pay.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2dc00bb42c31dcbfe3959c07ada9fcd37ec08dd4227ffa22a27c6032437948fa?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 14,
+        "anchor_quote": "Senator Ossoff",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Senator Ossoff voted for higher taxes on overtime pay.\nOssoff doesn't care enough about us.\nPAIDFOR BY ONE NATONA.\nPAN FOR BY ONE NATON\nCALL AND TELL SENATOR JON OSSOFF\nSTOP VOTING FOR HIGHER TAXES\n(202) 224-3521\nPAID FOR BY ONE NATION\nPAID FOR BYONE NATION",
+    "text_hash": "e4df44deb151089cc45fb410314055f30dc45eec154e698903dff8be65755059",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d23ae25d38b5fc0b282e2d1",
+    "alignment": "R",
+    "block_id": "snap-0d23ae25d38b5fc0b282e2d1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d23ae25d38b5fc0b282e2d1-claims-001-002",
+    "claim_text": "Ossoff doesn't care enough about us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 91,
+        "kind": "local_asr",
+        "start": 55,
+        "text": "Ossoff doesn't care enough about us.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2dc00bb42c31dcbfe3959c07ada9fcd37ec08dd4227ffa22a27c6032437948fa?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 61,
+        "anchor_quote": "Ossoff",
+        "anchor_start": 55,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Senator Ossoff voted for higher taxes on overtime pay.\nOssoff doesn't care enough about us.\nPAIDFOR BY ONE NATONA.\nPAN FOR BY ONE NATON\nCALL AND TELL SENATOR JON OSSOFF\nSTOP VOTING FOR HIGHER TAXES\n(202) 224-3521\nPAID FOR BY ONE NATION\nPAID FOR BYONE NATION",
+    "text_hash": "e4df44deb151089cc45fb410314055f30dc45eec154e698903dff8be65755059",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d23ae25d38b5fc0b282e2d1",
+    "alignment": "R",
+    "block_id": "snap-0d23ae25d38b5fc0b282e2d1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d23ae25d38b5fc0b282e2d1-claims-001-003",
+    "claim_text": "STOP VOTING FOR HIGHER TAXES",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 197,
+        "kind": "video_ocr",
+        "start": 169,
+        "text": "STOP VOTING FOR HIGHER TAXES",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2dc00bb42c31dcbfe3959c07ada9fcd37ec08dd4227ffa22a27c6032437948fa?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 197,
+        "anchor_quote": "HIGHER TAXES",
+        "anchor_start": 185,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "HIGHER TAXES",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Senator Ossoff voted for higher taxes on overtime pay.\nOssoff doesn't care enough about us.\nPAIDFOR BY ONE NATONA.\nPAN FOR BY ONE NATON\nCALL AND TELL SENATOR JON OSSOFF\nSTOP VOTING FOR HIGHER TAXES\n(202) 224-3521\nPAID FOR BY ONE NATION\nPAID FOR BYONE NATION",
+    "text_hash": "e4df44deb151089cc45fb410314055f30dc45eec154e698903dff8be65755059",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d23ae25d38b5fc0b282e2d1",
+    "alignment": "R",
+    "block_id": "snap-0d23ae25d38b5fc0b282e2d1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d23ae25d38b5fc0b282e2d1-claims-001-004",
+    "claim_text": "CALL AND TELL SENATOR JON OSSOFF",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 168,
+        "kind": "video_ocr",
+        "start": 136,
+        "text": "CALL AND TELL SENATOR JON OSSOFF",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2dc00bb42c31dcbfe3959c07ada9fcd37ec08dd4227ffa22a27c6032437948fa?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 168,
+        "anchor_quote": "SENATOR JON OSSOFF",
+        "anchor_start": 150,
+        "anchor_unit_id": 5,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Senator Ossoff voted for higher taxes on overtime pay.\nOssoff doesn't care enough about us.\nPAIDFOR BY ONE NATONA.\nPAN FOR BY ONE NATON\nCALL AND TELL SENATOR JON OSSOFF\nSTOP VOTING FOR HIGHER TAXES\n(202) 224-3521\nPAID FOR BY ONE NATION\nPAID FOR BYONE NATION",
+    "text_hash": "e4df44deb151089cc45fb410314055f30dc45eec154e698903dff8be65755059",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d59e414cd6098cc1bca69e1",
+    "alignment": "D",
+    "block_id": "snap-0d59e414cd6098cc1bca69e1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d59e414cd6098cc1bca69e1-claims-001-001",
+    "claim_text": "Medicaid saves lives.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 295,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Medicaid saves lives.\nJeff Crank voted to gut Medicaid. Thousands of\nfamilies will pay the price.\nThe Dazette\nPulitzer Prize Winner / Est. 1872\nAKISTOCRACY\nRIP\n142,664\nPEOPLE\nMEDICAID\nIN\nCOS\nMEDICAIL\nFUNERAL\nBrosght To\nMEDICAID\nVo. Ba The\nIN LOVING MEMORY\nRIP\n57,000\nSNAP\nBENE FICIARIES\nIN\n, COS",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9f8bbd740978891bcdccd19a56f51ece49d23d8a8e99b6634054945cc4e36cad?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 8,
+        "anchor_quote": "Medicaid",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Medicaid",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Medicaid saves lives.\nJeff Crank voted to gut Medicaid. Thousands of\nfamilies will pay the price.\nThe Dazette\nPulitzer Prize Winner / Est. 1872\nAKISTOCRACY\nRIP\n142,664\nPEOPLE\nMEDICAID\nIN\nCOS\nMEDICAIL\nFUNERAL\nBrosght To\nMEDICAID\nVo. Ba The\nIN LOVING MEMORY\nRIP\n57,000\nSNAP\nBENE FICIARIES\nIN\n, COS",
+    "text_hash": "f1e7a65f4b1c1dc03ba2494b1c7275a562f35362877ceef95ffcafdecc2770b8",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d59e414cd6098cc1bca69e1",
+    "alignment": "D",
+    "block_id": "snap-0d59e414cd6098cc1bca69e1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d59e414cd6098cc1bca69e1-claims-001-002",
+    "claim_text": "Jeff Crank voted to gut Medicaid.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 295,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Medicaid saves lives.\nJeff Crank voted to gut Medicaid. Thousands of\nfamilies will pay the price.\nThe Dazette\nPulitzer Prize Winner / Est. 1872\nAKISTOCRACY\nRIP\n142,664\nPEOPLE\nMEDICAID\nIN\nCOS\nMEDICAIL\nFUNERAL\nBrosght To\nMEDICAID\nVo. Ba The\nIN LOVING MEMORY\nRIP\n57,000\nSNAP\nBENE FICIARIES\nIN\n, COS",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9f8bbd740978891bcdccd19a56f51ece49d23d8a8e99b6634054945cc4e36cad?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 32,
+        "anchor_quote": "Jeff Crank",
+        "anchor_start": 22,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6CO05142",
+        "kind": "person",
+        "name": "CRANK, JEFF",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 8,
+        "anchor_quote": "Medicaid",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Medicaid",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Medicaid saves lives.\nJeff Crank voted to gut Medicaid. Thousands of\nfamilies will pay the price.\nThe Dazette\nPulitzer Prize Winner / Est. 1872\nAKISTOCRACY\nRIP\n142,664\nPEOPLE\nMEDICAID\nIN\nCOS\nMEDICAIL\nFUNERAL\nBrosght To\nMEDICAID\nVo. Ba The\nIN LOVING MEMORY\nRIP\n57,000\nSNAP\nBENE FICIARIES\nIN\n, COS",
+    "text_hash": "f1e7a65f4b1c1dc03ba2494b1c7275a562f35362877ceef95ffcafdecc2770b8",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-0d59e414cd6098cc1bca69e1",
+    "alignment": "D",
+    "block_id": "snap-0d59e414cd6098cc1bca69e1-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-0d59e414cd6098cc1bca69e1-claims-001-003",
+    "claim_text": "Thousands of families will pay the price.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 295,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Medicaid saves lives.\nJeff Crank voted to gut Medicaid. Thousands of\nfamilies will pay the price.\nThe Dazette\nPulitzer Prize Winner / Est. 1872\nAKISTOCRACY\nRIP\n142,664\nPEOPLE\nMEDICAID\nIN\nCOS\nMEDICAIL\nFUNERAL\nBrosght To\nMEDICAID\nVo. Ba The\nIN LOVING MEMORY\nRIP\n57,000\nSNAP\nBENE FICIARIES\nIN\n, COS",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9f8bbd740978891bcdccd19a56f51ece49d23d8a8e99b6634054945cc4e36cad?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 77,
+        "anchor_quote": "families",
+        "anchor_start": 69,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "families",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Medicaid saves lives.\nJeff Crank voted to gut Medicaid. Thousands of\nfamilies will pay the price.\nThe Dazette\nPulitzer Prize Winner / Est. 1872\nAKISTOCRACY\nRIP\n142,664\nPEOPLE\nMEDICAID\nIN\nCOS\nMEDICAIL\nFUNERAL\nBrosght To\nMEDICAID\nVo. Ba The\nIN LOVING MEMORY\nRIP\n57,000\nSNAP\nBENE FICIARIES\nIN\n, COS",
+    "text_hash": "f1e7a65f4b1c1dc03ba2494b1c7275a562f35362877ceef95ffcafdecc2770b8",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
