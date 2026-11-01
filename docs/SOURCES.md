@@ -10,6 +10,76 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Honeycutt: September 25 outside-group ad quotation
+
+The retained Washington Reporter report expressly attributes a quotation
+to the narrator of Winning For Women Action Fund's Honeycutt ad. Retain
+only its final **19-word sentence**, unchanged, as one partial quotation:
+`honeycutt-wfw-washingtonreporter-20260925-0`. The preceding biography,
+earlier narrator sentence, closing quotation, investment reporting and
+Danielle Barrow press statement are not acquired ad text.
+No corresponding individual creative is linked; original media, sole legal
+payer, authorization, first release and actual paid delivery remain
+unverified. The reported outside-group advertiser is not substituted with
+the candidate's principal committee.
+
+Exact frozen identity is **H6SC01334 / HONEYCUTT, JENNY COSTA / REP /
+House / SC-01 / 2026 / C00927004**. The existing full-name alias is
+unchanged. The independently retained official committee master links
+**JENNY FOR CONGRESS**, principal P, House H and REP, to this candidate.
+The report distinguishes earlier primary spending from its current
+final-midterm TV/digital campaign through Election Day; **general**
+phase follows that explicit contest evidence, not the September date.
+No new semantic portrayal or strategy judgment is assigned.
+
+HTML SHA-256 is
+`731f74d981a07e702632738a85c0349e222fa7654aadf0e47c1ae33b908cb058`;
+selected-text SHA-256 is
+`d184f6edbe346cd65cf08c231d6b5081fd184fe868f618428df3f122b3e6f7bb`.
+Require the exact unique fourth paragraph of `div.article-body.fade-in`,
+its reviewed hash and explicit narrator attribution, then capture only the
+final sentence. Unique visible **September 25, 2026**, `time[datetime]`,
+`article:published_time` and NewsArticle publication evidence agree at
+**2026-09-25T21:12:35+00:00**; headline and mainEntityOfPage must also
+match. Wrong identity, changed boundaries, press-statement attribution,
+missing/ambiguous metadata, changed dates and oversized excerpts fail
+closed. The existing 25-word reported-quotation limit is unchanged.
+
+`data/raw/house-honeycutt-wfw-baseline.json` was frozen at `9d4dec3`
+before all source, review and canonical changes. Only the hash-verified
+already-cached body and headers were copied into the ordinary replay cache;
+this acquisition makes no new HTTP, media, gallery API or caption request.
+
+```sh
+.venv/bin/python -m political_ads.cli collect --source honeycutt-wfw-washingtonreporter --until 2026-10-30 --offline
+.venv/bin/python -m political_ads.cli parquet --offline
+.venv/bin/python -m political_ads.cli build --offline
+.venv/bin/python -m political_ads.cli validate --offline
+.venv/bin/python -m political_ads.cli audit-strategy --offline
+```
+
+Final local validation passes **520 affected Python tests**, including nine
+focused Honeycutt cases, **17 frontend tests / nine browser cases**,
+Python/frontend lint, format/type checks, both builds and the independent
+**20-metric-group / ten-chart-row** audit. Complete JSON/gzip/CSV,
+**1,955 full enriched Parquet rows** and eleven visually inspected PNG
+sets reconcile. Isolated one-response replay forbids sockets, HTTP,
+recognition and media subprocesses and reproduces all **594 written
+objects and source states** from the preceding 593. All **1,954 acquired /
+1,915 analyzed objects / 99 release reviews**, original review-byte prefix,
+native reviews, aliases, protected inputs and preceding cached responses
+remain unchanged. Proof is retained at
+`data/raw/house-honeycutt-preservation-replay.json`.
+
+Snapshot
+`4ff5950aa4fe96473c609c2b002c087cd35ad35cad601856f9851bc0ada9973b`
+contains **1,955 acquired / 1,916 English**, **651 R / 1,226 D** English
+records and **614 R / 1,204 D** exact observed-text messages.
+English House coverage is **273 R / 698 D**, or **272 R / 222 D**
+outside Snap. The saved October 30 cutoff and inclusive November 4 final
+scope are unchanged. These are collection counts, not national ad volume;
+both editions and political-ads website publication remain on hold.
+
 ## Cordell: April 15 first-party television-ad quotation
 
 The actual campaign release
@@ -260,7 +330,9 @@ that gap. The actual WFW AF homepage and linked Press first page have no
 matching September 25 original/script; visible latest releases are
 September 17 endorsements and September 3 investment reporting. Older
 Entries links remain unexplored, not evidence of exhausted discovery.
-The report remains unadmitted. Frozen Honeycutt identity is
+At that discovery checkpoint the report remained unadmitted; the later
+bounded nineteen-word acquisition is documented above, without resolving
+its individual-original gap. Frozen Honeycutt identity is
 **H6SC01334 / HONEYCUTT, JENNY COSTA / REP / SC-01 / C00927004**.
 
 Teixeira's actual campaign homepage exposes `UncnJkCXnLA` without an

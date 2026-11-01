@@ -551,6 +551,7 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             "deboer-washingtonreporter",
             "merrin-washingtonreporter",
             "kiggans-washingtonreporter",
+            "honeycutt-wfw-washingtonreporter",
             "begich-nrcc-cnbc",
             "lisonbee-sltrib",
             "gray-csd",
@@ -578,6 +579,35 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         raise ValueError("Reporter quotation requires the reviewed Merrin candidate identity")
     if source.id == "kiggans-washingtonreporter" and review["candidate_id"] != "H2VA02064":
         raise ValueError("Reporter quotation requires the reviewed Kiggans candidate identity")
+    if source.id == "honeycutt-wfw-washingtonreporter":
+        if review["candidate_id"] != "H6SC01334":
+            raise ValueError(
+                "Reporter quotation requires the reviewed Honeycutt candidate identity"
+            )
+        soup = BeautifulSoup(content, "html.parser")
+        publications = soup.select('meta[property="article:published_time"]')
+        times = soup.select("time[datetime]")
+        articles = [
+            article
+            for node in soup.select('script[type="application/ld+json"]')
+            for article in [json.loads(node.get_text())]
+            if isinstance(article, dict) and article.get("@type") == "NewsArticle"
+        ]
+        if (
+            len(publications) != 1
+            or publications[0].get("content", "")[:10] != review["published"]
+            or len(times) != 1
+            or times[0].get("datetime") != publications[0].get("content")
+            or datetime.strptime(times[0].get_text(" ", strip=True).split(" ·", 1)[0], "%B %d, %Y")
+            .date()
+            .isoformat()
+            != review["published"]
+            or len(articles) != 1
+            or articles[0].get("datePublished") != publications[0].get("content")
+            or articles[0].get("headline") != review["release_title"]
+            or articles[0].get("mainEntityOfPage") != review["source_url"]
+        ):
+            raise ValueError("Honeycutt visible and unique article publication evidence must agree")
     if source.id == "lawler-tell-her-no" and review["candidate_id"] != "H2NY17162":
         raise ValueError("Campaign quotation requires the reviewed Lawler candidate identity")
     if source.id == "begich-nrcc-cnbc" and review["candidate_id"] != "H2AK01083":
@@ -703,6 +733,12 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         pattern = r"Merrin [^“”]+\. “([^”]+)” he adds in the ad\. “([^”]+)”"
     elif source.id == "kiggans-washingtonreporter":
         pattern = r"“([^”]+)” a local news anchor says during the ad\. [^“”]+“[^”]+”"
+    elif source.id == "honeycutt-wfw-washingtonreporter":
+        pattern = (
+            r"The ad leans heavily on Honeycutt’s deep ties to South Carolina’s 1st District\. "
+            r"“[^”]+” the narrator says\. “Jenny Costa Honeycutt [^”]+\. "
+            r"(Now Jenny’s running for Congress [^”]+)”"
+        )
     elif source.id == "lawler-tell-her-no":
         pattern = (
             r"Pearl River, NY — October 12, 2026 — Today, the Lawler for Congress campaign "

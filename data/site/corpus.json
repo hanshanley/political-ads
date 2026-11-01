@@ -32116,6 +32116,93 @@
       "title": "VERIFY: New ad praises Rep. Rob Wittman's legislative record on taxes and workforce development"
     },
     {
+      "alignment": "R",
+      "attribution_basis": "Actual retained HTTP200 HTML SHA256731f74d981a07e702632738a85c0349e222fa7654aadf0e47c1ae33b908cb058 has one h1 title and one visible September25,2026 time whose datetime2026-09-25T21:12:35+00:00 agrees with the unique article:published_time and NewsArticle datePublished, headline and mainEntityOfPage. One exact fourth body paragraph explicitly attributes the quotation to the ad narrator. Retain only its final nineteen-word policy sentence, SHA256d184f6edbe346cd65cf08c231d6b5081fd184fe868f618428df3f122b3e6f7bb, preserving the curly apostrophe and punctuation. It is absent from all1954 preceding acquired records; this establishes observed-text distinctness, not independently certified execution uniqueness. Exact frozen H6SC01334/HONEYCUTT,JENNY COSTA/REP/H/SC01/2026/C00927004 and the existing full-name alias agree. Independently cached official cm26.zip SHA2566249342f373dee195dc638a307c88c45da14cec2e760e4ff212035cdde76df60 links JENNY FOR CONGRESS,P/H/REP to this exact candidate. WFW Action Fund is the publisher-reported outside-group advertiser, not the candidate's principal committee; legal payer, authorization and original speech accuracy remain unverified. The report distinguishes prior primary spending from this current final-midterm TV/digital investment running through Election Day, supporting general phase without inferring it from the date alone. Reported investment is not verified expenditure or paid delivery. No individual creative is linked; media_urls remains empty, and no gallery API, media, caption or unverified YouTube request was made. The report was already cached, so this acquisition made no new HTTP request. Completeness, first release, actual airing, political claims and semantic strategy remain unverified or unreviewed. All preceding records, raw review prefix, native reviews, aliases and protected inputs are preserved.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6SC01334",
+          "district": "01",
+          "name": "HONEYCUTT, JENNY COSTA",
+          "office": "H",
+          "party": "REP",
+          "state": "SC"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "honeycutt-wfw-washingtonreporter-20260925-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "bf9a9c1ca082890b44047f752d74ae599a8bc1a12f69d7bbb6960b52c3427f14",
+      "observed": "2026-11-01",
+      "phase": "general",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-09-25",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified"
+      ],
+      "race": "SC-01",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H6SC01334"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "Actual retained HTTP200 HTML SHA256731f74d981a07e702632738a85c0349e222fa7654aadf0e47c1ae33b908cb058 has one h1 title and one visible September25,2026 time whose datetime2026-09-25T21:12:35+00:00 agrees with the unique article:published_time and NewsArticle datePublished, headline and mainEntityOfPage. One exact fourth body paragraph explicitly attributes the quotation to the ad narrator. Retain only its final nineteen-word policy sentence, SHA256d184f6edbe346cd65cf08c231d6b5081fd184fe868f618428df3f122b3e6f7bb, preserving the curly apostrophe and punctuation. It is absent from all1954 preceding acquired records; this establishes observed-text distinctness, not independently certified execution uniqueness. Exact frozen H6SC01334/HONEYCUTT,JENNY COSTA/REP/H/SC01/2026/C00927004 and the existing full-name alias agree. Independently cached official cm26.zip SHA2566249342f373dee195dc638a307c88c45da14cec2e760e4ff212035cdde76df60 links JENNY FOR CONGRESS,P/H/REP to this exact candidate. WFW Action Fund is the publisher-reported outside-group advertiser, not the candidate's principal committee; legal payer, authorization and original speech accuracy remain unverified. The report distinguishes prior primary spending from this current final-midterm TV/digital investment running through Election Day, supporting general phase without inferring it from the date alone. Reported investment is not verified expenditure or paid delivery. No individual creative is linked; media_urls remains empty, and no gallery API, media, caption or unverified YouTube request was made. The report was already cached, so this acquisition made no new HTTP request. Completeness, first release, actual airing, political claims and semantic strategy remain unverified or unreviewed. All preceding records, raw review prefix, native reviews, aliases and protected inputs are preserved.",
+            "candidate_id": "H6SC01334",
+            "completeness": "partial_quotation",
+            "content_sha256": "731f74d981a07e702632738a85c0349e222fa7654aadf0e47c1ae33b908cb058",
+            "format": "html",
+            "media_url": null,
+            "passages": [
+              "Now Jenny’s running for Congress to break the gridlock, bring fiscal sanity to D.C., and make things more affordable."
+            ],
+            "phase": "general",
+            "published": "2026-09-25",
+            "publisher_credit": "Matthew Foldi, Washington Reporter; September 25, 2026 report on Winning For Women Action Fund's Honeycutt advertising.",
+            "record_id": "20260925",
+            "release_title": "EXCLUSIVE: Jenny Costa Honeycutt gets almost $1 million in support from Winning for Women Action Fund in home stretch",
+            "reported_ad_text": {
+              "paragraph_selector": "div.article-body.fade-in > p:nth-of-type(4)",
+              "paragraph_sha256": "cc528d79f346a0ff59c9b680cd7f8e7699137a78023719e18f68086d661799a4"
+            },
+            "required_context": [
+              "Jenny Costa Honeycutt",
+              "Winning For Women Action Fund",
+              "2026 midterms",
+              "through Election Day",
+              "The WFW AF ad ends"
+            ],
+            "retrieval_url": "https://washingtonreporter.news/exclusive-jenny-costa-honeycutt-gets-almost-1-million-in-support-from-winning-for-women-action-fund-in-home-stretch/",
+            "reuse_basis": "Retain only nineteen unchanged words from one complete sentence inside the publisher's expressly attributed narrator quotation. Exclude the preceding narrator and biography sentences, closing quotation, reporting, spending assertions, and Danielle Barrow press statement. This is a bounded partial excerpt, not the full ad transcript, a blanket license, or authorization to publish either edition. Full cached HTML and original media remain undistributed.",
+            "source": "honeycutt-wfw-washingtonreporter",
+            "source_url": "https://washingtonreporter.news/exclusive-jenny-costa-honeycutt-gets-almost-1-million-in-support-from-winning-for-women-action-fund-in-home-stretch/"
+          },
+          "text": "Now Jenny’s running for Congress to break the gridlock, bring fiscal sanity to D.C., and make things more affordable."
+        }
+      ],
+      "source": "honeycutt-wfw-washingtonreporter",
+      "source_hash": "731f74d981a07e702632738a85c0349e222fa7654aadf0e47c1ae33b908cb058",
+      "source_record_id": "20260925",
+      "source_url": "https://washingtonreporter.news/exclusive-jenny-costa-honeycutt-gets-almost-1-million-in-support-from-winning-for-women-action-fund-in-home-stretch/",
+      "sponsor": "Winning For Women Action Fund (publisher-reported; payer unverified)",
+      "sponsor_type": "outside_group",
+      "state": "SC",
+      "text": "Now Jenny’s running for Congress to break the gridlock, bring fiscal sanity to D.C., and make things more affordable.",
+      "title": "EXCLUSIVE: Jenny Costa Honeycutt gets almost $1 million in support from Winning for Women Action Fund in home stretch"
+    },
+    {
       "alignment": "D",
       "attribution_basis": "Official Troy Jackson for Maine release at https://www.jacksonformaine.com/news/new-ad-mainer-calls-out-susan-collins-for-advancing-1-trillion-in-medicaid-cuts; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
@@ -52907,6 +52994,22 @@
       "source": "holdtheline-metroweekly",
       "state": "partial",
       "url": "https://www.metroweekly.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "honeycutt-wfw-washingtonreporter",
+      "state": "partial",
+      "url": "https://washingtonreporter.news"
     },
     {
       "ads_with_text": 1,

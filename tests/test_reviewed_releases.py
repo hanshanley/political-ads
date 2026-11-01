@@ -1275,6 +1275,142 @@ def test_finstad_report_rejects_wrong_identity_non_ad_speech_and_unsupported_med
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_honeycutt_fixture():
+    source, candidate, review, _ = unlinked_finstad_fixture()
+    source = next(s for s in SOURCES if s.id == "honeycutt-wfw-washingtonreporter")
+    candidate.update(
+        candidate_id="H6SC01334",
+        name="HONEYCUTT, JENNY COSTA",
+        state="SC",
+        district="01",
+        principal_committee="C00927004",
+        reviewed_alias={"full_name": "Jenny Costa Honeycutt"},
+    )
+    selected = (
+        "Now Jenny’s running for Congress to break the gridlock, bring fiscal sanity "
+        "to D.C., and make things more affordable."
+    )
+    paragraph = (
+        "The ad leans heavily on Honeycutt’s deep ties to South Carolina’s 1st District. "
+        "“Our community has always valued neighbors who work together.” the narrator says. "
+        f"“Jenny Costa Honeycutt has worked here for years. {selected}”"
+    )
+    url = source.url + "/honeycutt-outside-group-ad-report/"
+    article = {
+        "@type": "NewsArticle",
+        "headline": "Honeycutt outside-group ad report",
+        "datePublished": "2026-09-25T21:12:35+00:00",
+        "mainEntityOfPage": url,
+    }
+    content = (
+        '<meta property="article:published_time" content="2026-09-25T21:12:35+00:00">'
+        "<h1>Honeycutt outside-group ad report</h1>"
+        '<time datetime="2026-09-25T21:12:35+00:00">September 25, 2026 · 1 month ago</time>'
+        f'<script type="application/ld+json">{json.dumps(article)}</script>'
+        "<article><p>Winning For Women Action Fund supports Jenny Costa Honeycutt "
+        "in the general election.</p>"
+        f'<p class="quoted">{paragraph}</p><p>A spokesman praises the candidate.</p></article>'
+    )
+    review.update(
+        source=source.id,
+        record_id="20260925",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-09-25",
+        release_title=article["headline"],
+        candidate_id=candidate["candidate_id"],
+        phase="general",
+        required_context=["Jenny Costa Honeycutt", "Winning For Women Action Fund"],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": "article > p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+    )
+    review.pop("heading_selector")
+    return source, candidate, review, content.encode()
+
+
+def test_honeycutt_report_selects_only_final_narrator_sentence_without_inventing_media():
+    source, candidate, review, body = unlinked_honeycutt_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            assert url == review["retrieval_url"]
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == review["passages"][0] and len(ad["text"].split()) == 19
+    assert ad["sponsor_type"] == "outside_group" and ad["race"] == "SC-01"
+    assert ad["alignment"] == "R" and ad["media_urls"] == [] and ad["phase"] == "general"
+    assert ad["date_basis"] == "publisher_report_date" and ad["delivery_start"] is None
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(ad["quality_flags"])
+    assert ad["segments"][0]["release_evidence"] == review
+    assert "portrayal_review" not in ad and calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "failure",
+    [
+        "candidate",
+        "statement",
+        "too_long",
+        "unselected",
+        "missing",
+        "date",
+        "duplicate_metadata",
+        "news_video",
+    ],
+)
+def test_honeycutt_report_rejects_wrong_identity_attribution_boundaries_and_metadata(failure):
+    source, candidate, review, body = unlinked_honeycutt_fixture()
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H6SC01999"
+    elif failure == "unselected":
+        review["passages"] = ["Jenny Costa Honeycutt has worked here for years."]
+    elif failure == "missing":
+        review["reported_ad_text"]["paragraph_selector"] = ".missing"
+    elif failure == "news_video":
+        review["media_url"] = "https://washingtonreporter.news/video/news-report"
+    else:
+        from bs4 import BeautifulSoup
+
+        content = body.decode()
+        if failure == "statement":
+            content = content.replace("the narrator says.", "a spokesman says.")
+        elif failure == "too_long":
+            original = review["passages"][0]
+            review["passages"][0] += (
+                " Additional words push the quotation beyond its permitted limit."
+            )
+            content = content.replace(original, review["passages"][0])
+        elif failure == "date":
+            content = content.replace("September 25, 2026 ·", "September 24, 2026 ·")
+        else:
+            script = str(BeautifulSoup(content, "html.parser").select_one("script"))
+            content += script
+        paragraph = BeautifulSoup(content, "html.parser").select_one("article > p.quoted")
+        review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
+        review["content_sha256"] = digest(content)
+        body = content.encode()
+
+    class Client:
+        def get(self, url, **kwargs):
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 def unlinked_deboer_fixture():
     source, candidate, review, body = unlinked_finstad_fixture()
     source = next(s for s in SOURCES if s.id == "deboer-washingtonreporter")

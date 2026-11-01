@@ -603,6 +603,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "honeycutt-wfw-washingtonreporter",
+        "https://washingtonreporter.news",
+        "Winning For Women Action Fund (publisher-reported; payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="SC-01",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "perry-capitalstar",
         "https://penncapital-star.com",
         "Patriots for Perry (publisher-reported; payer unverified)",
