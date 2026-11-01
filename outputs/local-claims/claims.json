@@ -107166,5 +107166,419 @@
     "text_hash": "9c141f4fa84a9329880e7502797d3c355a40953cb88c7a62171a0ca86f0f69b2",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2b4d2b17301b3506ed2c1079",
+    "alignment": "D",
+    "block_id": "snap-2b4d2b17301b3506ed2c1079-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2b4d2b17301b3506ed2c1079-claims-001-001",
+    "claim_text": "John Hickenlooper will always fight for Colorado",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 201,
+        "kind": "video_ocr",
+        "start": 184,
+        "text": "I'LL ALWAYS FIGHT",
+        "unit_id": 13
+      },
+      {
+        "end": 214,
+        "kind": "video_ocr",
+        "start": 202,
+        "text": "FOR COLORADO",
+        "unit_id": 14
+      }
+    ],
+    "evidence_ids": [
+      13,
+      14
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e2651bc85593332d2577cd496db477484a67adece8435e47a3f3e971fc9d837a?mediaType=mp4",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 201,
+        "anchor_quote": "I'LL ALWAYS FIGHT",
+        "anchor_start": 184,
+        "anchor_unit_id": 13,
+        "entity_id": "candidate:S0CO00575",
+        "kind": "person",
+        "name": "JOHN HICKENLOOPER",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "JOHN HICKENLOOPER\nPAID FOR HICKENLOOPER FOR COLORADO\nTAKING ON\nWALL STREET\nWALL STREET BANKS\nTO LOWER\nHOUSING COSTS\nIN COLORADO\nHICKENLOOPER\nU.S. SENATE\nNO MATTER HOW\nSTEEP THE CLIMB,\nI'LL ALWAYS FIGHT\nFOR COLORADO",
+    "text_hash": "d4a52fad857d8dd2425c25b26470021b8b6a0a8f75d1962b05d21be61b57c888",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2b4d2b17301b3506ed2c1079",
+    "alignment": "D",
+    "block_id": "snap-2b4d2b17301b3506ed2c1079-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2b4d2b17301b3506ed2c1079-claims-001-002",
+    "claim_text": "Hickenlooper is taking on Wall Street",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 62,
+        "kind": "video_ocr",
+        "start": 53,
+        "text": "TAKING ON",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e2651bc85593332d2577cd496db477484a67adece8435e47a3f3e971fc9d837a?mediaType=mp4",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 62,
+        "anchor_quote": "TAKING ON",
+        "anchor_start": 53,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S0CO00575",
+        "kind": "person",
+        "name": "HICKENLOOPER, JOHN W.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "JOHN HICKENLOOPER\nPAID FOR HICKENLOOPER FOR COLORADO\nTAKING ON\nWALL STREET\nWALL STREET BANKS\nTO LOWER\nHOUSING COSTS\nIN COLORADO\nHICKENLOOPER\nU.S. SENATE\nNO MATTER HOW\nSTEEP THE CLIMB,\nI'LL ALWAYS FIGHT\nFOR COLORADO",
+    "text_hash": "d4a52fad857d8dd2425c25b26470021b8b6a0a8f75d1962b05d21be61b57c888",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2b4d2b17301b3506ed2c1079",
+    "alignment": "D",
+    "block_id": "snap-2b4d2b17301b3506ed2c1079-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2b4d2b17301b3506ed2c1079-claims-001-003",
+    "claim_text": "Hickenlooper is taking on Wall Street banks to lower housing costs in Colorado",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 62,
+        "kind": "video_ocr",
+        "start": 53,
+        "text": "TAKING ON",
+        "unit_id": 3
+      },
+      {
+        "end": 74,
+        "kind": "video_ocr",
+        "start": 63,
+        "text": "WALL STREET",
+        "unit_id": 4
+      },
+      {
+        "end": 92,
+        "kind": "video_ocr",
+        "start": 75,
+        "text": "WALL STREET BANKS",
+        "unit_id": 5
+      },
+      {
+        "end": 101,
+        "kind": "video_ocr",
+        "start": 93,
+        "text": "TO LOWER",
+        "unit_id": 6
+      },
+      {
+        "end": 115,
+        "kind": "video_ocr",
+        "start": 102,
+        "text": "HOUSING COSTS",
+        "unit_id": 7
+      },
+      {
+        "end": 127,
+        "kind": "video_ocr",
+        "start": 116,
+        "text": "IN COLORADO",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e2651bc85593332d2577cd496db477484a67adece8435e47a3f3e971fc9d837a?mediaType=mp4",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 62,
+        "anchor_quote": "TAKING ON",
+        "anchor_start": 53,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S0CO00575",
+        "kind": "person",
+        "name": "HICKENLOOPER, JOHN W.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 92,
+        "anchor_quote": "WALL STREET BANKS",
+        "anchor_start": 75,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "WALL STREET BANKS",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 115,
+        "anchor_quote": "HOUSING COSTS",
+        "anchor_start": 102,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "HOUSING COSTS",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "JOHN HICKENLOOPER\nPAID FOR HICKENLOOPER FOR COLORADO\nTAKING ON\nWALL STREET\nWALL STREET BANKS\nTO LOWER\nHOUSING COSTS\nIN COLORADO\nHICKENLOOPER\nU.S. SENATE\nNO MATTER HOW\nSTEEP THE CLIMB,\nI'LL ALWAYS FIGHT\nFOR COLORADO",
+    "text_hash": "d4a52fad857d8dd2425c25b26470021b8b6a0a8f75d1962b05d21be61b57c888",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2b4d2b17301b3506ed2c1079",
+    "alignment": "D",
+    "block_id": "snap-2b4d2b17301b3506ed2c1079-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2b4d2b17301b3506ed2c1079-claims-001-004",
+    "claim_text": "This ad is paid for by Hickenlooper for Colorado",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 52,
+        "kind": "video_ocr",
+        "start": 18,
+        "text": "PAID FOR HICKENLOOPER FOR COLORADO",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e2651bc85593332d2577cd496db477484a67adece8435e47a3f3e971fc9d837a?mediaType=mp4",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 52,
+        "anchor_quote": "HICKENLOOPER FOR COLORADO",
+        "anchor_start": 27,
+        "anchor_unit_id": 2,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Hickenlooper for Colorado",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "JOHN HICKENLOOPER\nPAID FOR HICKENLOOPER FOR COLORADO\nTAKING ON\nWALL STREET\nWALL STREET BANKS\nTO LOWER\nHOUSING COSTS\nIN COLORADO\nHICKENLOOPER\nU.S. SENATE\nNO MATTER HOW\nSTEEP THE CLIMB,\nI'LL ALWAYS FIGHT\nFOR COLORADO",
+    "text_hash": "d4a52fad857d8dd2425c25b26470021b8b6a0a8f75d1962b05d21be61b57c888",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2b4d2b17301b3506ed2c1079",
+    "alignment": "D",
+    "block_id": "snap-2b4d2b17301b3506ed2c1079-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2b4d2b17301b3506ed2c1079-claims-001-005",
+    "claim_text": "John Hickenlooper is a U.S. Senator",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "video_ocr",
+        "start": 141,
+        "text": "U.S. SENATE",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e2651bc85593332d2577cd496db477484a67adece8435e47a3f3e971fc9d837a?mediaType=mp4",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 152,
+        "anchor_quote": "U.S. SENATE",
+        "anchor_start": 141,
+        "anchor_unit_id": 10,
+        "entity_id": "candidate:S0CO00575",
+        "kind": "person",
+        "name": "JOHN HICKENLOOPER",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "JOHN HICKENLOOPER\nPAID FOR HICKENLOOPER FOR COLORADO\nTAKING ON\nWALL STREET\nWALL STREET BANKS\nTO LOWER\nHOUSING COSTS\nIN COLORADO\nHICKENLOOPER\nU.S. SENATE\nNO MATTER HOW\nSTEEP THE CLIMB,\nI'LL ALWAYS FIGHT\nFOR COLORADO",
+    "text_hash": "d4a52fad857d8dd2425c25b26470021b8b6a0a8f75d1962b05d21be61b57c888",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2b4d2b17301b3506ed2c1079",
+    "alignment": "D",
+    "block_id": "snap-2b4d2b17301b3506ed2c1079-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2b4d2b17301b3506ed2c1079-claims-001-006",
+    "claim_text": "Hickenlooper will fight no matter how steep the climb",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 166,
+        "kind": "video_ocr",
+        "start": 153,
+        "text": "NO MATTER HOW",
+        "unit_id": 11
+      },
+      {
+        "end": 183,
+        "kind": "video_ocr",
+        "start": 167,
+        "text": "STEEP THE CLIMB,",
+        "unit_id": 12
+      },
+      {
+        "end": 201,
+        "kind": "video_ocr",
+        "start": 184,
+        "text": "I'LL ALWAYS FIGHT",
+        "unit_id": 13
+      }
+    ],
+    "evidence_ids": [
+      11,
+      12,
+      13
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e2651bc85593332d2577cd496db477484a67adece8435e47a3f3e971fc9d837a?mediaType=mp4",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 201,
+        "anchor_quote": "I'LL ALWAYS FIGHT",
+        "anchor_start": 184,
+        "anchor_unit_id": 13,
+        "entity_id": "candidate:S0CO00575",
+        "kind": "person",
+        "name": "HICKENLOOPER, JOHN W.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "JOHN HICKENLOOPER\nPAID FOR HICKENLOOPER FOR COLORADO\nTAKING ON\nWALL STREET\nWALL STREET BANKS\nTO LOWER\nHOUSING COSTS\nIN COLORADO\nHICKENLOOPER\nU.S. SENATE\nNO MATTER HOW\nSTEEP THE CLIMB,\nI'LL ALWAYS FIGHT\nFOR COLORADO",
+    "text_hash": "d4a52fad857d8dd2425c25b26470021b8b6a0a8f75d1962b05d21be61b57c888",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2b4d2b17301b3506ed2c1079",
+    "alignment": "D",
+    "block_id": "snap-2b4d2b17301b3506ed2c1079-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2b4d2b17301b3506ed2c1079-claims-001-007",
+    "claim_text": "Hickenlooper is Hickenlooper",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 140,
+        "kind": "video_ocr",
+        "start": 128,
+        "text": "HICKENLOOPER",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e2651bc85593332d2577cd496db477484a67adece8435e47a3f3e971fc9d837a?mediaType=mp4",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 140,
+        "anchor_quote": "HICKENLOOPER",
+        "anchor_start": 128,
+        "anchor_unit_id": 9,
+        "entity_id": "candidate:S0CO00575",
+        "kind": "person",
+        "name": "HICKENLOOPER",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "JOHN HICKENLOOPER\nPAID FOR HICKENLOOPER FOR COLORADO\nTAKING ON\nWALL STREET\nWALL STREET BANKS\nTO LOWER\nHOUSING COSTS\nIN COLORADO\nHICKENLOOPER\nU.S. SENATE\nNO MATTER HOW\nSTEEP THE CLIMB,\nI'LL ALWAYS FIGHT\nFOR COLORADO",
+    "text_hash": "d4a52fad857d8dd2425c25b26470021b8b6a0a8f75d1962b05d21be61b57c888",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]
