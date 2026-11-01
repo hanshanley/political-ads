@@ -437,6 +437,111 @@ def printed_ad_text(client, content: str, source: Source, review: dict, identiti
     }
 
 
+def npr_ad_text(client, content: str, source: Source, review: dict, candidate: dict) -> str:
+    report_url = (
+        "https://www.tpr.org/2026-10-21/"
+        "california-gas-prices-have-long-plagued-democratic-candidates-this-year-is-different"
+    )
+    corroborating_url = (
+        "https://www.kqed.org/news/12104393/"
+        "california-democrats-hope-iran-war-flips-the-script-on-gas-prices"
+    )
+    if (
+        source.url != "https://www.tpr.org"
+        or review["source_url"] != report_url
+        or review["retrieval_url"] != report_url
+        or review["published"] != "2026-10-21"
+        or review["format"] != "html"
+        or review["media_url"] is not None
+        or review["completeness"] != "partial_quotation"
+        or any(
+            review.get(key)
+            for key in (
+                "broadcast_evidence",
+                "printed_ad_text",
+                "linked_ad_text",
+                "publisher_captions",
+            )
+        )
+        or (
+            candidate["candidate_id"],
+            candidate["name"],
+            candidate["party"],
+            candidate["principal_committee"],
+        )
+        != ("H4CA09093", "LINCOLN, KEVIN J II", "REP", "C00845826")
+    ):
+        raise ValueError("NPR soundbite requires the exact reviewed Lincoln report and identity")
+    soup = BeautifulSoup(content, "html.parser")
+    publications = soup.select('meta[property="article:published_time"]')
+    articles = [
+        article
+        for node in soup.select('script[type="application/ld+json"]')
+        for article in [json.loads(node.get_text())]
+        if isinstance(article, dict) and article.get("@type") == "NewsArticle"
+    ]
+    if (
+        len(publications) != 1
+        or publications[0].get("content", "")[:10] != review["published"]
+        or len(articles) != 1
+        or articles[0].get("datePublished", "")[:10] != review["published"]
+        or articles[0].get("headline") != review["release_title"]
+        or articles[0].get("mainEntityOfPage", {}).get("@id") != report_url
+        or review.get("publication_selector") != ".ArtP-datePublished"
+    ):
+        raise ValueError("NPR visible and article publication calendar dates must agree")
+    evidence = review["reported_ad_text"]
+    paragraphs = soup.select(evidence["paragraph_selector"])
+    bodies = soup.select(".ArtP-articleBody")
+    if (
+        len(bodies) != 1
+        or len(paragraphs) != 2
+        or any(node.name != "p" or node.parent is not bodies[0] for node in paragraphs)
+        or paragraphs[0].find_next_sibling("p") is not paragraphs[1]
+    ):
+        raise ValueError("NPR ad needs two adjacent speaker paragraphs inside the transcript")
+    cue = paragraphs[0].find_previous_sibling("p")
+    context = paragraphs[1].find_next_sibling("p")
+    if (
+        cue is None
+        or cue.get_text(" ", strip=True) != "(SOUNDBITE OF ARCHIVED RECORDING)"
+        or context is None
+        or not context.get_text(" ", strip=True).startswith("MARZORATI:")
+        or not all(
+            phrase in context.get_text(" ", strip=True)
+            for phrase in (
+                "Republican Kevin Lincoln",
+                "Democratic incumbent Adam Gray",
+                "state gas tax",
+            )
+        )
+    ):
+        raise ValueError("NPR soundbite requires its adjacent recorded-ad and race context")
+    paragraph = "\n".join(node.get_text(" ", strip=True) for node in paragraphs)
+    match = re.fullmatch(r"KEVIN LINCOLN: ([^\n]+)\nUNIDENTIFIED ACTOR: ([^\n]+)", paragraph)
+    if digest(paragraph) != evidence["paragraph_sha256"] or not match:
+        raise ValueError("NPR's exact candidate and actor soundbite labels or text changed")
+    text = "\n".join(match.groups())
+    if text != "\n".join(review["passages"]) or not 15 <= len(text.split()) <= 25:
+        raise ValueError("NPR excerpt must contain only the bounded two-speaker ad words")
+    corroboration = evidence["corroborating_report"]
+    if corroboration["url"] != corroborating_url:
+        raise ValueError("NPR ad attribution requires the exact independent KQED report")
+    body, _ = client.get(corroborating_url, refresh=True, retry=False)
+    corroborating_content = body.decode("utf-8")
+    if digest(corroborating_content) != corroboration["content_sha256"]:
+        raise ValueError("Corroborating KQED report changed; ad attribution needs renewed review")
+    spots = BeautifulSoup(corroborating_content, "html.parser").select(
+        '.wp-block-render > p:-soup-contains("In another spot, Republican Kevin Lincoln")'
+    )
+    if len(spots) != 1 or not all(
+        phrase in spots[0].get_text(" ", strip=True)
+        for phrase in ("Rep. Adam Gray", "state\u2019s gas tax")
+    ):
+        raise ValueError("KQED must independently identify Lincoln's gas-tax campaign spot")
+    return text
+
+
 def reported_ad_text(content: str, source: Source, review: dict) -> str:
     if (
         source.id
@@ -789,7 +894,11 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
             client, content, source, review, identities
         )
     elif reported:
-        passage_source = reported_ad_text(content, source, review)
+        passage_source = (
+            npr_ad_text(client, content, source, review, candidate)
+            if source.id == "lincoln-npr"
+            else reported_ad_text(content, source, review)
+        )
     elif printed:
         passage_source, print_evidence = printed_ad_text(
             client, content, source, review, identities
@@ -862,6 +971,8 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         flags.append("publisher_audio_episode_not_individual_ad_original")
     if reported:
         flags.extend(["original_ad_media_unverified", "ad_legal_payer_unverified"])
+    if source.id == "lincoln-npr":
+        flags.append("publisher_rush_transcript_not_verified_against_audio")
     if source.id == "lawler-tell-her-no":
         flags.append("opponent_interview_clip_used_in_ad")
     if source.id == "begich-nrcc-cnbc":

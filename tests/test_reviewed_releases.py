@@ -2519,6 +2519,168 @@ def test_alfonso_clark_report_rejects_unbound_or_neighboring_words(failure):
     assert ads == [] and status["state"] == "error"
 
 
+def lincoln_npr_fixture():
+    source, candidate, review, _, _, _ = unlinked_kiggans_fixture()
+    source = replace(
+        source,
+        id="lincoln-npr",
+        url="https://www.tpr.org",
+        sponsor_type="candidate",
+        fixed_race="CA-13",
+    )
+    candidate.update(
+        candidate_id="H4CA09093",
+        name="LINCOLN, KEVIN J II",
+        state="CA",
+        district="13",
+        principal_committee="C00845826",
+    )
+    candidate.pop("reviewed_alias", None)
+    title = "California gas prices have long plagued Democratic candidates. This year is different"
+    url = (
+        source.url
+        + "/2026-10-21/"
+        + ("california-gas-prices-have-long-plagued-democratic-candidates-this-year-is-different")
+    )
+    selected = (
+        "These sixteen selected words are Republican campaign speech criticizing California "
+        "gas taxes and the Democratic incumbent.\nFour actor words follow."
+    )
+    first, second = selected.split("\n")
+    article = {
+        "@type": "NewsArticle",
+        "headline": title,
+        "datePublished": "2026-10-21T18:48:18Z",
+        "mainEntityOfPage": {"@id": url},
+    }
+    content = (
+        '<meta property="article:published_time" content="2026-10-21T22:48:18">'
+        f'<script type="application/ld+json">{json.dumps(article)}</script>'
+        f"<h1>{title}</h1>"
+        '<div class="ArtP-datePublished">Published October 21, 2026 at 5:48 PM CDT</div>'
+        '<div class="ArtP-articleBody">'
+        "<p>MARZORATI: Republicans are also campaigning on gas prices.</p>"
+        "<p>(SOUNDBITE OF ARCHIVED RECORDING)</p>"
+        f"<p>KEVIN LINCOLN: {first}</p><p>UNIDENTIFIED ACTOR: {second}</p>"
+        "<p>MARZORATI: Republican Kevin Lincoln is attacking Democratic incumbent Adam Gray "
+        "over the state gas tax.</p>"
+        "<p>LINCOLN: This later interview must never enter the ad.</p></div>"
+    )
+    corroboration = (
+        '<div class="wp-block-render"><p>In another spot, Republican Kevin Lincoln '
+        "challenges Rep. Adam Gray about the state\u2019s gas tax.</p></div>"
+    )
+    selector = (
+        '.ArtP-articleBody > p:-soup-contains("KEVIN LINCOLN:"), '
+        '.ArtP-articleBody > p:-soup-contains("UNIDENTIFIED ACTOR:")'
+    )
+    review.update(
+        source=source.id,
+        record_id="20261021",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-10-21",
+        release_title=title,
+        heading_selector="h1",
+        publication_selector=".ArtP-datePublished",
+        publication_date_format="Published %B %d, %Y at %I:%M %p CDT",
+        candidate_id=candidate["candidate_id"],
+        required_context=["Republicans are also campaigning on gas prices."],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": selector,
+            "paragraph_sha256": digest(f"KEVIN LINCOLN: {first}\nUNIDENTIFIED ACTOR: {second}"),
+            "corroborating_report": {
+                "url": "https://www.kqed.org/news/12104393/"
+                "california-democrats-hope-iran-war-flips-the-script-on-gas-prices",
+                "content_sha256": digest(corroboration),
+            },
+        },
+    )
+    return source, candidate, review, content, corroboration
+
+
+@pytest.mark.parametrize(
+    "failure",
+    [
+        None,
+        "separated_actor",
+        "interview_cue",
+        "wrong_actor",
+        "outside_body",
+        "later_interview",
+        "wrong_candidate",
+        "changed_json_date",
+        "changed_corroboration",
+        "corroborating_interview",
+        "corroborating_url",
+    ],
+)
+def test_lincoln_npr_requires_adjacent_soundbite_and_independent_ad_context(failure):
+    from bs4 import BeautifulSoup
+
+    source, candidate, review, content, corroboration = lincoln_npr_fixture()
+    soup = BeautifulSoup(content, "html.parser")
+    actor = soup.find("p", string=lambda text: text and text.startswith("UNIDENTIFIED ACTOR:"))
+    if failure == "separated_actor":
+        actor.insert_before(soup.new_tag("p"))
+    elif failure == "interview_cue":
+        soup.find(
+            "p", string="(SOUNDBITE OF ARCHIVED RECORDING)"
+        ).string = "(SOUNDBITE OF INTERVIEW)"
+    elif failure == "wrong_actor":
+        actor.string = actor.get_text().replace("UNIDENTIFIED ACTOR:", "INTERVIEWEE:")
+    elif failure == "outside_body":
+        soup.append(actor.extract())
+    elif failure == "later_interview":
+        review["passages"].append("This later interview must never enter the ad.")
+    elif failure == "wrong_candidate":
+        candidate["principal_committee"] = "C00999999"
+    elif failure == "changed_json_date":
+        node = soup.find("script")
+        article = json.loads(node.get_text())
+        article["datePublished"] = "2026-10-22T18:48:18Z"
+        node.string = json.dumps(article)
+    elif failure == "corroborating_interview":
+        corroboration = corroboration.replace("In another spot,", "In another interview,")
+        review["reported_ad_text"]["corroborating_report"]["content_sha256"] = digest(corroboration)
+    elif failure == "corroborating_url":
+        review["reported_ad_text"]["corroborating_report"]["url"] += "?alternate=1"
+    if failure == "changed_corroboration":
+        corroboration += "<p>Changed source response.</p>"
+    content = str(soup)
+    review["content_sha256"] = digest(content)
+    review["reported_ad_text"]["paragraph_sha256"] = digest(
+        "\n".join(
+            node.get_text(" ", strip=True)
+            for node in soup.select(review["reported_ad_text"]["paragraph_selector"])
+        )
+    )
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return (content if url == review["source_url"] else corroboration).encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    if failure:
+        assert ads == [] and status["state"] == "error"
+    else:
+        assert status["state"] == "partial" and len(ads) == 1
+        assert ads[0]["text"] == review["passages"][0]
+        assert len(ads[0]["text"].split()) == 20
+        assert ads[0]["media_urls"] == [] and ads[0]["published"] == "2026-10-21"
+        assert "publisher_rush_transcript_not_verified_against_audio" in ads[0]["quality_flags"]
+        assert calls == [
+            review["source_url"],
+            review["reported_ad_text"]["corroborating_report"]["url"],
+        ]
+
+
 def unlinked_perry_wgal_fixture():
     from bs4 import BeautifulSoup
 

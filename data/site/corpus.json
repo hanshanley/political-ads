@@ -45757,6 +45757,106 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "The NPR transcript places the two paragraphs immediately after an archived-recording cue and immediately before the reporter identifies Republican Kevin Lincoln attacking Democratic incumbent Adam Gray's state gas-tax vote. Independently, KQED explicitly identifies another spot from Lincoln, the former Stockton mayor challenging Rep.Adam Gray, taking aim at Gray's2017 gas-tax vote. Require both exact retained bodies and KQED's unique actual spot paragraph; do not derive ad speech from KQED reporting. Exact frozen H4CA09093/LINCOLN,KEVIN J II/REP/H/CA13/2026/C00845826 and the independently cached official committee master identify KEVIN LINCOLN FOR CONGRESS as P/H/REP for this candidate; FEC body SHA2566249342f373dee195dc638a307c88c45da14cec2e760e4ff212035cdde76df60. No alias. The full1952-record pre-edit corpus contains neither selected phrase and no previously acquired Lincoln candidate record; this is one observed partial campaign soundbite, not certification of a complete unique creative execution. Twenty words retain the16word candidate sentence and4word actor line; no padding. Unique h1, visible date, unique article publication metadata and unique matching NewsArticle agree only on calendar date; preserve the four-hour discrepancy. October21 is the publisher date, not first release, airing or paid delivery. The3:45 news-program audio is not an individual ad original and was not requested or assigned as ad media. General-election context comes from the explicitly opposing-party incumbent/challenger contest and November congressional vote discussion, not the date alone. Advertiser is publisher-reported; legal payer, approval, original media, full script, duration, delivery and claims remain unverified. New semantic strategy unreviewed; media URLs empty.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H2CA13115",
+          "district": "13",
+          "name": "GRAY, ADAM C.",
+          "office": "H",
+          "party": "DEM",
+          "state": "CA"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "lincoln-npr-20261021-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "2debdf3bbe885c98cfa53dece61262dfa4bd011cebebefb9b093b78eaa617179",
+      "observed": "2026-11-01",
+      "phase": "general",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-10-21",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified",
+        "publisher_rush_transcript_not_verified_against_audio"
+      ],
+      "race": "CA-13",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H4CA09093"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The NPR transcript places the two paragraphs immediately after an archived-recording cue and immediately before the reporter identifies Republican Kevin Lincoln attacking Democratic incumbent Adam Gray's state gas-tax vote. Independently, KQED explicitly identifies another spot from Lincoln, the former Stockton mayor challenging Rep.Adam Gray, taking aim at Gray's2017 gas-tax vote. Require both exact retained bodies and KQED's unique actual spot paragraph; do not derive ad speech from KQED reporting. Exact frozen H4CA09093/LINCOLN,KEVIN J II/REP/H/CA13/2026/C00845826 and the independently cached official committee master identify KEVIN LINCOLN FOR CONGRESS as P/H/REP for this candidate; FEC body SHA2566249342f373dee195dc638a307c88c45da14cec2e760e4ff212035cdde76df60. No alias. The full1952-record pre-edit corpus contains neither selected phrase and no previously acquired Lincoln candidate record; this is one observed partial campaign soundbite, not certification of a complete unique creative execution. Twenty words retain the16word candidate sentence and4word actor line; no padding. Unique h1, visible date, unique article publication metadata and unique matching NewsArticle agree only on calendar date; preserve the four-hour discrepancy. October21 is the publisher date, not first release, airing or paid delivery. The3:45 news-program audio is not an individual ad original and was not requested or assigned as ad media. General-election context comes from the explicitly opposing-party incumbent/challenger contest and November congressional vote discussion, not the date alone. Advertiser is publisher-reported; legal payer, approval, original media, full script, duration, delivery and claims remain unverified. New semantic strategy unreviewed; media URLs empty.",
+            "candidate_id": "H4CA09093",
+            "completeness": "partial_quotation",
+            "content_sha256": "179a6f695a49a17f7f91f1e0f58a85922b5c3dc6dced640315f9d8046e37a4ed",
+            "format": "html",
+            "heading_selector": "h1",
+            "media_url": null,
+            "passages": [
+              "Thanks to Adam Gray and Gavin Newsom, you get charged extra every time you fill up.\nStupid California gas tax."
+            ],
+            "phase": "general",
+            "publication_date_format": "Published %B %d, %Y at %I:%M %p CDT",
+            "publication_observations": {
+              "article_published_time": "2026-10-21T22:48:18",
+              "basis": "All representations identify October21, but JSON-LD differs by four hours from the visible CDT time and the timezone-unspecified article metadata. Preserve the disagreement; do not claim instant agreement or infer a timezone correction.",
+              "newsarticle_date_published": "2026-10-21T18:48:18Z",
+              "visible_text": "Published October 21, 2026 at 5:48 PM CDT"
+            },
+            "publication_selector": ".ArtP-datePublished",
+            "published": "2026-10-21",
+            "publisher_credit": "NPR; Guy Marzorati; published by TPR October21,2026. KQED's same-journalist independent written report corroborates an actual Lincoln gas-tax campaign spot, but supplies no Republican ad quotation. NPR cautions that this contractor transcript is rush-deadline/provisional and the audio record is authoritative; no audio verification is claimed.",
+            "record_id": "20261021",
+            "release_title": "California gas prices have long plagued Democratic candidates. This year is different",
+            "reported_ad_text": {
+              "corroborating_report": {
+                "content_sha256": "93f8a15e51d963ff3839ed787d53ce2f77865366686bbdb4553155e027a81f7e",
+                "url": "https://www.kqed.org/news/12104393/california-democrats-hope-iran-war-flips-the-script-on-gas-prices"
+              },
+              "paragraph_selector": ".ArtP-articleBody > p:-soup-contains(\"KEVIN LINCOLN:\"), .ArtP-articleBody > p:-soup-contains(\"UNIDENTIFIED ACTOR:\")",
+              "paragraph_sha256": "c8a9085b22e0ff46dac517f543567467142199766cfcedb715e2a0c5185be14f"
+            },
+            "required_context": [
+              "Republicans are also campaigning on gas prices.",
+              "(SOUNDBITE OF ARCHIVED RECORDING)",
+              "Republican Kevin Lincoln is attacking Democratic incumbent Adam Gray",
+              "She plans to vote for the Democrat, von Wilpert, in November."
+            ],
+            "retrieval_url": "https://www.tpr.org/2026-10-21/california-gas-prices-have-long-plagued-democratic-candidates-this-year-is-different",
+            "reuse_basis": "Only20 unchanged words from two consecutive recorded candidate/actor paragraphs, separated by a newline. Exclude speaker labels, reporter prose, Democratic von Wilpert ad excerpts, interviews and later LINCOLN-labelled commentary near the NRCC spokesperson introduction. Full program/report HTML, audio and original media remain undistributed. A short reported partial quotation, not a full script or a blanket reuse/publication license.",
+            "source": "lincoln-npr",
+            "source_url": "https://www.tpr.org/2026-10-21/california-gas-prices-have-long-plagued-democratic-candidates-this-year-is-different"
+          },
+          "text": "Thanks to Adam Gray and Gavin Newsom, you get charged extra every time you fill up.\nStupid California gas tax."
+        }
+      ],
+      "source": "lincoln-npr",
+      "source_hash": "179a6f695a49a17f7f91f1e0f58a85922b5c3dc6dced640315f9d8046e37a4ed",
+      "source_record_id": "20261021",
+      "source_url": "https://www.tpr.org/2026-10-21/california-gas-prices-have-long-plagued-democratic-candidates-this-year-is-different",
+      "sponsor": "Kevin Lincoln campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "CA",
+      "text": "Thanks to Adam Gray and Gavin Newsom, you get charged extra every time you fill up.\nStupid California gas tax.",
+      "title": "California gas prices have long plagued Democratic candidates. This year is different"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Official Kansans for Marshall release at https://www.kansansformarshall.com/news/hamilton-in-his-own-words-ad; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
       "date_basis": "release_date",
@@ -52895,6 +52995,22 @@
       "source": "letlow",
       "state": "ok",
       "url": "https://www.julialetlow.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "lincoln-npr",
+      "state": "partial",
+      "url": "https://www.tpr.org"
     },
     {
       "ads_with_text": 1,

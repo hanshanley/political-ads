@@ -583,6 +583,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "lincoln-npr",
+        "https://www.tpr.org",
+        "Kevin Lincoln campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="CA-13",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "perry-capitalstar",
         "https://penncapital-star.com",
         "Patriots for Perry (publisher-reported; payer unverified)",

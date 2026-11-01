@@ -10,6 +10,126 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Lincoln: October 21 NPR gas-tax campaign soundbite
+
+The actual NPR transcript published by TPR at
+`https://www.tpr.org/2026-10-21/california-gas-prices-have-long-plagued-democratic-candidates-this-year-is-different`
+contains **16 words attributed to Kevin Lincoln followed by four actor
+words**. Retain these two adjacent recorded paragraphs as one **20-word
+partial ad excerpt**, separated by a newline without speaker labels.
+They immediately follow an archived-recording cue and precede the reporter's
+identification of Republican Lincoln attacking Democratic incumbent Adam
+Gray's state gas-tax vote. The independently retained KQED written report
+`https://www.kqed.org/news/12104393/california-democrats-hope-iran-war-flips-the-script-on-gas-prices`
+explicitly describes Lincoln's gas-tax **spot**, but quotes no Republican
+ad speech. It corroborates ad attribution; it is not a second acquisition
+or a substitute source for the recovered words.
+
+Exact frozen identity is **H4CA09093 / LINCOLN, KEVIN J II / REP /
+House / CA-13 / 2026 / C00845826**. The independently cached official
+committee master binds **KEVIN LINCOLN FOR CONGRESS**, principal designation
+P, House type H and REP, to this candidate. No alias was added. Candidate
+identity does not establish the creative's legal payer or authorization.
+The explicitly opposite-party congressional contest and November vote
+discussion establish general-election context, rather than the date alone.
+
+Primary HTML SHA-256 is
+`179a6f695a49a17f7f91f1e0f58a85922b5c3dc6dced640315f9d8046e37a4ed`;
+KQED HTML SHA-256 is
+`93f8a15e51d963ff3839ed787d53ce2f77865366686bbdb4553155e027a81f7e`.
+Require exactly two adjacent direct-child `p` elements in the unique
+`.ArtP-articleBody`, labelled `KEVIN LINCOLN:` and `UNIDENTIFIED ACTOR:`.
+Their newline-joined labelled hash is
+`c8a9085b22e0ff46dac517f543567467142199766cfcedb715e2a0c5185be14f`;
+selected-text hash is
+`a979640b468bf92a4679cadd6c71675bea016118a23cf345ea7bf4f44ece184d`.
+The reviewed passages must equal only the two regex captures, within the
+unchanged **15-word floor / 25-word ceiling**. KQED must retain its unique
+direct-child spot paragraph identifying Lincoln, Gray and the gas tax.
+Changed bodies, wrong identities, separated actor lines, interview cues,
+non-ad corroboration and appended interview speech fail closed.
+
+Require a unique matching `h1` and `.ArtP-datePublished`. The visible
+**October 21, 2026 at 5:48 PM CDT** and timezone-unspecified
+`article:published_time=2026-10-21T22:48:18` differ by **four hours**
+from `NewsArticle.datePublished=2026-10-21T18:48:18Z`. Their calendar dates
+agree, but their instants do not; preserve all observations without inventing
+a timezone correction. Publication is not verified first release or airing.
+NPR identifies its contractor transcript as rush-deadline/provisional and
+the audio record as authoritative. Expose
+`publisher_rush_transcript_not_verified_against_audio`; no audio verification
+was performed. The 3:45 program audio is **not an individual ad original**
+and was not requested or assigned as ad media. Exclude the later
+`LINCOLN:` commentary near the NRCC spokesperson introduction, Democratic
+ad excerpts, interviews and reporter prose.
+
+The immutable `data/raw/house-lincoln-npr-baseline.json` was frozen after
+Perry's exact-commit CI certification and before all Lincoln source/review
+edits. Both discovery responses were copied to the replay cache only after
+verifying hashes and absence of prior canonical bodies; neither was
+refetched or overwritten. Actual selected offline collection produces
+`lincoln-npr-20261021-0`, partial, English, with empty media URLs and
+**semantically unreviewed** strategy. All **1,952 preceding acquired /
+1,913 preceding analyzed objects** passed immediate exact preservation.
+The new totals are **1,953 acquired / 1,914 English**, English
+**R649 / D1226 / other31 / unknown8**, House **R271 / D698**, and
+non-Snap House **R270 / D222**. Exact-message denominators are
+**R612 / D1204**; written records **592**, release reviews **98**.
+These remain source-coverage counts, not national advertising prevalence.
+
+Reproduce using the two retained exact response bodies and headers:
+
+```sh
+.venv/bin/python -m political_ads.cli collect --source lincoln-npr --until 2026-10-30 --offline
+.venv/bin/python -m political_ads.cli parquet --offline
+.venv/bin/python -m political_ads.cli build --offline
+.venv/bin/python -m political_ads.cli analyze --offline
+.venv/bin/python -m political_ads.cli validate --offline
+.venv/bin/python -m political_ads.cli audit-strategy --offline
+```
+
+Final local verification passes **807 Python tests**, Python lint/format,
+**17 frontend tests / nine browser cases**, frontend lint/typecheck/build,
+publication validation and all **20 strategy metric groups / ten chart rows**.
+Complete JSON/gzip/CSV exports, all **1,953 enriched Parquet objects** and
+all **eleven PNG/CSV figure sets in three copies** reconcile; all actual
+figures were visually inspected. An isolated **two-response, network- and
+recognition-forbidden replay** reproduces all **592 written objects and
+source states** from the preceding 591. All preceding acquired/analyzed
+objects, **97 release reviews and their original byte prefix**, **43 native
+reviews / 38 aliases**, **18 protected input hashes** and **16 preceding
+canonical response hashes** remain unchanged. The immutable baseline and
+`data/raw/house-lincoln-npr-preservation-replay.json` retain these checks.
+This is local verification, not a claim of exact-commit CI certification
+or website publication.
+
+The broader discovery manifest now verifies **206 referenced receipts /
+196 exact cached bodies / 10 unchanged no-body receipts**, preserving
+all preceding 188 references and 17 separately reviewed admissions.
+Lincoln is the eighteenth separate admission; every discovery receipt
+still has `counted_as_ad=false`. The five-campaign batch remains a separate
+zero-admission artifact. Houchin has biography/forms rather than ad copy;
+Moolenaar's announcement and inspected News archive supply statements, not
+marked ad speech; Hamadeh's gallery supplies ordinary footage. Ogles'
+actual narrator excerpt is **13 words, not the earlier provisional 15**,
+and stays excluded without padding. Regnitz's homepage is a **normal React
+shell**, not a demonstrated challenge. Its explicitly linked public app
+exposes two originals, but also personal-use-only download/storage/reuse
+restrictions. That provider remains permission-unresolved-paused; no video
+API, MP4, YouTube, caption or alternate route was requested.
+
+Six further campaign receipts preserve the preceding 200-reference manifest
+and all eighteen admissions. Kelly's actual linked Video Gallery exposes
+`JYU-OknHW2Y` without an individual 2026 date or script. Balderson's actual
+Images & Video page exposes three Vimeo embeds and `XYgJZbf1Sig`, likewise
+without qualifying dates or words; its inspected terms govern SMS programs,
+not blanket media reuse. No YouTube, caption, Vimeo/player or original-media
+request was made. Meuser's actual homepage presents October 25/18/11 weekend
+updates with expressly identified radio/television interviews, not ad speech.
+Its explicitly linked News archive remains an unrequested discovery lead.
+These six responses add **zero ads**; biography, issue copy, interview
+quotations and undated video links are not acquisitions.
+
 ## Perry: September 16 healthcare and tax ad quotations
 
 The actual September 16, 2026 WGAL Ad Watch report

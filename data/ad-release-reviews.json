@@ -2935,6 +2935,49 @@
       "publisher_credit": "WGAL; Matt Barcaro; September 16, 2026 original ad-watch report. Review uses the retained canonical response, SHA-256 0c28fcf8328b7a8fb88df9f21a3a594a50e11dcc7f40fd471a92ae2a97466d18; fresh discovery response ed8b11961784031c5c6e4f1780cc4d97bbcacab753725c2e795af96a75fe1cc2 independently agrees on headline, visible and machine publication dates, attribution context and all three labelled ad quotations. Neither cached response was overwritten.",
       "reuse_basis": "Only16 unchanged words in two non-contiguous Republican campaign audio quotations, in source order separated by one newline. Partial quotations, not a full script. Exclude separate Democratic ad quotation, on-screen wording, interviews, campaign responses, reporter verdicts and repeated excerpts. Full publisher HTML and report video remain undistributed; no blanket reuse license or publication approval.",
       "attribution_basis": "The actual report explicitly introduces an ad from the Perry campaign, labels its healthcare and tax audio quotations Ad:, and then expressly introduces a separate Stelson digital ad before the third labelled quotation. Capture only the first two of exactly three reviewed list items, not the Democratic quotation, on-screen text or reporter/interview speech. Frozen H2PA04135/PERRY,SCOTT/REP/H/PA10/2026/C00510164; no alias. Unique desktop h1 and visible Updated September16 date agree with a unique article:published_time and NewsArticle datePublished2026-09-16T22:24:00Z; exact NewsArticle headline and URL match. Full HTML, ordered three-block and selected-text hashes pinned. The first two quotations total16 words and are individually absent from all1951 baseline records. They concern a candidate-campaign healthcare/tax creative, not the older NRCC Tax Day positive spot, CLF hospital attack or separate October candidate/PAC allegations. The4:34 publisher report video is not a campaign original: do not request it, transcribe reporter speech or assign its URL as ad media. Advertiser is publisher-reported; C00510164 verifies candidate identity, not this creative's legal payer. Report date is not verified first airing; original media, full script, duration, delivery, claims and phase remain unverified. Semantic strategy unreviewed; unchanged15word floor/25word ceiling; media URLs empty."
+    },
+    {
+      "source": "lincoln-npr",
+      "record_id": "20261021",
+      "source_url": "https://www.tpr.org/2026-10-21/california-gas-prices-have-long-plagued-democratic-candidates-this-year-is-different",
+      "retrieval_url": "https://www.tpr.org/2026-10-21/california-gas-prices-have-long-plagued-democratic-candidates-this-year-is-different",
+      "format": "html",
+      "content_sha256": "179a6f695a49a17f7f91f1e0f58a85922b5c3dc6dced640315f9d8046e37a4ed",
+      "published": "2026-10-21",
+      "release_title": "California gas prices have long plagued Democratic candidates. This year is different",
+      "heading_selector": "h1",
+      "publication_selector": ".ArtP-datePublished",
+      "publication_date_format": "Published %B %d, %Y at %I:%M %p CDT",
+      "candidate_id": "H4CA09093",
+      "media_url": null,
+      "phase": "general",
+      "completeness": "partial_quotation",
+      "required_context": [
+        "Republicans are also campaigning on gas prices.",
+        "(SOUNDBITE OF ARCHIVED RECORDING)",
+        "Republican Kevin Lincoln is attacking Democratic incumbent Adam Gray",
+        "She plans to vote for the Democrat, von Wilpert, in November."
+      ],
+      "passages": [
+        "Thanks to Adam Gray and Gavin Newsom, you get charged extra every time you fill up.\nStupid California gas tax."
+      ],
+      "reported_ad_text": {
+        "paragraph_selector": ".ArtP-articleBody > p:-soup-contains(\"KEVIN LINCOLN:\"), .ArtP-articleBody > p:-soup-contains(\"UNIDENTIFIED ACTOR:\")",
+        "paragraph_sha256": "c8a9085b22e0ff46dac517f543567467142199766cfcedb715e2a0c5185be14f",
+        "corroborating_report": {
+          "url": "https://www.kqed.org/news/12104393/california-democrats-hope-iran-war-flips-the-script-on-gas-prices",
+          "content_sha256": "93f8a15e51d963ff3839ed787d53ce2f77865366686bbdb4553155e027a81f7e"
+        }
+      },
+      "publication_observations": {
+        "visible_text": "Published October 21, 2026 at 5:48 PM CDT",
+        "article_published_time": "2026-10-21T22:48:18",
+        "newsarticle_date_published": "2026-10-21T18:48:18Z",
+        "basis": "All representations identify October21, but JSON-LD differs by four hours from the visible CDT time and the timezone-unspecified article metadata. Preserve the disagreement; do not claim instant agreement or infer a timezone correction."
+      },
+      "publisher_credit": "NPR; Guy Marzorati; published by TPR October21,2026. KQED's same-journalist independent written report corroborates an actual Lincoln gas-tax campaign spot, but supplies no Republican ad quotation. NPR cautions that this contractor transcript is rush-deadline/provisional and the audio record is authoritative; no audio verification is claimed.",
+      "reuse_basis": "Only20 unchanged words from two consecutive recorded candidate/actor paragraphs, separated by a newline. Exclude speaker labels, reporter prose, Democratic von Wilpert ad excerpts, interviews and later LINCOLN-labelled commentary near the NRCC spokesperson introduction. Full program/report HTML, audio and original media remain undistributed. A short reported partial quotation, not a full script or a blanket reuse/publication license.",
+      "attribution_basis": "The NPR transcript places the two paragraphs immediately after an archived-recording cue and immediately before the reporter identifies Republican Kevin Lincoln attacking Democratic incumbent Adam Gray's state gas-tax vote. Independently, KQED explicitly identifies another spot from Lincoln, the former Stockton mayor challenging Rep.Adam Gray, taking aim at Gray's2017 gas-tax vote. Require both exact retained bodies and KQED's unique actual spot paragraph; do not derive ad speech from KQED reporting. Exact frozen H4CA09093/LINCOLN,KEVIN J II/REP/H/CA13/2026/C00845826 and the independently cached official committee master identify KEVIN LINCOLN FOR CONGRESS as P/H/REP for this candidate; FEC body SHA2566249342f373dee195dc638a307c88c45da14cec2e760e4ff212035cdde76df60. No alias. The full1952-record pre-edit corpus contains neither selected phrase and no previously acquired Lincoln candidate record; this is one observed partial campaign soundbite, not certification of a complete unique creative execution. Twenty words retain the16word candidate sentence and4word actor line; no padding. Unique h1, visible date, unique article publication metadata and unique matching NewsArticle agree only on calendar date; preserve the four-hour discrepancy. October21 is the publisher date, not first release, airing or paid delivery. The3:45 news-program audio is not an individual ad original and was not requested or assigned as ad media. General-election context comes from the explicitly opposing-party incumbent/challenger contest and November congressional vote discussion, not the date alone. Advertiser is publisher-reported; legal payer, approval, original media, full script, duration, delivery and claims remain unverified. New semantic strategy unreviewed; media URLs empty."
     }
   ]
 }
