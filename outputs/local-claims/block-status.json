@@ -5955,49 +5955,49 @@
     "ad_id": "snap-4bf4383701edaae5fdc0befe",
     "block_id": "snap-4bf4383701edaae5fdc0befe-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-4c2329fb43086d2ba57294c0",
     "block_id": "snap-4c2329fb43086d2ba57294c0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Jon Ossoff Community Mobilizer: \\\"Jon Ossoff Community Mobilizer\\\" is absent from unit 1. Exact source: \\\"GET\\\\nPAID\\\\nWHEN YOU JOIN THE\\\\nOSSOFF COMMUNITY\\\\nMOBILIZERS!\\\\nYou can earn $500 for being an\\\\nengaged and active Jon Ossoff\\\\nCommunity Mobilizer.\\\\nPAID FOR BY JON OSSOFF FOR SENATE\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4c4287b15805540f70e9ba3f",
     "block_id": "snap-4c4287b15805540f70e9ba3f-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for Dan Sullivan: \\\"Dan Sullivan\\\" is absent from unit 3. Exact source: \\\"the deciding vote to keep the files hidden, and then taking thousands in cash from Epstein\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4c588412d21f6f901da20b39",
     "block_id": "snap-4c588412d21f6f901da20b39-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-4c588412d21f6f901da20b39",
     "block_id": "snap-4c588412d21f6f901da20b39-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for Tom Tiffany: \\\"Tom Tiffany\\\" is absent from unit 7. Exact source: \\\"co-sponsored\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4cd2cdc1c782e2f424ec1421",
     "block_id": "snap-4cd2cdc1c782e2f424ec1421-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-4d0e29ec4a8bdd760552eaee",
     "block_id": "snap-4d0e29ec4a8bdd760552eaee-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4d0e29ec4a8bdd760552eaee",
     "block_id": "snap-4d0e29ec4a8bdd760552eaee-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Brad Finstead: \\\"Brad Finstead\\\" is absent from unit 1. Exact source: \\\"their lowest level in nea\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-4d9448fbad6f1e3bae41e0a0",

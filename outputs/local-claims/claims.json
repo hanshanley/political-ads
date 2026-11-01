@@ -116890,5 +116890,684 @@
     "text_hash": "86e082deb40a34eae716105afe380e118ddd19ba0ebc4dc854495f5f4c11f665",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-4bf4383701edaae5fdc0befe",
+    "alignment": "D",
+    "block_id": "snap-4bf4383701edaae5fdc0befe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4bf4383701edaae5fdc0befe-claims-001-001",
+    "claim_text": "DON DAVIS will fight back against billionaires!",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 151,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nDON DAVIS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0ade11ba682f3b41316b92d34c91910eb6a4b4289fd04e4f9fdf90c4146fd808?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 71,
+        "anchor_quote": "DON DAVIS",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2NC02287",
+        "kind": "person",
+        "name": "DAVIS, DON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nDON DAVIS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "8b7af23d15940bb46e4c94a0932733b7acc404c4b3588687f99377346df2562e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-4bf4383701edaae5fdc0befe",
+    "alignment": "D",
+    "block_id": "snap-4bf4383701edaae5fdc0befe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4bf4383701edaae5fdc0befe-claims-001-002",
+    "claim_text": "It is your right to have a union.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 151,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nDON DAVIS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0ade11ba682f3b41316b92d34c91910eb6a4b4289fd04e4f9fdf90c4146fd808?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Union",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nDON DAVIS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "8b7af23d15940bb46e4c94a0932733b7acc404c4b3588687f99377346df2562e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-4bf4383701edaae5fdc0befe",
+    "alignment": "D",
+    "block_id": "snap-4bf4383701edaae5fdc0befe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4bf4383701edaae5fdc0befe-claims-001-003",
+    "claim_text": "This communication was paid for by the AFL-CIO.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 151,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nDON DAVIS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0ade11ba682f3b41316b92d34c91910eb6a4b4289fd04e4f9fdf90c4146fd808?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nDON DAVIS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "8b7af23d15940bb46e4c94a0932733b7acc404c4b3588687f99377346df2562e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-4bf4383701edaae5fdc0befe",
+    "alignment": "D",
+    "block_id": "snap-4bf4383701edaae5fdc0befe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4bf4383701edaae5fdc0befe-claims-001-004",
+    "claim_text": "You should vote for DON DAVIS.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 151,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nDON DAVIS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0ade11ba682f3b41316b92d34c91910eb6a4b4289fd04e4f9fdf90c4146fd808?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 71,
+        "anchor_quote": "DON DAVIS",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2NC02287",
+        "kind": "person",
+        "name": "DAVIS, DON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nDON DAVIS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "8b7af23d15940bb46e4c94a0932733b7acc404c4b3588687f99377346df2562e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-4bf4383701edaae5fdc0befe",
+    "alignment": "D",
+    "block_id": "snap-4bf4383701edaae5fdc0befe-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4bf4383701edaae5fdc0befe-claims-001-005",
+    "claim_text": "Having a union is your right.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 151,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nDON DAVIS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/0ade11ba682f3b41316b92d34c91910eb6a4b4289fd04e4f9fdf90c4146fd808?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Union",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nDON DAVIS\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "8b7af23d15940bb46e4c94a0932733b7acc404c4b3588687f99377346df2562e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-4c588412d21f6f901da20b39",
+    "alignment": "D",
+    "block_id": "snap-4c588412d21f6f901da20b39-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4c588412d21f6f901da20b39-claims-001-001",
+    "claim_text": "Tom Tiffany authored the legislation, arguing that elevating the Apostle Islands National Lakeshore to a national park would boost tourism and the local economy.",
+    "claim_types": [
+      "characterization",
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 508,
+        "kind": "video_ocr",
+        "start": 438,
+        "text": "Wisconsin U.S. Rep. Tom Tiffany authored the legislation, arguing that",
+        "unit_id": 16
+      },
+      {
+        "end": 582,
+        "kind": "video_ocr",
+        "start": 509,
+        "text": "elevating the Apostle Islands National Lakeshore to a national park would",
+        "unit_id": 17
+      },
+      {
+        "end": 619,
+        "kind": "video_ocr",
+        "start": 583,
+        "text": "boost tourism and the local economy.",
+        "unit_id": 18
+      }
+    ],
+    "evidence_ids": [
+      16,
+      17,
+      18
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/76010b90dcd6c26c6e9a37c9ae3187354ca529b17131b02fb3902bc7f852bd58?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 469,
+        "anchor_quote": "Tom Tiffany",
+        "anchor_start": 458,
+        "anchor_unit_id": 16,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "Tom Tiffany",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Wisconsin\nGovernor Candidate\nom Tiffany\nTom Tiffany\nPros and Cons\nPart Three\nNORTHERN\nNEWS NOW\nTiffany: Pro\ntorward amid local\nOMMUNTY PUSHBACK ON APOSTLE ISLANIS BILI\nBAYFIFLD COUNTY, Wis, (Northern News Now) - Federal legislation to\nmake the Apostle Islands Wisconsin's first national park is moving\nforward, but goverment and trlbal leaders In Baylield County and nearby\ncommunities say local voices have been left out of the process.\nWisconsin U.S. Rep. Tom Tiffany authored the legislation, arguing that\nelevating the Apostle Islands National Lakeshore to a national park would\nboost tourism and the local economy.\n'When vou look at people when they draw up their bucket lists to visit the\nlational parks, it isn't to see the national lakeshores.\" Tiffany said, \"It's to\no see the national parks.\"\nPRO:\nTom Tiffany sponsored\nlegislation to make\nthe Apostle Islands\nWisconsin's first\nnational park\nSource: Northern News Now\nINDEPENDENT\nQ\nTiffany: Con\nns\nin health care costs\nWisconsin Republican Rep. Tom Tiffany is\ncosponsoring a bill to repeal the Inflation\nReduction Act of 2022.\nWisconsin Republican U.S. Rep. Tom Tiffany and 15 other House\nRepublicans have filed a bill to completely repeal the Inflation\nReduction Act of 2022, President Joe Biden's health care and\nclean energy infrastructure law. Repeal of the law would\nsignificantly increase costs for millions of American consumers.\nThe 2022 law, passed by Democratic majorities in Congress\nCON:\nco-sponsored\na bill to repeal caps on\ninsulin and\nout-of-pocket\nprescription\ndrug costs for seniors.\nWORKING\nAMERICA\nAFL-CIO\na billto repeal caps on\nSource: The Wisconsin Independent:\nPaid for by Working America.\nNot authorized by any candidate or committee.\na bill to repea! caps on",
+    "text_hash": "bdb3554474e80ca6ffcfbc861e3c940be0c66c7a26e85a3e3053e3e9eb2bc6f4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-4c588412d21f6f901da20b39",
+    "alignment": "D",
+    "block_id": "snap-4c588412d21f6f901da20b39-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4c588412d21f6f901da20b39-claims-001-002",
+    "claim_text": "When you look at people when they draw up their bucket lists to visit the Wisconsin national parks, it isn't to see the national lakeshores; it's to see the national parks.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 694,
+        "kind": "video_ocr",
+        "start": 620,
+        "text": "'When vou look at people when they draw up their bucket lists to visit the",
+        "unit_id": 19
+      },
+      {
+        "end": 775,
+        "kind": "video_ocr",
+        "start": 695,
+        "text": "lational parks, it isn't to see the national lakeshores.\" Tiffany said, \"It's to",
+        "unit_id": 20
+      },
+      {
+        "end": 802,
+        "kind": "video_ocr",
+        "start": 776,
+        "text": "o see the national parks.\"",
+        "unit_id": 21
+      }
+    ],
+    "evidence_ids": [
+      19,
+      20,
+      21
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/76010b90dcd6c26c6e9a37c9ae3187354ca529b17131b02fb3902bc7f852bd58?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 760,
+        "anchor_quote": "Tiffany",
+        "anchor_start": 753,
+        "anchor_unit_id": 20,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "Tom Tiffany",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Wisconsin\nGovernor Candidate\nom Tiffany\nTom Tiffany\nPros and Cons\nPart Three\nNORTHERN\nNEWS NOW\nTiffany: Pro\ntorward amid local\nOMMUNTY PUSHBACK ON APOSTLE ISLANIS BILI\nBAYFIFLD COUNTY, Wis, (Northern News Now) - Federal legislation to\nmake the Apostle Islands Wisconsin's first national park is moving\nforward, but goverment and trlbal leaders In Baylield County and nearby\ncommunities say local voices have been left out of the process.\nWisconsin U.S. Rep. Tom Tiffany authored the legislation, arguing that\nelevating the Apostle Islands National Lakeshore to a national park would\nboost tourism and the local economy.\n'When vou look at people when they draw up their bucket lists to visit the\nlational parks, it isn't to see the national lakeshores.\" Tiffany said, \"It's to\no see the national parks.\"\nPRO:\nTom Tiffany sponsored\nlegislation to make\nthe Apostle Islands\nWisconsin's first\nnational park\nSource: Northern News Now\nINDEPENDENT\nQ\nTiffany: Con\nns\nin health care costs\nWisconsin Republican Rep. Tom Tiffany is\ncosponsoring a bill to repeal the Inflation\nReduction Act of 2022.\nWisconsin Republican U.S. Rep. Tom Tiffany and 15 other House\nRepublicans have filed a bill to completely repeal the Inflation\nReduction Act of 2022, President Joe Biden's health care and\nclean energy infrastructure law. Repeal of the law would\nsignificantly increase costs for millions of American consumers.\nThe 2022 law, passed by Democratic majorities in Congress\nCON:\nco-sponsored\na bill to repeal caps on\ninsulin and\nout-of-pocket\nprescription\ndrug costs for seniors.\nWORKING\nAMERICA\nAFL-CIO\na billto repeal caps on\nSource: The Wisconsin Independent:\nPaid for by Working America.\nNot authorized by any candidate or committee.\na bill to repea! caps on",
+    "text_hash": "bdb3554474e80ca6ffcfbc861e3c940be0c66c7a26e85a3e3053e3e9eb2bc6f4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-4c588412d21f6f901da20b39",
+    "alignment": "D",
+    "block_id": "snap-4c588412d21f6f901da20b39-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4c588412d21f6f901da20b39-claims-001-003",
+    "claim_text": "Tom Tiffany sponsored legislation to make the Apostle Islands Wisconsin's first national park.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 829,
+        "kind": "video_ocr",
+        "start": 808,
+        "text": "Tom Tiffany sponsored",
+        "unit_id": 23
+      },
+      {
+        "end": 849,
+        "kind": "video_ocr",
+        "start": 830,
+        "text": "legislation to make",
+        "unit_id": 24
+      },
+      {
+        "end": 869,
+        "kind": "video_ocr",
+        "start": 850,
+        "text": "the Apostle Islands",
+        "unit_id": 25
+      },
+      {
+        "end": 887,
+        "kind": "video_ocr",
+        "start": 870,
+        "text": "Wisconsin's first",
+        "unit_id": 26
+      },
+      {
+        "end": 901,
+        "kind": "video_ocr",
+        "start": 888,
+        "text": "national park",
+        "unit_id": 27
+      }
+    ],
+    "evidence_ids": [
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/76010b90dcd6c26c6e9a37c9ae3187354ca529b17131b02fb3902bc7f852bd58?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 819,
+        "anchor_quote": "Tom Tiffany",
+        "anchor_start": 808,
+        "anchor_unit_id": 23,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "Tom Tiffany",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Wisconsin\nGovernor Candidate\nom Tiffany\nTom Tiffany\nPros and Cons\nPart Three\nNORTHERN\nNEWS NOW\nTiffany: Pro\ntorward amid local\nOMMUNTY PUSHBACK ON APOSTLE ISLANIS BILI\nBAYFIFLD COUNTY, Wis, (Northern News Now) - Federal legislation to\nmake the Apostle Islands Wisconsin's first national park is moving\nforward, but goverment and trlbal leaders In Baylield County and nearby\ncommunities say local voices have been left out of the process.\nWisconsin U.S. Rep. Tom Tiffany authored the legislation, arguing that\nelevating the Apostle Islands National Lakeshore to a national park would\nboost tourism and the local economy.\n'When vou look at people when they draw up their bucket lists to visit the\nlational parks, it isn't to see the national lakeshores.\" Tiffany said, \"It's to\no see the national parks.\"\nPRO:\nTom Tiffany sponsored\nlegislation to make\nthe Apostle Islands\nWisconsin's first\nnational park\nSource: Northern News Now\nINDEPENDENT\nQ\nTiffany: Con\nns\nin health care costs\nWisconsin Republican Rep. Tom Tiffany is\ncosponsoring a bill to repeal the Inflation\nReduction Act of 2022.\nWisconsin Republican U.S. Rep. Tom Tiffany and 15 other House\nRepublicans have filed a bill to completely repeal the Inflation\nReduction Act of 2022, President Joe Biden's health care and\nclean energy infrastructure law. Repeal of the law would\nsignificantly increase costs for millions of American consumers.\nThe 2022 law, passed by Democratic majorities in Congress\nCON:\nco-sponsored\na bill to repeal caps on\ninsulin and\nout-of-pocket\nprescription\ndrug costs for seniors.\nWORKING\nAMERICA\nAFL-CIO\na billto repeal caps on\nSource: The Wisconsin Independent:\nPaid for by Working America.\nNot authorized by any candidate or committee.\na bill to repea! caps on",
+    "text_hash": "bdb3554474e80ca6ffcfbc861e3c940be0c66c7a26e85a3e3053e3e9eb2bc6f4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-4c588412d21f6f901da20b39",
+    "alignment": "D",
+    "block_id": "snap-4c588412d21f6f901da20b39-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4c588412d21f6f901da20b39-claims-001-004",
+    "claim_text": "Tom Tiffany is cosponsoring a bill to repeal the Inflation Reduction Act of 2022.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 1019,
+        "kind": "video_ocr",
+        "start": 979,
+        "text": "Wisconsin Republican Rep. Tom Tiffany is",
+        "unit_id": 34
+      },
+      {
+        "end": 1063,
+        "kind": "video_ocr",
+        "start": 1020,
+        "text": "cosponsoring a bill to repeal the Inflation",
+        "unit_id": 35
+      },
+      {
+        "end": 1086,
+        "kind": "video_ocr",
+        "start": 1064,
+        "text": "Reduction Act of 2022.",
+        "unit_id": 36
+      }
+    ],
+    "evidence_ids": [
+      34,
+      35,
+      36
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/76010b90dcd6c26c6e9a37c9ae3187354ca529b17131b02fb3902bc7f852bd58?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 1016,
+        "anchor_quote": "Tom Tiffany",
+        "anchor_start": 1005,
+        "anchor_unit_id": 34,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "Tom Tiffany",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Wisconsin\nGovernor Candidate\nom Tiffany\nTom Tiffany\nPros and Cons\nPart Three\nNORTHERN\nNEWS NOW\nTiffany: Pro\ntorward amid local\nOMMUNTY PUSHBACK ON APOSTLE ISLANIS BILI\nBAYFIFLD COUNTY, Wis, (Northern News Now) - Federal legislation to\nmake the Apostle Islands Wisconsin's first national park is moving\nforward, but goverment and trlbal leaders In Baylield County and nearby\ncommunities say local voices have been left out of the process.\nWisconsin U.S. Rep. Tom Tiffany authored the legislation, arguing that\nelevating the Apostle Islands National Lakeshore to a national park would\nboost tourism and the local economy.\n'When vou look at people when they draw up their bucket lists to visit the\nlational parks, it isn't to see the national lakeshores.\" Tiffany said, \"It's to\no see the national parks.\"\nPRO:\nTom Tiffany sponsored\nlegislation to make\nthe Apostle Islands\nWisconsin's first\nnational park\nSource: Northern News Now\nINDEPENDENT\nQ\nTiffany: Con\nns\nin health care costs\nWisconsin Republican Rep. Tom Tiffany is\ncosponsoring a bill to repeal the Inflation\nReduction Act of 2022.\nWisconsin Republican U.S. Rep. Tom Tiffany and 15 other House\nRepublicans have filed a bill to completely repeal the Inflation\nReduction Act of 2022, President Joe Biden's health care and\nclean energy infrastructure law. Repeal of the law would\nsignificantly increase costs for millions of American consumers.\nThe 2022 law, passed by Democratic majorities in Congress\nCON:\nco-sponsored\na bill to repeal caps on\ninsulin and\nout-of-pocket\nprescription\ndrug costs for seniors.\nWORKING\nAMERICA\nAFL-CIO\na billto repeal caps on\nSource: The Wisconsin Independent:\nPaid for by Working America.\nNot authorized by any candidate or committee.\na bill to repea! caps on",
+    "text_hash": "bdb3554474e80ca6ffcfbc861e3c940be0c66c7a26e85a3e3053e3e9eb2bc6f4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-4c588412d21f6f901da20b39",
+    "alignment": "D",
+    "block_id": "snap-4c588412d21f6f901da20b39-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4c588412d21f6f901da20b39-claims-001-005",
+    "claim_text": "Tom Tiffany and 15 other House members are cosponsoring a bill to repeal the Inflation Reduction Act of 2022.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 1148,
+        "kind": "video_ocr",
+        "start": 1087,
+        "text": "Wisconsin Republican U.S. Rep. Tom Tiffany and 15 other House",
+        "unit_id": 37
+      }
+    ],
+    "evidence_ids": [
+      37
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/76010b90dcd6c26c6e9a37c9ae3187354ca529b17131b02fb3902bc7f852bd58?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 1129,
+        "anchor_quote": "Tom Tiffany",
+        "anchor_start": 1118,
+        "anchor_unit_id": 37,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "Tom Tiffany",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Wisconsin\nGovernor Candidate\nom Tiffany\nTom Tiffany\nPros and Cons\nPart Three\nNORTHERN\nNEWS NOW\nTiffany: Pro\ntorward amid local\nOMMUNTY PUSHBACK ON APOSTLE ISLANIS BILI\nBAYFIFLD COUNTY, Wis, (Northern News Now) - Federal legislation to\nmake the Apostle Islands Wisconsin's first national park is moving\nforward, but goverment and trlbal leaders In Baylield County and nearby\ncommunities say local voices have been left out of the process.\nWisconsin U.S. Rep. Tom Tiffany authored the legislation, arguing that\nelevating the Apostle Islands National Lakeshore to a national park would\nboost tourism and the local economy.\n'When vou look at people when they draw up their bucket lists to visit the\nlational parks, it isn't to see the national lakeshores.\" Tiffany said, \"It's to\no see the national parks.\"\nPRO:\nTom Tiffany sponsored\nlegislation to make\nthe Apostle Islands\nWisconsin's first\nnational park\nSource: Northern News Now\nINDEPENDENT\nQ\nTiffany: Con\nns\nin health care costs\nWisconsin Republican Rep. Tom Tiffany is\ncosponsoring a bill to repeal the Inflation\nReduction Act of 2022.\nWisconsin Republican U.S. Rep. Tom Tiffany and 15 other House\nRepublicans have filed a bill to completely repeal the Inflation\nReduction Act of 2022, President Joe Biden's health care and\nclean energy infrastructure law. Repeal of the law would\nsignificantly increase costs for millions of American consumers.\nThe 2022 law, passed by Democratic majorities in Congress\nCON:\nco-sponsored\na bill to repeal caps on\ninsulin and\nout-of-pocket\nprescription\ndrug costs for seniors.\nWORKING\nAMERICA\nAFL-CIO\na billto repeal caps on\nSource: The Wisconsin Independent:\nPaid for by Working America.\nNot authorized by any candidate or committee.\na bill to repea! caps on",
+    "text_hash": "bdb3554474e80ca6ffcfbc861e3c940be0c66c7a26e85a3e3053e3e9eb2bc6f4",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-4cd2cdc1c782e2f424ec1421",
+    "alignment": "D",
+    "block_id": "snap-4cd2cdc1c782e2f424ec1421-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4cd2cdc1c782e2f424ec1421-claims-001-001",
+    "claim_text": "Mike Rogers supported private investment of Social Security funds.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 262,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "- the •\nMICHIGAN\nINDEPENDENT\nGOP Senate candidate Mike Rogers\nsupported private investment of\nSocial Security funds\nRogers backed a plan by President George W. Bush that\nwould have cost retirees tens of thousands of dollars when\nthe stock market crashed in 2008.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9c2ffdd5780a1e0b5a7adcf51daf259d937a4c58dec1b7c3b7ce4af9c9a2f0fb?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 61,
+        "anchor_quote": "Mike Rogers",
+        "anchor_start": 50,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "- the •\nMICHIGAN\nINDEPENDENT\nGOP Senate candidate Mike Rogers\nsupported private investment of\nSocial Security funds\nRogers backed a plan by President George W. Bush that\nwould have cost retirees tens of thousands of dollars when\nthe stock market crashed in 2008.",
+    "text_hash": "739b2b91e4abf518d3e69df2f2f190e94110d07a77caed75e2f866e0e475226a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-4cd2cdc1c782e2f424ec1421",
+    "alignment": "D",
+    "block_id": "snap-4cd2cdc1c782e2f424ec1421-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4cd2cdc1c782e2f424ec1421-claims-001-002",
+    "claim_text": "Rogers backed a plan by President George W. Bush that would have cost retirees tens of thousands of dollars when the stock market crashed in 2008.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 262,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "- the •\nMICHIGAN\nINDEPENDENT\nGOP Senate candidate Mike Rogers\nsupported private investment of\nSocial Security funds\nRogers backed a plan by President George W. Bush that\nwould have cost retirees tens of thousands of dollars when\nthe stock market crashed in 2008.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9c2ffdd5780a1e0b5a7adcf51daf259d937a4c58dec1b7c3b7ce4af9c9a2f0fb?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 61,
+        "anchor_quote": "Rogers",
+        "anchor_start": 55,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "- the •\nMICHIGAN\nINDEPENDENT\nGOP Senate candidate Mike Rogers\nsupported private investment of\nSocial Security funds\nRogers backed a plan by President George W. Bush that\nwould have cost retirees tens of thousands of dollars when\nthe stock market crashed in 2008.",
+    "text_hash": "739b2b91e4abf518d3e69df2f2f190e94110d07a77caed75e2f866e0e475226a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-4cd2cdc1c782e2f424ec1421",
+    "alignment": "D",
+    "block_id": "snap-4cd2cdc1c782e2f424ec1421-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-4cd2cdc1c782e2f424ec1421-claims-001-003",
+    "claim_text": "a plan by President George W. Bush would have cost retirees tens of thousands of dollars when the stock market crashed in 2008.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 262,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "- the •\nMICHIGAN\nINDEPENDENT\nGOP Senate candidate Mike Rogers\nsupported private investment of\nSocial Security funds\nRogers backed a plan by President George W. Bush that\nwould have cost retirees tens of thousands of dollars when\nthe stock market crashed in 2008.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9c2ffdd5780a1e0b5a7adcf51daf259d937a4c58dec1b7c3b7ce4af9c9a2f0fb?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 164,
+        "anchor_quote": "President George W. Bush",
+        "anchor_start": 140,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "President George W. Bush",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "- the •\nMICHIGAN\nINDEPENDENT\nGOP Senate candidate Mike Rogers\nsupported private investment of\nSocial Security funds\nRogers backed a plan by President George W. Bush that\nwould have cost retirees tens of thousands of dollars when\nthe stock market crashed in 2008.",
+    "text_hash": "739b2b91e4abf518d3e69df2f2f190e94110d07a77caed75e2f866e0e475226a",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
