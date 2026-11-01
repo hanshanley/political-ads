@@ -2939,17 +2939,17 @@
   },
   "ads": 1792,
   "ads_by_status": {
-    "normalized": 261,
-    "not_run": 1194,
-    "validation_failed": 337
+    "normalized": 262,
+    "not_run": 1188,
+    "validation_failed": 342
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 267,
-    "not_run": 1400,
-    "validation_failed": 349
+    "normalized": 270,
+    "not_run": 1392,
+    "validation_failed": 354
   },
-  "claims": 1909,
+  "claims": 1938,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -4218,6 +4218,18 @@
         },
         {
           "claim_id": "snap-04bc8c81a19e6c977d9a2454-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06aadcb9cd7caf237a2d2edb-claims-002-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-012",
           "target_index": 0
         }
       ],
@@ -6762,6 +6774,22 @@
         {
           "claim_id": "smp-3893-0-claims-001-005",
           "target_index": 1
+        },
+        {
+          "claim_id": "snap-06aadcb9cd7caf237a2d2edb-claims-002-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06aadcb9cd7caf237a2d2edb-claims-002-004",
+          "target_index": 1
+        },
+        {
+          "claim_id": "snap-074e50e2e106f4dbd93584dd-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-074e50e2e106f4dbd93584dd-claims-001-009",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -8003,6 +8031,34 @@
         },
         {
           "claim_id": "snap-04bc8c81a19e6c977d9a2454-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06aadcb9cd7caf237a2d2edb-claims-002-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06aadcb9cd7caf237a2d2edb-claims-002-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06aadcb9cd7caf237a2d2edb-claims-002-004",
+          "target_index": 2
+        },
+        {
+          "claim_id": "snap-06aadcb9cd7caf237a2d2edb-claims-002-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-011",
           "target_index": 0
         }
       ],
@@ -9494,6 +9550,18 @@
         {
           "claim_id": "snap-04bc8c81a19e6c977d9a2454-claims-001-003",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-074e50e2e106f4dbd93584dd-claims-001-007",
+          "target_index": 0
         }
       ],
       "uncertain": [
@@ -10856,6 +10924,26 @@
         {
           "claim_id": "snap-0215b9d3c50bc5e46c9053c9-claims-001-002",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-06aadcb9cd7caf237a2d2edb-claims-002-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-074e50e2e106f4dbd93584dd-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-074e50e2e106f4dbd93584dd-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-074e50e2e106f4dbd93584dd-claims-001-005",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-074e50e2e106f4dbd93584dd-claims-001-006",
+          "target_index": 0
         }
       ],
       "neutral": [
@@ -11770,6 +11858,42 @@
         {
           "claim_id": "snap-0215b9d3c50bc5e46c9053c9-claims-001-006",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-06aadcb9cd7caf237a2d2edb-claims-002-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-008",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-009",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-009",
+          "target_index": 1
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-010",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-074e50e2e106f4dbd93584dd-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-074e50e2e106f4dbd93584dd-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-074e50e2e106f4dbd93584dd-claims-001-010",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -12408,11 +12532,19 @@
         {
           "claim_id": "snap-047d75680849bfdbad389053-claims-001-003",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-06b7d8e23248aa71a18f8a59-claims-001-005",
+          "target_index": 1
         }
       ],
       "uncertain": []
     }
   },
-  "targets": 2352,
+  "targets": 2385,
   "version": "local-ad-claims-4"
 }
