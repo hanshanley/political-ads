@@ -5,7 +5,7 @@ import re
 from datetime import datetime
 from hashlib import sha256
 from io import BytesIO
-from urllib.parse import urlsplit
+from urllib.parse import parse_qs, urljoin, urlsplit
 
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
@@ -86,6 +86,148 @@ def linked_ad_text(client, content: str, review: dict, identities: list[dict]) -
     if len(selected) != 1:
         raise ValueError("Linked ad text must match exactly one reviewed element")
     return re.sub(r"\s+", " ", plain_html(str(selected[0]))).strip()
+
+
+def publisher_caption_text(
+    client, content: str, source: Source, review: dict, identities: list[dict]
+):
+    evidence = review["publisher_captions"]
+    index_url = (
+        "https://www.aba.com/advocacy/political-engagement/voter-education/voter-education-ads"
+    )
+    caption_url = urlsplit(evidence["url"])
+    if (
+        source.id != "aba-wagner-captions"
+        or source.sponsor_type != "outside_group"
+        or source.alignment != "R"
+        or review["candidate_id"] != "H2MO02102"
+        or identities[0]["party"] != "REP"
+        or review["source_url"]
+        != "https://www.aba.com/about-us/press-room/press-releases/"
+        "missouri-voter-education-ad-rep-ann-wagner"
+        or review["retrieval_url"] != review["source_url"]
+        or review["format"] != "html"
+        or review["completeness"] != "partial_quotation"
+        or any(
+            review.get(key)
+            for key in (
+                "broadcast_evidence",
+                "printed_ad_text",
+                "reported_ad_text",
+                "linked_ad_text",
+            )
+        )
+        or evidence["index_url"] != index_url
+        or caption_url.scheme != "https"
+        or caption_url.netloc != "www.aba.com"
+        or caption_url.path
+        != "/-/media/aba/video-transcripts/"
+        "expanding-opportunities-for-missourians--rep-ann-wagner-rmo02.vtt"
+        or caption_url.fragment
+        or not re.fullmatch(r"rev=[a-f0-9]{32}", caption_url.query)
+    ):
+        raise ValueError("Unsupported publisher caption evidence")
+    links = [
+        a["href"]
+        for a in BeautifulSoup(content, "html.parser").select("a[href]")
+        if a.get_text(" ", strip=True) == "new ad"
+    ]
+    if len(links) != 1 or digest(links[0]) != evidence["release_link_sha256"]:
+        raise ValueError("Publisher's reviewed new-ad link is missing or changed")
+    # Inspect the public wrapper locally; never request its tracking URL.
+    wrapper = urlsplit(links[0])
+    protected = urlsplit(parse_qs(wrapper.query).get("url", [""])[0])
+    if (
+        wrapper.scheme != "https"
+        or wrapper.netloc != "nam12.safelinks.protection.outlook.com"
+        or protected.scheme != "https"
+        or protected.netloc != "urldefense.proofpoint.com"
+        or protected.path != "/v2/url"
+        or parse_qs(protected.query).get("u")
+        != [
+            "https-3A__www.aba.com_advocacy_political-2Dengagement_"
+            "voter-2Deducation_voter-2Deducation-2Dads"
+        ]
+    ):
+        raise ValueError("Publisher's protected link must identify the exact public ad index")
+    body, _ = client.get(index_url, refresh=True, retry=False)
+    if sha256(body).hexdigest() != evidence["index_sha256"]:
+        raise ValueError("Publisher ad index changed; captions require a new review")
+    soup = BeautifulSoup(body, "html.parser")
+    cards = soup.select(evidence["card_selector"])
+    headings = cards[0].select("h3") if len(cards) == 1 else []
+    if len(headings) != 1 or headings[0].get_text(" ", strip=True) != evidence["ad_title"]:
+        raise ValueError("Publisher caption card must identify exactly one reviewed ad")
+    modal_key = cards[0].get("data-vid-modal-trigger")
+    modals = soup.select(f'div.video-modal[data-vid-modal="{modal_key}"]')
+    players = modals[0].select("video") if len(modals) == 1 else []
+    if (
+        len(players) != 1
+        or not re.fullmatch(r"[A-Za-z0-9_-]{11}", players[0].get("data-youtube-id", ""))
+        or review["media_url"] != "https://www.youtube.com/watch?v=" + players[0]["data-youtube-id"]
+        or {
+            urljoin(index_url, track["src"])
+            for track in players[0].select('track[src][srclang="en"]')
+            if track.get("kind") in {"captions", "subtitles"}
+        }
+        != {evidence["url"]}
+    ):
+        raise ValueError(
+            "Exact ad modal, original video, or publisher caption association is missing"
+        )
+    body, _ = client.get(evidence["url"], refresh=True, retry=False)
+    if sha256(body).hexdigest() != evidence["file_sha256"]:
+        raise ValueError("Publisher captions changed; literal words require a new review")
+    vtt = body.decode("utf-8-sig").replace("\r\n", "\n").replace("\r", "\n")
+    timestamp = r"\d{2}:[0-5]\d:[0-5]\d\.\d{3}"
+    matches = list(re.finditer(rf"(?m)^(\d+)\n({timestamp}) --> ({timestamp})\n", vtt))
+    if not matches or vtt[: matches[0].start()].strip() != "WEBVTT":
+        raise ValueError("Publisher captions require numbered WebVTT cues")
+    cues = []
+    previous_end = 0
+    for index, match in enumerate(matches):
+        stop = matches[index + 1].start() if index + 1 < len(matches) else len(vtt)
+        payload = vtt[match.end() : stop].strip()
+        if payload.startswith("<v ->"):
+            payload = payload.removeprefix("<v ->").removesuffix("</v>")
+        start, end = match[2], match[3]
+        seconds = [
+            int(time[:2]) * 3600 + int(time[3:5]) * 60 + float(time[6:]) for time in (start, end)
+        ]
+        if (
+            int(match[1]) != index + 1
+            or not payload
+            or any(marker in payload for marker in ("<", ">", "\n\n"))
+            or not previous_end <= seconds[0] < seconds[1]
+        ):
+            raise ValueError("Publisher caption cue identity, literal text, or timing is invalid")
+        previous_end = seconds[1]
+        cues.append(
+            {
+                "cue_id": index + 1,
+                "start": start,
+                "end": end,
+                "text": re.sub(r"\s+", " ", payload),
+            }
+        )
+    selected_ids = evidence["cue_ids"]
+    if (
+        not selected_ids
+        or any(type(index) is not int or not 1 <= index <= len(cues) for index in selected_ids)
+        or selected_ids != sorted(set(selected_ids))
+    ):
+        raise ValueError("Publisher captions need distinct ordered reviewed cue IDs")
+    selected = [cues[index - 1] for index in selected_ids]
+    text = "\n".join(cue["text"] for cue in selected)
+    if (
+        review["passages"] != [cue["text"] for cue in selected]
+        or len(text.split()) > 25
+        or not candidate_mentions(text, identities)
+    ):
+        raise ValueError(
+            "Caption excerpt must equal reviewed cues, identify the candidate, and stay bounded"
+        )
+    return text, selected
 
 
 def broadcast_ad_text(content: str, source: Source, review: dict) -> str:
@@ -342,14 +484,20 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
     broadcast = review.get("broadcast_evidence")
     printed = review.get("printed_ad_text")
     reported = review.get("reported_ad_text")
+    captions = review.get("publisher_captions")
     if (
         not broadcast
         and not printed
         and not reported
+        and not captions
         and review["media_url"] not in media_links(content)
     ):
         raise ValueError("Reviewed original ad link is missing")
-    if reported:
+    if captions:
+        passage_source, caption_cues = publisher_caption_text(
+            client, content, source, review, identities
+        )
+    elif reported:
         passage_source = reported_ad_text(content, source, review)
     elif printed:
         passage_source, print_evidence = printed_ad_text(
@@ -397,6 +545,8 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         else (
             "newspaper_display_ad_partial_image_text"
             if printed
+            else "publisher_caption_partial_ad_copy"
+            if captions
             else "publisher_linked_source_quotes_partial_ad_copy"
             if review.get("linked_ad_text")
             else "news_report_quotes_partial_ad_copy"
@@ -408,6 +558,14 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         flags.append("publisher_audio_episode_not_individual_ad_original")
     if reported:
         flags.extend(["original_ad_media_unverified", "ad_legal_payer_unverified"])
+    if captions:
+        flags.extend(
+            [
+                "publisher_captions_not_independently_verified_against_audio",
+                "original_ad_media_unverified",
+                "ad_legal_payer_unverified",
+            ]
+        )
     if printed:
         flags.extend(
             [
@@ -430,6 +588,15 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
     ]
     segments[0]["release_evidence"] = review
     segments[0]["federal_scope_candidate_ids"] = [candidate["candidate_id"]]
+    if captions:
+        for segment, cue in zip(segments, caption_cues, strict=True):
+            segment["caption_cue"] = {
+                "url": captions["url"],
+                "file_sha256": captions["file_sha256"],
+                "cue_id": cue["cue_id"],
+                "start": cue["start"],
+                "end": cue["end"],
+            }
     if printed:
         for segment, bounds in zip(segments, print_evidence.pop("passage_bounds"), strict=True):
             segment.update(print_evidence | {"kind": "image_ocr", "image_line_bounds": bounds})
@@ -448,6 +615,8 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
             placement=(
                 "publisher_print_ad_listing"
                 if printed
+                else "publisher_linked_caption_excerpt"
+                if captions
                 else "publisher_reported_ad_copy"
                 if reported
                 else "campaign_release"
@@ -463,6 +632,10 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
                     + print_evidence["ocr_text_sha256"]
                 )
                 if printed
+                else digest(
+                    content + "\n" + captions["index_sha256"] + "\n" + captions["file_sha256"]
+                )
+                if captions
                 else digest(content)
             ),
             date_basis="publisher_ad_listing_date" if printed else "publisher_report_date",

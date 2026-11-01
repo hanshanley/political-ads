@@ -1,6 +1,8 @@
 import json
+from dataclasses import replace
 from hashlib import sha256
 from io import BytesIO
+from urllib.parse import urlencode
 
 import pytest
 from pypdf import PdfReader, PdfWriter
@@ -10,6 +12,178 @@ from pypdf.generic import DecodedStreamObject, DictionaryObject, NameObject
 from political_ads import cli
 from political_ads.schema import digest
 from political_ads.sources import SOURCES, collect_wordpress
+
+
+@pytest.mark.parametrize(
+    ("failure", "message"),
+    [
+        (None, None),
+        ("missing_link", "new-ad link is missing"),
+        ("wrong_destination", "exact public ad index"),
+        ("index_changed", "ad index changed"),
+        ("missing_card", "exactly one reviewed ad"),
+        ("duplicate_card", "exactly one reviewed ad"),
+        ("missing_modal", "caption association is missing"),
+        ("wrong_video", "caption association is missing"),
+        ("wrong_track", "caption association is missing"),
+        ("caption_changed", "Publisher captions changed"),
+        ("invalid_timing", "timing is invalid"),
+        ("duplicate_vtt_id", "cue identity"),
+        ("unexpected_markup", "literal text"),
+        ("duplicate_selected_id", "ordered reviewed cue IDs"),
+        ("reversed_selected_ids", "ordered reviewed cue IDs"),
+        ("nonliteral_passage", "must equal reviewed cues"),
+        ("long_excerpt", "stay bounded"),
+        ("missing_caption_candidate", "identify the candidate"),
+        ("unsupported_source", "Unsupported publisher caption"),
+        ("party_mismatch", "Unsupported publisher caption"),
+        ("complete_script", "Unsupported publisher caption"),
+    ],
+)
+def test_publisher_caption_excerpt_requires_exact_release_card_video_and_cues(failure, message):
+    from political_ads.reviewed_releases import reviewed_release
+
+    source = next(s for s in SOURCES if s.id == "aba-wagner-captions")
+    if failure == "unsupported_source":
+        source = replace(source, id="unsupported-caption-publisher")
+    candidate = {
+        "candidate_id": "H2MO02102",
+        "name": "WAGNER, ANN L.",
+        "party": "REP",
+        "state": "MO",
+        "office": "H",
+        "district": "02",
+        "election_year": "2026",
+    }
+    if failure == "party_mismatch":
+        candidate["party"] = "DEM"
+    index_url = source.url + "/advocacy/political-engagement/voter-education/voter-education-ads"
+    caption_url = (
+        source.url + "/-/media/aba/video-transcripts/"
+        "expanding-opportunities-for-missourians--rep-ann-wagner-rmo02.vtt?rev=" + "a" * 32
+    )
+    destination = (
+        "https-3A__www.aba.com_advocacy_political-2Dengagement_"
+        "voter-2Deducation_voter-2Deducation-2Dads"
+    )
+    if failure == "wrong_destination":
+        destination = "https-3A__www.example.test_unrelated"
+    protected = "https://urldefense.proofpoint.com/v2/url?" + urlencode({"u": destination})
+    link = "https://nam12.safelinks.protection.outlook.com/?" + urlencode({"url": protected})
+    anchor = "" if failure == "missing_link" else f'<a href="{link}">new ad</a>'
+    content = (
+        "<h1>Fixture new ad announcement</h1>"
+        '<li class="byline__inline">October 23, 2026</li>'
+        f"<p>Congresswoman Ann Wagner is the beneficiary of the {anchor}.</p>"
+    )
+    card = (
+        '<div class="video" data-vid-modal-trigger="fixture"><h3>Fixture Ann Wagner ad</h3></div>'
+    )
+    if failure == "missing_card":
+        card = ""
+    elif failure == "duplicate_card":
+        card *= 2
+    video_id = "OtherVid123" if failure == "wrong_video" else "HamagNqLjgM"
+    track = caption_url + "wrong" if failure == "wrong_track" else caption_url
+    modal = (
+        '<div class="video-modal" data-vid-modal="fixture">'
+        f'<video data-youtube-id="{video_id}">'
+        f'<track kind="captions" srclang="en" src="{track}">'
+        f'<track kind="subtitles" srclang="en" src="{track}">'
+        "</video></div>"
+    )
+    if failure == "missing_modal":
+        modal = ""
+    index = (card + modal).encode()
+    passages = [
+        "Families deserve lower costs and better local opportunities.",
+        "That's why Congresswoman Ann Wagner",
+        "is supporting local investment and small businesses.",
+        "An excluded fourth cue describes proposals outside this bounded excerpt.",
+    ]
+    if failure == "missing_caption_candidate":
+        passages[1] = "That's why our local representative"
+    vtt = (
+        "\ufeffWEBVTT\n\n"
+        + "".join(
+            f"{number}\n00:00:0{number - 1}.000 --> 00:00:0{number}.000\n<v ->{passage}\n"
+            for number, passage in enumerate(passages, 1)
+        )
+    ).encode()
+    if failure == "invalid_timing":
+        vtt = vtt.replace(b"00:00:03.000", b"00:00:00.100")
+    elif failure == "duplicate_vtt_id":
+        vtt = vtt.replace(b"\n3\n", b"\n2\n")
+    elif failure == "unexpected_markup":
+        vtt = vtt.replace(b"<v ->", b"<script>")
+    cue_ids = [1, 2, 3]
+    if failure == "duplicate_selected_id":
+        cue_ids = [1, 2, 2]
+    elif failure == "reversed_selected_ids":
+        cue_ids = [3, 2, 1]
+    elif failure == "long_excerpt":
+        cue_ids.append(4)
+    selected = [passages[number - 1] for number in cue_ids]
+    if failure == "nonliteral_passage":
+        selected[0] += " Invented words."
+    review = {
+        "source": source.id,
+        "source_url": source.url + "/about-us/press-room/press-releases/"
+        "missouri-voter-education-ad-rep-ann-wagner",
+        "record_id": "fixture",
+        "format": "html",
+        "published": "2026-10-23",
+        "release_title": "Fixture new ad announcement",
+        "publication_selector": "li.byline__inline",
+        "candidate_id": candidate["candidate_id"],
+        "media_url": "https://www.youtube.com/watch?v=HamagNqLjgM",
+        "phase": "unknown",
+        "completeness": "marked_script" if failure == "complete_script" else "partial_quotation",
+        "required_context": ["Congresswoman Ann Wagner"],
+        "passages": selected,
+        "content_sha256": digest(content),
+        "publisher_captions": {
+            "index_url": index_url,
+            "index_sha256": sha256(index).hexdigest(),
+            "release_link_sha256": digest(link),
+            "card_selector": 'div.video[data-vid-modal-trigger="fixture"]',
+            "ad_title": "Fixture Ann Wagner ad",
+            "url": caption_url,
+            "file_sha256": sha256(vtt).hexdigest(),
+            "cue_ids": cue_ids,
+        },
+        "attribution_basis": "Fixture beneficiary alignment, not organization-wide partisanship.",
+    }
+    review["retrieval_url"] = review["source_url"]
+    calls = []
+    bodies = {
+        review["source_url"]: content.encode(),
+        index_url: index + (b" changed" if failure == "index_changed" else b""),
+        caption_url: vtt + (b" changed" if failure == "caption_changed" else b""),
+    }
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            assert url in bodies, "Only the three public publisher assets may be requested"
+            return bodies[url], {}
+
+    if failure:
+        with pytest.raises(ValueError, match=message):
+            reviewed_release(Client(), source, review, [candidate], "2026-11-01")
+    else:
+        ad = reviewed_release(Client(), source, review, [candidate], "2026-11-01")
+        assert calls == [review["source_url"], index_url, caption_url]
+        assert ad["text"] == "\n".join(selected)
+        assert [s["caption_cue"]["cue_id"] for s in ad["segments"]] == [1, 2, 3]
+        assert ad["segments"][-1]["caption_cue"]["end"] == "00:00:03.000"
+        assert ad["source_hash"] == digest(
+            content + "\n" + sha256(index).hexdigest() + "\n" + sha256(vtt).hexdigest()
+        )
+        assert ad["phase"] == "unknown"
+        assert ad["date_basis"] == "publisher_report_date"
+        assert "original_ad_media_unverified" in ad["quality_flags"]
+        assert "publisher_captions_not_independently_verified_against_audio" in ad["quality_flags"]
 
 
 @pytest.mark.parametrize("failure", [None, "missing_original", "date_mismatch", "missing_alias"])

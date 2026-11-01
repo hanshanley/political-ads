@@ -10,6 +10,108 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Wagner: bounded words from publisher-hosted captions
+
+The individual **October 23, 2026** American Bankers Association release,
+`https://www.aba.com/about-us/press-room/press-releases/missouri-voter-education-ad-rep-ann-wagner`,
+announces a new ABA / Missouri Bankers Association advertisement supporting
+Ann Wagner. The executives' press-release quotations are **not ad speech**.
+Instead, recover the publisher's actual English WebVTT track for the
+individual **Expanding Opportunities for Missourians - Rep. Ann Wagner**
+video card. Retain **19 whitespace tokens in three cues**, comprising the
+first two sentences. Do not combine them with the separate campaign
+advertisement discussed by St. Louis Magazine: that report's three
+literal fragments total **14**, not 15 words, and remain below the
+unchanged acquisition floor.
+
+The release's `new ad` link encodes the independently public ABA
+voter-education index through Outlook/Proofpoint security wrappers.
+Inspect this association locally; **do not request the wrappers or
+publish their tracking parameters**. The review stores only the
+original hyperlink's SHA-256 and the public ABA destination. The exact
+index card's `data-vid-modal-trigger` must match one modal, whose
+`video[data-youtube-id]` identifies **HamagNqLjgM** and whose English
+`track[src]` elements both associate the same publisher caption asset.
+Neither a YouTube channel nor the index's year heading establishes an
+individual original or release date.
+
+The source-specific `publisher_caption_text` path requires the exact
+registered **MO-02** source and **H2MO02102** identity, the individual
+release's heading/date/content, reviewed release-link hash, pinned
+index bytes, unique card/title/modal, exact video ID, matching English
+caption link and pinned VTT bytes. Its three evidence hashes are:
+
+- Release HTML: `10572e4483e8f65741cc9cf441948b26d8156a24c4ec89d248401012a88faa9e`.
+- Index HTML: `3f692c0501cfd02a9b94e8cc5749fda889050b75ec7bec05a394c92e1616b6f4`.
+- VTT, **969 bytes**: `9de4ad09eb43af247fc1d6481d55816b25237b4258653ad10df7615979117700`.
+
+The UTF-8 BOM, line endings and WebVTT `<v ->` voice annotation are
+caption syntax, not spoken words. Remove only that syntax; preserve
+wording and punctuation, reject unexpected markup or malformed/overlapping
+cue times, and require selected passages to equal distinct, ordered
+reviewed cues. Do not repair text, pad it with narration, or substitute
+ASR. The selected cues cover **00:00:00.180–00:00:07.740**; each exported
+segment retains its cue ID, times, caption URL and file hash.
+Those timestamps are publisher caption evidence, **not independently
+verified playback or video-duration evidence**. No held YouTube
+original was requested, no video is redistributed, and the unlinked
+Knott exception remains unchanged.
+
+Frozen **H2MO02102 / C00495846 / WAGNER, ANN L. / REP / House /
+MO-02 / 2026** matches the release and selected captions without a new
+alias. **R** describes this advertisement's supported beneficiary,
+not organization-wide party affiliation of either banking association.
+The release identifies the joint advertisers, not an independently
+inspected legal disclaimer. Publisher captions have not been verified
+against audio; legal payer, first airing/paid delivery and phase remain
+unverified. The individual release supplies `publisher_report_date`,
+not a date inferred from the catalog, caption filename or runtime
+metadata. New semantic portrayal judgment remains **unreviewed**.
+
+Reproduce with `.venv/bin/political-ads collect --source
+aba-wagner-captions --until 2026-10-30 --offline`, then `parquet --offline`,
+`build --offline`, `validate --offline` and `audit-strategy --offline`.
+The three pinned ABA resources must exist in the ignored HTTP cache;
+a fresh checkout alone does not contain them. The source-specific path
+fetches only those independently public publisher URLs, never tracking
+wrappers, video providers or other ads' caption tracks. Complete research
+downloads preserve the **entire selected excerpt and provenance**,
+not merely metadata and not a claim to the full original script.
+Website and edition publication remain on hold.
+
+Verified snapshot
+`fa1115a90529ff7cc92ee52ef7d2e07acf6a6736a6c98a0685328323ecfb2d87`
+contains **1,931 acquired / 1,892 English records**: **R 627 / D 1,226**,
+including **R 249 / D 698 House records**. House records outside frozen
+Snap IDs are **R 248 / D 222**; this does not resolve source coverage or
+measure national ad volume. Preserve all **572 prior written, 1,930
+combined and 1,891 English objects**, **78 acquisition reviews**, **37
+alias objects** and **18 protected files**; only the acquisition ledger
+appends one entry. Native reviews and the 354-lead media backlog remain
+unchanged.
+
+An isolated three-resource replay, with network connections and media
+execution forbidden, reproduces the entire new object. After browser
+test fixtures restore the actual dataset, both full JSON/gzip/CSV
+copies, **1,931-row Parquet** text/segments and all **11 PNG sets in
+three copies** pass parity checks. CSV keeps its existing formula
+escaping. Parquet's optional union nulls, dates, UUIDs, UTC-normalized
+timestamps and typed cue times are compared without dropping original
+fields; JSON and CSV retain the original millisecond cue-time strings.
+Backend lint/format and **126 focused tests**, frontend lint/type/build,
+**17 unit tests** and **9 browser tests** passed. The strategy audit
+reconciles **20 groups / 10 chart rows** with **590 Republican / 1,204
+Democratic unique messages**; the new caption excerpt stays unreviewed
+rather than silently receiving a praise-only label.
+
+The actual Cline article body was also inspected. Its introductory praise,
+related-post text and reader comments are not ad speech. The embedded
+individual original **TFQkRsxoH_g** supplies association only while
+YouTube remains held. Preserve the distinction between its **September 9**
+visible local label and **September 10, 2026 UTC** publication metadata;
+neither authorizes a fabricated transcript or a new candidate alias.
+No Cline item is admitted.
+
 ## Wittman: bounded quotations from a publisher-linked advertisement
 
 The actual **September 24, 2026** Yahoo-syndicated **13NEWSNOW / Dana Smith**
@@ -76,6 +178,11 @@ Backend lint/format and **105 focused tests**, frontend lint/type/build,
 **17 unit tests** and **9 browser tests** passed. Strategy audit reconciles
 **20 metric groups / 10 chart rows**; new ad copy is not automatically
 assigned a positive-only label.
+
+Exact commit `8b382d8fa868f316aa016a11248a57d50019aafb` passed workflow
+**Validate evidence and dashboard**, run **41279547722**, with terminal
+`success` and the exact expected head SHA. This proof is distinct from
+Barron's preceding CI and any later research or concurrent claims commit.
 
 The additional September 16 WGAL Perry ad-watch report was inspected
 through all 35 actual body paragraphs. Only **seven literal ad words**

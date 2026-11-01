@@ -168,6 +168,17 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "aba-wagner-captions",
+        "https://www.aba.com",
+        "American Bankers Association / Missouri Bankers Association "
+        "(publisher-attributed; ad payer unverified)",
+        "R",
+        "outside_group",
+        "House",
+        fixed_race="MO-02",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "wittman-yahoo-verify",
         "https://www.yahoo.com",
         "Rob Wittman campaign (publisher-attributed; ad payer unverified)",
