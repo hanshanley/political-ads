@@ -446,6 +446,7 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
             "deboer-washingtonreporter",
             "merrin-washingtonreporter",
             "kiggans-washingtonreporter",
+            "lawler-tell-her-no",
             "pps-house-washingtonreporter",
         }
         or review["format"] != "html"
@@ -464,6 +465,8 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         raise ValueError("Reporter quotation requires the reviewed Merrin candidate identity")
     if source.id == "kiggans-washingtonreporter" and review["candidate_id"] != "H2VA02064":
         raise ValueError("Reporter quotation requires the reviewed Kiggans candidate identity")
+    if source.id == "lawler-tell-her-no" and review["candidate_id"] != "H2NY17162":
+        raise ValueError("Campaign quotation requires the reviewed Lawler candidate identity")
     if source.id == "pps-house-washingtonreporter" and review["candidate_id"] != "H2FL04211":
         raise ValueError("Reporter quotation requires the reviewed Bean speaker identity")
     evidence = review["reported_ad_text"]
@@ -484,6 +487,14 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         pattern = r"Merrin [^“”]+\. “([^”]+)” he adds in the ad\. “([^”]+)”"
     elif source.id == "kiggans-washingtonreporter":
         pattern = r"“([^”]+)” a local news anchor says during the ad\. [^“”]+“[^”]+”"
+    elif source.id == "lawler-tell-her-no":
+        pattern = (
+            r"Pearl River, NY — October 12, 2026 — Today, the Lawler for Congress campaign "
+            r"launched “Tell Her No,” which will be running on digital, text, and streaming "
+            r"platforms\. “([^”]+)” Conley told an interviewer last November, and the ad "
+            r"lets that sit for a second before it plays what she’s been telling Democratic "
+            r"audiences ever since\."
+        )
     elif source.id == "pps-house-washingtonreporter":
         pattern = (
             r"The ad also includes footage of Rep\. Lloyd Smucker [^“”]+“([^”]+)” "
@@ -686,6 +697,8 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
             if captions
             else "publisher_linked_source_quotes_partial_ad_copy"
             if review.get("linked_ad_text")
+            else "campaign_release_quotes_partial_ad_copy"
+            if source.id == "lawler-tell-her-no"
             else "news_report_quotes_partial_ad_copy"
         ),
     ]
@@ -695,6 +708,8 @@ def reviewed_release(client, source: Source, review: dict, candidates: list[dict
         flags.append("publisher_audio_episode_not_individual_ad_original")
     if reported:
         flags.extend(["original_ad_media_unverified", "ad_legal_payer_unverified"])
+    if source.id == "lawler-tell-her-no":
+        flags.append("opponent_interview_clip_used_in_ad")
     if multi_race:
         flags.extend(
             [

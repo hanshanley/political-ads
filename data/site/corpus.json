@@ -39212,6 +39212,95 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "The actual campaign release explicitly identifies this Cait Conley interview quotation as played in the newly launched Tell Her No ad. The advertiser is Republican Mike Lawler, exact frozen H2NY17162 / LAWLER, MICHAEL VINCENT / REP / H / NY17 / 2026 / C00815415, with the existing reviewed Mike Lawler alias unchanged. The quoted speaker is Democratic opponent Cait Conley, frozen H6NY17171 / CONLEY, CAIT / DEM / H / NY17 / 2026 / C00900431, not Lawler narration. The interview took place last November relative to the 2026 release; it is not a newly conducted 2026 interview. The unique h2.text-center release heading and small.date visible October 12, 2026 date are bound to HTML SHA256 83be67b93c5451e3c1d07f39c104b2dbe7fdaddfef9d3853cb86349cc3cb799f. Paragraph SHA256 b5bd1b20b6e534971cd03579a2b3dc9f4ed2a081b7621960a2dc5df2ddb9822e binds the selected quotation and explicit footage-in-ad association. Text SHA256 0577e368618a51e7de55411a847ce7d9c870997fd032cbd4baabc317ee9d7134 binds the unchanged excerpt. The public post advertises a tracked Watch link, which was not requested or treated as verified original media; media URLs remain empty. No independent audio, legal payer, first airing, delivery, duration, completeness, underlying political claim or semantic strategy judgment is certified. Phase remains unknown. This distinct creative is admitted through a separate guarded source without recollecting or modifying any of the six existing Lawler records.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6NY17171",
+          "district": "17",
+          "name": "CONLEY, CAIT",
+          "office": "H",
+          "party": "DEM",
+          "state": "NY"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "lawler-tell-her-no-1442-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "656e7fe6e688b6277e50cbd8bc1f99c2d9ef9ec00486442601bf8ae3fa71cc60",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-10-12",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "campaign_release_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified",
+        "opponent_interview_clip_used_in_ad"
+      ],
+      "race": "NY-17",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H2NY17162"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The actual campaign release explicitly identifies this Cait Conley interview quotation as played in the newly launched Tell Her No ad. The advertiser is Republican Mike Lawler, exact frozen H2NY17162 / LAWLER, MICHAEL VINCENT / REP / H / NY17 / 2026 / C00815415, with the existing reviewed Mike Lawler alias unchanged. The quoted speaker is Democratic opponent Cait Conley, frozen H6NY17171 / CONLEY, CAIT / DEM / H / NY17 / 2026 / C00900431, not Lawler narration. The interview took place last November relative to the 2026 release; it is not a newly conducted 2026 interview. The unique h2.text-center release heading and small.date visible October 12, 2026 date are bound to HTML SHA256 83be67b93c5451e3c1d07f39c104b2dbe7fdaddfef9d3853cb86349cc3cb799f. Paragraph SHA256 b5bd1b20b6e534971cd03579a2b3dc9f4ed2a081b7621960a2dc5df2ddb9822e binds the selected quotation and explicit footage-in-ad association. Text SHA256 0577e368618a51e7de55411a847ce7d9c870997fd032cbd4baabc317ee9d7134 binds the unchanged excerpt. The public post advertises a tracked Watch link, which was not requested or treated as verified original media; media URLs remain empty. No independent audio, legal payer, first airing, delivery, duration, completeness, underlying political claim or semantic strategy judgment is certified. Phase remains unknown. This distinct creative is admitted through a separate guarded source without recollecting or modifying any of the six existing Lawler records.",
+            "candidate_id": "H2NY17162",
+            "completeness": "partial_quotation",
+            "content_sha256": "83be67b93c5451e3c1d07f39c104b2dbe7fdaddfef9d3853cb86349cc3cb799f",
+            "format": "html",
+            "heading_selector": "h2.text-center",
+            "media_url": null,
+            "passages": [
+              "And then my last two years in uniform, I was at the White House as the director for counterterrorism,"
+            ],
+            "phase": "unknown",
+            "publication_selector": "small.date",
+            "published": "2026-10-12",
+            "publisher_credit": "Lawler for Congress campaign; Tell Her No release, October 12, 2026.",
+            "record_id": "1442",
+            "release_title": "NEW AD: BIDEN’S FORMER COUNTERTERRORISM DIRECTOR, CAIT CONLEY, SAYS AMERICA’S GREATEST THREAT IS “WITHIN OUR OWN BORDERS” FROM VOTERS WHO DON’T VOTE HOW SHE WANTS, NOT TERRORIST GROUPS",
+            "reported_ad_text": {
+              "paragraph_selector": "p.wp-block-paragraph:-soup-contains(\"the ad lets that sit\")",
+              "paragraph_sha256": "b5bd1b20b6e534971cd03579a2b3dc9f4ed2a081b7621960a2dc5df2ddb9822e"
+            },
+            "required_context": [
+              "Lawler for Congress campaign launched “Tell Her No,”",
+              "Conley told an interviewer last November, and the ad lets that sit",
+              "Cait Conley",
+              "Mike Lawler"
+            ],
+            "retrieval_url": "https://www.lawlerforcongress.com/2026/10/12/new-ad-bidens-former-counterterrorism-director-cait-conley-says-americas-greatest-threat-is-within-our-own-borders-from-voters-who-dont-vote-how-she-wan/",
+            "reuse_basis": "Retain only 19 unchanged whitespace words from the one hash-bound quotation, including its terminal comma, credited for comparative noncommercial research. Exclude the ad title, narrator paraphrases, other interview quotations not explicitly attributed to this creative, publisher claims and campaign-manager press statements. Full cached HTML and original media remain undistributed; no complete script, blanket license or edition-publication authorization is asserted.",
+            "source": "lawler-tell-her-no",
+            "source_url": "https://www.lawlerforcongress.com/2026/10/12/new-ad-bidens-former-counterterrorism-director-cait-conley-says-americas-greatest-threat-is-within-our-own-borders-from-voters-who-dont-vote-how-she-wan/"
+          },
+          "text": "And then my last two years in uniform, I was at the White House as the director for counterterrorism,"
+        }
+      ],
+      "source": "lawler-tell-her-no",
+      "source_hash": "83be67b93c5451e3c1d07f39c104b2dbe7fdaddfef9d3853cb86349cc3cb799f",
+      "source_record_id": "1442",
+      "source_url": "https://www.lawlerforcongress.com/2026/10/12/new-ad-bidens-former-counterterrorism-director-cait-conley-says-americas-greatest-threat-is-within-our-own-borders-from-voters-who-dont-vote-how-she-wan/",
+      "sponsor": "Mike Lawler campaign (campaign-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "NY",
+      "text": "And then my last two years in uniform, I was at the White House as the director for counterterrorism,",
+      "title": "NEW AD: BIDEN’S FORMER COUNTERTERRORISM DIRECTOR, CAIT CONLEY, SAYS AMERICA’S GREATEST THREAT IS “WITHIN OUR OWN BORDERS” FROM VOTERS WHO DON’T VOTE HOW SHE WANTS, NOT TERRORIST GROUPS"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Official NRSC release at https://www.nrsc.org/press-releases/%f0%9f%93%ba-new-ad-alaskans-got-screwed-mary-peltola-got-rich-2026-10-12/; alignment is the publisher's electoral alignment, not inferred from hostile vocabulary. Joint or candidate-paid creative requires separate payer review.",
       "chamber": "Senate",
       "date_basis": "release_date",
@@ -51955,6 +52044,22 @@
       "scope": "Official ad-release text; not all paid placements",
       "source": "lawler",
       "state": "ok",
+      "url": "https://www.lawlerforcongress.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "lawler-tell-her-no",
+      "state": "partial",
       "url": "https://www.lawlerforcongress.com"
     },
     {

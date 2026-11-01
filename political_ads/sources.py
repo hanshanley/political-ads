@@ -443,6 +443,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "lawler-tell-her-no",
+        "https://www.lawlerforcongress.com",
+        "Mike Lawler campaign (campaign-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="NY-17",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "pps-house-washingtonreporter",
         "https://washingtonreporter.news",
         "Public Policy Solutions (publisher-reported; payer unverified)",

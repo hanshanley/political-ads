@@ -1507,6 +1507,125 @@ def test_kiggans_report_rejects_unbound_identity_or_non_ad_quotations(failure):
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_lawler_fixture():
+    source, candidate, review, _, _, _ = unlinked_kiggans_fixture()
+    source = next(s for s in SOURCES if s.id == "lawler-tell-her-no")
+    candidate.update(
+        candidate_id="H2NY17162",
+        name="LAWLER, MICHAEL VINCENT",
+        state="NY",
+        district="17",
+        reviewed_alias={"full_name": "Mike Lawler"},
+    )
+    selected = (
+        "This selected interview footage contains enough literal words for substantive "
+        "analysis without acquiring neighboring statements or campaign commentary,"
+    )
+    paragraph = (
+        "Pearl River, NY — October 12, 2026 — Today, the Lawler for Congress campaign "
+        "launched “Tell Her No,” which will be running on digital, text, and streaming "
+        f"platforms. “{selected}” Conley told an interviewer last November, and the ad "
+        "lets that sit for a second before it plays what she’s been telling Democratic "
+        "audiences ever since."
+    )
+    commentary = "A separate campaign-manager press statement."
+    content = (
+        "<h1>News</h1><h2 class='text-center'>Tell Her No release</h2>"
+        "<small class='date'>October 12, 2026</small>"
+        "<p>Mike Lawler launched an ad featuring Cait Conley.</p>"
+        f'<p class="quoted">{paragraph}</p><p>“{commentary}” campaign manager says.</p>'
+    )
+    url = source.url + "/2026/10/12/tell-her-no/"
+    review.update(
+        source=source.id,
+        record_id="1442",
+        source_url=url,
+        retrieval_url=url,
+        content_sha256=digest(content),
+        published="2026-10-12",
+        release_title="Tell Her No release",
+        heading_selector="h2.text-center",
+        publication_selector="small.date",
+        candidate_id=candidate["candidate_id"],
+        required_context=["Mike Lawler", "Cait Conley"],
+        passages=[selected],
+        reported_ad_text={
+            "paragraph_selector": "p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+    )
+    return source, candidate, review, content.encode(), commentary
+
+
+def test_lawler_release_keeps_only_opponent_interview_clip_explicitly_played_in_ad():
+    source, candidate, review, body, commentary = unlinked_lawler_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == review["passages"][0] and ad["text"].endswith(",")
+    assert commentary not in ad["text"]
+    assert ad["alignment"] == "R" and ad["race"] == "NY-17"
+    assert ad["sponsor_type"] == "candidate" and ad["media_urls"] == []
+    assert ad["published"] == "2026-10-12" and ad["phase"] == "unknown"
+    assert {
+        "campaign_release_quotes_partial_ad_copy",
+        "opponent_interview_clip_used_in_ad",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified",
+    } <= set(ad["quality_flags"])
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize(
+    "failure",
+    ["candidate", "speaker", "interview_only", "too_long", "commentary", "date", "heading"],
+)
+def test_lawler_release_rejects_unbound_identity_or_non_ad_evidence(failure):
+    source, candidate, review, body, commentary = unlinked_lawler_fixture()
+    content = body.decode()
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H2NY17999"
+    elif failure == "speaker":
+        content = content.replace("Conley told", "Lawler told")
+    elif failure == "interview_only":
+        content = content.replace("and the ad lets", "and the interview lets")
+    elif failure == "too_long":
+        original = review["passages"][0]
+        review["passages"][0] += " These additional words exceed the permitted quotation length."
+        content = content.replace(original, review["passages"][0])
+    elif failure == "commentary":
+        review["passages"].append(commentary)
+    elif failure == "date":
+        content = content.replace(
+            "<small class='date'>October 12", "<small class='date'>October 13"
+        )
+    elif failure == "heading":
+        content = content.replace("Tell Her No release</h2>", "A different release</h2>")
+    from bs4 import BeautifulSoup
+
+    paragraph = BeautifulSoup(content, "html.parser").select("p.quoted")[0]
+    review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
+    review["content_sha256"] = digest(content)
+
+    class Client:
+        def get(self, url, **kwargs):
+            return content.encode(), {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 def unlinked_pps_house_fixture():
     source, _, review, _, _, _ = unlinked_kiggans_fixture()
     source = next(s for s in SOURCES if s.id == "pps-house-washingtonreporter")

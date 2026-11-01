@@ -10,6 +10,74 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Lawler: opponent interview clip explicitly played in an ad
+
+The October 12, 2026 campaign release for **Tell Her No** explicitly
+identifies a **19-word Cait Conley interview quotation** played in the ad.
+The quotation, including its terminal comma, is partial ad evidence:
+Conley is the quoted Democratic opponent, not the Republican narrator.
+Do not acquire neighboring quotations merely because they appear in the
+release; narrator paraphrases and campaign-manager statements are excluded.
+The interview's earlier date is distinct from the 2026 ad-release date.
+
+The new guarded source `lawler-tell-her-no` preserves all six existing
+`lawler` records. Exact advertiser identity is **H2NY17162 / REP / NY-17 /
+C00815415**; the existing reviewed Mike Lawler alias is unchanged.
+The quoted opponent's frozen identity is **H6NY17171 / DEM / NY-17 /
+C00900431**. Alignment describes the advertiser, not the quoted speaker.
+The new excerpt remains **semantically unreviewed**; no strategy label or
+underlying political claim is certified.
+
+The review in `data/ad-release-reviews.json` records the actual source URL
+and pins decoded HTML SHA-256
+`83be67b93c5451e3c1d07f39c104b2dbe7fdaddfef9d3853cb86349cc3cb799f`,
+the unique release heading `h2.text-center`, and the visible publication
+date `small.date`. Its unique paragraph selector and SHA-256
+`b5bd1b20b6e534971cd03579a2b3dc9f4ed2a081b7621960a2dc5df2ddb9822e`
+bind both the unchanged quotation and explicit footage-in-ad attribution.
+Text SHA-256 is
+`0577e368618a51e7de55411a847ce7d9c870997fd032cbd4baabc317ee9d7134`.
+The ordinary detector identified English; no language override was added.
+The collector retains the existing 15-word floor and 25-word ceiling.
+The tracked Watch link was not requested. Original video, legal payer,
+first airing, delivery, duration and completeness remain unverified;
+media URLs are empty and phase is unknown.
+
+Reproduce using the pinned response and the explicitly saved cutoff:
+`.venv/bin/political-ads collect --source lawler-tell-her-no --until 2026-10-30 --offline`,
+then `parquet`, `build`, `validate` and `audit-strategy`.
+Run the existing frontend build to synchronize both complete download
+copies, followed by its unit and browser checks. The CLI's default cutoff
+must not replace the saved October 30 cutoff; final inclusive scope
+remains November 4. The isolated replay forbids network, recognition and
+subprocesses and must reproduce the complete written corpus exactly.
+
+Snapshot
+`82e7c49b0e8f46159a1f2b4fc449753bcfd266828cc82b9d634e544aca99ff67`
+contains **1,944 acquired / 1,905 English** records, including **R640 /
+D1,226** English records and **R262 / D698** English House records.
+House outside Snapchat is **R261 / D222**. There are **583 written
+records / 89 release reviews / 43 native reviews / 38 aliases**.
+The fresh pre-ad baseline protects all **1,943 preceding acquired and
+1,904 preceding analyzed objects**, prior reviews and aliases, and
+18 unchanged identity, media, annotation and claims-input file hashes.
+Complete JSON/gzip/CSV downloads, typed Parquet text and segments, and
+all eleven PNG/CSV chart sets must match this snapshot without truncation.
+Website, host, Substack and edition publication remain held.
+
+Verification passed: whole-repository Ruff, **692 Python tests**, frontend
+lint/build, **17 unit / 9 browser tests**, complete-export and eleven-chart
+parity, every prior object and protected hash, and exact isolated offline
+replay. Eight new focused cases include a failing-before positive case
+and rejection of substituted identity, speaker, interview-only attribution,
+overlong copy, press commentary, changed visible date and changed heading.
+
+Further campaign discovery found no additional ad text in the actual
+Gaines 2026 public-post collection (one empty-content legislative-news
+post), Jackley's 2026 endorsements/event releases, or Teixeira's inspected
+2025 news archive. The Washington Reporter searches returned previously
+acquired, non-House, older or non-ad results; those routes add no records.
+
 ## Public Policy Solutions: one multi-race House issue ad
 
 The May 28 Washington Reporter article
