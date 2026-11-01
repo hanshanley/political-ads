@@ -137797,5 +137797,433 @@
     "text_hash": "493f19bfd02f15acb7ab190a7ea46221f9ec821370aca80ae47b088769d42e56",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e1de3f7580dbd367aa35957",
+    "alignment": "R",
+    "block_id": "snap-7e1de3f7580dbd367aa35957-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e1de3f7580dbd367aa35957-claims-001-001",
+    "claim_text": "Mary Petola has sold out Alaska.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 32,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Mary Petola has sold out Alaska.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e7b78aaf24ee085312f7cd46a24b947b6e00eba56b8eb765eb25e56a495f91ed?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 11,
+        "anchor_quote": "Mary Petola",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "PELTOLA, MARY",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mary Petola has sold out Alaska.\nShe voted 95% of the time with Joe Biden.\nMary Peltola\nMaru Peltola has\nSOLD ALASKA\nPAID FOR BY SLF PAC. NOT\nAUTHORIZED BYANY CANDIDATE OR CANDIDATE'S COMMIT\nTEE. WWW.SLFPAC.ORG\nMary Peltolahas\nSOLD ALASKA OUT\nAlaskå.\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE. WW.SLFPAC.ORG\nMARY R\nPAID FOR BYSLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE. WWW.SLFPAC.ORG\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTE. WWW.SLFPAC.ORG\nIFTHETIMEWITHJUE BIDEN\nOFTHETIME WITH JOE BIDEN\nPAID FOR BY SLF PAC\nYANY LAN\nSLFPAC.ORG",
+    "text_hash": "093b5b15542e0565a6866419dd900ab07c2c3126d2f82040355fb77bffb3c8fa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e1de3f7580dbd367aa35957",
+    "alignment": "R",
+    "block_id": "snap-7e1de3f7580dbd367aa35957-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e1de3f7580dbd367aa35957-claims-001-002",
+    "claim_text": "She voted 95% of the time with Joe Biden.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 74,
+        "kind": "local_asr",
+        "start": 33,
+        "text": "She voted 95% of the time with Joe Biden.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e7b78aaf24ee085312f7cd46a24b947b6e00eba56b8eb765eb25e56a495f91ed?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 36,
+        "anchor_quote": "She",
+        "anchor_start": 33,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "PELTOLA, MARY",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 73,
+        "anchor_quote": "Joe Biden",
+        "anchor_start": 64,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Joe Biden",
+        "kind": "person",
+        "name": "Joe Biden",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mary Petola has sold out Alaska.\nShe voted 95% of the time with Joe Biden.\nMary Peltola\nMaru Peltola has\nSOLD ALASKA\nPAID FOR BY SLF PAC. NOT\nAUTHORIZED BYANY CANDIDATE OR CANDIDATE'S COMMIT\nTEE. WWW.SLFPAC.ORG\nMary Peltolahas\nSOLD ALASKA OUT\nAlaskå.\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE. WW.SLFPAC.ORG\nMARY R\nPAID FOR BYSLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE. WWW.SLFPAC.ORG\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTE. WWW.SLFPAC.ORG\nIFTHETIMEWITHJUE BIDEN\nOFTHETIME WITH JOE BIDEN\nPAID FOR BY SLF PAC\nYANY LAN\nSLFPAC.ORG",
+    "text_hash": "093b5b15542e0565a6866419dd900ab07c2c3126d2f82040355fb77bffb3c8fa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e1de3f7580dbd367aa35957",
+    "alignment": "R",
+    "block_id": "snap-7e1de3f7580dbd367aa35957-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e1de3f7580dbd367aa35957-claims-001-003",
+    "claim_text": "SOLD ALASKA OUT",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 242,
+        "kind": "video_ocr",
+        "start": 227,
+        "text": "SOLD ALASKA OUT",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e7b78aaf24ee085312f7cd46a24b947b6e00eba56b8eb765eb25e56a495f91ed?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 242,
+        "anchor_quote": "SOLD ALASKA OUT",
+        "anchor_start": 227,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mary Petola has sold out Alaska.\nShe voted 95% of the time with Joe Biden.\nMary Peltola\nMaru Peltola has\nSOLD ALASKA\nPAID FOR BY SLF PAC. NOT\nAUTHORIZED BYANY CANDIDATE OR CANDIDATE'S COMMIT\nTEE. WWW.SLFPAC.ORG\nMary Peltolahas\nSOLD ALASKA OUT\nAlaskå.\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE. WW.SLFPAC.ORG\nMARY R\nPAID FOR BYSLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE. WWW.SLFPAC.ORG\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTE. WWW.SLFPAC.ORG\nIFTHETIMEWITHJUE BIDEN\nOFTHETIME WITH JOE BIDEN\nPAID FOR BY SLF PAC\nYANY LAN\nSLFPAC.ORG",
+    "text_hash": "093b5b15542e0565a6866419dd900ab07c2c3126d2f82040355fb77bffb3c8fa",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e1de3f7580dbd367aa35957",
+    "alignment": "R",
+    "block_id": "snap-7e1de3f7580dbd367aa35957-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e1de3f7580dbd367aa35957-claims-001-004",
+    "claim_text": "SOLD ALASKA",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 116,
+        "kind": "video_ocr",
+        "start": 105,
+        "text": "SOLD ALASKA",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e7b78aaf24ee085312f7cd46a24b947b6e00eba56b8eb765eb25e56a495f91ed?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 116,
+        "anchor_quote": "SOLD ALASKA",
+        "anchor_start": 105,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Mary Petola has sold out Alaska.\nShe voted 95% of the time with Joe Biden.\nMary Peltola\nMaru Peltola has\nSOLD ALASKA\nPAID FOR BY SLF PAC. NOT\nAUTHORIZED BYANY CANDIDATE OR CANDIDATE'S COMMIT\nTEE. WWW.SLFPAC.ORG\nMary Peltolahas\nSOLD ALASKA OUT\nAlaskå.\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE. WW.SLFPAC.ORG\nMARY R\nPAID FOR BYSLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE. WWW.SLFPAC.ORG\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTE. WWW.SLFPAC.ORG\nIFTHETIMEWITHJUE BIDEN\nOFTHETIME WITH JOE BIDEN\nPAID FOR BY SLF PAC\nYANY LAN\nSLFPAC.ORG",
+    "text_hash": "093b5b15542e0565a6866419dd900ab07c2c3126d2f82040355fb77bffb3c8fa",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e1de3f7580dbd367aa35957",
+    "alignment": "R",
+    "block_id": "snap-7e1de3f7580dbd367aa35957-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e1de3f7580dbd367aa35957-claims-001-005",
+    "claim_text": "Mary Peltolahas",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 226,
+        "kind": "video_ocr",
+        "start": 211,
+        "text": "Mary Peltolahas",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e7b78aaf24ee085312f7cd46a24b947b6e00eba56b8eb765eb25e56a495f91ed?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 226,
+        "anchor_quote": "Mary Peltolahas",
+        "anchor_start": 211,
+        "anchor_unit_id": 9,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "PELTOLA, MARY",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Mary Petola has sold out Alaska.\nShe voted 95% of the time with Joe Biden.\nMary Peltola\nMaru Peltola has\nSOLD ALASKA\nPAID FOR BY SLF PAC. NOT\nAUTHORIZED BYANY CANDIDATE OR CANDIDATE'S COMMIT\nTEE. WWW.SLFPAC.ORG\nMary Peltolahas\nSOLD ALASKA OUT\nAlaskå.\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE. WW.SLFPAC.ORG\nMARY R\nPAID FOR BYSLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE. WWW.SLFPAC.ORG\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTE. WWW.SLFPAC.ORG\nIFTHETIMEWITHJUE BIDEN\nOFTHETIME WITH JOE BIDEN\nPAID FOR BY SLF PAC\nYANY LAN\nSLFPAC.ORG",
+    "text_hash": "093b5b15542e0565a6866419dd900ab07c2c3126d2f82040355fb77bffb3c8fa",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e1de3f7580dbd367aa35957",
+    "alignment": "R",
+    "block_id": "snap-7e1de3f7580dbd367aa35957-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e1de3f7580dbd367aa35957-claims-001-006",
+    "claim_text": "IFTHETIMEWITHJUE BIDEN",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 557,
+        "kind": "video_ocr",
+        "start": 535,
+        "text": "IFTHETIMEWITHJUE BIDEN",
+        "unit_id": 16
+      }
+    ],
+    "evidence_ids": [
+      16
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e7b78aaf24ee085312f7cd46a24b947b6e00eba56b8eb765eb25e56a495f91ed?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 557,
+        "anchor_quote": "JUE BIDEN",
+        "anchor_start": 548,
+        "anchor_unit_id": 16,
+        "entity_id": "national:Joe Biden",
+        "kind": "person",
+        "name": "Joe Biden",
+        "party_basis": "national_crosswalk",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Mary Petola has sold out Alaska.\nShe voted 95% of the time with Joe Biden.\nMary Peltola\nMaru Peltola has\nSOLD ALASKA\nPAID FOR BY SLF PAC. NOT\nAUTHORIZED BYANY CANDIDATE OR CANDIDATE'S COMMIT\nTEE. WWW.SLFPAC.ORG\nMary Peltolahas\nSOLD ALASKA OUT\nAlaskå.\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE. WW.SLFPAC.ORG\nMARY R\nPAID FOR BYSLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE. WWW.SLFPAC.ORG\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTE. WWW.SLFPAC.ORG\nIFTHETIMEWITHJUE BIDEN\nOFTHETIME WITH JOE BIDEN\nPAID FOR BY SLF PAC\nYANY LAN\nSLFPAC.ORG",
+    "text_hash": "093b5b15542e0565a6866419dd900ab07c2c3126d2f82040355fb77bffb3c8fa",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e1de3f7580dbd367aa35957",
+    "alignment": "R",
+    "block_id": "snap-7e1de3f7580dbd367aa35957-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e1de3f7580dbd367aa35957-claims-001-007",
+    "claim_text": "OFTHETIME WITH JOE BIDEN",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 582,
+        "kind": "video_ocr",
+        "start": 558,
+        "text": "OFTHETIME WITH JOE BIDEN",
+        "unit_id": 17
+      }
+    ],
+    "evidence_ids": [
+      17
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e7b78aaf24ee085312f7cd46a24b947b6e00eba56b8eb765eb25e56a495f91ed?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 582,
+        "anchor_quote": "JOE BIDEN",
+        "anchor_start": 573,
+        "anchor_unit_id": 17,
+        "entity_id": "national:Joe Biden",
+        "kind": "person",
+        "name": "Joe Biden",
+        "party_basis": "national_crosswalk",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Mary Petola has sold out Alaska.\nShe voted 95% of the time with Joe Biden.\nMary Peltola\nMaru Peltola has\nSOLD ALASKA\nPAID FOR BY SLF PAC. NOT\nAUTHORIZED BYANY CANDIDATE OR CANDIDATE'S COMMIT\nTEE. WWW.SLFPAC.ORG\nMary Peltolahas\nSOLD ALASKA OUT\nAlaskå.\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE. WW.SLFPAC.ORG\nMARY R\nPAID FOR BYSLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE. WWW.SLFPAC.ORG\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTE. WWW.SLFPAC.ORG\nIFTHETIMEWITHJUE BIDEN\nOFTHETIME WITH JOE BIDEN\nPAID FOR BY SLF PAC\nYANY LAN\nSLFPAC.ORG",
+    "text_hash": "093b5b15542e0565a6866419dd900ab07c2c3126d2f82040355fb77bffb3c8fa",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e1de3f7580dbd367aa35957",
+    "alignment": "R",
+    "block_id": "snap-7e1de3f7580dbd367aa35957-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e1de3f7580dbd367aa35957-claims-001-008",
+    "claim_text": "YANY LAN",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 611,
+        "kind": "video_ocr",
+        "start": 603,
+        "text": "YANY LAN",
+        "unit_id": 19
+      }
+    ],
+    "evidence_ids": [
+      19
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e7b78aaf24ee085312f7cd46a24b947b6e00eba56b8eb765eb25e56a495f91ed?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 611,
+        "anchor_quote": "YANY LAN",
+        "anchor_start": 603,
+        "anchor_unit_id": 19,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Mary Petola has sold out Alaska.\nShe voted 95% of the time with Joe Biden.\nMary Peltola\nMaru Peltola has\nSOLD ALASKA\nPAID FOR BY SLF PAC. NOT\nAUTHORIZED BYANY CANDIDATE OR CANDIDATE'S COMMIT\nTEE. WWW.SLFPAC.ORG\nMary Peltolahas\nSOLD ALASKA OUT\nAlaskå.\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE. WW.SLFPAC.ORG\nMARY R\nPAID FOR BYSLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE. WWW.SLFPAC.ORG\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTE. WWW.SLFPAC.ORG\nIFTHETIMEWITHJUE BIDEN\nOFTHETIME WITH JOE BIDEN\nPAID FOR BY SLF PAC\nYANY LAN\nSLFPAC.ORG",
+    "text_hash": "093b5b15542e0565a6866419dd900ab07c2c3126d2f82040355fb77bffb3c8fa",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7e1de3f7580dbd367aa35957",
+    "alignment": "R",
+    "block_id": "snap-7e1de3f7580dbd367aa35957-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7e1de3f7580dbd367aa35957-claims-001-009",
+    "claim_text": "Maru Peltola has",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 104,
+        "kind": "video_ocr",
+        "start": 88,
+        "text": "Maru Peltola has",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e7b78aaf24ee085312f7cd46a24b947b6e00eba56b8eb765eb25e56a495f91ed?mediaType=mp4",
+    "sponsor": "Senate Leadership Fund",
+    "targets": [
+      {
+        "anchor_end": 100,
+        "anchor_quote": "Maru Peltola",
+        "anchor_start": 88,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:H2AK01158",
+        "kind": "person",
+        "name": "PELTOLA, MARY",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Mary Petola has sold out Alaska.\nShe voted 95% of the time with Joe Biden.\nMary Peltola\nMaru Peltola has\nSOLD ALASKA\nPAID FOR BY SLF PAC. NOT\nAUTHORIZED BYANY CANDIDATE OR CANDIDATE'S COMMIT\nTEE. WWW.SLFPAC.ORG\nMary Peltolahas\nSOLD ALASKA OUT\nAlaskå.\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE. WW.SLFPAC.ORG\nMARY R\nPAID FOR BYSLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATES COMMITTEE. WWW.SLFPAC.ORG\nPAID FOR BY SLF PAC. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTE. WWW.SLFPAC.ORG\nIFTHETIMEWITHJUE BIDEN\nOFTHETIME WITH JOE BIDEN\nPAID FOR BY SLF PAC\nYANY LAN\nSLFPAC.ORG",
+    "text_hash": "093b5b15542e0565a6866419dd900ab07c2c3126d2f82040355fb77bffb3c8fa",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]
