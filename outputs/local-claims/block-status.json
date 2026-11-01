@@ -3939,49 +3939,49 @@
     "ad_id": "snap-0e4bc549b1f7be7ea8e9eb48",
     "block_id": "snap-0e4bc549b1f7be7ea8e9eb48-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-0e54eff4da343dddaa1f38a8",
     "block_id": "snap-0e54eff4da343dddaa1f38a8-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 8 for We: \\\"WE\\\" is absent from unit 14. Exact source: \\\"AFFORD\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0e7ddeff6b59fd862a3bddad",
     "block_id": "snap-0e7ddeff6b59fd862a3bddad-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Bob Brooks: \\\"Bob Brooks\\\" is absent from unit 1. Exact source: \\\"A\\\\nBOB\\\\nBROOKS\\\\nFIGHTS FOR US:\\\\n•LOWER PRICES\\\\n• NO ENDLESS WARS\\\\n•MORE UA JOBS\\\\nLEARN MORE\\\\nPAID FOR BY THE UNITED ASSOCIATION OF PLUMBERS AND PIPEFITTERS (UA.ORG)\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0ed4c646c517746785a074af",
     "block_id": "snap-0ed4c646c517746785a074af-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-0f57421df3091db7d39848aa",
     "block_id": "snap-0f57421df3091db7d39848aa-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for billionaires: \\\"billionaires\\\" is absent from unit 23. Exact source: \\\"AGAINST BILLIONAIRES!\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0f72844506fab504e0d01b16",
     "block_id": "snap-0f72844506fab504e0d01b16-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for He: \\\"He\\\" is absent from unit 16. Exact source: \\\"HE SECURED THE LARGEST\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0fcd653594b55392494d34e2",
     "block_id": "snap-0fcd653594b55392494d34e2-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 13\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0fcd653594b55392494d34e2",
     "block_id": "snap-0fcd653594b55392494d34e2-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 5\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0fd33f8a05119336bd478dd3",
