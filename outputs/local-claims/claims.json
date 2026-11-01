@@ -131046,5 +131046,567 @@
     "text_hash": "ba9e5cbb407bbf7fcc70d238d2e9ffd37c1cca0f684e3264b2dcae276acd1545",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7044d9b35e8cb7ca7efdb7c7",
+    "alignment": "D",
+    "block_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001-001",
+    "claim_text": "Wisconsin cannot afford Tom Tiffany",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 334,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/48b8061c12c65b69174d7047b5d0d18661bc1f3ba686b23aea5621c51ec7ea33?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 38,
+        "anchor_quote": "TOM TIFFANY",
+        "anchor_start": 27,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "TIFFANY, TOM",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+    "text_hash": "bee77c7e287607e51326076f4e92a1914006bb2b11d8fc3c35f2a88eaa6b6127",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7044d9b35e8cb7ca7efdb7c7",
+    "alignment": "D",
+    "block_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001-002",
+    "claim_text": "I talk to Wisconsinites who are trying to make ends meet and access the health care they need.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 334,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/48b8061c12c65b69174d7047b5d0d18661bc1f3ba686b23aea5621c51ec7ea33?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 2,
+        "anchor_quote": "I",
+        "anchor_start": 1,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "DEREK W",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+    "text_hash": "bee77c7e287607e51326076f4e92a1914006bb2b11d8fc3c35f2a88eaa6b6127",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7044d9b35e8cb7ca7efdb7c7",
+    "alignment": "D",
+    "block_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001-003",
+    "claim_text": "Wisconsinites are anxious",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 334,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/48b8061c12c65b69174d7047b5d0d18661bc1f3ba686b23aea5621c51ec7ea33?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 159,
+        "anchor_quote": "THEY'RE ANXIOUS",
+        "anchor_start": 144,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Wisconsinites",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+    "text_hash": "bee77c7e287607e51326076f4e92a1914006bb2b11d8fc3c35f2a88eaa6b6127",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7044d9b35e8cb7ca7efdb7c7",
+    "alignment": "D",
+    "block_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001-004",
+    "claim_text": "This ad was paid for by AFSCME PEOPLE",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 334,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/48b8061c12c65b69174d7047b5d0d18661bc1f3ba686b23aea5621c51ec7ea33?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 251,
+        "anchor_quote": "AFSCME PEOPLE",
+        "anchor_start": 238,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFSCME PEOPLE",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+    "text_hash": "bee77c7e287607e51326076f4e92a1914006bb2b11d8fc3c35f2a88eaa6b6127",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7044d9b35e8cb7ca7efdb7c7",
+    "alignment": "D",
+    "block_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001-005",
+    "claim_text": "This ad was not authorized by any candidate, candidate's agent, or committee",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 334,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/48b8061c12c65b69174d7047b5d0d18661bc1f3ba686b23aea5621c51ec7ea33?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 302,
+        "anchor_quote": "ANY CANDIDATE",
+        "anchor_start": 289,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "unknown candidate",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 321,
+        "anchor_quote": "CANDIDATE'S AGENT",
+        "anchor_start": 304,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "unknown candidate's agent",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 334,
+        "anchor_quote": "OBCOMMITTEE",
+        "anchor_start": 323,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "unknown committee",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+    "text_hash": "bee77c7e287607e51326076f4e92a1914006bb2b11d8fc3c35f2a88eaa6b6127",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7044d9b35e8cb7ca7efdb7c7",
+    "alignment": "D",
+    "block_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001-006",
+    "claim_text": "Derek W is president of AFSCME Local 720 in Madison",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 334,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/48b8061c12c65b69174d7047b5d0d18661bc1f3ba686b23aea5621c51ec7ea33?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 168,
+        "anchor_quote": "DEREK W",
+        "anchor_start": 161,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "DEREK W",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 196,
+        "anchor_quote": "AFSCME LOCAL 720",
+        "anchor_start": 180,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "AFSCME Local 720",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 204,
+        "anchor_quote": "MADISON",
+        "anchor_start": 197,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Madison",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+    "text_hash": "bee77c7e287607e51326076f4e92a1914006bb2b11d8fc3c35f2a88eaa6b6127",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7044d9b35e8cb7ca7efdb7c7",
+    "alignment": "D",
+    "block_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7044d9b35e8cb7ca7efdb7c7-claims-001-007",
+    "claim_text": "People should vote by November 3rd",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 334,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/48b8061c12c65b69174d7047b5d0d18661bc1f3ba686b23aea5621c51ec7ea33?mediaType=png",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 209,
+        "anchor_quote": "VOTE",
+        "anchor_start": 205,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "unknown voters",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WISCONSIN, WE CAN'T AFFORD TOM TIFFANY\nEVERY DAY I TALK TO\nWISCONSINITES\nWHO ARE TRYING TO\nMAKE ENDS MEET\nAND ACCESS THE HEALTH CARE THEY NEED.\nTHEY'RE ANXIOUS.\nDEREK W\nPRESIDENT, AFSCME LOCAL 720\nMADISON\nVOTE\nBY NOVEMBER 3RD\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nINOT AUTHORIZED BY ANY CANDIDATE, CANDIDATE'S AGENT, OBCOMMITTEE",
+    "text_hash": "bee77c7e287607e51326076f4e92a1914006bb2b11d8fc3c35f2a88eaa6b6127",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-70e79cd1e313979bdfa96760",
+    "alignment": "D",
+    "block_id": "snap-70e79cd1e313979bdfa96760-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-70e79cd1e313979bdfa96760-claims-001-001",
+    "claim_text": "Congressional candidate Aaron Flint has the support of DC insiders like Republican House Majority Whip Tom Emmer.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 182,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Flint gets DC insider help\nCongressional candidate Aaron Flint has\nthe support of DC insiders like Republican\nHouse Majority Whip Tom Emmer.\nMONTANA\nMTFP\nFREE PRESS\nSINS\npIeN\nCOTTAGE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/db2cbe011fff9b0c75fdaa212958767edf642d864290ba19edaa0aa3e6982b97?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 62,
+        "anchor_quote": "Aaron Flint",
+        "anchor_start": 51,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6MT01152",
+        "kind": "person",
+        "name": "Aaron Flint",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "positive"
+      }
+    ],
+    "text": "Flint gets DC insider help\nCongressional candidate Aaron Flint has\nthe support of DC insiders like Republican\nHouse Majority Whip Tom Emmer.\nMONTANA\nMTFP\nFREE PRESS\nSINS\npIeN\nCOTTAGE",
+    "text_hash": "b0590b59bc1084d92f7aba26b84226ebf4965e1bdf72dba3ed9fd3b37b899aeb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-70e79cd1e313979bdfa96760",
+    "alignment": "D",
+    "block_id": "snap-70e79cd1e313979bdfa96760-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-70e79cd1e313979bdfa96760-claims-001-002",
+    "claim_text": "Tom Emmer is a Republican House Majority Whip.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 182,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Flint gets DC insider help\nCongressional candidate Aaron Flint has\nthe support of DC insiders like Republican\nHouse Majority Whip Tom Emmer.\nMONTANA\nMTFP\nFREE PRESS\nSINS\npIeN\nCOTTAGE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/db2cbe011fff9b0c75fdaa212958767edf642d864290ba19edaa0aa3e6982b97?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 139,
+        "anchor_quote": "Tom Emmer",
+        "anchor_start": 130,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Tom Emmer",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Flint gets DC insider help\nCongressional candidate Aaron Flint has\nthe support of DC insiders like Republican\nHouse Majority Whip Tom Emmer.\nMONTANA\nMTFP\nFREE PRESS\nSINS\npIeN\nCOTTAGE",
+    "text_hash": "b0590b59bc1084d92f7aba26b84226ebf4965e1bdf72dba3ed9fd3b37b899aeb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-70e79cd1e313979bdfa96760",
+    "alignment": "D",
+    "block_id": "snap-70e79cd1e313979bdfa96760-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-70e79cd1e313979bdfa96760-claims-001-003",
+    "claim_text": "Aaron Flint gets DC insider help.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 182,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Flint gets DC insider help\nCongressional candidate Aaron Flint has\nthe support of DC insiders like Republican\nHouse Majority Whip Tom Emmer.\nMONTANA\nMTFP\nFREE PRESS\nSINS\npIeN\nCOTTAGE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/db2cbe011fff9b0c75fdaa212958767edf642d864290ba19edaa0aa3e6982b97?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 62,
+        "anchor_quote": "Aaron Flint",
+        "anchor_start": 51,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6MT01152",
+        "kind": "person",
+        "name": "Aaron Flint",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Flint gets DC insider help\nCongressional candidate Aaron Flint has\nthe support of DC insiders like Republican\nHouse Majority Whip Tom Emmer.\nMONTANA\nMTFP\nFREE PRESS\nSINS\npIeN\nCOTTAGE",
+    "text_hash": "b0590b59bc1084d92f7aba26b84226ebf4965e1bdf72dba3ed9fd3b37b899aeb",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-70e79cd1e313979bdfa96760",
+    "alignment": "D",
+    "block_id": "snap-70e79cd1e313979bdfa96760-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-70e79cd1e313979bdfa96760-claims-001-004",
+    "claim_text": "DC insiders support Aaron Flint.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 182,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Flint gets DC insider help\nCongressional candidate Aaron Flint has\nthe support of DC insiders like Republican\nHouse Majority Whip Tom Emmer.\nMONTANA\nMTFP\nFREE PRESS\nSINS\npIeN\nCOTTAGE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/db2cbe011fff9b0c75fdaa212958767edf642d864290ba19edaa0aa3e6982b97?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 93,
+        "anchor_quote": "DC insiders",
+        "anchor_start": 82,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "DC insiders",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Flint gets DC insider help\nCongressional candidate Aaron Flint has\nthe support of DC insiders like Republican\nHouse Majority Whip Tom Emmer.\nMONTANA\nMTFP\nFREE PRESS\nSINS\npIeN\nCOTTAGE",
+    "text_hash": "b0590b59bc1084d92f7aba26b84226ebf4965e1bdf72dba3ed9fd3b37b899aeb",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
