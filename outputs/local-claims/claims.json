@@ -132769,5 +132769,473 @@
     "text_hash": "0920b3da56850227d3e047352b79c5bb9cee3dcfc72039a223f7ba821f130596",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-74355935af32ba5ce7663fef",
+    "alignment": "D",
+    "block_id": "snap-74355935af32ba5ce7663fef-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-74355935af32ba5ce7663fef-claims-001-001",
+    "claim_text": "David Valadao lost in the last anti-Trump blue wave",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 113,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "CAL\nMATTERS\nDavid Valadao lost in the last\nanti-Trump blue wave. Will\nfarmers help him win this time?\nMR. VALADAO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/30c8c43c1a49cbdd986e7e096dea3f5e9ed91cf58a01b2346106c3f5090d0c98?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 25,
+        "anchor_quote": "David Valadao",
+        "anchor_start": 12,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2CA20094",
+        "kind": "person",
+        "name": "VALADAO, DAVID",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "CAL\nMATTERS\nDavid Valadao lost in the last\nanti-Trump blue wave. Will\nfarmers help him win this time?\nMR. VALADAO",
+    "text_hash": "6226f4a1504cb693a1171337be514ea74e323eb79227d9b939f8e7af9c433403",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-74355935af32ba5ce7663fef",
+    "alignment": "D",
+    "block_id": "snap-74355935af32ba5ce7663fef-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-74355935af32ba5ce7663fef-claims-001-002",
+    "claim_text": "Will farmers help him win this time?",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 113,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "CAL\nMATTERS\nDavid Valadao lost in the last\nanti-Trump blue wave. Will\nfarmers help him win this time?\nMR. VALADAO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/30c8c43c1a49cbdd986e7e096dea3f5e9ed91cf58a01b2346106c3f5090d0c98?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 86,
+        "anchor_quote": "him",
+        "anchor_start": 83,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H2CA20094",
+        "kind": "person",
+        "name": "VALADAO, DAVID",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "uncertain"
+      }
+    ],
+    "text": "CAL\nMATTERS\nDavid Valadao lost in the last\nanti-Trump blue wave. Will\nfarmers help him win this time?\nMR. VALADAO",
+    "text_hash": "6226f4a1504cb693a1171337be514ea74e323eb79227d9b939f8e7af9c433403",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-74355935af32ba5ce7663fef",
+    "alignment": "D",
+    "block_id": "snap-74355935af32ba5ce7663fef-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-74355935af32ba5ce7663fef-claims-001-003",
+    "claim_text": "There was an anti-Trump blue wave",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 113,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "CAL\nMATTERS\nDavid Valadao lost in the last\nanti-Trump blue wave. Will\nfarmers help him win this time?\nMR. VALADAO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/30c8c43c1a49cbdd986e7e096dea3f5e9ed91cf58a01b2346106c3f5090d0c98?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 63,
+        "anchor_quote": "anti-Trump blue wave",
+        "anchor_start": 43,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "anti-Trump blue wave",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "CAL\nMATTERS\nDavid Valadao lost in the last\nanti-Trump blue wave. Will\nfarmers help him win this time?\nMR. VALADAO",
+    "text_hash": "6226f4a1504cb693a1171337be514ea74e323eb79227d9b939f8e7af9c433403",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-74922cb3708c39f0d29cfd74",
+    "alignment": "D",
+    "block_id": "snap-74922cb3708c39f0d29cfd74-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-74922cb3708c39f0d29cfd74-claims-001-001",
+    "claim_text": "Jared Brown will make it illegal for his shorts companies to wrongly deny treatment because he's working for us.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 91,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Jared Brown will make it illegal for his shorts companies to wrongly deny treatment because",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/ac9e850c245aa3517f0861e277d1479bcda9ce5d98d4344b976f0ef03f5991f5?mediaType=mp4",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 11,
+        "anchor_quote": "Jared Brown",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Jared Brown",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Jared Brown will make it illegal for his shorts companies to wrongly deny treatment because\nhe's working for us.\nSHERROD BROWN WILL MAKE IT\nILLEGAL TO WRONGLY\nPAID FOR BY FRIENDS OF SHERROD BROWN\nSHERROD\nBF\nNN\nOHIO\nBRI\nWN",
+    "text_hash": "2daced44bac972c1c128d1d9ea3c70f3099223c3360d206a8d3c7a01cd5ff1b7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-74922cb3708c39f0d29cfd74",
+    "alignment": "D",
+    "block_id": "snap-74922cb3708c39f0d29cfd74-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-74922cb3708c39f0d29cfd74-claims-001-002",
+    "claim_text": "SHERROD BROWN WILL MAKE IT ILLEGAL TO WRONGLY",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 139,
+        "kind": "video_ocr",
+        "start": 113,
+        "text": "SHERROD BROWN WILL MAKE IT",
+        "unit_id": 3
+      },
+      {
+        "end": 158,
+        "kind": "video_ocr",
+        "start": 140,
+        "text": "ILLEGAL TO WRONGLY",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      3,
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/ac9e850c245aa3517f0861e277d1479bcda9ce5d98d4344b976f0ef03f5991f5?mediaType=mp4",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 126,
+        "anchor_quote": "SHERROD BROWN",
+        "anchor_start": 113,
+        "anchor_unit_id": 3,
+        "entity_id": "candidate:S6OH00163",
+        "kind": "person",
+        "name": "SHERROD BROWN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Jared Brown will make it illegal for his shorts companies to wrongly deny treatment because\nhe's working for us.\nSHERROD BROWN WILL MAKE IT\nILLEGAL TO WRONGLY\nPAID FOR BY FRIENDS OF SHERROD BROWN\nSHERROD\nBF\nNN\nOHIO\nBRI\nWN",
+    "text_hash": "2daced44bac972c1c128d1d9ea3c70f3099223c3360d206a8d3c7a01cd5ff1b7",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-74922cb3708c39f0d29cfd74",
+    "alignment": "D",
+    "block_id": "snap-74922cb3708c39f0d29cfd74-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-74922cb3708c39f0d29cfd74-claims-001-003",
+    "claim_text": "This ad is paid for by Friends of Sherrod Brown.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 195,
+        "kind": "video_ocr",
+        "start": 159,
+        "text": "PAID FOR BY FRIENDS OF SHERROD BROWN",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/ac9e850c245aa3517f0861e277d1479bcda9ce5d98d4344b976f0ef03f5991f5?mediaType=mp4",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 195,
+        "anchor_quote": "FRIENDS OF SHERROD BROWN",
+        "anchor_start": 171,
+        "anchor_unit_id": 5,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Friends of Sherrod Brown",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Jared Brown will make it illegal for his shorts companies to wrongly deny treatment because\nhe's working for us.\nSHERROD BROWN WILL MAKE IT\nILLEGAL TO WRONGLY\nPAID FOR BY FRIENDS OF SHERROD BROWN\nSHERROD\nBF\nNN\nOHIO\nBRI\nWN",
+    "text_hash": "2daced44bac972c1c128d1d9ea3c70f3099223c3360d206a8d3c7a01cd5ff1b7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-752a2951178c6641a22c93c6",
+    "alignment": "D",
+    "block_id": "snap-752a2951178c6641a22c93c6-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-752a2951178c6641a22c93c6-claims-001-001",
+    "claim_text": "You've said in the past, anybody who's 57 and younger needs to prepare for lowering their benefits.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 99,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "You've said in the past, anybody who's 57 and younger needs to prepare for lowering their benefits.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2ac92312a981df2b1730d668f2b63a9bfd62b6aa5a7f4a8b44709179287519b7?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 11,
+        "anchor_quote": "You've said",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "you",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "You've said in the past, anybody who's 57 and younger needs to prepare for lowering their benefits.\nI don't know if you still feel that way, but there's a number of 57-year-olds in this room.\n58U\nWIBW\n104.9FM\n= Weather Livestream News Campaign 2026\nFactfinder Sports Dealicious Catch It Kansas Back To!\nKansas\n2026 U.S. SENATORIAL DEBATE\nADAM HAMILTON\nDEMOCRATIC CANDIDATE FOR U.S. SENATE\n2:28\n93°\n12NEWS\n= Weather Livestream\nNews Campaign 2026 Factfinder Sports Dealicious Catch It Kansas\nBack To\nFactfinder Sports Dealicious Catch It Kansas\nNews Campaign 2026\n= Weather Livestream News Campaign 2026 Factfinder Sports Dealicious Catch It Kansas\n580\n= Weather Livestream News Campaign 2026 Factfinder Sports Dealicious Catch It Kansas Back To !\nI don'tknow if you still feel that\nNews Campaign 2026 Factfinder Sports Dealicious Catch It Kansas Back To !\nbut there's number of 57-year-\nin |don't\n20U\nWeather\nLivestream\nBack To S",
+    "text_hash": "0f97e97f442c21701a8d75d55cea08e2126a61c3e03235cba04f44743bd917b2",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-752a2951178c6641a22c93c6",
+    "alignment": "D",
+    "block_id": "snap-752a2951178c6641a22c93c6-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-752a2951178c6641a22c93c6-claims-001-002",
+    "claim_text": "I don't know if you still feel that way, but there's a number of 57-year-olds in this room.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 191,
+        "kind": "local_asr",
+        "start": 100,
+        "text": "I don't know if you still feel that way, but there's a number of 57-year-olds in this room.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2ac92312a981df2b1730d668f2b63a9bfd62b6aa5a7f4a8b44709179287519b7?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 119,
+        "anchor_quote": "you",
+        "anchor_start": 116,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "you",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "You've said in the past, anybody who's 57 and younger needs to prepare for lowering their benefits.\nI don't know if you still feel that way, but there's a number of 57-year-olds in this room.\n58U\nWIBW\n104.9FM\n= Weather Livestream News Campaign 2026\nFactfinder Sports Dealicious Catch It Kansas Back To!\nKansas\n2026 U.S. SENATORIAL DEBATE\nADAM HAMILTON\nDEMOCRATIC CANDIDATE FOR U.S. SENATE\n2:28\n93°\n12NEWS\n= Weather Livestream\nNews Campaign 2026 Factfinder Sports Dealicious Catch It Kansas\nBack To\nFactfinder Sports Dealicious Catch It Kansas\nNews Campaign 2026\n= Weather Livestream News Campaign 2026 Factfinder Sports Dealicious Catch It Kansas\n580\n= Weather Livestream News Campaign 2026 Factfinder Sports Dealicious Catch It Kansas Back To !\nI don'tknow if you still feel that\nNews Campaign 2026 Factfinder Sports Dealicious Catch It Kansas Back To !\nbut there's number of 57-year-\nin |don't\n20U\nWeather\nLivestream\nBack To S",
+    "text_hash": "0f97e97f442c21701a8d75d55cea08e2126a61c3e03235cba04f44743bd917b2",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-752a2951178c6641a22c93c6",
+    "alignment": "D",
+    "block_id": "snap-752a2951178c6641a22c93c6-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-752a2951178c6641a22c93c6-claims-001-003",
+    "claim_text": "I don't know if you still feel that",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 780,
+        "kind": "video_ocr",
+        "start": 746,
+        "text": "I don'tknow if you still feel that",
+        "unit_id": 23
+      }
+    ],
+    "evidence_ids": [
+      23
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2ac92312a981df2b1730d668f2b63a9bfd62b6aa5a7f4a8b44709179287519b7?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 764,
+        "anchor_quote": "you",
+        "anchor_start": 761,
+        "anchor_unit_id": 23,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "you",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "You've said in the past, anybody who's 57 and younger needs to prepare for lowering their benefits.\nI don't know if you still feel that way, but there's a number of 57-year-olds in this room.\n58U\nWIBW\n104.9FM\n= Weather Livestream News Campaign 2026\nFactfinder Sports Dealicious Catch It Kansas Back To!\nKansas\n2026 U.S. SENATORIAL DEBATE\nADAM HAMILTON\nDEMOCRATIC CANDIDATE FOR U.S. SENATE\n2:28\n93°\n12NEWS\n= Weather Livestream\nNews Campaign 2026 Factfinder Sports Dealicious Catch It Kansas\nBack To\nFactfinder Sports Dealicious Catch It Kansas\nNews Campaign 2026\n= Weather Livestream News Campaign 2026 Factfinder Sports Dealicious Catch It Kansas\n580\n= Weather Livestream News Campaign 2026 Factfinder Sports Dealicious Catch It Kansas Back To !\nI don'tknow if you still feel that\nNews Campaign 2026 Factfinder Sports Dealicious Catch It Kansas Back To !\nbut there's number of 57-year-\nin |don't\n20U\nWeather\nLivestream\nBack To S",
+    "text_hash": "0f97e97f442c21701a8d75d55cea08e2126a61c3e03235cba04f44743bd917b2",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-752a2951178c6641a22c93c6",
+    "alignment": "D",
+    "block_id": "snap-752a2951178c6641a22c93c6-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-752a2951178c6641a22c93c6-claims-001-004",
+    "claim_text": "there's a number of 57-year-olds",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 885,
+        "kind": "video_ocr",
+        "start": 855,
+        "text": "but there's number of 57-year-",
+        "unit_id": 25
+      }
+    ],
+    "evidence_ids": [
+      25
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2ac92312a981df2b1730d668f2b63a9bfd62b6aa5a7f4a8b44709179287519b7?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 885,
+        "anchor_quote": "57-year-",
+        "anchor_start": 877,
+        "anchor_unit_id": 25,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "57-year-olds",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "You've said in the past, anybody who's 57 and younger needs to prepare for lowering their benefits.\nI don't know if you still feel that way, but there's a number of 57-year-olds in this room.\n58U\nWIBW\n104.9FM\n= Weather Livestream News Campaign 2026\nFactfinder Sports Dealicious Catch It Kansas Back To!\nKansas\n2026 U.S. SENATORIAL DEBATE\nADAM HAMILTON\nDEMOCRATIC CANDIDATE FOR U.S. SENATE\n2:28\n93°\n12NEWS\n= Weather Livestream\nNews Campaign 2026 Factfinder Sports Dealicious Catch It Kansas\nBack To\nFactfinder Sports Dealicious Catch It Kansas\nNews Campaign 2026\n= Weather Livestream News Campaign 2026 Factfinder Sports Dealicious Catch It Kansas\n580\n= Weather Livestream News Campaign 2026 Factfinder Sports Dealicious Catch It Kansas Back To !\nI don'tknow if you still feel that\nNews Campaign 2026 Factfinder Sports Dealicious Catch It Kansas Back To !\nbut there's number of 57-year-\nin |don't\n20U\nWeather\nLivestream\nBack To S",
+    "text_hash": "0f97e97f442c21701a8d75d55cea08e2126a61c3e03235cba04f44743bd917b2",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]

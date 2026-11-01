@@ -7298,50 +7298,50 @@
   {
     "ad_id": "snap-73c077d4f40e6894e1ba1683",
     "block_id": "snap-73c077d4f40e6894e1ba1683-claims-003",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-74078ed3a33456989d1df6ac",
     "block_id": "snap-74078ed3a33456989d1df6ac-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for R: \\\"Republicans\\\" is absent from unit 29. Exact source: \\\"BOSTON\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-74078ed3a33456989d1df6ac",
     "block_id": "snap-74078ed3a33456989d1df6ac-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 2: {\\\"anchor_quote\\\":\\\"Grea Cunninaham\\\",\\\"anchor_unit_id\\\":17,\\\"entity_id\\\":\\\"candidate:H6NM02127\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"CUNNINGHAM, GREG\\\",\\\"role\\\":\\\"opponent\\\",\\\"tone\\\":\\\"negative\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-74355935af32ba5ce7663fef",
     "block_id": "snap-74355935af32ba5ce7663fef-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-74922cb3708c39f0d29cfd74",
     "block_id": "snap-74922cb3708c39f0d29cfd74-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-74aab2528cc8ce1f696b3bb4",
     "block_id": "snap-74aab2528cc8ce1f696b3bb4-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for PAULINE: \\\"PAULINE\\\" is absent from unit 35. Exact source: \\\"VOTE FOR\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-752a2951178c6641a22c93c6",
     "block_id": "snap-752a2951178c6641a22c93c6-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-75480205cedd1192564dc5ce",
     "block_id": "snap-75480205cedd1192564dc5ce-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-756dd8dcf104ae11d57478c2",
