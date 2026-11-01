@@ -7010,50 +7010,50 @@
   {
     "ad_id": "snap-6acfd3b590ae365c73531226",
     "block_id": "snap-6acfd3b590ae365c73531226-claims-003",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 2\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6afc6a086543d8005213b527",
     "block_id": "snap-6afc6a086543d8005213b527-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-6b5f406995b06a63f12b0af2",
     "block_id": "snap-6b5f406995b06a63f12b0af2-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 2: {\\\"anchor_quote\\\":\\\"Cindy Hyde-Smith\\\",\\\"anchor_unit_id\\\":26,\\\"entity_id\\\":\\\"candidate:S8MS00261\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"HYDE-SMITH, CINDY\\\",\\\"role\\\":\\\"opponent\\\",\\\"tone\\\":\\\"negative\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6c36be2024aa4c7e8be56566",
     "block_id": "snap-6c36be2024aa4c7e8be56566-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for FLIPPO, DAVID: \\\"FLIPPO\\\" is absent from unit 4. Exact source: \\\"FALSELY CLAIMED BRONZE\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6c3c964a9b7f60f5d78a0046",
     "block_id": "snap-6c3c964a9b7f60f5d78a0046-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for war: \\\"war\\\" is absent from unit 7. Exact source: \\\"months and months ago, and that's driven up prices\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6c3c964a9b7f60f5d78a0046",
     "block_id": "snap-6c3c964a9b7f60f5d78a0046-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Hickenlooper for Colorado: \\\"We\\\" is absent from unit 10. Exact source: \\\"Labor Day, ever în history.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6c471fc5fda4d9352e90d08c",
     "block_id": "snap-6c471fc5fda4d9352e90d08c-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-6c51a60d30b84a6520003825",
     "block_id": "snap-6c51a60d30b84a6520003825-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for El-Sayed: \\\"El-Sayed\\\" is absent from unit 3. Exact source: \\\"EL-SAYED SAID IT\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-6cec069da9ad156a013cefa0",
