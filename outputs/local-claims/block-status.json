@@ -4562,38 +4562,38 @@
   {
     "ad_id": "snap-1ef5058684ef21598a47b864",
     "block_id": "snap-1ef5058684ef21598a47b864-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 2: {\\\"anchor_quote\\\":\\\"EMILIA SYKES\\\",\\\"anchor_unit_id\\\":2,\\\"entity_id\\\":\\\"candidate:H2OH13264\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"SYKES, EMILIA\\\",\\\"role\\\":\\\"self_or_supported\\\",\\\"tone\\\":\\\"positive\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1f419e91885e819bb746e450",
     "block_id": "snap-1f419e91885e819bb746e450-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for Ohioans: \\\"Ohioans' bills\\\" is absent from unit 1. Exact source: \\\"\\\\\\\"HUSTED BACKED THE CORRUPT HB6 BAILOUT.\\\\nОНІО HOUSEHOLDS NOW PAY\\\\nS66 MORE A YEAR\\\\\\\"\\\\nTIPPIN OHIO, 2/26/26\\\\nOHIOANS'\\\\nBILLS WENT UP.\\\\nJON HUSTED\\\\nCASHED IN.\\\\nPAID FOR BY THE OHIO DEMOCRATIC PARTY, AUTHORIZED BY FRIENDS OF SHERROD BROWN\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1f56b23f36b9763958bffa7b",
     "block_id": "snap-1f56b23f36b9763958bffa7b-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 11 for any candidate: \\\"any candidate\\\" is absent from unit 24. Exact source: \\\"NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-204d7989411e017c307b002f",
     "block_id": "snap-204d7989411e017c307b002f-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-2051ec419306e60f9fd28256",
     "block_id": "snap-2051ec419306e60f9fd28256-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 10 for you: \\\"your\\\" is absent from unit 35. Exact source: \\\"MAKE YOUR PLAN TO VOTE.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-20ac8f70a4cbab024a9aaf05",
     "block_id": "snap-20ac8f70a4cbab024a9aaf05-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":9,\\\"label\\\":\\\"Labor-endorsed candidates\\\"},{\\\"claim\\\":11,\\\"label\\\":\\\"AFL-CIO\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-20ac8f70a4cbab024a9aaf05",
@@ -4604,8 +4604,8 @@
   {
     "ad_id": "snap-213f3721089d551555435067",
     "block_id": "snap-213f3721089d551555435067-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for union: \\\"union\\\" is absent from unit 1. Exact source: \\\"N'S BETIER\\\\n-IN A\\\\nUnion\\\\nMY UNION, MY RIGHT, MY VOTE\\\\nAFL-CIO\\\\nAMERIGA'E UNIONI\\\\nCHRISTINA\\\\nBOHANNAN\\\\nWILL FIGHT TO LOWER COSTS\\\\nAND RAISE WAGES.\\\\nVOTE WITH WORKERS\\\\nPAID FOR BY THE AFL-CIO\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-21940d0d5080eb7d4cc9a391",
