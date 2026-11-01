@@ -10,6 +10,185 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## November 1 Texas, Nebraska, California and ABA follow-up
+
+These checks add **no acquired records**. Discovery receipts and cached
+bodies remain local, ignored research artifacts, not clone-distributed
+replay fixtures. Their exact receipt basenames below are relative to
+`data/raw/`; each receipt records the URL, cache directory, body SHA-256,
+byte length, request state and extracted evidence. To verify a retained
+body offline, import `digest` from `political_ads.schema`, resolve
+`Path(cache_directory) / (digest(url) + ".body")`, hash its bytes with
+SHA-256 and compare its length with
+`bytes`. The listed body hashes and lengths were independently checked.
+This verifies retained evidence, not current-page parity or creative
+admission. Cached responses are not new requests or provider denials.
+
+The initial Texas campaign URLs were probes; later search corroboration
+does not retroactively establish saved independent discovery provenance.
+`house-teixeira-primary-home-20261101-discovery.json` and
+`house-teixeira-linked-news-20261101-discovery.json` reused cached bodies.
+The homepage associates undated YouTube `UncnJkCXnLA`; the actual news
+archive's visible cards are **2025**, not current-cycle ad scripts.
+The actually linked terms and privacy pages concern mobile messaging
+and visitor-data handling; neither establishes a blanket creative license.
+`house-bonck-primary-home-20261101-discovery.json` contains ordinary
+campaign/issue copy and no individual ad media. Neither homepage copy,
+archive metadata nor a video link was admitted.
+
+`house-trainor-primary-home-20261101-discovery.json` exposes actual
+`/press` and `/media` links. Before following them,
+`house-trainor-linked-terms-20261101-discovery.json` was read completely.
+Unlike SMS-only terms, its Copyright and Limited License clauses expressly
+govern Site Materials and restrict automated gathering, reproduction,
+public display and downloads beyond page caching without permission.
+`trey4tx.com` is **permission-unresolved paused**, including subdomains
+and cached extraction. No press, media, privacy, API or original request
+followed that decision. Frozen Republican House identities remain
+Teixeira `H6TX21301/C00917658/TX21`, Bonck `H6TX02244/C00904151/TX38`
+and Trainor `H6TX21376/C00922344/TX21`, election year 2026; registration
+is not proof of current nominee status or a creative's payer.
+
+`house-harding-primary-news-20261101-discovery.json` links actual August 21
+first-ad coverage at Omaha.com. That publisher's inherited HTTP429 pause
+was checked **before any request**; no report or alternate copy was
+requested. `house-harding-linked-press-20261101-discovery.json` instead
+labels its Vimeo resources **Campaign B-Roll** and **Raw Advertising
+B-Roll**, IDs `1219059923` and `1220184189`. These are not established
+finished ads; neither Vimeo resource was requested. The separate,
+independently discovered September 9 KETV Buffett report is retained as
+`house-harding-ketv-buffett-20261101-discovery.json`. Its quotations are
+explicitly Harding's statement about the ad, not verified ad narration.
+Its VideoObject describes the news package, not an inspected standalone
+creative. None of those materials was admitted.
+
+The actual KETV-linked Hearst terms are retained in
+`house-ketv-linked-terms-20261101-discovery.json`. The inspected section
+around text offsets 14,400-17,200 expressly restricts manual/automated
+extraction and AI use without written permission; the complete 65,004
+character page was **not** read. `ketv.com`, `htvapps.com` and the exposed
+`htv-prod-media.s3.amazonaws.com` provider are permission-unresolved
+paused before further reports, players, media, captions or cached
+extraction. No permission is asserted from an accessible public page.
+
+`house-adrian-primary-news-20261101-discovery.json` links the actual May 8
+release retained in `house-adrian-delivered-release-20261101-discovery.json`.
+The article supplies Facebook reel `1277083277311003`, but **no script**;
+its title and footer are not ad words. Facebook was not requested.
+Harding's linked privacy page and Smith's combined privacy/mobile terms
+were read; neither establishes blanket creative reuse permission.
+Frozen identities are Harding `H6NE02208/C00909515/NE02` and Smith
+`H6NE03115/C00412890/NE03`, Republican House, 2026. No alias, roster,
+canonical ad, acquisition review or semantic review changed.
+
+`house-shea-primary-home-20261101-discovery.json` exposes Vimeo
+`1156941043`, titled **Chris Shea Service**, without independently
+verified creative date or recovered words. Vimeo remains unrequested
+under its inherited hold. Shea's privacy receipt does not establish a
+creative license; only selected portions of that 36,994-character policy
+were re-inspected in this follow-up. Fong's retained homepage exposes
+ordinary campaign copy and actual gallery/news routes.
+`house-fong-linked-terms-20261101-discovery.json` explicitly limits use
+to personal, noncommercial transitory viewing and excludes copying,
+public display, transfer and mirroring. `vincefong.com` is
+permission-unresolved paused; gallery, archive, API and original routes
+remain unrequested.
+
+`house-aba-next-index-20261101-discovery.json` reused the current index
+body. Its eligible Republican House cards are the **five already reviewed**
+Wagner, De La Cruz, Huizenga, Nunn and Ciscomani items. Senate cards and
+Barr/Hinson office changes are not new House acquisitions, and older
+index/search material does not establish a new 2026 ad. The actually
+linked policy directory, `house-aba-linked-terms-20261101-discovery.json`,
+is only a directory, **not the operative terms**. Its two actual links were
+then retained and their operative text read:
+`house-aba-actual-terms-use-20261101-discovery.json` and
+`house-aba-actual-copyright-20261101-discovery.json`. Terms sections
+1-3 and 17 limit copying/storage to personal use and require prior
+written permission for other uses; the copyright policy separately
+requires permission for reproduction/distribution. `aba.com` is now
+permission-unresolved paused, including cached extraction. No previous-ad
+catalog, caption, API, original or alternate-copy request followed.
+All five prior caption reviews and the collector's strict allowlist remain
+unchanged; the new discovery hold is not a retrospective permission claim
+or an instruction to modify historical offline replay.
+
+The ignored bounded discovery helper now enforces the Fong, Trainor,
+KETV/media and ABA holds before network **and** cached extraction.
+Twenty-four mocked cases passed with `urllib.request.urlopen` and
+`political_ads.http.Client.get` forbidden; exact hosts, `www`, subdomains,
+actually exposed routes and synthetic fixture routes were covered.
+`house-policy-recheck-20261101-0.json` through `-23.json` are **test
+receipts**, not discovered resources or acquired ads. The helper and
+these local receipts are not tracked production-collector changes.
+
+Retained body hashes for the decisive exclusions and policies:
+
+| Local receipt basename | Body SHA-256 |
+| --- | --- |
+| `house-teixeira-primary-home-20261101-discovery.json` | `cc33371d0b25da19ff6f285d55eb267c9436bd4d232a6d16ebd7e881bd9c138f` |
+| `house-teixeira-linked-news-20261101-discovery.json` | `7dd4eb0b1305a01ec08b2392d5a1dd31fae8ae8180990b743bf43bd1bc60bb0b` |
+| `house-teixeira-linked-terms-20261101-discovery.json` | `8b89a8965776dd66c9ae1606aaa089a368f49ad83b64873739dc1e34fb83a858` |
+| `house-teixeira-linked-privacy-20261101-discovery.json` | `f7e33f3fc0234d668f295cd13f10a0d75c581b009be77fa391f3bfe3a34d2022` |
+| `house-bonck-primary-home-20261101-discovery.json` | `1e763eb382a59f82d20c2606017c395f7dfc3a74f6e74f8f2619216474874aa4` |
+| `house-trainor-primary-home-20261101-discovery.json` | `dd95e46fa803949f3e4dcc321e8f21896c27e9c4cbe8e14a2287f22c70d2ab6f` |
+| `house-trainor-linked-terms-20261101-discovery.json` | `3f1f2958807938c6ccf66f2bb6f3f1dea917979a4f576e449bfe8add8cce2061` |
+| `house-harding-primary-news-20261101-discovery.json` | `02591779b54ee9c524c7a5400f3ad1c3df8792ca6d758e74988e2b94ce2e5da5` |
+| `house-harding-linked-policy-20261101-discovery.json` | `a36e93ae9528ae805073da4af2780439335a72c1169eb632e4282629f94e5671` |
+| `house-harding-linked-press-20261101-discovery.json` | `ef9040863dae9813ac545d0ea6a87381d9f3212a5cf6c062f84fa3c85513d155` |
+| `house-harding-ketv-buffett-20261101-discovery.json` | `656831bedd740af5bf7bd9350b889be957707c930b036ece637a594b654af6c4` |
+| `house-ketv-linked-terms-20261101-discovery.json` | `f09db890399d99071e51340bc6458bc2211bd64cce8f6470309ae24f43878880` |
+| `house-adrian-primary-news-20261101-discovery.json` | `06396555487ac718b13fe2728e739f40bf35a01b0bc4d4ecc6403be18118cd0f` |
+| `house-adrian-linked-policy-20261101-discovery.json` | `6c40c701cabdf935d7abd983eaf762a9f32a389d2837083eda30d55cd46fc3e2` |
+| `house-adrian-delivered-release-20261101-discovery.json` | `b57b9237e575219e369d3fcf174f0a8018b81fdc6e1742c911d84202493f826c` |
+| `house-shea-primary-home-20261101-discovery.json` | `b53b9a0893332c53277f5b68663c8d036aa904e2af65e67340b037900961fde4` |
+| `house-shea-linked-privacy-20261101-discovery.json` | `26e91fa4841416dce797aeae0c438a5a213162f10657b370ebd2794f4336c1c7` |
+| `house-fong-primary-home-20261101-discovery.json` | `83c00b4e2e8d2311854e6fc79abe3ff2318f4f30c27769869dc47e359f5acb3c` |
+| `house-fong-linked-terms-20261101-discovery.json` | `bf44fecd02c24ff33dbc3069c19e525489f789d7621376541373852c2e62289b` |
+| `house-aba-next-index-20261101-discovery.json` | `023c0da69ac66677f2c3403dee32d7dc8fb9ade16ba3c1e862bf46f66c623b20` |
+| `house-aba-linked-terms-20261101-discovery.json` | `521b204b7f5d0df2941e4a45fd24b54a60cc66295f2d03a16cd0f50ca495b83c` |
+| `house-aba-actual-terms-use-20261101-discovery.json` | `fd2ef58e8ee673a0f75a18e68fcf34088670b956b54f06758f4dcd23a3e2e074` |
+| `house-aba-actual-copyright-20261101-discovery.json` | `fe6c4a0b4cde5d418392479b6267156e7070a0b99a9ae91f69f76eb5d67628ae` |
+
+Two additional checks are duplicates, not admissions.
+`house-nrcc-cnbc-tax-20261101-discovery.json`, body SHA-256
+`73cf176e843570f44c6ef5ea4d73002d96b03b15a133e0f808305f200d6b959b`,
+contains CNBC's April 14 Begich tax-ad quotation already present in
+`nrcc-e1b25ec9b7a3bf2a-0` and the acquired battleground release. The
+reported fourteen-district distribution does not recover fourteen new
+variants; spokesman remarks are not ad words. No NRCC request was made.
+`house-mitchell-bulldozer-release-20261101-discovery.json`, body SHA-256
+`c5593abf1e3a14d24b8cb4475cf39f6199d65a20de5f5984ea352d9e097e8d81`,
+has the marked transcript and original `GKiXYNqcifY` already present in
+`mitchell-iowagop-10928-0`. No YouTube request or new review followed.
+
+Expansion to the independently discovered `https://martyjackley.com/`
+also adds no ad. `house-jackley-primary-home-20261101-discovery.json`
+has body SHA-256
+`c32889006cb19fbfbbbb43bbfdc6557baca85a5fb7e2d7a88912163f14ed3ea5`
+and an undated, muted looping `/uploads/hero-video.mp4`, not established
+ad speech. The actual linked terms, retained in
+`house-jackley-linked-terms-20261101-discovery.json`, body SHA-256
+`ed6207c8413eaf0b99522fb28a50a16af6b638775a0944219ce94960d9ce0403`,
+were read completely: ordinary informational-site use, donations and
+SMS clauses, without an identified creative-extraction restriction or
+blanket creative license. The actual `/news` reused a cached body,
+`house-jackley-linked-news-20261101-discovery.json`, SHA-256
+`6d59a329d6eb2575d98929a082f5cea240aaec3d6cf0867dbcc4ab81f20490b6`.
+Its visible 2026 entries are endorsements and an election-night event;
+the launch/fundraising/poll entries are 2025. No script or media appears
+in that archive. The hero original, 2025 releases and external news
+packages were not requested or counted.
+
+The preceding correction commit
+`51b6ebb48eb83a48629738db02401f39ed89d16e` was independently certified
+against GitHub Actions run `41337701116`: completed/successful, one
+successful `validate` job and **all thirteen steps successful**. This
+certifies that exact correction, not a later commit or these new notes.
+Research acquisition continues; the active twenty-minute schedule,
+saved October 30 snapshot, inclusive November 4 final scope and
+website/Substack publication hold remain unchanged.
+
 ## November 1 Kentucky, Tennessee and SEAL PAC follow-up
 
 These follow-up reports add **no acquired records**. The Kentucky URLs
