@@ -3842,50 +3842,50 @@
   {
     "ad_id": "snap-0a489df16e6d7bfb05ab0d54",
     "block_id": "snap-0a489df16e6d7bfb05ab0d54-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0a8bf7557e62035b60d383b9",
     "block_id": "snap-0a8bf7557e62035b60d383b9-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for candidate: \\\"any candidate\\\" is absent from unit 11. Exact source: \\\"NOT AUTHORIZEO BY ANY GANDDATE OR GANDIDATES CON\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0aaa329f1cc737ea157d7d51",
     "block_id": "snap-0aaa329f1cc737ea157d7d51-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for criminal illegals: \\\"criminal illegals\\\" is absent from unit 8. Exact source: \\\"AMNESTY FOR GRIMINAL ILLEGALS\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0abc29ccebe7d5d95e43d9d0",
     "block_id": "snap-0abc29ccebe7d5d95e43d9d0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for Epstein Associates: \\\"Epstein Associates\\\" is absent from unit 3. Exact source: \\\"JON HUSTED: $116,000 FROM\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0adb3775c3da1b466b64a6e6",
     "block_id": "snap-0adb3775c3da1b466b64a6e6-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 11\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0b0755708b8f35fbee6e4b09",
     "block_id": "snap-0b0755708b8f35fbee6e4b09-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for FirstEnergy: \\\"FirstEnergy\\\" is absent from unit 1. Exact source: \\\"On John Houston's watch, first energy paid a bribe, then got a billion dollar bailout\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0b0d977e44c2407b40ee4751",
     "block_id": "snap-0b0d977e44c2407b40ee4751-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-0ca34c1bf8eec6008b4605f0",
     "block_id": "snap-0ca34c1bf8eec6008b4605f0-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":5,\\\"label\\\":\\\"Juan Ciscomani\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-0ca34c1bf8eec6008b4605f0",
