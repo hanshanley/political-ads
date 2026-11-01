@@ -6722,50 +6722,50 @@
   {
     "ad_id": "snap-638cefed7bc2184c5581ec42",
     "block_id": "snap-638cefed7bc2184c5581ec42-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":7,\\\"label\\\":\\\"Froy Jackson\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-63bc223b3940cd718c560539",
     "block_id": "snap-63bc223b3940cd718c560539-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for I: \\\"I\\\" is absent from unit 10. Exact source: \\\"_ declare that 1 am employed by\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-63bc223b3940cd718c560539",
     "block_id": "snap-63bc223b3940cd718c560539-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-63bc223b3940cd718c560539",
     "block_id": "snap-63bc223b3940cd718c560539-claims-003",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-63bc223b3940cd718c560539",
     "block_id": "snap-63bc223b3940cd718c560539-claims-004",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for Jeffrey Epstein: \\\"Jeffrey Epstein\\\" is absent from unit 45. Exact source: \\\"enal sexual predator who is charged with abusing underage girls for\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-63bc223b3940cd718c560539",
     "block_id": "snap-63bc223b3940cd718c560539-claims-005",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Jeffrey Epstein: \\\"Jeffrey Epstein\\\" is absent from unit 12. Exact source: \\\"erial sexual predator who is charged with abusing underage girls for\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-63bc223b3940cd718c560539",
     "block_id": "snap-63bc223b3940cd718c560539-claims-006",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for unknown: \\\"He\\\" is absent from unit 14. Exact source: \\\"a serial sexual predator who is charged with abusing underage girls for\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-63bc223b3940cd718c560539",
     "block_id": "snap-63bc223b3940cd718c560539-claims-007",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim response schema\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-63c7d7a7418d1ef09d070f06",
