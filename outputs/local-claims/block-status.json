@@ -4130,50 +4130,50 @@
   {
     "ad_id": "snap-1322c48fed68aec0ca326f00",
     "block_id": "snap-1322c48fed68aec0ca326f00-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 2\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-133036bd5a768ba139311cca",
     "block_id": "snap-133036bd5a768ba139311cca-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-1375670f6aaab2a8a0ce7d38",
     "block_id": "snap-1375670f6aaab2a8a0ce7d38-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for beef: \\\"Beef\\\" is absent from unit 1. Exact source: \\\"Beath, more expensive, bread, more expensive, tomatoes, overpriced, everything keeps going up.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-13805a8a945b6a790cf64021",
     "block_id": "snap-13805a8a945b6a790cf64021-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 2: {\\\"anchor_quote\\\":\\\"them\\\",\\\"anchor_unit_id\\\":6,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"unknown\\\",\\\"name\\\":\\\"them\\\",\\\"role\\\":\\\"unclear\\\",\\\"tone\\\":\\\"positive\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1393e3a13a39e840dba18196",
     "block_id": "snap-1393e3a13a39e840dba18196-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for Exon Regular: \\\"Exon Regular 4.45%\\\" is absent from unit 1. Exact source: \\\"- DETROIT\\\\nMETROTIMES\\\\nMillionaire Mike Rogers says\\\\nvoters blaming Trump for\\\\nhigh prices are 'nuts'\\\\nThe Trump-backed candidate continues to\\\\ndismiss affordability concerns of residents.\\\\nExon\\\\nRegular 4.45%\\\\nDiesel\\\\n5.798\\\\nHOMEMADE\\\\nSOUP\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-14254fbe6c1d4ed28f0ce7b5",
     "block_id": "snap-14254fbe6c1d4ed28f0ce7b5-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-14337fd6ce204362f63eaad2",
     "block_id": "snap-14337fd6ce204362f63eaad2-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-148744b89217c8bb0a93e337",
     "block_id": "snap-148744b89217c8bb0a93e337-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 2: {\\\"anchor_quote\\\":\\\"his\\\",\\\"anchor_unit_id\\\":1,\\\"entity_id\\\":\\\"candidate:H6TX34080\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"Eric Flores\\\",\\\"role\\\":\\\"opponent\\\",\\\"tone\\\":\\\"negative\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-1491e5dac06283f9abd1d70b",
