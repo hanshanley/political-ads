@@ -1770,7 +1770,7 @@
       "all_unique_messages": 1204,
       "categories_overlap": true,
       "denominator": "normalized_unique_messages",
-      "normalized_unique_messages": 213,
+      "normalized_unique_messages": 214,
       "side_tone": {
         "not_partisan": {
           "negative": {
@@ -1835,7 +1835,7 @@
               "el-sayed-17c2f002642e20d9-0"
             ],
             "count": 58,
-            "share": 0.27230046948356806
+            "share": 0.27102803738317754
           },
           "neutral": {
             "ad_ids": [
@@ -1886,7 +1886,7 @@
               "dccc-669825-0"
             ],
             "count": 45,
-            "share": 0.2112676056338028
+            "share": 0.2102803738317757
           },
           "positive": {
             "ad_ids": [
@@ -1922,14 +1922,14 @@
               "el-sayed-17c2f002642e20d9-0"
             ],
             "count": 30,
-            "share": 0.14084507042253522
+            "share": 0.14018691588785046
           },
           "uncertain": {
             "ad_ids": [
               "dccc-668789-0"
             ],
             "count": 1,
-            "share": 0.004694835680751174
+            "share": 0.004672897196261682
           }
         },
         "other_party": {
@@ -1943,7 +1943,7 @@
               "el-sayed-83b0f5c9ffd13be4-0"
             ],
             "count": 1,
-            "share": 0.004694835680751174
+            "share": 0.004672897196261682
           },
           "positive": {
             "ad_ids": [],
@@ -2032,7 +2032,7 @@
               "dccc-669825-0"
             ],
             "count": 71,
-            "share": 0.3333333333333333
+            "share": 0.3317757009345794
           },
           "neutral": {
             "ad_ids": [
@@ -2061,14 +2061,14 @@
               "dccc-669729-0"
             ],
             "count": 23,
-            "share": 0.107981220657277
+            "share": 0.10747663551401869
           },
           "positive": {
             "ad_ids": [
               "dccc-669729-0"
             ],
             "count": 1,
-            "share": 0.004694835680751174
+            "share": 0.004672897196261682
           },
           "uncertain": {
             "ad_ids": [],
@@ -2088,7 +2088,7 @@
               "dccc-669589-0"
             ],
             "count": 7,
-            "share": 0.03286384976525822
+            "share": 0.03271028037383177
           },
           "neutral": {
             "ad_ids": [
@@ -2210,7 +2210,7 @@
               "dccc-669825-0"
             ],
             "count": 116,
-            "share": 0.5446009389671361
+            "share": 0.5420560747663551
           },
           "positive": {
             "ad_ids": [
@@ -2318,7 +2318,7 @@
               "dccc-669729-0"
             ],
             "count": 102,
-            "share": 0.4788732394366197
+            "share": 0.4766355140186916
           },
           "uncertain": {
             "ad_ids": [],
@@ -2418,7 +2418,7 @@
               "el-sayed-17c2f002642e20d9-0"
             ],
             "count": 87,
-            "share": 0.4084507042253521
+            "share": 0.40654205607476634
           },
           "neutral": {
             "ad_ids": [
@@ -2500,7 +2500,7 @@
               "jackson-93075c70a1d4a5fc-0"
             ],
             "count": 76,
-            "share": 0.3568075117370892
+            "share": 0.35514018691588783
           },
           "positive": {
             "ad_ids": [
@@ -2568,7 +2568,7 @@
               "jackson-93075c70a1d4a5fc-0"
             ],
             "count": 62,
-            "share": 0.29107981220657275
+            "share": 0.2897196261682243
           },
           "uncertain": {
             "ad_ids": [],
@@ -3151,17 +3151,17 @@
   },
   "ads": 1792,
   "ads_by_status": {
-    "normalized": 351,
-    "not_run": 841,
-    "validation_failed": 600
+    "normalized": 353,
+    "not_run": 834,
+    "validation_failed": 605
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 378,
-    "not_run": 976,
-    "validation_failed": 662
+    "normalized": 381,
+    "not_run": 968,
+    "validation_failed": 667
   },
-  "claims": 2468,
+  "claims": 2532,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -7288,6 +7288,18 @@
         {
           "claim_id": "snap-5328b4e7141fd954522a6bb7-claims-001-002",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-554b0017f0434fa021c2d410-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-554b0017f0434fa021c2d410-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-554b0017f0434fa021c2d410-claims-001-009",
+          "target_index": 0
         }
       ],
       "neutral": [
@@ -7702,6 +7714,22 @@
         {
           "claim_id": "snap-52453c6f5b29d6194ae1ad3b-claims-001-004",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-554b0017f0434fa021c2d410-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-554b0017f0434fa021c2d410-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-554b0017f0434fa021c2d410-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-554b0017f0434fa021c2d410-claims-001-008",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -7755,6 +7783,10 @@
         },
         {
           "claim_id": "snap-4c588412d21f6f901da20b39-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-554b0017f0434fa021c2d410-claims-001-005",
           "target_index": 0
         }
       ],
@@ -9299,6 +9331,10 @@
         },
         {
           "claim_id": "snap-53fde3098e02af2085fb323e-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-54f9736edeb84d9adbbfa3b3-claims-001-015",
           "target_index": 0
         }
       ],
@@ -11117,6 +11153,10 @@
         },
         {
           "claim_id": "snap-53fde3098e02af2085fb323e-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-54f9736edeb84d9adbbfa3b3-claims-001-008",
           "target_index": 0
         }
       ],
@@ -13850,6 +13890,22 @@
         {
           "claim_id": "snap-51f2c74194001251b5b6ff26-claims-001-003",
           "target_index": 1
+        },
+        {
+          "claim_id": "snap-542d097c0d4b03657d249aed-claims-001-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-542d097c0d4b03657d249aed-claims-001-006",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-542d097c0d4b03657d249aed-claims-001-007",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-554b0017f0434fa021c2d410-claims-001-004",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -14792,11 +14848,27 @@
         {
           "claim_id": "snap-53fde3098e02af2085fb323e-claims-001-001",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-542d097c0d4b03657d249aed-claims-001-002",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-542d097c0d4b03657d249aed-claims-001-003",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-542d097c0d4b03657d249aed-claims-001-004",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-542d097c0d4b03657d249aed-claims-001-005",
+          "target_index": 0
         }
       ],
       "uncertain": []
     }
   },
-  "targets": 2895,
+  "targets": 2913,
   "version": "local-ad-claims-4"
 }
