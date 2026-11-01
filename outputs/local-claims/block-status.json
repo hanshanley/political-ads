@@ -5091,7 +5091,7 @@
     "ad_id": "snap-32181dcaa7b6bd3906da157c",
     "block_id": "snap-32181dcaa7b6bd3906da157c-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-32377568ef99bff355d2000e",
@@ -5102,26 +5102,26 @@
   {
     "ad_id": "snap-3270a3a2414a82941fbc41e9",
     "block_id": "snap-3270a3a2414a82941fbc41e9-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 5\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-32bc83709ae8ba5cacd9c8db",
     "block_id": "snap-32bc83709ae8ba5cacd9c8db-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-32bc83709ae8ba5cacd9c8db",
     "block_id": "snap-32bc83709ae8ba5cacd9c8db-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for strong allies: \\\"strong allies\\\" is absent from unit 6. Exact source: \\\"Send these strong as possible allies to stand with Trump and get the job done.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-32d3d4b5d2adc474c0f7d87c",
     "block_id": "snap-32d3d4b5d2adc474c0f7d87c-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 8 for My union: \\\"My union\\\" is absent from unit 30. Exact source: \\\"MY UNION, MY RIGHI,\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-32fad9ba37e845070cbbe651",

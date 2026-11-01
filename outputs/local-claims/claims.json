@@ -109677,5 +109677,281 @@
     "text_hash": "31173dc01c84bd8940e3e6c3ea538ac9766e644989daa4af873306a0fff2d29a",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-32181dcaa7b6bd3906da157c",
+    "alignment": "D",
+    "block_id": "snap-32181dcaa7b6bd3906da157c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-32181dcaa7b6bd3906da157c-claims-001-001",
+    "claim_text": "It is better to be in a union",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nZACH DEMBO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c85ec4dc368ceb3c169ee3f7a65a489fc9138d349d377ca61c74a85de8f7aa0f?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Union",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nZACH DEMBO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "6f5ad165356b9916f2d28304e8abcb0adbce1c0ab4640397b0a5635a08883046",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-32181dcaa7b6bd3906da157c",
+    "alignment": "D",
+    "block_id": "snap-32181dcaa7b6bd3906da157c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-32181dcaa7b6bd3906da157c-claims-001-002",
+    "claim_text": "The AFL-CIO paid for this ad",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nZACH DEMBO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c85ec4dc368ceb3c169ee3f7a65a489fc9138d349d377ca61c74a85de8f7aa0f?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nZACH DEMBO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "6f5ad165356b9916f2d28304e8abcb0adbce1c0ab4640397b0a5635a08883046",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-32181dcaa7b6bd3906da157c",
+    "alignment": "D",
+    "block_id": "snap-32181dcaa7b6bd3906da157c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-32181dcaa7b6bd3906da157c-claims-001-003",
+    "claim_text": "Voting for Zach Dembo is a right",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nZACH DEMBO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c85ec4dc368ceb3c169ee3f7a65a489fc9138d349d377ca61c74a85de8f7aa0f?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 72,
+        "anchor_quote": "ZACH DEMBO",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6KY06184",
+        "kind": "person",
+        "name": "DEMBO, ZACH",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nZACH DEMBO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "6f5ad165356b9916f2d28304e8abcb0adbce1c0ab4640397b0a5635a08883046",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-32181dcaa7b6bd3906da157c",
+    "alignment": "D",
+    "block_id": "snap-32181dcaa7b6bd3906da157c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-32181dcaa7b6bd3906da157c-claims-001-004",
+    "claim_text": "Zach Dembo will fight back against billionaires",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nZACH DEMBO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c85ec4dc368ceb3c169ee3f7a65a489fc9138d349d377ca61c74a85de8f7aa0f?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 72,
+        "anchor_quote": "ZACH DEMBO",
+        "anchor_start": 62,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6KY06184",
+        "kind": "person",
+        "name": "DEMBO, ZACH",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nZACH DEMBO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "6f5ad165356b9916f2d28304e8abcb0adbce1c0ab4640397b0a5635a08883046",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-32181dcaa7b6bd3906da157c",
+    "alignment": "D",
+    "block_id": "snap-32181dcaa7b6bd3906da157c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-32181dcaa7b6bd3906da157c-claims-001-005",
+    "claim_text": "My union is my right",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nZACH DEMBO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c85ec4dc368ceb3c169ee3f7a65a489fc9138d349d377ca61c74a85de8f7aa0f?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "Union",
+        "anchor_start": 11,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nZACH DEMBO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "6f5ad165356b9916f2d28304e8abcb0adbce1c0ab4640397b0a5635a08883046",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-32181dcaa7b6bd3906da157c",
+    "alignment": "D",
+    "block_id": "snap-32181dcaa7b6bd3906da157c-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-32181dcaa7b6bd3906da157c-claims-001-006",
+    "claim_text": "My vote is my right",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 152,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nZACH DEMBO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/c85ec4dc368ceb3c169ee3f7a65a489fc9138d349d377ca61c74a85de8f7aa0f?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 52,
+        "anchor_quote": "VOTE",
+        "anchor_start": 48,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "vote",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETTER\nUnion\nAFL-CIO\nMY UNION, MY RIGHT,\nMY VOTE\nVOTE FOR\nZACH DEMBO\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nMAKE A PLAN TO VOTE\nPAID\nFOR BY THE AFL-CIO",
+    "text_hash": "6f5ad165356b9916f2d28304e8abcb0adbce1c0ab4640397b0a5635a08883046",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
