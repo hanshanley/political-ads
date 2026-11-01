@@ -134249,5 +134249,375 @@
     "text_hash": "73ad19d1767d7d2d4bdb4f2d35ba6aaad202fb50d702ee64c83783af0e822aaa",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7882630b57b3192e79010ce4",
+    "alignment": "D",
+    "block_id": "snap-7882630b57b3192e79010ce4-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7882630b57b3192e79010ce4-claims-001-001",
+    "claim_text": "Ohio Senator Jon Husted has accepted over $100K from an Epstein co-conspirator",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 146,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "HEARTLAND SIGNAL, 2/16/26\nREPORT:\nOHIO SENATOR JON HUSTED HAS\nACCEPTED OVER\nŞ1OOK FROM\nEPSTEIN\nCO-\nCONSPIRATOR\nPAID FORBY FRIENDS OF SHERROD BROWN",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/f30a8f0a17a617391516484220432a393dcf904423e0309cc3d176738892e71d?mediaType=png",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 57,
+        "anchor_quote": "JON HUSTED",
+        "anchor_start": 47,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6OH00304",
+        "kind": "person",
+        "name": "HUSTED, JON",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "HEARTLAND SIGNAL, 2/16/26\nREPORT:\nOHIO SENATOR JON HUSTED HAS\nACCEPTED OVER\nŞ1OOK FROM\nEPSTEIN\nCO-\nCONSPIRATOR\nPAID FORBY FRIENDS OF SHERROD BROWN",
+    "text_hash": "58832bfb07c523b0c66ce50d6d8a5d9689bb7f463009919a0b88a65d162dfb55",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7882630b57b3192e79010ce4",
+    "alignment": "D",
+    "block_id": "snap-7882630b57b3192e79010ce4-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7882630b57b3192e79010ce4-claims-001-002",
+    "claim_text": "This report was paid for by Friends of Sherrod Brown",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 146,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "HEARTLAND SIGNAL, 2/16/26\nREPORT:\nOHIO SENATOR JON HUSTED HAS\nACCEPTED OVER\nŞ1OOK FROM\nEPSTEIN\nCO-\nCONSPIRATOR\nPAID FORBY FRIENDS OF SHERROD BROWN",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/f30a8f0a17a617391516484220432a393dcf904423e0309cc3d176738892e71d?mediaType=png",
+    "sponsor": "Friends of Sherrod Brown",
+    "targets": [
+      {
+        "anchor_end": 146,
+        "anchor_quote": "FRIENDS OF SHERROD BROWN",
+        "anchor_start": 122,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Friends of Sherrod Brown",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "HEARTLAND SIGNAL, 2/16/26\nREPORT:\nOHIO SENATOR JON HUSTED HAS\nACCEPTED OVER\nŞ1OOK FROM\nEPSTEIN\nCO-\nCONSPIRATOR\nPAID FORBY FRIENDS OF SHERROD BROWN",
+    "text_hash": "58832bfb07c523b0c66ce50d6d8a5d9689bb7f463009919a0b88a65d162dfb55",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7889cada2bc6562c0419e5a2",
+    "alignment": "D",
+    "block_id": "snap-7889cada2bc6562c0419e5a2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7889cada2bc6562c0419e5a2-claims-001-001",
+    "claim_text": "It absolutely is the most important election of a lifetime.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 59,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "It absolutely is the most important election of a lifetime.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9b5d66b2f56ceedb43ddc3c0f89a4161e08810d01e497c7fcce32fbd8143da40?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNIỒN, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nPIA DANDIYA\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHI,",
+    "text_hash": "66a5a240bea3bf58ceacb4db23518e21145b0fd2160bf6adb086747ce7b5339c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7889cada2bc6562c0419e5a2",
+    "alignment": "D",
+    "block_id": "snap-7889cada2bc6562c0419e5a2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7889cada2bc6562c0419e5a2-claims-001-002",
+    "claim_text": "Labor and doors candidates need to fight for them because they're fighting for us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 142,
+        "kind": "local_asr",
+        "start": 60,
+        "text": "Labor and doors candidates need to fight for them because they're fighting for us.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9b5d66b2f56ceedb43ddc3c0f89a4161e08810d01e497c7fcce32fbd8143da40?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNIỒN, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nPIA DANDIYA\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHI,",
+    "text_hash": "66a5a240bea3bf58ceacb4db23518e21145b0fd2160bf6adb086747ce7b5339c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7889cada2bc6562c0419e5a2",
+    "alignment": "D",
+    "block_id": "snap-7889cada2bc6562c0419e5a2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7889cada2bc6562c0419e5a2-claims-001-003",
+    "claim_text": "If we do not get out here and vote for people who support us, we are going to lose everything.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 237,
+        "kind": "local_asr",
+        "start": 143,
+        "text": "If we do not get out here and vote for people who support us, we are going to lose everything.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9b5d66b2f56ceedb43ddc3c0f89a4161e08810d01e497c7fcce32fbd8143da40?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNIỒN, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nPIA DANDIYA\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHI,",
+    "text_hash": "66a5a240bea3bf58ceacb4db23518e21145b0fd2160bf6adb086747ce7b5339c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7889cada2bc6562c0419e5a2",
+    "alignment": "D",
+    "block_id": "snap-7889cada2bc6562c0419e5a2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7889cada2bc6562c0419e5a2-claims-001-004",
+    "claim_text": "We have to fight for our union rights and that starts at the ballot box.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 310,
+        "kind": "local_asr",
+        "start": 238,
+        "text": "We have to fight for our union rights and that starts at the ballot box.",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9b5d66b2f56ceedb43ddc3c0f89a4161e08810d01e497c7fcce32fbd8143da40?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNIỒN, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nPIA DANDIYA\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHI,",
+    "text_hash": "66a5a240bea3bf58ceacb4db23518e21145b0fd2160bf6adb086747ce7b5339c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7889cada2bc6562c0419e5a2",
+    "alignment": "D",
+    "block_id": "snap-7889cada2bc6562c0419e5a2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7889cada2bc6562c0419e5a2-claims-001-005",
+    "claim_text": "Labor-endorsed candidates -",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 366,
+        "kind": "video_ocr",
+        "start": 339,
+        "text": "Labor-endorsed candidates -",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9b5d66b2f56ceedb43ddc3c0f89a4161e08810d01e497c7fcce32fbd8143da40?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNIỒN, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nPIA DANDIYA\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHI,",
+    "text_hash": "66a5a240bea3bf58ceacb4db23518e21145b0fd2160bf6adb086747ce7b5339c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7889cada2bc6562c0419e5a2",
+    "alignment": "D",
+    "block_id": "snap-7889cada2bc6562c0419e5a2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7889cada2bc6562c0419e5a2-claims-001-006",
+    "claim_text": "We need to fight for them,",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 419,
+        "kind": "video_ocr",
+        "start": 393,
+        "text": "We need to fight for them,",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      11
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9b5d66b2f56ceedb43ddc3c0f89a4161e08810d01e497c7fcce32fbd8143da40?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNIỒN, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nPIA DANDIYA\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHI,",
+    "text_hash": "66a5a240bea3bf58ceacb4db23518e21145b0fd2160bf6adb086747ce7b5339c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7889cada2bc6562c0419e5a2",
+    "alignment": "D",
+    "block_id": "snap-7889cada2bc6562c0419e5a2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7889cada2bc6562c0419e5a2-claims-001-007",
+    "claim_text": "PIA DANDIYA",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 643,
+        "kind": "video_ocr",
+        "start": 632,
+        "text": "PIA DANDIYA",
+        "unit_id": 33
+      }
+    ],
+    "evidence_ids": [
+      33
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9b5d66b2f56ceedb43ddc3c0f89a4161e08810d01e497c7fcce32fbd8143da40?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 643,
+        "anchor_quote": "PIA DANDIYA",
+        "anchor_start": 632,
+        "anchor_unit_id": 33,
+        "entity_id": "candidate:H6FL21059",
+        "kind": "person",
+        "name": "DANDIYA, PIA",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNIỒN, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nPIA DANDIYA\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHI,",
+    "text_hash": "66a5a240bea3bf58ceacb4db23518e21145b0fd2160bf6adb086747ce7b5339c",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7889cada2bc6562c0419e5a2",
+    "alignment": "D",
+    "block_id": "snap-7889cada2bc6562c0419e5a2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7889cada2bc6562c0419e5a2-claims-001-008",
+    "claim_text": "The AFL-CIO paid for this.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 562,
+        "kind": "video_ocr",
+        "start": 539,
+        "text": "PAID FOR BY THE AFL-CIO",
+        "unit_id": 26
+      }
+    ],
+    "evidence_ids": [
+      26
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/9b5d66b2f56ceedb43ddc3c0f89a4161e08810d01e497c7fcce32fbd8143da40?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 562,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 555,
+        "anchor_unit_id": 26,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "It absolutely is the most important election of a lifetime.\nLabor and doors candidates need to fight for them because they're fighting for us.\nIf we do not get out here and vote for people who support us, we are going to lose everything.\nWe have to fight for our union rights and that starts at the ballot box.\nTHIS IS OUR\nSHOW UP\nTIME TO\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nERRDIBRRE\nWe need to fight for them,\nPRO-LABOR\nVOTE VOTE VOTE VOTE VOTE\nVOTE VOTE\nVOT\nVOTZ\nVOTL\nПл\nVOTE VOTT VATE VOTE VOTE\nYOTE\nDTE VOTE\nTE\nVOTEd\nVOL\nVOTI\nPAID FOR BY THE AFL-CIO\nN'SBETTER\nIN A\nAFL-CIO\nMY UNIỒN, MY RICHI,\nMY VOTE\nUNION MEMBERS FOR\nPIA DANDIYA\nMAKE YOUR PLAN TO VOTE.\nMY UNION, MY RICHI,",
+    "text_hash": "66a5a240bea3bf58ceacb4db23518e21145b0fd2160bf6adb086747ce7b5339c",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
