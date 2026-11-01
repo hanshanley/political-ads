@@ -134619,5 +134619,691 @@
     "text_hash": "66a5a240bea3bf58ceacb4db23518e21145b0fd2160bf6adb086747ce7b5339c",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-79acf0e7cc7e8eeb7ba6cb78",
+    "alignment": "D",
+    "block_id": "snap-79acf0e7cc7e8eeb7ba6cb78-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-79acf0e7cc7e8eeb7ba6cb78-claims-001-001",
+    "claim_text": "Labor endorse candidates need to fight for them because they're fine for us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 76,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Labor endorse candidates need to fight for them because they're fine for us.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/20c0fb63b3514cb4cf7d298e723d507a460f6aabaf6e8ee78b878f7e6ace6b5c?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "Labor endorse candidates",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Labor endorse candidates",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Labor endorse candidates need to fight for them because they're fine for us.\nAnd that starts at the ballot box.\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nPRO-LABOR\nWe need to fight for them,\nPAID FOR BY THE AFL-CIO\nbecause they'tre fighting for us.\nN'SBETTER\nIN A\nUnion\nAFL-CIO\nMY UNTON, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMITCHELL BERMAN\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHT,",
+    "text_hash": "bd86626fe44191698c443e2c129ca653d242aa2675813a90f46017e65cf6b7ef",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-79acf0e7cc7e8eeb7ba6cb78",
+    "alignment": "D",
+    "block_id": "snap-79acf0e7cc7e8eeb7ba6cb78-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-79acf0e7cc7e8eeb7ba6cb78-claims-001-002",
+    "claim_text": "We need to fight for them, because they're fighting for us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 192,
+        "kind": "video_ocr",
+        "start": 166,
+        "text": "We need to fight for them,",
+        "unit_id": 6
+      },
+      {
+        "end": 250,
+        "kind": "video_ocr",
+        "start": 217,
+        "text": "because they'tre fighting for us.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      6,
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/20c0fb63b3514cb4cf7d298e723d507a460f6aabaf6e8ee78b878f7e6ace6b5c?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 191,
+        "anchor_quote": "them",
+        "anchor_start": 187,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "them",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Labor endorse candidates need to fight for them because they're fine for us.\nAnd that starts at the ballot box.\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nPRO-LABOR\nWe need to fight for them,\nPAID FOR BY THE AFL-CIO\nbecause they'tre fighting for us.\nN'SBETTER\nIN A\nUnion\nAFL-CIO\nMY UNTON, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMITCHELL BERMAN\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHT,",
+    "text_hash": "bd86626fe44191698c443e2c129ca653d242aa2675813a90f46017e65cf6b7ef",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-79acf0e7cc7e8eeb7ba6cb78",
+    "alignment": "D",
+    "block_id": "snap-79acf0e7cc7e8eeb7ba6cb78-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-79acf0e7cc7e8eeb7ba6cb78-claims-001-003",
+    "claim_text": "This communication was paid for by the AFL-CIO.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 216,
+        "kind": "video_ocr",
+        "start": 193,
+        "text": "PAID FOR BY THE AFL-CIO",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/20c0fb63b3514cb4cf7d298e723d507a460f6aabaf6e8ee78b878f7e6ace6b5c?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 216,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 209,
+        "anchor_unit_id": 7,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Labor endorse candidates need to fight for them because they're fine for us.\nAnd that starts at the ballot box.\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nPRO-LABOR\nWe need to fight for them,\nPAID FOR BY THE AFL-CIO\nbecause they'tre fighting for us.\nN'SBETTER\nIN A\nUnion\nAFL-CIO\nMY UNTON, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMITCHELL BERMAN\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHT,",
+    "text_hash": "bd86626fe44191698c443e2c129ca653d242aa2675813a90f46017e65cf6b7ef",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-79acf0e7cc7e8eeb7ba6cb78",
+    "alignment": "D",
+    "block_id": "snap-79acf0e7cc7e8eeb7ba6cb78-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-79acf0e7cc7e8eeb7ba6cb78-claims-001-004",
+    "claim_text": "Union members should support Mitchell Berman.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 325,
+        "kind": "video_ocr",
+        "start": 308,
+        "text": "UNION MEMBERS FOR",
+        "unit_id": 15
+      },
+      {
+        "end": 341,
+        "kind": "video_ocr",
+        "start": 326,
+        "text": "MITCHELL BERMAN",
+        "unit_id": 16
+      }
+    ],
+    "evidence_ids": [
+      15,
+      16
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/20c0fb63b3514cb4cf7d298e723d507a460f6aabaf6e8ee78b878f7e6ace6b5c?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 341,
+        "anchor_quote": "MITCHELL BERMAN",
+        "anchor_start": 326,
+        "anchor_unit_id": 16,
+        "entity_id": "candidate:H6WI01283",
+        "kind": "person",
+        "name": "MITCHELL BERMAN",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Labor endorse candidates need to fight for them because they're fine for us.\nAnd that starts at the ballot box.\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nPRO-LABOR\nWe need to fight for them,\nPAID FOR BY THE AFL-CIO\nbecause they'tre fighting for us.\nN'SBETTER\nIN A\nUnion\nAFL-CIO\nMY UNTON, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMITCHELL BERMAN\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHT,",
+    "text_hash": "bd86626fe44191698c443e2c129ca653d242aa2675813a90f46017e65cf6b7ef",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-79acf0e7cc7e8eeb7ba6cb78",
+    "alignment": "D",
+    "block_id": "snap-79acf0e7cc7e8eeb7ba6cb78-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-79acf0e7cc7e8eeb7ba6cb78-claims-001-005",
+    "claim_text": "It is my union, my right, my vote.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 299,
+        "kind": "video_ocr",
+        "start": 280,
+        "text": "MY UNTON, MY RICHT,",
+        "unit_id": 13
+      },
+      {
+        "end": 307,
+        "kind": "video_ocr",
+        "start": 300,
+        "text": "MY VOTE",
+        "unit_id": 14
+      },
+      {
+        "end": 384,
+        "kind": "video_ocr",
+        "start": 366,
+        "text": "MYUNION, MY RIGHT,",
+        "unit_id": 18
+      }
+    ],
+    "evidence_ids": [
+      13,
+      14,
+      18
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/20c0fb63b3514cb4cf7d298e723d507a460f6aabaf6e8ee78b878f7e6ace6b5c?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 288,
+        "anchor_quote": "UNTON",
+        "anchor_start": 283,
+        "anchor_unit_id": 13,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Labor endorse candidates need to fight for them because they're fine for us.\nAnd that starts at the ballot box.\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nPRO-LABOR\nWe need to fight for them,\nPAID FOR BY THE AFL-CIO\nbecause they'tre fighting for us.\nN'SBETTER\nIN A\nUnion\nAFL-CIO\nMY UNTON, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMITCHELL BERMAN\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHT,",
+    "text_hash": "bd86626fe44191698c443e2c129ca653d242aa2675813a90f46017e65cf6b7ef",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-79acf0e7cc7e8eeb7ba6cb78",
+    "alignment": "D",
+    "block_id": "snap-79acf0e7cc7e8eeb7ba6cb78-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-79acf0e7cc7e8eeb7ba6cb78-claims-001-006",
+    "claim_text": "The AFL-CIO is a union.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 279,
+        "kind": "video_ocr",
+        "start": 272,
+        "text": "AFL-CIO",
+        "unit_id": 12
+      }
+    ],
+    "evidence_ids": [
+      12
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/20c0fb63b3514cb4cf7d298e723d507a460f6aabaf6e8ee78b878f7e6ace6b5c?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 279,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 272,
+        "anchor_unit_id": 12,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Labor endorse candidates need to fight for them because they're fine for us.\nAnd that starts at the ballot box.\nLabor-endorsed candidates -\nLET'S FIGHT FOR\nPRO-LABOR\nWe need to fight for them,\nPAID FOR BY THE AFL-CIO\nbecause they'tre fighting for us.\nN'SBETTER\nIN A\nUnion\nAFL-CIO\nMY UNTON, MY RICHT,\nMY VOTE\nUNION MEMBERS FOR\nMITCHELL BERMAN\nMAKE YOUR PLAN TO VOTE.\nMYUNION, MY RIGHT,",
+    "text_hash": "bd86626fe44191698c443e2c129ca653d242aa2675813a90f46017e65cf6b7ef",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7a272b5cbbdea6e9aad855e9",
+    "alignment": "D",
+    "block_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001-001",
+    "claim_text": "Cobalt endorsed John Hickenlooper because they know he will fight to defend Coloradans' abortion rights and a woman's right to choose.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 431,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5c149a57f5b54f83485b0a2781e19b335c2a13b241083bb2416819ff6d676aa6?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 114,
+        "anchor_quote": "John Hickenlooper",
+        "anchor_start": 97,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S0CO00575",
+        "kind": "person",
+        "name": "HICKENLOOPER, JOHN W.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 18,
+        "anchor_quote": "Cobalt",
+        "anchor_start": 12,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Cobalt",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+    "text_hash": "ef22977b4dd66bd17bcfe9c4f302ec643000e63922f887930886ccc7c33e53bc",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7a272b5cbbdea6e9aad855e9",
+    "alignment": "D",
+    "block_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001-002",
+    "claim_text": "Trump's corrupt administration has attacked abortion rights and undermined access to reproductive healthcare.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 431,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5c149a57f5b54f83485b0a2781e19b335c2a13b241083bb2416819ff6d676aa6?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 145,
+        "anchor_quote": "Trump's corrupt administration",
+        "anchor_start": 115,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+    "text_hash": "ef22977b4dd66bd17bcfe9c4f302ec643000e63922f887930886ccc7c33e53bc",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7a272b5cbbdea6e9aad855e9",
+    "alignment": "D",
+    "block_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001-003",
+    "claim_text": "We can't let this White House and their MAGA Congress drag us backward.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 431,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5c149a57f5b54f83485b0a2781e19b335c2a13b241083bb2416819ff6d676aa6?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 254,
+        "anchor_quote": "this White House",
+        "anchor_start": 238,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "White House",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 278,
+        "anchor_quote": "their MAGA Congress",
+        "anchor_start": 259,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "MAGA Congress",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+    "text_hash": "ef22977b4dd66bd17bcfe9c4f302ec643000e63922f887930886ccc7c33e53bc",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7a272b5cbbdea6e9aad855e9",
+    "alignment": "D",
+    "block_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001-004",
+    "claim_text": "Trump's corrupt administration has attacked abortion rights.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 431,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5c149a57f5b54f83485b0a2781e19b335c2a13b241083bb2416819ff6d676aa6?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 145,
+        "anchor_quote": "Trump's corrupt administration",
+        "anchor_start": 115,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+    "text_hash": "ef22977b4dd66bd17bcfe9c4f302ec643000e63922f887930886ccc7c33e53bc",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7a272b5cbbdea6e9aad855e9",
+    "alignment": "D",
+    "block_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001-005",
+    "claim_text": "Trump's corrupt administration has undermined access to reproductive healthcare.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 431,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5c149a57f5b54f83485b0a2781e19b335c2a13b241083bb2416819ff6d676aa6?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 145,
+        "anchor_quote": "Trump's corrupt administration",
+        "anchor_start": 115,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+    "text_hash": "ef22977b4dd66bd17bcfe9c4f302ec643000e63922f887930886ccc7c33e53bc",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7a272b5cbbdea6e9aad855e9",
+    "alignment": "D",
+    "block_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001-006",
+    "claim_text": "Cobalt endorsed John Hickenlooper.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 431,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5c149a57f5b54f83485b0a2781e19b335c2a13b241083bb2416819ff6d676aa6?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 114,
+        "anchor_quote": "John Hickenlooper",
+        "anchor_start": 97,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S0CO00575",
+        "kind": "person",
+        "name": "HICKENLOOPER, JOHN W.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 18,
+        "anchor_quote": "Cobalt",
+        "anchor_start": 12,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Cobalt",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+    "text_hash": "ef22977b4dd66bd17bcfe9c4f302ec643000e63922f887930886ccc7c33e53bc",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-7a272b5cbbdea6e9aad855e9",
+    "alignment": "D",
+    "block_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-7a272b5cbbdea6e9aad855e9-claims-001-007",
+    "claim_text": "John Hickenlooper is endorsed by Cobalt.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 431,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/5c149a57f5b54f83485b0a2781e19b335c2a13b241083bb2416819ff6d676aa6?mediaType=png",
+    "sponsor": "Hickenlooper for Colorado",
+    "targets": [
+      {
+        "anchor_end": 114,
+        "anchor_quote": "John Hickenlooper",
+        "anchor_start": 97,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S0CO00575",
+        "kind": "person",
+        "name": "HICKENLOOPER, JOHN W.",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 18,
+        "anchor_quote": "Cobalt",
+        "anchor_start": 12,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Cobalt",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Endorsed\nby Cobalt\nJOHN\nHICKENLOOPER\nfor US Senate\nLeading abortion rights organization\nendorses John Hickenlooper\nTrump's corrupt administration\nhas attacked abortion rights and\nundermined access to\nreproductive healthcare.\nWe can't let this White House and\ntheir MAGA Congress drag us\nbackward.\nCobalt endorsed John Hickenlooper\nbecause they know he will fight to\ndefend Coloradans' abortion rights and\na woman's right to choose.",
+    "text_hash": "ef22977b4dd66bd17bcfe9c4f302ec643000e63922f887930886ccc7c33e53bc",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
