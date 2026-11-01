@@ -6530,50 +6530,50 @@
   {
     "ad_id": "snap-5cc1d70aa7600ad71b930416",
     "block_id": "snap-5cc1d70aa7600ad71b930416-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 17\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5cc1d70aa7600ad71b930416",
     "block_id": "snap-5cc1d70aa7600ad71b930416-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 6\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5d42007b6db745e5f1fbddb2",
     "block_id": "snap-5d42007b6db745e5f1fbddb2-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Claims repeat only a target name: [{\\\"claim\\\":10,\\\"label\\\":\\\"WANDA SOLOMON-PARSONS\\\"},{\\\"claim\\\":12,\\\"label\\\":\\\"ALASKA'S SENATOR\\\"},{\\\"claim\\\":13,\\\"label\\\":\\\"MARINEE\\\"},{\\\"claim\\\":14,\\\"label\\\":\\\"MARINEO\\\"}]. Remove all bare headings and labels; retain only source-supported assertions.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5d7d96127e51bd595551affb",
     "block_id": "snap-5d7d96127e51bd595551affb-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-5ea7c5c808ff7ba91ad98841",
     "block_id": "snap-5ea7c5c808ff7ba91ad98841-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-5ec7d8759caf10d0a011684d",
     "block_id": "snap-5ec7d8759caf10d0a011684d-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-5ed6ac132c8caff79be3de19",
     "block_id": "snap-5ed6ac132c8caff79be3de19-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for data centers: \\\"data centers\\\" is absent from unit 4. Exact source: \\\"THE FULL COST OF ELECTRICITY\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5ee36a1a0a31c1e9b231c22f",
     "block_id": "snap-5ee36a1a0a31c1e9b231c22f-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for AFL-CIO: \\\"the AFL-CIO\\\" is absent from unit 26. Exact source: \\\"PAID FOR BY THE AFL-CIO\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-5f00da9aa5b41a3aa1c8282a",
