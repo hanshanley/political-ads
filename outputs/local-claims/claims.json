@@ -146205,5 +146205,153 @@
     "text_hash": "b24a5a6db8120dcff9896246c7160dfd9f5631bf0bd2fa4a2ff14f21fb23e49c",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-971c14eb35b2bcd1bb47d8da",
+    "alignment": "D",
+    "block_id": "snap-971c14eb35b2bcd1bb47d8da-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-971c14eb35b2bcd1bb47d8da-claims-001-001",
+    "claim_text": "Troy Jackson wants to cut taxes for working families, like doubling Maine's earned income tax credit.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 76,
+        "kind": "video_ocr",
+        "start": 58,
+        "text": "Troy Jackson wants",
+        "unit_id": 4
+      },
+      {
+        "end": 93,
+        "kind": "video_ocr",
+        "start": 77,
+        "text": "to cut taxes for",
+        "unit_id": 5
+      },
+      {
+        "end": 116,
+        "kind": "video_ocr",
+        "start": 94,
+        "text": "working families, like",
+        "unit_id": 6
+      },
+      {
+        "end": 133,
+        "kind": "video_ocr",
+        "start": 117,
+        "text": "doubling Maine's",
+        "unit_id": 7
+      },
+      {
+        "end": 151,
+        "kind": "video_ocr",
+        "start": 134,
+        "text": "earned income tax",
+        "unit_id": 8
+      },
+      {
+        "end": 159,
+        "kind": "video_ocr",
+        "start": 152,
+        "text": "credit.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4ec14b40cb0fe464fdbd1f1774c49ba112e9337125bd11a3ee26895559a54132?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 76,
+        "anchor_quote": "Troy Jackson wants",
+        "anchor_start": 58,
+        "anchor_unit_id": 4,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "In Maine, if you want\nto go far, you've got to\nwork hard.\nTroy Jackson wants\nto cut taxes for\nworking families, like\ndoubling Maine's\nearned income tax\ncredit.\nSource: Spectrum News Maine\nPaid for by Working America.\nNot authorized by any candidate or committee.",
+    "text_hash": "025d198b39cbc4c7db2e94313bcfc4e09ca3222f60a449531f56e79bbd283977",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-971c14eb35b2bcd1bb47d8da",
+    "alignment": "D",
+    "block_id": "snap-971c14eb35b2bcd1bb47d8da-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-971c14eb35b2bcd1bb47d8da-claims-001-002",
+    "claim_text": "In Maine, if you want to go far, you've got to work hard.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 21,
+        "kind": "video_ocr",
+        "start": 0,
+        "text": "In Maine, if you want",
+        "unit_id": 1
+      },
+      {
+        "end": 46,
+        "kind": "video_ocr",
+        "start": 22,
+        "text": "to go far, you've got to",
+        "unit_id": 2
+      },
+      {
+        "end": 57,
+        "kind": "video_ocr",
+        "start": 47,
+        "text": "work hard.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      1,
+      2,
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/4ec14b40cb0fe464fdbd1f1774c49ba112e9337125bd11a3ee26895559a54132?mediaType=mp4",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 8,
+        "anchor_quote": "In Maine",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Maine",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "In Maine, if you want\nto go far, you've got to\nwork hard.\nTroy Jackson wants\nto cut taxes for\nworking families, like\ndoubling Maine's\nearned income tax\ncredit.\nSource: Spectrum News Maine\nPaid for by Working America.\nNot authorized by any candidate or committee.",
+    "text_hash": "025d198b39cbc4c7db2e94313bcfc4e09ca3222f60a449531f56e79bbd283977",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
