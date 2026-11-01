@@ -5096,8 +5096,8 @@
   {
     "ad_id": "snap-32377568ef99bff355d2000e",
     "block_id": "snap-32377568ef99bff355d2000e-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 5 for any candidate: \\\"any candidate\\\" is absent from unit 4. Exact source: \\\"NOT AUTHORIZED BY ANY CANDIDATE OR\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-3270a3a2414a82941fbc41e9",
@@ -5126,14 +5126,14 @@
   {
     "ad_id": "snap-32fad9ba37e845070cbbe651",
     "block_id": "snap-32fad9ba37e845070cbbe651-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 7\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-33475ff423f8ca8839198945",
     "block_id": "snap-33475ff423f8ca8839198945-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-33475ff423f8ca8839198945",
