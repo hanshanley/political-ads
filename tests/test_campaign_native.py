@@ -660,6 +660,142 @@ def test_native_party_payer_is_not_replaced_by_authorized_candidate(tmp_path, na
     assert ad["alignment"] == "R" and "H6ZZ01001" in ad["attribution_basis"]
 
 
+@pytest.fixture
+def speech_excerpt_review(tmp_path, monkeypatch, native_review):
+    from political_ads.schema import digest
+    from political_ads.video import video_segments
+
+    passages = [
+        "Our communities deserve a representative who protects families "
+        "and brings practical solutions to Washington.",
+        "We will deliver those results together.",
+    ]
+    speech = {
+        "engine": "test-asr",
+        "model": "test-model",
+        "model_revision": "test-revision",
+        "language": "en",
+        "language_probability": 0.99,
+        "has_audio": True,
+        "segments": [
+            {"start_seconds": 0, "end_seconds": 0.8, "text": "The opening is not included."},
+            {"start_seconds": 1.0, "end_seconds": 3.0, "text": passages[0]},
+            {"start_seconds": 3.0, "end_seconds": 5.0, "text": passages[1]},
+            {"start_seconds": 6.0, "end_seconds": 9.0, "text": "Nor is the closing."},
+        ],
+    }
+    ocr = {
+        "duration_seconds": 10.0,
+        "sample_interval_seconds": 1.0,
+        "engine": "test-ocr",
+        "coordinate_system": "normalized",
+        "frames": [
+            {
+                "seconds": 1.0,
+                "lines": [
+                    {
+                        "text": "This on-screen text must not enter the excerpt.",
+                        "confidence": 1.0,
+                        "bounds": [0, 0, 1, 1],
+                    }
+                ],
+            }
+        ],
+    }
+    native_review.update(
+        completeness="partial_quotation",
+        required_quotes=passages,
+        speech_excerpt={
+            "start_seconds": 1.0,
+            "end_seconds": 5.0,
+            "speech_sha256": digest(json.dumps(speech, sort_keys=True)),
+            "text_sha256": digest("\n".join(passages)),
+        },
+    )
+    monkeypatch.setattr("political_ads.campaign_native.video_segments", video_segments)
+    monkeypatch.setattr(
+        "political_ads.campaign_native.recognize_video",
+        lambda *args, **kwargs: (native_review["media_sha256"], ocr, speech),
+    )
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [native_review]})
+    return native_review, speech
+
+
+def test_native_speech_excerpt_retains_only_bound_words_and_original_provenance(
+    tmp_path, speech_excerpt_review
+):
+    review, speech = speech_excerpt_review
+    result = collect_campaign_native(tmp_path, "2026-10-27", offline=True)
+    ad = result["ads"][0]
+    assert ad["text"] == "\n".join(review["required_quotes"])
+    assert [segment["start_seconds"] for segment in ad["segments"]] == [1.0, 3.0]
+    assert [segment["end_seconds"] for segment in ad["segments"]] == [3.0, 5.0]
+    for segment in ad["segments"]:
+        assert segment["kind"] == "local_asr"
+        assert segment["completeness"] == "partial_quotation"
+        assert segment["media_hash"] == review["media_sha256"]
+        assert segment["model_revision"] == speech["model_revision"]
+    assert "partial_ad_text_not_full_script" in ad["quality_flags"]
+    assert "frame_text_and_unselected_speech_excluded" in ad["quality_flags"]
+    assert (
+        ad["segments"][0]["native_campaign_evidence"]["speech_excerpt"] == review["speech_excerpt"]
+    )
+    serialized = json.dumps(ad)
+    for omitted in ["The opening is not included.", "Nor is the closing.", "This on-screen text"]:
+        assert omitted not in serialized
+    assert collect_campaign_native(tmp_path, "2026-10-27", offline=True) == result
+
+
+@pytest.mark.parametrize(
+    "change",
+    [
+        "recognition",
+        "selected_text",
+        "bounds",
+        "clock",
+        "boolean",
+        "extent",
+        "short",
+        "long",
+        "overlap",
+    ],
+)
+def test_native_speech_excerpt_rejects_changed_or_widened_selection(
+    tmp_path, speech_excerpt_review, change
+):
+    from political_ads.schema import digest
+
+    review, speech = speech_excerpt_review
+    excerpt = review["speech_excerpt"]
+    if change == "recognition":
+        speech["segments"][-1]["text"] = "A different original recognition."
+    elif change == "selected_text":
+        speech["segments"][1]["text"] += " Changed."
+    elif change == "bounds":
+        excerpt["start_seconds"] = 1.1
+    elif change == "clock":
+        excerpt["end_seconds"] = float("inf")
+    elif change == "boolean":
+        excerpt["start_seconds"] = True
+    elif change == "extent":
+        review["completeness"] = "marked_script"
+    elif change == "short":
+        speech["segments"][1]["text"] = "Protect families."
+    elif change == "long":
+        speech["segments"][1]["text"] = " ".join(f"word{index}" for index in range(26))
+    else:
+        speech["segments"][1]["end_seconds"] = 3.5
+    if change in {"selected_text", "short", "long", "overlap"}:
+        excerpt["speech_sha256"] = digest(json.dumps(speech, sort_keys=True))
+    if change in {"short", "long"}:
+        review["required_quotes"] = [segment["text"] for segment in speech["segments"][1:3]]
+        excerpt["text_sha256"] = digest("\n".join(review["required_quotes"]))
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    result = collect_campaign_native(tmp_path, "2026-10-27", offline=True)
+    assert result["ads"] == []
+    assert result["attempts"][review["id"]]["state"] == "error"
+
+
 def test_undated_original_is_preserved_in_backlog_not_dated_corpus(
     tmp_path, native_review, monkeypatch
 ):

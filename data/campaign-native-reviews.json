@@ -1300,6 +1300,46 @@
           "6aa57bbfea23c49382f97a8c0ab4702339db6ef9c801a0cb83748e636824d651"
         ]
       }
+    },
+    {
+      "id": "spartz-native-follow-money-20261030",
+      "source": "spartz-native",
+      "publisher_url": "https://www.spartzforcongress.com/news/follow-the-money/",
+      "post_url": "https://www.spartzforcongress.com/news/follow-the-money/",
+      "media_url": "https://www.spartzforcongress.com/wp-content/uploads/Indiana-Is-Not-For-Sale.mp4",
+      "media_type": "video",
+      "media_sha256": "4be2b488c869f563a6eced5593bbb213630d0b459f193f1757d8a20279ddcf1b",
+      "candidate_id": "H0IN05326",
+      "title": "Spartz campaign TV ad: Follow the money",
+      "title_basis": "Campaign release heading; not a verified creative title",
+      "sponsor": "Victoria Spartz for Congress",
+      "sponsor_type": "candidate",
+      "phase": "unknown",
+      "completeness": "partial_quotation",
+      "required_quotes": [
+        "Follow the money, a San Francisco billionaire is pouring in millions to buy this seat for",
+        "extreme liberal JD Ford."
+      ],
+      "speech_excerpt": {
+        "start_seconds": 4.59,
+        "end_seconds": 10.83,
+        "speech_sha256": "38668e999bcd9f0ebb5a3783a231453e3c430c15c99d1935921a80d31aaf8b1b",
+        "text_sha256": "da6376957714b64d6327916079087cbcff556772e57088242f485cac086e4ca8"
+      },
+      "publisher_release": {
+        "published": "2026-10-30",
+        "published_timestamp": "2026-10-30T09:25:19-04:00",
+        "title": "Follow the money - Victoria Spartz for Congress",
+        "sha256": "4c85e3d52174b14be62f98e1e5693ec974a1558e44bd36a13abb8823272b8f39"
+      },
+      "reviewed": "2026-11-01",
+      "ad_evidence": "The independently recovered campaign release explicitly labels its literally embedded original a TV ad. Its visible archive date and article publication metadata agree. Closing frame 29.5 seconds was locally rendered and visually inspected: its payer and candidate approval agree with frozen federal candidate H0IN05326 / REP / House / IN-05 / 2026 and principal committee C00737767. This is not the inaccessible IndyStar article or a copy of it. No first-airing, delivery, nominee, donor-identity or factual-claim verification is inferred.",
+      "extraction_caveat": "Exactly 20 recognized words from two complete consecutive speech segments, 4.59-10.83 seconds of the hash-verified 31.146-second original. Cached offline faster-whisper base output is retained verbatim, not manually certified. Its separate opening and approval-name recognition errors are not silently corrected. All other speech and frame text are excluded. The ad's allegations and altered-media disclosure are not fact-checked. This partial quotation does not establish the full creative's positive/negative strategy. Original media remains local-only and is not redistributed.",
+      "quality_flags": [
+        "payer_frame_visually_reviewed",
+        "allegations_not_fact_checked",
+        "semantic_portrayal_unreviewed"
+      ]
     }
   ]
 }

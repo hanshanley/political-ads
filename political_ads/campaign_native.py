@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import html
 import json
+import math
 import re
 import time
 from datetime import date, datetime, timezone
@@ -259,6 +260,58 @@ def _print_segments(
     return segments, engine
 
 
+def _speech_excerpt_segments(ocr: dict, speech: dict, media_hash: str, review: dict) -> list[dict]:
+    if "speech_excerpt" not in review:
+        return video_segments(ocr, speech, media_hash)
+    excerpt = review["speech_excerpt"]
+    if (
+        not isinstance(excerpt, dict)
+        or review.get("media_type", "video") != "video"
+        or review.get("completeness") != "partial_quotation"
+        or excerpt["speech_sha256"] != digest(json.dumps(speech, sort_keys=True))
+    ):
+        raise ValueError("Speech excerpts require a bound original recognition and partial extent")
+    start, end, duration = (
+        excerpt["start_seconds"],
+        excerpt["end_seconds"],
+        ocr["duration_seconds"],
+    )
+    if (
+        any(
+            type(value) not in (int, float) or not math.isfinite(value)
+            for value in (start, end, duration)
+        )
+        or not 0 <= start < end <= duration
+    ):
+        raise ValueError("Speech excerpt bounds must be finite and within the original")
+    selected = [
+        segment
+        for segment in speech["segments"]
+        if segment["end_seconds"] > start and segment["start_seconds"] < end
+    ]
+    if (
+        not selected
+        or selected[0]["start_seconds"] != start
+        or selected[-1]["end_seconds"] != end
+        or any(
+            not start <= segment["start_seconds"] < segment["end_seconds"] <= end
+            for segment in selected
+        )
+        or any(
+            left["end_seconds"] > right["start_seconds"]
+            for left, right in zip(selected, selected[1:], strict=False)
+        )
+    ):
+        raise ValueError("Speech excerpts must retain whole ordered, non-overlapping segments")
+    text = "\n".join(segment["text"] for segment in selected)
+    if not 15 <= len(re.findall(r"\w+", text)) <= 25 or digest(text) != excerpt["text_sha256"]:
+        raise ValueError("Speech excerpt must retain exactly the reviewed 15-25 words")
+    segments = video_segments(ocr | {"frames": []}, speech | {"segments": selected}, media_hash)
+    if "\n".join(segment["text"] for segment in segments) != text:
+        raise ValueError("Speech excerpt includes rejected recognition")
+    return [segment | {"completeness": "partial_quotation"} for segment in segments]
+
+
 def collect_campaign_native(root: Path, until: str, offline: bool = False) -> dict:
     if not START <= until <= min(date.today().isoformat(), END):
         raise ValueError("Native campaign collection requires a valid cutoff")
@@ -336,6 +389,8 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
         }
         status.pop("error", None)
         try:
+            if "speech_excerpt" in review and (is_image or is_pdf):
+                raise ValueError("Speech excerpts require an original video")
             candidate = candidates[review["candidate_id"]]
             if candidate["office"] not in {"H", "S"} or candidate["election_year"] != "2026":
                 raise ValueError("Review requires an exact 2026 federal candidate identity")
@@ -587,7 +642,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                             "Video creation metadata differs from reviewed archive creative"
                         )
                 media_hash, ocr, speech = recognize_video(root, media, offline=offline)
-                segments = video_segments(ocr, speech, media_hash)
+                segments = _speech_excerpt_segments(ocr, speech, media_hash, review)
                 language = (
                     speech["language"] if speech["language_probability"] >= 0.8 else "unknown"
                 )
@@ -616,6 +671,11 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             ]
             if release:
                 quality[-1] = "publisher_release_date_not_verified_first_airing"
+            if "speech_excerpt" in review:
+                quality[0] = "local_speech_excerpt_not_manually_verified"
+                quality.extend(
+                    ["partial_ad_text_not_full_script", "frame_text_and_unselected_speech_excluded"]
+                )
             if attachment:
                 quality[-1] = (
                     "publisher_attachment_upload_not_verified_first_release_or_paid_delivery"
@@ -727,6 +787,8 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                         if is_pdf
                         else "Local English OCR plus seeded language detection"
                         if is_image
+                        else "Local Whisper language detection; selected speech excerpt"
+                        if "speech_excerpt" in review
                         else "Local Whisper language detection; speech and frame OCR"
                     ),
                     media_urls=[review["post_url"]],

@@ -10,6 +10,59 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Victoria Spartz: bounded native TV-ad speech
+
+The October 30 campaign release
+`https://www.spartzforcongress.com/news/follow-the-money/` explicitly
+labels its directly embedded original a TV ad. Acquire only **20 words**
+from two whole consecutive recognized speech segments, **4.59-10.83 seconds**.
+Do not acquire reporter commentary, campaign-page prose, the remaining
+speech, frame text or a copy of the inaccessible IndyStar report.
+
+Publisher HTML SHA-256
+`4c85e3d52174b14be62f98e1e5693ec974a1558e44bd36a13abb8823272b8f39`
+pins the exact title and October 30 publication metadata
+`2026-10-30T09:25:19-04:00`; the campaign archive agrees.
+The literally linked native MP4 has SHA-256
+`4be2b488c869f563a6eced5593bbb213630d0b459f193f1757d8a20279ddcf1b`,
+**10,158,750 bytes / 31.146 seconds**. Its closing payer/approval frame
+was visually inspected, independently of the website footer, against
+frozen **H0IN05326 / C00737767 / SPARTZ, VICTORIA / REP / House / IN-05 / 2026**.
+
+Offline faster-whisper **base**, revision
+`ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66`, produces the cached speech
+artifact. Sorted-JSON speech SHA-256
+`38668e999bcd9f0ebb5a3783a231453e3c430c15c99d1935921a80d31aaf8b1b`
+and newline-joined excerpt SHA-256
+`da6376957714b64d6327916079087cbcff556772e57088242f485cac086e4ca8`
+bind the review to the exact original recognition and selected words.
+Selection requires finite source bounds, whole ordered non-overlapping
+segments and 15-25 words; it cannot silently widen or retain frame text.
+Unselected name-recognition errors are not corrected or imported.
+
+Reproduce with `.venv/bin/political-ads campaign-native --until
+2026-10-30 --offline`, then `build --offline`, `validate --offline`
+and `audit-strategy --offline`. Replay requires the exact locally cached
+publisher/original responses and OCR/speech artifacts; these raw caches
+are not distributed in a fresh checkout. Committed inputs still rebuild
+the complete downloadable research snapshot without reacquisition.
+
+`spartz-native-follow-money-20261030` remains `partial_quotation`,
+not a full script or a manually certified transcript. Its allegations
+and altered-media disclosure are not fact-checked. The passage does not
+establish the whole creative's positive/negative strategy; semantic
+judgment and phase remain unreviewed/unknown. Release is not verified
+first airing or paid delivery. Original media remains local-only.
+
+Snapshot
+`7d31a655b97448d45ac5212bfb0e78823cc48937d79552fcb2b1d2c06cf29578`
+has **1,938 acquired / 1,899 English**, **R 634 / D 1,226 English**,
+**R 256 / D 698 English House**, and **R 255 / D 222 House outside Snapchat**.
+There are **579 written records / 85 release reviews / 41 native reviews**.
+All prior records, reviews and aliases are preserved. October 31 release
+cards remain beyond the saved cutoff. Research refresh does not authorize
+website, host or edition publication or resolve the coverage gap.
+
 ## Terri DeBoer: bounded outside-group ad quotation
 
 The August 21, 2026 Washington Reporter article at

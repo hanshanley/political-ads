@@ -92645,6 +92645,277 @@
       "state": "NE",
       "text": "Cutting Taxes for Families, Seniors & Small Business\nSecuring the Border & Stopping Illegal Immigration",
       "title": "Adrian Smith campaign-paid Dakota County Star print ad"
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "Publisher-linked original with individually reviewed payer evidence; FEC H0IN05326, REP, principal committee C00737767. Primary publisher: https://www.spartzforcongress.com/news/follow-the-money/",
+      "chamber": "House",
+      "date_basis": "publisher_release_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "spartz-native-follow-money-20261030",
+      "language": "en",
+      "language_basis": "Local Whisper language detection; selected speech excerpt",
+      "media_urls": [
+        "https://www.spartzforcongress.com/news/follow-the-money/"
+      ],
+      "message_id": "8bdd58da8d170513ce9f1f2916cce1968373155674277a839e0c403eb1435547",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "campaign_release",
+      "published": "2026-10-30",
+      "quality_flags": [
+        "local_speech_excerpt_not_manually_verified",
+        "automatic_speech_may_misrecognize_names_or_negation",
+        "publisher_release_date_not_verified_first_airing",
+        "partial_ad_text_not_full_script",
+        "frame_text_and_unselected_speech_excluded",
+        "payer_frame_visually_reviewed",
+        "allegations_not_fact_checked",
+        "semantic_portrayal_unreviewed"
+      ],
+      "race": "IN-05",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "avg_logprob": -0.22805251098993257,
+          "completeness": "partial_quotation",
+          "end_seconds": 9.05,
+          "excluded_low_confidence_ocr_observations": [],
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "4be2b488c869f563a6eced5593bbb213630d0b459f193f1757d8a20279ddcf1b",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "native_campaign_evidence": {
+            "ad_evidence": "The independently recovered campaign release explicitly labels its literally embedded original a TV ad. Its visible archive date and article publication metadata agree. Closing frame 29.5 seconds was locally rendered and visually inspected: its payer and candidate approval agree with frozen federal candidate H0IN05326 / REP / House / IN-05 / 2026 and principal committee C00737767. This is not the inaccessible IndyStar article or a copy of it. No first-airing, delivery, nominee, donor-identity or factual-claim verification is inferred.",
+            "candidate_id": "H0IN05326",
+            "completeness": "partial_quotation",
+            "extraction_caveat": "Exactly 20 recognized words from two complete consecutive speech segments, 4.59-10.83 seconds of the hash-verified 31.146-second original. Cached offline faster-whisper base output is retained verbatim, not manually certified. Its separate opening and approval-name recognition errors are not silently corrected. All other speech and frame text are excluded. The ad's allegations and altered-media disclosure are not fact-checked. This partial quotation does not establish the full creative's positive/negative strategy. Original media remains local-only and is not redistributed.",
+            "id": "spartz-native-follow-money-20261030",
+            "media_sha256": "4be2b488c869f563a6eced5593bbb213630d0b459f193f1757d8a20279ddcf1b",
+            "media_type": "video",
+            "media_url": "https://www.spartzforcongress.com/wp-content/uploads/Indiana-Is-Not-For-Sale.mp4",
+            "phase": "unknown",
+            "post_url": "https://www.spartzforcongress.com/news/follow-the-money/",
+            "publisher_html_sha256": "4c85e3d52174b14be62f98e1e5693ec974a1558e44bd36a13abb8823272b8f39",
+            "publisher_release": {
+              "published": "2026-10-30",
+              "published_timestamp": "2026-10-30T09:25:19-04:00",
+              "sha256": "4c85e3d52174b14be62f98e1e5693ec974a1558e44bd36a13abb8823272b8f39",
+              "title": "Follow the money - Victoria Spartz for Congress"
+            },
+            "publisher_url": "https://www.spartzforcongress.com/news/follow-the-money/",
+            "quality_flags": [
+              "payer_frame_visually_reviewed",
+              "allegations_not_fact_checked",
+              "semantic_portrayal_unreviewed"
+            ],
+            "required_quotes": [
+              "Follow the money, a San Francisco billionaire is pouring in millions to buy this seat for",
+              "extreme liberal JD Ford."
+            ],
+            "reviewed": "2026-11-01",
+            "source": "spartz-native",
+            "speech_engine": {
+              "engine": "faster-whisper 1.2.1",
+              "has_audio": true,
+              "language": "en",
+              "language_probability": 0.982221782207489,
+              "model": "Systran/faster-whisper-base",
+              "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+              "settings": {
+                "beam_size": 5,
+                "condition_on_previous_text": false,
+                "temperature": 0,
+                "vad_filter": true,
+                "word_timestamps": true
+              },
+              "word_alignment_error": null
+            },
+            "speech_excerpt": {
+              "end_seconds": 10.83,
+              "speech_sha256": "38668e999bcd9f0ebb5a3783a231453e3c430c15c99d1935921a80d31aaf8b1b",
+              "start_seconds": 4.59,
+              "text_sha256": "da6376957714b64d6327916079087cbcff556772e57088242f485cac086e4ca8"
+            },
+            "sponsor": "Victoria Spartz for Congress",
+            "sponsor_type": "candidate",
+            "title": "Spartz campaign TV ad: Follow the money",
+            "title_basis": "Campaign release heading; not a verified creative title"
+          },
+          "no_speech_probability": 0.7531517744064331,
+          "speech_detection": {
+            "has_audio": true,
+            "language": "en",
+            "language_probability": 0.982221782207489,
+            "settings": {
+              "beam_size": 5,
+              "condition_on_previous_text": false,
+              "temperature": 0,
+              "vad_filter": true,
+              "word_timestamps": true
+            },
+            "word_alignment_error": null
+          },
+          "speech_duplicate_ocr_observations": [],
+          "start_seconds": 4.59,
+          "text": "Follow the money, a San Francisco billionaire is pouring in millions to buy this seat for",
+          "video_sampling": {
+            "duration_seconds": 31.146,
+            "sample_interval_seconds": 1
+          },
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 4.77,
+              "probability": 0.9666044116020203,
+              "start_seconds": 4.59,
+              "text": " Follow"
+            },
+            {
+              "end_seconds": 4.93,
+              "probability": 0.945770800113678,
+              "start_seconds": 4.77,
+              "text": " the"
+            },
+            {
+              "end_seconds": 5.17,
+              "probability": 0.8933044672012329,
+              "start_seconds": 4.93,
+              "text": " money,"
+            },
+            {
+              "end_seconds": 5.55,
+              "probability": 0.4076519012451172,
+              "start_seconds": 5.45,
+              "text": " a"
+            },
+            {
+              "end_seconds": 5.81,
+              "probability": 0.9472384452819824,
+              "start_seconds": 5.55,
+              "text": " San"
+            },
+            {
+              "end_seconds": 6.21,
+              "probability": 0.987869918346405,
+              "start_seconds": 5.81,
+              "text": " Francisco"
+            },
+            {
+              "end_seconds": 6.81,
+              "probability": 0.9694569110870361,
+              "start_seconds": 6.21,
+              "text": " billionaire"
+            },
+            {
+              "end_seconds": 7.07,
+              "probability": 0.9846405982971191,
+              "start_seconds": 6.81,
+              "text": " is"
+            },
+            {
+              "end_seconds": 7.29,
+              "probability": 0.9748139977455139,
+              "start_seconds": 7.07,
+              "text": " pouring"
+            },
+            {
+              "end_seconds": 7.51,
+              "probability": 0.9968818426132202,
+              "start_seconds": 7.29,
+              "text": " in"
+            },
+            {
+              "end_seconds": 7.89,
+              "probability": 0.99342280626297,
+              "start_seconds": 7.51,
+              "text": " millions"
+            },
+            {
+              "end_seconds": 8.13,
+              "probability": 0.9937840700149536,
+              "start_seconds": 7.89,
+              "text": " to"
+            },
+            {
+              "end_seconds": 8.35,
+              "probability": 0.9990748167037964,
+              "start_seconds": 8.13,
+              "text": " buy"
+            },
+            {
+              "end_seconds": 8.65,
+              "probability": 0.9676952958106995,
+              "start_seconds": 8.35,
+              "text": " this"
+            },
+            {
+              "end_seconds": 8.85,
+              "probability": 0.958314836025238,
+              "start_seconds": 8.65,
+              "text": " seat"
+            },
+            {
+              "end_seconds": 9.05,
+              "probability": 0.9862310290336609,
+              "start_seconds": 8.85,
+              "text": " for"
+            }
+          ]
+        },
+        {
+          "avg_logprob": -0.22805251098993257,
+          "completeness": "partial_quotation",
+          "end_seconds": 10.83,
+          "extraction_engine": "faster-whisper 1.2.1",
+          "kind": "local_asr",
+          "media_hash": "4be2b488c869f563a6eced5593bbb213630d0b459f193f1757d8a20279ddcf1b",
+          "model": "Systran/faster-whisper-base",
+          "model_revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "no_speech_probability": 0.7531517744064331,
+          "start_seconds": 9.05,
+          "text": "extreme liberal JD Ford.",
+          "voice": "unreviewed",
+          "words": [
+            {
+              "end_seconds": 9.47,
+              "probability": 0.7541080713272095,
+              "start_seconds": 9.05,
+              "text": " extreme"
+            },
+            {
+              "end_seconds": 9.91,
+              "probability": 0.9641159772872925,
+              "start_seconds": 9.47,
+              "text": " liberal"
+            },
+            {
+              "end_seconds": 10.33,
+              "probability": 0.8885746598243713,
+              "start_seconds": 9.91,
+              "text": " JD"
+            },
+            {
+              "end_seconds": 10.83,
+              "probability": 0.93844074010849,
+              "start_seconds": 10.33,
+              "text": " Ford."
+            }
+          ]
+        }
+      ],
+      "source": "spartz-native",
+      "source_hash": "f7d1a4613e1480f6355549d24332049b94b4a87c9b8dba24059cdcaffc28c61e",
+      "source_record_id": "spartz-native-follow-money-20261030",
+      "source_url": "https://www.spartzforcongress.com/news/follow-the-money/",
+      "sponsor": "Victoria Spartz for Congress",
+      "sponsor_type": "candidate",
+      "state": "IN",
+      "text": "Follow the money, a San Francisco billionaire is pouring in millions to buy this seat for\nextreme liberal JD Ford.",
+      "title": "Spartz campaign TV ad: Follow the money"
     }
   ],
   "attempts": {
@@ -93173,6 +93444,9 @@
       "state": "ok",
       "video": "https://www.youtube.com/watch?v=J1Ym3GUrfkQ"
     },
+    "spartz-native-follow-money-20261030": {
+      "state": "text"
+    },
     "steele-native-forged-646f487a5b6782ba": {
       "state": "text"
     },
@@ -93368,6 +93642,17 @@
       "state": "partial",
       "undated_videos_with_text": 0,
       "url": "https://careycoleman.com/"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "last_success": "2026-11-01",
+      "scope": "Individually reviewed original campaign videos, not complete discovery",
+      "source": "spartz-native",
+      "state": "partial",
+      "undated_videos_with_text": 0,
+      "url": "https://www.spartzforcongress.com/news/follow-the-money/"
     }
   ]
 }
