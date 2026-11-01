@@ -101630,5 +101630,1533 @@
     "text_hash": "49adf96d7f6e213d0b96d20e45b29328520e6b693bb2736fcda375a39a46379f",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-001",
+    "claim_text": "He voted to cut healthcare for working families",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 332,
+        "kind": "local_asr",
+        "start": 285,
+        "text": "He voted to cut healthcare for working families",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 287,
+        "anchor_quote": "He",
+        "anchor_start": 285,
+        "anchor_unit_id": 10,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "Tom Tiffany",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-002",
+    "claim_text": "He voted to cut healthcare for working families to fund tax breaks for billionaires.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 332,
+        "kind": "local_asr",
+        "start": 285,
+        "text": "He voted to cut healthcare for working families",
+        "unit_id": 10
+      },
+      {
+        "end": 369,
+        "kind": "local_asr",
+        "start": 333,
+        "text": "to fund tax breaks for billionaires.",
+        "unit_id": 11
+      }
+    ],
+    "evidence_ids": [
+      10,
+      11
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 287,
+        "anchor_quote": "He",
+        "anchor_start": 285,
+        "anchor_unit_id": 10,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "Tom Tiffany",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-003",
+    "claim_text": "Tom Tiffany voted to take away Medicaid from people like my mom.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 39,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Tom Tiffany voted to take away Medicaid",
+        "unit_id": 1
+      },
+      {
+        "end": 64,
+        "kind": "local_asr",
+        "start": 40,
+        "text": "from people like my mom.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      1,
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 11,
+        "anchor_quote": "Tom Tiffany",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "Tom Tiffany",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-004",
+    "claim_text": "The Cuts are causing concern for aging adults here in Wisconsin.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 134,
+        "kind": "local_asr",
+        "start": 106,
+        "text": "The Cuts are causing concern",
+        "unit_id": 4
+      },
+      {
+        "end": 170,
+        "kind": "local_asr",
+        "start": 135,
+        "text": "for aging adults here in Wisconsin.",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      4,
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 114,
+        "anchor_quote": "The Cuts",
+        "anchor_start": 106,
+        "anchor_unit_id": 4,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "The Cuts",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-005",
+    "claim_text": "Tom Tiffany sold us out.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 284,
+        "kind": "local_asr",
+        "start": 260,
+        "text": "Tom Tiffany sold us out.",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 271,
+        "anchor_quote": "Tom Tiffany",
+        "anchor_start": 260,
+        "anchor_unit_id": 9,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "Tom Tiffany",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-006",
+    "claim_text": "Tom Tiffany voted to take away Medicaid",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 39,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Tom Tiffany voted to take away Medicaid",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 11,
+        "anchor_quote": "Tom Tiffany",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "Tom Tiffany",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-007",
+    "claim_text": "2025 Medicaid cuts bodes ill for healthcare",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 553,
+        "kind": "video_ocr",
+        "start": 535,
+        "text": "2025 Medicaid cuts",
+        "unit_id": 20
+      },
+      {
+        "end": 579,
+        "kind": "video_ocr",
+        "start": 554,
+        "text": "bodes ill for healthcare\"",
+        "unit_id": 21
+      }
+    ],
+    "evidence_ids": [
+      20,
+      21
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 553,
+        "anchor_quote": "2025 Medicaid cuts",
+        "anchor_start": 535,
+        "anchor_unit_id": 20,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "2025 Medicaid cuts",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-008",
+    "claim_text": "She's one step away from being homeless.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 105,
+        "kind": "local_asr",
+        "start": 65,
+        "text": "She's one step away from being homeless.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 68,
+        "anchor_quote": "She",
+        "anchor_start": 65,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "She",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-009",
+    "claim_text": "Hey Tom, what if it was your mom?",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 204,
+        "kind": "local_asr",
+        "start": 171,
+        "text": "Hey Tom, what if it was your mom?",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 178,
+        "anchor_quote": "Tom",
+        "anchor_start": 175,
+        "anchor_unit_id": 6,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "Tom",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-010",
+    "claim_text": "In the richest country in the world?",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 241,
+        "kind": "local_asr",
+        "start": 205,
+        "text": "In the richest country in the world?",
+        "unit_id": 7
+      }
+    ],
+    "evidence_ids": [
+      7
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 240,
+        "anchor_quote": "the world",
+        "anchor_start": 231,
+        "anchor_unit_id": 7,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "the world",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-011",
+    "claim_text": "This is not okay.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 259,
+        "kind": "local_asr",
+        "start": 242,
+        "text": "This is not okay.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 246,
+        "anchor_quote": "This",
+        "anchor_start": 242,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "This",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-012",
+    "claim_text": "Wisconsin, that sure as hell isn't Tom Tiffany.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 462,
+        "kind": "local_asr",
+        "start": 415,
+        "text": "Wisconsin, that sure as hell isn't Tom Tiffany.",
+        "unit_id": 13
+      }
+    ],
+    "evidence_ids": [
+      13
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 461,
+        "anchor_quote": "Tom Tiffany",
+        "anchor_start": 450,
+        "anchor_unit_id": 13,
+        "entity_id": "candidate:H0WI07101",
+        "kind": "person",
+        "name": "Tom Tiffany",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-013",
+    "claim_text": "We deserve a governor who will fight for us.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 414,
+        "kind": "local_asr",
+        "start": 370,
+        "text": "We deserve a governor who will fight for us.",
+        "unit_id": 12
+      }
+    ],
+    "evidence_ids": [
+      12
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 372,
+        "anchor_quote": "We",
+        "anchor_start": 370,
+        "anchor_unit_id": 12,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "We",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-1932e38458d4eb33ec2ad234",
+    "alignment": "D",
+    "block_id": "snap-1932e38458d4eb33ec2ad234-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1932e38458d4eb33ec2ad234-claims-001-014",
+    "claim_text": "She's one step away from being homeless",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 105,
+        "kind": "local_asr",
+        "start": 65,
+        "text": "She's one step away from being homeless.",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/d1ae750ef40d9bd19d046e24a2ab05e96ee15ab38d27f3bca00022a92e24c760?mediaType=mp4",
+    "sponsor": "AFSCME PEOPLE",
+    "targets": [
+      {
+        "anchor_end": 68,
+        "anchor_quote": "She",
+        "anchor_start": 65,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "She",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Tom Tiffany voted to take away Medicaid\nfrom people like my mom.\nShe's one step away from being homeless.\nThe Cuts are causing concern\nfor aging adults here in Wisconsin.\nHey Tom, what if it was your mom?\nIn the richest country in the world?\nThis is not okay.\nTom Tiffany sold us out.\nHe voted to cut healthcare for working families\nto fund tax breaks for billionaires.\nWe deserve a governor who will fight for us.\nWisconsin, that sure as hell isn't Tom Tiffany.\nYOUnion\nAESOME\nTom Tiftany voted\nESCM\nWe Make Alner\n\"Tiffany's vote for\n2025 Medicaid cuts\nbodes ill for healthcare\"\n- Wisconsin Examiner, 8/19/26\nVENEASHA\nPRESIDENT, AFSCME LOCAL 33\nVOUnion\nWe Make America Happ\nWe Make America Happen\nMEDICAID CUTS WORRY OLDER ADULTS\n[News Anchor]\nHEY, TOME\nMEDIUA\nALL!.D\nHEALTH SNSTEM\n→ Emergency #\nOP THE riC\nCUTS TO\nNEW AT FIVE\nVOTED i\nCUT OUR\nDER\nTHEALTHCARE\nVAN G\nSOL\nDOZENS RALLY OVER EFFECT OF BIG BEAUTIFUL BILL\nDE!\nOL\n5:05\n77°\nMEDIUAND\nALL!,\nIMAYOCLINIC\nHEALTH SYSTEM\n→Fmergency •\nOP THEIC\nT HEALTHCARE\nVAN C\nNEW AT FiVEAID\nSAVE\nOUR\nHOSPITALS\nAFSCME\nWe Make America Happene\nNEARLY 150,000\nWISCONSINITES COULD\nLLOSE COVERAGE\nHe voted to cut health care\nJOINT ECONOMIC COMMITTEE MINORITY, 6/25\n[LOSE COVERAGE\nTHE BBB DELIVERS\n$1 TRILLION IN TAX CUTS\nTO THE TOP 1%\nCENTER FOR AMERICAN PROGRESS, 11/20/25\nWe Mak\nappen•\nYappen•\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPIEORG.\nNOT AUTHORIZED BIKANY CANDIDATE, CANDIDATES AGENT, OR COMMITTE.\nPAID FOR BY AFSOME PEOPEL AFSOMEPEOPLE ORG,\nNOT AUTHORIZEA BY ANY GANDIDATE, CANDIDATTEC AOETF, OR COMMITEE.\nAFSCM\nPAID FOR BY AFSOME PEOPLE AFSOMEPEOPLEORG.\nNOT AUTHORIID BY ANY CANDIDATE, CANDIDATEO AOFTT OR COMMITTEL.\nAFS\nWe Make Amer\nWISCONSIN CAN'T AFFORD\nBY NOV 3RD, VOTE FOR DAVID CROWLEY\nPAID FOR BY AFSCME PEOPLE, AFSCMEPEOPLEORG.\nNOT AUTHORZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPLE ORG.\nPAID FOR BY AFSOME PEOPLE, AFSOMEPEOPL.ORG.",
+    "text_hash": "03474073465364854ae5bf70495d3507ea4cea379794fbeb3c43fcd3d1841b64",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-19904efcb64290f71abbdb1d",
+    "alignment": "D",
+    "block_id": "snap-19904efcb64290f71abbdb1d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-19904efcb64290f71abbdb1d-claims-001-001",
+    "claim_text": "Our democracy is at stake.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 142,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "OUR DEMOCRACY'S AT STAKE\nVOTE FOR\nROY COOPER\nBY 11/3\nMAKE YOUR PLAN\nIWillVote.com/NC\nPAID FOR BYDSCC. AUTHORIZED BY COOPER FOR NORTH CAROLINA.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/3d63840454438124a2ca8780d1b62ee5301b1941b15dec4790f2b93b292a8834?mediaType=png",
+    "sponsor": "Roy Cooper for North Carolina",
+    "targets": [
+      {
+        "anchor_end": 13,
+        "anchor_quote": "OUR DEMOCRACY",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "democracy",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "OUR DEMOCRACY'S AT STAKE\nVOTE FOR\nROY COOPER\nBY 11/3\nMAKE YOUR PLAN\nIWillVote.com/NC\nPAID FOR BYDSCC. AUTHORIZED BY COOPER FOR NORTH CAROLINA.",
+    "text_hash": "4cc483ffd75599cb2d256a114f04be136645a8c507bda5eadb1e0c1dfd344e53",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-19904efcb64290f71abbdb1d",
+    "alignment": "D",
+    "block_id": "snap-19904efcb64290f71abbdb1d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-19904efcb64290f71abbdb1d-claims-001-002",
+    "claim_text": "You should vote for Roy Cooper.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 142,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "OUR DEMOCRACY'S AT STAKE\nVOTE FOR\nROY COOPER\nBY 11/3\nMAKE YOUR PLAN\nIWillVote.com/NC\nPAID FOR BYDSCC. AUTHORIZED BY COOPER FOR NORTH CAROLINA.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/3d63840454438124a2ca8780d1b62ee5301b1941b15dec4790f2b93b292a8834?mediaType=png",
+    "sponsor": "Roy Cooper for North Carolina",
+    "targets": [
+      {
+        "anchor_end": 44,
+        "anchor_quote": "ROY COOPER",
+        "anchor_start": 34,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6NC00407",
+        "kind": "person",
+        "name": "COOPER, ROY",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "OUR DEMOCRACY'S AT STAKE\nVOTE FOR\nROY COOPER\nBY 11/3\nMAKE YOUR PLAN\nIWillVote.com/NC\nPAID FOR BYDSCC. AUTHORIZED BY COOPER FOR NORTH CAROLINA.",
+    "text_hash": "4cc483ffd75599cb2d256a114f04be136645a8c507bda5eadb1e0c1dfd344e53",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-19904efcb64290f71abbdb1d",
+    "alignment": "D",
+    "block_id": "snap-19904efcb64290f71abbdb1d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-19904efcb64290f71abbdb1d-claims-001-003",
+    "claim_text": "You should make your plan to vote by November 3rd.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 142,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "OUR DEMOCRACY'S AT STAKE\nVOTE FOR\nROY COOPER\nBY 11/3\nMAKE YOUR PLAN\nIWillVote.com/NC\nPAID FOR BYDSCC. AUTHORIZED BY COOPER FOR NORTH CAROLINA.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/3d63840454438124a2ca8780d1b62ee5301b1941b15dec4790f2b93b292a8834?mediaType=png",
+    "sponsor": "Roy Cooper for North Carolina",
+    "targets": [
+      {
+        "anchor_end": 62,
+        "anchor_quote": "YOUR",
+        "anchor_start": 58,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "you",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "OUR DEMOCRACY'S AT STAKE\nVOTE FOR\nROY COOPER\nBY 11/3\nMAKE YOUR PLAN\nIWillVote.com/NC\nPAID FOR BYDSCC. AUTHORIZED BY COOPER FOR NORTH CAROLINA.",
+    "text_hash": "4cc483ffd75599cb2d256a114f04be136645a8c507bda5eadb1e0c1dfd344e53",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-19904efcb64290f71abbdb1d",
+    "alignment": "D",
+    "block_id": "snap-19904efcb64290f71abbdb1d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-19904efcb64290f71abbdb1d-claims-001-004",
+    "claim_text": "This was paid for by DSCC.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 142,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "OUR DEMOCRACY'S AT STAKE\nVOTE FOR\nROY COOPER\nBY 11/3\nMAKE YOUR PLAN\nIWillVote.com/NC\nPAID FOR BYDSCC. AUTHORIZED BY COOPER FOR NORTH CAROLINA.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/3d63840454438124a2ca8780d1b62ee5301b1941b15dec4790f2b93b292a8834?mediaType=png",
+    "sponsor": "Roy Cooper for North Carolina",
+    "targets": [
+      {
+        "anchor_end": 100,
+        "anchor_quote": "DSCC",
+        "anchor_start": 96,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "DSCC",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "OUR DEMOCRACY'S AT STAKE\nVOTE FOR\nROY COOPER\nBY 11/3\nMAKE YOUR PLAN\nIWillVote.com/NC\nPAID FOR BYDSCC. AUTHORIZED BY COOPER FOR NORTH CAROLINA.",
+    "text_hash": "4cc483ffd75599cb2d256a114f04be136645a8c507bda5eadb1e0c1dfd344e53",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-19904efcb64290f71abbdb1d",
+    "alignment": "D",
+    "block_id": "snap-19904efcb64290f71abbdb1d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-19904efcb64290f71abbdb1d-claims-001-005",
+    "claim_text": "This was authorized by Cooper for North Carolina.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 142,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "OUR DEMOCRACY'S AT STAKE\nVOTE FOR\nROY COOPER\nBY 11/3\nMAKE YOUR PLAN\nIWillVote.com/NC\nPAID FOR BYDSCC. AUTHORIZED BY COOPER FOR NORTH CAROLINA.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/3d63840454438124a2ca8780d1b62ee5301b1941b15dec4790f2b93b292a8834?mediaType=png",
+    "sponsor": "Roy Cooper for North Carolina",
+    "targets": [
+      {
+        "anchor_end": 141,
+        "anchor_quote": "COOPER FOR NORTH CAROLINA",
+        "anchor_start": 116,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Roy Cooper for North Carolina",
+        "party_basis": "publisher_alignment",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "OUR DEMOCRACY'S AT STAKE\nVOTE FOR\nROY COOPER\nBY 11/3\nMAKE YOUR PLAN\nIWillVote.com/NC\nPAID FOR BYDSCC. AUTHORIZED BY COOPER FOR NORTH CAROLINA.",
+    "text_hash": "4cc483ffd75599cb2d256a114f04be136645a8c507bda5eadb1e0c1dfd344e53",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1994045faf9df6d73be0e9e2",
+    "alignment": "D",
+    "block_id": "snap-1994045faf9df6d73be0e9e2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1994045faf9df6d73be0e9e2-claims-001-001",
+    "claim_text": "Thousands of families will lose care.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 172,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Thousands of families will lose care.\nRep. Valadao said he understood how\nimportant Medicaid is to his district. Then he\nvoted to cut its funding.\nTHE PORTERVILLEI\nKerorder",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2cf898df45ceb30131ecfa9645905ab520fcbd8d0087dbddcd9355396f82b69e?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 21,
+        "anchor_quote": "families",
+        "anchor_start": 13,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "families",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Thousands of families will lose care.\nRep. Valadao said he understood how\nimportant Medicaid is to his district. Then he\nvoted to cut its funding.\nTHE PORTERVILLEI\nKerorder",
+    "text_hash": "76a6e6dfb325d00c7a986e138345660174927abacc7d6226d66132c6f823d220",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1994045faf9df6d73be0e9e2",
+    "alignment": "D",
+    "block_id": "snap-1994045faf9df6d73be0e9e2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1994045faf9df6d73be0e9e2-claims-001-002",
+    "claim_text": "Rep. Valadao said he understood how important Medicaid is to his district.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 172,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Thousands of families will lose care.\nRep. Valadao said he understood how\nimportant Medicaid is to his district. Then he\nvoted to cut its funding.\nTHE PORTERVILLEI\nKerorder",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2cf898df45ceb30131ecfa9645905ab520fcbd8d0087dbddcd9355396f82b69e?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "Rep. Valadao",
+        "anchor_start": 38,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Rep. Valadao",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Thousands of families will lose care.\nRep. Valadao said he understood how\nimportant Medicaid is to his district. Then he\nvoted to cut its funding.\nTHE PORTERVILLEI\nKerorder",
+    "text_hash": "76a6e6dfb325d00c7a986e138345660174927abacc7d6226d66132c6f823d220",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1994045faf9df6d73be0e9e2",
+    "alignment": "D",
+    "block_id": "snap-1994045faf9df6d73be0e9e2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1994045faf9df6d73be0e9e2-claims-001-003",
+    "claim_text": "Rep. Valadao voted to cut its funding.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 172,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Thousands of families will lose care.\nRep. Valadao said he understood how\nimportant Medicaid is to his district. Then he\nvoted to cut its funding.\nTHE PORTERVILLEI\nKerorder",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2cf898df45ceb30131ecfa9645905ab520fcbd8d0087dbddcd9355396f82b69e?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "Rep. Valadao",
+        "anchor_start": 38,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Rep. Valadao",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 92,
+        "anchor_quote": "Medicaid",
+        "anchor_start": 84,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Medicaid",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Thousands of families will lose care.\nRep. Valadao said he understood how\nimportant Medicaid is to his district. Then he\nvoted to cut its funding.\nTHE PORTERVILLEI\nKerorder",
+    "text_hash": "76a6e6dfb325d00c7a986e138345660174927abacc7d6226d66132c6f823d220",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1994045faf9df6d73be0e9e2",
+    "alignment": "D",
+    "block_id": "snap-1994045faf9df6d73be0e9e2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1994045faf9df6d73be0e9e2-claims-001-004",
+    "claim_text": "Rep. Valadao understood how important Medicaid is to his district.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 172,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Thousands of families will lose care.\nRep. Valadao said he understood how\nimportant Medicaid is to his district. Then he\nvoted to cut its funding.\nTHE PORTERVILLEI\nKerorder",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2cf898df45ceb30131ecfa9645905ab520fcbd8d0087dbddcd9355396f82b69e?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "Rep. Valadao",
+        "anchor_start": 38,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Rep. Valadao",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 92,
+        "anchor_quote": "Medicaid",
+        "anchor_start": 84,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Medicaid",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      },
+      {
+        "anchor_end": 111,
+        "anchor_quote": "his district",
+        "anchor_start": 99,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "his district",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Thousands of families will lose care.\nRep. Valadao said he understood how\nimportant Medicaid is to his district. Then he\nvoted to cut its funding.\nTHE PORTERVILLEI\nKerorder",
+    "text_hash": "76a6e6dfb325d00c7a986e138345660174927abacc7d6226d66132c6f823d220",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1994045faf9df6d73be0e9e2",
+    "alignment": "D",
+    "block_id": "snap-1994045faf9df6d73be0e9e2-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1994045faf9df6d73be0e9e2-claims-001-005",
+    "claim_text": "Rep. Valadao then voted to cut Medicaid’s funding.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 172,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Thousands of families will lose care.\nRep. Valadao said he understood how\nimportant Medicaid is to his district. Then he\nvoted to cut its funding.\nTHE PORTERVILLEI\nKerorder",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2cf898df45ceb30131ecfa9645905ab520fcbd8d0087dbddcd9355396f82b69e?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 50,
+        "anchor_quote": "Rep. Valadao",
+        "anchor_start": 38,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Rep. Valadao",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 92,
+        "anchor_quote": "Medicaid",
+        "anchor_start": 84,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Medicaid",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Thousands of families will lose care.\nRep. Valadao said he understood how\nimportant Medicaid is to his district. Then he\nvoted to cut its funding.\nTHE PORTERVILLEI\nKerorder",
+    "text_hash": "76a6e6dfb325d00c7a986e138345660174927abacc7d6226d66132c6f823d220",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1a1df1a586ba1da19372eb52",
+    "alignment": "D",
+    "block_id": "snap-1a1df1a586ba1da19372eb52-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1a1df1a586ba1da19372eb52-claims-001-001",
+    "claim_text": "DC lobbyists are helping corporations rip you off.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 67,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "And it's because DC lobbyists are helping corporations rip you off.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/53dc400a5fcc86c08fa984457b2084342fecb7fbb34213346852f95bc2fa632f?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 29,
+        "anchor_quote": "DC lobbyists",
+        "anchor_start": 17,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "DC lobbyists",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 54,
+        "anchor_quote": "corporations",
+        "anchor_start": 42,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "corporations",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "And it's because DC lobbyists are helping corporations rip you off.\nHe lobbied for Exxon Chevron and Duke Energy.\nCANDY\nIhin\nGood\nPrices are out\nof control\nINES\nWILEY\nWALLABI\n9\n12\nN\n1.4)\n2\nMichael\nWhatley\nPHOTO: GAGE SKIDMORE\nExonMobil\nWhatley: their man in\nWashington. Not yours.\nPAID FOR BY WINSENATE, WINSENATE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE,",
+    "text_hash": "9576995de060fc04967b606c2f900076f1f3f5f072320ca4402e2a7dc4069442",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1a1df1a586ba1da19372eb52",
+    "alignment": "D",
+    "block_id": "snap-1a1df1a586ba1da19372eb52-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1a1df1a586ba1da19372eb52-claims-001-002",
+    "claim_text": "He lobbied for Exxon, Chevron and Duke Energy.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 113,
+        "kind": "local_asr",
+        "start": 68,
+        "text": "He lobbied for Exxon Chevron and Duke Energy.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/53dc400a5fcc86c08fa984457b2084342fecb7fbb34213346852f95bc2fa632f?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 70,
+        "anchor_quote": "He",
+        "anchor_start": 68,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "He",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 88,
+        "anchor_quote": "Exxon",
+        "anchor_start": 83,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Exxon",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 96,
+        "anchor_quote": "Chevron",
+        "anchor_start": 89,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Chevron",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 112,
+        "anchor_quote": "Duke Energy",
+        "anchor_start": 101,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Duke Energy",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "And it's because DC lobbyists are helping corporations rip you off.\nHe lobbied for Exxon Chevron and Duke Energy.\nCANDY\nIhin\nGood\nPrices are out\nof control\nINES\nWILEY\nWALLABI\n9\n12\nN\n1.4)\n2\nMichael\nWhatley\nPHOTO: GAGE SKIDMORE\nExonMobil\nWhatley: their man in\nWashington. Not yours.\nPAID FOR BY WINSENATE, WINSENATE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE,",
+    "text_hash": "9576995de060fc04967b606c2f900076f1f3f5f072320ca4402e2a7dc4069442",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1a1df1a586ba1da19372eb52",
+    "alignment": "D",
+    "block_id": "snap-1a1df1a586ba1da19372eb52-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1a1df1a586ba1da19372eb52-claims-001-003",
+    "claim_text": "Whatley is their man in Washington.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 257,
+        "kind": "video_ocr",
+        "start": 236,
+        "text": "Whatley: their man in",
+        "unit_id": 20
+      }
+    ],
+    "evidence_ids": [
+      20
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/53dc400a5fcc86c08fa984457b2084342fecb7fbb34213346852f95bc2fa632f?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 243,
+        "anchor_quote": "Whatley",
+        "anchor_start": 236,
+        "anchor_unit_id": 20,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Whatley",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 250,
+        "anchor_quote": "their",
+        "anchor_start": 245,
+        "anchor_unit_id": 20,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "their",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "And it's because DC lobbyists are helping corporations rip you off.\nHe lobbied for Exxon Chevron and Duke Energy.\nCANDY\nIhin\nGood\nPrices are out\nof control\nINES\nWILEY\nWALLABI\n9\n12\nN\n1.4)\n2\nMichael\nWhatley\nPHOTO: GAGE SKIDMORE\nExonMobil\nWhatley: their man in\nWashington. Not yours.\nPAID FOR BY WINSENATE, WINSENATE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE,",
+    "text_hash": "9576995de060fc04967b606c2f900076f1f3f5f072320ca4402e2a7dc4069442",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1a1df1a586ba1da19372eb52",
+    "alignment": "D",
+    "block_id": "snap-1a1df1a586ba1da19372eb52-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1a1df1a586ba1da19372eb52-claims-001-004",
+    "claim_text": "Prices are out of control.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 144,
+        "kind": "video_ocr",
+        "start": 130,
+        "text": "Prices are out",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/53dc400a5fcc86c08fa984457b2084342fecb7fbb34213346852f95bc2fa632f?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 136,
+        "anchor_quote": "Prices",
+        "anchor_start": 130,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Prices",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "And it's because DC lobbyists are helping corporations rip you off.\nHe lobbied for Exxon Chevron and Duke Energy.\nCANDY\nIhin\nGood\nPrices are out\nof control\nINES\nWILEY\nWALLABI\n9\n12\nN\n1.4)\n2\nMichael\nWhatley\nPHOTO: GAGE SKIDMORE\nExonMobil\nWhatley: their man in\nWashington. Not yours.\nPAID FOR BY WINSENATE, WINSENATE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE,",
+    "text_hash": "9576995de060fc04967b606c2f900076f1f3f5f072320ca4402e2a7dc4069442",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-1a1df1a586ba1da19372eb52",
+    "alignment": "D",
+    "block_id": "snap-1a1df1a586ba1da19372eb52-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-1a1df1a586ba1da19372eb52-claims-001-005",
+    "claim_text": "Whatley is their man in Washington. Not yours.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 257,
+        "kind": "video_ocr",
+        "start": 236,
+        "text": "Whatley: their man in",
+        "unit_id": 20
+      },
+      {
+        "end": 280,
+        "kind": "video_ocr",
+        "start": 258,
+        "text": "Washington. Not yours.",
+        "unit_id": 21
+      }
+    ],
+    "evidence_ids": [
+      20,
+      21
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/53dc400a5fcc86c08fa984457b2084342fecb7fbb34213346852f95bc2fa632f?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 243,
+        "anchor_quote": "Whatley",
+        "anchor_start": 236,
+        "anchor_unit_id": 20,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Whatley",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 250,
+        "anchor_quote": "their",
+        "anchor_start": 245,
+        "anchor_unit_id": 20,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "their",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 279,
+        "anchor_quote": "yours",
+        "anchor_start": 274,
+        "anchor_unit_id": 21,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "yours",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "And it's because DC lobbyists are helping corporations rip you off.\nHe lobbied for Exxon Chevron and Duke Energy.\nCANDY\nIhin\nGood\nPrices are out\nof control\nINES\nWILEY\nWALLABI\n9\n12\nN\n1.4)\n2\nMichael\nWhatley\nPHOTO: GAGE SKIDMORE\nExonMobil\nWhatley: their man in\nWashington. Not yours.\nPAID FOR BY WINSENATE, WINSENATE.ORG. NOT AUTHORIZED\nBY ANY CANDIDATE OR CANDIDATE'S COMMITTEE,",
+    "text_hash": "9576995de060fc04967b606c2f900076f1f3f5f072320ca4402e2a7dc4069442",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
