@@ -439,7 +439,7 @@ def printed_ad_text(client, content: str, source: Source, review: dict, identiti
 
 def reported_ad_text(content: str, source: Source, review: dict) -> str:
     if (
-        source.id != "knott-wunc"
+        source.id not in {"knott-wunc", "finstad-kstp"}
         or review["format"] != "html"
         or review["media_url"] is not None
         or review["completeness"] != "partial_quotation"
@@ -448,6 +448,8 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
         )
     ):
         raise ValueError("Unsupported unlinked publisher quotation evidence")
+    if source.id == "finstad-kstp" and review["candidate_id"] != "H2MN01223":
+        raise ValueError("KSTP quotation requires the reviewed Finstad candidate identity")
     evidence = review["reported_ad_text"]
     paragraphs = BeautifulSoup(content, "html.parser").select(evidence["paragraph_selector"])
     if len(paragraphs) != 1 or paragraphs[0].name != "p":
@@ -455,7 +457,12 @@ def reported_ad_text(content: str, source: Source, review: dict) -> str:
     paragraph = paragraphs[0].get_text(" ", strip=True)
     if digest(paragraph) != evidence["paragraph_sha256"]:
         raise ValueError("Reviewed ad quotation paragraph changed")
-    match = re.fullmatch(r'"([^"]+)" Knott says in the ad\. "([^"]+)"', paragraph)
+    pattern = (
+        r'"([^"]+)" Knott says in the ad\. "([^"]+)"'
+        if source.id == "knott-wunc"
+        else r"“([^”]+)” the ad says\. “([^”]+)”"
+    )
+    match = re.fullmatch(pattern, paragraph)
     if not match:
         raise ValueError("Publisher must explicitly attribute the selected quotations to the ad")
     text = "\n".join(match.groups())

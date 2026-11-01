@@ -10,6 +10,49 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Brad Finstad: bounded KSTP ad quotation
+
+The October 7, 2026 KSTP report at
+`https://kstp.com/kstp-news/top-news/questions-raised-about-possible-deepfake-image-in-first-district-tv-ad/`
+explicitly attributes two adjacent quotations to a TV ad from Republican
+Rep. Brad Finstad. Only those **18 words**, eight and ten respectively,
+are acquired. Reporter prose, spokesperson statements, legislative
+quotations, disputed imagery and the station's news video are excluded.
+The claims are advertiser language, not independently verified facts.
+
+Decoded HTML SHA-256
+`61a3923c802c3b44ed4a724717ed4a7556a409788bea782907b4894bb372dc6d`
+binds the unique `h1.fuel-title-heading` and
+`article:published_time=2026-10-07T23:10:40+00:00`; structured
+`NewsArticle.datePublished` agrees. October 8 modification is not a new
+release. The selected `#storyContent` paragraph has SHA-256
+`fac7ded01f8f4fff27aa618263fc978a28fcbba958cc0448866500d2d6b485ae`.
+The `finstad-kstp` exception requires exact **H2MN01223**, frozen
+**FINSTAD, BRAD / C00807743 / REP / House / MN-01 / 2026**, and the
+literal two-quotation **the ad says.** attribution grammar. The separate
+Knott grammar, substantive-text floor, ordered passages, exact hashes,
+unique selectors and 25-word ceiling remain enforced.
+
+This is `partial_quotation`, not a full script. There is no verified
+individual original link: `media_urls` remains empty, with
+`original_ad_media_unverified` and `ad_legal_payer_unverified` flags.
+Publication does not establish first airing, paid delivery or
+general-election phase; phase and semantic judgment remain unknown.
+Visible byline credit is Tom Hauser KSTP; structured author metadata
+instead names Cory Knudsen. Both observations are retained.
+
+Reproduce with `.venv/bin/political-ads collect --source finstad-kstp
+--until 2026-10-30 --offline`, then `parquet --offline`, `build --offline`,
+`validate --offline` and `audit-strategy --offline`. Offline replay needs
+the exact cached HTML, which is not included in a fresh checkout.
+Complete downloads retain every selected word, segment and review.
+The rebuilt snapshot is
+`e48645ef0f5f6514e2b9e12d4700b14e0728fb7240fedcebc3e03820cf138307`:
+**1,936 acquired / 1,897 English**, **R 632 / D 1,226 English**,
+**R 254 / D 698 English House**, **578 written / 84 acquisition reviews**.
+This acquisition does not resolve the wider coverage gap or authorize
+website, host or edition publication.
+
 ## Nunn and Ciscomani: individually linked publisher-caption excerpts
 
 Recover two additional Republican House outside-group ad excerpts, not

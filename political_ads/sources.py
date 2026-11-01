@@ -403,6 +403,16 @@ SOURCES = [
         discovery="reviewed_releases",
     ),
     Source(
+        "finstad-kstp",
+        "https://kstp.com",
+        "Brad Finstad campaign (publisher-reported; payer unverified)",
+        "R",
+        "candidate",
+        "House",
+        fixed_race="MN-01",
+        discovery="reviewed_releases",
+    ),
+    Source(
         "luke-murphy-flvoice",
         "https://flvoicenews.com",
         "Luke Murphy campaign (publisher-reported; payer unverified)",

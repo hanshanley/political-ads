@@ -36162,6 +36162,97 @@
     },
     {
       "alignment": "R",
+      "attribution_basis": "The actual public KSTP report expressly attributes these two adjacent quotations to a TV ad from Republican First District Congressman Brad Finstad, identifying Jake Johnson as his Democratic opponent. Exact frozen 2026 FEC H2MN01223, FINSTAD, BRAD, REP, House, MN-01, principal C00807743 establishes the advertiser's federal identity and Republican alignment, not legal payment or authorization. Full decoded HTML SHA256 61a3923c802c3b44ed4a724717ed4a7556a409788bea782907b4894bb372dc6d binds the unique h1.fuel-title-heading and article:published_time 2026-10-07T23:10:40+00:00; the NewsArticle datePublished agrees. October 8 modification is retained as source context, not another release. Publication does not verify first airing or paid delivery, and October alone does not establish general-election phase. The unique reviewed storyContent paragraph has SHA256 fac7ded01f8f4fff27aa618263fc978a28fcbba958cc0448866500d2d6b485ae and exactly two quotations separated by the ad says. No individual original ad link is established; media_urls remains empty. The station's news video, campaign and legislator responses, and reporter descriptions of disputed imagery are not acquired ad speech. Bankrolling and endorsement remain attributed ad claims, not independently verified factual findings; no conclusion about AI use or legal compliance is certified. The narrow KSTP quotation path requires this exact candidate and literal attribution grammar, with substantive-text, source-order, paragraph/hash and 25-word guards. No media, caption or held-provider request, target alias, semantic judgment or protected claims input is added or replaced.",
+      "candidate_mentions": [
+        {
+          "candidate_id": "H6MN01190",
+          "district": "01",
+          "name": "JOHNSON, JAKE",
+          "office": "H",
+          "party": "DFL",
+          "state": "MN"
+        }
+      ],
+      "chamber": "House",
+      "date_basis": "publisher_report_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "finstad-kstp-20261007-0",
+      "language": "en",
+      "language_basis": "langdetect seeded model; >=0.90 probability, otherwise unknown",
+      "media_urls": [],
+      "message_id": "b7aa04ff63bb705c61166b27e863db3a884439dd82e6a2545c13c1722fe59cd5",
+      "observed": "2026-11-01",
+      "phase": "unknown",
+      "placement": "publisher_reported_ad_copy",
+      "published": "2026-10-07",
+      "quality_flags": [
+        "individually_reviewed_public_ad_text",
+        "publisher_date_not_verified_first_release_or_paid_delivery",
+        "news_report_quotes_partial_ad_copy",
+        "publisher_ad_copy_completeness_unverified",
+        "original_ad_media_unverified",
+        "ad_legal_payer_unverified"
+      ],
+      "race": "MN-01",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "federal_scope_candidate_ids": [
+            "H2MN01223"
+          ],
+          "kind": "publisher_ad_copy",
+          "release_evidence": {
+            "attribution_basis": "The actual public KSTP report expressly attributes these two adjacent quotations to a TV ad from Republican First District Congressman Brad Finstad, identifying Jake Johnson as his Democratic opponent. Exact frozen 2026 FEC H2MN01223, FINSTAD, BRAD, REP, House, MN-01, principal C00807743 establishes the advertiser's federal identity and Republican alignment, not legal payment or authorization. Full decoded HTML SHA256 61a3923c802c3b44ed4a724717ed4a7556a409788bea782907b4894bb372dc6d binds the unique h1.fuel-title-heading and article:published_time 2026-10-07T23:10:40+00:00; the NewsArticle datePublished agrees. October 8 modification is retained as source context, not another release. Publication does not verify first airing or paid delivery, and October alone does not establish general-election phase. The unique reviewed storyContent paragraph has SHA256 fac7ded01f8f4fff27aa618263fc978a28fcbba958cc0448866500d2d6b485ae and exactly two quotations separated by the ad says. No individual original ad link is established; media_urls remains empty. The station's news video, campaign and legislator responses, and reporter descriptions of disputed imagery are not acquired ad speech. Bankrolling and endorsement remain attributed ad claims, not independently verified factual findings; no conclusion about AI use or legal compliance is certified. The narrow KSTP quotation path requires this exact candidate and literal attribution grammar, with substantive-text, source-order, paragraph/hash and 25-word guards. No media, caption or held-provider request, target alias, semantic judgment or protected claims input is added or replaced.",
+            "candidate_id": "H2MN01223",
+            "completeness": "partial_quotation",
+            "content_sha256": "61a3923c802c3b44ed4a724717ed4a7556a409788bea782907b4894bb372dc6d",
+            "format": "html",
+            "heading_selector": "h1.fuel-title-heading",
+            "media_url": null,
+            "passages": [
+              "Governor Walz now endorsing Jake Johnson for Congress,",
+              "Johnson is bankrolled by Walz because Johnson is Walz’s guy."
+            ],
+            "phase": "unknown",
+            "published": "2026-10-07",
+            "publisher_credit": "KSTP / Tom Hauser; Questions raised about possible ‘deepfake’ image in First District TV ad, October 7, 2026. Structured metadata credits Cory Knudsen; the visible article byline credits Tom Hauser KSTP.",
+            "record_id": "20261007",
+            "release_title": "Questions raised about possible ‘deepfake’ image in First District TV ad",
+            "reported_ad_text": {
+              "paragraph_selector": "#storyContent > p:-soup-contains(\"Governor Walz now endorsing\")",
+              "paragraph_sha256": "fac7ded01f8f4fff27aa618263fc978a28fcbba958cc0448866500d2d6b485ae"
+            },
+            "required_context": [
+              "A TV ad from Republican First District Congressman Brad Finstad",
+              "his Democratic opponent, Jake Johnson",
+              "the ad says."
+            ],
+            "retrieval_url": "https://kstp.com/kstp-news/top-news/questions-raised-about-possible-deepfake-image-in-first-district-tv-ad/",
+            "reuse_basis": "Retain only the two explicitly attributed ad quotations, eight and ten whitespace tokens, eighteen combined, unchanged and in source order, for noncommercial comparative research with publisher/source credit. Preserve the first quotation's trailing comma and the second quotation's period and curly apostrophe. Exclude reporter prose, campaign-spokesperson statements, legislative quotations, photographs and the station's news video. This is partial quotation, not a complete ad transcript or article reproduction. No blanket reuse license, original-media redistribution or edition-publication authorization is asserted.",
+            "source": "finstad-kstp",
+            "source_url": "https://kstp.com/kstp-news/top-news/questions-raised-about-possible-deepfake-image-in-first-district-tv-ad/"
+          },
+          "text": "Governor Walz now endorsing Jake Johnson for Congress,"
+        },
+        {
+          "kind": "publisher_ad_copy",
+          "text": "Johnson is bankrolled by Walz because Johnson is Walz’s guy."
+        }
+      ],
+      "source": "finstad-kstp",
+      "source_hash": "61a3923c802c3b44ed4a724717ed4a7556a409788bea782907b4894bb372dc6d",
+      "source_record_id": "20261007",
+      "source_url": "https://kstp.com/kstp-news/top-news/questions-raised-about-possible-deepfake-image-in-first-district-tv-ad/",
+      "sponsor": "Brad Finstad campaign (publisher-reported; payer unverified)",
+      "sponsor_type": "candidate",
+      "state": "MN",
+      "text": "Governor Walz now endorsing Jake Johnson for Congress,\nJohnson is bankrolled by Walz because Johnson is Walz’s guy.",
+      "title": "Questions raised about possible ‘deepfake’ image in First District TV ad"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Credit: Stephen Elliott, Nashville Banner, October 7, 2026. The actual primary h1.entry-title and time.entry-date.published agree with the exposed individual WordPress post 35281, local October 7 06:01 / GMT 11:01. Its actual iframe identifies mkGJBbt_94c, and the report marks Hire A Farmer and a complete two-paragraph Transcript ending before the reporter's Analysis section. Preserve exactly 70 spoken words plus three publisher speaker-label tokens, 73 whitespace-separated tokens total; candidate approval and narrator labels remain distinct. The complete script and original identity are absent from the preceding corpus. Exact saved FEC H6TN05405 / C00923383 identifies HATCHER, CHARLIE, REP, House, TN-05; no alias or fuzzy match is added. General-election context is explicit: Hatcher is the Republican nominee facing Democratic opponent Chaz Molder after the primary. This context supports phase/identity, not extra ad words or a new semantic judgment. The reporter's election analysis, Trump endorsement and cattle-import reporting are excluded. TV placement and the spot starting Tuesday are publisher-reported, not an independently inspected closing legal payer or verified delivery interval. The actual public HTML and exposed single-post JSON were read anonymously and cached exactly. Strict rendered hash/title/date, federal identity, campaign/general context, ordered literal script and individual original link are bound. No video, caption provider, reader audio, denied page or licensed catalog was requested. The complete marked publisher transcript remains semantically unreviewed.",
       "candidate_mentions": [
         {
@@ -51108,6 +51199,22 @@
       "source": "evans-coloradotimes",
       "state": "partial",
       "url": "https://coloradotimesrecorder.com"
+    },
+    {
+      "ads_with_text": 1,
+      "checked": "2026-11-01",
+      "discovery_complete": false,
+      "excluded_posts": 0,
+      "languages": {
+        "en": 1
+      },
+      "last_success": "2026-10-30",
+      "posts_scanned": 1,
+      "retained_ads": 1,
+      "scope": "Individually reviewed public ad scripts/quotations; not complete discovery",
+      "source": "finstad-kstp",
+      "state": "partial",
+      "url": "https://kstp.com"
     },
     {
       "ads_with_text": 4,

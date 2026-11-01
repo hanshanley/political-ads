@@ -1093,6 +1093,114 @@ def test_unlinked_publisher_quotation_rejects_unbound_or_non_ad_words(failure):
     assert ads == [] and status["state"] == "error"
 
 
+def unlinked_finstad_fixture():
+    source = next(s for s in SOURCES if s.id == "finstad-kstp")
+    candidate = {
+        "candidate_id": "H2MN01223",
+        "name": "FINSTAD, BRAD",
+        "party": "REP",
+        "state": "MN",
+        "office": "H",
+        "district": "01",
+        "election_year": "2026",
+    }
+    passages = [
+        "Our families deserve leaders who listen to their concerns.",
+        "I will work for our community and protect its future.",
+    ]
+    paragraph = f"“{passages[0]}” the ad says. “{passages[1]}”"
+    content = (
+        '<meta property="article:published_time" content="2026-10-07T23:10:40+00:00">'
+        '<h1>Unrelated navigation title</h1><h1 class="fuel-title-heading">House ad report</h1>'
+        '<div id="storyContent"><p>Brad Finstad is a Republican House candidate.</p>'
+        f'<p class="quoted">{paragraph}</p><p>A spokesman disputes the report.</p></div>'
+    )
+    url = source.url + "/kstp-news/top-news/house-ad-report/"
+    review = {
+        "source": source.id,
+        "record_id": "20261007",
+        "source_url": url,
+        "retrieval_url": url,
+        "format": "html",
+        "content_sha256": digest(content),
+        "published": "2026-10-07",
+        "release_title": "House ad report",
+        "heading_selector": "h1.fuel-title-heading",
+        "candidate_id": candidate["candidate_id"],
+        "media_url": None,
+        "phase": "unknown",
+        "completeness": "partial_quotation",
+        "required_context": ["Brad Finstad"],
+        "passages": passages,
+        "reported_ad_text": {
+            "paragraph_selector": "#storyContent > p.quoted",
+            "paragraph_sha256": digest(paragraph),
+        },
+        "attribution_basis": (
+            "Publisher quotes ad words; original media and legal payer unverified."
+        ),
+    }
+    return source, candidate, review, content.encode()
+
+
+def test_finstad_report_retains_only_bound_ad_quotations_without_inventing_an_original():
+    source, candidate, review, body = unlinked_finstad_fixture()
+    calls = []
+
+    class Client:
+        def get(self, url, **kwargs):
+            calls.append(url)
+            assert url == review["retrieval_url"]
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert status["state"] == "partial" and len(ads) == 1
+    ad = ads[0]
+    assert ad["text"] == "\n".join(review["passages"])
+    assert ad["media_urls"] == [] and ad["phase"] == "unknown"
+    assert ad["date_basis"] == "publisher_report_date"
+    assert ad["alignment"] == "R" and ad["race"] == "MN-01"
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(ad["quality_flags"])
+    assert ad["segments"][0]["release_evidence"] == review
+    assert calls == [review["retrieval_url"]]
+
+
+@pytest.mark.parametrize("failure", ["candidate", "statement", "too_long", "news_video"])
+def test_finstad_report_rejects_wrong_identity_non_ad_speech_and_unsupported_media(failure):
+    source, candidate, review, body = unlinked_finstad_fixture()
+    if failure == "candidate":
+        candidate["candidate_id"] = review["candidate_id"] = "H6MN01099"
+    elif failure == "news_video":
+        review["media_url"] = "https://kstp.com/video/news-report"
+    else:
+        content = body.decode()
+        if failure == "statement":
+            content = content.replace("the ad says.", "his spokesman says.")
+        else:
+            content = content.replace(
+                review["passages"][0],
+                review["passages"][0]
+                + " Another seven words make this selected excerpt excessive.",
+            )
+        from bs4 import BeautifulSoup
+
+        paragraph = BeautifulSoup(content, "html.parser").select("#storyContent > p.quoted")[0]
+        review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
+        review["content_sha256"] = digest(content)
+        body = content.encode()
+
+    class Client:
+        def get(self, url, **kwargs):
+            return body, {}
+
+    ads, status = collect_wordpress(
+        Client(), source, "2026-10-30", "2026-11-01", [candidate], [review]
+    )
+    assert ads == [] and status["state"] == "error"
+
+
 @pytest.mark.parametrize("format", ["wordpress", "html"])
 @pytest.mark.parametrize("completeness", ["partial_quotation", "marked_script"])
 def test_reviewed_release_keeps_only_bound_ad_words_and_explicit_provenance(format, completeness):
