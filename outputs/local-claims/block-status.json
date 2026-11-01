@@ -4946,50 +4946,50 @@
   {
     "ad_id": "snap-2c07e9773762700b4d252979",
     "block_id": "snap-2c07e9773762700b4d252979-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 5\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-2c0daac2a65678001c6cc9f6",
     "block_id": "snap-2c0daac2a65678001c6cc9f6-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 5\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-2c15dacdedde90be14f44d5f",
     "block_id": "snap-2c15dacdedde90be14f44d5f-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 7 for Holy Land Foundation: \\\"Holy Land Foundation\\\" is absent from unit 42. Exact source: \\\"also known as the \\\\\\\"HLF\\\\\\\" (01)\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-2c15dacdedde90be14f44d5f",
     "block_id": "snap-2c15dacdedde90be14f44d5f-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 2\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-2c33def5149dadb29c12f3a2",
     "block_id": "snap-2c33def5149dadb29c12f3a2-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-2c7b9de6805fcb115c007901",
     "block_id": "snap-2c7b9de6805fcb115c007901-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-2cbd2d83db10122224f13afa",
     "block_id": "snap-2cbd2d83db10122224f13afa-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim response schema\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-2cbd2d83db10122224f13afa",
     "block_id": "snap-2cbd2d83db10122224f13afa-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for HINSON, ASHLEY: \\\"Ashley Hinson\\\" is absent from unit 9. Exact source: \\\"dollar private business höldings.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-2cbd2d83db10122224f13afa",
