@@ -2,6 +2,234 @@
   "ads": [
     {
       "alignment": "R",
+      "attribution_basis": "Publisher-linked original with individually reviewed payer evidence; FEC H6TX09124, REP, principal committee C00917393. Primary publisher: https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf",
+      "chamber": "House",
+      "date_basis": "publisher_pdf_creation_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "tcr-print-cain-18fb049803ad2c57-p5",
+      "language": "en",
+      "language_basis": "Publisher PDF text layer plus seeded language detection",
+      "media_urls": [
+        "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf#page=5"
+      ],
+      "message_id": "ba3eec3773c15471cfea01b8282a6ea0ee1b868fa2cdae18a310940c92367f58",
+      "observed": "2026-10-31",
+      "phase": "primary",
+      "placement": "publisher_print_ad_pdf",
+      "published": "2026-02-10",
+      "quality_flags": [
+        "printed_ad_eligibility_and_payer_visually_reviewed",
+        "pdf_text_layer_not_verified_complete_visible_transcription",
+        "pdf_reading_order_and_repeated_design_words_unverified",
+        "rasterized_words_may_be_missing_from_text_layer",
+        "publisher_pdf_creation_date_not_verified_publication_or_paid_delivery",
+        "selected_pdf_words_visually_reviewed",
+        "partial_ad_text_not_full_script"
+      ],
+      "race": "TX-09",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "completeness": "partial_quotation",
+          "kind": "publisher_pdf_text_layer",
+          "native_campaign_evidence": {
+            "ad_evidence": "Full page 5 rendered from the retained original and visually inspected. One bounded campaign-paid federal advertisement with Briscoe Cain for Congress payer, not page 3 editorial endorsements or page 9 sample-ballot content. Cached official 2026 REP candidate H6TX09124 is TX-09; FEC principal C00917393 independently matches designation P, type H, REP and the campaign payer. Earlier state-legislative accomplishments do not turn this Congress campaign creative into a state-race ad. Keep only the two selected substantive text-layer claims; all assertions remain the advertiser's claims and no new semantic review is supplied.",
+            "candidate_id": "H6TX09124",
+            "completeness": "partial_quotation",
+            "extraction_caveat": "Selected 17 literal words retain the original text-layer order and punctuation. Omit endorsements, portraits, logos, disclaimer, vote and donation prompts, and other substantive copy. This is a partial excerpt, not a complete visible transcription or independent message-family certification.",
+            "id": "tcr-print-cain-18fb049803ad2c57-p5",
+            "media_sha256": "18fb049803ad2c57ee98d27d199787d7916ac244e0bb16f9bd43d9b59a38ce3e",
+            "media_type": "pdf",
+            "media_url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf",
+            "passages": [
+              "BANNED hostile foreign nations from buying Texas land.\nBANNED men from girls’ sports & women’s private spaces."
+            ],
+            "pdf": {
+              "page_count": 16,
+              "page_text_sha256": [
+                "1e15ec462eae87da7dc097553acd1d91dedf3056a9baec2245e98aac93b5970c",
+                "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+                "863843936b06a43f56c911f80353b353e2c25ecc9eb84c42c2e548e3e2edd220",
+                "7e24df9d6669874f09386c9c1428c46fd92f647f39d39789fd643791bff6420d",
+                "414f3972ea8a0179e19927ccb5908cf75d72df47a74293bce0f69e7453d70a1d",
+                "90ad72eb2538c5f86dd23a59cb73ef552c3b7bd54970ec869a28096a8a9b2b1c",
+                "220886d87eb4867e71fc6a6248efa7abc89d4bdee92c62a37facda892bbad319",
+                "57771c5796f48d8c991febd517a5616fe93525f81f71c3f27fbfab1afa31ca98",
+                "5aad770ebf8f77a297dbb44e2157fb190e86cc22f5babc6a0546a4c72bf8b582",
+                "917df3320d778ddbaa5c5c7742bc4046bf803c36ed2b050f30844ed206783469",
+                "a6c82e517beb5a7fc0124ce1c0573636b1700943342c6a74df4a745adc18fab6",
+                "92c93cbf284ed0cdf04c14fbcfdcf950e74fbb5fc3a0276d95a9e31f6d76da9d",
+                "1a252402972f6057fa53cc172b52b9ffca698e18311facd0f3b06ecaaef79e17",
+                "25c78406cb350954ef5d8f2190dd3e8a15dcbf3ea4a33fcab2b5929ba1575aee",
+                "7ea81929ddbffb6739c8bce5ed668fcea6d03fc6affe83c9a1dd1953d7414c6d",
+                "35b69cf0ab63b291f4d8064aa08114e3a3b6f7e9db02dbc36caff7ed41647e50"
+              ]
+            },
+            "pdf_engine": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            },
+            "phase": "primary",
+            "post_url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf#page=5",
+            "publisher_pdf": {
+              "candidate_name": "CAIN, BRISCOE ROWELL III",
+              "candidate_quote": "Briscoe Cain",
+              "cover_required_quotes": [
+                "OFFICIAL REPUBLICAN PRIMARY VOTERS’ GUIDE",
+                "2026",
+                "HARRIS COUNTY EDITION"
+              ],
+              "created": "2026-02-10T12:35:39-06:00",
+              "date_uncertainty": "February 10 is the original guide PDF creation date, not verified publication, first release or paid delivery. Its cover establishes the 2026 Republican primary and February 17–27 early voting / March 3 election. The upload path alone is not date evidence; no paid-flight dates are inferred.",
+              "page": 5,
+              "payer_quote": "PAID FOR BY BRISCOE CAIN FOR CONGRESS"
+            },
+            "publisher_pdf_sha256": "18fb049803ad2c57ee98d27d199787d7916ac244e0bb16f9bd43d9b59a38ce3e",
+            "publisher_url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf",
+            "required_quotes": [
+              "BANNED hostile foreign nations from buying Texas land."
+            ],
+            "reviewed": "2026-10-31",
+            "source": "tcr-print",
+            "sponsor": "Briscoe Cain for Congress",
+            "sponsor_type": "candidate",
+            "title": "Briscoe Cain campaign-paid Texas Conservative Review primary print ad",
+            "title_basis": "Descriptive label, not a verified creative title"
+          },
+          "original_sha256": "18fb049803ad2c57ee98d27d199787d7916ac244e0bb16f9bd43d9b59a38ce3e",
+          "pdf_page": 5,
+          "source_url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf#page=5",
+          "text": "BANNED hostile foreign nations from buying Texas land.\nBANNED men from girls’ sports & women’s private spaces."
+        }
+      ],
+      "source": "tcr-print",
+      "source_hash": "977e1f8b8b3a6d97126a3f6a519c9d3b741b945aab89e6248a0ef1a74876ed30",
+      "source_record_id": "tcr-print-cain-18fb049803ad2c57-p5",
+      "source_url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf#page=5",
+      "sponsor": "Briscoe Cain for Congress",
+      "sponsor_type": "candidate",
+      "state": "TX",
+      "text": "BANNED hostile foreign nations from buying Texas land.\nBANNED men from girls’ sports & women’s private spaces.",
+      "title": "Briscoe Cain campaign-paid Texas Conservative Review primary print ad"
+    },
+    {
+      "alignment": "R",
+      "attribution_basis": "Publisher-linked original with individually reviewed payer evidence; FEC H6TX38065, REP, principal committee C00922393. Primary publisher: https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf",
+      "chamber": "House",
+      "date_basis": "publisher_pdf_creation_date",
+      "delivery_end": null,
+      "delivery_start": null,
+      "id": "tcr-print-dezevallos-18fb049803ad2c57-p6",
+      "language": "en",
+      "language_basis": "Publisher PDF text layer plus seeded language detection",
+      "media_urls": [
+        "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf#page=6"
+      ],
+      "message_id": "b77584e1043b1314d39a562db232d9195fe48e5eaa4695acf75edd9f66801b05",
+      "observed": "2026-10-31",
+      "phase": "primary",
+      "placement": "publisher_print_ad_pdf",
+      "published": "2026-02-10",
+      "quality_flags": [
+        "printed_ad_eligibility_and_payer_visually_reviewed",
+        "pdf_text_layer_not_verified_complete_visible_transcription",
+        "pdf_reading_order_and_repeated_design_words_unverified",
+        "rasterized_words_may_be_missing_from_text_layer",
+        "publisher_pdf_creation_date_not_verified_publication_or_paid_delivery",
+        "selected_pdf_words_visually_reviewed",
+        "partial_ad_text_not_full_script"
+      ],
+      "race": "TX-38",
+      "release_title": "",
+      "schema_version": "1",
+      "segments": [
+        {
+          "completeness": "partial_quotation",
+          "kind": "publisher_pdf_text_layer",
+          "native_campaign_evidence": {
+            "ad_evidence": "Full page 6 rendered from the retained original and visually inspected. One bounded campaign-paid advertisement explicitly naming Shelly deZevallos, the 38th Congressional District and Shelly for Congress payer. Cached official 2026 REP candidate H6TX38065 is TX-38; FEC principal C00922393 independently matches designation P, type H, REP and the payer. Selected substantive self-description/opposition words come from the actual paid creative, not the editorial guide, publisher masthead or campaign biography. The shared guide is not itself counted as another ad; no new semantic judgment is supplied.",
+            "candidate_id": "H6TX38065",
+            "completeness": "partial_quotation",
+            "extraction_caveat": "Selected 19 literal words preserve the original text-layer spaces, line breaks and punctuation, beginning inside the longer paragraph. Remaining paragraph text, policy bullets, appointments, disclaimer and join/scan prompts are omitted. This is a partial excerpt, not a full script or a complete visible transcription.",
+            "id": "tcr-print-dezevallos-18fb049803ad2c57-p6",
+            "media_sha256": "18fb049803ad2c57ee98d27d199787d7916ac244e0bb16f9bd43d9b59a38ce3e",
+            "media_type": "pdf",
+            "media_url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf",
+            "passages": [
+              "First conservative who will fight alongside \nPresident Trump to combat radical Democrat \nobstruction, end the invasion at our borders,"
+            ],
+            "pdf": {
+              "page_count": 16,
+              "page_text_sha256": [
+                "1e15ec462eae87da7dc097553acd1d91dedf3056a9baec2245e98aac93b5970c",
+                "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+                "863843936b06a43f56c911f80353b353e2c25ecc9eb84c42c2e548e3e2edd220",
+                "7e24df9d6669874f09386c9c1428c46fd92f647f39d39789fd643791bff6420d",
+                "414f3972ea8a0179e19927ccb5908cf75d72df47a74293bce0f69e7453d70a1d",
+                "90ad72eb2538c5f86dd23a59cb73ef552c3b7bd54970ec869a28096a8a9b2b1c",
+                "220886d87eb4867e71fc6a6248efa7abc89d4bdee92c62a37facda892bbad319",
+                "57771c5796f48d8c991febd517a5616fe93525f81f71c3f27fbfab1afa31ca98",
+                "5aad770ebf8f77a297dbb44e2157fb190e86cc22f5babc6a0546a4c72bf8b582",
+                "917df3320d778ddbaa5c5c7742bc4046bf803c36ed2b050f30844ed206783469",
+                "a6c82e517beb5a7fc0124ce1c0573636b1700943342c6a74df4a745adc18fab6",
+                "92c93cbf284ed0cdf04c14fbcfdcf950e74fbb5fc3a0276d95a9e31f6d76da9d",
+                "1a252402972f6057fa53cc172b52b9ffca698e18311facd0f3b06ecaaef79e17",
+                "25c78406cb350954ef5d8f2190dd3e8a15dcbf3ea4a33fcab2b5929ba1575aee",
+                "7ea81929ddbffb6739c8bce5ed668fcea6d03fc6affe83c9a1dd1953d7414c6d",
+                "35b69cf0ab63b291f4d8064aa08114e3a3b6f7e9db02dbc36caff7ed41647e50"
+              ]
+            },
+            "pdf_engine": {
+              "name": "pypdf",
+              "version": "5.9.0"
+            },
+            "phase": "primary",
+            "post_url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf#page=6",
+            "publisher_pdf": {
+              "candidate_name": "DEZEVALLOS, SHELLY",
+              "candidate_quote": "Shelly deZevallos",
+              "cover_required_quotes": [
+                "OFFICIAL REPUBLICAN PRIMARY VOTERS’ GUIDE",
+                "2026",
+                "HARRIS COUNTY EDITION"
+              ],
+              "created": "2026-02-10T12:35:39-06:00",
+              "date_uncertainty": "February 10 is the original guide PDF creation date, not verified publication, first release or paid delivery. Its cover establishes the 2026 Republican primary and February 17–27 early voting / March 3 election. The upload path alone is not date evidence; no paid-flight dates are inferred.",
+              "page": 6,
+              "payer_quote": "PAID FOR BY SHELLY FOR CONGRESS"
+            },
+            "publisher_pdf_sha256": "18fb049803ad2c57ee98d27d199787d7916ac244e0bb16f9bd43d9b59a38ce3e",
+            "publisher_url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf",
+            "required_quotes": [
+              "President Trump to combat radical Democrat"
+            ],
+            "reviewed": "2026-10-31",
+            "source": "tcr-print",
+            "sponsor": "Shelly for Congress",
+            "sponsor_type": "candidate",
+            "title": "Shelly deZevallos campaign-paid Texas Conservative Review primary print ad",
+            "title_basis": "Descriptive label, not a verified creative title"
+          },
+          "original_sha256": "18fb049803ad2c57ee98d27d199787d7916ac244e0bb16f9bd43d9b59a38ce3e",
+          "pdf_page": 6,
+          "source_url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf#page=6",
+          "text": "First conservative who will fight alongside \nPresident Trump to combat radical Democrat \nobstruction, end the invasion at our borders,"
+        }
+      ],
+      "source": "tcr-print",
+      "source_hash": "9cd4729bd5d2042d363efacc8d423054b1665e38021dbe3b677b580dd3fc51d2",
+      "source_record_id": "tcr-print-dezevallos-18fb049803ad2c57-p6",
+      "source_url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf#page=6",
+      "sponsor": "Shelly for Congress",
+      "sponsor_type": "candidate",
+      "state": "TX",
+      "text": "First conservative who will fight alongside \nPresident Trump to combat radical Democrat \nobstruction, end the invasion at our borders,",
+      "title": "Shelly deZevallos campaign-paid Texas Conservative Review primary print ad"
+    },
+    {
+      "alignment": "R",
       "attribution_basis": "Publisher-linked original with individually reviewed payer evidence; FEC H0NY02234, REP, principal committee C00729954. Primary publisher: https://www.republicanmainstreet.org/post/rmsp-launches-600-000-digital-ad-campaign-in-new-york-highlighting-salt-relief-efforts",
       "chamber": "House",
       "date_basis": "publisher_release_date",
@@ -74625,6 +74853,12 @@
     "slf-media-1405-J1Ym3GUrfkQ": {
       "state": "ok",
       "video": "https://www.youtube.com/watch?v=J1Ym3GUrfkQ"
+    },
+    "tcr-print-cain-18fb049803ad2c57-p5": {
+      "state": "text"
+    },
+    "tcr-print-dezevallos-18fb049803ad2c57-p6": {
+      "state": "text"
     }
   },
   "sources": [
@@ -74743,6 +74977,17 @@
       "state": "partial",
       "undated_videos_with_text": 0,
       "url": "https://alexandramealer.com/"
+    },
+    {
+      "ads_with_text": 2,
+      "checked": "2026-10-31",
+      "discovery_complete": false,
+      "last_success": "2026-10-31",
+      "scope": "Individually reviewed original campaign PDFs, not complete discovery",
+      "source": "tcr-print",
+      "state": "partial",
+      "undated_videos_with_text": 0,
+      "url": "https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf"
     }
   ]
 }

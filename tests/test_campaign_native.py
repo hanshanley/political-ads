@@ -152,6 +152,144 @@ def test_archived_pdf_requires_bound_current_creative_evidence(
 
 
 @pytest.fixture
+def publisher_pdf_review(tmp_path, monkeypatch, archived_pdf_review):
+    review, _ = archived_pdf_review
+    archive = review.pop("publisher_archive")
+    review.update(
+        publisher_url="https://publisher.example/2026-guide.pdf",
+        post_url="https://publisher.example/2026-guide.pdf#page=2",
+        media_url="https://publisher.example/2026-guide.pdf",
+        sponsor="Example for Congress",
+        sponsor_type="candidate",
+        phase="primary",
+        completeness="partial_quotation",
+        passages=["We will protect families and deliver results."],
+        required_quotes=["We will protect families and deliver results."],
+        publisher_pdf={
+            "created": archive["creative_created"],
+            "page": 2,
+            "candidate_name": "EXAMPLE, CANDIDATE",
+            "candidate_quote": "Candidate Example",
+            "payer_quote": "Paid for by Example for Congress",
+            "cover_required_quotes": ["2026 primary voters guide"],
+            "date_uncertainty": "PDF creation is not publication or delivery.",
+        },
+    )
+    text = (
+        "Candidate Example. Paid for by Example for Congress. "
+        "We will protect families and deliver results. "
+        "We will keep our communities safe and fight for affordable health care."
+    )
+    review["passages"] = [text.split("Congress. ", 1)[1]]
+    writer = PdfWriter()
+    for layer in ["2026 primary voters guide. Editorial endorsement.", text]:
+        page = writer.add_blank_page(width=300, height=300)
+        page[NameObject("/Resources")] = DictionaryObject()
+        stream = DecodedStreamObject()
+        stream.set_data(f"BT 10 10 Td ({layer}) Tj ET".encode())
+        page[NameObject("/Contents")] = stream
+    writer.add_metadata({"/CreationDate": "D:20261007120000Z"})
+    output = io.BytesIO()
+    writer.write(output)
+    body = output.getvalue()
+    reader = PdfReader(io.BytesIO(body))
+    review["media_sha256"] = hashlib.sha256(body).hexdigest()
+    review["pdf"]["page_text_sha256"] = [
+        hashlib.sha256(page.extract_text().encode()).hexdigest() for page in reader.pages
+    ]
+    roster = read_json(tmp_path / "data/site/candidates.json", {})
+    roster["candidates"][0]["name"] = "EXAMPLE, CANDIDATE"
+    write_json(tmp_path / "data/site/candidates.json", roster)
+    monkeypatch.setattr(
+        "political_ads.campaign_native.Client.get", lambda self, url, **kwargs: (body, {})
+    )
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    return review
+
+
+def test_publisher_pdf_ad_uses_only_selected_paid_page_words(tmp_path, publisher_pdf_review):
+    review = publisher_pdf_review
+    result = collect_campaign_native(tmp_path, "2026-10-27", offline=True)
+    ad = result["ads"][0]
+    assert ad["text"] == "\n".join(review["passages"])
+    assert "Editorial" not in ad["text"] and "Paid for" not in ad["text"]
+    assert ad["published"] == "2026-10-07" and ad["delivery_start"] is None
+    assert ad["date_basis"] == "publisher_pdf_creation_date"
+    assert ad["placement"] == "publisher_print_ad_pdf"
+    assert ad["sponsor"] == "Example for Congress" and ad["race"] == "ZZ-01"
+    assert ad["media_urls"] == [review["post_url"]]
+    assert [segment["pdf_page"] for segment in ad["segments"]] == [2]
+    assert ad["segments"][0]["native_campaign_evidence"]["publisher_pdf"] == review["publisher_pdf"]
+    assert "partial_ad_text_not_full_script" in ad["quality_flags"]
+    assert collect_campaign_native(tmp_path, "2026-10-27", offline=True) == result
+
+
+@pytest.mark.parametrize(
+    "change",
+    [
+        "page",
+        "original",
+        "hash",
+        "creation",
+        "layer",
+        "payer",
+        "sponsor",
+        "candidate",
+        "cover",
+        "passage",
+        "short",
+    ],
+)
+def test_publisher_pdf_requires_bound_page_candidate_payer_and_literal_excerpt(
+    tmp_path, publisher_pdf_review, change
+):
+    review = publisher_pdf_review
+    if change == "page":
+        review["publisher_pdf"]["page"] = 1
+        review["post_url"] = review["publisher_url"] + "#page=1"
+    elif change == "original":
+        review["media_url"] = "https://unrelated.example/ad.pdf"
+    elif change == "hash":
+        review["media_sha256"] = "0" * 64
+    elif change == "creation":
+        review["publisher_pdf"]["created"] = "2026-10-08T12:00:00+00:00"
+    elif change == "layer":
+        review["pdf"]["page_text_sha256"][1] = "0" * 64
+    elif change == "payer":
+        review["publisher_pdf"]["payer_quote"] = "Paid for by another campaign"
+    elif change == "sponsor":
+        review["sponsor"] = "Another for Congress"
+    elif change == "candidate":
+        review["publisher_pdf"]["candidate_name"] = "ANOTHER, CANDIDATE"
+    elif change == "cover":
+        review["publisher_pdf"]["cover_required_quotes"] = ["2027 voters guide"]
+    elif change == "passage":
+        review["passages"] = [
+            "A fabricated fifteen word quotation that does not appear anywhere "
+            "in the actual paid creative."
+        ]
+    else:
+        review["passages"] = ["We will protect families and deliver results."]
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    result = collect_campaign_native(tmp_path, "2026-10-27", offline=True)
+    assert result["ads"] == []
+    assert result["attempts"][review["id"]]["state"] == "error"
+
+
+def test_publisher_pdf_created_after_cutoff_is_not_requested(
+    tmp_path, monkeypatch, publisher_pdf_review
+):
+    review = publisher_pdf_review
+    review["publisher_pdf"]["created"] = "2026-10-28T12:00:00+00:00"
+    write_json(tmp_path / "data/campaign-native-reviews.json", {"reviews": [review]})
+    monkeypatch.setattr(
+        "political_ads.campaign_native.Client.get",
+        lambda *args, **kwargs: pytest.fail("Out-of-window PDF must not be requested"),
+    )
+    assert collect_campaign_native(tmp_path, "2026-10-27", offline=True)["ads"] == []
+
+
+@pytest.fixture
 def native_review(tmp_path, monkeypatch):
     review = {
         "id": "example-native-123",

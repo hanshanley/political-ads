@@ -45,6 +45,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
         identity, source = review["id"], review["source"]
         gallery = review.get("publisher_gallery")
         archive = review.get("publisher_archive")
+        printed = review.get("publisher_pdf")
         is_image = review.get("media_type") == "image"
         is_pdf = review.get("media_type") == "pdf"
         if identity in ads or (identity in leads and leads[identity].get("recovered_segments")):
@@ -65,6 +66,10 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                 continue
         elif archive:
             published = parsedate_to_datetime(archive["last_modified"]).date().isoformat()
+            if not START <= published <= until:
+                continue
+        elif printed:
+            published = printed["created"][:10]
             if not START <= published <= until:
                 continue
         else:
@@ -95,13 +100,43 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             if candidate["office"] not in {"H", "S"} or candidate["election_year"] != "2026":
                 raise ValueError("Review requires an exact 2026 federal candidate identity")
             body, _ = client.get(review["publisher_url"], retry=False)
-            soup = BeautifulSoup(body, "html.parser")
+            soup = BeautifulSoup(b"" if printed else body, "html.parser")
             publisher_hash = hashlib.sha256(body).hexdigest()
             alignment = {"DEM": "D", "REP": "R"}.get(candidate["party"], "other")
             if is_image != bool(gallery):
                 raise ValueError("Reviewed images require exact public gallery upload evidence")
-            if is_pdf and not archive:
-                raise ValueError("Reviewed PDFs require exact public archive creative evidence")
+            if is_pdf and not (archive or printed):
+                raise ValueError(
+                    "Reviewed PDFs require exact archive or page-scoped print evidence"
+                )
+            if printed:
+                page_number = printed["page"]
+                surname, _, given = candidate["name"].partition(",")
+                candidate_quote = f"{given.split()[0] if given.split() else ''} {surname}"
+                if (
+                    not is_pdf
+                    or archive
+                    or gallery
+                    or review.get("post_id")
+                    or review.get("post_timestamp")
+                    or review.get("publisher_release")
+                    or review.get("publisher_request")
+                    or type(page_number) is not int
+                    or not 1 <= page_number <= review["pdf"]["page_count"]
+                    or urlparse(review["publisher_url"]).scheme != "https"
+                    or not urlparse(review["publisher_url"]).path.lower().endswith(".pdf")
+                    or review["media_url"] != review["publisher_url"]
+                    or review["post_url"] != f"{review['publisher_url']}#page={page_number}"
+                    or candidate["name"] != printed["candidate_name"]
+                    or not given
+                    or printed["candidate_quote"].casefold() != candidate_quote.casefold()
+                    or " ".join(review["sponsor"].split()).casefold()
+                    not in " ".join(printed["payer_quote"].split()).casefold()
+                    or review.get("sponsor_type", "candidate") != "candidate"
+                    or not printed["date_uncertainty"]
+                    or review.get("completeness") != "partial_quotation"
+                ):
+                    raise ValueError("Print ad requires exact original, page, candidate and date")
             if archive:
                 if (
                     gallery
@@ -237,9 +272,10 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     raise ValueError("Publisher feed video must use its public Facebook CDN")
             else:
                 video_url = review["media_url"]
-                markup = html.unescape(body.decode("utf-8")).replace("\\/", "/")
-                if not gallery and not archive and video_url not in markup:
-                    raise ValueError("Reviewed original video is not linked by the publisher")
+                if not printed:
+                    markup = html.unescape(body.decode("utf-8")).replace("\\/", "/")
+                    if not gallery and not archive and video_url not in markup:
+                        raise ValueError("Reviewed original video is not linked by the publisher")
             download_url = video_url
             parsed = urlparse(video_url)
             if parsed.scheme == "https" and parsed.hostname == "www.dropbox.com":
@@ -248,6 +284,8 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                 download_url = parsed._replace(query=urlencode(query)).geturl()
             if archive:
                 media = archive_member(client, archive)
+            elif printed:
+                media = body
             else:
                 media, _ = client.get(download_url, retry=False)
             if hashlib.sha256(media).hexdigest() != review["media_sha256"]:
@@ -258,7 +296,8 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                 if (
                     reader.metadata is None
                     or reader.metadata.creation_date is None
-                    or reader.metadata.creation_date.isoformat() != archive["creative_created"]
+                    or reader.metadata.creation_date.isoformat()
+                    != (printed["created"] if printed else archive["creative_created"])
                     or len(pages) != review["pdf"]["page_count"]
                     or [hashlib.sha256(page.encode()).hexdigest() for page in pages]
                     != review["pdf"]["page_text_sha256"]
@@ -267,17 +306,47 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                         "PDF creation metadata or complete ordered text layers changed"
                     )
                 media_hash = review["media_sha256"]
-                segments = [
-                    {
-                        "text": page,
-                        "kind": "publisher_pdf_text_layer",
-                        "pdf_page": index + 1,
-                        "original_sha256": media_hash,
-                        "source_url": video_url,
-                    }
-                    for index, page in enumerate(pages)
-                    if page.strip()
-                ]
+                if printed:
+                    page = pages[printed["page"] - 1]
+                    normalized = " ".join(page.split()).casefold()
+                    passages = review["passages"]
+                    if (
+                        not printed["cover_required_quotes"]
+                        or not all(q in pages[0] for q in printed["cover_required_quotes"])
+                        or not printed["payer_quote"]
+                        or not printed["candidate_quote"]
+                        or not all(
+                            " ".join(q.split()).casefold() in normalized
+                            for q in (printed["payer_quote"], printed["candidate_quote"])
+                        )
+                        or not passages
+                        or not all(p.strip() and p in page for p in passages)
+                        or not 15 <= len(" ".join(passages).split()) <= 25
+                    ):
+                        raise ValueError("Selected print words require page-local paid-ad evidence")
+                    segments = [
+                        {
+                            "text": passage,
+                            "kind": "publisher_pdf_text_layer",
+                            "pdf_page": printed["page"],
+                            "original_sha256": media_hash,
+                            "source_url": review["post_url"],
+                            "completeness": "partial_quotation",
+                        }
+                        for passage in passages
+                    ]
+                else:
+                    segments = [
+                        {
+                            "text": page,
+                            "kind": "publisher_pdf_text_layer",
+                            "pdf_page": index + 1,
+                            "original_sha256": media_hash,
+                            "source_url": video_url,
+                        }
+                        for index, page in enumerate(pages)
+                        if page.strip()
+                    ]
                 language = language_of("\n".join(segment["text"] for segment in segments))
                 engine = {"pdf_engine": {"name": "pypdf", "version": pdf_version}}
             elif is_image:
@@ -311,7 +380,9 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
             if not segments or not all(quote in text for quote in review["required_quotes"]):
                 raise ValueError("Recovered text does not retain the reviewed ad evidence")
             evidence = review | {
-                "publisher_html_sha256": hashlib.sha256(body).hexdigest(),
+                "publisher_pdf_sha256" if printed else "publisher_html_sha256": hashlib.sha256(
+                    body
+                ).hexdigest(),
                 **engine,
             }
             if review.get("publisher_request"):
@@ -342,6 +413,13 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     "rasterized_words_may_be_missing_from_text_layer",
                     "archive_modification_date_not_verified_publication_or_paid_delivery",
                 ]
+                if printed:
+                    quality[-1] = (
+                        "publisher_pdf_creation_date_not_verified_publication_or_paid_delivery"
+                    )
+                    quality.extend(
+                        ["selected_pdf_words_visually_reviewed", "partial_ad_text_not_full_script"]
+                    )
             quality.extend(review.get("quality_flags", []))
             if published is None:
                 leads[identity] = {
@@ -384,7 +462,9 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                         json.dumps({"evidence": evidence, "segments": segments}, sort_keys=True)
                     ),
                     date_basis=(
-                        "publisher_gallery_upload_date"
+                        "publisher_pdf_creation_date"
+                        if printed
+                        else "publisher_gallery_upload_date"
                         if gallery
                         else "publisher_archive_modification_date"
                         if archive
@@ -392,6 +472,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                         if release
                         else "publisher_post_date"
                     ),
+                    placement="publisher_print_ad_pdf" if printed else "campaign_release",
                     state=candidate["state"],
                     chamber="House" if candidate["office"] == "H" else "Senate",
                     race=f"{candidate['state']}-{int(candidate['district']):02}"
@@ -409,7 +490,7 @@ def collect_campaign_native(root: Path, until: str, offline: bool = False) -> di
                     attribution_basis=(
                         (
                             "Publisher-linked original with individually reviewed payer evidence; "
-                            if release or gallery or archive
+                            if release or gallery or archive or printed
                             else (
                                 "Campaign-linked original with candidate approval "
                                 "and payer evidence; "

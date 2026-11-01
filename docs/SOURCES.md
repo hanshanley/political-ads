@@ -10,6 +10,95 @@ may be pushed without updating the website; publication and host restoration sti
 explicit authorization. The final scope cutoff is November 4, 2026, inclusive; the saved
 snapshot's actual October 30 cutoff is distinct from that final scope limit.
 
+## Texas primary-guide print recovery and additional archives
+
+Snapshot **22af186c464d926b05e687fa513bc2517885308d4ccf74b6a1b54a8f26163f54**
+contains **1,921 acquired / 1,882 English** ads. Alignment is **D 1,226 /
+R 617 / other 31 / unknown 8**; exact English messages are **D 1,204 /
+R 580 / other 31 / unknown 8**. English House coverage is **D 698 /
+R 239 / other 19 / unknown 3**. Outside Snap, House coverage is
+**D 222 / R 238**; Snap remains **D 476 / R 1 / other 19 / unknown 3**.
+These are source-limited creative/text counts, not national advertising
+volume, paid impressions, spending or matched-race estimates.
+
+Two actual campaign-paid federal print ads are recovered from the
+publisher's original **Texas Conservative Review / Harris County /
+2026 Republican primary** guide:
+`https://www.texasconservative.review/wp-content/uploads/2026/02/2026-Spring-TCR-Voters-Guide-Harris-WEB.pdf`.
+Its retained 16-page PDF has SHA-256
+`18fb049803ad2c57ee98d27d199787d7916ac244e0bb16f9bd43d9b59a38ce3e`.
+Complete pages 5 and 6 were rendered and visually inspected; extracted
+portraits or logos were not substituted for full-page evidence.
+
+**Page 5** is Briscoe Cain's Congress campaign advertisement. Its visible
+campaign payer matches cached FEC **H6TX09124 / C00917393 / REP / TX-09**,
+including the official principal committee's candidate, designation P,
+type H and party. Its state-legislative accomplishments are actual copy
+inside a federal campaign-paid creative, not a separate state-race ad.
+The acquired text is **17 selected literal words** from two substantive
+claims, excluding endorsements, logos, disclaimer and donation prompts.
+**Page 6** explicitly names Shelly deZevallos, TX-38 and the Shelly for
+Congress payer, matching **H6TX38065 / C00922393 / REP / TX-38** and the
+official principal committee. Its **19 selected literal words** come
+from the paid creative's substantive paragraph, not publisher prose.
+Neither excerpt is represented as a full script, complete visible
+transcription or independently certified message family.
+
+The original's embedded creation timestamp is
+**February 10, 2026, 12:35:39 -06:00**. The cover independently identifies
+the 2026 Republican primary, February 17-27 early voting and March 3
+election. Records use **`publisher_pdf_creation_date`**, explicitly not
+verified publication, first release or paid delivery; neither the upload
+path nor the future election date is invented as a publication date.
+The saved collection cutoff remains **October 30**, with no delivery
+dates inferred.
+
+The narrow native collector path requires the identical HTTPS PDF
+original, a page-specific source fragment, exact federal candidate and
+campaign payer evidence on that page, pinned creation metadata, all
+16 ordered text-layer hashes, cover context and 15-25 selected literal
+words present on the selected page. It does not admit whole guides,
+editorial endorsements, sample ballots, unrelated pages or unbound
+newspaper copy. Existing campaign-archive, gallery and release gates are
+unchanged. Page 4's appointment/endorsement-heavy Steinmann creative
+remains unadmitted; substantive eligibility is not established.
+
+All **1,919 preceding acquired / 1,880 preceding English** ad objects
+remain identical. All 17 protected inputs are checked: 15 have unchanged
+byte hashes; the native review and media ledgers retain their preceding
+contents with only the two authorized admissions appended. The original
+33 native reviews are preserved, now **35**; **73** release reviews,
+the **353** backlog leads and existing semantic annotations remain
+unchanged. Both new semantic portrayal reviews are **unreviewed**.
+An isolated network-forbidden replay uses the original PDF body and
+empty HTTP metadata, with the preceding media and undated backlog
+retained. Complete JSON/gzip/CSV exports and all 1,921 Parquet rows
+reconcile; all 11 PNG figure sets match both unpublished editions.
+The same-ad audit verifies 20 metric groups and 10 chart rows.
+
+**Archive continuation:** WFW Action Fund's exposed older-entry links
+were followed through pages 4-9, all returning 200. Page 9 crosses from
+January 2026 into 2025; traversal stopped at that calendar boundary.
+All six qualifying written scripts are already acquired. Fundraising,
+endorsement and victory releases do not become additional ads.
+
+Van Drew's actual
+`https://vandrewforcongress.com/category/campaign-ad/`
+returns an undated teaser, not established in-window narration. Nevada
+Globe's October 10 **Her Payday** report identifies a Buck-campaign ad
+and substantive narrator quotations, but no individual original-ad
+association was recovered:
+`https://thenevadaglobe.com/articles/payday-at-the-pump-buck-unleashes-300k-plus-ad-blitz-hammering-titus-on-gas-taxes/`.
+It remains unadmitted, is not relabeled as NRCC spending, and does not
+duplicate Tax Attack or reverse Getting Hosed's twelve-word exclusion.
+The May 24 TX-35 mailer report at
+`https://www.rvmnews.com/2026/05/trump-backed-veteran-mocked-over-disability-in-vicious-texas-campaign-attack-before-memorial-day/`
+mostly quotes reactions, not mailer wording. Its short creative phrase
+does not meet the threshold; no original mailer was recovered and its
+unassociated embedded video was not requested. Neither source contributes
+new acquired ads. Existing provider/access holds and the website/Substack
+publication hold remain in force; the active acquisition schedule continues.
+
 ## Wisconsin WI-07 original print-ad recovery
 
 Snapshot **b8dc2107b7d3dcbf04478e03cf56cc5c5d1b2521e1b17dde1bce1e61af6525cf**
@@ -182,7 +271,8 @@ preservation and the website/editions/host-restoration hold persist.
 
 ## Expanded publisher searches and fresh outside-group archives
 
-These additional checks still admit **zero new ads**. The **1,919
+At the preceding discovery-only checkpoint, these additional checks
+admitted **zero new ads**. The then-current **1,919
 acquired / 1,880 English / 237 Republican English House** snapshot,
 73 release reviews and all existing semantic-review states are unchanged.
 Neither additional source links nor reported advertising expenditure
