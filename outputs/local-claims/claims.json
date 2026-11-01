@@ -90730,5 +90730,2061 @@
     "text_hash": "37605ecb68c42a8405e7735ba143e850de377a2e588c3598555ff78b0b303bdb",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3880-0",
+    "alignment": "D",
+    "block_id": "smp-3880-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3880-0-claims-001-001",
+    "claim_text": "When Susan Collins was the deciding vote for Trump’s Supreme Court Justices who overturned Roe v. Wade, I was totally, totally done.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 134,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "[When Susan Collins] was the deciding vote for Trump’s Supreme Court Justices who overturned Roe v. Wade, I was totally, totally done,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-susan-collins-says-she-works-for-maine-her-record-says-she-works-for-trump/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 19,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 6,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 107,
+        "anchor_quote": "I",
+        "anchor_start": 106,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[When Susan Collins] was the deciding vote for Trump’s Supreme Court Justices who overturned Roe v. Wade, I was totally, totally done,\nShe lied to us. …Every time it matters, Susan Collins sides with Trump. Medicaid cuts, doubling health insurance premiums, every time. I won’t vote for Susan this time.",
+    "text_hash": "84bedbc68acbd38e974ed3d155858fe10075f023741743cf58ee9b533d81e5fa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3880-0",
+    "alignment": "D",
+    "block_id": "smp-3880-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3880-0-claims-001-002",
+    "claim_text": "She lied to us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 303,
+        "kind": "publisher_ad_copy",
+        "start": 135,
+        "text": "She lied to us. …Every time it matters, Susan Collins sides with Trump. Medicaid cuts, doubling health insurance premiums, every time. I won’t vote for Susan this time.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-susan-collins-says-she-works-for-maine-her-record-says-she-works-for-trump/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 138,
+        "anchor_quote": "She",
+        "anchor_start": 135,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "[When Susan Collins] was the deciding vote for Trump’s Supreme Court Justices who overturned Roe v. Wade, I was totally, totally done,\nShe lied to us. …Every time it matters, Susan Collins sides with Trump. Medicaid cuts, doubling health insurance premiums, every time. I won’t vote for Susan this time.",
+    "text_hash": "84bedbc68acbd38e974ed3d155858fe10075f023741743cf58ee9b533d81e5fa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3880-0",
+    "alignment": "D",
+    "block_id": "smp-3880-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3880-0-claims-001-003",
+    "claim_text": "Every time it matters, Susan Collins sides with Trump.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 303,
+        "kind": "publisher_ad_copy",
+        "start": 135,
+        "text": "She lied to us. …Every time it matters, Susan Collins sides with Trump. Medicaid cuts, doubling health insurance premiums, every time. I won’t vote for Susan this time.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-susan-collins-says-she-works-for-maine-her-record-says-she-works-for-trump/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 188,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 175,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 205,
+        "anchor_quote": "Trump",
+        "anchor_start": 200,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "[When Susan Collins] was the deciding vote for Trump’s Supreme Court Justices who overturned Roe v. Wade, I was totally, totally done,\nShe lied to us. …Every time it matters, Susan Collins sides with Trump. Medicaid cuts, doubling health insurance premiums, every time. I won’t vote for Susan this time.",
+    "text_hash": "84bedbc68acbd38e974ed3d155858fe10075f023741743cf58ee9b533d81e5fa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3880-0",
+    "alignment": "D",
+    "block_id": "smp-3880-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3880-0-claims-001-004",
+    "claim_text": "Susan Collins sides with Trump regarding Medicaid cuts.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 303,
+        "kind": "publisher_ad_copy",
+        "start": 135,
+        "text": "She lied to us. …Every time it matters, Susan Collins sides with Trump. Medicaid cuts, doubling health insurance premiums, every time. I won’t vote for Susan this time.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-susan-collins-says-she-works-for-maine-her-record-says-she-works-for-trump/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 188,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 175,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 205,
+        "anchor_quote": "Trump",
+        "anchor_start": 200,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "[When Susan Collins] was the deciding vote for Trump’s Supreme Court Justices who overturned Roe v. Wade, I was totally, totally done,\nShe lied to us. …Every time it matters, Susan Collins sides with Trump. Medicaid cuts, doubling health insurance premiums, every time. I won’t vote for Susan this time.",
+    "text_hash": "84bedbc68acbd38e974ed3d155858fe10075f023741743cf58ee9b533d81e5fa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3880-0",
+    "alignment": "D",
+    "block_id": "smp-3880-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3880-0-claims-001-005",
+    "claim_text": "Susan Collins sides with Trump regarding doubling health insurance premiums.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 303,
+        "kind": "publisher_ad_copy",
+        "start": 135,
+        "text": "She lied to us. …Every time it matters, Susan Collins sides with Trump. Medicaid cuts, doubling health insurance premiums, every time. I won’t vote for Susan this time.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-susan-collins-says-she-works-for-maine-her-record-says-she-works-for-trump/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 188,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 175,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 205,
+        "anchor_quote": "Trump",
+        "anchor_start": 200,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "[When Susan Collins] was the deciding vote for Trump’s Supreme Court Justices who overturned Roe v. Wade, I was totally, totally done,\nShe lied to us. …Every time it matters, Susan Collins sides with Trump. Medicaid cuts, doubling health insurance premiums, every time. I won’t vote for Susan this time.",
+    "text_hash": "84bedbc68acbd38e974ed3d155858fe10075f023741743cf58ee9b533d81e5fa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3880-0",
+    "alignment": "D",
+    "block_id": "smp-3880-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3880-0-claims-001-006",
+    "claim_text": "I won’t vote for Susan this time.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 303,
+        "kind": "publisher_ad_copy",
+        "start": 135,
+        "text": "She lied to us. …Every time it matters, Susan Collins sides with Trump. Medicaid cuts, doubling health insurance premiums, every time. I won’t vote for Susan this time.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-susan-collins-says-she-works-for-maine-her-record-says-she-works-for-trump/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 180,
+        "anchor_quote": "Susan",
+        "anchor_start": 175,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 271,
+        "anchor_quote": "I",
+        "anchor_start": 270,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "[When Susan Collins] was the deciding vote for Trump’s Supreme Court Justices who overturned Roe v. Wade, I was totally, totally done,\nShe lied to us. …Every time it matters, Susan Collins sides with Trump. Medicaid cuts, doubling health insurance premiums, every time. I won’t vote for Susan this time.",
+    "text_hash": "84bedbc68acbd38e974ed3d155858fe10075f023741743cf58ee9b533d81e5fa",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3883-0",
+    "alignment": "D",
+    "block_id": "smp-3883-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3883-0-claims-001-001",
+    "claim_text": "Ashley Hinson wrote a law boosting insurance industry profits and giving tax breaks to companies like her husband’s.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 118,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "[Ashley Hinson] wrote a law boosting insurance industry profits and giving tax breaks to companies like her husband’s,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-ashley-hinson-used-her-position-to-help-her-husband-make-millions-now-shes-facing-an-ethics-investigation/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 14,
+        "anchor_quote": "Ashley Hinson",
+        "anchor_start": 1,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6IA00314",
+        "kind": "person",
+        "name": "HINSON, ASHLEY",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Ashley Hinson] wrote a law boosting insurance industry profits and giving tax breaks to companies like her husband’s,\nAshley Hinson’s gotten up to $8 million richer since she went to Washington, and now she’s facing an ethics complaint. Ashley Hinson sold us out.",
+    "text_hash": "46cfd94fefe3131d035b1d372b205a34b1d78147ac364a334c9212d46e5425cd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3883-0",
+    "alignment": "D",
+    "block_id": "smp-3883-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3883-0-claims-001-002",
+    "claim_text": "Ashley Hinson’s gotten up to $8 million richer since she went to Washington.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 264,
+        "kind": "publisher_ad_copy",
+        "start": 119,
+        "text": "Ashley Hinson’s gotten up to $8 million richer since she went to Washington, and now she’s facing an ethics complaint. Ashley Hinson sold us out.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-ashley-hinson-used-her-position-to-help-her-husband-make-millions-now-shes-facing-an-ethics-investigation/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 132,
+        "anchor_quote": "Ashley Hinson",
+        "anchor_start": 119,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6IA00314",
+        "kind": "person",
+        "name": "HINSON, ASHLEY",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Ashley Hinson] wrote a law boosting insurance industry profits and giving tax breaks to companies like her husband’s,\nAshley Hinson’s gotten up to $8 million richer since she went to Washington, and now she’s facing an ethics complaint. Ashley Hinson sold us out.",
+    "text_hash": "46cfd94fefe3131d035b1d372b205a34b1d78147ac364a334c9212d46e5425cd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3883-0",
+    "alignment": "D",
+    "block_id": "smp-3883-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3883-0-claims-001-003",
+    "claim_text": "Ashley Hinson is facing an ethics complaint.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 264,
+        "kind": "publisher_ad_copy",
+        "start": 119,
+        "text": "Ashley Hinson’s gotten up to $8 million richer since she went to Washington, and now she’s facing an ethics complaint. Ashley Hinson sold us out.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-ashley-hinson-used-her-position-to-help-her-husband-make-millions-now-shes-facing-an-ethics-investigation/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 132,
+        "anchor_quote": "Ashley Hinson",
+        "anchor_start": 119,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6IA00314",
+        "kind": "person",
+        "name": "HINSON, ASHLEY",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Ashley Hinson] wrote a law boosting insurance industry profits and giving tax breaks to companies like her husband’s,\nAshley Hinson’s gotten up to $8 million richer since she went to Washington, and now she’s facing an ethics complaint. Ashley Hinson sold us out.",
+    "text_hash": "46cfd94fefe3131d035b1d372b205a34b1d78147ac364a334c9212d46e5425cd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3883-0",
+    "alignment": "D",
+    "block_id": "smp-3883-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3883-0-claims-001-004",
+    "claim_text": "Ashley Hinson sold us out.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 264,
+        "kind": "publisher_ad_copy",
+        "start": 119,
+        "text": "Ashley Hinson’s gotten up to $8 million richer since she went to Washington, and now she’s facing an ethics complaint. Ashley Hinson sold us out.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-ashley-hinson-used-her-position-to-help-her-husband-make-millions-now-shes-facing-an-ethics-investigation/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 132,
+        "anchor_quote": "Ashley Hinson",
+        "anchor_start": 119,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6IA00314",
+        "kind": "person",
+        "name": "HINSON, ASHLEY",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "[Ashley Hinson] wrote a law boosting insurance industry profits and giving tax breaks to companies like her husband’s,\nAshley Hinson’s gotten up to $8 million richer since she went to Washington, and now she’s facing an ethics complaint. Ashley Hinson sold us out.",
+    "text_hash": "46cfd94fefe3131d035b1d372b205a34b1d78147ac364a334c9212d46e5425cd",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3884-0",
+    "alignment": "D",
+    "block_id": "smp-3884-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3884-0-claims-001-001",
+    "claim_text": "Susan voted for Trump’s war in Iran five times, driving up our gas prices.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 74,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Susan voted for Trump’s war in Iran five times, driving up our gas prices,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-while-mainers-get-squeezed-by-costs-susan-collins-keeps-getting-richer/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 5,
+        "anchor_quote": "Susan",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Susan voted for Trump’s war in Iran five times, driving up our gas prices,\n[Meanwhile] Susan Collins is off getting rich from stock trading. She increased her wealth over $10 million. Susan Collins is making us pay more while she’s off getting rich.",
+    "text_hash": "c2f7c94f38fbafc1b3668587edbb57f6a33aba0fbdae6905f87528a7d9f725d7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3884-0",
+    "alignment": "D",
+    "block_id": "smp-3884-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3884-0-claims-001-002",
+    "claim_text": "Susan Collins is off getting rich from stock trading.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 249,
+        "kind": "publisher_ad_copy",
+        "start": 75,
+        "text": "[Meanwhile] Susan Collins is off getting rich from stock trading. She increased her wealth over $10 million. Susan Collins is making us pay more while she’s off getting rich.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-while-mainers-get-squeezed-by-costs-susan-collins-keeps-getting-richer/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 100,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 87,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Susan voted for Trump’s war in Iran five times, driving up our gas prices,\n[Meanwhile] Susan Collins is off getting rich from stock trading. She increased her wealth over $10 million. Susan Collins is making us pay more while she’s off getting rich.",
+    "text_hash": "c2f7c94f38fbafc1b3668587edbb57f6a33aba0fbdae6905f87528a7d9f725d7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3884-0",
+    "alignment": "D",
+    "block_id": "smp-3884-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3884-0-claims-001-003",
+    "claim_text": "She increased her wealth over $10 million.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 249,
+        "kind": "publisher_ad_copy",
+        "start": 75,
+        "text": "[Meanwhile] Susan Collins is off getting rich from stock trading. She increased her wealth over $10 million. Susan Collins is making us pay more while she’s off getting rich.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-while-mainers-get-squeezed-by-costs-susan-collins-keeps-getting-richer/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 144,
+        "anchor_quote": "She",
+        "anchor_start": 141,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Susan voted for Trump’s war in Iran five times, driving up our gas prices,\n[Meanwhile] Susan Collins is off getting rich from stock trading. She increased her wealth over $10 million. Susan Collins is making us pay more while she’s off getting rich.",
+    "text_hash": "c2f7c94f38fbafc1b3668587edbb57f6a33aba0fbdae6905f87528a7d9f725d7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3884-0",
+    "alignment": "D",
+    "block_id": "smp-3884-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3884-0-claims-001-004",
+    "claim_text": "Susan Collins is making us pay more while she’s off getting rich.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 249,
+        "kind": "publisher_ad_copy",
+        "start": 75,
+        "text": "[Meanwhile] Susan Collins is off getting rich from stock trading. She increased her wealth over $10 million. Susan Collins is making us pay more while she’s off getting rich.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-while-mainers-get-squeezed-by-costs-susan-collins-keeps-getting-richer/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 100,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 87,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Susan voted for Trump’s war in Iran five times, driving up our gas prices,\n[Meanwhile] Susan Collins is off getting rich from stock trading. She increased her wealth over $10 million. Susan Collins is making us pay more while she’s off getting rich.",
+    "text_hash": "c2f7c94f38fbafc1b3668587edbb57f6a33aba0fbdae6905f87528a7d9f725d7",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3888-0",
+    "alignment": "D",
+    "block_id": "smp-3888-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3888-0-claims-001-001",
+    "claim_text": "It was one of the worst child abuse scandals in history.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 120,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "It was one of the worst child abuse scandals in history. Dozens of young girls, sexually trafficked by Jeffrey Epstein…,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-roger-marshall-voted-to-keep-the-epstein-files-hidden-he-doesnt-belong-in-the-senate/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 43,
+        "anchor_quote": "child abuse scandal",
+        "anchor_start": 24,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "child abuse scandal",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "It was one of the worst child abuse scandals in history. Dozens of young girls, sexually trafficked by Jeffrey Epstein…,\n[A]nd Roger Marshall helped cover it up. Marshall voted to keep the Epstein files sealed, ignoring pleas from victims. And saying releasing the information was ‘not of much interest to me.’ Roger Marshall used his office to protect pedophiles. He doesn’t belong in the Senate.",
+    "text_hash": "6f0aa629a441b76d39649f92d961b9c17863180869daeb42b8f97cb234bcd9d0",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3888-0",
+    "alignment": "D",
+    "block_id": "smp-3888-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3888-0-claims-001-002",
+    "claim_text": "Dozens of young girls were sexually trafficked by Jeffrey Epstein…",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 120,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "It was one of the worst child abuse scandals in history. Dozens of young girls, sexually trafficked by Jeffrey Epstein…,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-roger-marshall-voted-to-keep-the-epstein-files-hidden-he-doesnt-belong-in-the-senate/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 118,
+        "anchor_quote": "Jeffrey Epstein",
+        "anchor_start": 103,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Jeffrey Epstein",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "It was one of the worst child abuse scandals in history. Dozens of young girls, sexually trafficked by Jeffrey Epstein…,\n[A]nd Roger Marshall helped cover it up. Marshall voted to keep the Epstein files sealed, ignoring pleas from victims. And saying releasing the information was ‘not of much interest to me.’ Roger Marshall used his office to protect pedophiles. He doesn’t belong in the Senate.",
+    "text_hash": "6f0aa629a441b76d39649f92d961b9c17863180869daeb42b8f97cb234bcd9d0",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3888-0",
+    "alignment": "D",
+    "block_id": "smp-3888-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3888-0-claims-001-003",
+    "claim_text": "Roger Marshall helped cover it up.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 397,
+        "kind": "publisher_ad_copy",
+        "start": 121,
+        "text": "[A]nd Roger Marshall helped cover it up. Marshall voted to keep the Epstein files sealed, ignoring pleas from victims. And saying releasing the information was ‘not of much interest to me.’ Roger Marshall used his office to protect pedophiles. He doesn’t belong in the Senate.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-roger-marshall-voted-to-keep-the-epstein-files-hidden-he-doesnt-belong-in-the-senate/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 141,
+        "anchor_quote": "Roger Marshall",
+        "anchor_start": 127,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S0KS00315",
+        "kind": "person",
+        "name": "MARSHALL, ROGER W",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "It was one of the worst child abuse scandals in history. Dozens of young girls, sexually trafficked by Jeffrey Epstein…,\n[A]nd Roger Marshall helped cover it up. Marshall voted to keep the Epstein files sealed, ignoring pleas from victims. And saying releasing the information was ‘not of much interest to me.’ Roger Marshall used his office to protect pedophiles. He doesn’t belong in the Senate.",
+    "text_hash": "6f0aa629a441b76d39649f92d961b9c17863180869daeb42b8f97cb234bcd9d0",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3888-0",
+    "alignment": "D",
+    "block_id": "smp-3888-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3888-0-claims-001-004",
+    "claim_text": "Marshall voted to keep the Epstein files sealed, ignoring pleas from victims.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 397,
+        "kind": "publisher_ad_copy",
+        "start": 121,
+        "text": "[A]nd Roger Marshall helped cover it up. Marshall voted to keep the Epstein files sealed, ignoring pleas from victims. And saying releasing the information was ‘not of much interest to me.’ Roger Marshall used his office to protect pedophiles. He doesn’t belong in the Senate.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-roger-marshall-voted-to-keep-the-epstein-files-hidden-he-doesnt-belong-in-the-senate/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 141,
+        "anchor_quote": "Marshall",
+        "anchor_start": 133,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S0KS00315",
+        "kind": "person",
+        "name": "MARSHALL, ROGER W",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 238,
+        "anchor_quote": "victims",
+        "anchor_start": 231,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "victims",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "It was one of the worst child abuse scandals in history. Dozens of young girls, sexually trafficked by Jeffrey Epstein…,\n[A]nd Roger Marshall helped cover it up. Marshall voted to keep the Epstein files sealed, ignoring pleas from victims. And saying releasing the information was ‘not of much interest to me.’ Roger Marshall used his office to protect pedophiles. He doesn’t belong in the Senate.",
+    "text_hash": "6f0aa629a441b76d39649f92d961b9c17863180869daeb42b8f97cb234bcd9d0",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3888-0",
+    "alignment": "D",
+    "block_id": "smp-3888-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3888-0-claims-001-005",
+    "claim_text": "Releasing the information was ‘not of much interest to me.’",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 397,
+        "kind": "publisher_ad_copy",
+        "start": 121,
+        "text": "[A]nd Roger Marshall helped cover it up. Marshall voted to keep the Epstein files sealed, ignoring pleas from victims. And saying releasing the information was ‘not of much interest to me.’ Roger Marshall used his office to protect pedophiles. He doesn’t belong in the Senate.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-roger-marshall-voted-to-keep-the-epstein-files-hidden-he-doesnt-belong-in-the-senate/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 308,
+        "anchor_quote": "me",
+        "anchor_start": 306,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S0KS00315",
+        "kind": "person",
+        "name": "MARSHALL, ROGER W",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "It was one of the worst child abuse scandals in history. Dozens of young girls, sexually trafficked by Jeffrey Epstein…,\n[A]nd Roger Marshall helped cover it up. Marshall voted to keep the Epstein files sealed, ignoring pleas from victims. And saying releasing the information was ‘not of much interest to me.’ Roger Marshall used his office to protect pedophiles. He doesn’t belong in the Senate.",
+    "text_hash": "6f0aa629a441b76d39649f92d961b9c17863180869daeb42b8f97cb234bcd9d0",
+    "unresolved_references": [],
+    "voice": "quoted_opponent"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3888-0",
+    "alignment": "D",
+    "block_id": "smp-3888-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3888-0-claims-001-006",
+    "claim_text": "Roger Marshall used his office to protect pedophiles.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 397,
+        "kind": "publisher_ad_copy",
+        "start": 121,
+        "text": "[A]nd Roger Marshall helped cover it up. Marshall voted to keep the Epstein files sealed, ignoring pleas from victims. And saying releasing the information was ‘not of much interest to me.’ Roger Marshall used his office to protect pedophiles. He doesn’t belong in the Senate.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-roger-marshall-voted-to-keep-the-epstein-files-hidden-he-doesnt-belong-in-the-senate/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 141,
+        "anchor_quote": "Roger Marshall",
+        "anchor_start": 127,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S0KS00315",
+        "kind": "person",
+        "name": "MARSHALL, ROGER W",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "It was one of the worst child abuse scandals in history. Dozens of young girls, sexually trafficked by Jeffrey Epstein…,\n[A]nd Roger Marshall helped cover it up. Marshall voted to keep the Epstein files sealed, ignoring pleas from victims. And saying releasing the information was ‘not of much interest to me.’ Roger Marshall used his office to protect pedophiles. He doesn’t belong in the Senate.",
+    "text_hash": "6f0aa629a441b76d39649f92d961b9c17863180869daeb42b8f97cb234bcd9d0",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3888-0",
+    "alignment": "D",
+    "block_id": "smp-3888-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3888-0-claims-001-007",
+    "claim_text": "He doesn’t belong in the Senate.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 397,
+        "kind": "publisher_ad_copy",
+        "start": 121,
+        "text": "[A]nd Roger Marshall helped cover it up. Marshall voted to keep the Epstein files sealed, ignoring pleas from victims. And saying releasing the information was ‘not of much interest to me.’ Roger Marshall used his office to protect pedophiles. He doesn’t belong in the Senate.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-roger-marshall-voted-to-keep-the-epstein-files-hidden-he-doesnt-belong-in-the-senate/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 367,
+        "anchor_quote": "He",
+        "anchor_start": 365,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S0KS00315",
+        "kind": "person",
+        "name": "MARSHALL, ROGER W",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "It was one of the worst child abuse scandals in history. Dozens of young girls, sexually trafficked by Jeffrey Epstein…,\n[A]nd Roger Marshall helped cover it up. Marshall voted to keep the Epstein files sealed, ignoring pleas from victims. And saying releasing the information was ‘not of much interest to me.’ Roger Marshall used his office to protect pedophiles. He doesn’t belong in the Senate.",
+    "text_hash": "6f0aa629a441b76d39649f92d961b9c17863180869daeb42b8f97cb234bcd9d0",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3891-0",
+    "alignment": "D",
+    "block_id": "smp-3891-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3891-0-claims-001-001",
+    "claim_text": "Susan Collins voted over and over for Trump’s war in Iran.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 158,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Susan Collins voted over and over for Trump’s war in Iran. It’s driving the cost of everything up, while Susan Collins is off getting rich from stock trading,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-mainers-are-paying-for-trumps-iran-war-susan-collins-is-profiting-from-it/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 13,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Susan Collins voted over and over for Trump’s war in Iran. It’s driving the cost of everything up, while Susan Collins is off getting rich from stock trading,\nShe’s not representing us, she’s taking care of herself.",
+    "text_hash": "bfd7ec51206ad7a6b43faa2b8d2337284071e18cbd0225657e8c9e8e882057dc",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3891-0",
+    "alignment": "D",
+    "block_id": "smp-3891-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3891-0-claims-001-002",
+    "claim_text": "Trump’s war in Iran is driving the cost of everything up.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 158,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Susan Collins voted over and over for Trump’s war in Iran. It’s driving the cost of everything up, while Susan Collins is off getting rich from stock trading,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-mainers-are-paying-for-trumps-iran-war-susan-collins-is-profiting-from-it/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 57,
+        "anchor_quote": "Trump’s war in Iran",
+        "anchor_start": 38,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Trump’s war in Iran",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Susan Collins voted over and over for Trump’s war in Iran. It’s driving the cost of everything up, while Susan Collins is off getting rich from stock trading,\nShe’s not representing us, she’s taking care of herself.",
+    "text_hash": "bfd7ec51206ad7a6b43faa2b8d2337284071e18cbd0225657e8c9e8e882057dc",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3891-0",
+    "alignment": "D",
+    "block_id": "smp-3891-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3891-0-claims-001-003",
+    "claim_text": "Susan Collins is getting rich from stock trading.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 158,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Susan Collins voted over and over for Trump’s war in Iran. It’s driving the cost of everything up, while Susan Collins is off getting rich from stock trading,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-mainers-are-paying-for-trumps-iran-war-susan-collins-is-profiting-from-it/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 13,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Susan Collins voted over and over for Trump’s war in Iran. It’s driving the cost of everything up, while Susan Collins is off getting rich from stock trading,\nShe’s not representing us, she’s taking care of herself.",
+    "text_hash": "bfd7ec51206ad7a6b43faa2b8d2337284071e18cbd0225657e8c9e8e882057dc",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3891-0",
+    "alignment": "D",
+    "block_id": "smp-3891-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3891-0-claims-001-004",
+    "claim_text": "She is not representing us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 215,
+        "kind": "publisher_ad_copy",
+        "start": 159,
+        "text": "She’s not representing us, she’s taking care of herself.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-mainers-are-paying-for-trumps-iran-war-susan-collins-is-profiting-from-it/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 162,
+        "anchor_quote": "She",
+        "anchor_start": 159,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "She",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Susan Collins voted over and over for Trump’s war in Iran. It’s driving the cost of everything up, while Susan Collins is off getting rich from stock trading,\nShe’s not representing us, she’s taking care of herself.",
+    "text_hash": "bfd7ec51206ad7a6b43faa2b8d2337284071e18cbd0225657e8c9e8e882057dc",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3891-0",
+    "alignment": "D",
+    "block_id": "smp-3891-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3891-0-claims-001-005",
+    "claim_text": "She is taking care of herself.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 215,
+        "kind": "publisher_ad_copy",
+        "start": 159,
+        "text": "She’s not representing us, she’s taking care of herself.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-mainers-are-paying-for-trumps-iran-war-susan-collins-is-profiting-from-it/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 162,
+        "anchor_quote": "She",
+        "anchor_start": 159,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "She",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Susan Collins voted over and over for Trump’s war in Iran. It’s driving the cost of everything up, while Susan Collins is off getting rich from stock trading,\nShe’s not representing us, she’s taking care of herself.",
+    "text_hash": "bfd7ec51206ad7a6b43faa2b8d2337284071e18cbd0225657e8c9e8e882057dc",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3892-0",
+    "alignment": "D",
+    "block_id": "smp-3892-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3892-0-claims-001-001",
+    "claim_text": "John Sununu built a career off of making millions on Big Pharma, oil and insurance companies while we got screwed.",
+    "claim_types": [
+      "characterization",
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 116,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "[John Sununu] built a career off of making millions on Big Pharma, oil and insurance companies while we got screwed,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-john-sununu-cashed-in-while-chris-pappas-fought-for-new-hampshire/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 12,
+        "anchor_quote": "John Sununu",
+        "anchor_start": 1,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6NH00208",
+        "kind": "person",
+        "name": "SUNUNU, JOHN E",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "[John Sununu] built a career off of making millions on Big Pharma, oil and insurance companies while we got screwed,\n…Chris Pappas stands up to both parties and the special interests to make things more affordable. Chris Pappas works for us. Not Trump, not the lobbyists.",
+    "text_hash": "2b759ef8c54332a75051ade48f27eb5533e972cc59f94c55492f6404f5013381",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3892-0",
+    "alignment": "D",
+    "block_id": "smp-3892-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3892-0-claims-001-002",
+    "claim_text": "Chris Pappas stands up to both parties and the special interests to make things more affordable.",
+    "claim_types": [
+      "characterization",
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 271,
+        "kind": "publisher_ad_copy",
+        "start": 117,
+        "text": "…Chris Pappas stands up to both parties and the special interests to make things more affordable. Chris Pappas works for us. Not Trump, not the lobbyists.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-john-sununu-cashed-in-while-chris-pappas-fought-for-new-hampshire/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 130,
+        "anchor_quote": "Chris Pappas",
+        "anchor_start": 118,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H8NH01210",
+        "kind": "person",
+        "name": "PAPPAS, CHRIS",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "[John Sununu] built a career off of making millions on Big Pharma, oil and insurance companies while we got screwed,\n…Chris Pappas stands up to both parties and the special interests to make things more affordable. Chris Pappas works for us. Not Trump, not the lobbyists.",
+    "text_hash": "2b759ef8c54332a75051ade48f27eb5533e972cc59f94c55492f6404f5013381",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3892-0",
+    "alignment": "D",
+    "block_id": "smp-3892-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3892-0-claims-001-003",
+    "claim_text": "Chris Pappas works for us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 271,
+        "kind": "publisher_ad_copy",
+        "start": 117,
+        "text": "…Chris Pappas stands up to both parties and the special interests to make things more affordable. Chris Pappas works for us. Not Trump, not the lobbyists.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-john-sununu-cashed-in-while-chris-pappas-fought-for-new-hampshire/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 130,
+        "anchor_quote": "Chris Pappas",
+        "anchor_start": 118,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:H8NH01210",
+        "kind": "person",
+        "name": "PAPPAS, CHRIS",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "[John Sununu] built a career off of making millions on Big Pharma, oil and insurance companies while we got screwed,\n…Chris Pappas stands up to both parties and the special interests to make things more affordable. Chris Pappas works for us. Not Trump, not the lobbyists.",
+    "text_hash": "2b759ef8c54332a75051ade48f27eb5533e972cc59f94c55492f6404f5013381",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3892-0",
+    "alignment": "D",
+    "block_id": "smp-3892-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3892-0-claims-001-004",
+    "claim_text": "Chris Pappas does not work for Trump.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 271,
+        "kind": "publisher_ad_copy",
+        "start": 117,
+        "text": "…Chris Pappas stands up to both parties and the special interests to make things more affordable. Chris Pappas works for us. Not Trump, not the lobbyists.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-john-sununu-cashed-in-while-chris-pappas-fought-for-new-hampshire/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 251,
+        "anchor_quote": "Trump",
+        "anchor_start": 246,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Trump",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[John Sununu] built a career off of making millions on Big Pharma, oil and insurance companies while we got screwed,\n…Chris Pappas stands up to both parties and the special interests to make things more affordable. Chris Pappas works for us. Not Trump, not the lobbyists.",
+    "text_hash": "2b759ef8c54332a75051ade48f27eb5533e972cc59f94c55492f6404f5013381",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3892-0",
+    "alignment": "D",
+    "block_id": "smp-3892-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3892-0-claims-001-005",
+    "claim_text": "Chris Pappas does not work for the lobbyists.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 271,
+        "kind": "publisher_ad_copy",
+        "start": 117,
+        "text": "…Chris Pappas stands up to both parties and the special interests to make things more affordable. Chris Pappas works for us. Not Trump, not the lobbyists.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-john-sununu-cashed-in-while-chris-pappas-fought-for-new-hampshire/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 270,
+        "anchor_quote": "the lobbyists",
+        "anchor_start": 257,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "the lobbyists",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "[John Sununu] built a career off of making millions on Big Pharma, oil and insurance companies while we got screwed,\n…Chris Pappas stands up to both parties and the special interests to make things more affordable. Chris Pappas works for us. Not Trump, not the lobbyists.",
+    "text_hash": "2b759ef8c54332a75051ade48f27eb5533e972cc59f94c55492f6404f5013381",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3893-0",
+    "alignment": "D",
+    "block_id": "smp-3893-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3893-0-claims-001-001",
+    "claim_text": "Our hospitals are closing and people can’t afford their health care because of Susan Collins and Donald Trump.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 110,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Our hospitals are closing and people can’t afford their health care because of Susan Collins and Donald Trump,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-every-time-it-matters-susan-collins-sides-with-trump-maine-families-are-paying-for-it/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 92,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 79,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 109,
+        "anchor_quote": "Donald Trump",
+        "anchor_start": 97,
+        "anchor_unit_id": 1,
+        "entity_id": "national:Donald Trump",
+        "kind": "person",
+        "name": "Donald Trump",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Our hospitals are closing and people can’t afford their health care because of Susan Collins and Donald Trump,\nSusan Collins was the deciding vote for Trump’s Medicaid cuts, then voted 7 more times to keep the cuts…she [also] voted with Trump to double health insurance premiums. Every time it matters, Susan Collins sides with Trump, and our families are suffering.",
+    "text_hash": "15e8f8b483da51ca2400e70cdfca0732330aada34e0728360aaf0a47f2b72c25",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3893-0",
+    "alignment": "D",
+    "block_id": "smp-3893-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3893-0-claims-001-002",
+    "claim_text": "Susan Collins was the deciding vote for Trump’s Medicaid cuts.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 366,
+        "kind": "publisher_ad_copy",
+        "start": 111,
+        "text": "Susan Collins was the deciding vote for Trump’s Medicaid cuts, then voted 7 more times to keep the cuts…she [also] voted with Trump to double health insurance premiums. Every time it matters, Susan Collins sides with Trump, and our families are suffering.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-every-time-it-matters-susan-collins-sides-with-trump-maine-families-are-paying-for-it/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 124,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 111,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 156,
+        "anchor_quote": "Trump",
+        "anchor_start": 151,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Donald Trump",
+        "kind": "person",
+        "name": "Donald Trump",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Our hospitals are closing and people can’t afford their health care because of Susan Collins and Donald Trump,\nSusan Collins was the deciding vote for Trump’s Medicaid cuts, then voted 7 more times to keep the cuts…she [also] voted with Trump to double health insurance premiums. Every time it matters, Susan Collins sides with Trump, and our families are suffering.",
+    "text_hash": "15e8f8b483da51ca2400e70cdfca0732330aada34e0728360aaf0a47f2b72c25",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3893-0",
+    "alignment": "D",
+    "block_id": "smp-3893-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3893-0-claims-001-003",
+    "claim_text": "Susan Collins voted 7 more times to keep the cuts.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 366,
+        "kind": "publisher_ad_copy",
+        "start": 111,
+        "text": "Susan Collins was the deciding vote for Trump’s Medicaid cuts, then voted 7 more times to keep the cuts…she [also] voted with Trump to double health insurance premiums. Every time it matters, Susan Collins sides with Trump, and our families are suffering.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-every-time-it-matters-susan-collins-sides-with-trump-maine-families-are-paying-for-it/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 124,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 111,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Our hospitals are closing and people can’t afford their health care because of Susan Collins and Donald Trump,\nSusan Collins was the deciding vote for Trump’s Medicaid cuts, then voted 7 more times to keep the cuts…she [also] voted with Trump to double health insurance premiums. Every time it matters, Susan Collins sides with Trump, and our families are suffering.",
+    "text_hash": "15e8f8b483da51ca2400e70cdfca0732330aada34e0728360aaf0a47f2b72c25",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3893-0",
+    "alignment": "D",
+    "block_id": "smp-3893-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3893-0-claims-001-004",
+    "claim_text": "She [also] voted with Trump to double health insurance premiums.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 366,
+        "kind": "publisher_ad_copy",
+        "start": 111,
+        "text": "Susan Collins was the deciding vote for Trump’s Medicaid cuts, then voted 7 more times to keep the cuts…she [also] voted with Trump to double health insurance premiums. Every time it matters, Susan Collins sides with Trump, and our families are suffering.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-every-time-it-matters-susan-collins-sides-with-trump-maine-families-are-paying-for-it/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 218,
+        "anchor_quote": "she",
+        "anchor_start": 215,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 156,
+        "anchor_quote": "Trump",
+        "anchor_start": 151,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Donald Trump",
+        "kind": "person",
+        "name": "Donald Trump",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Our hospitals are closing and people can’t afford their health care because of Susan Collins and Donald Trump,\nSusan Collins was the deciding vote for Trump’s Medicaid cuts, then voted 7 more times to keep the cuts…she [also] voted with Trump to double health insurance premiums. Every time it matters, Susan Collins sides with Trump, and our families are suffering.",
+    "text_hash": "15e8f8b483da51ca2400e70cdfca0732330aada34e0728360aaf0a47f2b72c25",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3893-0",
+    "alignment": "D",
+    "block_id": "smp-3893-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3893-0-claims-001-005",
+    "claim_text": "Every time it matters, Susan Collins sides with Trump.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 366,
+        "kind": "publisher_ad_copy",
+        "start": 111,
+        "text": "Susan Collins was the deciding vote for Trump’s Medicaid cuts, then voted 7 more times to keep the cuts…she [also] voted with Trump to double health insurance premiums. Every time it matters, Susan Collins sides with Trump, and our families are suffering.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-every-time-it-matters-susan-collins-sides-with-trump-maine-families-are-paying-for-it/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 124,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 111,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 156,
+        "anchor_quote": "Trump",
+        "anchor_start": 151,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Donald Trump",
+        "kind": "person",
+        "name": "Donald Trump",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Our hospitals are closing and people can’t afford their health care because of Susan Collins and Donald Trump,\nSusan Collins was the deciding vote for Trump’s Medicaid cuts, then voted 7 more times to keep the cuts…she [also] voted with Trump to double health insurance premiums. Every time it matters, Susan Collins sides with Trump, and our families are suffering.",
+    "text_hash": "15e8f8b483da51ca2400e70cdfca0732330aada34e0728360aaf0a47f2b72c25",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3893-0",
+    "alignment": "D",
+    "block_id": "smp-3893-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3893-0-claims-001-006",
+    "claim_text": "our families are suffering.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 366,
+        "kind": "publisher_ad_copy",
+        "start": 111,
+        "text": "Susan Collins was the deciding vote for Trump’s Medicaid cuts, then voted 7 more times to keep the cuts…she [also] voted with Trump to double health insurance premiums. Every time it matters, Susan Collins sides with Trump, and our families are suffering.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-every-time-it-matters-susan-collins-sides-with-trump-maine-families-are-paying-for-it/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 351,
+        "anchor_quote": "our families",
+        "anchor_start": 339,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "our families",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Our hospitals are closing and people can’t afford their health care because of Susan Collins and Donald Trump,\nSusan Collins was the deciding vote for Trump’s Medicaid cuts, then voted 7 more times to keep the cuts…she [also] voted with Trump to double health insurance premiums. Every time it matters, Susan Collins sides with Trump, and our families are suffering.",
+    "text_hash": "15e8f8b483da51ca2400e70cdfca0732330aada34e0728360aaf0a47f2b72c25",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3899-0",
+    "alignment": "D",
+    "block_id": "smp-3899-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3899-0-claims-001-001",
+    "claim_text": "Do we really want to send a guy like Mike Rogers, who’s made millions helping the special interests, to the U.S. Senate?",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 120,
+        "kind": "publisher_ad_copy",
+        "start": 0,
+        "text": "Do we really want to send a guy like Mike Rogers, who’s made millions helping the special interests, to the U.S. Senate,",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-in-my-house-hits-mike-rogers-for-cashing-in-on-special-interests/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 48,
+        "anchor_quote": "Mike Rogers",
+        "anchor_start": 37,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Do we really want to send a guy like Mike Rogers, who’s made millions helping the special interests, to the U.S. Senate,\nRogers is in lock step with Donald Trump, and he’s totally in bed with Big Pharma…that’s exactly how he got rich. He cashed in on the system and he’ll do it again.",
+    "text_hash": "8172123d8ff711df7ddb7a6a75f1159194d88dd4115e27eaa195f733da065908",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3899-0",
+    "alignment": "D",
+    "block_id": "smp-3899-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3899-0-claims-001-002",
+    "claim_text": "Rogers is in lock step with Donald Trump.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 284,
+        "kind": "publisher_ad_copy",
+        "start": 121,
+        "text": "Rogers is in lock step with Donald Trump, and he’s totally in bed with Big Pharma…that’s exactly how he got rich. He cashed in on the system and he’ll do it again.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-in-my-house-hits-mike-rogers-for-cashing-in-on-special-interests/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 127,
+        "anchor_quote": "Rogers",
+        "anchor_start": 121,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 161,
+        "anchor_quote": "Donald Trump",
+        "anchor_start": 149,
+        "anchor_unit_id": 2,
+        "entity_id": "national:Donald Trump",
+        "kind": "person",
+        "name": "Donald Trump",
+        "party_basis": "national_crosswalk",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Do we really want to send a guy like Mike Rogers, who’s made millions helping the special interests, to the U.S. Senate,\nRogers is in lock step with Donald Trump, and he’s totally in bed with Big Pharma…that’s exactly how he got rich. He cashed in on the system and he’ll do it again.",
+    "text_hash": "8172123d8ff711df7ddb7a6a75f1159194d88dd4115e27eaa195f733da065908",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3899-0",
+    "alignment": "D",
+    "block_id": "smp-3899-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3899-0-claims-001-003",
+    "claim_text": "Rogers is totally in bed with Big Pharma…that’s exactly how he got rich.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 284,
+        "kind": "publisher_ad_copy",
+        "start": 121,
+        "text": "Rogers is in lock step with Donald Trump, and he’s totally in bed with Big Pharma…that’s exactly how he got rich. He cashed in on the system and he’ll do it again.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-in-my-house-hits-mike-rogers-for-cashing-in-on-special-interests/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 127,
+        "anchor_quote": "Rogers",
+        "anchor_start": 121,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      },
+      {
+        "anchor_end": 202,
+        "anchor_quote": "Big Pharma",
+        "anchor_start": 192,
+        "anchor_unit_id": 2,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Big Pharma",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Do we really want to send a guy like Mike Rogers, who’s made millions helping the special interests, to the U.S. Senate,\nRogers is in lock step with Donald Trump, and he’s totally in bed with Big Pharma…that’s exactly how he got rich. He cashed in on the system and he’ll do it again.",
+    "text_hash": "8172123d8ff711df7ddb7a6a75f1159194d88dd4115e27eaa195f733da065908",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "smp-3899-0",
+    "alignment": "D",
+    "block_id": "smp-3899-0-claims-001",
+    "block_status": "normalized",
+    "claim_id": "smp-3899-0-claims-001-004",
+    "claim_text": "He cashed in on the system and he’ll do it again.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 284,
+        "kind": "publisher_ad_copy",
+        "start": 121,
+        "text": "Rogers is in lock step with Donald Trump, and he’s totally in bed with Big Pharma…that’s exactly how he got rich. He cashed in on the system and he’ll do it again.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://senatemajority.com/news/new-ad-in-my-house-hits-mike-rogers-for-cashing-in-on-special-interests/",
+    "sponsor": "Senate Majority PAC",
+    "targets": [
+      {
+        "anchor_end": 237,
+        "anchor_quote": "He",
+        "anchor_start": 235,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Do we really want to send a guy like Mike Rogers, who’s made millions helping the special interests, to the U.S. Senate,\nRogers is in lock step with Donald Trump, and he’s totally in bed with Big Pharma…that’s exactly how he got rich. He cashed in on the system and he’ll do it again.",
+    "text_hash": "8172123d8ff711df7ddb7a6a75f1159194d88dd4115e27eaa195f733da065908",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
