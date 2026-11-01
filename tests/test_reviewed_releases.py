@@ -619,9 +619,11 @@ def test_unlinked_publisher_quotation_rejects_unbound_or_non_ad_words(failure):
             )
         from bs4 import BeautifulSoup
 
-        paragraph = BeautifulSoup(content, "html.parser").select(
-            review["reported_ad_text"]["paragraph_selector"]
-        )[0].get_text(" ", strip=True)
+        paragraph = (
+            BeautifulSoup(content, "html.parser")
+            .select(review["reported_ad_text"]["paragraph_selector"])[0]
+            .get_text(" ", strip=True)
+        )
         review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph)
         review["content_sha256"] = digest(content)
         body = content.encode()
