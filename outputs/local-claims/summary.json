@@ -3295,16 +3295,16 @@
   "ads": 1792,
   "ads_by_status": {
     "normalized": 429,
-    "not_run": 577,
-    "validation_failed": 786
+    "not_run": 571,
+    "validation_failed": 792
   },
   "blocks": 2016,
   "blocks_by_status": {
-    "normalized": 463,
-    "not_run": 656,
-    "validation_failed": 897
+    "normalized": 464,
+    "not_run": 648,
+    "validation_failed": 904
   },
-  "claims": 2981,
+  "claims": 2984,
   "fingerprint": "326f6b616416f1d0e9f1e1a7231ad8edb8413654c17ee12e816f24882ee954fd",
   "model": "mlx-community/gemma-3-27b-it-8bit",
   "model_revision": "524cdc4f56a58ef94949ba65dc63a29c48362b1a",
@@ -12421,6 +12421,14 @@
         {
           "claim_id": "snap-8785acb42dd228ef456b9e73-claims-001-001",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-8db2f6b4059ff44ee6ba3dba-claims-002-001",
+          "target_index": 0
+        },
+        {
+          "claim_id": "snap-8db2f6b4059ff44ee6ba3dba-claims-002-002",
+          "target_index": 0
         }
       ],
       "uncertain": [
@@ -15573,6 +15581,10 @@
         {
           "claim_id": "snap-8ac5efd7bd8884486a127945-claims-001-002",
           "target_index": 0
+        },
+        {
+          "claim_id": "snap-8db2f6b4059ff44ee6ba3dba-claims-002-003",
+          "target_index": 0
         }
       ],
       "positive": [
@@ -16704,6 +16716,6 @@
       "uncertain": []
     }
   },
-  "targets": 3336,
+  "targets": 3339,
   "version": "local-ad-claims-4"
 }

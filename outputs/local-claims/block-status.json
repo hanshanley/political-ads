@@ -8162,50 +8162,50 @@
   {
     "ad_id": "snap-8db2f6b4059ff44ee6ba3dba",
     "block_id": "snap-8db2f6b4059ff44ee6ba3dba-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid claim JSON: Expecting value: line 1 column 1 (char 0)\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-8db2f6b4059ff44ee6ba3dba",
     "block_id": "snap-8db2f6b4059ff44ee6ba3dba-claims-002",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-8dcc283fdeaf0a510e35e059",
     "block_id": "snap-8dcc283fdeaf0a510e35e059-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 7\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-8e14ae6417ccc0b2d99f116e",
     "block_id": "snap-8e14ae6417ccc0b2d99f116e-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Duplicate claim 2\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-8e44a918f29a8643818b1e06",
     "block_id": "snap-8e44a918f29a8643818b1e06-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for Wall Street banks: \\\"Wall Street banks\\\" is absent from unit 1. Exact source: \\\"Coloradans are struggling to keep up with\\\\nthe skyrocketing prices of buying a home.\\\\nWe passed the most consequential\\\\nhousing bill in decades to stop Wall Street\\\\nbanks and large corporations from buying\\\\nup houses, expand loans for veterans,\\\\nand cut red tape so we can build more.\\\\nWe are fighting to make housing more\\\\naffordable and attainable.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-8e79a359743435a8d170860f",
     "block_id": "snap-8e79a359743435a8d170860f-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Katherine Clark: \\\"Katherine Clark\\\" is absent from unit 1. Exact source: \\\"Affordable\\\\nEqual\\\\npay\\\\nAffordable\\\\nchildcare\\\\nKatherine\\\\nClark ISA\\\\nCHAMPION\\\\nFOR WOMEN\\\\nReproductive\\\\nrights\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-8ed85dfe8fcd7a4721ca2fcd",
     "block_id": "snap-8ed85dfe8fcd7a4721ca2fcd-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for Tom Tiffany: \\\"Tom Tiffany\\\" is absent from unit 17. Exact source: \\\"Taken SNAP benefits\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-8ed85dfe8fcd7a4721ca2fcd",
     "block_id": "snap-8ed85dfe8fcd7a4721ca2fcd-claims-002",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for any candidate: \\\"any candidate\\\" is absent from unit 2. Exact source: \\\"NOT AUTHORIZED BY ANY CANDIDATE, CANDIDATES AGENT, OR COMMITEE.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-8efb49ad33624d89a638eb50",
