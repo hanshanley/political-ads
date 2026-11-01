@@ -139121,5 +139121,1263 @@
     "text_hash": "9d81c289e3ebb2c294cec86221abc51e05ea831568598206c6e69817ac5ad6de",
     "unresolved_references": [],
     "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-803ae70a4dd08f44061ed421",
+    "alignment": "D",
+    "block_id": "snap-803ae70a4dd08f44061ed421-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-803ae70a4dd08f44061ed421-claims-001-001",
+    "claim_text": "He wasn't waiting for court. He was waiting for care.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 499,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2f9d6882051eb74692ecbcbbddce352aead12a76c09ab6301b6c76cb76cbe659?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 42,
+        "anchor_quote": "He",
+        "anchor_start": 40,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "unspecified individuals",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+    "text_hash": "f083d705e7b5307246a17f06efa8342ec8d2f5c49a25dc3fd84f09a7263f525a",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-803ae70a4dd08f44061ed421",
+    "alignment": "D",
+    "block_id": "snap-803ae70a4dd08f44061ed421-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-803ae70a4dd08f44061ed421-claims-001-002",
+    "claim_text": "Jon Ossoff have made investing in health care and mental health care services in rural Georgia as one of my highest priorities.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 499,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2f9d6882051eb74692ecbcbbddce352aead12a76c09ab6301b6c76cb76cbe659?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 461,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 451,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+    "text_hash": "f083d705e7b5307246a17f06efa8342ec8d2f5c49a25dc3fd84f09a7263f525a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-803ae70a4dd08f44061ed421",
+    "alignment": "D",
+    "block_id": "snap-803ae70a4dd08f44061ed421-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-803ae70a4dd08f44061ed421-claims-001-003",
+    "claim_text": "Jon Ossoff will have his team deliver more resources for health care and pediatric care in rural parts of our state.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 499,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2f9d6882051eb74692ecbcbbddce352aead12a76c09ab6301b6c76cb76cbe659?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 461,
+        "anchor_quote": "Jon Ossoff",
+        "anchor_start": 451,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+    "text_hash": "f083d705e7b5307246a17f06efa8342ec8d2f5c49a25dc3fd84f09a7263f525a",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-803ae70a4dd08f44061ed421",
+    "alignment": "D",
+    "block_id": "snap-803ae70a4dd08f44061ed421-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-803ae70a4dd08f44061ed421-claims-001-004",
+    "claim_text": "Jon Ossoff is a U.S. Senator.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 499,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2f9d6882051eb74692ecbcbbddce352aead12a76c09ab6301b6c76cb76cbe659?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 461,
+        "anchor_quote": "U.S. Senator Jon Ossoff",
+        "anchor_start": 438,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+    "text_hash": "f083d705e7b5307246a17f06efa8342ec8d2f5c49a25dc3fd84f09a7263f525a",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-803ae70a4dd08f44061ed421",
+    "alignment": "D",
+    "block_id": "snap-803ae70a4dd08f44061ed421-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-803ae70a4dd08f44061ed421-claims-001-005",
+    "claim_text": "Jon Ossoff is a Democrat.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 499,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2f9d6882051eb74692ecbcbbddce352aead12a76c09ab6301b6c76cb76cbe659?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 473,
+        "anchor_quote": "(D) Georgia",
+        "anchor_start": 462,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S8GA00180",
+        "kind": "person",
+        "name": "OSSOFF, JON",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+    "text_hash": "f083d705e7b5307246a17f06efa8342ec8d2f5c49a25dc3fd84f09a7263f525a",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-803ae70a4dd08f44061ed421",
+    "alignment": "D",
+    "block_id": "snap-803ae70a4dd08f44061ed421-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-803ae70a4dd08f44061ed421-claims-001-006",
+    "claim_text": "There is a need for mental health care in rural Georgia.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 499,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2f9d6882051eb74692ecbcbbddce352aead12a76c09ab6301b6c76cb76cbe659?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 287,
+        "anchor_quote": "rural Georgia",
+        "anchor_start": 274,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "rural Georgia",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+    "text_hash": "f083d705e7b5307246a17f06efa8342ec8d2f5c49a25dc3fd84f09a7263f525a",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-803ae70a4dd08f44061ed421",
+    "alignment": "D",
+    "block_id": "snap-803ae70a4dd08f44061ed421-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-803ae70a4dd08f44061ed421-claims-001-007",
+    "claim_text": "There is a need for health care in rural Georgia.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 499,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/2f9d6882051eb74692ecbcbbddce352aead12a76c09ab6301b6c76cb76cbe659?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 287,
+        "anchor_quote": "rural Georgia",
+        "anchor_start": 274,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "rural Georgia",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "WALB\nNEWS\n•\nYour Hometown\nNews Source!\n\"He wasn't waiting for court. He was waiting for\ncare.\" Georgia investigation finds children with\nspecial needs incarcerated\nOSSOFF ON RURAL GA MENTAL HEALTH CARE\n\" have made investing in health care and\nmental health care services in rural Georgia\nas one of my highest priorities. What I'll\nhave my team do is deliver more resources\nfor health care and pediatric care in rural\nparts of our state.\"\nU.S. Senator Jon Ossoff\n(D) Georgia\n5:37 69°\nWATCH US ON\nROKU",
+    "text_hash": "f083d705e7b5307246a17f06efa8342ec8d2f5c49a25dc3fd84f09a7263f525a",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-80677d059e1ee83c338ec4ff",
+    "alignment": "D",
+    "block_id": "snap-80677d059e1ee83c338ec4ff-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-80677d059e1ee83c338ec4ff-claims-001-001",
+    "claim_text": "Half of Michigan renters pay too much for housing.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 320,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6612b2fecd4ccc6127ae9fabc2f4cc5343a77098cd3c06b3b0ad64379bc782ae?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 22,
+        "anchor_quote": "Michigan",
+        "anchor_start": 14,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Michigan",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+    "text_hash": "5e2a788f7bdb3514091001eb3841a65ff96e76e3ea53ff981973bbb7f95bedd1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-80677d059e1ee83c338ec4ff",
+    "alignment": "D",
+    "block_id": "snap-80677d059e1ee83c338ec4ff-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-80677d059e1ee83c338ec4ff-claims-001-002",
+    "claim_text": "Housing affordability in Michigan is shaping up to be a major issue in the state's upcoming Senate election.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 320,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6612b2fecd4ccc6127ae9fabc2f4cc5343a77098cd3c06b3b0ad64379bc782ae?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 22,
+        "anchor_quote": "Michigan",
+        "anchor_start": 14,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "Michigan",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+    "text_hash": "5e2a788f7bdb3514091001eb3841a65ff96e76e3ea53ff981973bbb7f95bedd1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-80677d059e1ee83c338ec4ff",
+    "alignment": "D",
+    "block_id": "snap-80677d059e1ee83c338ec4ff-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-80677d059e1ee83c338ec4ff-claims-001-003",
+    "claim_text": "The upcoming Senate election will see progressive Abdul El-Sayed face rival Republican Mike Rogers.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 320,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6612b2fecd4ccc6127ae9fabc2f4cc5343a77098cd3c06b3b0ad64379bc782ae?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 71,
+        "anchor_quote": "El-Sayed",
+        "anchor_start": 63,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Abdul El-Sayed",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      },
+      {
+        "anchor_end": 82,
+        "anchor_quote": "Rogers",
+        "anchor_start": 76,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "Mike Rogers",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+    "text_hash": "5e2a788f7bdb3514091001eb3841a65ff96e76e3ea53ff981973bbb7f95bedd1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-80677d059e1ee83c338ec4ff",
+    "alignment": "D",
+    "block_id": "snap-80677d059e1ee83c338ec4ff-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-80677d059e1ee83c338ec4ff-claims-001-004",
+    "claim_text": "Abdul El-Sayed won the Democratic primary this week.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 320,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6612b2fecd4ccc6127ae9fabc2f4cc5343a77098cd3c06b3b0ad64379bc782ae?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 71,
+        "anchor_quote": "El-Sayed",
+        "anchor_start": 63,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Abdul El-Sayed",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+    "text_hash": "5e2a788f7bdb3514091001eb3841a65ff96e76e3ea53ff981973bbb7f95bedd1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-80677d059e1ee83c338ec4ff",
+    "alignment": "D",
+    "block_id": "snap-80677d059e1ee83c338ec4ff-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-80677d059e1ee83c338ec4ff-claims-001-005",
+    "claim_text": "Mike Rogers is a rival Republican.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 320,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6612b2fecd4ccc6127ae9fabc2f4cc5343a77098cd3c06b3b0ad64379bc782ae?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 82,
+        "anchor_quote": "Rogers",
+        "anchor_start": 76,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "Mike Rogers",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+    "text_hash": "5e2a788f7bdb3514091001eb3841a65ff96e76e3ea53ff981973bbb7f95bedd1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-80677d059e1ee83c338ec4ff",
+    "alignment": "D",
+    "block_id": "snap-80677d059e1ee83c338ec4ff-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-80677d059e1ee83c338ec4ff-claims-001-006",
+    "claim_text": "Abdul El-Sayed is progressive.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 320,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6612b2fecd4ccc6127ae9fabc2f4cc5343a77098cd3c06b3b0ad64379bc782ae?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 71,
+        "anchor_quote": "El-Sayed",
+        "anchor_start": 63,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Abdul El-Sayed",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+    "text_hash": "5e2a788f7bdb3514091001eb3841a65ff96e76e3ea53ff981973bbb7f95bedd1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-80677d059e1ee83c338ec4ff",
+    "alignment": "D",
+    "block_id": "snap-80677d059e1ee83c338ec4ff-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-80677d059e1ee83c338ec4ff-claims-001-007",
+    "claim_text": "Mike Rogers is Republican.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 320,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/6612b2fecd4ccc6127ae9fabc2f4cc5343a77098cd3c06b3b0ad64379bc782ae?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 82,
+        "anchor_quote": "Rogers",
+        "anchor_start": 76,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "Mike Rogers",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Newsweek\nHalf Michigan Renters Pay\nToo Much for Housing. Where\nEl-Sayed and Rogers Stand\nHousing affordability in Michigan is shaping up to be a major issue in\nthe state's upcoming Senate election which will see progressive Abdul\nEl-Sayed face rival Republican Mike Rogers after winning the\nDemocratic primary this week.",
+    "text_hash": "5e2a788f7bdb3514091001eb3841a65ff96e76e3ea53ff981973bbb7f95bedd1",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-80b2e51538cf3cbd46427bfc",
+    "alignment": "D",
+    "block_id": "snap-80b2e51538cf3cbd46427bfc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-80b2e51538cf3cbd46427bfc-claims-001-001",
+    "claim_text": "James Lindsay will fight to lower costs and raise wages.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 174,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETIER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERICA'D UNIONI\nLINDSAY\nJAMES\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fcf4d1d0e170077594a44d7eddabb4a2293c7b60d6500c767d85f46237d5b5e3?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 89,
+        "anchor_quote": "JAMES",
+        "anchor_start": 84,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "James Lindsay",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "N'S BETIER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERICA'D UNIONI\nLINDSAY\nJAMES\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+    "text_hash": "87d9afe64298aee966a8f96f1d0177b59d6edfea87a3e2408bb7f1cff60eaf6e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-80b2e51538cf3cbd46427bfc",
+    "alignment": "D",
+    "block_id": "snap-80b2e51538cf3cbd46427bfc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-80b2e51538cf3cbd46427bfc-claims-001-002",
+    "claim_text": "This was paid for by the AFL-CIO.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 174,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "N'S BETIER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERICA'D UNIONI\nLINDSAY\nJAMES\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/fcf4d1d0e170077594a44d7eddabb4a2293c7b60d6500c767d85f46237d5b5e3?mediaType=png",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 58,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 51,
+        "anchor_unit_id": 1,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "N'S BETIER\n-IN A\nUnion\nMY UNION, MY RIGHT, MY VOTE\nAFL-CIO\nAMERICA'D UNIONI\nLINDSAY\nJAMES\nWILL FIGHT TO LOWER COSTS\nAND RAISE WAGES.\nVOTE WITH WORKERS\nPAID FOR BY THE AFL-CIO",
+    "text_hash": "87d9afe64298aee966a8f96f1d0177b59d6edfea87a3e2408bb7f1cff60eaf6e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-80df54be71fef4eabc8fb32d",
+    "alignment": "R",
+    "block_id": "snap-80df54be71fef4eabc8fb32d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-80df54be71fef4eabc8fb32d-claims-001-001",
+    "claim_text": "Rep. Pappas votes on 7 bills Amazon lobbied on while dating Amazon lobbyist.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 98,
+        "kind": "video_ocr",
+        "start": 70,
+        "text": "after Rep. Pappas votes on 7",
+        "unit_id": 6
+      },
+      {
+        "end": 123,
+        "kind": "video_ocr",
+        "start": 99,
+        "text": "bills Amazon lobbied on,",
+        "unit_id": 7
+      },
+      {
+        "end": 153,
+        "kind": "video_ocr",
+        "start": 124,
+        "text": "while dating Amazon lobbyist.",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      6,
+      7,
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/09db3691dbf657288246fa12acd4f343889a8a2d2af25b2103b977129709c1c6?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 87,
+        "anchor_quote": "Rep. Pappas",
+        "anchor_start": 76,
+        "anchor_unit_id": 6,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Rep. Pappas",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "NEW\nHAMPSHIRE\nDAILY\nLatest: New calls for\nCongressional ethics reform\nafter Rep. Pappas votes on 7\nbills Amazon lobbied on,\nwhile dating Amazon lobbyist.",
+    "text_hash": "8847a1c6b39b3d9fac61741a255d89dfaf13bf25f72178027a34c59876881079",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-80df54be71fef4eabc8fb32d",
+    "alignment": "R",
+    "block_id": "snap-80df54be71fef4eabc8fb32d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-80df54be71fef4eabc8fb32d-claims-001-002",
+    "claim_text": "There are latest calls for Congressional ethics reform.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 41,
+        "kind": "video_ocr",
+        "start": 20,
+        "text": "Latest: New calls for",
+        "unit_id": 4
+      },
+      {
+        "end": 69,
+        "kind": "video_ocr",
+        "start": 42,
+        "text": "Congressional ethics reform",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      4,
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/09db3691dbf657288246fa12acd4f343889a8a2d2af25b2103b977129709c1c6?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 69,
+        "anchor_quote": "Congressional ethics reform",
+        "anchor_start": 42,
+        "anchor_unit_id": 5,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "Congressional ethics reform",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "NEW\nHAMPSHIRE\nDAILY\nLatest: New calls for\nCongressional ethics reform\nafter Rep. Pappas votes on 7\nbills Amazon lobbied on,\nwhile dating Amazon lobbyist.",
+    "text_hash": "8847a1c6b39b3d9fac61741a255d89dfaf13bf25f72178027a34c59876881079",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-80df54be71fef4eabc8fb32d",
+    "alignment": "R",
+    "block_id": "snap-80df54be71fef4eabc8fb32d-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-80df54be71fef4eabc8fb32d-claims-001-003",
+    "claim_text": "NEW Hampshire Daily is reporting.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 3,
+        "kind": "video_ocr",
+        "start": 0,
+        "text": "NEW",
+        "unit_id": 1
+      },
+      {
+        "end": 13,
+        "kind": "video_ocr",
+        "start": 4,
+        "text": "HAMPSHIRE",
+        "unit_id": 2
+      },
+      {
+        "end": 19,
+        "kind": "video_ocr",
+        "start": 14,
+        "text": "DAILY",
+        "unit_id": 3
+      }
+    ],
+    "evidence_ids": [
+      1,
+      2,
+      3
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/09db3691dbf657288246fa12acd4f343889a8a2d2af25b2103b977129709c1c6?mediaType=mp4",
+    "sponsor": "One Nation",
+    "targets": [
+      {
+        "anchor_end": 19,
+        "anchor_quote": "DAILY",
+        "anchor_start": 14,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "other",
+        "name": "NEW Hampshire Daily",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "NEW\nHAMPSHIRE\nDAILY\nLatest: New calls for\nCongressional ethics reform\nafter Rep. Pappas votes on 7\nbills Amazon lobbied on,\nwhile dating Amazon lobbyist.",
+    "text_hash": "8847a1c6b39b3d9fac61741a255d89dfaf13bf25f72178027a34c59876881079",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-81092f0de2a2a90933e8db6a",
+    "alignment": "D",
+    "block_id": "snap-81092f0de2a2a90933e8db6a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-81092f0de2a2a90933e8db6a-claims-001-001",
+    "claim_text": "Susan Collins voted to cover up the Epstein Files.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 136,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Susan Collins voted to hover up the Epstein Files. Turns out Jeffrey Epstein's business partner funneled $3 million to Collins Superpec.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/88c0c0f4b5fcb5ecfaa6eac35f0930336dbe3a8d9ff256efcce6d8b558a8fbda?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 13,
+        "anchor_quote": "Susan Collins",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Susan Collins voted to hover up the Epstein Files. Turns out Jeffrey Epstein's business partner funneled $3 million to Collins Superpec.\nTroy Jackson cracked down on child sex trafficking. We can trust Troy.\n45 E\n3.5\nP80/2\n120\nNewly released Epstein transcripts:\nFlorida prosecutors knew billionaire\nraped teen girls years before cutting deal\nNatice Jul 1. 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) — Florida prosecutors heard graphic testimony about how the late millionaire and financier Jeltrey Epatul\natmally amsaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jery\ninvestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to The r5a\nand the powerful seems to have allowed him to continue to rape and sex traffe teenagers without ever being sent to prison or serving » serte\nJoil term. The Judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next week on wbee aad bo\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circult Jode\n1 aie Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grusdl jory\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The teraugr\ntstilled and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent people,\" Doiy\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape — all of il\nal lome is sexually deviant, disgusting, and criminal.\"\nAfter the grand jury investigation, Epstein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\nIrees and instead plead quilty to state charges of procuring a person under 18 for prostitution and solicitation of prostitul\nuring a person undeCountr jail system, followed by a year of boe\n35\nP80/2 1\nCover Up\n- Roll Call Vote No. 512, 9/10/25\natioe Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financier Jettrey E\nsxually assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 gramd jery\nlevestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to the ri3\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving a sens\njail term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wbek aad\nta release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Jody\n1 ala Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grasd jur!\nbrard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The tecmage\ntestifed and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pr\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape -\nat loue is sexually deviant, disgusting, and criminal.\"\n. Enetein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\n45F\nP80/2 120\nce Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financler Jettey E\naexmally assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jury\nlavestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles Be the 153\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving s\njoil term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wben\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Judu\n1 ah Deleado ordered.\nJelfrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the gruad jor\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The M\ntstified and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pe\nte in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape - all -te\n20\n163108\nCivic Servia / Consultant\nContribution\nwk 10154\nAve Suite B-\nBlackstone / CEO/Chairman Contribution\nElliott Investor\nManagement / Co-CEO &\nFiorida 33480\nPresident\nepy Valley Rd\nStead Impact Ventures /\nChairman\nArieona 85255\nPpy Vallty Rd\nRetired / Retired\nArleena 85255\nENGTON ST.\nVirginia\nJFC Transfer of Net\nProceeds\nWtetts\nCitizens Disability LLC /\nCEO\nTransfer Memo\nNyman Turkish PC /\nAttorney i\nHomemaker / Homemaker Transfer Memo\nINGTON ST.\nVirgie\nApt 12A\n- Terk 10024 WTW /Attorney\n34105\nMEMO\n06/09/2025\n06/27/2025\n06/30/2025\n03/31/2025\n02/23/2025\n02/24/2025\n03/28/2025\n03/29/2025\n04/04/2025\n25000.00\n2000000.00\n500000.00\n6312.75\n1750.00\n1700.00\n4600.00\n21049.78\n5000.00\n1400.00\n27362.53\nLIMITS\n63108\n10154\nSute B-\nida 33480\ny Valley Rd\n4 85255\nValley Rd\nsa 85255\nNGTON ST,\nAttorney\nHomemaker / Homemaker\nIGTON ST.\nPrginia\n(10024\nWTW /Attorney\n21\nTo Her Super PAC\n- FEC.gov, 6/27/25; 6/26/26\nFo/k 10154\nrda 33480\nesa 85255\nла 85255\nITON ST,\nsetts\nTON ST,\n10024 WTW / Attorney\n4 10154\nle B-\nl 33480\ney Rd\n85255\nRd\na 85255\nON ST.\nIN ST.\n12A\n45 E 35\n| 33480\nV ST.\nST.\nLIMIT\nPAD FOR BY WINSENATE, WWWW.MNSENATE.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATES COMMITTEE, WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY WINSENATE, WWW.WINSENATE,.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATE'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\n- 127TH MAINE LEGISLATURE, LD 651, 5/20/15\nCANDIDAT'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY ININSENATE, WWW.NINSENATEJORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nPAID FOR BY WINSENATE, WWW.WNSENATELORG. NOT AUTHORIZED BY ANY CANDIDATE OR\nPAD FOR BY WINSENATE, WW.WINSENATEORG. NOT AUTHORIED BYANY CANDIDATE OR\nPAD FOR BYVWNSENATE, WMW.NINSENATE.ORG. NOT AUTHORIZEO BY ANY CANDATE OR",
+    "text_hash": "8bfb9ea96c1fa7b1dcc355e222db1af752e66bd6b0015da814cdcfc3d08ce37b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-81092f0de2a2a90933e8db6a",
+    "alignment": "D",
+    "block_id": "snap-81092f0de2a2a90933e8db6a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-81092f0de2a2a90933e8db6a-claims-001-002",
+    "claim_text": "Jeffrey Epstein's business partner funneled $3 million to Collins Superpec.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 136,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Susan Collins voted to hover up the Epstein Files. Turns out Jeffrey Epstein's business partner funneled $3 million to Collins Superpec.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/88c0c0f4b5fcb5ecfaa6eac35f0930336dbe3a8d9ff256efcce6d8b558a8fbda?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 13,
+        "anchor_quote": "Collins",
+        "anchor_start": 6,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S6ME00159",
+        "kind": "person",
+        "name": "COLLINS, SUSAN M.",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "Susan Collins voted to hover up the Epstein Files. Turns out Jeffrey Epstein's business partner funneled $3 million to Collins Superpec.\nTroy Jackson cracked down on child sex trafficking. We can trust Troy.\n45 E\n3.5\nP80/2\n120\nNewly released Epstein transcripts:\nFlorida prosecutors knew billionaire\nraped teen girls years before cutting deal\nNatice Jul 1. 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) — Florida prosecutors heard graphic testimony about how the late millionaire and financier Jeltrey Epatul\natmally amsaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jery\ninvestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to The r5a\nand the powerful seems to have allowed him to continue to rape and sex traffe teenagers without ever being sent to prison or serving » serte\nJoil term. The Judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next week on wbee aad bo\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circult Jode\n1 aie Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grusdl jory\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The teraugr\ntstilled and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent people,\" Doiy\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape — all of il\nal lome is sexually deviant, disgusting, and criminal.\"\nAfter the grand jury investigation, Epstein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\nIrees and instead plead quilty to state charges of procuring a person under 18 for prostitution and solicitation of prostitul\nuring a person undeCountr jail system, followed by a year of boe\n35\nP80/2 1\nCover Up\n- Roll Call Vote No. 512, 9/10/25\natioe Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financier Jettrey E\nsxually assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 gramd jery\nlevestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to the ri3\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving a sens\njail term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wbek aad\nta release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Jody\n1 ala Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grasd jur!\nbrard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The tecmage\ntestifed and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pr\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape -\nat loue is sexually deviant, disgusting, and criminal.\"\n. Enetein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\n45F\nP80/2 120\nce Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financler Jettey E\naexmally assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jury\nlavestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles Be the 153\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving s\njoil term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wben\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Judu\n1 ah Deleado ordered.\nJelfrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the gruad jor\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The M\ntstified and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pe\nte in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape - all -te\n20\n163108\nCivic Servia / Consultant\nContribution\nwk 10154\nAve Suite B-\nBlackstone / CEO/Chairman Contribution\nElliott Investor\nManagement / Co-CEO &\nFiorida 33480\nPresident\nepy Valley Rd\nStead Impact Ventures /\nChairman\nArieona 85255\nPpy Vallty Rd\nRetired / Retired\nArleena 85255\nENGTON ST.\nVirginia\nJFC Transfer of Net\nProceeds\nWtetts\nCitizens Disability LLC /\nCEO\nTransfer Memo\nNyman Turkish PC /\nAttorney i\nHomemaker / Homemaker Transfer Memo\nINGTON ST.\nVirgie\nApt 12A\n- Terk 10024 WTW /Attorney\n34105\nMEMO\n06/09/2025\n06/27/2025\n06/30/2025\n03/31/2025\n02/23/2025\n02/24/2025\n03/28/2025\n03/29/2025\n04/04/2025\n25000.00\n2000000.00\n500000.00\n6312.75\n1750.00\n1700.00\n4600.00\n21049.78\n5000.00\n1400.00\n27362.53\nLIMITS\n63108\n10154\nSute B-\nida 33480\ny Valley Rd\n4 85255\nValley Rd\nsa 85255\nNGTON ST,\nAttorney\nHomemaker / Homemaker\nIGTON ST.\nPrginia\n(10024\nWTW /Attorney\n21\nTo Her Super PAC\n- FEC.gov, 6/27/25; 6/26/26\nFo/k 10154\nrda 33480\nesa 85255\nла 85255\nITON ST,\nsetts\nTON ST,\n10024 WTW / Attorney\n4 10154\nle B-\nl 33480\ney Rd\n85255\nRd\na 85255\nON ST.\nIN ST.\n12A\n45 E 35\n| 33480\nV ST.\nST.\nLIMIT\nPAD FOR BY WINSENATE, WWWW.MNSENATE.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATES COMMITTEE, WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY WINSENATE, WWW.WINSENATE,.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATE'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\n- 127TH MAINE LEGISLATURE, LD 651, 5/20/15\nCANDIDAT'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY ININSENATE, WWW.NINSENATEJORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nPAID FOR BY WINSENATE, WWW.WNSENATELORG. NOT AUTHORIZED BY ANY CANDIDATE OR\nPAD FOR BY WINSENATE, WW.WINSENATEORG. NOT AUTHORIED BYANY CANDIDATE OR\nPAD FOR BYVWNSENATE, WMW.NINSENATE.ORG. NOT AUTHORIZEO BY ANY CANDATE OR",
+    "text_hash": "8bfb9ea96c1fa7b1dcc355e222db1af752e66bd6b0015da814cdcfc3d08ce37b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-81092f0de2a2a90933e8db6a",
+    "alignment": "D",
+    "block_id": "snap-81092f0de2a2a90933e8db6a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-81092f0de2a2a90933e8db6a-claims-001-003",
+    "claim_text": "Troy Jackson cracked down on child sex trafficking.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 207,
+        "kind": "local_asr",
+        "start": 137,
+        "text": "Troy Jackson cracked down on child sex trafficking. We can trust Troy.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/88c0c0f4b5fcb5ecfaa6eac35f0930336dbe3a8d9ff256efcce6d8b558a8fbda?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 149,
+        "anchor_quote": "Troy Jackson",
+        "anchor_start": 137,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Susan Collins voted to hover up the Epstein Files. Turns out Jeffrey Epstein's business partner funneled $3 million to Collins Superpec.\nTroy Jackson cracked down on child sex trafficking. We can trust Troy.\n45 E\n3.5\nP80/2\n120\nNewly released Epstein transcripts:\nFlorida prosecutors knew billionaire\nraped teen girls years before cutting deal\nNatice Jul 1. 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) — Florida prosecutors heard graphic testimony about how the late millionaire and financier Jeltrey Epatul\natmally amsaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jery\ninvestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to The r5a\nand the powerful seems to have allowed him to continue to rape and sex traffe teenagers without ever being sent to prison or serving » serte\nJoil term. The Judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next week on wbee aad bo\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circult Jode\n1 aie Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grusdl jory\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The teraugr\ntstilled and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent people,\" Doiy\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape — all of il\nal lome is sexually deviant, disgusting, and criminal.\"\nAfter the grand jury investigation, Epstein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\nIrees and instead plead quilty to state charges of procuring a person under 18 for prostitution and solicitation of prostitul\nuring a person undeCountr jail system, followed by a year of boe\n35\nP80/2 1\nCover Up\n- Roll Call Vote No. 512, 9/10/25\natioe Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financier Jettrey E\nsxually assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 gramd jery\nlevestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to the ri3\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving a sens\njail term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wbek aad\nta release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Jody\n1 ala Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grasd jur!\nbrard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The tecmage\ntestifed and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pr\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape -\nat loue is sexually deviant, disgusting, and criminal.\"\n. Enetein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\n45F\nP80/2 120\nce Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financler Jettey E\naexmally assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jury\nlavestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles Be the 153\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving s\njoil term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wben\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Judu\n1 ah Deleado ordered.\nJelfrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the gruad jor\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The M\ntstified and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pe\nte in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape - all -te\n20\n163108\nCivic Servia / Consultant\nContribution\nwk 10154\nAve Suite B-\nBlackstone / CEO/Chairman Contribution\nElliott Investor\nManagement / Co-CEO &\nFiorida 33480\nPresident\nepy Valley Rd\nStead Impact Ventures /\nChairman\nArieona 85255\nPpy Vallty Rd\nRetired / Retired\nArleena 85255\nENGTON ST.\nVirginia\nJFC Transfer of Net\nProceeds\nWtetts\nCitizens Disability LLC /\nCEO\nTransfer Memo\nNyman Turkish PC /\nAttorney i\nHomemaker / Homemaker Transfer Memo\nINGTON ST.\nVirgie\nApt 12A\n- Terk 10024 WTW /Attorney\n34105\nMEMO\n06/09/2025\n06/27/2025\n06/30/2025\n03/31/2025\n02/23/2025\n02/24/2025\n03/28/2025\n03/29/2025\n04/04/2025\n25000.00\n2000000.00\n500000.00\n6312.75\n1750.00\n1700.00\n4600.00\n21049.78\n5000.00\n1400.00\n27362.53\nLIMITS\n63108\n10154\nSute B-\nida 33480\ny Valley Rd\n4 85255\nValley Rd\nsa 85255\nNGTON ST,\nAttorney\nHomemaker / Homemaker\nIGTON ST.\nPrginia\n(10024\nWTW /Attorney\n21\nTo Her Super PAC\n- FEC.gov, 6/27/25; 6/26/26\nFo/k 10154\nrda 33480\nesa 85255\nла 85255\nITON ST,\nsetts\nTON ST,\n10024 WTW / Attorney\n4 10154\nle B-\nl 33480\ney Rd\n85255\nRd\na 85255\nON ST.\nIN ST.\n12A\n45 E 35\n| 33480\nV ST.\nST.\nLIMIT\nPAD FOR BY WINSENATE, WWWW.MNSENATE.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATES COMMITTEE, WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY WINSENATE, WWW.WINSENATE,.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATE'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\n- 127TH MAINE LEGISLATURE, LD 651, 5/20/15\nCANDIDAT'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY ININSENATE, WWW.NINSENATEJORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nPAID FOR BY WINSENATE, WWW.WNSENATELORG. NOT AUTHORIZED BY ANY CANDIDATE OR\nPAD FOR BY WINSENATE, WW.WINSENATEORG. NOT AUTHORIED BYANY CANDIDATE OR\nPAD FOR BYVWNSENATE, WMW.NINSENATE.ORG. NOT AUTHORIZEO BY ANY CANDATE OR",
+    "text_hash": "8bfb9ea96c1fa7b1dcc355e222db1af752e66bd6b0015da814cdcfc3d08ce37b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-81092f0de2a2a90933e8db6a",
+    "alignment": "D",
+    "block_id": "snap-81092f0de2a2a90933e8db6a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-81092f0de2a2a90933e8db6a-claims-001-004",
+    "claim_text": "We can trust Troy.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 207,
+        "kind": "local_asr",
+        "start": 137,
+        "text": "Troy Jackson cracked down on child sex trafficking. We can trust Troy.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/88c0c0f4b5fcb5ecfaa6eac35f0930336dbe3a8d9ff256efcce6d8b558a8fbda?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 141,
+        "anchor_quote": "Troy",
+        "anchor_start": 137,
+        "anchor_unit_id": 2,
+        "entity_id": "candidate:S6ME00464",
+        "kind": "person",
+        "name": "JACKSON, TROY DALE",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Susan Collins voted to hover up the Epstein Files. Turns out Jeffrey Epstein's business partner funneled $3 million to Collins Superpec.\nTroy Jackson cracked down on child sex trafficking. We can trust Troy.\n45 E\n3.5\nP80/2\n120\nNewly released Epstein transcripts:\nFlorida prosecutors knew billionaire\nraped teen girls years before cutting deal\nNatice Jul 1. 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) — Florida prosecutors heard graphic testimony about how the late millionaire and financier Jeltrey Epatul\natmally amsaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jery\ninvestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to The r5a\nand the powerful seems to have allowed him to continue to rape and sex traffe teenagers without ever being sent to prison or serving » serte\nJoil term. The Judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next week on wbee aad bo\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circult Jode\n1 aie Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grusdl jory\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The teraugr\ntstilled and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent people,\" Doiy\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape — all of il\nal lome is sexually deviant, disgusting, and criminal.\"\nAfter the grand jury investigation, Epstein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\nIrees and instead plead quilty to state charges of procuring a person under 18 for prostitution and solicitation of prostitul\nuring a person undeCountr jail system, followed by a year of boe\n35\nP80/2 1\nCover Up\n- Roll Call Vote No. 512, 9/10/25\natioe Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financier Jettrey E\nsxually assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 gramd jery\nlevestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to the ri3\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving a sens\njail term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wbek aad\nta release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Jody\n1 ala Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grasd jur!\nbrard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The tecmage\ntestifed and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pr\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape -\nat loue is sexually deviant, disgusting, and criminal.\"\n. Enetein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\n45F\nP80/2 120\nce Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financler Jettey E\naexmally assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jury\nlavestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles Be the 153\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving s\njoil term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wben\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Judu\n1 ah Deleado ordered.\nJelfrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the gruad jor\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The M\ntstified and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pe\nte in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape - all -te\n20\n163108\nCivic Servia / Consultant\nContribution\nwk 10154\nAve Suite B-\nBlackstone / CEO/Chairman Contribution\nElliott Investor\nManagement / Co-CEO &\nFiorida 33480\nPresident\nepy Valley Rd\nStead Impact Ventures /\nChairman\nArieona 85255\nPpy Vallty Rd\nRetired / Retired\nArleena 85255\nENGTON ST.\nVirginia\nJFC Transfer of Net\nProceeds\nWtetts\nCitizens Disability LLC /\nCEO\nTransfer Memo\nNyman Turkish PC /\nAttorney i\nHomemaker / Homemaker Transfer Memo\nINGTON ST.\nVirgie\nApt 12A\n- Terk 10024 WTW /Attorney\n34105\nMEMO\n06/09/2025\n06/27/2025\n06/30/2025\n03/31/2025\n02/23/2025\n02/24/2025\n03/28/2025\n03/29/2025\n04/04/2025\n25000.00\n2000000.00\n500000.00\n6312.75\n1750.00\n1700.00\n4600.00\n21049.78\n5000.00\n1400.00\n27362.53\nLIMITS\n63108\n10154\nSute B-\nida 33480\ny Valley Rd\n4 85255\nValley Rd\nsa 85255\nNGTON ST,\nAttorney\nHomemaker / Homemaker\nIGTON ST.\nPrginia\n(10024\nWTW /Attorney\n21\nTo Her Super PAC\n- FEC.gov, 6/27/25; 6/26/26\nFo/k 10154\nrda 33480\nesa 85255\nла 85255\nITON ST,\nsetts\nTON ST,\n10024 WTW / Attorney\n4 10154\nle B-\nl 33480\ney Rd\n85255\nRd\na 85255\nON ST.\nIN ST.\n12A\n45 E 35\n| 33480\nV ST.\nST.\nLIMIT\nPAD FOR BY WINSENATE, WWWW.MNSENATE.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATES COMMITTEE, WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY WINSENATE, WWW.WINSENATE,.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATE'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\n- 127TH MAINE LEGISLATURE, LD 651, 5/20/15\nCANDIDAT'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY ININSENATE, WWW.NINSENATEJORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nPAID FOR BY WINSENATE, WWW.WNSENATELORG. NOT AUTHORIZED BY ANY CANDIDATE OR\nPAD FOR BY WINSENATE, WW.WINSENATEORG. NOT AUTHORIED BYANY CANDIDATE OR\nPAD FOR BYVWNSENATE, WMW.NINSENATE.ORG. NOT AUTHORIZEO BY ANY CANDATE OR",
+    "text_hash": "8bfb9ea96c1fa7b1dcc355e222db1af752e66bd6b0015da814cdcfc3d08ce37b",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-81092f0de2a2a90933e8db6a",
+    "alignment": "D",
+    "block_id": "snap-81092f0de2a2a90933e8db6a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-81092f0de2a2a90933e8db6a-claims-001-005",
+    "claim_text": "Florida prosecutors knew billionaire raped teen girls years before cutting deal.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 299,
+        "kind": "video_ocr",
+        "start": 263,
+        "text": "Florida prosecutors knew billionaire",
+        "unit_id": 8
+      },
+      {
+        "end": 342,
+        "kind": "video_ocr",
+        "start": 300,
+        "text": "raped teen girls years before cutting deal",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      8,
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/88c0c0f4b5fcb5ecfaa6eac35f0930336dbe3a8d9ff256efcce6d8b558a8fbda?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 299,
+        "anchor_quote": "billionaire",
+        "anchor_start": 288,
+        "anchor_unit_id": 8,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "Susan Collins voted to hover up the Epstein Files. Turns out Jeffrey Epstein's business partner funneled $3 million to Collins Superpec.\nTroy Jackson cracked down on child sex trafficking. We can trust Troy.\n45 E\n3.5\nP80/2\n120\nNewly released Epstein transcripts:\nFlorida prosecutors knew billionaire\nraped teen girls years before cutting deal\nNatice Jul 1. 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) — Florida prosecutors heard graphic testimony about how the late millionaire and financier Jeltrey Epatul\natmally amsaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jery\ninvestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to The r5a\nand the powerful seems to have allowed him to continue to rape and sex traffe teenagers without ever being sent to prison or serving » serte\nJoil term. The Judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next week on wbee aad bo\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circult Jode\n1 aie Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grusdl jory\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The teraugr\ntstilled and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent people,\" Doiy\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape — all of il\nal lome is sexually deviant, disgusting, and criminal.\"\nAfter the grand jury investigation, Epstein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\nIrees and instead plead quilty to state charges of procuring a person under 18 for prostitution and solicitation of prostitul\nuring a person undeCountr jail system, followed by a year of boe\n35\nP80/2 1\nCover Up\n- Roll Call Vote No. 512, 9/10/25\natioe Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financier Jettrey E\nsxually assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 gramd jery\nlevestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to the ri3\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving a sens\njail term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wbek aad\nta release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Jody\n1 ala Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grasd jur!\nbrard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The tecmage\ntestifed and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pr\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape -\nat loue is sexually deviant, disgusting, and criminal.\"\n. Enetein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\n45F\nP80/2 120\nce Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financler Jettey E\naexmally assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jury\nlavestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles Be the 153\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving s\njoil term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wben\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Judu\n1 ah Deleado ordered.\nJelfrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the gruad jor\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The M\ntstified and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pe\nte in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape - all -te\n20\n163108\nCivic Servia / Consultant\nContribution\nwk 10154\nAve Suite B-\nBlackstone / CEO/Chairman Contribution\nElliott Investor\nManagement / Co-CEO &\nFiorida 33480\nPresident\nepy Valley Rd\nStead Impact Ventures /\nChairman\nArieona 85255\nPpy Vallty Rd\nRetired / Retired\nArleena 85255\nENGTON ST.\nVirginia\nJFC Transfer of Net\nProceeds\nWtetts\nCitizens Disability LLC /\nCEO\nTransfer Memo\nNyman Turkish PC /\nAttorney i\nHomemaker / Homemaker Transfer Memo\nINGTON ST.\nVirgie\nApt 12A\n- Terk 10024 WTW /Attorney\n34105\nMEMO\n06/09/2025\n06/27/2025\n06/30/2025\n03/31/2025\n02/23/2025\n02/24/2025\n03/28/2025\n03/29/2025\n04/04/2025\n25000.00\n2000000.00\n500000.00\n6312.75\n1750.00\n1700.00\n4600.00\n21049.78\n5000.00\n1400.00\n27362.53\nLIMITS\n63108\n10154\nSute B-\nida 33480\ny Valley Rd\n4 85255\nValley Rd\nsa 85255\nNGTON ST,\nAttorney\nHomemaker / Homemaker\nIGTON ST.\nPrginia\n(10024\nWTW /Attorney\n21\nTo Her Super PAC\n- FEC.gov, 6/27/25; 6/26/26\nFo/k 10154\nrda 33480\nesa 85255\nла 85255\nITON ST,\nsetts\nTON ST,\n10024 WTW / Attorney\n4 10154\nle B-\nl 33480\ney Rd\n85255\nRd\na 85255\nON ST.\nIN ST.\n12A\n45 E 35\n| 33480\nV ST.\nST.\nLIMIT\nPAD FOR BY WINSENATE, WWWW.MNSENATE.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATES COMMITTEE, WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY WINSENATE, WWW.WINSENATE,.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATE'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\n- 127TH MAINE LEGISLATURE, LD 651, 5/20/15\nCANDIDAT'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY ININSENATE, WWW.NINSENATEJORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nPAID FOR BY WINSENATE, WWW.WNSENATELORG. NOT AUTHORIZED BY ANY CANDIDATE OR\nPAD FOR BY WINSENATE, WW.WINSENATEORG. NOT AUTHORIED BYANY CANDIDATE OR\nPAD FOR BYVWNSENATE, WMW.NINSENATE.ORG. NOT AUTHORIZEO BY ANY CANDATE OR",
+    "text_hash": "8bfb9ea96c1fa7b1dcc355e222db1af752e66bd6b0015da814cdcfc3d08ce37b",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-81092f0de2a2a90933e8db6a",
+    "alignment": "D",
+    "block_id": "snap-81092f0de2a2a90933e8db6a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-81092f0de2a2a90933e8db6a-claims-001-006",
+    "claim_text": "The Judge's release of the approximately 150 pages came as a surprise.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 1067,
+        "kind": "video_ocr",
+        "start": 928,
+        "text": "Joil term. The Judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next week on wbee aad bo",
+        "unit_id": 15
+      }
+    ],
+    "evidence_ids": [
+      15
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/88c0c0f4b5fcb5ecfaa6eac35f0930336dbe3a8d9ff256efcce6d8b558a8fbda?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 948,
+        "anchor_quote": "Judge",
+        "anchor_start": 943,
+        "anchor_unit_id": 15,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Susan Collins voted to hover up the Epstein Files. Turns out Jeffrey Epstein's business partner funneled $3 million to Collins Superpec.\nTroy Jackson cracked down on child sex trafficking. We can trust Troy.\n45 E\n3.5\nP80/2\n120\nNewly released Epstein transcripts:\nFlorida prosecutors knew billionaire\nraped teen girls years before cutting deal\nNatice Jul 1. 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) — Florida prosecutors heard graphic testimony about how the late millionaire and financier Jeltrey Epatul\natmally amsaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jery\ninvestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to The r5a\nand the powerful seems to have allowed him to continue to rape and sex traffe teenagers without ever being sent to prison or serving » serte\nJoil term. The Judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next week on wbee aad bo\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circult Jode\n1 aie Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grusdl jory\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The teraugr\ntstilled and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent people,\" Doiy\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape — all of il\nal lome is sexually deviant, disgusting, and criminal.\"\nAfter the grand jury investigation, Epstein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\nIrees and instead plead quilty to state charges of procuring a person under 18 for prostitution and solicitation of prostitul\nuring a person undeCountr jail system, followed by a year of boe\n35\nP80/2 1\nCover Up\n- Roll Call Vote No. 512, 9/10/25\natioe Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financier Jettrey E\nsxually assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 gramd jery\nlevestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to the ri3\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving a sens\njail term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wbek aad\nta release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Jody\n1 ala Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grasd jur!\nbrard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The tecmage\ntestifed and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pr\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape -\nat loue is sexually deviant, disgusting, and criminal.\"\n. Enetein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\n45F\nP80/2 120\nce Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financler Jettey E\naexmally assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jury\nlavestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles Be the 153\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving s\njoil term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wben\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Judu\n1 ah Deleado ordered.\nJelfrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the gruad jor\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The M\ntstified and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pe\nte in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape - all -te\n20\n163108\nCivic Servia / Consultant\nContribution\nwk 10154\nAve Suite B-\nBlackstone / CEO/Chairman Contribution\nElliott Investor\nManagement / Co-CEO &\nFiorida 33480\nPresident\nepy Valley Rd\nStead Impact Ventures /\nChairman\nArieona 85255\nPpy Vallty Rd\nRetired / Retired\nArleena 85255\nENGTON ST.\nVirginia\nJFC Transfer of Net\nProceeds\nWtetts\nCitizens Disability LLC /\nCEO\nTransfer Memo\nNyman Turkish PC /\nAttorney i\nHomemaker / Homemaker Transfer Memo\nINGTON ST.\nVirgie\nApt 12A\n- Terk 10024 WTW /Attorney\n34105\nMEMO\n06/09/2025\n06/27/2025\n06/30/2025\n03/31/2025\n02/23/2025\n02/24/2025\n03/28/2025\n03/29/2025\n04/04/2025\n25000.00\n2000000.00\n500000.00\n6312.75\n1750.00\n1700.00\n4600.00\n21049.78\n5000.00\n1400.00\n27362.53\nLIMITS\n63108\n10154\nSute B-\nida 33480\ny Valley Rd\n4 85255\nValley Rd\nsa 85255\nNGTON ST,\nAttorney\nHomemaker / Homemaker\nIGTON ST.\nPrginia\n(10024\nWTW /Attorney\n21\nTo Her Super PAC\n- FEC.gov, 6/27/25; 6/26/26\nFo/k 10154\nrda 33480\nesa 85255\nла 85255\nITON ST,\nsetts\nTON ST,\n10024 WTW / Attorney\n4 10154\nle B-\nl 33480\ney Rd\n85255\nRd\na 85255\nON ST.\nIN ST.\n12A\n45 E 35\n| 33480\nV ST.\nST.\nLIMIT\nPAD FOR BY WINSENATE, WWWW.MNSENATE.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATES COMMITTEE, WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY WINSENATE, WWW.WINSENATE,.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATE'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\n- 127TH MAINE LEGISLATURE, LD 651, 5/20/15\nCANDIDAT'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY ININSENATE, WWW.NINSENATEJORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nPAID FOR BY WINSENATE, WWW.WNSENATELORG. NOT AUTHORIZED BY ANY CANDIDATE OR\nPAD FOR BY WINSENATE, WW.WINSENATEORG. NOT AUTHORIED BYANY CANDIDATE OR\nPAD FOR BYVWNSENATE, WMW.NINSENATE.ORG. NOT AUTHORIZEO BY ANY CANDATE OR",
+    "text_hash": "8bfb9ea96c1fa7b1dcc355e222db1af752e66bd6b0015da814cdcfc3d08ce37b",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "validation_failed",
+    "ad_id": "snap-81092f0de2a2a90933e8db6a",
+    "alignment": "D",
+    "block_id": "snap-81092f0de2a2a90933e8db6a-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-81092f0de2a2a90933e8db6a-claims-001-007",
+    "claim_text": "Gov. Ron DeSantis had signed a bill in February allowing the release.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 1204,
+        "kind": "video_ocr",
+        "start": 1068,
+        "text": "ie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circult Jode",
+        "unit_id": 16
+      }
+    ],
+    "evidence_ids": [
+      16
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/88c0c0f4b5fcb5ecfaa6eac35f0930336dbe3a8d9ff256efcce6d8b558a8fbda?mediaType=mp4",
+    "sponsor": "WinSenate",
+    "targets": [
+      {
+        "anchor_end": 1102,
+        "anchor_quote": "Gov. Ron DeSantis",
+        "anchor_start": 1085,
+        "anchor_unit_id": 16,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "unknown",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Susan Collins voted to hover up the Epstein Files. Turns out Jeffrey Epstein's business partner funneled $3 million to Collins Superpec.\nTroy Jackson cracked down on child sex trafficking. We can trust Troy.\n45 E\n3.5\nP80/2\n120\nNewly released Epstein transcripts:\nFlorida prosecutors knew billionaire\nraped teen girls years before cutting deal\nNatice Jul 1. 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) — Florida prosecutors heard graphic testimony about how the late millionaire and financier Jeltrey Epatul\natmally amsaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jery\ninvestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to The r5a\nand the powerful seems to have allowed him to continue to rape and sex traffe teenagers without ever being sent to prison or serving » serte\nJoil term. The Judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next week on wbee aad bo\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circult Jode\n1 aie Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grusdl jory\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The teraugr\ntstilled and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent people,\" Doiy\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape — all of il\nal lome is sexually deviant, disgusting, and criminal.\"\nAfter the grand jury investigation, Epstein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\nIrees and instead plead quilty to state charges of procuring a person under 18 for prostitution and solicitation of prostitul\nuring a person undeCountr jail system, followed by a year of boe\n35\nP80/2 1\nCover Up\n- Roll Call Vote No. 512, 9/10/25\natioe Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financier Jettrey E\nsxually assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 gramd jery\nlevestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles to the ri3\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving a sens\njail term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wbek aad\nta release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Jody\n1 ala Deleado ordered.\nJeltrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the grasd jur!\nbrard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The tecmage\ntestifed and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pr\nwrote in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape -\nat loue is sexually deviant, disgusting, and criminal.\"\n. Enetein cut a deal with South Florida federal prosecutors in 2008 that allowed him to escape\n45F\nP80/2 120\nce Jul 1, 2024 4:59 PM EDT\nFORT LAUDERDALE, Fla. (AP) - Florida prosecutors heard graphic testimony about how the late millionaire and financler Jettey E\naexmally assaulted teenage girls two years before they cut a plea deal, according to transcripts released Monday of the 2006 grand jury\nlavestigation. The transcripts were at the center of a court battle for about a decade after media investigations into Epstein's tles Be the 153\nand the powerful seems to have allowed him to continue to rape and sex traffic teenagers without ever being sent to prison or serving s\njoil term. The judge's release of the approximately 150 pages came as a surprise as he had scheduled a hearing for next weck on wben\nie release them. Gov. Ron DeSantis had signed a bill in February allowing the release on Monday or any time thereafter that Circalt Judu\n1 ah Deleado ordered.\nJelfrey Epstein grand jury records from underage girl abuse probe to be released under Florida law The transcripts show that the gruad jor\nbeard testimony that Epstein, who was then in his 40s, had raped teenage girls as young as 14 at his Palm Beach mansion. The M\ntstified and told detectives they were also paid to find him more girls. \"The details in the record will be outrageous to decent pe\nte in his order. \"The testimony taken by the Grand Jury concerns activity ranging from grossly unacceptable to rape - all -te\n20\n163108\nCivic Servia / Consultant\nContribution\nwk 10154\nAve Suite B-\nBlackstone / CEO/Chairman Contribution\nElliott Investor\nManagement / Co-CEO &\nFiorida 33480\nPresident\nepy Valley Rd\nStead Impact Ventures /\nChairman\nArieona 85255\nPpy Vallty Rd\nRetired / Retired\nArleena 85255\nENGTON ST.\nVirginia\nJFC Transfer of Net\nProceeds\nWtetts\nCitizens Disability LLC /\nCEO\nTransfer Memo\nNyman Turkish PC /\nAttorney i\nHomemaker / Homemaker Transfer Memo\nINGTON ST.\nVirgie\nApt 12A\n- Terk 10024 WTW /Attorney\n34105\nMEMO\n06/09/2025\n06/27/2025\n06/30/2025\n03/31/2025\n02/23/2025\n02/24/2025\n03/28/2025\n03/29/2025\n04/04/2025\n25000.00\n2000000.00\n500000.00\n6312.75\n1750.00\n1700.00\n4600.00\n21049.78\n5000.00\n1400.00\n27362.53\nLIMITS\n63108\n10154\nSute B-\nida 33480\ny Valley Rd\n4 85255\nValley Rd\nsa 85255\nNGTON ST,\nAttorney\nHomemaker / Homemaker\nIGTON ST.\nPrginia\n(10024\nWTW /Attorney\n21\nTo Her Super PAC\n- FEC.gov, 6/27/25; 6/26/26\nFo/k 10154\nrda 33480\nesa 85255\nла 85255\nITON ST,\nsetts\nTON ST,\n10024 WTW / Attorney\n4 10154\nle B-\nl 33480\ney Rd\n85255\nRd\na 85255\nON ST.\nIN ST.\n12A\n45 E 35\n| 33480\nV ST.\nST.\nLIMIT\nPAD FOR BY WINSENATE, WWWW.MNSENATE.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATES COMMITTEE, WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY WINSENATE, WWW.WINSENATE,.ORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nCANDIDATE'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\n- 127TH MAINE LEGISLATURE, LD 651, 5/20/15\nCANDIDAT'S COMMITTEE WINSENATE IS RESPONSIBLE FOR THE CONTENT OF THIS ADVERTISING\nPAID FOR BY ININSENATE, WWW.NINSENATEJORG.NOT AUTHORIZED BY ANY CANDIDATE OR\nPAID FOR BY WINSENATE, WWW.WNSENATELORG. NOT AUTHORIZED BY ANY CANDIDATE OR\nPAD FOR BY WINSENATE, WW.WINSENATEORG. NOT AUTHORIED BYANY CANDIDATE OR\nPAD FOR BYVWNSENATE, WMW.NINSENATE.ORG. NOT AUTHORIZEO BY ANY CANDATE OR",
+    "text_hash": "8bfb9ea96c1fa7b1dcc355e222db1af752e66bd6b0015da814cdcfc3d08ce37b",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]
