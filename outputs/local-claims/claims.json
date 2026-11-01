@@ -106664,5 +106664,507 @@
     "text_hash": "6ec75e4629e642684316b0347f4295d52e3798bbd5f1baa5bde300d480ccbb45",
     "unresolved_references": [],
     "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-29d506e1941b11a1ec102e35",
+    "alignment": "D",
+    "block_id": "snap-29d506e1941b11a1ec102e35-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-29d506e1941b11a1ec102e35-claims-001-001",
+    "claim_text": "Healthcare works.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 101,
+        "kind": "video_ocr",
+        "start": 80,
+        "text": "HEALTHCARE THAT WORKS",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/effdc4bcdaaffbd0e31eb4e1dbfbec9e42c9787a1c8789c97e1b6a4cc234f03e?mediaType=mp4",
+    "sponsor": "Alliance for Youth Power",
+    "targets": [],
+    "text": "INSANE\nYOU\nTHE\nWAR\nPOLITIGIANS\nCANDIDATE\nMIKE ROGERS (R)\nSENATE CANDIDATE\nFHAVE\nHEALTHCARE THAT WORKS\n0000000).\nGAS\nDOLLAR\nBUT\nSO\nFINE.\nNOT\nEL-SAYED\nPAC\nHE\n\"I SUPPORT A COST-OF-LIVING\nEXEMPTION ON FEDERAL TAXES\nUP TO $50,000.\"\n-ABDUL EL-SAYED\n50K\nEXEBANTION\nFEDERAL\n\"I SU\nEXEM PPORT A CI\nPTION ON FIST-OF-LIVINES\n\"DFiSSEDERAL TAXI\n95,003.\nSAYED\n-ABDUL EL-!\nWAIT\nYEAH\nUP.\nABDUL\nPAID FOR BY ALLIANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE\n3RD.\nvote for\nby NOV 3rd\nPAID FOR BY ALLLANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG",
+    "text_hash": "4b7b1fc954657862d9f113053cb8873d27bb6dadb8c015dc286fc0f961573fa6",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-29d506e1941b11a1ec102e35",
+    "alignment": "D",
+    "block_id": "snap-29d506e1941b11a1ec102e35-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-29d506e1941b11a1ec102e35-claims-001-002",
+    "claim_text": "Mike Rogers is a Senate candidate.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 56,
+        "kind": "video_ocr",
+        "start": 41,
+        "text": "MIKE ROGERS (R)",
+        "unit_id": 7
+      },
+      {
+        "end": 73,
+        "kind": "video_ocr",
+        "start": 57,
+        "text": "SENATE CANDIDATE",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      7,
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/effdc4bcdaaffbd0e31eb4e1dbfbec9e42c9787a1c8789c97e1b6a4cc234f03e?mediaType=mp4",
+    "sponsor": "Alliance for Youth Power",
+    "targets": [
+      {
+        "anchor_end": 56,
+        "anchor_quote": "MIKE ROGERS (R)",
+        "anchor_start": 41,
+        "anchor_unit_id": 7,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "unclear",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "INSANE\nYOU\nTHE\nWAR\nPOLITIGIANS\nCANDIDATE\nMIKE ROGERS (R)\nSENATE CANDIDATE\nFHAVE\nHEALTHCARE THAT WORKS\n0000000).\nGAS\nDOLLAR\nBUT\nSO\nFINE.\nNOT\nEL-SAYED\nPAC\nHE\n\"I SUPPORT A COST-OF-LIVING\nEXEMPTION ON FEDERAL TAXES\nUP TO $50,000.\"\n-ABDUL EL-SAYED\n50K\nEXEBANTION\nFEDERAL\n\"I SU\nEXEM PPORT A CI\nPTION ON FIST-OF-LIVINES\n\"DFiSSEDERAL TAXI\n95,003.\nSAYED\n-ABDUL EL-!\nWAIT\nYEAH\nUP.\nABDUL\nPAID FOR BY ALLIANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE\n3RD.\nvote for\nby NOV 3rd\nPAID FOR BY ALLLANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG",
+    "text_hash": "4b7b1fc954657862d9f113053cb8873d27bb6dadb8c015dc286fc0f961573fa6",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-29d506e1941b11a1ec102e35",
+    "alignment": "D",
+    "block_id": "snap-29d506e1941b11a1ec102e35-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-29d506e1941b11a1ec102e35-claims-001-003",
+    "claim_text": "Abdul El-Sayed supports a cost-of-living exemption on federal taxes up to $50,000.",
+    "claim_types": [
+      "policy_position"
+    ],
+    "evidence": [
+      {
+        "end": 183,
+        "kind": "video_ocr",
+        "start": 156,
+        "text": "\"I SUPPORT A COST-OF-LIVING",
+        "unit_id": 21
+      },
+      {
+        "end": 210,
+        "kind": "video_ocr",
+        "start": 184,
+        "text": "EXEMPTION ON FEDERAL TAXES",
+        "unit_id": 22
+      },
+      {
+        "end": 226,
+        "kind": "video_ocr",
+        "start": 211,
+        "text": "UP TO $50,000.\"",
+        "unit_id": 23
+      },
+      {
+        "end": 242,
+        "kind": "video_ocr",
+        "start": 227,
+        "text": "-ABDUL EL-SAYED",
+        "unit_id": 24
+      }
+    ],
+    "evidence_ids": [
+      21,
+      22,
+      23,
+      24
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/effdc4bcdaaffbd0e31eb4e1dbfbec9e42c9787a1c8789c97e1b6a4cc234f03e?mediaType=mp4",
+    "sponsor": "Alliance for Youth Power",
+    "targets": [
+      {
+        "anchor_end": 242,
+        "anchor_quote": "-ABDUL EL-SAYED",
+        "anchor_start": 227,
+        "anchor_unit_id": 24,
+        "entity_id": "candidate:S6MI00418",
+        "kind": "person",
+        "name": "EL-SAYED, ABDUL",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "INSANE\nYOU\nTHE\nWAR\nPOLITIGIANS\nCANDIDATE\nMIKE ROGERS (R)\nSENATE CANDIDATE\nFHAVE\nHEALTHCARE THAT WORKS\n0000000).\nGAS\nDOLLAR\nBUT\nSO\nFINE.\nNOT\nEL-SAYED\nPAC\nHE\n\"I SUPPORT A COST-OF-LIVING\nEXEMPTION ON FEDERAL TAXES\nUP TO $50,000.\"\n-ABDUL EL-SAYED\n50K\nEXEBANTION\nFEDERAL\n\"I SU\nEXEM PPORT A CI\nPTION ON FIST-OF-LIVINES\n\"DFiSSEDERAL TAXI\n95,003.\nSAYED\n-ABDUL EL-!\nWAIT\nYEAH\nUP.\nABDUL\nPAID FOR BY ALLIANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE\n3RD.\nvote for\nby NOV 3rd\nPAID FOR BY ALLLANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG",
+    "text_hash": "4b7b1fc954657862d9f113053cb8873d27bb6dadb8c015dc286fc0f961573fa6",
+    "unresolved_references": [],
+    "voice": "adopted_clip"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-29d506e1941b11a1ec102e35",
+    "alignment": "D",
+    "block_id": "snap-29d506e1941b11a1ec102e35-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-29d506e1941b11a1ec102e35-claims-001-004",
+    "claim_text": "This ad is paid for by Alliance for Youth Power.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 440,
+        "kind": "video_ocr",
+        "start": 377,
+        "text": "PAID FOR BY ALLIANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG",
+        "unit_id": 39
+      },
+      {
+        "end": 585,
+        "kind": "video_ocr",
+        "start": 522,
+        "text": "PAID FOR BY ALLLANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG",
+        "unit_id": 44
+      }
+    ],
+    "evidence_ids": [
+      39,
+      44
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/effdc4bcdaaffbd0e31eb4e1dbfbec9e42c9787a1c8789c97e1b6a4cc234f03e?mediaType=mp4",
+    "sponsor": "Alliance for Youth Power",
+    "targets": [
+      {
+        "anchor_end": 413,
+        "anchor_quote": "ALLIANGE FOR YOUTH POWER",
+        "anchor_start": 389,
+        "anchor_unit_id": 39,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "Alliance for Youth Power",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "INSANE\nYOU\nTHE\nWAR\nPOLITIGIANS\nCANDIDATE\nMIKE ROGERS (R)\nSENATE CANDIDATE\nFHAVE\nHEALTHCARE THAT WORKS\n0000000).\nGAS\nDOLLAR\nBUT\nSO\nFINE.\nNOT\nEL-SAYED\nPAC\nHE\n\"I SUPPORT A COST-OF-LIVING\nEXEMPTION ON FEDERAL TAXES\nUP TO $50,000.\"\n-ABDUL EL-SAYED\n50K\nEXEBANTION\nFEDERAL\n\"I SU\nEXEM PPORT A CI\nPTION ON FIST-OF-LIVINES\n\"DFiSSEDERAL TAXI\n95,003.\nSAYED\n-ABDUL EL-!\nWAIT\nYEAH\nUP.\nABDUL\nPAID FOR BY ALLIANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE\n3RD.\nvote for\nby NOV 3rd\nPAID FOR BY ALLLANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG",
+    "text_hash": "4b7b1fc954657862d9f113053cb8873d27bb6dadb8c015dc286fc0f961573fa6",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-29d506e1941b11a1ec102e35",
+    "alignment": "D",
+    "block_id": "snap-29d506e1941b11a1ec102e35-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-29d506e1941b11a1ec102e35-claims-001-005",
+    "claim_text": "This ad is not authorized by any candidate or candidate's committee.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 496,
+        "kind": "video_ocr",
+        "start": 441,
+        "text": "NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE",
+        "unit_id": 40
+      }
+    ],
+    "evidence_ids": [
+      40
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/effdc4bcdaaffbd0e31eb4e1dbfbec9e42c9787a1c8789c97e1b6a4cc234f03e?mediaType=mp4",
+    "sponsor": "Alliance for Youth Power",
+    "targets": [],
+    "text": "INSANE\nYOU\nTHE\nWAR\nPOLITIGIANS\nCANDIDATE\nMIKE ROGERS (R)\nSENATE CANDIDATE\nFHAVE\nHEALTHCARE THAT WORKS\n0000000).\nGAS\nDOLLAR\nBUT\nSO\nFINE.\nNOT\nEL-SAYED\nPAC\nHE\n\"I SUPPORT A COST-OF-LIVING\nEXEMPTION ON FEDERAL TAXES\nUP TO $50,000.\"\n-ABDUL EL-SAYED\n50K\nEXEBANTION\nFEDERAL\n\"I SU\nEXEM PPORT A CI\nPTION ON FIST-OF-LIVINES\n\"DFiSSEDERAL TAXI\n95,003.\nSAYED\n-ABDUL EL-!\nWAIT\nYEAH\nUP.\nABDUL\nPAID FOR BY ALLIANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE\n3RD.\nvote for\nby NOV 3rd\nPAID FOR BY ALLLANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG",
+    "text_hash": "4b7b1fc954657862d9f113053cb8873d27bb6dadb8c015dc286fc0f961573fa6",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-29d506e1941b11a1ec102e35",
+    "alignment": "D",
+    "block_id": "snap-29d506e1941b11a1ec102e35-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-29d506e1941b11a1ec102e35-claims-001-006",
+    "claim_text": "It is insane.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 6,
+        "kind": "video_ocr",
+        "start": 0,
+        "text": "INSANE",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/effdc4bcdaaffbd0e31eb4e1dbfbec9e42c9787a1c8789c97e1b6a4cc234f03e?mediaType=mp4",
+    "sponsor": "Alliance for Youth Power",
+    "targets": [],
+    "text": "INSANE\nYOU\nTHE\nWAR\nPOLITIGIANS\nCANDIDATE\nMIKE ROGERS (R)\nSENATE CANDIDATE\nFHAVE\nHEALTHCARE THAT WORKS\n0000000).\nGAS\nDOLLAR\nBUT\nSO\nFINE.\nNOT\nEL-SAYED\nPAC\nHE\n\"I SUPPORT A COST-OF-LIVING\nEXEMPTION ON FEDERAL TAXES\nUP TO $50,000.\"\n-ABDUL EL-SAYED\n50K\nEXEBANTION\nFEDERAL\n\"I SU\nEXEM PPORT A CI\nPTION ON FIST-OF-LIVINES\n\"DFiSSEDERAL TAXI\n95,003.\nSAYED\n-ABDUL EL-!\nWAIT\nYEAH\nUP.\nABDUL\nPAID FOR BY ALLIANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE\n3RD.\nvote for\nby NOV 3rd\nPAID FOR BY ALLLANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG",
+    "text_hash": "4b7b1fc954657862d9f113053cb8873d27bb6dadb8c015dc286fc0f961573fa6",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-29d506e1941b11a1ec102e35",
+    "alignment": "D",
+    "block_id": "snap-29d506e1941b11a1ec102e35-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-29d506e1941b11a1ec102e35-claims-001-007",
+    "claim_text": "The war is insane.",
+    "claim_types": [
+      "evaluation"
+    ],
+    "evidence": [
+      {
+        "end": 18,
+        "kind": "video_ocr",
+        "start": 15,
+        "text": "WAR",
+        "unit_id": 4
+      }
+    ],
+    "evidence_ids": [
+      4
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/effdc4bcdaaffbd0e31eb4e1dbfbec9e42c9787a1c8789c97e1b6a4cc234f03e?mediaType=mp4",
+    "sponsor": "Alliance for Youth Power",
+    "targets": [],
+    "text": "INSANE\nYOU\nTHE\nWAR\nPOLITIGIANS\nCANDIDATE\nMIKE ROGERS (R)\nSENATE CANDIDATE\nFHAVE\nHEALTHCARE THAT WORKS\n0000000).\nGAS\nDOLLAR\nBUT\nSO\nFINE.\nNOT\nEL-SAYED\nPAC\nHE\n\"I SUPPORT A COST-OF-LIVING\nEXEMPTION ON FEDERAL TAXES\nUP TO $50,000.\"\n-ABDUL EL-SAYED\n50K\nEXEBANTION\nFEDERAL\n\"I SU\nEXEM PPORT A CI\nPTION ON FIST-OF-LIVINES\n\"DFiSSEDERAL TAXI\n95,003.\nSAYED\n-ABDUL EL-!\nWAIT\nYEAH\nUP.\nABDUL\nPAID FOR BY ALLIANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE\n3RD.\nvote for\nby NOV 3rd\nPAID FOR BY ALLLANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG",
+    "text_hash": "4b7b1fc954657862d9f113053cb8873d27bb6dadb8c015dc286fc0f961573fa6",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-29d506e1941b11a1ec102e35",
+    "alignment": "D",
+    "block_id": "snap-29d506e1941b11a1ec102e35-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-29d506e1941b11a1ec102e35-claims-001-008",
+    "claim_text": "Politicians have war.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 30,
+        "kind": "video_ocr",
+        "start": 19,
+        "text": "POLITIGIANS",
+        "unit_id": 5
+      }
+    ],
+    "evidence_ids": [
+      5
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/effdc4bcdaaffbd0e31eb4e1dbfbec9e42c9787a1c8789c97e1b6a4cc234f03e?mediaType=mp4",
+    "sponsor": "Alliance for Youth Power",
+    "targets": [],
+    "text": "INSANE\nYOU\nTHE\nWAR\nPOLITIGIANS\nCANDIDATE\nMIKE ROGERS (R)\nSENATE CANDIDATE\nFHAVE\nHEALTHCARE THAT WORKS\n0000000).\nGAS\nDOLLAR\nBUT\nSO\nFINE.\nNOT\nEL-SAYED\nPAC\nHE\n\"I SUPPORT A COST-OF-LIVING\nEXEMPTION ON FEDERAL TAXES\nUP TO $50,000.\"\n-ABDUL EL-SAYED\n50K\nEXEBANTION\nFEDERAL\n\"I SU\nEXEM PPORT A CI\nPTION ON FIST-OF-LIVINES\n\"DFiSSEDERAL TAXI\n95,003.\nSAYED\n-ABDUL EL-!\nWAIT\nYEAH\nUP.\nABDUL\nPAID FOR BY ALLIANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE\n3RD.\nvote for\nby NOV 3rd\nPAID FOR BY ALLLANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG",
+    "text_hash": "4b7b1fc954657862d9f113053cb8873d27bb6dadb8c015dc286fc0f961573fa6",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-29d506e1941b11a1ec102e35",
+    "alignment": "D",
+    "block_id": "snap-29d506e1941b11a1ec102e35-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-29d506e1941b11a1ec102e35-claims-001-009",
+    "claim_text": "A candidate has war.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 40,
+        "kind": "video_ocr",
+        "start": 31,
+        "text": "CANDIDATE",
+        "unit_id": 6
+      }
+    ],
+    "evidence_ids": [
+      6
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/effdc4bcdaaffbd0e31eb4e1dbfbec9e42c9787a1c8789c97e1b6a4cc234f03e?mediaType=mp4",
+    "sponsor": "Alliance for Youth Power",
+    "targets": [],
+    "text": "INSANE\nYOU\nTHE\nWAR\nPOLITIGIANS\nCANDIDATE\nMIKE ROGERS (R)\nSENATE CANDIDATE\nFHAVE\nHEALTHCARE THAT WORKS\n0000000).\nGAS\nDOLLAR\nBUT\nSO\nFINE.\nNOT\nEL-SAYED\nPAC\nHE\n\"I SUPPORT A COST-OF-LIVING\nEXEMPTION ON FEDERAL TAXES\nUP TO $50,000.\"\n-ABDUL EL-SAYED\n50K\nEXEBANTION\nFEDERAL\n\"I SU\nEXEM PPORT A CI\nPTION ON FIST-OF-LIVINES\n\"DFiSSEDERAL TAXI\n95,003.\nSAYED\n-ABDUL EL-!\nWAIT\nYEAH\nUP.\nABDUL\nPAID FOR BY ALLIANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG\nNOT AUTHORIZED BY ANY CANDIDATE OR CANDIDAT'S COMMITTEE\n3RD.\nvote for\nby NOV 3rd\nPAID FOR BY ALLLANGE FOR YOUTH POWER, ALLIANGEFORYOUTHPOWER.ORG",
+    "text_hash": "4b7b1fc954657862d9f113053cb8873d27bb6dadb8c015dc286fc0f961573fa6",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2ad17d066a1a5691472aaa45",
+    "alignment": "D",
+    "block_id": "snap-2ad17d066a1a5691472aaa45-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2ad17d066a1a5691472aaa45-claims-001-001",
+    "claim_text": "Mike Rogers weakened housing rules while his family was in the building business.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 255,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "— DETROIT -\nMETROTIMES\nMike Rogers weakened\nhousing rules while his family\nwas in the building business\nThe Trump-endorsed Republican says he's a champion of\naffordable housing, but he pushed to weaken building\nsafeguards and energy standards in Michigan.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8bb8b9d2012f909963ae7ee3067394429fc561f709b9fe00ee0a76a8115f2cbf?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 34,
+        "anchor_quote": "Mike Rogers",
+        "anchor_start": 23,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "— DETROIT -\nMETROTIMES\nMike Rogers weakened\nhousing rules while his family\nwas in the building business\nThe Trump-endorsed Republican says he's a champion of\naffordable housing, but he pushed to weaken building\nsafeguards and energy standards in Michigan.",
+    "text_hash": "9c141f4fa84a9329880e7502797d3c355a40953cb88c7a62171a0ca86f0f69b2",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2ad17d066a1a5691472aaa45",
+    "alignment": "D",
+    "block_id": "snap-2ad17d066a1a5691472aaa45-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2ad17d066a1a5691472aaa45-claims-001-002",
+    "claim_text": "The Trump-endorsed Republican says he's a champion of affordable housing.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 255,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "— DETROIT -\nMETROTIMES\nMike Rogers weakened\nhousing rules while his family\nwas in the building business\nThe Trump-endorsed Republican says he's a champion of\naffordable housing, but he pushed to weaken building\nsafeguards and energy standards in Michigan.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8bb8b9d2012f909963ae7ee3067394429fc561f709b9fe00ee0a76a8115f2cbf?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 34,
+        "anchor_quote": "Mike Rogers",
+        "anchor_start": 23,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "— DETROIT -\nMETROTIMES\nMike Rogers weakened\nhousing rules while his family\nwas in the building business\nThe Trump-endorsed Republican says he's a champion of\naffordable housing, but he pushed to weaken building\nsafeguards and energy standards in Michigan.",
+    "text_hash": "9c141f4fa84a9329880e7502797d3c355a40953cb88c7a62171a0ca86f0f69b2",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-2ad17d066a1a5691472aaa45",
+    "alignment": "D",
+    "block_id": "snap-2ad17d066a1a5691472aaa45-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-2ad17d066a1a5691472aaa45-claims-001-003",
+    "claim_text": "Mike Rogers pushed to weaken building safeguards and energy standards in Michigan.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 255,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "— DETROIT -\nMETROTIMES\nMike Rogers weakened\nhousing rules while his family\nwas in the building business\nThe Trump-endorsed Republican says he's a champion of\naffordable housing, but he pushed to weaken building\nsafeguards and energy standards in Michigan.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8bb8b9d2012f909963ae7ee3067394429fc561f709b9fe00ee0a76a8115f2cbf?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 34,
+        "anchor_quote": "Mike Rogers",
+        "anchor_start": 23,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:S4MI00595",
+        "kind": "person",
+        "name": "ROGERS, MIKE",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "negative"
+      }
+    ],
+    "text": "— DETROIT -\nMETROTIMES\nMike Rogers weakened\nhousing rules while his family\nwas in the building business\nThe Trump-endorsed Republican says he's a champion of\naffordable housing, but he pushed to weaken building\nsafeguards and energy standards in Michigan.",
+    "text_hash": "9c141f4fa84a9329880e7502797d3c355a40953cb88c7a62171a0ca86f0f69b2",
+    "unresolved_references": [],
+    "voice": "advertiser"
   }
 ]
