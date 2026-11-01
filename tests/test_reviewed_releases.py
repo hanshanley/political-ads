@@ -1697,9 +1697,7 @@ def test_lisonbee_report_acquires_only_explicit_ad_words_with_bound_dates():
     assert ad["sponsor_type"] == "candidate" and ad["media_urls"] == []
     assert ad["published"] == "2026-06-15" and ad["phase"] == "unknown"
     assert ad["date_basis"] == "publisher_report_date"
-    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(
-        ad["quality_flags"]
-    )
+    assert {"original_ad_media_unverified", "ad_legal_payer_unverified"} <= set(ad["quality_flags"])
     assert calls == [review["retrieval_url"]]
 
 
@@ -1739,9 +1737,7 @@ def test_lisonbee_report_rejects_unbound_or_non_ad_evidence(failure):
     elif failure == "visible_date":
         content = content.replace("June 15, 2026", "June 16, 2026")
     paragraph = BeautifulSoup(content, "html.parser").select("p.quoted")[0]
-    review["reported_ad_text"]["paragraph_sha256"] = digest(
-        paragraph.get_text(" ", strip=True)
-    )
+    review["reported_ad_text"]["paragraph_sha256"] = digest(paragraph.get_text(" ", strip=True))
     if failure == "paragraph_hash":
         review["reported_ad_text"]["paragraph_sha256"] = "0" * 64
     review["content_sha256"] = digest(content)
