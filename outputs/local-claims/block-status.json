@@ -6830,26 +6830,26 @@
   {
     "ad_id": "snap-655b294a0de97d4282fdee95",
     "block_id": "snap-655b294a0de97d4282fdee95-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 5: {\\\"anchor_quote\\\":\\\"UNION MEMBERS\\\",\\\"anchor_unit_id\\\":15,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"collective\\\",\\\"name\\\":\\\"Union members\\\",\\\"role\\\":\\\"self_or_supported\\\",\\\"tone\\\":\\\"neutral\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-656a6e444c1bf6d8b3939418",
     "block_id": "snap-656a6e444c1bf6d8b3939418-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 1: {\\\"anchor_quote\\\":\\\"Jon Husted\\\",\\\"anchor_unit_id\\\":2,\\\"entity_id\\\":\\\"candidate:S6OH00304\\\",\\\"kind\\\":\\\"person\\\",\\\"name\\\":\\\"Jon Husted\\\",\\\"role\\\":\\\"opponent\\\",\\\"tone\\\":\\\"negative\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-65f0d70fcc56c172d977116d",
     "block_id": "snap-65f0d70fcc56c172d977116d-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for Alaska Permanent Fund Dividend: \\\"Fund Dividend\\\" is absent from unit 12. Exact source: \\\"drawing renewed\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-66da9566fb8049ca282189a5",
     "block_id": "snap-66da9566fb8049ca282189a5-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 6 for candidates: \\\"candidates\\\" is absent from unit 43. Exact source: \\\"to make life more affordable.\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-66e248b231d3f0d6a583ccb9",
@@ -6860,8 +6860,8 @@
   {
     "ad_id": "snap-66f36a96436bcfe688fc2029",
     "block_id": "snap-66f36a96436bcfe688fc2029-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Michael Bouchard: \\\"Michael Bouchard\\\" is absent from unit 1. Exact source: \\\"- DETROIT -\\\\nMETROTIMES\\\\nGOP Congressional candidate Michael\\\\nBouchard's political roots run through a\\\\nLansing lobbying firm\\\\nThe Republican once worked for a firm tied to his father's\\\\npolitical network and clients in health care, pharmaceuticals,\\\\nand the auto industry.\\\\nDELIVERING FOR\\\\nAMERICAN WORKERS\\\\nJOBS\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-67056331cf45dc30c140990e",
