@@ -104979,5 +104979,834 @@
     "text_hash": "46b507e87a4dba0321caad32261d0d6505afbd955270e2798b99fcbd0a3bb821",
     "unresolved_references": [],
     "voice": "quoted_opponent"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21940d0d5080eb7d4cc9a391",
+    "alignment": "D",
+    "block_id": "snap-21940d0d5080eb7d4cc9a391-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21940d0d5080eb7d4cc9a391-claims-001-001",
+    "claim_text": "Labor endorse candidates need to fight for them because they're fighting for us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 80,
+        "kind": "local_asr",
+        "start": 0,
+        "text": "Labor endorse candidates need to fight for them because they're fighting for us.",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8c733c8ac8b3c13149db25f3403ce0f872c19dfe7fef2179a75b2d106482f1f7?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 24,
+        "anchor_quote": "Labor endorse candidates",
+        "anchor_start": 0,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Labor endorse candidates",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Labor endorse candidates need to fight for them because they're fighting for us.\nLet's change this before it's too late.\nLabor-endorsed candidates,\nPAULINE\nUNION MEMBER\nLET'S FIGHT FOR\nPRO-LABOR\nwe need to fight for them\nPAID FOR BY THE AFL-CIO\nbecause they'tre fighting for us.\nED\nIS AT THE\nBALLOT\nI'S BETTER\nIN A\nUnion\nMY UNION, MY RIGHT\nMY VOTE\nAFL-CIO\nVOTE FOR\nSHANNON TAYLOR\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nN'SBETTER",
+    "text_hash": "d590c8096f84f3352037cf73f649388e00fdd2b060f98305edf0b36f330bfa5e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21940d0d5080eb7d4cc9a391",
+    "alignment": "D",
+    "block_id": "snap-21940d0d5080eb7d4cc9a391-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21940d0d5080eb7d4cc9a391-claims-001-002",
+    "claim_text": "Let's change this before it's too late.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 120,
+        "kind": "local_asr",
+        "start": 81,
+        "text": "Let's change this before it's too late.",
+        "unit_id": 2
+      }
+    ],
+    "evidence_ids": [
+      2
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8c733c8ac8b3c13149db25f3403ce0f872c19dfe7fef2179a75b2d106482f1f7?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [],
+    "text": "Labor endorse candidates need to fight for them because they're fighting for us.\nLet's change this before it's too late.\nLabor-endorsed candidates,\nPAULINE\nUNION MEMBER\nLET'S FIGHT FOR\nPRO-LABOR\nwe need to fight for them\nPAID FOR BY THE AFL-CIO\nbecause they'tre fighting for us.\nED\nIS AT THE\nBALLOT\nI'S BETTER\nIN A\nUnion\nMY UNION, MY RIGHT\nMY VOTE\nAFL-CIO\nVOTE FOR\nSHANNON TAYLOR\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nN'SBETTER",
+    "text_hash": "d590c8096f84f3352037cf73f649388e00fdd2b060f98305edf0b36f330bfa5e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21940d0d5080eb7d4cc9a391",
+    "alignment": "D",
+    "block_id": "snap-21940d0d5080eb7d4cc9a391-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21940d0d5080eb7d4cc9a391-claims-001-003",
+    "claim_text": "Labor-endorsed candidates, we need to fight for them",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 147,
+        "kind": "video_ocr",
+        "start": 121,
+        "text": "Labor-endorsed candidates,",
+        "unit_id": 3
+      },
+      {
+        "end": 220,
+        "kind": "video_ocr",
+        "start": 195,
+        "text": "we need to fight for them",
+        "unit_id": 8
+      }
+    ],
+    "evidence_ids": [
+      3,
+      8
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8c733c8ac8b3c13149db25f3403ce0f872c19dfe7fef2179a75b2d106482f1f7?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 146,
+        "anchor_quote": "Labor-endorsed candidates",
+        "anchor_start": 121,
+        "anchor_unit_id": 3,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "Labor-endorsed candidates",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Labor endorse candidates need to fight for them because they're fighting for us.\nLet's change this before it's too late.\nLabor-endorsed candidates,\nPAULINE\nUNION MEMBER\nLET'S FIGHT FOR\nPRO-LABOR\nwe need to fight for them\nPAID FOR BY THE AFL-CIO\nbecause they'tre fighting for us.\nED\nIS AT THE\nBALLOT\nI'S BETTER\nIN A\nUnion\nMY UNION, MY RIGHT\nMY VOTE\nAFL-CIO\nVOTE FOR\nSHANNON TAYLOR\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nN'SBETTER",
+    "text_hash": "d590c8096f84f3352037cf73f649388e00fdd2b060f98305edf0b36f330bfa5e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21940d0d5080eb7d4cc9a391",
+    "alignment": "D",
+    "block_id": "snap-21940d0d5080eb7d4cc9a391-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21940d0d5080eb7d4cc9a391-claims-001-004",
+    "claim_text": "Shannon Taylor is to fight back against billionaires!",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 379,
+        "kind": "video_ocr",
+        "start": 365,
+        "text": "SHANNON TAYLOR",
+        "unit_id": 21
+      },
+      {
+        "end": 415,
+        "kind": "video_ocr",
+        "start": 394,
+        "text": "AGAINST BILLIONAIRES!",
+        "unit_id": 23
+      }
+    ],
+    "evidence_ids": [
+      21,
+      23
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8c733c8ac8b3c13149db25f3403ce0f872c19dfe7fef2179a75b2d106482f1f7?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 379,
+        "anchor_quote": "SHANNON TAYLOR",
+        "anchor_start": 365,
+        "anchor_unit_id": 21,
+        "entity_id": "candidate:H6VA01299",
+        "kind": "person",
+        "name": "Shannon Taylor",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "Labor endorse candidates need to fight for them because they're fighting for us.\nLet's change this before it's too late.\nLabor-endorsed candidates,\nPAULINE\nUNION MEMBER\nLET'S FIGHT FOR\nPRO-LABOR\nwe need to fight for them\nPAID FOR BY THE AFL-CIO\nbecause they'tre fighting for us.\nED\nIS AT THE\nBALLOT\nI'S BETTER\nIN A\nUnion\nMY UNION, MY RIGHT\nMY VOTE\nAFL-CIO\nVOTE FOR\nSHANNON TAYLOR\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nN'SBETTER",
+    "text_hash": "d590c8096f84f3352037cf73f649388e00fdd2b060f98305edf0b36f330bfa5e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21940d0d5080eb7d4cc9a391",
+    "alignment": "D",
+    "block_id": "snap-21940d0d5080eb7d4cc9a391-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21940d0d5080eb7d4cc9a391-claims-001-005",
+    "claim_text": "My union is my right, and my vote.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 339,
+        "kind": "video_ocr",
+        "start": 321,
+        "text": "MY UNION, MY RIGHT",
+        "unit_id": 17
+      }
+    ],
+    "evidence_ids": [
+      17
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8c733c8ac8b3c13149db25f3403ce0f872c19dfe7fef2179a75b2d106482f1f7?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 329,
+        "anchor_quote": "MY UNION",
+        "anchor_start": 321,
+        "anchor_unit_id": 17,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "My union",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Labor endorse candidates need to fight for them because they're fighting for us.\nLet's change this before it's too late.\nLabor-endorsed candidates,\nPAULINE\nUNION MEMBER\nLET'S FIGHT FOR\nPRO-LABOR\nwe need to fight for them\nPAID FOR BY THE AFL-CIO\nbecause they'tre fighting for us.\nED\nIS AT THE\nBALLOT\nI'S BETTER\nIN A\nUnion\nMY UNION, MY RIGHT\nMY VOTE\nAFL-CIO\nVOTE FOR\nSHANNON TAYLOR\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nN'SBETTER",
+    "text_hash": "d590c8096f84f3352037cf73f649388e00fdd2b060f98305edf0b36f330bfa5e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21940d0d5080eb7d4cc9a391",
+    "alignment": "D",
+    "block_id": "snap-21940d0d5080eb7d4cc9a391-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21940d0d5080eb7d4cc9a391-claims-001-006",
+    "claim_text": "The AFL-CIO paid for this.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 244,
+        "kind": "video_ocr",
+        "start": 221,
+        "text": "PAID FOR BY THE AFL-CIO",
+        "unit_id": 9
+      }
+    ],
+    "evidence_ids": [
+      9
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8c733c8ac8b3c13149db25f3403ce0f872c19dfe7fef2179a75b2d106482f1f7?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 244,
+        "anchor_quote": "AFL-CIO",
+        "anchor_start": 237,
+        "anchor_unit_id": 9,
+        "entity_id": "advertiser",
+        "kind": "collective",
+        "name": "AFL-CIO",
+        "party_basis": "publisher_alignment",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "Labor endorse candidates need to fight for them because they're fighting for us.\nLet's change this before it's too late.\nLabor-endorsed candidates,\nPAULINE\nUNION MEMBER\nLET'S FIGHT FOR\nPRO-LABOR\nwe need to fight for them\nPAID FOR BY THE AFL-CIO\nbecause they'tre fighting for us.\nED\nIS AT THE\nBALLOT\nI'S BETTER\nIN A\nUnion\nMY UNION, MY RIGHT\nMY VOTE\nAFL-CIO\nVOTE FOR\nSHANNON TAYLOR\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nN'SBETTER",
+    "text_hash": "d590c8096f84f3352037cf73f649388e00fdd2b060f98305edf0b36f330bfa5e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21940d0d5080eb7d4cc9a391",
+    "alignment": "D",
+    "block_id": "snap-21940d0d5080eb7d4cc9a391-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21940d0d5080eb7d4cc9a391-claims-001-007",
+    "claim_text": "They're fighting for us.",
+    "claim_types": [
+      "characterization"
+    ],
+    "evidence": [
+      {
+        "end": 278,
+        "kind": "video_ocr",
+        "start": 245,
+        "text": "because they'tre fighting for us.",
+        "unit_id": 10
+      }
+    ],
+    "evidence_ids": [
+      10
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/8c733c8ac8b3c13149db25f3403ce0f872c19dfe7fef2179a75b2d106482f1f7?mediaType=mp4",
+    "sponsor": "AFL-CIO",
+    "targets": [
+      {
+        "anchor_end": 257,
+        "anchor_quote": "they",
+        "anchor_start": 253,
+        "anchor_unit_id": 10,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "they",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "Labor endorse candidates need to fight for them because they're fighting for us.\nLet's change this before it's too late.\nLabor-endorsed candidates,\nPAULINE\nUNION MEMBER\nLET'S FIGHT FOR\nPRO-LABOR\nwe need to fight for them\nPAID FOR BY THE AFL-CIO\nbecause they'tre fighting for us.\nED\nIS AT THE\nBALLOT\nI'S BETTER\nIN A\nUnion\nMY UNION, MY RIGHT\nMY VOTE\nAFL-CIO\nVOTE FOR\nSHANNON TAYLOR\nTO FIGHT BACK\nAGAINST BILLIONAIRES!\nN'SBETTER",
+    "text_hash": "d590c8096f84f3352037cf73f649388e00fdd2b060f98305edf0b36f330bfa5e",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21a911975d6b49f4fc3d4ddc",
+    "alignment": "D",
+    "block_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001-001",
+    "claim_text": "Bob Brooks has been endorsed by more than a dozen labor unions in his campaign to unseat US Rep. Ryan Mackenzie (R-Pa.).",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 215,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e019ae2584a3ab4531dee8ebc7de31735cd0bb860de08a05825ee1bbc91d4c35?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 36,
+        "anchor_quote": "Bob Brooks",
+        "anchor_start": 26,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6PA07188",
+        "kind": "person",
+        "name": "Bob Brooks",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "positive"
+      }
+    ],
+    "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+    "text_hash": "86b99592ff7b5e2e53a4aa72bbbc30fe1611044cd882398065f5485dd3af484d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21a911975d6b49f4fc3d4ddc",
+    "alignment": "D",
+    "block_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001-002",
+    "claim_text": "AFGE looks to Bob Brooks to build their congressional majority.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 215,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e019ae2584a3ab4531dee8ebc7de31735cd0bb860de08a05825ee1bbc91d4c35?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 16,
+        "anchor_quote": "AFGE",
+        "anchor_start": 12,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "collective",
+        "name": "AFGE",
+        "party_basis": "unknown",
+        "role": "self_or_supported",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "positive"
+      }
+    ],
+    "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+    "text_hash": "86b99592ff7b5e2e53a4aa72bbbc30fe1611044cd882398065f5485dd3af484d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21a911975d6b49f4fc3d4ddc",
+    "alignment": "D",
+    "block_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001-003",
+    "claim_text": "Bob Brooks is a retired firefighter.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 215,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e019ae2584a3ab4531dee8ebc7de31735cd0bb860de08a05825ee1bbc91d4c35?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 36,
+        "anchor_quote": "Bob Brooks",
+        "anchor_start": 26,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6PA07188",
+        "kind": "person",
+        "name": "Bob Brooks",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+    "text_hash": "86b99592ff7b5e2e53a4aa72bbbc30fe1611044cd882398065f5485dd3af484d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21a911975d6b49f4fc3d4ddc",
+    "alignment": "D",
+    "block_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001-004",
+    "claim_text": "US Rep. Ryan Mackenzie is a Republican.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 215,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e019ae2584a3ab4531dee8ebc7de31735cd0bb860de08a05825ee1bbc91d4c35?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 214,
+        "anchor_quote": "Ryan Mackenzie (R-Pa.)",
+        "anchor_start": 192,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H8PA15195",
+        "kind": "person",
+        "name": "Ryan Mackenzie",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+    "text_hash": "86b99592ff7b5e2e53a4aa72bbbc30fe1611044cd882398065f5485dd3af484d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21a911975d6b49f4fc3d4ddc",
+    "alignment": "D",
+    "block_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001-005",
+    "claim_text": "Bob Brooks is running a campaign to unseat US Rep. Ryan Mackenzie.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 215,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e019ae2584a3ab4531dee8ebc7de31735cd0bb860de08a05825ee1bbc91d4c35?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 36,
+        "anchor_quote": "Bob Brooks",
+        "anchor_start": 26,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6PA07188",
+        "kind": "person",
+        "name": "Bob Brooks",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+    "text_hash": "86b99592ff7b5e2e53a4aa72bbbc30fe1611044cd882398065f5485dd3af484d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21a911975d6b49f4fc3d4ddc",
+    "alignment": "D",
+    "block_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001-006",
+    "claim_text": "Bob Brooks is looking to build a congressional majority.",
+    "claim_types": [
+      "prediction"
+    ],
+    "evidence": [
+      {
+        "end": 215,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e019ae2584a3ab4531dee8ebc7de31735cd0bb860de08a05825ee1bbc91d4c35?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 36,
+        "anchor_quote": "Bob Brooks",
+        "anchor_start": 26,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H6PA07188",
+        "kind": "person",
+        "name": "Bob Brooks",
+        "party_basis": "candidate_metadata",
+        "role": "self_or_supported",
+        "side": "same_side",
+        "target_party": "D",
+        "tone": "neutral"
+      }
+    ],
+    "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+    "text_hash": "86b99592ff7b5e2e53a4aa72bbbc30fe1611044cd882398065f5485dd3af484d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21a911975d6b49f4fc3d4ddc",
+    "alignment": "D",
+    "block_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001-007",
+    "claim_text": "Ryan Mackenzie is a US Representative.",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 215,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/e019ae2584a3ab4531dee8ebc7de31735cd0bb860de08a05825ee1bbc91d4c35?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 206,
+        "anchor_quote": "US Rep. Ryan Mackenzie",
+        "anchor_start": 184,
+        "anchor_unit_id": 1,
+        "entity_id": "candidate:H8PA15195",
+        "kind": "person",
+        "name": "Ryan Mackenzie",
+        "party_basis": "candidate_metadata",
+        "role": "opponent",
+        "side": "other_side",
+        "target_party": "R",
+        "tone": "neutral"
+      }
+    ],
+    "text": "TheKeystone\nAFGE looks to Bob Brooks\nto build their congressional\nmajority\nRetired firefighter Bob Brooks has been endorsed\nby more than a dozen labor unions in his campaign\nto unseat US Rep. Ryan Mackenzie (R-Pa.).",
+    "text_hash": "86b99592ff7b5e2e53a4aa72bbbc30fe1611044cd882398065f5485dd3af484d",
+    "unresolved_references": [],
+    "voice": "advertiser"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21f5c7356f74274c85fc3662",
+    "alignment": "D",
+    "block_id": "snap-21f5c7356f74274c85fc3662-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21f5c7356f74274c85fc3662-claims-001-001",
+    "claim_text": "Sen. Hyde-Smith blocks a bid to ban stock trading in Congress",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 72,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "12 WJTV\nNEWS\nSen. Hyde-Smith blocks\nbid to ban stock trading\nin Congress",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/26936412f701306a6931c995eb455f99da1ab889839c7a287263c3ec5bc17197?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 28,
+        "anchor_quote": "Sen. Hyde-Smith",
+        "anchor_start": 13,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Sen. Hyde-Smith",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "12 WJTV\nNEWS\nSen. Hyde-Smith blocks\nbid to ban stock trading\nin Congress",
+    "text_hash": "3fde4baa8b4c76db35fdc2068dbcbac787d29d769e6fba6329c0eed7a1031b47",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21f5c7356f74274c85fc3662",
+    "alignment": "D",
+    "block_id": "snap-21f5c7356f74274c85fc3662-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21f5c7356f74274c85fc3662-claims-001-002",
+    "claim_text": "There was a bid to ban stock trading in Congress",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 72,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "12 WJTV\nNEWS\nSen. Hyde-Smith blocks\nbid to ban stock trading\nin Congress",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/26936412f701306a6931c995eb455f99da1ab889839c7a287263c3ec5bc17197?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 39,
+        "anchor_quote": "bid",
+        "anchor_start": 36,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "bid",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "12 WJTV\nNEWS\nSen. Hyde-Smith blocks\nbid to ban stock trading\nin Congress",
+    "text_hash": "3fde4baa8b4c76db35fdc2068dbcbac787d29d769e6fba6329c0eed7a1031b47",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21f5c7356f74274c85fc3662",
+    "alignment": "D",
+    "block_id": "snap-21f5c7356f74274c85fc3662-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21f5c7356f74274c85fc3662-claims-001-003",
+    "claim_text": "Sen. Hyde-Smith blocks a bid",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 72,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "12 WJTV\nNEWS\nSen. Hyde-Smith blocks\nbid to ban stock trading\nin Congress",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/26936412f701306a6931c995eb455f99da1ab889839c7a287263c3ec5bc17197?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 28,
+        "anchor_quote": "Sen. Hyde-Smith",
+        "anchor_start": 13,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "person",
+        "name": "Sen. Hyde-Smith",
+        "party_basis": "unknown",
+        "role": "opponent",
+        "side": "unknown",
+        "target_party": "unknown",
+        "tone": "negative"
+      }
+    ],
+    "text": "12 WJTV\nNEWS\nSen. Hyde-Smith blocks\nbid to ban stock trading\nin Congress",
+    "text_hash": "3fde4baa8b4c76db35fdc2068dbcbac787d29d769e6fba6329c0eed7a1031b47",
+    "unresolved_references": [],
+    "voice": "unclear"
+  },
+  {
+    "ad_claim_status": "normalized",
+    "ad_id": "snap-21f5c7356f74274c85fc3662",
+    "alignment": "D",
+    "block_id": "snap-21f5c7356f74274c85fc3662-claims-001",
+    "block_status": "normalized",
+    "claim_id": "snap-21f5c7356f74274c85fc3662-claims-001-004",
+    "claim_text": "The bid is to ban stock trading in Congress",
+    "claim_types": [
+      "factual_assertion"
+    ],
+    "evidence": [
+      {
+        "end": 72,
+        "kind": "image_ocr",
+        "start": 0,
+        "text": "12 WJTV\nNEWS\nSen. Hyde-Smith blocks\nbid to ban stock trading\nin Congress",
+        "unit_id": 1
+      }
+    ],
+    "evidence_ids": [
+      1
+    ],
+    "source_url": "https://www.snap.com/political-ads/asset/26936412f701306a6931c995eb455f99da1ab889839c7a287263c3ec5bc17197?mediaType=jpg",
+    "sponsor": "Working America",
+    "targets": [
+      {
+        "anchor_end": 39,
+        "anchor_quote": "bid",
+        "anchor_start": 36,
+        "anchor_unit_id": 1,
+        "entity_id": "unknown",
+        "kind": "policy",
+        "name": "bid",
+        "party_basis": "unknown",
+        "role": "unclear",
+        "side": "not_partisan",
+        "target_party": "unknown",
+        "tone": "neutral"
+      }
+    ],
+    "text": "12 WJTV\nNEWS\nSen. Hyde-Smith blocks\nbid to ban stock trading\nin Congress",
+    "text_hash": "3fde4baa8b4c76db35fdc2068dbcbac787d29d769e6fba6329c0eed7a1031b47",
+    "unresolved_references": [],
+    "voice": "unclear"
   }
 ]

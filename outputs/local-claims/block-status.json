@@ -4611,49 +4611,49 @@
     "ad_id": "snap-21940d0d5080eb7d4cc9a391",
     "block_id": "snap-21940d0d5080eb7d4cc9a391-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-219f0638fb6a9f625840c0f5",
     "block_id": "snap-219f0638fb6a9f625840c0f5-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 3 for Jon Ossoff: \\\"With Ossoff on the ballot\\\" is absent from unit 5. Exact source: \\\"With all self on the ballot,\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-21a460f75f534a7a059051f3",
     "block_id": "snap-21a460f75f534a7a059051f3-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Invalid target fields in claim 2: {\\\"anchor_quote\\\":\\\"Kellogg\\\",\\\"anchor_unit_id\\\":40,\\\"entity_id\\\":\\\"unknown\\\",\\\"kind\\\":\\\"collective\\\",\\\"name\\\":\\\"Kellogg workers\\\",\\\"role\\\":\\\"unclear\\\",\\\"tone\\\":\\\"neutral\\\"}\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-21a911975d6b49f4fc3d4ddc",
     "block_id": "snap-21a911975d6b49f4fc3d4ddc-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-21f5c7356f74274c85fc3662",
     "block_id": "snap-21f5c7356f74274c85fc3662-claims-001",
     "error": "",
-    "status": "not_run"
+    "status": "normalized"
   },
   {
     "ad_id": "snap-2278a03d424cf95194f56933",
     "block_id": "snap-2278a03d424cf95194f56933-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 1 for Denise Powell: \\\"DENISE POWELL\\\" is absent from unit 1. Exact source: \\\"N'S BETIER\\\\n-IN A\\\\nUnion\\\\nMY UNION, MY RIGHT, MY VOTE\\\\nAFL-CIO\\\\nAMERICA'D UNIONI\\\\nDENISE\\\\nPOWELL\\\\nWILL FIGHT TO LOWER COSTS\\\\nAND RAISE WAGES.\\\\nVOTE WITH WORKERS\\\\nPAID FOR BY THE AFL-CIO\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-229a363406dd1ef21a0d5735",
     "block_id": "snap-229a363406dd1ef21a0d5735-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 2 for Trump: \\\"Trump\\\" is absent from unit 2. Exact source: \\\"economic pain inflicted by\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-2300965e3b8e48cdb0e5b2d7",
     "block_id": "snap-2300965e3b8e48cdb0e5b2d7-claims-001",
-    "error": "",
-    "status": "not_run"
+    "error": "Final attempt failed: [\"Nonliteral target anchor in claim 4 for Rob Breznihan: \\\"Rob Breznihan\\\" is absent from unit 4. Exact source: \\\"what's affecting us, the cost of everything from groceries to gas, housing to health care,\\\". Copy a case-sensitive literal anchor, including original punctuation. For a resolved reference, keep the resolved name in name but cite its literal source pronoun, or include the unit containing the explicit name.\"]",
+    "status": "validation_failed"
   },
   {
     "ad_id": "snap-2300965e3b8e48cdb0e5b2d7",
